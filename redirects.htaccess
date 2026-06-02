@@ -1,0 +1,245 @@
+# 301 redirects for Mediations Australia rebuild
+# Generated migration map — review before deploying
+
+Redirect 301 /separation-under-one-roof-assessment/ /separation-under-one-roof/
+Redirect 301 /family-law-cost-calculator/ /family-law-cost-estimator/
+Redirect 301 /section-601-certificate-mediation/ /section-60i-certificates/
+Redirect 301 /spousal-support-dispute-mediation/ /spousal-support-mediation/
+Redirect 301 /spousal-maintenance-australia/ /spousal-support-mediation/
+Redirect 301 /child-support-dispute-mediation/ /child-support-mediation/
+Redirect 301 /de-facto-relationship-dispute-mediation/ /de-facto-mediation/
+Redirect 301 /grandparent-mediation/ /grandparents-mediation/
+Redirect 301 /family-law-dispute-mediation/ /family-law-mediation/
+Redirect 301 /family-law-melbourne-mediation/ /melbourne-mediation/
+Redirect 301 /make-an-appointment/ /book-a-consultation/
+Redirect 301 /lawyer-booking/ /book-a-consultation/
+Redirect 301 /online-mediation-enquiry/ /book-a-consultation/
+Redirect 301 /team-single/ /our-mediators/
+Redirect 301 /qld/ /brisbane-mediation/
+Redirect 301 /mediation/ /how-mediation-works/
+Redirect 301 /resolve-your-property-settlement-with-mediation-in-australia/ /property-settlement-mediation/
+Redirect 301 /the-cost-of-divorce-in-australia/ /cost-of-divorce-in-australia/
+Redirect 301 /how-much-does-mediation-cost/ /costs-of-mediation/
+Redirect 301 /what-am-i-entitled-to-in-a-separation/ /what-am-i-entitled-to-in-a-separation-in-australia/
+Redirect 301 /what-am-i-entitled-to-in-a-divorce-or-separation-in-australia/ /what-am-i-entitled-to-in-a-separation-in-australia/
+Redirect 301 /how-to-get-ready-for-mediation/ /preparing-for-mediation/
+Redirect 301 /how-to-prepare-for-a-property-settlement-mediation/ /preparing-for-mediation/
+Redirect 301 /how-to-get-ready-for-property-settlement-mediation/ /preparing-for-mediation/
+Redirect 301 /shuttle-mediation/ /the-pros-and-cons-of-shuttle-mediation/
+Redirect 301 /consent-order/ /consent-orders/
+Redirect 301 /spousal-maintenance/ /spousal-support-mediation/
+Redirect 301 /de-facto-relationships/ /de-facto-mediation/
+Redirect 301 /separated-under-one-roof/ /separation-under-one-roof/
+Redirect 301 /divorce-without-a-lawyer/ /divorce-without-lawyers/
+
+# Batch 2 consolidation redirects
+Redirect 301 /consent-order/ /consent-orders-explained/
+Redirect 301 /consent-orders-example/ /consent-orders-explained/
+Redirect 301 /consent-orders-2025-update/ /consent-orders-explained/
+Redirect 301 /how-do-i-change-a-consent-order/ /consent-orders-explained/
+Redirect 301 /how-long-do-consent-orders-take/ /consent-orders-explained/
+Redirect 301 /how-long-do-consent-orders-take-in-family-law-matters/ /consent-orders-explained/
+Redirect 301 /breach-of-family-court-order/ /consent-orders-explained/
+Redirect 301 /property-in-divorce-settlement/ /property-settlement-after-separation/
+Redirect 301 /property-settlement-in-family-law/ /property-settlement-after-separation/
+Redirect 301 /how-property-settlements-work/ /property-settlement-after-separation/
+Redirect 301 /property-settlement-after-separation-time-limit/ /property-settlement-after-separation/
+Redirect 301 /how-to-force-a-property-settlement/ /property-settlement-after-separation/
+Redirect 301 /joint-tenancy-and-divorce/ /property-settlement-after-separation/
+
+# Batch 3 consolidation redirects
+Redirect 301 /applying-for-a-divorce-in-australia/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /application-for-divorce/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /divorce-application-process/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /how-to-get-divorce-papers-the-2022-guide/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /joint-divorce-application/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /getting-divorced-or-separated-the-2022-guide/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /what-is-divorce-law-in-australia/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /how-to-get-a-divorce-in-new-south-wales/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /how-to-apply-file-for-get-a-divorce-in-western-australia-wa/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /understanding-divorce-laws-in-nsw/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /the-marriage-separation-process-in-nsw/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /divorce-certificate-in-australia/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /my-ex-wont-sign-divorce-papers/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /divorce-law-near-me/ /how-to-get-a-divorce-in-australia-a-step-by-step-guide/
+Redirect 301 /binding-financial-agreement/ /binding-financial-agreements-guide/
+Redirect 301 /binding-financial-agreement-what-you-need-to-know/ /binding-financial-agreements-guide/
+Redirect 301 /avoid-these-mistakes-with-a-binding-financial-agreement/ /binding-financial-agreements-guide/
+Redirect 301 /binding-financial-agreement-v-consent-orders/ /binding-financial-agreements-guide/
+Redirect 301 /12-essential-things-to-know-about-binding-financial-agreements-in-australia/ /binding-financial-agreements-guide/
+Redirect 301 /what-is-a-prenup-agreement-in-2024/ /binding-financial-agreements-guide/
+Redirect 301 /prenups-for-women/ /binding-financial-agreements-guide/
+Redirect 301 /post-prenup-agreement/ /binding-financial-agreements-guide/
+Redirect 301 /postnuptial-agreement-australia-everything-you-need-to-know/ /binding-financial-agreements-guide/
+Redirect 301 /de-facto-relationships-and-prenups-what-you-have-to-know/ /binding-financial-agreements-guide/
+Redirect 301 /how-mediation-can-help-in-financial-agreements/ /binding-financial-agreements-guide/
+Redirect 301 /what-you-need-to-know-about-parenting-plans/ /parenting-plans-guide/
+Redirect 301 /create-parenting-plan-that-works/ /parenting-plans-guide/
+Redirect 301 /parenting-plans-example/ /parenting-plans-guide/
+Redirect 301 /12-best-strategies-for-effective-parenting-plans-in-australia/ /parenting-plans-guide/
+Redirect 301 /parenting-plan-vs-parenting-order/ /parenting-plans-guide/
+Redirect 301 /how-to-make-changes-to-a-parenting-order/ /parenting-plans-guide/
+Redirect 301 /what-you-need-to-know-about-parenting-coordination-2022-update/ /parenting-plans-guide/
+Redirect 301 /best-apps-for-separated-parents/ /parenting-plans-guide/
+
+# Batch 4 consolidation redirects
+Redirect 301 /mediation-in-family-law-a-comprehensive-guide/ /what-is-mediation-in-family-law/
+Redirect 301 /understanding-mediation-2024/ /what-is-mediation-in-family-law/
+Redirect 301 /family-mediation/ /what-is-mediation-in-family-law/
+Redirect 301 /family-mediation-process-guide/ /what-is-mediation-in-family-law/
+Redirect 301 /mediation-for-separation/ /what-is-mediation-in-family-law/
+Redirect 301 /the-7-most-common-questions-about-mediation/ /what-is-mediation-in-family-law/
+Redirect 301 /why-mediation-works-the-science-behind-it/ /what-is-mediation-in-family-law/
+Redirect 301 /understanding-family-conflict-and-why-mediation-is-your-best-path-forward/ /what-is-mediation-in-family-law/
+Redirect 301 /how-you-can-reach-an-agreement-in-mediation/ /what-is-mediation-in-family-law/
+Redirect 301 /role-of-a-mediator-divorce-mediation/ /what-is-mediation-in-family-law/
+Redirect 301 /family-law-mediator/ /what-is-mediation-in-family-law/
+Redirect 301 /family-court-mediation-process/ /what-is-mediation-in-family-law/
+Redirect 301 /mediation-or-litigation-what-is-the-best/ /mediate-or-litigate/
+Redirect 301 /mediate-collaborate-or-litigate/ /mediate-or-litigate/
+Redirect 301 /litigation-or-mediation-choose-very-wisely/ /mediate-or-litigate/
+Redirect 301 /the-different-ways-to-resolve-family-law-disputes/ /mediate-or-litigate/
+Redirect 301 /why-going-to-court-for-your-family-law-dispute-is-a-mistake/ /mediate-or-litigate/
+Redirect 301 /abc-expose-the-hidden-cost-of-family-court-battles/ /mediate-or-litigate/
+Redirect 301 /five-benefits-of-using-mediation-to-resolve-divorce-issues/ /mediate-or-litigate/
+Redirect 301 /nothing-alternate-about-alternate-dispute-resolution-adr/ /mediate-or-litigate/
+Redirect 301 /mediation-vs-collaborative-law/ /mediate-or-litigate/
+Redirect 301 /im-contemplating-separation-do-i-see-a-lawyer-or-a-mediation-practice-first/ /mediate-or-litigate/
+Redirect 301 /the-role-of-the-lawyer-in-mediation/ /mediate-or-litigate/
+Redirect 301 /the-difference-between-a-divorce-lawyer-and-a-mediator/ /mediate-or-litigate/
+Redirect 301 /points-to-consider-family-mediation-lawyers-in-australia/ /mediate-or-litigate/
+Redirect 301 /how-to-resolve-your-family-law-dispute-online/ /mediate-or-litigate/
+Redirect 301 /what-is-child-custody-mediation/ /child-custody-mediation/
+Redirect 301 /5-reasons-why-you-should-consider-mediation-for-child-custody-disputes/ /child-custody-mediation/
+Redirect 301 /when-should-i-think-about-parenting-mediation-or-custody-mediation/ /child-custody-mediation/
+Redirect 301 /how-often-do-fathers-get-50-50-custody-in-australia/ /child-custody-mediation/
+Redirect 301 /what-is-the-role-of-an-independent-childrens-lawyer/ /child-custody-mediation/
+Redirect 301 /what-are-family-reports-in-family-law-matters/ /child-custody-mediation/
+Redirect 301 /supporting-your-child-through-parents-separation-a-comprehensive-guide-for-australian-families/ /child-custody-mediation/
+Redirect 301 /how-does-mediation-help-co-parenting/ /child-custody-mediation/
+Redirect 301 /domestic-violence/ /domestic-violence-and-family-law/
+Redirect 301 /what-is-an-avo/ /domestic-violence-and-family-law/
+Redirect 301 /what-is-a-restraining-order/ /domestic-violence-and-family-law/
+Redirect 301 /what-is-a-dvo-everything-you-need-to-know/ /domestic-violence-and-family-law/
+Redirect 301 /what-is-a-dvo-how-to-apply-for-a-domestic-violence-order/ /domestic-violence-and-family-law/
+Redirect 301 /intervention-orders/ /domestic-violence-and-family-law/
+Redirect 301 /court-ordered-drug-and-alcohol-testing/ /domestic-violence-and-family-law/
+Redirect 301 /what-hannahs-law-means/ /domestic-violence-and-family-law/
+Redirect 301 /parental-alienation-australia-dont-let-your-ex-destroy-your-childs-love-for-you/ /domestic-violence-and-family-law/
+
+# Batch 5 consolidation redirects
+Redirect 301 /trial-separation/ /separation-guide/
+Redirect 301 /separation-or-divorce-which-is-better/ /separation-guide/
+Redirect 301 /who-pays-bills-during-separation/ /separation-guide/
+Redirect 301 /who-gets-to-stay-in-the-house-during-separation/ /separation-guide/
+Redirect 301 /pre-separation-checklist/ /separation-guide/
+Redirect 301 /travel-overseas-after-a-separation/ /separation-guide/
+Redirect 301 /why-you-have-to-update-your-will-after-separation/ /separation-guide/
+Redirect 301 /how-to-protect-your-online-privacy-following-separation/ /separation-guide/
+Redirect 301 /family-law-separation-agreements-the-2024-guide/ /separation-guide/
+Redirect 301 /de-facto-relationships/ /de-facto-relationships-guide/
+Redirect 301 /how-do-de-facto-couples-split-assets/ /de-facto-relationships-guide/
+Redirect 301 /whats-the-difference-between-a-de-facto-relationship-and-marriage/ /de-facto-relationships-guide/
+Redirect 301 /spousal-maintenance/ /spousal-maintenance-guide/
+Redirect 301 /what-is-alimony-in-australia/ /spousal-maintenance-guide/
+Redirect 301 /becoming-independent-sooner-how-mediation-can-help-you-agree-on-spousal-support/ /spousal-maintenance-guide/
+Redirect 301 /does-a-husband-have-to-support-his-wife/ /spousal-maintenance-guide/
+Redirect 301 /child-support-payments-and-taxes/ /child-support-guide/
+Redirect 301 /when-child-support-stops-guide/ /child-support-guide/
+Redirect 301 /parenting-payments-in-australia/ /child-support-guide/
+Redirect 301 /how-do-i-contact-centrelink/ /child-support-guide/
+
+# Batch 6 consolidation redirects
+Redirect 301 /attend-mediation-in-family-law-matters/ /is-family-law-mediation-compulsory/
+Redirect 301 /family-law-mediation-what-happens-if-i-dont-want-to-do-it/ /is-family-law-mediation-compulsory/
+Redirect 301 /what-do-i-do-if-my-former-partner-will-not-do-mediation/ /is-family-law-mediation-compulsory/
+Redirect 301 /how-to-convince-your-ex-partner-to-do-mediation/ /is-family-law-mediation-compulsory/
+Redirect 301 /what-is-the-difference-between-mediation-and-family-dispute-resolution/ /is-family-law-mediation-compulsory/
+Redirect 301 /what-is-a-section-60i-certificate-why-do-i-need-one/ /is-family-law-mediation-compulsory/
+Redirect 301 /fathers-rights-after-separation/ /fathers-rights/
+Redirect 301 /fathers-rights-in-family-law-2022-update/ /fathers-rights/
+Redirect 301 /superannuation-and-family-law-important-2024-update/ /superannuation-and-divorce/
+Redirect 301 /what-happens-to-superannuation-if-i-separate-or-divorce/ /superannuation-and-divorce/
+Redirect 301 /high-conflict-family-law-mediation/ /high-conflict-mediation/
+Redirect 301 /when-is-mediation-not-a-good-idea/ /high-conflict-mediation/
+
+# Batch 7 consolidation redirects
+Redirect 301 /grandparents-rights-how-to-see-your-grandchildren-2022-update/ /grandparents-rights/
+Redirect 301 /grandparents-custody-in-australia/ /grandparents-rights/
+Redirect 301 /what-are-the-mothers-rights-in-family-law/ /mothers-rights/
+Redirect 301 /shuttle-mediation/ /shuttle-mediation-guide/
+Redirect 301 /the-pros-and-cons-of-shuttle-mediation/ /shuttle-mediation-guide/
+Redirect 301 /conciliation-in-family-law/ /conciliation-vs-mediation/
+Redirect 301 /difference-between-mediation-conciliation/ /conciliation-vs-mediation/
+Redirect 301 /difference-mediator-and-conciliator/ /conciliation-vs-mediation/
+Redirect 301 /what-is-workplace-mediation-2023-important-update/ /workplace-mediation-guide/
+Redirect 301 /the-role-of-fair-work-australia-and-workplace-mediation/ /workplace-mediation-guide/
+Redirect 301 /mediate-workplace-conflict-in-australia/ /workplace-mediation-guide/
+
+# Batch 8 consolidation redirects
+Redirect 301 /mediation-in-property-settlement-cases/ /property-settlement-mediation-guide/
+Redirect 301 /when-should-we-consider-property-settlement-mediation/ /property-settlement-mediation-guide/
+Redirect 301 /how-to-get-ready-for-property-settlement-mediation/ /property-settlement-mediation-guide/
+Redirect 301 /how-to-prepare-for-a-property-settlement-mediation/ /property-settlement-mediation-guide/
+Redirect 301 /what-to-expect-at-a-family-law-mediation-for-property-division/ /property-settlement-mediation-guide/
+Redirect 301 /family-law-mediation-for-property-settlements/ /property-settlement-mediation-guide/
+Redirect 301 /property-settlement-mediation-most-effective-strategies-for-resolving-property-settlement-disputes/ /property-settlement-mediation-guide/
+Redirect 301 /how-to-resolve-your-property-settlement-with-mediation-in-australia/ /property-settlement-mediation-guide/
+Redirect 301 /what-happens-to-business-in-divorce/ /business-in-divorce/
+Redirect 301 /can-you-sue-a-family-trust-in-australia/ /business-in-divorce/
+Redirect 301 /family-loan-agreement-matters/ /business-in-divorce/
+Redirect 301 /family-court-process-2024-update/ /family-court-process/
+Redirect 301 /what-are-procedural-orders-in-family-court/ /family-court-process/
+Redirect 301 /final-hearing-in-family-law-disputes/ /family-court-process/
+Redirect 301 /what-is-a-litigation-guardian-in-australia/ /family-court-process/
+Redirect 301 /what-is-the-magellan-list/ /family-court-process/
+Redirect 301 /family-law-regulations-explained/ /family-court-process/
+Redirect 301 /commonly-asked-family-law-questions/ /family-court-process/
+Redirect 301 /are-mediation-agreements-legally-binding/ /family-court-process/
+Redirect 301 /divorce-without-lawyers/ /divorce-without-a-lawyer/
+Redirect 301 /how-long-does-it-take-to-get-a-divorce/ /how-long-does-a-divorce-take/
+
+# Batch 9 (final) consolidation redirects
+Redirect 301 /mediation-who-pays/ /how-much-does-mediation-cost/
+Redirect 301 /is-mediation-expensive/ /how-much-does-mediation-cost/
+Redirect 301 /australia-lgbt-marriage-mediation/ /same-sex-family-law/
+Redirect 301 /same-sex-divorce-in-australia/ /same-sex-family-law/
+Redirect 301 /stepparent-rights-and-family-law-in-australia/ /stepparent-rights/
+Redirect 301 /surrogacy-laws-in-australia-2024/ /surrogacy-laws/
+Redirect 301 /can-you-record-your-ex-without-permission/ /can-you-record-your-ex/
+Redirect 301 /best-divorce-lawyers-in-sydney/ /best-divorce-lawyers-sydney/
+Redirect 301 /separation-lawyer-sydney/ /best-divorce-lawyers-sydney/
+Redirect 301 /pets-and-family-law-who-gets-the-pets-after-separation/ /pets-and-family-law/
+Redirect 301 /changes-to-the-family-law-act-2025-you-must-know/ /changes-to-family-law-act-2025/
+
+# {city}-family-lawyers consolidation -> {city}-mediation
+# Repositioning: 'family lawyers' pages were off-brand and cannibalising the mediation pages.
+# 24 lawyer URLs -> consolidated into the strong, mediation-focused location pages.
+Redirect 301 /sydney-family-lawyers/ /sydney-mediation/
+Redirect 301 /melbourne-family-lawyers/ /melbourne-mediation/
+Redirect 301 /brisbane-family-lawyers/ /brisbane-mediation/
+Redirect 301 /perth-family-lawyers/ /perth-mediation/
+Redirect 301 /adelaide-family-lawyers/ /adelaide-mediation/
+Redirect 301 /canberra-family-lawyers/ /canberra-mediation/
+Redirect 301 /gold-coast-family-lawyers/ /gold-coast-mediation/
+Redirect 301 /newcastle-family-lawyers/ /newcastle-mediation/
+Redirect 301 /wollongong-family-lawyers/ /wollongong-mediation/
+Redirect 301 /geelong-family-lawyers/ /geelong-mediation/
+Redirect 301 /hobart-family-lawyers/ /hobart-mediation/
+Redirect 301 /darwin-family-lawyers/ /darwin-mediation/
+Redirect 301 /townsville-family-lawyers/ /townsville-mediation/
+Redirect 301 /toowoomba-family-lawyers/ /toowoomba-mediation/
+Redirect 301 /rockhampton-family-lawyers/ /rockhampton-mediation/
+Redirect 301 /bendigo-family-lawyers/ /bendigo-mediation/
+Redirect 301 /launceston-family-lawyers/ /launceston-mediation/
+Redirect 301 /north-sydney-family-lawyers/ /sydney-mediation/
+Redirect 301 /central-coast-family-lawyers/ /newcastle-mediation/
+Redirect 301 /ipswich-family-lawyers/ /brisbane-mediation/
+Redirect 301 /penrith-family-lawyers/ /sydney-mediation/
+Redirect 301 /ballarat-family-lawyers/ /geelong-mediation/
+Redirect 301 /mandurah-family-lawyers/ /perth-mediation/
+Redirect 301 /campbelltown-family-lawyers/ /sydney-mediation/
+
+# Newly built pages: lawyer/mediator URL variants -> our-mediators
+Redirect 301 /accredited-family-law-mediators/ /our-mediators/
+Redirect 301 /family-law-practitioners/ /our-mediators/
