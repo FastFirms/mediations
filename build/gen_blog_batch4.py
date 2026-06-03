@@ -17,6 +17,8 @@ post("what-is-mediation-in-family-law",
   ("mediator-role","What does the mediator do?"),
   ("why-works","Why mediation works so well"),
   ("what-resolve","What can mediation resolve?"),
+  ("for-parents","Mediation for parents"),
+  ("compare","How it compares to other options"),
   ("cost-time","Cost and time"),
   ("right-for-you","Is mediation right for you?")],
  key_takeaway("Family law mediation is a confidential process in which a neutral, accredited mediator helps separating parties negotiate their own agreement on parenting, property and finances. The mediator guides the conversation but does not decide the outcome. It resolves most disputes in one or two sessions, costs a fraction of court, and for parenting matters is generally a required step before litigation.")
@@ -55,8 +57,22 @@ post("what-is-mediation-in-family-law",
   <li>Even <a href="/estate-dispute-mediation/">estate</a> and <a href="/workplace-mediation/">workplace</a> conflicts</li>
 </ul>
 
+<h2 id="for-parents">Mediation for parents</h2>
+<p>For separating parents, mediation is more than a way to settle a dispute \u2014 it sets the tone for years of co-parenting ahead. Often called parenting or parent mediation, it keeps the focus on the children's needs rather than the grievances between the adults, and helps you build arrangements you can both live with. Because you design the plan together, you're far more likely to stick to it. For most parenting matters it's also a {cite("fcfcoa_fdr")} requirement before you can apply to court. <a href="/parenting-plan-mediation/">See parenting plan mediation \u2192</a> or read about <a href="/child-custody-mediation/">child custody mediation</a>.</p>
+
+<h2 id="compare">How it compares to other options</h2>
+<p>Mediation is one of several ways to resolve a family dispute. Seeing them side by side makes clear what mediation is \u2014 and what it isn't.</p>
+<figure class="tbl"><table><caption>Family mediation vs other ways to resolve a dispute</caption>
+<thead><tr><th>Option</th><th>Who decides</th><th>Binding?</th><th>Best for</th></tr></thead>
+<tbody>
+<tr><td>Mediation</td><td>You and your former partner</td><td>Once formalised</td><td>Most separating couples</td></tr>
+<tr><td>Collaborative law</td><td>The parties, with lawyers</td><td>Once formalised</td><td>Wanting legal support throughout</td></tr>
+<tr><td>Arbitration</td><td>A private arbitrator</td><td>Yes</td><td>Financial matters needing a decision</td></tr>
+<tr><td>Court</td><td>A judge</td><td>Yes</td><td>Safety risks or a party who won't engage</td></tr>
+</tbody></table></figure>
+
 <h2 id="cost-time">Cost and time</h2>
-<p>Most matters resolve in one or two sessions, often within a few weeks \u2014 versus one to three years in court. Costs are a fraction of litigation and usually shared between parties. <a href="/cost-of-divorce-in-australia/">See the full cost comparison \u2192</a></p>
+<p>Most matters resolve in one or two sessions, often within a few weeks \u2014 versus one to three years in court. Costs are a fraction of litigation and usually shared between parties. <a href="/how-much-does-mediation-cost/">See what mediation costs \u2192</a></p>
 """
  + inline_cta("Most disputes settle in one or two sessions. See how quickly yours could resolve \u2014 book today.")
  + """
