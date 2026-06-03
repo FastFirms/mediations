@@ -71,7 +71,7 @@ def build(slug, title, desc, eyebrow, h1, lede, ans, blocks, qa, crumb_name, cta
 build(
  "property-settlement-mediation",
  "Property Settlement Mediation | Divide Assets, No Court",
- "Resolve your property settlement through mediation — divide assets, debts and super fairly without court. Accredited mediators, fixed-fee, formalised in consent orders.",
+ "Resolve your property settlement through mediation — divide assets, debts and super fairly, then formalise it in consent orders. Fixed-fee, no court.",
  "Property &amp; financial settlements",
  "Property Settlement Mediation — divide assets <em>fairly and finally</em>.",
  "Separating means untangling a shared financial life — the home, savings, super, debts and businesses. Mediation lets you divide it all by agreement, quickly and privately, instead of handing the decision to a court after years of legal fees.",
@@ -85,7 +85,10 @@ build(
    <li><strong>Consider future needs</strong> — earning capacity, age, health, and who cares for the children.</li>
    <li><strong>Check it's just and equitable</strong> — that the overall split is fair in the circumstances.</li>
  </ol>
- <p>In mediation, your mediator helps you work through each step openly, so the outcome is grounded in the same principles a judge would apply — but reached in days, not years.</p>
+ <p>In mediation, your mediator helps you work through each step openly, so the outcome is grounded in the same principles a judge would apply — but reached in days, not years. The same four-step approach is set out in the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>.</p>
+
+ <h2>Full and frank disclosure comes first</h2>
+ <p>A fair settlement depends on both people putting all their cards on the table. Each of you has a <a href="https://www.fcfcoa.gov.au/fl/duty-disclosure" target="_blank" rel="noopener">duty of full and frank financial disclosure</a> — bank statements, payslips, tax returns, superannuation statements, and details of any businesses or trusts. Mediation actually makes this easier: instead of months of lawyers' letters chasing documents, the mediator sets a clear, shared list up front so you both arrive with the same picture. Without honest disclosure, any agreement can later be set aside, so getting it right protects you.</p>
 
  <h2>What can be included in a property settlement?</h2>
  <ul>
@@ -102,8 +105,23 @@ build(
    <p>After a divorce you generally have 12 months to finalise property matters, and de facto couples have two years from separation. Mediation is the fastest way to reach agreement within those windows. <a href="/de-facto-mediation/">See de facto property disputes →</a></p>
  </div>
 
- <h2>Why mediate rather than litigate your settlement?</h2>
- <p>Because a contested property case can consume a meaningful share of the very asset pool you're fighting over. Mediation keeps the money where it belongs — with you and your family — and lets you craft creative solutions a court can't, like staggered payouts or keeping the home until children finish school. Many family lawyers recommend it as the sensible first step. <a href="/property-settlement-mediation/">Once you agree, we formalise it in consent orders.</a></p>
+ <h2>Making your settlement binding: consent orders or a BFA</h2>
+ <p>A handshake agreement isn't enough — to be safe and final, a property settlement should be formalised. There are two routes, and your mediator helps you choose:</p>
+ <figure class="tbl"><table><caption>Two ways to make a property settlement legally binding</caption>
+ <thead><tr><th></th><th>Consent orders</th><th>Binding financial agreement (BFA)</th></tr></thead>
+ <tbody>
+ <tr><td>Approved by a court</td><td>Yes — a registrar checks it's just and equitable</td><td>No — a private contract between you</td></tr>
+ <tr><td>Independent legal advice</td><td>Not required</td><td>Required for each party</td></tr>
+ <tr><td>Typical cost</td><td>Lower (one court filing fee)</td><td>Higher (two sets of legal advice)</td></tr>
+ <tr><td>Best for</td><td>Most separating couples</td><td>Maximum flexibility or pre/during relationship</td></tr>
+ </tbody></table></figure>
+ <p>For most couples, <a href="/consent-orders-explained/">consent orders</a> are the simpler, lower-cost route. Where you want more flexibility, a <a href="/financial-agreements-mediation/">binding financial agreement</a> may suit. <a href="/bfa-or-consent-orders/">Compare the two in detail →</a></p>
+
+ <h2>Why mediate rather than go to court over your settlement?</h2>
+ <p>Because a contested property case can consume a meaningful share of the very asset pool you're dividing. Mediation keeps the money where it belongs — with you and your family — and lets you craft creative solutions a court can't, like staggered payouts or keeping the home until children finish school. Many family lawyers recommend it as the sensible first step, then we help you formalise the agreement in <a href="/consent-orders-explained/">consent orders</a>.</p>
+
+ <h2>How long does it take, and what does it cost?</h2>
+ <p>Most property matters settle in one or two mediation sessions over a few weeks, compared with the one to three years a contested case can take — and at a fraction of the cost. Because the fee is fixed and shared, you know what you're committing to up front. <a href="/how-much-does-mediation-cost/">See what mediation costs →</a></p>
  """,
  [("How long do I have to finalise a property settlement?",
    "After divorce you generally have 12 months to apply for property orders; de facto couples have two years from the date of separation. Mediation is the fastest way to reach a binding agreement inside these limits."),
