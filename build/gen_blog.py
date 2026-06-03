@@ -19,7 +19,10 @@ def inline_cta(text, btn="Book a free consultation"):
 </div>"""
 
 def callout(h, p):
-    return f'<div class="callout"><h3>{h}</h3><p>{p}</p></div>'
+    # Decorative sage callout boxes removed site-wide — they rendered as a large
+    # green panel with little informational value. Kept as a no-op so the many
+    # existing callout(...) calls across the batch files stay valid.
+    return ''
 
 def key_takeaway(text):
     return f'<div class="answer reveal"><p><strong>Key takeaway:</strong> {text}</p></div>'
@@ -43,6 +46,8 @@ POST_CSS = """
 .post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
 .post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
 .post-body a:hover{color:var(--terra)}
+/* Buttons inside article body must keep white label, not the green underlined link style */
+.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
 .post-cta{margin:36px 0}
 .post-cta-inner{background:linear-gradient(135deg,var(--sage-deep),var(--sage));color:var(--cream);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--cream);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}

@@ -162,6 +162,8 @@
 .post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
 .post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
 .post-body a:hover{color:var(--terra)}
+/* Buttons inside article body must keep white label, not the green underlined link style */
+.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
 .post-cta{margin:36px 0}
 .post-cta-inner{background:linear-gradient(135deg,var(--sage-deep),var(--sage));color:var(--cream);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--cream);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}
@@ -239,7 +241,7 @@
 
 <h2 id="conciliation">What is conciliation?</h2>
 <p>A conciliator takes a more active role. As well as facilitating, a conciliator often has subject-matter expertise and may advise on the issues, evaluate positions, and actively suggest possible solutions. Conciliation is common in areas like workplace and administrative disputes — the <a href='https://www.fwc.gov.au/' target='_blank' rel='noopener'>Fair Work Commission</a> uses it widely — for example, the <a href="/workplace-mediation-guide/">Fair Work Commission</a> uses conciliation in many matters. The conciliator still doesn't impose a decision, but they steer more directly toward a particular resolution.</p>
-<div class="callout"><h3>Neither one decides for you</h3><p>A crucial point: neither a mediator nor a conciliator can impose a binding decision. If you want a neutral third party to actually decide the outcome, that's arbitration — a different process.</p></div>
+
 <h2 id="key-difference">The key difference</h2>
 <figure class="tbl"><table><caption>Mediation vs conciliation</caption>
 <thead><tr><th>Feature</th><th>Mediation</th><th>Conciliation</th></tr></thead>

@@ -31,7 +31,7 @@ post("property-settlement-mediation-guide",
 
 <h2 id="prepare">How to prepare</h2>
 <ol>
-  <li><strong>Gather full financial disclosure</strong> \u2014 both parties must disclose everything; incomplete disclosure derails mediation.</li>
+  <li><strong>Gather full financial disclosure</strong> \u2014 both parties have a <a href='https://www.fcfcoa.gov.au/fl/duty-disclosure' target='_blank' rel='noopener'>duty of full and frank financial disclosure</a>, so disclose everything. Hiding assets doesn't just derail the mediation; it can see a later settlement overturned.</li>
   <li><strong>Build the asset pool picture</strong> \u2014 list all assets, debts and superannuation, joint and individual.</li>
   <li><strong>Get valuations where needed</strong> \u2014 for property, businesses, or defined-benefit super.</li>
   <li><strong>Know your priorities</strong> \u2014 separate what you genuinely need from what you'd prefer.</li>

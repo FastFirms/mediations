@@ -162,6 +162,8 @@
 .post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
 .post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
 .post-body a:hover{color:var(--terra)}
+/* Buttons inside article body must keep white label, not the green underlined link style */
+.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
 .post-cta{margin:36px 0}
 .post-cta-inner{background:linear-gradient(135deg,var(--sage-deep),var(--sage));color:var(--cream);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--cream);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}
@@ -250,7 +252,7 @@
 
 <h2 id="binding">Is a parenting plan legally binding?</h2>
 <p>This is the most important thing to understand: a parenting plan is <strong>not</strong> directly legally enforceable. If one parent doesn't follow it, you can't take them to court for "breaching" it the way you could with an order. However, it's far from worthless — if a parenting dispute later goes to court, the court will consider the most recent parenting plan and the arrangements in it. To make arrangements enforceable, you formalise them as <a href="/consent-orders-explained/">consent orders</a>.</p>
-<div class="callout"><h3>Plan first, orders later — a common path</h3><p>Many families start with a parenting plan to test what works, then convert the arrangements into consent orders once they've settled. You get flexibility early and enforceability once you're confident.</p></div>
+
 <h2 id="vs-orders">Parenting plan vs parenting order</h2>
 <figure class="tbl"><table><caption>Parenting plan vs parenting order</caption>
 <thead><tr><th>Feature</th><th>Parenting plan</th><th>Parenting order</th></tr></thead>
