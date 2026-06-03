@@ -22,6 +22,16 @@ post("how-much-does-mediation-cost",
  + f"""
 <h2 id="how-much">How much does it actually cost?</h2>
 <p>Private family mediation generally costs somewhere between $2,000 and $7,000 in total, depending on the provider and complexity \u2014 often around $3,000 to $4,500 for a full day of mediation plus the agreement. Crucially, that's usually <em>shared</em> between the parties, so each person's share is lower again. Compare that to the {cite("fcfcoa_fees")} court fees plus legal costs of litigation, and the difference is dramatic.</p>
+<figure class="tbl"><table><caption>Typical family mediation costs in Australia (indicative, 2026)</caption>
+<thead><tr><th>Item</th><th>Typical total cost</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Intake / pre-mediation session</td><td>$200\u2013$500 per person</td><td>Separate confidential meeting with the mediator</td></tr>
+<tr><td>Half-day mediation</td><td>$1,500\u2013$3,000</td><td>Suits simpler parenting or property matters</td></tr>
+<tr><td>Full-day mediation</td><td>$3,000\u2013$5,000</td><td>Most common; usually shared between the parties</td></tr>
+<tr><td>Section 60I certificate</td><td>Often included</td><td>Issued for parenting matters where required</td></tr>
+<tr><td>Consent orders drafting</td><td>$700\u2013$2,500</td><td>Optional step to make the agreement binding</td></tr>
+</tbody></table></figure>
+<p>These are indicative ranges, not a quote \u2014 your actual cost depends on the factors below, and a good provider gives you a clear fixed fee before you start.</p>
 """
  + inline_cta("Want a clear, fixed quote for your situation? Book a consultation and we'll explain exactly what it costs.")
  + """
@@ -44,7 +54,15 @@ post("how-much-does-mediation-cost",
 <p>Cost should never be a barrier to resolving a family dispute. Government-funded {cite("frc")} (Family Relationship Centres) offer family dispute resolution at free or low cost, particularly for parenting matters, with fees often based on income. These services are a valuable option, though private mediation typically offers more flexibility, faster scheduling, and capacity for complex financial matters.</p>
 
 <h2 id="vs-court">How it compares to court</h2>
-<p>This is the comparison that matters most. A contested court case can cost <em>each</em> party tens of thousands of dollars \u2014 sometimes over $100,000 in complex matters \u2014 over one to three years. Mediation resolves the same dispute for a few thousand dollars total, in weeks. The money saved stays with your family instead of funding a court battle. <a href="/cost-of-divorce-in-australia/">See the full cost of divorce breakdown \u2192</a></p>
+<p>This is the comparison that matters most. A contested court case can cost <em>each</em> party tens of thousands of dollars \u2014 sometimes over $100,000 in complex matters \u2014 over one to three years. Mediation resolves the same dispute for a few thousand dollars total, in weeks. The money saved stays with your family instead of funding a prolonged court case. <a href="/cost-of-divorce-in-australia/">See the full cost of divorce breakdown \u2192</a></p>
+<figure class="tbl"><table><caption>Mediation vs a contested court case</caption>
+<thead><tr><th></th><th>Mediation</th><th>Contested court case</th></tr></thead>
+<tbody>
+<tr><td>Typical cost</td><td>A few thousand dollars total, often shared</td><td>Tens of thousands per side</td></tr>
+<tr><td>Timeframe</td><td>Weeks</td><td>One to three years</td></tr>
+<tr><td>Who decides</td><td>You and your former partner</td><td>A judge</td></tr>
+<tr><td>Privacy</td><td>Private and confidential</td><td>Public court process</td></tr>
+</tbody></table></figure>
 """
  + inline_cta("Why spend tens of thousands fighting when mediation costs a fraction? Book a consultation today.")
  + """
