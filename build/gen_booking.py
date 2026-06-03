@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, org_schema,
                        breadcrumb_schema, PHONE, PHONE_HREF, SERVICES)
-OUT="/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 opts="".join(f'<option value="{esc(n)}">{esc(n)}</option>' for _,n,_ in SERVICES)
 opts+='<option value="Estate dispute">Estate dispute</option><option value="Commercial dispute">Commercial dispute</option><option value="Other / not sure">Other / not sure</option>'

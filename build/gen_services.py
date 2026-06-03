@@ -6,7 +6,7 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, service_schema,
                        BOOK_URL, PHONE, PHONE_HREF)
 
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def phero(eyebrow, h1, lede):
     return f"""<main id="main">
@@ -414,7 +414,7 @@ build(
  </ul>
 
  <h2>How do consent orders work?</h2>
- <p>Once you reach agreement (often through mediation), an application for consent orders is prepared and lodged with the court. A registrar reviews it to ensure parenting arrangements are in the children's best interests and property division is just and equitable. If satisfied, the court makes the orders — no hearing, no appearance.</p>
+ <p>Once you reach agreement (often through mediation), an application for consent orders is prepared and lodged with the court. A registrar reviews it to ensure parenting arrangements are in the children's best interests and property division is just and equitable. If satisfied, the court makes the orders — no hearing, no appearance. For a step-by-step walkthrough of the process, costs and timeframes, see our <a href="/consent-orders-explained/">consent orders explained guide</a>.</p>
 
  <div class="callout">
    <h3>Consent orders vs a parenting plan vs a BFA</h3>

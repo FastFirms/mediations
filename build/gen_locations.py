@@ -7,7 +7,7 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        BOOK_URL, PHONE, PHONE_HREF, DOMAIN, OFFICES, SERVICES)
 from location_data import LOCATION_DATA
 
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEAREST = {"NSW":"Sydney","VIC":"Melbourne","QLD":"Brisbane","WA":"Perth",
            "SA":"Melbourne","ACT":"Sydney","TAS":"Melbourne","NT":"Brisbane"}
 

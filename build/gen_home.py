@@ -6,11 +6,22 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, service_schema,
                        BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
 
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Pre-launch staging guard: the homepage is intentionally kept out of search
+# indexes while the site is on the staging domain. head() always emits
+# "index, follow", so we force the homepage back to noindex on every build to
+# avoid silently exposing staging. REMOVE this guard at launch (set to False)
+# when the homepage should be indexable on the production domain.
+HOMEPAGE_NOINDEX = os.environ.get("MED_HOMEPAGE_INDEX") != "1"
 
 def write(slug, doc):
     if slug == "":
         path = OUT
+        if HOMEPAGE_NOINDEX:
+            doc = doc.replace(
+                '<meta name="robots" content="index, follow, max-image-preview:large">',
+                '<meta name="robots" content="noindex, nofollow">')
     else:
         path = os.path.join(OUT, slug); os.makedirs(path, exist_ok=True)
     with open(os.path.join(path, "index.html"), "w") as f:

@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
                        BOOK_URL, PHONE, PHONE_HREF)
-OUT="/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_article=True):
     extra=article_schema(crumb,desc) if is_article else None
@@ -81,7 +81,7 @@ build("bfa-or-consent-orders",
  <h2>What's the difference between a BFA and consent orders?</h2>
  <p>Both make a property settlement legally binding, but they work differently:</p>
  <ul>
-   <li><strong><a href="/consent-orders/">Consent orders</a></strong> are an agreement approved by the Federal Circuit and Family Court. A registrar checks the division is just and equitable, then makes binding orders — without a hearing. They're generally simpler and lower-cost.</li>
+   <li><strong><a href="/consent-orders/">Consent orders</a></strong> are an agreement approved by the Federal Circuit and Family Court. A registrar checks the division is just and equitable, then makes binding orders — without a hearing. They're generally simpler and lower-cost. See our <a href="/consent-orders-explained/">full guide to consent orders</a>.</li>
    <li><strong><a href="/financial-agreements-mediation/">Binding financial agreements (BFAs)</a></strong> are private contracts between the parties. They offer more flexibility and privacy and can be made before, during or after a relationship — but each party must receive independent legal advice for the agreement to be binding.</li>
  </ul>
  <h2>Which should you choose?</h2>

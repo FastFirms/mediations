@@ -8,7 +8,7 @@ from authority_sources import cite
 # ---- CONSENT ORDERS EXPLAINED ----
 post("consent-orders-explained",
  "Consent Orders Explained: How They Work in Australia (2026)",
- "What are consent orders, how do you apply, how long do they take and what do they cost? A complete 2026 guide to making your agreement legally binding without going to court.",
+ "What are consent orders, how do you apply, and what do they cost? A 2026 guide to making your separation agreement legally binding without going to court.",
  "Consent orders",
  "Consent Orders Explained: <em>Making It Legally Binding</em>",
  "Consent orders turn an agreement you've already reached into legally binding court orders \u2014 without anyone setting foot in a courtroom. This guide explains exactly what they are, how to apply, what they cost, how long they take, and how to change or enforce them.",
@@ -43,6 +43,18 @@ post("consent-orders-explained",
 """
  + callout("Consent orders vs a binding financial agreement",
    "Both make a financial settlement binding, but consent orders are court-approved (and generally cheaper), while a binding financial agreement is a private contract requiring independent legal advice for each party. Not sure which fits? See our comparison guide.")
+ + """
+<figure class="tbl"><table><caption>Consent orders vs a binding financial agreement vs a contested court hearing</caption>
+<thead><tr><th>&nbsp;</th><th>Consent orders</th><th>Binding financial agreement</th><th>Contested hearing</th></tr></thead>
+<tbody>
+<tr><td>Legally binding</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Court approves the terms</td><td>Yes (on the papers)</td><td>No (private contract)</td><td>Yes (a judge decides)</td></tr>
+<tr><td>Independent legal advice required</td><td>No</td><td>Yes, for each party</td><td>Usually represented</td></tr>
+<tr><td>Can cover parenting</td><td>Yes</td><td>No (financial only)</td><td>Yes</td></tr>
+<tr><td>Typical cost</td><td>~$200 filing fee + preparation</td><td>Higher (two lawyers advise)</td><td>Tens of thousands</td></tr>
+<tr><td>You keep control of the outcome</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+</tbody></table></figure>
+"""
  + f"""
 <h2 id="cost">What do consent orders cost?</h2>
 <p>The court filing fee for an Application for Consent Orders is modest \u2014 around $200 \u2014 set out in the {cite("fcfcoa_fees")}. On top of that you may have the cost of preparing the documents. Compared with the tens of thousands a contested property case can cost, consent orders are an inexpensive way to lock in certainty. <a href="/our-fee-structure/">See our transparent fees \u2192</a></p>
