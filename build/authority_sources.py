@@ -11,6 +11,7 @@ AUTHORITY = {
  "fcfcoa_fdr": ("FCFCOA family dispute resolution", "https://www.fcfcoa.gov.au/fl/fdr"),
  "fcfcoa_disclosure": ("FCFCOA duty of disclosure", "https://www.fcfcoa.gov.au/fl/duty-disclosure"),
  "fcfcoa_consent_orders": ("FCFCOA consent orders", "https://www.fcfcoa.gov.au/fl/consent-orders"),
+ "comcourts_portal": ("Commonwealth Courts Portal", "https://www.comcourts.gov.au/"),
  "family_court_wa": ("Family Court of Western Australia", "https://www.familycourt.wa.gov.au/"),
  # Government services
  "services_australia_cs": ("Services Australia \u2014 Child Support", "https://www.servicesaustralia.gov.au/child-support"),
