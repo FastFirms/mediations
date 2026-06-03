@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Build-time check: every blog post must have >=2 authoritative external links."""
 import re, glob, os
-SITE="/home/claude/mediations/site"
+SITE = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUTH_DOMAINS=['gov.au','abs.','austlii','.edu','aifs.gov','1800respect','psychiatry.org','msb.org','fwc.gov','ato.gov']
 
 # blog posts only (not service/location pages)
 BLOG=['cost-of-divorce-in-australia','mediation-with-a-narcissist','consent-orders-explained','property-settlement-after-separation','how-to-get-a-divorce-in-australia-a-step-by-step-guide','binding-financial-agreements-guide','parenting-plans-guide','what-is-mediation-in-family-law','mediate-or-litigate','child-custody-mediation','domestic-violence-and-family-law','separation-guide','de-facto-relationships-guide','spousal-maintenance-guide','child-support-guide','is-family-law-mediation-compulsory','fathers-rights','superannuation-and-divorce','high-conflict-mediation','mothers-rights','grandparents-rights','shuttle-mediation-guide','conciliation-vs-mediation','workplace-mediation-guide','property-settlement-mediation-guide','business-in-divorce','family-court-process','divorce-without-a-lawyer','how-long-does-a-divorce-take','how-much-does-mediation-cost','arbitration-in-family-law','pets-and-family-law','same-sex-family-law','changes-to-family-law-act-2025','stepparent-rights','surrogacy-laws','can-you-record-your-ex','best-divorce-lawyers-sydney',
-      'what-am-i-entitled-to-in-a-separation-in-australia','how-long-does-mediation-take']
+      'what-am-i-entitled-to-in-a-separation-in-australia','how-long-does-mediation-take','parental-alienation-australia']
 
 def content_only(s):
     s=re.sub(r'<header.*?</header>','',s,flags=re.S)

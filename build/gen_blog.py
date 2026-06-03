@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
                        BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
-OUT="/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ---- Inline CTA components that punctuate blog content ----
 def inline_cta(text, btn="Book a free consultation"):

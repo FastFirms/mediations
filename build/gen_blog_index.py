@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, cta_band,
                        org_schema, breadcrumb_schema, BOOK_URL, PHONE_HREF, PHONE, DOMAIN)
-OUT="/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Published posts: (slug, category, title, blurb)
 POSTS = [
@@ -48,6 +48,7 @@ POSTS = [
  ("surrogacy-laws","Legal updates","Surrogacy Laws in Australia","Altruistic vs commercial surrogacy, legal parentage, and the state-by-state rules."),
  ("can-you-record-your-ex","Legal updates","Can You Record Your Ex?","Surveillance laws, whether recordings can be used in court, and what to do instead."),
  ("best-divorce-lawyers-sydney","Divorce","Best Divorce Lawyers in Sydney","When you need a lawyer, when mediation is better, and how to choose the right help."),
+ ("parental-alienation-australia","Parenting","Parental Alienation in Australia","What it is, how the law treats it, telling it apart from justified reluctance, and rebuilding the relationship without court."),
 ]
 
 CATS = ["All","Costs &amp; fees","The process","Property &amp; finances","High-conflict","Parenting"]

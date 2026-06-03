@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from templates import DOMAIN, SERVICES
 from location_data import LOCATION_DATA
 
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATE = "2026-05-28"
 
 urls = [("", "1.0", "weekly")]
@@ -24,7 +24,7 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "is-family-law-mediation-compulsory","fathers-rights","superannuation-and-divorce","high-conflict-mediation",
         "mothers-rights","grandparents-rights","shuttle-mediation-guide","conciliation-vs-mediation","workplace-mediation-guide",
         "property-settlement-mediation-guide","business-in-divorce","family-court-process","divorce-without-a-lawyer","how-long-does-a-divorce-take",
-        "how-much-does-mediation-cost","arbitration-in-family-law","pets-and-family-law","same-sex-family-law","changes-to-family-law-act-2025","stepparent-rights","surrogacy-laws","can-you-record-your-ex","best-divorce-lawyers-sydney","our-mediators","memberships","mediation-podcast","books"]
+        "how-much-does-mediation-cost","arbitration-in-family-law","pets-and-family-law","same-sex-family-law","changes-to-family-law-act-2025","stepparent-rights","surrogacy-laws","can-you-record-your-ex","best-divorce-lawyers-sydney","parental-alienation-australia","our-mediators","memberships","mediation-podcast","books"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:
