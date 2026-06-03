@@ -120,7 +120,7 @@ build(
 build(
  "parenting-plan-mediation",
  "Parenting Plan Mediation | Custody Agreements, No Court",
- "Create a workable parenting plan through mediation. Agree on living arrangements, time and decisions for your children — faster and cheaper than a custody court battle.",
+ "Parenting plan mediation helps separated parents agree on living arrangements, time and decisions for the children — calmer than a custody court case.",
  "Parenting &amp; children's arrangements",
  "Parenting Plan Mediation — built around <em>your children</em>.",
  "The hardest part of separating is working out arrangements for the kids. Mediation gives you a calm, structured way to agree on living arrangements, time with each parent and how decisions get made — putting your children first and keeping the choice in your hands.",
@@ -135,9 +135,32 @@ build(
    <li>How parents will communicate and resolve future disagreements</li>
    <li>Arrangements for travel, including overseas</li>
  </ul>
+ <p>For a full checklist of what to include, see our <a href="/parenting-plan-template/">parenting plan template guide</a>.</p>
+
+ <h2>How does parenting plan mediation work?</h2>
+ <p>Mediation is a structured conversation guided by a neutral, accredited practitioner. It usually runs in a few stages:</p>
+ <ul>
+   <li><strong>Intake</strong> — each parent meets the mediator separately so the issues, and any safety concerns, are understood before you begin.</li>
+   <li><strong>Joint sessions</strong> — you work through each part of the plan with the mediator keeping the focus on the children, not the past.</li>
+   <li><strong>Drafting</strong> — the agreement is written up as a clear parenting plan both parents sign.</li>
+   <li><strong>Formalising (optional)</strong> — if you want it enforceable, the plan is converted into <a href="/consent-orders-explained/">consent orders</a>.</li>
+ </ul>
+ <p>If being in the same room is difficult, sessions can run in separate rooms ('shuttle' mediation) or <a href="/online-divorce/">online by video</a>.</p>
+
+ <figure class="tbl"><table><caption>Parenting plan vs consent orders vs a contested court case</caption>
+ <thead><tr><th></th><th>Parenting plan</th><th>Consent orders</th><th>Contested court case</th></tr></thead>
+ <tbody>
+ <tr><td>Legally enforceable</td><td>No, but courts consider it</td><td>Yes</td><td>Yes</td></tr>
+ <tr><td>Who decides</td><td>The parents</td><td>The parents (court approves)</td><td>A judge</td></tr>
+ <tr><td>Typical timeframe</td><td>One or two sessions</td><td>Weeks once agreed</td><td>One to three years</td></tr>
+ <tr><td>Flexibility to change</td><td>High — by agreement</td><td>Needs a new application</td><td>Needs a new application</td></tr>
+ </tbody></table></figure>
 
  <h2>Is a parenting plan legally binding?</h2>
- <p>A parenting plan itself is not legally enforceable, but it carries real weight — a court will consider it if a dispute later arises. If you want a binding outcome, your agreement can be turned into <a href="/consent-orders/">consent orders</a>, which are enforceable. Many families start with a parenting plan and formalise it once arrangements have settled.</p>
+ <p>A parenting plan itself is not legally enforceable, but it carries real weight — a court will consider it if a dispute later arises. If you want a binding outcome, your agreement can be turned into <a href="/consent-orders-explained/">consent orders</a>, which are enforceable. Many families start with a parenting plan and formalise it once arrangements have settled.</p>
+
+ <h2>The children's best interests come first</h2>
+ <p>Whatever you agree, the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> requires arrangements to be made in the best interests of the child. Reforms that took effect in 2024 simplified the factors a court weighs and put the safety and developmental needs of children at the centre. A good plan reflects each child's age and stage — younger children usually need shorter, more frequent contact, while teenagers need arrangements that respect school, friends and activities. The <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a> service and <a href="https://aifs.gov.au/" target="_blank" rel="noopener">Australian Institute of Family Studies</a> are useful starting points for the evidence on what helps children adjust.</p>
 
  <div class="callout">
    <h3>Children do better when parents agree</h3>
@@ -145,7 +168,10 @@ build(
  </div>
 
  <h2>Do we have to mediate before going to court?</h2>
- <p>For most parenting matters, yes. Under the Family Law Act you must make a genuine attempt at family dispute resolution before applying for parenting orders, unless an exemption applies. You'll need a <a href="/section-60i-certificates/">Section 60I certificate</a> to file — which we can issue as part of your mediation.</p>
+ <p>For most parenting matters, yes. Under the Family Law Act you must make a genuine attempt at <a href="https://www.fcfcoa.gov.au/fl/fdr" target="_blank" rel="noopener">family dispute resolution</a> before applying for parenting orders, unless an exemption applies. You'll need a <a href="/section-60i-certificates/">Section 60I certificate</a> to file — which we can issue as part of your mediation.</p>
+
+ <h2>How long does it take, and what does it cost?</h2>
+ <p>Most families reach a workable parenting plan in one or two sessions over a few weeks — a fraction of the time and cost of a contested parenting case, which can run for one to three years. Keeping the matter out of court also keeps the decisions with the people who know the children best. <a href="/how-much-does-mediation-cost/">See what mediation costs →</a> or read more on <a href="/child-custody-mediation/">child custody mediation</a>.</p>
  """,
  [("Is a parenting plan legally enforceable?",
    "A parenting plan is not directly enforceable, but a court will take it into account in any later dispute. To make arrangements binding, they can be formalised as consent orders, which are enforceable."),
@@ -154,7 +180,11 @@ build(
   ("Do both parents have to agree to mediation?",
    "Mediation is voluntary, but both parents are strongly encouraged to attend, and a genuine attempt is generally required before court. If one parent refuses, the other can still obtain a Section 60I certificate."),
   ("Can children have a say in the parenting plan?",
-   "Where appropriate, child-inclusive practices can ensure children's views are heard in an age-appropriate way, without putting them in the middle of the dispute.")],
+   "Where appropriate, child-inclusive practices can ensure children's views are heard in an age-appropriate way, without putting them in the middle of the dispute."),
+  ("How long does parenting mediation take?",
+   "Most families reach a workable parenting plan in one or two sessions over a few weeks — far faster than a contested parenting case, which can take one to three years."),
+  ("What happens in parenting mediation?",
+   "Each parent first meets the mediator separately, then joint sessions work through living arrangements, time-sharing and decision-making with the focus kept on the children. The agreement is written up as a parenting plan you both sign.")],
  "Parenting Plan Mediation",
  "Put your children first — <em>starting today</em>.",
  "Book a fixed-fee consultation and let an accredited family mediator help you build a parenting plan that works for everyone who matters most.")
