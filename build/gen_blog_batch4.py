@@ -178,16 +178,33 @@ post("child-custody-mediation",
  + inline_cta("Working out arrangements for your children? A child-focused mediator can help you agree. Book a consultation.")
  + f"""
 <h2 id="best-interests">The best-interests test</h2>
-<p>Every parenting decision is governed by one principle: the best interests of the child. The {cite("family_law_act")} sets out the factors a court (and therefore a mediator) considers \u2014 above all, the benefit of a meaningful relationship with both parents, balanced against the need to protect the child from harm. Where those two collide, safety always wins.</p>
+<p>Every parenting decision is governed by one principle: the best interests of the child. The {cite("family_law_act")} sets out the factors a court (and therefore a mediator) considers \u2014 above all, the benefit of a meaningful relationship with both parents, balanced against the need to protect the child from harm. Where those two collide, safety always wins. Reforms that took effect in 2024 streamlined these factors and placed the child's safety and needs at the centre.</p>
+<figure class="tbl"><table><caption>What the best-interests test weighs</caption>
+<thead><tr><th>Factor</th><th>What it looks at</th></tr></thead>
+<tbody>
+<tr><td>Safety</td><td>Protecting the child from family violence, abuse or neglect \u2014 the overriding consideration</td></tr>
+<tr><td>The child's views</td><td>What the child wants, weighed for their age and maturity</td></tr>
+<tr><td>Developmental needs</td><td>The child's emotional, psychological and developmental needs</td></tr>
+<tr><td>Capacity to provide</td><td>Each parent's ability to meet those needs</td></tr>
+<tr><td>Benefit of both parents</td><td>The value of a meaningful relationship with each parent, where safe</td></tr>
+</tbody></table></figure>
 
 <h2 id="how-works">How custody mediation works</h2>
-<p>Child custody mediation is a form of <a href="/family-law-mediation/">family dispute resolution</a>. A neutral mediator helps both parents work through living arrangements, time-sharing, holidays, schooling and communication, keeping the focus on the children. If agreement is reached, it's recorded in a <a href="/parenting-plans-guide/">parenting plan</a> and can be formalised as <a href="/consent-orders-explained/">consent orders</a>. For most parenting disputes, this process is <em>required</em> before you can apply to court. <a href="/section-60i-certificates/">You'll need a Section 60I certificate \u2192</a></p>
+<p>Child custody mediation is a form of <a href="/family-law-mediation/">family dispute resolution</a>. A neutral mediator helps both parents work through living arrangements, time-sharing, holidays, schooling and communication, keeping the focus on the children. If agreement is reached, it's recorded in a <a href="/parenting-plans-guide/">parenting plan</a> and can be formalised as <a href="/consent-orders-explained/">consent orders</a>. For most parenting disputes, this {cite("fcfcoa_fdr")} step is <em>required</em> before you can apply to court. <a href="/section-60i-certificates/">You'll need a Section 60I certificate \u2192</a></p>
 """
  + callout("Family dispute resolution is usually compulsory",
    "Except where exemptions apply (such as family violence or urgency), parents must attempt family dispute resolution and obtain a Section 60I certificate before filing a parenting application in court.")
  + """
 <h2 id="5050">Is care always 50/50?</h2>
 <p>No. There is no automatic right to equal (50/50) time. While the law supports children maintaining meaningful relationships with both parents where safe, the actual arrangement depends entirely on the child's best interests and what's practical \u2014 distance, work, the child's age and routine all matter. Mediation lets you design an arrangement that genuinely fits your family rather than a one-size-fits-all formula.</p>
+<figure class="tbl"><table><caption>Common care arrangements parents agree in mediation</caption>
+<thead><tr><th>Pattern</th><th>How it works</th><th>Often suits</th></tr></thead>
+<tbody>
+<tr><td>Week-about</td><td>Alternating full weeks with each parent</td><td>School-age children, parents living nearby</td></tr>
+<tr><td>5-2-2-5</td><td>Fixed weekdays with each parent, alternating weekends</td><td>Younger children needing frequent contact</td></tr>
+<tr><td>Alternate weekends</td><td>One parent primary, the other every second weekend plus some weeknights</td><td>Where distance or work limits midweek changeovers</td></tr>
+<tr><td>Tailored</td><td>Any pattern that fits the child's routine and the family's logistics</td><td>Most families \u2014 the point of mediation</td></tr>
+</tbody></table></figure>
 
 <h2 id="fathers-mothers">Do mothers or fathers get preference?</h2>
 <p>The law gives no preference based on gender. Both parents start on equal footing, and outcomes turn on the children's best interests and each parent's circumstances \u2014 not on whether they're mum or dad. <a href="/fathers-rights/">See fathers' rights after separation \u2192</a></p>
