@@ -261,8 +261,20 @@ post("domestic-violence-and-family-law",
 <h2 id="what-is-fv">What counts as family violence?</h2>
 <p>Family violence is broader than physical harm. It includes behaviour that makes a family member fear for their safety or wellbeing, such as: physical or sexual assault; threats and intimidation; emotional or psychological abuse; financial control or deprivation; coercive control; stalking; and exposing children to any of these. Recognising the full scope matters, because non-physical abuse is just as relevant in family law.</p>
 
-<h2 id="protection-orders">Protection orders: AVOs and DVOs</h2>
-<p>Protection orders go by different names across states \u2014 Apprehended Violence Orders (AVOs) in NSW, Domestic Violence Orders (DVOs) in Queensland, Intervention Orders in Victoria and SA \u2014 but they do the same thing: legally restrict an abusive person's behaviour to protect you. Breaching one is a criminal offence. These orders operate alongside family law proceedings and can shape parenting arrangements.</p>
+<h2 id="protection-orders">Protection orders: what is a DVO (or AVO)?</h2>
+<p>A <strong>Domestic Violence Order (DVO)</strong> is a court order that legally restricts how a person can behave towards someone they have a domestic or family relationship with, in order to protect that person from violence, threats, harassment or intimidation. It is a civil order \u2014 not a criminal charge \u2014 but <strong>breaching it is a criminal offence</strong> that can lead to arrest, fines or imprisonment.</p>
+<p>The name differs by state and territory, but the protection is the same. A DVO can include conditions such as the person not approaching or contacting you, staying away from your home or workplace, and not being violent or threatening.</p>
+<figure class="tbl"><table><caption>What protection orders are called across Australia</caption>
+<thead><tr><th>State / Territory</th><th>Name of order</th></tr></thead>
+<tbody>
+<tr><td>NSW</td><td>Apprehended Domestic Violence Order (ADVO / AVO)</td></tr>
+<tr><td>Queensland, NT</td><td>Domestic Violence Order (DVO)</td></tr>
+<tr><td>Victoria</td><td>Family Violence Intervention Order</td></tr>
+<tr><td>South Australia</td><td>Intervention Order</td></tr>
+<tr><td>WA</td><td>Family Violence Restraining Order (FVRO)</td></tr>
+<tr><td>Tasmania, ACT</td><td>Family Violence Order (FVO)</td></tr>
+</tbody></table></figure>
+<p>You can apply for a DVO through the police or your local Magistrates Court, and police can also apply on your behalf or issue an interim order in an emergency. An order can be made urgently and last for a set period, often a year or more. These orders operate alongside family law proceedings and can shape parenting arrangements.</p>
 """
  + callout("Protection orders and parenting orders interact",
    "A protection order can affect existing or proposed parenting arrangements. Courts work to ensure parenting orders don't expose anyone to violence \u2014 the two systems are designed to work together for safety.")
@@ -283,7 +295,11 @@ post("domestic-violence-and-family-law",
 <p class="source-note">If you are in immediate danger, call 000. Support: 1800RESPECT (1800 737 732), available 24 hours.</p>
 """
  ,
- [("What counts as family violence in Australia?",
+ [("What is a DVO?",
+   "A Domestic Violence Order is a civil court order that legally restricts how a person can behave towards a family member, to protect them from violence, threats or harassment. Breaching a DVO is a criminal offence. It's called a DVO in Queensland and the NT, an AVO in NSW, and an Intervention or Family Violence Order elsewhere."),
+  ("How do you get a DVO?",
+   "You can apply through the police or your local Magistrates Court, and police can apply on your behalf or issue an interim order in an emergency. Orders can be made urgently and typically last a year or more."),
+  ("What counts as family violence in Australia?",
    "More than physical harm \u2014 it includes threats, emotional and psychological abuse, financial control, coercive control, stalking, and exposing children to violence."),
   ("What is the difference between an AVO and a DVO?",
    "They're the same kind of protection order under different state names \u2014 AVO in NSW, DVO in Queensland, Intervention Order in Victoria and SA. All legally restrict an abusive person's behaviour."),
