@@ -69,6 +69,15 @@ python3 gen_meta.py            # only if the set of URLs changed
 - **`gen_missing_pages.py`, `gen_services_v2/v3/v4.py`** — superseded scratch generators; not
   the source of any live page. Ignore them.
 
+## The site-wide staging noindex (vercel.json) — do not touch
+`vercel.json` at the repo root sets `X-Robots-Tag: noindex, nofollow` on `source: "/(.*)"`,
+i.e. on every response of every Vercel deployment (staging and branch previews). This is the
+authoritative, site-wide lock that keeps the pre-launch site out of search indexes, and it
+overrides the per-page `index, follow` meta tags. **Never edit or delete `vercel.json` during
+SEO work.** The per-page meta tags and the permissive `robots.txt` are launch-ready settings
+that this header intentionally overrides for now; flipping the site to indexable is a single
+deliberate launch step (adjust/remove the header), not a side effect of optimising a page.
+
 ## The homepage noindex guard
 The staging homepage is deliberately `noindex, nofollow` (kept out of search until launch).
 `head()` always emits `index, follow`, so `gen_home.py` now **forces the homepage back to

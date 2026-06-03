@@ -118,9 +118,17 @@ optimised page live but private. The staging site updates only when the user mer
 Never force-push and never push to `main` without the user explicitly asking.
 
 ## Guarded cases (do not get surprised by these)
-- **The homepage is deliberately `noindex, nofollow` on staging.** `gen_home.py` now preserves
-  that on every build via a staging guard; do not undo it. Making the homepage indexable is a
-  launch decision, not an SEO edit — see `references/generator-map.md`.
+- **The whole staging site is held `noindex` by `vercel.json`.** It sets an
+  `X-Robots-Tag: noindex, nofollow` HTTP header on every path (`/(.*)`), which applies to all
+  pages and all Vercel deployments (staging *and* branch previews) and overrides the per-page
+  meta tags. **Never edit or remove `vercel.json`** as part of SEO work — doing so would expose
+  the entire staging site to search engines. The in-HTML `index, follow` meta tags and the
+  permissive `robots.txt` are the *launch-ready* settings, deliberately overridden by this
+  header until launch. Making the site indexable is a single, intentional launch step
+  (remove/adjust the header), never a side effect of optimising a page.
+- **The homepage also carries a belt-and-braces `noindex, nofollow` meta tag.** `gen_home.py`
+  preserves it on every build via a staging guard; do not undo it. Making the homepage
+  indexable is a launch decision, not an SEO edit — see `references/generator-map.md`.
 - **`gen_migration.py` is stale and destructive** (emits 33 of 245 redirects). Never run it;
   edit `redirects.htaccess` / `url-migration-map.csv` by hand (rule R7).
 - **`gen_booking.py` is out of sync** with the hand-wired live booking page (Formspree action);
