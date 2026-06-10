@@ -85,14 +85,14 @@ doc += f"""<main id="main">
       <p style="color:rgba(251,248,242,.72);font-size:1.1rem">Sometimes court is genuinely necessary — and a good lawyer will tell you when. But for most disputes, mediation gets you there sooner, for less, and with far less strain. Here's the honest comparison.</p>
     </div>
     <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;max-width:920px;margin:0 auto" class="compare">
-      <div style="padding:36px 32px;opacity:.62">
-        <h3 style="font-size:1.45rem;margin-bottom:22px;color:rgba(251,248,242,.8)">The court path</h3>
+      <div style="padding:36px 32px;opacity:.92">
+        <h3 style="font-size:1.45rem;margin-bottom:22px;color:var(--cream)">The court path</h3>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:15px">
-          <li style="display:flex;gap:12px;color:rgba(251,248,242,.66)">{X}1–3 years of waiting and uncertainty</li>
-          <li style="display:flex;gap:12px;color:rgba(251,248,242,.66)">{X}Tens or hundreds of thousands in fees</li>
-          <li style="display:flex;gap:12px;color:rgba(251,248,242,.66)">{X}A judge decides the outcome, not you</li>
-          <li style="display:flex;gap:12px;color:rgba(251,248,242,.66)">{X}Adversarial by design — harder on relationships</li>
-          <li style="display:flex;gap:12px;color:rgba(251,248,242,.66)">{X}Public record, on the court's calendar</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X}1–3 years of waiting and uncertainty</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X}Tens or hundreds of thousands in fees</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X}A judge decides the outcome, not you</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X}Adversarial by design — harder on relationships</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X}Public record, on the court's calendar</li>
         </ul>
       </div>
       <div style="width:1px;background:linear-gradient(180deg,transparent,rgba(251,248,242,.18),transparent);position:relative" class="divider">
