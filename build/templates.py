@@ -10,6 +10,7 @@ BOOK_URL = "/book-a-consultation/"
 # ---- Navigation data (shared megamenu) ----
 SERVICES = [
     ("family-law-mediation", "Family Law Mediation", "Parenting & property, resolved without court"),
+    ("divorce-mediation", "Divorce Mediation", "Resolve everything that comes with divorce"),
     ("property-settlement-mediation", "Property Settlement", "Divide assets fairly and finally"),
     ("parenting-plan-mediation", "Parenting Plans", "Workable arrangements for your children"),
     ("section-60i-certificates", "Section 60I Certificates", "Required before parenting court action"),

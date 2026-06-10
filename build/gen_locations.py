@@ -103,10 +103,15 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <h2>How the {esc(city)} court system fits in</h2>
 <p>{esc(reg_desc)}. {esc(circuit)} {esc(state_note)} Understanding where your matter would otherwise be heard matters, because it shows just how much mediation can save you. Rather than waiting for a listing at {esc(court_ref)}, you can often resolve your dispute within weeks — and if you do reach agreement, we can formalise it so it carries the same legal weight as a court order.</p>
 
-<div class="callout">
-  <h3>Can't get to an office? Mediate online.</h3>
-  <p>Our <a href="/online-divorce/">secure online mediation</a> gives {esc(city)} and {esc(state)} clients access to the same nationally accredited mediators from anywhere — no travel, same structured process, same binding outcomes. It's especially valuable for clients outside the {esc(city)} CBD or in surrounding regional areas.</p>
-</div>
+<h2>Family, divorce, property and parenting mediation in {esc(city)}</h2>
+<p>Whatever stage of separation you're at, there's a {esc(city)} mediation service built around it:</p>
+<ul>
+  <li><strong><a href="/family-law-mediation/">Family mediation in {esc(city)}</a></strong> — accredited family mediators resolving parenting and property without court.</li>
+  <li><strong><a href="/divorce-mediation/">Divorce mediation in {esc(city)}</a></strong> — settle parenting, property and finances together as your marriage ends.</li>
+  <li><strong><a href="/property-settlement-mediation/">Property settlement mediation in {esc(city)}</a></strong> — divide assets, debts and superannuation fairly and finally.</li>
+  <li><strong><a href="/parenting-plan-mediation/">Parenting and child custody mediation in {esc(city)}</a></strong> — child-focused arrangements that actually last.</li>
+</ul>
+<p>Can't get to an office? Our <a href="/online-divorce/">secure online mediation</a> gives {esc(city)} and {esc(state)} clients the same nationally accredited mediators from anywhere — no travel, same structured process, same binding outcomes. And you can check <a href="/how-much-does-mediation-cost/">what mediation costs</a> before you commit to anything.</p>
 
 <h2>What we resolve for {esc(city)} clients</h2>
 <p>Our {esc(city)} mediators work across the full spectrum of dispute resolution. Whatever you're facing, there is almost always a path through it that doesn't begin in a courtroom:</p>

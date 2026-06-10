@@ -199,8 +199,8 @@ qa_fam = [
   "You begin with a fixed-fee consultation, so there are no surprises. Family mediation typically costs a small fraction of a contested court case, and the cost is usually shared between the parties."),
 ]
 doc = head(
- "Family Law Mediation Australia | Parenting & Property",
- "Family law mediation resolves parenting and property disputes faster and cheaper than court. Accredited mediators, Section 60I certificates, 90% success rate. Free consultation.",
+ "Family Law Mediation Australia | Family Mediators",
+ "Family law mediation with accredited family mediators — settle parenting and property faster and cheaper than court. Section 60I certificates. Free consult.",
  "family-law-mediation",
  og_type="article",
  extra_schema=[org_schema(),
@@ -234,6 +234,7 @@ doc += f"""<main id="main">
 <h2>What family matters can be mediated?</h2>
 <ul>
   <li><a href="/parenting-plan-mediation/">Parenting plans</a> — living arrangements, time with each parent, and decision-making</li>
+  <li><a href="/divorce-mediation/">Divorce mediation</a> — resolving everything that comes with separating</li>
   <li><a href="/property-settlement-mediation/">Property settlements</a> — dividing assets, debts and the family home</li>
   <li>Superannuation splitting and <a href="/spousal-support-mediation/">spousal maintenance</a></li>
   <li><a href="/financial-agreements-mediation/">Binding financial agreements (BFAs)</a></li>
@@ -241,10 +242,8 @@ doc += f"""<main id="main">
   <li><a href="/de-facto-mediation/">De facto and same-sex relationship</a> disputes</li>
 </ul>
 
-<div class="callout">
-  <h3>Lawyer-grade insight, without the courtroom</h3>
-  <p>Many of our family mediators are also experienced family lawyers. That means you get a clear-eyed view of where you'd likely land in court — and a process designed to get you there faster, for far less, without ever filing.</p>
-</div>
+<h2>Family mediators who understand the law</h2>
+<p>Many of our family mediators are also experienced family lawyers. That means our family mediation services give you a clear-eyed view of where you'd likely land in court — and a process designed to get you there faster, for far less, without ever filing. We provide family mediation right across Australia, in person and by secure video, so wherever you are you can work with an accredited family mediator. If you're separating specifically, our dedicated <a href="/divorce-mediation/">divorce mediation</a> service covers parenting, property and finances together; and you can see exactly <a href="/how-much-does-mediation-cost/">what family mediation costs</a> before you commit.</p>
 
 <h2>How much does family mediation cost?</h2>
 <p>You start with a fixed-fee consultation, so you know exactly where you stand before committing to anything. From there, family mediation typically costs a small fraction of a contested court case, and the fee is usually shared between the parties. Compared with two sets of lawyers billing by the hour for years, the saving is substantial — and the emotional cost is lower too.</p>

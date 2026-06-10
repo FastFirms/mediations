@@ -92,7 +92,7 @@ post("how-to-get-a-divorce-in-australia-a-step-by-step-guide",
 <p>A short consultation, or agreeing parenting and property through <a href="/family-law-mediation/">mediation</a> in parallel, heads off most of these. <a href="/parenting-plan-mediation/">Sort the children's arrangements →</a></p>
 
 <h2 id="after">What a divorce does NOT resolve</h2>
-<p>This is the most misunderstood part: the divorce only ends the marriage. It does <strong>not</strong> divide your property, settle finances, or determine parenting arrangements. Those are separate processes \u2014 and there are time limits. You generally have <strong>12 months from the date the divorce is final</strong> to apply for property and financial orders. Don't let the divorce lull you into missing that window. <a href="/property-settlement-after-separation/">Sort your property settlement \u2192</a></p>
+<p>This is the most misunderstood part: the divorce only ends the marriage. It does <strong>not</strong> divide your property, settle finances, or determine parenting arrangements. Those are separate processes \u2014 and there are time limits. You generally have <strong>12 months from the date the divorce is final</strong> to apply for property and financial orders. Don't let the divorce lull you into missing that window. The calm way to settle all of it \u2014 parenting, property and finances \u2014 is <a href="/divorce-mediation/">divorce mediation</a>. <a href="/property-settlement-after-separation/">Sort your property settlement \u2192</a></p>
 """
  ,
  [("How long does it take to get divorced in Australia?",
