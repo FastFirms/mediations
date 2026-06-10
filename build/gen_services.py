@@ -100,10 +100,30 @@ build(
    <li>Debts, mortgages and liabilities</li>
  </ul>
 
- <div class="callout">
-   <h3>You have time limits — but you have options</h3>
-   <p>After a divorce you generally have 12 months to finalise property matters, and de facto couples have two years from separation. Mediation is the fastest way to reach agreement within those windows. <a href="/de-facto-mediation/">See de facto property disputes →</a></p>
- </div>
+ <h2>How superannuation, businesses and trusts are treated</h2>
+ <p>A property settlement is rarely just the house and the savings. The trickier assets are exactly where mediation earns its keep, because you can agree a sensible approach instead of paying lawyers to fight over valuations:</p>
+ <ul>
+   <li><strong>Superannuation</strong> — treated as property and able to be split between partners, which often unlocks a fairer division without anyone having to sell the family home.</li>
+   <li><strong>Businesses and company interests</strong> — a business one or both of you built forms part of the pool; the question is its value and how to deal with it without crippling the business that pays the bills.</li>
+   <li><strong>Trusts and inheritances</strong> — these can be in or out of the pool depending on timing, control and how they were used during the relationship. They need careful, honest handling.</li>
+   <li><strong>Debts and liabilities</strong> — mortgages, loans and tax debts are shared too, and a good settlement allocates them as deliberately as it does the assets.</li>
+ </ul>
+
+ <h2>Contributions and future needs — the part people miss</h2>
+ <p>A fair split isn't simply 50/50. The law weighs both what each of you <em>put in</em> — financial contributions, plus the non-financial ones like homemaking and parenting — and what each of you will <em>need going forward</em>: earning capacity, age, health, and who has the day-to-day care of the children. Two couples with identical asset pools can fairly settle on very different splits because of these factors. In mediation, your mediator helps you weigh them honestly, so the outcome reflects the same considerations a court would apply.</p>
+
+ <h2>Property settlement time limits</h2>
+ <p>There are deadlines, and missing them can cost you the right to a settlement — so this is one area where acting early genuinely matters. Mediation is the fastest route to a binding agreement inside these windows:</p>
+ <figure class="tbl"><table><caption>Time limits to finalise a property settlement</caption>
+ <thead><tr><th>Your situation</th><th>Time limit to apply</th><th>From when</th></tr></thead>
+ <tbody>
+ <tr><td>Married then divorced</td><td>12 months</td><td>The date your divorce becomes final</td></tr>
+ <tr><td>De facto relationship</td><td>24 months</td><td>The date of separation</td></tr>
+ </tbody></table></figure>
+ <p>You can settle before a divorce is even finalised — many couples do. If you're past a limit, a court's permission is sometimes possible but not guaranteed, so don't bank on it. <a href="/de-facto-mediation/">See de facto property disputes →</a> or <a href="/property-settlement-after-separation/">read the full guide to property settlement after separation →</a></p>
+
+ <h2>What if you can't agree on a value — or your ex stalls?</h2>
+ <p>Disagreement over what something is worth is normal, and it doesn't derail mediation: you simply agree on an independent valuer for the home, business or super and work from their figure. Delay is the bigger risk — sometimes one party drags things out hoping the other gives up. Mediation counters that by setting a clear timetable and a shared disclosure list up front, so there's nowhere to hide and far less room to stall than in slow-moving litigation.</p>
 
  <h2>Making your settlement binding: consent orders or a BFA</h2>
  <p>A handshake agreement isn't enough — to be safe and final, a property settlement should be formalised. There are two routes, and your mediator helps you choose:</p>
@@ -260,10 +280,23 @@ build(
  <h2>The children's best interests come first</h2>
  <p>Whatever you agree, the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> requires arrangements to be made in the best interests of the child. Reforms that took effect in 2024 simplified the factors a court weighs and put the safety and developmental needs of children at the centre. A good plan reflects each child's age and stage — younger children usually need shorter, more frequent contact, while teenagers need arrangements that respect school, friends and activities. The <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a> service and <a href="https://aifs.gov.au/" target="_blank" rel="noopener">Australian Institute of Family Studies</a> are useful starting points for the evidence on what helps children adjust.</p>
 
- <div class="callout">
-   <h3>Children do better when parents agree</h3>
-   <p>Research consistently shows children adjust best to separation when conflict is low and both parents stay involved. Mediation is designed to lower conflict — which is exactly what protects your children long term.</p>
- </div>
+ <h2>Common care arrangements parents agree in mediation</h2>
+ <p>There's no single 'right' arrangement — the best one fits your children's ages, your work, and how far apart you live. These are the patterns separated parents most often land on, and mediation helps you choose or tailor one rather than have a court impose it:</p>
+ <figure class="tbl"><table><caption>Common shared-care patterns after separation</caption>
+ <thead><tr><th>Arrangement</th><th>How it works</th><th>Often suits</th></tr></thead>
+ <tbody>
+ <tr><td>Week about</td><td>Alternating weeks with each parent</td><td>School-age children; parents living close</td></tr>
+ <tr><td>5-2-2-5</td><td>Fixed weekdays with each parent, alternating weekends</td><td>Families wanting predictable routine</td></tr>
+ <tr><td>Alternate weekends</td><td>Primary home with one parent, every second weekend (plus a weeknight) with the other</td><td>Younger children; longer distances</td></tr>
+ <tr><td>Tailored</td><td>Built around shift work, travel or a child's needs</td><td>Any family that doesn't fit a template</td></tr>
+ </tbody></table></figure>
+ <p>Research consistently shows children adjust best when conflict is low and both parents stay involved — which is exactly what mediation is designed to protect.</p>
+
+ <h2>Is this the same as child custody mediation?</h2>
+ <p>In practice, yes. 'Custody' is an older word that Australian family law no longer uses — today the focus is on parental responsibility and the time children spend with each parent. So if you're searching for <a href="/child-custody-mediation/">child custody mediation</a>, parenting plan mediation is the process you're after. It's also where ongoing <strong>co-parenting</strong> gets easier: a clear plan removes the weekly friction over handovers, holidays and decisions, so you spend less energy negotiating and more parenting.</p>
+
+ <h2>When parenting mediation isn't appropriate</h2>
+ <p>Mediation depends on both parents being able to negotiate safely. Where there is family violence, a child-safety concern or a serious power imbalance, it may not be suitable — and you may be exempt from the requirement to attempt it. Your safety and your children's safety come first. If you're in immediate danger call <strong>000</strong>; for confidential support, <strong>1800RESPECT (1800 737 732)</strong> is available 24/7. See <a href="/domestic-violence-and-family-law/">family violence and family law</a>.</p>
 
  <h2>Do we have to mediate before going to court?</h2>
  <p>For most parenting matters, yes. Under the Family Law Act you must make a genuine attempt at <a href="https://www.fcfcoa.gov.au/fl/fdr" target="_blank" rel="noopener">family dispute resolution</a> before applying for parenting orders, unless an exemption applies. You'll need a <a href="/section-60i-certificates/">Section 60I certificate</a> to file — which we can issue as part of your mediation.</p>
