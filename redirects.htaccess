@@ -19,18 +19,17 @@ Redirect 301 /qld/ /brisbane-mediation/
 Redirect 301 /mediation/ /how-mediation-works/
 Redirect 301 /resolve-your-property-settlement-with-mediation-in-australia/ /property-settlement-mediation/
 Redirect 301 /the-cost-of-divorce-in-australia/ /cost-of-divorce-in-australia/
-Redirect 301 /how-much-does-mediation-cost/ /costs-of-mediation/
+Redirect 301 /costs-of-mediation/ /how-much-does-mediation-cost/
 Redirect 301 /what-am-i-entitled-to-in-a-separation/ /what-am-i-entitled-to-in-a-separation-in-australia/
 Redirect 301 /what-am-i-entitled-to-in-a-divorce-or-separation-in-australia/ /what-am-i-entitled-to-in-a-separation-in-australia/
 Redirect 301 /how-to-get-ready-for-mediation/ /preparing-for-mediation/
 Redirect 301 /how-to-prepare-for-a-property-settlement-mediation/ /preparing-for-mediation/
 Redirect 301 /how-to-get-ready-for-property-settlement-mediation/ /preparing-for-mediation/
-Redirect 301 /shuttle-mediation/ /the-pros-and-cons-of-shuttle-mediation/
+Redirect 301 /shuttle-mediation/ /shuttle-mediation-guide/
 Redirect 301 /consent-order/ /consent-orders/
 Redirect 301 /spousal-maintenance/ /spousal-support-mediation/
 Redirect 301 /de-facto-relationships/ /de-facto-mediation/
 Redirect 301 /separated-under-one-roof/ /separation-under-one-roof/
-Redirect 301 /divorce-without-a-lawyer/ /divorce-without-lawyers/
 
 # Batch 2 consolidation redirects
 Redirect 301 /consent-order/ /consent-orders-explained/
