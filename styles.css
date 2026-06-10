@@ -119,16 +119,18 @@ article.body ol li::before{content:counter(li);position:absolute;left:0;top:0;wi
 /* ---- tables (shared across service, location, resource & guide pages) ---- */
 /* Blog posts also style tables via POST_CSS; this gives the same treatment to
    every other page type, which previously rendered raw unstyled tables. */
-figure.tbl{margin:24px 0 30px;overflow-x:auto;-webkit-overflow-scrolling:touch}
-figure.tbl table{width:100%;border-collapse:collapse;font-size:.98rem;background:var(--cream);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
-figure.tbl caption{caption-side:top;text-align:left;font-size:.9rem;color:var(--ink-soft);margin-bottom:10px;font-style:italic}
-figure.tbl th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans);font-size:.92rem;line-height:1.3}
-figure.tbl td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft);vertical-align:top;line-height:1.45}
-figure.tbl thead th:first-child{border-top-left-radius:14px}
-figure.tbl thead th:last-child{border-top-right-radius:14px}
-figure.tbl tr:last-child td{border-bottom:none}
-figure.tbl tbody tr:nth-child(even) td{background:rgba(90,113,89,.05)}
-@media(max-width:600px){figure.tbl table{font-size:.9rem}figure.tbl th,figure.tbl td{padding:10px 12px}}
+figure.tbl{margin:28px 0 34px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+figure.tbl table{width:100%;border-collapse:separate;border-spacing:0;font-size:.97rem;background:var(--cream);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+figure.tbl caption{caption-side:top;text-align:left;font-size:.9rem;color:var(--ink-soft);margin-bottom:12px;font-style:italic;line-height:1.4}
+figure.tbl th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:15px 20px;font-weight:600;font-family:var(--sans);font-size:.9rem;line-height:1.35;vertical-align:bottom}
+figure.tbl td{padding:15px 20px;border-top:1px solid var(--line);color:var(--ink-soft);vertical-align:top;line-height:1.5}
+figure.tbl thead th{border-top:none}
+figure.tbl td:first-child,figure.tbl th:first-child{font-weight:600;color:var(--ink);padding-right:28px}
+figure.tbl th:first-child{color:var(--cream)}
+figure.tbl td+td,figure.tbl th+th{border-left:1px solid var(--line)}
+figure.tbl thead th+th{border-left:1px solid rgba(251,248,242,.18)}
+figure.tbl tbody tr:nth-child(even) td{background:rgba(90,113,89,.045)}
+@media(max-width:600px){figure.tbl table{font-size:.9rem}figure.tbl th,figure.tbl td{padding:12px 14px}}
 
 /* ---- info card grid (services, related links) ---- */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
