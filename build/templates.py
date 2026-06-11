@@ -24,6 +24,14 @@ SERVICES = [
     ("workplace-mediation", "Workplace Mediation", "Resolve disputes before the FWC"),
 ]
 
+# Grouped layout for the Services megamenu (scannable categories).
+# Slugs reference SERVICES above; workplace + how-it-works live in the menu footer.
+SERVICE_GROUPS = [
+    ("Family & separation", ["family-law-mediation", "divorce-mediation", "online-divorce", "de-facto-mediation"]),
+    ("Property & finances", ["property-settlement-mediation", "financial-agreements-mediation", "spousal-support-mediation", "consent-orders"]),
+    ("Parenting & children", ["parenting-plan-mediation", "child-support-mediation", "section-60i-certificates", "grandparents-mediation"]),
+]
+
 # Primary capital-city + major regional locations
 LOCATIONS = [
     ("sydney-mediation", "Sydney"),
@@ -93,13 +101,25 @@ def head(title, desc, slug, og_type="website", extra_schema=None):
 <a href="#main" class="skip">Skip to main content</a>"""
 
 def nav():
-    svc = "".join(f'<a href="/{s}/"><b>{esc(n)}</b>{esc(d)}</a>' for s, n, d in SERVICES)
+    svc_lookup = {s: (n, d) for s, n, d in SERVICES}
+    cols = ""
+    for group, slugs in SERVICE_GROUPS:
+        links = "".join(
+            f'<a href="/{s}/"><b>{esc(svc_lookup[s][0])}</b><span>{esc(svc_lookup[s][1])}</span></a>'
+            for s in slugs)
+        cols += f'<div class="mega-col"><span class="mega-head">{esc(group)}</span>{links}</div>'
+    svc_mega = f"""<div class="drop mega">{cols}
+      <div class="mega-foot">
+        <span>Not sure which you need? <a href="/how-mediation-works/">See how mediation works</a> or resolve a <a href="/workplace-mediation/">workplace dispute</a>.</span>
+        <a class="btn btn-primary" href="{BOOK_URL}">Book free consult <span class="arr">→</span></a>
+      </div>
+    </div>"""
     return f"""<header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="/" class="logo"><span class="dot"></span>Mediations Australia</a>
     <nav class="nav-links" id="navlinks" aria-label="Primary">
       <span class="has-drop"><a class="lnk" href="/#disputes" aria-haspopup="true">Services</a>
-        <div class="drop">{svc}</div>
+        {svc_mega}
       </span>
       <a class="lnk" href="/how-mediation-works/">How it works</a>
       <a class="lnk" href="/guides/">Guides</a>
