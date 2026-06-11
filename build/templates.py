@@ -66,6 +66,18 @@ OFFICES = [
 
 def esc(s): return html.escape(s, quote=True)
 
+def img(src, alt, w, h, cls="photo", caption=None, eager=False):
+    """Responsive, CWV-safe <img> wrapped in <figure>. Drop optimised files
+    (ideally WebP) in /assets/images/. ALWAYS pass true width/height so the
+    browser reserves space and layout doesn't shift (protects CLS). Use
+    eager=True only for an above-the-fold hero image (sets fetchpriority)."""
+    loading = "eager" if eager else "lazy"
+    prio = ' fetchpriority="high"' if eager else ''
+    tag = (f'<img src="/assets/images/{esc(src)}" alt="{esc(alt)}" '
+           f'width="{w}" height="{h}" loading="{loading}" decoding="async"{prio}>')
+    cap = f'<figcaption>{esc(caption)}</figcaption>' if caption else ''
+    return f'<figure class="{cls}">{tag}{cap}</figure>'
+
 def head(title, desc, slug, og_type="website", extra_schema=None):
     """Build <head> with full SEO/AEO meta + JSON-LD."""
     canonical = f"{DOMAIN}/" if slug == "" else f"{DOMAIN}/{slug}/"

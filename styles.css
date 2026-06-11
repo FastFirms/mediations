@@ -129,6 +129,17 @@ article.body ol li::before{content:counter(li);position:absolute;left:0;top:0;wi
 .callout p{color:rgba(251,248,242,.85);margin-bottom:0;max-width:60ch}
 .callout a{color:#e6c9b4;text-decoration:underline}
 
+/* ---- photography (licensed stock; mood/context only, never as "our team") ---- */
+figure.photo{margin:30px 0;border-radius:18px;overflow:hidden;background:var(--sand-deep)}
+figure.photo img{display:block;width:100%;height:auto;object-fit:cover}
+figure.photo figcaption{font-size:.85rem;color:var(--ink-soft);font-style:italic;padding:10px 4px 0}
+/* full-bleed-ish band image for section breaks */
+figure.photo-wide{border-radius:22px;aspect-ratio:21/9}
+figure.photo-wide img{height:100%}
+/* compact inline image (e.g. office shot on a location page) */
+figure.photo-card{border-radius:14px;aspect-ratio:3/2}
+figure.photo-card img{height:100%}
+
 /* ---- tables (shared across service, location, resource & guide pages) ---- */
 /* Blog posts also style tables via POST_CSS; this gives the same treatment to
    every other page type, which previously rendered raw unstyled tables. */
