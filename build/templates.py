@@ -66,15 +66,26 @@ OFFICES = [
 
 def esc(s): return html.escape(s, quote=True)
 
-def img(src, alt, w, h, cls="photo", caption=None, eager=False):
+def img(src, alt, w, h, cls="photo", caption=None, eager=False, srcset=None, sizes=None):
     """Responsive, CWV-safe <img> wrapped in <figure>. Drop optimised files
     (ideally WebP) in /assets/images/. ALWAYS pass true width/height so the
     browser reserves space and layout doesn't shift (protects CLS). Use
-    eager=True only for an above-the-fold hero image (sets fetchpriority)."""
+    eager=True only for an above-the-fold hero image (sets fetchpriority).
+    Pass srcset as a list of (filename, width_descriptor) tuples, e.g.
+    [('hero-800.jpg','800w'),('hero-1600.jpg','1600w')]. sizes defaults to
+    '100vw' when srcset is provided."""
     loading = "eager" if eager else "lazy"
     prio = ' fetchpriority="high"' if eager else ''
+    srcset_attr = ''
+    sizes_attr = ''
+    if srcset:
+        srcset_str = ', '.join(f'/assets/images/{esc(f)} {d}' for f, d in srcset)
+        srcset_attr = f' srcset="{srcset_str}"'
+        sizes_val = sizes or '100vw'
+        sizes_attr = f' sizes="{sizes_val}"'
     tag = (f'<img src="/assets/images/{esc(src)}" alt="{esc(alt)}" '
-           f'width="{w}" height="{h}" loading="{loading}" decoding="async"{prio}>')
+           f'width="{w}" height="{h}" loading="{loading}" decoding="async"{prio}'
+           f'{srcset_attr}{sizes_attr}>')
     cap = f'<figcaption>{esc(caption)}</figcaption>' if caption else ''
     return f'<figure class="{cls}">{tag}{cap}</figure>'
 
