@@ -17,6 +17,8 @@ post("what-is-mediation-in-family-law",
   ("mediator-role","What does the mediator do?"),
   ("why-works","Why mediation works so well"),
   ("what-resolve","What can mediation resolve?"),
+  ("for-parents","Mediation for parents"),
+  ("compare","How it compares to other options"),
   ("cost-time","Cost and time"),
   ("right-for-you","Is mediation right for you?")],
  key_takeaway("Family law mediation is a confidential process in which a neutral, accredited mediator helps separating parties negotiate their own agreement on parenting, property and finances. The mediator guides the conversation but does not decide the outcome. It resolves most disputes in one or two sessions, costs a fraction of court, and for parenting matters is generally a required step before litigation.")
@@ -55,8 +57,22 @@ post("what-is-mediation-in-family-law",
   <li>Even <a href="/estate-dispute-mediation/">estate</a> and <a href="/workplace-mediation/">workplace</a> conflicts</li>
 </ul>
 
+<h2 id="for-parents">Mediation for parents</h2>
+<p>For separating parents, mediation is more than a way to settle a dispute \u2014 it sets the tone for years of co-parenting ahead. Often called parenting or parent mediation, it keeps the focus on the children's needs rather than the grievances between the adults, and helps you build arrangements you can both live with. Because you design the plan together, you're far more likely to stick to it. For most parenting matters it's also a {cite("fcfcoa_fdr")} requirement before you can apply to court. <a href="/parenting-plan-mediation/">See parenting plan mediation \u2192</a> or read about <a href="/child-custody-mediation/">child custody mediation</a>.</p>
+
+<h2 id="compare">How it compares to other options</h2>
+<p>Mediation is one of several ways to resolve a family dispute. Seeing them side by side makes clear what mediation is \u2014 and what it isn't.</p>
+<figure class="tbl"><table><caption>Family mediation vs other ways to resolve a dispute</caption>
+<thead><tr><th>Option</th><th>Who decides</th><th>Binding?</th><th>Best for</th></tr></thead>
+<tbody>
+<tr><td>Mediation</td><td>You and your former partner</td><td>Once formalised</td><td>Most separating couples</td></tr>
+<tr><td>Collaborative law</td><td>The parties, with lawyers</td><td>Once formalised</td><td>Wanting legal support throughout</td></tr>
+<tr><td>Arbitration</td><td>A private arbitrator</td><td>Yes</td><td>Financial matters needing a decision</td></tr>
+<tr><td>Court</td><td>A judge</td><td>Yes</td><td>Safety risks or a party who won't engage</td></tr>
+</tbody></table></figure>
+
 <h2 id="cost-time">Cost and time</h2>
-<p>Most matters resolve in one or two sessions, often within a few weeks \u2014 versus one to three years in court. Costs are a fraction of litigation and usually shared between parties. <a href="/cost-of-divorce-in-australia/">See the full cost comparison \u2192</a></p>
+<p>Most matters resolve in one or two sessions, often within a few weeks \u2014 versus one to three years in court. Costs are a fraction of litigation and usually shared between parties. <a href="/how-much-does-mediation-cost/">See what mediation costs \u2192</a></p>
 """
  + inline_cta("Most disputes settle in one or two sessions. See how quickly yours could resolve \u2014 book today.")
  + """
@@ -178,16 +194,33 @@ post("child-custody-mediation",
  + inline_cta("Working out arrangements for your children? A child-focused mediator can help you agree. Book a consultation.")
  + f"""
 <h2 id="best-interests">The best-interests test</h2>
-<p>Every parenting decision is governed by one principle: the best interests of the child. The {cite("family_law_act")} sets out the factors a court (and therefore a mediator) considers \u2014 above all, the benefit of a meaningful relationship with both parents, balanced against the need to protect the child from harm. Where those two collide, safety always wins.</p>
+<p>Every parenting decision is governed by one principle: the best interests of the child. The {cite("family_law_act")} sets out the factors a court (and therefore a mediator) considers \u2014 above all, the benefit of a meaningful relationship with both parents, balanced against the need to protect the child from harm. Where those two collide, safety always wins. Reforms that took effect in 2024 streamlined these factors and placed the child's safety and needs at the centre.</p>
+<figure class="tbl"><table><caption>What the best-interests test weighs</caption>
+<thead><tr><th>Factor</th><th>What it looks at</th></tr></thead>
+<tbody>
+<tr><td>Safety</td><td>Protecting the child from family violence, abuse or neglect \u2014 the overriding consideration</td></tr>
+<tr><td>The child's views</td><td>What the child wants, weighed for their age and maturity</td></tr>
+<tr><td>Developmental needs</td><td>The child's emotional, psychological and developmental needs</td></tr>
+<tr><td>Capacity to provide</td><td>Each parent's ability to meet those needs</td></tr>
+<tr><td>Benefit of both parents</td><td>The value of a meaningful relationship with each parent, where safe</td></tr>
+</tbody></table></figure>
 
 <h2 id="how-works">How custody mediation works</h2>
-<p>Child custody mediation is a form of <a href="/family-law-mediation/">family dispute resolution</a>. A neutral mediator helps both parents work through living arrangements, time-sharing, holidays, schooling and communication, keeping the focus on the children. If agreement is reached, it's recorded in a <a href="/parenting-plans-guide/">parenting plan</a> and can be formalised as <a href="/consent-orders-explained/">consent orders</a>. For most parenting disputes, this process is <em>required</em> before you can apply to court. <a href="/section-60i-certificates/">You'll need a Section 60I certificate \u2192</a></p>
+<p>Child custody mediation is a form of <a href="/family-law-mediation/">family dispute resolution</a>. A neutral mediator helps both parents work through living arrangements, time-sharing, holidays, schooling and communication, keeping the focus on the children. If agreement is reached, it's recorded in a <a href="/parenting-plans-guide/">parenting plan</a> and can be formalised as <a href="/consent-orders-explained/">consent orders</a>. For most parenting disputes, this {cite("fcfcoa_fdr")} step is <em>required</em> before you can apply to court. <a href="/section-60i-certificates/">You'll need a Section 60I certificate \u2192</a></p>
 """
  + callout("Family dispute resolution is usually compulsory",
    "Except where exemptions apply (such as family violence or urgency), parents must attempt family dispute resolution and obtain a Section 60I certificate before filing a parenting application in court.")
  + """
 <h2 id="5050">Is care always 50/50?</h2>
 <p>No. There is no automatic right to equal (50/50) time. While the law supports children maintaining meaningful relationships with both parents where safe, the actual arrangement depends entirely on the child's best interests and what's practical \u2014 distance, work, the child's age and routine all matter. Mediation lets you design an arrangement that genuinely fits your family rather than a one-size-fits-all formula.</p>
+<figure class="tbl"><table><caption>Common care arrangements parents agree in mediation</caption>
+<thead><tr><th>Pattern</th><th>How it works</th><th>Often suits</th></tr></thead>
+<tbody>
+<tr><td>Week-about</td><td>Alternating full weeks with each parent</td><td>School-age children, parents living nearby</td></tr>
+<tr><td>5-2-2-5</td><td>Fixed weekdays with each parent, alternating weekends</td><td>Younger children needing frequent contact</td></tr>
+<tr><td>Alternate weekends</td><td>One parent primary, the other every second weekend plus some weeknights</td><td>Where distance or work limits midweek changeovers</td></tr>
+<tr><td>Tailored</td><td>Any pattern that fits the child's routine and the family's logistics</td><td>Most families \u2014 the point of mediation</td></tr>
+</tbody></table></figure>
 
 <h2 id="fathers-mothers">Do mothers or fathers get preference?</h2>
 <p>The law gives no preference based on gender. Both parents start on equal footing, and outcomes turn on the children's best interests and each parent's circumstances \u2014 not on whether they're mum or dad. <a href="/fathers-rights/">See fathers' rights after separation \u2192</a></p>
@@ -244,8 +277,20 @@ post("domestic-violence-and-family-law",
 <h2 id="what-is-fv">What counts as family violence?</h2>
 <p>Family violence is broader than physical harm. It includes behaviour that makes a family member fear for their safety or wellbeing, such as: physical or sexual assault; threats and intimidation; emotional or psychological abuse; financial control or deprivation; coercive control; stalking; and exposing children to any of these. Recognising the full scope matters, because non-physical abuse is just as relevant in family law.</p>
 
-<h2 id="protection-orders">Protection orders: AVOs and DVOs</h2>
-<p>Protection orders go by different names across states \u2014 Apprehended Violence Orders (AVOs) in NSW, Domestic Violence Orders (DVOs) in Queensland, Intervention Orders in Victoria and SA \u2014 but they do the same thing: legally restrict an abusive person's behaviour to protect you. Breaching one is a criminal offence. These orders operate alongside family law proceedings and can shape parenting arrangements.</p>
+<h2 id="protection-orders">Protection orders: what is a DVO (or AVO)?</h2>
+<p>A <strong>Domestic Violence Order (DVO)</strong> is a court order that legally restricts how a person can behave towards someone they have a domestic or family relationship with, in order to protect that person from violence, threats, harassment or intimidation. It is a civil order \u2014 not a criminal charge \u2014 but <strong>breaching it is a criminal offence</strong> that can lead to arrest, fines or imprisonment.</p>
+<p>The name differs by state and territory, but the protection is the same. A DVO can include conditions such as the person not approaching or contacting you, staying away from your home or workplace, and not being violent or threatening.</p>
+<figure class="tbl"><table><caption>What protection orders are called across Australia</caption>
+<thead><tr><th>State / Territory</th><th>Name of order</th></tr></thead>
+<tbody>
+<tr><td>NSW</td><td>Apprehended Domestic Violence Order (ADVO / AVO)</td></tr>
+<tr><td>Queensland, NT</td><td>Domestic Violence Order (DVO)</td></tr>
+<tr><td>Victoria</td><td>Family Violence Intervention Order</td></tr>
+<tr><td>South Australia</td><td>Intervention Order</td></tr>
+<tr><td>WA</td><td>Family Violence Restraining Order (FVRO)</td></tr>
+<tr><td>Tasmania, ACT</td><td>Family Violence Order (FVO)</td></tr>
+</tbody></table></figure>
+<p>You can apply for a DVO through the police or your local Magistrates Court, and police can also apply on your behalf or issue an interim order in an emergency. An order can be made urgently and last for a set period, often a year or more. These orders operate alongside family law proceedings and can shape parenting arrangements.</p>
 """
  + callout("Protection orders and parenting orders interact",
    "A protection order can affect existing or proposed parenting arrangements. Courts work to ensure parenting orders don't expose anyone to violence \u2014 the two systems are designed to work together for safety.")
@@ -266,7 +311,11 @@ post("domestic-violence-and-family-law",
 <p class="source-note">If you are in immediate danger, call 000. Support: 1800RESPECT (1800 737 732), available 24 hours.</p>
 """
  ,
- [("What counts as family violence in Australia?",
+ [("What is a DVO?",
+   "A Domestic Violence Order is a civil court order that legally restricts how a person can behave towards a family member, to protect them from violence, threats or harassment. Breaching a DVO is a criminal offence. It's called a DVO in Queensland and the NT, an AVO in NSW, and an Intervention or Family Violence Order elsewhere."),
+  ("How do you get a DVO?",
+   "You can apply through the police or your local Magistrates Court, and police can apply on your behalf or issue an interim order in an emergency. Orders can be made urgently and typically last a year or more."),
+  ("What counts as family violence in Australia?",
    "More than physical harm \u2014 it includes threats, emotional and psychological abuse, financial control, coercive control, stalking, and exposing children to violence."),
   ("What is the difference between an AVO and a DVO?",
    "They're the same kind of protection order under different state names \u2014 AVO in NSW, DVO in Queensland, Intervention Order in Victoria and SA. All legally restrict an abusive person's behaviour."),

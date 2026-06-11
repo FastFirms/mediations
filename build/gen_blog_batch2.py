@@ -8,74 +8,141 @@ from authority_sources import cite
 # ---- CONSENT ORDERS EXPLAINED ----
 post("consent-orders-explained",
  "Consent Orders Explained: How They Work in Australia (2026)",
- "What are consent orders, how do you apply, how long do they take and what do they cost? A complete 2026 guide to making your agreement legally binding without going to court.",
+ "What are consent orders, how do you apply, and what do they cost? A 2026 guide to making your separation agreement legally binding without going to court.",
  "Consent orders",
  "Consent Orders Explained: <em>Making It Legally Binding</em>",
  "Consent orders turn an agreement you've already reached into legally binding court orders \u2014 without anyone setting foot in a courtroom. This guide explains exactly what they are, how to apply, what they cost, how long they take, and how to change or enforce them.",
  [("what-are","What are consent orders?"),
-  ("how-apply","How do you apply for consent orders?"),
+  ("parenting-property","Parenting vs property consent orders"),
+  ("how-apply","How to apply: the forms and the portal"),
+  ("time-limits","Time limits: the deadline to apply"),
   ("how-long","How long do consent orders take?"),
   ("cost","What do consent orders cost?"),
-  ("just-equitable","The 'just and equitable' test"),
-  ("change","Can you change consent orders?"),
-  ("breach","What happens if someone breaches them?")],
+  ("just-equitable","How the court checks your orders"),
+  ("superannuation","Splitting superannuation by consent"),
+  ("change","Can you change or set aside consent orders?"),
+  ("breach","Enforcing consent orders if someone breaches")],
  key_takeaway("Consent orders are written agreements approved by the Federal Circuit and Family Court that become legally binding without a hearing. They can cover property, finances and parenting. You apply jointly, a registrar checks the terms are just and equitable (for property) or in the child's best interests (for parenting), and the filing fee is modest \u2014 far cheaper than litigation.")
  + f"""
 <h2 id="what-are">What are consent orders?</h2>
-<p>Consent orders are an agreement between separating parties that has been approved by a court and made into formal orders. Once approved, they carry the same legal weight as orders a judge would make after a hearing \u2014 but you avoid the hearing entirely. They can deal with property and financial matters, parenting arrangements, or both.</p>
-<p>The key advantage is certainty. A handshake agreement or even a written one isn't automatically enforceable; consent orders are. They close the door on future claims and give both parties confidence the deal will hold. According to the {cite("fcfcoa_consent_orders")}, the process is designed to be straightforward where parties already agree.</p>
+<p>Consent orders are an agreement between separating parties that a court has approved and turned into formal orders. Once made, they carry the same legal force as orders a judge would impose after a contested hearing \u2014 except you reach them yourselves and avoid the hearing entirely. They can deal with property and financial matters, parenting arrangements for children, or both in the one application.</p>
+<p>The point of formalising an agreement this way is certainty. A handshake deal, or even a signed written one, is not automatically enforceable; consent orders are. For property, they also close the door on future claims between you, so neither party can come back years later for a second bite. According to the {cite("fcfcoa_consent_orders")}, the process is designed to be straightforward where the parties already agree \u2014 the court is checking your agreement, not re-running the dispute.</p>
+<p>That distinction matters: consent orders are the <em>formalisation</em> step, not the negotiation. The hard part is reaching a fair agreement in the first place. Court has its place for genuine disputes, but where you can agree, consent orders let you keep control of the outcome instead of handing it to a judge.</p>
 """
  + inline_cta("Reached an agreement and want to make it official? We'll help you turn it into binding consent orders.")
- + f"""
-<h2 id="how-apply">How do you apply for consent orders?</h2>
-<p>The process is largely a paperwork exercise when both parties agree:</p>
-<ol>
-  <li><strong>Reach agreement</strong> \u2014 ideally through <a href="/family-law-mediation/">mediation</a>, which is the most efficient way to get there.</li>
-  <li><strong>Prepare the documents</strong> \u2014 an Application for Consent Orders plus a proposed Minute of Consent Orders setting out the terms.</li>
-  <li><strong>File with the court</strong> \u2014 lodged through the Commonwealth Courts Portal.</li>
-  <li><strong>Registrar review</strong> \u2014 a court registrar checks the orders are appropriate, without you attending.</li>
-  <li><strong>Orders made</strong> \u2014 once approved, they're sealed and legally binding.</li>
-</ol>
-<p>For property matters, full financial disclosure between the parties is essential \u2014 the {cite("fcfcoa_disclosure")} sets out this duty.</p>
-
-<h2 id="how-long">How long do consent orders take?</h2>
-<p>Once filed, consent orders are typically processed within a few weeks, though timeframes vary with court workload. The real variable is how long it takes to <em>reach</em> the agreement in the first place \u2014 which is exactly why mediation matters: it compresses the agreement stage from months to weeks. <a href="/how-long-does-mediation-take/">See how long mediation takes \u2192</a></p>
+ + """
+<h2 id="parenting-property">Parenting consent orders vs property consent orders</h2>
+<p>Consent orders come in two broad types, and the court applies a different test to each:</p>
+<ul>
+  <li><strong>Property and financial consent orders</strong> divide assets, debts and superannuation, and can deal with spousal maintenance. The court must be satisfied the division is "just and equitable".</li>
+  <li><strong>Parenting consent orders</strong> set out where children live, the time they spend with each parent, and how major decisions about them are made. Here the court's only concern is the best interests of the child.</li>
+</ul>
+<p>You can apply for one or both, and most separating couples resolve everything together so the whole settlement is locked in at once. Parenting can also be handled less formally through a <a href="/parenting-plan-template/">parenting plan</a>, but a plan is not enforceable the way orders are \u2014 see <a href="/bfa-or-consent-orders/">how the instruments compare</a> if you are weighing your options.</p>
+<figure class="tbl"><table><caption>Consent orders vs a binding financial agreement vs a contested court hearing</caption>
+<thead><tr><th>&nbsp;</th><th>Consent orders</th><th>Binding financial agreement</th><th>Contested hearing</th></tr></thead>
+<tbody>
+<tr><td>Legally binding</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Court approves the terms</td><td>Yes (on the papers)</td><td>No (private contract)</td><td>Yes (a judge decides)</td></tr>
+<tr><td>Independent legal advice required</td><td>No</td><td>Yes, for each party</td><td>Usually represented</td></tr>
+<tr><td>Can cover parenting</td><td>Yes</td><td>No (financial only)</td><td>Yes</td></tr>
+<tr><td>Typical cost</td><td>~$200 filing fee + preparation</td><td>Higher (two lawyers advise)</td><td>Tens of thousands</td></tr>
+<tr><td>You keep control of the outcome</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+</tbody></table></figure>
 """
- + callout("Consent orders vs a binding financial agreement",
-   "Both make a financial settlement binding, but consent orders are court-approved (and generally cheaper), while a binding financial agreement is a private contract requiring independent legal advice for each party. Not sure which fits? See our comparison guide.")
+ + inline_cta("Already agreed on how to split things, or how the children's time will work? We'll turn it into binding consent orders — property, parenting, or both.")
  + f"""
-<h2 id="cost">What do consent orders cost?</h2>
-<p>The court filing fee for an Application for Consent Orders is modest \u2014 around $200 \u2014 set out in the {cite("fcfcoa_fees")}. On top of that you may have the cost of preparing the documents. Compared with the tens of thousands a contested property case can cost, consent orders are an inexpensive way to lock in certainty. <a href="/our-fee-structure/">See our transparent fees \u2192</a></p>
-
-<h2 id="just-equitable">The 'just and equitable' test</h2>
-<p>For property orders, the registrar won't simply rubber-stamp whatever you submit \u2014 they must be satisfied the division is "just and equitable" under the {cite("family_law_act")}. For parenting orders, the test is the best interests of the child. This is a protection, not an obstacle: it ensures the orders are sound and will hold up. A well-prepared application that reflects a fair, mediated agreement generally satisfies the test without difficulty. <a href="/what-am-i-entitled-to-in-a-separation-in-australia/">Learn what a fair division looks like \u2192</a></p>
+<h2 id="how-apply">How to apply: the forms and the portal</h2>
+<p>When both parties agree, applying for consent orders is largely a paperwork exercise \u2014 there is no hearing to attend. The steps are:</p>
+<ol>
+  <li><strong>Reach a clear agreement</strong> \u2014 ideally through <a href="/family-law-mediation/">mediation</a>, the most efficient way to settle every term and get it written down.</li>
+  <li><strong>Exchange full financial disclosure</strong> (for property) \u2014 each party must honestly set out their assets, liabilities, income and superannuation. The {cite("fcfcoa_disclosure")} makes this an ongoing duty, and orders made on incomplete disclosure can later be set aside.</li>
+  <li><strong>Prepare the documents</strong> \u2014 an Application for Consent Orders, which gives the court your financial and family details, plus a Minute of Consent Orders (the "minute of order") setting out the exact terms you want made.</li>
+  <li><strong>File online</strong> \u2014 the application is lodged electronically through the {cite("comcourts_portal")}, with the filing fee paid at lodgement.</li>
+  <li><strong>Registrar review</strong> \u2014 a court registrar reads the application on the papers to check the orders are appropriate. You do not appear.</li>
+  <li><strong>Orders made and sealed</strong> \u2014 once approved, the orders are sealed with the court's stamp and are legally binding from that date.</li>
+</ol>
+<p>Getting the Minute right is where applications most often stumble: vague, unworkable or one-sided terms can prompt the registrar to ask questions or decline to make the orders, which costs weeks. A precisely drafted minute that reflects a fair, mediated agreement usually goes through cleanly.</p>
+<figure class="tbl"><table><caption>What you file for consent orders</caption>
+<thead><tr><th>Document</th><th>What it does</th></tr></thead>
+<tbody>
+<tr><td>Application for Consent Orders</td><td>Gives the court your personal, family and financial details so it can assess the orders</td></tr>
+<tr><td>Minute of Consent Orders</td><td>Sets out the exact orders you ask the court to make \u2014 the operative terms</td></tr>
+<tr><td>Financial disclosure</td><td>Each party's assets, liabilities, income and superannuation (for property matters)</td></tr>
+<tr><td>Superannuation documents</td><td>Where super is split: a valuation and notice to the fund trustee</td></tr>
+</tbody></table></figure>
 """
  + inline_cta("We prepare consent order applications that satisfy the court the first time \u2014 no costly back-and-forth.")
- + """
-<h2 id="change">Can you change consent orders?</h2>
-<p>Yes, but not casually. Financial consent orders are usually final \u2014 that finality is the point. They can only be set aside in limited circumstances such as fraud, non-disclosure, or a significant change that makes them impracticable. Parenting consent orders can be changed if circumstances change significantly and it's in the child's best interests, ideally by agreement (often revisited through mediation) rather than fresh litigation.</p>
+ + f"""
+<h2 id="time-limits">Time limits: the deadline to apply</h2>
+<p>Property consent orders have a deadline, and it catches people out. Under the {cite("family_law_act")}:</p>
+<figure class="tbl"><table><caption>Deadline to apply for property consent orders</caption>
+<thead><tr><th>Situation</th><th>Deadline to apply</th></tr></thead>
+<tbody>
+<tr><td>Married couples</td><td>Within 12 months of the divorce becoming final</td></tr>
+<tr><td>De facto couples</td><td>Within 24 months of the date of separation</td></tr>
+<tr><td>Parenting arrangements</td><td>No time limit \u2014 best interests apply at any time</td></tr>
+</tbody></table></figure>
+<p>Applying after the deadline is not impossible, but you need the court's permission ("leave"), which is not guaranteed and adds cost and delay. Parenting orders have no equivalent time limit \u2014 a child's best interests can be addressed at any time \u2014 but it is always better to formalise arrangements while everyone is cooperating. If your deadline is approaching, don't let the paperwork drift. <a href="/property-settlement-after-separation/">Read our property settlement guide \u2192</a></p>
 
-<h2 id="breach">What happens if someone breaches them?</h2>
-<p>Because consent orders are court orders, breaching them has real consequences. For parenting orders, a contravention application can be brought, and penalties range from make-up time through to fines. For financial orders, enforcement mechanisms exist to compel compliance. If a breach happens, returning to mediation is often the fastest way to resolve it before escalating to enforcement. <a href="/family-law-mediation/">Talk to us about resolving a breach \u2192</a></p>
+<h2 id="how-long">How long do consent orders take?</h2>
+<p>Once filed, consent orders are typically processed within a few weeks, though timeframes shift with the court's workload at the time. There is no hearing date to wait for \u2014 a registrar simply reviews the papers when your application reaches the front of the queue.</p>
+<p>The real variable is how long it takes to <em>reach</em> the agreement in the first place. That is where months can disappear if matters are left to drift or to lawyers' letters going back and forth. Mediation compresses that stage from months into a session or two, and then the formalisation is quick. <a href="/how-long-does-mediation-take/">See how long mediation takes \u2192</a></p>
+"""
+ + inline_cta("The faster you reach agreement, the faster it's sealed. A mediation session or two is usually all it takes.")
+ + callout("Not sure whether to use consent orders or a BFA?",
+   "Both make a financial settlement binding. Consent orders are court-approved and usually cheaper; a binding financial agreement is a private contract that offers more flexibility but requires independent legal advice for each party. Our BFA-or-consent-orders guide walks through which suits which situation.")
+ + f"""
+<h2 id="cost">What do consent orders cost?</h2>
+<p>The court filing fee for an Application for Consent Orders is modest \u2014 around $200 \u2014 and is set out in the {cite("fcfcoa_fees")}. Fee reductions are available for people who hold certain concession cards or would face financial hardship. On top of the filing fee, your main cost is preparing the documents: a well-drafted Minute is worth the investment, because it is what makes the orders work.</p>
+<p>Set that against a contested property case, which can consume tens of thousands of dollars \u2014 often a meaningful slice of the very asset pool you are dividing. Consent orders are one of the cheapest, most durable ways to lock in certainty. <a href="/our-fee-structure/">See our transparent fees \u2192</a></p>
+"""
+ + inline_cta("Curious what your matter would cost to formalise? Book a fixed-fee consultation and we'll give you a straight answer.")
+ + f"""
+<h2 id="just-equitable">How the court checks your orders</h2>
+<p>A registrar will not simply rubber-stamp whatever you submit \u2014 and that protection is a feature, not an obstacle. For <strong>property</strong>, the orders must be "just and equitable" under the {cite("family_law_act")}. In practice the court works through a familiar four-step approach: identify and value the asset pool; weigh each party's financial and non-financial contributions; consider future needs (things like the care of children, age, health and earning capacity); then stand back to check the overall result is fair.</p>
+<p>For <strong>parenting</strong>, the only test is the best interests of the child. The factors the court weighs were reshaped by recent reforms to the {cite("family_law_act")} \u2014 <a href="/changes-to-family-law-act-2025/">see what changed</a>. A well-prepared application that reflects a genuinely fair, child-focused agreement generally satisfies the registrar without difficulty. <a href="/what-am-i-entitled-to-in-a-separation-in-australia/">Learn what a fair division looks like \u2192</a></p>
+
+<h2 id="superannuation">Splitting superannuation by consent</h2>
+<p>Superannuation is treated as property under Australian family law, so it can be divided by consent orders just like other assets. A super split moves a portion of one person's superannuation into the other's fund; it does not turn super into cash, and the split amount stays preserved under the normal superannuation rules until a condition of release is met.</p>
+<p>Two practical points trip people up. First, you generally need to <strong>value the interest</strong> properly before splitting it \u2014 especially for defined-benefit funds. Second, the law requires you to give the superannuation fund's trustee <strong>procedural fairness</strong>: the trustee must be notified of the proposed orders and given the chance to object before the court makes them. Building these steps in from the start avoids a knock-back. <a href="/superannuation-and-divorce/">Read our superannuation and divorce guide \u2192</a></p>
+"""
+ + inline_cta("Superannuation splits have technical traps. We'll make sure your orders are drafted so the fund and the court both accept them.")
+ + f"""
+<h2 id="change">Can you change or set aside consent orders?</h2>
+<p>Yes, but not casually \u2014 and the difference between property and parenting matters.</p>
+<p><strong>Financial consent orders are usually final.</strong> That finality is the whole point: both of you can move on knowing the settlement is closed. A court will only set them aside in the limited circumstances set out in the {cite("family_law_act")} \u2014 for example fraud or a failure to disclose assets, duress, a later event that makes the orders impracticable to carry out, or a default in performance. This is also why honest, complete disclosure at the start protects you: orders built on hidden assets are vulnerable.</p>
+<p><strong>Parenting consent orders can be changed</strong> where there has been a significant change in circumstances and it is in the child's best interests \u2014 ideally by fresh agreement (often revisited through mediation) rather than by going back to court. Children grow and lives shift, and the orders can evolve with them.</p>
+"""
+ + inline_cta("Circumstances changed and your orders no longer fit? Mediation can update them by agreement, without a court fight.")
+ + f"""
+<h2 id="breach">Enforcing consent orders if someone breaches</h2>
+<p>Because consent orders are court orders, ignoring them carries real consequences. For <strong>parenting orders</strong>, the other parent can file a contravention application; if a breach is proven without reasonable excuse, outcomes range from make-up time and attendance at a parenting program through to bonds, fines and, in the most serious cases, imprisonment. For <strong>financial orders</strong>, the court has enforcement mechanisms to compel payment or the transfer of property.</p>
+<p>Enforcement is the last resort, not the first. Where a breach reflects a genuine change in circumstances or a misunderstanding, returning to mediation is usually the faster, cheaper way to resolve it \u2014 and often the way to update the orders so the problem does not recur. <a href="/family-law-mediation/">Talk to us about resolving a breach \u2192</a></p>
 """
  ,
  [("What are consent orders in Australia?",
    "Consent orders are a written agreement approved by the Federal Circuit and Family Court that becomes legally binding without a hearing. They can cover property, finances and parenting arrangements."),
+  ("Is there a time limit to apply for consent orders?",
+   "Yes, for property. Married couples have 12 months from the date their divorce becomes final; de facto couples have 24 months from separation. Applying later needs the court's permission. Parenting orders have no time limit."),
   ("How long do consent orders take?",
    "Once filed, they're typically processed within a few weeks, depending on court workload. Reaching the underlying agreement \u2014 best done through mediation \u2014 is usually the longer part."),
   ("How much do consent orders cost?",
-   "The court filing fee is modest (around $200), plus any cost of preparing the documents. This is far cheaper than a contested property case."),
+   "The court filing fee is modest (around $200), plus any cost of preparing the documents. This is far cheaper than a contested property case, and fee reductions are available in cases of hardship."),
+  ("Do I need a lawyer to get consent orders?",
+   "No, you can apply yourselves \u2014 but the application and the Minute of Consent Orders must be drafted correctly, or the registrar may decline them. Many people have a mediator or lawyer prepare the documents while keeping the process out of court."),
+  ("Can consent orders include superannuation?",
+   "Yes. Superannuation is treated as property and can be split by consent orders. The interest usually needs to be valued, and the super fund's trustee must be notified and given the chance to object before the orders are made."),
   ("Can consent orders be changed later?",
-   "Financial consent orders are usually final and can only be set aside in limited circumstances. Parenting orders can be varied if circumstances change significantly and it's in the child's best interests."),
+   "Financial consent orders are usually final and can only be set aside in limited circumstances such as fraud or non-disclosure. Parenting orders can be varied if circumstances change significantly and it's in the child's best interests."),
   ("What happens if my ex breaches consent orders?",
    "Because they're court orders, breaches can be enforced. Parenting breaches can lead to a contravention application; financial orders have enforcement mechanisms. Mediation is often the fastest first step.")],
  [("consent-orders","Consent Orders Service"),
   ("financial-agreements-mediation","Binding Financial Agreements"),
   ("bfa-or-consent-orders","BFA or Consent Orders?"),
-  ("what-am-i-entitled-to-in-a-separation-in-australia","What Am I Entitled To?"),
-  ("property-settlement-mediation","Property Settlement Mediation"),
+  ("property-settlement-after-separation","Property Settlement After Separation"),
+  ("superannuation-and-divorce","Superannuation & Divorce"),
   ("how-mediation-works","How Mediation Works")],
- read_min=9)
+ read_min=11)
 
 print("consent-orders-explained built")
 

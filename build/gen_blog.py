@@ -19,7 +19,10 @@ def inline_cta(text, btn="Book a free consultation"):
 </div>"""
 
 def callout(h, p):
-    return f'<div class="callout"><h3>{h}</h3><p>{p}</p></div>'
+    # Decorative sage callout boxes removed site-wide — they rendered as a large
+    # green panel with little informational value. Kept as a no-op so the many
+    # existing callout(...) calls across the batch files stay valid.
+    return ''
 
 def key_takeaway(text):
     return f'<div class="answer reveal"><p><strong>Key takeaway:</strong> {text}</p></div>'
@@ -43,6 +46,8 @@ POST_CSS = """
 .post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
 .post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
 .post-body a:hover{color:var(--terra)}
+/* Buttons inside article body must keep white label, not the green underlined link style */
+.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
 .post-cta{margin:36px 0}
 .post-cta-inner{background:linear-gradient(135deg,var(--sage-deep),var(--sage));color:var(--cream);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--cream);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}
@@ -134,7 +139,7 @@ post("cost-of-divorce-in-australia",
   ("managing-costs","How to manage your divorce costs")],
  key_takeaway("The divorce application itself is a fixed government fee of around $1,100 (or about $375 with a concession). The costs that vary enormously are legal representation, expert reports and property disputes — where a contested case can exceed $100,000 per side. Mediation typically resolves matters for $3,500–$4,500 in total, shared between parties.")
  + """
-<p>Some marriages break down beyond repair, and divorce brings both emotional and financial strain. To put it in context, the <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener">Australian Bureau of Statistics</a> recorded roughly 48,000–49,000 divorces granted in a recent year, and independent reporting has put the cost of a typical divorce somewhere between $10,000 and $20,000 — though once property and parenting disputes are added, the total can climb past $100,000. Understanding where the money actually goes is the first step to keeping your own costs under control.</p>
+<p>Some marriages break down beyond repair, and divorce brings both emotional and financial strain. To put it in context, the <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener">Australian Bureau of Statistics</a> recorded roughly 48,000–49,000 divorces granted in a recent year, and independent reporting has put the cost of a typical divorce somewhere between $10,000 and $20,000 — though once property and parenting disputes are added, the total can climb past $100,000. Understanding where the money actually goes is the first step to keeping your own costs under control — and as you'll see, <a href="/divorce-mediation/">divorce mediation</a> is the single biggest lever for bringing the total down.</p>
 <p class="source-note">Sources: <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener">ABS Marriages and Divorces, Australia</a>; <a href="https://www.fcfcoa.gov.au/fl/fees/fl-fees" target="_blank" rel="noopener">FCFCOA fee schedule</a>.</p>
 
 <h2 id="understanding-divorce">Understanding divorce in Australia</h2>

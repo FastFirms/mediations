@@ -6,7 +6,7 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, service_schema,
                        BOOK_URL, PHONE, PHONE_HREF)
 
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def phero(eyebrow, h1, lede):
     return f"""<main id="main">
@@ -71,7 +71,7 @@ def build(slug, title, desc, eyebrow, h1, lede, ans, blocks, qa, crumb_name, cta
 build(
  "property-settlement-mediation",
  "Property Settlement Mediation | Divide Assets, No Court",
- "Resolve your property settlement through mediation — divide assets, debts and super fairly without court. Accredited mediators, fixed-fee, formalised in consent orders.",
+ "Resolve your property settlement through mediation — divide assets, debts and super fairly, then formalise it in consent orders. Fixed-fee, no court.",
  "Property &amp; financial settlements",
  "Property Settlement Mediation — divide assets <em>fairly and finally</em>.",
  "Separating means untangling a shared financial life — the home, savings, super, debts and businesses. Mediation lets you divide it all by agreement, quickly and privately, instead of handing the decision to a court after years of legal fees.",
@@ -85,7 +85,10 @@ build(
    <li><strong>Consider future needs</strong> — earning capacity, age, health, and who cares for the children.</li>
    <li><strong>Check it's just and equitable</strong> — that the overall split is fair in the circumstances.</li>
  </ol>
- <p>In mediation, your mediator helps you work through each step openly, so the outcome is grounded in the same principles a judge would apply — but reached in days, not years.</p>
+ <p>In mediation, your mediator helps you work through each step openly, so the outcome is grounded in the same principles a judge would apply — but reached in days, not years. The same four-step approach is set out in the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>.</p>
+
+ <h2>Full and frank disclosure comes first</h2>
+ <p>A fair settlement depends on both people putting all their cards on the table. Each of you has a <a href="https://www.fcfcoa.gov.au/fl/duty-disclosure" target="_blank" rel="noopener">duty of full and frank financial disclosure</a> — bank statements, payslips, tax returns, superannuation statements, and details of any businesses or trusts. Mediation actually makes this easier: instead of months of lawyers' letters chasing documents, the mediator sets a clear, shared list up front so you both arrive with the same picture. Without honest disclosure, any agreement can later be set aside, so getting it right protects you.</p>
 
  <h2>What can be included in a property settlement?</h2>
  <ul>
@@ -97,13 +100,48 @@ build(
    <li>Debts, mortgages and liabilities</li>
  </ul>
 
- <div class="callout">
-   <h3>You have time limits — but you have options</h3>
-   <p>After a divorce you generally have 12 months to finalise property matters, and de facto couples have two years from separation. Mediation is the fastest way to reach agreement within those windows. <a href="/de-facto-mediation/">See de facto property disputes →</a></p>
- </div>
+ <h2>How superannuation, businesses and trusts are treated</h2>
+ <p>A property settlement is rarely just the house and the savings. The trickier assets are exactly where mediation earns its keep, because you can agree a sensible approach instead of paying lawyers to fight over valuations:</p>
+ <ul>
+   <li><strong>Superannuation</strong> — treated as property and able to be split between partners, which often unlocks a fairer division without anyone having to sell the family home.</li>
+   <li><strong>Businesses and company interests</strong> — a business one or both of you built forms part of the pool; the question is its value and how to deal with it without crippling the business that pays the bills.</li>
+   <li><strong>Trusts and inheritances</strong> — these can be in or out of the pool depending on timing, control and how they were used during the relationship. They need careful, honest handling.</li>
+   <li><strong>Debts and liabilities</strong> — mortgages, loans and tax debts are shared too, and a good settlement allocates them as deliberately as it does the assets.</li>
+ </ul>
 
- <h2>Why mediate rather than litigate your settlement?</h2>
- <p>Because a contested property case can consume a meaningful share of the very asset pool you're fighting over. Mediation keeps the money where it belongs — with you and your family — and lets you craft creative solutions a court can't, like staggered payouts or keeping the home until children finish school. Many family lawyers recommend it as the sensible first step. <a href="/property-settlement-mediation/">Once you agree, we formalise it in consent orders.</a></p>
+ <h2>Contributions and future needs — the part people miss</h2>
+ <p>A fair split isn't simply 50/50. The law weighs both what each of you <em>put in</em> — financial contributions, plus the non-financial ones like homemaking and parenting — and what each of you will <em>need going forward</em>: earning capacity, age, health, and who has the day-to-day care of the children. Two couples with identical asset pools can fairly settle on very different splits because of these factors. In mediation, your mediator helps you weigh them honestly, so the outcome reflects the same considerations a court would apply.</p>
+
+ <h2>Property settlement time limits</h2>
+ <p>There are deadlines, and missing them can cost you the right to a settlement — so this is one area where acting early genuinely matters. Mediation is the fastest route to a binding agreement inside these windows:</p>
+ <figure class="tbl"><table><caption>Time limits to finalise a property settlement</caption>
+ <thead><tr><th>Your situation</th><th>Time limit to apply</th><th>From when</th></tr></thead>
+ <tbody>
+ <tr><td>Married then divorced</td><td>12 months</td><td>The date your divorce becomes final</td></tr>
+ <tr><td>De facto relationship</td><td>24 months</td><td>The date of separation</td></tr>
+ </tbody></table></figure>
+ <p>You can settle before a divorce is even finalised — many couples do. If you're past a limit, a court's permission is sometimes possible but not guaranteed, so don't bank on it. <a href="/de-facto-mediation/">See de facto property disputes →</a> or <a href="/property-settlement-after-separation/">read the full guide to property settlement after separation →</a></p>
+
+ <h2>What if you can't agree on a value — or your ex stalls?</h2>
+ <p>Disagreement over what something is worth is normal, and it doesn't derail mediation: you simply agree on an independent valuer for the home, business or super and work from their figure. Delay is the bigger risk — sometimes one party drags things out hoping the other gives up. Mediation counters that by setting a clear timetable and a shared disclosure list up front, so there's nowhere to hide and far less room to stall than in slow-moving litigation.</p>
+
+ <h2>Making your settlement binding: consent orders or a BFA</h2>
+ <p>A handshake agreement isn't enough — to be safe and final, a property settlement should be formalised. There are two routes, and your mediator helps you choose:</p>
+ <figure class="tbl"><table><caption>Two ways to make a property settlement legally binding</caption>
+ <thead><tr><th></th><th>Consent orders</th><th>Binding financial agreement (BFA)</th></tr></thead>
+ <tbody>
+ <tr><td>Approved by a court</td><td>Yes — a registrar checks it's just and equitable</td><td>No — a private contract between you</td></tr>
+ <tr><td>Independent legal advice</td><td>Not required</td><td>Required for each party</td></tr>
+ <tr><td>Typical cost</td><td>Lower (one court filing fee)</td><td>Higher (two sets of legal advice)</td></tr>
+ <tr><td>Best for</td><td>Most separating couples</td><td>Maximum flexibility or pre/during relationship</td></tr>
+ </tbody></table></figure>
+ <p>For most couples, <a href="/consent-orders-explained/">consent orders</a> are the simpler, lower-cost route. Where you want more flexibility, a <a href="/financial-agreements-mediation/">binding financial agreement</a> may suit. <a href="/bfa-or-consent-orders/">Compare the two in detail →</a></p>
+
+ <h2>Why mediate rather than go to court over your settlement?</h2>
+ <p>Because a contested property case can consume a meaningful share of the very asset pool you're dividing. Mediation keeps the money where it belongs — with you and your family — and lets you craft creative solutions a court can't, like staggered payouts or keeping the home until children finish school. Many family lawyers recommend it as the sensible first step, then we help you formalise the agreement in <a href="/consent-orders-explained/">consent orders</a>.</p>
+
+ <h2>How long does it take, and what does it cost?</h2>
+ <p>Most property matters settle in one or two mediation sessions over a few weeks, compared with the one to three years a contested case can take — and at a fraction of the cost. Because the fee is fixed and shared, you know what you're committing to up front. <a href="/how-much-does-mediation-cost/">See what mediation costs →</a></p>
  """,
  [("How long do I have to finalise a property settlement?",
    "After divorce you generally have 12 months to apply for property orders; de facto couples have two years from the date of separation. Mediation is the fastest way to reach a binding agreement inside these limits."),
@@ -118,9 +156,89 @@ build(
  "Book a fixed-fee consultation and get a clear, honest view of how mediation can divide your assets fairly — without the cost and delay of court.")
 
 build(
+ "divorce-mediation",
+ "Divorce Mediation Australia | Divorce Mediators",
+ "Resolve property, parenting and financial matters with experienced divorce mediators — faster and cheaper than court. Fixed-fee, confidential, Australia-wide.",
+ "Divorce &amp; separation",
+ "Divorce Mediation — settle the terms <em>without court</em>.",
+ "Ending a marriage means untangling parenting, property and finances at the hardest possible time. Divorce mediation gives you a calm, structured way to agree on all of it — guided by a neutral divorce mediator, in weeks rather than years, and on terms you decide together instead of ones a judge imposes.",
+ "Divorce mediation is a confidential process where a neutral divorce mediator helps separating couples reach agreement on parenting, property and financial matters without going to court. It usually resolves in one or two sessions, costs a fraction of litigation, and the agreement can be made legally binding through consent orders or a binding financial agreement.",
+ """
+ <h2>What is divorce mediation?</h2>
+ <p>Divorce mediation is a form of <a href="/family-law-mediation/">family law mediation</a> focused on the issues that arise when a marriage ends — how you'll co-parent, how you'll divide property and superannuation, and how you'll handle ongoing financial support. A neutral, accredited mediator guides the conversation, keeps it constructive, and helps you reach a workable agreement. The mediator doesn't take sides or decide the outcome; they help <em>you</em> decide it. It's worth being clear about one thing up front: the legal divorce itself — formally ending the marriage — is a separate administrative step you apply for through the court. Mediation resolves the disputes that come <em>with</em> the divorce. Many couples handle both at once: they <a href="/online-divorce/">apply for divorce online</a> while resolving parenting and property through mediation.</p>
+
+ <h2>What does a divorce mediator do?</h2>
+ <p>A divorce mediator is a neutral third party trained to help two people in conflict reach agreement. A good mediator for divorce will set a clear agenda, make sure both people are heard, test proposals against what's realistic and fair, and keep the focus on solutions rather than blame. Many of our divorce mediators are also experienced family lawyers, so they can give you a grounded sense of where a matter would likely land in court — which often makes agreement easier, because both sides can see the realistic range. What a mediator will not do is give either party legal advice or impose a decision; you remain free to get your own advice alongside the process.</p>
+
+ <h2>How divorce mediation works, step by step</h2>
+ <ol>
+   <li><strong>Fixed-fee consultation</strong> — you tell us what you're facing and we give an honest view of whether mediation can help, and how it sits alongside any legal advice you have.</li>
+   <li><strong>Intake and preparation</strong> — each of you meets the mediator separately, financial disclosure is gathered, and the issues are mapped out.</li>
+   <li><strong>The mediation session</strong> — guided by the mediator, you work through parenting, property and finances, in the same room or in separate rooms ('shuttle' mediation) where there's conflict or a safety concern.</li>
+   <li><strong>Reaching agreement</strong> — points of agreement are recorded in a Heads of Agreement as you go.</li>
+   <li><strong>Formalising it</strong> — we turn the agreement into consent orders or a binding financial agreement so it's enforceable.</li>
+ </ol>
+
+ <h2>Divorce mediator vs divorce lawyer: what's the difference?</h2>
+ <p>They're not rivals — most people benefit from both, in the right order. A divorce lawyer advises and advocates for one side; a divorce mediator stays neutral and helps both sides reach a shared agreement. Starting with mediation usually means any legal advice is cheaper and more focused, because you're paying a lawyer to check an agreement rather than fight for one.</p>
+ <figure class="tbl"><table><caption>Divorce mediator vs divorce lawyer — how they differ</caption>
+ <thead><tr><th></th><th>Divorce mediator</th><th>Divorce lawyer</th></tr></thead>
+ <tbody>
+ <tr><td>Acts for</td><td>Both parties, neutrally</td><td>One party</td></tr>
+ <tr><td>Goal</td><td>A shared, workable agreement</td><td>The best outcome for their client</td></tr>
+ <tr><td>Typical cost</td><td>Fixed fee, usually shared</td><td>Hourly, each side pays their own</td></tr>
+ <tr><td>Speed</td><td>Weeks — often one or two sessions</td><td>Months to years if contested</td></tr>
+ <tr><td>Decides the outcome?</td><td>No — you do</td><td>No — but pushes a position; a judge decides if it goes to court</td></tr>
+ </tbody></table></figure>
+ <p>The point isn't to avoid lawyers — it's to avoid an unnecessary court fight. Mediation first, advice alongside, court only if you truly need it.</p>
+
+ <h2>What can divorce mediation resolve?</h2>
+ <ul>
+   <li><strong>Parenting</strong> — living arrangements, time with each parent and decision-making, formalised in a <a href="/parenting-plan-mediation/">parenting plan</a> or consent orders</li>
+   <li><strong>Property and finances</strong> — dividing the home, savings, superannuation, debts and businesses through <a href="/property-settlement-mediation/">property settlement mediation</a></li>
+   <li><strong>Spousal maintenance</strong> — ongoing financial support where one partner needs it, via <a href="/spousal-support-mediation/">spousal maintenance mediation</a></li>
+   <li><strong>Child support</strong> — private arrangements that depart from or sit alongside the formula</li>
+ </ul>
+ <p>You can resolve all of these together in one mediation, or just the issues you're stuck on. The framework mediators apply mirrors the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, so your agreement reflects what a court would consider fair.</p>
+
+ <h2>Divorce mediation vs going to court</h2>
+ <p>A contested divorce can run one to three years and cost tens of thousands of dollars per side — money that comes straight out of the asset pool you're trying to divide. Mediation keeps that money with your family. It's also private: court is a public process on the court's timetable, while mediation happens when and how it suits you. And because you craft the agreement yourselves, arrangements tend to last — which matters most when there are children and you'll be co-parenting for years. The <a href="https://www.fcfcoa.gov.au/fl/divorce" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a> itself expects parties to make a genuine effort to resolve matters before litigating.</p>
+
+ <h2>How much does divorce mediation cost?</h2>
+ <p>You begin with a fixed-fee consultation, so there are no billing surprises. From there, divorce mediation typically costs a small fraction of a contested court case, and the fee is usually shared between the parties — unlike two sets of lawyers billing by the hour. <a href="/how-much-does-mediation-cost/">See a full breakdown of what mediation costs →</a></p>
+
+ <h2>How to prepare for divorce mediation</h2>
+ <ol>
+   <li><strong>Get your financial picture together</strong> — recent bank, loan and superannuation statements, tax returns and a list of assets and debts. Both parties owe a <a href="https://www.fcfcoa.gov.au/fl/duty-disclosure" target="_blank" rel="noopener">duty of full and frank disclosure</a>.</li>
+   <li><strong>Think about the children first</strong> — what arrangement genuinely works for them, not just what feels fair to you.</li>
+   <li><strong>Separate needs from wants</strong> — know what you truly need to walk away with, and where you have room to move.</li>
+   <li><strong>Come willing to listen</strong> — the couples who resolve fastest are the ones who arrive ready to problem-solve, not re-argue the relationship.</li>
+ </ol>
+
+ <h2>When divorce mediation may not be suitable</h2>
+ <p>We're honest about the limits. Mediation isn't appropriate in every case — particularly where there is family violence, a serious safety risk, or where one party won't participate or disclose honestly. If that's your situation, you may be exempt from the usual requirement to attempt mediation, and court protection may be the right first step. If you're in immediate danger, call <strong>000</strong>; for confidential support, <strong>1800RESPECT (1800 737 732)</strong> is available 24/7. See our guidance on <a href="/domestic-violence-and-family-law/">family violence and family law</a>.</p>
+
+ <h2>Making your agreement legally binding</h2>
+ <p>Reaching agreement is the hard part — we make the rest simple. Once you've settled, we help formalise it so it's enforceable: <a href="/consent-orders-explained/">consent orders</a> approved by the court for parenting and property, or a binding financial agreement where that suits better. You walk away with certainty, not just a handshake. Wherever you are in Australia — from <a href="/sydney-mediation/">Sydney</a> to Perth — you can do the whole thing in person or by secure video.</p>
+ """,
+ [("What is the difference between divorce and divorce mediation?",
+   "Divorce is the legal end of the marriage, which you apply for through the court. Divorce mediation is the process of agreeing on parenting, property and financial arrangements — the issues that come with separating. Most people handle both at the same time."),
+  ("Do I still need a lawyer if I use a divorce mediator?",
+   "You don't need one to mediate, but it's wise to get independent legal advice alongside the process, especially before signing a binding agreement. Mediation usually makes that advice cheaper and more focused, because the lawyer is checking an agreement rather than fighting for one."),
+  ("How long does divorce mediation take?",
+   "Most matters resolve in one or two sessions over a few weeks, compared with the one to three years a contested court case can take. Complex financial matters may need more time."),
+  ("Is divorce mediation legally binding?",
+   "The mediated agreement becomes binding once it's formalised — as consent orders approved by the court, or as a binding financial agreement. We handle that step so your outcome is enforceable."),
+  ("Can we mediate if we don't agree on anything yet?",
+   "Yes. Starting far apart is normal — that's exactly what mediation is for. A skilled divorce mediator helps you find common ground issue by issue, and you don't have to resolve everything in one sitting.")],
+ "Divorce Mediation",
+ "Start your divorce the <em>calmer</em> way.",
+ "Book a fixed-fee consultation and get an honest view of how divorce mediation can resolve parenting, property and finances — without an unnecessary court fight.")
+
+build(
  "parenting-plan-mediation",
  "Parenting Plan Mediation | Custody Agreements, No Court",
- "Create a workable parenting plan through mediation. Agree on living arrangements, time and decisions for your children — faster and cheaper than a custody court battle.",
+ "Parenting plan mediation helps separated parents agree on living arrangements, time and decisions for the children — calmer than a custody court case.",
  "Parenting &amp; children's arrangements",
  "Parenting Plan Mediation — built around <em>your children</em>.",
  "The hardest part of separating is working out arrangements for the kids. Mediation gives you a calm, structured way to agree on living arrangements, time with each parent and how decisions get made — putting your children first and keeping the choice in your hands.",
@@ -135,17 +253,56 @@ build(
    <li>How parents will communicate and resolve future disagreements</li>
    <li>Arrangements for travel, including overseas</li>
  </ul>
+ <p>For a full checklist of what to include, see our <a href="/parenting-plan-template/">parenting plan template guide</a>.</p>
+
+ <h2>How does parenting plan mediation work?</h2>
+ <p>Mediation is a structured conversation guided by a neutral, accredited practitioner. It usually runs in a few stages:</p>
+ <ul>
+   <li><strong>Intake</strong> — each parent meets the mediator separately so the issues, and any safety concerns, are understood before you begin.</li>
+   <li><strong>Joint sessions</strong> — you work through each part of the plan with the mediator keeping the focus on the children, not the past.</li>
+   <li><strong>Drafting</strong> — the agreement is written up as a clear parenting plan both parents sign.</li>
+   <li><strong>Formalising (optional)</strong> — if you want it enforceable, the plan is converted into <a href="/consent-orders-explained/">consent orders</a>.</li>
+ </ul>
+ <p>If being in the same room is difficult, sessions can run in separate rooms ('shuttle' mediation) or <a href="/online-divorce/">online by video</a>.</p>
+
+ <figure class="tbl"><table><caption>Parenting plan vs consent orders vs a contested court case</caption>
+ <thead><tr><th></th><th>Parenting plan</th><th>Consent orders</th><th>Contested court case</th></tr></thead>
+ <tbody>
+ <tr><td>Legally enforceable</td><td>No, but courts consider it</td><td>Yes</td><td>Yes</td></tr>
+ <tr><td>Who decides</td><td>The parents</td><td>The parents (court approves)</td><td>A judge</td></tr>
+ <tr><td>Typical timeframe</td><td>One or two sessions</td><td>Weeks once agreed</td><td>One to three years</td></tr>
+ <tr><td>Flexibility to change</td><td>High — by agreement</td><td>Needs a new application</td><td>Needs a new application</td></tr>
+ </tbody></table></figure>
 
  <h2>Is a parenting plan legally binding?</h2>
- <p>A parenting plan itself is not legally enforceable, but it carries real weight — a court will consider it if a dispute later arises. If you want a binding outcome, your agreement can be turned into <a href="/consent-orders/">consent orders</a>, which are enforceable. Many families start with a parenting plan and formalise it once arrangements have settled.</p>
+ <p>A parenting plan itself is not legally enforceable, but it carries real weight — a court will consider it if a dispute later arises. If you want a binding outcome, your agreement can be turned into <a href="/consent-orders-explained/">consent orders</a>, which are enforceable. Many families start with a parenting plan and formalise it once arrangements have settled.</p>
 
- <div class="callout">
-   <h3>Children do better when parents agree</h3>
-   <p>Research consistently shows children adjust best to separation when conflict is low and both parents stay involved. Mediation is designed to lower conflict — which is exactly what protects your children long term.</p>
- </div>
+ <h2>The children's best interests come first</h2>
+ <p>Whatever you agree, the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> requires arrangements to be made in the best interests of the child. Reforms that took effect in 2024 simplified the factors a court weighs and put the safety and developmental needs of children at the centre. A good plan reflects each child's age and stage — younger children usually need shorter, more frequent contact, while teenagers need arrangements that respect school, friends and activities. The <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a> service and <a href="https://aifs.gov.au/" target="_blank" rel="noopener">Australian Institute of Family Studies</a> are useful starting points for the evidence on what helps children adjust.</p>
+
+ <h2>Common care arrangements parents agree in mediation</h2>
+ <p>There's no single 'right' arrangement — the best one fits your children's ages, your work, and how far apart you live. These are the patterns separated parents most often land on, and mediation helps you choose or tailor one rather than have a court impose it:</p>
+ <figure class="tbl"><table><caption>Common shared-care patterns after separation</caption>
+ <thead><tr><th>Arrangement</th><th>How it works</th><th>Often suits</th></tr></thead>
+ <tbody>
+ <tr><td>Week about</td><td>Alternating weeks with each parent</td><td>School-age children; parents living close</td></tr>
+ <tr><td>5-2-2-5</td><td>Fixed weekdays with each parent, alternating weekends</td><td>Families wanting predictable routine</td></tr>
+ <tr><td>Alternate weekends</td><td>Primary home with one parent, every second weekend (plus a weeknight) with the other</td><td>Younger children; longer distances</td></tr>
+ <tr><td>Tailored</td><td>Built around shift work, travel or a child's needs</td><td>Any family that doesn't fit a template</td></tr>
+ </tbody></table></figure>
+ <p>Research consistently shows children adjust best when conflict is low and both parents stay involved — which is exactly what mediation is designed to protect.</p>
+
+ <h2>Is this the same as child custody mediation?</h2>
+ <p>In practice, yes. 'Custody' is an older word that Australian family law no longer uses — today the focus is on parental responsibility and the time children spend with each parent. So if you're searching for <a href="/child-custody-mediation/">child custody mediation</a>, parenting plan mediation is the process you're after. It's also where ongoing <strong>co-parenting</strong> gets easier: a clear plan removes the weekly friction over handovers, holidays and decisions, so you spend less energy negotiating and more parenting.</p>
+
+ <h2>When parenting mediation isn't appropriate</h2>
+ <p>Mediation depends on both parents being able to negotiate safely. Where there is family violence, a child-safety concern or a serious power imbalance, it may not be suitable — and you may be exempt from the requirement to attempt it. Your safety and your children's safety come first. If you're in immediate danger call <strong>000</strong>; for confidential support, <strong>1800RESPECT (1800 737 732)</strong> is available 24/7. See <a href="/domestic-violence-and-family-law/">family violence and family law</a>.</p>
 
  <h2>Do we have to mediate before going to court?</h2>
- <p>For most parenting matters, yes. Under the Family Law Act you must make a genuine attempt at family dispute resolution before applying for parenting orders, unless an exemption applies. You'll need a <a href="/section-60i-certificates/">Section 60I certificate</a> to file — which we can issue as part of your mediation.</p>
+ <p>For most parenting matters, yes. Under the Family Law Act you must make a genuine attempt at <a href="https://www.fcfcoa.gov.au/fl/fdr" target="_blank" rel="noopener">family dispute resolution</a> before applying for parenting orders, unless an exemption applies. You'll need a <a href="/section-60i-certificates/">Section 60I certificate</a> to file — which we can issue as part of your mediation.</p>
+
+ <h2>How long does it take, and what does it cost?</h2>
+ <p>Most families reach a workable parenting plan in one or two sessions over a few weeks — a fraction of the time and cost of a contested parenting case, which can run for one to three years. Keeping the matter out of court also keeps the decisions with the people who know the children best. <a href="/how-much-does-mediation-cost/">See what mediation costs →</a> or read more on <a href="/child-custody-mediation/">child custody mediation</a>.</p>
  """,
  [("Is a parenting plan legally enforceable?",
    "A parenting plan is not directly enforceable, but a court will take it into account in any later dispute. To make arrangements binding, they can be formalised as consent orders, which are enforceable."),
@@ -154,7 +311,11 @@ build(
   ("Do both parents have to agree to mediation?",
    "Mediation is voluntary, but both parents are strongly encouraged to attend, and a genuine attempt is generally required before court. If one parent refuses, the other can still obtain a Section 60I certificate."),
   ("Can children have a say in the parenting plan?",
-   "Where appropriate, child-inclusive practices can ensure children's views are heard in an age-appropriate way, without putting them in the middle of the dispute.")],
+   "Where appropriate, child-inclusive practices can ensure children's views are heard in an age-appropriate way, without putting them in the middle of the dispute."),
+  ("How long does parenting mediation take?",
+   "Most families reach a workable parenting plan in one or two sessions over a few weeks — far faster than a contested parenting case, which can take one to three years."),
+  ("What happens in parenting mediation?",
+   "Each parent first meets the mediator separately, then joint sessions work through living arrangements, time-sharing and decision-making with the focus kept on the children. The agreement is written up as a parenting plan you both sign.")],
  "Parenting Plan Mediation",
  "Put your children first — <em>starting today</em>.",
  "Book a fixed-fee consultation and let an accredited family mediator help you build a parenting plan that works for everyone who matters most.")
@@ -414,7 +575,7 @@ build(
  </ul>
 
  <h2>How do consent orders work?</h2>
- <p>Once you reach agreement (often through mediation), an application for consent orders is prepared and lodged with the court. A registrar reviews it to ensure parenting arrangements are in the children's best interests and property division is just and equitable. If satisfied, the court makes the orders — no hearing, no appearance.</p>
+ <p>Once you reach agreement (often through mediation), an application for consent orders is prepared and lodged with the court. A registrar reviews it to ensure parenting arrangements are in the children's best interests and property division is just and equitable. If satisfied, the court makes the orders — no hearing, no appearance. For a step-by-step walkthrough of the process, costs and timeframes, see our <a href="/consent-orders-explained/">consent orders explained guide</a>.</p>
 
  <div class="callout">
    <h3>Consent orders vs a parenting plan vs a BFA</h3>
@@ -438,18 +599,42 @@ build(
 
 build(
  "online-divorce",
- "Online Divorce &amp; Mediation Australia | Separate From Anywhere",
- "Resolve your separation online with accredited mediators — parenting, property and finances by secure video. Online mediation across all of Australia, including regional areas.",
+ "Online Divorce in Australia | Apply &amp; Mediate by Video",
+ "Apply for divorce online through the courts, and resolve parenting, property and finances by secure video with accredited mediators — anywhere in Australia.",
  "Online &amp; remote mediation",
  "Online Divorce Mediation — <em>wherever you are in Australia</em>.",
  "You don't need to be in the same room — or even the same state — to resolve a separation. Our secure online mediation handles parenting, property and financial matters by video, making expert dispute resolution available across all of Australia, including regional and remote areas.",
  "Online divorce mediation lets separating couples resolve parenting, property and financial matters by secure video conference with an accredited mediator. It offers the same structured process and binding outcomes as in-person mediation, available anywhere in Australia.",
  """
+ <h2>What does "online divorce" actually mean?</h2>
+ <p>"Online divorce" covers two different things, and it helps to separate them. The first is the <strong>divorce application itself</strong> — the legal step that formally ends a marriage — which in Australia is now filed entirely online through the courts. The second is resolving the <strong>issues that come with separation</strong> — parenting, property and finances — which a divorce order does not deal with at all. Those are settled by agreement (ideally through mediation) or, failing that, by the court.</p>
+ <p>Most people who search for "online divorce" want help with both: getting the paperwork through, and sorting out the children and the assets without a courtroom fight. This page explains how each part works online.</p>
+
+ <h2>How to apply for a divorce online in Australia</h2>
+ <p>You apply for divorce through the <a href="https://www.comcourts.gov.au/" target="_blank" rel="noopener">Commonwealth Courts Portal</a>, the online filing system of the <a href="https://www.fcfcoa.gov.au/fl/divorce" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>. There is no need to attend a registry in person to lodge it. In outline:</p>
+ <ul>
+   <li><strong>Check you're eligible</strong> — you (or your spouse) must regard Australia as home, and you must have been separated for at least 12 months and one day.</li>
+   <li><strong>Create a portal account</strong> and complete the online Application for Divorce.</li>
+   <li><strong>Pay the filing fee</strong> (a reduced fee applies if you hold a concession card or would suffer financial hardship).</li>
+   <li><strong>Serve a sole application</strong> on your spouse, or file jointly so service isn't required.</li>
+   <li><strong>Attend the hearing if needed</strong> — often you don't have to, particularly for a joint application or where there are no children under 18.</li>
+ </ul>
+ <p>A divorce order takes effect one month and one day after it is granted. Remember it ends the marriage only — it does not divide property or settle parenting. That second half is where <a href="/divorce-mediation/">divorce mediation</a> does the real work. <a href="/how-to-get-a-divorce-in-australia-a-step-by-step-guide/">See our full step-by-step divorce guide →</a></p>
+
+ <figure class="tbl"><table><caption>The two halves of an online divorce</caption>
+ <thead><tr><th></th><th>The divorce application</th><th>Resolving parenting &amp; property</th></tr></thead>
+ <tbody>
+ <tr><td>What it does</td><td>Legally ends the marriage</td><td>Settles children, property, finances</td></tr>
+ <tr><td>How it's done online</td><td>Commonwealth Courts Portal</td><td>Online mediation by secure video</td></tr>
+ <tr><td>Time limit</td><td>After 12 months' separation</td><td>Property: within 12 months of divorce</td></tr>
+ <tr><td>Outcome</td><td>Divorce order</td><td>Parenting plan, consent orders or BFA</td></tr>
+ </tbody></table></figure>
+
  <h2>How does online mediation work?</h2>
- <p>It mirrors in-person mediation, conducted over secure video. You can be in the same virtual room, or in separate virtual rooms with the mediator moving between you ('shuttle' mediation) — useful where there's high conflict or a safety concern. Documents are shared and signed electronically.</p>
+ <p>Online mediation mirrors in-person mediation, conducted over secure video. You can be in the same virtual room, or in separate virtual rooms with the mediator moving between you ('shuttle' mediation) — useful where there's high conflict or a safety concern. Documents are shared and signed electronically, and sessions are scheduled around work and childcare.</p>
 
  <h2>Is online mediation as effective as in person?</h2>
- <p>Yes — and often more convenient. Online mediation removes travel, reduces cost, and lets people participate from a place where they feel safe and comfortable. Outcomes are just as binding once formalised in <a href="/consent-orders/">consent orders</a> or a financial agreement.</p>
+ <p>Yes — and often more convenient. Online mediation removes travel, reduces cost, and lets people participate from a place where they feel safe and comfortable. Outcomes are just as binding once formalised in <a href="/consent-orders-explained/">consent orders</a> or a financial agreement. For parenting matters, an accredited practitioner can also issue the <a href="/section-60i-certificates/">Section 60I certificate</a> you need before applying to court.</p>
 
  <div class="callout">
    <h3>Built for regional and remote Australia</h3>
@@ -458,14 +643,27 @@ build(
 
  <h2>What can be resolved online?</h2>
  <ul>
-   <li>Parenting arrangements and parenting plans</li>
-   <li>Property settlements and superannuation splits</li>
+   <li>Parenting arrangements and <a href="/parenting-plan-mediation/">parenting plans</a></li>
+   <li><a href="/property-settlement-mediation/">Property settlements</a> and superannuation splits</li>
    <li>Spousal maintenance and child support</li>
    <li>Section 60I certificates for parenting matters</li>
  </ul>
+
+ <h2>Sole or joint application — and what if your spouse won't cooperate?</h2>
+ <p>You can apply for divorce <strong>jointly</strong> with your spouse, or on your own as a <strong>sole</strong> applicant. A joint application is simplest: there's nothing to serve, and neither of you usually needs to attend court. With a sole application you must arrange for your spouse to be served with the documents, and prove that service to the court.</p>
+ <p>You do <em>not</em> need your spouse's consent to get divorced. If they won't participate, a sole application still proceeds — the court only needs to be satisfied you've been separated for 12 months and that proper service was attempted. Mediation can't force a divorce, but it can resolve the parenting and property questions that are usually the real source of conflict, so the divorce itself becomes a formality.</p>
+
+ <h2>Is an online divorce cheaper?</h2>
+ <p>Usually, yes. Filing online avoids registry trips, and resolving the surrounding issues by mediation rather than litigation is dramatically cheaper than a contested case — a settled matter is often resolved in one or two sessions instead of the one to three years a defended court case can take. The court's filing fee is set by the FCFCOA and reduced fees apply on hardship grounds. <a href="/how-much-does-mediation-cost/">See what mediation costs →</a></p>
  <p><a href="/family-law-mediation/">See our full family law mediation service →</a></p>
  """,
- [("Is online mediation legally valid?",
+ [("Can you get a divorce online in Australia?",
+   "Yes. You apply through the Commonwealth Courts Portal, the online filing system of the Federal Circuit and Family Court — there's no need to attend a registry in person. You must have been separated for at least 12 months."),
+  ("Does an online divorce also sort out property and parenting?",
+   "No. A divorce order only ends the marriage. Property, finances and parenting are resolved separately — by agreement (ideally through mediation) or by the court — and have their own time limits."),
+  ("Do both people have to agree to divorce online?",
+   "No. You can apply jointly or as a sole applicant. You don't need your spouse's consent; a sole application proceeds provided you've been separated 12 months and your spouse has been properly served."),
+  ("Is online mediation legally valid?",
    "Yes. Agreements reached through online mediation are just as valid as in-person ones and can be formalised into binding consent orders or financial agreements."),
   ("What technology do I need?",
    "A device with a camera and microphone, and an internet connection. We use secure video conferencing and guide you through the setup beforehand."),

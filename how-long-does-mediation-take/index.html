@@ -162,6 +162,8 @@
 .post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
 .post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
 .post-body a:hover{color:var(--terra)}
+/* Buttons inside article body must keep white label, not the green underlined link style */
+.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
 .post-cta{margin:36px 0}
 .post-cta-inner{background:linear-gradient(135deg,var(--sage-deep),var(--sage));color:var(--cream);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--cream);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}
@@ -195,7 +197,12 @@
     <a href="/" class="logo"><span class="dot"></span>Mediations Australia</a>
     <nav class="nav-links" id="navlinks" aria-label="Primary">
       <span class="has-drop"><a class="lnk" href="/#disputes" aria-haspopup="true">Services</a>
-        <div class="drop"><a href="/family-law-mediation/"><b>Family Law Mediation</b>Parenting &amp; property, resolved without court</a><a href="/property-settlement-mediation/"><b>Property Settlement</b>Divide assets fairly and finally</a><a href="/parenting-plan-mediation/"><b>Parenting Plans</b>Workable arrangements for your children</a><a href="/section-60i-certificates/"><b>Section 60I Certificates</b>Required before parenting court action</a><a href="/financial-agreements-mediation/"><b>Financial Agreements</b>Binding agreements (BFAs), done right</a><a href="/spousal-support-mediation/"><b>Spousal Maintenance</b>Fair support after separation</a><a href="/child-support-mediation/"><b>Child Support</b>Resolve support disputes privately</a><a href="/de-facto-mediation/"><b>De Facto Disputes</b>Same rights, same clear process</a><a href="/grandparents-mediation/"><b>Grandparents&#x27; Rights</b>Stay in your grandchildren&#x27;s lives</a><a href="/consent-orders/"><b>Consent Orders</b>Make your agreement legally binding</a><a href="/online-divorce/"><b>Online Divorce</b>Separate from anywhere in Australia</a><a href="/workplace-mediation/"><b>Workplace Mediation</b>Resolve disputes before the FWC</a></div>
+        <div class="drop mega"><div class="mega-col"><span class="mega-head">Family &amp; separation</span><a href="/family-law-mediation/"><b>Family Law Mediation</b><span>Parenting &amp; property, resolved without court</span></a><a href="/divorce-mediation/"><b>Divorce Mediation</b><span>Resolve everything that comes with divorce</span></a><a href="/online-divorce/"><b>Online Divorce</b><span>Separate from anywhere in Australia</span></a><a href="/de-facto-mediation/"><b>De Facto Disputes</b><span>Same rights, same clear process</span></a></div><div class="mega-col"><span class="mega-head">Property &amp; finances</span><a href="/property-settlement-mediation/"><b>Property Settlement</b><span>Divide assets fairly and finally</span></a><a href="/financial-agreements-mediation/"><b>Financial Agreements</b><span>Binding agreements (BFAs), done right</span></a><a href="/spousal-support-mediation/"><b>Spousal Maintenance</b><span>Fair support after separation</span></a><a href="/consent-orders/"><b>Consent Orders</b><span>Make your agreement legally binding</span></a></div><div class="mega-col"><span class="mega-head">Parenting &amp; children</span><a href="/parenting-plan-mediation/"><b>Parenting Plans</b><span>Workable arrangements for your children</span></a><a href="/child-support-mediation/"><b>Child Support</b><span>Resolve support disputes privately</span></a><a href="/section-60i-certificates/"><b>Section 60I Certificates</b><span>Required before parenting court action</span></a><a href="/grandparents-mediation/"><b>Grandparents&#x27; Rights</b><span>Stay in your grandchildren&#x27;s lives</span></a></div>
+      <div class="mega-foot">
+        <span>Not sure which you need? <a href="/how-mediation-works/">See how mediation works</a> or resolve a <a href="/workplace-mediation/">workplace dispute</a>.</span>
+        <a class="btn btn-primary" href="/book-a-consultation/">Book free consult <span class="arr">→</span></a>
+      </div>
+    </div>
       </span>
       <a class="lnk" href="/how-mediation-works/">How it works</a>
       <a class="lnk" href="/guides/">Guides</a>
@@ -254,7 +261,7 @@
   <li><strong>Both parties' willingness</strong> — genuine engagement from both sides is the single biggest accelerator.</li>
   <li><strong>Whether valuations are needed</strong> — waiting on a property or business valuation can add a few weeks.</li>
 </ul>
-<div class="callout"><h3>Even a partial agreement saves time</h3><p>If mediation doesn't resolve absolutely everything, it almost always narrows the issues — meaning a faster, cheaper process for anything that does proceed. Nothing invested in mediation is wasted.</p></div>
+
 <h2 id="vs-court">How that compares to court</h2>
 <p>The contrast is stark. A contested family law matter can take one to three years to reach a final hearing, with multiple interim court dates, adjournments and long waiting periods in between (see the <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>). Court lists in the busier registries are <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">heavily backed up</a>, which only adds to the delay. Most parenting matters also require <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">family dispute resolution</a> before filing.</p>
 <p>Mediation compresses all of that into a matter of weeks. The time saved isn't just a convenience — it means far less stress, dramatically lower cost, and a faster fresh start for everyone involved, especially the children. <a href="/cost-of-divorce-in-australia/">See how that time saving translates into cost savings →</a></p>
@@ -299,7 +306,7 @@
       </div>
       <div>
         <h4>Services</h4>
-        <ul><li><a href="/family-law-mediation/">Family Law Mediation</a></li><li><a href="/property-settlement-mediation/">Property Settlement</a></li><li><a href="/parenting-plan-mediation/">Parenting Plans</a></li><li><a href="/section-60i-certificates/">Section 60I Certificates</a></li><li><a href="/financial-agreements-mediation/">Financial Agreements</a></li><li><a href="/spousal-support-mediation/">Spousal Maintenance</a></li><li><a href="/workplace-mediation/">Workplace Mediation</a></li></ul>
+        <ul><li><a href="/family-law-mediation/">Family Law Mediation</a></li><li><a href="/divorce-mediation/">Divorce Mediation</a></li><li><a href="/property-settlement-mediation/">Property Settlement</a></li><li><a href="/parenting-plan-mediation/">Parenting Plans</a></li><li><a href="/section-60i-certificates/">Section 60I Certificates</a></li><li><a href="/financial-agreements-mediation/">Financial Agreements</a></li><li><a href="/workplace-mediation/">Workplace Mediation</a></li></ul>
       </div>
       <div>
         <h4>Company</h4>

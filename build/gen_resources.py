@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
                        BOOK_URL, PHONE, PHONE_HREF)
-OUT="/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_article=True):
     extra=article_schema(crumb,desc) if is_article else None
@@ -81,7 +81,7 @@ build("bfa-or-consent-orders",
  <h2>What's the difference between a BFA and consent orders?</h2>
  <p>Both make a property settlement legally binding, but they work differently:</p>
  <ul>
-   <li><strong><a href="/consent-orders/">Consent orders</a></strong> are an agreement approved by the Federal Circuit and Family Court. A registrar checks the division is just and equitable, then makes binding orders — without a hearing. They're generally simpler and lower-cost.</li>
+   <li><strong><a href="/consent-orders/">Consent orders</a></strong> are an agreement approved by the Federal Circuit and Family Court. A registrar checks the division is just and equitable, then makes binding orders — without a hearing. They're generally simpler and lower-cost. See our <a href="/consent-orders-explained/">full guide to consent orders</a>.</li>
    <li><strong><a href="/financial-agreements-mediation/">Binding financial agreements (BFAs)</a></strong> are private contracts between the parties. They offer more flexibility and privacy and can be made before, during or after a relationship — but each party must receive independent legal advice for the agreement to be binding.</li>
  </ul>
  <h2>Which should you choose?</h2>
@@ -190,29 +190,72 @@ build("separation-under-one-roof",
  "Separation under one roof means a couple has separated but continues to live in the same home. It is recognised in Australia, but you may need to show that the relationship has genuinely ended — through changes in finances, sleeping arrangements, and how you present to others.",
  """
  <h2>What is separation under one roof?</h2>
- <p>It's when a couple decides their relationship is over but continues, at least for a time, to live in the same house. This is common and entirely valid — people stay under one roof for financial reasons, for stability for the children, or simply while they work out what comes next.</p>
+ <p>"Separation under one roof" describes a couple who have decided their relationship is over but continue, at least for a time, to live in the same home. It is common and entirely valid. People stay under one roof for financial reasons — running two households is expensive — for the stability of the children, while a property settlement is sorted out, or simply because finding somewhere else to live takes time.</p>
+ <p>What matters legally is not whether you share an address, but whether the relationship has genuinely ended. In Australia you can be separated for every legal purpose — divorce, property settlement, Centrelink — while still sleeping under the same roof, provided you can show the marriage or de facto relationship is over in substance.</p>
+
+ <h2>Is separation under one roof legally recognised in Australia?</h2>
+ <p>Yes. Under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, separation happens when at least one person forms the intention to end the relationship, communicates that to the other, and acts on it. Nothing in the law requires you to live at different addresses. The courts have long accepted that a couple can be "separated but living under the same roof", and the <a href="https://www.fcfcoa.gov.au/fl/divorce" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a> has a specific process for proving it when you apply for a divorce.</p>
+ <p>This matters because a divorce in Australia requires you to be separated for at least <strong>12 months and one day</strong> before you can apply. Time spent separated under one roof counts towards that 12 months — you just need to be able to evidence it.</p>
+
  <h2>How do you show you've genuinely separated?</h2>
- <p>Because you're still living together, you may need to demonstrate the relationship has actually ended. Factors that help show genuine separation include:</p>
- <ul>
-   <li>Separate sleeping arrangements</li>
-   <li>Changes to how finances are handled — separate accounts, divided expenses</li>
-   <li>A reduction in shared activities and domestic tasks done for each other</li>
-   <li>Telling family and friends, and relevant government agencies, that you've separated</li>
-   <li>Each person living a more independent life within the home</li>
- </ul>
+ <p>Because you're still living together, you may need to demonstrate that the relationship has actually ended rather than merely become strained. No single factor is decisive; a court or agency looks at the overall picture across several areas of life.</p>
+ <figure class="tbl"><table><caption>What changes when a couple separates under one roof</caption>
+ <thead><tr><th>Area of life</th><th>What genuine separation can look like</th></tr></thead>
+ <tbody>
+ <tr><td>Sleeping arrangements</td><td>Separate bedrooms, or one partner moving to another part of the home</td></tr>
+ <tr><td>Finances</td><td>Separate bank accounts, divided bills, no longer pooling income</td></tr>
+ <tr><td>Household tasks</td><td>Each person cooks, cleans and shops for themselves rather than for the couple</td></tr>
+ <tr><td>Social life</td><td>Attending events separately; no longer presenting as a couple</td></tr>
+ <tr><td>Others' knowledge</td><td>Family, friends and agencies such as Centrelink have been told you've separated</td></tr>
+ </tbody></table></figure>
+ <p>You don't need every box ticked. The point is to show a consistent pattern that the relationship has ended, not just a rough patch. Keeping a brief note of when things changed — when you moved to a separate room, when you split the accounts — makes this far easier to evidence later.</p>
  <div class="callout"><h3>The date of separation matters</h3>
- <p>Your date of separation can affect time limits for property and divorce applications. If you're separated under one roof, it's worth getting clarity early so you understand your position.</p></div>
+ <p>Your date of separation sets the clock running on time limits for both divorce and property. It can also affect Centrelink entitlements and how assets are valued. If you're separated under one roof, pin the date down early so you understand exactly where you stand.</p></div>
+
+ <h2>The affidavit you'll need when you apply for divorce</h2>
+ <p>When you have lived under the same roof during the 12-month separation period, the court won't simply take your word for it. You will usually need to file an <strong>affidavit</strong> setting out the changes in your relationship — sleeping arrangements, finances, household duties and social life — together with a <strong>corroborating affidavit from an independent person</strong>, such as a friend or family member, who can confirm they understood you to be separated. The <a href="https://www.fcfcoa.gov.au/fl/divorce" target="_blank" rel="noopener">FCFCOA divorce process</a> sets out exactly what these affidavits should cover.</p>
+ <p>It sounds onerous, but in practice it is a short, factual statement. The earlier you have clarity on your separation date and the changes that followed, the simpler this step becomes.</p>
+
+ <h2>How your separation date affects time limits</h2>
+ <p>Separation isn't only about divorce. It also starts the clock on the deadlines for finalising a property settlement, and those deadlines differ for married and de facto couples.</p>
+ <figure class="tbl"><table><caption>Key time limits that run from your separation or divorce date</caption>
+ <thead><tr><th>Step</th><th>Married couples</th><th>De facto couples</th></tr></thead>
+ <tbody>
+ <tr><td>Apply for divorce</td><td>After 12 months' separation</td><td>Not applicable</td></tr>
+ <tr><td>Apply for a property settlement</td><td>Within 12 months of divorce becoming final</td><td>Within 24 months of separation</td></tr>
+ <tr><td>Parenting arrangements</td><td>No time limit</td><td>No time limit</td></tr>
+ </tbody></table></figure>
+ <p>Applying after a deadline isn't impossible, but you need the court's permission, which adds cost and uncertainty. If a deadline is approaching, it is worth formalising arrangements while everyone is still cooperating. <a href="/property-settlement-after-separation/">Read our property settlement guide →</a></p>
+
+ <h2>Centrelink, tax and finances while under one roof</h2>
+ <p>Once you separate, you may be assessed as a single person for some payments even if you still share an address. <a href="https://www.servicesaustralia.gov.au/separating" target="_blank" rel="noopener">Services Australia</a> can recognise you as separated under one roof and may ask for a separation form and supporting details. Being upfront and consistent — the same separation date you'd give the court — keeps things clean across the board and avoids problems down the track.</p>
+
+ <h2>Living together while separated: practical tips</h2>
+ <p>The arrangement works best when expectations are clear. A few things make a real difference:</p>
+ <ul>
+   <li><strong>Agree on space and schedules</strong> — who uses common areas when, and how you'll handle meals, laundry and the bathroom.</li>
+   <li><strong>Separate your money early</strong> — open individual accounts and divide responsibility for bills so nothing falls through the cracks.</li>
+   <li><strong>Keep the children's routine steady</strong> — shield them from conflict and present a united, calm front about the practical changes.</li>
+   <li><strong>Document the change</strong> — note your separation date and the adjustments that followed, which helps with both divorce and Centrelink later.</li>
+   <li><strong>Plan the exit</strong> — treat the shared-roof period as temporary and agree a rough timeline for one person to move on.</li>
+ </ul>
+
  <h2>How mediation helps when you're still living together</h2>
- <p>Living together while separated can be tense. <a href="/family-law-mediation/">Mediation</a> provides a structured, neutral way to agree on living arrangements, finances and parenting while you remain under the same roof — and to plan the transition out of it. If being in the same room is difficult, mediation can be conducted in separate rooms or online. <a href="/getting-ready-for-separation/">See getting ready for separation →</a></p>
+ <p>Living together while separated can be tense, and small frictions — bills, the school run, who uses the kitchen when — can escalate quickly. <a href="/family-law-mediation/">Mediation</a> provides a structured, neutral way to agree on living arrangements, finances and parenting while you remain under the same roof, and to plan an orderly transition out of it.</p>
+ <p>A mediator can help you set practical ground rules for the household, work towards a <a href="/property-settlement-mediation/">property settlement</a> and <a href="/parenting-plan-mediation/">parenting arrangements</a>, and reach agreements you can later formalise as <a href="/consent-orders-explained/">consent orders</a>. If being in the same room is difficult, mediation can be conducted in separate rooms (shuttle mediation) or online. <a href="/getting-ready-for-separation/">See getting ready for separation →</a></p>
  """,
  [("Can you be separated while living together?",
-   "Yes. 'Separation under one roof' is recognised in Australia. You may need to show the relationship has genuinely ended despite living in the same home."),
+   "Yes. 'Separation under one roof' is recognised in Australia under the Family Law Act 1975. You may need to show the relationship has genuinely ended despite living in the same home."),
   ("How do you prove separation under one roof?",
-   "Through factors like separate sleeping arrangements, separated finances, reduced shared activities, and informing family, friends and relevant agencies that you've separated."),
+   "Through factors like separate sleeping arrangements, separated finances, reduced shared activities, and informing family, friends and relevant agencies that you've separated. When applying for divorce you'll usually file an affidavit, plus a corroborating affidavit from an independent person."),
+  ("Does time separated under one roof count towards the 12 months for divorce?",
+   "Yes. A divorce requires 12 months and one day of separation, and time spent separated under the same roof counts — provided you can evidence that the relationship had genuinely ended."),
   ("Why does the date of separation matter?",
-   "It can affect time limits for divorce and property applications. Getting clarity on your separation date early helps you understand your legal position."),
+   "It can affect time limits for divorce and property applications, Centrelink entitlements, and how assets are valued. Getting clarity on your separation date early helps you understand your legal position."),
+  ("Can you still claim Centrelink as separated if you live together?",
+   "You may be assessed as single even while sharing an address. Services Australia can recognise separation under one roof and may ask for a separation form and supporting details."),
   ("Can we mediate while still living together?",
-   "Yes. Mediation can help you agree on arrangements while under one roof, and can be conducted in separate rooms or online if being together is difficult.")],
+   "Yes. Mediation can help you agree on living arrangements, finances and parenting while under one roof, and can be conducted in separate rooms or online if being together is difficult.")],
  "Separation Under One Roof",
  "Living together, living apart — <em>we can help</em>.",
  "Book a fixed-fee consultation to work out living, financial and parenting arrangements while you're separated under one roof.")

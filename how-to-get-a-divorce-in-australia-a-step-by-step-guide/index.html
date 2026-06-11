@@ -162,6 +162,8 @@
 .post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
 .post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
 .post-body a:hover{color:var(--terra)}
+/* Buttons inside article body must keep white label, not the green underlined link style */
+.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
 .post-cta{margin:36px 0}
 .post-cta-inner{background:linear-gradient(135deg,var(--sage-deep),var(--sage));color:var(--cream);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--cream);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}
@@ -195,7 +197,12 @@
     <a href="/" class="logo"><span class="dot"></span>Mediations Australia</a>
     <nav class="nav-links" id="navlinks" aria-label="Primary">
       <span class="has-drop"><a class="lnk" href="/#disputes" aria-haspopup="true">Services</a>
-        <div class="drop"><a href="/family-law-mediation/"><b>Family Law Mediation</b>Parenting &amp; property, resolved without court</a><a href="/property-settlement-mediation/"><b>Property Settlement</b>Divide assets fairly and finally</a><a href="/parenting-plan-mediation/"><b>Parenting Plans</b>Workable arrangements for your children</a><a href="/section-60i-certificates/"><b>Section 60I Certificates</b>Required before parenting court action</a><a href="/financial-agreements-mediation/"><b>Financial Agreements</b>Binding agreements (BFAs), done right</a><a href="/spousal-support-mediation/"><b>Spousal Maintenance</b>Fair support after separation</a><a href="/child-support-mediation/"><b>Child Support</b>Resolve support disputes privately</a><a href="/de-facto-mediation/"><b>De Facto Disputes</b>Same rights, same clear process</a><a href="/grandparents-mediation/"><b>Grandparents&#x27; Rights</b>Stay in your grandchildren&#x27;s lives</a><a href="/consent-orders/"><b>Consent Orders</b>Make your agreement legally binding</a><a href="/online-divorce/"><b>Online Divorce</b>Separate from anywhere in Australia</a><a href="/workplace-mediation/"><b>Workplace Mediation</b>Resolve disputes before the FWC</a></div>
+        <div class="drop mega"><div class="mega-col"><span class="mega-head">Family &amp; separation</span><a href="/family-law-mediation/"><b>Family Law Mediation</b><span>Parenting &amp; property, resolved without court</span></a><a href="/divorce-mediation/"><b>Divorce Mediation</b><span>Resolve everything that comes with divorce</span></a><a href="/online-divorce/"><b>Online Divorce</b><span>Separate from anywhere in Australia</span></a><a href="/de-facto-mediation/"><b>De Facto Disputes</b><span>Same rights, same clear process</span></a></div><div class="mega-col"><span class="mega-head">Property &amp; finances</span><a href="/property-settlement-mediation/"><b>Property Settlement</b><span>Divide assets fairly and finally</span></a><a href="/financial-agreements-mediation/"><b>Financial Agreements</b><span>Binding agreements (BFAs), done right</span></a><a href="/spousal-support-mediation/"><b>Spousal Maintenance</b><span>Fair support after separation</span></a><a href="/consent-orders/"><b>Consent Orders</b><span>Make your agreement legally binding</span></a></div><div class="mega-col"><span class="mega-head">Parenting &amp; children</span><a href="/parenting-plan-mediation/"><b>Parenting Plans</b><span>Workable arrangements for your children</span></a><a href="/child-support-mediation/"><b>Child Support</b><span>Resolve support disputes privately</span></a><a href="/section-60i-certificates/"><b>Section 60I Certificates</b><span>Required before parenting court action</span></a><a href="/grandparents-mediation/"><b>Grandparents&#x27; Rights</b><span>Stay in your grandchildren&#x27;s lives</span></a></div>
+      <div class="mega-foot">
+        <span>Not sure which you need? <a href="/how-mediation-works/">See how mediation works</a> or resolve a <a href="/workplace-mediation/">workplace dispute</a>.</span>
+        <a class="btn btn-primary" href="/book-a-consultation/">Book free consult <span class="arr">→</span></a>
+      </div>
+    </div>
       </span>
       <a class="lnk" href="/how-mediation-works/">How it works</a>
       <a class="lnk" href="/guides/">Guides</a>
@@ -224,7 +231,7 @@
   <p class="lede" style="margin-top:16px">Getting divorced in Australia is more straightforward than most people expect. It's a no-fault system, you can apply online, and the divorce itself is separate from sorting out property and children. This guide walks you through every step, the eligibility rules, the cost, and the common pitfalls.</p>
 </div></header>
 <div class="post-body"><div class="wrap-narrow">
-<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul><li><a href="#eligibility">Who can apply for a divorce?</a></li><li><a href="#separation-rule">The 12-month separation rule</a></li><li><a href="#step-by-step">How to apply: step by step</a></li><li><a href="#cost">What does it cost?</a></li><li><a href="#serving">Serving the divorce papers</a></li><li><a href="#children">Divorce when you have children</a></li><li><a href="#after">What a divorce does NOT resolve</a></li></ul></nav>
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul><li><a href="#eligibility">Who can apply for a divorce?</a></li><li><a href="#separation-rule">The 12-month separation rule</a></li><li><a href="#step-by-step">How to apply: step by step</a></li><li><a href="#cost">What does it cost?</a></li><li><a href="#serving">Serving the divorce papers</a></li><li><a href="#children">Divorce when you have children</a></li><li><a href="#rejected">Why applications get delayed</a></li><li><a href="#after">What a divorce does NOT resolve</a></li></ul></nav>
 <div class="answer reveal"><p><strong>Key takeaway:</strong> Australia has a no-fault divorce system. To apply you must have been separated for at least 12 months and meet residency requirements. You apply online through the Commonwealth Courts Portal, pay the filing fee (around $1,100, or about $375 with a concession), and — if there are children under 18 — satisfy the court that proper arrangements are in place. The divorce itself does not divide property or settle parenting; those are separate.</p></div>
 <h2 id="eligibility">Who can apply for a divorce?</h2>
 <p>To apply for a divorce in Australia, you must satisfy the <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a> that:</p>
@@ -233,7 +240,17 @@
   <li>You have been separated for at least 12 months; and</li>
   <li>The marriage has broken down irretrievably, with no reasonable likelihood of getting back together.</li>
 </ul>
-<p>Australia follows a no-fault model under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> — the court doesn't care <em>why</em> the marriage ended, only that it has.</p>
+<p>Australia follows a no-fault model under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> — the court doesn't care <em>why</em> the marriage ended, only that it has. Divorce is common and routine: the <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener">ABS Marriages and Divorces, Australia</a> records tens of thousands of divorces granted each year, the large majority without a hitch.</p>
+<figure class="tbl"><table><caption>Divorce application in Australia at a glance</caption>
+<thead><tr><th>Requirement</th><th>Detail</th></tr></thead>
+<tbody>
+<tr><td>Separation</td><td>At least 12 months and one day</td></tr>
+<tr><td>Residency</td><td>Citizen, permanent resident, or 12 months living in Australia</td></tr>
+<tr><td>Ground</td><td>Irretrievable breakdown — no-fault</td></tr>
+<tr><td>How to apply</td><td>Online via the Commonwealth Courts Portal</td></tr>
+<tr><td>Filing fee</td><td>Around $1,100 (about $375 with a concession)</td></tr>
+<tr><td>When it's final</td><td>One month and one day after the order is granted</td></tr>
+</tbody></table></figure>
 <div class="post-cta reveal">
   <div class="post-cta-inner">
     <p>Unsure whether you're eligible or how to start? A quick consultation will give you clarity — no obligation.</p>
@@ -254,7 +271,15 @@
   <li><strong>Attend the hearing if required</strong> — often not necessary, especially for joint applications or where there are no children under 18.</li>
   <li><strong>Divorce order takes effect</strong> one month and one day after it's granted.</li>
 </ol>
-<div class="callout"><h3>Apply online from anywhere</h3><p>The entire divorce application is handled through the Commonwealth Courts Portal — you don't need to attend a registry in person to lodge it. Online mediation can resolve the property and parenting side the same way.</p></div>
+<figure class="tbl"><table><caption>Sole vs joint divorce application</caption>
+<thead><tr><th></th><th>Joint application</th><th>Sole application</th></tr></thead>
+<tbody>
+<tr><td>Who applies</td><td>Both spouses together</td><td>One spouse</td></tr>
+<tr><td>Serving documents</td><td>Not required</td><td>Required — you must serve your spouse</td></tr>
+<tr><td>Attending the hearing</td><td>Usually not needed</td><td>May be needed if there are children under 18</td></tr>
+<tr><td>Best when</td><td>You both agree to divorce</td><td>Your spouse won't participate or can't be found</td></tr>
+</tbody></table></figure>
+
 <h2 id="cost">What does it cost?</h2>
 <p>The divorce filing fee is set by federal regulation — around $1,100, with a reduced fee of roughly $375 for concession-card holders and those in financial hardship, per the <a href="https://www.fcfcoa.gov.au/fl/fees/fl-fees" target="_blank" rel="noopener">FCFCOA fee schedule</a>. If your application is straightforward and you do it yourself, that filing fee may be your only cost. <a href="/cost-of-divorce-in-australia/">See the full cost of divorce breakdown →</a></p>
 
@@ -269,8 +294,19 @@
 <h2 id="children">Divorce when you have children</h2>
 <p>If there are children under 18, the court must be satisfied that proper arrangements have been made for their care before granting the divorce. This doesn't mean you need final parenting orders — but you do need workable arrangements. A <a href="/parenting-plan-mediation/">parenting plan</a> agreed through mediation is the simplest way to demonstrate this. For a sole application involving children, you may need to attend the hearing.</p>
 
+<h2 id="rejected">Why applications get delayed</h2>
+<p>Most divorce applications go through cleanly, but a few avoidable issues cause delays. Knowing them up front saves weeks:</p>
+<ul>
+  <li><strong>Separation under 12 months</strong> — applying before you've completed the full 12 months and one day.</li>
+  <li><strong>Missing marriage certificate</strong> — you need your certificate, and an English translation if it's in another language.</li>
+  <li><strong>Service not completed properly</strong> — on a sole application, the documents must be served correctly and proof of service filed.</li>
+  <li><strong>Arrangements for children unclear</strong> — the court needs to see proper arrangements are in place for any children under 18.</li>
+  <li><strong>Errors in the application</strong> — names that don't match the marriage certificate, or incomplete details.</li>
+</ul>
+<p>A short consultation, or agreeing parenting and property through <a href="/family-law-mediation/">mediation</a> in parallel, heads off most of these. <a href="/parenting-plan-mediation/">Sort the children's arrangements →</a></p>
+
 <h2 id="after">What a divorce does NOT resolve</h2>
-<p>This is the most misunderstood part: the divorce only ends the marriage. It does <strong>not</strong> divide your property, settle finances, or determine parenting arrangements. Those are separate processes — and there are time limits. You generally have <strong>12 months from the date the divorce is final</strong> to apply for property and financial orders. Don't let the divorce lull you into missing that window. <a href="/property-settlement-after-separation/">Sort your property settlement →</a></p>
+<p>This is the most misunderstood part: the divorce only ends the marriage. It does <strong>not</strong> divide your property, settle finances, or determine parenting arrangements. Those are separate processes — and there are time limits. You generally have <strong>12 months from the date the divorce is final</strong> to apply for property and financial orders. Don't let the divorce lull you into missing that window. The calm way to settle all of it — parenting, property and finances — is <a href="/divorce-mediation/">divorce mediation</a>. <a href="/property-settlement-after-separation/">Sort your property settlement →</a></p>
 
 </div></div>
 </article><section class="sec" id="faq" aria-labelledby="faqh" style="padding-top:0">
@@ -295,7 +331,7 @@
       </div>
       <div>
         <h4>Services</h4>
-        <ul><li><a href="/family-law-mediation/">Family Law Mediation</a></li><li><a href="/property-settlement-mediation/">Property Settlement</a></li><li><a href="/parenting-plan-mediation/">Parenting Plans</a></li><li><a href="/section-60i-certificates/">Section 60I Certificates</a></li><li><a href="/financial-agreements-mediation/">Financial Agreements</a></li><li><a href="/spousal-support-mediation/">Spousal Maintenance</a></li><li><a href="/workplace-mediation/">Workplace Mediation</a></li></ul>
+        <ul><li><a href="/family-law-mediation/">Family Law Mediation</a></li><li><a href="/divorce-mediation/">Divorce Mediation</a></li><li><a href="/property-settlement-mediation/">Property Settlement</a></li><li><a href="/parenting-plan-mediation/">Parenting Plans</a></li><li><a href="/section-60i-certificates/">Section 60I Certificates</a></li><li><a href="/financial-agreements-mediation/">Financial Agreements</a></li><li><a href="/workplace-mediation/">Workplace Mediation</a></li></ul>
       </div>
       <div>
         <h4>Company</h4>

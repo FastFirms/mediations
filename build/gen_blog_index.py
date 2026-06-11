@@ -49,6 +49,14 @@ POSTS = [
  ("can-you-record-your-ex","Legal updates","Can You Record Your Ex?","Surveillance laws, whether recordings can be used in court, and what to do instead."),
  ("best-divorce-lawyers-sydney","Divorce","Best Divorce Lawyers in Sydney","When you need a lawyer, when mediation is better, and how to choose the right help."),
  ("parental-alienation-australia","Parenting","Parental Alienation in Australia","What it is, how the law treats it, telling it apart from justified reluctance, and rebuilding the relationship without court."),
+ ("who-pays-for-mediation","Costs &amp; fees","Who Pays for Mediation?","How the fee is usually split, when one party pays, free options, and the comparison with court."),
+ ("private-vs-free-mediation","Costs &amp; fees","Private vs Free Mediation","Wait times, cost, complexity and outcomes — how to choose between free FDR and private mediation."),
+ ("divorce-mediator-vs-divorce-lawyer","Divorce","Divorce Mediator vs Divorce Lawyer","What each does, what they cost, and why most people benefit from both in the right order."),
+ ("mediation-before-divorce","Divorce","Mediation Before Divorce","Why resolving parenting and property during separation — before you file — saves time and money."),
+ ("what-happens-if-mediation-fails","Family law mediation","What If Mediation Fails?","Section 60I certificates, going to court, and why a 'failed' mediation usually still helps."),
+ ("what-is-in-the-property-pool","Property &amp; finances","What's in the Property Pool?","Assets, super, businesses, debts and inheritances — what counts in a property settlement."),
+ ("delaying-property-settlement","Property &amp; finances","Can My Ex Delay Settlement?","Stalling tactics, time limits, disclosure duties, and how mediation forces progress."),
+ ("co-parenting-mediation","Parenting","Co-Parenting Mediation","Resolving ongoing disputes over schedules, decisions and communication — and keeping kids first."),
 ]
 
 CATS = ["All","Costs &amp; fees","The process","Property &amp; finances","High-conflict","Parenting"]

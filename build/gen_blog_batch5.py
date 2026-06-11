@@ -17,6 +17,7 @@ post("separation-guide",
   ("first-steps","First practical steps"),
   ("bills","Who pays the bills during separation?"),
   ("house","Who stays in the house?"),
+  ("agreement","Are separation agreements binding?"),
   ("protect","Protecting yourself"),
   ("next","What comes next")],
  key_takeaway("Separation means the end of a relationship, and it can happen even while living under one roof. The date of separation matters because it starts time limits for property and divorce. Practical priorities are securing finances, sorting interim arrangements for bills and the home, updating your will, and reaching agreement on parenting and property \u2014 ideally through mediation.")
@@ -48,6 +49,19 @@ post("separation-guide",
 <p>Neither partner is automatically required to leave the family home, and leaving doesn't mean giving up your claim to it. Who stays in the short term is often a practical decision \u2014 but if there's family violence, safety changes everything and protective orders can determine occupation. Mediation can help reach a workable interim arrangement without escalation. <a href="/domestic-violence-and-family-law/">If safety is a concern, read this \u2192</a></p>
 """
  + inline_cta("Disagreeing about the house or the bills? Mediation settles interim arrangements fast \u2014 book a consultation.")
+ + f"""
+<h2 id="agreement">Are separation agreements legally binding in Australia?</h2>
+<p>Many people search for a "separation agreement", expecting a single document that locks everything in. Australia works a little differently. A written agreement you reach between yourselves \u2014 sometimes called a separation agreement \u2014 is a useful record, but on its own it is generally <strong>not enforceable</strong> by a court. To make your arrangements binding, you formalise them through one of the recognised legal instruments below.</p>
+<figure class="tbl"><table><caption>Ways to record and formalise a separation agreement</caption>
+<thead><tr><th>Instrument</th><th>Covers</th><th>Legally binding?</th></tr></thead>
+<tbody>
+<tr><td>Informal written agreement</td><td>Anything you both agree</td><td>No \u2014 a record only, but evidence of intent</td></tr>
+<tr><td>Parenting plan</td><td>Children's living and time arrangements</td><td>No, but courts consider it</td></tr>
+<tr><td>Consent orders</td><td>Property, finances and/or parenting</td><td>Yes \u2014 approved by the court</td></tr>
+<tr><td>Binding financial agreement (BFA)</td><td>Property and finances</td><td>Yes \u2014 with independent legal advice for each party</td></tr>
+</tbody></table></figure>
+<p>For most separating couples, the practical path is to reach agreement through mediation, then formalise the financial side as {cite('fcfcoa_consent_orders')} and the parenting side as a parenting plan or consent orders. That gives you certainty without a court fight. <a href="/consent-orders-explained/">See how consent orders work \u2192</a></p>
+"""
  + """
 <h2 id="protect">Protecting yourself</h2>
 <ul>
@@ -68,6 +82,8 @@ post("separation-guide",
    "There's no automatic rule. Maintaining joint commitments like the mortgage in the interim is usually sensible. Where one partner controlled finances, interim spousal maintenance may apply."),
   ("Why does the date of separation matter?",
    "It starts the 12-month period before you can apply for divorce and begins time limits for property settlement. It can also affect how post-separation contributions are assessed."),
+  ("Are separation agreements legally binding in Australia?",
+   "An informal written separation agreement is generally not enforceable on its own. To make arrangements binding, formalise them as consent orders (approved by the court) or a binding financial agreement, with a parenting plan or consent orders for the children."),
   ("Can I be separated but still live together?",
    "Yes. Separation under one roof is recognised in Australia. You may need to show the relationship has genuinely ended despite sharing a home."),
   ("Should I update my will after separating?",

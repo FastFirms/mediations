@@ -1,4 +1,1071 @@
 {
+  "redirects": [
+    {
+      "source": "/12-best-strategies-for-effective-parenting-plans-in-australia/",
+      "destination": "/parenting-plans-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/12-essential-things-to-know-about-binding-financial-agreements-in-australia/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/5-reasons-why-you-should-consider-mediation-for-child-custody-disputes/",
+      "destination": "/child-custody-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/abc-expose-the-hidden-cost-of-family-court-battles/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/accredited-family-law-mediators/",
+      "destination": "/our-mediators/",
+      "permanent": true
+    },
+    {
+      "source": "/adelaide-family-lawyers/",
+      "destination": "/adelaide-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/application-for-divorce/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/applying-for-a-divorce-in-australia/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/are-mediation-agreements-legally-binding/",
+      "destination": "/family-court-process/",
+      "permanent": true
+    },
+    {
+      "source": "/attend-mediation-in-family-law-matters/",
+      "destination": "/is-family-law-mediation-compulsory/",
+      "permanent": true
+    },
+    {
+      "source": "/australia-lgbt-marriage-mediation/",
+      "destination": "/same-sex-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/avoid-these-mistakes-with-a-binding-financial-agreement/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ballarat-family-lawyers/",
+      "destination": "/geelong-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/becoming-independent-sooner-how-mediation-can-help-you-agree-on-spousal-support/",
+      "destination": "/spousal-maintenance-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/bendigo-family-lawyers/",
+      "destination": "/bendigo-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/best-apps-for-separated-parents/",
+      "destination": "/parenting-plans-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/best-divorce-lawyers-in-sydney/",
+      "destination": "/best-divorce-lawyers-sydney/",
+      "permanent": true
+    },
+    {
+      "source": "/binding-financial-agreement-v-consent-orders/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/binding-financial-agreement-what-you-need-to-know/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/binding-financial-agreement/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/breach-of-family-court-order/",
+      "destination": "/consent-orders-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/brisbane-family-lawyers/",
+      "destination": "/brisbane-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/campbelltown-family-lawyers/",
+      "destination": "/sydney-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/can-you-record-your-ex-without-permission/",
+      "destination": "/can-you-record-your-ex/",
+      "permanent": true
+    },
+    {
+      "source": "/can-you-sue-a-family-trust-in-australia/",
+      "destination": "/business-in-divorce/",
+      "permanent": true
+    },
+    {
+      "source": "/canberra-family-lawyers/",
+      "destination": "/canberra-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/central-coast-family-lawyers/",
+      "destination": "/newcastle-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/changes-to-the-family-law-act-2025-you-must-know/",
+      "destination": "/changes-to-family-law-act-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/child-support-dispute-mediation/",
+      "destination": "/child-support-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/child-support-payments-and-taxes/",
+      "destination": "/child-support-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/commonly-asked-family-law-questions/",
+      "destination": "/family-court-process/",
+      "permanent": true
+    },
+    {
+      "source": "/conciliation-in-family-law/",
+      "destination": "/conciliation-vs-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/consent-order/",
+      "destination": "/consent-orders/",
+      "permanent": true
+    },
+    {
+      "source": "/consent-orders-2025-update/",
+      "destination": "/consent-orders-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/consent-orders-example/",
+      "destination": "/consent-orders-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/costs-of-mediation/",
+      "destination": "/how-much-does-mediation-cost/",
+      "permanent": true
+    },
+    {
+      "source": "/court-ordered-drug-and-alcohol-testing/",
+      "destination": "/domestic-violence-and-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/create-parenting-plan-that-works/",
+      "destination": "/parenting-plans-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-family-lawyers/",
+      "destination": "/darwin-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/de-facto-relationship-dispute-mediation/",
+      "destination": "/de-facto-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/de-facto-relationships-and-prenups-what-you-have-to-know/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de-facto-relationships/",
+      "destination": "/de-facto-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/difference-between-mediation-conciliation/",
+      "destination": "/conciliation-vs-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/difference-mediator-and-conciliator/",
+      "destination": "/conciliation-vs-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/divorce-application-process/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/divorce-certificate-in-australia/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/divorce-law-near-me/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/divorce-without-lawyers/",
+      "destination": "/divorce-without-a-lawyer/",
+      "permanent": true
+    },
+    {
+      "source": "/does-a-husband-have-to-support-his-wife/",
+      "destination": "/spousal-maintenance-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/domestic-violence/",
+      "destination": "/domestic-violence-and-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/family-court-mediation-process/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/family-court-process-2024-update/",
+      "destination": "/family-court-process/",
+      "permanent": true
+    },
+    {
+      "source": "/family-law-cost-calculator/",
+      "destination": "/family-law-cost-estimator/",
+      "permanent": true
+    },
+    {
+      "source": "/family-law-dispute-mediation/",
+      "destination": "/family-law-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/family-law-mediation-for-property-settlements/",
+      "destination": "/property-settlement-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/family-law-mediation-what-happens-if-i-dont-want-to-do-it/",
+      "destination": "/is-family-law-mediation-compulsory/",
+      "permanent": true
+    },
+    {
+      "source": "/family-law-mediator/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/family-law-melbourne-mediation/",
+      "destination": "/melbourne-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/family-law-practitioners/",
+      "destination": "/our-mediators/",
+      "permanent": true
+    },
+    {
+      "source": "/family-law-regulations-explained/",
+      "destination": "/family-court-process/",
+      "permanent": true
+    },
+    {
+      "source": "/family-law-separation-agreements-the-2024-guide/",
+      "destination": "/separation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/family-loan-agreement-matters/",
+      "destination": "/business-in-divorce/",
+      "permanent": true
+    },
+    {
+      "source": "/family-mediation-process-guide/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/family-mediation/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/fathers-rights-after-separation/",
+      "destination": "/fathers-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/fathers-rights-in-family-law-2022-update/",
+      "destination": "/fathers-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/final-hearing-in-family-law-disputes/",
+      "destination": "/family-court-process/",
+      "permanent": true
+    },
+    {
+      "source": "/five-benefits-of-using-mediation-to-resolve-divorce-issues/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/geelong-family-lawyers/",
+      "destination": "/geelong-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/getting-divorced-or-separated-the-2022-guide/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/gold-coast-family-lawyers/",
+      "destination": "/gold-coast-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/grandparent-mediation/",
+      "destination": "/grandparents-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/grandparents-custody-in-australia/",
+      "destination": "/grandparents-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/grandparents-rights-how-to-see-your-grandchildren-2022-update/",
+      "destination": "/grandparents-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/high-conflict-family-law-mediation/",
+      "destination": "/high-conflict-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/hobart-family-lawyers/",
+      "destination": "/hobart-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/how-do-de-facto-couples-split-assets/",
+      "destination": "/de-facto-relationships-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-do-i-change-a-consent-order/",
+      "destination": "/consent-orders-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/how-do-i-contact-centrelink/",
+      "destination": "/child-support-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-does-mediation-help-co-parenting/",
+      "destination": "/child-custody-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/how-long-do-consent-orders-take-in-family-law-matters/",
+      "destination": "/consent-orders-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/how-long-do-consent-orders-take/",
+      "destination": "/consent-orders-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/how-long-does-it-take-to-get-a-divorce/",
+      "destination": "/how-long-does-a-divorce-take/",
+      "permanent": true
+    },
+    {
+      "source": "/how-mediation-can-help-in-financial-agreements/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-often-do-fathers-get-50-50-custody-in-australia/",
+      "destination": "/child-custody-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/how-property-settlements-work/",
+      "destination": "/property-settlement-after-separation/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-apply-file-for-get-a-divorce-in-western-australia-wa/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-convince-your-ex-partner-to-do-mediation/",
+      "destination": "/is-family-law-mediation-compulsory/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-force-a-property-settlement/",
+      "destination": "/property-settlement-after-separation/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-get-a-divorce-in-new-south-wales/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-get-divorce-papers-the-2022-guide/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-get-ready-for-mediation/",
+      "destination": "/preparing-for-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-get-ready-for-property-settlement-mediation/",
+      "destination": "/property-settlement-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-make-changes-to-a-parenting-order/",
+      "destination": "/parenting-plans-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-prepare-for-a-property-settlement-mediation/",
+      "destination": "/property-settlement-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-protect-your-online-privacy-following-separation/",
+      "destination": "/separation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-resolve-your-family-law-dispute-online/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-resolve-your-property-settlement-with-mediation-in-australia/",
+      "destination": "/property-settlement-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-you-can-reach-an-agreement-in-mediation/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/im-contemplating-separation-do-i-see-a-lawyer-or-a-mediation-practice-first/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/intervention-orders/",
+      "destination": "/domestic-violence-and-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/ipswich-family-lawyers/",
+      "destination": "/brisbane-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/is-mediation-expensive/",
+      "destination": "/how-much-does-mediation-cost/",
+      "permanent": true
+    },
+    {
+      "source": "/joint-divorce-application/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/joint-tenancy-and-divorce/",
+      "destination": "/property-settlement-after-separation/",
+      "permanent": true
+    },
+    {
+      "source": "/launceston-family-lawyers/",
+      "destination": "/launceston-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/lawyer-booking/",
+      "destination": "/book-a-consultation/",
+      "permanent": true
+    },
+    {
+      "source": "/litigation-or-mediation-choose-very-wisely/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/make-an-appointment/",
+      "destination": "/book-a-consultation/",
+      "permanent": true
+    },
+    {
+      "source": "/mandurah-family-lawyers/",
+      "destination": "/perth-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/mediate-collaborate-or-litigate/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/mediate-workplace-conflict-in-australia/",
+      "destination": "/workplace-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/mediation-for-separation/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/mediation-in-family-law-a-comprehensive-guide/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/mediation-in-property-settlement-cases/",
+      "destination": "/property-settlement-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/mediation-or-litigation-what-is-the-best/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/mediation-vs-collaborative-law/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/mediation-who-pays/",
+      "destination": "/how-much-does-mediation-cost/",
+      "permanent": true
+    },
+    {
+      "source": "/mediation/",
+      "destination": "/how-mediation-works/",
+      "permanent": true
+    },
+    {
+      "source": "/melbourne-family-lawyers/",
+      "destination": "/melbourne-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/my-ex-wont-sign-divorce-papers/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/newcastle-family-lawyers/",
+      "destination": "/newcastle-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/north-sydney-family-lawyers/",
+      "destination": "/sydney-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/nothing-alternate-about-alternate-dispute-resolution-adr/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/online-mediation-enquiry/",
+      "destination": "/book-a-consultation/",
+      "permanent": true
+    },
+    {
+      "source": "/parental-alienation-australia-dont-let-your-ex-destroy-your-childs-love-for-you/",
+      "destination": "/parental-alienation-australia/",
+      "permanent": true
+    },
+    {
+      "source": "/parenting-payments-in-australia/",
+      "destination": "/child-support-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/parenting-plan-vs-parenting-order/",
+      "destination": "/parenting-plans-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/parenting-plans-example/",
+      "destination": "/parenting-plans-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/penrith-family-lawyers/",
+      "destination": "/sydney-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/perth-family-lawyers/",
+      "destination": "/perth-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/pets-and-family-law-who-gets-the-pets-after-separation/",
+      "destination": "/pets-and-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/points-to-consider-family-mediation-lawyers-in-australia/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/post-prenup-agreement/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/postnuptial-agreement-australia-everything-you-need-to-know/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pre-separation-checklist/",
+      "destination": "/separation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/prenups-for-women/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/property-in-divorce-settlement/",
+      "destination": "/property-settlement-after-separation/",
+      "permanent": true
+    },
+    {
+      "source": "/property-settlement-after-separation-time-limit/",
+      "destination": "/property-settlement-after-separation/",
+      "permanent": true
+    },
+    {
+      "source": "/property-settlement-in-family-law/",
+      "destination": "/property-settlement-after-separation/",
+      "permanent": true
+    },
+    {
+      "source": "/property-settlement-mediation-most-effective-strategies-for-resolving-property-settlement-disputes/",
+      "destination": "/property-settlement-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/qld/",
+      "destination": "/brisbane-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/resolve-your-property-settlement-with-mediation-in-australia/",
+      "destination": "/property-settlement-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/rockhampton-family-lawyers/",
+      "destination": "/rockhampton-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/role-of-a-mediator-divorce-mediation/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/same-sex-divorce-in-australia/",
+      "destination": "/same-sex-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/section-601-certificate-mediation/",
+      "destination": "/section-60i-certificates/",
+      "permanent": true
+    },
+    {
+      "source": "/separated-under-one-roof/",
+      "destination": "/separation-under-one-roof/",
+      "permanent": true
+    },
+    {
+      "source": "/separation-lawyer-sydney/",
+      "destination": "/best-divorce-lawyers-sydney/",
+      "permanent": true
+    },
+    {
+      "source": "/separation-or-divorce-which-is-better/",
+      "destination": "/separation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/separation-under-one-roof-assessment/",
+      "destination": "/separation-under-one-roof/",
+      "permanent": true
+    },
+    {
+      "source": "/shuttle-mediation/",
+      "destination": "/shuttle-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/spousal-maintenance-australia/",
+      "destination": "/spousal-support-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/spousal-maintenance/",
+      "destination": "/spousal-support-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/spousal-support-dispute-mediation/",
+      "destination": "/spousal-support-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/stepparent-rights-and-family-law-in-australia/",
+      "destination": "/stepparent-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/superannuation-and-family-law-important-2024-update/",
+      "destination": "/superannuation-and-divorce/",
+      "permanent": true
+    },
+    {
+      "source": "/supporting-your-child-through-parents-separation-a-comprehensive-guide-for-australian-families/",
+      "destination": "/child-custody-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/surrogacy-laws-in-australia-2024/",
+      "destination": "/surrogacy-laws/",
+      "permanent": true
+    },
+    {
+      "source": "/sydney-family-lawyers/",
+      "destination": "/sydney-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/team-single/",
+      "destination": "/our-mediators/",
+      "permanent": true
+    },
+    {
+      "source": "/the-7-most-common-questions-about-mediation/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/the-cost-of-divorce-in-australia/",
+      "destination": "/cost-of-divorce-in-australia/",
+      "permanent": true
+    },
+    {
+      "source": "/the-difference-between-a-divorce-lawyer-and-a-mediator/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/the-different-ways-to-resolve-family-law-disputes/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/the-marriage-separation-process-in-nsw/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/the-pros-and-cons-of-shuttle-mediation/",
+      "destination": "/shuttle-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/the-role-of-fair-work-australia-and-workplace-mediation/",
+      "destination": "/workplace-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/the-role-of-the-lawyer-in-mediation/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/toowoomba-family-lawyers/",
+      "destination": "/toowoomba-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/townsville-family-lawyers/",
+      "destination": "/townsville-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/travel-overseas-after-a-separation/",
+      "destination": "/separation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/trial-separation/",
+      "destination": "/separation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-divorce-laws-in-nsw/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-family-conflict-and-why-mediation-is-your-best-path-forward/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-mediation-2024/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/what-am-i-entitled-to-in-a-divorce-or-separation-in-australia/",
+      "destination": "/what-am-i-entitled-to-in-a-separation-in-australia/",
+      "permanent": true
+    },
+    {
+      "source": "/what-am-i-entitled-to-in-a-separation/",
+      "destination": "/what-am-i-entitled-to-in-a-separation-in-australia/",
+      "permanent": true
+    },
+    {
+      "source": "/what-are-family-reports-in-family-law-matters/",
+      "destination": "/child-custody-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/what-are-procedural-orders-in-family-court/",
+      "destination": "/family-court-process/",
+      "permanent": true
+    },
+    {
+      "source": "/what-are-the-mothers-rights-in-family-law/",
+      "destination": "/mothers-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/what-do-i-do-if-my-former-partner-will-not-do-mediation/",
+      "destination": "/is-family-law-mediation-compulsory/",
+      "permanent": true
+    },
+    {
+      "source": "/what-hannahs-law-means/",
+      "destination": "/domestic-violence-and-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/what-happens-to-business-in-divorce/",
+      "destination": "/business-in-divorce/",
+      "permanent": true
+    },
+    {
+      "source": "/what-happens-to-superannuation-if-i-separate-or-divorce/",
+      "destination": "/superannuation-and-divorce/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-dvo-everything-you-need-to-know/",
+      "destination": "/domestic-violence-and-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-dvo-how-to-apply-for-a-domestic-violence-order/",
+      "destination": "/domestic-violence-and-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-litigation-guardian-in-australia/",
+      "destination": "/family-court-process/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-prenup-agreement-in-2024/",
+      "destination": "/binding-financial-agreements-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-restraining-order/",
+      "destination": "/domestic-violence-and-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-section-60i-certificate-why-do-i-need-one/",
+      "destination": "/is-family-law-mediation-compulsory/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-alimony-in-australia/",
+      "destination": "/spousal-maintenance-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-an-avo/",
+      "destination": "/domestic-violence-and-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-child-custody-mediation/",
+      "destination": "/child-custody-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-divorce-law-in-australia/",
+      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-the-difference-between-mediation-and-family-dispute-resolution/",
+      "destination": "/is-family-law-mediation-compulsory/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-the-magellan-list/",
+      "destination": "/family-court-process/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-the-role-of-an-independent-childrens-lawyer/",
+      "destination": "/child-custody-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-workplace-mediation-2023-important-update/",
+      "destination": "/workplace-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/what-to-expect-at-a-family-law-mediation-for-property-division/",
+      "destination": "/property-settlement-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/what-you-need-to-know-about-parenting-coordination-2022-update/",
+      "destination": "/parenting-plans-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/what-you-need-to-know-about-parenting-plans/",
+      "destination": "/parenting-plans-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/whats-the-difference-between-a-de-facto-relationship-and-marriage/",
+      "destination": "/de-facto-relationships-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/when-child-support-stops-guide/",
+      "destination": "/child-support-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/when-is-mediation-not-a-good-idea/",
+      "destination": "/high-conflict-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/when-should-i-think-about-parenting-mediation-or-custody-mediation/",
+      "destination": "/child-custody-mediation/",
+      "permanent": true
+    },
+    {
+      "source": "/when-should-we-consider-property-settlement-mediation/",
+      "destination": "/property-settlement-mediation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/who-gets-to-stay-in-the-house-during-separation/",
+      "destination": "/separation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/who-pays-bills-during-separation/",
+      "destination": "/separation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/why-going-to-court-for-your-family-law-dispute-is-a-mistake/",
+      "destination": "/mediate-or-litigate/",
+      "permanent": true
+    },
+    {
+      "source": "/why-mediation-works-the-science-behind-it/",
+      "destination": "/what-is-mediation-in-family-law/",
+      "permanent": true
+    },
+    {
+      "source": "/why-you-have-to-update-your-will-after-separation/",
+      "destination": "/separation-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/wollongong-family-lawyers/",
+      "destination": "/wollongong-mediation/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

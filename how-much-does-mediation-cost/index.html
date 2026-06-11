@@ -162,6 +162,8 @@
 .post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
 .post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
 .post-body a:hover{color:var(--terra)}
+/* Buttons inside article body must keep white label, not the green underlined link style */
+.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
 .post-cta{margin:36px 0}
 .post-cta-inner{background:linear-gradient(135deg,var(--sage-deep),var(--sage));color:var(--cream);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--cream);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}
@@ -195,7 +197,12 @@
     <a href="/" class="logo"><span class="dot"></span>Mediations Australia</a>
     <nav class="nav-links" id="navlinks" aria-label="Primary">
       <span class="has-drop"><a class="lnk" href="/#disputes" aria-haspopup="true">Services</a>
-        <div class="drop"><a href="/family-law-mediation/"><b>Family Law Mediation</b>Parenting &amp; property, resolved without court</a><a href="/property-settlement-mediation/"><b>Property Settlement</b>Divide assets fairly and finally</a><a href="/parenting-plan-mediation/"><b>Parenting Plans</b>Workable arrangements for your children</a><a href="/section-60i-certificates/"><b>Section 60I Certificates</b>Required before parenting court action</a><a href="/financial-agreements-mediation/"><b>Financial Agreements</b>Binding agreements (BFAs), done right</a><a href="/spousal-support-mediation/"><b>Spousal Maintenance</b>Fair support after separation</a><a href="/child-support-mediation/"><b>Child Support</b>Resolve support disputes privately</a><a href="/de-facto-mediation/"><b>De Facto Disputes</b>Same rights, same clear process</a><a href="/grandparents-mediation/"><b>Grandparents&#x27; Rights</b>Stay in your grandchildren&#x27;s lives</a><a href="/consent-orders/"><b>Consent Orders</b>Make your agreement legally binding</a><a href="/online-divorce/"><b>Online Divorce</b>Separate from anywhere in Australia</a><a href="/workplace-mediation/"><b>Workplace Mediation</b>Resolve disputes before the FWC</a></div>
+        <div class="drop mega"><div class="mega-col"><span class="mega-head">Family &amp; separation</span><a href="/family-law-mediation/"><b>Family Law Mediation</b><span>Parenting &amp; property, resolved without court</span></a><a href="/divorce-mediation/"><b>Divorce Mediation</b><span>Resolve everything that comes with divorce</span></a><a href="/online-divorce/"><b>Online Divorce</b><span>Separate from anywhere in Australia</span></a><a href="/de-facto-mediation/"><b>De Facto Disputes</b><span>Same rights, same clear process</span></a></div><div class="mega-col"><span class="mega-head">Property &amp; finances</span><a href="/property-settlement-mediation/"><b>Property Settlement</b><span>Divide assets fairly and finally</span></a><a href="/financial-agreements-mediation/"><b>Financial Agreements</b><span>Binding agreements (BFAs), done right</span></a><a href="/spousal-support-mediation/"><b>Spousal Maintenance</b><span>Fair support after separation</span></a><a href="/consent-orders/"><b>Consent Orders</b><span>Make your agreement legally binding</span></a></div><div class="mega-col"><span class="mega-head">Parenting &amp; children</span><a href="/parenting-plan-mediation/"><b>Parenting Plans</b><span>Workable arrangements for your children</span></a><a href="/child-support-mediation/"><b>Child Support</b><span>Resolve support disputes privately</span></a><a href="/section-60i-certificates/"><b>Section 60I Certificates</b><span>Required before parenting court action</span></a><a href="/grandparents-mediation/"><b>Grandparents&#x27; Rights</b><span>Stay in your grandchildren&#x27;s lives</span></a></div>
+      <div class="mega-foot">
+        <span>Not sure which you need? <a href="/how-mediation-works/">See how mediation works</a> or resolve a <a href="/workplace-mediation/">workplace dispute</a>.</span>
+        <a class="btn btn-primary" href="/book-a-consultation/">Book free consult <span class="arr">→</span></a>
+      </div>
+    </div>
       </span>
       <a class="lnk" href="/how-mediation-works/">How it works</a>
       <a class="lnk" href="/guides/">Guides</a>
@@ -228,6 +235,16 @@
 <div class="answer reveal"><p><strong>Key takeaway:</strong> Private family mediation in Australia typically ranges from around $2,000 to $7,000 in total, commonly shared between the parties — often $3,000–$4,500 for a full mediation day. Free and low-cost government-funded options exist through Family Relationship Centres. Either way, mediation costs a fraction of the tens of thousands per side that contested litigation can run.</p></div>
 <h2 id="how-much">How much does it actually cost?</h2>
 <p>Private family mediation generally costs somewhere between $2,000 and $7,000 in total, depending on the provider and complexity — often around $3,000 to $4,500 for a full day of mediation plus the agreement. Crucially, that's usually <em>shared</em> between the parties, so each person's share is lower again. Compare that to the <a href="https://www.fcfcoa.gov.au/fl/fees/fl-fees" target="_blank" rel="noopener">FCFCOA fee schedule</a> court fees plus legal costs of litigation, and the difference is dramatic.</p>
+<figure class="tbl"><table><caption>Typical family mediation costs in Australia (indicative, 2026)</caption>
+<thead><tr><th>Item</th><th>Typical total cost</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Intake / pre-mediation session</td><td>$200–$500 per person</td><td>Separate confidential meeting with the mediator</td></tr>
+<tr><td>Half-day mediation</td><td>$1,500–$3,000</td><td>Suits simpler parenting or property matters</td></tr>
+<tr><td>Full-day mediation</td><td>$3,000–$5,000</td><td>Most common; usually shared between the parties</td></tr>
+<tr><td>Section 60I certificate</td><td>Often included</td><td>Issued for parenting matters where required</td></tr>
+<tr><td>Consent orders drafting</td><td>$700–$2,500</td><td>Optional step to make the agreement binding</td></tr>
+</tbody></table></figure>
+<p>These are indicative ranges, not a quote — your actual cost depends on the factors below, and a good provider gives you a clear fixed fee before you start.</p>
 <div class="post-cta reveal">
   <div class="post-cta-inner">
     <p>Want a clear, fixed quote for your situation? Book a consultation and we'll explain exactly what it costs.</p>
@@ -245,12 +262,20 @@
 
 <h2 id="who-pays">Who pays for mediation?</h2>
 <p>In most family mediations, the cost is shared equally between the parties — it's a joint process to reach a joint resolution, so splitting the fee is the norm. That said, the parties can agree a different arrangement, and in some cases one party covers more. This is something the mediator clarifies upfront so there are no surprises. <a href="/our-fee-structure/">See our transparent fee structure →</a></p>
-<div class="callout"><h3>Shared cost, shared benefit</h3><p>Because mediation fees are usually split, your individual outlay is often just half of the headline figure — and you both walk away with a resolution, rather than each funding a separate lawyer to fight.</p></div>
+
 <h2 id="free-options">Free and low-cost options</h2>
 <p>Cost should never be a barrier to resolving a family dispute. Government-funded <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a> (Family Relationship Centres) offer family dispute resolution at free or low cost, particularly for parenting matters, with fees often based on income. These services are a valuable option, though private mediation typically offers more flexibility, faster scheduling, and capacity for complex financial matters.</p>
 
 <h2 id="vs-court">How it compares to court</h2>
-<p>This is the comparison that matters most. A contested court case can cost <em>each</em> party tens of thousands of dollars — sometimes over $100,000 in complex matters — over one to three years. Mediation resolves the same dispute for a few thousand dollars total, in weeks. The money saved stays with your family instead of funding a court battle. <a href="/cost-of-divorce-in-australia/">See the full cost of divorce breakdown →</a></p>
+<p>This is the comparison that matters most. A contested court case can cost <em>each</em> party tens of thousands of dollars — sometimes over $100,000 in complex matters — over one to three years. Mediation resolves the same dispute for a few thousand dollars total, in weeks. The money saved stays with your family instead of funding a prolonged court case. <a href="/cost-of-divorce-in-australia/">See the full cost of divorce breakdown →</a></p>
+<figure class="tbl"><table><caption>Mediation vs a contested court case</caption>
+<thead><tr><th></th><th>Mediation</th><th>Contested court case</th></tr></thead>
+<tbody>
+<tr><td>Typical cost</td><td>A few thousand dollars total, often shared</td><td>Tens of thousands per side</td></tr>
+<tr><td>Timeframe</td><td>Weeks</td><td>One to three years</td></tr>
+<tr><td>Who decides</td><td>You and your former partner</td><td>A judge</td></tr>
+<tr><td>Privacy</td><td>Private and confidential</td><td>Public court process</td></tr>
+</tbody></table></figure>
 <div class="post-cta reveal">
   <div class="post-cta-inner">
     <p>Why spend tens of thousands fighting when mediation costs a fraction? Book a consultation today.</p>
@@ -283,7 +308,7 @@
       </div>
       <div>
         <h4>Services</h4>
-        <ul><li><a href="/family-law-mediation/">Family Law Mediation</a></li><li><a href="/property-settlement-mediation/">Property Settlement</a></li><li><a href="/parenting-plan-mediation/">Parenting Plans</a></li><li><a href="/section-60i-certificates/">Section 60I Certificates</a></li><li><a href="/financial-agreements-mediation/">Financial Agreements</a></li><li><a href="/spousal-support-mediation/">Spousal Maintenance</a></li><li><a href="/workplace-mediation/">Workplace Mediation</a></li></ul>
+        <ul><li><a href="/family-law-mediation/">Family Law Mediation</a></li><li><a href="/divorce-mediation/">Divorce Mediation</a></li><li><a href="/property-settlement-mediation/">Property Settlement</a></li><li><a href="/parenting-plan-mediation/">Parenting Plans</a></li><li><a href="/section-60i-certificates/">Section 60I Certificates</a></li><li><a href="/financial-agreements-mediation/">Financial Agreements</a></li><li><a href="/workplace-mediation/">Workplace Mediation</a></li></ul>
       </div>
       <div>
         <h4>Company</h4>

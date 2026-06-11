@@ -6,7 +6,7 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
                        BOOK_URL, PHONE, PHONE_HREF, OFFICES, DOMAIN)
 
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def write(slug, doc):
     path = os.path.join(OUT, slug)
