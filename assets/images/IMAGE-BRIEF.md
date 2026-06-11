@@ -58,6 +58,25 @@ Start with #1–3; they do most of the tempering. You don't need an image on eve
 
 ---
 
+## Sizes
+
+You only supply ONE master per image — the largest the stock site offers. We
+downscale, compress, and generate the responsive set. Never upscale a small file.
+
+| Placement | Aspect | Displays up to | Source master (≥) | Ships as (WebP) |
+|---|---|---|---|---|
+| Homepage hero | 3:2 | ~1280px | 2400px wide | ≤180 KB |
+| Location heroes | 16:9 | ~1150px | 2300px wide | ≤160 KB |
+| Section bands | 21:9 | ~1150px | 2300px wide | ≤140 KB |
+| About | 3:2 | ~760px | 1600px wide | ≤120 KB |
+| Office card | 3:2 | ~460px | 1000px wide | ≤70 KB |
+
+- **Source master ≈ 2× the display width** — covers retina/high-DPI screens.
+- We generate variants (800 / 1200 / 1600 / 2400px) + `srcset`, so phones never
+  download the desktop file.
+- The **hero is the LCP element** and must stay light (≤180 KB); it's the only
+  large image above the fold. Everything else lazy-loads.
+
 ## Technical specs for delivery
 
 - Format in: high-quality JPEG or PNG (we convert to WebP/AVIF).
@@ -66,5 +85,5 @@ Start with #1–3; they do most of the tempering. You don't need an image on eve
 - Filename: lowercase-with-hyphens, descriptive (`homepage-hero-kitchen-talk.jpg`).
 - Drop files in `/assets/images/`. Tell us the intended placement and a one-line
   description (for alt text) per image.
-- We handle: WebP conversion, responsive sizing, `width`/`height`, lazy-loading,
-  alt text, and hero `fetchpriority` so the page stays fast.
+- We handle: WebP/AVIF conversion, responsive sizing + `srcset`, `width`/`height`,
+  lazy-loading, alt text, and hero `fetchpriority` so the page stays fast.
