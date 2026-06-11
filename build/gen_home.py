@@ -63,7 +63,7 @@ doc += f"""<main id="main">
   <div class="wrap hero-split__inner">
     <div class="hero-split__text reveal-load">
       <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
-      <h1 class="d2" style="font-size:clamp(2.4rem,5.5vw,4.6rem);max-width:15ch;margin-bottom:24px">Most disputes never need a <em>courtroom.</em></h1>
+      <h1 class="d2" style="font-size:clamp(2.4rem,5.5vw,4.6rem);max-width:15ch;margin-bottom:24px">Resolve your dispute, faster, quicker and <em>cheaper.</em></h1>
       <p class="lede d3" style="font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--ink-soft);max-width:52ch;margin-bottom:36px">Whether it's a family separation, a business breakdown or a contested estate, mediation can resolve it faster, for less, and with you in control. Often it's the first step your own lawyer would recommend — and we work alongside them, not instead of them.</p>
       <div class="phero-cta d4">
         <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
