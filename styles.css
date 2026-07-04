@@ -119,6 +119,31 @@ article.body ol{counter-reset:li}
 article.body ol li{position:relative;padding-left:42px;color:var(--ink-soft);font-size:1.04rem;max-width:64ch;counter-increment:li}
 article.body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:.85rem;font-weight:600}
 
+/* ---- imported WordPress post body ---- */
+.body-import{font-size:1.04rem;color:var(--ink-soft);line-height:1.75;max-width:72ch}
+.body-import h2{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.1rem);color:var(--ink);margin:44px 0 14px;font-weight:400}
+.body-import h2:first-child{margin-top:0}
+.body-import h3{font-size:1.2rem;color:var(--ink);margin:30px 0 10px;font-weight:600}
+.body-import h4{font-size:1.05rem;color:var(--ink);margin:22px 0 8px;font-weight:600}
+.body-import p{margin-bottom:18px}
+.body-import a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+.body-import a:hover{color:var(--terra)}
+.body-import ul,.body-import ol{margin:0 0 22px 1.4rem;padding-left:0}
+.body-import ul{list-style:disc}
+.body-import ol{list-style:decimal}
+.body-import li{margin-bottom:8px}
+.body-import table{width:100%;border-collapse:collapse;margin:28px 0;font-size:.96rem;overflow-x:auto;display:block}
+.body-import th{background:var(--sage);color:var(--cream);padding:10px 14px;text-align:left;font-weight:600}
+.body-import td{padding:9px 14px;border-bottom:1px solid var(--sand-deep)}
+.body-import tr:nth-child(even) td{background:var(--cream)}
+.body-import blockquote{border-left:4px solid var(--sage);margin:24px 0;padding:14px 20px;background:var(--cream);border-radius:0 12px 12px 0;font-style:italic;color:var(--ink)}
+.body-import figure{margin:28px 0}
+.body-import figure img{max-width:100%;border-radius:12px}
+.body-import figcaption{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin-top:8px}
+.body-import strong{color:var(--ink);font-weight:600}
+.body-import .wp-block-image,.body-import .wp-block-table{margin:28px 0}
+.body-import .wp-block-quote{border-left:4px solid var(--sage);margin:24px 0;padding:14px 20px;background:var(--cream);border-radius:0 12px 12px 0}
+
 /* ---- callout ---- */
 /* Decorative sage callout boxes retired site-wide. Blog generators no longer
    emit them; this hides the inline ones still present on service/resource/core
