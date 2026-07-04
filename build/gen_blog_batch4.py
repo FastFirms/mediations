@@ -8,7 +8,7 @@ from authority_sources import cite
 # ---- WHAT IS MEDIATION IN FAMILY LAW (absorbs 12) ----
 post("what-is-mediation-in-family-law",
  "What Is Mediation in Family Law? A Complete Guide (2026)",
- "What is family law mediation, how does it work, and why does it succeed? A complete 2026 guide to the process, the mediator's role, costs, and how it compares to court.",
+ "What is family law mediation and how does it work? A 2026 guide to the process, the mediator's role, costs, and how it compares to court.",
  "The process",
  "What Is Mediation in Family Law? <em>A Complete Guide</em>",
  "Family law mediation is a structured, confidential process where a neutral mediator helps separating people reach their own agreement on parenting, property and finances \u2014 without going to court. This guide explains how it works, why it succeeds so often, what it costs, and when it's the right choice.",
@@ -102,7 +102,7 @@ print("what-is-mediation-in-family-law built")
 # ---- MEDIATE OR LITIGATE (absorbs 13) ----
 post("mediate-or-litigate",
  "Mediate or Litigate? How to Choose (Australia 2026)",
- "Mediation or court for your family law dispute? A clear comparison of cost, time, control, privacy and outcomes \u2014 and why mediation is almost always the smarter first step.",
+ "Mediation or court? A clear comparison of cost, time, control, privacy and outcomes — and why mediation is almost always the smarter first step.",
  "The process",
  "Mediate or Litigate? <em>How to Choose</em>",
  "When a relationship ends in dispute, you have a choice: resolve it through mediation, or fight it out in court. They lead to very different outcomes \u2014 in cost, time, stress and control. This guide compares them honestly so you can choose wisely. For the vast majority, mediation is the smarter first step.",
@@ -175,7 +175,7 @@ print("mediate-or-litigate built")
 # ---- CHILD CUSTODY MEDIATION (absorbs 8) ----
 post("child-custody-mediation",
  "Child Custody Mediation in Australia: How It Works (2026)",
- "How does child custody mediation work in Australia? What the law says about 'custody', the best-interests test, 50/50 care, and how mediation helps parents agree. 2026 guide.",
+ "How does child custody mediation work in Australia? The best-interests test, 50/50 care, and how mediation helps parents agree. 2026 guide.",
  "Parenting",
  "Child Custody Mediation in Australia: <em>How It Works</em>",
  "In Australia, 'custody' is an outdated term \u2014 the law focuses on parental responsibility and the child's best interests. Child custody mediation helps separated parents agree on living arrangements and time without a court battle. Here's how it works and what the law actually says.",
@@ -256,7 +256,7 @@ print("child-custody-mediation built")
 # ---- DOMESTIC VIOLENCE & FAMILY LAW (absorbs 9) ----
 post("domestic-violence-and-family-law",
  "Domestic Violence and Family Law in Australia (2026 Guide)",
- "How domestic violence affects family law in Australia: AVOs/DVOs, safety during separation, mediation exemptions, and how the courts protect families. Support resources included.",
+ "How domestic violence affects family law in Australia: AVOs/DVOs, safety during separation, mediation exemptions, and how courts protect families.",
  "Safety",
  "Domestic Violence and Family Law in Australia",
  "If you're experiencing family violence, your safety comes first \u2014 always. This guide explains how domestic violence intersects with family law: protection orders, how it affects parenting and property, when mediation is and isn't appropriate, and where to get help right now.",

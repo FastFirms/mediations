@@ -31,8 +31,8 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_art
 
 # ---- PARENTING PLAN TEMPLATE ----
 build("parenting-plan-template",
- "Parenting Plan Template Australia | What to Include (Free Guide)",
- "A free guide to what belongs in a parenting plan in Australia — living arrangements, time, decisions and more. Build a workable plan with accredited mediators. Free consultation.",
+ "Parenting Plan Template Australia | What to Include",
+ "A free guide to what belongs in a parenting plan in Australia — living arrangements, time, decisions. Build a plan with accredited mediators.",
  "Resource",
  "Parenting Plan Template — <em>what to include</em>, explained.",
  "A good parenting plan covers far more than just who the children live with. This guide walks through everything a thorough parenting plan should address — so you can build arrangements that actually work, and avoid the gaps that cause disputes later.",
@@ -72,7 +72,7 @@ build("parenting-plan-template",
 # ---- BFA OR CONSENT ORDERS ----
 build("bfa-or-consent-orders",
  "BFA or Consent Orders? | Which Is Right for You (2026 Guide)",
- "Binding financial agreement or consent orders? Compare the two ways to formalise a property settlement in Australia — cost, finality and flexibility. Free consultation.",
+ "BFA or consent orders? Compare the two ways to formalise a property settlement in Australia — cost, finality and flexibility. Free consultation.",
  "Resource",
  "BFA or Consent Orders — <em>which is right for you</em>?",
  "Once you've agreed how to divide property, you need to make it legally binding — and there are two main routes: consent orders or a binding financial agreement. This guide explains the difference, so you can choose the one that fits your situation.",
@@ -110,8 +110,8 @@ build("bfa-or-consent-orders",
 
 # ---- GETTING READY FOR SEPARATION ----
 build("getting-ready-for-separation",
- "Getting Ready for Separation | A Practical Checklist (Australia)",
- "A practical guide to preparing for separation in Australia — finances, children, documents and your wellbeing. Steps to take before you separate. Free consultation.",
+ "Getting Ready for Separation | Practical Checklist",
+ "A practical guide to preparing for separation in Australia — finances, children, documents and wellbeing. Steps to take before you separate.",
  "Resource",
  "Getting Ready for Separation — a <em>practical guide</em>.",
  "Separation is overwhelming, but preparation makes it manageable. This practical guide covers the key things to think about before and during separation — from gathering financial documents to protecting your children's wellbeing — so you can move forward with clarity.",
@@ -147,7 +147,7 @@ build("getting-ready-for-separation",
 
 # ---- FAMILY LAW COST ESTIMATOR (content page for now) ----
 build("family-law-cost-estimator",
- "Family Law Cost Estimator | Mediation vs Court Costs (Australia)",
+ "Family Law Cost Estimator | Mediation vs Court Costs",
  "Understand and estimate the cost of resolving a family law matter — mediation versus court. See why mediation costs a fraction of litigation. Free consultation.",
  "Resource",
  "Family Law Cost Estimator — <em>mediation vs court</em>.",

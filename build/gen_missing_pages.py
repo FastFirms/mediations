@@ -8,13 +8,13 @@ sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema,
                        BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ====================================================================
 # OUR MEDIATORS
 # ====================================================================
 title = "Our Mediators | Nationally Accredited Family Mediators"
-desc = "Meet the nationally accredited mediators at Mediations Australia. Many are also experienced family lawyers, with deep expertise in family, property and workplace disputes."
+desc = "Meet the nationally accredited mediators at Mediations Australia — experienced family lawyers with expertise in family, property and workplace disputes."
 schema = [org_schema(), breadcrumb_schema([("Home",""),("Our Mediators","our-mediators")])]
 d = head(title, desc, "our-mediators", extra_schema=schema) + nav()
 d += f"""<main id="main">
@@ -101,7 +101,7 @@ print("our-mediators built")
 # MEMBERSHIPS
 # ====================================================================
 title = "Memberships &amp; Accreditations | Mediations Australia"
-desc = "Mediations Australia mediators are nationally accredited under AMDRAS and hold memberships with leading mediation, family law and dispute resolution bodies in Australia."
+desc = "Mediations Australia mediators are nationally accredited under AMDRAS, holding memberships with leading mediation, family law and dispute resolution bodies."
 schema = [org_schema(), breadcrumb_schema([("Home",""),("Memberships","memberships")])]
 d = head(title, desc, "memberships", extra_schema=schema) + nav()
 d += f"""<main id="main">

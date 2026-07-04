@@ -8,7 +8,7 @@ from authority_sources import cite
 # ---- HOW TO GET A DIVORCE IN AUSTRALIA (absorbs 14 posts) ----
 post("how-to-get-a-divorce-in-australia-a-step-by-step-guide",
  "How to Get a Divorce in Australia: Step-by-Step Guide (2026)",
- "How to get a divorce in Australia in 2026: eligibility, the 12-month separation rule, how to apply online, costs, serving documents, and what happens with children. Step by step.",
+ "How to get a divorce in Australia: eligibility, the 12-month separation rule, how to apply, costs, serving documents, and what to do with children.",
  "Divorce",
  "How to Get a Divorce in Australia: <em>A Step-by-Step Guide</em>",
  "Getting divorced in Australia is more straightforward than most people expect. It's a no-fault system, you can apply online, and the divorce itself is separate from sorting out property and children. This guide walks you through every step, the eligibility rules, the cost, and the common pitfalls.",
@@ -116,8 +116,8 @@ print("how-to-get-a-divorce built")
 
 # ---- BINDING FINANCIAL AGREEMENTS (absorbs 11 posts) ----
 post("binding-financial-agreements-guide",
- "Binding Financial Agreements in Australia: Complete Guide (2026)",
- "What is a binding financial agreement (BFA)? How prenups and postnups work in Australia, what makes them valid, the risks, and how they compare to consent orders. Full 2026 guide.",
+ "Binding Financial Agreements in Australia: A Guide (2026)",
+ "What is a binding financial agreement? How prenups and postnups work, what makes them valid, the risks, and how they compare to consent orders. 2026 guide.",
  "Property &amp; finances",
  "Binding Financial Agreements: <em>The Complete Guide</em>",
  "A binding financial agreement (BFA) is a private contract that decides how your assets are divided \u2014 before, during, or after a relationship. Often called a prenup or postnup, it offers flexibility and privacy, but only holds up if it's done strictly by the book. Here's what you need to know.",
@@ -205,7 +205,7 @@ print("binding-financial-agreements-guide built")
 # ---- PARENTING PLANS GUIDE (absorbs 8 posts) ----
 post("parenting-plans-guide",
  "Parenting Plans in Australia: The Complete Guide (2026)",
- "What is a parenting plan, what should it include, and is it legally binding? A complete 2026 guide to parenting plans vs parenting orders, and how to agree one through mediation.",
+ "What is a parenting plan, what should it include, and is it legally binding? A 2026 guide to parenting plans vs orders, and how to agree through mediation.",
  "Parenting",
  "Parenting Plans in Australia: <em>The Complete Guide</em>",
  "A parenting plan is a written agreement about how separated parents will raise their children \u2014 living arrangements, time, decisions and more. It's flexible and child-focused, but it's not the same as a parenting order. This guide covers what to include, whether it's binding, and how to agree one that lasts.",

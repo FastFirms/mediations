@@ -73,9 +73,9 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
           office_addr, context, state_note, court_ref):
     nearest = NEAREST[state]
     h1 = H1S.get(state, "{c} mediation that resolves disputes <em>without court</em>.").format(c=esc(city))
-    title = f"{city} Mediation | Accredited Family Mediators {city}"
+    title = f"{city} Mediation | Accredited Family Mediators"
     desc = (f"Nationally accredited {city} mediators resolve family, property and workplace "
-            f"disputes without court — faster and cheaper. Free consultation. Call {PHONE}.")
+            f"disputes without court — faster and cheaper. Call {PHONE}.")
     if has_office:
         office_line = f"Our {city} office is located at {office_addr}, and we also offer secure online mediation across {state}."
     else:

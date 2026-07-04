@@ -8,7 +8,7 @@ from authority_sources import cite
 # ---- IS FAMILY LAW MEDIATION COMPULSORY (absorbs 7) ----
 post("is-family-law-mediation-compulsory",
  "Is Family Law Mediation Compulsory in Australia? (2026)",
- "Is mediation compulsory before family court in Australia? When family dispute resolution and a Section 60I certificate are required, the exemptions, and what happens if your ex refuses.",
+ "Is mediation compulsory before family court in Australia? When a Section 60I certificate is required, the exemptions, and what happens if your ex refuses.",
  "The process",
  "Is Family Law Mediation Compulsory in Australia?",
  "For most parenting disputes, yes \u2014 you must genuinely attempt family dispute resolution before you can apply to court, and you'll need a Section 60I certificate to prove it. This guide explains exactly when mediation is required, the exemptions, and what to do if your former partner refuses to take part.",
@@ -80,7 +80,7 @@ print("is-family-law-mediation-compulsory built")
 # ---- FATHERS' RIGHTS (absorbs 2) ----
 post("fathers-rights",
  "Fathers' Rights After Separation in Australia (2026 Guide)",
- "Fathers' rights in Australia explained: the truth about 50/50 care, parental responsibility, the best-interests test, and how dads can secure meaningful time with their children.",
+ "Fathers' rights in Australia: 50/50 care, parental responsibility, the best-interests test, and how dads can secure meaningful time with their children.",
  "Parenting",
  "Fathers' Rights After Separation in Australia",
  "The law gives fathers and mothers equal standing \u2014 there's no built-in preference for either parent. What matters is the child's best interests. This guide clears up the myths about fathers' rights, explains parental responsibility, and shows how fathers can secure genuine, meaningful time with their children.",
@@ -149,8 +149,8 @@ print("fathers-rights built")
 
 # ---- SUPERANNUATION & DIVORCE (absorbs 2) ----
 post("superannuation-and-divorce",
- "Superannuation and Divorce in Australia: How Splitting Works (2026)",
- "How is superannuation split in a divorce in Australia? Super is treated as property and can be divided. Learn how super splitting works, valuation, and how to do it without court.",
+ "Superannuation and Divorce: How Splitting Works (2026)",
+ "How is superannuation split in a divorce? Super is property and can be divided. Learn how super splitting works, valuation, and how to do it without court.",
  "Property &amp; finances",
  "Superannuation and Divorce: <em>How Splitting Works</em>",
  "Superannuation is treated as property under Australian family law, which means it can be split between partners when a relationship ends. For many couples it's one of the largest assets \u2014 and overlooking it is a costly mistake. Here's how super splitting works and how to do it without going to court.",
@@ -210,7 +210,7 @@ print("superannuation-and-divorce built")
 # ---- HIGH-CONFLICT MEDIATION (absorbs 2) ----
 post("high-conflict-mediation",
  "High-Conflict Family Law Mediation: Does It Work? (2026)",
- "Can mediation work in high-conflict separations? Yes \u2014 with the right techniques. How shuttle mediation, structure and skilled mediators resolve even bitter disputes without court.",
+ "Can mediation work in high-conflict separations? Yes — with the right techniques. Shuttle mediation, structure and skilled mediators resolve bitter disputes.",
  "High-conflict",
  "High-Conflict Family Law Mediation: <em>Does It Work?</em>",
  "When emotions run high and trust is gone, court can feel like the only option \u2014 but it's often the worst one. High-conflict mediation, run by an experienced mediator using techniques like shuttle mediation, resolves even bitter disputes faster, cheaper and with less damage than litigation. Here's how.",

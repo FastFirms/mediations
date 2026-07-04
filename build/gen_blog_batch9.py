@@ -8,7 +8,7 @@ from authority_sources import cite
 # ---- HOW MUCH DOES MEDIATION COST (absorbs 3) ----
 post("how-much-does-mediation-cost",
  "How Much Does Mediation Cost in Australia? (2026 Guide)",
- "How much does mediation cost in Australia? A clear breakdown of family mediation fees, who pays, free and low-cost options, and why it's far cheaper than court. 2026 guide.",
+ "How much does mediation cost in Australia? A breakdown of family mediation fees, who pays, free and low-cost options, and why it's far cheaper than court.",
  "Costs &amp; fees",
  "How Much Does Mediation Cost in Australia?",
  "Family mediation in Australia typically costs far less than most people expect \u2014 and a fraction of going to court. This guide breaks down the real fees, who pays, the free and low-cost options that exist, and why mediation is the most cost-effective way to resolve a separation.",
@@ -92,7 +92,7 @@ print("how-much-does-mediation-cost built")
 # ---- ARBITRATION IN FAMILY LAW (absorbs 1) ----
 post("arbitration-in-family-law",
  "Arbitration in Family Law in Australia: How It Works (2026)",
- "Family law arbitration explained: how a binding decision on property and financial matters is reached privately, faster than court. How it differs from mediation. 2026 guide.",
+ "Family law arbitration: how a binding decision on property and financial matters is reached privately, faster than court. How it differs from mediation.",
  "The process",
  "Arbitration in Family Law in Australia: <em>How It Works</em>",
  "When you need a definitive decision but want to avoid the cost and delay of court, arbitration is the answer. A qualified arbitrator hears both sides and makes a binding determination on property and financial matters \u2014 like a private judge, but faster. Here's how family law arbitration works.",
@@ -163,8 +163,8 @@ print("arbitration-in-family-law built")
 
 # ---- PETS AND FAMILY LAW (absorbs 1) ----
 post("pets-and-family-law",
- "Pets and Family Law: Who Gets the Pet After Separation? (2026)",
- "Who gets the pet after separation in Australia? How pets are treated in family law, the 2025 law changes recognising pets, and how mediation resolves pet disputes. 2026 guide.",
+ "Pets and Family Law: Who Gets the Pet After Separation?",
+ "Who gets the pet after separation? How pets are treated in family law, the 2025 changes recognising pets, and how mediation resolves pet disputes.",
  "Property &amp; finances",
  "Pets and Family Law: <em>Who Gets the Pet After Separation?</em>",
  "For many people, the family pet is family \u2014 but the law has traditionally treated pets as property. That's now changing. This guide explains how pets are dealt with after separation, the recent law reforms recognising pets as more than mere possessions, and how mediation resolves pet disputes humanely.",
@@ -236,7 +236,7 @@ print("pets-and-family-law built")
 # ---- SAME-SEX FAMILY LAW (absorbs 2) ----
 post("same-sex-family-law",
  "Same-Sex Separation and Divorce in Australia (2026 Guide)",
- "Same-sex separation and divorce in Australia: equal rights under family law, property, parenting and de facto considerations for LGBTQ+ couples. Complete 2026 guide.",
+ "Same-sex separation and divorce in Australia: equal rights under family law, property, parenting and de facto considerations for LGBTQ+ couples.",
  "Divorce",
  "Same-Sex Separation and Divorce in Australia",
  "Since marriage equality, same-sex couples have exactly the same family law rights and obligations as everyone else \u2014 in divorce, property, and parenting. This guide covers what LGBTQ+ couples need to know when separating, including the issues that can be unique to same-sex families.",
@@ -296,7 +296,7 @@ print("same-sex-family-law built")
 # ---- CHANGES TO FAMILY LAW ACT 2025 (absorbs 1) ----
 post("changes-to-family-law-act-2025",
  "Changes to the Family Law Act 2025: What You Must Know",
- "Key 2025 changes to the Family Law Act in Australia: new property settlement framework, family violence considerations, pets, and what the reforms mean for separating couples.",
+ "Key 2025 changes to the Family Law Act: new property settlement framework, family violence, pets, and what the reforms mean for separating couples.",
  "Legal updates",
  "Changes to the Family Law Act 2025: <em>What You Must Know</em>",
  "The Family Law Act has undergone its most significant reforms in years. From a clearer property settlement framework to express recognition of family violence and pets, the 2025 changes affect anyone separating in Australia. Here's a plain-English summary of what's changed and what it means for you.",
@@ -356,8 +356,8 @@ print("changes-to-family-law-act-2025 built")
 
 # ---- STEP-PARENT RIGHTS (absorbs 1) ----
 post("stepparent-rights",
- "Step-Parent Rights in Australia: Where You Stand (2026 Guide)",
- "Do step-parents have rights in Australia? Parental responsibility, contact after separation, child support, and how step-parents can seek to stay in a child's life. 2026 guide.",
+ "Step-Parent Rights in Australia: Where You Stand (2026)",
+ "Do step-parents have rights in Australia? Parental responsibility, contact after separation, child support, and how step-parents can stay in a child's life.",
  "Parenting",
  "Step-Parent Rights in Australia: <em>Where You Stand</em>",
  "Step-parents often play a huge role in a child's life \u2014 but their legal position isn't automatic. This guide explains what rights a step-parent has, what happens after a separation, when child support can apply, and how a step-parent can seek to maintain a relationship with a child they've helped raise.",
@@ -417,7 +417,7 @@ print("stepparent-rights built")
 # ---- SURROGACY LAWS (absorbs 1) ----
 post("surrogacy-laws",
  "Surrogacy Laws in Australia: What You Need to Know (2026)",
- "Surrogacy laws in Australia explained: altruistic vs commercial surrogacy, legal parentage, parentage orders, and the rules across states. A plain-English 2026 guide.",
+ "Surrogacy laws in Australia: altruistic vs commercial surrogacy, legal parentage, parentage orders, and the rules across states. Plain-English guide.",
  "Legal updates",
  "Surrogacy Laws in Australia: <em>What You Need to Know</em>",
  "Surrogacy law in Australia is complex and varies by state \u2014 but the core principles are consistent: only altruistic surrogacy is allowed, commercial surrogacy is prohibited, and legal parentage transfers through a court order. This guide explains how surrogacy works legally and where to get the right advice.",
@@ -482,8 +482,8 @@ print("surrogacy-laws built")
 
 # ---- CAN YOU RECORD YOUR EX (absorbs 1) ----
 post("can-you-record-your-ex",
- "Can You Record Your Ex Without Permission in Australia? (2026)",
- "Can you legally record your ex without their consent in Australia? Surveillance and listening device laws, whether recordings can be used in family court, and the risks. 2026 guide.",
+ "Can You Record Your Ex Without Permission in Australia?",
+ "Can you legally record your ex without consent in Australia? Surveillance and listening device laws, whether recordings can be used in court, and the risks.",
  "Legal updates",
  "Can You Record Your Ex Without Permission in Australia?",
  "It's a common impulse in a heated separation \u2014 secretly record your ex to 'prove' something. But recording someone without consent can be a criminal offence in Australia, and such recordings are often inadmissible in family court. Here's what the law actually says before you hit record.",
@@ -547,8 +547,8 @@ print("can-you-record-your-ex built")
 
 # ---- BEST DIVORCE LAWYERS SYDNEY (absorbs 2) ----
 post("best-divorce-lawyers-sydney",
- "Best Divorce Lawyers vs Mediators in Sydney: How to Choose (2026)",
- "Looking for the best divorce lawyers in Sydney? Understand when you need a lawyer, when mediation is better, and how to choose the right help for your separation. 2026 guide.",
+ "Divorce Lawyers vs Mediators in Sydney: How to Choose",
+ "Looking for divorce lawyers in Sydney? When you need a lawyer, when mediation is better, and how to choose the right help for your separation.",
  "Divorce",
  "Best Divorce Lawyers in Sydney: <em>How to Choose the Right Help</em>",
  "Searching for the 'best divorce lawyer in Sydney' is a natural first step \u2014 but it's worth asking whether a lawyer, a mediator, or both is what your situation actually needs. This guide helps you choose the right professional, what to look for, and how to resolve your separation in Sydney without an unnecessary court battle.",

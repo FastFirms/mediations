@@ -208,8 +208,8 @@ office_cards = "".join(f"""<article class="card"><div class="ic"><svg width="24"
 <h3>{esc(c)}</h3><p>{esc(a)}</p></article>""" for c, a in OFFICES)
 
 doc = head(
- "Contact Mediations Australia | Book a Consultation · 1800 952 380",
- "Contact Mediations Australia to book a mediation consultation. Offices in Sydney, Melbourne, Brisbane and Perth, plus online mediation Australia-wide. Call 1800 952 380.",
+ "Contact Mediations Australia | 1800 952 380",
+ "Book a mediation consultation with Mediations Australia. Offices in Sydney, Melbourne, Brisbane and Perth, plus online mediation nationwide.",
  "contact-us",
  extra_schema=[org_schema(),
                breadcrumb_schema([("Home",""),("Contact","contact-us")])])

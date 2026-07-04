@@ -8,7 +8,7 @@ from authority_sources import cite
 # ---- MOTHERS' RIGHTS (absorbs 1) ----
 post("mothers-rights",
  "Mothers' Rights in Family Law in Australia (2026 Guide)",
- "Mothers' rights in Australia explained: parental responsibility, the best-interests test, the myth of automatic mother preference, and how mothers protect time with their children.",
+ "Mothers' rights in Australia: parental responsibility, the best-interests test, the mother-preference myth, and how mothers protect time with their children.",
  "Parenting",
  "Mothers' Rights in Family Law in Australia",
  "Australian family law treats mothers and fathers equally \u2014 there's no automatic preference for either. What governs every decision is the child's best interests. This guide explains what rights mothers actually have, clears up the myths, and shows how mothers can protect meaningful time with their children.",
@@ -77,8 +77,8 @@ print("mothers-rights built")
 
 # ---- GRANDPARENTS' RIGHTS (absorbs 2) ----
 post("grandparents-rights",
- "Grandparents' Rights in Australia: Seeing Your Grandchildren (2026)",
- "Do grandparents have rights in Australia? How grandparents can seek time with grandchildren, what the law says, and how mediation helps reconnect families. 2026 guide.",
+ "Grandparents' Rights in Australia: Seeing Your Grandchildren",
+ "Do grandparents have rights in Australia? How to seek time with grandchildren, what the law says, and how mediation helps reconnect families.",
  "Parenting",
  "Grandparents' Rights in Australia: <em>Seeing Your Grandchildren</em>",
  "Grandparents don't have an automatic legal right to see their grandchildren \u2014 but the law expressly recognises the importance of that relationship, and there are clear pathways to seek time. This guide explains what grandparents can do, what the court considers, and why mediation is usually the best first step.",
@@ -143,7 +143,7 @@ print("grandparents-rights built")
 # ---- SHUTTLE MEDIATION (absorbs 2) ----
 post("shuttle-mediation-guide",
  "Shuttle Mediation: How It Works and When to Use It (2026)",
- "What is shuttle mediation? How keeping parties in separate rooms resolves high-conflict disputes safely. The pros, cons, and when shuttle mediation is the right choice.",
+ "What is shuttle mediation? How keeping parties separate resolves high-conflict disputes safely. The pros, cons, and when shuttle mediation is the right choice.",
  "The process",
  "Shuttle Mediation: <em>How It Works and When to Use It</em>",
  "Shuttle mediation keeps separating parties in separate rooms while the mediator moves between them \u2014 so you never have to face your ex directly. It's a powerful option for high-conflict situations, safety concerns, or simply when being in the same room would derail progress. Here's how it works and when to use it.",
@@ -221,8 +221,8 @@ print("shuttle-mediation-guide built")
 
 # ---- CONCILIATION VS MEDIATION (absorbs 3) ----
 post("conciliation-vs-mediation",
- "Conciliation vs Mediation: What's the Difference? (Australia 2026)",
- "Conciliation vs mediation in Australia: what each is, how they differ, the mediator vs conciliator's role, and which is right for your dispute. Clear 2026 explainer.",
+ "Conciliation vs Mediation: What's the Difference?",
+ "Conciliation vs mediation: what each is, how they differ, the mediator vs conciliator's role, and which is right for your dispute. 2026 guide.",
  "The process",
  "Conciliation vs Mediation: <em>What's the Difference?</em>",
  "Mediation and conciliation are both ways to resolve disputes without a court hearing \u2014 but they're not the same. The key difference is how active the neutral third party is: a mediator guides, while a conciliator may advise and suggest solutions. Here's what each involves and which suits your situation.",
@@ -291,7 +291,7 @@ print("conciliation-vs-mediation built")
 # ---- WORKPLACE MEDIATION GUIDE (absorbs 3) ----
 post("workplace-mediation-guide",
  "Workplace Mediation in Australia: How It Works (2026 Guide)",
- "Workplace mediation in Australia explained: how it resolves workplace conflict, the role of the Fair Work Commission, when to use it, and the benefits over formal disputes.",
+ "Workplace mediation in Australia: how it resolves conflict, the role of the Fair Work Commission, when to use it, and the benefits over formal disputes.",
  "Workplace",
  "Workplace Mediation in Australia: <em>How It Works</em>",
  "Workplace conflict is costly \u2014 in productivity, morale and staff turnover. Workplace mediation resolves disputes between colleagues, teams, or staff and management confidentially and constructively, before they escalate to formal proceedings. Here's how it works and when to use it.",

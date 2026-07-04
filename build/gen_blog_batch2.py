@@ -148,8 +148,8 @@ print("consent-orders-explained built")
 
 # ---- PROPERTY SETTLEMENT AFTER SEPARATION (biggest cluster) ----
 post("property-settlement-after-separation",
- "Property Settlement After Separation in Australia (2026 Guide)",
- "A complete guide to property settlement after separation in Australia: the four-step process, what's in the asset pool, time limits, disclosure, super, and how to settle without court.",
+ "Property Settlement After Separation in Australia (2026)",
+ "A complete guide to property settlement after separation: four-step process, asset pool, time limits, disclosure, super, and how to settle without court.",
  "Property &amp; finances",
  "Property Settlement After Separation in Australia",
  "A property settlement divides your assets, debts and superannuation after a relationship ends. There's no automatic 50/50 \u2014 the outcome turns on contributions, future needs and what's fair. This guide covers the full process, the time limits, and how to settle without a court battle.",

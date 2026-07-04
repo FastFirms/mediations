@@ -8,7 +8,7 @@ from authority_sources import cite
 # ---- SEPARATION GUIDE (absorbs 9) ----
 post("separation-guide",
  "Separation in Australia: The Complete Guide (2026)",
- "Separating in Australia? A complete guide to your first steps: the date of separation, who pays the bills, who stays in the house, updating your will, and protecting yourself.",
+ "Separating in Australia? Your first steps: the date of separation, who pays the bills, who stays in the house, updating your will, and protecting yourself.",
  "Separation",
  "Separation in Australia: <em>The Complete Guide</em>",
  "Separation is one of life's hardest transitions \u2014 and one of the most practical. This guide covers what separation legally means, the first steps to take, who pays what, who stays in the home, and how to protect yourself financially and emotionally while you work out the path forward.",
@@ -100,7 +100,7 @@ print("separation-guide built")
 # ---- DE FACTO RELATIONSHIPS GUIDE (absorbs 3) ----
 post("de-facto-relationships-guide",
  "De Facto Relationships and Separation in Australia (2026)",
- "De facto rights in Australia: what counts as a de facto relationship, how assets are split, time limits, and how de facto law compares to marriage. Complete 2026 guide.",
+ "De facto rights in Australia: what counts as de facto, how assets are split, time limits, and how de facto law compares to marriage. 2026 guide.",
  "De facto",
  "De Facto Relationships and Separation in Australia",
  "De facto couples have substantially the same property and financial rights as married couples in Australia \u2014 many people don't realise this. This guide explains what legally counts as a de facto relationship, how assets are divided when you separate, the strict time limits, and how it all compares to marriage.",
@@ -160,7 +160,7 @@ print("de-facto-relationships-guide built")
 
 # ---- SPOUSAL MAINTENANCE GUIDE (absorbs 3) ----
 post("spousal-maintenance-guide",
- "Spousal Maintenance in Australia: Who Pays and How Much? (2026)",
+ "Spousal Maintenance in Australia: Who Pays and How Much?",
  "Spousal maintenance in Australia explained: who is eligible, how much is paid, how long it lasts, and how it differs from child support. Complete 2026 guide.",
  "Property &amp; finances",
  "Spousal Maintenance in Australia: <em>Who Pays, and How Much?</em>",
@@ -230,7 +230,7 @@ print("spousal-maintenance-guide built")
 # ---- CHILD SUPPORT GUIDE (absorbs 4) ----
 post("child-support-guide",
  "Child Support in Australia: How It Works (2026 Guide)",
- "How child support works in Australia: the formula, how payments are assessed, when it stops, and how to resolve disputes. Complete 2026 guide for separated parents.",
+ "How child support works in Australia: the formula, how payments are assessed, when it stops, and how to resolve disputes. A 2026 guide.",
  "Parenting",
  "Child Support in Australia: <em>How It Works</em>",
  "Child support helps cover the costs of raising children after separation. In Australia it's calculated by a formula administered by Services Australia, based on both parents' incomes and care arrangements. This guide explains how it's assessed, when it stops, and how to resolve disputes without conflict.",

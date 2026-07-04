@@ -322,8 +322,8 @@ build(
 
 build(
  "section-60i-certificates",
- "Section 60I Certificate | Family Dispute Resolution Australia",
- "Need a Section 60I certificate before family court? Our accredited practitioners conduct mediation and issue Section 60I certificates so you can meet your legal obligations.",
+ "Section 60I Certificates | Family Dispute Resolution",
+ "Need a Section 60I certificate before family court? Accredited practitioners issue certificates through mediation to meet your legal obligations.",
  "Required before parenting court action",
  "Section 60I Certificates — issued by <em>accredited practitioners</em>.",
  "Before you can apply to court for parenting orders, the law requires you to attempt family dispute resolution first — and prove it with a Section 60I certificate. We conduct the mediation and issue the certificate, so you meet your obligations and genuinely try to resolve things at once.",
@@ -364,8 +364,8 @@ build(
 
 build(
  "financial-agreements-mediation",
- "Binding Financial Agreements (BFA) Mediation | Protect Assets",
- "Negotiate a binding financial agreement (BFA) through mediation — before, during or after a relationship. Protect assets with accredited mediators and proper legal advice.",
+ "Binding Financial Agreements Mediation | Protect Assets",
+ "Negotiate a binding financial agreement through mediation — before, during or after a relationship. Protect assets with accredited mediators.",
  "Binding financial agreements",
  "Financial Agreement Mediation — <em>protect what matters</em>.",
  "A binding financial agreement sets out how assets and finances are handled if a relationship ends. Mediation is the calm way to negotiate one — whether you're entering a relationship, already in one, or separating — so the terms are genuinely agreed rather than fought over.",
@@ -446,7 +446,7 @@ build(
 build(
  "child-support-mediation",
  "Child Support Mediation Australia | Resolve It Privately",
- "Resolve child support disputes through mediation. Agree on private arrangements, departures from assessment and special expenses — without court, with accredited mediators.",
+ "Resolve child support disputes through mediation — private arrangements, departures from assessment and special expenses, without court.",
  "Child support arrangements",
  "Child Support Mediation — resolved <em>privately and fairly</em>.",
  "Child support disagreements can poison co-parenting. Mediation gives you a private, practical way to agree on arrangements — including private agreements that go beyond the standard formula — so your children are properly supported and the conflict ends.",
@@ -486,7 +486,7 @@ build(
 build(
  "de-facto-mediation",
  "De Facto Relationship Mediation Australia | Same Rights",
- "Resolve de facto relationship disputes through mediation — property, finances and parenting. De facto partners have similar rights to married couples. No court required.",
+ "Resolve de facto relationship disputes through mediation — property, finances and parenting. De facto partners have similar rights to married couples.",
  "De facto &amp; same-sex relationships",
  "De Facto Mediation — <em>same rights, same clarity</em>.",
  "De facto and same-sex partners have substantially the same rights as married couples when a relationship ends. Mediation resolves property, financial and parenting matters the same way — quickly, privately and without court — once your relationship qualifies under the law.",
@@ -521,7 +521,7 @@ build(
 build(
  "grandparents-mediation",
  "Grandparents' Rights Mediation | See Your Grandchildren",
- "Grandparents can use mediation to keep seeing grandchildren after family breakdown. Resolve contact arrangements respectfully, without court. Accredited mediators.",
+ "Grandparents can use mediation to maintain contact with grandchildren after family breakdown. Resolve arrangements respectfully, without court.",
  "Grandparents &amp; extended family",
  "Grandparents' Rights Mediation — <em>stay part of the family</em>.",
  "When families break down, grandparents can lose contact with grandchildren they love. Australian law recognises children's right to a relationship with people significant to their care — including grandparents — and mediation is the gentlest way to restore and protect that bond.",
@@ -560,7 +560,7 @@ build(
 
 build(
  "consent-orders",
- "Consent Orders Australia | Make Your Agreement Legally Binding",
+ "Consent Orders Australia | Legally Binding Agreements",
  "Turn your mediated agreement into legally binding consent orders. We prepare and lodge consent orders for parenting and property — no court hearing required.",
  "Formalising your agreement",
  "Consent Orders — make your agreement <em>legally binding</em>.",
@@ -678,7 +678,7 @@ build(
 build(
  "workplace-mediation",
  "Workplace Mediation Australia | Resolve Disputes Fast",
- "Resolve workplace disputes through mediation — unfair dismissal, bullying, contracts and conflict. Faster and cheaper than the Fair Work Commission. Accredited mediators.",
+ "Resolve workplace disputes through mediation — unfair dismissal, bullying, contracts and conflict. Faster than the Fair Work Commission.",
  "Workplace &amp; employment disputes",
  "Workplace Mediation — <em>resolve disputes before they escalate</em>.",
  "Workplace conflict is costly, stressful and contagious. Mediation resolves disputes — from unfair dismissal claims to bullying complaints — early and confidentially, before they become expensive battles at the Fair Work Commission, so everyone can get back to work.",

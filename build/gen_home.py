@@ -50,7 +50,7 @@ qa_home = [
 ]
 
 doc = head(
- "Mediation Australia | Resolve Any Dispute Before It Reaches Court",
+ "Mediations Australia | Resolve Disputes Without Court",
  "Nationally accredited mediators resolve family, business, workplace and estate disputes faster and without court — 90% success rate. Book a free consultation.",
  "",
  extra_schema=[org_schema(),

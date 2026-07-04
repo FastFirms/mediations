@@ -7,8 +7,8 @@ from authority_sources import cite
 
 # ---- PROPERTY SETTLEMENT MEDIATION GUIDE (absorbs 8) ----
 post("property-settlement-mediation-guide",
- "Property Settlement Mediation: How to Prepare & What to Expect (2026)",
- "Property settlement mediation explained: how to prepare, what to expect on the day, what to bring, and how to reach a fair financial agreement without court. 2026 guide.",
+ "Property Settlement Mediation: How to Prepare (2026)",
+ "Property settlement mediation: how to prepare, what to expect on the day, and how to reach a fair financial agreement without court. 2026 guide.",
  "Property &amp; finances",
  "Property Settlement Mediation: <em>How to Prepare &amp; What to Expect</em>",
  "Property settlement mediation is how most separating couples divide their assets without a court battle. Knowing how to prepare \u2014 and what actually happens on the day \u2014 makes all the difference to the outcome. This guide walks you through it step by step.",
@@ -91,7 +91,7 @@ print("property-settlement-mediation-guide built")
 # ---- BUSINESS IN DIVORCE (absorbs 3) ----
 post("business-in-divorce",
  "What Happens to a Business in a Divorce in Australia? (2026)",
- "What happens to a business in a divorce in Australia? How businesses, companies and trusts are valued and divided in a property settlement \u2014 and how to protect yours.",
+ "What happens to a business in a divorce? How businesses, companies and trusts are valued and divided in a property settlement — and how to protect yours.",
  "Property &amp; finances",
  "What Happens to a Business in a Divorce in Australia?",
  "A business is often the most valuable \u2014 and most complex \u2014 asset in a separation. It forms part of the property pool, must be valued, and can be divided in various ways. This guide explains how businesses, companies and trusts are treated in a divorce, and how to protect a business you've built.",
@@ -156,7 +156,7 @@ print("business-in-divorce built")
 # ---- FAMILY COURT PROCESS (absorbs 8) ----
 post("family-court-process",
  "The Family Court Process in Australia: What to Expect (2026)",
- "How the family court process works in Australia: from pre-action steps to final hearing, the role of the Federal Circuit and Family Court, timeframes, and why mediation comes first.",
+ "How the family court process works in Australia: from pre-action steps to final hearing, timeframes, and why mediation always comes first.",
  "The process",
  "The Family Court Process in Australia: <em>What to Expect</em>",
  "If your matter can't be resolved by agreement, understanding the court process removes some of the fear. This guide walks through the family court system in Australia \u2014 the pre-action steps, what happens at each stage, how long it takes, and why mediation is required first and remains the better option throughout.",
@@ -226,8 +226,8 @@ print("family-court-process built")
 
 # ---- DIVORCE WITHOUT A LAWYER (absorbs 2) ----
 post("divorce-without-a-lawyer",
- "Divorce Without a Lawyer in Australia: Is It Possible? (2026)",
- "Can you get divorced without a lawyer in Australia? Yes \u2014 here's how to do the divorce application yourself, when you still need help, and how mediation replaces costly litigation.",
+ "Divorce Without a Lawyer in Australia: Is It Possible?",
+ "Can you get divorced without a lawyer in Australia? Yes — here's how to do the application yourself, when you need help, and how mediation replaces litigation.",
  "Divorce",
  "Divorce Without a Lawyer in Australia: <em>Is It Possible?</em>",
  "Yes \u2014 you can get divorced without a lawyer in Australia, and many people do. The divorce application is designed to be done yourself. But 'divorce' and 'sorting out property and children' are different things, and knowing where you can DIY and where you shouldn't will save you money and mistakes.",
@@ -287,7 +287,7 @@ print("divorce-without-a-lawyer built")
 # ---- HOW LONG DOES A DIVORCE TAKE (absorbs 1) ----
 post("how-long-does-a-divorce-take",
  "How Long Does a Divorce Take in Australia? (2026 Guide)",
- "How long does a divorce take in Australia? The 12-month separation rule, processing times, when the divorce is final, and why property and parenting take their own timeline.",
+ "How long does a divorce take in Australia? The 12-month separation rule, processing times, when the divorce is final, and why property takes its own timeline.",
  "Divorce",
  "How Long Does a Divorce Take in Australia?",
  "From the 12-month separation requirement to the month-and-a-day after the order, the divorce itself runs on a fairly predictable timeline. But property and parenting follow their own clock entirely. Here's how long each part really takes \u2014 and how to avoid the delays that catch people out.",
