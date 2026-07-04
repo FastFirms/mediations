@@ -11,13 +11,50 @@ OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.
 NEAREST = {"NSW":"Sydney","VIC":"Melbourne","QLD":"Brisbane","WA":"Perth",
            "SA":"Melbourne","ACT":"Sydney","TAS":"Melbourne","NT":"Brisbane"}
 
-def localservice_schema(city, state, slug):
-    return {"@type":"LegalService","name":f"Mediations Australia - {city}",
-            "description":f"Nationally accredited mediators serving {city} and {state}, resolving family, property, workplace and commercial disputes without court.",
-            "url":f"{DOMAIN}/{slug}/","telephone":PHONE,
-            "parentOrganization":{"@id":f"{DOMAIN}/#organization"},
-            "areaServed":{"@type":"City","name":city},
-            "priceRange":"Fixed-fee consultations"}
+OFFICE_GEO = {
+    "Sydney":    {"lat": -33.8688, "lng": 151.2093,
+                  "street": "Suite 508, 41/464-480 Kent St", "suburb": "Sydney", "state": "NSW", "post": "2000"},
+    "Melbourne": {"lat": -37.8183, "lng": 144.9521,
+                  "street": "Level 23, Collins Square Tower Five, 727 Collins St", "suburb": "Melbourne", "state": "VIC", "post": "3008"},
+    "Brisbane":  {"lat": -27.4705, "lng": 153.0260,
+                  "street": "Suite 507, 12B Anzac Square Arcade, 198 Adelaide St", "suburb": "Brisbane", "state": "QLD", "post": "4000"},
+    "Perth":     {"lat": -31.9505, "lng": 115.8605,
+                  "street": "Level 25, 108 St Georges Tce", "suburb": "Perth", "state": "WA", "post": "6000"},
+}
+
+def localservice_schema(city, state, slug, has_office=False):
+    schema = {
+        "@type": "LegalService",
+        "@id": f"{DOMAIN}/{slug}/#legalservice",
+        "name": f"Mediations Australia — {city}",
+        "description": f"Nationally accredited mediators serving {city} and {state}, resolving family, property, workplace and commercial disputes without court.",
+        "url": f"{DOMAIN}/{slug}/",
+        "telephone": PHONE,
+        "parentOrganization": {"@id": f"{DOMAIN}/#organization"},
+        "areaServed": {"@type": "City", "name": city},
+        "priceRange": "Fixed-fee consultations",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00", "closes": "17:00",
+        },
+    }
+    if has_office and city in OFFICE_GEO:
+        geo = OFFICE_GEO[city]
+        schema["address"] = {
+            "@type": "PostalAddress",
+            "streetAddress": geo["street"],
+            "addressLocality": geo["suburb"],
+            "addressRegion": geo["state"],
+            "postalCode": geo["post"],
+            "addressCountry": "AU",
+        }
+        schema["geo"] = {
+            "@type": "GeoCoordinates",
+            "latitude": geo["lat"],
+            "longitude": geo["lng"],
+        }
+    return schema
 
 # Keyword-first H1s: target phrase leads, persuasive tail varies by state.
 # Primary ranking phrase "{City} Mediation" appears at the very start of every H1.
@@ -65,7 +102,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 
     schema = [org_schema(),
               breadcrumb_schema([("Home",""),(f"{city} Mediation",slug)]),
-              localservice_schema(city, state, slug),
+              localservice_schema(city, state, slug, has_office=has_office),
               faq_schema(qa)]
     doc = head(title, desc, slug, extra_schema=schema)
     doc += nav()

@@ -58,6 +58,11 @@
           "streetAddress": "Level 25, 108 St Georges Tce, WA 6000",
           "addressCountry": "AU"
         }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/mediationsaustralia",
+        "https://www.linkedin.com/company/mediations-australia",
+        "https://www.youtube.com/@mediationsaustralia"
       ]
     },
     {
@@ -79,7 +84,8 @@
     },
     {
       "@type": "LegalService",
-      "name": "Mediations Australia - Perth",
+      "@id": "https://mediationsaustralia.com.au/perth-mediation/#legalservice",
+      "name": "Mediations Australia — Perth",
       "description": "Nationally accredited mediators serving Perth and WA, resolving family, property, workplace and commercial disputes without court.",
       "url": "https://mediationsaustralia.com.au/perth-mediation/",
       "telephone": "1800 952 380",
@@ -90,7 +96,32 @@
         "@type": "City",
         "name": "Perth"
       },
-      "priceRange": "Fixed-fee consultations"
+      "priceRange": "Fixed-fee consultations",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Level 25, 108 St Georges Tce",
+        "addressLocality": "Perth",
+        "addressRegion": "WA",
+        "postalCode": "6000",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -31.9505,
+        "longitude": 115.8605
+      }
     },
     {
       "@type": "FAQPage",

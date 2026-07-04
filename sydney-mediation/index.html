@@ -58,6 +58,11 @@
           "streetAddress": "Level 25, 108 St Georges Tce, WA 6000",
           "addressCountry": "AU"
         }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/mediationsaustralia",
+        "https://www.linkedin.com/company/mediations-australia",
+        "https://www.youtube.com/@mediationsaustralia"
       ]
     },
     {
@@ -79,7 +84,8 @@
     },
     {
       "@type": "LegalService",
-      "name": "Mediations Australia - Sydney",
+      "@id": "https://mediationsaustralia.com.au/sydney-mediation/#legalservice",
+      "name": "Mediations Australia — Sydney",
       "description": "Nationally accredited mediators serving Sydney and NSW, resolving family, property, workplace and commercial disputes without court.",
       "url": "https://mediationsaustralia.com.au/sydney-mediation/",
       "telephone": "1800 952 380",
@@ -90,7 +96,32 @@
         "@type": "City",
         "name": "Sydney"
       },
-      "priceRange": "Fixed-fee consultations"
+      "priceRange": "Fixed-fee consultations",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suite 508, 41/464-480 Kent St",
+        "addressLocality": "Sydney",
+        "addressRegion": "NSW",
+        "postalCode": "2000",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      }
     },
     {
       "@type": "FAQPage",

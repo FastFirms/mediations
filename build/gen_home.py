@@ -63,7 +63,7 @@ doc += f"""<main id="main">
   <div class="wrap hero-split__inner">
     <div class="hero-split__text reveal-load">
       <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
-      <h1 class="d2" style="font-size:clamp(2.4rem,5.5vw,4.6rem);max-width:15ch;margin-bottom:24px">Resolve your dispute, faster, quicker and <em>cheaper.</em></h1>
+      <h1 class="d2" style="font-size:clamp(2.4rem,5.5vw,4.6rem);max-width:15ch;margin-bottom:24px">Mediations Australia — accredited mediators for family, workplace <em>&amp; estate disputes.</em></h1>
       <p class="lede d3" style="font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--ink-soft);max-width:52ch;margin-bottom:36px">When it comes to resolving most disputes, be it a family law matter, or a workplace issue, or an estate matter, there are 2 ways to resolve it. Put bluntly, one way is very expensive, painful and can take years, the other is cheap, works 90% of the time, and gets you back to living life on your terms.</p>
       <div class="phero-cta d4">
         <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>

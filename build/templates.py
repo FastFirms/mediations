@@ -236,6 +236,12 @@ def org_schema():
         "priceRange": "Fixed-fee consultations",
         "address": [{"@type": "PostalAddress", "addressLocality": c.split(",")[0],
                      "streetAddress": a, "addressCountry": "AU"} for c, a in OFFICES],
+        # VERIFY before launch: confirm these match the real/live social profile URLs
+        "sameAs": [
+            "https://www.facebook.com/mediationsaustralia",
+            "https://www.linkedin.com/company/mediations-australia",
+            "https://www.youtube.com/@mediationsaustralia",
+        ],
     }
 
 def faq_schema(qa):
