@@ -288,4 +288,5 @@ footer ul a:hover{color:var(--cream)}
   .phero-cta{flex-direction:column}
   .stats{gap:24px}
 }
+@media(max-width:900px){.hero-consult-grid{grid-template-columns:1fr!important}.hero-consult-grid>div:last-child{max-width:540px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
