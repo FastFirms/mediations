@@ -5,6 +5,7 @@ Fetches each URL, extracts article content, generates a static HTML page
 wrapped in the site's design system. Skips slugs that already exist.
 """
 import os, sys, re, time, urllib.request, urllib.error
+from html import unescape as _unescape
 
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import head, nav, page_end, esc, BOOK_URL, PHONE, PHONE_HREF, DOMAIN, org_schema, breadcrumb_schema
@@ -309,6 +310,8 @@ def clean_body(html):
     html = re.sub(r"<figure[^>]*>.*?</figure>", "", html, flags=re.S | re.I)
     html = re.sub(r"<img[^>]*/?>", "", html, flags=re.I)
     html = re.sub(r"<div[^>]+class=\"[^\"]*wp-block-[^\"]*\"[^>]*>", "<div>", html, flags=re.I)
+    # Fix double-encoded entities (e.g. &amp;amp; → &amp; so browser renders & correctly)
+    html = re.sub(r"&amp;(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);", r"&\1;", html)
     return html.strip()
 
 
@@ -325,6 +328,9 @@ def build_page(url, slug):
     h1_raw = extract_h1(html)
     body = extract_article_body(html)
 
+    # Unescape so esc() doesn't double-encode (e.g. &amp; → & then esc() → &amp; correctly)
+    title = _unescape(title)
+    h1_raw = _unescape(h1_raw)
     if not title:
         title = slug.replace("-", " ").title()
     if not h1_raw:
