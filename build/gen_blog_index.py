@@ -68,6 +68,11 @@ d=head("Family Law &amp; Mediation Guides | Mediations Australia",
  "Practical, expert guides on mediation, divorce, property settlement, parenting and more — helping you resolve disputes without court. Free consultation.",
  "guides",extra_schema=schema)+nav()
 
+import re as _re, glob as _glob
+
+# ── Curated cornerstone cards ────────────────────────────────────────────────
+cornerstone_slugs = {s for s,_,_,_ in POSTS}
+
 cards=""
 for slug,cat,title,blurb in POSTS:
     cards+=f"""<article class="card reveal">
@@ -75,6 +80,53 @@ for slug,cat,title,blurb in POSTS:
   <h3><a href="/{slug}/">{esc(title)}</a></h3>
   <p>{esc(blurb)}</p>
   <a class="more" href="/{slug}/">Read guide <span class="arr">→</span></a>
+</article>"""
+
+# ── Auto-discover imported posts not already in cornerstones ─────────────────
+SKIP_SLUGS = {
+    "guides","about-mediations-australia","contact-us","book-a-consultation",
+    "how-mediation-works","preparing-for-mediation","our-fee-structure",
+    "family-law-mediation","divorce-mediation","property-settlement-mediation",
+    "parenting-plan-mediation","section-60i-certificates","financial-agreements-mediation",
+    "spousal-support-mediation","child-support-mediation","de-facto-mediation",
+    "grandparents-mediation","consent-orders","online-divorce","workplace-mediation",
+    "estate-dispute-mediation","collaborative-family-lawyers","family-law-arbitration",
+    "divorce-counselling","memberships","our-mediators",
+    "sydney-mediation","melbourne-mediation","brisbane-mediation","perth-mediation",
+    "adelaide-mediation","canberra-mediation","gold-coast-mediation","newcastle-mediation",
+    "wollongong-mediation","geelong-mediation","hobart-mediation","townsville-mediation",
+    "cairns-mediation","toowoomba-mediation","ballarat-mediation","bendigo-mediation",
+    "launceston-mediation","mackay-mediation","rockhampton-mediation","sunshine-coast-mediation",
+    "bundaberg-mediation",
+    "parenting-plan-template","bfa-or-consent-orders","getting-ready-for-separation",
+    "family-law-cost-estimator","separation-under-one-roof-assessment",
+}
+
+def _read_title(path):
+    s = open(path, encoding="utf-8", errors="ignore").read()
+    m = _re.search(r"<title>(.*?)</title>", s, _re.I | _re.S)
+    if not m: return None
+    t = _re.sub(r"<[^>]+>","",m.group(1)).strip()
+    t = _re.sub(r"\s*\|.*$","",t).strip()
+    return t if t else None
+
+imported_cards = ""
+imported_dirs = sorted(
+    d for d in os.listdir(OUT)
+    if os.path.isdir(os.path.join(OUT, d))
+    and d not in cornerstone_slugs
+    and d not in SKIP_SLUGS
+    and os.path.exists(os.path.join(OUT, d, "index.html"))
+    and open(os.path.join(OUT, d, "index.html"), encoding="utf-8", errors="ignore").read().count("body-import") > 0
+)
+
+for slug in imported_dirs:
+    title = _read_title(os.path.join(OUT, slug, "index.html"))
+    if not title:
+        continue
+    imported_cards += f"""<article class="card-list reveal">
+  <h3><a href="/{slug}/">{esc(title)}</a></h3>
+  <a class="more" href="/{slug}/">Read article <span class="arr">→</span></a>
 </article>"""
 
 d+=f"""<main id="main">
@@ -87,21 +139,31 @@ d+=f"""<main id="main">
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
 </div></section>
 <section class="sec" style="padding-top:30px"><div class="wrap">
+<p class="sec-tag">Featured guides</p>
 <div class="cards">{cards}</div>
-<p style="margin-top:36px;color:var(--ink-soft);text-align:center">More guides are being added regularly. <a href="{BOOK_URL}" style="color:var(--sage-deep);text-decoration:underline">Have a specific question? Ask us directly →</a></p>
+</div></section>
+<section class="sec" style="background:var(--cream)"><div class="wrap">
+<p class="sec-tag">All articles</p>
+<h2 class="sec-title">Everything we've <em>written</em>.</h2>
+<p style="color:var(--ink-soft);max-width:60ch;margin:0 0 36px">Browse our full library of family law and mediation articles covering every stage of separation, property and parenting.</p>
+<div class="cards-list">{imported_cards}</div>
 </div></section>
 """
 d+=cta_band("Got a question we haven't <em>covered</em>?",
  "Book a fixed-fee consultation and get honest, expert answers tailored to your exact situation.")
 d+="</main>"+page_end()
 
-# small style addition for cat tags
 d=d.replace("</head>","""<style>
 .cat-tag{display:inline-block;background:var(--sage-light);color:var(--sage-deep);padding:5px 13px;border-radius:100px;font-size:.78rem;font-weight:600;margin-bottom:14px}
 .card h3 a{color:var(--ink)}.card h3 a:hover{color:var(--sage-deep)}
 .card h3{margin-bottom:10px;font-size:1.2rem}
+.cards-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card-list{background:var(--sand);border-radius:14px;padding:20px 24px;display:flex;flex-direction:column;gap:10px}
+.card-list h3{font-size:1rem;font-weight:600;margin:0}
+.card-list h3 a{color:var(--ink);text-decoration:none}.card-list h3 a:hover{color:var(--sage-deep)}
+.card-list .more{font-size:.88rem;color:var(--sage-deep);text-decoration:none;font-weight:600;margin-top:auto}
 </style></head>""")
 
 os.makedirs(os.path.join(OUT,"guides"),exist_ok=True)
 open(os.path.join(OUT,"guides","index.html"),"w").write(d)
-print("Blog index (/guides/) built with",len(POSTS),"posts")
+print(f"Blog index (/guides/) built — {len(POSTS)} cornerstones + {len(imported_dirs)} imported articles")
