@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mediations Australia — Design Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+/* NOTE: Replace DM Serif Display with Recoleta woff2 once available */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1b2d3e;--sand:#f5f0e9;--mint:#c2d8cf;--mint-deep:#2d6b5c;
+  --terra:#c66a3f;--terra-d:#a9522c;--cream:#fdfaf5;--soft:#6b7c6d;
+  --serif:'DM Serif Display','Recoleta',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+}
+html{background:var(--sand);color:var(--navy);font-family:var(--sans)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 48px;position:sticky;top:0;z-index:100;background:var(--sand);border-bottom:1px solid rgba(27,45,62,.06)}
+.logo{font-family:var(--serif);font-size:1.1rem;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
+.logo-dot{width:9px;height:9px;border-radius:50%;background:var(--terra);flex-shrink:0}
+.nav-links{display:flex;gap:28px;list-style:none;font-size:.88rem}
+.nav-links a{text-decoration:none;color:var(--soft);transition:color .2s}
+.nav-links a:hover{color:var(--navy)}
+.btn-nav{background:var(--terra);color:#fff;border:none;border-radius:100px;padding:10px 22px;font-family:var(--sans);font-size:.88rem;font-weight:500;cursor:pointer;text-decoration:none;transition:background .2s}
+.btn-nav:hover{background:var(--terra-d)}
+.hero{padding:56px 48px 0}
+h1{font-family:var(--serif);font-size:clamp(3.2rem,6.8vw,6.2rem);font-weight:400;line-height:1.04;letter-spacing:-.025em;margin-bottom:44px;max-width:24ch;text-wrap:balance}
+h1 em{font-style:italic;color:var(--mint-deep)}
+.pill{display:inline-flex;align-items:center;gap:5px;background:var(--mint);color:var(--mint-deep);font-family:var(--sans);font-size:.38em;font-style:normal;font-weight:500;padding:4px 10px;border-radius:100px;vertical-align:middle;position:relative;top:-.14em}
+.bento{display:grid;grid-template-columns:260px 1fr 260px;grid-template-rows:auto auto;gap:14px;padding-bottom:14px}
+.card{border-radius:22px;padding:28px;position:relative;overflow:hidden}
+.c-stat{background:var(--cream);border:1px solid rgba(27,45,62,.07);display:flex;flex-direction:column;gap:14px}
+.num{font-family:var(--serif);font-size:3.4rem;font-weight:400;line-height:1}
+.num em{font-style:italic;color:var(--terra)}
+.lbl{font-size:.83rem;color:var(--soft);line-height:1.55}
+.avatars{display:flex;margin-top:auto}
+.av{width:30px;height:30px;border-radius:50%;border:2px solid var(--cream);display:flex;align-items:center;justify-content:center;color:#fff;font-size:.68rem;font-weight:600;margin-left:-7px;flex-shrink:0}
+.av:first-child{margin-left:0}
+.c-center{grid-column:2;grid-row:1/3;background:var(--navy);color:#fff;display:flex;flex-direction:column;justify-content:space-between;min-height:500px;padding:40px 44px}
+.c-tag{display:inline-block;background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);font-size:.77rem;padding:6px 14px;border-radius:100px;margin-bottom:28px}
+.c-center h2{font-family:var(--serif);font-size:clamp(1.9rem,2.8vw,2.7rem);font-weight:400;line-height:1.22;text-wrap:balance}
+.c-center h2 em{font-style:italic;color:var(--mint)}
+.c-center p{color:rgba(255,255,255,.6);font-size:.95rem;line-height:1.72;margin-top:20px;max-width:42ch}
+.c-foot{display:flex;gap:32px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1);margin-top:32px}
+.kv{font-family:var(--serif);font-size:1.9rem;color:#fff}
+.kl{font-size:.78rem;color:rgba(255,255,255,.45);margin-top:4px}
+.divv{width:1px;background:rgba(255,255,255,.1)}
+.c-mint{background:var(--mint)}
+.c-mint .num{color:var(--mint-deep)}
+.c-mint .lbl{color:var(--mint-deep);opacity:.7}
+.c-cta{background:var(--terra);color:#fff;display:flex;flex-direction:column;gap:14px;justify-content:flex-end}
+.c-cta .ch{font-family:var(--serif);font-size:1.5rem;font-weight:400;line-height:1.25}
+.c-cta .cs{font-size:.83rem;opacity:.8;line-height:1.55}
+.c-cta a{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--terra-d);border-radius:100px;padding:12px 22px;font-size:.88rem;font-weight:500;text-decoration:none;width:fit-content;margin-top:4px}
+.btn-p{display:inline-flex;align-items:center;gap:10px;background:var(--terra);color:#fff;border-radius:100px;padding:14px 28px;font-family:var(--sans);font-size:.95rem;font-weight:500;text-decoration:none;width:fit-content;transition:background .2s}
+.btn-p:hover{background:var(--terra-d)}
+.blob-s{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:80px 48px}
+.blob-w{display:flex;align-items:center;justify-content:center;position:relative}
+.blob{width:380px;height:360px;background:var(--navy);border-radius:62% 38% 54% 46%/48% 62% 38% 52%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.bn{font-family:var(--serif);font-size:6.5rem;font-weight:400;color:#fff;line-height:1}
+.bu{font-family:var(--sans);font-size:.9rem;color:rgba(255,255,255,.45);letter-spacing:.14em;text-transform:uppercase}
+.bb{position:absolute;bottom:-14px;right:36px;width:88px;height:88px;background:var(--mint);border-radius:50% 50% 48% 34%;display:flex;align-items:center;justify-content:center;font-size:2rem}
+.bc{max-width:44ch}
+.ey{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mint-deep);font-weight:600;margin-bottom:14px}
+.bc h2{font-family:var(--serif);font-size:clamp(2.1rem,3.2vw,2.9rem);font-weight:400;line-height:1.15;margin-bottom:18px;text-wrap:balance}
+.bc h2 em{font-style:italic;color:var(--terra)}
+.bc p{font-size:.97rem;color:var(--soft);line-height:1.78;margin-bottom:16px}
+.tabs-s{margin:0 48px 80px;background:var(--mint);border-radius:28px;padding:56px 52px}
+.tabs-s > h2{font-family:var(--serif);font-size:clamp(1.8rem,2.8vw,2.6rem);font-weight:400;text-align:center;max-width:38ch;margin:0 auto 36px;text-wrap:balance;color:var(--navy)}
+.tab-bar{display:flex;gap:4px;background:rgba(255,255,255,.35);border-radius:100px;padding:6px;width:fit-content;margin:0 auto 36px}
+.tab{padding:9px 22px;border-radius:100px;font-size:.87rem;font-weight:500;color:var(--mint-deep);cursor:pointer;border:none;background:transparent;transition:all .2s;font-family:var(--sans)}
+.tab.active{background:var(--navy);color:#fff}
+.tab-p{background:#fff;border-radius:18px;padding:36px 40px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.tab-p h3{font-family:var(--serif);font-size:1.85rem;font-weight:400;margin-bottom:14px;line-height:1.2}
+.tab-p p{color:var(--soft);line-height:1.72;font-size:.95rem;margin-bottom:18px}
+.tab-p .lnk{color:var(--terra);font-weight:500;text-decoration:none;font-size:.88rem;display:inline-flex;align-items:center;gap:6px}
+.tv{background:var(--mint);border-radius:14px;height:190px;display:flex;align-items:center;justify-content:center;font-size:4.5rem}
+.cmp-s{padding:80px 48px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.cmp-s .ey2{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);font-weight:600;margin-bottom:14px}
+.cmp-s h2{font-family:var(--serif);font-size:clamp(2rem,3vw,2.8rem);font-weight:400;line-height:1.2;margin-bottom:18px;text-wrap:balance}
+.cmp-s h2 em{font-style:italic;color:var(--mint-deep)}
+.cmp-s p{color:var(--soft);line-height:1.78;font-size:.97rem;margin-bottom:20px}
+.cmp-card{background:var(--cream);border:1px solid rgba(27,45,62,.07);border-radius:22px;overflow:hidden}
+.cmp-head{background:var(--navy);color:#fff;padding:18px 28px;display:flex;justify-content:space-between;align-items:baseline}
+.ch-l{font-size:.76rem;opacity:.55;text-transform:uppercase;letter-spacing:.08em}
+.ch-v{font-family:var(--serif);font-size:1.55rem;font-weight:400}
+table{width:100%;border-collapse:collapse}
+thead th{padding:10px 20px 6px;text-align:left;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);font-weight:500}
+thead th:not(:first-child){text-align:center}
+tbody td{padding:13px 20px;border-top:1px solid rgba(27,45,62,.05);font-size:.9rem}
+tbody td:not(:first-child){text-align:center;font-weight:500}
+.td-l{color:var(--soft)}
+.td-b{color:#c0392b}
+.td-g{color:var(--mint-deep)}
+.cta-band{margin:0 48px 80px;background:var(--navy);border-radius:28px;padding:68px 60px;display:flex;justify-content:space-between;align-items:center;gap:48px}
+.cta-band h2{font-family:var(--serif);font-size:clamp(2rem,3.5vw,3rem);font-weight:400;color:#fff;max-width:26ch;text-wrap:balance;line-height:1.2}
+.cta-band h2 em{font-style:italic;color:var(--mint)}
+.cta-band p{color:rgba(255,255,255,.5);margin-top:12px;font-size:.95rem;max-width:40ch;line-height:1.65}
+.btn-l{display:inline-flex;align-items:center;gap:10px;flex-shrink:0;background:#fff;color:var(--navy);border-radius:100px;padding:16px 32px;font-family:var(--sans);font-size:1rem;font-weight:500;text-decoration:none;transition:background .2s}
+.btn-l:hover{background:var(--sand)}
+footer{background:var(--navy);color:rgba(255,255,255,.4);padding:36px 48px;font-size:.83rem;text-align:center}
+footer a{color:rgba(255,255,255,.6);text-decoration:none}
+@media(max-width:980px){
+  nav{padding:16px 24px}.nav-links{display:none}.hero{padding:36px 24px 0}
+  .bento{grid-template-columns:1fr 1fr;gap:12px}
+  .c-center{grid-column:1/3;grid-row:auto;min-height:360px}
+  .blob-s,.cmp-s{grid-template-columns:1fr;padding:52px 24px}
+  .blob{width:280px;height:270px}.bn{font-size:5rem}
+  .tabs-s{margin:0 24px 52px;padding:36px 24px}.tab-p{grid-template-columns:1fr}
+  .cta-band{margin:0 24px 52px;padding:48px 32px;flex-direction:column}
+  footer{padding:32px 24px}
+}
+@media(max-width:600px){.bento{grid-template-columns:1fr}.c-center{grid-column:1}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo"><span class="logo-dot"></span>Mediations Australia</a>
+  <ul class="nav-links">
+    <li><a href="#">Services</a></li>
+    <li><a href="#">How it works</a></li>
+    <li><a href="#">Guides</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <a href="#" class="btn-nav">Book free consult</a>
+</nav>
+
+<section class="hero">
+  <h1>Accredited Mediators <span class="pill">✦ nationally</span><br>for Family, Workplace<br><em>&amp; Estate Disputes.</em></h1>
+  <div class="bento">
+    <div class="card c-stat">
+      <div class="num">1,800<em>+</em></div>
+      <div class="lbl">matters resolved<br>without court</div>
+      <div class="avatars">
+        <div class="av" style="background:#2d6b5c">JM</div>
+        <div class="av" style="background:#4a8b78">SK</div>
+        <div class="av" style="background:#2d6b5c">AR</div>
+        <div class="av" style="background:#c66a3f">+</div>
+      </div>
+    </div>
+    <div class="card c-center">
+      <div>
+        <span class="c-tag">✦ Nationally accredited · AMDRAS certified</span>
+        <h2>Most disputes don't need a courtroom.<br><em>Mediation usually does it better.</em></h2>
+        <p>We give separating couples, families, businesses and colleagues a structured, confidential path to lasting agreement — faster and more affordably than litigation.</p>
+        <a href="#" class="btn-p" style="margin-top:28px">Book a free consultation →</a>
+      </div>
+      <div class="c-foot">
+        <div><div class="kv">Days</div><div class="kl">not years in court</div></div>
+        <div class="divv"></div>
+        <div><div class="kv">100%</div><div class="kl">you choose the outcome</div></div>
+        <div class="divv"></div>
+        <div><div class="kv" style="color:var(--mint)">Fixed</div><div class="kl">fees, no surprises</div></div>
+      </div>
+    </div>
+    <div class="card c-stat c-mint">
+      <div class="num">90<em style="color:var(--mint-deep)">%</em></div>
+      <div class="lbl">of mediations resolve<br>without going to court</div>
+    </div>
+    <div class="card c-cta">
+      <div class="ch">Start with a<br>free consultation.</div>
+      <div class="cs">Speak with an accredited mediator.<br>No obligation, no pressure.</div>
+      <a href="#">Book now →</a>
+    </div>
+    <div class="card c-stat" style="background:var(--navy);color:#fff">
+      <div class="num" style="color:#fff">20<em style="color:var(--mint)">+</em></div>
+      <div class="lbl" style="color:rgba(255,255,255,.5)">years resolving Australian disputes</div>
+    </div>
+  </div>
+</section>
+
+<section class="blob-s">
+  <div class="blob-w">
+    <div class="blob">
+      <div class="bn">20+</div>
+      <div class="bu">Years experience</div>
+    </div>
+    <div class="bb">⚖</div>
+  </div>
+  <div class="bc">
+    <div class="ey">Why Mediations Australia</div>
+    <h2>Expert mediators.<br><em>Real results.</em></h2>
+    <p>Our mediators are nationally accredited under AMDRAS — Australia's benchmark standard. Many hold dual qualifications in law and mediation, so the legal realities of your matter are understood from session one.</p>
+    <p>We operate across Sydney, Melbourne, Brisbane and Perth, with online mediation available nationwide.</p>
+    <a href="#" class="btn-p">Meet our mediators →</a>
+  </div>
+</section>
+
+<section class="tabs-s">
+  <h2>Whatever the dispute — there's a smarter path through it.</h2>
+  <div class="tab-bar">
+    <button class="tab active" onclick="switchTab(this,'family')">Family &amp; divorce</button>
+    <button class="tab" onclick="switchTab(this,'property')">Property</button>
+    <button class="tab" onclick="switchTab(this,'workplace')">Workplace</button>
+    <button class="tab" onclick="switchTab(this,'estate')">Estate</button>
+  </div>
+  <div id="p-family" class="tab-p">
+    <div><h3>Family &amp; divorce mediation</h3><p>From parenting arrangements to property settlements, our accredited family mediators help separating couples reach agreement without going to court.</p><a href="#" class="lnk">Explore family mediation →</a></div>
+    <div class="tv">👨‍👩‍👧</div>
+  </div>
+  <div id="p-property" class="tab-p" style="display:none">
+    <div><h3>Property settlement mediation</h3><p>Divide assets, debts and superannuation fairly — without the delays and costs of a contested court case. We help you reach a binding agreement in weeks, not years.</p><a href="#" class="lnk">Explore property mediation →</a></div>
+    <div class="tv">🏡</div>
+  </div>
+  <div id="p-workplace" class="tab-p" style="display:none">
+    <div><h3>Workplace mediation</h3><p>Resolve conflict and complaints before they reach the Fair Work Commission. We help employers and employees rebuild working relationships quickly and privately.</p><a href="#" class="lnk">Explore workplace mediation →</a></div>
+    <div class="tv">🤝</div>
+  </div>
+  <div id="p-estate" class="tab-p" style="display:none">
+    <div><h3>Estate &amp; inheritance mediation</h3><p>Contested wills and family disagreements over estates don't have to end in court. Our mediators help families reach private, dignified resolutions.</p><a href="#" class="lnk">Explore estate mediation →</a></div>
+    <div class="tv">📜</div>
+  </div>
+</section>
+
+<section class="cmp-s">
+  <div>
+    <div class="ey2">The honest comparison</div>
+    <h2>Court has its place.<br>For most disputes,<br><em>mediation is better.</em></h2>
+    <p>Most family and commercial disputes never needed a judge. But once litigation starts, cost and time compound quickly. Here's what the two paths typically look like.</p>
+    <a href="#" class="btn-p">See how mediation works →</a>
+  </div>
+  <div class="cmp-card">
+    <div class="cmp-head">
+      <div><div class="ch-l">Typical resolution</div><div class="ch-v">Days vs Years</div></div>
+    </div>
+    <table>
+      <thead><tr><th></th><th>Court</th><th>Mediation</th></tr></thead>
+      <tbody>
+        <tr><td class="td-l">Time to resolution</td><td class="td-b">1–3 years</td><td class="td-g">Days–weeks</td></tr>
+        <tr><td class="td-l">Typical cost (each)</td><td class="td-b">$50k–$200k</td><td class="td-g">$2k–$8k</td></tr>
+        <tr><td class="td-l">Who decides</td><td class="td-b">A judge</td><td class="td-g">You</td></tr>
+        <tr><td class="td-l">Privacy</td><td class="td-b">Public record</td><td class="td-g">Confidential</td></tr>
+        <tr><td class="td-l">Resolution rate</td><td class="td-b">Unpredictable</td><td class="td-g">~90%</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div>
+    <h2>The first step costs nothing <em>but a phone call.</em></h2>
+    <p>Tell us about your situation and we'll give you an honest view of whether mediation can help — no obligation, no pressure.</p>
+  </div>
+  <a href="#" class="btn-l">Book a free consultation →</a>
+</section>
+
+<footer>
+  <p>© 2025 Mediations Australia &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Terms</a> &nbsp;·&nbsp; Call <a href="tel:1800952380">1800 952 380</a></p>
+  <p style="margin-top:8px;font-size:.76rem;opacity:.5">Design concept — swap DM Serif Display for Recoleta font files in production</p>
+</footer>
+
+<script>
+function switchTab(btn,id){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  ['family','property','workplace','estate'].forEach(k=>{
+    const p=document.getElementById('p-'+k);
+    if(p)p.style.display=k===id?'grid':'none';
+  });
+}
+</script>
+</body>
+</html>
