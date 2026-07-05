@@ -59,22 +59,59 @@ doc = head(
                faq_schema(qa_home)])
 doc += nav()
 doc += f"""<main id="main">
-<section class="phero">
+<section class="phero" style="padding-bottom:clamp(48px,6vw,80px)">
   <div class="phero-blob"></div>
-  <div class="wrap">
-    <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
-    <h1 class="d2" style="font-size:clamp(2.4rem,5.5vw,4.6rem);max-width:18ch;margin-bottom:24px">Mediation for Family, Workplace <em>&amp; Estate Disputes.</em></h1>
-    <p class="lede d3" style="font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--ink-soft);max-width:52ch;margin-bottom:36px">Most disputes don't need a courtroom. Our nationally accredited mediators help separating couples, families, businesses and colleagues reach lasting agreements — faster, more affordably, and on terms they choose together.</p>
-    <div class="phero-cta d4">
-      <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
-      <a href="/how-mediation-works/" class="btn btn-ghost">See how it works</a>
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 420px;gap:clamp(32px,5vw,72px);align-items:start">
+    <div>
+      <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
+      <h1 class="d2" style="font-size:clamp(2.2rem,4.8vw,4.2rem);max-width:18ch;margin-bottom:24px">Mediation for Family, Workplace <em>&amp; Estate Disputes.</em></h1>
+      <p class="lede d3" style="font-size:clamp(1rem,1.5vw,1.2rem);color:var(--ink-soft);max-width:52ch;margin-bottom:36px">Most disputes don't need a courtroom. Our nationally accredited mediators help separating couples, families, businesses and colleagues reach lasting agreements — faster, more affordably, and on terms they choose together.</p>
+      <div class="stats d4" style="margin-bottom:36px">
+        <div class="stat"><span class="num"><em>90%</em></span><div class="lbl">resolved at mediation</div></div>
+        <div class="stat"><span class="num">Days</span><div class="lbl">not years in court</div></div>
+        <div class="stat"><span class="num">100%</span><div class="lbl">you choose the outcome</div></div>
+      </div>
+      <div class="answer d5" style="max-width:60ch"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation for family, property, workplace and estate disputes — resolving 90% of matters without court, typically in days or weeks rather than years. We serve clients across Sydney, Melbourne, Brisbane, Perth and Australia-wide online.</p></div>
     </div>
-    <div class="stats d5" style="margin-top:48px">
-      <div class="stat"><span class="num"><em>90%</em></span><div class="lbl">resolved at mediation</div></div>
-      <div class="stat"><span class="num">Days</span><div class="lbl">not years in court</div></div>
-      <div class="stat"><span class="num">100%</span><div class="lbl">you choose the outcome</div></div>
+    <div class="d3" style="background:var(--cream);border:1px solid var(--sand-deep);border-radius:22px;padding:clamp(24px,3vw,36px);box-shadow:0 4px 32px rgba(35,41,31,.07)">
+      <p style="font-family:var(--serif);font-size:1.35rem;font-weight:400;color:var(--ink);margin:0 0 4px">Book a free consultation</p>
+      <p style="font-size:.9rem;color:var(--ink-soft);margin:0 0 22px">We'll respond within one business day.</p>
+      <form action="https://formspree.io/f/mredjobj" method="POST" novalidate style="display:flex;flex-direction:column;gap:14px">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
+        <input type="hidden" name="_subject" value="Homepage consultation request — Mediations Australia">
+        <div>
+          <label for="hname" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Name <span aria-hidden="true" style="color:var(--terra)">*</span></label>
+          <input id="hname" name="name" type="text" required autocomplete="name" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+        </div>
+        <div>
+          <label for="hphone" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Phone <span aria-hidden="true" style="color:var(--terra)">*</span></label>
+          <input id="hphone" name="phone" type="tel" required autocomplete="tel" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+        </div>
+        <div>
+          <label for="hemail" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Email <span aria-hidden="true" style="color:var(--terra)">*</span></label>
+          <input id="hemail" name="email" type="email" required autocomplete="email" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+        </div>
+        <div>
+          <label for="htype" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Type of mediation <span aria-hidden="true" style="color:var(--terra)">*</span></label>
+          <select id="htype" name="matter" required style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+            <option value="" disabled selected>Select…</option>
+            <option>Family / divorce</option>
+            <option>Property settlement</option>
+            <option>Parenting &amp; children</option>
+            <option>Workplace</option>
+            <option>Estate &amp; inheritance</option>
+            <option>Commercial / business</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="hmsg" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Brief explanation</label>
+          <textarea id="hmsg" name="message" rows="3" placeholder="A few sentences about your situation…" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);resize:vertical;box-sizing:border-box"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:4px">Send request <span class="arr">→</span></button>
+        <p style="font-size:.8rem;color:var(--ink-soft);margin:0;text-align:center">Your details are kept private and confidential.</p>
+      </form>
     </div>
-    <div class="answer reveal" style="margin-top:36px;max-width:60ch"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation for family, property, workplace and estate disputes — resolving 90% of matters without court, typically in days or weeks rather than years. We serve clients across Sydney, Melbourne, Brisbane, Perth and Australia-wide online.</p></div>
   </div>
 </section>
 
