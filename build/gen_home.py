@@ -63,7 +63,7 @@ doc += f"""<main id="main">
   <div class="phero-blob"></div>
   <div class="wrap">
     <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
-    <h1 class="d2" style="font-size:clamp(2.4rem,5.5vw,4.6rem);max-width:18ch;margin-bottom:24px">Mediation for Family, Workplace <em>&amp; Estate Disputes — accredited, without court.</em></h1>
+    <h1 class="d2" style="font-size:clamp(2.4rem,5.5vw,4.6rem);max-width:18ch;margin-bottom:24px">Mediation for Family, Workplace <em>&amp; Estate Disputes.</em></h1>
     <p class="lede d3" style="font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--ink-soft);max-width:52ch;margin-bottom:36px">Most disputes don't need a courtroom. Our nationally accredited mediators help separating couples, families, businesses and colleagues reach lasting agreements — faster, more affordably, and on terms they choose together.</p>
     <div class="phero-cta d4">
       <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
