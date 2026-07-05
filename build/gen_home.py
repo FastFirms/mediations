@@ -63,8 +63,8 @@ doc += f"""<main id="main">
   <div class="phero-blob"></div>
   <div class="wrap">
     <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
-    <h1 class="d2" style="font-size:clamp(2.4rem,5.5vw,4.6rem);max-width:18ch;margin-bottom:24px">Accredited Mediators for Family, Workplace <em>&amp; Estate Disputes.</em></h1>
-    <p class="lede d3" style="font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--ink-soft);max-width:52ch;margin-bottom:36px">When it comes to resolving most disputes, be it a family law matter, or a workplace issue, or an estate matter, there are 2 ways to resolve it. Put bluntly, one way is very expensive, painful and can take years, the other is cheap, works 90% of the time, and gets you back to living life on your terms.</p>
+    <h1 class="d2" style="font-size:clamp(2.4rem,5.5vw,4.6rem);max-width:18ch;margin-bottom:24px">Mediation for Family, Workplace <em>&amp; Estate Disputes — accredited, without court.</em></h1>
+    <p class="lede d3" style="font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--ink-soft);max-width:52ch;margin-bottom:36px">Most disputes don't need a courtroom. Our nationally accredited mediators help separating couples, families, businesses and colleagues reach lasting agreements — faster, more affordably, and on terms they choose together.</p>
     <div class="phero-cta d4">
       <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
       <a href="/how-mediation-works/" class="btn btn-ghost">See how it works</a>
@@ -76,6 +76,7 @@ doc += f"""<main id="main">
     </div>
   </div>
 </section>
+<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation for family, property, workplace and estate disputes — resolving 90% of matters without court, typically in days or weeks rather than years. We serve clients across Sydney, Melbourne, Brisbane, Perth and Australia-wide online.</p></div></div>
 
 <section class="sec reveal" style="background:var(--ink);color:var(--cream);border-radius:38px;margin:0 16px" aria-labelledby="wedge-h">
   <div class="wrap">
