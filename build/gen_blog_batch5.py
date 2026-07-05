@@ -164,67 +164,131 @@ post("spousal-maintenance-guide",
  "Spousal maintenance in Australia explained: who is eligible, how much is paid, how long it lasts, and how it differs from child support. Complete 2026 guide.",
  "Property &amp; finances",
  "Spousal Maintenance in Australia: <em>Who Pays, and How Much?</em>",
- "Spousal maintenance is financial support one partner may pay the other after separation, where one can't adequately support themselves and the other has the capacity to help. It's separate from child support and from the property split. Here's who's eligible, how it's calculated, and how long it lasts.",
+ "Spousal maintenance is financial support one partner may pay the other after separation, where one can't adequately support themselves and the other has the capacity to help. It's separate from child support and from the property split. Here's who's eligible, how it's assessed, and how to reach a fair outcome without a court fight.",
  [("what-is","What is spousal maintenance?"),
+  ("legislation","The legislative framework"),
   ("eligible","Who is eligible?"),
+  ("factors","Factors the court considers"),
   ("how-much","How much is paid?"),
   ("how-long","How long does it last?"),
+  ("urgent","Urgent and interim maintenance"),
   ("vs-child-support","Spousal maintenance vs child support"),
   ("de-facto","Does it apply to de facto couples?"),
   ("agree","How to agree it without court")],
- key_takeaway("Spousal maintenance is support paid by one former partner to the other where the recipient cannot adequately meet their own reasonable needs and the payer has the capacity to pay. It's assessed on need and capacity \u2014 not a fixed formula \u2014 and is separate from child support and the property settlement. It can be a lump sum or periodic, and is often time-limited.")
+ key_takeaway("Spousal maintenance is support paid by one former partner to the other where the recipient cannot adequately meet their own reasonable needs and the payer has the capacity to pay. It\u2019s assessed on need and capacity \u2014 not a fixed formula \u2014 and is separate from child support and the property settlement. It can be a lump sum or periodic, and is often time-limited. Most couples resolve it by agreement, without ever going to court.")
  + f"""
 <h2 id="what-is">What is spousal maintenance?</h2>
-<p>Spousal maintenance (sometimes loosely called "alimony", a US term) is financial support one spouse or de facto partner pays the other after separation. It exists to address a genuine imbalance: where one person can't adequately support themselves and the other has the capacity to help. It is governed by the {cite("family_law_act")} and is distinct from both child support and the division of property.</p>
+<p>Spousal maintenance (sometimes loosely called \u201calimony\u201d, a US term that doesn\u2019t quite map to the Australian system) is financial support one spouse or de facto partner pays the other after separation. It exists to address a genuine imbalance: where one person can\u2019t adequately support themselves and the other has the capacity to help. It is governed by the {cite("family_law_act")} and is distinct from both child support and the division of property \u2014 you can be dealing with all three simultaneously, or just one, depending on your circumstances.</p>
+<p>The underlying idea is straightforward: long-term relationships often produce an economic imbalance \u2014 one partner may have reduced their earning capacity to care for children, support the other\u2019s career, or manage the household. Spousal maintenance is the law\u2019s recognition that it isn\u2019t fair to sever that arrangement overnight without some transitional support.</p>
 """
  + inline_cta("Wondering if you can claim \u2014 or might have to pay \u2014 spousal maintenance? Get clarity in a consultation.")
- + """
+ + f"""
+<h2 id="legislation">The legislative framework</h2>
+<p>Spousal maintenance for married couples is governed by sections 72\u201390 of the {cite("family_law_act")}. Section 72 sets out the foundational right: a party to a marriage is liable to maintain the other to the extent that they are reasonably able to do so, if, and only if, that other party is unable to support themselves adequately. The same framework \u2014 applied through equivalent provisions \u2014 covers de facto couples whose relationships fall within the Act.</p>
+<p>Applications are heard by the {cite("fcfcoa")}. However, the great majority of maintenance outcomes are reached by agreement and formalised outside of contested hearings, through negotiation, mediation, or consent orders.</p>
+
 <h2 id="eligible">Who is eligible?</h2>
 <p>Eligibility turns on two questions working together:</p>
 <ul>
-  <li><strong>Need:</strong> can the applicant reasonably meet their own living expenses from their income and resources?</li>
+  <li><strong>Need:</strong> can the applicant reasonably meet their own living expenses from their income and assets?</li>
   <li><strong>Capacity:</strong> can the other party afford to pay after meeting their own reasonable needs?</li>
 </ul>
-<p>The court also considers factors like age, health, income, earning capacity, the care of children, and the standard of living during the relationship. Maintenance isn't automatic \u2014 it must be justified on these grounds.</p>
+<p>If the answer to both questions is yes \u2014 genuine need on one side, genuine capacity on the other \u2014 maintenance is available. If either is missing, it isn\u2019t. This is why maintenance is never automatic: it requires a genuine imbalance, not merely a disparity in incomes.</p>
+<p>Common situations where need arises include: a primary carer who stepped back from the workforce for years; a partner who is ill or has a disability; a significantly older partner with reduced employment prospects; and cases where one party sacrificed career development to support the other\u2019s business or professional advancement.</p>
+"""
+ + inline_cta("Not sure whether your circumstances meet the threshold? A confidential consultation will give you a clear answer.")
+ + """
+<h2 id="factors">Factors the court considers</h2>
+<p>When assessing both need and capacity, the court looks at a detailed picture of each party\u2019s circumstances. The key factors include:</p>
+<ul>
+  <li><strong>Age and health</strong> \u2014 an older or less healthy party may have reduced capacity to re-enter the workforce</li>
+  <li><strong>Income, property and financial resources</strong> \u2014 what each party has and earns</li>
+  <li><strong>Earning capacity</strong> \u2014 including any reasonable steps the recipient could take to become self-supporting</li>
+  <li><strong>Care of children</strong> \u2014 if the applicant has primary care of the children, their ability to work is reduced</li>
+  <li><strong>Standard of living during the relationship</strong> \u2014 maintenance aims to avoid a dramatic and unjust drop</li>
+  <li><strong>Duration of the relationship</strong> \u2014 longer relationships tend to produce deeper economic interdependence</li>
+  <li><strong>Commitments of the payer</strong> \u2014 the payer must be left with enough to meet their own reasonable needs</li>
+  <li><strong>Any other relevant circumstances</strong> \u2014 the court\u2019s assessment is always case-specific</li>
+</ul>
 
 <h2 id="how-much">How much is paid?</h2>
-<p>Unlike child support, there's no fixed formula. The amount reflects the gap between the recipient's reasonable needs and their capacity to meet them, limited by the payer's ability to pay. It can be ordered as a lump sum or as periodic (e.g. monthly) payments. Because it's discretionary and fact-specific, it's an area where reaching agreement through <a href="/spousal-support-mediation/">mediation</a> often produces a fairer, faster result than litigation.</p>
+<p>Unlike child support, there\u2019s no fixed formula. The amount reflects the gap between the recipient\u2019s reasonable needs and their capacity to meet them, limited by what the payer can actually afford after meeting their own needs. It can be ordered as a lump sum or as periodic payments (weekly, fortnightly, monthly). Because it\u2019s discretionary and fact-specific, two people in apparently similar situations may reach different outcomes.</p>
+<p>The table below illustrates how the calculation logic works in broad terms \u2014 not as a precise formula, but to show the moving parts:</p>
+<figure class='tbl'><table><caption>How spousal maintenance is assessed: the key variables</caption>
+<thead><tr><th>Variable</th><th>Recipient side</th><th>Payer side</th></tr></thead>
+<tbody>
+<tr><td>Income</td><td>All sources: wages, Centrelink, investments</td><td>Wages, business income, investments</td></tr>
+<tr><td>Reasonable needs</td><td>Housing, food, utilities, medical, transport</td><td>Same categories \u2014 assessed before determining capacity to pay</td></tr>
+<tr><td>Gap / surplus</td><td>Needs exceeding income = quantum of need</td><td>Income exceeding own needs = capacity to pay</td></tr>
+<tr><td>Adjustment factors</td><td>Earning capacity (can they earn more?)</td><td>Commitments to others (new family, debt)</td></tr>
+<tr><td>Result</td><td colspan='2'>Maintenance = lesser of (recipient\u2019s gap) and (payer\u2019s surplus), adjusted for all circumstances</td></tr>
+</tbody></table></figure>
 """
- + callout("It's about need and capacity \u2014 not punishment",
-   "Spousal maintenance isn't a reward or a penalty. It's a practical adjustment to help a financially weaker partner transition to independence, for as long as that genuinely takes.")
+ + callout("It\u2019s about need and capacity \u2014 not punishment",
+   "Spousal maintenance isn\u2019t a reward or a penalty. It\u2019s a practical adjustment to help a financially weaker partner transition to independence, for as long as that genuinely takes.")
  + """
 <h2 id="how-long">How long does it last?</h2>
-<p>Often it's time-limited \u2014 designed to support the recipient while they retrain, re-enter the workforce, or otherwise move toward self-sufficiency. It can be reviewed if circumstances change significantly (the <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court</a> handles these applications), and it generally ends if the recipient remarries (and may be affected by entering a new de facto relationship). Permanent maintenance is uncommon and usually reserved for cases of age or incapacity.</p>
-
-<h2 id="vs-child-support">Spousal maintenance vs child support</h2>
-<p>They're frequently confused but are entirely separate. <a href="/child-support-guide/">Child support</a> is for the children's costs and is calculated by a formula administered by Services Australia. Spousal maintenance is for an adult former partner's own support and is assessed on need and capacity. You can be entitled to one, both, or neither.</p>
+<p>Often it\u2019s time-limited \u2014 designed to support the recipient while they retrain, re-enter the workforce, or otherwise move toward self-sufficiency. Courts and agreed arrangements frequently specify a review date or a sunset clause. The period might be 12 months, two or three years, or longer depending on the circumstances.</p>
+<p>Maintenance can be varied or terminated if circumstances change significantly \u2014 either party can apply to the court to review an order. It generally ends automatically if the recipient remarries. Entering a new de facto relationship doesn\u2019t automatically end it, but it is a factor in any review.</p>
+<p>Permanent (ongoing) maintenance is relatively uncommon in Australia and is usually reserved for cases of serious incapacity \u2014 where the recipient is unlikely ever to become self-sufficient due to age, illness, or disability.</p>
 """
- + inline_cta("Spousal maintenance is rarely clear-cut. Let us help you reach a fair figure without a court fight.")
+ + inline_cta("Concerned about maintenance dragging on? The duration is negotiable \u2014 talk to us about building in a workable end date.")
+ + f"""
+<h2 id="urgent">Urgent and interim maintenance</h2>
+<p>In the immediate aftermath of separation, one partner can sometimes be left without access to funds while the broader property and maintenance questions are sorted out. In this situation, an application for interim (urgent) maintenance can be made to the {cite("fcfcoa")}. The court can make orders providing support while the substantive matter is resolved.</p>
+<p>Interim maintenance is assessed on a more summary basis than final orders \u2014 the court looks at the most immediate needs and the most visible capacity to pay, rather than conducting the full detailed analysis. If your situation is urgent, this route is worth understanding quickly. In many cases, however, a negotiated interim arrangement \u2014 reached through mediation or direct negotiation \u2014 is faster and less adversarial than a court application.</p>
+
+<h2 id="vs-child-support">Spousal maintenance vs child support: key differences</h2>
+<p>They\u2019re frequently confused but are entirely separate legal frameworks. Understanding the distinction matters, because you may be entitled to one, both, or neither:</p>
+<figure class='tbl'><table><caption>Spousal maintenance vs child support compared</caption>
+<thead><tr><th>Feature</th><th>Spousal maintenance</th><th>Child support</th></tr></thead>
+<tbody>
+<tr><td>Who it\u2019s for</td><td>The adult former partner</td><td>The children</td></tr>
+<tr><td>How it\u2019s calculated</td><td>Discretionary \u2014 need and capacity, no formula</td><td>Formula administered by {cite("services_australia_cs")}</td></tr>
+<tr><td>Who decides</td><td>Court or agreement</td><td>Services Australia (or agreement)</td></tr>
+<tr><td>When it ends</td><td>Remarriage, changed circumstances, or agreed date</td><td>Usually when the child turns 18</td></tr>
+<tr><td>Can it be agreed?</td><td>Yes \u2014 and this is encouraged</td><td>Yes \u2014 private agreements are possible</td></tr>
+<tr><td>Linked to property?</td><td>No \u2014 separate from the asset pool</td><td>No</td></tr>
+</tbody></table></figure>
+"""
+ + inline_cta("Spousal maintenance and child support can both apply at once. Let\u2019s map out the full picture together.")
  + """
 <h2 id="de-facto">Does it apply to de facto couples?</h2>
-<p>Yes. De facto partners can claim maintenance on the same need-and-capacity basis as married couples \u2014 subject to the usual <a href="/de-facto-relationships-guide/">de facto time limits</a> (generally two years from separation). <a href="/de-facto-mediation/">See de facto mediation \u2192</a></p>
+<p>Yes. De facto partners have the same right to claim maintenance as married couples, on the same need-and-capacity basis. The critical practical difference is timing: de facto couples generally have <strong>two years from the date of separation</strong> to apply, rather than waiting for a divorce. Once that window closes, you need the court\u2019s permission to proceed \u2014 and it isn\u2019t guaranteed. If you\u2019re separating from a de facto partner and maintenance may be relevant, treat the clock as already running. <a href='/de-facto-relationships-guide/'>See the de facto relationships guide \u2192</a></p>
 
-<h2 id="agree">How to agree it without court</h2>
-<p>Because spousal maintenance is discretionary, it's well suited to negotiated agreement. Through <a href="/spousal-support-mediation/">spousal support mediation</a> you can agree an amount and duration that works for both of you, then formalise it in <a href="/consent-orders-explained/">consent orders</a> or a <a href="/binding-financial-agreements-guide/">binding financial agreement</a> \u2014 avoiding the cost and uncertainty of a court determination.</p>
+<h2 id="agree">How to agree spousal maintenance without court</h2>
+<p>Because spousal maintenance is discretionary and highly fact-specific, it\u2019s genuinely well suited to negotiated agreement. Most couples who deal with it do so without a court hearing. The path is:</p>
+<ol>
+  <li><strong>Understand the range</strong> \u2014 get advice on what a realistic outcome looks like given both parties\u2019 circumstances</li>
+  <li><strong>Negotiate or mediate</strong> \u2014 through <a href='/spousal-support-mediation/'>spousal support mediation</a>, both parties can explore options in a structured, supported setting</li>
+  <li><strong>Formalise the agreement</strong> \u2014 through <a href='/consent-orders-explained/'>consent orders</a> (court-approved, fully enforceable) or a <a href='/binding-financial-agreements-guide/'>binding financial agreement</a> (with independent legal advice for each party)</li>
+</ol>
+<p>This approach is faster, cheaper, and far less stressful than contested litigation \u2014 and it gives both parties control over the outcome rather than leaving it to judicial discretion. An agreed maintenance arrangement that\u2019s sensible and workable is also far more likely to be honoured voluntarily than one imposed by a court.</p>
 """
  ,
- [("What is spousal maintenance?",
-   "Financial support one former partner pays the other after separation, where the recipient can't adequately support themselves and the payer has the capacity to pay. It's separate from child support and the property split."),
+ [("What is spousal maintenance in Australia?",
+   "Financial support one former spouse or de facto partner pays the other after separation, where the recipient cannot adequately support themselves and the payer has the capacity to help. It is governed by sections 72\u201390 of the Family Law Act 1975 and is distinct from child support and property settlement."),
+  ("Who is eligible for spousal maintenance?",
+   "The applicant must show genuine need \u2014 they cannot reasonably meet their own living expenses \u2014 and the other party must have the capacity to pay after meeting their own reasonable needs. It is never automatic and always assessed on the specific facts."),
   ("Who has to pay spousal maintenance?",
-   "A former partner who has the financial capacity to pay, where the other genuinely cannot meet their reasonable needs. It's assessed on need and capacity, not automatically owed."),
+   "A former spouse or de facto partner who has the financial capacity to pay, where the other genuinely cannot meet their reasonable needs. The court also considers age, health, income, earning capacity, care of children, and the standard of living during the relationship."),
   ("How much spousal maintenance is paid?",
-   "There's no fixed formula. It reflects the gap between the recipient's reasonable needs and their own capacity, limited by the payer's ability to pay. It can be a lump sum or periodic."),
+   "There is no fixed formula. The amount reflects the gap between the recipient\u2019s reasonable needs and their own capacity to meet them, capped by what the payer can afford after meeting their own needs. It can be a lump sum or periodic payments."),
   ("How long does spousal maintenance last?",
-   "Often time-limited to support a transition to self-sufficiency. It can be reviewed if circumstances change and generally ends on remarriage. Permanent maintenance is uncommon."),
+   "Often time-limited to support a transition to self-sufficiency \u2014 commonly one to three years. It can be varied if circumstances change significantly and generally ends if the recipient remarries. Permanent maintenance is uncommon and reserved for cases of serious incapacity."),
+  ("Can I get urgent spousal maintenance?",
+   "Yes. Interim (urgent) maintenance can be applied for while the substantive matter is resolved. Courts assess it on a summary basis. In many cases a negotiated interim arrangement is faster and less adversarial than a formal application."),
   ("Is spousal maintenance the same as child support?",
-   "No. Child support is for children's costs and is formula-based via Services Australia. Spousal maintenance is for an adult partner's own support, assessed on need and capacity.")],
+   "No. Child support is for children\u2019s costs and is calculated by a formula administered by Services Australia. Spousal maintenance is for an adult partner\u2019s own support, assessed on need and capacity. You can be entitled to both, one, or neither."),
+  ("Do de facto couples have spousal maintenance rights?",
+   "Yes \u2014 on the same need-and-capacity basis as married couples, but with a two-year time limit from the date of separation. After that you need the court\u2019s permission to apply, which is not guaranteed.")],
  [("spousal-support-mediation","Spousal Support Mediation"),
   ("child-support-guide","Child Support Guide"),
   ("property-settlement-after-separation","Property Settlement"),
   ("de-facto-relationships-guide","De Facto Relationships"),
   ("consent-orders-explained","Consent Orders Explained"),
   ("financial-agreements-mediation","Financial Agreements Mediation")],
- read_min=9)
+ read_min=12)
 print("spousal-maintenance-guide built")
 
 # ---- CHILD SUPPORT GUIDE (absorbs 4) ----

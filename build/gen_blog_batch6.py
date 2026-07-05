@@ -186,6 +186,17 @@ post("superannuation-and-divorce",
  + """
 <h2 id="formalise">How to formalise a super split</h2>
 <p>A super split must be formalised \u2014 you can't just agree it informally. It's done through <a href="/consent-orders-explained/">consent orders</a> or a <a href="/binding-financial-agreements-guide/">binding financial agreement</a>, which the super fund then implements. Reaching the agreement through <a href="/property-settlement-mediation/">mediation</a> first is the fastest, least costly route \u2014 then you simply formalise what you've agreed.</p>
+
+<figure class='tbl'><table><caption>Steps to formalise a superannuation split</caption>
+<thead><tr><th>Step</th><th>What happens</th><th>Who is involved</th></tr></thead>
+<tbody>
+<tr><td>1. Disclosure</td><td>Both parties provide super fund details and current balances</td><td>Both parties, super funds</td></tr>
+<tr><td>2. Valuation</td><td>Accumulation balance confirmed; defined benefit valued if needed</td><td>Fund, possibly actuary</td></tr>
+<tr><td>3. Agreement</td><td>Split percentage or amount agreed through mediation</td><td>Mediator, both parties</td></tr>
+<tr><td>4. Formalise</td><td>Consent orders or BFA drafted, signed, and filed with the court</td><td>Lawyer, both parties</td></tr>
+<tr><td>5. Implement</td><td>Orders served on super fund; fund splits the interest</td><td>Super fund</td></tr>
+</tbody></table></figure>
+<p>From mediated agreement to implementation, the process typically takes weeks rather than months \u2014 far faster than contested property proceedings through court. A consent order filed with the <a href="/family-court-process-australia/">Family Court</a> gives the outcome legal certainty and protects both parties if circumstances change later. <a href="/property-settlement-after-separation/">See the full property settlement process \u2192</a></p>
 """
  ,
  [("Is superannuation split in a divorce?",

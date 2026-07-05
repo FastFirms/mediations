@@ -23,20 +23,41 @@ post("mothers-rights",
  + f"""
 <h2 id="equal">Do mothers have special rights?</h2>
 <p>There's a common belief that mothers automatically have the upper hand in family law. The reality is more balanced: under the {cite("family_law_act")}, neither parent has a preferred status based on gender. Mothers and fathers begin equal, and the outcome depends on the children's best interests and each parent's circumstances \u2014 not on who is the mother.</p>
+<p>This equal-footing principle was deliberately built into Australian law. The 2023 amendments to the Family Law Act reinforced it, placing the best-interests assessment at the centre of every parenting decision and removing earlier provisions that had sometimes been read as tilting toward one parent or the other. The result is a framework that asks one core question: what outcome serves these particular children in their particular circumstances?</p>
+<p>Mothers sometimes worry that the law works against them, particularly in cases where the other parent is pressing for significant time. In practice, the arrangements that emerge usually reflect each parent's actual role in the child's life to date, their availability, and their capacity to meet the child's needs day-to-day. A mother who has been closely involved in her children's lives has a strong practical foundation to build from.</p>
 """
  + inline_cta("Want to understand exactly where you stand as a mother? Get clear, honest advice in a consultation.")
  + """
 <h2 id="responsibility">Parental responsibility explained</h2>
 <p>Parental responsibility covers the duties and authority a parent has \u2014 including major long-term decisions about a child's schooling, health and religion. Both parents usually retain parental responsibility after separation and are expected to consult on these major decisions, regardless of who the child primarily lives with. It isn't something only one parent holds.</p>
+<p>In practical terms, shared parental responsibility means parents need to communicate about significant decisions: choosing a school, approving elective medical treatment, decisions about overseas travel, or a change in the child's religion. Day-to-day decisions \u2014 what the children eat, their bedtimes, managing minor illness \u2014 are made by whichever parent has the children at the time, without needing agreement from the other.</p>
+<p>Where the relationship between parents has broken down severely, or where there are safety concerns, the court can make an order for sole parental responsibility. This is less common and is reserved for situations where shared decision-making would genuinely not work in the child's best interests \u2014 not simply because the parents disagree or communicate poorly.</p>
 
 <h2 id="best-interests">The best-interests test</h2>
 <p>Every parenting decision is governed by the best interests of the child. The court weighs the benefit of a meaningful relationship with both parents against the need to protect the child from harm \u2014 and where these conflict, safety prevails. The child's views (in an age-appropriate way), each parent's capacity, and practical circumstances all feed in, as set out in the <a href='https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/' target='_blank' rel='noopener'>Family Law Act 1975</a>. <a href="/child-custody-mediation/">See how arrangements are decided \u2192</a></p>
+<p>The factors the court considers include: each parent's ability to meet the child's physical, emotional and developmental needs; the nature of the relationship the child has with each parent and with other significant people; the likely effect on the child of any change in their circumstances; the practical difficulty and cost of the child spending time with each parent; and any history of family violence or abuse.</p>
+<p>Importantly, the best-interests test is forward-looking as much as backward-looking. Past involvement matters, but so does each parent's capacity and commitment going forward. A mother returning to work or relocating for practical reasons is not automatically disadvantaged \u2014 what counts is whether the proposed arrangement genuinely serves the children.</p>
 """
  + callout("Primary carer isn't a trump card",
    "If you've been the children's main carer, that's a relevant practical fact \u2014 but it doesn't create an automatic legal entitlement to sole care. The focus stays on what's best for the children going forward.")
  + """
 <h2 id="primary-carer">Does being the primary carer matter?</h2>
 <p>It can be relevant to the practical arrangements \u2014 children's routines, stability and existing attachments all matter \u2014 but it's not decisive on its own. Courts and mediators look at the whole picture, including how to preserve the children's relationship with both parents. A mother who has been the primary carer should expect that to be considered, not treated as conclusive.</p>
+<p>Where a mother has been the sole or near-sole carer, courts will typically be cautious about arrangements that would significantly disrupt established routines and attachments, particularly for younger children. That caution has practical value: it means the starting point for negotiation often reflects the existing reality of care. But it also means the other parent will usually be entitled to build a genuine and regular relationship with the children, even if the primary-carer arrangement continues.</p>
+<p>The most common outcome in Australian parenting disputes is an arrangement where one parent provides the primary home and the other parent has regular time \u2014 often alternate weekends, a mid-week visit, and holiday time. Equal time arrangements are also common where parents live close together and both have been significantly involved. What's agreed, or ordered, depends on the specific family \u2014 not a formula.</p>
+
+<h2 id="practical-steps">Practical steps for protecting your position</h2>
+
+<figure class="tbl"><table><caption>Steps mothers can take to protect their parenting position</caption>
+<thead><tr><th>Step</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Keep a diary of care and involvement</td><td>Documents your role in schooling, medical care, routines and activities</td></tr>
+<tr><td>Communicate in writing with the other parent</td><td>Creates a record and demonstrates reasonable behaviour</td></tr>
+<tr><td>Propose a parenting plan early</td><td>Shows you're child-focused and prepared to cooperate</td></tr>
+<tr><td>Support the children's relationship with their father (where safe)</td><td>Courts and mediators notice cooperation</td></tr>
+<tr><td>Seek legal advice before agreeing to informal arrangements</td><td>Informal arrangements can become difficult to change</td></tr>
+<tr><td>Use mediation to negotiate directly</td><td>Keeps you in control of the outcome, not a judge</td></tr>
+</tbody></table></figure>
 
 <h2 id="protect">How mothers protect their position</h2>
 <ol>
@@ -46,14 +67,21 @@ post("mothers-rights",
   <li><strong>Support the children's relationship with their father</strong> where safe \u2014 courts notice cooperation.</li>
   <li><strong>Use mediation</strong> to negotiate directly rather than leaving it to a judge.</li>
 </ol>
+<p>One of the most effective things a mother can do is to approach negotiations with a clear, child-focused parenting proposal. An arrangement that reflects the children's needs, respects their routines, and makes space for both parents is far easier for a court or mediator to endorse than one that reads as primarily limiting the other parent's involvement. Coming to the table with a considered proposal, rather than waiting to react to the other side, puts you in a stronger position.</p>
 """
  + inline_cta("Ready to put a sensible parenting proposal forward? We'll help you do it well. Book a consultation today.")
  + """
 <h2 id="safety">When safety is a concern</h2>
 <p>If you or your children's safety is at risk, that changes everything \u2014 protection comes first. Family violence is taken seriously and directly affects parenting arrangements, and it's a recognised exemption from compulsory mediation. If you're in immediate danger, contact emergency services. <a href="/domestic-violence-and-family-law/">See domestic violence and family law \u2192</a></p>
-
+<p>Where there is a history of family violence, coercive control, or abuse, the court must consider this when assessing parenting arrangements. The safety of the children and the primary carer is treated as a paramount concern \u2014 overriding even the general principle that children benefit from a meaningful relationship with both parents. Protections available include family violence orders, supervised contact, or in serious cases, no contact at all.</p>
+<p>If safety is a concern and you're unsure whether mediation is appropriate, speak with a lawyer or call <a href='https://www.1800respect.org.au/' target='_blank' rel='noopener'>1800RESPECT (1800 737 732)</a> for confidential support. There is no obligation to mediate where there is a genuine safety risk, and a mediator will not pressure you to proceed in those circumstances.</p>
+"""
+ + inline_cta("Safety concerns can change what process is right for you. Speak with us confidentially before you decide anything.")
+ + """
 <h2 id="mediation">Why mediation works for mothers</h2>
 <p>Mediation lets you shape the arrangements for your children directly, rather than handing the decision to a court. It's faster, less costly, and keeps things constructive \u2014 which protects the co-parenting relationship your children rely on. For most mothers, it's the strongest path to a workable, durable outcome. <a href="/parenting-plan-mediation/">See parenting plan mediation \u2192</a></p>
+<p>The court process, by contrast, is slow, expensive and largely out of your hands. A judge who has read a file for twenty minutes is making decisions about your children's lives. Mediation keeps that decision-making with you and the other parent, with a skilled mediator helping you work through the difficult parts. Agreements reached in mediation also tend to be more durable \u2014 because both parents had a hand in making them.</p>
+<p>If you're worried that the other parent will use mediation to pressure you into an arrangement you don't want, shuttle mediation \u2014 where you never have to sit in the same room \u2014 is an option. <a href="/shuttle-mediation-guide/">See shuttle mediation \u2192</a></p>
 """
  ,
  [("Do mothers have more rights than fathers in Australia?",
@@ -157,6 +185,8 @@ post("shuttle-mediation-guide",
  + """
 <h2 id="what-is">What is shuttle mediation?</h2>
 <p>Shuttle mediation is a format of mediation where the parties don't sit in the same room. Instead, each person stays in their own space and the mediator "shuttles" between them \u2014 conveying proposals, information and responses back and forth. The name captures it exactly: the mediator goes back and forth like a shuttle, doing the communicating so the parties don't have to face each other.</p>
+<p>It's not a different type of dispute resolution \u2014 it's still mediation, with the same goal of reaching a voluntary, negotiated agreement. What changes is the physical arrangement. The mediator takes on more of the communication work, but the parties remain the decision-makers. Nothing is agreed without both parties accepting it.</p>
+<p>Shuttle mediation is widely used in Australian family law, particularly where the parties have a history of conflict or where one person feels unsafe or overwhelmed in the other's presence. The <a href='https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution' target='_blank' rel='noopener'>Attorney-General's Department</a> recognises shuttle format as a legitimate form of family dispute resolution for the purpose of satisfying the pre-court mediation requirement.</p>
 """
  + inline_cta("Dreading being in the same room as your ex? Shuttle mediation means you won't have to. Ask us how.")
  + """
@@ -168,7 +198,8 @@ post("shuttle-mediation-guide",
   <li>Options are developed and narrowed across several "shuttles".</li>
   <li>Agreement is reached and recorded \u2014 without the parties ever sitting together.</li>
 </ol>
-<p>It's the same fundamental <a href="/what-is-mediation-in-family-law/">mediation process</a> promoted by the <a href='https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution' target='_blank' rel='noopener'>Attorney-General's Department</a>, just with the parties kept apart throughout.</p>
+<p>It's the same fundamental <a href="/what-is-mediation-in-family-law/">mediation process</a>, just with the parties kept apart throughout. The mediator plays a more active communication role, accurately representing each party's proposals and concerns without editorialising or taking sides.</p>
+<p>The session typically begins with the mediator spending time with each person individually to understand their priorities and concerns. This pre-mediation phase is important in shuttle format \u2014 it lets the mediator assess what matters most to each party and what flexibility exists, before proposals start moving back and forth. It also helps build trust, so that each person feels their position is being faithfully represented.</p>
 
 <h2 id="when-use">When to use shuttle mediation</h2>
 <ul>
@@ -177,7 +208,10 @@ post("shuttle-mediation-guide",
   <li><strong>Power imbalances</strong> \u2014 where one party would dominate a joint session</li>
   <li><strong>Strong emotions</strong> \u2014 where face-to-face contact is too distressing</li>
   <li><strong>A controlling or intimidating ex</strong> \u2014 see <a href="/mediation-with-a-narcissist/">mediating with a narcissist</a></li>
+  <li><strong>Significant anxiety or trauma</strong> \u2014 where joint sessions would be destabilising</li>
+  <li><strong>Requests from either party</strong> \u2014 you don't have to justify it; preference is enough</li>
 </ul>
+<p>You don't need to prove that shuttle format is "necessary" \u2014 either party can request it, and a good mediator will accommodate that request without interrogating why. If being in the same space as the other person feels wrong, shuttle mediation is an entirely reasonable choice.</p>
 """
  + callout("Apart, but still productive",
    "People often assume staying separate means less gets done. In high-conflict matters it's the opposite \u2014 removing the face-to-face friction lets each person think clearly and engage with the actual issues.")
@@ -189,15 +223,31 @@ post("shuttle-mediation-guide",
   <li>Keeps difficult mediations on track to a resolution</li>
   <li>Provides a safer structure where there are safety concerns</li>
   <li>Gives each party private space to consider options candidly with the mediator</li>
+  <li>Allows support persons to be present without complicating the joint dynamic</li>
+  <li>Enables the mediator to give frank feedback to each party privately</li>
 </ul>
+<p>The last two points are often underappreciated. In shuttle format, the mediator can be more candid with each party about the strengths and weaknesses of their position \u2014 something that's harder to do in a joint session without being seen as taking sides. That frank private feedback often moves negotiations forward more quickly than the polite back-and-forth of a joint session.</p>
 
 <h2 id="cons">The trade-offs</h2>
 <p>Shuttle mediation isn't without downsides. Because the mediator relays everything, it can take a little longer than a joint session, and the parties lose the (sometimes valuable) experience of hearing each other directly and rebuilding communication. For lower-conflict matters, a joint session can be quicker and help co-parenting. A good mediator will recommend the right format for your situation \u2014 and can switch between them. <a href="/high-conflict-mediation/">See high-conflict mediation \u2192</a></p>
+
+<figure class="tbl"><table><caption>Shuttle vs joint mediation: when each works best</caption>
+<thead><tr><th>Factor</th><th>Shuttle mediation</th><th>Joint mediation</th></tr></thead>
+<tbody>
+<tr><td>Conflict level</td><td>High \u2014 parties can't be in the same room productively</td><td>Lower \u2014 parties can communicate civilly</td></tr>
+<tr><td>Safety concerns</td><td>Appropriate where mediation is suitable at all</td><td>Not appropriate where safety is a concern</td></tr>
+<tr><td>Power imbalance</td><td>Mitigates dominance by one party</td><td>Power dynamics play out directly</td></tr>
+<tr><td>Communication rebuild</td><td>Limited \u2014 parties don't hear each other directly</td><td>Stronger \u2014 parties develop direct communication</td></tr>
+<tr><td>Time</td><td>Sometimes longer due to relay</td><td>Often faster in lower-conflict matters</td></tr>
+<tr><td>Co-parenting outcome</td><td>Good when conflict is genuine</td><td>Can strengthen co-parenting relationship</td></tr>
+</tbody></table></figure>
 """
  + inline_cta("Not sure whether shuttle or joint mediation suits you? We'll recommend the right format. Book a consultation.")
- + """
+ + f"""
 <h2 id="online">Shuttle mediation online</h2>
 <p>Shuttle mediation works especially well online: each party joins from their own location, and the mediator moves between private virtual rooms. This adds a further layer of separation and convenience, and means distance is no obstacle. <a href="/online-divorce/">See online mediation \u2192</a></p>
+<p>Online shuttle mediation also removes the stress of physically attending the same building. There's no risk of an uncomfortable encounter in the waiting room or car park. Each person is in their own space \u2014 at home, at a friend's place, or wherever they feel comfortable \u2014 which can meaningfully reduce anxiety and help people engage constructively with the process.</p>
+<p>The {cite("fcfcoa_fdr")} standard for family dispute resolution applies equally to online sessions, so an agreement reached via online shuttle mediation carries the same status as one reached in person. If you're separated from your co-parent by distance \u2014 interstate or overseas \u2014 online shuttle mediation can resolve parenting and property matters without either person needing to travel.</p>
 """
  ,
  [("What is shuttle mediation?",
@@ -236,37 +286,48 @@ post("conciliation-vs-mediation",
  + """
 <h2 id="both">Two forms of dispute resolution</h2>
 <p>Mediation, conciliation and arbitration are all forms of alternative dispute resolution \u2014 ways to resolve a dispute outside a courtroom. People often use "mediation" and "conciliation" interchangeably, but they describe genuinely different processes, mainly distinguished by how hands-on the neutral third party is.</p>
+<p>Getting the terminology right matters, especially when you're navigating a formal process. If the Fair Work Commission tells you your matter will go to conciliation, that's different from being referred to private mediation. If your family lawyer suggests a conciliation conference at court, that's different again from an independent family dispute resolution session. Understanding what each involves helps you know what to expect and how to prepare.</p>
+<p>This guide sets out the key distinctions clearly, then explains which process applies in the most common scenarios Australians encounter.</p>
 """
  + inline_cta("Not sure which process fits your dispute? We'll point you to the right one. Book a free consultation.")
  + """
 <h2 id="mediation">What is mediation?</h2>
 <p>In <a href="/what-is-mediation-in-family-law/">mediation</a>, a neutral mediator facilitates the conversation but stays out of the merits. They don't tell you who's right, don't give advice on the outcome, and don't propose the solution \u2014 they help <em>you</em> reach your own agreement. The mediator manages the process; the parties own the result. This is the most common form of family dispute resolution.</p>
+<p>The mediator's neutrality is fundamental. They won't tell you what a court would decide, won't advise you on whether a proposed settlement is reasonable, and won't push you toward a particular outcome. Their job is to create the conditions in which the parties can have a productive conversation and find their own resolution. That process-focus is sometimes called "facilitative" mediation, to distinguish it from more evaluative approaches.</p>
+<p>In Australian family law, private mediation (also called family dispute resolution) is the required first step before most parenting court applications. Mediators who conduct this process must be registered with the <a href='https://msb.org.au/' target='_blank' rel='noopener'>Mediator Standards Board</a> and meet ongoing accreditation requirements. The process is confidential and voluntary \u2014 neither party can be compelled to reach an agreement.</p>
 
 <h2 id="conciliation">What is conciliation?</h2>
-<p>A conciliator takes a more active role. As well as facilitating, a conciliator often has subject-matter expertise and may advise on the issues, evaluate positions, and actively suggest possible solutions. Conciliation is common in areas like workplace and administrative disputes — the <a href='https://www.fwc.gov.au/' target='_blank' rel='noopener'>Fair Work Commission</a> uses it widely \u2014 for example, the <a href="/workplace-mediation-guide/">Fair Work Commission</a> uses conciliation in many matters. The conciliator still doesn't impose a decision, but they steer more directly toward a particular resolution.</p>
+<p>A conciliator takes a more active role. As well as facilitating, a conciliator often has subject-matter expertise and may advise on the issues, evaluate positions, and actively suggest possible solutions. Conciliation is common in areas like workplace and administrative disputes \u2014 the <a href='https://www.fwc.gov.au/' target='_blank' rel='noopener'>Fair Work Commission</a> uses it widely for unfair dismissal and general protections claims. The conciliator still doesn't impose a decision, but they steer more directly toward a particular resolution.</p>
+<p>The conciliator's willingness to share views on the merits is the defining feature. In a conciliation, you may hear something like: "Based on what I'm hearing, the evidence for your position on X seems strong, but the position on Y may be harder to sustain." A mediator would not say this. That evaluative input can be valuable \u2014 it anchors negotiation in a realistic assessment of likely outcomes \u2014 but it also means the parties have less exclusive control over shaping the resolution.</p>
+<p>Conciliation is often built into statutory processes. The Fair Work Commission uses it for unfair dismissal matters, general protections claims, and enterprise agreement disputes. Anti-discrimination bodies, tenancy tribunals, and some court registries also use conciliation. In these settings, the conciliator is usually a trained staff member or tribunal member, not a privately engaged neutral.</p>
 """
  + callout("Neither one decides for you",
    "A crucial point: neither a mediator nor a conciliator can impose a binding decision. If you want a neutral third party to actually decide the outcome, that's arbitration \u2014 a different process.")
  + f"""
 <h2 id="key-difference">The key difference</h2>
-<figure class="tbl"><table><caption>Mediation vs conciliation</caption>
-<thead><tr><th>Feature</th><th>Mediation</th><th>Conciliation</th></tr></thead>
+<figure class="tbl"><table><caption>Mediation vs conciliation vs arbitration</caption>
+<thead><tr><th>Feature</th><th>Mediation</th><th>Conciliation</th><th>Arbitration</th></tr></thead>
 <tbody>
-<tr><td>Third party's role</td><td>Facilitates only</td><td>Facilitates and advises</td></tr>
-<tr><td>Gives an opinion on merits?</td><td>No</td><td>Often yes</td></tr>
-<tr><td>Suggests solutions?</td><td>Rarely \u2014 parties generate them</td><td>Yes, actively</td></tr>
-<tr><td>Subject expertise used?</td><td>Process expertise</td><td>Often subject expertise too</td></tr>
-<tr><td>Imposes a decision?</td><td>No</td><td>No</td></tr>
+<tr><td>Third party's role</td><td>Facilitates only</td><td>Facilitates and advises</td><td>Decides</td></tr>
+<tr><td>Gives an opinion on merits?</td><td>No</td><td>Often yes</td><td>Yes (binding)</td></tr>
+<tr><td>Suggests solutions?</td><td>Rarely \u2014 parties generate them</td><td>Yes, actively</td><td>Imposes them</td></tr>
+<tr><td>Subject expertise used?</td><td>Process expertise</td><td>Often subject expertise too</td><td>Legal/subject expertise</td></tr>
+<tr><td>Imposes a binding decision?</td><td>No</td><td>No</td><td>Yes</td></tr>
+<tr><td>Parties control outcome?</td><td>Fully</td><td>Primarily</td><td>No</td></tr>
 </tbody></table></figure>
-<p>For context, where a neutral third party <em>does</em> impose a binding decision, that's <a href="/family-law-arbitration/">arbitration</a>.</p>
+<p>For context, where a neutral third party <em>does</em> impose a binding decision, that's <a href="/family-law-arbitration/">arbitration</a>. Arbitration is available in Australian family law for property disputes and is increasingly used as an alternative to contested court proceedings for parties who want a definitive, expert decision without the delay of the court list.</p>
 
 <h2 id="which">Which is right for you?</h2>
 <p>If you want to retain full control and craft your own agreement, mediation is ideal. If you'd value an expert's guidance and active suggestions \u2014 particularly in a technical or workplace dispute \u2014 conciliation may suit better. In family law, mediation is the standard pathway, and it's what satisfies the pre-court family dispute resolution requirement. <a href="/is-family-law-mediation-compulsory/">See the mediation requirement \u2192</a></p>
+<p>Consider these questions: Do you want to generate your own solution, or would you find it helpful to hear an expert's view on the likely outcome? Are you dealing with a family law matter (mediation is usually appropriate) or a workplace/employment matter (conciliation is often the statutory process)? Has the other party already engaged with a formal process that determines the format? The answers will usually clarify which path fits.</p>
+<p>Where you have a genuine choice, mediation tends to produce more durable outcomes \u2014 because both parties arrive at the resolution themselves, they're more committed to it. Conciliation can resolve matters faster where the evaluative input helps break a negotiating deadlock, but some parties find the conciliator's opinions too directive.</p>
 """
  + inline_cta("Want a process that keeps you in control of the outcome? That's mediation \u2014 and it's what we do best.")
- + """
+ + f"""
 <h2 id="family-law">In family law</h2>
-<p>For separating couples, mediation (family dispute resolution) is the usual path \u2014 it keeps decisions in the parties' hands and is what's required before most parenting court applications. Conciliation appears in family law too, notably in court-run conciliation conferences for property matters at the <a href='https://www.fcfcoa.gov.au/' target='_blank' rel='noopener'>Federal Circuit and Family Court</a>, where a registrar takes a more evaluative role. Understanding the difference helps you know what to expect at each step. <a href="/family-law-mediation/">See family law mediation \u2192</a></p>
+<p>For separating couples, mediation (family dispute resolution) is the usual path \u2014 it keeps decisions in the parties' hands and is what's required before most parenting court applications. Conciliation appears in family law too, notably in court-run conciliation conferences for property matters at the {cite("fcfcoa")}, where a registrar takes a more evaluative role. Understanding the difference helps you know what to expect at each step. <a href="/family-law-mediation/">See family law mediation \u2192</a></p>
+<p>In the Federal Circuit and Family Court, a conciliation conference for property matters is typically conducted by a court registrar. The registrar will often offer their assessment of the strengths and weaknesses of each party's position under the law, and encourage settlement. It's a more directed process than private mediation \u2014 the registrar may indicate what outcome they think is reasonable \u2014 but neither party is bound to accept it. If agreement isn't reached, the matter proceeds to a hearing before a judge.</p>
+<p>Private mediation before the court process begins can be more flexible and less pressured than a court-run conciliation. It lets the parties explore options at their own pace, with a mediator whose only role is to help them reach agreement \u2014 not to evaluate their legal position. For many couples, starting with private mediation leads to a resolution that avoids the court process entirely, saving time, cost, and stress. <a href="/property-settlement-mediation/">See property mediation \u2192</a></p>
 """
  ,
  [("What is the difference between mediation and conciliation?",
@@ -343,9 +404,26 @@ post("workplace-mediation-guide",
 </ul>
 """
  + inline_cta("Resolve workplace conflict early, privately and constructively. See how our workplace mediation works.")
+ + f"""
+<h2 id="comparison">Workplace mediation vs formal processes</h2>
+<p>The contrast between early mediation and a formal claim is stark. The table below shows what each path typically involves so employers and employees can make an informed choice before things escalate.</p>
+<figure class='tbl'><table><caption>Workplace mediation vs Fair Work formal process</caption>
+<thead><tr><th>Factor</th><th>Workplace mediation</th><th>Fair Work formal claim</th></tr></thead>
+<tbody>
+<tr><td>Typical timeline</td><td>Days to 2 weeks</td><td>Months to over a year</td></tr>
+<tr><td>Cost to employer</td><td>$1,500\u2013$4,000</td><td>$10,000\u2013$50,000+</td></tr>
+<tr><td>Confidential?</td><td>Yes</td><td>No \u2014 public record</td></tr>
+<tr><td>Relationship preserved?</td><td>Often yes</td><td>Rarely</td></tr>
+<tr><td>Outcome control</td><td>Parties decide together</td><td>Commission or tribunal decides</td></tr>
+<tr><td>Suitable for early disputes?</td><td>Yes \u2014 ideal</td><td>No \u2014 last resort</td></tr>
+</tbody></table></figure>
+<p>The {cite("fair_work")} handles matters that have escalated beyond internal resolution. Mediation is the earlier, faster, and more constructive step that keeps options open. <a href="/our-fee-structure/">See our fee structure \u2192</a></p>
+"""
+ + inline_cta("Don't wait for a formal claim. Early mediation costs less, takes days not months, and usually preserves the working relationship.")
  + """
 <h2 id="when">When to bring in a mediator</h2>
-<p>The best time to mediate is early \u2014 before positions harden and the conflict spreads through a team. If you're seeing persistent tension, repeated complaints, breakdowns in communication, or a dispute that internal processes haven't resolved, it's time to consider a neutral mediator. Acting early is almost always cheaper and more effective than waiting for a formal claim. <a href="/workplace-mediation/">See our workplace mediation service \u2192</a></p>
+<p>The best time to mediate is early \u2014 before positions harden and the conflict spreads through a team. If you're seeing persistent tension, repeated complaints, breakdowns in communication, or a dispute that internal processes haven't resolved, it's time to consider a neutral mediator. Acting early is almost always cheaper and more effective than waiting for a formal claim.</p>
+<p>Clear signs it's time to act include: a complaint that informal resolution hasn't resolved; two people who can no longer work together productively; a manager who has become part of the conflict; or HR concern about legal exposure. A mediator can step in at any of these points and help the parties reach a practical, durable agreement without destroying the relationship. <a href="/workplace-mediation/">See our workplace mediation service \u2192</a></p>
 """
  ,
  [("What is workplace mediation?",

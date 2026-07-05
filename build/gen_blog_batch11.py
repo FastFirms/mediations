@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
-"""Batch 11 — supporting-cluster articles that feed the commercial hubs.
-Each targets a specific informational query from the SEO deployment plan and
-links back into its money page with exact/partial-match anchors."""
+"""Batch 11 — supporting-cluster articles that feed the commercial hubs."""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from gen_blog import post, inline_cta, key_takeaway
 from authority_sources import cite
 
 # ============================================================
-# COST CLUSTER
+# POST 1 — who-pays-for-mediation
 # ============================================================
 post("who-pays-for-mediation",
  "Who Pays for Mediation in Australia? (2026 Guide)",

@@ -6,6 +6,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
                        BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
+from authority_sources import cite
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ---- Inline CTA components that punctuate blog content ----
@@ -468,13 +469,15 @@ post("how-long-does-mediation-take",
   ("single-session","How long is a single session?"),
   ("what-affects","What affects how long it takes"),
   ("vs-court","How that compares to court"),
+  ("by-type","Timeline by dispute type"),
   ("complex","What about complex matters?"),
+  ("formalising","Formalising the agreement"),
   ("speed-it-up","How to speed things up")],
  key_takeaway("Most mediations resolve in one to two sessions, frequently within a few weeks. A single session runs from a couple of hours to a full day. Complex financial matters may need more time, but even then mediation is dramatically faster than the one to three years a contested court case typically takes.")
- + """
+ + f"""
 <h2 id="typical-timeline">The typical mediation timeline</h2>
 <p>From first contact to a signed, binding agreement, mediation usually moves quickly. Here's the realistic shape of it:</p>
-<figure class="tbl"><table><caption>Typical mediation timeline</caption>
+<figure class='tbl'><table><caption>Typical mediation timeline</caption>
 <thead><tr><th>Stage</th><th>Typical timeframe</th></tr></thead>
 <tbody>
 <tr><td>Initial consultation</td><td>Booked within days; a fixed-fee session</td></tr>
@@ -482,12 +485,13 @@ post("how-long-does-mediation-take",
 <tr><td>The mediation session</td><td>Usually a single day</td></tr>
 <tr><td>Formalising the agreement</td><td>Consent orders prepared and lodged afterwards</td></tr>
 </tbody></table></figure>
-<p>For many couples the substantive process — from booking to agreement — is complete within a few weeks. <a href="/how-mediation-works/">See the full step-by-step process →</a></p>
+<p>For many couples the substantive process — from booking to agreement — is complete within a few weeks. <a href='/how-mediation-works/'>See the full step-by-step process →</a></p>
 """
  + inline_cta("Ready to resolve things in weeks, not years? Book a consultation and we'll map out your timeline.")
  + """
 <h2 id="single-session">How long is a single session?</h2>
 <p>A typical mediation session runs anywhere from two or three hours to a full day, depending on the number of issues and the level of agreement going in. Parenting-only matters can sometimes be resolved in a half-day; a full property settlement often uses a full day. Many matters are designed around a single full-day session that produces a Heads of Agreement by the end.</p>
+<p>The session itself is structured but not rushed. The mediator opens proceedings, confirms what's on the table, and works through issues methodically — giving both parties time to think, confer privately, and make informed decisions. There is no judicial pressure to finish fast. The pace is calibrated to reaching a durable outcome, not just any outcome.</p>
 
 <h2 id="what-affects">What affects how long it takes</h2>
 <ul>
@@ -496,26 +500,54 @@ post("how-long-does-mediation-take",
   <li><strong>Quality of preparation</strong> — having documents and financial disclosure ready dramatically shortens the process.</li>
   <li><strong>Both parties' willingness</strong> — genuine engagement from both sides is the single biggest accelerator.</li>
   <li><strong>Whether valuations are needed</strong> — waiting on a property or business valuation can add a few weeks.</li>
+  <li><strong>Whether legal advice is sought between sessions</strong> — entirely reasonable, though it adds time if parties need to pause and consult.</li>
 </ul>
 """
  + callout("Even a partial agreement saves time",
    "If mediation doesn't resolve absolutely everything, it almost always narrows the issues — meaning a faster, cheaper process for anything that does proceed. Nothing invested in mediation is wasted.")
- + """
+ + f"""
 <h2 id="vs-court">How that compares to court</h2>
-<p>The contrast is stark. A contested family law matter can take one to three years to reach a final hearing, with multiple interim court dates, adjournments and long waiting periods in between (see the <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>). Court lists in the busier registries are <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">heavily backed up</a>, which only adds to the delay. Most parenting matters also require <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">family dispute resolution</a> before filing.</p>
-<p>Mediation compresses all of that into a matter of weeks. The time saved isn't just a convenience — it means far less stress, dramatically lower cost, and a faster fresh start for everyone involved, especially the children. <a href="/cost-of-divorce-in-australia/">See how that time saving translates into cost savings →</a></p>
+<p>The contrast is stark. A contested family law matter can take one to three years to reach a final hearing, with multiple interim court dates, adjournments and long waiting periods in between (see the {cite("fcfcoa")}). Court lists in the busier registries are heavily backed up, which only adds to the delay. Most parenting matters also require {cite("ag_fdr")} before filing.</p>
+<p>Mediation compresses all of that into a matter of weeks. The time saved isn't just a convenience — it means far less stress, dramatically lower cost, and a faster fresh start for everyone involved, especially the children. <a href='/cost-of-divorce-in-australia/'>See how that time saving translates into cost savings →</a></p>
+<figure class='tbl'><table><caption>Mediation vs. court: time and cost comparison</caption>
+<thead><tr><th>Factor</th><th>Mediation</th><th>Contested court</th></tr></thead>
+<tbody>
+<tr><td>Time to resolution</td><td>Weeks to a few months</td><td>1–3 years</td></tr>
+<tr><td>Number of formal sessions</td><td>1–3 sessions</td><td>Multiple hearings over years</td></tr>
+<tr><td>Cost (typical)</td><td>$2,000–$8,000 total</td><td>$50,000–$200,000+</td></tr>
+<tr><td>Who decides the outcome</td><td>You and your former partner</td><td>A judge</td></tr>
+<tr><td>Privacy</td><td>Confidential</td><td>Public court record</td></tr>
+</tbody></table></figure>
 """
  + inline_cta("Why wait years for a court date? Most mediations finish in weeks. Find out how fast yours could be.")
  + """
-<h2 id="complex">What about complex matters?</h2>
-<p>Some matters genuinely need more than one session — a large or contested asset pool, a family business requiring valuation, or a high-conflict dynamic. Even then, mediation typically spans a few sessions over a few weeks, not the years a contested trial would consume. Where one issue remains stuck, <a href="/family-law-arbitration/">arbitration</a> can deliver a binding decision on that point quickly, without a full court case.</p>
+<h2 id="by-type">Timeline by dispute type</h2>
+<p>Not all mediations are the same. Here's a realistic sense of how timelines vary by the nature of the dispute:</p>
+<ul>
+  <li><strong>Parenting arrangements only</strong> — often resolved in a single half- to full-day session. A straightforward parenting plan can be documented and formalised quickly once both parties agree on core arrangements.</li>
+  <li><strong>Property settlement (straightforward pool)</strong> — a single full day is the norm, with consent orders prepared in the weeks following. Total elapsed time from booking to binding agreement: four to eight weeks.</li>
+  <li><strong>Property settlement (complex pool)</strong> — where there are businesses, trusts, superannuation interests, or contested valuations, expect two to three sessions spread over several weeks, plus time for an independent valuation if needed.</li>
+  <li><strong>Combined parenting and property</strong> — a full-day session covering both issues is common, though complex combinations may require follow-up.</li>
+  <li><strong>Workplace or commercial disputes</strong> — typically a single session of a few hours, often less contentious once the parties are in the room with a skilled mediator.</li>
+</ul>
 
+<h2 id="complex">What about complex matters?</h2>
+<p>Some matters genuinely need more than one session — a large or contested asset pool, a family business requiring valuation, or a high-conflict dynamic. Even then, mediation typically spans a few sessions over a few weeks, not the years a contested trial would consume. Where one issue remains genuinely stuck after good-faith mediation, <a href='/family-law-arbitration/'>arbitration</a> can deliver a binding decision on that specific point quickly, without launching a full court case.</p>
+<p>High-conflict situations don't disqualify mediation — they just shape the format. Shuttle mediation (where parties are kept in separate rooms and the mediator moves between them) is specifically designed for situations where direct negotiation is difficult or inappropriate. It takes the same amount of clock time but removes the pressure of face-to-face engagement. <a href='/shuttle-mediation-guide/'>See shuttle mediation →</a></p>
+
+<h2 id="formalising">Formalising the agreement</h2>
+<p>An agreement reached in mediation doesn't become legally binding the moment you shake hands — it needs to be formalised. For parenting matters, this typically means a parenting plan or consent orders. For property, <a href='/consent-orders-explained/'>consent orders</a> or a binding financial agreement are the two routes. This step usually takes a few additional weeks but is straightforward when the agreement is clear. We guide clients through it as part of the process — the mediation day is the difficult part; formalisation is largely administrative. <a href='/preparing-for-mediation/'>See how to prepare for your session →</a></p>
+"""
+ + inline_cta("From booking to binding agreement in weeks. Let's map out your timeline — book a consultation today.")
+ + """
 <h2 id="speed-it-up">How to speed things up</h2>
 <ol>
-  <li><strong>Come prepared.</strong> Gather financial documents and think through your goals before you start. <a href="/preparing-for-mediation/">See how to prepare →</a></li>
-  <li><strong>Choose online mediation.</strong> <a href="/online-divorce/">Online sessions</a> remove travel and are far easier to schedule.</li>
-  <li><strong>Complete disclosure early.</strong> Having full financial disclosure ready avoids mid-process delays.</li>
+  <li><strong>Come prepared.</strong> Gather financial documents and think through your goals before you start. <a href='/preparing-for-mediation/'>See how to prepare →</a></li>
+  <li><strong>Choose online mediation.</strong> <a href='/online-divorce/'>Online sessions</a> remove travel and are far easier to schedule quickly.</li>
+  <li><strong>Complete disclosure early.</strong> Having full financial disclosure ready avoids mid-process delays — both parties have a legal duty to disclose.</li>
   <li><strong>Focus on outcomes, not blame.</strong> The faster both parties move past grievances, the faster you resolve.</li>
+  <li><strong>Get any valuations done before the session.</strong> Arriving with an agreed or independent property valuation removes a common bottleneck.</li>
+  <li><strong>Brief your mediator in advance.</strong> A pre-session call with the mediator lets them identify potential sticking points and prepare accordingly.</li>
 </ol>
 <p>Done well, mediation turns what could be years of litigation into a few focused weeks — and leaves you in control of the outcome the whole way through.</p>
 """
@@ -529,13 +561,15 @@ post("how-long-does-mediation-take",
   ("What if we don't finish in one session?",
    "Some matters, especially complex financial ones, need a follow-up session. Even then it's far faster than litigation, and any progress narrows the remaining issues."),
   ("How quickly can I get started?",
-   "An initial consultation can usually be booked within days, and the mediation itself scheduled within a few weeks once both parties are ready.")],
+   "An initial consultation can usually be booked within days, and the mediation itself scheduled within a few weeks once both parties are ready."),
+  ("How long does it take to formalise a mediation agreement?",
+   "A few weeks after the session. Consent orders or a binding financial agreement are prepared once the Heads of Agreement is signed — the process is straightforward when the agreement is clear.")],
  [("how-mediation-works","How Mediation Works"),
   ("preparing-for-mediation","Preparing for Mediation"),
   ("online-divorce","Online Mediation"),
   ("cost-of-divorce-in-australia","Cost of Divorce"),
   ("family-law-arbitration","Family Law Arbitration"),
   ("family-law-mediation","Family Law Mediation")],
- read_min=8)
+ read_min=10)
 
 print("\nCornerstone posts (batch 1) built.")
