@@ -33,6 +33,13 @@ POST_CSS = """
 .post-hero{padding:36px 0 8px}
 .post-meta{display:flex;gap:16px;align-items:center;font-size:.9rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
 .post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 14px;border-radius:100px;font-weight:600;font-size:.82rem}
+.author-byline{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:18px;border-top:1px solid var(--sand-deep)}
+.author-byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-byline div{display:flex;flex-direction:column;gap:2px}
+.author-name{font-weight:600;font-size:.95rem;color:var(--ink)}
+.author-name a{color:inherit;text-decoration:none}
+.author-name a:hover{color:var(--sage-deep)}
+.author-cred{font-size:.82rem;color:var(--ink-soft)}
 .post-body{padding:30px 0 60px}
 .post-body h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:42px 0 14px}
 .post-body h2:first-child{margin-top:0}
@@ -98,9 +105,16 @@ def post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=
 {crumb_html([("Home",""),("Guides","guides"),(h1[:48]+("…" if len(h1)>48 else ""),None)])}
 <article>
 <header class="post-hero"><div class="wrap-narrow">
-  <div class="post-meta"><span class="cat">{esc(category)}</span><span>{read_min} min read</span><span>Reviewed by Mediations Australia</span></div>
+  <div class="post-meta"><span class="cat">{esc(category)}</span><span>{read_min} min read</span></div>
   <h1>{h1}</h1>
   <p class="lede" style="margin-top:16px">{dek}</p>
+  <div class="author-byline">
+    <img src="/assets/images/dan-toombs.jpg" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
+    <div>
+      <span class="author-name"><a href="/our-mediators/">Dan Toombs</a></span>
+      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS · Churchill Fellow</span>
+    </div>
+  </div>
 </div></header>
 <div class="post-body"><div class="wrap-narrow">
 {toc_html}

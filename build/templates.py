@@ -259,9 +259,20 @@ def service_schema(name, desc, slug):
             "provider": {"@id": f"{DOMAIN}/#organization"},
             "areaServed": "AU", "url": f"{DOMAIN}/{slug}/"}
 
+DAN_TOOMBS = {
+    "@type": "Person",
+    "name": "Dan Toombs",
+    "jobTitle": "Founder & Accredited Mediator",
+    "url": f"{DOMAIN}/our-mediators/",
+    "sameAs": [
+        "https://amdras.au/",
+        "https://www.churchilltrust.com.au/",
+    ],
+}
+
 def article_schema(headline, desc):
     return {"@type": "Article", "headline": headline, "description": desc,
-            "author": {"@type": "Organization", "name": "Mediations Australia"},
+            "author": DAN_TOOMBS,
             "publisher": {"@id": f"{DOMAIN}/#organization"}}
 
 # ---- Reusable HTML fragments ----
