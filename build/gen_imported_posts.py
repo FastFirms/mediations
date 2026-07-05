@@ -283,17 +283,37 @@ def extract_h1(html):
     return re.sub(r"<[^>]+>", "", m.group(1)).strip() if m else ""
 
 
+def _div_contents(html, class_fragment):
+    """Return inner HTML of the first div whose class contains class_fragment,
+    using depth tracking to avoid early truncation from nested divs."""
+    start = re.compile(r'<div[^>]+class="[^"]*' + class_fragment + r'[^"]*"[^>]*>', re.I)
+    m = start.search(html)
+    if not m:
+        return ""
+    pos = m.end()
+    depth = 1
+    tag = re.compile(r'<(/?)div[\s>]', re.I)
+    end = pos
+    while depth > 0 and pos < len(html):
+        t = tag.search(html, pos)
+        if not t:
+            break
+        depth += -1 if t.group(1) else 1
+        end = t.start()
+        pos = t.end()
+    inner = html[m.end():end].strip()
+    return inner if len(inner) > 200 else ""
+
+
 def extract_article_body(html):
-    for pat in [
-        r'<div[^>]+class="[^"]*entry-content[^"]*"[^>]*>(.*?)</div>\s*</div>\s*</article',
-        r'<div[^>]+class="[^"]*post-content[^"]*"[^>]*>(.*?)(?=<(?:div|section|footer)[^>]+class="[^"]*(?:post-footer|author|related|sidebar)[^"]*")',
-        r"<article[^>]*>(.*?)</article>",
-    ]:
-        m = re.search(pat, html, re.S | re.I)
-        if m:
-            body = m.group(1).strip()
-            if len(body) > 200:
-                return body
+    for cls in ("entry-content", "post-content", "article-content", "the-content"):
+        body = _div_contents(html, cls)
+        if body:
+            return body
+    # Fallback: full <article> contents
+    m = re.search(r"<article[^>]*>(.*?)</article>", html, re.S | re.I)
+    if m and len(m.group(1).strip()) > 200:
+        return m.group(1).strip()
     return ""
 
 
@@ -310,6 +330,8 @@ def clean_body(html):
     html = re.sub(r"<figure[^>]*>.*?</figure>", "", html, flags=re.S | re.I)
     html = re.sub(r"<img[^>]*/?>", "", html, flags=re.I)
     html = re.sub(r"<div[^>]+class=\"[^\"]*wp-block-[^\"]*\"[^>]*>", "<div>", html, flags=re.I)
+    # Strip WP "Summarise with AI" widget and similar injected containers
+    html = re.sub(r'<div[^>]+class="[^"]*summarize-with-ai[^"]*"[^>]*>.*?</div>', "", html, flags=re.S | re.I)
     # Fix double-encoded entities (e.g. &amp;amp; → &amp; so browser renders & correctly)
     html = re.sub(r"&amp;(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);", r"&\1;", html)
     return html.strip()
