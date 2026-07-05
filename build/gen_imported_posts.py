@@ -305,6 +305,10 @@ def clean_body(html):
     html = re.sub(r"<p>\s*</p>", "", html)
     html = re.sub(r'<figure[^>]*class="[^"]*wp-block-image[^"]*"[^>]*>', "<figure>", html)
     html = re.sub(r"<h1[^>]*>.*?</h1>", "", html, flags=re.S | re.I)
+    # Strip all images and figures — WP media library images don't carry over
+    html = re.sub(r"<figure[^>]*>.*?</figure>", "", html, flags=re.S | re.I)
+    html = re.sub(r"<img[^>]*/?>", "", html, flags=re.I)
+    html = re.sub(r"<div[^>]+class=\"[^\"]*wp-block-[^\"]*\"[^>]*>", "<div>", html, flags=re.I)
     return html.strip()
 
 
