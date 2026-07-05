@@ -109,7 +109,7 @@ def post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=
   <h1>{h1}</h1>
   <p class="lede" style="margin-top:16px">{dek}</p>
   <div class="author-byline">
-    <img src="/assets/images/dan-toombs.jpg" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
+    <img src="/assets/images/dan-toombs.png" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
     <div>
       <span class="author-name"><a href="/our-mediators/">Dan Toombs</a></span>
       <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS · Churchill Fellow</span>
