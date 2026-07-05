@@ -246,6 +246,27 @@ post("cost-of-divorce-in-australia",
 """
  + inline_cta("Most disputes resolve in one or two mediation sessions — for a fraction of court costs. Find out if yours can too.")
  + """
+<h2 id="cost-timeline">Costs stage by stage: what to expect and when</h2>
+<p>One reason divorce costs catch people off guard is that they don't arrive all at once. Here's how costs typically accumulate across the life of a separation:</p>
+<figure class="tbl"><table><caption>Stage-by-stage divorce cost timeline (AUD)</caption>
+<thead><tr><th>Stage</th><th>Typical timeframe</th><th>Key costs</th><th>Estimated range</th></tr></thead>
+<tbody>
+<tr><td>Initial advice &amp; filing</td><td>Months 1–3</td><td>Divorce application, initial legal consultation</td><td>$1,100–$3,000</td></tr>
+<tr><td>Disclosure &amp; negotiation</td><td>Months 2–6</td><td>Document gathering, financial disclosure, correspondence</td><td>$3,000–$8,000</td></tr>
+<tr><td>Mediation (if chosen)</td><td>Months 2–4</td><td>Mediator fees, heads of agreement</td><td>$3,500–$7,000 total</td></tr>
+<tr><td>Formalising the agreement</td><td>Months 4–8</td><td>Consent orders, BFA, property transfer stamp duty</td><td>$2,000–$6,000</td></tr>
+<tr><td>Contested court (if litigation)</td><td>Months 6–36+</td><td>Hearing fees, expert reports, ongoing legal representation</td><td>$30,000–$100,000+ per side</td></tr>
+</tbody></table></figure>
+<p>The biggest variable is whether the matter stays out of court. Couples who reach agreement through mediation typically complete the process in months two to four, before the most expensive stages ever materialise.</p>
+
+<h2 id="case-comparison">Two families, very different bills</h2>
+<p>To make the numbers concrete, consider two couples with broadly similar situations — a shared home, superannuation, and one child.</p>
+<p><strong>Family A — settled through mediation:</strong> After a fixed-fee consultation, both parties engaged a mediator. One full-day session resolved the property split, super division and parenting arrangements. The agreement was formalised through consent orders. Total cost shared between both parties: approximately $9,000–$12,000, including legal fees for drafting the orders.</p>
+<p><strong>Family B — contested through court:</strong> Unable to reach agreement, Family B each retained separate solicitors. The matter took 22 months to resolve, involved a family report ($3,300 per party), three directions hearings, a property valuation and a contested trial. Each party spent in excess of $60,000 in legal fees — a combined total of over $120,000, not including the emotional cost to the child and both parents.</p>
+<p>The legal outcome for both families was broadly comparable. The process was not. <a href="/divorce-mediation/">See how divorce mediation works →</a></p>
+"""
+ + inline_cta("Your situation may be closer to Family A than you think. Find out in a free 20-minute call.")
+ + """
 <h2 id="managing-costs">How to manage your divorce costs</h2>
 <ol>
   <li><strong>Try mediation before litigation.</strong> It's the single most effective way to control costs — and for parenting matters, <a href="https://www.fcfcoa.gov.au/fl/fdr" target="_blank" rel="noopener">family dispute resolution is generally required</a> anyway.</li>
