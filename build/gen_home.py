@@ -217,6 +217,7 @@ doc += f"""<main id="main">
   </div>
 </section>"""
 doc += faq_html(qa_home, heading="Everything you might be <em>wondering</em>.", tag="Common questions")
+doc = doc.replace('id="faq" aria-labelledby="faqh" style="padding-top:0"', 'id="faq" aria-labelledby="faqh" style="padding-top:80px"', 1)
 doc += cta_band("The first step costs <em>nothing</em> but a phone call.",
  "Tell us about your dispute. We'll give you an honest view of whether mediation can help — and how it fits alongside any legal advice you're already getting.")
 doc += "</main>" + page_end()
