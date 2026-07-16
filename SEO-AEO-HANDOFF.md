@@ -16,7 +16,7 @@ This repo is the **rebuild**. It is **not yet deployed** — the live `mediation
 
 ## Part A — Concrete in-repo tasks
 
-### A1. Finish the meta-length fixes (R8) — IN PROGRESS
+### A1. Finish the meta-length fixes (R8) — ✅ DONE (2026-07-06: gate passes, 0 violations)
 
 A build gate now enforces this: **`build/check_meta_lengths.py`** (titles ≤60, descriptions ≤160).
 
@@ -95,4 +95,4 @@ The "90% success rate" (verify or soften + date it), AMDRAS accreditation number
 | Location pages: LegalService/LocalBusiness + Breadcrumb | all 21 |
 | Answer boxes on content pages | 96/104 (rest are non-content) |
 | Authority citations (`check_authority.py`) | governs — keep passing |
-| **Meta lengths (`check_meta_lengths.py`)** | ~81 to fix (Part A1) |
+| **Meta lengths (`check_meta_lengths.py`)** | ✅ pass — 0 violations (fixed 2026-07-06) |
