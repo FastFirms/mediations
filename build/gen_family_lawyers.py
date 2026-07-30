@@ -46,20 +46,48 @@ def localservice_schema(city, state, slug):
 # ---------------------------------------------------------------------------
 
 TIER1 = [
-    # (slug, city, state, nearest_office, court_ref, local_context)
+    # (slug, city, state, nearest_office, court_ref, local_context, city_specific)
     ("canberra-family-lawyers", "Canberra", "ACT", "Sydney",
      "the Canberra registry of the Federal Circuit and Family Court of Australia",
      "Canberra is a small, close-knit city where family law disputes carry a particular "
      "weight — you’re likely to encounter the other party at the school gate, at work, "
      "or in the same social circles. Confidentiality matters more here than almost anywhere, "
-     "which is one reason mediation suits Canberra clients especially well."),
+     "which is one reason mediation suits Canberra clients especially well.",
+     "<h2>What makes Canberra family law matters distinctive</h2>"
+     "<p>Canberra’s demographic profile shapes its family law matters in ways that make "
+     "out-of-court resolution particularly valuable. A high proportion of ACT residents are "
+     "Commonwealth public servants, many with defined benefit superannuation entitlements that "
+     "require specialist valuation — and whose employment is part of the public record "
+     "the moment a matter enters the courts. Defence personnel with security clearances face "
+     "similar sensitivities: a contested, public court proceeding can create professional "
+     "complications that have nothing to do with the legal outcome.</p>"
+     "<p>Canberra also has one of the highest median property values in Australia. The family "
+     "home — often acquired on dual public sector incomes — is frequently the most significant "
+     "asset in the property pool. And in a city where the legal profession, the public service, "
+     "and the private sector all overlap significantly, the lawyer you engage and the judge "
+     "who hears your matter may well know people you both know. Confidential mediation "
+     "removes that exposure entirely.</p>"),
 
     ("penrith-family-lawyers", "Penrith", "NSW", "Sydney",
      "the Parramatta registry of the Federal Circuit and Family Court of Australia",
      "Penrith and Greater Western Sydney have seen significant population growth, and with it, "
      "a sharp rise in family law matters. The Parramatta registry serves this region, but waiting "
      "times for contested matters routinely run to 18 months to two years — which makes "
-     "resolving matters by agreement, through mediation, a genuinely compelling alternative."),
+     "resolving matters by agreement, through mediation, a genuinely compelling alternative.",
+     "<h2>Family law in Greater Western Sydney: what Penrith clients face</h2>"
+     "<p>Western Sydney’s property market has seen extraordinary price growth over the past "
+     "decade. Many Penrith families who bought a home for $400,000-$600,000 are now sitting "
+     "on a property worth $900,000 or more. That equity is real and significant — but "
+     "litigation consumes a meaningful portion of it. A contested matter through the Parramatta "
+     "registry, with both parties paying legal fees for 18-24 months, can easily cost "
+     "$60,000-$120,000 in combined legal costs. Mediation typically resolves the same matter "
+     "for $4,000-$10,000 total, shared between the parties.</p>"
+     "<p>The Parramatta registry is one of the busiest family law registries in Australia. "
+     "Greater Western Sydney’s rapid population growth has not been matched by proportionate "
+     "court resources. Waiting times for contested final hearings are among the longest in "
+     "the country — which means the practical choice for Penrith families is often between "
+     "resolving through mediation within weeks, or waiting years for a court date while "
+     "legal costs accumulate.</p>"),
 
     ("ballarat-family-lawyers", "Ballarat", "VIC", "Melbourne",
      "the Melbourne registry of the Federal Circuit and Family Court of Australia, "
@@ -67,7 +95,21 @@ TIER1 = [
      "Ballarat is regional Victoria’s largest inland city. Family law matters here often "
      "involve significant property equity — farms, investment properties, local businesses "
      "— alongside parenting arrangements. The nearest major registry is Melbourne, 110 "
-     "kilometres away, which makes a local, early-resolution approach particularly valuable."),
+     "kilometres away, which makes a local, early-resolution approach particularly valuable.",
+     "<h2>Property and farming matters in Ballarat family law</h2>"
+     "<p>Ballarat and the Central Highlands have a significant proportion of family law matters "
+     "involving farming properties, rural land, and multi-generational family assets — where "
+     "values are genuinely difficult to agree on and division is complex. A working farm "
+     "cannot simply be split in two, and its valuation for property settlement purposes often "
+     "requires specialist input. Mediation allows that process to happen in a structured, "
+     "confidential setting, with both parties able to bring their own advisers and reach a "
+     "practical outcome — without handing the decision to a Melbourne judge who may have "
+     "limited familiarity with agricultural assets or Central Highlands property values.</p>"
+     "<p>The Melbourne registry circuits to Ballarat, but circuit sittings are infrequent. "
+     "Matters that cannot be resolved locally face the prospect of travel to Melbourne and "
+     "the Melbourne registry’s considerable waiting list. For Ballarat families managing "
+     "a farm, a local business, or young children, the practical burden of protracted "
+     "Melbourne litigation is substantial. Early mediation removes that burden almost entirely.</p>"),
 
     ("mandurah-family-lawyers", "Mandurah", "WA", "Perth",
      "the Family Court of Western Australia",
@@ -75,14 +117,43 @@ TIER1 = [
      "significant assets tied up in property. Western Australia operates its own separate family "
      "court system — the Family Court of Western Australia — which makes WA-aware "
      "mediators genuinely valuable. Resolving matters before they enter that system saves time, "
-     "money and stress."),
+     "money and stress.",
+     "<h2>Mandurah, the Peel Region, and the WA family court system</h2>"
+     "<p>Western Australia is the only state with its own dedicated family court — the "
+     "Family Court of Western Australia — which operates under slightly different procedures "
+     "from the federal system covering the rest of Australia. For Mandurah clients, matters "
+     "are heard in Perth (75 kilometres away) rather than a federal registry. Navigating "
+     "WA’s distinct family law procedures is one reason why mediators with WA-specific "
+     "experience are more useful here than a generalist approach.</p>"
+     "<p>The Peel Region has a high proportion of FIFO workers in the resources sector, "
+     "whose income structures — irregular rosters, resource sector bonuses, employer-provided "
+     "housing — require particular care in property settlements and parenting arrangements. "
+     "Mandurah’s coastal property market has also experienced significant price growth, making "
+     "the family home a major and often contested component of the property pool. Resolving "
+     "these matters through mediation — where both parties can address the specific realities "
+     "of FIFO parenting and resource sector income directly — typically produces far more "
+     "workable outcomes than a court order drafted without that local context.</p>"),
 
     ("hobart-family-lawyers", "Hobart", "TAS", "Melbourne",
      "the Hobart registry of the Federal Circuit and Family Court of Australia",
      "Tasmania’s small legal and social community means family law disputes can have a wide "
      "ripple effect on professional and personal relationships. Hobart has its own FCFCOA registry, "
      "but court waiting times still run to over a year for contested matters. Mediation’s "
-     "confidentiality and speed are particularly valuable here."),
+     "confidentiality and speed are particularly valuable here.",
+     "<h2>Why confidentiality matters more in Hobart family law</h2>"
+     "<p>Hobart is Australia’s second smallest capital city, and its tight social fabric means "
+     "family law disputes carry a different weight than in a larger city. The legal profession, "
+     "the medical community, the public service, the business sector and the education sector "
+     "all overlap significantly in Hobart — people know each other, and word travels. Court "
+     "proceedings are a matter of public record. For many Hobart clients, the confidentiality "
+     "of mediation is not just a convenience but a genuine professional necessity.</p>"
+     "<p>Tasmania’s property market has experienced sharp price growth over recent years, "
+     "particularly in Hobart’s inner suburbs. The family home — often purchased years ago "
+     "at a fraction of its current value — is now frequently the dominant asset in the "
+     "property pool, and its division requires careful, considered negotiation. A mediated "
+     "settlement reached between the parties, with the benefit of independent legal advice "
+     "alongside, almost always produces a more workable outcome than an order made by a "
+     "Hobart judge on the basis of a few hours of evidence.</p>"),
 
     ("bendigo-family-lawyers", "Bendigo", "VIC", "Melbourne",
      "the Melbourne registry of the Federal Circuit and Family Court of Australia, "
@@ -90,14 +161,16 @@ TIER1 = [
      "Bendigo is one of regional Victoria’s major centres, 150 kilometres from Melbourne. "
      "Family law matters here often involve farming properties, local business interests, and "
      "multi-generational assets. Getting these resolved without litigation — which would "
-     "require travel to Melbourne and months of delay — is a significant practical advantage."),
+     "require travel to Melbourne and months of delay — is a significant practical advantage.",
+     ""),
 
     ("central-coast-family-lawyers", "Central Coast", "NSW", "Sydney",
      "the Newcastle or Sydney registry of the Federal Circuit and Family Court of Australia",
      "The Central Coast sits between Sydney and Newcastle, with a large and growing population "
      "of families who have relocated from Sydney. Many matters involve significant property assets "
      "accumulated during the Sydney boom years. Both the Sydney and Newcastle registries handle "
-     "Central Coast matters, and both have substantial waiting lists for contested proceedings."),
+     "Central Coast matters, and both have substantial waiting lists for contested proceedings.",
+     ""),
 
     ("darwin-family-lawyers", "Darwin", "NT", "Brisbane",
      "the Darwin registry of the Federal Circuit and Family Court of Australia",
@@ -105,7 +178,8 @@ TIER1 = [
      "sector families. Matters here sometimes involve interstate or international elements, remote "
      "property, and unique asset structures. The Territory’s remoteness makes online mediation "
      "especially practical — resolving a matter without travel or waiting for circuit court "
-     "listings is a genuine advantage."),
+     "listings is a genuine advantage.",
+     ""),
 
     ("launceston-family-lawyers", "Launceston", "TAS", "Melbourne",
      "the Launceston registry of the Federal Circuit and Family Court of Australia",
@@ -113,7 +187,8 @@ TIER1 = [
      "community. Family law matters here — particularly those involving farming properties, "
      "local businesses, or multi-generational family assets — benefit enormously from a "
      "confidential, out-of-court process where the outcome doesn’t become part of the "
-     "public record."),
+     "public record.",
+     ""),
 
     ("adelaide-family-lawyers", "Adelaide", "SA", "Melbourne",
      "the Adelaide registry of the Federal Circuit and Family Court of Australia",
@@ -121,7 +196,8 @@ TIER1 = [
      "here are no less complex than anywhere else. The Adelaide registry handles a significant "
      "caseload, and contested matters take considerable time to resolve. South Australians "
      "increasingly turn to mediation as the faster, more affordable alternative — often "
-     "resolving matters the Adelaide courts would take two years to hear."),
+     "resolving matters the Adelaide courts would take two years to hear.",
+     ""),
 ]
 
 TIER2 = [
@@ -209,7 +285,7 @@ TIER2 = [
 # Tier 1 builder (~1,500 words)
 # ---------------------------------------------------------------------------
 
-def build_tier1(slug, city, state, nearest_office, court_ref, local_context):
+def build_tier1(slug, city, state, nearest_office, court_ref, local_context, city_specific=""):
     ec = esc(city)
     es = esc(state)
     ecr = esc(court_ref)
@@ -361,6 +437,10 @@ def build_tier1(slug, city, state, nearest_office, court_ref, local_context):
         "help " + ec + " clients reach legally sound, durable agreements — without "
         "anyone needing to step into a courtroom.</p>\n"
     )
+
+    # City-specific section (Tier 1 top 5 only)
+    if city_specific:
+        doc += city_specific + "\n"
 
     # Section 2
     doc += (
