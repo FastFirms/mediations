@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mediations Australia</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+  --bg:#F4F0E8;
+  --white:#ffffff;
+  --dark:#1C1C1A;
+  --olive:#B8962E;
+  --coral:#D45F35;
+  --footer:#1F3A37;
+  --mid:#585858;
+  --lite:#E8E3D8;
+  --card:#EDEAE2;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'PT Serif',Georgia,serif;background:var(--bg);color:var(--dark);overflow-x:hidden;font-size:1rem;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+h1,h2,h3{line-height:1.15;font-weight:800;text-wrap:balance}
+em{font-family:'PT Serif',Georgia,serif;font-style:italic;font-weight:400}
+
+.wrap{max-width:1140px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+
+/* Top bar */
+.topbar{background:var(--white);border-bottom:1px solid var(--lite);padding:9px 0;font-size:.75rem;color:var(--mid)}
+.topbar__inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.topbar__left{display:flex;align-items:center;gap:20px}
+.topbar__left a{display:flex;align-items:center;gap:5px;transition:color .15s}
+.topbar__left a:hover{color:var(--dark)}
+.topbar__soc{display:flex;gap:10px}
+.topbar__soc a{color:var(--mid);transition:color .15s}
+.topbar__soc a:hover{color:var(--coral)}
+
+/* Nav */
+.nav{background:var(--white);border-bottom:1px solid var(--lite);position:sticky;top:0;z-index:100}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;height:68px;gap:32px}
+.nav__logo{font-size:1.25rem;font-weight:800;color:var(--dark);display:flex;align-items:center;gap:4px;flex-shrink:0}
+.nav__logo em{color:var(--olive)}
+.nav__links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav__links a{font-size:.875rem;font-weight:500;color:var(--mid);transition:color .15s}
+.nav__links a:hover{color:var(--dark)}
+.nav__cta{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.nav__btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border:1.5px solid var(--dark);border-radius:100px;font-size:.8125rem;font-weight:600;color:var(--dark);transition:background .18s,color .18s}
+.nav__btn:hover{background:var(--dark);color:var(--white)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:100px;font-size:.875rem;font-weight:600;transition:all .18s;cursor:pointer;border:none}
+.btn-dark{background:var(--dark);color:var(--white)}
+.btn-dark:hover{background:#333}
+.btn-outline{border:1.5px solid var(--dark);color:var(--dark);background:transparent;padding:12px 25px}
+.btn-outline:hover{background:var(--dark);color:var(--white)}
+.btn-coral{background:var(--coral);color:var(--white)}
+.btn-coral:hover{background:#b8512c}
+.link-more{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);transition:gap .15s}
+.link-more:hover{gap:10px}
+
+/* Eyebrow */
+.ey{display:inline-flex;align-items:center;gap:7px;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-bottom:14px}
+.ey::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--olive);flex-shrink:0}
+
+/* Hero */
+.hero{background:var(--bg);padding:clamp(56px,7vw,96px) 0 0;overflow:hidden}
+.hero__inner{display:grid;grid-template-columns:1fr 460px;gap:64px;align-items:center}
+.hero__h1{font-size:clamp(2.4rem,5vw,4rem);margin-bottom:20px;letter-spacing:-.02em}
+.hero__sub{font-size:1.05rem;color:var(--mid);max-width:480px;margin-bottom:32px;line-height:1.75}
+.hero__btns{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:40px}
+.hero__proof{display:flex;align-items:center;gap:14px}
+.hero__stars{display:flex;gap:1px}
+.hero__star{color:#f5a623;font-size:14px}
+.hero__proof-text{font-size:.8125rem;color:var(--mid);line-height:1.45}
+.hero__proof-text strong{color:var(--dark);display:block;margin-bottom:1px}
+
+.hero__photo-col{position:relative;align-self:end}
+.hero__img{width:100%;border-radius:16px 16px 0 0;aspect-ratio:3/4;background:linear-gradient(155deg,#ddd8ce 0%,#c8c2b4 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:rgba(0,0,0,.22);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+.hero__stat-card{position:absolute;bottom:28px;left:-32px;background:var(--white);border-radius:14px;padding:16px 20px;box-shadow:0 8px 32px rgba(0,0,0,.10);min-width:160px}
+.hero__stat-num{font-size:2rem;font-weight:800;color:var(--dark);line-height:1}
+.hero__stat-lbl{font-size:.75rem;color:var(--mid);margin-top:3px}
+.hero__bg-circle{position:absolute;top:-60px;right:-80px;width:340px;height:340px;border-radius:50%;background:var(--lite);z-index:0;pointer-events:none}
+
+/* Logos */
+.logos{padding:36px 0;border-top:1px solid var(--lite);border-bottom:1px solid var(--lite);background:var(--white)}
+.logos__inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.logos__label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);flex-shrink:0}
+.logos__list{display:flex;align-items:center;gap:36px;flex-wrap:wrap}
+.logos__item{font-size:.9375rem;font-weight:700;color:#BBBBBB;letter-spacing:.02em}
+
+/* Services */
+.services{padding:clamp(72px,9vw,112px) 0}
+.services__top{text-align:center;margin-bottom:56px}
+.services__top h2{font-size:clamp(1.8rem,3.5vw,2.9rem)}
+.services__hero-img{width:100%;max-width:700px;margin:0 auto 52px;border-radius:20px;aspect-ratio:16/7;background:linear-gradient(120deg,#dad5ca 0%,#c4bfb2 100%);display:flex;align-items:center;justify-content:center;color:rgba(0,0,0,.2);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+.services__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.svc{padding:36px 28px;background:var(--white);transition:background .2s;display:block}
+.svc:hover{background:var(--lite)}
+.svc__num{font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--mid);margin-bottom:14px}
+.svc h3{font-size:1.2rem;margin-bottom:10px}
+.svc p{font-size:.875rem;color:var(--mid);line-height:1.65;margin-bottom:20px}
+
+/* Split sections */
+.split{padding:clamp(72px,9vw,108px) 0}
+.split__inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.split__inner.rev{direction:rtl}
+.split__inner.rev>*{direction:ltr}
+.split__img{border-radius:20px;aspect-ratio:4/3;background:linear-gradient(135deg,#ddd8ce,#c8c2b4);display:flex;align-items:center;justify-content:center;color:rgba(0,0,0,.2);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+.split__text h2{font-size:clamp(1.7rem,3vw,2.6rem);margin-bottom:18px}
+.split__text p{color:var(--mid);margin-bottom:24px;line-height:1.75}
+.checklist{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:28px}
+.checklist li{display:flex;align-items:flex-start;gap:9px;font-size:.9rem;color:var(--dark)}
+.chk{color:var(--olive);flex-shrink:0;margin-top:2px}
+
+/* Accordion */
+.accord-item{border-top:1px solid var(--lite)}
+.accord-item:last-child{border-bottom:1px solid var(--lite);margin-bottom:28px}
+.accord-btn{width:100%;display:flex;align-items:center;justify-content:space-between;padding:16px 0;font-size:.9375rem;font-weight:600;cursor:pointer;background:none;border:none;font-family:inherit;color:var(--dark);text-align:left}
+.accord-btn svg{flex-shrink:0;transition:transform .25s}
+.accord-btn[aria-expanded="true"] svg{transform:rotate(180deg)}
+.accord-body{display:none;padding-bottom:16px;font-size:.875rem;color:var(--mid);line-height:1.7}
+.accord-body.open{display:block}
+
+/* Process */
+.process{background:var(--white);padding:clamp(72px,9vw,112px) 0}
+.process__top{text-align:center;margin-bottom:56px}
+.process__top h2{font-size:clamp(1.8rem,3.5vw,2.9rem)}
+.process__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.proc__num{font-size:3rem;font-weight:800;color:var(--lite);line-height:1;margin-bottom:12px;font-family:Georgia,serif}
+.proc h3{font-size:1.05rem;margin-bottom:10px}
+.proc p{font-size:.875rem;color:var(--mid);line-height:1.7}
+
+/* Testimonials */
+.testi{padding:clamp(72px,9vw,112px) 0}
+.testi__top{margin-bottom:52px}
+.testi__top h2{font-size:clamp(1.8rem,3.5vw,2.9rem);margin-bottom:6px}
+.testi__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tcard{background:var(--white);border-radius:16px;padding:32px 28px;display:flex;flex-direction:column;gap:20px}
+.tcard__stars{display:flex;gap:2px}
+.tcard__star{color:#f5a623;font-size:13px}
+.tcard__text{font-size:.9rem;line-height:1.75;color:var(--dark);flex:1;font-style:italic}
+.tcard__foot{display:flex;align-items:center;gap:10px;border-top:1px solid var(--lite);padding-top:18px}
+.tcard__av{width:36px;height:36px;border-radius:50%;background:var(--olive);display:grid;place-items:center;color:var(--white);font-weight:700;font-size:.7rem;flex-shrink:0}
+.tcard__name{font-size:.875rem;font-weight:700;color:var(--dark)}
+.tcard__src{font-size:.75rem;color:var(--mid)}
+.testi__bottom{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:36px;font-size:.875rem;color:var(--mid)}
+.g-logo span:nth-child(1){color:#4285f4;font-weight:700}
+.g-logo span:nth-child(2){color:#ea4335;font-weight:700}
+.g-logo span:nth-child(3){color:#fbbc04;font-weight:700}
+.g-logo span:nth-child(4){color:#4285f4;font-weight:700}
+.g-logo span:nth-child(5){color:#34a853;font-weight:700}
+.g-logo span:nth-child(6){color:#ea4335;font-weight:700}
+
+/* Newsletter */
+.newsletter{background:var(--white);padding:clamp(56px,7vw,88px) 0;text-align:center;border-top:1px solid var(--lite)}
+.newsletter .ey{justify-content:center}
+.newsletter h2{font-size:clamp(1.5rem,3vw,2.4rem);max-width:540px;margin:0 auto 28px}
+.newsletter__form{display:flex;align-items:center;max-width:460px;margin:0 auto;border:1.5px solid var(--lite);border-radius:100px;overflow:hidden;background:var(--bg)}
+.newsletter__input{flex:1;padding:14px 22px;border:none;background:transparent;font-size:.9rem;font-family:inherit;outline:none;color:var(--dark)}
+.newsletter__input::placeholder{color:#aaa}
+.newsletter__submit{padding:12px 22px;background:transparent;border:none;cursor:pointer;font-size:.8125rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--coral);border-left:1.5px solid var(--lite)}
+.newsletter__submit:hover{color:#b8512c}
+
+/* Footer */
+.footer{background:var(--footer);color:rgba(255,255,255,.65);padding:60px 0 32px;border-radius:32px 32px 0 0}
+.footer__grid{display:grid;grid-template-columns:220px 1fr 1fr 1fr;gap:40px;margin-bottom:52px}
+.footer__logo{font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:10px}
+.footer__logo em{color:var(--olive)}
+.footer__tag{font-size:.875rem;line-height:1.65;margin-bottom:20px}
+.footer__soc{display:flex;gap:8px}
+.footer__soc a{width:30px;height:30px;border-radius:6px;background:rgba(255,255,255,.08);display:grid;place-items:center;transition:background .15s}
+.footer__soc a:hover{background:rgba(255,255,255,.18)}
+.footer__soc svg{width:13px;height:13px;fill:rgba(255,255,255,.7)}
+.footer__ttl{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:18px;display:flex;align-items:center;gap:7px}
+.footer__ttl::before{content:'○';font-size:.5rem}
+.footer__links{list-style:none;display:flex;flex-direction:column;gap:9px}
+.footer__links a{font-size:.875rem;transition:color .15s}
+.footer__links a:hover{color:var(--white)}
+.footer__bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:.75rem;gap:16px;flex-wrap:wrap}
+.footer__btm-links{display:flex;gap:20px}
+.footer__btm-links a:hover{color:var(--white)}
+
+/* Floating button */
+.fab{position:fixed;bottom:28px;right:28px;width:44px;height:44px;border-radius:50%;background:var(--coral);color:var(--white);display:grid;place-items:center;box-shadow:0 4px 18px rgba(212,95,53,.4);z-index:200;transition:transform .2s}
+.fab:hover{transform:scale(1.08)}
+
+/* Responsive */
+@media(max-width:960px){
+  .hero__inner{grid-template-columns:1fr}
+  .hero__photo-col{display:none}
+  .split__inner,.split__inner.rev{grid-template-columns:1fr;direction:ltr}
+  .services__grid{grid-template-columns:1fr}
+  .process__grid{grid-template-columns:1fr;gap:28px}
+  .testi__grid{grid-template-columns:1fr}
+  .footer__grid{grid-template-columns:1fr 1fr}
+  .nav__links{display:none}
+  .topbar{display:none}
+}
+@media(max-width:560px){
+  .footer__grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <div class="topbar__left">
+      <a href="mailto:enquiries@mediationsaustralia.com.au">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+        enquiries@mediationsaustralia.com.au
+      </a>
+      <a href="tel:1300747258">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 012.1 4.18 2 2 0 014.09 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        1300 747 258
+      </a>
+      <a href="#">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Sydney · Melbourne · Brisbane · Perth
+      </a>
+    </div>
+    <div class="topbar__soc">
+      <a href="#" aria-label="LinkedIn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__logo" href="/">mediations <em>australia</em></a>
+    <ul class="nav__links">
+      <li><a href="/family-law-mediation/">Family</a></li>
+      <li><a href="/workplace-mediation/">Workplace</a></li>
+      <li><a href="/our-mediators/">Our team</a></li>
+      <li><a href="/guides/">Resources</a></li>
+      <li><a href="/our-fee-structure/">Fees</a></li>
+      <li><a href="/contact-us/">Contact</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a class="nav__btn" href="/book-a-consultation/">Book a consult →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div>
+      <div class="ey">Accredited mediators</div>
+      <h1 class="hero__h1">Separation resolved —<br><em>without the courtroom</em></h1>
+      <p class="hero__sub">Our accredited mediators help separating couples reach fair, lasting agreements — faster, privately, and at a fraction of what lawyers cost.</p>
+      <div class="hero__btns">
+        <a class="btn btn-dark" href="/book-a-consultation/">Book a free consultation →</a>
+        <a class="btn btn-outline" href="/how-mediation-works/">How it works</a>
+      </div>
+      <div class="hero__proof">
+        <div class="hero__stars">
+          <span class="hero__star">★</span><span class="hero__star">★</span><span class="hero__star">★</span><span class="hero__star">★</span><span class="hero__star">★</span>
+        </div>
+        <div class="hero__proof-text">
+          <strong>4.9 · 200+ Google reviews</strong>
+          "Saved us tens of thousands in legal fees."
+        </div>
+      </div>
+    </div>
+    <div class="hero__photo-col">
+      <div class="hero__bg-circle"></div>
+      <div class="hero__img" style="position:relative;z-index:1">
+        <svg width="52" height="52" viewBox="0 0 80 80" fill="none" opacity=".3"><circle cx="40" cy="27" r="13" stroke="#444" stroke-width="1.8"/><path d="M14 66c0-14.359 11.64-26 26-26s26 11.641 26 26" stroke="#444" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>Team photo here</span>
+      </div>
+      <div class="hero__stat-card">
+        <div class="hero__stat-num">3,000+</div>
+        <div class="hero__stat-lbl">matters resolved</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGOS -->
+<div class="logos">
+  <div class="wrap logos__inner">
+    <span class="logos__label">Accreditations</span>
+    <div class="logos__list">
+      <span class="logos__item">NMAS</span>
+      <span class="logos__item">FDRP</span>
+      <span class="logos__item">AMDRAS</span>
+      <span class="logos__item">AIFLAM</span>
+      <span class="logos__item">LEADR</span>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="wrap">
+    <div class="services__top">
+      <div class="ey">Our services</div>
+      <h2>Mediation services <em>built for Australians</em></h2>
+    </div>
+    <div class="services__hero-img">Team / consultation photo here</div>
+    <div class="services__grid">
+      <a class="svc" href="/family-law-mediation/">
+        <div class="svc__num">01</div>
+        <h3>Family Law Mediation</h3>
+        <p>Structured, confidential sessions to resolve separation and divorce — with both parties present and heard.</p>
+        <span class="link-more">View more →</span>
+      </a>
+      <a class="svc" href="/parenting-plan-mediation/">
+        <div class="svc__num">02</div>
+        <h3>Parenting Plans &amp; Custody</h3>
+        <p>Child-focused mediation to build workable parenting arrangements without a judge deciding for you.</p>
+        <span class="link-more">View more →</span>
+      </a>
+      <a class="svc" href="/property-settlement-mediation/">
+        <div class="svc__num">03</div>
+        <h3>Property Settlement</h3>
+        <p>Divide assets fairly with mediator guidance — no $20,000+ legal bills, no drawn-out proceedings.</p>
+        <span class="link-more">View more →</span>
+      </a>
+      <a class="svc" href="/consent-orders/">
+        <div class="svc__num">04</div>
+        <h3>Consent Orders</h3>
+        <p>We help you reach agreement so consent orders can be filed and made legally binding — efficiently.</p>
+        <span class="link-more">View more →</span>
+      </a>
+      <a class="svc" href="/workplace-mediation/">
+        <div class="svc__num">05</div>
+        <h3>Workplace Mediation</h3>
+        <p>Resolve employee disputes and team conflict before they escalate to Fair Work or litigation.</p>
+        <span class="link-more">View more →</span>
+      </a>
+      <a class="svc" href="/estate-dispute-mediation/">
+        <div class="svc__num">06</div>
+        <h3>Estate &amp; Will Disputes</h3>
+        <p>Keep family intact through inheritance disputes with confidential, structured estate mediation.</p>
+        <span class="link-more">View more →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT A — About -->
+<section class="split" style="background:var(--white)">
+  <div class="wrap">
+    <div class="split__inner">
+      <div class="split__img">Team photo here</div>
+      <div class="split__text">
+        <div class="ey">Who we are</div>
+        <h2>A specialist team —<br><em>not a law firm</em></h2>
+        <p>We are accredited family dispute resolution practitioners and mediators. Our only job is helping both parties reach agreement — not winning an argument for one side.</p>
+        <ul class="checklist">
+          <li><span class="chk">✓</span> NMAS-accredited mediators with family law backgrounds</li>
+          <li><span class="chk">✓</span> Registered Family Dispute Resolution Practitioners (FDRP)</li>
+          <li><span class="chk">✓</span> We issue Section 60I certificates when required</li>
+          <li><span class="chk">✓</span> Online and in-person, offices in four states</li>
+        </ul>
+        <a class="link-more" href="/our-mediators/">Meet our team →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT B — Why mediation -->
+<section class="split">
+  <div class="wrap">
+    <div class="split__inner rev">
+      <div class="split__img">Session photo here</div>
+      <div class="split__text">
+        <div class="ey">Why mediation</div>
+        <h2>Strong outcomes, <em>lasting resolution</em></h2>
+        <p>Mediation gives both parties control over their outcome — unlike court where a judge decides. Most matters resolve in one to three sessions.</p>
+        <div>
+          <div class="accord-item">
+            <button class="accord-btn" aria-expanded="true" onclick="toggleAccord(this)">
+              Cost — a fraction of litigation
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accord-body open">Typical mediation costs $2,500–$6,500 for both parties. A contested family court matter often exceeds $80,000 per side. The difference is your financial future.</div>
+          </div>
+          <div class="accord-item">
+            <button class="accord-btn" aria-expanded="false" onclick="toggleAccord(this)">
+              Speed — weeks not years
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accord-body">Family Court proceedings average 14–24 months. Mediation can begin within weeks and most matters are resolved in one to three sessions.</div>
+          </div>
+          <div class="accord-item">
+            <button class="accord-btn" aria-expanded="false" onclick="toggleAccord(this)">
+              Privacy — fully confidential
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accord-body">Mediation is completely private. Court proceedings are on the public record. Everything said in mediation stays in mediation.</div>
+          </div>
+        </div>
+        <a class="btn btn-coral" href="/how-mediation-works/" style="margin-top:4px">Learn how mediation works →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="wrap">
+    <div class="process__top">
+      <div class="ey">How it works</div>
+      <h2>Resolution in <em>three steps</em></h2>
+    </div>
+    <div class="process__grid">
+      <div class="proc">
+        <div class="proc__num">01</div>
+        <h3>Book a free consultation</h3>
+        <p>Speak with a mediator at no charge. We'll assess your situation, explain the process, and answer every question. Appointments usually within days.</p>
+      </div>
+      <div class="proc">
+        <div class="proc__num">02</div>
+        <h3>Attend a joint session</h3>
+        <p>Both parties meet with the mediator — online or in person. We facilitate respectful dialogue, keep focus on outcomes, and help you explore options.</p>
+      </div>
+      <div class="proc">
+        <div class="proc__num">03</div>
+        <h3>Reach a binding agreement</h3>
+        <p>When you agree, we document the terms. For parenting and property matters, agreements become legally binding consent orders — without a courtroom.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi">
+  <div class="wrap">
+    <div class="testi__top">
+      <div class="ey">Client reviews</div>
+      <h2>Trusted by <em>thousands of Australians</em></h2>
+      <p style="color:var(--mid);margin-top:6px">Over 3,000 matters resolved.</p>
+    </div>
+    <div class="testi__grid">
+      <div class="tcard">
+        <div class="tcard__stars"><span class="tcard__star">★</span><span class="tcard__star">★</span><span class="tcard__star">★</span><span class="tcard__star">★</span><span class="tcard__star">★</span></div>
+        <p class="tcard__text">"We were heading to court and dreading it. After two sessions we had a parenting arrangement both of us could actually live with. Couldn't recommend Mediations Australia more."</p>
+        <div class="tcard__foot">
+          <div class="tcard__av">SR</div>
+          <div><div class="tcard__name">Sarah R.</div><div class="tcard__src">Family mediation · Sydney</div></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tcard__stars"><span class="tcard__star">★</span><span class="tcard__star">★</span><span class="tcard__star">★</span><span class="tcard__star">★</span><span class="tcard__star">★</span></div>
+        <p class="tcard__text">"I was quoted $35,000 by a family lawyer. We resolved everything in mediation for under $3,000. The team were outstanding — calm, fair, and completely professional."</p>
+        <div class="tcard__foot">
+          <div class="tcard__av">MK</div>
+          <div><div class="tcard__name">Michael K.</div><div class="tcard__src">Property settlement · Melbourne</div></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tcard__stars"><span class="tcard__star">★</span><span class="tcard__star">★</span><span class="tcard__star">★</span><span class="tcard__star">★</span><span class="tcard__star">★</span></div>
+        <p class="tcard__text">"As HR dealing with a serious workplace conflict, I needed someone neutral. The mediator was professional, calm, and genuinely helped the whole team move forward."</p>
+        <div class="tcard__foot">
+          <div class="tcard__av">JT</div>
+          <div><div class="tcard__name">Jennifer T.</div><div class="tcard__src">Workplace mediation · Brisbane</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="testi__bottom">
+      <span class="g-logo"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></span>
+      <span>★★★★★ 4.9 · 200+ reviews</span>
+      <a href="#" style="color:var(--coral);font-weight:600">Read all reviews →</a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <div class="wrap">
+    <div class="ey">Free guides</div>
+    <h2>Subscribe for free separation<br>guides and <em>mediation resources.</em></h2>
+    <form class="newsletter__form" onsubmit="return false">
+      <input class="newsletter__input" type="email" placeholder="Your email address">
+      <button class="newsletter__submit" type="submit">Subscribe →</button>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">mediations <em>australia</em></div>
+        <p class="footer__tag">Accredited mediators helping Australians resolve family and workplace disputes — without court.</p>
+        <div class="footer__soc">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__ttl">Services</div>
+        <ul class="footer__links">
+          <li><a href="/family-law-mediation/">Family Law Mediation</a></li>
+          <li><a href="/parenting-plan-mediation/">Parenting Plans</a></li>
+          <li><a href="/property-settlement-mediation/">Property Settlement</a></li>
+          <li><a href="/consent-orders/">Consent Orders</a></li>
+          <li><a href="/workplace-mediation/">Workplace Mediation</a></li>
+          <li><a href="/estate-dispute-mediation/">Estate Disputes</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__ttl">Useful links</div>
+        <ul class="footer__links">
+          <li><a href="/how-mediation-works/">How mediation works</a></li>
+          <li><a href="/our-fee-structure/">Our fees</a></li>
+          <li><a href="/our-mediators/">Our team</a></li>
+          <li><a href="/guides/">Guides &amp; resources</a></li>
+          <li><a href="/section-60i-certificates/">Section 60I certificates</a></li>
+          <li><a href="/contact-us/">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__ttl">Connect</div>
+        <ul class="footer__links" style="margin-bottom:20px">
+          <li><a href="tel:1300747258">1300 747 258</a></li>
+          <li><a href="/book-a-consultation/">Book a consultation</a></li>
+          <li><a href="mailto:enquiries@mediationsaustralia.com.au">Email us</a></li>
+        </ul>
+        <div style="font-size:.8125rem;line-height:1.8">
+          Sydney · Melbourne<br>Brisbane · Perth<br>Online Australia-wide
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Mediations Australia. All rights reserved.</span>
+      <div class="footer__btm-links">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/disclaimer/">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="/book-a-consultation/" aria-label="Book now">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+</a>
+
+<script>
+function toggleAccord(btn){
+  const expanded = btn.getAttribute('aria-expanded')==='true';
+  document.querySelectorAll('.accord-btn').forEach(b=>{
+    b.setAttribute('aria-expanded','false');
+    b.nextElementSibling.classList.remove('open');
+  });
+  if(!expanded){
+    btn.setAttribute('aria-expanded','true');
+    btn.nextElementSibling.classList.add('open');
+  }
+}
+</script>
+</body>
+</html>

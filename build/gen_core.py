@@ -52,7 +52,7 @@ doc = head(
                article_schema("How Mediation Works in Australia","A step-by-step guide to the mediation process."),
                faq_schema(qa_how)])
 doc += nav()
-doc += phero("The mediation process",
+doc += phero("A clearer path through a difficult time",
  "How mediation works, <em>step by step</em>.",
  "No jargon, no surprises. Mediation is a structured conversation led by a neutral, accredited mediator who helps everyone reach an agreement — and you decide whether to accept it. Here's exactly what happens, from first call to binding outcome.",
  [("Home",""),("How Mediation Works",None)])
@@ -129,7 +129,7 @@ doc = head(
                breadcrumb_schema([("Home",""),("About","about-mediations-australia")]),
                faq_schema(qa_about)])
 doc += nav()
-doc += phero("About us",
+doc += phero("We exist because the courts fail most people",
  "We believe the way disputes are resolved is <em>broken</em>. So we fixed it.",
  "Mediations Australia exists because litigation fails most people who enter it — slower, costlier and more painful than it needs to be. We bring together nationally accredited mediators and experienced family lawyers with one shared philosophy: resolve early, resolve fairly, and keep people out of court wherever possible.",
  [("Home",""),("About",None)])
@@ -181,7 +181,7 @@ doc = head(
                article_schema("Preparing for Mediation","A practical guide to getting ready for a mediation session."),
                faq_schema(qa_prep)])
 doc += nav()
-doc += phero("Resources",
+doc += phero("Go in prepared — it makes a real difference",
  "Preparing for mediation: <em>everything you need to know</em>.",
  "Walking into mediation prepared makes a real difference to the outcome. This practical guide covers what to bring, how to think about what you want, and exactly what to expect on the day — so you arrive calm, clear and ready to resolve things.",
  [("Home",""),("Resources",None),("Preparing for Mediation",None)])
@@ -235,7 +235,7 @@ doc = head(
  extra_schema=[org_schema(),
                breadcrumb_schema([("Home",""),("Contact","contact-us")])])
 doc += nav()
-doc += phero("Get in touch",
+doc += phero("We'll tell you honestly if we can help",
  "Let's talk about <em>resolving it</em>.",
  "Tell us about your dispute and we'll give you an honest view of whether mediation can help — and how it fits with any legal advice you already have. Call us, book online, or reach out and we'll come back to you quickly.",
  [("Home",""),("Contact",None)])

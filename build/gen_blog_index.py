@@ -135,7 +135,7 @@ d += f"""<main id="main">
 {crumb_html([("Home",""),("Guides",None)])}
 
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
-<span class="eyebrow"><span class="pulse"></span>Free expert guides</span>
+<span class="eyebrow"><span class="pulse"></span>Know more, stress less</span>
 <h1>Family law &amp; mediation <em>guides</em>.</h1>
 <p class="lede">Clear, practical answers on separation, property settlement, parenting and more — written by accredited mediators.</p>
 <div class="phero-cta">

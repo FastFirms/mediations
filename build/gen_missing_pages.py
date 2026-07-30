@@ -20,7 +20,7 @@ d = head(title, desc, "our-mediators", extra_schema=schema) + nav()
 d += f"""<main id="main">
 {crumb_html([("Home",""),("Our Mediators",None)])}
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
-<span class="eyebrow"><span class="pulse"></span>Our team</span>
+<span class="eyebrow"><span class="pulse"></span>The people behind every resolution</span>
 <h1>Our Mediators — <em>accredited, experienced, lawyer-aware</em>.</h1>
 <p class="lede">Every mediator at Mediations Australia is nationally accredited under AMDRAS. Many are also experienced family lawyers — so the legal realities of your matter are understood from the very first conversation.</p>
 <div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
@@ -107,7 +107,7 @@ d = head(title, desc, "memberships", extra_schema=schema) + nav()
 d += f"""<main id="main">
 {crumb_html([("Home",""),("Memberships",None)])}
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
-<span class="eyebrow"><span class="pulse"></span>Accreditation &amp; standards</span>
+<span class="eyebrow"><span class="pulse"></span>The standards that protect you</span>
 <h1>Memberships &amp; Accreditations — <em>the standards we uphold</em>.</h1>
 <p class="lede">Our mediators meet — and exceed — the national standards for dispute resolution in Australia. Below are the bodies and frameworks that hold us accountable.</p>
 <div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
@@ -175,7 +175,7 @@ d = head(title, desc, "mediation-podcast", extra_schema=schema) + nav()
 d += f"""<main id="main">
 {crumb_html([("Home",""),("Podcast",None)])}
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
-<span class="eyebrow"><span class="pulse"></span>Listen &amp; learn</span>
+<span class="eyebrow"><span class="pulse"></span>Real stories, real outcomes</span>
 <h1>The Mediations Australia Podcast — <em>conversations on resolution</em>.</h1>
 <p class="lede">Practical, accessible conversations on mediation, separation and family law — for people navigating it now, and for the professionals who work alongside them.</p>
 <div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
@@ -259,7 +259,7 @@ d = head(title, desc, "books", extra_schema=schema) + nav()
 d += f"""<main id="main">
 {crumb_html([("Home",""),("Books",None)])}
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
-<span class="eyebrow"><span class="pulse"></span>Reading list</span>
+<span class="eyebrow"><span class="pulse"></span>Understand this before you decide anything</span>
 <h1>Books on Mediation &amp; Family Law — <em>further reading</em>.</h1>
 <p class="lede">Books we've written, contributed to, and recommend — for people going through separation, professionals working in the field, and anyone curious about a better way to resolve disputes.</p>
 <div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>

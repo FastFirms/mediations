@@ -101,7 +101,7 @@ service_page(
     title="Family Law Mediation in Australia | Mediations Australia",
     desc="Family law mediation in Australia explained: how it works, what it covers, costs, and how to resolve parenting and property matters without court. Free consultation.",
     breadcrumb_label="Family Law Mediation",
-    eyebrow="Our core service",
+    eyebrow="We can help you find a way through this",
     h1_html='Family Law Mediation \u2014 <em>resolve it without court</em>.',
     lede="Family law mediation is how most separating Australians resolve parenting, property and financial matters \u2014 without years in court, without crushing legal fees, and with the agreement in their own hands. Our nationally accredited mediators have helped thousands of families do exactly that.",
     toc_items=[
@@ -246,7 +246,7 @@ service_page(
     title="Property Settlement Mediation in Australia | Mediations Australia",
     desc="Resolve your property settlement through accredited mediation \u2014 divide assets, super and debts fairly without court. Fixed-fee consultations, nationally available.",
     breadcrumb_label="Property Settlement Mediation",
-    eyebrow="Service",
+    eyebrow="Keep more of what you've both built",
     h1_html='Property Settlement Mediation \u2014 <em>divide it fairly, finally</em>.',
     lede="Property settlement is the financial settlement of separation \u2014 dividing the assets, debts, superannuation and businesses you've built. Mediation resolves it faster, far more cheaply, and with the agreement in your hands rather than a judge's. The savings stay with your family, not your lawyers.",
     toc_items=[
@@ -374,7 +374,7 @@ service_page(
     title="Child Custody Mediation in Australia | Mediations Australia",
     desc="Resolve parenting arrangements through accredited mediation \u2014 best-interests focused, court-required for parenting orders. Free consultation, nationally available.",
     breadcrumb_label="Child Custody Mediation",
-    eyebrow="Service",
+    eyebrow="Your children need both of you \u2014 let's make it work",
     h1_html='Child Custody Mediation \u2014 <em>child-focused, court-ready</em>.',
     lede="Mediation is the path Australian family law takes by default for parenting matters \u2014 required before court, focused on the child's best interests, and far better at producing arrangements that actually work in everyday life. Our accredited Family Dispute Resolution Practitioners help parents reach durable, child-focused agreements.",
     toc_items=[

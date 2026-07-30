@@ -22,7 +22,7 @@ service_page(
     title="Parenting Plan Mediation in Australia | Mediations Australia",
     desc="Build a workable parenting plan through accredited mediation. Child-focused arrangements, faster than court, with the option to make it legally binding via consent orders.",
     breadcrumb_label="Parenting Plan Mediation",
-    eyebrow="Service",
+    eyebrow="Your kids need stability — we can help create it",
     h1_html='Parenting Plan Mediation \u2014 <em>arrangements built around your kids</em>.',
     lede="A parenting plan is the practical agreement that runs your kids' lives after separation \u2014 where they live, when they see each parent, how decisions get made. Mediation is how most Australian parents build one that actually works in real life, rather than handing the decision to a court.",
     toc_items=[
@@ -155,7 +155,7 @@ service_page(
     title="Consent Orders in Australia | Mediations Australia",
     desc="Make your mediated agreement legally binding through consent orders. How they work, what they cost, how long they take \u2014 with accredited support through the full process.",
     breadcrumb_label="Consent Orders",
-    eyebrow="Service",
+    eyebrow="Make your agreement stick \u2014 legally and permanently",
     h1_html='Consent Orders \u2014 <em>your agreement, with the force of law</em>.',
     lede="Consent orders turn your mediated agreement into a binding court order \u2014 same effect as if a judge had ordered it, but without ever needing to fight one out in court. It's the standard, sensible final step for most separating couples who've reached agreement and want it to stick.",
     toc_items=[
@@ -292,7 +292,7 @@ service_page(
     title="Binding Financial Agreements (BFAs) | Mediations Australia",
     desc="Reach a binding financial agreement through accredited mediation. How BFAs work, when they're appropriate, and how to make yours hold up. Free consultation.",
     breadcrumb_label="Financial Agreements",
-    eyebrow="Service",
+    eyebrow="Protect what you've both worked hard for",
     h1_html='Financial Agreements Mediation \u2014 <em>private, binding, lawyer-proof</em>.',
     lede="A binding financial agreement (BFA) is a private contract setting out how you and your partner divide finances \u2014 before, during, or after a relationship. Done right, it's enforceable without involving a court. Done wrong, it's challenged and set aside. The difference is in the drafting.",
     toc_items=[
@@ -429,7 +429,7 @@ service_page(
     title="Section 60I Certificates in Australia | Mediations Australia",
     desc="Get a Section 60I certificate from an accredited Family Dispute Resolution Practitioner. Required before parenting court applications under the Family Law Act. Free consultation.",
     breadcrumb_label="Section 60I Certificates",
-    eyebrow="Service",
+    eyebrow="Required before court — we can issue yours",
     h1_html='Section 60I Certificates \u2014 <em>the document the court requires</em>.',
     lede="Before you can file a parenting application in court, you generally need a Section 60I certificate \u2014 proof that you've attempted Family Dispute Resolution. We're accredited Family Dispute Resolution Practitioners, and we issue valid certificates as part of the mediation process.",
     toc_items=[
@@ -557,7 +557,7 @@ service_page(
     title="Workplace Mediation in Australia | Mediations Australia",
     desc="Resolve workplace disputes through accredited mediation \u2014 before they reach the Fair Work Commission. Confidential, fast, and constructive. Free consultation.",
     breadcrumb_label="Workplace Mediation",
-    eyebrow="Service",
+    eyebrow="Resolve this before it costs everyone far more",
     h1_html='Workplace Mediation \u2014 <em>resolve it before the FWC</em>.',
     lede="Workplace conflict costs businesses far more than the dispute itself \u2014 in lost productivity, damaged teams, and the eye-watering price of letting things escalate to formal proceedings. Mediation resolves conflict early, confidentially, and in a way that lets working relationships continue.",
     toc_items=[
@@ -732,7 +732,7 @@ service_page(
     title="Online Divorce & Online Mediation in Australia | Mediations Australia",
     desc="Resolve your separation by secure video from anywhere in Australia. Online mediation works just as effectively as in-person \u2014 and removes distance, scheduling, and travel as obstacles.",
     breadcrumb_label="Online Divorce",
-    eyebrow="Service",
+    eyebrow="End it cleanly, from wherever you are",
     h1_html='Online Divorce &amp; Mediation \u2014 <em>resolve it from anywhere</em>.',
     lede="The whole process \u2014 mediation, agreement, formalisation \u2014 can run online. From regional Australia, from interstate, from overseas if needed. Secure video, accredited mediators, full legal effect. The only difference is you skip the drive.",
     toc_items=[

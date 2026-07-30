@@ -23,7 +23,7 @@ service_page(
     title="Spousal Support Mediation in Australia | Mediations Australia",
     desc="Resolve spousal maintenance through accredited mediation \u2014 fair financial support after separation, agreed privately without court. Free consultation.",
     breadcrumb_label="Spousal Support Mediation",
-    eyebrow="Service",
+    eyebrow="Fair support, agreed \u2014 not imposed by a court",
     h1_html='Spousal Support Mediation \u2014 <em>fair support, agreed not imposed</em>.',
     lede="Spousal maintenance is the financial support one former partner pays the other where the recipient can't reasonably meet their own needs. Mediation lets you reach a sensible agreement on amount, duration, and form \u2014 tailored to your situation rather than left to a court.",
     toc_items=[
@@ -125,7 +125,7 @@ service_page(
     title="Child Support Mediation in Australia | Mediations Australia",
     desc="Resolve child support disputes privately through mediation \u2014 special expenses, care arrangements, and private agreements outside the standard formula. Free consultation.",
     breadcrumb_label="Child Support Mediation",
-    eyebrow="Service",
+    eyebrow="Your children deserve financial certainty",
     h1_html='Child Support Mediation \u2014 <em>resolve it privately, fairly</em>.',
     lede="The standard child support formula works for many families, but not all. Where there's a dispute about the assessment, special expenses to share, or a desire for a private arrangement that better fits your situation, mediation gets it sorted without escalation.",
     toc_items=[
@@ -233,7 +233,7 @@ service_page(
     title="De Facto Mediation in Australia | Mediations Australia",
     desc="De facto separation has the same property rights as marriage \u2014 with a strict 2-year limit. Resolve it through accredited mediation, fast. Free consultation.",
     breadcrumb_label="De Facto Mediation",
-    eyebrow="Service",
+    eyebrow="Same rights as marriage \u2014 don't let the clock run out",
     h1_html='De Facto Mediation \u2014 <em>same rights, same urgency</em>.',
     lede="De facto separations carry substantially the same property and financial rights as marriage \u2014 but with a strict two-year time limit from separation. Mediation resolves the property division, superannuation, and any maintenance question well inside the window, without court.",
     toc_items=[
@@ -315,7 +315,7 @@ service_page(
     title="Grandparents Mediation in Australia | Mediations Australia",
     desc="Restore or maintain time with your grandchildren through accredited mediation \u2014 the required first step before parenting court applications. Free consultation.",
     breadcrumb_label="Grandparents Mediation",
-    eyebrow="Service",
+    eyebrow="Don't let separation cut you off from the grandkids",
     h1_html='Grandparents Mediation \u2014 <em>rebuild time with the grandkids</em>.',
     lede="When grandparents are cut off from grandchildren \u2014 by a difficult separation, family conflict, or estrangement \u2014 the path back usually runs through mediation, not court. The law expressly recognises children's right to spend time with significant people in their lives, and mediation is the way to make that real.",
     toc_items=[
@@ -412,7 +412,7 @@ service_page(
     title="Family Law Arbitration in Australia | Mediations Australia",
     desc="Get a binding decision on property and financial matters \u2014 privately, fast \u2014 through accredited family law arbitration. The alternative to court. Free consultation.",
     breadcrumb_label="Family Law Arbitration",
-    eyebrow="Service",
+    eyebrow="A binding decision \u2014 without years in court",
     h1_html='Family Law Arbitration \u2014 <em>a binding decision, privately</em>.',
     lede="When mediation doesn't quite get there, but court would be ruinously expensive and slow, arbitration is the middle path. A qualified arbitrator hears your matter and makes a binding decision \u2014 like a private judge, but on your timetable and out of public view.",
     toc_items=[
@@ -509,7 +509,7 @@ service_page(
     title="Estate Dispute Mediation in Australia | Mediations Australia",
     desc="Contested wills and family inheritance disputes resolved privately through accredited mediation \u2014 preserving relationships at the hardest time. Free consultation.",
     breadcrumb_label="Estate Dispute Mediation",
-    eyebrow="Service",
+    eyebrow="Protect the family, not just the estate",
     h1_html='Estate Dispute Mediation \u2014 <em>resolve it without destroying the family</em>.',
     lede="Wills get contested. Promised inheritances disappear. Long-buried family tensions resurface around a death. Court can resolve the legal question but usually destroys what's left of the relationships. Mediation gets to a fair outcome while keeping the family intact.",
     toc_items=[
@@ -612,7 +612,7 @@ service_page(
     title="Accredited Family Law Mediators in Australia | Mediations Australia",
     desc="Work with nationally accredited family law mediators across Australia \u2014 AMDRAS-certified, many also experienced family lawyers. Fixed-fee consultations.",
     breadcrumb_label="Accredited Family Law Mediators",
-    eyebrow="Why us",
+    eyebrow="Accredited, experienced, and independent",
     h1_html='Accredited Family Law Mediators \u2014 <em>standards that matter</em>.',
     lede="Anyone can call themselves a mediator. Accreditation under AMDRAS means the person across the table has been trained, assessed, and is bound by an enforceable code of conduct. It's the difference between a recognised professional and someone with a website.",
     toc_items=[
@@ -706,7 +706,7 @@ service_page(
     title="Collaborative Family Lawyers in Australia | Mediations Australia",
     desc="Collaborative family law combines lawyer advice with a structured, non-court process. How it works, when it suits, and how it compares to mediation. Free consultation.",
     breadcrumb_label="Collaborative Family Lawyers",
-    eyebrow="Service",
+    eyebrow="A less adversarial way to separate",
     h1_html='Collaborative Family Lawyers \u2014 <em>legal advice without the court fight</em>.',
     lede="Collaborative law is the middle path between DIY mediation and full litigation. Each party has their own lawyer, but every lawyer commits in writing to resolve the matter without court. The result is informed, supported negotiation \u2014 with the legal expertise you'd want, minus the adversarial mindset.",
     toc_items=[
@@ -814,7 +814,7 @@ service_page(
     title="Divorce Counselling in Australia | Mediations Australia",
     desc="Emotional and psychological support through separation \u2014 counselling that runs alongside the legal process. Confidential, professional, evidence-based. Free consultation.",
     breadcrumb_label="Divorce Counselling",
-    eyebrow="Support",
+    eyebrow="You don't have to go through this alone",
     h1_html='Divorce Counselling \u2014 <em>the other side of separation</em>.',
     lede="Separation is a legal process and an emotional one. The legal side gets the attention; the emotional side often gets squeezed in around the edges. Counselling makes space for the harder work: grief, identity, kids, what comes next. It runs alongside the legal process, not after it.",
     toc_items=[
