@@ -80,8 +80,8 @@ header.nav.scrolled{border-color:var(--line)}
 
 /* ---- generic section ---- */
 .sec{padding:clamp(64px,8vw,96px) 0}
-.sec-tag{font-size:.82rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin-bottom:16px}
-.sec-title{font-size:clamp(1.9rem,3.8vw,3rem);max-width:20ch;margin-bottom:24px}
+.sec-tag{font-family:var(--sans);font-size:.82rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);margin-bottom:20px}
+.sec-title{font-size:clamp(2.4rem,4.8vw,3.8rem);max-width:22ch;margin-bottom:28px;line-height:1.18}
 .sec-title em{font-style:italic;color:var(--sage-deep)}
 .sec-intro{font-size:1.12rem;color:var(--ink-soft);max-width:58ch}
 
