@@ -13,7 +13,7 @@ post("best-apps-for-separated-parents",
  "The 8 best co-parenting apps for separated parents in Australia — tested for Family Law Act compliance, FDRP-recommended tools, and what actually reduces conflict. 2026 guide.",
  "Parenting",
  "Best Apps for Separated Parents in Australia <em>Ranked by a Mediator</em>",
- "After reviewing hundreds of co-parenting disputes in mediation, I can tell you which apps reduce conflict and which ones create new battlegrounds. This is not a generic roundup — it is a practitioner's guide to what actually works in Australian family law.",
+ "After reviewing hundreds of co-parenting disputes in mediation, we can tell you which apps reduce conflict and which ones create new battlegrounds. This is not a generic roundup — it is a practitioner's guide to what actually works in Australian family law.",
  [("why-matters","Why the app you choose affects your legal position"),
   ("top-apps","The 8 best apps for separated parents"),
   ("setup-ofw","Setting up OurFamilyWizard step by step"),
@@ -39,8 +39,8 @@ post("best-apps-for-separated-parents",
 {cite('family_law_act')}, both parents have a duty to facilitate the other parent's
 relationship with the child. How you communicate — and what you communicate — can be
 produced in court.</p>
-<p>In my practice, I have seen app-generated message logs used as evidence in parenting
-disputes. I have also seen parents lose credibility in mediation because their preferred
+<p>In our practice, we have seen app-generated message logs used as evidence in parenting
+disputes. We have also seen parents lose credibility in mediation because their preferred
 app had no audit trail, making it impossible to verify who said what and when.</p>
 <p>The stakes are real. A parent who communicates aggressively through WhatsApp and then
 deletes messages is in a far weaker position than a parent who used a structured platform
@@ -56,7 +56,7 @@ communication that favour one party over another.</p>
 <p>Beyond those three features, the best apps also reduce the emotional temperature of
 day-to-day communication. Tools like OurFamilyWizard's ToneMeter flag potentially
 inflammatory language before it is sent — a small friction that, in practice, prevents
-a significant number of escalations. When I ask parents in mediation to estimate what
+a significant number of escalations. When we ask parents in mediation to estimate what
 percentage of their disputes started with a text message, the answer is almost always
 "most of them." The medium matters as much as the message.</p>
 <blockquote>
@@ -169,7 +169,7 @@ forward.</p>
 
 <h3>2houses — Best for expense disputes</h3>
 <p>Child-related expenses are the second most common source of post-separation conflict
-in my practice (after communication itself). 2houses addresses this directly with a
+in our practice (after communication itself). 2houses addresses this directly with a
 detailed expense tracker where both parents can log, categorise, and approve costs.
 The information journal feature allows one parent to share medical appointment notes,
 school updates, and health information — reducing the volume of direct communication
@@ -183,7 +183,7 @@ message logs and certified exports, which means it is not appropriate for situat
 where court proceedings are a possibility.</p>
 
 <h2 id="setup-ofw">Setting Up OurFamilyWizard Step by Step</h2>
-<p>OurFamilyWizard is the app I recommend most often in mediation. The setup process
+<p>OurFamilyWizard is the app we recommend most often in mediation. The setup process
 is straightforward but a few steps catch people out — particularly the process of
 linking a co-parent who may be reluctant to join. Here is the complete process.</p>
 
@@ -268,8 +268,8 @@ facilitate communication or to generate a record to be weaponised later.</p>
 "An app manages day-to-day communication — it does not replace a legally binding parenting plan or consent orders. If you and your co-parent have a verbal arrangement, consider formalising it. Mediation is the first step to getting consent orders through the court.")}
 
 <h2 id="conflict">Apps That Reduce Conflict vs. Apps That Create New Battlegrounds</h2>
-<p>The single biggest mistake I see separated parents make is choosing a communication tool
-based on convenience rather than conflict risk. Here is what the data from my practice shows:</p>
+<p>The single biggest mistake we see separated parents make is choosing a communication tool
+based on convenience rather than conflict risk. Here is what the data from our practice shows:</p>
 
 <h3>Apps that reduce conflict</h3>
 <ul>
@@ -281,16 +281,16 @@ based on convenience rather than conflict risk. Here is what the data from my pr
 
 <h3>Communication tools that create new battlegrounds</h3>
 <ul>
-  <li><strong>WhatsApp and SMS</strong> — no audit trail, easily screenshotted out of context, and the informal tone invites reactive responses. I recommend against using these for any parenting-related communication after separation.</li>
+  <li><strong>WhatsApp and SMS</strong> — no audit trail, easily screenshotted out of context, and the informal tone invites reactive responses. we recommend against using these for any parenting-related communication after separation.</li>
   <li><strong>Facebook Messenger</strong> — same problems as WhatsApp, plus the algorithm surfaces old posts at inopportune moments.</li>
   <li><strong>Email alone</strong> — better than messaging apps, but no structured calendar integration means handover disputes continue.</li>
-  <li><strong>Communicating through the children</strong> — this is not an "app" in the traditional sense, but it is the most damaging communication pattern I encounter. It places children in an impossible position, creates loyalty conflicts, and is viewed extremely negatively by courts and family report writers. Any app is better than using children as message carriers.</li>
+  <li><strong>Communicating through the children</strong> — this is not an "app" in the traditional sense, but it is the most damaging communication pattern we encounter. It places children in an impossible position, creates loyalty conflicts, and is viewed extremely negatively by courts and family report writers. Any app is better than using children as message carriers.</li>
 </ul>
 """
  + inline_cta("If you and your co-parent can't agree on a communication tool, that's a sign mediation could help. We help parents reach workable arrangements without going to court.")
  + f"""
 <h2 id="ex-refuses">What to Do When Your Ex Refuses to Use Any App</h2>
-<p>This is one of the most common situations I encounter in mediation — one parent wants to
+<p>This is one of the most common situations we encounter in mediation — one parent wants to
 move to a structured communication platform and the other refuses. The refusal is sometimes
 practical (cost, technology unfamiliarity) but is often about control: structured platforms
 remove the ability to communicate outside the record, which can feel threatening to a parent
@@ -380,7 +380,7 @@ significant school events regardless of whose custody period it falls in.</p>
 <h2 id="privacy">Privacy Concerns With Co-Parenting Apps</h2>
 <p>Before committing to a co-parenting platform, it is worth understanding how your data
 is stored, who can access it, and what the legal implications are if your records are
-subpoenaed. These questions come up regularly in my practice, and the answers are
+subpoenaed. These questions come up regularly in our practice, and the answers are
 more nuanced than most parents realise.</p>
 
 <h3>Where is your data stored?</h3>
@@ -421,7 +421,7 @@ together are stronger than either alone.</p>
 
 <h2 id="specific-situations">Apps for Specific Situations</h2>
 <p>Different family circumstances call for different approaches to co-parenting technology.
-Here are the apps and configurations I recommend for specific situations.</p>
+Here are the apps and configurations we recommend for specific situations.</p>
 
 <h3>Supervised contact arrangements</h3>
 <p>Where contact is supervised — either through an agreed supervisor or a contact centre
@@ -439,7 +439,7 @@ under the {cite('family_law_act')} all need to be carefully documented. Coparent
 designed specifically for complex multi-location arrangements and handles time zone
 differences clearly. OurFamilyWizard also works well for interstate situations — use
 the travel approval feature to document consent for any interstate or international travel.</p>
-<p>For interstate arrangements, I strongly recommend that the parenting plan specifies
+<p>For interstate arrangements, we strongly recommend that the parenting plan specifies
 a digital communication platform by name. Disputes about school holiday travel are
 significantly easier to resolve when both parents are working from the same timestamped
 calendar record.</p>
@@ -469,7 +469,7 @@ your account details.</p>
 
 <h2 id="red-flags">Red Flags to Watch for in Your Ex's App Usage</h2>
 <p>Co-parenting apps create transparency, but they can also be used strategically.
-Here are the patterns I have seen in practice that warrant attention — not paranoia,
+Here are the patterns we have seen in practice that warrant attention — not paranoia,
 but awareness.</p>
 
 <h3>Consistently delayed responses</h3>
@@ -501,7 +501,7 @@ and child-focused. The record itself will show the disproportion between communi
 volumes over time.</p>
 
 <h2 id="mistakes">Common Mistakes Separated Parents Make With Apps</h2>
-<p>After facilitating hundreds of parenting mediations, I have seen the same mistakes
+<p>After facilitating hundreds of parenting mediations, we have seen the same mistakes
 repeated. Here are the ones that cause the most harm.</p>
 
 <h3>Starting too late</h3>
@@ -550,7 +550,7 @@ platform regardless of the current temperature of your co-parenting relationship
 <p>Use <strong>Cozi</strong> (free) or <strong>2houses</strong> if you want expense tracking. Both work well when both parents are committed to making the arrangement work.</p>
 
 <h3>One parent is resistant to using an app</h3>
-<p>This is one of the most common situations I see in mediation. Options:</p>
+<p>This is one of the most common situations we see in mediation. Options:</p>
 <ul>
   <li>Raise it in a mediation session — a mediator can help both parties agree on a communication tool as part of the parenting plan</li>
   <li>Use <strong>TalkingParents</strong> and send messages from there — it creates a record even if the other parent does not use the app actively</li>
