@@ -223,7 +223,7 @@ post("child-custody-mediation",
 </tbody></table></figure>
 
 <h2 id="fathers-mothers">Do mothers or fathers get preference?</h2>
-<p>The law gives no preference based on gender. Both parents start on equal footing, and outcomes turn on the children's best interests and each parent's circumstances \u2014 not on whether they're mum or dad. <a href="/fathers-rights/">See fathers' rights after separation \u2192</a></p>
+<p>The law gives no preference based on gender. Both parents start on equal footing, and outcomes turn on the children's best interests and each parent's circumstances \u2014 not on whether they're mum or dad. <a href="/fathers-rights-after-separation/">See fathers' rights after separation \u2192</a></p>
 """
  + inline_cta("Worried the system is stacked against you? It isn't \u2014 and mediation keeps the focus where it belongs.")
  + """
@@ -256,7 +256,7 @@ post("child-custody-mediation",
  [("parenting-plan-mediation","Parenting Plan Mediation"),
   ("parenting-plans-guide","Parenting Plans Guide"),
   ("section-60i-certificates","Section 60I Certificates"),
-  ("fathers-rights","Fathers' Rights"),
+  ("fathers-rights-after-separation","Fathers' Rights"),
   ("consent-orders-explained","Consent Orders Explained"),
   ("domestic-violence-and-family-law","Domestic Violence & Family Law")],
  read_min=10)

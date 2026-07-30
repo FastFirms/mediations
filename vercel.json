@@ -286,13 +286,13 @@
       "permanent": true
     },
     {
-      "source": "/fathers-rights-after-separation/",
-      "destination": "/fathers-rights/",
+      "source": "/fathers-rights/",
+      "destination": "/fathers-rights-after-separation/",
       "permanent": true
     },
     {
       "source": "/fathers-rights-in-family-law-2022-update/",
-      "destination": "/fathers-rights/",
+      "destination": "/fathers-rights-after-separation/",
       "permanent": true
     },
     {
@@ -372,7 +372,7 @@
     },
     {
       "source": "/how-often-do-fathers-get-50-50-custody-in-australia/",
-      "destination": "/child-custody-mediation/",
+      "destination": "/fathers-rights-after-separation/",
       "permanent": true
     },
     {

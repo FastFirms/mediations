@@ -102,7 +102,7 @@ post("parental-alienation-australia",
   ("parenting-plans-guide","Parenting Plans in Australia"),
   ("high-conflict-mediation","High-Conflict Mediation"),
   ("domestic-violence-and-family-law","Domestic Violence & Family Law"),
-  ("fathers-rights","Fathers' Rights After Separation"),
+  ("fathers-rights-after-separation","Fathers' Rights After Separation"),
   ("family-court-process","The Family Court Process")],
  read_min=9)
 

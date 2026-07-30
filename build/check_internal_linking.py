@@ -28,7 +28,7 @@ BLOG = [
     "parenting-plans-guide","what-is-mediation-in-family-law","mediate-or-litigate",
     "child-custody-mediation","domestic-violence-and-family-law","separation-guide",
     "de-facto-relationships-guide","spousal-maintenance-guide","child-support-guide",
-    "is-family-law-mediation-compulsory","fathers-rights","superannuation-and-divorce",
+    "is-family-law-mediation-compulsory","fathers-rights-after-separation","superannuation-and-divorce",
     "high-conflict-mediation","mothers-rights","grandparents-rights","shuttle-mediation-guide",
     "conciliation-vs-mediation","workplace-mediation-guide","property-settlement-mediation-guide",
     "business-in-divorce","family-court-process","divorce-without-a-lawyer",

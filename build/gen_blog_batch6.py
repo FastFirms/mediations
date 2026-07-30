@@ -78,7 +78,7 @@ post("is-family-law-mediation-compulsory",
 print("is-family-law-mediation-compulsory built")
 
 # ---- FATHERS' RIGHTS (absorbs 2) ----
-post("fathers-rights",
+post("fathers-rights-after-separation",
  "Fathers' Rights After Separation in Australia (2026 Guide)",
  "Fathers' rights in Australia: 50/50 care, parental responsibility, the best-interests test, and how dads can secure meaningful time with their children.",
  "Parenting",
