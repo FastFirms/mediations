@@ -139,7 +139,7 @@ def nav():
     </div>"""
     return f"""<header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="/" class="logo"><span class="dot"></span>Mediations Australia</a>
+    <a href="/" class="logo"><img src="/assets/images/MA.svg" alt="Mediations Australia" width="180" height="36" loading="eager" style="display:block;height:36px;width:auto"></a>
     <nav class="nav-links" id="navlinks" aria-label="Primary">
       <span class="has-drop"><a class="lnk" href="/#disputes" aria-haspopup="true">Services</a>
         {svc_mega}
