@@ -242,3 +242,12 @@ Redirect 301 /campbelltown-family-lawyers/ /sydney-mediation/
 # Newly built pages: lawyer/mediator URL variants -> our-mediators
 Redirect 301 /accredited-family-law-mediators/ /our-mediators/
 Redirect 301 /family-law-practitioners/ /our-mediators/
+
+# GSC Priority 1: recover equity from broken/misdirected URLs (Jul 2026 audit)
+# /our-fees/ had canonical pointing to /costs-of-mediation/ on live site (0 impressions)
+Redirect 301 /our-fees/ /our-fee-structure/
+Redirect 301 /costs-of-mediation/ /how-much-does-mediation-cost/
+# /2024-guide-for-preparing-for-mediation/ had bad canonical (0 impressions)
+Redirect 301 /2024-guide-for-preparing-for-mediation/ /preparing-for-mediation/
+# /grandparents-rights-how-to-see-your-grandchildren-2024-update/ was 404 with no redirect
+Redirect 301 /grandparents-rights-how-to-see-your-grandchildren-2024-update/ /grandparents-rights/
