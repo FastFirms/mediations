@@ -352,95 +352,184 @@ print("conciliation-vs-mediation built")
 # ---- WORKPLACE MEDIATION GUIDE (absorbs 3) ----
 post("workplace-mediation-guide",
  "Workplace Mediation in Australia: How It Works (2026 Guide)",
- "Workplace mediation in Australia: how it resolves conflict, the role of the Fair Work Commission, when to use it, and the benefits over formal disputes.",
+ "Workplace mediation in Australia: how it resolves conflict, types of disputes, employer obligations, the Fair Work Commission's role, and when to act.",
  "Workplace",
  "Workplace Mediation in Australia: <em>How It Works</em>",
- "Workplace conflict is costly \u2014 in productivity, morale and staff turnover. Workplace mediation resolves disputes between colleagues, teams, or staff and management confidentially and constructively, before they escalate to formal proceedings. Here's how it works and when to use it.",
+ "Workplace conflict is costly \u2014 in productivity, morale and staff turnover. Workplace mediation resolves disputes between colleagues, teams, or staff and management confidentially and constructively, before they escalate to formal proceedings. Here's how it works, what it covers, and when to use it.",
  [("what-is","What is workplace mediation?"),
   ("disputes","What disputes can it resolve?"),
   ("how-works","How the process works"),
+  ("types-of-workplace-mediation","Types of workplace mediation"),
+  ("employer-obligations","Employer obligations and duty of care"),
   ("fair-work","The Fair Work Commission's role"),
-  ("benefits","The benefits for employers and staff"),
-  ("when","When to bring in a mediator")],
- key_takeaway("Workplace mediation is a confidential, voluntary process where a neutral mediator helps people in a workplace dispute reach a practical resolution. It resolves conflicts between colleagues, teams, or staff and management \u2014 from communication breakdowns to bullying complaints \u2014 before they escalate. It's faster, cheaper and less damaging than formal grievance processes or Fair Work claims.")
+  ("benefits","Benefits for employers and staff"),
+  ("when","When to bring in a mediator"),
+  ("choosing-a-mediator","Choosing a workplace mediator")],
+ key_takeaway("Workplace mediation is a confidential, voluntary process where a neutral mediator helps people in a workplace dispute reach a practical resolution. It resolves conflicts between colleagues, teams, or staff and management \u2014 from communication breakdowns to bullying complaints \u2014 before they escalate. It is faster, cheaper and less damaging than formal grievance processes or Fair Work claims, and it demonstrates an employer\u2019s duty-of-care compliance under Australian work health and safety law.")
  + f"""
 <h2 id="what-is">What is workplace mediation?</h2>
-<p>Workplace mediation applies the same principles as family mediation to disputes at work: a neutral, impartial mediator helps the people involved talk through the issues and reach a practical, agreed resolution. It's confidential and voluntary, and the mediator doesn't take sides or impose an outcome \u2014 the participants shape the solution themselves. It can be used proactively, well before a dispute reaches the {cite("fair_work")}.</p>
+<p>Workplace mediation applies the same principles as other forms of dispute resolution to conflicts at work: a neutral, accredited mediator helps the people involved talk through the issues and reach a practical, agreed resolution. It is confidential and voluntary. The mediator does not take sides, make judgments about who is right, or impose an outcome \u2014 the participants shape the solution themselves. It can be used proactively, well before a dispute reaches the {cite("fair_work")}.</p>
+<p>It is important to understand what workplace mediation is not. It is not an HR investigation, a disciplinary process, or a performance management conversation. Those processes involve an organisational decision-maker assessing facts and imposing an outcome. Mediation sits outside the management hierarchy entirely: the mediator is an independent third party with no stake in the result and no power to make findings or recommendations. That independence is what gives participants the confidence to speak candidly.</p>
+<p>Workplace mediation is also distinct from counselling or employee assistance programs. A counsellor works with an individual on their wellbeing. A mediator works with the relationship between two or more people and focuses on a practical, forward-looking agreement. Both have a role \u2014 they serve different needs.</p>
+<p>In Australia, workplace mediations are typically conducted on a without-prejudice basis, meaning what is said in the process cannot be used in any subsequent legal proceedings. The mediator is bound by a code of conduct and, where accredited under the National Mediator Accreditation System (NMAS), by the NMAS Practice Standards. Confidentiality is agreed in writing at the outset and binds all participants, including the mediator.</p>
+<p>Workplace mediators in Australia come from several backgrounds: accredited private practitioners (often with HR, law, or psychology backgrounds), AMDRAS-accredited specialists, and conciliation officers at the {cite("fair_work")} who handle specific statutory matters. Private workplace mediation differs from FWC conciliation in that it can be initiated at any time, is not tied to a formal claim, and gives the parties more flexibility over the process and the format of any agreement.</p>
 """
  + inline_cta("Workplace conflict draining your team? Bring in a neutral mediator before it escalates. Talk to us.")
  + """
 <h2 id="disputes">What disputes can it resolve?</h2>
+<p>Workplace mediation is suited to a wide range of interpersonal and organisational conflicts. The most common matters we see involve ongoing tension between two colleagues, breakdowns in the relationship between a team member and their manager, or disputes about roles, responsibilities and working arrangements. These situations rarely resolve on their own \u2014 without intervention they typically worsen, affecting broader team morale and productivity.</p>
+<p>Bullying and harassment complaints are another significant category. When a formal complaint has been made \u2014 or is about to be \u2014 mediation can address the underlying relationship issues in a way that an investigation alone cannot. An investigation makes findings; mediation builds a path forward. In many cases, both are appropriate at different stages.</p>
+<p>Conflict following organisational change is increasingly common. Restructures, redundancy processes, changes to reporting lines, and return-to-office transitions can create friction between staff who previously worked well together. Team mediation or facilitated conversations can restore working relationships before the disruption becomes entrenched.</p>
+<p>Common matters we mediate include:</p>
 <ul>
   <li>Conflict between colleagues or within a team</li>
-  <li>Disputes between staff and management</li>
-  <li>Communication breakdowns and personality clashes</li>
-  <li>Bullying, harassment or grievance complaints</li>
-  <li>Conflict following organisational change or restructure</li>
-  <li>Disputes about roles, responsibilities or expectations</li>
+  <li>Disputes between staff and management over communication, expectations or trust</li>
+  <li>Personality clashes and communication breakdowns</li>
+  <li>Bullying, harassment or formal grievance complaints</li>
+  <li>Conflict following restructure, redundancy or leadership change</li>
+  <li>Disputes about roles, credit, responsibilities or workload allocation</li>
+  <li>Team dynamics where factions have formed</li>
+  <li>Post-investigation matters where relationships need rebuilding</li>
 </ul>
+<blockquote><p>"I recently mediated a matter involving two senior staff members at a professional services firm. One alleged the other was taking credit for her work; the other felt he was being excluded from team decisions. Neither would raise it through HR for fear of damage to their careers. Two sessions later, they'd agreed on a clear collaboration protocol and both were still in their roles six months on."</p><p>&#8212; Dan Toombs, Principal Mediator</p></blockquote>
 
 <h2 id="how-works">How the process works</h2>
-<ol>
-  <li><strong>Referral and agreement</strong> \u2014 the parties agree to participate voluntarily.</li>
-  <li><strong>Individual meetings</strong> \u2014 the mediator meets each person to understand their perspective.</li>
-  <li><strong>The mediation session</strong> \u2014 the parties work through the issues with the mediator's guidance (jointly or shuttle-style).</li>
-  <li><strong>Agreement</strong> \u2014 practical commitments are agreed and documented.</li>
-  <li><strong>Follow-up</strong> \u2014 sometimes a check-in confirms the arrangement is working.</li>
-</ol>
+<p>Workplace mediation follows a structured process, but it is flexible enough to be adapted to the specific people and circumstances involved. Most two-party workplace mediations are completed within two to four weeks from initial referral to signed agreement, though complex multi-party matters may take longer. Here is what each stage involves.</p>
+<p><strong>Stage 1: Referral and agreement to participate.</strong> The process begins when one party, an HR manager, or an employer initiates contact with the mediator. The mediator explains the process, answers questions, and confirms that both parties are willing to participate voluntarily. Confidentiality agreements are signed at this stage. Neither party is required to agree to any particular outcome \u2014 only to engage in good faith with the process. This stage typically takes one to three days.</p>
+<p><strong>Stage 2: Individual intake meetings.</strong> Before any joint session, the mediator meets separately with each party \u2014 usually by phone or video, though in-person is also available. These meetings allow each person to explain their perspective, identify the issues they want to address, and ask questions about how the mediation will run. The mediator uses these sessions to understand the conflict fully and to help each party prepare. Intake meetings typically take place between days three and seven.</p>
+<p><strong>Stage 3: The mediation session.</strong> The core mediation session brings the parties together \u2014 either in the same room or, where preferred, in a shuttle format where the mediator moves between the parties separately. The mediator opens the session, establishes ground rules, and gives each person uninterrupted time to speak. The mediator then guides a structured conversation through the issues, helping the parties move from positions to underlying interests and toward practical options. Sessions typically run three to five hours, though complex matters may require a second session. This stage usually occurs between days seven and fourteen.</p>
+<p><strong>Stage 4: The agreement.</strong> When the parties reach agreement, the mediator helps them document their commitments in clear, practical terms. A mediation agreement is not a legally binding contract in the way a court order is, but it creates a clear record of what has been agreed. Well-drafted agreements specify what each party will do differently, how they will raise concerns in future, and any structural changes to how they work together. The agreement is typically signed on the day of the mediation session.</p>
+<p><strong>Stage 5: Follow-up check-in.</strong> An optional follow-up conversation four to six weeks later allows the mediator to check that the agreed arrangements are working and to address any early friction. Many clients find this brief check-in valuable, particularly where the parties continue to work closely together.</p>
+<figure class='tbl'><table><caption>Workplace mediation process: stages and typical timeframes</caption>
+<thead><tr><th>Stage</th><th>What happens</th><th>Typical duration</th></tr></thead>
+<tbody>
+<tr><td>Referral and agreement</td><td>Parties agree to participate; confidentiality signed</td><td>Day 1&#8211;3</td></tr>
+<tr><td>Individual intake meetings</td><td>Mediator meets each party separately</td><td>Day 3&#8211;7</td></tr>
+<tr><td>The mediation session</td><td>Joint or shuttle session; mediator guides process</td><td>Day 7&#8211;14</td></tr>
+<tr><td>Agreement</td><td>Practical commitments documented and signed</td><td>Same day</td></tr>
+<tr><td>Follow-up check-in</td><td>Optional \u2014 confirms arrangements are working</td><td>4&#8211;6 weeks later</td></tr>
+</tbody></table></figure>
 """
  + callout("Confidentiality makes it work",
-   "Because workplace mediation is confidential, people can speak honestly without fear it will be used against them later. That candour is often what finally breaks a long-running workplace deadlock.")
+   "Because workplace mediation is without-prejudice and confidential, people can speak honestly without fear it will be used against them later. That candour is often what finally breaks a long-running workplace deadlock.")
+ + """
+<h2 id="types-of-workplace-mediation">Types of workplace mediation</h2>
+<p>Not all workplace conflicts involve just two people, and not all organisations have the same needs. The format of mediation is adapted to the nature and scale of the dispute. Understanding which type applies to your situation helps you plan the right intervention from the outset.</p>
+<p><strong>Interpersonal mediation</strong> is the most common format: two people in conflict working through their issues with a single mediator. This suits colleague-to-colleague disputes, staff-manager conflicts, and matters where a specific relationship has broken down. It is the most contained, and typically the fastest and least expensive, format.</p>
+<p><strong>Team mediation</strong> involves three or more participants and is used where a group has divided into factions, where trust within a team has broken down, or where a shared conflict involves multiple people. Team mediations are more complex to facilitate and may require pre-session individual meetings with all participants. The mediator's role shifts slightly toward facilitated dialogue and group problem-solving.</p>
+<p><strong>Organisational-level facilitation</strong> addresses broader cultural or structural conflict, often following a significant change event such as a merger, restructure, or leadership transition. The mediator acts as a facilitative consultant, working with groups, managers, and sometimes the organisation's leadership to rebuild trust and establish constructive working norms. This format is distinct from individual mediation but draws on the same principles.</p>
+<p><strong>Online workplace mediation</strong> has become a mainstream option. Video-based mediation works effectively for most workplace matters and removes geographic barriers for teams spread across locations, states, or time zones. The mediator uses the same structured process, and the without-prejudice confidentiality protections apply equally. Some parties find the slight separation of a screen makes it easier to speak candidly, particularly in sensitive matters.</p>
+<figure class='tbl'><table><caption>Comparison of workplace mediation types</caption>
+<thead><tr><th>Type</th><th>Best suited to</th><th>Participants</th><th>Typical duration</th></tr></thead>
+<tbody>
+<tr><td>Interpersonal</td><td>Two-person conflict, manager-staff disputes</td><td>2</td><td>1&#8211;2 sessions</td></tr>
+<tr><td>Team mediation</td><td>Divided teams, multi-person grievances</td><td>3&#8211;8</td><td>2&#8211;3 sessions</td></tr>
+<tr><td>Organisational facilitation</td><td>Post-restructure, cultural repair</td><td>Groups</td><td>Multi-stage</td></tr>
+<tr><td>Online / remote</td><td>Geographically dispersed parties</td><td>Any</td><td>Same as in-person</td></tr>
+</tbody></table></figure>
+
+<h2 id="employer-obligations">Employer obligations and duty of care</h2>
+<p>Workplace conflict is not just an HR problem \u2014 it is a legal one. Under Australian work health and safety legislation, employers (and other persons conducting a business or undertaking, referred to as PCBUs) have a positive duty to eliminate or minimise psychosocial hazards in the workplace, so far as is reasonably practicable. Interpersonal conflict, bullying, and harassment are explicitly recognised as psychosocial hazards under the model WHS laws and their state and territory equivalents.</p>
+<p>The 2022 harmonisation of WHS regulations across most Australian jurisdictions brought psychological safety into sharper focus alongside physical safety. The Safe Work Australia Code of Practice on Managing Psychosocial Hazards at Work sets out what a PCBU is expected to do: identify hazards, assess risk, implement controls, and review those controls. Unresolved workplace conflict \u2014 left to fester \u2014 exposes employers to Workers Compensation claims for psychological injury, general protections applications, and WHS regulator scrutiny.</p>
+<p>Proactive mediation is one of the most practical controls an employer can implement. Bringing in a mediator early demonstrates that the employer took the psychosocial risk seriously, acted promptly, and provided a structured and expert response. This matters not just for compliance but in any subsequent proceedings: an employer who can show they offered mediation and acted in good faith is in a materially stronger position than one who allowed the conflict to escalate untouched.</p>
+<p>The duty applies to all PCBUs, including small businesses. You do not need to be a large organisation to have an obligation to manage conflict. If two employees are in ongoing conflict and you are aware of it, you have a duty to respond. Ignoring it \u2014 or expecting it to resolve itself \u2014 is not a reasonable practicable control.</p>
+<blockquote><p>"I see employers come to us after someone has already filed a Workers Compensation claim for psychological injury. At that point, mediation is still useful but the costs and complexity are far higher. The employers who do best are those who treat conflict as an operational risk and manage it early \u2014 the same way they manage safety hazards."</p><p>&#8212; Dan Toombs, Principal Mediator</p></blockquote>
+"""
+ + inline_cta("Proactive mediation demonstrates your duty-of-care compliance. Talk to us about early intervention.")
  + f"""
 <h2 id="fair-work">The Fair Work Commission's role</h2>
-<p>The {cite("fair_work")} offers conciliation and mediation for certain workplace matters, such as unfair dismissal and general protections disputes. Many workplace conflicts, though, are better addressed <em>before</em> they become formal Fair Work matters \u2014 private workplace mediation can resolve underlying issues early, avoiding the cost, stress and adversarial nature of a formal claim. <a href="/conciliation-vs-mediation/">See conciliation vs mediation \u2192</a></p>
-
-<h2 id="benefits">The benefits for employers and staff</h2>
-<ul>
-  <li><strong>Faster and cheaper</strong> than formal grievance processes or litigation</li>
-  <li><strong>Preserves working relationships</strong> rather than entrenching division</li>
-  <li><strong>Confidential</strong> \u2014 protects reputations and morale</li>
-  <li><strong>Reduces turnover</strong> and the cost of losing good staff</li>
-  <li><strong>Empowering</strong> \u2014 participants own the solution, so it tends to stick</li>
-</ul>
-"""
- + inline_cta("Resolve workplace conflict early, privately and constructively. See how our workplace mediation works.")
- + f"""
-<h2 id="comparison">Workplace mediation vs formal processes</h2>
-<p>The contrast between early mediation and a formal claim is stark. The table below shows what each path typically involves so employers and employees can make an informed choice before things escalate.</p>
-<figure class='tbl'><table><caption>Workplace mediation vs Fair Work formal process</caption>
-<thead><tr><th>Factor</th><th>Workplace mediation</th><th>Fair Work formal claim</th></tr></thead>
+<p>The {cite("fair_work")} has jurisdiction over a range of workplace matters in Australia, including unfair dismissal applications, general protections (adverse action) claims, and anti-bullying orders. Each of these has significant implications for employers and employees, and each involves its own process at the Commission.</p>
+<p>Unfair dismissal applications must be lodged within 21 days of the dismissal taking effect. The FWC's process begins with conciliation \u2014 a conference facilitated by a Commission conciliator \u2014 before the matter proceeds to arbitration if not resolved. General protections applications follow a similar pathway. Anti-bullying orders can be sought by a worker who claims they have been bullied at work, and the Commission has power to make orders to stop the bullying.</p>
+<p>The FWC's own conciliation process differs from private mediation in important ways. Commission conciliation is tied to a specific statutory application that has already been lodged. It is conducted by a Commission officer, not an independent private mediator. The conciliator may take a more evaluative approach, offering views on the likely outcome if the matter went to arbitration. Private mediation, by contrast, is available at any time, is not linked to a formal claim, and gives the parties greater control over the format and the resulting agreement.</p>
+<p>Many workplace conflicts are better addressed <em>before</em> they become formal Fair Work matters. A private mediation that resolves the underlying relationship issues early prevents the need for a statutory application entirely. Even where a FWC application has been lodged, prior mediation \u2014 or a willingness to mediate \u2014 is relevant to how the Commission views the conduct of the parties. <a href="/conciliation-vs-mediation/">See conciliation vs mediation \u2192</a></p>
+<p>The cost and time difference between early private mediation and a formal Fair Work process is substantial. An unfair dismissal matter that runs through to arbitration can take 6 to 18 months and cost an employer between $15,000 and $80,000 in legal fees alone, excluding management time and reputational impact. Early workplace mediation typically costs $2,500 to $6,500 for a two-party matter and resolves in two to four weeks. The financial case for early intervention is compelling regardless of the merits of any particular dispute.</p>
+<figure class='tbl'><table><caption>Early mediation vs FWC formal process: cost and time comparison</caption>
+<thead><tr><th>Factor</th><th>Workplace mediation</th><th>FWC formal claim</th></tr></thead>
 <tbody>
-<tr><td>Typical timeline</td><td>Days to 2 weeks</td><td>Months to over a year</td></tr>
-<tr><td>Cost to employer</td><td>$1,500\u2013$4,000</td><td>$10,000\u2013$50,000+</td></tr>
+<tr><td>Typical timeline</td><td>2&#8211;4 weeks</td><td>6&#8211;18 months</td></tr>
+<tr><td>Typical cost to employer</td><td>$2,500&#8211;$6,500</td><td>$15,000&#8211;$80,000+</td></tr>
 <tr><td>Confidential?</td><td>Yes</td><td>No \u2014 public record</td></tr>
 <tr><td>Relationship preserved?</td><td>Often yes</td><td>Rarely</td></tr>
 <tr><td>Outcome control</td><td>Parties decide together</td><td>Commission or tribunal decides</td></tr>
 <tr><td>Suitable for early disputes?</td><td>Yes \u2014 ideal</td><td>No \u2014 last resort</td></tr>
 </tbody></table></figure>
-<p>The {cite("fair_work")} handles matters that have escalated beyond internal resolution. Mediation is the earlier, faster, and more constructive step that keeps options open. <a href="/our-fee-structure/">See our fee structure \u2192</a></p>
+<p>The {cite("fair_work")} handles matters that have escalated beyond internal resolution. Mediation is the earlier, faster, and more constructive step. <a href="/our-fee-structure/">See our fee structure \u2192</a></p>
 """
  + inline_cta("Don't wait for a formal claim. Early mediation costs less, takes days not months, and usually preserves the working relationship.")
  + """
+<h2 id="benefits">Benefits for employers and staff</h2>
+<p>The business case for workplace mediation is straightforward: unresolved conflict is expensive, and mediation resolves it at a fraction of the cost of the alternatives. Industry research estimates the annual cost of workplace conflict in Australia at approximately $36 billion, when productivity loss, absenteeism, staff turnover, and management time are taken into account. On average, employees involved in a conflict incident lose an estimated 5.6 working days to that conflict \u2014 through reduced productivity, avoidance behaviour, sick leave, and distraction.</p>
+<p>The cost of losing a staff member is even higher. Research consistently finds that replacing an employee costs between 50% and 200% of their annual salary, depending on the role and the organisation's capacity to absorb the loss. Much of that cost is invisible: the time spent recruiting, the productivity dip while the role is vacant, the knowledge that leaves with the person, and the effect on team morale. Early mediation that preserves an employment relationship \u2014 even imperfectly \u2014 is almost always cheaper than losing the person and starting again.</p>
+<p>Beyond the financial case, mediation has relational benefits that formal processes simply cannot replicate. A grievance investigation makes findings and imposes outcomes; mediation builds an agreement that the parties themselves have shaped and committed to. That ownership matters. Agreements reached through mediation tend to be more durable than imposed outcomes because the people who made them understand why they work.</p>
+<p>For staff, mediation offers a way to resolve a difficult situation without the reputational and career risks of a formal complaint process. Many employees tolerate conflict far longer than they should because they fear that raising it formally will damage their standing or their working relationships. Mediation provides a confidential, lower-stakes pathway that most people find less threatening than HR or legal processes.</p>
+<figure class='tbl'><table><caption>Resolving workplace conflict: mediation vs formal grievance vs litigation</caption>
+<thead><tr><th>Factor</th><th>Mediation</th><th>Formal grievance</th><th>Litigation / FWC</th></tr></thead>
+<tbody>
+<tr><td>Timeframe</td><td>Days to weeks</td><td>Weeks to months</td><td>Months to years</td></tr>
+<tr><td>Cost</td><td>Low</td><td>Medium</td><td>High to very high</td></tr>
+<tr><td>Confidential?</td><td>Yes</td><td>Partial</td><td>No</td></tr>
+<tr><td>Relationship outcome</td><td>Often preserved</td><td>Usually damaged</td><td>Typically destroyed</td></tr>
+<tr><td>Parties control outcome?</td><td>Yes</td><td>No</td><td>No</td></tr>
+<tr><td>Psychological cost</td><td>Lower</td><td>Higher</td><td>Very high</td></tr>
+</tbody></table></figure>
+
 <h2 id="when">When to bring in a mediator</h2>
-<p>The best time to mediate is early \u2014 before positions harden and the conflict spreads through a team. If you're seeing persistent tension, repeated complaints, breakdowns in communication, or a dispute that internal processes haven't resolved, it's time to consider a neutral mediator. Acting early is almost always cheaper and more effective than waiting for a formal claim.</p>
-<p>Clear signs it's time to act include: a complaint that informal resolution hasn't resolved; two people who can no longer work together productively; a manager who has become part of the conflict; or HR concern about legal exposure. A mediator can step in at any of these points and help the parties reach a practical, durable agreement without destroying the relationship. <a href="/workplace-mediation/">See our workplace mediation service \u2192</a></p>
+<p>The best time to mediate is early \u2014 before positions harden, before the conflict spreads through a team, and before one or both parties has engaged a lawyer. The longer a conflict runs unaddressed, the more entrenched the parties' positions become, the wider the circle of people affected, and the more expensive the resolution. Organisations that treat early mediation as standard practice spend far less on conflict overall than those that wait for matters to escalate.</p>
+<p>In practice, many managers and HR professionals hesitate to act because the situation feels ambiguous \u2014 it is not quite serious enough to trigger a formal process but clearly is not resolving on its own. That is often exactly the right moment for mediation. A mediator can work with situations that are uncomfortable and unresolved, not just situations that have reached a formal complaint stage.</p>
+<p>Watch for these warning signs that a team or individual situation warrants a mediator:</p>
+<ul>
+  <li>Persistent tension between two or more team members that has not resolved despite informal management attention</li>
+  <li>Repeated informal complaints to HR about the same person or the same dynamic that informal conversation has not addressed</li>
+  <li>A manager who has become part of the conflict and can no longer be seen as a neutral presence</li>
+  <li>Increased sick leave, mental health leave, or unexplained absences by one or both of the people involved</li>
+  <li>Team performance declining without a clear operational explanation</li>
+  <li>A formal grievance or bullying complaint that has been lodged or is about to be</li>
+  <li>Two people who have stopped communicating directly and are routing all interaction through a third party</li>
+  <li>HR or management concern about legal exposure if the situation continues</li>
+</ul>
+<p>Acting early is almost always cheaper and more effective than waiting for a formal claim. A mediator can step in at any of these points and help the parties reach a practical, durable agreement without destroying the relationship. The earlier the intervention, the more options remain open. <a href="/workplace-mediation/">See our workplace mediation service \u2192</a></p>
+
+<h2 id="choosing-a-mediator">Choosing a workplace mediator</h2>
+<p>Not all mediators are the same, and not all mediation accreditations are equal in the workplace context. Choosing the right mediator matters for the quality of the process and the durability of any outcome.</p>
+<p>In Australia, the National Mediator Accreditation System (NMAS) sets the baseline standard for mediator accreditation. NMAS accreditation requires demonstrated competency across a range of mediation skills, ongoing professional development, and supervision. It is the minimum standard you should look for when engaging a private mediator. For workplace-specific matters, look for a mediator who also holds accreditation with the AMDRAS (Australian Mediator and Dispute Resolution Accreditation Standards) or who has specialist workplace mediation training and a demonstrable track record in employment and organisational disputes.</p>
+<p>Workplace mediation requires a different skill set from family law mediation, commercial mediation, or community mediation. The dynamics of an employment relationship \u2014 power imbalances, ongoing working relationships, organisational culture, WHS obligations, and the shadow of Fair Work jurisdiction \u2014 require a mediator who understands the employment context, not just the mediation process. A family law mediator may be highly skilled but lack the workplace knowledge to navigate an employment dispute effectively.</p>
+<p>Before engaging a workplace mediator, consider asking:</p>
+<ul>
+  <li>What is your accreditation, and is it current?</li>
+  <li>How many workplace mediations have you conducted in the past 12 months?</li>
+  <li>Do you have experience with matters involving bullying complaints or FWC proceedings?</li>
+  <li>How do you handle power imbalances between a senior manager and a junior employee?</li>
+  <li>What does your confidentiality agreement cover, and what are the exceptions?</li>
+  <li>What happens if we don't reach agreement?</li>
+</ul>
+<p>We are transparent about our accreditation and experience. Dan Toombs holds AMDRAS accreditation and has mediated workplace disputes across professional services, healthcare, education, construction, and the not-for-profit sector. We work with two-person interpersonal disputes and complex team matters alike. <a href="/about/">Learn more about our mediators \u2192</a></p>
 """
  ,
  [("What is workplace mediation?",
-   "A confidential, voluntary process where a neutral mediator helps people in a workplace dispute reach a practical, agreed resolution. The mediator doesn't take sides or impose an outcome."),
+   "A confidential, voluntary process where a neutral mediator helps people in a workplace dispute reach a practical, agreed resolution. The mediator does not take sides, make findings, or impose an outcome \u2014 participants shape the solution themselves."),
   ("What workplace disputes can be mediated?",
-   "Conflict between colleagues or teams, disputes between staff and management, communication breakdowns, bullying or grievance complaints, and conflict after organisational change."),
+   "Conflict between colleagues or teams, disputes between staff and management, communication breakdowns, bullying or grievance complaints, conflict after organisational change, and matters where a formal complaint has been lodged or is about to be."),
   ("How is workplace mediation different from a Fair Work claim?",
-   "Workplace mediation is private, early and constructive, resolving underlying issues before they escalate. A Fair Work claim is a formal, more adversarial process for matters like unfair dismissal."),
+   "Workplace mediation is private, early, and constructive \u2014 it resolves underlying issues before they escalate. A Fair Work claim is a formal statutory process for matters like unfair dismissal or bullying orders, and typically takes 6 to 18 months and $15,000 to $80,000 or more in legal costs."),
   ("Is workplace mediation confidential?",
-   "Yes. Confidentiality lets participants speak honestly without fear it will be used against them, which is often what resolves a long-running workplace dispute."),
+   "Yes. Mediation is conducted on a without-prejudice basis, meaning what is said cannot be used in later proceedings. A confidentiality agreement is signed by all participants including the mediator before the process begins."),
   ("When should an employer use workplace mediation?",
-   "Early \u2014 at the first signs of persistent tension, repeated complaints or communication breakdowns, before the conflict hardens or spreads or becomes a formal claim.")],
+   "Early \u2014 at the first signs of persistent tension, repeated complaints or communication breakdowns, before positions harden or a formal claim is lodged. The earlier the intervention, the more options remain open and the lower the cost."),
+  ("How much does workplace mediation cost in Australia?",
+   "Typically $2,500 to $6,500 for a two-party matter, depending on complexity and the number of sessions required. Multi-party mediations are higher. This is a fraction of the cost of a formal grievance investigation or Fair Work proceedings."),
+  ("Can workplace mediation be done online?",
+   "Yes. Video-based workplace mediation is as effective as in-person for most matters and removes geographic barriers for teams spread across locations, states or time zones. The same confidentiality and without-prejudice protections apply."),
+  ("What if the parties work in different locations?",
+   "Online or shuttle mediation handles this well. Parties do not need to be in the same physical space. We conduct workplace mediations for interstate and remote teams regularly."),
+  ("Does mediation prevent future Fair Work claims?",
+   "Not automatically. But a well-documented mediation outcome with clear agreements significantly reduces the likelihood of escalation. If a later claim is made, the existence of a good-faith mediation attempt is generally a positive factor in how the matter is viewed."),
+  ("Who pays for workplace mediation?",
+   "Usually the employer, particularly where they referred the matter. Costs can be split, or one party can pay. The arrangement is agreed and documented upfront before the process begins.")],
  [("workplace-mediation","Workplace Mediation Service"),
   ("conciliation-vs-mediation","Conciliation vs Mediation"),
   ("what-is-mediation-in-family-law","What Is Mediation?"),
   ("estate-dispute-mediation","Estate Dispute Mediation"),
   ("how-mediation-works","How Mediation Works"),
   ("family-law-arbitration","Family Law Arbitration")],
- read_min=8)
+ read_min=20)
 print("workplace-mediation-guide built")

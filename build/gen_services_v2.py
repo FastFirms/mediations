@@ -24,7 +24,7 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
 from authority_sources import cite
 
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ---- Reusable component helpers ----
 
@@ -79,7 +79,7 @@ def service_page(slug, title, desc, breadcrumb_label, eyebrow, h1_html, lede, to
 </div></section>
 
 <section class="sec-tint"><div class="wrap-narrow">
-{faq_html(faq_items, heading=f"{breadcrumb_label} \u2014 frequently asked")}
+{faq_html(faq_items, heading=breadcrumb_label + " — frequently asked")}
 </div></section>
 
 {related_grid(related_items)}
