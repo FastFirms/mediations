@@ -26,11 +26,6 @@
       "permanent": true
     },
     {
-      "source": "/adelaide-family-lawyers/",
-      "destination": "/adelaide-mediation/",
-      "permanent": true
-    },
-    {
       "source": "/application-for-divorce/",
       "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
       "permanent": true
@@ -61,18 +56,8 @@
       "permanent": true
     },
     {
-      "source": "/ballarat-family-lawyers/",
-      "destination": "/geelong-mediation/",
-      "permanent": true
-    },
-    {
       "source": "/becoming-independent-sooner-how-mediation-can-help-you-agree-on-spousal-support/",
       "destination": "/spousal-maintenance-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/bendigo-family-lawyers/",
-      "destination": "/bendigo-mediation/",
       "permanent": true
     },
     {
@@ -111,11 +96,6 @@
       "permanent": true
     },
     {
-      "source": "/campbelltown-family-lawyers/",
-      "destination": "/sydney-mediation/",
-      "permanent": true
-    },
-    {
       "source": "/can-you-record-your-ex-without-permission/",
       "destination": "/can-you-record-your-ex/",
       "permanent": true
@@ -123,16 +103,6 @@
     {
       "source": "/can-you-sue-a-family-trust-in-australia/",
       "destination": "/business-in-divorce/",
-      "permanent": true
-    },
-    {
-      "source": "/canberra-family-lawyers/",
-      "destination": "/canberra-mediation/",
-      "permanent": true
-    },
-    {
-      "source": "/central-coast-family-lawyers/",
-      "destination": "/newcastle-mediation/",
       "permanent": true
     },
     {
@@ -188,11 +158,6 @@
     {
       "source": "/create-parenting-plan-that-works/",
       "destination": "/parenting-plans-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/darwin-family-lawyers/",
-      "destination": "/darwin-mediation/",
       "permanent": true
     },
     {
@@ -341,18 +306,8 @@
       "permanent": true
     },
     {
-      "source": "/geelong-family-lawyers/",
-      "destination": "/geelong-mediation/",
-      "permanent": true
-    },
-    {
       "source": "/getting-divorced-or-separated-the-2022-guide/",
       "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/gold-coast-family-lawyers/",
-      "destination": "/gold-coast-mediation/",
       "permanent": true
     },
     {
@@ -373,11 +328,6 @@
     {
       "source": "/high-conflict-family-law-mediation/",
       "destination": "/high-conflict-mediation/",
-      "permanent": true
-    },
-    {
-      "source": "/hobart-family-lawyers/",
-      "destination": "/hobart-mediation/",
       "permanent": true
     },
     {
@@ -506,11 +456,6 @@
       "permanent": true
     },
     {
-      "source": "/ipswich-family-lawyers/",
-      "destination": "/brisbane-mediation/",
-      "permanent": true
-    },
-    {
       "source": "/is-mediation-expensive/",
       "destination": "/how-much-does-mediation-cost/",
       "permanent": true
@@ -526,11 +471,6 @@
       "permanent": true
     },
     {
-      "source": "/launceston-family-lawyers/",
-      "destination": "/launceston-mediation/",
-      "permanent": true
-    },
-    {
       "source": "/lawyer-booking/",
       "destination": "/book-a-consultation/",
       "permanent": true
@@ -543,11 +483,6 @@
     {
       "source": "/make-an-appointment/",
       "destination": "/book-a-consultation/",
-      "permanent": true
-    },
-    {
-      "source": "/mandurah-family-lawyers/",
-      "destination": "/perth-mediation/",
       "permanent": true
     },
     {
@@ -596,18 +531,8 @@
       "permanent": true
     },
     {
-      "source": "/melbourne-family-lawyers/",
-      "destination": "/melbourne-mediation/",
-      "permanent": true
-    },
-    {
       "source": "/my-ex-wont-sign-divorce-papers/",
       "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/newcastle-family-lawyers/",
-      "destination": "/newcastle-mediation/",
       "permanent": true
     },
     {
@@ -643,16 +568,6 @@
     {
       "source": "/parenting-plans-example/",
       "destination": "/parenting-plans-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/penrith-family-lawyers/",
-      "destination": "/sydney-mediation/",
-      "permanent": true
-    },
-    {
-      "source": "/perth-family-lawyers/",
-      "destination": "/perth-mediation/",
       "permanent": true
     },
     {
@@ -713,11 +628,6 @@
     {
       "source": "/resolve-your-property-settlement-with-mediation-in-australia/",
       "destination": "/property-settlement-mediation/",
-      "permanent": true
-    },
-    {
-      "source": "/rockhampton-family-lawyers/",
-      "destination": "/rockhampton-mediation/",
       "permanent": true
     },
     {
@@ -843,16 +753,6 @@
     {
       "source": "/the-role-of-the-lawyer-in-mediation/",
       "destination": "/mediate-or-litigate/",
-      "permanent": true
-    },
-    {
-      "source": "/toowoomba-family-lawyers/",
-      "destination": "/toowoomba-mediation/",
-      "permanent": true
-    },
-    {
-      "source": "/townsville-family-lawyers/",
-      "destination": "/townsville-mediation/",
       "permanent": true
     },
     {
@@ -1058,11 +958,6 @@
     {
       "source": "/why-you-have-to-update-your-will-after-separation/",
       "destination": "/separation-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/wollongong-family-lawyers/",
-      "destination": "/wollongong-mediation/",
       "permanent": true
     }
   ],
