@@ -221,7 +221,7 @@ doc += f"""<main id="main">
   <div class="wrap">
     <div style="max-width:52ch;margin-bottom:48px">
       <p class="sec-tag">Meet the team</p>
-      <h2 style="font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);line-height:1.2;margin-bottom:12px">The people <em>behind every resolution</em></h2>
+      <h2 class="sec-title">The people <em>behind every resolution</em></h2>
       <p style="font-size:1.05rem;color:var(--ink-soft)">Our team brings together nationally accredited mediators and experienced family lawyers — each with a track record of resolving disputes that seemed impossible to settle.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px">
