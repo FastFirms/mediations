@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
                        BOOK_URL, PHONE, PHONE_HREF)
-OUT="/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_article=True):
     extra=article_schema(crumb,desc) if is_article else None
@@ -18,7 +18,7 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_art
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
 <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
 <h1>{h1}</h1><p class="lede">{lede}</p>
-<div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+<div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
 </div></section>
 <div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>
@@ -31,9 +31,9 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_art
 
 # ---- PARENTING PLAN TEMPLATE ----
 build("parenting-plan-template",
- "Parenting Plan Template Australia | What to Include (Free Guide)",
- "A free guide to what belongs in a parenting plan in Australia — living arrangements, time, decisions and more. Build a workable plan with accredited mediators. Free consultation.",
- "Resource",
+ "Parenting Plan Template Australia | What to Include",
+ "A free guide to what belongs in a parenting plan in Australia — living arrangements, time, decisions. Build a plan with accredited mediators.",
+ "A practical starting point for your kids",
  "Parenting Plan Template — <em>what to include</em>, explained.",
  "A good parenting plan covers far more than just who the children live with. This guide walks through everything a thorough parenting plan should address — so you can build arrangements that actually work, and avoid the gaps that cause disputes later.",
  "A parenting plan should cover living arrangements, how time is shared, communication between parents, how major decisions are made, holidays and special occasions, and how future disagreements will be resolved. A mediator can help you turn this into a complete, workable plan.",
@@ -67,13 +67,13 @@ build("parenting-plan-template",
    "Yes. Parenting plans are flexible and can be updated by agreement as children grow and circumstances change — ideally through mediation if you can't agree directly.")],
  "Parenting Plan Template",
  "Build a parenting plan that <em>actually works</em>.",
- "Book a fixed-fee consultation and let an accredited mediator help you create a complete, child-focused parenting plan.")
+ "Book a free initial consultation and let an accredited mediator help you create a complete, child-focused parenting plan.")
 
 # ---- BFA OR CONSENT ORDERS ----
 build("bfa-or-consent-orders",
  "BFA or Consent Orders? | Which Is Right for You (2026 Guide)",
- "Binding financial agreement or consent orders? Compare the two ways to formalise a property settlement in Australia — cost, finality and flexibility. Free consultation.",
- "Resource",
+ "BFA or consent orders? Compare the two ways to formalise a property settlement in Australia — cost, finality and flexibility. Free consultation.",
+ "Know which one to choose before you sign",
  "BFA or Consent Orders — <em>which is right for you</em>?",
  "Once you've agreed how to divide property, you need to make it legally binding — and there are two main routes: consent orders or a binding financial agreement. This guide explains the difference, so you can choose the one that fits your situation.",
  "Consent orders are approved by a court and are generally simpler and cheaper, while a binding financial agreement (BFA) is a private contract that offers more flexibility but requires each party to get independent legal advice. Which is right depends on your circumstances.",
@@ -81,7 +81,7 @@ build("bfa-or-consent-orders",
  <h2>What's the difference between a BFA and consent orders?</h2>
  <p>Both make a property settlement legally binding, but they work differently:</p>
  <ul>
-   <li><strong><a href="/consent-orders/">Consent orders</a></strong> are an agreement approved by the Federal Circuit and Family Court. A registrar checks the division is just and equitable, then makes binding orders — without a hearing. They're generally simpler and lower-cost.</li>
+   <li><strong><a href="/consent-orders/">Consent orders</a></strong> are an agreement approved by the Federal Circuit and Family Court. A registrar checks the division is just and equitable, then makes binding orders — without a hearing. They're generally simpler and lower-cost. See our <a href="/consent-orders-explained/">full guide to consent orders</a>.</li>
    <li><strong><a href="/financial-agreements-mediation/">Binding financial agreements (BFAs)</a></strong> are private contracts between the parties. They offer more flexibility and privacy and can be made before, during or after a relationship — but each party must receive independent legal advice for the agreement to be binding.</li>
  </ul>
  <h2>Which should you choose?</h2>
@@ -110,9 +110,9 @@ build("bfa-or-consent-orders",
 
 # ---- GETTING READY FOR SEPARATION ----
 build("getting-ready-for-separation",
- "Getting Ready for Separation | A Practical Checklist (Australia)",
- "A practical guide to preparing for separation in Australia — finances, children, documents and your wellbeing. Steps to take before you separate. Free consultation.",
- "Resource",
+ "Getting Ready for Separation | Practical Checklist",
+ "A practical guide to preparing for separation in Australia — finances, children, documents and wellbeing. Steps to take before you separate.",
+ "The first steps you take matter most",
  "Getting Ready for Separation — a <em>practical guide</em>.",
  "Separation is overwhelming, but preparation makes it manageable. This practical guide covers the key things to think about before and during separation — from gathering financial documents to protecting your children's wellbeing — so you can move forward with clarity.",
  "To get ready for separation, gather your financial documents, understand your assets and debts, think about parenting arrangements, prioritise your wellbeing and your children's, and get clear on your goals. Early preparation makes mediation and the decisions ahead far smoother.",
@@ -127,7 +127,7 @@ build("getting-ready-for-separation",
    <li><strong>Seek early guidance.</strong> Understanding your options early — including mediation — helps you avoid costly missteps.</li>
  </ol>
  <div class="callout"><h3>You don't have to have it all figured out</h3>
- <p>Many people come to us before they've sorted any of this. A fixed-fee consultation is a good first step — we'll help you understand what to do next, with no obligation.</p></div>
+ <p>Many people come to us before they've sorted any of this. A free initial consultation is a good first step — we'll help you understand what to do next, with no obligation.</p></div>
  <h2>A note on safety</h2>
  <p>If your situation involves family violence or you feel unsafe, your safety comes first. Contact emergency services if you're in immediate danger, and tell us about any concerns so we can advise the safest path — including arrangements that mean you never have to be in the same room as the other person.</p>
  <h2>How mediation fits in</h2>
@@ -143,13 +143,13 @@ build("getting-ready-for-separation",
    "As early as possible. Understanding your options early — including mediation — helps you avoid costly missteps and reduces stress.")],
  "Getting Ready for Separation",
  "Face it <em>prepared</em>, not overwhelmed.",
- "Book a fixed-fee consultation and we'll help you understand exactly what to do next — with no obligation.")
+ "Book a free initial consultation and we'll help you understand exactly what to do next — with no obligation.")
 
 # ---- FAMILY LAW COST ESTIMATOR (content page for now) ----
 build("family-law-cost-estimator",
- "Family Law Cost Estimator | Mediation vs Court Costs (Australia)",
+ "Family Law Cost Estimator | Mediation vs Court Costs",
  "Understand and estimate the cost of resolving a family law matter — mediation versus court. See why mediation costs a fraction of litigation. Free consultation.",
- "Resource",
+ "Resolve this without huge legal costs",
  "Family Law Cost Estimator — <em>mediation vs court</em>.",
  "Worried about what resolving your family law matter will cost? This guide explains the real cost difference between mediation and court — so you can estimate your situation and understand why mediation typically saves tens of thousands of dollars.",
  "Mediation typically costs from a few hundred to a few thousand dollars, usually shared between parties, while a contested family law court case can cost tens of thousands per side and take one to three years. The exact cost depends on complexity, but mediation is almost always far cheaper.",
@@ -164,7 +164,7 @@ build("family-law-cost-estimator",
  <h2>Mediation vs court: the cost difference</h2>
  <p>A contested family law case can cost tens or even hundreds of thousands of dollars per side once two sets of lawyers bill by the hour over one to three years. Mediation, by contrast, typically resolves in one or two sessions, with a fixed fee usually shared between the parties — frequently the difference between a few thousand dollars total and a six-figure litigation bill. The money you save is money that stays with your family. <a href="/our-fee-structure/">See our transparent fee structure →</a></p>
  <div class="callout"><h3>Get a real estimate for your situation</h3>
- <p>Every matter is different. The most accurate way to understand your likely cost is a fixed-fee consultation, where we assess your circumstances and explain the options clearly — with no obligation. An interactive estimator is coming soon; for now, a quick call gives you a far more accurate picture.</p></div>
+ <p>Every matter is different. The most accurate way to understand your likely cost is a free initial consultation, where we assess your circumstances and explain the options clearly — with no obligation. An interactive estimator is coming soon; for now, a quick call gives you a far more accurate picture.</p></div>
  <h2>Why early resolution saves the most</h2>
  <p>Costs in family law compound over time — the longer a dispute runs, the more it costs emotionally and financially. Resolving early through <a href="/family-law-mediation/">mediation</a> is the most reliable way to keep costs down and protect the asset pool you're dividing.</p>
  """,
@@ -175,46 +175,89 @@ build("family-law-cost-estimator",
   ("Is the cost shared between parties?",
    "Mediation fees are usually shared, making the process more affordable for everyone. Litigation, by contrast, means each side carries its own substantial legal bill."),
   ("How can I get an accurate cost estimate?",
-   "Book a fixed-fee consultation. Because every matter differs, a short conversation gives a far more accurate estimate than any generic calculator.")],
+   "Book a free initial consultation. Because every matter differs, a short conversation gives a far more accurate estimate than any generic calculator.")],
  "Family Law Cost Estimator",
  "See what you could <em>save</em>.",
- "Book a fixed-fee consultation for an honest estimate of what resolving your matter will cost — and how much mediation can save you.")
+ "Book a free initial consultation for an honest estimate of what resolving your matter will cost — and how much mediation can save you.")
 
 # ---- SEPARATION UNDER ONE ROOF ----
 build("separation-under-one-roof",
  "Separation Under One Roof | How It Works in Australia",
  "Separated but still living together? Learn how separation under one roof works in Australia, what you need to show, and how mediation helps. Free consultation.",
- "Resource",
+ "Managing together until you can live apart",
  "Separation Under One Roof — <em>how it works</em>.",
  "Many couples separate while still living in the same home — for financial reasons, for the children, or while they sort out next steps. This guide explains how 'separation under one roof' is recognised in Australia and how to handle it.",
  "Separation under one roof means a couple has separated but continues to live in the same home. It is recognised in Australia, but you may need to show that the relationship has genuinely ended — through changes in finances, sleeping arrangements, and how you present to others.",
  """
  <h2>What is separation under one roof?</h2>
- <p>It's when a couple decides their relationship is over but continues, at least for a time, to live in the same house. This is common and entirely valid — people stay under one roof for financial reasons, for stability for the children, or simply while they work out what comes next.</p>
+ <p>"Separation under one roof" describes a couple who have decided their relationship is over but continue, at least for a time, to live in the same home. It is common and entirely valid. People stay under one roof for financial reasons — running two households is expensive — for the stability of the children, while a property settlement is sorted out, or simply because finding somewhere else to live takes time.</p>
+ <p>What matters legally is not whether you share an address, but whether the relationship has genuinely ended. In Australia you can be separated for every legal purpose — divorce, property settlement, Centrelink — while still sleeping under the same roof, provided you can show the marriage or de facto relationship is over in substance.</p>
+
+ <h2>Is separation under one roof legally recognised in Australia?</h2>
+ <p>Yes. Under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, separation happens when at least one person forms the intention to end the relationship, communicates that to the other, and acts on it. Nothing in the law requires you to live at different addresses. The courts have long accepted that a couple can be "separated but living under the same roof", and the <a href="https://www.fcfcoa.gov.au/fl/divorce" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a> has a specific process for proving it when you apply for a divorce.</p>
+ <p>This matters because a divorce in Australia requires you to be separated for at least <strong>12 months and one day</strong> before you can apply. Time spent separated under one roof counts towards that 12 months — you just need to be able to evidence it.</p>
+
  <h2>How do you show you've genuinely separated?</h2>
- <p>Because you're still living together, you may need to demonstrate the relationship has actually ended. Factors that help show genuine separation include:</p>
- <ul>
-   <li>Separate sleeping arrangements</li>
-   <li>Changes to how finances are handled — separate accounts, divided expenses</li>
-   <li>A reduction in shared activities and domestic tasks done for each other</li>
-   <li>Telling family and friends, and relevant government agencies, that you've separated</li>
-   <li>Each person living a more independent life within the home</li>
- </ul>
+ <p>Because you're still living together, you may need to demonstrate that the relationship has actually ended rather than merely become strained. No single factor is decisive; a court or agency looks at the overall picture across several areas of life.</p>
+ <figure class="tbl"><table><caption>What changes when a couple separates under one roof</caption>
+ <thead><tr><th>Area of life</th><th>What genuine separation can look like</th></tr></thead>
+ <tbody>
+ <tr><td>Sleeping arrangements</td><td>Separate bedrooms, or one partner moving to another part of the home</td></tr>
+ <tr><td>Finances</td><td>Separate bank accounts, divided bills, no longer pooling income</td></tr>
+ <tr><td>Household tasks</td><td>Each person cooks, cleans and shops for themselves rather than for the couple</td></tr>
+ <tr><td>Social life</td><td>Attending events separately; no longer presenting as a couple</td></tr>
+ <tr><td>Others' knowledge</td><td>Family, friends and agencies such as Centrelink have been told you've separated</td></tr>
+ </tbody></table></figure>
+ <p>You don't need every box ticked. The point is to show a consistent pattern that the relationship has ended, not just a rough patch. Keeping a brief note of when things changed — when you moved to a separate room, when you split the accounts — makes this far easier to evidence later.</p>
  <div class="callout"><h3>The date of separation matters</h3>
- <p>Your date of separation can affect time limits for property and divorce applications. If you're separated under one roof, it's worth getting clarity early so you understand your position.</p></div>
+ <p>Your date of separation sets the clock running on time limits for both divorce and property. It can also affect Centrelink entitlements and how assets are valued. If you're separated under one roof, pin the date down early so you understand exactly where you stand.</p></div>
+
+ <h2>The affidavit you'll need when you apply for divorce</h2>
+ <p>When you have lived under the same roof during the 12-month separation period, the court won't simply take your word for it. You will usually need to file an <strong>affidavit</strong> setting out the changes in your relationship — sleeping arrangements, finances, household duties and social life — together with a <strong>corroborating affidavit from an independent person</strong>, such as a friend or family member, who can confirm they understood you to be separated. The <a href="https://www.fcfcoa.gov.au/fl/divorce" target="_blank" rel="noopener">FCFCOA divorce process</a> sets out exactly what these affidavits should cover.</p>
+ <p>It sounds onerous, but in practice it is a short, factual statement. The earlier you have clarity on your separation date and the changes that followed, the simpler this step becomes.</p>
+
+ <h2>How your separation date affects time limits</h2>
+ <p>Separation isn't only about divorce. It also starts the clock on the deadlines for finalising a property settlement, and those deadlines differ for married and de facto couples.</p>
+ <figure class="tbl"><table><caption>Key time limits that run from your separation or divorce date</caption>
+ <thead><tr><th>Step</th><th>Married couples</th><th>De facto couples</th></tr></thead>
+ <tbody>
+ <tr><td>Apply for divorce</td><td>After 12 months' separation</td><td>Not applicable</td></tr>
+ <tr><td>Apply for a property settlement</td><td>Within 12 months of divorce becoming final</td><td>Within 24 months of separation</td></tr>
+ <tr><td>Parenting arrangements</td><td>No time limit</td><td>No time limit</td></tr>
+ </tbody></table></figure>
+ <p>Applying after a deadline isn't impossible, but you need the court's permission, which adds cost and uncertainty. If a deadline is approaching, it is worth formalising arrangements while everyone is still cooperating. <a href="/property-settlement-after-separation/">Read our property settlement guide →</a></p>
+
+ <h2>Centrelink, tax and finances while under one roof</h2>
+ <p>Once you separate, you may be assessed as a single person for some payments even if you still share an address. <a href="https://www.servicesaustralia.gov.au/separating" target="_blank" rel="noopener">Services Australia</a> can recognise you as separated under one roof and may ask for a separation form and supporting details. Being upfront and consistent — the same separation date you'd give the court — keeps things clean across the board and avoids problems down the track.</p>
+
+ <h2>Living together while separated: practical tips</h2>
+ <p>The arrangement works best when expectations are clear. A few things make a real difference:</p>
+ <ul>
+   <li><strong>Agree on space and schedules</strong> — who uses common areas when, and how you'll handle meals, laundry and the bathroom.</li>
+   <li><strong>Separate your money early</strong> — open individual accounts and divide responsibility for bills so nothing falls through the cracks.</li>
+   <li><strong>Keep the children's routine steady</strong> — shield them from conflict and present a united, calm front about the practical changes.</li>
+   <li><strong>Document the change</strong> — note your separation date and the adjustments that followed, which helps with both divorce and Centrelink later.</li>
+   <li><strong>Plan the exit</strong> — treat the shared-roof period as temporary and agree a rough timeline for one person to move on.</li>
+ </ul>
+
  <h2>How mediation helps when you're still living together</h2>
- <p>Living together while separated can be tense. <a href="/family-law-mediation/">Mediation</a> provides a structured, neutral way to agree on living arrangements, finances and parenting while you remain under the same roof — and to plan the transition out of it. If being in the same room is difficult, mediation can be conducted in separate rooms or online. <a href="/getting-ready-for-separation/">See getting ready for separation →</a></p>
+ <p>Living together while separated can be tense, and small frictions — bills, the school run, who uses the kitchen when — can escalate quickly. <a href="/family-law-mediation/">Mediation</a> provides a structured, neutral way to agree on living arrangements, finances and parenting while you remain under the same roof, and to plan an orderly transition out of it.</p>
+ <p>A mediator can help you set practical ground rules for the household, work towards a <a href="/property-settlement-mediation/">property settlement</a> and <a href="/parenting-plan-mediation/">parenting arrangements</a>, and reach agreements you can later formalise as <a href="/consent-orders-explained/">consent orders</a>. If being in the same room is difficult, mediation can be conducted in separate rooms (shuttle mediation) or online. <a href="/getting-ready-for-separation/">See getting ready for separation →</a></p>
  """,
  [("Can you be separated while living together?",
-   "Yes. 'Separation under one roof' is recognised in Australia. You may need to show the relationship has genuinely ended despite living in the same home."),
+   "Yes. 'Separation under one roof' is recognised in Australia under the Family Law Act 1975. You may need to show the relationship has genuinely ended despite living in the same home."),
   ("How do you prove separation under one roof?",
-   "Through factors like separate sleeping arrangements, separated finances, reduced shared activities, and informing family, friends and relevant agencies that you've separated."),
+   "Through factors like separate sleeping arrangements, separated finances, reduced shared activities, and informing family, friends and relevant agencies that you've separated. When applying for divorce you'll usually file an affidavit, plus a corroborating affidavit from an independent person."),
+  ("Does time separated under one roof count towards the 12 months for divorce?",
+   "Yes. A divorce requires 12 months and one day of separation, and time spent separated under the same roof counts — provided you can evidence that the relationship had genuinely ended."),
   ("Why does the date of separation matter?",
-   "It can affect time limits for divorce and property applications. Getting clarity on your separation date early helps you understand your legal position."),
+   "It can affect time limits for divorce and property applications, Centrelink entitlements, and how assets are valued. Getting clarity on your separation date early helps you understand your legal position."),
+  ("Can you still claim Centrelink as separated if you live together?",
+   "You may be assessed as single even while sharing an address. Services Australia can recognise separation under one roof and may ask for a separation form and supporting details."),
   ("Can we mediate while still living together?",
-   "Yes. Mediation can help you agree on arrangements while under one roof, and can be conducted in separate rooms or online if being together is difficult.")],
+   "Yes. Mediation can help you agree on living arrangements, finances and parenting while under one roof, and can be conducted in separate rooms or online if being together is difficult.")],
  "Separation Under One Roof",
  "Living together, living apart — <em>we can help</em>.",
- "Book a fixed-fee consultation to work out living, financial and parenting arrangements while you're separated under one roof.")
+ "Book a free initial consultation to work out living, financial and parenting arrangements while you're separated under one roof.")
 
 print("Resource pages built.")

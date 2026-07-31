@@ -6,6 +6,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
                        BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
+from authority_sources import cite
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ---- Inline CTA components that punctuate blog content ----
@@ -19,7 +20,10 @@ def inline_cta(text, btn="Book a free consultation"):
 </div>"""
 
 def callout(h, p):
-    return f'<div class="callout"><h3>{h}</h3><p>{p}</p></div>'
+    # Decorative sage callout boxes removed site-wide — they rendered as a large
+    # green panel with little informational value. Kept as a no-op so the many
+    # existing callout(...) calls across the batch files stay valid.
+    return ''
 
 def key_takeaway(text):
     return f'<div class="answer reveal"><p><strong>Key takeaway:</strong> {text}</p></div>'
@@ -29,6 +33,13 @@ POST_CSS = """
 .post-hero{padding:36px 0 8px}
 .post-meta{display:flex;gap:16px;align-items:center;font-size:.9rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
 .post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 14px;border-radius:100px;font-weight:600;font-size:.82rem}
+.author-byline{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:18px;border-top:1px solid var(--sand-deep)}
+.author-byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-byline div{display:flex;flex-direction:column;gap:2px}
+.author-name{font-weight:600;font-size:.95rem;color:var(--ink)}
+.author-name a{color:inherit;text-decoration:none}
+.author-name a:hover{color:var(--sage-deep)}
+.author-cred{font-size:.82rem;color:var(--ink-soft)}
 .post-body{padding:30px 0 60px}
 .post-body h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:42px 0 14px}
 .post-body h2:first-child{margin-top:0}
@@ -43,6 +54,8 @@ POST_CSS = """
 .post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
 .post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
 .post-body a:hover{color:var(--terra)}
+/* Buttons inside article body must keep white label, not the green underlined link style */
+.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
 .post-cta{margin:36px 0}
 .post-cta-inner{background:linear-gradient(135deg,var(--sage-deep),var(--sage));color:var(--cream);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--cream);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}
@@ -92,9 +105,16 @@ def post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=
 {crumb_html([("Home",""),("Guides","guides"),(h1[:48]+("…" if len(h1)>48 else ""),None)])}
 <article>
 <header class="post-hero"><div class="wrap-narrow">
-  <div class="post-meta"><span class="cat">{esc(category)}</span><span>{read_min} min read</span><span>Reviewed by Mediations Australia</span></div>
+  <div class="post-meta"><span class="cat">{esc(category)}</span><span>{read_min} min read</span></div>
   <h1>{h1}</h1>
   <p class="lede" style="margin-top:16px">{dek}</p>
+  <div class="author-byline">
+    <img src="/assets/images/dan-toombs.png" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
+    <div>
+      <span class="author-name"><a href="/our-mediators/">Dan Toombs</a></span>
+      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS · Multi-Award Winning Lawyer</span>
+    </div>
+  </div>
 </div></header>
 <div class="post-body"><div class="wrap-narrow">
 {toc_html}
@@ -106,8 +126,8 @@ def post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=
     # final strong CTA band
     d+=f"""<section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
-<p>Book a fixed-fee consultation and get honest, expert advice on your situation — with no obligation.</p>
-<a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book your free consultation <span class="arr">→</span></a>
+<p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
+<a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
 </div></div></section>"""
     d+="</main>"+page_end()
     p=os.path.join(OUT,slug); os.makedirs(p,exist_ok=True)
@@ -121,7 +141,7 @@ print("blog engine ready")
 # ============================================================
 post("cost-of-divorce-in-australia",
  "How Much Does Divorce Cost in Australia? (2026 Guide)",
- "How much does divorce cost in Australia in 2026? A full breakdown of court filing fees, lawyer hourly rates, expert reports, property settlement and mediation costs — with how to save tens of thousands.",
+ "How much does divorce cost in 2026? Court fees, lawyer rates, property settlement and mediation costs — and how to save tens of thousands.",
  "Costs &amp; fees",
  "How Much Does Divorce Cost in Australia? <em>(2026 Guide)</em>",
  "A divorce in Australia can cost anywhere from around $1,100 for a straightforward application to well over $100,000 for a contested case involving property and children. This guide breaks down every cost you may face — filing fees, lawyer rates, expert reports and property settlement — and shows exactly how mediation keeps the total down.",
@@ -134,7 +154,7 @@ post("cost-of-divorce-in-australia",
   ("managing-costs","How to manage your divorce costs")],
  key_takeaway("The divorce application itself is a fixed government fee of around $1,100 (or about $375 with a concession). The costs that vary enormously are legal representation, expert reports and property disputes — where a contested case can exceed $100,000 per side. Mediation typically resolves matters for $3,500–$4,500 in total, shared between parties.")
  + """
-<p>Some marriages break down beyond repair, and divorce brings both emotional and financial strain. To put it in context, the <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener">Australian Bureau of Statistics</a> recorded roughly 48,000–49,000 divorces granted in a recent year, and independent reporting has put the cost of a typical divorce somewhere between $10,000 and $20,000 — though once property and parenting disputes are added, the total can climb past $100,000. Understanding where the money actually goes is the first step to keeping your own costs under control.</p>
+<p>Some marriages break down beyond repair, and divorce brings both emotional and financial strain. To put it in context, the <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener">Australian Bureau of Statistics</a> recorded roughly 48,000–49,000 divorces granted in a recent year, and independent reporting has put the cost of a typical divorce somewhere between $10,000 and $20,000 — though once property and parenting disputes are added, the total can climb past $100,000. Understanding where the money actually goes is the first step to keeping your own costs under control — and as you'll see, <a href="/divorce-mediation/">divorce mediation</a> is the single biggest lever for bringing the total down.</p>
 <p class="source-note">Sources: <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener">ABS Marriages and Divorces, Australia</a>; <a href="https://www.fcfcoa.gov.au/fl/fees/fl-fees" target="_blank" rel="noopener">FCFCOA fee schedule</a>.</p>
 
 <h2 id="understanding-divorce">Understanding divorce in Australia</h2>
@@ -148,7 +168,7 @@ post("cost-of-divorce-in-australia",
 </ul>
 <p>You can file a <strong>joint application</strong> (both parties agree) or a <strong>sole application</strong> (one spouse applies and serves the other). Where there are children under 18, the court must also be satisfied that proper arrangements are in place for their care — which is where <a href="/parenting-plan-mediation/">a parenting plan</a> becomes important.</p>
 """
- + inline_cta("Not sure what your separation will actually cost? Get a clear, honest estimate in a fixed-fee consultation.")
+ + inline_cta("Not sure what your separation will actually cost? Get a clear, honest estimate in a free initial consultation.")
  + """
 <h2 id="filing-fees">Filing fees and fee reductions</h2>
 <p>Every divorce begins with the application fee. As set by federal regulations, the <a href="https://www.fcfcoa.gov.au/fl/fees/fl-fees" target="_blank" rel="noopener">standard divorce filing fee</a> is approximately $1,100, with a reduced fee of around $375 for eligible applicants. The fee is fixed — it's the same regardless of how complex your circumstances are.</p>
@@ -226,6 +246,27 @@ post("cost-of-divorce-in-australia",
 """
  + inline_cta("Most disputes resolve in one or two mediation sessions — for a fraction of court costs. Find out if yours can too.")
  + """
+<h2 id="cost-timeline">Costs stage by stage: what to expect and when</h2>
+<p>One reason divorce costs catch people off guard is that they don't arrive all at once. Here's how costs typically accumulate across the life of a separation:</p>
+<figure class="tbl"><table><caption>Stage-by-stage divorce cost timeline (AUD)</caption>
+<thead><tr><th>Stage</th><th>Typical timeframe</th><th>Key costs</th><th>Estimated range</th></tr></thead>
+<tbody>
+<tr><td>Initial advice &amp; filing</td><td>Months 1–3</td><td>Divorce application, initial legal consultation</td><td>$1,100–$3,000</td></tr>
+<tr><td>Disclosure &amp; negotiation</td><td>Months 2–6</td><td>Document gathering, financial disclosure, correspondence</td><td>$3,000–$8,000</td></tr>
+<tr><td>Mediation (if chosen)</td><td>Months 2–4</td><td>Mediator fees, heads of agreement</td><td>$3,500–$7,000 total</td></tr>
+<tr><td>Formalising the agreement</td><td>Months 4–8</td><td>Consent orders, BFA, property transfer stamp duty</td><td>$2,000–$6,000</td></tr>
+<tr><td>Contested court (if litigation)</td><td>Months 6–36+</td><td>Hearing fees, expert reports, ongoing legal representation</td><td>$30,000–$100,000+ per side</td></tr>
+</tbody></table></figure>
+<p>The biggest variable is whether the matter stays out of court. Couples who reach agreement through mediation typically complete the process in months two to four, before the most expensive stages ever materialise.</p>
+
+<h2 id="case-comparison">Two families, very different bills</h2>
+<p>To make the numbers concrete, consider two couples with broadly similar situations — a shared home, superannuation, and one child.</p>
+<p><strong>Family A — settled through mediation:</strong> After a free initial consultation, both parties engaged a mediator. One full-day session resolved the property split, super division and parenting arrangements. The agreement was formalised through consent orders. Total cost shared between both parties: approximately $9,000–$12,000, including legal fees for drafting the orders.</p>
+<p><strong>Family B — contested through court:</strong> Unable to reach agreement, Family B each retained separate solicitors. The matter took 22 months to resolve, involved a family report ($3,300 per party), three directions hearings, a property valuation and a contested trial. Each party spent in excess of $60,000 in legal fees — a combined total of over $120,000, not including the emotional cost to the child and both parents.</p>
+<p>The legal outcome for both families was broadly comparable. The process was not. <a href="/divorce-mediation/">See how divorce mediation works →</a></p>
+"""
+ + inline_cta("Your situation may be closer to Family A than you think. Find out in a free 20-minute call.")
+ + """
 <h2 id="managing-costs">How to manage your divorce costs</h2>
 <ol>
   <li><strong>Try mediation before litigation.</strong> It's the single most effective way to control costs — and for parenting matters, <a href="https://www.fcfcoa.gov.au/fl/fdr" target="_blank" rel="noopener">family dispute resolution is generally required</a> anyway.</li>
@@ -260,8 +301,8 @@ post("cost-of-divorce-in-australia",
 # CORNERSTONE POST 2 — Mediation with a narcissist
 # ============================================================
 post("mediation-with-a-narcissist",
- "Mediation With a Narcissist: Does It Work? (Expert Guide 2026)",
- "Can mediation work with a narcissistic or highly controlling ex? Yes — and often better than court. The tactics to expect, proven strategies, how to prepare, and when mediation isn't safe.",
+ "Mediation With a Narcissist: Does It Work? (2026)",
+ "Can mediation work with a narcissistic ex? Yes — often better than court. The tactics to expect, how to prepare, and when mediation isn't safe.",
  "High-conflict",
  "Mediation With a Narcissist: <em>Does It Actually Work?</em>",
  "It's one of the most common questions we're asked — and the answer surprises people. Mediation with a narcissistic or highly controlling ex can absolutely work, and often delivers better outcomes than court. But it must be done the right way, with the right mediator and the right preparation. Here's everything you need to know.",
@@ -348,7 +389,7 @@ post("mediation-with-a-narcissist",
 # ============================================================
 post("what-am-i-entitled-to-in-a-separation-in-australia",
  "What Am I Entitled To in a Separation in Australia? (2026)",
- "What are you entitled to when you separate in Australia? A full guide to how property, superannuation and support are divided under the four-step process — and how to reach a fair split without court.",
+ "What are you entitled to when you separate in Australia? How property, superannuation and support are divided — and how to reach a fair split without court.",
  "Property &amp; finances",
  "What Am I Entitled To in a Separation in Australia?",
  "There is no fixed formula and no automatic 50/50 split in Australian family law. What you're entitled to depends on the total asset pool, each person's contributions, your future needs, and what's fair overall. This guide explains exactly how entitlements are worked out — and how to reach a fair outcome without a court battle.",
@@ -366,7 +407,7 @@ post("what-am-i-entitled-to-in-a-separation-in-australia",
 <p>One of the most persistent myths about separation is that assets are simply halved. They are not. Australian family law, under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, doesn't apply a fixed percentage. Instead it asks a broader question: what division is just and equitable given everything about this particular relationship? Depending on the facts, a fair result might be an even split, or it might be weighted 60/40 or 70/30 toward one party.</p>
 <p>This is actually good news. It means your individual circumstances — what you contributed, what you'll need going forward — genuinely matter, rather than being flattened into a mechanical formula.</p>
 """
- + inline_cta("Want to know what a fair split looks like in your situation? Get a clear picture in a fixed-fee consultation.")
+ + inline_cta("Want to know what a fair split looks like in your situation? Get a clear picture in a free initial consultation.")
  + """
 <h2 id="four-steps">The four-step process explained</h2>
 <p>Both courts and mediators work through the same four-step framework to determine entitlements:</p>
@@ -455,7 +496,7 @@ post("what-am-i-entitled-to-in-a-separation-in-australia",
 # ============================================================
 post("how-long-does-mediation-take",
  "How Long Does Mediation Take in Australia? (2026 Guide)",
- "How long does mediation take in Australia? Most disputes resolve in one or two sessions within a few weeks — versus one to three years in court. Full timeline, what affects it, and how to speed it up.",
+ "How long does mediation take? Most disputes resolve in one or two sessions — versus years in court. Full timeline, what affects it, and how to speed it up.",
  "The process",
  "How Long Does Mediation Take?",
  "Most family law mediations resolve in just one or two sessions, often within a few weeks of starting. Compare that to the one to three years a contested court case can take, and the appeal is obvious. This guide walks through the realistic timeline, what speeds it up or slows it down, and how it stacks up against litigation.",
@@ -463,26 +504,29 @@ post("how-long-does-mediation-take",
   ("single-session","How long is a single session?"),
   ("what-affects","What affects how long it takes"),
   ("vs-court","How that compares to court"),
+  ("by-type","Timeline by dispute type"),
   ("complex","What about complex matters?"),
+  ("formalising","Formalising the agreement"),
   ("speed-it-up","How to speed things up")],
  key_takeaway("Most mediations resolve in one to two sessions, frequently within a few weeks. A single session runs from a couple of hours to a full day. Complex financial matters may need more time, but even then mediation is dramatically faster than the one to three years a contested court case typically takes.")
- + """
+ + f"""
 <h2 id="typical-timeline">The typical mediation timeline</h2>
 <p>From first contact to a signed, binding agreement, mediation usually moves quickly. Here's the realistic shape of it:</p>
-<figure class="tbl"><table><caption>Typical mediation timeline</caption>
+<figure class='tbl'><table><caption>Typical mediation timeline</caption>
 <thead><tr><th>Stage</th><th>Typical timeframe</th></tr></thead>
 <tbody>
-<tr><td>Initial consultation</td><td>Booked within days; a fixed-fee session</td></tr>
+<tr><td>Initial consultation</td><td>Booked within days; free, no obligation</td></tr>
 <tr><td>Preparation &amp; intake</td><td>1–3 weeks (gathering documents, inviting the other party)</td></tr>
 <tr><td>The mediation session</td><td>Usually a single day</td></tr>
 <tr><td>Formalising the agreement</td><td>Consent orders prepared and lodged afterwards</td></tr>
 </tbody></table></figure>
-<p>For many couples the substantive process — from booking to agreement — is complete within a few weeks. <a href="/how-mediation-works/">See the full step-by-step process →</a></p>
+<p>For many couples the substantive process — from booking to agreement — is complete within a few weeks. <a href='/how-mediation-works/'>See the full step-by-step process →</a></p>
 """
  + inline_cta("Ready to resolve things in weeks, not years? Book a consultation and we'll map out your timeline.")
  + """
 <h2 id="single-session">How long is a single session?</h2>
 <p>A typical mediation session runs anywhere from two or three hours to a full day, depending on the number of issues and the level of agreement going in. Parenting-only matters can sometimes be resolved in a half-day; a full property settlement often uses a full day. Many matters are designed around a single full-day session that produces a Heads of Agreement by the end.</p>
+<p>The session itself is structured but not rushed. The mediator opens proceedings, confirms what's on the table, and works through issues methodically — giving both parties time to think, confer privately, and make informed decisions. There is no judicial pressure to finish fast. The pace is calibrated to reaching a durable outcome, not just any outcome.</p>
 
 <h2 id="what-affects">What affects how long it takes</h2>
 <ul>
@@ -491,26 +535,54 @@ post("how-long-does-mediation-take",
   <li><strong>Quality of preparation</strong> — having documents and financial disclosure ready dramatically shortens the process.</li>
   <li><strong>Both parties' willingness</strong> — genuine engagement from both sides is the single biggest accelerator.</li>
   <li><strong>Whether valuations are needed</strong> — waiting on a property or business valuation can add a few weeks.</li>
+  <li><strong>Whether legal advice is sought between sessions</strong> — entirely reasonable, though it adds time if parties need to pause and consult.</li>
 </ul>
 """
  + callout("Even a partial agreement saves time",
    "If mediation doesn't resolve absolutely everything, it almost always narrows the issues — meaning a faster, cheaper process for anything that does proceed. Nothing invested in mediation is wasted.")
- + """
+ + f"""
 <h2 id="vs-court">How that compares to court</h2>
-<p>The contrast is stark. A contested family law matter can take one to three years to reach a final hearing, with multiple interim court dates, adjournments and long waiting periods in between (see the <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>). Court lists in the busier registries are <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">heavily backed up</a>, which only adds to the delay. Most parenting matters also require <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">family dispute resolution</a> before filing.</p>
-<p>Mediation compresses all of that into a matter of weeks. The time saved isn't just a convenience — it means far less stress, dramatically lower cost, and a faster fresh start for everyone involved, especially the children. <a href="/cost-of-divorce-in-australia/">See how that time saving translates into cost savings →</a></p>
+<p>The contrast is stark. A contested family law matter can take one to three years to reach a final hearing, with multiple interim court dates, adjournments and long waiting periods in between (see the {cite("fcfcoa")}). Court lists in the busier registries are heavily backed up, which only adds to the delay. Most parenting matters also require {cite("ag_fdr")} before filing.</p>
+<p>Mediation compresses all of that into a matter of weeks. The time saved isn't just a convenience — it means far less stress, dramatically lower cost, and a faster fresh start for everyone involved, especially the children. <a href='/cost-of-divorce-in-australia/'>See how that time saving translates into cost savings →</a></p>
+<figure class='tbl'><table><caption>Mediation vs. court: time and cost comparison</caption>
+<thead><tr><th>Factor</th><th>Mediation</th><th>Contested court</th></tr></thead>
+<tbody>
+<tr><td>Time to resolution</td><td>Weeks to a few months</td><td>1–3 years</td></tr>
+<tr><td>Number of formal sessions</td><td>1–3 sessions</td><td>Multiple hearings over years</td></tr>
+<tr><td>Cost (typical)</td><td>$2,000–$8,000 total</td><td>$50,000–$200,000+</td></tr>
+<tr><td>Who decides the outcome</td><td>You and your former partner</td><td>A judge</td></tr>
+<tr><td>Privacy</td><td>Confidential</td><td>Public court record</td></tr>
+</tbody></table></figure>
 """
  + inline_cta("Why wait years for a court date? Most mediations finish in weeks. Find out how fast yours could be.")
  + """
-<h2 id="complex">What about complex matters?</h2>
-<p>Some matters genuinely need more than one session — a large or contested asset pool, a family business requiring valuation, or a high-conflict dynamic. Even then, mediation typically spans a few sessions over a few weeks, not the years a contested trial would consume. Where one issue remains stuck, <a href="/family-law-arbitration/">arbitration</a> can deliver a binding decision on that point quickly, without a full court case.</p>
+<h2 id="by-type">Timeline by dispute type</h2>
+<p>Not all mediations are the same. Here's a realistic sense of how timelines vary by the nature of the dispute:</p>
+<ul>
+  <li><strong>Parenting arrangements only</strong> — often resolved in a single half- to full-day session. A straightforward parenting plan can be documented and formalised quickly once both parties agree on core arrangements.</li>
+  <li><strong>Property settlement (straightforward pool)</strong> — a single full day is the norm, with consent orders prepared in the weeks following. Total elapsed time from booking to binding agreement: four to eight weeks.</li>
+  <li><strong>Property settlement (complex pool)</strong> — where there are businesses, trusts, superannuation interests, or contested valuations, expect two to three sessions spread over several weeks, plus time for an independent valuation if needed.</li>
+  <li><strong>Combined parenting and property</strong> — a full-day session covering both issues is common, though complex combinations may require follow-up.</li>
+  <li><strong>Workplace or commercial disputes</strong> — typically a single session of a few hours, often less contentious once the parties are in the room with a skilled mediator.</li>
+</ul>
 
+<h2 id="complex">What about complex matters?</h2>
+<p>Some matters genuinely need more than one session — a large or contested asset pool, a family business requiring valuation, or a high-conflict dynamic. Even then, mediation typically spans a few sessions over a few weeks, not the years a contested trial would consume. Where one issue remains genuinely stuck after good-faith mediation, <a href='/family-law-arbitration/'>arbitration</a> can deliver a binding decision on that specific point quickly, without launching a full court case.</p>
+<p>High-conflict situations don't disqualify mediation — they just shape the format. Shuttle mediation (where parties are kept in separate rooms and the mediator moves between them) is specifically designed for situations where direct negotiation is difficult or inappropriate. It takes the same amount of clock time but removes the pressure of face-to-face engagement. <a href='/shuttle-mediation-guide/'>See shuttle mediation →</a></p>
+
+<h2 id="formalising">Formalising the agreement</h2>
+<p>An agreement reached in mediation doesn't become legally binding the moment you shake hands — it needs to be formalised. For parenting matters, this typically means a parenting plan or consent orders. For property, <a href='/consent-orders-explained/'>consent orders</a> or a binding financial agreement are the two routes. This step usually takes a few additional weeks but is straightforward when the agreement is clear. We guide clients through it as part of the process — the mediation day is the difficult part; formalisation is largely administrative. <a href='/preparing-for-mediation/'>See how to prepare for your session →</a></p>
+"""
+ + inline_cta("From booking to binding agreement in weeks. Let's map out your timeline — book a consultation today.")
+ + """
 <h2 id="speed-it-up">How to speed things up</h2>
 <ol>
-  <li><strong>Come prepared.</strong> Gather financial documents and think through your goals before you start. <a href="/preparing-for-mediation/">See how to prepare →</a></li>
-  <li><strong>Choose online mediation.</strong> <a href="/online-divorce/">Online sessions</a> remove travel and are far easier to schedule.</li>
-  <li><strong>Complete disclosure early.</strong> Having full financial disclosure ready avoids mid-process delays.</li>
+  <li><strong>Come prepared.</strong> Gather financial documents and think through your goals before you start. <a href='/preparing-for-mediation/'>See how to prepare →</a></li>
+  <li><strong>Choose online mediation.</strong> <a href='/online-divorce/'>Online sessions</a> remove travel and are far easier to schedule quickly.</li>
+  <li><strong>Complete disclosure early.</strong> Having full financial disclosure ready avoids mid-process delays — both parties have a legal duty to disclose.</li>
   <li><strong>Focus on outcomes, not blame.</strong> The faster both parties move past grievances, the faster you resolve.</li>
+  <li><strong>Get any valuations done before the session.</strong> Arriving with an agreed or independent property valuation removes a common bottleneck.</li>
+  <li><strong>Brief your mediator in advance.</strong> A pre-session call with the mediator lets them identify potential sticking points and prepare accordingly.</li>
 </ol>
 <p>Done well, mediation turns what could be years of litigation into a few focused weeks — and leaves you in control of the outcome the whole way through.</p>
 """
@@ -524,13 +596,15 @@ post("how-long-does-mediation-take",
   ("What if we don't finish in one session?",
    "Some matters, especially complex financial ones, need a follow-up session. Even then it's far faster than litigation, and any progress narrows the remaining issues."),
   ("How quickly can I get started?",
-   "An initial consultation can usually be booked within days, and the mediation itself scheduled within a few weeks once both parties are ready.")],
+   "An initial consultation can usually be booked within days, and the mediation itself scheduled within a few weeks once both parties are ready."),
+  ("How long does it take to formalise a mediation agreement?",
+   "A few weeks after the session. Consent orders or a binding financial agreement are prepared once the Heads of Agreement is signed — the process is straightforward when the agreement is clear.")],
  [("how-mediation-works","How Mediation Works"),
   ("preparing-for-mediation","Preparing for Mediation"),
   ("online-divorce","Online Mediation"),
   ("cost-of-divorce-in-australia","Cost of Divorce"),
   ("family-law-arbitration","Family Law Arbitration"),
   ("family-law-mediation","Family Law Mediation")],
- read_min=8)
+ read_min=10)
 
 print("\nCornerstone posts (batch 1) built.")

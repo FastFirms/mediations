@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, service_schema,
                        BOOK_URL, PHONE, PHONE_HREF)
-OUT="/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p):
     schema=[org_schema(),breadcrumb_schema([("Home",""),(crumb,slug)]),
@@ -16,7 +16,7 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p):
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
 <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
 <h1>{h1}</h1><p class="lede">{lede}</p>
-<div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+<div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
 </div></section>
 <div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>
@@ -28,8 +28,8 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p):
 
 # ---- ESTATE DISPUTES ----
 build("estate-dispute-mediation",
- "Estate Dispute Mediation Australia | Contested Wills Without Court",
- "Resolve contested wills and inheritance disputes through mediation. Faster, private and far cheaper than litigation. Nationally accredited mediators. Free consultation.",
+ "Estate Dispute Mediation | Contested Wills Without Court",
+ "Resolve contested wills and inheritance disputes through mediation. Faster, private and cheaper than litigation. Nationally accredited mediators.",
  "Estate &amp; inheritance disputes",
  "Estate Dispute Mediation — resolve contested wills <em>without court</em>.",
  "Few disputes are as painful as a family fight over a will or estate. Mediation offers a private, dignified way to resolve inheritance disputes — preserving family relationships and a fraction of the cost of contesting an estate in court.",
@@ -60,12 +60,12 @@ build("estate-dispute-mediation",
    "That's one of its greatest strengths. Unlike adversarial litigation, mediation is collaborative and private, giving grieving families the best chance of resolving the dispute without permanent damage.")],
  "Estate Dispute Mediation",
  "Resolve it privately — <em>and keep the family together</em>.",
- "Book a fixed-fee consultation to resolve a contested will or estate dispute through dignified, private mediation.")
+ "Book a free initial consultation to resolve a contested will or estate dispute through dignified, private mediation.")
 
 # ---- COLLABORATIVE FAMILY LAWYERS ----
 build("collaborative-family-lawyers",
- "Collaborative Family Lawyers Australia | Resolve Without Court",
- "Collaborative family lawyers help you resolve separation respectfully, out of court. A team-based approach focused on agreement, not litigation. Free consultation.",
+ "Collaborative Family Lawyers | Resolve Without Court",
+ "Collaborative family lawyers resolve separation respectfully, out of court. A team-based approach focused on agreement, not litigation.",
  "Collaborative practice",
  "Collaborative Family Lawyers — separation <em>without the courtroom</em>.",
  "Collaborative law is a structured, out-of-court approach where both parties and their lawyers commit in writing to reaching agreement without litigation. It's a respectful, team-based path through separation that works hand in hand with mediation.",
@@ -94,8 +94,8 @@ build("collaborative-family-lawyers",
 
 # ---- FAMILY LAW ARBITRATORS ----
 build("family-law-arbitration",
- "Family Law Arbitration Australia | Binding Decisions Without Court",
- "Family law arbitration gives you a binding decision on property and financial matters, faster and more privately than court. Nationally accredited arbitrators. Free consultation.",
+ "Family Law Arbitration | Binding Decisions Without Court",
+ "Family law arbitration: a binding decision on property and finances, faster and more privately than court. Nationally accredited arbitrators.",
  "Arbitration",
  "Family Law Arbitration — a binding decision, <em>without court delays</em>.",
  "When you need a definitive decision but want to avoid the cost and delay of court, arbitration is the answer. A qualified arbitrator hears both sides and makes a binding determination on property and financial matters — like a private judge, but faster.",
@@ -131,7 +131,7 @@ build("family-law-arbitration",
 # ---- DIVORCE COUNSELLING ----
 build("divorce-counselling",
  "Divorce Counselling Australia | Support Through Separation",
- "Divorce and separation counselling to help you and your family cope with the emotional side of separation. Compassionate support alongside practical mediation. Get in touch.",
+ "Divorce and separation counselling to help you cope with the emotional side of separation. Compassionate support alongside practical mediation.",
  "Emotional support",
  "Divorce Counselling — support for the <em>human side</em> of separation.",
  "Separation isn't only a legal process — it's one of life's most stressful events. Divorce counselling provides emotional support to help you and your children navigate the transition, working alongside mediation so both the practical and personal sides are cared for.",
@@ -161,36 +161,36 @@ build("divorce-counselling",
 # ---- FEE STRUCTURE ----
 build("our-fee-structure",
  "Our Fee Structure | Transparent, Fixed-Fee Mediation Costs",
- "Transparent, fixed-fee mediation pricing with no surprises. Understand exactly what mediation costs and why it's a fraction of litigation. Free initial consultation.",
+ "Transparent, fixed-fee mediation pricing with no surprises. Understand what mediation costs and why it's a fraction of litigation.",
  "Pricing &amp; fees",
  "Our Fee Structure — <em>transparent, fixed and fair</em>.",
- "We believe you should know what things cost before you commit. Our mediation services start with a fixed-fee consultation and clear, upfront pricing — so there are no open-ended bills and no surprises, just a fraction of the cost of litigation.",
- "Mediations Australia uses transparent, fixed-fee pricing. You start with a fixed-fee consultation, and mediation costs are agreed upfront and usually shared between the parties — typically a small fraction of the tens of thousands per side that contested litigation can cost.",
+ "We believe you should know what things cost before you commit. Our mediation services start with a free initial consultation and clear, upfront pricing — so there are no open-ended bills and no surprises, just a fraction of the cost of litigation.",
+ "Mediations Australia uses transparent, fixed-fee pricing. You start with a free initial consultation, and mediation costs are agreed upfront and usually shared between the parties — typically a small fraction of the tens of thousands per side that contested litigation can cost.",
  """
  <h2>How does mediation pricing work?</h2>
- <p>You begin with a fixed-fee consultation, where we assess your matter and explain your options with no obligation. From there, the cost of mediation is agreed in advance, so you always know where you stand. Mediation fees are commonly shared between the parties, making it more affordable for everyone.</p>
+ <p>You begin with a free initial consultation, where we assess your matter and explain your options with no obligation. From there, the cost of mediation is agreed in advance, so you always know where you stand. Mediation fees are commonly shared between the parties, making it more affordable for everyone.</p>
  <h2>Why is mediation so much cheaper than court?</h2>
  <p>Because it resolves matters in one or two sessions rather than over one to three years of legal fees billed by the hour. A contested court case can cost tens or even hundreds of thousands of dollars per side; mediation typically costs a small fraction of that — and protects the assets you'd otherwise spend fighting. <a href="/family-law-mediation/">See family law mediation →</a></p>
  <div class="callout"><h3>No surprises — ever</h3>
  <p>Fixed-fee means exactly that. You'll never receive an open-ended bill that grows the longer your matter takes. The certainty is part of why mediation is less stressful than litigation.</p></div>
  <h2>What's included</h2>
  <ul>
-   <li>A fixed-fee initial consultation to assess your matter</li>
+   <li>A free initial consultation to assess your matter</li>
    <li>Clear, agreed pricing for the mediation itself</li>
    <li>Guidance on formalising your agreement into <a href="/consent-orders/">consent orders</a> or a binding agreement</li>
    <li>The option of in-person or <a href="/online-divorce/">online mediation</a> at the same transparent rates</li>
  </ul>
  """,
  [("How much does mediation cost?",
-   "You start with a fixed-fee consultation, then agree the cost of mediation upfront. It's typically a small fraction of litigation — often hundreds to a few thousand dollars shared between parties, versus tens of thousands per side in court."),
+   "You start with a free initial consultation, then agree the cost of mediation upfront. It's typically a small fraction of litigation — often hundreds to a few thousand dollars shared between parties, versus tens of thousands per side in court."),
   ("Is the cost shared between parties?",
    "Usually, yes. Mediation fees are commonly shared between the parties, which makes the process more affordable for everyone involved."),
   ("Are there any hidden fees?",
    "No. Our pricing is fixed and transparent. You'll know what mediation costs before you commit, with no open-ended hourly billing."),
-  ("Is the initial consultation really fixed-fee?",
-   "Yes. The initial consultation is a fixed fee with no obligation, so you can understand your options and the likely cost before deciding how to proceed.")],
+  ("Is the initial consultation really free?",
+   "Yes. The initial consultation is free with no obligation, so you can understand your options and the likely cost before deciding how to proceed.")],
  "Our Fee Structure",
  "Know the cost <em>before</em> you commit.",
- "Book a fixed-fee consultation and get complete clarity on what resolving your dispute will cost.")
+ "Book a free initial consultation and get complete clarity on what resolving your dispute will cost.")
 
 print("Additional service pages built.")

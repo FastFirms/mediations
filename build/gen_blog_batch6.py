@@ -8,7 +8,7 @@ from authority_sources import cite
 # ---- IS FAMILY LAW MEDIATION COMPULSORY (absorbs 7) ----
 post("is-family-law-mediation-compulsory",
  "Is Family Law Mediation Compulsory in Australia? (2026)",
- "Is mediation compulsory before family court in Australia? When family dispute resolution and a Section 60I certificate are required, the exemptions, and what happens if your ex refuses.",
+ "Is mediation compulsory before family court in Australia? When a Section 60I certificate is required, the exemptions, and what happens if your ex refuses.",
  "The process",
  "Is Family Law Mediation Compulsory in Australia?",
  "For most parenting disputes, yes \u2014 you must genuinely attempt family dispute resolution before you can apply to court, and you'll need a Section 60I certificate to prove it. This guide explains exactly when mediation is required, the exemptions, and what to do if your former partner refuses to take part.",
@@ -78,9 +78,9 @@ post("is-family-law-mediation-compulsory",
 print("is-family-law-mediation-compulsory built")
 
 # ---- FATHERS' RIGHTS (absorbs 2) ----
-post("fathers-rights",
+post("fathers-rights-after-separation",
  "Fathers' Rights After Separation in Australia (2026 Guide)",
- "Fathers' rights in Australia explained: the truth about 50/50 care, parental responsibility, the best-interests test, and how dads can secure meaningful time with their children.",
+ "Fathers' rights in Australia: 50/50 care, parental responsibility, the best-interests test, and how dads can secure meaningful time with their children.",
  "Parenting",
  "Fathers' Rights After Separation in Australia",
  "The law gives fathers and mothers equal standing \u2014 there's no built-in preference for either parent. What matters is the child's best interests. This guide clears up the myths about fathers' rights, explains parental responsibility, and shows how fathers can secure genuine, meaningful time with their children.",
@@ -149,8 +149,8 @@ print("fathers-rights built")
 
 # ---- SUPERANNUATION & DIVORCE (absorbs 2) ----
 post("superannuation-and-divorce",
- "Superannuation and Divorce in Australia: How Splitting Works (2026)",
- "How is superannuation split in a divorce in Australia? Super is treated as property and can be divided. Learn how super splitting works, valuation, and how to do it without court.",
+ "Superannuation and Divorce: How Splitting Works (2026)",
+ "How is superannuation split in a divorce? Super is property and can be divided. Learn how super splitting works, valuation, and how to do it without court.",
  "Property &amp; finances",
  "Superannuation and Divorce: <em>How Splitting Works</em>",
  "Superannuation is treated as property under Australian family law, which means it can be split between partners when a relationship ends. For many couples it's one of the largest assets \u2014 and overlooking it is a costly mistake. Here's how super splitting works and how to do it without going to court.",
@@ -165,7 +165,7 @@ post("superannuation-and-divorce",
 <h2 id="is-property">Is superannuation property?</h2>
 <p>Yes. Under the {cite("family_law_act")}, superannuation is treated as property that can be divided as part of a settlement \u2014 even though you generally can't access it until retirement. This is one of the most under-appreciated parts of a property settlement, and missing it can leave one partner significantly worse off in retirement.</p>
 """
- + inline_cta("Not sure how your super (or your ex's) factors into the split? Get clarity in a fixed-fee consultation.")
+ + inline_cta("Not sure how your super (or your ex's) factors into the split? Get clarity in a free initial consultation.")
  + """
 <h2 id="how-split">How does super splitting work?</h2>
 <p>A superannuation split reallocates part of one partner's super to the other. Importantly, it doesn't turn super into cash \u2014 the split amount is transferred into the receiving partner's super (or sometimes a new account) and remains subject to normal preservation rules until retirement. It's a rebalancing of retirement savings, not an early payout. The split is part of the overall <a href="/property-settlement-after-separation/">property settlement</a>, considered alongside the rest of the asset pool.</p>
@@ -186,6 +186,17 @@ post("superannuation-and-divorce",
  + """
 <h2 id="formalise">How to formalise a super split</h2>
 <p>A super split must be formalised \u2014 you can't just agree it informally. It's done through <a href="/consent-orders-explained/">consent orders</a> or a <a href="/binding-financial-agreements-guide/">binding financial agreement</a>, which the super fund then implements. Reaching the agreement through <a href="/property-settlement-mediation/">mediation</a> first is the fastest, least costly route \u2014 then you simply formalise what you've agreed.</p>
+
+<figure class='tbl'><table><caption>Steps to formalise a superannuation split</caption>
+<thead><tr><th>Step</th><th>What happens</th><th>Who is involved</th></tr></thead>
+<tbody>
+<tr><td>1. Disclosure</td><td>Both parties provide super fund details and current balances</td><td>Both parties, super funds</td></tr>
+<tr><td>2. Valuation</td><td>Accumulation balance confirmed; defined benefit valued if needed</td><td>Fund, possibly actuary</td></tr>
+<tr><td>3. Agreement</td><td>Split percentage or amount agreed through mediation</td><td>Mediator, both parties</td></tr>
+<tr><td>4. Formalise</td><td>Consent orders or BFA drafted, signed, and filed with the court</td><td>Lawyer, both parties</td></tr>
+<tr><td>5. Implement</td><td>Orders served on super fund; fund splits the interest</td><td>Super fund</td></tr>
+</tbody></table></figure>
+<p>From mediated agreement to implementation, the process typically takes weeks rather than months \u2014 far faster than contested property proceedings through court. A consent order filed with the <a href="/family-court-process-australia/">Family Court</a> gives the outcome legal certainty and protects both parties if circumstances change later. <a href="/property-settlement-after-separation/">See the full property settlement process \u2192</a></p>
 """
  ,
  [("Is superannuation split in a divorce?",
@@ -210,7 +221,7 @@ print("superannuation-and-divorce built")
 # ---- HIGH-CONFLICT MEDIATION (absorbs 2) ----
 post("high-conflict-mediation",
  "High-Conflict Family Law Mediation: Does It Work? (2026)",
- "Can mediation work in high-conflict separations? Yes \u2014 with the right techniques. How shuttle mediation, structure and skilled mediators resolve even bitter disputes without court.",
+ "Can mediation work in high-conflict separations? Yes — with the right techniques. Shuttle mediation, structure and skilled mediators resolve bitter disputes.",
  "High-conflict",
  "High-Conflict Family Law Mediation: <em>Does It Work?</em>",
  "When emotions run high and trust is gone, court can feel like the only option \u2014 but it's often the worst one. High-conflict mediation, run by an experienced mediator using techniques like shuttle mediation, resolves even bitter disputes faster, cheaper and with less damage than litigation. Here's how.",

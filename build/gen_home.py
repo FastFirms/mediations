@@ -4,13 +4,24 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, service_schema,
-                       BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
+                       img, BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
 
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Pre-launch staging guard: the homepage is intentionally kept out of search
+# indexes while the site is on the staging domain. head() always emits
+# "index, follow", so we force the homepage back to noindex on every build to
+# avoid silently exposing staging. REMOVE this guard at launch (set to False)
+# when the homepage should be indexable on the production domain.
+HOMEPAGE_NOINDEX = False  # launch: indexing enabled
 
 def write(slug, doc):
     if slug == "":
         path = OUT
+        if HOMEPAGE_NOINDEX:
+            doc = doc.replace(
+                '<meta name="robots" content="index, follow, max-image-preview:large">',
+                '<meta name="robots" content="noindex, nofollow">')
     else:
         path = os.path.join(OUT, slug); os.makedirs(path, exist_ok=True)
     with open(os.path.join(path, "index.html"), "w") as f:
@@ -29,7 +40,7 @@ qa_home = [
  ("Do I need a lawyer to attend mediation?",
   "No — a lawyer isn't required to mediate. Legal advice before or after can be wise for complex matters, and many of our mediators are also experienced lawyers, so legal insight is already in the room."),
  ("How much does mediation cost?",
-  "You begin with a fixed-fee consultation, so there are no billing surprises. Mediation typically costs a fraction of litigation, and parties usually share the fee. Most disputes resolve in one to two sessions rather than years of court."),
+  "You begin with a free initial consultation, so there are no billing surprises. Mediation typically costs a fraction of litigation, and parties usually share the fee. Most disputes resolve in one to two sessions rather than years of court."),
  ("How long does mediation take?",
   "Most disputes are resolved within one to two sessions — often in a single day — compared with court matters that can run for one to three years."),
  ("Is everything discussed in mediation confidential?",
@@ -39,7 +50,7 @@ qa_home = [
 ]
 
 doc = head(
- "Mediation Australia | Resolve Any Dispute Before It Reaches Court",
+ "Mediations Australia | Resolve Disputes Without Court",
  "Nationally accredited mediators resolve family, business, workplace and estate disputes faster and without court — 90% success rate. Book a free consultation.",
  "",
  extra_schema=[org_schema(),
@@ -48,40 +59,79 @@ doc = head(
                faq_schema(qa_home)])
 doc += nav()
 doc += f"""<main id="main">
-<section class="hero" style="padding:clamp(56px,9vw,116px) 0 clamp(64px,8vw,104px);overflow:hidden;position:relative">
-  <div class="phero-blob" style="width:480px;height:480px;top:-140px;right:-120px;opacity:.5"></div>
-  <div class="phero-blob" style="width:380px;height:380px;bottom:-160px;left:-100px;opacity:.4;background:#f0d9c8"></div>
-  <div class="wrap" style="position:relative;z-index:2">
-    <span class="eyebrow reveal-load d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
-    <h1 class="reveal-load d2" style="font-size:clamp(2.6rem,6.4vw,5rem);max-width:15ch;margin-bottom:24px">Most disputes never need a <em>courtroom.</em></h1>
-    <p class="lede reveal-load d3" style="font-size:clamp(1.1rem,1.7vw,1.32rem);color:var(--ink-soft);max-width:56ch;margin-bottom:36px">Whether it's a family separation, a business breakdown or a contested estate, mediation can resolve it faster, for less, and with you in control. Often it's the first step your own lawyer would recommend — and we work alongside them, not instead of them.</p>
-    <div class="phero-cta reveal-load d4">
-      <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
-      <a href="/how-mediation-works/" class="btn btn-ghost">See how it works</a>
+<section class="phero" style="padding-bottom:clamp(48px,6vw,80px)">
+  <div class="phero-blob"></div>
+  <div class="wrap">
+    <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
+  </div>
+  <div class="wrap hero-consult-grid" style="display:grid;grid-template-columns:1fr 420px;gap:clamp(32px,5vw,72px);align-items:start;margin-top:20px">
+    <div>
+      <h1 class="d2" style="font-size:clamp(2.2rem,4.8vw,4.2rem);max-width:18ch;margin-bottom:24px">Mediation for Family, Workplace <em>&amp; Estate Disputes.</em></h1>
+      <p class="lede d3" style="font-size:clamp(1rem,1.5vw,1.2rem);color:var(--ink-soft);max-width:52ch;margin-bottom:36px">Most disputes don't need a courtroom. Our nationally accredited mediators help separating couples, families, businesses and colleagues reach lasting agreements — faster, more affordably, and on terms they choose together.</p>
+      <div class="stats d4" style="margin-bottom:36px">
+        <div class="stat"><span class="num"><em>90%</em></span><div class="lbl">resolved at mediation</div></div>
+        <div class="stat"><span class="num">Days</span><div class="lbl">not years in court</div></div>
+        <div class="stat"><span class="num">100%</span><div class="lbl">you choose the outcome</div></div>
+      </div>
+      <div class="answer d5" style="max-width:60ch"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation for family, property, workplace and estate disputes — resolving 90% of matters without court, typically in days or weeks rather than years. We serve clients across Sydney, Melbourne, Brisbane, Perth and Australia-wide online.</p></div>
     </div>
-    <div class="stats reveal-load d5" style="margin-top:50px">
-      <div class="stat"><span class="num"><em>90%</em></span><div class="lbl">resolved at mediation</div></div>
-      <div class="stat"><span class="num">Days</span><div class="lbl">not years in court</div></div>
-      <div class="stat"><span class="num">100%</span><div class="lbl">you choose the outcome</div></div>
+    <div class="d3" style="background:var(--cream);border:1px solid var(--sand-deep);border-radius:22px;padding:clamp(24px,3vw,36px);box-shadow:0 4px 32px rgba(35,41,31,.07)">
+      <p style="font-family:var(--serif);font-size:1.35rem;font-weight:400;color:var(--ink);margin:0 0 4px">Book a free consultation</p>
+      <p style="font-size:.9rem;color:var(--ink-soft);margin:0 0 22px">We'll respond within one business day.</p>
+      <form action="https://formspree.io/f/mredjobj" method="POST" novalidate style="display:flex;flex-direction:column;gap:14px">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
+        <input type="hidden" name="_subject" value="Homepage consultation request — Mediations Australia">
+        <div>
+          <label for="hname" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Name <span aria-hidden="true" style="color:var(--terra)">*</span></label>
+          <input id="hname" name="name" type="text" required autocomplete="name" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+        </div>
+        <div>
+          <label for="hphone" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Phone <span aria-hidden="true" style="color:var(--terra)">*</span></label>
+          <input id="hphone" name="phone" type="tel" required autocomplete="tel" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+        </div>
+        <div>
+          <label for="hemail" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Email <span aria-hidden="true" style="color:var(--terra)">*</span></label>
+          <input id="hemail" name="email" type="email" required autocomplete="email" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+        </div>
+        <div>
+          <label for="htype" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Type of mediation <span aria-hidden="true" style="color:var(--terra)">*</span></label>
+          <select id="htype" name="matter" required style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+            <option value="" disabled selected>Select…</option>
+            <option>Family / divorce</option>
+            <option>Property settlement</option>
+            <option>Parenting &amp; children</option>
+            <option>Workplace</option>
+            <option>Estate &amp; inheritance</option>
+            <option>Commercial / business</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="hmsg" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Brief explanation</label>
+          <textarea id="hmsg" name="message" rows="3" placeholder="A few sentences about your situation…" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);resize:vertical;box-sizing:border-box"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:4px">Send request <span class="arr">→</span></button>
+        <p style="font-size:.8rem;color:var(--ink-soft);margin:0;text-align:center">Your details are kept private and confidential.</p>
+      </form>
     </div>
   </div>
 </section>
 
 <section class="sec reveal" style="background:var(--ink);color:var(--cream);border-radius:38px;margin:0 16px" aria-labelledby="wedge-h">
   <div class="wrap">
-    <div style="text-align:center;max-width:60ch;margin:0 auto 50px">
-      <h2 id="wedge-h" style="font-size:clamp(2rem,4vw,3.2rem);color:var(--cream);margin-bottom:16px">Two ways through a dispute.<br>One is almost always <em style="font-style:italic;color:#e0a87f">quicker.</em></h2>
+    <div style="text-align:center;max-width:90ch;margin:0 auto 50px">
+      <h2 id="wedge-h" style="font-size:clamp(2rem,4vw,3.2rem);color:var(--cream);margin-bottom:16px">Two ways through a dispute.<br>One is almost always <em style="font-style:italic;color:#e0a87f">quicker, cheaper and leads to better outcomes.</em></h2>
       <p style="color:rgba(251,248,242,.72);font-size:1.1rem">Sometimes court is genuinely necessary — and a good lawyer will tell you when. But for most disputes, mediation gets you there sooner, for less, and with far less strain. Here's the honest comparison.</p>
     </div>
     <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;max-width:920px;margin:0 auto" class="compare">
-      <div style="padding:36px 32px;opacity:.62">
-        <h3 style="font-size:1.45rem;margin-bottom:22px;color:rgba(251,248,242,.8)">The court path</h3>
+      <div style="padding:36px 32px;opacity:.92">
+        <h3 style="font-size:1.45rem;margin-bottom:22px;color:var(--cream)">The court path</h3>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:15px">
-          <li style="display:flex;gap:12px;color:rgba(251,248,242,.66)">{X}1–3 years of waiting and uncertainty</li>
-          <li style="display:flex;gap:12px;color:rgba(251,248,242,.66)">{X}Tens or hundreds of thousands in fees</li>
-          <li style="display:flex;gap:12px;color:rgba(251,248,242,.66)">{X}A judge decides the outcome, not you</li>
-          <li style="display:flex;gap:12px;color:rgba(251,248,242,.66)">{X}Adversarial by design — harder on relationships</li>
-          <li style="display:flex;gap:12px;color:rgba(251,248,242,.66)">{X}Public record, on the court's calendar</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X}1–3 years of waiting and uncertainty</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X}Tens or hundreds of thousands in fees</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X}A judge decides the outcome, not you</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X}Adversarial by design — harder on relationships</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X}Public record, on the court's calendar</li>
         </ul>
       </div>
       <div style="width:1px;background:linear-gradient(180deg,transparent,rgba(251,248,242,.18),transparent);position:relative" class="divider">
@@ -100,7 +150,7 @@ doc += f"""<main id="main">
     </div>
     <div style="text-align:center;margin-top:46px">
       <p style="font-size:1.2rem;font-family:var(--serif);font-style:italic;color:var(--cream);max-width:52ch;margin:0 auto 26px">"Court has its place — but it's rarely the best place to start. Trying mediation first can save everyone time, money and stress, whatever happens next."</p>
-      <a href="{BOOK_URL}" class="btn btn-primary">Start with a free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
     </div>
   </div>
 </section>
@@ -113,7 +163,7 @@ doc += f"""<main id="main">
       <p class="sec-intro">No jargon, no surprises. A neutral, accredited mediator guides everyone toward a solution — and you decide whether to accept it.</p>
     </div>
     <div class="cards reveal" style="margin-top:50px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))">
-      <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">01</h3><h3>Book your consult</h3><p>Start with a fixed-fee consultation. Clear advice, no runaway costs, no obligation.</p></article>
+      <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">01</h3><h3>Book your consult</h3><p>Start with a free initial consultation. Clear advice, no runaway costs, no obligation.</p></article>
       <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">02</h3><h3>Meet your mediator</h3><p>Paired with an accredited specialist who understands the law and the human side.</p></article>
       <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">03</h3><h3>The session runs</h3><p>In person or online, together or in separate rooms — whatever feels right.</p></article>
       <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">04</h3><h3>Agreement reached</h3><p>Around 90% of matters resolve then and there, on terms you've chosen.</p></article>
@@ -165,8 +215,55 @@ doc += f"""<main id="main">
       </aside>
     </div>
   </div>
+</section>
+
+<section class="sec reveal" style="padding-top:80px;padding-bottom:80px">
+  <div class="wrap">
+    <div style="max-width:52ch;margin-bottom:48px">
+      <p class="sec-tag">Meet the team</p>
+      <h2 class="sec-title">The people <em>behind every resolution</em></h2>
+      <p style="font-size:1.05rem;color:var(--ink-soft)">Our team brings together nationally accredited mediators and experienced lawyers — each with a proven track record of resolving disputes without court.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px">
+
+      <a href="/our-team/dan-toombs/" style="background:var(--sand);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:box-shadow .2s" onmouseover="this.style.boxShadow='0 8px 32px rgba(0,0,0,.12)'" onmouseout="this.style.boxShadow=''">
+        <div style="height:240px;background:url(/assets/images/dan-team.png) center top/cover no-repeat"></div>
+        <div style="padding:22px">
+          <p style="font-family:var(--serif);font-size:1.25rem;margin-bottom:3px">Dan Toombs</p>
+          <p style="color:var(--sage-deep);font-weight:600;font-size:.9rem;margin-bottom:10px">Founder, Lawyer &amp; Accredited Mediator</p>
+          <p style="font-size:.93rem;color:var(--ink-soft);line-height:1.6;margin-bottom:14px">Multi-award winning lawyer, Winston Churchill Fellow, and National Human Rights Law Award recipient.</p>
+          <span style="font-size:.88rem;font-weight:600;color:var(--terra)">View profile →</span>
+        </div>
+      </a>
+
+      <a href="/our-team/farley-tolpen/" style="background:var(--sand);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:box-shadow .2s" onmouseover="this.style.boxShadow='0 8px 32px rgba(0,0,0,.12)'" onmouseout="this.style.boxShadow=''">
+        <div style="height:240px;background:url(/assets/images/farley-team.png) center top/cover no-repeat"></div>
+        <div style="padding:22px">
+          <p style="font-family:var(--serif);font-size:1.25rem;margin-bottom:3px">Farley Tolpen</p>
+          <p style="color:var(--sage-deep);font-weight:600;font-size:.9rem;margin-bottom:10px">Accredited Mediator &amp; Lawyer</p>
+          <p style="font-size:.93rem;color:var(--ink-soft);line-height:1.6;margin-bottom:14px">40+ years of mediation and litigation experience across Australia and the United States. 4,500+ matters resolved.</p>
+          <span style="font-size:.88rem;font-weight:600;color:var(--terra)">View profile →</span>
+        </div>
+      </a>
+
+      <a href="/our-team/prav-singh-pillay/" style="background:var(--sand);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:box-shadow .2s" onmouseover="this.style.boxShadow='0 8px 32px rgba(0,0,0,.12)'" onmouseout="this.style.boxShadow=''">
+        <div style="height:240px;background:url(/assets/images/prav-team.png) center top/cover no-repeat"></div>
+        <div style="padding:22px">
+          <p style="font-family:var(--serif);font-size:1.25rem;margin-bottom:3px">Prav Singh-Pillay</p>
+          <p style="color:var(--sage-deep);font-weight:600;font-size:.9rem;margin-bottom:10px">Lawyer &amp; Accredited Mediator</p>
+          <p style="font-size:.93rem;color:var(--ink-soft);line-height:1.6;margin-bottom:14px">25+ years across family law, civil litigation and wills &amp; estates. Registered FDRP authorised to issue Section 60I certificates.</p>
+          <span style="font-size:.88rem;font-weight:600;color:var(--terra)">View profile →</span>
+        </div>
+      </a>
+
+    </div>
+    <div style="margin-top:36px;text-align:center">
+      <a href="/our-team/" class="btn btn-ghost">Meet the full team →</a>
+    </div>
+  </div>
 </section>"""
 doc += faq_html(qa_home, heading="Everything you might be <em>wondering</em>.", tag="Common questions")
+doc = doc.replace('id="faq" aria-labelledby="faqh" style="padding-top:0"', 'id="faq" aria-labelledby="faqh" style="padding-top:80px"', 1)
 doc += cta_band("The first step costs <em>nothing</em> but a phone call.",
  "Tell us about your dispute. We'll give you an honest view of whether mediation can help — and how it fits alongside any legal advice you're already getting.")
 doc += "</main>" + page_end()
@@ -185,11 +282,11 @@ qa_fam = [
  ("What if there's been family violence?",
   "Your safety comes first. Where there are concerns, mediation may not be required, and where it does proceed it can run 'shuttle' style in separate rooms. Tell us in your consultation and we'll advise the safest path."),
  ("How much does family mediation cost?",
-  "You begin with a fixed-fee consultation, so there are no surprises. Family mediation typically costs a small fraction of a contested court case, and the cost is usually shared between the parties."),
+  "You begin with a free initial consultation, so there are no surprises. Family mediation typically costs a small fraction of a contested court case, and the cost is usually shared between the parties."),
 ]
 doc = head(
- "Family Law Mediation Australia | Parenting & Property",
- "Family law mediation resolves parenting and property disputes faster and cheaper than court. Accredited mediators, Section 60I certificates, 90% success rate. Free consultation.",
+ "Family Law Mediation Australia | Family Mediators",
+ "Family law mediation with accredited family mediators — settle parenting and property faster and cheaper than court. Section 60I certificates. Free consult.",
  "family-law-mediation",
  og_type="article",
  extra_schema=[org_schema(),
@@ -223,6 +320,7 @@ doc += f"""<main id="main">
 <h2>What family matters can be mediated?</h2>
 <ul>
   <li><a href="/parenting-plan-mediation/">Parenting plans</a> — living arrangements, time with each parent, and decision-making</li>
+  <li><a href="/divorce-mediation/">Divorce mediation</a> — resolving everything that comes with separating</li>
   <li><a href="/property-settlement-mediation/">Property settlements</a> — dividing assets, debts and the family home</li>
   <li>Superannuation splitting and <a href="/spousal-support-mediation/">spousal maintenance</a></li>
   <li><a href="/financial-agreements-mediation/">Binding financial agreements (BFAs)</a></li>
@@ -230,16 +328,43 @@ doc += f"""<main id="main">
   <li><a href="/de-facto-mediation/">De facto and same-sex relationship</a> disputes</li>
 </ul>
 
-<div class="callout">
-  <h3>Lawyer-grade insight, without the courtroom</h3>
-  <p>Many of our family mediators are also experienced family lawyers. That means you get a clear-eyed view of where you'd likely land in court — and a process designed to get you there faster, for far less, without ever filing.</p>
-</div>
+<h2>Family mediators who understand the law</h2>
+<p>Many of our family mediators are also experienced family lawyers. That means our family mediation services give you a clear-eyed view of where you'd likely land in court — and a process designed to get you there faster, for far less, without ever filing. We provide family mediation right across Australia, in person and by secure video, so wherever you are you can work with an accredited family mediator. If you're separating specifically, our dedicated <a href="/divorce-mediation/">divorce mediation</a> service covers parenting, property and finances together; and you can see exactly <a href="/how-much-does-mediation-cost/">what family mediation costs</a> before you commit.</p>
+
+<h2>How family law mediation works, step by step</h2>
+<p>The process is structured but never rigid, and it's designed to keep things calm:</p>
+<ol>
+  <li><strong>Free consultation</strong> — you explain your situation and we give an honest view of whether mediation can help and how it works alongside any legal advice.</li>
+  <li><strong>Intake, separately</strong> — each party meets the family mediator on their own so concerns and safety can be assessed before anyone is in the same room.</li>
+  <li><strong>Preparation</strong> — financial disclosure is gathered for property matters, and the issues to resolve are agreed and put in order.</li>
+  <li><strong>The mediation</strong> — guided by the mediator, you work through each issue, together or in separate rooms ('shuttle' mediation) where there's high conflict.</li>
+  <li><strong>Agreement and formalising</strong> — what you agree is recorded, then turned into <a href="/consent-orders/">consent orders</a> or a binding financial agreement so it's enforceable.</li>
+</ol>
+
+<h2>Family law mediation vs going to court</h2>
+<p>For most separating families the contrast is stark — which is why mediation is the step most family lawyers suggest trying first:</p>
+<figure class="tbl"><table><caption>Family law mediation compared with a contested court case</caption>
+<thead><tr><th></th><th>Family law mediation</th><th>Contested court</th></tr></thead>
+<tbody>
+<tr><td>Typical time</td><td>Weeks — one or two sessions</td><td>One to three years</td></tr>
+<tr><td>Typical cost</td><td>Fixed fee, usually shared</td><td>Tens of thousands per side</td></tr>
+<tr><td>Who decides</td><td>You and your former partner</td><td>A judge</td></tr>
+<tr><td>Privacy</td><td>Confidential</td><td>Public process</td></tr>
+<tr><td>Effect on co-parenting</td><td>Preserved where possible</td><td>Often strained</td></tr>
+</tbody></table></figure>
+<p>The aim isn't to avoid court at any cost — it's to avoid <em>unnecessary</em> court. Where there's a genuine safety risk or a legal question only a judge can decide, litigation has its place. <a href="/mediate-or-litigate/">See when mediation beats litigation →</a></p>
+
+<h2>When family mediation may not be the right path</h2>
+<p>We're honest about the limits. Mediation depends on both people being able to negotiate safely and openly, so it isn't suitable in every case — particularly where there is family violence, a serious safety risk, or where one party won't participate or disclose honestly. In those situations you may be <a href="/section-60i-certificates/">exempt</a> from the usual requirement to attempt family dispute resolution, and court protection may be the right first step. If you're in immediate danger, call <strong>000</strong>; for confidential support, <strong>1800RESPECT (1800 737 732)</strong> is available 24/7. See our guidance on <a href="/domestic-violence-and-family-law/">family violence and family law</a>.</p>
 
 <h2>How much does family mediation cost?</h2>
-<p>You start with a fixed-fee consultation, so you know exactly where you stand before committing to anything. From there, family mediation typically costs a small fraction of a contested court case, and the fee is usually shared between the parties. Compared with two sets of lawyers billing by the hour for years, the saving is substantial — and the emotional cost is lower too.</p>
+<p>You start with a free initial consultation, so you know exactly where you stand before committing to anything. From there, family mediation typically costs a small fraction of a contested court case, and the fee is usually shared between the parties. Compared with two sets of lawyers billing by the hour for years, the saving is substantial — and the emotional cost is lower too. <a href="/how-much-does-mediation-cost/">See a full breakdown of what mediation costs →</a></p>
+
+<h2>Why choose accredited family mediators?</h2>
+<p>Not all mediation is equal. Our family mediators are nationally accredited under the Australian Mediator and Dispute Resolution Accreditation Standard (AMDRAS), and many are also experienced family lawyers — so you get both the legal insight to understand where your matter would land and the resolution focus to get you there without a fight. We work alongside any lawyer you already have rather than replacing them; in fact, much of our work comes referred from the very solicitors advising separating clients. With free initial consultations, in-person and secure online options, and family mediation services available right across Australia, you get genuine expertise and a real alternative to litigation. <a href="/about-mediations-australia/">Learn more about Mediations Australia →</a></p>
 
 <h2>Making your agreement <em>legally binding</em></h2>
-<p>Reaching agreement is the hard part — we make the rest simple. Once you've settled, we help formalise it into a legally enforceable outcome: <a href="/consent-orders/">consent orders</a> for parenting and property, or a binding financial agreement where appropriate. You walk away with certainty, not just a handshake.</p>
+<p>Reaching agreement is the hard part — we make the rest simple. Once you've settled, we help formalise it into a legally enforceable outcome: <a href="/consent-orders/">consent orders</a> for parenting and property, or a binding financial agreement where appropriate. You walk away with certainty, not just a handshake. Wherever you are — <a href="/sydney-mediation/">Sydney</a>, Melbourne, Brisbane or Perth — you can start with a free consultation.</p>
 </div></article>"""
 doc += faq_html(qa_fam, heading="Family mediation FAQs")
 doc += cta_band("Talk to a family mediator <em>this week</em>.",

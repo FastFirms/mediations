@@ -43,7 +43,7 @@ post("parental-alienation-australia",
 </tbody></table></figure>
 <p class="source-note">Indicative only. Every family is different, and assessing these dynamics is the work of qualified professionals, not a checklist.</p>
 """
- + inline_cta("Not sure whether it's alienation or something deeper? A fixed-fee consultation can help you see the situation clearly.")
+ + inline_cta("Not sure whether it's alienation or something deeper? A free initial consultation can help you see the situation clearly.")
  + f"""
 <h2 id="law">What Australian law says</h2>
 <p>There is no offence called "parental alienation" in Australia, and the courts do not apply a diagnostic label. Decisions about children are made under the {cite("family_law_act")}, and the single guiding principle is the <strong>best interests of the child</strong>. The {cite("fcfcoa")} weighs a range of factors, including the benefit to the child of a meaningful relationship with both parents and — given paramount weight — the need to protect the child from harm.</p>
@@ -102,7 +102,7 @@ post("parental-alienation-australia",
   ("parenting-plans-guide","Parenting Plans in Australia"),
   ("high-conflict-mediation","High-Conflict Mediation"),
   ("domestic-violence-and-family-law","Domestic Violence & Family Law"),
-  ("fathers-rights","Fathers' Rights After Separation"),
+  ("fathers-rights-after-separation","Fathers' Rights After Separation"),
   ("family-court-process","The Family Court Process")],
  read_min=9)
 

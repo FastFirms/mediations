@@ -6,7 +6,7 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
                        BOOK_URL, PHONE, PHONE_HREF, OFFICES, DOMAIN)
 
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def write(slug, doc):
     path = os.path.join(OUT, slug)
@@ -24,7 +24,7 @@ def phero(eyebrow, h1, lede, crumb):
     <h1>{h1}</h1>
     <p class="lede">{lede}</p>
     <div class="phero-cta">
-      <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
       <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
     </div>
   </div>
@@ -52,7 +52,7 @@ doc = head(
                article_schema("How Mediation Works in Australia","A step-by-step guide to the mediation process."),
                faq_schema(qa_how)])
 doc += nav()
-doc += phero("The mediation process",
+doc += phero("A clearer path through a difficult time",
  "How mediation works, <em>step by step</em>.",
  "No jargon, no surprises. Mediation is a structured conversation led by a neutral, accredited mediator who helps everyone reach an agreement — and you decide whether to accept it. Here's exactly what happens, from first call to binding outcome.",
  [("Home",""),("How Mediation Works",None)])
@@ -60,7 +60,7 @@ doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:
 doc += """<article class="body"><div class="wrap-narrow reveal">
 <h2>The five steps of mediation</h2>
 <ol>
-  <li><strong>Book your consultation.</strong> You start with a fixed-fee consultation — clear advice on your options and whether mediation suits your matter, with no runaway costs and no obligation.</li>
+  <li><strong>Book your consultation.</strong> You start with a free initial consultation — clear advice on your options and whether mediation suits your matter, with no runaway costs and no obligation.</li>
   <li><strong>We match your mediator.</strong> You're paired with a nationally accredited mediator who understands both the legal framework and the human side of your dispute.</li>
   <li><strong>The session runs.</strong> In person or online, together in one room or in separate rooms with the mediator moving between you ('shuttle' mediation) — whatever feels safe and productive.</li>
   <li><strong>Agreement is reached.</strong> In around 90% of the matters we mediate, the dispute resolves then and there, on terms everyone has chosen.</li>
@@ -80,10 +80,31 @@ doc += """<article class="body"><div class="wrap-narrow reveal">
 
 <h2>Why does mediation work when conversations have failed?</h2>
 <p>Because structure changes everything. A skilled mediator creates a safe, neutral space, keeps discussions focused on solutions rather than blame, and helps each person feel genuinely heard. That's why mediation resolves disputes that direct conversation couldn't. <a href="/preparing-for-mediation/">Learn how to prepare for your session →</a></p>
+
+<h2>Face-to-face, online, and shuttle mediation</h2>
+<p>Mediation isn't one-size-fits-all. There are three common formats, and the right one depends on your situation:</p>
+<ul>
+  <li><strong>Face-to-face mediation</strong> — both parties sit in the same room with the mediator. Best when communication is workable and both parties are comfortable being together.</li>
+  <li><strong>Online mediation</strong> — conducted over video call, with the mediator managing the session remotely. Just as effective as in-person for most matters, and far more convenient if parties are in different cities.</li>
+  <li><strong>Shuttle mediation</strong> — parties are in separate rooms (or separate video calls) and the mediator moves between them. Used where direct contact is uncomfortable, where there is a history of conflict, or where one party finds the other intimidating. <a href="/shuttle-mediation-guide/">See how shuttle mediation works →</a></li>
+</ul>
+
+<h2>What kinds of disputes can be mediated?</h2>
+<p>Mediation works across a wide range of disputes. The most common matters handled include:</p>
+<ul>
+  <li><a href="/family-law-mediation/">Family law disputes</a> — separation, parenting arrangements, property and financial agreements</li>
+  <li><a href="/workplace-mediation/">Workplace disputes</a> — grievances, performance disputes, team breakdowns</li>
+  <li><a href="/property-settlement-mediation/">Property and financial settlements</a> — asset division, consent orders, binding financial agreements</li>
+  <li>Estate and succession disputes — contested wills, executor disputes, family provision claims</li>
+  <li>Commercial and business disputes — partnership breakdowns, contract disagreements, neighbour disputes</li>
+</ul>
+
+<h2>What happens if no agreement is reached?</h2>
+<p>Mediation is voluntary and confidential. If the session does not produce agreement, you are free to pursue other options — including court. For parenting matters, the mediator will issue a <a href="/section-60i-certificates/">Section 60I certificate</a> confirming that family dispute resolution was attempted, which is required before applying to court. Nothing said in mediation can be used as evidence if the matter proceeds to litigation — confidentiality is protected by law. <a href="/mediate-or-litigate/">Compare mediation and court →</a></p>
 </div></article>"""
 doc += faq_html(qa_how, heading="How mediation works — FAQs")
 doc += cta_band("Ready to take the <em>first step</em>?",
- "Book a fixed-fee consultation and we'll explain exactly how mediation would work for your situation — with no obligation.")
+ "Book a free initial consultation and we'll explain exactly how mediation would work for your situation — with no obligation.")
 doc += "</main>" + page_end()
 write("how-mediation-works", doc)
 
@@ -108,7 +129,7 @@ doc = head(
                breadcrumb_schema([("Home",""),("About","about-mediations-australia")]),
                faq_schema(qa_about)])
 doc += nav()
-doc += phero("About us",
+doc += phero("We exist because the courts fail most people",
  "We believe the way disputes are resolved is <em>broken</em>. So we fixed it.",
  "Mediations Australia exists because litigation fails most people who enter it — slower, costlier and more painful than it needs to be. We bring together nationally accredited mediators and experienced family lawyers with one shared philosophy: resolve early, resolve fairly, and keep people out of court wherever possible.",
  [("Home",""),("About",None)])
@@ -134,7 +155,7 @@ doc += """<article class="body"><div class="wrap-narrow reveal">
 </div></article>"""
 doc += faq_html(qa_about, heading="About Mediations Australia — FAQs")
 doc += cta_band("See the difference for <em>yourself</em>.",
- "Book a fixed-fee consultation and find out why thousands of Australians chose mediation over litigation.")
+ "Book a free initial consultation and find out why thousands of Australians chose mediation over litigation.")
 doc += "</main>" + page_end()
 write("about-mediations-australia", doc)
 
@@ -160,7 +181,7 @@ doc = head(
                article_schema("Preparing for Mediation","A practical guide to getting ready for a mediation session."),
                faq_schema(qa_prep)])
 doc += nav()
-doc += phero("Resources",
+doc += phero("Go in prepared — it makes a real difference",
  "Preparing for mediation: <em>everything you need to know</em>.",
  "Walking into mediation prepared makes a real difference to the outcome. This practical guide covers what to bring, how to think about what you want, and exactly what to expect on the day — so you arrive calm, clear and ready to resolve things.",
  [("Home",""),("Resources",None),("Preparing for Mediation",None)])
@@ -197,7 +218,7 @@ doc += """<article class="body"><div class="wrap-narrow reveal">
 </div></article>"""
 doc += faq_html(qa_prep, heading="Preparing for mediation — FAQs")
 doc += cta_band("Feel ready. <em>Resolve it.</em>",
- "Book a fixed-fee consultation and we'll walk you through exactly what to expect, so you arrive prepared and confident.")
+ "Book a free initial consultation and we'll walk you through exactly what to expect, so you arrive prepared and confident.")
 doc += "</main>" + page_end()
 write("preparing-for-mediation", doc)
 
@@ -208,31 +229,180 @@ office_cards = "".join(f"""<article class="card"><div class="ic"><svg width="24"
 <h3>{esc(c)}</h3><p>{esc(a)}</p></article>""" for c, a in OFFICES)
 
 doc = head(
- "Contact Mediations Australia | Book a Consultation · 1800 952 380",
- "Contact Mediations Australia to book a mediation consultation. Offices in Sydney, Melbourne, Brisbane and Perth, plus online mediation Australia-wide. Call 1800 952 380.",
+ "Contact Mediations Australia | 1800 952 380",
+ "Book a free initial consultation with Mediations Australia. Offices in Sydney, Melbourne, Brisbane and Perth, plus online mediation nationwide.",
  "contact-us",
  extra_schema=[org_schema(),
                breadcrumb_schema([("Home",""),("Contact","contact-us")])])
 doc += nav()
-doc += phero("Get in touch",
- "Let's talk about <em>resolving it</em>.",
- "Tell us about your dispute and we'll give you an honest view of whether mediation can help — and how it fits with any legal advice you already have. Call us, book online, or reach out and we'll come back to you quickly.",
- [("Home",""),("Contact",None)])
-doc += f"""<section class="sec" style="padding-top:20px"><div class="wrap">
-<div class="reveal" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:50px">
-  <a href="{PHONE_HREF}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 36px">Call {PHONE} <span class="arr">→</span></a>
-  <a href="{BOOK_URL}" class="btn btn-ghost" style="font-size:1.1rem;padding:18px 36px">Book online</a>
+doc += f"""<main id="main">
+{crumb_html([("Home",""),("Contact",None)])}
+
+<section style="background:var(--sand);padding:72px 0 80px">
+<style>
+.contact-wrap{{display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:start}}
+.contact-field{{width:100%;padding:13px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:1rem;background:var(--cream);color:var(--ink);font-family:var(--sans);box-sizing:border-box;outline:none;transition:border-color .2s}}
+.contact-field:focus{{border-color:var(--sage-deep)}}
+@media(max-width:860px){{.contact-wrap{{grid-template-columns:1fr}}.contact-sidebar{{display:none}}}}
+</style>
+<div class="wrap">
+  <div class="contact-wrap">
+
+    <div>
+      <p class="sec-tag">Get in touch</p>
+      <h1 style="font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.15;margin-bottom:16px">Let's talk about <em>resolving it</em>.</h1>
+      <p style="font-size:1.05rem;color:var(--ink-soft);max-width:54ch;margin-bottom:36px">Tell us about your dispute and we'll give you an honest view of whether mediation can help — and how it fits with any legal advice you already have.</p>
+
+      <form name="contact" method="POST" action="https://formspree.io/f/mredjobj" novalidate style="display:flex;flex-direction:column;gap:18px">
+        <input type="hidden" name="_subject" value="New contact from Mediations Australia website">
+        <input type="hidden" name="_next" value="https://mediationsaustralia.com.au/thank-you/">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div>
+            <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">First name</label>
+            <input class="contact-field" type="text" name="first_name" placeholder="Your first name" required>
+          </div>
+          <div>
+            <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Last name</label>
+            <input class="contact-field" type="text" name="last_name" placeholder="Your last name" required>
+          </div>
+        </div>
+        <div>
+          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Email address</label>
+          <input class="contact-field" type="email" name="_replyto" placeholder="you@example.com" required>
+        </div>
+        <div>
+          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Phone number</label>
+          <input class="contact-field" type="tel" name="phone" placeholder="0400 000 000">
+        </div>
+        <div>
+          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Type of dispute</label>
+          <select class="contact-field" name="dispute_type" style="appearance:none">
+            <option value="">Select a dispute type…</option>
+            <option>Family law / separation</option>
+            <option>Property settlement</option>
+            <option>Parenting arrangements</option>
+            <option>Estate / inheritance</option>
+            <option>Workplace dispute</option>
+            <option>Commercial / business</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Tell us briefly what's happening</label>
+          <textarea class="contact-field" name="message" rows="4" placeholder="A short description — the more you share, the better we can help." style="resize:vertical"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary" style="font-size:1.05rem;padding:16px 36px">Book a Free Consultation <span class="arr">→</span></button>
+          <p style="margin-top:10px;font-size:.85rem;color:var(--ink-soft)">No obligation. We'll respond within one business day.</p>
+        </div>
+      </form>
+
+      <div style="display:flex;gap:28px;flex-wrap:wrap;margin-top:36px;padding-top:32px;border-top:1px solid var(--line);align-items:center">
+        <a href="{PHONE_HREF}" style="display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:600;font-size:1.05rem">
+          <span style="width:40px;height:40px;border-radius:50%;background:var(--sage-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--sage-deep)">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8a15.2 15.2 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          {PHONE}
+        </a>
+        <span style="color:var(--ink-soft);font-size:.92rem">Mon–Fri, 8:30am–5:30pm AEST</span>
+      </div>
+    </div>
+
+    <div class="contact-sidebar" style="position:sticky;top:100px">
+      <div style="background:var(--sage-deep);border-radius:20px;overflow:hidden;color:var(--cream)">
+        <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder, Mediations Australia"
+          style="width:100%;height:260px;object-fit:cover;object-position:center 15%;display:block">
+        <div style="padding:28px">
+          <p style="font-family:var(--serif);font-size:1.25rem;margin-bottom:4px">Dan Toombs</p>
+          <p style="font-size:.85rem;opacity:.75;margin-bottom:16px">Founder &amp; Accredited Mediator</p>
+          <p style="font-size:.95rem;line-height:1.72;opacity:.92;margin-bottom:22px;font-style:italic">"We built Mediations Australia because most disputes don't need a courtroom — they need a skilled mediator and a structured process. Tell us what's happening and we'll be honest about whether we can help."</p>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:.88rem;opacity:.88">
+            <span>✓ Free initial consultation</span>
+            <span>✓ Confidential &amp; no obligation</span>
+            <span>✓ Nationally accredited mediators</span>
+            <span>✓ In person or online</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
-<div class="reveal">
-  <p class="sec-tag">Our offices</p>
-  <h2 class="sec-title" style="margin-bottom:30px">Find us across <em>Australia</em>.</h2>
-  <div class="cards">{office_cards}</div>
-  <p style="margin-top:26px;color:var(--ink-soft);max-width:60ch">Can't make it to an office? Our <a href="/online-divorce/" style="color:var(--sage-deep);text-decoration:underline">online mediation</a> is available anywhere in Australia, including regional and remote areas.</p>
-</div>
-</div></section>"""
+</section>
+
+<section class="sec reveal" style="padding-top:64px;padding-bottom:64px">
+  <div class="wrap">
+    <p class="sec-tag">Our offices</p>
+    <h2 class="sec-title" style="margin-bottom:36px">Find us across <em>Australia</em>.</h2>
+    <div class="cards">{office_cards}</div>
+    <p style="margin-top:26px;color:var(--ink-soft);max-width:60ch">Can't make it to an office? Our <a href="/online-mediation-australia/" style="color:var(--sage-deep);text-decoration:underline">online mediation</a> is available anywhere in Australia, including regional and remote areas.</p>
+  </div>
+</section>"""
+
 doc += cta_band("Take the <em>first step</em> today.",
  "The first conversation costs nothing but a phone call. Tell us what you're facing and we'll tell you honestly how mediation can help.", note=True)
 doc += "</main>" + page_end()
 write("contact-us", doc)
 
-print("Core pages built: how-mediation-works, about, preparing-for-mediation, contact-us")
+# ── Thank You ────────────────────────────────────────────────────────────────
+doc = head(
+ "Thank You | Mediations Australia",
+ "We've received your enquiry and will be in touch very shortly.",
+ "thank-you",
+ extra_schema=[org_schema(), breadcrumb_schema([("Home",""),("Thank You","thank-you")])])
+doc += nav()
+doc += f"""<main id="main">
+{crumb_html([("Home",""),("Thank You",None)])}
+<section style="background:var(--sand);padding:80px 0 100px;min-height:60vh;display:flex;align-items:center">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 400px;gap:64px;align-items:center;max-width:960px;margin:0 auto">
+
+      <div>
+        <span style="display:inline-block;width:56px;height:56px;border-radius:50%;background:var(--sage-light);display:flex;align-items:center;justify-content:center;margin-bottom:24px">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="var(--sage-deep)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h1 style="font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.15;margin-bottom:20px">We've received <em>your message.</em></h1>
+        <p style="font-size:1.15rem;color:var(--ink-soft);line-height:1.75;max-width:50ch;margin-bottom:28px">Thank you for reaching out. We'll be in contact very promptly — typically within a few hours during business hours.</p>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:36px">
+          <div style="display:flex;align-items:center;gap:12px;font-size:1rem">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--sage-deep);flex-shrink:0"></span>
+            One of our mediators will review your enquiry personally
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:1rem">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--sage-deep);flex-shrink:0"></span>
+            We'll give you an honest view of whether mediation can help
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:1rem">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--sage-deep);flex-shrink:0"></span>
+            No obligation — just a straightforward conversation
+          </div>
+        </div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          <a href="/" class="btn btn-primary">Back to home <span class="arr">→</span></a>
+          <a href="{PHONE_HREF}" class="btn btn-ghost">{PHONE}</a>
+        </div>
+      </div>
+
+      <div style="background:var(--sage-deep);border-radius:24px;overflow:hidden;color:var(--cream)">
+        <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder, Mediations Australia"
+          style="width:100%;height:280px;object-fit:cover;object-position:center 15%;display:block">
+        <div style="padding:28px 30px">
+          <p style="font-family:var(--serif);font-size:1.2rem;margin-bottom:4px">Dan Toombs</p>
+          <p style="font-size:.85rem;opacity:.72;margin-bottom:16px">Founder &amp; Accredited Mediator</p>
+          <p style="font-size:.95rem;line-height:1.72;opacity:.92;font-style:italic">"Every enquiry is reviewed personally. We'll be in touch shortly and give you a straight answer about how we can help."</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<style>
+@media(max-width:700px){{
+  .ty-grid{{grid-template-columns:1fr!important}}
+  .ty-sidebar{{display:none}}
+}}
+</style>
+</main>""" + page_end()
+write("thank-you", doc)
+
+print("Core pages built: how-mediation-works, about, preparing-for-mediation, contact-us, thank-you")

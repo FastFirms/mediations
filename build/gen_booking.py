@@ -4,14 +4,14 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, org_schema,
                        breadcrumb_schema, PHONE, PHONE_HREF, SERVICES)
-OUT="/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 opts="".join(f'<option value="{esc(n)}">{esc(n)}</option>' for _,n,_ in SERVICES)
 opts+='<option value="Estate dispute">Estate dispute</option><option value="Commercial dispute">Commercial dispute</option><option value="Other / not sure">Other / not sure</option>'
 
-title="Book a Free Consultation | Mediations Australia · 1800 952 380"
+title="Book a Free Mediation Consultation | Mediations Australia"
 desc=("Book a fixed-fee mediation consultation with Mediations Australia. "
-      "Tell us about your dispute and we'll explain how mediation can help — no obligation. Call 1800 952 380.")
+      "Tell us about your dispute and how mediation can help. Call 1800 952 380.")
 schema=[org_schema(),breadcrumb_schema([("Home",""),("Book a Consultation","book-a-consultation")])]
 d=head(title,desc,"book-a-consultation",extra_schema=schema)+nav()
 d+=f"""<main id="main">

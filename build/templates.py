@@ -10,6 +10,7 @@ BOOK_URL = "/book-a-consultation/"
 # ---- Navigation data (shared megamenu) ----
 SERVICES = [
     ("family-law-mediation", "Family Law Mediation", "Parenting & property, resolved without court"),
+    ("divorce-mediation", "Divorce Mediation", "Resolve everything that comes with divorce"),
     ("property-settlement-mediation", "Property Settlement", "Divide assets fairly and finally"),
     ("parenting-plan-mediation", "Parenting Plans", "Workable arrangements for your children"),
     ("section-60i-certificates", "Section 60I Certificates", "Required before parenting court action"),
@@ -21,6 +22,15 @@ SERVICES = [
     ("consent-orders", "Consent Orders", "Make your agreement legally binding"),
     ("online-divorce", "Online Divorce", "Separate from anywhere in Australia"),
     ("workplace-mediation", "Workplace Mediation", "Resolve disputes before the FWC"),
+    ("estate-dispute-mediation", "Estate Disputes", "Resolve will and inheritance disputes privately"),
+]
+
+# Grouped layout for the Services megamenu (scannable categories).
+# Slugs reference SERVICES above; workplace + how-it-works live in the menu footer.
+SERVICE_GROUPS = [
+    ("Family & separation", ["family-law-mediation", "divorce-mediation", "online-divorce", "de-facto-mediation"]),
+    ("Property & finances", ["property-settlement-mediation", "financial-agreements-mediation", "spousal-support-mediation", "consent-orders", "estate-dispute-mediation"]),
+    ("Parenting & workplace", ["parenting-plan-mediation", "child-support-mediation", "section-60i-certificates", "grandparents-mediation", "workplace-mediation"]),
 ]
 
 # Primary capital-city + major regional locations
@@ -57,6 +67,29 @@ OFFICES = [
 
 def esc(s): return html.escape(s, quote=True)
 
+def img(src, alt, w, h, cls="photo", caption=None, eager=False, srcset=None, sizes=None):
+    """Responsive, CWV-safe <img> wrapped in <figure>. Drop optimised files
+    (ideally WebP) in /assets/images/. ALWAYS pass true width/height so the
+    browser reserves space and layout doesn't shift (protects CLS). Use
+    eager=True only for an above-the-fold hero image (sets fetchpriority).
+    Pass srcset as a list of (filename, width_descriptor) tuples, e.g.
+    [('hero-800.jpg','800w'),('hero-1600.jpg','1600w')]. sizes defaults to
+    '100vw' when srcset is provided."""
+    loading = "eager" if eager else "lazy"
+    prio = ' fetchpriority="high"' if eager else ''
+    srcset_attr = ''
+    sizes_attr = ''
+    if srcset:
+        srcset_str = ', '.join(f'/assets/images/{esc(f)} {d}' for f, d in srcset)
+        srcset_attr = f' srcset="{srcset_str}"'
+        sizes_val = sizes or '100vw'
+        sizes_attr = f' sizes="{sizes_val}"'
+    tag = (f'<img src="/assets/images/{esc(src)}" alt="{esc(alt)}" '
+           f'width="{w}" height="{h}" loading="{loading}" decoding="async"{prio}'
+           f'{srcset_attr}{sizes_attr}>')
+    cap = f'<figcaption>{esc(caption)}</figcaption>' if caption else ''
+    return f'<figure class="{cls}">{tag}{cap}</figure>'
+
 def head(title, desc, slug, og_type="website", extra_schema=None):
     """Build <head> with full SEO/AEO meta + JSON-LD."""
     canonical = f"{DOMAIN}/" if slug == "" else f"{DOMAIN}/{slug}/"
@@ -72,19 +105,25 @@ def head(title, desc, slug, og_type="website", extra_schema=None):
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{canonical}">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<link rel="apple-touch-icon" href="/assets/images/favicon.png">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="{og_type}">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{canonical}">
+<meta property="og:image" content="{DOMAIN}/assets/images/MA-social.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Mediations Australia">
 <meta property="og:locale" content="en_AU">
+<meta name="twitter:image" content="{DOMAIN}/assets/images/MA-social.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(desc)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 {schema_tag}
 </head>
@@ -92,29 +131,67 @@ def head(title, desc, slug, og_type="website", extra_schema=None):
 <a href="#main" class="skip">Skip to main content</a>"""
 
 def nav():
-    svc = "".join(f'<a href="/{s}/"><b>{esc(n)}</b>{esc(d)}</a>' for s, n, d in SERVICES)
+    svc_lookup = {s: (n, d) for s, n, d in SERVICES}
+    cols = ""
+    for group, slugs in SERVICE_GROUPS:
+        links = "".join(
+            f'<a href="/{s}/"><b>{esc(svc_lookup[s][0])}</b><span>{esc(svc_lookup[s][1])}</span></a>'
+            for s in slugs)
+        cols += f'<div class="mega-col"><span class="mega-head">{esc(group)}</span>{links}</div>'
+    svc_mega = f"""<div class="drop mega">{cols}
+      <div class="mega-card">
+        <img src="/assets/images/DanT.png" alt="Dan Toombs — Nationally Accredited Mediator" class="mega-card-photo">
+        <div class="mega-card-body">
+          <span class="mega-card-tag">Free consultation</span>
+          <p class="mega-card-head">Talk to a Nationally Accredited Mediator today</p>
+          <a class="btn btn-primary mega-card-btn" href="{BOOK_URL}">Book a Free Consultation →</a>
+        </div>
+      </div>
+    </div>"""
     return f"""<header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="/" class="logo"><span class="dot"></span>Mediations Australia</a>
+    <a href="/" class="logo"><img src="/assets/images/MA.svg" alt="Mediations Australia" width="180" height="36" loading="eager" style="display:block;height:36px;width:auto"></a>
     <nav class="nav-links" id="navlinks" aria-label="Primary">
-      <span class="has-drop"><a class="lnk" href="/#disputes" aria-haspopup="true">Services</a>
-        <div class="drop">{svc}</div>
+      <a class="lnk" href="/about-mediations-australia/">About</a>
+      <a class="lnk" href="/our-team/">Our Team</a>
+      <span class="has-drop"><a class="lnk" href="/#disputes" aria-haspopup="true">How We Help</a>
+        {svc_mega}
       </span>
       <a class="lnk" href="/how-mediation-works/">How it works</a>
-      <a class="lnk" href="/guides/">Guides</a>
-      <a class="lnk" href="/about-mediations-australia/">About</a>
-      <span class="has-drop"><a class="lnk" href="/preparing-for-mediation/" aria-haspopup="true">Resources</a>
-        <div class="drop">
-          <a href="/preparing-for-mediation/"><b>Preparing for Mediation</b>What to expect &amp; how to get ready</a>
-          <a href="/getting-ready-for-separation/"><b>Getting Ready for Separation</b>A practical checklist</a>
-          <a href="/parenting-plan-template/"><b>Parenting Plan Template</b>What to include in your plan</a>
-          <a href="/bfa-or-consent-orders/"><b>BFA or Consent Orders?</b>Which is right for you</a>
-          <a href="/family-law-cost-estimator/"><b>Cost Estimator</b>Mediation vs court costs</a>
-          <a href="/separation-under-one-roof/"><b>Separation Under One Roof</b>How it works</a>
+      <span class="has-drop"><a class="lnk" href="/guides/" aria-haspopup="true">Resources</a>
+        <div class="drop mega mega-resources">
+          <div class="mega-col">
+            <span class="mega-head">Popular Guides</span>
+            <a href="/how-much-does-mediation-cost/"><b>How Much Does Mediation Cost?</b><span>Fees, who pays, and why it beats court</span></a>
+            <a href="/what-am-i-entitled-to-in-a-separation-in-australia/"><b>What Am I Entitled To?</b><span>Property, super and support explained</span></a>
+            <a href="/is-family-law-mediation-compulsory/"><b>Is Mediation Compulsory?</b><span>When it's required and the exemptions</span></a>
+            <a href="/how-long-does-mediation-take/"><b>How Long Does Mediation Take?</b><span>Most resolve in one or two sessions</span></a>
+            <a href="/mediation-with-a-narcissist/"><b>Mediation With a Narcissist</b><span>Proven strategies for high-conflict situations</span></a>
+            <a href="/property-settlement-after-separation/"><b>Property Settlement Guide</b><span>The four-step process, without court</span></a>
+            <a href="/what-happens-if-mediation-fails/"><b>What If Mediation Fails?</b><span>Section 60I, next steps and options</span></a>
+            <a href="/guides/" class="mega-see-all">See all guides →</a>
+          </div>
+          <div class="mega-col">
+            <span class="mega-head">Resources</span>
+            <a href="/preparing-for-mediation/"><b>Preparing for Mediation</b><span>What to expect &amp; how to get ready</span></a>
+            <a href="/getting-ready-for-separation/"><b>Getting Ready for Separation</b><span>A practical checklist</span></a>
+            <a href="/parenting-plan-template/"><b>Parenting Plan Template</b><span>What to include in your plan</span></a>
+            <a href="/bfa-or-consent-orders/"><b>BFA or Consent Orders?</b><span>Which is right for you</span></a>
+            <a href="/family-law-cost-estimator/"><b>Cost Estimator</b><span>Mediation vs court costs</span></a>
+            <a href="/separation-under-one-roof/"><b>Separation Under One Roof</b><span>How it works</span></a>
+          </div>
+          <div class="mega-card">
+            <img src="/assets/images/DanT.png" alt="Dan Toombs — Nationally Accredited Mediator" class="mega-card-photo">
+            <div class="mega-card-body">
+              <span class="mega-card-tag">Free consultation</span>
+              <p class="mega-card-head">Talk to a Nationally Accredited Mediator today</p>
+              <a class="btn btn-primary mega-card-btn" href="{BOOK_URL}">Book a Free Consultation →</a>
+            </div>
+          </div>
         </div>
       </span>
       <a class="lnk" href="/contact-us/">Contact</a>
-      <a class="btn btn-primary" href="{BOOK_URL}" style="padding:11px 22px;font-size:.92rem">Book free consult</a>
+      <a class="btn btn-primary" href="{BOOK_URL}" style="padding:11px 22px;font-size:.92rem">Book a Free Consultation</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -143,7 +220,7 @@ def footer():
           <li><a href="/how-mediation-works/">How it works</a></li>
           <li><a href="/our-fee-structure/">Our fees</a></li>
           <li><a href="/preparing-for-mediation/">Resources</a></li>
-          <li><a href="/our-mediators/">Our mediators</a></li>
+          <li><a href="/our-team/">Our team</a></li>
           <li><a href="/memberships/">Memberships</a></li>
           <li><a href="/mediation-podcast/">Podcast</a></li>
           <li><a href="/books/">Books</a></li>
@@ -175,6 +252,16 @@ mb.addEventListener('click',()=>{const o=nl.classList.toggle('open');mb.classLis
 nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nl.classList.remove('open');mb.classList.remove('open');mb.setAttribute('aria-expanded',false)}));
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// Mega menu: JS-driven open/close with close delay so gap between trigger and panel doesn't kill hover
+document.querySelectorAll('.has-drop').forEach(hd=>{
+  let t;
+  const open=()=>{clearTimeout(t);hd.classList.add('open')};
+  const close=()=>{t=setTimeout(()=>hd.classList.remove('open'),150)};
+  hd.addEventListener('mouseenter',open);
+  hd.addEventListener('mouseleave',close);
+  const drop=hd.querySelector('.drop');
+  if(drop){drop.addEventListener('mouseenter',open);drop.addEventListener('mouseleave',close);}
+});
 </script>
 </body>
 </html>"""
@@ -189,9 +276,15 @@ def org_schema():
         "name": "Mediations Australia",
         "description": "Nationally accredited mediators resolving family, business, workplace, property and estate disputes across Australia without court.",
         "url": f"{DOMAIN}/", "telephone": PHONE, "areaServed": "AU",
-        "priceRange": "Fixed-fee consultations",
+        "priceRange": "Free initial consultation",
         "address": [{"@type": "PostalAddress", "addressLocality": c.split(",")[0],
                      "streetAddress": a, "addressCountry": "AU"} for c, a in OFFICES],
+        # VERIFY before launch: confirm these match the real/live social profile URLs
+        "sameAs": [
+            "https://www.facebook.com/mediationsaustralia",
+            "https://www.linkedin.com/company/mediations-australia",
+            "https://www.youtube.com/@mediationsaustralia",
+        ],
     }
 
 def faq_schema(qa):
@@ -209,9 +302,20 @@ def service_schema(name, desc, slug):
             "provider": {"@id": f"{DOMAIN}/#organization"},
             "areaServed": "AU", "url": f"{DOMAIN}/{slug}/"}
 
+DAN_TOOMBS = {
+    "@type": "Person",
+    "name": "Dan Toombs",
+    "jobTitle": "Founder & Accredited Mediator",
+    "url": f"{DOMAIN}/our-team/dan-toombs/",
+    "sameAs": [
+        "https://amdras.au/",
+        "https://www.churchilltrust.com.au/",
+    ],
+}
+
 def article_schema(headline, desc):
     return {"@type": "Article", "headline": headline, "description": desc,
-            "author": {"@type": "Organization", "name": "Mediations Australia"},
+            "author": DAN_TOOMBS,
             "publisher": {"@id": f"{DOMAIN}/#organization"}}
 
 # ---- Reusable HTML fragments ----
@@ -243,14 +347,14 @@ def cta_band(h, p, note=True):
     notes = ""
     if note:
         check = '<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="var(--sage)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-        notes = f'<div class="note"><span>{check}No obligation</span><span>{check}Fixed-fee, transparent</span><span>{check}In person or online</span></div>'
+        notes = f'<div class="note"><span>{check}No obligation</span><span>{check}Transparent pricing</span><span>{check}In person or online</span></div>'
     return f"""<section class="cta-band" id="book">
   <div class="phero-blob"></div>
   <div class="wrap">
     <div class="reveal">
       <h2>{h}</h2>
       <p>{p}</p>
-      <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book your free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
       {notes}
     </div>
   </div>

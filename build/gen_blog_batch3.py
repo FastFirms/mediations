@@ -8,7 +8,7 @@ from authority_sources import cite
 # ---- HOW TO GET A DIVORCE IN AUSTRALIA (absorbs 14 posts) ----
 post("how-to-get-a-divorce-in-australia-a-step-by-step-guide",
  "How to Get a Divorce in Australia: Step-by-Step Guide (2026)",
- "How to get a divorce in Australia in 2026: eligibility, the 12-month separation rule, how to apply online, costs, serving documents, and what happens with children. Step by step.",
+ "How to get a divorce in Australia: eligibility, the 12-month separation rule, how to apply, costs, serving documents, and what to do with children.",
  "Divorce",
  "How to Get a Divorce in Australia: <em>A Step-by-Step Guide</em>",
  "Getting divorced in Australia is more straightforward than most people expect. It's a no-fault system, you can apply online, and the divorce itself is separate from sorting out property and children. This guide walks you through every step, the eligibility rules, the cost, and the common pitfalls.",
@@ -18,6 +18,7 @@ post("how-to-get-a-divorce-in-australia-a-step-by-step-guide",
   ("cost","What does it cost?"),
   ("serving","Serving the divorce papers"),
   ("children","Divorce when you have children"),
+  ("rejected","Why applications get delayed"),
   ("after","What a divorce does NOT resolve")],
  key_takeaway("Australia has a no-fault divorce system. To apply you must have been separated for at least 12 months and meet residency requirements. You apply online through the Commonwealth Courts Portal, pay the filing fee (around $1,100, or about $375 with a concession), and \u2014 if there are children under 18 \u2014 satisfy the court that proper arrangements are in place. The divorce itself does not divide property or settle parenting; those are separate.")
  + f"""
@@ -28,7 +29,17 @@ post("how-to-get-a-divorce-in-australia-a-step-by-step-guide",
   <li>You have been separated for at least 12 months; and</li>
   <li>The marriage has broken down irretrievably, with no reasonable likelihood of getting back together.</li>
 </ul>
-<p>Australia follows a no-fault model under the {cite("family_law_act")} \u2014 the court doesn't care <em>why</em> the marriage ended, only that it has.</p>
+<p>Australia follows a no-fault model under the {cite("family_law_act")} \u2014 the court doesn't care <em>why</em> the marriage ended, only that it has. Divorce is common and routine: the {cite("abs_divorce")} records tens of thousands of divorces granted each year, the large majority without a hitch.</p>
+<figure class="tbl"><table><caption>Divorce application in Australia at a glance</caption>
+<thead><tr><th>Requirement</th><th>Detail</th></tr></thead>
+<tbody>
+<tr><td>Separation</td><td>At least 12 months and one day</td></tr>
+<tr><td>Residency</td><td>Citizen, permanent resident, or 12 months living in Australia</td></tr>
+<tr><td>Ground</td><td>Irretrievable breakdown \u2014 no-fault</td></tr>
+<tr><td>How to apply</td><td>Online via the Commonwealth Courts Portal</td></tr>
+<tr><td>Filing fee</td><td>Around $1,100 (about $375 with a concession)</td></tr>
+<tr><td>When it's final</td><td>One month and one day after the order is granted</td></tr>
+</tbody></table></figure>
 """
  + inline_cta("Unsure whether you're eligible or how to start? A quick consultation will give you clarity \u2014 no obligation.")
  + """
@@ -46,6 +57,14 @@ post("how-to-get-a-divorce-in-australia-a-step-by-step-guide",
   <li><strong>Attend the hearing if required</strong> \u2014 often not necessary, especially for joint applications or where there are no children under 18.</li>
   <li><strong>Divorce order takes effect</strong> one month and one day after it's granted.</li>
 </ol>
+<figure class="tbl"><table><caption>Sole vs joint divorce application</caption>
+<thead><tr><th></th><th>Joint application</th><th>Sole application</th></tr></thead>
+<tbody>
+<tr><td>Who applies</td><td>Both spouses together</td><td>One spouse</td></tr>
+<tr><td>Serving documents</td><td>Not required</td><td>Required — you must serve your spouse</td></tr>
+<tr><td>Attending the hearing</td><td>Usually not needed</td><td>May be needed if there are children under 18</td></tr>
+<tr><td>Best when</td><td>You both agree to divorce</td><td>Your spouse won't participate or can't be found</td></tr>
+</tbody></table></figure>
 """
  + callout("Apply online from anywhere",
    "The entire divorce application is handled through the Commonwealth Courts Portal \u2014 you don't need to attend a registry in person to lodge it. Online mediation can resolve the property and parenting side the same way.")
@@ -61,8 +80,19 @@ post("how-to-get-a-divorce-in-australia-a-step-by-step-guide",
 <h2 id="children">Divorce when you have children</h2>
 <p>If there are children under 18, the court must be satisfied that proper arrangements have been made for their care before granting the divorce. This doesn't mean you need final parenting orders \u2014 but you do need workable arrangements. A <a href="/parenting-plan-mediation/">parenting plan</a> agreed through mediation is the simplest way to demonstrate this. For a sole application involving children, you may need to attend the hearing.</p>
 
+<h2 id="rejected">Why applications get delayed</h2>
+<p>Most divorce applications go through cleanly, but a few avoidable issues cause delays. Knowing them up front saves weeks:</p>
+<ul>
+  <li><strong>Separation under 12 months</strong> — applying before you've completed the full 12 months and one day.</li>
+  <li><strong>Missing marriage certificate</strong> — you need your certificate, and an English translation if it's in another language.</li>
+  <li><strong>Service not completed properly</strong> — on a sole application, the documents must be served correctly and proof of service filed.</li>
+  <li><strong>Arrangements for children unclear</strong> — the court needs to see proper arrangements are in place for any children under 18.</li>
+  <li><strong>Errors in the application</strong> — names that don't match the marriage certificate, or incomplete details.</li>
+</ul>
+<p>A short consultation, or agreeing parenting and property through <a href="/family-law-mediation/">mediation</a> in parallel, heads off most of these. <a href="/parenting-plan-mediation/">Sort the children's arrangements →</a></p>
+
 <h2 id="after">What a divorce does NOT resolve</h2>
-<p>This is the most misunderstood part: the divorce only ends the marriage. It does <strong>not</strong> divide your property, settle finances, or determine parenting arrangements. Those are separate processes \u2014 and there are time limits. You generally have <strong>12 months from the date the divorce is final</strong> to apply for property and financial orders. Don't let the divorce lull you into missing that window. <a href="/property-settlement-after-separation/">Sort your property settlement \u2192</a></p>
+<p>This is the most misunderstood part: the divorce only ends the marriage. It does <strong>not</strong> divide your property, settle finances, or determine parenting arrangements. Those are separate processes \u2014 and there are time limits. You generally have <strong>12 months from the date the divorce is final</strong> to apply for property and financial orders. Don't let the divorce lull you into missing that window. The calm way to settle all of it \u2014 parenting, property and finances \u2014 is <a href="/divorce-mediation/">divorce mediation</a>. <a href="/property-settlement-after-separation/">Sort your property settlement \u2192</a></p>
 """
  ,
  [("How long does it take to get divorced in Australia?",
@@ -86,8 +116,8 @@ print("how-to-get-a-divorce built")
 
 # ---- BINDING FINANCIAL AGREEMENTS (absorbs 11 posts) ----
 post("binding-financial-agreements-guide",
- "Binding Financial Agreements in Australia: Complete Guide (2026)",
- "What is a binding financial agreement (BFA)? How prenups and postnups work in Australia, what makes them valid, the risks, and how they compare to consent orders. Full 2026 guide.",
+ "Binding Financial Agreements in Australia: A Guide (2026)",
+ "What is a binding financial agreement? How prenups and postnups work, what makes them valid, the risks, and how they compare to consent orders. 2026 guide.",
  "Property &amp; finances",
  "Binding Financial Agreements: <em>The Complete Guide</em>",
  "A binding financial agreement (BFA) is a private contract that decides how your assets are divided \u2014 before, during, or after a relationship. Often called a prenup or postnup, it offers flexibility and privacy, but only holds up if it's done strictly by the book. Here's what you need to know.",
@@ -175,7 +205,7 @@ print("binding-financial-agreements-guide built")
 # ---- PARENTING PLANS GUIDE (absorbs 8 posts) ----
 post("parenting-plans-guide",
  "Parenting Plans in Australia: The Complete Guide (2026)",
- "What is a parenting plan, what should it include, and is it legally binding? A complete 2026 guide to parenting plans vs parenting orders, and how to agree one through mediation.",
+ "What is a parenting plan, what should it include, and is it legally binding? A 2026 guide to parenting plans vs orders, and how to agree through mediation.",
  "Parenting",
  "Parenting Plans in Australia: <em>The Complete Guide</em>",
  "A parenting plan is a written agreement about how separated parents will raise their children \u2014 living arrangements, time, decisions and more. It's flexible and child-focused, but it's not the same as a parenting order. This guide covers what to include, whether it's binding, and how to agree one that lasts.",

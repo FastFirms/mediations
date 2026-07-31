@@ -7,13 +7,14 @@ from authority_sources import cite
 
 # ---- PROPERTY SETTLEMENT MEDIATION GUIDE (absorbs 8) ----
 post("property-settlement-mediation-guide",
- "Property Settlement Mediation: How to Prepare & What to Expect (2026)",
- "Property settlement mediation explained: how to prepare, what to expect on the day, what to bring, and how to reach a fair financial agreement without court. 2026 guide.",
+ "Property Settlement Mediation: How to Prepare (2026)",
+ "Property settlement mediation: how to prepare, what to expect on the day, and how to reach a fair financial agreement without court. 2026 guide.",
  "Property &amp; finances",
  "Property Settlement Mediation: <em>How to Prepare &amp; What to Expect</em>",
  "Property settlement mediation is how most separating couples divide their assets without a court battle. Knowing how to prepare \u2014 and what actually happens on the day \u2014 makes all the difference to the outcome. This guide walks you through it step by step.",
  [("what-is","What is property settlement mediation?"),
   ("when","When should you mediate?"),
+  ("four-step","The four-step framework"),
   ("prepare","How to prepare"),
   ("bring","What to bring"),
   ("on-the-day","What to expect on the day"),
@@ -22,20 +23,35 @@ post("property-settlement-mediation-guide",
  key_takeaway("Property settlement mediation is a structured process where a neutral mediator helps separating partners divide assets, debts and superannuation by agreement. Preparation is everything: gather full financial disclosure, know your asset pool, and decide your priorities in advance. Most matters resolve in one session, and the agreement is then made binding through consent orders or a financial agreement.")
  + """
 <h2 id="what-is">What is property settlement mediation?</h2>
-<p>Property settlement mediation is a focused form of <a href="/family-law-mediation/">mediation</a> dealing specifically with the financial side of separation \u2014 dividing the property, assets, debts and superannuation. A neutral mediator guides you and your former partner through the issues and helps you reach a fair, workable agreement, applying the same <a href="/what-am-i-entitled-to-in-a-separation-in-australia/">four-step framework</a> under the <a href='https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/' target='_blank' rel='noopener'>Family Law Act 1975</a> a court would use, but in a fraction of the time and cost.</p>
+<p>Property settlement mediation is a focused form of <a href='/family-law-mediation/'>mediation</a> dealing specifically with the financial side of separation \u2014 dividing the property, assets, debts and superannuation. A neutral mediator guides you and your former partner through the issues and helps you reach a fair, workable agreement, applying the same <a href='/what-am-i-entitled-to-in-a-separation-in-australia/'>four-step framework</a> under the <a href='https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/' target='_blank' rel='noopener'>Family Law Act 1975</a> a court would use, but in a fraction of the time and cost.</p>
+<p>Unlike general family mediation, property settlement mediation is financially focused. It deals with the family home, investment properties, superannuation, vehicles, savings, shares, businesses, and debts. The mediator doesn't give legal advice or decide the outcome \u2014 they help both parties reach their own informed agreement through structured, interest-based negotiation.</p>
 """
  + inline_cta("Ready to divide assets fairly without a court fight? Book a property settlement mediation consultation.")
  + """
 <h2 id="when">When should you mediate?</h2>
-<p>The best time is once you both accept the relationship is over and you have a reasonable picture of the asset pool \u2014 but before positions harden or legal costs mount. You don't need to have everything figured out; that's what the process is for. Earlier is almost always better: it protects the asset pool from being eroded by prolonged conflict and legal fees. <a href="/property-settlement-after-separation/">See the time limits that apply \u2192</a></p>
+<p>The best time is once you both accept the relationship is over and you have a reasonable picture of the asset pool \u2014 but before positions harden or legal costs mount. You don't need to have everything figured out; that's what the process is for. Earlier is almost always better: it protects the asset pool from being eroded by prolonged conflict and legal fees. <a href='/property-settlement-after-separation/'>See the time limits that apply \u2192</a></p>
+<p>There are also legal reasons to act promptly. De facto couples have a two-year window after separation to apply for property orders, and married couples have 12 months after the divorce is finalised. Missing these limits requires court leave to proceed. Mediation well before these deadlines gives you the best options. <a href='/property-settlement-after-separation/'>See the time limits that apply \u2192</a></p>
+
+<h2 id="four-step">The four-step framework</h2>
+<p>Whether the matter goes to mediation or court, the same legal framework applies under the Family Law Act. Understanding it before you mediate gives you a realistic anchor for negotiations:</p>
+<figure class='tbl'><table><caption>The four-step property settlement framework</caption>
+<thead><tr><th>Step</th><th>What it means</th></tr></thead>
+<tbody>
+<tr><td>1. Identify the asset pool</td><td>List all assets, debts and superannuation \u2014 jointly and individually</td></tr>
+<tr><td>2. Assess contributions</td><td>Financial and non-financial contributions of each party over the relationship</td></tr>
+<tr><td>3. Future needs</td><td>Factors like age, health, care of children, earning capacity going forward</td></tr>
+<tr><td>4. Just and equitable</td><td>The overall outcome must be fair in all the circumstances</td></tr>
+</tbody></table></figure>
+<p>A mediator will often walk parties through this framework explicitly, because it helps both sides move from positional demands ("I want the house") to principled negotiation ("here's why the outcome is fair given our contributions and future needs").</p>
 
 <h2 id="prepare">How to prepare</h2>
 <ol>
-  <li><strong>Gather full financial disclosure</strong> \u2014 both parties must disclose everything; incomplete disclosure derails mediation.</li>
+  <li><strong>Gather full financial disclosure</strong> \u2014 both parties have a <a href='https://www.fcfcoa.gov.au/fl/duty-disclosure' target='_blank' rel='noopener'>duty of full and frank financial disclosure</a>, so disclose everything. Hiding assets doesn't just derail the mediation; it can see a later settlement overturned.</li>
   <li><strong>Build the asset pool picture</strong> \u2014 list all assets, debts and superannuation, joint and individual.</li>
   <li><strong>Get valuations where needed</strong> \u2014 for property, businesses, or defined-benefit super.</li>
   <li><strong>Know your priorities</strong> \u2014 separate what you genuinely need from what you'd prefer.</li>
   <li><strong>Consider your future needs</strong> \u2014 housing, earning capacity, care of children.</li>
+  <li><strong>Get independent legal advice</strong> \u2014 not to create conflict, but to understand your entitlements before you negotiate.</li>
 </ol>
 """
  + callout("Disclosure is non-negotiable",
@@ -43,16 +59,20 @@ post("property-settlement-mediation-guide",
  + """
 <h2 id="bring">What to bring</h2>
 <ul>
-  <li>Recent bank, loan and credit card statements</li>
+  <li>Recent bank, loan and credit card statements (last 12 months)</li>
   <li>Superannuation statements for both parties</li>
-  <li>Property valuations or appraisals</li>
-  <li>Tax returns and payslips</li>
-  <li>Details of any businesses, trusts or investments</li>
+  <li>Property valuations or recent appraisals</li>
+  <li>Tax returns and recent payslips</li>
+  <li>Details of any businesses, trusts or investment portfolios</li>
   <li>A list of significant assets and debts, with rough values</li>
+  <li>Mortgage statements and any finance contracts</li>
+  <li>Any pre-existing financial agreements</li>
 </ul>
+<p>You don't need perfection on day one, but the more complete your financial picture, the less likely the mediation stalls waiting on missing information. Preparing a simple one-page asset summary in advance is a practical step that most people find useful. <a href='/preparing-for-mediation/'>See our full preparation guide \u2192</a></p>
 
 <h2 id="on-the-day">What to expect on the day</h2>
-<p>After an initial intake, the mediator will usually open jointly (or keep you in separate rooms if you prefer \u2014 see <a href="/shuttle-mediation-guide/">shuttle mediation</a>), confirm the issues, and work methodically through the asset pool and how to divide it. Expect to negotiate, to hear the other perspective, and to focus on options rather than blame. Most property matters resolve in a single full-day session, ending with a documented Heads of Agreement. <a href="/preparing-for-mediation/">See how to prepare \u2192</a></p>
+<p>After an initial intake, the mediator will usually open jointly (or keep you in separate rooms if you prefer \u2014 see <a href='/shuttle-mediation-guide/'>shuttle mediation</a>), confirm the issues, and work methodically through the asset pool and how to divide it. Expect to negotiate, to hear the other perspective, and to focus on options rather than blame. Most property matters resolve in a single full-day session, ending with a documented Heads of Agreement.</p>
+<p>The mediator manages the process, not the outcome. They might offer reality-testing ("is that outcome realistic given the contributions?") but they don't give legal advice or tell you what to accept. Both parties retain full control over the agreement they reach. If you need time to think or consult a lawyer between sessions, that's entirely reasonable \u2014 and far better than agreeing to something you later regret.</p>
 """
  + inline_cta("Walk in prepared and walk out with an agreement. We'll get you ready \u2014 book a consultation today.")
  + """
@@ -60,13 +80,15 @@ post("property-settlement-mediation-guide",
 <ul>
   <li><strong>Stay focused on the future</strong>, not on re-fighting the relationship.</li>
   <li><strong>Be realistic</strong> \u2014 anchor to the four-step framework, not to what you wish you were owed.</li>
-  <li><strong>Think in terms of the whole pool</strong>, not winning individual items.</li>
-  <li><strong>Weigh super properly</strong> against other assets \u2014 don't trade it away cheaply.</li>
-  <li><strong>Keep emotion in check</strong> \u2014 calm, factual negotiation gets better results.</li>
+  <li><strong>Think in terms of the whole pool</strong>, not winning individual items. Swapping the house for more super may serve you better than fighting over each asset separately.</li>
+  <li><strong>Weigh super properly</strong> against other assets \u2014 don't trade it away cheaply. Superannuation is often the largest asset after the family home, and its tax treatment makes it genuinely different from cash.</li>
+  <li><strong>Keep emotion in check</strong> \u2014 calm, factual negotiation gets better results than emotionally charged positioning.</li>
+  <li><strong>Know your walk-away point</strong> \u2014 understand in advance what outcome is acceptable to you, so you can evaluate proposals clearly in the room.</li>
 </ul>
 
 <h2 id="after">Making the agreement binding</h2>
-<p>An agreement reached in mediation isn't automatically binding \u2014 you formalise it afterwards through <a href="/consent-orders-explained/">consent orders</a> (court-approved) or a <a href="/binding-financial-agreements-guide/">binding financial agreement</a>. This step closes off future claims and gives both parties certainty. We help you take the agreement through to a binding outcome. <a href="/property-settlement-mediation/">See our property settlement mediation service \u2192</a></p>
+<p>An agreement reached in mediation isn't automatically binding \u2014 you formalise it afterwards through <a href='/consent-orders-explained/'>consent orders</a> (court-approved, the most common route) or a <a href='/binding-financial-agreements-guide/'>binding financial agreement</a>. This step closes off future claims and gives both parties certainty. The Heads of Agreement signed at the end of the session captures what was agreed; the formal documents translate that into a legally binding form.</p>
+<p>Consent orders are generally preferred for most separating couples because they're court-approved and provide a clear, enforceable record. Binding financial agreements offer more flexibility but require independent legal advice for both parties. We guide clients through to a binding outcome \u2014 the mediation day is the hard part; formalisation is largely administrative. <a href='/property-settlement-mediation/'>See our property settlement mediation service \u2192</a></p>
 """
  ,
  [("How do I prepare for property settlement mediation?",
@@ -78,60 +100,85 @@ post("property-settlement-mediation-guide",
   ("Is the mediated property agreement legally binding?",
    "Not automatically. You formalise it afterwards through consent orders or a binding financial agreement to make it binding and close off future claims."),
   ("What happens if my ex hides assets in mediation?",
-   "Both parties have a duty of full disclosure. Hiding assets can derail the mediation and can lead to a later settlement being overturned by a court.")],
+   "Both parties have a duty of full disclosure. Hiding assets can derail the mediation and can lead to a later settlement being overturned by a court."),
+  ("What is the four-step framework for property settlement?",
+   "Identify the asset pool, assess contributions, consider future needs, and determine a just and equitable outcome. This framework applies whether the matter is mediated or decided in court.")],
  [("property-settlement-mediation","Property Settlement Mediation"),
   ("property-settlement-after-separation","Property Settlement After Separation"),
   ("what-am-i-entitled-to-in-a-separation-in-australia","What Am I Entitled To?"),
   ("consent-orders-explained","Consent Orders Explained"),
   ("superannuation-and-divorce","Superannuation & Divorce"),
   ("preparing-for-mediation","Preparing for Mediation")],
- read_min=10)
+ read_min=12)
 print("property-settlement-mediation-guide built")
 
 # ---- BUSINESS IN DIVORCE (absorbs 3) ----
 post("business-in-divorce",
  "What Happens to a Business in a Divorce in Australia? (2026)",
- "What happens to a business in a divorce in Australia? How businesses, companies and trusts are valued and divided in a property settlement \u2014 and how to protect yours.",
+ "What happens to a business in a divorce? How businesses, companies and trusts are valued and divided in a property settlement — and how to protect yours.",
  "Property &amp; finances",
  "What Happens to a Business in a Divorce in Australia?",
  "A business is often the most valuable \u2014 and most complex \u2014 asset in a separation. It forms part of the property pool, must be valued, and can be divided in various ways. This guide explains how businesses, companies and trusts are treated in a divorce, and how to protect a business you've built.",
  [("part-of-pool","Is a business part of the property pool?"),
   ("valuation","How is a business valued?"),
+  ("valuation-methods","Valuation methods compared"),
   ("divided","How is a business divided?"),
   ("trusts","Companies and trusts"),
   ("protect","How to protect your business"),
+  ("during-proceedings","Business operations during proceedings"),
   ("mediation","Why mediation suits business matters")],
  key_takeaway("A business is treated as property in a divorce and forms part of the asset pool. It must be valued (often by an expert), and the value is then factored into the overall division \u2014 usually by one party retaining the business and offsetting its value against other assets, rather than splitting the business itself. Companies and trusts add complexity. Mediation is well suited to keeping a business intact.")
  + f"""
 <h2 id="part-of-pool">Is a business part of the property pool?</h2>
-<p>Yes. Under the {cite("family_law_act")}, a business \u2014 whether a sole trader operation, a company, or an interest in a partnership \u2014 forms part of the asset pool to be divided, just like the family home or superannuation. This is true even if only one partner runs it, and even if it was started before the relationship (though the timing and contributions affect how it's treated). <a href="/property-settlement-after-separation/">See how the asset pool works \u2192</a></p>
+<p>Yes. Under the {cite("family_law_act")}, a business \u2014 whether a sole trader operation, a company, or an interest in a partnership \u2014 forms part of the asset pool to be divided, just like the family home or superannuation. This is true even if only one partner runs it, and even if it was started before the relationship (though the timing and contributions affect how it's treated). <a href='/property-settlement-after-separation/'>See how the asset pool works \u2192</a></p>
+<p>The contributions of a non-business-owning partner are also recognised. If one partner ran the household and cared for children while the other built the business, those homemaking contributions are counted. The family law framework looks at the whole picture of contributions, not just whose name is on the ABN.</p>
 """
  + inline_cta("Worried about what happens to the business you've built? Get clear, practical advice in a consultation.")
- + """
+ + f"""
 <h2 id="valuation">How is a business valued?</h2>
-<p>Valuing a business is rarely as simple as looking at its bank balance. Depending on the business, valuation may consider net assets, future earning capacity, goodwill, and comparable sales. For anything beyond the simplest operation, an independent expert valuation is usually needed (the <a href='https://www.fcfcoa.gov.au/' target='_blank' rel='noopener'>Federal Circuit and Family Court</a> deals with complex business valuations regularly) \u2014 and the parties may need to agree on a single expert to avoid duelling valuations. Getting the value right matters enormously, because it drives the whole settlement.</p>
+<p>Valuing a business is rarely as simple as looking at its bank balance. Depending on the business, valuation may consider net assets, future earning capacity, goodwill, and comparable sales. For anything beyond the simplest operation, an independent expert valuation is usually needed (the {cite("fcfcoa")} deals with complex business valuations regularly) \u2014 and the parties may need to agree on a single expert to avoid duelling valuations that add cost and delay. Getting the value right matters enormously, because it drives the whole settlement.</p>
+<p>The timing of valuation matters too. A business valued at peak earnings will look different from one valued during a downturn or while the owners are in dispute. An expert valuer who understands family law methodology (not just commercial practice) is worth engaging early.</p>
+
+<h2 id="valuation-methods">Valuation methods compared</h2>
+<figure class='tbl'><table><caption>Common business valuation methods in family law</caption>
+<thead><tr><th>Method</th><th>Best suited to</th><th>Key consideration</th></tr></thead>
+<tbody>
+<tr><td>Capitalisation of earnings</td><td>Profitable ongoing businesses</td><td>What multiple of maintainable earnings?</td></tr>
+<tr><td>Net assets (balance sheet)</td><td>Asset-heavy businesses, holding companies</td><td>Goodwill may be understated</td></tr>
+<tr><td>Discounted cash flow</td><td>Growth businesses with forecast revenue</td><td>Sensitive to assumptions; often contested</td></tr>
+<tr><td>Comparable market sales</td><td>Businesses in active sale markets</td><td>Requires good comparable data</td></tr>
+<tr><td>Market value of shares</td><td>Minority interests in private companies</td><td>Discount for lack of control/marketability</td></tr>
+</tbody></table></figure>
+<p>In practice, the parties often agree on a single expert valuer to avoid costly competing reports. Where they can't agree on value, the mediator can help structure a process \u2014 such as each party nominating an expert and splitting the difference, or jointly engaging a third expert.</p>
 
 <h2 id="divided">How is a business divided?</h2>
 <p>Contrary to what many fear, the business itself usually isn't carved up or sold. The far more common outcome is that one partner <strong>retains the business</strong> and its value is <strong>offset</strong> against other assets \u2014 for example, the business-owning partner keeps the company while the other receives a larger share of the home or superannuation. This keeps the business intact and operating. Where that's not possible, options include a payout over time or, as a last resort, sale.</p>
+<p>Creative structures are also possible through mediation that a court might not readily impose: a staged buyout over several years, a short-term joint operation with an agreed exit, or a licensing arrangement where the non-business partner retains a revenue interest for a period. These work best when both parties have a shared interest in the business surviving the separation period.</p>
 """
  + callout("Keeping the business running matters",
    "Courts and mediators generally try to avoid killing the goose that lays the golden egg. An outcome that destroys a viable business usually serves no one \u2014 so offsetting its value is almost always preferred to splitting or selling it.")
  + """
 <h2 id="trusts">Companies and trusts</h2>
-<p>Where assets are held in a company or family trust, things get more complex \u2014 but they're not out of reach. The court can look behind these structures to determine who really controls and benefits from the assets, and can treat them as part of the pool or as a financial resource. Structures set up to shield assets from a settlement rarely work as intended. <a href="/property-settlement-after-separation/">See the duty of disclosure \u2192</a></p>
+<p>Where assets are held in a company or family trust, things get more complex \u2014 but they're not out of reach. The court can look behind these structures to determine who really controls and benefits from the assets, and can treat them as part of the pool or as a financial resource. Structures set up to shield assets from a settlement rarely work as intended. <a href='/property-settlement-after-separation/'>See the duty of disclosure \u2192</a></p>
+<p>Family discretionary trusts are a particular area of complexity. Technically, the assets belong to the trust and neither party "owns" them. In practice, courts and mediators look at who the real controller and beneficiary is. If one partner effectively controls and benefits from the trust, those assets are likely to be treated as a financial resource or brought into the pool. Getting specialist advice on trust structures early in a property settlement is strongly recommended.</p>
 
 <h2 id="protect">How to protect your business</h2>
 <ul>
-  <li><strong>A binding financial agreement</strong> \u2014 a <a href="/binding-financial-agreements-guide/">BFA</a> (prenup or during the relationship) can quarantine a business.</li>
-  <li><strong>Clear records</strong> \u2014 keep business and personal finances separate and well documented.</li>
-  <li><strong>Realistic valuation</strong> \u2014 engage early with a credible expert.</li>
-  <li><strong>Mediate, don't litigate</strong> \u2014 a court fight can damage the very business you're trying to protect.</li>
+  <li><strong>A binding financial agreement</strong> \u2014 a <a href='/binding-financial-agreements-guide/'>BFA</a> (prenup or during the relationship) can quarantine a business from a future settlement. This only works if done properly with independent legal advice for both parties.</li>
+  <li><strong>Clear records</strong> \u2014 keep business and personal finances separate and well documented. Mixing personal expenses through the business creates confusion about the real value and your contributions.</li>
+  <li><strong>Realistic valuation</strong> \u2014 engage early with a credible independent expert rather than relying on informal estimates. An accurate valuation protects you whether the outcome ends up favouring you or not.</li>
+  <li><strong>Mediate, don't litigate</strong> \u2014 a court fight can damage the very business you're trying to protect. Uncertainty, management distraction, and the risk of a forced sale are all real litigation costs beyond legal fees.</li>
 </ul>
 """
  + inline_cta("Protect the business you've worked for. We'll help you reach a fair outcome that keeps it intact.")
  + """
+<h2 id="during-proceedings">Business operations during proceedings</h2>
+<p>One of the less-discussed challenges is keeping the business running while a settlement is being negotiated. Long litigation creates real business risk: key decisions may stall, staff and clients can sense instability, and the value you're fighting over may actually decline during the process. This is another reason why reaching agreement quickly matters for business owners \u2014 not just to resolve the legal dispute, but to protect the underlying asset.</p>
+<p>Where both parties have roles in the business, a temporary operating agreement \u2014 covering how decisions will be made, how profits will be dealt with, and what each party's role is during the settlement period \u2014 can prevent the business from becoming a casualty of the separation. A skilled mediator can help structure this. <a href='/property-settlement-mediation/'>See our property mediation service \u2192</a></p>
+
 <h2 id="mediation">Why mediation suits business matters</h2>
-<p>Business-related settlements are exactly where <a href="/property-settlement-mediation/">mediation</a> shines. It's confidential \u2014 so sensitive financial details stay private rather than entering the public court record. It's faster \u2014 so the business isn't left in limbo for years. And it's flexible \u2014 letting you craft creative solutions (offsets, staged payouts, ongoing arrangements) that a court might not order. For business owners, mediation is almost always the smarter path. <a href="/mediate-or-litigate/">Compare mediation and court \u2192</a></p>
+<p>Business-related settlements are exactly where <a href='/property-settlement-mediation/'>mediation</a> shines. It's confidential \u2014 so sensitive financial details stay private rather than entering the public court record. It's faster \u2014 so the business isn't left in limbo for years. And it's flexible \u2014 letting you craft creative solutions (offsets, staged payouts, ongoing arrangements) that a court might not order. For business owners, mediation is almost always the smarter path. <a href='/mediate-or-litigate/'>Compare mediation and court \u2192</a></p>
+<p>A mediator experienced in business matters can also help parties reality-test their positions against what a court would actually be likely to do \u2014 grounding the negotiation in realistic outcomes rather than hopeful ones. That practical anchor often helps both sides move toward agreement more efficiently than a lengthy legal battle that ends at a court's discretion anyway.</p>
 """
  ,
  [("Is my business part of the property pool in a divorce?",
@@ -143,20 +190,22 @@ post("business-in-divorce",
   ("Can assets held in a trust or company be divided?",
    "Often yes. Courts can look behind company and trust structures to determine real control and benefit, and treat the assets as part of the pool or a financial resource."),
   ("How can I protect my business from a divorce?",
-   "A binding financial agreement can quarantine a business, alongside clear separate record-keeping, credible early valuation, and resolving matters through mediation rather than court.")],
+   "A binding financial agreement can quarantine a business, alongside clear separate record-keeping, credible early valuation, and resolving matters through mediation rather than court."),
+  ("What if we both work in the business during separation?",
+   "A temporary operating agreement covering decision-making, profit distribution, and roles during the settlement period can keep the business stable while the settlement is negotiated.")],
  [("property-settlement-after-separation","Property Settlement"),
   ("property-settlement-mediation","Property Settlement Mediation"),
   ("binding-financial-agreements-guide","Binding Financial Agreements"),
   ("what-am-i-entitled-to-in-a-separation-in-australia","What Am I Entitled To?"),
   ("superannuation-and-divorce","Superannuation & Divorce"),
   ("mediate-or-litigate","Mediate or Litigate?")],
- read_min=9)
+ read_min=11)
 print("business-in-divorce built")
 
 # ---- FAMILY COURT PROCESS (absorbs 8) ----
 post("family-court-process",
  "The Family Court Process in Australia: What to Expect (2026)",
- "How the family court process works in Australia: from pre-action steps to final hearing, the role of the Federal Circuit and Family Court, timeframes, and why mediation comes first.",
+ "How the family court process works in Australia: from pre-action steps to final hearing, timeframes, and why mediation always comes first.",
  "The process",
  "The Family Court Process in Australia: <em>What to Expect</em>",
  "If your matter can't be resolved by agreement, understanding the court process removes some of the fear. This guide walks through the family court system in Australia \u2014 the pre-action steps, what happens at each stage, how long it takes, and why mediation is required first and remains the better option throughout.",
@@ -226,8 +275,8 @@ print("family-court-process built")
 
 # ---- DIVORCE WITHOUT A LAWYER (absorbs 2) ----
 post("divorce-without-a-lawyer",
- "Divorce Without a Lawyer in Australia: Is It Possible? (2026)",
- "Can you get divorced without a lawyer in Australia? Yes \u2014 here's how to do the divorce application yourself, when you still need help, and how mediation replaces costly litigation.",
+ "Divorce Without a Lawyer in Australia: Is It Possible?",
+ "Can you get divorced without a lawyer in Australia? Yes — here's how to do the application yourself, when you need help, and how mediation replaces litigation.",
  "Divorce",
  "Divorce Without a Lawyer in Australia: <em>Is It Possible?</em>",
  "Yes \u2014 you can get divorced without a lawyer in Australia, and many people do. The divorce application is designed to be done yourself. But 'divorce' and 'sorting out property and children' are different things, and knowing where you can DIY and where you shouldn't will save you money and mistakes.",
@@ -287,7 +336,7 @@ print("divorce-without-a-lawyer built")
 # ---- HOW LONG DOES A DIVORCE TAKE (absorbs 1) ----
 post("how-long-does-a-divorce-take",
  "How Long Does a Divorce Take in Australia? (2026 Guide)",
- "How long does a divorce take in Australia? The 12-month separation rule, processing times, when the divorce is final, and why property and parenting take their own timeline.",
+ "How long does a divorce take in Australia? The 12-month separation rule, processing times, when the divorce is final, and why property takes its own timeline.",
  "Divorce",
  "How Long Does a Divorce Take in Australia?",
  "From the 12-month separation requirement to the month-and-a-day after the order, the divorce itself runs on a fairly predictable timeline. But property and parenting follow their own clock entirely. Here's how long each part really takes \u2014 and how to avoid the delays that catch people out.",

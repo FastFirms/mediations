@@ -7,17 +7,54 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        BOOK_URL, PHONE, PHONE_HREF, DOMAIN, OFFICES, SERVICES)
 from location_data import LOCATION_DATA
 
-OUT = "/home/claude/mediations/site"
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEAREST = {"NSW":"Sydney","VIC":"Melbourne","QLD":"Brisbane","WA":"Perth",
            "SA":"Melbourne","ACT":"Sydney","TAS":"Melbourne","NT":"Brisbane"}
 
-def localservice_schema(city, state, slug):
-    return {"@type":"LegalService","name":f"Mediations Australia - {city}",
-            "description":f"Nationally accredited mediators serving {city} and {state}, resolving family, property, workplace and commercial disputes without court.",
-            "url":f"{DOMAIN}/{slug}/","telephone":PHONE,
-            "parentOrganization":{"@id":f"{DOMAIN}/#organization"},
-            "areaServed":{"@type":"City","name":city},
-            "priceRange":"Fixed-fee consultations"}
+OFFICE_GEO = {
+    "Sydney":    {"lat": -33.8688, "lng": 151.2093,
+                  "street": "Suite 508, 41/464-480 Kent St", "suburb": "Sydney", "state": "NSW", "post": "2000"},
+    "Melbourne": {"lat": -37.8183, "lng": 144.9521,
+                  "street": "Level 23, Collins Square Tower Five, 727 Collins St", "suburb": "Melbourne", "state": "VIC", "post": "3008"},
+    "Brisbane":  {"lat": -27.4705, "lng": 153.0260,
+                  "street": "Suite 507, 12B Anzac Square Arcade, 198 Adelaide St", "suburb": "Brisbane", "state": "QLD", "post": "4000"},
+    "Perth":     {"lat": -31.9505, "lng": 115.8605,
+                  "street": "Level 25, 108 St Georges Tce", "suburb": "Perth", "state": "WA", "post": "6000"},
+}
+
+def localservice_schema(city, state, slug, has_office=False):
+    schema = {
+        "@type": "LegalService",
+        "@id": f"{DOMAIN}/{slug}/#legalservice",
+        "name": f"Mediations Australia — {city}",
+        "description": f"Nationally accredited mediators serving {city} and {state}, resolving family, property, workplace and commercial disputes without court.",
+        "url": f"{DOMAIN}/{slug}/",
+        "telephone": PHONE,
+        "parentOrganization": {"@id": f"{DOMAIN}/#organization"},
+        "areaServed": {"@type": "City", "name": city},
+        "priceRange": "Free initial consultation",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00", "closes": "17:00",
+        },
+    }
+    if has_office and city in OFFICE_GEO:
+        geo = OFFICE_GEO[city]
+        schema["address"] = {
+            "@type": "PostalAddress",
+            "streetAddress": geo["street"],
+            "addressLocality": geo["suburb"],
+            "addressRegion": geo["state"],
+            "postalCode": geo["post"],
+            "addressCountry": "AU",
+        }
+        schema["geo"] = {
+            "@type": "GeoCoordinates",
+            "latitude": geo["lat"],
+            "longitude": geo["lng"],
+        }
+    return schema
 
 # Keyword-first H1s: target phrase leads, persuasive tail varies by state.
 # Primary ranking phrase "{City} Mediation" appears at the very start of every H1.
@@ -36,9 +73,9 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
           office_addr, context, state_note, court_ref):
     nearest = NEAREST[state]
     h1 = H1S.get(state, "{c} mediation that resolves disputes <em>without court</em>.").format(c=esc(city))
-    title = f"{city} Mediation | Accredited Family Mediators {city}"
+    title = f"{city} Mediation | Accredited Family Mediators"
     desc = (f"Nationally accredited {city} mediators resolve family, property and workplace "
-            f"disputes without court — faster and cheaper. Free consultation. Call {PHONE}.")
+            f"disputes without court — faster and cheaper. Call {PHONE}.")
     if has_office:
         office_line = f"Our {city} office is located at {office_addr}, and we also offer secure online mediation across {state}."
     else:
@@ -48,7 +85,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 
     qa = [
      (f"How much does mediation cost in {city}?",
-      f"In {city} you start with a fixed-fee consultation, so there are no billing surprises. Mediation typically costs a fraction of a contested court case — often the difference between a few hundred to a few thousand dollars shared between the parties, versus tens of thousands per side in litigation. Most matters resolve in one or two sessions."),
+      f"In {city} you start with a free initial consultation, so there are no billing surprises. Mediation typically costs a fraction of a contested court case — often the difference between a few hundred to a few thousand dollars shared between the parties, versus tens of thousands per side in litigation. Most matters resolve in one or two sessions."),
      (f"Where do you provide mediation in {city}?",
       f"We serve {regions}. {office_line}"),
      (f"Do {city} family law matters have to go to court?",
@@ -65,7 +102,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 
     schema = [org_schema(),
               breadcrumb_schema([("Home",""),(f"{city} Mediation",slug)]),
-              localservice_schema(city, state, slug),
+              localservice_schema(city, state, slug, has_office=has_office),
               faq_schema(qa)]
     doc = head(title, desc, slug, extra_schema=schema)
     doc += nav()
@@ -78,12 +115,12 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
     <h1>{h1}</h1>
     <p class="lede">Mediation in {esc(city)} gives individuals, families and businesses a faster, more affordable and less stressful way to resolve disputes. Our nationally accredited mediators help you reach a lasting agreement — and keep the decision in your hands, not a judge's.</p>
     <div class="phero-cta">
-      <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
       <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
     </div>
   </div>
 </section>
-<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation in {esc(city)}, resolving family, property, workplace and commercial disputes faster and at a fraction of the cost of court. We serve {esc(regions)}, in person and through secure online mediation across {esc(state)}, with a 90% resolution rate and fixed-fee consultations.</p></div></div>
+<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation in {esc(city)}, resolving family, property, workplace and commercial disputes faster and at a fraction of the cost of court. We serve {esc(regions)}, in person and through secure online mediation across {esc(state)}, with a 90% resolution rate and free initial consultations.</p></div></div>
 <article class="body"><div class="wrap-narrow reveal">
 
 <h2>Why choose mediation in {esc(city)}?</h2>
@@ -103,10 +140,15 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <h2>How the {esc(city)} court system fits in</h2>
 <p>{esc(reg_desc)}. {esc(circuit)} {esc(state_note)} Understanding where your matter would otherwise be heard matters, because it shows just how much mediation can save you. Rather than waiting for a listing at {esc(court_ref)}, you can often resolve your dispute within weeks — and if you do reach agreement, we can formalise it so it carries the same legal weight as a court order.</p>
 
-<div class="callout">
-  <h3>Can't get to an office? Mediate online.</h3>
-  <p>Our <a href="/online-divorce/">secure online mediation</a> gives {esc(city)} and {esc(state)} clients access to the same nationally accredited mediators from anywhere — no travel, same structured process, same binding outcomes. It's especially valuable for clients outside the {esc(city)} CBD or in surrounding regional areas.</p>
-</div>
+<h2>Family, divorce, property and parenting mediation in {esc(city)}</h2>
+<p>Whatever stage of separation you're at, there's a {esc(city)} mediation service built around it:</p>
+<ul>
+  <li><strong><a href="/family-law-mediation/">Family mediation in {esc(city)}</a></strong> — accredited family mediators resolving parenting and property without court.</li>
+  <li><strong><a href="/divorce-mediation/">Divorce mediation in {esc(city)}</a></strong> — settle parenting, property and finances together as your marriage ends.</li>
+  <li><strong><a href="/property-settlement-mediation/">Property settlement mediation in {esc(city)}</a></strong> — divide assets, debts and superannuation fairly and finally.</li>
+  <li><strong><a href="/parenting-plan-mediation/">Parenting and child custody mediation in {esc(city)}</a></strong> — child-focused arrangements that actually last.</li>
+</ul>
+<p>Can't get to an office? Our <a href="/online-divorce/">secure online mediation</a> gives {esc(city)} and {esc(state)} clients the same nationally accredited mediators from anywhere — no travel, same structured process, same binding outcomes. And you can check <a href="/how-much-does-mediation-cost/">what mediation costs</a> before you commit to anything.</p>
 
 <h2>What we resolve for {esc(city)} clients</h2>
 <p>Our {esc(city)} mediators work across the full spectrum of dispute resolution. Whatever you're facing, there is almost always a path through it that doesn't begin in a courtroom:</p>
@@ -120,10 +162,10 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 </ul>
 
 <h2>What to expect from {esc(city)} mediation</h2>
-<p>The process is designed to be calm, clear and free of jargon. You begin with a fixed-fee consultation, where we listen to your situation and give you an honest view of whether mediation can help. You're then matched with an accredited mediator suited to your matter. The mediation itself can be conducted with everyone in the same room, or in separate rooms with the mediator moving between you — known as "shuttle" mediation — which is useful where there is high conflict or a safety concern. Where agreement is reached, we help you formalise it through <a href="/consent-orders/">consent orders</a> or a <a href="/financial-agreements-mediation/">binding financial agreement</a> so it is legally enforceable. You can <a href="/how-mediation-works/">read our full step-by-step guide to how mediation works</a> for more detail.</p>
+<p>The process is designed to be calm, clear and free of jargon. You begin with a free initial consultation, where we listen to your situation and give you an honest view of whether mediation can help. You're then matched with an accredited mediator suited to your matter. The mediation itself can be conducted with everyone in the same room, or in separate rooms with the mediator moving between you — known as "shuttle" mediation — which is useful where there is high conflict or a safety concern. Where agreement is reached, we help you formalise it through <a href="/consent-orders/">consent orders</a> or a <a href="/financial-agreements-mediation/">binding financial agreement</a> so it is legally enforceable. You can <a href="/how-mediation-works/">read our full step-by-step guide to how mediation works</a> for more detail.</p>
 
 <h2>Why {esc(city)} clients choose Mediations Australia</h2>
-<p>Our mediators are nationally accredited under AMDRAS, and many are also experienced family lawyers — so the legal realities of your matter are understood from the outset. We're early-resolution focused, we work alongside your existing lawyer where you have one, and many of the people we help are in fact referred to us by the very solicitors advising them. With a 90% resolution rate across thousands of matters, fixed-fee consultations and both in-person and online options, {esc(city)} clients get genuine expertise and a real alternative to litigation. <a href="/about-mediations-australia/">Learn more about Mediations Australia →</a></p>
+<p>Our mediators are nationally accredited under AMDRAS, and many are also experienced family lawyers — so the legal realities of your matter are understood from the outset. We're early-resolution focused, we work alongside your existing lawyer where you have one, and many of the people we help are in fact referred to us by the very solicitors advising them. With a 90% resolution rate across thousands of matters, free initial consultations and both in-person and online options, {esc(city)} clients get genuine expertise and a real alternative to litigation. <a href="/about-mediations-australia/">Learn more about Mediations Australia →</a></p>
 
 <h2>{esc(city)} family lawyers <em>and</em> mediators</h2>
 <p>If you were searching for "{esc(city)} family lawyers", you're in the right place. Our team includes accredited family lawyers — but the way we work is different. Rather than starting with the assumption that your matter belongs in court, we start with the question of whether it needs to. For the vast majority of separations, the answer is no: mediation resolves matters faster, far more cheaply, and with less damage to the family. We give you the legal insight of a family lawyer and the resolution focus of a mediator, in one place. <a href="/mediate-or-litigate/">See why mediation usually beats litigation →</a></p>
@@ -140,7 +182,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <div class="cards reveal" style="margin-top:46px">{cards}</div></div></section>"""
     doc += faq_html(qa, heading=f"{city} mediation FAQs")
     doc += cta_band(f"Resolve your {esc(city)} dispute, <em>starting today</em>.",
-        f"Book a fixed-fee consultation with a nationally accredited {esc(city)} mediator and find out how mediation can help — in person or online.")
+        f"Book a free initial consultation with a nationally accredited {esc(city)} mediator and find out how mediation can help — in person or online.")
     doc += "</main>" + page_end()
     path = os.path.join(OUT, slug); os.makedirs(path, exist_ok=True)
     with open(os.path.join(path, "index.html"), "w") as f:

@@ -25,8 +25,10 @@ running them would overwrite or damage production state:
 - `gen_migration.py` — **STALE and destructive.** It emits only 33 of the 245 live redirect
   rules; running it deletes 212 redirects and breaks `url-migration-map.csv` (violates R7).
   Edit `redirects.htaccess` / `url-migration-map.csv` **by hand** instead.
-- `gen_home.py` — the live homepage carries a deliberate `noindex, nofollow`; the generator
-  would flip it to `index, follow`. Leave it to a separate, intentional decision.
+- `gen_home.py` — owns the homepage + `family-law-mediation`, not blog pages, so it is out of
+  scope here. (It now preserves the homepage's deliberate `noindex, nofollow` via a staging
+  guard, so it is safe to run for *homepage SEO* work — see the optimise-seo-aeo skill — but
+  there is no reason to run it for a blog post.)
 - `gen_booking.py` — the live booking page differs from the generator (markup refactor).
 - `gen_core.py`, `gen_services*.py`, `gen_locations.py`, `gen_resources.py`,
   `gen_missing_pages.py` — not blog files; out of scope for this skill.
