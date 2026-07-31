@@ -132,9 +132,11 @@ def nav():
             for s in slugs)
         cols += f'<div class="mega-col"><span class="mega-head">{esc(group)}</span>{links}</div>'
     svc_mega = f"""<div class="drop mega">{cols}
-      <div class="mega-foot">
-        <span>Not sure which you need? <a href="/how-mediation-works/">See how mediation works</a> or resolve a <a href="/workplace-mediation/">workplace dispute</a>.</span>
-        <a class="btn btn-primary" href="{BOOK_URL}">Book free consult <span class="arr">→</span></a>
+      <div class="mega-card">
+        <span class="mega-card-tag">Free consultation</span>
+        <p class="mega-card-head">Talk to an accredited mediator — no obligation</p>
+        <p class="mega-card-sub">In person or online, right across Australia.</p>
+        <a class="btn btn-primary mega-card-btn" href="{BOOK_URL}">Book free consult →</a>
       </div>
     </div>"""
     return f"""<header class="nav" id="nav">
