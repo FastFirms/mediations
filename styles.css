@@ -68,9 +68,9 @@ header.nav.scrolled{border-color:var(--line)}
 .mega-col{display:flex;flex-direction:column;gap:0;padding:0 16px}
 .mega-col+.mega-col{border-left:1px solid var(--line)}
 .mega-head{font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:var(--sage-deep);padding:0 14px 16px;line-height:1}
-.mega a{gap:3px;padding:10px 14px;border-radius:8px}
-.mega a b{font-size:.97rem;font-weight:600}
-.mega a span{font-size:.78rem;color:var(--ink-soft);line-height:1.35}
+.mega a:not(.btn){gap:3px;padding:10px 14px;border-radius:8px}
+.mega a:not(.btn) b{font-size:.97rem;font-weight:600}
+.mega a:not(.btn) span{font-size:.78rem;color:var(--ink-soft);line-height:1.35}
 /* promo card */
 .mega-card{background:var(--ink);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;margin-left:8px;min-height:260px}
 .mega-card-photo{width:100%;height:200px;object-fit:cover;object-position:center 20%;display:block}
