@@ -46,7 +46,7 @@ footer h4,footer ul,footer .foot-bottom,footer .foot-locs,
 .btn-ghost:hover{border-color:var(--ink);background:rgba(35,41,31,.03)}
 
 /* ---- nav ---- */
-header.nav{position:sticky;top:0;z-index:100;background:rgba(244,239,230,.82);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
+header.nav{position:sticky;top:0;z-index:100;background:#FBF8F2;backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:border-color .3s,background .3s}
 header.nav.scrolled{border-color:var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
 .logo{display:flex;align-items:center}
