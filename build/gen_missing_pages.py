@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Four pages that were in the original URL inventory but not yet built:
-   /our-mediators/  /memberships/  /mediation-podcast/  /books/
+"""Three pages that were in the original URL inventory but not yet built:
+   /memberships/  /mediation-podcast/  /books/
+NOTE: /our-mediators/ is owned exclusively by gen_mediators.py — do not add it back here.
 All built with proper structure + on-brand copy + clearly-marked placeholders
 where firm-specific facts would otherwise be invented."""
 import os, sys
@@ -10,92 +11,7 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# ====================================================================
-# OUR MEDIATORS
-# ====================================================================
-title = "Our Mediators | Nationally Accredited Family Mediators"
-desc = "Meet the nationally accredited mediators at Mediations Australia — experienced family lawyers with expertise in family, property and workplace disputes."
-schema = [org_schema(), breadcrumb_schema([("Home",""),("Our Mediators","our-mediators")])]
-d = head(title, desc, "our-mediators", extra_schema=schema) + nav()
-d += f"""<main id="main">
-{crumb_html([("Home",""),("Our Mediators",None)])}
-<section class="phero"><div class="phero-blob"></div><div class="wrap">
-<span class="eyebrow"><span class="pulse"></span>The people behind every resolution</span>
-<h1>Our Mediators — <em>accredited, experienced, lawyer-aware</em>.</h1>
-<p class="lede">Every mediator at Mediations Australia is nationally accredited under AMDRAS. Many are also experienced family lawyers — so the legal realities of your matter are understood from the very first conversation.</p>
-<div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
-<a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
-</div></section>
-
-<section class="sec"><div class="wrap-narrow">
-<h2>What sets our mediators apart</h2>
-<p>Our mediators combine three things that matter when you're working through a separation or dispute: <strong>accreditation</strong> (every one of them is nationally recognised under the Australian Mediator and Dispute Resolution Accreditation Standards), <strong>legal awareness</strong> (many are practising or formerly-practising family lawyers, so they understand exactly what a court would do with your matter), and <strong>resolution focus</strong> (their job isn't to take sides — it's to help you reach an agreement that holds up).</p>
-
-<p>That combination is unusual. Many mediators don't have legal training; many family lawyers don't have mediation training. Bringing both together is the difference between a process that wanders and one that gets to a fair, durable outcome quickly.</p>
-
-<div class="callout"><h3>Nationally Accredited Mediators</h3>
-<p>AMDRAS accreditation requires formal training, supervised practice, and ongoing professional development. It's the recognised national standard for mediators in Australia, and it's the bar every one of our mediators meets.</p></div>
-
-<!-- ========================================================== -->
-<!-- TEAM PROFILE PLACEHOLDERS                                   -->
-<!-- ========================================================== -->
-<!-- Replace these with real team profiles. For each mediator:    -->
-<!--   - Name                                                    -->
-<!--   - Photo (square, ~400px, alt text with their name)         -->
-<!--   - Role / specialisation (e.g. "Family Law Mediator")       -->
-<!--   - Short bio (2-3 sentences)                                -->
-<!--   - Qualifications (NMAS, FDRP, law degree, etc.)            -->
-<!-- Each profile should also have its own Person JSON-LD schema  -->
-<!-- for E-E-A-T strength.                                        -->
-<!-- ========================================================== -->
-
-<h2 style="margin-top:50px">Meet the team</h2>
-<p style="background:rgba(198,106,63,.08);border-left:3px solid var(--terra);padding:18px 22px;border-radius:8px;color:var(--ink-soft);font-size:.95rem"><strong>Note for the team:</strong> this section is awaiting team profiles. Add each mediator's name, photo, role, short bio and qualifications below using the template structure in the source HTML.</p>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-top:30px">
-  <article style="background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:24px">
-    <div style="width:100%;aspect-ratio:1;background:var(--sage-light);border-radius:10px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;color:var(--sage-deep);font-style:italic;font-size:.9rem">Photo placeholder</div>
-    <h3 style="margin-bottom:4px;font-size:1.2rem">[Mediator Name]</h3>
-    <p style="color:var(--sage-deep);font-weight:600;font-size:.92rem;margin-bottom:10px">[Role / Specialisation]</p>
-    <p style="font-size:.95rem;color:var(--ink-soft);margin-bottom:12px">[Short 2–3 sentence bio describing their background, what they specialise in, and the kinds of matters they handle.]</p>
-    <p style="font-size:.85rem;color:var(--ink-soft);font-style:italic">[Qualifications, e.g. NMAS Accredited Mediator, Family Dispute Resolution Practitioner, LLB]</p>
-  </article>
-  <article style="background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:24px">
-    <div style="width:100%;aspect-ratio:1;background:var(--sage-light);border-radius:10px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;color:var(--sage-deep);font-style:italic;font-size:.9rem">Photo placeholder</div>
-    <h3 style="margin-bottom:4px;font-size:1.2rem">[Mediator Name]</h3>
-    <p style="color:var(--sage-deep);font-weight:600;font-size:.92rem;margin-bottom:10px">[Role / Specialisation]</p>
-    <p style="font-size:.95rem;color:var(--ink-soft);margin-bottom:12px">[Short bio]</p>
-    <p style="font-size:.85rem;color:var(--ink-soft);font-style:italic">[Qualifications]</p>
-  </article>
-  <article style="background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:24px">
-    <div style="width:100%;aspect-ratio:1;background:var(--sage-light);border-radius:10px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;color:var(--sage-deep);font-style:italic;font-size:.9rem">Photo placeholder</div>
-    <h3 style="margin-bottom:4px;font-size:1.2rem">[Mediator Name]</h3>
-    <p style="color:var(--sage-deep);font-weight:600;font-size:.92rem;margin-bottom:10px">[Role / Specialisation]</p>
-    <p style="font-size:.95rem;color:var(--ink-soft);margin-bottom:12px">[Short bio]</p>
-    <p style="font-size:.85rem;color:var(--ink-soft);font-style:italic">[Qualifications]</p>
-  </article>
-</div>
-
-<h2 style="margin-top:50px">Qualifications &amp; standards</h2>
-<p>Our mediators hold qualifications that include:</p>
-<ul>
-  <li><strong>National Mediator Accreditation</strong> (NMAS) under AMDRAS</li>
-  <li><strong>Family Dispute Resolution Practitioner (FDRP)</strong> registration, where applicable, for matters requiring a Section 60I certificate</li>
-  <li><strong>Legal qualifications</strong> (LLB or JD) for those mediators who are also practising or formerly-practising lawyers</li>
-  <li><strong>Specialist training</strong> in areas such as high-conflict mediation, child-inclusive practice, and complex financial matters</li>
-</ul>
-<p>Continuing professional development is a requirement of accreditation — our mediators stay current with developments in family law (including the 2025 Family Law Act reforms), best practice in dispute resolution, and emerging issues around family violence and child welfare. <a href="/changes-to-family-law-act-2025/">See the 2025 Family Law Act changes →</a></p>
-
-<h2>Working with your lawyer</h2>
-<p>If you already have a lawyer, our mediators work alongside them — not against them. Many of the people we help are referred to us by the very solicitors advising them, because experienced family lawyers know what years of litigation costs in money and wellbeing. If you don't have a lawyer, that's fine too — many of our clients work directly with us and use mediation as the path to a fair, binding agreement. <a href="/collaborative-family-lawyers/">See collaborative family lawyers →</a></p>
-</div></section>
-"""
-d += cta_band("Ready to work with an <em>accredited mediator</em>?",
-              "Book a free initial consultation and we'll match you with a mediator suited to your matter.")
-d += "</main>" + page_end()
-os.makedirs(os.path.join(OUT,"our-mediators"), exist_ok=True)
-open(os.path.join(OUT,"our-mediators","index.html"),"w").write(d)
-print("our-mediators built")
+# our-mediators is built by gen_mediators.py
 
 # ====================================================================
 # MEMBERSHIPS
