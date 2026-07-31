@@ -168,9 +168,8 @@
       <h1 style="font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.15;margin-bottom:16px">Let's talk about <em>resolving it</em>.</h1>
       <p style="font-size:1.05rem;color:var(--ink-soft);max-width:54ch;margin-bottom:36px">Tell us about your dispute and we'll give you an honest view of whether mediation can help — and how it fits with any legal advice you already have.</p>
 
-      <form name="contact" method="POST" action="https://formspree.io/f/mredjobj" novalidate style="display:flex;flex-direction:column;gap:18px">
+      <form id="contact-form" novalidate style="display:flex;flex-direction:column;gap:18px">
         <input type="hidden" name="_subject" value="New contact from Mediations Australia website">
-        <input type="hidden" name="_next" value="https://mediationsaustralia.com.au/thank-you/">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
           <div>
             <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">First name</label>
@@ -348,4 +347,16 @@ document.querySelectorAll('.has-drop').forEach(hd=>{
 });
 </script>
 </body>
-</html>
+</html><script>
+document.getElementById('contact-form').addEventListener('submit',async function(e){
+  e.preventDefault();
+  var btn=this.querySelector('button[type=submit]');
+  btn.disabled=true;btn.textContent='Sending…';
+  var data=new FormData(this);
+  try{
+    var r=await fetch('https://formspree.io/f/xwvgjnve',{method:'POST',body:data,headers:{Accept:'application/json'}});
+    if(r.ok){window.location.href='/thank-you/';}
+    else{btn.disabled=false;btn.innerHTML='Book a Free Consultation <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
+  }catch(err){btn.disabled=false;btn.innerHTML='Book a Free Consultation <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
+});
+</script>
