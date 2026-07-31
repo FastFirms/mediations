@@ -30,7 +30,8 @@ PAGE_CSS = """<style>
 .team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:32px;padding:56px 0}
 .team-card{background:var(--sand);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:box-shadow .2s}
 .team-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.12)}
-.team-card img{width:100%;height:260px;object-fit:cover;object-position:center 15%;display:block}
+.team-card-photo{height:260px;overflow:hidden;position:relative;background:var(--sand)}
+.team-card-photo img{width:100%;height:100%;object-fit:cover;display:block}
 .team-card-body{padding:24px}
 .team-card-name{font-family:var(--serif);font-size:1.3rem;margin-bottom:4px}
 .team-card-role{color:var(--sage-deep);font-weight:600;font-size:.92rem;margin-bottom:10px}
@@ -68,7 +69,7 @@ d += f"""<main id="main">
     <div class="team-grid">
 
       <a href="/our-team/dan-toombs/" class="team-card">
-        <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder, Lawyer and Accredited Mediator" loading="eager" style="object-position:center 22%">
+        <div class="team-card-photo"><img src="/assets/images/DanT.png" alt="Dan Toombs — Founder, Lawyer and Accredited Mediator" loading="eager" style="transform:scale(0.85);transform-origin:center 20%;object-position:center 15%"></div>
         <div class="team-card-body">
           <p class="team-card-name">Dan Toombs</p>
           <p class="team-card-role">Founder, Lawyer &amp; Accredited Mediator</p>
@@ -78,7 +79,7 @@ d += f"""<main id="main">
       </a>
 
       <a href="/our-team/farley-tolpen/" class="team-card">
-        <img src="/assets/images/FarleyT.png" alt="Farley Tolpen — Accredited Mediator and Lawyer" loading="lazy" style="object-position:center 12%">
+        <div class="team-card-photo"><img src="/assets/images/FarleyT.png" alt="Farley Tolpen — Accredited Mediator and Lawyer" loading="lazy" style="transform:scale(1.15);transform-origin:center 12%;object-position:center 12%"></div>
         <div class="team-card-body">
           <p class="team-card-name">Farley Tolpen</p>
           <p class="team-card-role">Accredited Mediator &amp; Lawyer</p>
@@ -88,7 +89,7 @@ d += f"""<main id="main">
       </a>
 
       <a href="/our-team/prav-singh-pillay/" class="team-card">
-        <img src="/assets/images/Prav.png" alt="Prav Singh-Pillay — Lawyer and Accredited Mediator" loading="lazy" style="object-position:center 8%">
+        <div class="team-card-photo"><img src="/assets/images/Prav.png" alt="Prav Singh-Pillay — Lawyer and Accredited Mediator" loading="lazy" style="transform:scale(1.4);transform-origin:center 22%;object-position:center 22%"></div>
         <div class="team-card-body">
           <p class="team-card-name">Prav Singh-Pillay</p>
           <p class="team-card-role">Lawyer &amp; Accredited Mediator</p>
