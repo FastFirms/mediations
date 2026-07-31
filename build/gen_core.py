@@ -314,7 +314,7 @@ doc += f"""<main id="main">
           style="width:100%;height:260px;object-fit:cover;object-position:center 15%;display:block">
         <div style="padding:28px">
           <p style="font-family:var(--serif);font-size:1.25rem;margin-bottom:4px">Dan Toombs</p>
-          <p style="font-size:.85rem;opacity:.75;margin-bottom:16px">Founder &amp; Accredited Mediator</p>
+          <p style="font-size:.85rem;opacity:.75;margin-bottom:16px">Founder &amp; Mediator</p>
           <p style="font-size:.95rem;line-height:1.72;opacity:.92;margin-bottom:22px;font-style:italic">"We built Mediations Australia because most disputes don't need a courtroom — they need a skilled mediator and a structured process. Tell us what's happening and we'll be honest about whether we can help."</p>
           <div style="display:flex;flex-direction:column;gap:9px;font-size:.88rem;opacity:.88">
             <span>✓ Free initial consultation</span>
@@ -388,7 +388,7 @@ doc += f"""<main id="main">
           style="width:100%;height:280px;object-fit:cover;object-position:center 15%;display:block">
         <div style="padding:28px 30px">
           <p style="font-family:var(--serif);font-size:1.2rem;margin-bottom:4px">Dan Toombs</p>
-          <p style="font-size:.85rem;opacity:.72;margin-bottom:16px">Founder &amp; Accredited Mediator</p>
+          <p style="font-size:.85rem;opacity:.72;margin-bottom:16px">Founder &amp; Mediator</p>
           <p style="font-size:.95rem;line-height:1.72;opacity:.92;font-style:italic">"Every enquiry is reviewed personally. We'll be in touch shortly and give you a straight answer about how we can help."</p>
         </div>
       </div>

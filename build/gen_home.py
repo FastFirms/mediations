@@ -230,7 +230,7 @@ doc += f"""<main id="main">
         <div style="height:240px;background:url(/assets/images/dan-team.png) center top/cover no-repeat"></div>
         <div style="padding:22px">
           <p style="font-family:var(--serif);font-size:1.25rem;margin-bottom:3px">Dan Toombs</p>
-          <p style="color:var(--sage-deep);font-weight:600;font-size:.9rem;margin-bottom:10px">Founder, Lawyer &amp; Accredited Mediator</p>
+          <p style="color:var(--sage-deep);font-weight:600;font-size:.9rem;margin-bottom:10px">Founder, Lawyer &amp; Mediator</p>
           <p style="font-size:.93rem;color:var(--ink-soft);line-height:1.6;margin-bottom:14px">Multi-award winning lawyer, Winston Churchill Fellow, and National Human Rights Law Award recipient.</p>
           <span style="font-size:.88rem;font-weight:600;color:var(--terra)">View profile →</span>
         </div>

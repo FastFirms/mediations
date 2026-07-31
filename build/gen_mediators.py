@@ -68,10 +68,10 @@ d += f"""<main id="main">
     <div class="team-grid">
 
       <a href="/our-team/dan-toombs/" class="team-card">
-        <div class="team-card-photo" role="img" aria-label="Dan Toombs — Founder, Lawyer and Accredited Mediator" style="background-image:url('/assets/images/dan-team.png');background-size:cover;background-position:center top"></div>
+        <div class="team-card-photo" role="img" aria-label="Dan Toombs — Founder, Lawyer and Mediator" style="background-image:url('/assets/images/dan-team.png');background-size:cover;background-position:center top"></div>
         <div class="team-card-body">
           <p class="team-card-name">Dan Toombs</p>
-          <p class="team-card-role">Founder, Lawyer &amp; Accredited Mediator</p>
+          <p class="team-card-role">Founder, Lawyer &amp; Mediator</p>
           <p class="team-card-bio">Multi-award winning lawyer, Winston Churchill Fellow, and National Human Rights Law Award recipient. Over two decades resolving complex family, property and workplace disputes.</p>
           <span class="team-card-link">View profile →</span>
         </div>
@@ -120,7 +120,7 @@ dan_schema = [
     {
         "@type": "Person",
         "name": "Dan Toombs",
-        "jobTitle": "Founder & Accredited Mediator",
+        "jobTitle": "Founder & Mediator",
         "url": f"{DOMAIN}/our-team/dan-toombs/",
         "image": f"{DOMAIN}/assets/images/DanT.png",
         "worksFor": {"@id": f"{DOMAIN}/#organization"},
@@ -142,7 +142,7 @@ dan_schema = [
     }
 ]
 
-d = head("Dan Toombs — Founder & Accredited Mediator | Mediations Australia",
+d = head("Dan Toombs — Founder & Mediator | Mediations Australia",
          "Meet Dan Toombs — Founder of Mediations Australia, AMDRAS-accredited mediator, Winston Churchill Fellow and Human Rights Law Award recipient.",
          "our-team/dan-toombs", extra_schema=dan_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
@@ -155,7 +155,7 @@ d += f"""<main id="main">
     <div style="max-width:60ch">
       <p class="sec-tag">Meet the team</p>
       <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
-        Dan Toombs — <em>Founder, Lawyer &amp; Accredited Mediator</em>
+        Dan Toombs — <em>Founder, Lawyer &amp; Mediator</em>
       </h1>
     </div>
   </div>
@@ -167,7 +167,7 @@ d += f"""<main id="main">
 
       <aside class="mediator-photo">
         <img src="/assets/images/DanT.png"
-             alt="Dan Toombs — Founder and Accredited Mediator, Mediations Australia"
+             alt="Dan Toombs — Founder and Mediator, Mediations Australia"
              width="260" height="320" loading="eager">
         <table class="cred-table" aria-label="Dan Toombs credentials">
           <tbody>
