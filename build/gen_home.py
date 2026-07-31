@@ -13,7 +13,7 @@ OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.
 # "index, follow", so we force the homepage back to noindex on every build to
 # avoid silently exposing staging. REMOVE this guard at launch (set to False)
 # when the homepage should be indexable on the production domain.
-HOMEPAGE_NOINDEX = os.environ.get("MED_HOMEPAGE_INDEX") != "1"
+HOMEPAGE_NOINDEX = False  # launch: indexing enabled
 
 def write(slug, doc):
     if slug == "":
