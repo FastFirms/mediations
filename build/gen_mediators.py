@@ -68,7 +68,7 @@ d += f"""<main id="main">
     <div class="team-grid">
 
       <a href="/our-team/dan-toombs/" class="team-card">
-        <div class="team-card-photo" role="img" aria-label="Dan Toombs — Founder, Lawyer and Accredited Mediator" style="background-image:url('/assets/images/DanT.png');background-size:110%;background-position:45% 8%"></div>
+        <div class="team-card-photo" role="img" aria-label="Dan Toombs — Founder, Lawyer and Accredited Mediator" style="background-image:url('/assets/images/dan-team.png');background-size:cover;background-position:center top"></div>
         <div class="team-card-body">
           <p class="team-card-name">Dan Toombs</p>
           <p class="team-card-role">Founder, Lawyer &amp; Accredited Mediator</p>
@@ -78,7 +78,7 @@ d += f"""<main id="main">
       </a>
 
       <a href="/our-team/farley-tolpen/" class="team-card">
-        <div class="team-card-photo" role="img" aria-label="Farley Tolpen — Accredited Mediator and Lawyer" style="background-image:url('/assets/images/FarleyT.png');background-size:145%;background-position:50% 10%"></div>
+        <div class="team-card-photo" role="img" aria-label="Farley Tolpen — Accredited Mediator and Lawyer" style="background-image:url('/assets/images/farley-team.png');background-size:cover;background-position:center top"></div>
         <div class="team-card-body">
           <p class="team-card-name">Farley Tolpen</p>
           <p class="team-card-role">Accredited Mediator &amp; Lawyer</p>
@@ -88,7 +88,7 @@ d += f"""<main id="main">
       </a>
 
       <a href="/our-team/prav-singh-pillay/" class="team-card">
-        <div class="team-card-photo" role="img" aria-label="Prav Singh-Pillay — Lawyer and Accredited Mediator" style="background-image:url('/assets/images/Prav.png');background-size:190%;background-position:55% 18%"></div>
+        <div class="team-card-photo" role="img" aria-label="Prav Singh-Pillay — Lawyer and Accredited Mediator" style="background-image:url('/assets/images/prav-team.png');background-size:cover;background-position:center top"></div>
         <div class="team-card-body">
           <p class="team-card-name">Prav Singh-Pillay</p>
           <p class="team-card-role">Lawyer &amp; Accredited Mediator</p>
