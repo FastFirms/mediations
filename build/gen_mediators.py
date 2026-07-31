@@ -68,17 +68,17 @@ d += f"""<main id="main">
     <div class="team-grid">
 
       <a href="/our-team/dan-toombs/" class="team-card">
-        <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder and Accredited Mediator" loading="eager">
+        <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder, Lawyer and Accredited Mediator" loading="eager" style="object-position:center 22%">
         <div class="team-card-body">
           <p class="team-card-name">Dan Toombs</p>
-          <p class="team-card-role">Founder &amp; Accredited Mediator</p>
+          <p class="team-card-role">Founder, Lawyer &amp; Accredited Mediator</p>
           <p class="team-card-bio">Multi-award winning lawyer, Winston Churchill Fellow, and National Human Rights Law Award recipient. Over two decades resolving complex family, property and workplace disputes.</p>
           <span class="team-card-link">View profile →</span>
         </div>
       </a>
 
       <a href="/our-team/farley-tolpen/" class="team-card">
-        <img src="/assets/images/FarleyT.png" alt="Farley Tolpen — Accredited Mediator and Lawyer" loading="lazy">
+        <img src="/assets/images/FarleyT.png" alt="Farley Tolpen — Accredited Mediator and Lawyer" loading="lazy" style="object-position:center 12%">
         <div class="team-card-body">
           <p class="team-card-name">Farley Tolpen</p>
           <p class="team-card-role">Accredited Mediator &amp; Lawyer</p>
@@ -88,10 +88,10 @@ d += f"""<main id="main">
       </a>
 
       <a href="/our-team/prav-singh-pillay/" class="team-card">
-        <img src="/assets/images/Prav.png" alt="Prav Singh-Pillay — Lawyer, Mediator and FDRP" loading="lazy">
+        <img src="/assets/images/Prav.png" alt="Prav Singh-Pillay — Lawyer and Accredited Mediator" loading="lazy" style="object-position:center 8%">
         <div class="team-card-body">
           <p class="team-card-name">Prav Singh-Pillay</p>
-          <p class="team-card-role">Lawyer, Mediator &amp; FDRP</p>
+          <p class="team-card-role">Lawyer &amp; Accredited Mediator</p>
           <p class="team-card-bio">Family lawyer and accredited mediator with 25+ years of experience across family law, civil litigation, wills and estates. Authorised to issue Section 60I certificates as a registered FDRP.</p>
           <span class="team-card-link">View profile →</span>
         </div>
@@ -155,7 +155,7 @@ d += f"""<main id="main">
     <div style="max-width:60ch">
       <p class="sec-tag">Meet the team</p>
       <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
-        Dan Toombs — <em>Founder &amp; Accredited Mediator</em>
+        Dan Toombs — <em>Founder, Lawyer &amp; Accredited Mediator</em>
       </h1>
     </div>
   </div>
@@ -487,7 +487,7 @@ d += f"""<main id="main">
     <div style="max-width:60ch">
       <p class="sec-tag">Meet the team</p>
       <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
-        Prav Singh-Pillay — <em>Lawyer, Mediator &amp; FDRP</em>
+        Prav Singh-Pillay — <em>Lawyer &amp; Accredited Mediator</em>
       </h1>
     </div>
   </div>
@@ -516,7 +516,7 @@ d += f"""<main id="main">
       </aside>
 
       <div class="mediator-content">
-        <h2>Prav Singh-Pillay — Lawyer, Mediator &amp; FDRP</h2>
+        <h2>Prav Singh-Pillay — Lawyer &amp; Accredited Mediator</h2>
         <span class="tag-line">25 years at the bar. Family law from every angle.</span>
 
         <p>Prav Singh-Pillay is a family lawyer, nationally accredited mediator, and registered Family Dispute
