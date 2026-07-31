@@ -40,7 +40,7 @@ qa_home = [
  ("Do I need a lawyer to attend mediation?",
   "No — a lawyer isn't required to mediate. Legal advice before or after can be wise for complex matters, and many of our mediators are also experienced lawyers, so legal insight is already in the room."),
  ("How much does mediation cost?",
-  "You begin with a fixed-fee consultation, so there are no billing surprises. Mediation typically costs a fraction of litigation, and parties usually share the fee. Most disputes resolve in one to two sessions rather than years of court."),
+  "You begin with a free initial consultation, so there are no billing surprises. Mediation typically costs a fraction of litigation, and parties usually share the fee. Most disputes resolve in one to two sessions rather than years of court."),
  ("How long does mediation take?",
   "Most disputes are resolved within one to two sessions — often in a single day — compared with court matters that can run for one to three years."),
  ("Is everything discussed in mediation confidential?",
@@ -163,7 +163,7 @@ doc += f"""<main id="main">
       <p class="sec-intro">No jargon, no surprises. A neutral, accredited mediator guides everyone toward a solution — and you decide whether to accept it.</p>
     </div>
     <div class="cards reveal" style="margin-top:50px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))">
-      <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">01</h3><h3>Book your consult</h3><p>Start with a fixed-fee consultation. Clear advice, no runaway costs, no obligation.</p></article>
+      <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">01</h3><h3>Book your consult</h3><p>Start with a free initial consultation. Clear advice, no runaway costs, no obligation.</p></article>
       <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">02</h3><h3>Meet your mediator</h3><p>Paired with an accredited specialist who understands the law and the human side.</p></article>
       <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">03</h3><h3>The session runs</h3><p>In person or online, together or in separate rooms — whatever feels right.</p></article>
       <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">04</h3><h3>Agreement reached</h3><p>Around 90% of matters resolve then and there, on terms you've chosen.</p></article>
@@ -236,7 +236,7 @@ qa_fam = [
  ("What if there's been family violence?",
   "Your safety comes first. Where there are concerns, mediation may not be required, and where it does proceed it can run 'shuttle' style in separate rooms. Tell us in your consultation and we'll advise the safest path."),
  ("How much does family mediation cost?",
-  "You begin with a fixed-fee consultation, so there are no surprises. Family mediation typically costs a small fraction of a contested court case, and the cost is usually shared between the parties."),
+  "You begin with a free initial consultation, so there are no surprises. Family mediation typically costs a small fraction of a contested court case, and the cost is usually shared between the parties."),
 ]
 doc = head(
  "Family Law Mediation Australia | Family Mediators",
@@ -288,7 +288,7 @@ doc += f"""<main id="main">
 <h2>How family law mediation works, step by step</h2>
 <p>The process is structured but never rigid, and it's designed to keep things calm:</p>
 <ol>
-  <li><strong>Fixed-fee consultation</strong> — you explain your situation and we give an honest view of whether mediation can help and how it works alongside any legal advice.</li>
+  <li><strong>Free consultation</strong> — you explain your situation and we give an honest view of whether mediation can help and how it works alongside any legal advice.</li>
   <li><strong>Intake, separately</strong> — each party meets the family mediator on their own so concerns and safety can be assessed before anyone is in the same room.</li>
   <li><strong>Preparation</strong> — financial disclosure is gathered for property matters, and the issues to resolve are agreed and put in order.</li>
   <li><strong>The mediation</strong> — guided by the mediator, you work through each issue, together or in separate rooms ('shuttle' mediation) where there's high conflict.</li>
@@ -312,10 +312,10 @@ doc += f"""<main id="main">
 <p>We're honest about the limits. Mediation depends on both people being able to negotiate safely and openly, so it isn't suitable in every case — particularly where there is family violence, a serious safety risk, or where one party won't participate or disclose honestly. In those situations you may be <a href="/section-60i-certificates/">exempt</a> from the usual requirement to attempt family dispute resolution, and court protection may be the right first step. If you're in immediate danger, call <strong>000</strong>; for confidential support, <strong>1800RESPECT (1800 737 732)</strong> is available 24/7. See our guidance on <a href="/domestic-violence-and-family-law/">family violence and family law</a>.</p>
 
 <h2>How much does family mediation cost?</h2>
-<p>You start with a fixed-fee consultation, so you know exactly where you stand before committing to anything. From there, family mediation typically costs a small fraction of a contested court case, and the fee is usually shared between the parties. Compared with two sets of lawyers billing by the hour for years, the saving is substantial — and the emotional cost is lower too. <a href="/how-much-does-mediation-cost/">See a full breakdown of what mediation costs →</a></p>
+<p>You start with a free initial consultation, so you know exactly where you stand before committing to anything. From there, family mediation typically costs a small fraction of a contested court case, and the fee is usually shared between the parties. Compared with two sets of lawyers billing by the hour for years, the saving is substantial — and the emotional cost is lower too. <a href="/how-much-does-mediation-cost/">See a full breakdown of what mediation costs →</a></p>
 
 <h2>Why choose accredited family mediators?</h2>
-<p>Not all mediation is equal. Our family mediators are nationally accredited under the Australian Mediator and Dispute Resolution Accreditation Standard (AMDRAS), and many are also experienced family lawyers — so you get both the legal insight to understand where your matter would land and the resolution focus to get you there without a fight. We work alongside any lawyer you already have rather than replacing them; in fact, much of our work comes referred from the very solicitors advising separating clients. With fixed-fee consultations, in-person and secure online options, and family mediation services available right across Australia, you get genuine expertise and a real alternative to litigation. <a href="/about-mediations-australia/">Learn more about Mediations Australia →</a></p>
+<p>Not all mediation is equal. Our family mediators are nationally accredited under the Australian Mediator and Dispute Resolution Accreditation Standard (AMDRAS), and many are also experienced family lawyers — so you get both the legal insight to understand where your matter would land and the resolution focus to get you there without a fight. We work alongside any lawyer you already have rather than replacing them; in fact, much of our work comes referred from the very solicitors advising separating clients. With free initial consultations, in-person and secure online options, and family mediation services available right across Australia, you get genuine expertise and a real alternative to litigation. <a href="/about-mediations-australia/">Learn more about Mediations Australia →</a></p>
 
 <h2>Making your agreement <em>legally binding</em></h2>
 <p>Reaching agreement is the hard part — we make the rest simple. Once you've settled, we help formalise it into a legally enforceable outcome: <a href="/consent-orders/">consent orders</a> for parenting and property, or a binding financial agreement where appropriate. You walk away with certainty, not just a handshake. Wherever you are — <a href="/sydney-mediation/">Sydney</a>, Melbourne, Brisbane or Perth — you can start with a free consultation.</p>

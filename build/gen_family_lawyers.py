@@ -31,7 +31,7 @@ def localservice_schema(city, state, slug):
         "telephone": PHONE,
         "parentOrganization": {"@id": DOMAIN + "/#organization"},
         "areaServed": {"@type": "City", "name": city},
-        "priceRange": "Fixed-fee consultations",
+        "priceRange": "Free initial consultation",
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -498,7 +498,7 @@ def build_tier1(slug, city, state, nearest_office, court_ref, local_context, cit
         "<p>The financial difference between the two paths is substantial — and often "
         "decisive for " + ec + " clients who look at the numbers clearly:</p>\n"
         "<ul>\n"
-        "  <li><strong>Mediation:</strong> Fixed-fee consultation to start. Total mediation "
+        "  <li><strong>Mediation:</strong> Free initial consultation. Total mediation "
         "costs typically $2,000–$8,000, shared between both parties. Most matters "
         "resolve in one to two sessions. Formalising the agreement as consent orders "
         "adds a modest additional cost.</li>\n"
@@ -575,7 +575,7 @@ def build_tier1(slug, city, state, nearest_office, court_ref, local_context, cit
         "  <li><strong>90% resolution rate.</strong> Nine in ten matters we mediate resolve "
         "without proceeding to court — a track record built across thousands of "
         "Australian family disputes.</li>\n"
-        "  <li><strong>Fixed-fee consultations.</strong> No billing surprises. You know "
+        "  <li><strong>Free initial consultation.</strong> No billing surprises. You know "
         "what the initial consultation costs before you commit to anything.</li>\n"
         "  <li><strong>In person or online.</strong> We serve " + ec + " clients in "
         "person (by arrangement) and through secure online mediation — same process, "
@@ -608,7 +608,7 @@ def build_tier1(slug, city, state, nearest_office, court_ref, local_context, cit
     doc += faq_html(qa, heading=city + " family lawyers — common questions")
     doc += cta_band(
         "Talk to an accredited mediator in " + ec + " today.",
-        "Book a fixed-fee consultation and find out whether mediation can resolve your "
+        "Book a free initial consultation and find out whether mediation can resolve your "
         "matter — before you commit to a family lawyer and a litigation path. "
         "In person or online, same nationally accredited mediators."
     )
@@ -795,7 +795,7 @@ def build_tier2(slug, city, state, nearest_office, court_ref, local_context):
         "<p>Our mediators are accredited under AMDRAS, and many are also experienced family "
         "lawyers — so the legal realities of your matter are understood from the first "
         "conversation. We have a 90% resolution rate across thousands of Australian family "
-        "disputes. We offer fixed-fee consultations (no billing surprises), and we serve "
+        "disputes. We offer free initial consultations (no billing surprises), and we serve "
         + ec + " clients both in person (by arrangement) and through secure online mediation "
         "across " + es + ". We work alongside your existing lawyer where you have one, "
         "and many of our clients are referred to us by the very solicitors advising them. "
@@ -827,7 +827,7 @@ def build_tier2(slug, city, state, nearest_office, court_ref, local_context):
     doc += faq_html(qa, heading=city + " family lawyers — common questions")
     doc += cta_band(
         "Talk to a " + ec + " mediator before you engage a family lawyer.",
-        "Book a fixed-fee consultation and understand your options. Nine in ten matters "
+        "Book a free initial consultation and understand your options. Nine in ten matters "
         "we mediate resolve without court — in weeks, not years."
     )
     doc += "</main>" + page_end()

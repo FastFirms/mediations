@@ -126,7 +126,7 @@ def post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=
     # final strong CTA band
     d+=f"""<section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
-<p>Book a fixed-fee consultation and get honest, expert advice on your situation — with no obligation.</p>
+<p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
 <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book your free consultation <span class="arr">→</span></a>
 </div></div></section>"""
     d+="</main>"+page_end()
@@ -168,7 +168,7 @@ post("cost-of-divorce-in-australia",
 </ul>
 <p>You can file a <strong>joint application</strong> (both parties agree) or a <strong>sole application</strong> (one spouse applies and serves the other). Where there are children under 18, the court must also be satisfied that proper arrangements are in place for their care — which is where <a href="/parenting-plan-mediation/">a parenting plan</a> becomes important.</p>
 """
- + inline_cta("Not sure what your separation will actually cost? Get a clear, honest estimate in a fixed-fee consultation.")
+ + inline_cta("Not sure what your separation will actually cost? Get a clear, honest estimate in a free initial consultation.")
  + """
 <h2 id="filing-fees">Filing fees and fee reductions</h2>
 <p>Every divorce begins with the application fee. As set by federal regulations, the <a href="https://www.fcfcoa.gov.au/fl/fees/fl-fees" target="_blank" rel="noopener">standard divorce filing fee</a> is approximately $1,100, with a reduced fee of around $375 for eligible applicants. The fee is fixed — it's the same regardless of how complex your circumstances are.</p>
@@ -261,7 +261,7 @@ post("cost-of-divorce-in-australia",
 
 <h2 id="case-comparison">Two families, very different bills</h2>
 <p>To make the numbers concrete, consider two couples with broadly similar situations — a shared home, superannuation, and one child.</p>
-<p><strong>Family A — settled through mediation:</strong> After a fixed-fee consultation, both parties engaged a mediator. One full-day session resolved the property split, super division and parenting arrangements. The agreement was formalised through consent orders. Total cost shared between both parties: approximately $9,000–$12,000, including legal fees for drafting the orders.</p>
+<p><strong>Family A — settled through mediation:</strong> After a free initial consultation, both parties engaged a mediator. One full-day session resolved the property split, super division and parenting arrangements. The agreement was formalised through consent orders. Total cost shared between both parties: approximately $9,000–$12,000, including legal fees for drafting the orders.</p>
 <p><strong>Family B — contested through court:</strong> Unable to reach agreement, Family B each retained separate solicitors. The matter took 22 months to resolve, involved a family report ($3,300 per party), three directions hearings, a property valuation and a contested trial. Each party spent in excess of $60,000 in legal fees — a combined total of over $120,000, not including the emotional cost to the child and both parents.</p>
 <p>The legal outcome for both families was broadly comparable. The process was not. <a href="/divorce-mediation/">See how divorce mediation works →</a></p>
 """
@@ -407,7 +407,7 @@ post("what-am-i-entitled-to-in-a-separation-in-australia",
 <p>One of the most persistent myths about separation is that assets are simply halved. They are not. Australian family law, under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, doesn't apply a fixed percentage. Instead it asks a broader question: what division is just and equitable given everything about this particular relationship? Depending on the facts, a fair result might be an even split, or it might be weighted 60/40 or 70/30 toward one party.</p>
 <p>This is actually good news. It means your individual circumstances — what you contributed, what you'll need going forward — genuinely matter, rather than being flattened into a mechanical formula.</p>
 """
- + inline_cta("Want to know what a fair split looks like in your situation? Get a clear picture in a fixed-fee consultation.")
+ + inline_cta("Want to know what a fair split looks like in your situation? Get a clear picture in a free initial consultation.")
  + """
 <h2 id="four-steps">The four-step process explained</h2>
 <p>Both courts and mediators work through the same four-step framework to determine entitlements:</p>
@@ -515,7 +515,7 @@ post("how-long-does-mediation-take",
 <figure class='tbl'><table><caption>Typical mediation timeline</caption>
 <thead><tr><th>Stage</th><th>Typical timeframe</th></tr></thead>
 <tbody>
-<tr><td>Initial consultation</td><td>Booked within days; a fixed-fee session</td></tr>
+<tr><td>Initial consultation</td><td>Booked within days; free, no obligation</td></tr>
 <tr><td>Preparation &amp; intake</td><td>1–3 weeks (gathering documents, inviting the other party)</td></tr>
 <tr><td>The mediation session</td><td>Usually a single day</td></tr>
 <tr><td>Formalising the agreement</td><td>Consent orders prepared and lodged afterwards</td></tr>

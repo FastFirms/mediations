@@ -32,7 +32,7 @@ def localservice_schema(city, state, slug, has_office=False):
         "telephone": PHONE,
         "parentOrganization": {"@id": f"{DOMAIN}/#organization"},
         "areaServed": {"@type": "City", "name": city},
-        "priceRange": "Fixed-fee consultations",
+        "priceRange": "Free initial consultation",
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
@@ -85,7 +85,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 
     qa = [
      (f"How much does mediation cost in {city}?",
-      f"In {city} you start with a fixed-fee consultation, so there are no billing surprises. Mediation typically costs a fraction of a contested court case — often the difference between a few hundred to a few thousand dollars shared between the parties, versus tens of thousands per side in litigation. Most matters resolve in one or two sessions."),
+      f"In {city} you start with a free initial consultation, so there are no billing surprises. Mediation typically costs a fraction of a contested court case — often the difference between a few hundred to a few thousand dollars shared between the parties, versus tens of thousands per side in litigation. Most matters resolve in one or two sessions."),
      (f"Where do you provide mediation in {city}?",
       f"We serve {regions}. {office_line}"),
      (f"Do {city} family law matters have to go to court?",
@@ -120,7 +120,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
     </div>
   </div>
 </section>
-<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation in {esc(city)}, resolving family, property, workplace and commercial disputes faster and at a fraction of the cost of court. We serve {esc(regions)}, in person and through secure online mediation across {esc(state)}, with a 90% resolution rate and fixed-fee consultations.</p></div></div>
+<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation in {esc(city)}, resolving family, property, workplace and commercial disputes faster and at a fraction of the cost of court. We serve {esc(regions)}, in person and through secure online mediation across {esc(state)}, with a 90% resolution rate and free initial consultations.</p></div></div>
 <article class="body"><div class="wrap-narrow reveal">
 
 <h2>Why choose mediation in {esc(city)}?</h2>
@@ -162,10 +162,10 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 </ul>
 
 <h2>What to expect from {esc(city)} mediation</h2>
-<p>The process is designed to be calm, clear and free of jargon. You begin with a fixed-fee consultation, where we listen to your situation and give you an honest view of whether mediation can help. You're then matched with an accredited mediator suited to your matter. The mediation itself can be conducted with everyone in the same room, or in separate rooms with the mediator moving between you — known as "shuttle" mediation — which is useful where there is high conflict or a safety concern. Where agreement is reached, we help you formalise it through <a href="/consent-orders/">consent orders</a> or a <a href="/financial-agreements-mediation/">binding financial agreement</a> so it is legally enforceable. You can <a href="/how-mediation-works/">read our full step-by-step guide to how mediation works</a> for more detail.</p>
+<p>The process is designed to be calm, clear and free of jargon. You begin with a free initial consultation, where we listen to your situation and give you an honest view of whether mediation can help. You're then matched with an accredited mediator suited to your matter. The mediation itself can be conducted with everyone in the same room, or in separate rooms with the mediator moving between you — known as "shuttle" mediation — which is useful where there is high conflict or a safety concern. Where agreement is reached, we help you formalise it through <a href="/consent-orders/">consent orders</a> or a <a href="/financial-agreements-mediation/">binding financial agreement</a> so it is legally enforceable. You can <a href="/how-mediation-works/">read our full step-by-step guide to how mediation works</a> for more detail.</p>
 
 <h2>Why {esc(city)} clients choose Mediations Australia</h2>
-<p>Our mediators are nationally accredited under AMDRAS, and many are also experienced family lawyers — so the legal realities of your matter are understood from the outset. We're early-resolution focused, we work alongside your existing lawyer where you have one, and many of the people we help are in fact referred to us by the very solicitors advising them. With a 90% resolution rate across thousands of matters, fixed-fee consultations and both in-person and online options, {esc(city)} clients get genuine expertise and a real alternative to litigation. <a href="/about-mediations-australia/">Learn more about Mediations Australia →</a></p>
+<p>Our mediators are nationally accredited under AMDRAS, and many are also experienced family lawyers — so the legal realities of your matter are understood from the outset. We're early-resolution focused, we work alongside your existing lawyer where you have one, and many of the people we help are in fact referred to us by the very solicitors advising them. With a 90% resolution rate across thousands of matters, free initial consultations and both in-person and online options, {esc(city)} clients get genuine expertise and a real alternative to litigation. <a href="/about-mediations-australia/">Learn more about Mediations Australia →</a></p>
 
 <h2>{esc(city)} family lawyers <em>and</em> mediators</h2>
 <p>If you were searching for "{esc(city)} family lawyers", you're in the right place. Our team includes accredited family lawyers — but the way we work is different. Rather than starting with the assumption that your matter belongs in court, we start with the question of whether it needs to. For the vast majority of separations, the answer is no: mediation resolves matters faster, far more cheaply, and with less damage to the family. We give you the legal insight of a family lawyer and the resolution focus of a mediator, in one place. <a href="/mediate-or-litigate/">See why mediation usually beats litigation →</a></p>
@@ -182,7 +182,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <div class="cards reveal" style="margin-top:46px">{cards}</div></div></section>"""
     doc += faq_html(qa, heading=f"{city} mediation FAQs")
     doc += cta_band(f"Resolve your {esc(city)} dispute, <em>starting today</em>.",
-        f"Book a fixed-fee consultation with a nationally accredited {esc(city)} mediator and find out how mediation can help — in person or online.")
+        f"Book a free initial consultation with a nationally accredited {esc(city)} mediator and find out how mediation can help — in person or online.")
     doc += "</main>" + page_end()
     path = os.path.join(OUT, slug); os.makedirs(path, exist_ok=True)
     with open(os.path.join(path, "index.html"), "w") as f:

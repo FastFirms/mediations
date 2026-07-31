@@ -114,7 +114,7 @@ service_page(
 """ + inline_cta("Whether you need a parenting plan, consent orders, or both \u2014 we'll work it out with you. Book a free consultation.") + """
 
 <h2 id="get-started">Getting started</h2>
-<p>The first step is a fixed-fee consultation. We'll listen to your situation, assess whether mediation is the right path for your family, and outline what's involved. Most parenting plan mediations are resolved in one or two sessions \u2014 a matter of weeks, not the years a contested matter can take.</p>
+<p>The first step is a free initial consultation. We'll listen to your situation, assess whether mediation is the right path for your family, and outline what's involved. Most parenting plan mediations are resolved in one or two sessions \u2014 a matter of weeks, not the years a contested matter can take.</p>
 
 <p>If your situation has any safety concerns or family violence history, we'll assess that honestly and help you understand the alternatives. Mediation isn't appropriate for every family \u2014 but it's the right path for most, and we'll tell you straight which side of that line you're on.</p>
 """,
@@ -390,7 +390,7 @@ service_page(
 </ul>
 
 <h2 id="get-started">Getting started</h2>
-<p>The first step is a fixed-fee consultation. We'll listen to your situation, assess whether a BFA is the right instrument (vs consent orders or another path), and outline the process and timeline. If you proceed, we mediate the substance, handle the drafting, and ensure the formal requirements are met so the agreement actually holds.</p>
+<p>The first step is a free initial consultation. We'll listen to your situation, assess whether a BFA is the right instrument (vs consent orders or another path), and outline the process and timeline. If you proceed, we mediate the substance, handle the drafting, and ensure the formal requirements are met so the agreement actually holds.</p>
 """,
     faq_items=[
         ("What is a binding financial agreement?",
@@ -518,7 +518,7 @@ service_page(
 <p>If matters don't fully resolve and a certificate is issued, the cost is essentially the same \u2014 the certificate is part of the FDR process, not an additional fee. From initial consultation to certificate (if needed) typically takes 4\u20138 weeks, depending on scheduling and how complex the issues are.</p>
 
 <h2 id="get-started">Getting started</h2>
-<p>The first step is a fixed-fee consultation. We'll explain the process, assess whether FDR is appropriate for your situation, and outline how the certificate would be issued if needed. Most parenting matters resolve at FDR \u2014 the certificate is the backup, not the primary goal.</p>
+<p>The first step is a free initial consultation. We'll explain the process, assess whether FDR is appropriate for your situation, and outline how the certificate would be issued if needed. Most parenting matters resolve at FDR \u2014 the certificate is the backup, not the primary goal.</p>
 """,
     faq_items=[
         ("What is a Section 60I certificate?",
@@ -810,7 +810,7 @@ service_page(
 <p>Online mediation costs the same or slightly less than in-person. There's no travel time built into the fees, and no venue costs. Typical total: $3,000\u2013$7,000 (shared between the parties), depending on complexity.</p>
 
 <h2 id="get-started">Getting started</h2>
-<p>The first step is a fixed-fee online consultation. We'll listen to your situation, assess whether mediation is the right path, and outline the process. The first conversation alone usually clarifies a lot.</p>
+<p>The first step is a free initial online consultation. We'll listen to your situation, assess whether mediation is the right path, and outline the process. The first conversation alone usually clarifies a lot.</p>
 """,
     faq_items=[
         ("Does online mediation work as well as in-person?",

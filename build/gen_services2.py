@@ -60,7 +60,7 @@ build("estate-dispute-mediation",
    "That's one of its greatest strengths. Unlike adversarial litigation, mediation is collaborative and private, giving grieving families the best chance of resolving the dispute without permanent damage.")],
  "Estate Dispute Mediation",
  "Resolve it privately — <em>and keep the family together</em>.",
- "Book a fixed-fee consultation to resolve a contested will or estate dispute through dignified, private mediation.")
+ "Book a free initial consultation to resolve a contested will or estate dispute through dignified, private mediation.")
 
 # ---- COLLABORATIVE FAMILY LAWYERS ----
 build("collaborative-family-lawyers",
@@ -164,33 +164,33 @@ build("our-fee-structure",
  "Transparent, fixed-fee mediation pricing with no surprises. Understand what mediation costs and why it's a fraction of litigation.",
  "Pricing &amp; fees",
  "Our Fee Structure — <em>transparent, fixed and fair</em>.",
- "We believe you should know what things cost before you commit. Our mediation services start with a fixed-fee consultation and clear, upfront pricing — so there are no open-ended bills and no surprises, just a fraction of the cost of litigation.",
- "Mediations Australia uses transparent, fixed-fee pricing. You start with a fixed-fee consultation, and mediation costs are agreed upfront and usually shared between the parties — typically a small fraction of the tens of thousands per side that contested litigation can cost.",
+ "We believe you should know what things cost before you commit. Our mediation services start with a free initial consultation and clear, upfront pricing — so there are no open-ended bills and no surprises, just a fraction of the cost of litigation.",
+ "Mediations Australia uses transparent, fixed-fee pricing. You start with a free initial consultation, and mediation costs are agreed upfront and usually shared between the parties — typically a small fraction of the tens of thousands per side that contested litigation can cost.",
  """
  <h2>How does mediation pricing work?</h2>
- <p>You begin with a fixed-fee consultation, where we assess your matter and explain your options with no obligation. From there, the cost of mediation is agreed in advance, so you always know where you stand. Mediation fees are commonly shared between the parties, making it more affordable for everyone.</p>
+ <p>You begin with a free initial consultation, where we assess your matter and explain your options with no obligation. From there, the cost of mediation is agreed in advance, so you always know where you stand. Mediation fees are commonly shared between the parties, making it more affordable for everyone.</p>
  <h2>Why is mediation so much cheaper than court?</h2>
  <p>Because it resolves matters in one or two sessions rather than over one to three years of legal fees billed by the hour. A contested court case can cost tens or even hundreds of thousands of dollars per side; mediation typically costs a small fraction of that — and protects the assets you'd otherwise spend fighting. <a href="/family-law-mediation/">See family law mediation →</a></p>
  <div class="callout"><h3>No surprises — ever</h3>
  <p>Fixed-fee means exactly that. You'll never receive an open-ended bill that grows the longer your matter takes. The certainty is part of why mediation is less stressful than litigation.</p></div>
  <h2>What's included</h2>
  <ul>
-   <li>A fixed-fee initial consultation to assess your matter</li>
+   <li>A free initial consultation to assess your matter</li>
    <li>Clear, agreed pricing for the mediation itself</li>
    <li>Guidance on formalising your agreement into <a href="/consent-orders/">consent orders</a> or a binding agreement</li>
    <li>The option of in-person or <a href="/online-divorce/">online mediation</a> at the same transparent rates</li>
  </ul>
  """,
  [("How much does mediation cost?",
-   "You start with a fixed-fee consultation, then agree the cost of mediation upfront. It's typically a small fraction of litigation — often hundreds to a few thousand dollars shared between parties, versus tens of thousands per side in court."),
+   "You start with a free initial consultation, then agree the cost of mediation upfront. It's typically a small fraction of litigation — often hundreds to a few thousand dollars shared between parties, versus tens of thousands per side in court."),
   ("Is the cost shared between parties?",
    "Usually, yes. Mediation fees are commonly shared between the parties, which makes the process more affordable for everyone involved."),
   ("Are there any hidden fees?",
    "No. Our pricing is fixed and transparent. You'll know what mediation costs before you commit, with no open-ended hourly billing."),
-  ("Is the initial consultation really fixed-fee?",
-   "Yes. The initial consultation is a fixed fee with no obligation, so you can understand your options and the likely cost before deciding how to proceed.")],
+  ("Is the initial consultation really free?",
+   "Yes. The initial consultation is free with no obligation, so you can understand your options and the likely cost before deciding how to proceed.")],
  "Our Fee Structure",
  "Know the cost <em>before</em> you commit.",
- "Book a fixed-fee consultation and get complete clarity on what resolving your dispute will cost.")
+ "Book a free initial consultation and get complete clarity on what resolving your dispute will cost.")
 
 print("Additional service pages built.")

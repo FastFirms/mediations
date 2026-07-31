@@ -67,7 +67,7 @@ build("parenting-plan-template",
    "Yes. Parenting plans are flexible and can be updated by agreement as children grow and circumstances change — ideally through mediation if you can't agree directly.")],
  "Parenting Plan Template",
  "Build a parenting plan that <em>actually works</em>.",
- "Book a fixed-fee consultation and let an accredited mediator help you create a complete, child-focused parenting plan.")
+ "Book a free initial consultation and let an accredited mediator help you create a complete, child-focused parenting plan.")
 
 # ---- BFA OR CONSENT ORDERS ----
 build("bfa-or-consent-orders",
@@ -127,7 +127,7 @@ build("getting-ready-for-separation",
    <li><strong>Seek early guidance.</strong> Understanding your options early — including mediation — helps you avoid costly missteps.</li>
  </ol>
  <div class="callout"><h3>You don't have to have it all figured out</h3>
- <p>Many people come to us before they've sorted any of this. A fixed-fee consultation is a good first step — we'll help you understand what to do next, with no obligation.</p></div>
+ <p>Many people come to us before they've sorted any of this. A free initial consultation is a good first step — we'll help you understand what to do next, with no obligation.</p></div>
  <h2>A note on safety</h2>
  <p>If your situation involves family violence or you feel unsafe, your safety comes first. Contact emergency services if you're in immediate danger, and tell us about any concerns so we can advise the safest path — including arrangements that mean you never have to be in the same room as the other person.</p>
  <h2>How mediation fits in</h2>
@@ -143,7 +143,7 @@ build("getting-ready-for-separation",
    "As early as possible. Understanding your options early — including mediation — helps you avoid costly missteps and reduces stress.")],
  "Getting Ready for Separation",
  "Face it <em>prepared</em>, not overwhelmed.",
- "Book a fixed-fee consultation and we'll help you understand exactly what to do next — with no obligation.")
+ "Book a free initial consultation and we'll help you understand exactly what to do next — with no obligation.")
 
 # ---- FAMILY LAW COST ESTIMATOR (content page for now) ----
 build("family-law-cost-estimator",
@@ -164,7 +164,7 @@ build("family-law-cost-estimator",
  <h2>Mediation vs court: the cost difference</h2>
  <p>A contested family law case can cost tens or even hundreds of thousands of dollars per side once two sets of lawyers bill by the hour over one to three years. Mediation, by contrast, typically resolves in one or two sessions, with a fixed fee usually shared between the parties — frequently the difference between a few thousand dollars total and a six-figure litigation bill. The money you save is money that stays with your family. <a href="/our-fee-structure/">See our transparent fee structure →</a></p>
  <div class="callout"><h3>Get a real estimate for your situation</h3>
- <p>Every matter is different. The most accurate way to understand your likely cost is a fixed-fee consultation, where we assess your circumstances and explain the options clearly — with no obligation. An interactive estimator is coming soon; for now, a quick call gives you a far more accurate picture.</p></div>
+ <p>Every matter is different. The most accurate way to understand your likely cost is a free initial consultation, where we assess your circumstances and explain the options clearly — with no obligation. An interactive estimator is coming soon; for now, a quick call gives you a far more accurate picture.</p></div>
  <h2>Why early resolution saves the most</h2>
  <p>Costs in family law compound over time — the longer a dispute runs, the more it costs emotionally and financially. Resolving early through <a href="/family-law-mediation/">mediation</a> is the most reliable way to keep costs down and protect the asset pool you're dividing.</p>
  """,
@@ -175,10 +175,10 @@ build("family-law-cost-estimator",
   ("Is the cost shared between parties?",
    "Mediation fees are usually shared, making the process more affordable for everyone. Litigation, by contrast, means each side carries its own substantial legal bill."),
   ("How can I get an accurate cost estimate?",
-   "Book a fixed-fee consultation. Because every matter differs, a short conversation gives a far more accurate estimate than any generic calculator.")],
+   "Book a free initial consultation. Because every matter differs, a short conversation gives a far more accurate estimate than any generic calculator.")],
  "Family Law Cost Estimator",
  "See what you could <em>save</em>.",
- "Book a fixed-fee consultation for an honest estimate of what resolving your matter will cost — and how much mediation can save you.")
+ "Book a free initial consultation for an honest estimate of what resolving your matter will cost — and how much mediation can save you.")
 
 # ---- SEPARATION UNDER ONE ROOF ----
 build("separation-under-one-roof",
@@ -258,6 +258,6 @@ build("separation-under-one-roof",
    "Yes. Mediation can help you agree on living arrangements, finances and parenting while under one roof, and can be conducted in separate rooms or online if being together is difficult.")],
  "Separation Under One Roof",
  "Living together, living apart — <em>we can help</em>.",
- "Book a fixed-fee consultation to work out living, financial and parenting arrangements while you're separated under one roof.")
+ "Book a free initial consultation to work out living, financial and parenting arrangements while you're separated under one roof.")
 
 print("Resource pages built.")

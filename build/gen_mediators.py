@@ -170,7 +170,7 @@ d += f"""<main id="main">
 <div class="booking-strip">
   <div class="wrap">
     <h2>Ready to resolve your dispute <em>without court</em>?</h2>
-    <p>Book a fixed-fee consultation with Dan and get honest, expert advice on your situation — with no obligation.</p>
+    <p>Book a free initial consultation with Dan and get honest, expert advice on your situation — with no obligation.</p>
     <a href="{BOOK_URL}" class="btn" style="background:var(--cream);color:var(--sage-deep);font-size:1.1rem;padding:18px 38px">
       Book your free consultation &#8594;
     </a>

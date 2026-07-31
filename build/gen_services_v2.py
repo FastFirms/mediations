@@ -85,7 +85,7 @@ def service_page(slug, title, desc, breadcrumb_label, eyebrow, h1_html, lede, to
 {related_grid(related_items)}
 '''
     d += cta_band(f"Ready to <em>resolve this</em>?",
-                  "Book a fixed-fee consultation and we'll explain how mediation applies to your situation.")
+                  "Book a free initial consultation and we'll explain how mediation applies to your situation.")
     d += "</main>" + page_end()
 
     os.makedirs(os.path.join(OUT, slug), exist_ok=True)
@@ -124,7 +124,7 @@ service_page(
 <p>It's recognised across the Australian system as the default path for separating families. Under the {cite("family_law_act")}, you must generally attempt family dispute resolution before applying to court for a parenting order \u2014 and the courts strongly expect genuine pre-action efforts on property matters too. The {cite("ag_fdr")} sets the framework, and accredited mediators issue the {esc("Section 60I certificate")} the court requires.</p>
 
 <p>Critically, mediation isn't a soft, talk-it-out exercise. It's a structured process with phases, ground rules, and a clear path to a written agreement \u2014 conducted by professionals who understand both the law and the human dynamics of separation.</p>
-""" + inline_cta("Wondering if mediation fits your situation? Book a fixed-fee consultation \u2014 we'll give you an honest assessment.") + """
+""" + inline_cta("Wondering if mediation fits your situation? Book a free initial consultation \u2014 we'll give you an honest assessment.") + """
 
 <h2 id="when">When is mediation appropriate?</h2>
 <p>For the vast majority of separating couples, mediation is the right first step \u2014 even when conflict feels high. It works particularly well when:</p>
@@ -144,7 +144,7 @@ service_page(
 <p>The process is more structured than people expect. Here's what actually happens:</p>
 
 <ol>
-  <li><strong>Initial consultation</strong> \u2014 a fixed-fee call to understand your situation, confirm mediation is appropriate, and outline how it would work for you.</li>
+  <li><strong>Initial consultation</strong> \u2014 a free call to understand your situation, confirm mediation is appropriate, and outline how it would work for you.</li>
   <li><strong>Intake assessment</strong> \u2014 each party meets separately with the mediator to discuss the issues, identify any safety concerns, and prepare for the session.</li>
   <li><strong>Pre-session preparation</strong> \u2014 you gather the relevant information (financial disclosure, what you want for the children, any documents that matter) so the session is productive.</li>
   <li><strong>The mediation session</strong> \u2014 the substantive day. You work through the issues with the mediator's guidance \u2014 in the same room, or in <a href="/shuttle-mediation-guide/">separate rooms ("shuttle mediation")</a> if that's preferable.</li>
@@ -178,7 +178,7 @@ service_page(
 <tr><td>Contested litigation (each party)</td><td>$50,000\u2013$200,000+</td><td>1\u20133 years</td></tr>
 </tbody></table></figure>
 
-<p>Mediation costs are usually shared between the parties, so your share is roughly half the headline figure. Our consultations are <strong>fixed-fee</strong>, so you'll know what you're committing to before you commit. <a href="/our-fee-structure/">See our fee structure \u2192</a></p>
+<p>Mediation costs are usually shared between the parties, so your share is roughly half the headline figure. Our initial consultation is <strong>free</strong>, so you'll know what you're committing to before you commit. <a href="/our-fee-structure/">See our fee structure \u2192</a></p>
 
 <p>Government-funded <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationship Centres</a> offer mediation at free or low cost for parenting matters \u2014 valuable, but typically with longer wait times and more limited capacity for complex financial matters.</p>
 
@@ -208,7 +208,7 @@ service_page(
 <p>We handle the formalisation step as part of the mediation process \u2014 you don't reach an agreement and then have to find separate lawyers to make it stick. <a href="/bfa-or-consent-orders/">See which option suits you \u2192</a></p>
 
 <h2 id="get-started">How to get started</h2>
-<p>The first step is a fixed-fee consultation. We'll listen to your situation, explain how mediation would apply, give you an honest assessment of whether it's the right path, and \u2014 if you proceed \u2014 schedule the intake and mediation session. There's no obligation and no surprises. Many of the people we help are referred by their own family lawyers, who know what court costs in money and wellbeing.</p>
+<p>The first step is a free initial consultation. We'll listen to your situation, explain how mediation would apply, give you an honest assessment of whether it's the right path, and \u2014 if you proceed \u2014 schedule the intake and mediation session. There's no obligation and no surprises. Many of the people we help are referred by their own family lawyers, who know what court costs in money and wellbeing.</p>
 """,
     faq_items=[
         ("Is family law mediation compulsory in Australia?",
@@ -448,7 +448,7 @@ service_page(
 <p>If mediation doesn't fully resolve parenting matters, the practitioner can issue a Section 60I certificate \u2014 the document that allows you to file a parenting application in court. The certificate doesn't say who's "right"; it simply records that the required FDR step was attempted. Several certificate types exist (the other party didn't attend, mediation wasn't appropriate, both parties attended in good faith, etc.). <a href="/section-60i-certificates/">See Section 60I certificates \u2192</a></p>
 
 <h2 id="get-started">Getting started</h2>
-<p>The first step is a fixed-fee consultation. We'll explain the FDR process, assess suitability honestly (including any safety concerns), and outline a clear path forward. If mediation is right for your family, we'll schedule the intake and mediation session. If it isn't \u2014 we'll tell you and help you understand the alternatives. There's no obligation and no surprises.</p>
+<p>The first step is a free initial consultation. We'll explain the FDR process, assess suitability honestly (including any safety concerns), and outline a clear path forward. If mediation is right for your family, we'll schedule the intake and mediation session. If it isn't \u2014 we'll tell you and help you understand the alternatives. There's no obligation and no surprises.</p>
 """,
     faq_items=[
         ("Is mediation compulsory before going to court for custody?",

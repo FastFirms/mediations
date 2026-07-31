@@ -153,7 +153,7 @@ build(
    "Independent valuations (for property, businesses or super) are commonly used. The mediator helps you agree on a valuation process so the division is based on fair, agreed figures.")],
  "Property Settlement Mediation",
  "Settle your property matters <em>this month</em>, not next year.",
- "Book a fixed-fee consultation and get a clear, honest view of how mediation can divide your assets fairly — without the cost and delay of court.")
+ "Book a free initial consultation and get a clear, honest view of how mediation can divide your assets fairly — without the cost and delay of court.")
 
 build(
  "divorce-mediation",
@@ -172,7 +172,7 @@ build(
 
  <h2>How divorce mediation works, step by step</h2>
  <ol>
-   <li><strong>Fixed-fee consultation</strong> — you tell us what you're facing and we give an honest view of whether mediation can help, and how it sits alongside any legal advice you have.</li>
+   <li><strong>Free consultation</strong> — you tell us what you're facing and we give an honest view of whether mediation can help, and how it sits alongside any legal advice you have.</li>
    <li><strong>Intake and preparation</strong> — each of you meets the mediator separately, financial disclosure is gathered, and the issues are mapped out.</li>
    <li><strong>The mediation session</strong> — guided by the mediator, you work through parenting, property and finances, in the same room or in separate rooms ('shuttle' mediation) where there's conflict or a safety concern.</li>
    <li><strong>Reaching agreement</strong> — points of agreement are recorded in a Heads of Agreement as you go.</li>
@@ -205,7 +205,7 @@ build(
  <p>A contested divorce can run one to three years and cost tens of thousands of dollars per side — money that comes straight out of the asset pool you're trying to divide. Mediation keeps that money with your family. It's also private: court is a public process on the court's timetable, while mediation happens when and how it suits you. And because you craft the agreement yourselves, arrangements tend to last — which matters most when there are children and you'll be co-parenting for years. The <a href="https://www.fcfcoa.gov.au/fl/divorce" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a> itself expects parties to make a genuine effort to resolve matters before litigating.</p>
 
  <h2>How much does divorce mediation cost?</h2>
- <p>You begin with a fixed-fee consultation, so there are no billing surprises. From there, divorce mediation typically costs a small fraction of a contested court case, and the fee is usually shared between the parties — unlike two sets of lawyers billing by the hour. <a href="/how-much-does-mediation-cost/">See a full breakdown of what mediation costs →</a></p>
+ <p>You begin with a free initial consultation, so there are no billing surprises. From there, divorce mediation typically costs a small fraction of a contested court case, and the fee is usually shared between the parties — unlike two sets of lawyers billing by the hour. <a href="/how-much-does-mediation-cost/">See a full breakdown of what mediation costs →</a></p>
 
  <h2>How to prepare for divorce mediation</h2>
  <ol>
@@ -233,7 +233,7 @@ build(
    "Yes. Starting far apart is normal — that's exactly what mediation is for. A skilled divorce mediator helps you find common ground issue by issue, and you don't have to resolve everything in one sitting.")],
  "Divorce Mediation",
  "Start your divorce the <em>calmer</em> way.",
- "Book a fixed-fee consultation and get an honest view of how divorce mediation can resolve parenting, property and finances — without an unnecessary court fight.")
+ "Book a free initial consultation and get an honest view of how divorce mediation can resolve parenting, property and finances — without an unnecessary court fight.")
 
 build(
  "parenting-plan-mediation",
@@ -318,7 +318,7 @@ build(
    "Each parent first meets the mediator separately, then joint sessions work through living arrangements, time-sharing and decision-making with the focus kept on the children. The agreement is written up as a parenting plan you both sign.")],
  "Parenting Plan Mediation",
  "Put your children first — <em>starting today</em>.",
- "Book a fixed-fee consultation and let an accredited family mediator help you build a parenting plan that works for everyone who matters most.")
+ "Book a free initial consultation and let an accredited family mediator help you build a parenting plan that works for everyone who matters most.")
 
 build(
  "section-60i-certificates",
@@ -400,7 +400,7 @@ build(
    "A prenup is simply a BFA made before marriage or a de facto relationship. The same legal framework applies.")],
  "Binding Financial Agreements",
  "Protect your future, <em>without the conflict</em>.",
- "Book a fixed-fee consultation to negotiate a fair financial agreement through mediation — with the legal formalisation that makes it binding.")
+ "Book a free initial consultation to negotiate a fair financial agreement through mediation — with the legal formalisation that makes it binding.")
 
 build(
  "spousal-support-mediation",
@@ -441,7 +441,7 @@ build(
    "Yes, through consent orders or a binding financial agreement. We help you formalise whatever you agree in mediation.")],
  "Spousal Maintenance Mediation",
  "Reach a fair arrangement, <em>without the fight</em>.",
- "Book a fixed-fee consultation to resolve spousal maintenance through mediation — fairly, sustainably and without court.")
+ "Book a free initial consultation to resolve spousal maintenance through mediation — fairly, sustainably and without court.")
 
 build(
  "child-support-mediation",
@@ -481,7 +481,7 @@ build(
    "Mediation can address the underlying disagreement and create a workable plan. Enforcement remains available through Services Australia, but resolving the conflict often prevents the problem recurring.")],
  "Child Support Mediation",
  "Support your children — <em>without the standoff</em>.",
- "Book a fixed-fee consultation to resolve child support through mediation, with arrangements that genuinely fit your family.")
+ "Book a free initial consultation to resolve child support through mediation, with arrangements that genuinely fit your family.")
 
 build(
  "de-facto-mediation",
@@ -516,7 +516,7 @@ build(
    "Courts consider factors like living together, the length of the relationship, financial interdependence and shared children. Mediation can proceed by agreement without a contested court finding.")],
  "De Facto Relationship Mediation",
  "Same rights. Same fairness. <em>Far less stress.</em>",
- "Book a fixed-fee consultation to resolve your de facto dispute through mediation — property, finances and parenting, all without court.")
+ "Book a free initial consultation to resolve your de facto dispute through mediation — property, finances and parenting, all without court.")
 
 build(
  "grandparents-mediation",
@@ -556,7 +556,7 @@ build(
    "Mediation provides a neutral space to address the parent's concerns and rebuild trust. It succeeds in many cases where direct conversations have broken down.")],
  "Grandparents' Mediation",
  "Don't lose the bond — <em>rebuild it</em>.",
- "Book a fixed-fee consultation to restore contact with your grandchildren through respectful, child-focused mediation.")
+ "Book a free initial consultation to restore contact with your grandchildren through respectful, child-focused mediation.")
 
 build(
  "consent-orders",
@@ -673,7 +673,7 @@ build(
    "Yes. Online mediation is available anywhere in Australia with an internet connection, giving regional and remote clients the same access as those in capital cities.")],
  "Online Divorce Mediation",
  "Resolve it from home — <em>anywhere in Australia</em>.",
- "Book a fixed-fee online consultation and resolve your separation by secure video, with the same accredited mediators and binding outcomes as in person.")
+ "Book a free initial online consultation and resolve your separation by secure video, with the same accredited mediators and binding outcomes as in person.")
 
 build(
  "workplace-mediation",
@@ -714,7 +714,7 @@ build(
    "The mediation itself is voluntary, but any agreement reached can be documented and made binding, for example as a deed of settlement.")],
  "Workplace Mediation",
  "Resolve it early — <em>before it costs more</em>.",
- "Book a fixed-fee consultation to resolve a workplace dispute through confidential mediation, before it reaches the Fair Work Commission.")
+ "Book a free initial consultation to resolve a workplace dispute through confidential mediation, before it reaches the Fair Work Commission.")
 
 print("\nService pages built.")
 import subprocess

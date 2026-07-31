@@ -233,7 +233,7 @@ def org_schema():
         "name": "Mediations Australia",
         "description": "Nationally accredited mediators resolving family, business, workplace, property and estate disputes across Australia without court.",
         "url": f"{DOMAIN}/", "telephone": PHONE, "areaServed": "AU",
-        "priceRange": "Fixed-fee consultations",
+        "priceRange": "Free initial consultation",
         "address": [{"@type": "PostalAddress", "addressLocality": c.split(",")[0],
                      "streetAddress": a, "addressCountry": "AU"} for c, a in OFFICES],
         # VERIFY before launch: confirm these match the real/live social profile URLs
@@ -304,7 +304,7 @@ def cta_band(h, p, note=True):
     notes = ""
     if note:
         check = '<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="var(--sage)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-        notes = f'<div class="note"><span>{check}No obligation</span><span>{check}Fixed-fee, transparent</span><span>{check}In person or online</span></div>'
+        notes = f'<div class="note"><span>{check}No obligation</span><span>{check}Transparent pricing</span><span>{check}In person or online</span></div>'
     return f"""<section class="cta-band" id="book">
   <div class="phero-blob"></div>
   <div class="wrap">

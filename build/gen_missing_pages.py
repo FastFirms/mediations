@@ -91,7 +91,7 @@ d += f"""<main id="main">
 </div></section>
 """
 d += cta_band("Ready to work with an <em>accredited mediator</em>?",
-              "Book a fixed-fee consultation and we'll match you with a mediator suited to your matter.")
+              "Book a free initial consultation and we'll match you with a mediator suited to your matter.")
 d += "</main>" + page_end()
 os.makedirs(os.path.join(OUT,"our-mediators"), exist_ok=True)
 open(os.path.join(OUT,"our-mediators","index.html"),"w").write(d)

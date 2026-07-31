@@ -93,7 +93,7 @@ service_page(
 <p>The agreement is formalised through either consent orders (court-approved) or a binding financial agreement (private contract with independent legal advice for each party). Both make the support legally enforceable. <a href=\"/bfa-or-consent-orders/\">See which option suits you \u2192</a></p>
 
 <h2 id="get-started">Getting started</h2>
-<p>The first step is a fixed-fee consultation. We'll listen, assess the eligibility question honestly, and outline what's involved. Spousal maintenance matters often resolve in a single mediation session once full disclosure is in.</p>
+<p>The first step is a free initial consultation. We'll listen, assess the eligibility question honestly, and outline what's involved. Spousal maintenance matters often resolve in a single mediation session once full disclosure is in.</p>
 """,
     faq_items=[
         ("Who can claim spousal maintenance?","A former partner who can't reasonably meet their own needs, where the other party has the capacity to pay. Both need and capacity must be present. Eligibility isn't automatic."),
@@ -201,7 +201,7 @@ service_page(
 <p>Care percentages feed the formula, which means disputes about parenting time can become disputes about money \u2014 and vice versa. Mediating them together produces a coherent outcome where both pieces fit. <a href=\"/child-custody-mediation/\">See child custody mediation \u2192</a></p>
 
 <h2 id=\"get-started\">Getting started</h2>
-<p>The first step is a fixed-fee consultation. We'll understand what's in dispute, whether the standard formula is working, and what would actually help. Many child support matters resolve in a single session.</p>
+<p>The first step is a free initial consultation. We'll understand what's in dispute, whether the standard formula is working, and what would actually help. Many child support matters resolve in a single session.</p>
 """,
     faq_items=[
         ("Do I have to use the standard child support formula?","No. The formula is the default, but parents can agree their own arrangement \u2014 either a Child Support Agreement registered with Services Australia, or a private self-managed arrangement."),
@@ -283,7 +283,7 @@ service_page(
 <p>The mediated agreement is formalised through consent orders (court-approved) or a binding financial agreement (private contract with independent legal advice). Either way, well inside the two-year window. <a href=\"/de-facto-relationships-guide/\">See de facto relationships: complete guide \u2192</a></p>
 
 <h2 id=\"get-started\">Getting started</h2>
-<p>The first step is a fixed-fee consultation. Given the time limit, the sooner the better.</p>
+<p>The first step is a free initial consultation. Given the time limit, the sooner the better.</p>
 """,
     faq_items=[
         ("Do de facto couples have the same property rights as married couples?","Substantially, yes \u2014 the same Family Law Act framework applies for property settlement, super splitting and spousal maintenance. The main difference is the time limit."),
@@ -380,7 +380,7 @@ service_page(
 <p>An informal agreement is fine where the parents are reliable. Where they're not, or where the situation needs the certainty of court orders, the mediated arrangement is converted into consent orders \u2014 enforceable in the same way as any court order. <a href=\"/consent-orders/\">See consent orders \u2192</a></p>
 
 <h2 id=\"get-started\">Getting started</h2>
-<p>The first step is a fixed-fee consultation. We'll listen, assess the situation honestly, and outline what's possible. These matters are emotional but solvable \u2014 the path back to your grandchildren usually starts with a single conversation.</p>
+<p>The first step is a free initial consultation. We'll listen, assess the situation honestly, and outline what's possible. These matters are emotional but solvable \u2014 the path back to your grandchildren usually starts with a single conversation.</p>
 """,
     faq_items=[
         ("Do grandparents have a right to see their grandchildren?","Not an automatic right, but the Family Law Act expressly contemplates grandparents applying for parenting orders, and the law recognises children's right to maintain significant relationships."),
@@ -477,7 +477,7 @@ service_page(
 """ + inline_cta("Mediation first, arbitration if needed. We help you sequence them sensibly.") + """
 
 <h2 id=\"get-started\">Getting started</h2>
-<p>The first step is a fixed-fee consultation. We'll assess whether arbitration is right for your matter, explain the process and likely cost, and outline how it sequences with mediation if you haven't tried that first. <a href=\"/arbitration-in-family-law/\">See the full arbitration guide \u2192</a></p>
+<p>The first step is a free initial consultation. We'll assess whether arbitration is right for your matter, explain the process and likely cost, and outline how it sequences with mediation if you haven't tried that first. <a href=\"/arbitration-in-family-law/\">See the full arbitration guide \u2192</a></p>
 """,
     faq_items=[
         ("What is family law arbitration?","A process where a qualified arbitrator hears a property or financial dispute and makes a legally binding decision, privately and faster than court. Used for financial matters only, not parenting."),
@@ -580,7 +580,7 @@ service_page(
 <p>Estate mediation is typically a single full-day session with intake. Costs depend on complexity but are usually a single-figure thousands rather than the tens or hundreds of thousands estate litigation can run. The full process from consultation to settlement deed typically takes 4\u20138 weeks.</p>
 
 <h2 id=\"get-started\">Getting started</h2>
-<p>The first step is a fixed-fee consultation. We'll listen to the dispute, assess suitability, and outline a process. Even where court proceedings have begun, mediation can usually still resolve the matter \u2014 often more quickly than the court process can complete.</p>
+<p>The first step is a free initial consultation. We'll listen to the dispute, assess suitability, and outline a process. Even where court proceedings have begun, mediation can usually still resolve the matter \u2014 often more quickly than the court process can complete.</p>
 """,
     faq_items=[
         ("What is estate dispute mediation?","A confidential, structured process where a neutral mediator helps parties resolve disputes about a deceased estate \u2014 contested wills, family provision claims, executor disputes \u2014 without going to court."),
@@ -674,7 +674,7 @@ service_page(
 <p>You can find non-accredited \"mediators\" \u2014 sometimes much cheaper. The risk is straightforward: they can't issue Section 60I certificates, they're not bound by enforceable standards, and you have no recourse if things go wrong. For low-stakes informal disputes, that may be acceptable. For family law matters with real consequences \u2014 children, property, futures \u2014 it isn't.</p>
 
 <h2 id=\"get-started\">Getting started</h2>
-<p>The first step is a fixed-fee consultation. You'll work with an accredited mediator from the start \u2014 we don't outsource to subcontractors and we don't put trainees on real matters.</p>
+<p>The first step is a free initial consultation. You'll work with an accredited mediator from the start \u2014 we don't outsource to subcontractors and we don't put trainees on real matters.</p>
 """,
     faq_items=[
         ("What does \"accredited mediator\" mean?","A mediator accredited under AMDRAS (the Australian Mediator and Dispute Resolution Accreditation Standards) has completed formal training, passed competency assessment, practises under a code of conduct, and maintains ongoing professional development."),

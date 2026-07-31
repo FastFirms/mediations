@@ -165,7 +165,7 @@ post("superannuation-and-divorce",
 <h2 id="is-property">Is superannuation property?</h2>
 <p>Yes. Under the {cite("family_law_act")}, superannuation is treated as property that can be divided as part of a settlement \u2014 even though you generally can't access it until retirement. This is one of the most under-appreciated parts of a property settlement, and missing it can leave one partner significantly worse off in retirement.</p>
 """
- + inline_cta("Not sure how your super (or your ex's) factors into the split? Get clarity in a fixed-fee consultation.")
+ + inline_cta("Not sure how your super (or your ex's) factors into the split? Get clarity in a free initial consultation.")
  + """
 <h2 id="how-split">How does super splitting work?</h2>
 <p>A superannuation split reallocates part of one partner's super to the other. Importantly, it doesn't turn super into cash \u2014 the split amount is transferred into the receiving partner's super (or sometimes a new account) and remains subject to normal preservation rules until retirement. It's a rebalancing of retirement savings, not an early payout. The split is part of the overall <a href="/property-settlement-after-separation/">property settlement</a>, considered alongside the rest of the asset pool.</p>

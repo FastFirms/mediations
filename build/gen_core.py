@@ -60,7 +60,7 @@ doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:
 doc += """<article class="body"><div class="wrap-narrow reveal">
 <h2>The five steps of mediation</h2>
 <ol>
-  <li><strong>Book your consultation.</strong> You start with a fixed-fee consultation — clear advice on your options and whether mediation suits your matter, with no runaway costs and no obligation.</li>
+  <li><strong>Book your consultation.</strong> You start with a free initial consultation — clear advice on your options and whether mediation suits your matter, with no runaway costs and no obligation.</li>
   <li><strong>We match your mediator.</strong> You're paired with a nationally accredited mediator who understands both the legal framework and the human side of your dispute.</li>
   <li><strong>The session runs.</strong> In person or online, together in one room or in separate rooms with the mediator moving between you ('shuttle' mediation) — whatever feels safe and productive.</li>
   <li><strong>Agreement is reached.</strong> In around 90% of the matters we mediate, the dispute resolves then and there, on terms everyone has chosen.</li>
@@ -104,7 +104,7 @@ doc += """<article class="body"><div class="wrap-narrow reveal">
 </div></article>"""
 doc += faq_html(qa_how, heading="How mediation works — FAQs")
 doc += cta_band("Ready to take the <em>first step</em>?",
- "Book a fixed-fee consultation and we'll explain exactly how mediation would work for your situation — with no obligation.")
+ "Book a free initial consultation and we'll explain exactly how mediation would work for your situation — with no obligation.")
 doc += "</main>" + page_end()
 write("how-mediation-works", doc)
 
@@ -155,7 +155,7 @@ doc += """<article class="body"><div class="wrap-narrow reveal">
 </div></article>"""
 doc += faq_html(qa_about, heading="About Mediations Australia — FAQs")
 doc += cta_band("See the difference for <em>yourself</em>.",
- "Book a fixed-fee consultation and find out why thousands of Australians chose mediation over litigation.")
+ "Book a free initial consultation and find out why thousands of Australians chose mediation over litigation.")
 doc += "</main>" + page_end()
 write("about-mediations-australia", doc)
 
@@ -218,7 +218,7 @@ doc += """<article class="body"><div class="wrap-narrow reveal">
 </div></article>"""
 doc += faq_html(qa_prep, heading="Preparing for mediation — FAQs")
 doc += cta_band("Feel ready. <em>Resolve it.</em>",
- "Book a fixed-fee consultation and we'll walk you through exactly what to expect, so you arrive prepared and confident.")
+ "Book a free initial consultation and we'll walk you through exactly what to expect, so you arrive prepared and confident.")
 doc += "</main>" + page_end()
 write("preparing-for-mediation", doc)
 

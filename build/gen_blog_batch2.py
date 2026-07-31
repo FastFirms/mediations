@@ -96,7 +96,7 @@ post("consent-orders-explained",
 <p>The court filing fee for an Application for Consent Orders is modest \u2014 around $200 \u2014 and is set out in the {cite("fcfcoa_fees")}. Fee reductions are available for people who hold certain concession cards or would face financial hardship. On top of the filing fee, your main cost is preparing the documents: a well-drafted Minute is worth the investment, because it is what makes the orders work.</p>
 <p>Set that against a contested property case, which can consume tens of thousands of dollars \u2014 often a meaningful slice of the very asset pool you are dividing. Consent orders are one of the cheapest, most durable ways to lock in certainty. <a href="/our-fee-structure/">See our transparent fees \u2192</a></p>
 """
- + inline_cta("Curious what your matter would cost to formalise? Book a fixed-fee consultation and we'll give you a straight answer.")
+ + inline_cta("Curious what your matter would cost to formalise? Book a free initial consultation and we'll give you a straight answer.")
  + f"""
 <h2 id="just-equitable">How the court checks your orders</h2>
 <p>A registrar will not simply rubber-stamp whatever you submit \u2014 and that protection is a feature, not an obstacle. For <strong>property</strong>, the orders must be "just and equitable" under the {cite("family_law_act")}. In practice the court works through a familiar four-step approach: identify and value the asset pool; weigh each party's financial and non-financial contributions; consider future needs (things like the care of children, age, health and earning capacity); then stand back to check the overall result is fair.</p>
@@ -167,7 +167,7 @@ post("property-settlement-after-separation",
 <p>A property settlement is the formal division of everything you and your former partner own and owe after separating. It's separate from the divorce itself \u2014 you don't have to be divorced (or even married) to do one. It applies to married and {('de facto')} couples alike, and covers the whole financial picture, not just the family home.</p>
 <p>The governing law is the {cite("family_law_act")}, which sets out how property is to be divided. Crucially, it does not prescribe a fixed split.</p>
 """
- + inline_cta("Facing a property settlement? Get a clear, honest view of where you stand in a fixed-fee consultation.")
+ + inline_cta("Facing a property settlement? Get a clear, honest view of where you stand in a free initial consultation.")
  + f"""
 <h2 id="four-step">The four-step process</h2>
 <p>Courts and mediators apply the same four-step framework:</p>

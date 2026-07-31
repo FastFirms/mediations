@@ -170,7 +170,7 @@ d += f"""<main id="main">
 </section>
 """
 d += cta_band("Got a question we haven't <em>covered</em>?",
- "Book a fixed-fee consultation and get honest, expert answers tailored to your exact situation.")
+ "Book a free initial consultation and get honest, expert answers tailored to your exact situation.")
 d += "</main>" + page_end()
 
 d = d.replace("</head>", """<style>
