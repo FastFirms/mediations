@@ -141,7 +141,7 @@ def nav():
   <div class="wrap nav-inner">
     <a href="/" class="logo"><img src="/assets/images/MA.svg" alt="Mediations Australia" width="180" height="36" loading="eager" style="display:block;height:36px;width:auto"></a>
     <nav class="nav-links" id="navlinks" aria-label="Primary">
-      <span class="has-drop"><a class="lnk" href="/#disputes" aria-haspopup="true">Services</a>
+      <span class="has-drop"><a class="lnk" href="/#disputes" aria-haspopup="true">How We Help</a>
         {svc_mega}
       </span>
       <a class="lnk" href="/how-mediation-works/">How it works</a>
