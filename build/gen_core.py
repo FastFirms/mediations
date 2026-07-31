@@ -230,27 +230,113 @@ office_cards = "".join(f"""<article class="card"><div class="ic"><svg width="24"
 
 doc = head(
  "Contact Mediations Australia | 1800 952 380",
- "Book a mediation consultation with Mediations Australia. Offices in Sydney, Melbourne, Brisbane and Perth, plus online mediation nationwide.",
+ "Book a free initial consultation with Mediations Australia. Offices in Sydney, Melbourne, Brisbane and Perth, plus online mediation nationwide.",
  "contact-us",
  extra_schema=[org_schema(),
                breadcrumb_schema([("Home",""),("Contact","contact-us")])])
 doc += nav()
-doc += phero("We'll tell you honestly if we can help",
- "Let's talk about <em>resolving it</em>.",
- "Tell us about your dispute and we'll give you an honest view of whether mediation can help — and how it fits with any legal advice you already have. Call us, book online, or reach out and we'll come back to you quickly.",
- [("Home",""),("Contact",None)])
-doc += f"""<section class="sec" style="padding-top:20px"><div class="wrap">
-<div class="reveal" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:50px">
-  <a href="{PHONE_HREF}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 36px">Call {PHONE} <span class="arr">→</span></a>
-  <a href="{BOOK_URL}" class="btn btn-ghost" style="font-size:1.1rem;padding:18px 36px">Book online</a>
+doc += f"""<main id="main">
+{crumb_html([("Home",""),("Contact",None)])}
+
+<section style="background:var(--sand);padding:72px 0 80px">
+<style>
+.contact-wrap{{display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:start}}
+.contact-field{{width:100%;padding:13px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:1rem;background:var(--cream);color:var(--ink);font-family:var(--sans);box-sizing:border-box;outline:none;transition:border-color .2s}}
+.contact-field:focus{{border-color:var(--sage-deep)}}
+@media(max-width:860px){{.contact-wrap{{grid-template-columns:1fr}}.contact-sidebar{{display:none}}}}
+</style>
+<div class="wrap">
+  <div class="contact-wrap">
+
+    <div>
+      <p class="sec-tag">Get in touch</p>
+      <h1 style="font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.15;margin-bottom:16px">Let's talk about <em>resolving it</em>.</h1>
+      <p style="font-size:1.05rem;color:var(--ink-soft);max-width:54ch;margin-bottom:36px">Tell us about your dispute and we'll give you an honest view of whether mediation can help — and how it fits with any legal advice you already have.</p>
+
+      <form name="contact" method="POST" action="{BOOK_URL}" style="display:flex;flex-direction:column;gap:18px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div>
+            <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">First name</label>
+            <input class="contact-field" type="text" name="first_name" placeholder="Your first name" required>
+          </div>
+          <div>
+            <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Last name</label>
+            <input class="contact-field" type="text" name="last_name" placeholder="Your last name" required>
+          </div>
+        </div>
+        <div>
+          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Email address</label>
+          <input class="contact-field" type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div>
+          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Phone number</label>
+          <input class="contact-field" type="tel" name="phone" placeholder="0400 000 000">
+        </div>
+        <div>
+          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Type of dispute</label>
+          <select class="contact-field" name="dispute_type" style="appearance:none">
+            <option value="">Select a dispute type…</option>
+            <option>Family law / separation</option>
+            <option>Property settlement</option>
+            <option>Parenting arrangements</option>
+            <option>Estate / inheritance</option>
+            <option>Workplace dispute</option>
+            <option>Commercial / business</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Tell us briefly what's happening</label>
+          <textarea class="contact-field" name="message" rows="4" placeholder="A short description — the more you share, the better we can help." style="resize:vertical"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary" style="font-size:1.05rem;padding:16px 36px">Book a Free Consultation <span class="arr">→</span></button>
+          <p style="margin-top:10px;font-size:.85rem;color:var(--ink-soft)">No obligation. We'll respond within one business day.</p>
+        </div>
+      </form>
+
+      <div style="display:flex;gap:28px;flex-wrap:wrap;margin-top:36px;padding-top:32px;border-top:1px solid var(--line);align-items:center">
+        <a href="{PHONE_HREF}" style="display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:600;font-size:1.05rem">
+          <span style="width:40px;height:40px;border-radius:50%;background:var(--sage-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--sage-deep)">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8a15.2 15.2 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          {PHONE}
+        </a>
+        <span style="color:var(--ink-soft);font-size:.92rem">Mon–Fri, 8:30am–5:30pm AEST</span>
+      </div>
+    </div>
+
+    <div class="contact-sidebar" style="position:sticky;top:100px">
+      <div style="background:var(--sage-deep);border-radius:20px;overflow:hidden;color:var(--cream)">
+        <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder, Mediations Australia"
+          style="width:100%;height:260px;object-fit:cover;object-position:center 15%;display:block">
+        <div style="padding:28px">
+          <p style="font-family:var(--serif);font-size:1.25rem;margin-bottom:4px">Dan Toombs</p>
+          <p style="font-size:.85rem;opacity:.75;margin-bottom:16px">Founder &amp; Accredited Mediator</p>
+          <p style="font-size:.95rem;line-height:1.72;opacity:.92;margin-bottom:22px;font-style:italic">"We built Mediations Australia because most disputes don't need a courtroom — they need a skilled mediator and a structured process. Tell us what's happening and we'll be honest about whether we can help."</p>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:.88rem;opacity:.88">
+            <span>✓ Free initial consultation</span>
+            <span>✓ Confidential &amp; no obligation</span>
+            <span>✓ Nationally accredited mediators</span>
+            <span>✓ In person or online</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
-<div class="reveal">
-  <p class="sec-tag">Our offices</p>
-  <h2 class="sec-title" style="margin-bottom:30px">Find us across <em>Australia</em>.</h2>
-  <div class="cards">{office_cards}</div>
-  <p style="margin-top:26px;color:var(--ink-soft);max-width:60ch">Can't make it to an office? Our <a href="/online-divorce/" style="color:var(--sage-deep);text-decoration:underline">online mediation</a> is available anywhere in Australia, including regional and remote areas.</p>
-</div>
-</div></section>"""
+</section>
+
+<section class="sec reveal" style="padding-top:64px;padding-bottom:64px">
+  <div class="wrap">
+    <p class="sec-tag">Our offices</p>
+    <h2 class="sec-title" style="margin-bottom:36px">Find us across <em>Australia</em>.</h2>
+    <div class="cards">{office_cards}</div>
+    <p style="margin-top:26px;color:var(--ink-soft);max-width:60ch">Can't make it to an office? Our <a href="/online-mediation-australia/" style="color:var(--sage-deep);text-decoration:underline">online mediation</a> is available anywhere in Australia, including regional and remote areas.</p>
+  </div>
+</section>"""
+
 doc += cta_band("Take the <em>first step</em> today.",
  "The first conversation costs nothing but a phone call. Tell us what you're facing and we'll tell you honestly how mediation can help.", note=True)
 doc += "</main>" + page_end()

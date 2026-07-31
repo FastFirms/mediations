@@ -105,6 +105,8 @@ def head(title, desc, slug, og_type="website", extra_schema=None):
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{canonical}">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<link rel="apple-touch-icon" href="/assets/images/favicon.png">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="{og_type}">
 <meta property="og:title" content="{esc(title)}">
