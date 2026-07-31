@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/mediation-information/",
+      "destination": "/how-mediation-works/",
+      "permanent": true
+    },
+    {
       "source": "/our-mediators/",
       "destination": "/our-team/",
       "permanent": true
