@@ -150,7 +150,7 @@ doc += f"""<main id="main">
     </div>
     <div style="text-align:center;margin-top:46px">
       <p style="font-size:1.2rem;font-family:var(--serif);font-style:italic;color:var(--cream);max-width:52ch;margin:0 auto 26px">"Court has its place — but it's rarely the best place to start. Trying mediation first can save everyone time, money and stress, whatever happens next."</p>
-      <a href="{BOOK_URL}" class="btn btn-primary">Start with a free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
     </div>
   </div>
 </section>

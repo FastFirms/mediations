@@ -111,7 +111,7 @@ service_page(
 <p>A parenting plan itself isn't directly enforceable. To give it the force of law \u2014 so that breaches have legal consequences \u2014 the plan needs to be converted into <strong>consent orders</strong>: a court-approved version of the same arrangement. The court reviews the proposed orders against the best-interests test, and if approved, they're enforceable just like a judge had ordered them.</p>
 
 <p>We handle this conversion as part of the mediation service \u2014 you're not left to find separate lawyers to draft the orders. Most families who go this route do so within a few weeks of finalising their plan. <a href=\"/bfa-or-consent-orders/\">See which option suits you \u2192</a></p>
-""" + inline_cta("Whether you need a parenting plan, consent orders, or both \u2014 we'll work it out with you. Book a free consultation.") + """
+""" + inline_cta("Whether you need a parenting plan, consent orders, or both \u2014 we'll work it out with you. Book a Free Consultation.") + """
 
 <h2 id="get-started">Getting started</h2>
 <p>The first step is a free initial consultation. We'll listen to your situation, assess whether mediation is the right path for your family, and outline what's involved. Most parenting plan mediations are resolved in one or two sessions \u2014 a matter of weeks, not the years a contested matter can take.</p>

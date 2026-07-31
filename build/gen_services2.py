@@ -16,7 +16,7 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p):
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
 <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
 <h1>{h1}</h1><p class="lede">{lede}</p>
-<div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+<div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
 </div></section>
 <div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>

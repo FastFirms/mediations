@@ -30,7 +30,7 @@ OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.
 
 def inline_cta(text):
     """Punctuating CTA between sections."""
-    return f'''<aside class="inline-cta"><p>{text}</p><a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></aside>'''
+    return f'''<aside class="inline-cta"><p>{text}</p><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a></aside>'''
 
 def key_takeaway(text):
     """AEO answer box — direct answer to the page's question in 1-2 sentences."""
@@ -68,7 +68,7 @@ def service_page(slug, title, desc, breadcrumb_label, eyebrow, h1_html, lede, to
 <h1>{h1_html}</h1>
 <p class="lede">{lede}</p>
 <div class="phero-cta">
-<a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+<a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
 </div></div></section>
 

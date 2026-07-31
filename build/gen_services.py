@@ -18,7 +18,7 @@ def phero(eyebrow, h1, lede):
     <h1>{h1}</h1>
     <p class="lede">{lede}</p>
     <div class="phero-cta">
-      <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
       <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
     </div>
   </div>
@@ -47,7 +47,7 @@ def build(slug, title, desc, eyebrow, h1, lede, ans, blocks, qa, crumb_name, cta
     <h1>{h1}</h1>
     <p class="lede">{lede}</p>
     <div class="phero-cta">
-      <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
       <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
     </div>
   </div>

@@ -127,7 +127,7 @@ def post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=
     d+=f"""<section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
 <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
-<a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book your free consultation <span class="arr">→</span></a>
+<a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
 </div></div></section>"""
     d+="</main>"+page_end()
     p=os.path.join(OUT,slug); os.makedirs(p,exist_ok=True)

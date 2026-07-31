@@ -24,7 +24,7 @@ def phero(eyebrow, h1, lede, crumb):
     <h1>{h1}</h1>
     <p class="lede">{lede}</p>
     <div class="phero-cta">
-      <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
       <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
     </div>
   </div>

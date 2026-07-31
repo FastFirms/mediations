@@ -115,7 +115,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
     <h1>{h1}</h1>
     <p class="lede">Mediation in {esc(city)} gives individuals, families and businesses a faster, more affordable and less stressful way to resolve disputes. Our nationally accredited mediators help you reach a lasting agreement — and keep the decision in your hands, not a judge's.</p>
     <div class="phero-cta">
-      <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
       <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
     </div>
   </div>

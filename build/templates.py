@@ -137,7 +137,7 @@ def nav():
         <div class="mega-card-body">
           <span class="mega-card-tag">Free consultation</span>
           <p class="mega-card-head">Talk to a Nationally Accredited Mediator today</p>
-          <a class="btn btn-primary mega-card-btn" href="{BOOK_URL}">Book free consult →</a>
+          <a class="btn btn-primary mega-card-btn" href="{BOOK_URL}">Book a Free Consultation →</a>
         </div>
       </div>
     </div>"""
@@ -162,7 +162,7 @@ def nav():
         </div>
       </span>
       <a class="lnk" href="/contact-us/">Contact</a>
-      <a class="btn btn-primary" href="{BOOK_URL}" style="padding:11px 22px;font-size:.92rem">Book free consult</a>
+      <a class="btn btn-primary" href="{BOOK_URL}" style="padding:11px 22px;font-size:.92rem">Book a Free Consultation</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -315,7 +315,7 @@ def cta_band(h, p, note=True):
     <div class="reveal">
       <h2>{h}</h2>
       <p>{p}</p>
-      <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book your free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
       {notes}
     </div>
   </div>
