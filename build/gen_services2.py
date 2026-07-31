@@ -280,7 +280,7 @@ build("our-fee-structure",
   <tbody>
     <tr>
       <td><strong>Room Hire</strong></td>
-      <td>Where an external venue is required. Sessions at our Sydney, Melbourne, Brisbane or Perth offices are included at no extra charge.</td>
+      <td>A suitable venue is required for all in-person sessions. We can arrange a room or you may use your own. Prices range from $200 to $400 depending on location.</td>
       <td>$200–$400</td>
     </tr>
     <tr>
