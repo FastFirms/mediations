@@ -318,4 +318,132 @@ build("our-fee-structure",
  "Know the cost <em>before</em> you commit.",
  "Book a free initial consultation and get complete clarity on what resolving your dispute will cost.")
 
+build("costs-of-going-to-court",
+ "The Real Cost of Going to Court in Australia | 2026 Guide",
+ "What does it actually cost to go to court in Australia? Filing fees, legal fees, barrister costs, lost time — and why mediation resolves most disputes for a fraction of the price.",
+ "Court vs mediation costs",
+ "The real cost of going to court in Australia.",
+ "Court is rarely cheap, fast or predictable. This guide breaks down every cost you'll face — from filing fees to barrister briefs — and shows why most Australians who try mediation first resolve their dispute without ever needing a courtroom.",
+ "Going to court in Australia typically costs between $30,000 and $150,000+ per side in legal fees for a contested matter, takes one to three years, and offers no certainty of outcome. Mediation resolves most disputes in one to two sessions for a fraction of the cost — typically $1,500–$2,500 per person shared.",
+ """
+<style>
+.cost-table{width:100%;border-collapse:collapse;margin:24px 0 36px}
+.cost-table th{text-align:left;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);padding:0 0 10px;border-bottom:2px solid var(--sage-deep)}
+.cost-table td{padding:14px 16px 14px 0;border-bottom:1px solid var(--line);vertical-align:top;font-size:.97rem;color:var(--ink-soft)}
+.cost-table td:first-child{color:var(--ink);font-weight:600;width:38%}
+.cost-table td:last-child{font-weight:700;color:var(--ink);white-space:nowrap;text-align:right;padding-right:0}
+.cost-table tr:last-child td{border-bottom:none}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0}
+.compare-col{border-radius:14px;padding:28px}
+.compare-col-court{background:#fff3f3;border:1px solid #ffc8c8}
+.compare-col-med{background:var(--sage-light);border:1px solid var(--sage)}
+.compare-col h3{font-family:var(--serif);font-size:1.2rem;margin-bottom:16px}
+.compare-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;font-size:.95rem}
+.compare-col li{display:flex;gap:10px;align-items:flex-start}
+@media(max-width:640px){.compare-grid{grid-template-columns:1fr}}
+</style>
+
+<h2>Why court costs so much more than people expect</h2>
+<p>Most people underestimate what litigation costs because they only see the headline legal fee. The real cost adds up across multiple stages — and each stage requires a lawyer's time, often a barrister's time, and sometimes expert witnesses too. Unlike mediation, litigation is billed by the hour, so the longer the other party disputes, the larger your bill grows.</p>
+
+<h2>The full cost breakdown</h2>
+<table class="cost-table">
+  <thead><tr><th>Cost item</th><th>Notes</th><th>Typical range</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Court filing fees</td>
+      <td>Federal Circuit and Family Court of Australia fees for initiating proceedings. Varies by matter type and applicant income.</td>
+      <td>$1,000–$4,500</td>
+    </tr>
+    <tr>
+      <td>Solicitor fees</td>
+      <td>Legal advice, drafting, correspondence, court documents and preparation. Billed by the hour throughout the matter.</td>
+      <td>$350–$600/hr</td>
+    </tr>
+    <tr>
+      <td>Barrister brief fees</td>
+      <td>Required for contested hearings. Brief fees cover preparation and the hearing day; a trial can require multiple days.</td>
+      <td>$5,000–$25,000+</td>
+    </tr>
+    <tr>
+      <td>Expert witnesses</td>
+      <td>Family reports, valuations, accounting experts. Each expert charges for preparation and giving evidence.</td>
+      <td>$3,000–$15,000+</td>
+    </tr>
+    <tr>
+      <td>Subpoenas &amp; disclosure</td>
+      <td>Costs of obtaining documents, subpoenas to third parties, compliance with discovery obligations.</td>
+      <td>$500–$5,000</td>
+    </tr>
+    <tr>
+      <td>Mediation (court-ordered)</td>
+      <td>Most courts require parties to attempt dispute resolution before a final hearing anyway — often at a later stage when costs have already escalated.</td>
+      <td>$1,500–$4,000</td>
+    </tr>
+    <tr>
+      <td>Lost income &amp; time</td>
+      <td>Court hearings, lawyer meetings, document review. A contested matter typically consumes dozens of hours of your personal time over 1–3 years.</td>
+      <td>Significant</td>
+    </tr>
+    <tr>
+      <td><strong>Total per side — contested matter</strong></td>
+      <td>For a contested family law or commercial dispute that proceeds to a final hearing.</td>
+      <td><strong>$30,000–$150,000+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <h3>Courts usually require mediation first anyway</h3>
+  <p>For most family law parenting matters, you are legally required to attempt Family Dispute Resolution before you can file. For property matters and commercial disputes, courts increasingly expect parties to have genuinely attempted to resolve the matter before consuming court time. Mediation first is not just cheaper — it's often mandatory.</p>
+</div>
+
+<h2>Court vs mediation — a direct comparison</h2>
+<div class="compare-grid">
+  <div class="compare-col compare-col-court">
+    <h3 style="color:#c0392b">Going to court</h3>
+    <ul>
+      <li><span>✗</span> $30,000–$150,000+ per side in legal fees</li>
+      <li><span>✗</span> 1–3 years to resolution</li>
+      <li><span>✗</span> No certainty of outcome — a judge decides</li>
+      <li><span>✗</span> Public record and adversarial process</li>
+      <li><span>✗</span> Damages relationships permanently</li>
+      <li><span>✗</span> Significant personal time and stress</li>
+      <li><span>✗</span> Often ordered to attempt mediation anyway</li>
+    </ul>
+  </div>
+  <div class="compare-col compare-col-med">
+    <h3 style="color:var(--sage-deep)">Mediation first</h3>
+    <ul>
+      <li><span>✓</span> $1,500–$2,500 per person (shared fee)</li>
+      <li><span>✓</span> 1–2 sessions, often resolved same day</li>
+      <li><span>✓</span> You control the outcome</li>
+      <li><span>✓</span> Completely confidential</li>
+      <li><span>✓</span> Preserves working relationships</li>
+      <li><span>✓</span> Minimal time away from work and family</li>
+      <li><span>✓</span> ~90% of disputes we mediate resolve</li>
+    </ul>
+  </div>
+</div>
+
+<h2>What if mediation doesn't work?</h2>
+<p>If mediation doesn't resolve your dispute, you are no worse off — and in most cases better off. You will have a clearer picture of the real issues, a better understanding of the other party's position, and often a narrowed set of disputes to take to court. Many matters that don't fully resolve at mediation still settle shortly after, once both parties see their positions clearly. You lose nothing by trying mediation first and gain the chance to avoid litigation entirely.</p>
+
+<h2>How much does mediation cost by comparison?</h2>
+<p>A full-day mediation at Mediations Australia is $4,500 +GST, typically split equally between the parties — meaning your share is around $2,475 all up. That's a single fixed fee covering intake, preparation, and a full day of mediation with a nationally accredited mediator. <a href="/our-fee-structure/">See our full fee schedule →</a></p>
+""",
+ [("How much does it cost to go to court in Australia?",
+   "A contested court matter typically costs between $30,000 and $150,000+ per side in solicitor and barrister fees, filing fees, and expert witness costs. Matters that proceed to a final hearing are at the higher end of this range and can take one to three years to resolve."),
+  ("What are the filing fees for court in Australia?",
+   "Federal Circuit and Family Court of Australia filing fees range from approximately $1,000 to $4,500 depending on the type of matter and whether you qualify for a reduced fee based on income. Filing fees are just the starting point — legal representation typically adds tens of thousands on top."),
+  ("Is mediation cheaper than going to court?",
+   "Yes, significantly. A full-day mediation typically costs each party around $2,000–$2,500, compared with $30,000–$150,000+ per side in a contested court matter. Around 90% of disputes mediated at Mediations Australia resolve without ever reaching court."),
+  ("Do I have to try mediation before going to court?",
+   "For most family law parenting matters, yes — you are legally required to attempt Family Dispute Resolution before filing. For property and commercial matters, courts increasingly expect parties to have genuinely attempted resolution before consuming court time and resources."),
+  ("What happens if mediation fails?",
+   "If mediation doesn't resolve your dispute you are not worse off — you retain all rights to proceed to court. In most cases you will have a clearer picture of the issues and a narrower set of disputes, which reduces the cost and time of any subsequent litigation.")],
+ "Costs of Going to Court",
+ "Mediation costs a <em>fraction</em> of litigation.",
+ "Start with a free consultation and find out how mediation can resolve your dispute without the cost and delay of court.")
+
 print("Additional service pages built.")
