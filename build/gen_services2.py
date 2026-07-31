@@ -160,35 +160,160 @@ build("divorce-counselling",
 
 # ---- FEE STRUCTURE ----
 build("our-fee-structure",
- "Our Fee Structure | Transparent, Fixed-Fee Mediation Costs",
- "Transparent, fixed-fee mediation pricing with no surprises. Understand what mediation costs and why it's a fraction of litigation.",
+ "Mediation Fees & Pricing | Mediations Australia",
+ "Transparent, fixed-fee mediation pricing for family law, property, workplace and commercial disputes. Free initial consultation. No surprise bills.",
  "Pricing &amp; fees",
- "Our Fee Structure — <em>transparent, fixed and fair</em>.",
- "We believe you should know what things cost before you commit. Our mediation services start with a free initial consultation and clear, upfront pricing — so there are no open-ended bills and no surprises, just a fraction of the cost of litigation.",
- "Mediations Australia uses transparent, fixed-fee pricing. You start with a free initial consultation, and mediation costs are agreed upfront and usually shared between the parties — typically a small fraction of the tens of thousands per side that contested litigation can cost.",
+ "Our fees — <em>transparent, fixed and fair</em>.",
+ "We believe you should know what things cost before you commit. Every matter starts with a free initial consultation, and all pricing is agreed upfront — no open-ended hourly billing, no surprises.",
+ "Mediations Australia charges transparent, fixed fees for mediation. The initial consultation is free. Fees are current as at 2026 and are typically shared equally between the parties.",
  """
- <h2>How does mediation pricing work?</h2>
- <p>You begin with a free initial consultation, where we assess your matter and explain your options with no obligation. From there, the cost of mediation is agreed in advance, so you always know where you stand. Mediation fees are commonly shared between the parties, making it more affordable for everyone.</p>
- <h2>Why is mediation so much cheaper than court?</h2>
- <p>Because it resolves matters in one or two sessions rather than over one to three years of legal fees billed by the hour. A contested court case can cost tens or even hundreds of thousands of dollars per side; mediation typically costs a small fraction of that — and protects the assets you'd otherwise spend fighting. <a href="/family-law-mediation/">See family law mediation →</a></p>
- <div class="callout"><h3>No surprises — ever</h3>
- <p>Fixed-fee means exactly that. You'll never receive an open-ended bill that grows the longer your matter takes. The certainty is part of why mediation is less stressful than litigation.</p></div>
- <h2>What's included</h2>
- <ul>
-   <li>A free initial consultation to assess your matter</li>
-   <li>Clear, agreed pricing for the mediation itself</li>
-   <li>Guidance on formalising your agreement into <a href="/consent-orders/">consent orders</a> or a binding agreement</li>
-   <li>The option of in-person or <a href="/online-divorce/">online mediation</a> at the same transparent rates</li>
- </ul>
- """,
- [("How much does mediation cost?",
-   "You start with a free initial consultation, then agree the cost of mediation upfront. It's typically a small fraction of litigation — often hundreds to a few thousand dollars shared between parties, versus tens of thousands per side in court."),
-  ("Is the cost shared between parties?",
-   "Usually, yes. Mediation fees are commonly shared between the parties, which makes the process more affordable for everyone involved."),
+<style>
+.fee-table{width:100%;border-collapse:collapse;margin:28px 0 36px}
+.fee-table th{text-align:left;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);padding:0 16px 10px 0;border-bottom:2px solid var(--sage-deep)}
+.fee-table td{padding:16px 16px 16px 0;border-bottom:1px solid var(--line);vertical-align:top;font-size:.97rem;color:var(--ink-soft)}
+.fee-table td:first-child{color:var(--ink)}
+.fee-table td:last-child{font-weight:700;color:var(--ink);white-space:nowrap;text-align:right;padding-right:0}
+.fee-table tr:last-child td{border-bottom:none}
+.fee-section-head{font-family:var(--serif);font-size:1.35rem;margin:44px 0 4px;color:var(--ink)}
+.fee-note{font-size:.9rem;color:var(--ink-soft);margin:4px 0 0;max-width:64ch}
+</style>
+
+<p style="font-size:1.05rem;color:var(--ink-soft);max-width:66ch;margin-bottom:8px">All fees are <strong>+GST</strong> and current as at 2026. Mediation fees are commonly split equally between the parties — your share is typically <strong>half the figure shown</strong>. The initial consultation is always free.</p>
+
+<h2 class="fee-section-head">Initial Consultation</h2>
+<table class="fee-table">
+  <thead><tr><th style="width:30%">Service</th><th>What's included</th><th>Fee</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Initial Consultation</strong></td>
+      <td>We discuss your dispute, assess whether mediation is suitable, and give you an honest view of your options — with no obligation to proceed.</td>
+      <td>Free</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="fee-section-head">Family Law &amp; Separation</h2>
+<p class="fee-note">Parenting arrangements, property settlement, de facto disputes, separation agreements.</p>
+<table class="fee-table">
+  <thead><tr><th style="width:30%">Service</th><th>What's included</th><th>Fee</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Half-Day Mediation</strong><br><small style="color:var(--ink-soft)">Up to 4 hours</small></td>
+      <td>Pre-mediation intake sessions, preparation, mediation session (9:30am–1:30pm or 1:00pm–5:00pm). Overtime at $400/hr.</td>
+      <td>$3,000</td>
+    </tr>
+    <tr>
+      <td><strong>Full-Day Mediation</strong><br><small style="color:var(--ink-soft)">Up to 8 hours</small></td>
+      <td>Pre-mediation intake sessions, preparation, mediation session (9:30am–5:00pm). Overtime after 5:00pm at $400/hr.</td>
+      <td>$4,500</td>
+    </tr>
+    <tr>
+      <td><strong>Invitation to Mediate</strong></td>
+      <td>Formal written invitation to the other party to participate in mediation.</td>
+      <td>$400</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="fee-section-head">Property &amp; Estate Disputes</h2>
+<p class="fee-note">Property settlements, estate and inheritance disputes, trust disputes, co-ownership disagreements.</p>
+<table class="fee-table">
+  <thead><tr><th style="width:30%">Service</th><th>What's included</th><th>Fee</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Half-Day Mediation</strong><br><small style="color:var(--ink-soft)">Up to 4 hours</small></td>
+      <td>Pre-mediation intake, preparation, mediation session. Overtime at $400/hr.</td>
+      <td>$3,000</td>
+    </tr>
+    <tr>
+      <td><strong>Full-Day Mediation</strong><br><small style="color:var(--ink-soft)">Up to 8 hours</small></td>
+      <td>Pre-mediation intake, preparation, full-day mediation session. Overtime after 5:00pm at $400/hr.</td>
+      <td>$4,500</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="fee-section-head">Workplace &amp; Commercial Disputes</h2>
+<p class="fee-note">Workplace conflicts, employment disputes, commercial disagreements, shareholder and business partner disputes.</p>
+<table class="fee-table">
+  <thead><tr><th style="width:30%">Service</th><th>What's included</th><th>Fee</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Half-Day Mediation</strong><br><small style="color:var(--ink-soft)">Up to 4 hours</small></td>
+      <td>Pre-mediation intake, preparation, mediation session. Overtime at $400/hr.</td>
+      <td>$3,000</td>
+    </tr>
+    <tr>
+      <td><strong>Full-Day Mediation</strong><br><small style="color:var(--ink-soft)">Up to 8 hours</small></td>
+      <td>Pre-mediation intake, preparation, full-day mediation session. Overtime after 5:00pm at $400/hr.</td>
+      <td>$4,500</td>
+    </tr>
+    <tr>
+      <td><strong>Multi-Party / Complex</strong></td>
+      <td>Three or more parties, or commercially complex matters. Quoted individually after initial consultation.</td>
+      <td>POA</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="fee-section-head">Online Mediation</h2>
+<p class="fee-note">Same service as in-person, conducted by secure video. Available anywhere in Australia.</p>
+<table class="fee-table">
+  <thead><tr><th style="width:30%">Service</th><th>What's included</th><th>Fee</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Online Half-Day</strong></td>
+      <td>Pre-mediation intake, preparation, secure video session up to 4 hours. Overtime at $400/hr.</td>
+      <td>$3,000</td>
+    </tr>
+    <tr>
+      <td><strong>Online Full-Day</strong></td>
+      <td>Pre-mediation intake, preparation, secure video session up to 8 hours. Overtime at $400/hr.</td>
+      <td>$4,500</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="fee-section-head">Additional Items</h2>
+<table class="fee-table">
+  <thead><tr><th style="width:30%">Item</th><th>Notes</th><th>Fee</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Room Hire</strong></td>
+      <td>Where an external venue is required. Sessions at our Sydney, Melbourne, Brisbane or Perth offices are included at no extra charge.</td>
+      <td>$200–$400</td>
+    </tr>
+    <tr>
+      <td><strong>Overtime</strong></td>
+      <td>Per hour beyond the scheduled session end time, applicable to all session types.</td>
+      <td>$400/hr</td>
+    </tr>
+    <tr>
+      <td><strong>Interstate Travel</strong></td>
+      <td>Where a mediator travels to a regional or interstate venue outside our four office cities.</td>
+      <td>At cost</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <h3>Fees are usually shared — your share is roughly half</h3>
+  <p>In most mediations the fee is split equally between the two parties. A full-day mediation at $4,500 +GST typically costs each person around $2,475 all up — compared with $30,000–$150,000+ per side in contested litigation. We confirm the cost-sharing arrangement at your free initial consultation.</p>
+</div>
+
+<h2>How does this compare with going to court?</h2>
+<p>A contested family law or commercial matter typically costs <strong>$30,000–$150,000+ per side</strong> in legal fees, takes one to three years, and offers no certainty of outcome. A full-day mediation shared between two parties costs each person around $2,475 — and around 90% of disputes we mediate resolve on the day. <a href="/costs-of-going-to-court/">See the full cost comparison →</a></p>
+""",
+ [("How much does mediation cost at Mediations Australia?",
+   "A half-day mediation is $3,000 +GST and a full-day is $4,500 +GST. These fees are typically split equally between the parties, so your share is around $1,650–$2,475. The initial consultation is always free."),
+  ("Is the mediation fee shared between parties?",
+   "Yes, in most cases the fee is split equally between both parties. Sharing the cost makes mediation significantly more affordable than each party funding their own litigation."),
+  ("Do you charge the same fees for all dispute types?",
+   "Yes — our half-day and full-day rates apply across family law, property, estate, workplace and commercial disputes. Multi-party or complex commercial matters are quoted individually after the free initial consultation."),
   ("Are there any hidden fees?",
-   "No. Our pricing is fixed and transparent. You'll know what mediation costs before you commit, with no open-ended hourly billing."),
+   "No. All fees are fixed and agreed upfront. Overtime is charged at $400/hr if a session runs long, and room hire or travel may apply in some cases — these are always disclosed in advance."),
   ("Is the initial consultation really free?",
-   "Yes. The initial consultation is free with no obligation, so you can understand your options and the likely cost before deciding how to proceed.")],
+   "Yes, completely free with no obligation. It's how we assess your matter, explain your options, and give you an honest view of whether mediation is right for you.")],
  "Our Fee Structure",
  "Know the cost <em>before</em> you commit.",
  "Book a free initial consultation and get complete clarity on what resolving your dispute will cost.")
