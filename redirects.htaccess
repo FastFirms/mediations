@@ -251,3 +251,7 @@ Redirect 301 /costs-of-mediation/ /how-much-does-mediation-cost/
 Redirect 301 /2024-guide-for-preparing-for-mediation/ /preparing-for-mediation/
 # /grandparents-rights-how-to-see-your-grandchildren-2024-update/ was 404 with no redirect
 Redirect 301 /grandparents-rights-how-to-see-your-grandchildren-2024-update/ /grandparents-rights/
+# /our-mediators/ renamed to /our-team/ — team now includes lawyers as well as mediators
+Redirect 301 /our-mediators/ /our-team/
+Redirect 301 /our-mediators/dan-toombs/ /our-team/dan-toombs/
+Redirect 301 /our-mediators/farley-tolpen/ /our-team/farley-tolpen/

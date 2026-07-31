@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generates /our-mediators/ index + individual bio pages for Dan Toombs and Farley Tolpen."""
+"""Generates /our-team/ index + individual bio pages for Dan Toombs, Farley Tolpen, and Prav Singh-Pillay."""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html,
@@ -21,6 +21,7 @@ PAGE_CSS = """<style>
 .mediator-content h2:first-child{margin-top:0}
 .mediator-content h3{font-size:1.15rem;font-weight:600;margin:28px 0 8px;color:var(--sage-deep)}
 .mediator-content p{font-size:1.06rem;color:var(--ink-soft);line-height:1.75;margin-bottom:18px;max-width:68ch}
+.mediator-content ul{font-size:1.05rem;color:var(--ink-soft);line-height:1.8;padding-left:1.4em;margin-bottom:18px;max-width:68ch}
 .mediator-content .tag-line{font-family:var(--serif);font-size:1.2rem;font-style:italic;color:var(--sage-deep);margin-bottom:32px;display:block}
 .mediator-content a{color:var(--sage-deep)}
 .booking-strip{background:var(--sage-deep);color:var(--cream);padding:48px 0;text-align:center;margin-top:24px}
@@ -38,26 +39,26 @@ PAGE_CSS = """<style>
 </style>"""
 
 # ============================================================
-# /our-mediators/ INDEX PAGE
+# /our-team/ INDEX PAGE
 # ============================================================
 
-idx_schema = [org_schema(), breadcrumb_schema([("Home",""),("Our Mediators","our-mediators")])]
-d = head("Our Mediators | Mediations Australia",
-         "Meet the nationally accredited mediators at Mediations Australia — dual-qualified lawyers with decades of experience across family law, property, commercial, and workplace disputes.",
-         "our-mediators", extra_schema=idx_schema)
+idx_schema = [org_schema(), breadcrumb_schema([("Home",""),("Our Team","our-team")])]
+d = head("Our Team | Mediations Australia",
+         "Meet the mediators and lawyers at Mediations Australia — nationally accredited, dual-qualified, and experienced across family law, property, commercial, and workplace disputes.",
+         "our-team", extra_schema=idx_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
 d += nav()
 
 d += f"""<main id="main">
-{crumb_html([("Home",""),("Our mediators",None)])}
+{crumb_html([("Home",""),("Our team",None)])}
 <section class="mediator-hero">
   <div class="wrap">
     <div style="max-width:64ch">
       <p class="sec-tag">Meet the team</p>
       <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
-        Our Mediators — <em>accredited, experienced, lawyer-aware</em>
+        Our Team — <em>accredited, experienced, lawyer-aware</em>
       </h1>
-      <p style="font-size:1.1rem;color:var(--ink-soft);max-width:58ch">Every mediator at Mediations Australia is nationally accredited. Many are also practising or formerly-practising lawyers — so the legal realities of your matter are understood from the very first conversation.</p>
+      <p style="font-size:1.1rem;color:var(--ink-soft);max-width:58ch">Our team brings together nationally accredited mediators and experienced family lawyers. Whether you need mediation, legal advice, or both, we have the expertise to help.</p>
     </div>
   </div>
 </section>
@@ -66,7 +67,7 @@ d += f"""<main id="main">
   <div class="wrap">
     <div class="team-grid">
 
-      <a href="/our-mediators/dan-toombs/" class="team-card">
+      <a href="/our-team/dan-toombs/" class="team-card">
         <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder and Accredited Mediator" loading="eager">
         <div class="team-card-body">
           <p class="team-card-name">Dan Toombs</p>
@@ -76,12 +77,22 @@ d += f"""<main id="main">
         </div>
       </a>
 
-      <a href="/our-mediators/farley-tolpen/" class="team-card">
+      <a href="/our-team/farley-tolpen/" class="team-card">
         <img src="/assets/images/FarleyT.png" alt="Farley Tolpen — Accredited Mediator and Lawyer" loading="lazy">
         <div class="team-card-body">
           <p class="team-card-name">Farley Tolpen</p>
           <p class="team-card-role">Accredited Mediator &amp; Lawyer</p>
           <p class="team-card-bio">Dual-qualified in Australia and the United States with over 40 years of mediation, arbitration and litigation experience. More than 4,500 matters mediated with a 90% resolution rate.</p>
+          <span class="team-card-link">View profile →</span>
+        </div>
+      </a>
+
+      <a href="/our-team/prav-singh-pillay/" class="team-card">
+        <img src="/assets/images/Prav.png" alt="Prav Singh-Pillay — Lawyer, Mediator and FDRP" loading="lazy">
+        <div class="team-card-body">
+          <p class="team-card-name">Prav Singh-Pillay</p>
+          <p class="team-card-role">Lawyer, Mediator &amp; FDRP</p>
+          <p class="team-card-bio">Family lawyer and accredited mediator with 25+ years of experience across family law, civil litigation, wills and estates. Authorised to issue Section 60I certificates as a registered FDRP.</p>
           <span class="team-card-link">View profile →</span>
         </div>
       </a>
@@ -93,24 +104,24 @@ d += f"""<main id="main">
 
 d += page_end()
 
-out_path = os.path.join(OUT, "our-mediators")
+out_path = os.path.join(OUT, "our-team")
 os.makedirs(out_path, exist_ok=True)
 with open(os.path.join(out_path, "index.html"), "w") as f:
     f.write(d)
-print("our-mediators index built")
+print("our-team index built")
 
 # ============================================================
-# /our-mediators/dan-toombs/
+# /our-team/dan-toombs/
 # ============================================================
 
 dan_schema = [
     org_schema(),
-    breadcrumb_schema([("Home",""),("Our Mediators","our-mediators"),("Dan Toombs","our-mediators/dan-toombs")]),
+    breadcrumb_schema([("Home",""),("Our Team","our-team"),("Dan Toombs","our-team/dan-toombs")]),
     {
         "@type": "Person",
         "name": "Dan Toombs",
         "jobTitle": "Founder & Accredited Mediator",
-        "url": f"{DOMAIN}/our-mediators/dan-toombs/",
+        "url": f"{DOMAIN}/our-team/dan-toombs/",
         "image": f"{DOMAIN}/assets/images/DanT.png",
         "worksFor": {"@id": f"{DOMAIN}/#organization"},
         "hasCredential": [
@@ -131,14 +142,14 @@ dan_schema = [
     }
 ]
 
-d = head("Dan Toombs — Founder & Accredited Mediator | Mediations Australia",
+d = head("Dan Toombs — Founder &amp; Accredited Mediator | Mediations Australia",
          "Meet Dan Toombs — Founder of Mediations Australia, AMDRAS-accredited mediator, National Human Rights Law Award recipient, and Winston Churchill Fellow.",
-         "our-mediators/dan-toombs", extra_schema=dan_schema)
+         "our-team/dan-toombs", extra_schema=dan_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
 d += nav()
 
 d += f"""<main id="main">
-{crumb_html([("Home",""),("Our mediators","/our-mediators/"),("Dan Toombs",None)])}
+{crumb_html([("Home",""),("Our team","/our-team/"),("Dan Toombs",None)])}
 <section class="mediator-hero">
   <div class="wrap">
     <div style="max-width:60ch">
@@ -268,24 +279,24 @@ d += f"""<main id="main">
 
 d += page_end()
 
-out_path = os.path.join(OUT, "our-mediators", "dan-toombs")
+out_path = os.path.join(OUT, "our-team", "dan-toombs")
 os.makedirs(out_path, exist_ok=True)
 with open(os.path.join(out_path, "index.html"), "w") as f:
     f.write(d)
-print("our-mediators/dan-toombs built")
+print("our-team/dan-toombs built")
 
 # ============================================================
-# /our-mediators/farley-tolpen/
+# /our-team/farley-tolpen/
 # ============================================================
 
 farley_schema = [
     org_schema(),
-    breadcrumb_schema([("Home",""),("Our Mediators","our-mediators"),("Farley Tolpen","our-mediators/farley-tolpen")]),
+    breadcrumb_schema([("Home",""),("Our Team","our-team"),("Farley Tolpen","our-team/farley-tolpen")]),
     {
         "@type": "Person",
         "name": "Farley Tolpen",
         "jobTitle": "Accredited Mediator & Lawyer",
-        "url": f"{DOMAIN}/our-mediators/farley-tolpen/",
+        "url": f"{DOMAIN}/our-team/farley-tolpen/",
         "image": f"{DOMAIN}/assets/images/FarleyT.png",
         "worksFor": {"@id": f"{DOMAIN}/#organization"},
         "hasCredential": [
@@ -306,12 +317,12 @@ farley_schema = [
 
 d = head("Farley Tolpen — Accredited Mediator &amp; Lawyer | Mediations Australia",
          "Meet Farley Tolpen — dual-qualified mediator and lawyer in Australia and the United States, with over 40 years experience and more than 4,500 matters mediated.",
-         "our-mediators/farley-tolpen", extra_schema=farley_schema)
+         "our-team/farley-tolpen", extra_schema=farley_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
 d += nav()
 
 d += f"""<main id="main">
-{crumb_html([("Home",""),("Our mediators","/our-mediators/"),("Farley Tolpen",None)])}
+{crumb_html([("Home",""),("Our team","/our-team/"),("Farley Tolpen",None)])}
 <section class="mediator-hero">
   <div class="wrap">
     <div style="max-width:60ch">
@@ -372,7 +383,7 @@ d += f"""<main id="main">
 
         <h3>Specialist Areas</h3>
         <p>Farley's practice spans the full range of disputes that bring people to mediation:</p>
-        <ul style="color:var(--ink-soft);line-height:1.8;font-size:1.05rem;padding-left:1.4em;margin-bottom:18px">
+        <ul>
           <li><a href="/family-law-mediation/">Family law</a> — separations, parenting arrangements, and the full complexity of relationship breakdown</li>
           <li><a href="/estate-dispute-mediation/">Estate disputes</a> — will contests, inheritance disagreements, and executor conflicts</li>
           <li><a href="/workplace-mediation/">Workplace mediation</a> — employment disputes, team conflicts, and organisational breakdowns</li>
@@ -417,8 +428,178 @@ d += f"""<main id="main">
 
 d += page_end()
 
-out_path = os.path.join(OUT, "our-mediators", "farley-tolpen")
+out_path = os.path.join(OUT, "our-team", "farley-tolpen")
 os.makedirs(out_path, exist_ok=True)
 with open(os.path.join(out_path, "index.html"), "w") as f:
     f.write(d)
-print("our-mediators/farley-tolpen built")
+print("our-team/farley-tolpen built")
+
+# ============================================================
+# /our-team/prav-singh-pillay/
+# ============================================================
+
+prav_schema = [
+    org_schema(),
+    breadcrumb_schema([("Home",""),("Our Team","our-team"),("Prav Singh-Pillay","our-team/prav-singh-pillay")]),
+    {
+        "@type": "Person",
+        "name": "Prav Singh-Pillay",
+        "jobTitle": "Lawyer, Mediator & Family Dispute Resolution Practitioner",
+        "url": f"{DOMAIN}/our-team/prav-singh-pillay/",
+        "image": f"{DOMAIN}/assets/images/Prav.png",
+        "worksFor": {"@id": f"{DOMAIN}/#organization"},
+        "hasCredential": [
+            {"@type": "EducationalOccupationalCredential", "name": "Bachelor of Laws",
+             "credentialCategory": "Degree",
+             "recognizedBy": {"@type": "Organization", "name": "Griffith University", "url": "https://www.griffith.edu.au/"}},
+            {"@type": "EducationalOccupationalCredential", "name": "Bachelor of Commerce",
+             "credentialCategory": "Degree",
+             "recognizedBy": {"@type": "Organization", "name": "Griffith University", "url": "https://www.griffith.edu.au/"}},
+            {"@type": "EducationalOccupationalCredential", "name": "Graduate Diploma in Legal Practice",
+             "credentialCategory": "Diploma",
+             "recognizedBy": {"@type": "Organization", "name": "QUT", "url": "https://www.qut.edu.au/"}},
+            {"@type": "EducationalOccupationalCredential", "name": "Australian Nationally Accredited Mediator",
+             "credentialCategory": "Professional Accreditation",
+             "recognizedBy": {"@type": "Organization", "name": "AMDRAS", "url": "https://amdras.au/"}},
+            {"@type": "EducationalOccupationalCredential", "name": "Family Dispute Resolution Practitioner (FDRP)",
+             "credentialCategory": "Professional Certification"},
+            {"@type": "EducationalOccupationalCredential", "name": "Independent Children's Lawyer (ICL)",
+             "credentialCategory": "Professional Accreditation"},
+        ],
+        "memberOf": [
+            {"@type": "Organization", "name": "Queensland Law Society", "url": "https://www.qls.com.au/"},
+            {"@type": "Organization", "name": "Family Law Practitioners Association"},
+            {"@type": "Organization", "name": "Family Law Section of the Law Council of Australia"},
+        ],
+    }
+]
+
+d = head("Prav Singh-Pillay — Lawyer, Mediator &amp; FDRP | Mediations Australia",
+         "Meet Prav Singh-Pillay — family lawyer, accredited mediator and registered FDRP with 25+ years of experience across family law, civil litigation, wills and estates.",
+         "our-team/prav-singh-pillay", extra_schema=prav_schema)
+d = d.replace("</head>", PAGE_CSS + "</head>")
+d += nav()
+
+d += f"""<main id="main">
+{crumb_html([("Home",""),("Our team","/our-team/"),("Prav Singh-Pillay",None)])}
+<section class="mediator-hero">
+  <div class="wrap">
+    <div style="max-width:60ch">
+      <p class="sec-tag">Meet the team</p>
+      <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
+        Prav Singh-Pillay — <em>Lawyer, Mediator &amp; FDRP</em>
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream);padding-bottom:24px">
+  <div class="wrap">
+    <div class="mediator-profile">
+
+      <aside class="mediator-photo">
+        <img src="/assets/images/Prav.png"
+             alt="Prav Singh-Pillay — Lawyer, Mediator and FDRP, Mediations Australia"
+             width="260" height="320" loading="eager">
+        <table class="cred-table" aria-label="Prav Singh-Pillay credentials">
+          <tbody>
+            <tr><td>Admitted</td><td><a href="https://www.qls.com.au/" target="_blank" rel="noopener">Queensland Law Society</a> (1997)</td></tr>
+            <tr><td>Accreditation</td><td><a href="https://amdras.au/" target="_blank" rel="noopener">Nationally Accredited Mediator</a></td></tr>
+            <tr><td>Certification</td><td>Family Dispute Resolution Practitioner (FDRP)</td></tr>
+            <tr><td>Accreditation</td><td>Independent Children's Lawyer (ICL)</td></tr>
+            <tr><td>Degree</td><td>LLB &amp; BCom, Griffith University</td></tr>
+            <tr><td>Diploma</td><td>Grad. Dip. Legal Practice, QUT</td></tr>
+            <tr><td>Membership</td><td>Family Law Practitioners Association</td></tr>
+            <tr><td>Membership</td><td>Law Council of Australia — Family Law Section</td></tr>
+          </tbody>
+        </table>
+      </aside>
+
+      <div class="mediator-content">
+        <h2>Prav Singh-Pillay — Lawyer, Mediator &amp; FDRP</h2>
+        <span class="tag-line">25 years at the bar. Family law from every angle.</span>
+
+        <p>Prav Singh-Pillay is a family lawyer, nationally accredited mediator, and registered Family Dispute
+        Resolution Practitioner with more than 25 years of practice since her admission in 1997. She brings
+        a breadth of experience that is rare in a single practitioner — courtroom advocacy, mediation, and
+        legal advice — allowing her to guide clients through every stage of a family law matter, whatever form
+        that takes.</p>
+
+        <h3>A Career Built Across Multiple Jurisdictions</h3>
+        <p>Prav's career has taken her from Brisbane to regional Queensland, from the Gold Coast to
+        California — building expertise in family law, criminal defence, civil litigation, employment law,
+        wills and estates, and conveyancing across different legal environments. That breadth means she
+        understands the full legal context around a family dispute, not just the immediate presenting issue.</p>
+
+        <p>Her experience includes roles at the Director of Public Prosecutions in Brisbane, a general
+        practice firm in regional Queensland, an employment law firm in California, and a boutique family
+        law firm on the Gold Coast — before founding her own practice, Cornerstone Law Offices, in 2014.</p>
+
+        <h3>Family Law: The Full Spectrum</h3>
+        <p>Prav's family law practice covers every aspect of relationship breakdown, including:</p>
+        <ul>
+          <li><a href="/property-settlement-mediation/">Property settlements</a> and de facto relationship matters</li>
+          <li><a href="/parenting-plan-mediation/">Children's arrangements</a> — parenting plans, relocation, and recovery</li>
+          <li>Spousal maintenance and <a href="/financial-agreements-mediation/">financial agreements</a> (pre and post-nuptial)</li>
+          <li>Same-sex relationships, paternity, and child support</li>
+          <li><a href="/divorce-mediation/">Divorce</a> and domestic violence matters</li>
+          <li>Consent orders and <a href="/section-60i-certificates/">Section 60I certificates</a></li>
+        </ul>
+
+        <h3>Courtroom Experience Across Multiple Jurisdictions</h3>
+        <p>Prav is a committed advocate with extensive experience representing clients in the Family Court,
+        Federal Circuit Court, Federal Court, State Magistrates Court, and Children's Court. She has
+        appeared in bench and jury trials in the Superior Courts and in the Appeal Courts — instructing
+        Counsel in complex matters while handling mentions, directions hearings, callovers, and uncomplicated
+        interim hearings herself.</p>
+
+        <p>That litigation background is not incidental to her mediation work — it is central to it. Prav
+        knows from direct experience what a contested matter costs in money, time, and emotional wellbeing,
+        which is why she is committed to helping clients find resolution before it comes to that.</p>
+
+        <h3>Mediation and Section 60I Certificates</h3>
+        <p>As both an accredited mediator and a registered FDRP, Prav offers clients a complete dispute
+        resolution service. She conducts family dispute resolution for parenting matters and, where
+        agreement cannot be reached, is authorised to issue <a href="/section-60i-certificates/">Section 60I
+        certificates</a> — the document required before most parenting applications can be filed in the
+        Federal Circuit and Family Court of Australia.</p>
+
+        <h3>Beyond Family Law</h3>
+        <p>Prav's legal services extend to wills and powers of attorney, estate administration,
+        conveyancing, and debt recovery — providing clients with continuity of trusted legal advice
+        across the full range of matters that typically arise alongside or following a separation.</p>
+
+        <h3>Community Commitment</h3>
+        <p>Prav volunteers at Women's Legal Services and My Community Legal, and has served as both a
+        volunteer mediator and committee member at Bayside Community Legal Centre. Her commitment to
+        accessible legal services reflects the same values that brought her to family law in the first
+        place: that people navigating difficult personal circumstances deserve skilled, practical, and
+        genuinely compassionate support.</p>
+
+        <a href="{BOOK_URL}" class="btn btn-primary" style="margin-top:8px;font-size:1rem;padding:15px 32px">
+          Book a consultation with Prav <span style="margin-left:6px">&#8594;</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="booking-strip">
+  <div class="wrap">
+    <h2>Ready to resolve your dispute <em>without court</em>?</h2>
+    <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
+    <a href="{BOOK_URL}" class="btn" style="background:var(--cream);color:var(--sage-deep);font-size:1.1rem;padding:18px 38px">
+      Book a Free Consultation &#8594;
+    </a>
+  </div>
+</div>
+</main>"""
+
+d += page_end()
+
+out_path = os.path.join(OUT, "our-team", "prav-singh-pillay")
+os.makedirs(out_path, exist_ok=True)
+with open(os.path.join(out_path, "index.html"), "w") as f:
+    f.write(d)
+print("our-team/prav-singh-pillay built")

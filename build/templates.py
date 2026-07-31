@@ -213,7 +213,7 @@ def footer():
           <li><a href="/how-mediation-works/">How it works</a></li>
           <li><a href="/our-fee-structure/">Our fees</a></li>
           <li><a href="/preparing-for-mediation/">Resources</a></li>
-          <li><a href="/our-mediators/">Our mediators</a></li>
+          <li><a href="/our-team/">Our team</a></li>
           <li><a href="/memberships/">Memberships</a></li>
           <li><a href="/mediation-podcast/">Podcast</a></li>
           <li><a href="/books/">Books</a></li>
@@ -299,7 +299,7 @@ DAN_TOOMBS = {
     "@type": "Person",
     "name": "Dan Toombs",
     "jobTitle": "Founder & Accredited Mediator",
-    "url": f"{DOMAIN}/our-mediators/",
+    "url": f"{DOMAIN}/our-team/dan-toombs/",
     "sameAs": [
         "https://amdras.au/",
         "https://www.churchilltrust.com.au/",
