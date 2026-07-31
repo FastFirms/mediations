@@ -78,7 +78,7 @@ doc += f"""<main id="main">
     <div class="d3" style="background:var(--cream);border:1px solid var(--sand-deep);border-radius:22px;padding:clamp(24px,3vw,36px);box-shadow:0 4px 32px rgba(35,41,31,.07)">
       <p style="font-family:var(--serif);font-size:1.35rem;font-weight:400;color:var(--ink);margin:0 0 4px">Book a free consultation</p>
       <p style="font-size:.9rem;color:var(--ink-soft);margin:0 0 22px">We'll respond within one business day.</p>
-      <form action="https://formspree.io/f/mredjobj" method="POST" novalidate style="display:flex;flex-direction:column;gap:14px">
+      <form action="https://formspree.io/f/xwvgjnve" method="POST" novalidate style="display:flex;flex-direction:column;gap:14px">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
         <input type="hidden" name="_subject" value="Homepage consultation request — Mediations Australia">
         <div>
