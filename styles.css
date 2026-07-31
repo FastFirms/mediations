@@ -286,7 +286,7 @@ figure.tbl tbody tr:nth-child(even) td{background:rgba(90,113,89,.045)}
 
 /* ---- footer ---- */
 footer{background:var(--ink);color:rgba(251,248,242,.7);padding:70px 0 36px;margin-top:20px}
-.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:46px;border-bottom:1px solid rgba(251,248,242,.12)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.1fr;gap:32px;padding-bottom:46px;border-bottom:1px solid rgba(251,248,242,.12)}
 footer .logo{color:var(--cream);margin-bottom:16px}
 footer h4{color:var(--cream);font-family:var(--sans);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:18px}
 footer ul{list-style:none;display:flex;flex-direction:column;gap:11px;font-size:.93rem}
