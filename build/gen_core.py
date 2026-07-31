@@ -255,6 +255,7 @@ doc += f"""<main id="main">
 
       <form name="contact" method="POST" action="https://formspree.io/f/mredjobj" novalidate style="display:flex;flex-direction:column;gap:18px">
         <input type="hidden" name="_subject" value="New contact from Mediations Australia website">
+        <input type="hidden" name="_next" value="https://mediationsaustralia.com.au/thank-you/">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
           <div>
             <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">First name</label>
@@ -343,4 +344,65 @@ doc += cta_band("Take the <em>first step</em> today.",
 doc += "</main>" + page_end()
 write("contact-us", doc)
 
-print("Core pages built: how-mediation-works, about, preparing-for-mediation, contact-us")
+# ── Thank You ────────────────────────────────────────────────────────────────
+doc = head(
+ "Thank You | Mediations Australia",
+ "We've received your enquiry and will be in touch very shortly.",
+ "thank-you",
+ extra_schema=[org_schema(), breadcrumb_schema([("Home",""),("Thank You","thank-you")])])
+doc += nav()
+doc += f"""<main id="main">
+{crumb_html([("Home",""),("Thank You",None)])}
+<section style="background:var(--sand);padding:80px 0 100px;min-height:60vh;display:flex;align-items:center">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 400px;gap:64px;align-items:center;max-width:960px;margin:0 auto">
+
+      <div>
+        <span style="display:inline-block;width:56px;height:56px;border-radius:50%;background:var(--sage-light);display:flex;align-items:center;justify-content:center;margin-bottom:24px">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="var(--sage-deep)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h1 style="font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.15;margin-bottom:20px">We've received <em>your message.</em></h1>
+        <p style="font-size:1.15rem;color:var(--ink-soft);line-height:1.75;max-width:50ch;margin-bottom:28px">Thank you for reaching out. We'll be in contact very promptly — typically within a few hours during business hours.</p>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:36px">
+          <div style="display:flex;align-items:center;gap:12px;font-size:1rem">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--sage-deep);flex-shrink:0"></span>
+            One of our mediators will review your enquiry personally
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:1rem">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--sage-deep);flex-shrink:0"></span>
+            We'll give you an honest view of whether mediation can help
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:1rem">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--sage-deep);flex-shrink:0"></span>
+            No obligation — just a straightforward conversation
+          </div>
+        </div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          <a href="/" class="btn btn-primary">Back to home <span class="arr">→</span></a>
+          <a href="{PHONE_HREF}" class="btn btn-ghost">{PHONE}</a>
+        </div>
+      </div>
+
+      <div style="background:var(--sage-deep);border-radius:24px;overflow:hidden;color:var(--cream)">
+        <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder, Mediations Australia"
+          style="width:100%;height:280px;object-fit:cover;object-position:center 15%;display:block">
+        <div style="padding:28px 30px">
+          <p style="font-family:var(--serif);font-size:1.2rem;margin-bottom:4px">Dan Toombs</p>
+          <p style="font-size:.85rem;opacity:.72;margin-bottom:16px">Founder &amp; Accredited Mediator</p>
+          <p style="font-size:.95rem;line-height:1.72;opacity:.92;font-style:italic">"Every enquiry is reviewed personally. We'll be in touch shortly and give you a straight answer about how we can help."</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<style>
+@media(max-width:700px){{
+  .ty-grid{{grid-template-columns:1fr!important}}
+  .ty-sidebar{{display:none}}
+}}
+</style>
+</main>""" + page_end()
+write("thank-you", doc)
+
+print("Core pages built: how-mediation-works, about, preparing-for-mediation, contact-us, thank-you")
