@@ -222,8 +222,10 @@ d += f"""<main id="main">
         complex, high-stakes challenges where no simple technical fix exists.</p>
 
         <h3>A Leader in Access to Justice</h3>
-        <p>Dan served as CEO of one of Australia's largest community legal centres, bringing leadership, strategic
-        vision, and a fierce commitment to equitable access to justice. He has also worked alongside
+        <p>Dan served as CEO of one of Australia's largest community legal centres and as a Former Board Director
+        of <a href="https://www.legalaid.qld.gov.au/" target="_blank" rel="noopener">Legal Aid Queensland</a> —
+        bringing leadership, strategic vision, and a fierce commitment to equitable access to justice at both an
+        operational and governance level. He has also worked alongside
         <a href="https://www.brockovich.com/" target="_blank" rel="noopener">Erin Brockovich</a> on systemic
         environmental and public health campaigns in the United States — collaborating on some of the most complex,
         community-affecting disputes imaginable.</p>
