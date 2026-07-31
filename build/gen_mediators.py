@@ -50,7 +50,7 @@ PAGE_CSS = """<style>
 .mediator-profile{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start;padding:48px 0 56px}
 @media(max-width:720px){.mediator-profile{grid-template-columns:1fr}}
 .mediator-photo{position:sticky;top:100px}
-.mediator-photo img{width:100%;border-radius:16px;display:block;box-shadow:0 8px 32px rgba(0,0,0,.10)}
+.mediator-photo img{width:100%;height:320px;object-fit:cover;object-position:top;border-radius:16px;display:block;box-shadow:0 8px 32px rgba(0,0,0,.10)}
 .cred-table{margin-top:24px;width:100%;border-collapse:collapse;font-size:.85rem}
 .cred-table td{padding:7px 0;border-bottom:1px solid var(--sand-deep);vertical-align:top;color:var(--ink-soft)}
 .cred-table td:first-child{font-weight:600;color:var(--ink);padding-right:12px;white-space:nowrap}
