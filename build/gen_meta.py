@@ -25,7 +25,7 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "mothers-rights","grandparents-rights","shuttle-mediation-guide","conciliation-vs-mediation","workplace-mediation-guide",
         "property-settlement-mediation-guide","business-in-divorce","family-court-process","divorce-without-a-lawyer","how-long-does-a-divorce-take",
         "how-much-does-mediation-cost","arbitration-in-family-law","pets-and-family-law","same-sex-family-law","changes-to-family-law-act-2025","stepparent-rights","surrogacy-laws","can-you-record-your-ex","best-divorce-lawyers-sydney","parental-alienation-australia","our-mediators","memberships","mediation-podcast","books",
-        "who-pays-for-mediation","private-vs-free-mediation","divorce-mediator-vs-divorce-lawyer","mediation-before-divorce","what-happens-if-mediation-fails","what-is-in-the-property-pool","delaying-property-settlement","co-parenting-mediation"]
+        "who-pays-for-mediation","private-vs-free-mediation","divorce-mediator-vs-divorce-lawyer","mediation-before-divorce","what-happens-if-mediation-fails","what-is-in-the-property-pool","delaying-property-settlement","co-parenting-mediation","online-mediation-australia"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:

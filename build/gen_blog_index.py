@@ -8,6 +8,7 @@ OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.
 
 # Cornerstone posts: (slug, category, title, blurb)
 POSTS = [
+ ("online-mediation-australia","Process & preparation","Online Mediation in Australia: How It Works","How online mediation works, when to use it, and how to choose an accredited mediator."),
  ("cost-of-divorce-in-australia","Costs & fees","How Much Does Divorce Cost in Australia? (2026)","A clear breakdown of court fees, lawyer costs, and how mediation saves tens of thousands."),
  ("mediation-with-a-narcissist","High-conflict","Mediation With a Narcissist: Does It Work?","Yes — often better than court. Proven strategies for high-conflict and controlling exes."),
  ("what-am-i-entitled-to-in-a-separation-in-australia","Property & finances","What Am I Entitled To in a Separation?","How property, super and support are divided — and how to reach a fair split without court."),
