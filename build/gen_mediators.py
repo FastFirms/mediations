@@ -44,7 +44,7 @@ PAGE_CSS = """<style>
 
 idx_schema = [org_schema(), breadcrumb_schema([("Home",""),("Our Team","our-team")])]
 d = head("Our Team | Mediations Australia",
-         "Meet the mediators and lawyers at Mediations Australia — nationally accredited, dual-qualified, and experienced across family law, property, commercial, and workplace disputes.",
+         "Meet our nationally accredited mediators and lawyers — experienced across family law, property, commercial and workplace disputes. Based across Australia.",
          "our-team", extra_schema=idx_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
 d += nav()
@@ -142,8 +142,8 @@ dan_schema = [
     }
 ]
 
-d = head("Dan Toombs — Founder &amp; Accredited Mediator | Mediations Australia",
-         "Meet Dan Toombs — Founder of Mediations Australia, AMDRAS-accredited mediator, National Human Rights Law Award recipient, and Winston Churchill Fellow.",
+d = head("Dan Toombs — Founder & Accredited Mediator | Mediations Australia",
+         "Meet Dan Toombs — Founder of Mediations Australia, AMDRAS-accredited mediator, Winston Churchill Fellow and Human Rights Law Award recipient.",
          "our-team/dan-toombs", extra_schema=dan_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
 d += nav()

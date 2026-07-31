@@ -217,7 +217,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mediationsaustralia.com.au/fathers-rights/</loc>
+    <loc>https://mediationsaustralia.com.au/fathers-rights-in-family-law-2022-update/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -355,10 +355,28 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mediationsaustralia.com.au/our-mediators/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://mediationsaustralia.com.au/our-team/</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mediationsaustralia.com.au/our-team/dan-toombs/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mediationsaustralia.com.au/our-team/farley-tolpen/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mediationsaustralia.com.au/our-team/prav-singh-pillay/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediationsaustralia.com.au/memberships/</loc>

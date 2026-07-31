@@ -112,8 +112,12 @@ def head(title, desc, slug, og_type="website", extra_schema=None):
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{canonical}">
+<meta property="og:image" content="{DOMAIN}/assets/images/MA-social.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Mediations Australia">
 <meta property="og:locale" content="en_AU">
+<meta name="twitter:image" content="{DOMAIN}/assets/images/MA-social.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(desc)}">
