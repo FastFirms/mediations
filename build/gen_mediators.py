@@ -18,7 +18,7 @@ person_schema = {
     "name": "Dan Toombs",
     "jobTitle": "Founder & Accredited Mediator",
     "url": f"{DOMAIN}/our-mediators/",
-    "image": f"{DOMAIN}/assets/images/dan-toombs.png",
+    "image": f"{DOMAIN}/assets/images/DanT.png",
     "worksFor": {"@id": f"{DOMAIN}/#organization"},
     "hasCredential": [
         {"@type": "EducationalOccupationalCredential", "name": "AMDRAS Accredited Mediator",
@@ -87,7 +87,7 @@ d += f"""<main id="main">
     <div class="mediator-profile">
 
       <aside class="mediator-photo">
-        <img src="/assets/images/dan-toombs.png"
+        <img src="/assets/images/DanT.png"
              alt="Dan Toombs — Founder and Accredited Mediator, Mediations Australia"
              width="260" height="260" loading="eager">
         <table class="cred-table" aria-label="Dan Toombs credentials">

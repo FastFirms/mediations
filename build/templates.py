@@ -134,7 +134,7 @@ def nav():
         cols += f'<div class="mega-col"><span class="mega-head">{esc(group)}</span>{links}</div>'
     svc_mega = f"""<div class="drop mega">{cols}
       <div class="mega-card">
-        <img src="/assets/images/dan-toombs.png" alt="Dan Toombs — Nationally Accredited Mediator" class="mega-card-photo">
+        <img src="/assets/images/DanT.png" alt="Dan Toombs — Nationally Accredited Mediator" class="mega-card-photo">
         <div class="mega-card-body">
           <span class="mega-card-tag">Free consultation</span>
           <p class="mega-card-head">Talk to a Nationally Accredited Mediator today</p>
@@ -174,7 +174,7 @@ def nav():
             <a href="/separation-under-one-roof/"><b>Separation Under One Roof</b><span>How it works</span></a>
           </div>
           <div class="mega-card">
-            <img src="/assets/images/dan-toombs.png" alt="Dan Toombs — Nationally Accredited Mediator" class="mega-card-photo">
+            <img src="/assets/images/DanT.png" alt="Dan Toombs — Nationally Accredited Mediator" class="mega-card-photo">
             <div class="mega-card-body">
               <span class="mega-card-tag">Free consultation</span>
               <p class="mega-card-head">Talk to a Nationally Accredited Mediator today</p>
