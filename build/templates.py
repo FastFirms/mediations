@@ -22,14 +22,15 @@ SERVICES = [
     ("consent-orders", "Consent Orders", "Make your agreement legally binding"),
     ("online-divorce", "Online Divorce", "Separate from anywhere in Australia"),
     ("workplace-mediation", "Workplace Mediation", "Resolve disputes before the FWC"),
+    ("estate-dispute-mediation", "Estate Disputes", "Resolve will and inheritance disputes privately"),
 ]
 
 # Grouped layout for the Services megamenu (scannable categories).
 # Slugs reference SERVICES above; workplace + how-it-works live in the menu footer.
 SERVICE_GROUPS = [
     ("Family & separation", ["family-law-mediation", "divorce-mediation", "online-divorce", "de-facto-mediation"]),
-    ("Property & finances", ["property-settlement-mediation", "financial-agreements-mediation", "spousal-support-mediation", "consent-orders"]),
-    ("Parenting & children", ["parenting-plan-mediation", "child-support-mediation", "section-60i-certificates", "grandparents-mediation"]),
+    ("Property & finances", ["property-settlement-mediation", "financial-agreements-mediation", "spousal-support-mediation", "consent-orders", "estate-dispute-mediation"]),
+    ("Parenting & workplace", ["parenting-plan-mediation", "child-support-mediation", "section-60i-certificates", "grandparents-mediation", "workplace-mediation"]),
 ]
 
 # Primary capital-city + major regional locations
