@@ -150,6 +150,27 @@ d += f"""<main id="main">
         environmental and public health campaigns in the United States — collaborating on some of the most complex,
         community-affecting disputes imaginable.</p>
 
+        <h3>Building Across the Legal Ecosystem</h3>
+        <p>Dan's work has always sat at the intersection of law, access to justice, and practical reform. That
+        belief has shaped not just his practice but the businesses he has founded — each addressing a different
+        part of how people find, experience, and benefit from legal services.</p>
+
+        <p><a href="https://www.bestsolicitors.com.au/" target="_blank" rel="noopener"><strong>Best Solicitors</strong></a>
+        is an independent legal rankings publisher covering eight jurisdictions. Rankings are transparent,
+        client-led, and use a published methodology — they cannot be influenced by payment. It is a direct
+        expression of Dan's belief that legal reputation should be earned, not bought.</p>
+
+        <p><a href="https://www.practiceproof.com/" target="_blank" rel="noopener"><strong>Practice Proof</strong></a>
+        provides strategy, branding, marketing and growth services for law firms — helping practices communicate
+        their value clearly and build sustainable client relationships in a rapidly changing market.</p>
+
+        <p>Mediations Australia exists within that same philosophy: that legal services should be genuinely
+        accessible, transparently priced, and focused on outcomes that actually improve people's lives. The
+        profession is entering one of the most significant periods of change in its history — AI, digital trust,
+        and reputation systems are reshaping how legal services are found, delivered, and valued. Dan's work
+        across all three ventures reflects his conviction that the practitioners best placed to serve clients
+        well are those who engage with that change honestly.</p>
+
         <h3>What This Means for You</h3>
         <p>Dan approaches every mediation — whether a <a href="/property-settlement-mediation/">property settlement</a>,
         a <a href="/parenting-plan-mediation/">parenting plan dispute</a>, an estate conflict,
