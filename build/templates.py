@@ -158,6 +158,7 @@ def nav():
         {svc_mega}
       </span>
       <a class="lnk" href="/how-mediation-works/">How it works</a>
+      <a class="lnk" href="/our-fee-structure/">Our Fees</a>
       <span class="has-drop"><a class="lnk" href="/guides/" aria-haspopup="true">Resources</a>
         <div class="drop mega mega-resources">
           <div class="mega-col">
