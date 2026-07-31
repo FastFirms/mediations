@@ -108,8 +108,7 @@ d += f"""<main id="main">
         <h2>Dan Toombs — Founder, Mediations Australia</h2>
         <span class="tag-line">Multi-award winning lawyer. Published author. Systemic reformer. Mediator.</span>
 
-        <p>Dan Toombs is the Founder of Mediations Australia and one of Australia's most credentialled and
-        reform-minded mediators. An <a href="https://amdras.au/" target="_blank" rel="noopener">AMDRAS-accredited mediator</a>,
+        <p>Dan Toombs is the Founder of Mediations Australia. An <a href="https://amdras.au/" target="_blank" rel="noopener">AMDRAS-accredited mediator</a>,
         Dan brings to every session a rare combination of legal expertise, systemic reform experience, and a deep
         understanding of the human realities behind every dispute.</p>
 
