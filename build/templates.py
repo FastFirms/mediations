@@ -150,16 +150,37 @@ def nav():
         {svc_mega}
       </span>
       <a class="lnk" href="/how-mediation-works/">How it works</a>
-      <a class="lnk" href="/guides/">Guides</a>
       <a class="lnk" href="/about-mediations-australia/">About</a>
-      <span class="has-drop"><a class="lnk" href="/preparing-for-mediation/" aria-haspopup="true">Resources</a>
-        <div class="drop">
-          <a href="/preparing-for-mediation/"><b>Preparing for Mediation</b>What to expect &amp; how to get ready</a>
-          <a href="/getting-ready-for-separation/"><b>Getting Ready for Separation</b>A practical checklist</a>
-          <a href="/parenting-plan-template/"><b>Parenting Plan Template</b>What to include in your plan</a>
-          <a href="/bfa-or-consent-orders/"><b>BFA or Consent Orders?</b>Which is right for you</a>
-          <a href="/family-law-cost-estimator/"><b>Cost Estimator</b>Mediation vs court costs</a>
-          <a href="/separation-under-one-roof/"><b>Separation Under One Roof</b>How it works</a>
+      <span class="has-drop"><a class="lnk" href="/guides/" aria-haspopup="true">Resources</a>
+        <div class="drop mega mega-resources">
+          <div class="mega-col">
+            <span class="mega-head">Popular Guides</span>
+            <a href="/how-much-does-mediation-cost/"><b>How Much Does Mediation Cost?</b><span>Fees, who pays, and why it beats court</span></a>
+            <a href="/what-am-i-entitled-to-in-a-separation-in-australia/"><b>What Am I Entitled To?</b><span>Property, super and support explained</span></a>
+            <a href="/is-family-law-mediation-compulsory/"><b>Is Mediation Compulsory?</b><span>When it's required and the exemptions</span></a>
+            <a href="/how-long-does-mediation-take/"><b>How Long Does Mediation Take?</b><span>Most resolve in one or two sessions</span></a>
+            <a href="/mediation-with-a-narcissist/"><b>Mediation With a Narcissist</b><span>Proven strategies for high-conflict situations</span></a>
+            <a href="/property-settlement-after-separation/"><b>Property Settlement Guide</b><span>The four-step process, without court</span></a>
+            <a href="/what-happens-if-mediation-fails/"><b>What If Mediation Fails?</b><span>Section 60I, next steps and options</span></a>
+            <a href="/guides/" class="mega-see-all">See all guides →</a>
+          </div>
+          <div class="mega-col">
+            <span class="mega-head">Resources</span>
+            <a href="/preparing-for-mediation/"><b>Preparing for Mediation</b><span>What to expect &amp; how to get ready</span></a>
+            <a href="/getting-ready-for-separation/"><b>Getting Ready for Separation</b><span>A practical checklist</span></a>
+            <a href="/parenting-plan-template/"><b>Parenting Plan Template</b><span>What to include in your plan</span></a>
+            <a href="/bfa-or-consent-orders/"><b>BFA or Consent Orders?</b><span>Which is right for you</span></a>
+            <a href="/family-law-cost-estimator/"><b>Cost Estimator</b><span>Mediation vs court costs</span></a>
+            <a href="/separation-under-one-roof/"><b>Separation Under One Roof</b><span>How it works</span></a>
+          </div>
+          <div class="mega-card">
+            <img src="/assets/images/dan-toombs.png" alt="Dan Toombs — Nationally Accredited Mediator" class="mega-card-photo">
+            <div class="mega-card-body">
+              <span class="mega-card-tag">Free consultation</span>
+              <p class="mega-card-head">Talk to a Nationally Accredited Mediator today</p>
+              <a class="btn btn-primary mega-card-btn" href="{BOOK_URL}">Book a Free Consultation →</a>
+            </div>
+          </div>
         </div>
       </span>
       <a class="lnk" href="/contact-us/">Contact</a>
