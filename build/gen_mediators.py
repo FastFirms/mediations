@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generates /our-mediators/ — Dan Toombs bio page."""
+"""Generates /our-mediators/ index + individual bio pages for Dan Toombs and Farley Tolpen."""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html,
@@ -7,43 +7,6 @@ from templates import (head, nav, page_end, esc, crumb_html,
                        DOMAIN, BOOK_URL, PHONE, PHONE_HREF)
 
 OUT = os.path.join(os.path.dirname(__file__), "..")
-
-TITLE = "Our Mediators | Mediations Australia"
-DESC  = ("Meet Dan Toombs — Founder of Mediations Australia, AMDRAS-accredited mediator, "
-         "National Human Rights Law Award recipient, and Winston Churchill Fellow.")
-SLUG  = "our-mediators"
-
-person_schema = {
-    "@type": "Person",
-    "name": "Dan Toombs",
-    "jobTitle": "Founder & Accredited Mediator",
-    "url": f"{DOMAIN}/our-mediators/",
-    "image": f"{DOMAIN}/assets/images/DanT.png",
-    "worksFor": {"@id": f"{DOMAIN}/#organization"},
-    "hasCredential": [
-        {"@type": "EducationalOccupationalCredential", "name": "AMDRAS Accredited Mediator",
-         "credentialCategory": "Professional Accreditation",
-         "recognizedBy": {"@type": "Organization", "name": "AMDRAS", "url": "https://amdras.au/"}},
-        {"@type": "EducationalOccupationalCredential", "name": "Winston Churchill Fellowship",
-         "credentialCategory": "Fellowship",
-         "recognizedBy": {"@type": "Organization", "name": "Churchill Trust Australia",
-                          "url": "https://www.churchilltrust.com.au/"}},
-        {"@type": "EducationalOccupationalCredential", "name": "National Human Rights Law Award",
-         "credentialCategory": "Award",
-         "recognizedBy": {"@type": "Organization", "name": "Australian Human Rights Commission",
-                          "url": "https://humanrights.gov.au/"}},
-        {"@type": "EducationalOccupationalCredential", "name": "Accredited Belbin Team Roles Facilitator",
-         "credentialCategory": "Professional Accreditation",
-         "recognizedBy": {"@type": "Organization", "name": "Belbin", "url": "https://www.belbin.com/"}},
-    ],
-    "sameAs": [
-        "https://amdras.au/",
-        "https://www.churchilltrust.com.au/",
-        "https://humanrights.gov.au/",
-    ],
-}
-
-schema = [org_schema(), breadcrumb_schema([("Home",""),("Our Mediators",SLUG)]), person_schema]
 
 PAGE_CSS = """<style>
 .mediator-hero{padding:60px 0 0;background:var(--sand)}
@@ -63,9 +26,25 @@ PAGE_CSS = """<style>
 .booking-strip{background:var(--sage-deep);color:var(--cream);padding:48px 0;text-align:center;margin-top:24px}
 .booking-strip h2{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:12px}
 .booking-strip p{font-size:1.05rem;opacity:.88;max-width:54ch;margin:0 auto 28px}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:32px;padding:56px 0}
+.team-card{background:var(--sand);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:box-shadow .2s}
+.team-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.12)}
+.team-card img{width:100%;height:260px;object-fit:cover;object-position:top;display:block}
+.team-card-body{padding:24px}
+.team-card-name{font-family:var(--serif);font-size:1.3rem;margin-bottom:4px}
+.team-card-role{color:var(--sage-deep);font-weight:600;font-size:.92rem;margin-bottom:10px}
+.team-card-bio{font-size:.95rem;color:var(--ink-soft);line-height:1.65;margin-bottom:16px}
+.team-card-link{font-size:.9rem;font-weight:600;color:var(--terra)}
 </style>"""
 
-d = head(TITLE, DESC, SLUG, extra_schema=schema)
+# ============================================================
+# /our-mediators/ INDEX PAGE
+# ============================================================
+
+idx_schema = [org_schema(), breadcrumb_schema([("Home",""),("Our Mediators","our-mediators")])]
+d = head("Our Mediators | Mediations Australia",
+         "Meet the nationally accredited mediators at Mediations Australia — dual-qualified lawyers with decades of experience across family law, property, commercial, and workplace disputes.",
+         "our-mediators", extra_schema=idx_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
 d += nav()
 
@@ -73,10 +52,99 @@ d += f"""<main id="main">
 {crumb_html([("Home",""),("Our mediators",None)])}
 <section class="mediator-hero">
   <div class="wrap">
+    <div style="max-width:64ch">
+      <p class="sec-tag">Meet the team</p>
+      <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
+        Our Mediators — <em>accredited, experienced, lawyer-aware</em>
+      </h1>
+      <p style="font-size:1.1rem;color:var(--ink-soft);max-width:58ch">Every mediator at Mediations Australia is nationally accredited. Many are also practising or formerly-practising lawyers — so the legal realities of your matter are understood from the very first conversation.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream)">
+  <div class="wrap">
+    <div class="team-grid">
+
+      <a href="/our-mediators/dan-toombs/" class="team-card">
+        <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder and Accredited Mediator" loading="eager">
+        <div class="team-card-body">
+          <p class="team-card-name">Dan Toombs</p>
+          <p class="team-card-role">Founder &amp; Accredited Mediator</p>
+          <p class="team-card-bio">Multi-award winning lawyer, Winston Churchill Fellow, and National Human Rights Law Award recipient. Over two decades resolving complex family, property and workplace disputes.</p>
+          <span class="team-card-link">View profile →</span>
+        </div>
+      </a>
+
+      <a href="/our-mediators/farley-tolpen/" class="team-card">
+        <img src="/assets/images/FarleyT.png" alt="Farley Tolpen — Accredited Mediator and Lawyer" loading="lazy">
+        <div class="team-card-body">
+          <p class="team-card-name">Farley Tolpen</p>
+          <p class="team-card-role">Accredited Mediator &amp; Lawyer</p>
+          <p class="team-card-bio">Dual-qualified in Australia and the United States with over 40 years of mediation, arbitration and litigation experience. More than 4,500 matters mediated with a 90% resolution rate.</p>
+          <span class="team-card-link">View profile →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+</main>"""
+
+d += page_end()
+
+out_path = os.path.join(OUT, "our-mediators")
+os.makedirs(out_path, exist_ok=True)
+with open(os.path.join(out_path, "index.html"), "w") as f:
+    f.write(d)
+print("our-mediators index built")
+
+# ============================================================
+# /our-mediators/dan-toombs/
+# ============================================================
+
+dan_schema = [
+    org_schema(),
+    breadcrumb_schema([("Home",""),("Our Mediators","our-mediators"),("Dan Toombs","our-mediators/dan-toombs")]),
+    {
+        "@type": "Person",
+        "name": "Dan Toombs",
+        "jobTitle": "Founder & Accredited Mediator",
+        "url": f"{DOMAIN}/our-mediators/dan-toombs/",
+        "image": f"{DOMAIN}/assets/images/DanT.png",
+        "worksFor": {"@id": f"{DOMAIN}/#organization"},
+        "hasCredential": [
+            {"@type": "EducationalOccupationalCredential", "name": "AMDRAS Accredited Mediator",
+             "credentialCategory": "Professional Accreditation",
+             "recognizedBy": {"@type": "Organization", "name": "AMDRAS", "url": "https://amdras.au/"}},
+            {"@type": "EducationalOccupationalCredential", "name": "Winston Churchill Fellowship",
+             "credentialCategory": "Fellowship",
+             "recognizedBy": {"@type": "Organization", "name": "Churchill Trust Australia", "url": "https://www.churchilltrust.com.au/"}},
+            {"@type": "EducationalOccupationalCredential", "name": "National Human Rights Law Award",
+             "credentialCategory": "Award",
+             "recognizedBy": {"@type": "Organization", "name": "Australian Human Rights Commission", "url": "https://humanrights.gov.au/"}},
+            {"@type": "EducationalOccupationalCredential", "name": "Accredited Belbin Team Roles Facilitator",
+             "credentialCategory": "Professional Accreditation",
+             "recognizedBy": {"@type": "Organization", "name": "Belbin", "url": "https://www.belbin.com/"}},
+        ],
+        "sameAs": ["https://amdras.au/", "https://www.churchilltrust.com.au/", "https://humanrights.gov.au/"],
+    }
+]
+
+d = head("Dan Toombs — Founder & Accredited Mediator | Mediations Australia",
+         "Meet Dan Toombs — Founder of Mediations Australia, AMDRAS-accredited mediator, National Human Rights Law Award recipient, and Winston Churchill Fellow.",
+         "our-mediators/dan-toombs", extra_schema=dan_schema)
+d = d.replace("</head>", PAGE_CSS + "</head>")
+d += nav()
+
+d += f"""<main id="main">
+{crumb_html([("Home",""),("Our mediators","/our-mediators/"),("Dan Toombs",None)])}
+<section class="mediator-hero">
+  <div class="wrap">
     <div style="max-width:60ch">
       <p class="sec-tag">Meet the team</p>
       <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
-        Our Mediators — <em>experience that resolves disputes</em>
+        Dan Toombs — <em>Founder &amp; Accredited Mediator</em>
       </h1>
     </div>
   </div>
@@ -89,7 +157,7 @@ d += f"""<main id="main">
       <aside class="mediator-photo">
         <img src="/assets/images/DanT.png"
              alt="Dan Toombs — Founder and Accredited Mediator, Mediations Australia"
-             width="260" height="260" loading="eager">
+             width="260" height="320" loading="eager">
         <table class="cred-table" aria-label="Dan Toombs credentials">
           <tbody>
             <tr><td>Accreditation</td><td><a href="https://amdras.au/" target="_blank" rel="noopener">AMDRAS</a> Accredited Mediator</td></tr>
@@ -190,7 +258,7 @@ d += f"""<main id="main">
 <div class="booking-strip">
   <div class="wrap">
     <h2>Ready to resolve your dispute <em>without court</em>?</h2>
-    <p>Book a free initial consultation with Dan and get honest, expert advice on your situation — with no obligation.</p>
+    <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
     <a href="{BOOK_URL}" class="btn" style="background:var(--cream);color:var(--sage-deep);font-size:1.1rem;padding:18px 38px">
       Book a Free Consultation &#8594;
     </a>
@@ -200,9 +268,157 @@ d += f"""<main id="main">
 
 d += page_end()
 
-out_path = os.path.join(OUT, SLUG)
+out_path = os.path.join(OUT, "our-mediators", "dan-toombs")
 os.makedirs(out_path, exist_ok=True)
 with open(os.path.join(out_path, "index.html"), "w") as f:
     f.write(d)
+print("our-mediators/dan-toombs built")
 
-print("our-mediators built")
+# ============================================================
+# /our-mediators/farley-tolpen/
+# ============================================================
+
+farley_schema = [
+    org_schema(),
+    breadcrumb_schema([("Home",""),("Our Mediators","our-mediators"),("Farley Tolpen","our-mediators/farley-tolpen")]),
+    {
+        "@type": "Person",
+        "name": "Farley Tolpen",
+        "jobTitle": "Accredited Mediator & Lawyer",
+        "url": f"{DOMAIN}/our-mediators/farley-tolpen/",
+        "image": f"{DOMAIN}/assets/images/FarleyT.png",
+        "worksFor": {"@id": f"{DOMAIN}/#organization"},
+        "hasCredential": [
+            {"@type": "EducationalOccupationalCredential", "name": "NMAS Accredited Mediator",
+             "credentialCategory": "Professional Accreditation",
+             "recognizedBy": {"@type": "Organization", "name": "AMDRAS", "url": "https://amdras.au/"}},
+            {"@type": "EducationalOccupationalCredential", "name": "Family Dispute Resolution Practitioner",
+             "credentialCategory": "Professional Certification"},
+            {"@type": "EducationalOccupationalCredential", "name": "Registered Family Law Arbitrator",
+             "credentialCategory": "Professional Registration"},
+        ],
+        "memberOf": [
+            {"@type": "Organization", "name": "Queensland Law Society", "url": "https://www.qls.com.au/"},
+            {"@type": "Organization", "name": "California State Bar", "url": "https://www.calbar.ca.gov/"},
+        ],
+    }
+]
+
+d = head("Farley Tolpen — Accredited Mediator &amp; Lawyer | Mediations Australia",
+         "Meet Farley Tolpen — dual-qualified mediator and lawyer in Australia and the United States, with over 40 years experience and more than 4,500 matters mediated.",
+         "our-mediators/farley-tolpen", extra_schema=farley_schema)
+d = d.replace("</head>", PAGE_CSS + "</head>")
+d += nav()
+
+d += f"""<main id="main">
+{crumb_html([("Home",""),("Our mediators","/our-mediators/"),("Farley Tolpen",None)])}
+<section class="mediator-hero">
+  <div class="wrap">
+    <div style="max-width:60ch">
+      <p class="sec-tag">Meet the team</p>
+      <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
+        Farley Tolpen — <em>Accredited Mediator &amp; Lawyer</em>
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream);padding-bottom:24px">
+  <div class="wrap">
+    <div class="mediator-profile">
+
+      <aside class="mediator-photo">
+        <img src="/assets/images/FarleyT.png"
+             alt="Farley Tolpen — Accredited Mediator and Lawyer, Mediations Australia"
+             width="260" height="320" loading="eager">
+        <table class="cred-table" aria-label="Farley Tolpen credentials">
+          <tbody>
+            <tr><td>Accreditation</td><td><a href="https://amdras.au/" target="_blank" rel="noopener">NMAS</a> Accredited Mediator</td></tr>
+            <tr><td>Certification</td><td>Family Dispute Resolution Practitioner (FDRP)</td></tr>
+            <tr><td>Registration</td><td>Family Law Arbitrator</td></tr>
+            <tr><td>Admitted</td><td><a href="https://www.qls.com.au/" target="_blank" rel="noopener">Queensland Law Society</a></td></tr>
+            <tr><td>Admitted</td><td><a href="https://www.calbar.ca.gov/" target="_blank" rel="noopener">California State Bar</a></td></tr>
+            <tr><td>Experience</td><td>40+ years mediation, arbitration &amp; litigation</td></tr>
+            <tr><td>Track record</td><td>4,500+ matters · 90% resolution rate</td></tr>
+          </tbody>
+        </table>
+      </aside>
+
+      <div class="mediator-content">
+        <h2>Farley Tolpen — Accredited Mediator &amp; Lawyer</h2>
+        <span class="tag-line">40 years. Two continents. 4,500 matters resolved.</span>
+
+        <p>Farley Tolpen brings a depth of experience that is genuinely rare: over four decades of mediating,
+        arbitrating and litigating across Australia and the United States, with more than 4,500 matters resolved
+        and a 90% settlement rate. Dual-qualified in both jurisdictions, Farley is an accredited National Mediator,
+        a certified Family Dispute Resolution Practitioner, and a registered Family Law Arbitrator — giving clients
+        access to the full range of dispute resolution pathways, all under one roof.</p>
+
+        <h3>Four Decades of Frontline Experience</h3>
+        <p>Farley has spent his career working at the sharp end of disputes — in courtrooms, arbitration chambers,
+        and mediation rooms across two legal systems. That hands-on litigation background means he understands
+        exactly what is at stake if a matter proceeds: the costs, the timelines, the emotional toll, and the
+        unpredictability of a judge's decision. It is that knowledge — not just of mediation technique, but of
+        what lies on the other side of the table if mediation fails — that shapes how Farley approaches every
+        session.</p>
+
+        <h3>Dual-Qualified: Australia and the United States</h3>
+        <p>Farley is a member of both the
+        <a href="https://www.qls.com.au/" target="_blank" rel="noopener">Queensland Law Society</a> and the
+        <a href="https://www.calbar.ca.gov/" target="_blank" rel="noopener">California State Bar</a> — a combination
+        that gives him a uniquely broad perspective on how legal systems, commercial norms, and dispute resolution
+        cultures differ. For clients with cross-border interests, or matters that touch on US law, that
+        dual qualification is a practical advantage that few mediators in Australia can offer.</p>
+
+        <h3>Specialist Areas</h3>
+        <p>Farley's practice spans the full range of disputes that bring people to mediation:</p>
+        <ul style="color:var(--ink-soft);line-height:1.8;font-size:1.05rem;padding-left:1.4em;margin-bottom:18px">
+          <li><a href="/family-law-mediation/">Family law</a> — separations, parenting arrangements, and the full complexity of relationship breakdown</li>
+          <li><a href="/estate-dispute-mediation/">Estate disputes</a> — will contests, inheritance disagreements, and executor conflicts</li>
+          <li><a href="/workplace-mediation/">Workplace mediation</a> — employment disputes, team conflicts, and organisational breakdowns</li>
+          <li>Commercial and business law — partnership disputes, contractor disagreements, and business exits</li>
+          <li>Real estate and construction — property transactions, development disputes, and building contract conflicts</li>
+        </ul>
+
+        <h3>What 4,500 Matters Teaches You</h3>
+        <p>The 90% resolution rate across more than 4,500 matters is not just a statistic — it reflects a
+        disciplined understanding of why disputes persist. Farley recognises that the real barriers to resolution
+        are rarely the legal issues on paper. They are the non-financial motivations, the strategic objectives
+        of the parties and their lawyers, the sunk cost of the litigation process, and the human dynamics that
+        make people dig in rather than settle. His job is to understand those dynamics clearly and create the
+        conditions in which both sides can move.</p>
+
+        <h3>A Practical, Outcomes-Focused Approach</h3>
+        <p>Farley does not approach mediation as a procedural exercise. He brings the same rigour and
+        preparation to a mediation that he would bring to a trial — understanding the strengths and weaknesses
+        of each party's position, the likely range of outcomes at court, and the interests that sit beneath
+        each side's stated position. The result is a process that feels substantive, not perfunctory, and
+        resolutions that are durable because they reflect what the parties actually need.</p>
+
+        <a href="{BOOK_URL}" class="btn btn-primary" style="margin-top:8px;font-size:1rem;padding:15px 32px">
+          Book a consultation with Farley <span style="margin-left:6px">&#8594;</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="booking-strip">
+  <div class="wrap">
+    <h2>Ready to resolve your dispute <em>without court</em>?</h2>
+    <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
+    <a href="{BOOK_URL}" class="btn" style="background:var(--cream);color:var(--sage-deep);font-size:1.1rem;padding:18px 38px">
+      Book a Free Consultation &#8594;
+    </a>
+  </div>
+</div>
+</main>"""
+
+d += page_end()
+
+out_path = os.path.join(OUT, "our-mediators", "farley-tolpen")
+os.makedirs(out_path, exist_ok=True)
+with open(os.path.join(out_path, "index.html"), "w") as f:
+    f.write(d)
+print("our-mediators/farley-tolpen built")
