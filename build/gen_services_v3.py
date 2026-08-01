@@ -557,9 +557,9 @@ service_page(
     title="Workplace Mediation in Australia | Mediations Australia",
     desc="Resolve workplace disputes through accredited mediation \u2014 before they reach the Fair Work Commission. Confidential, fast, and constructive. Free consultation.",
     breadcrumb_label="Workplace Mediation",
-    eyebrow="Resolve this before it costs everyone far more",
-    h1_html='Workplace Mediation \u2014 <em>resolve it before the FWC</em>.',
-    lede="Workplace conflict costs businesses far more than the dispute itself \u2014 in lost productivity, damaged teams, and the eye-watering price of letting things escalate to formal proceedings. Mediation resolves conflict early, confidentially, and in a way that lets working relationships continue.",
+    eyebrow="Workplace mediation",
+    h1_html='Resolve Workplace Conflict <em>Before It Escalates</em>',
+    lede="Workplace disputes rarely resolve themselves. Left unchecked, they lead to lost productivity, damaged workplace relationships, and costly legal action. Our confidential workplace mediation helps employers resolve conflict quickly, protect their people, and avoid unnecessary Fair Work Commission proceedings.",
     toc_items=[
         ("what-is","What is workplace mediation?"),
         ("disputes","What disputes we resolve"),
