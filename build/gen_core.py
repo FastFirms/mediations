@@ -4,7 +4,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
-                       BOOK_URL, PHONE, PHONE_HREF, OFFICES, DOMAIN)
+                       BOOK_URL, PHONE, PHONE_HREF, OFFICES, DOMAIN,
+                       SERVICES, SERVICE_GROUPS)
 
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -417,4 +418,122 @@ doc += f"""<main id="main">
 </main>""" + page_end()
 write("thank-you", doc)
 
-print("Core pages built: how-mediation-works, about, preparing-for-mediation, contact-us, thank-you")
+# ============================================================
+# HOW WE HELP
+# ============================================================
+svc_lookup = {s: (n, d) for s, n, d in SERVICES}
+
+# Additional services not in SERVICES list
+extra_services = [
+    ("accredited-family-law-mediators", "Our Mediators", "Nationally accredited, FDRP-registered practitioners"),
+    ("divorce-counselling", "Divorce Counselling", "Emotional support alongside legal resolution"),
+    ("online-mediation-australia", "Online Mediation", "Mediate from anywhere in Australia"),
+]
+
+qa_hwh = [
+    ("What types of disputes can Mediations Australia resolve?",
+     "We resolve family law disputes (separation, parenting, property), workplace disputes, estate and inheritance conflicts, de facto relationship matters, and online mediation for parties anywhere in Australia. If you're unsure whether your matter suits mediation, book a free initial consultation and we'll advise honestly."),
+    ("Do I need a lawyer to use your services?",
+     "No. A lawyer is not required to attend mediation, though legal advice beforehand is often helpful for complex matters. Many of our mediators are also experienced lawyers, so legal insight is already in the room."),
+    ("How quickly can we get a mediation session?",
+     "For most matters we aim to complete intake and schedule a session within two to three weeks of first contact. Where urgency is required — for example, a time-critical parenting or property matter — we can often move faster."),
+    ("Is mediation legally binding?",
+     "Mediation itself is voluntary and confidential, but the agreements reached can be formalised into legally binding outcomes — consent orders through the court, binding financial agreements (BFAs), or deeds of settlement. Your mediator will explain which option suits your matter."),
+    ("Can you help with matters outside the major cities?",
+     "Yes. We offer online mediation across all of Australia, including regional and remote areas. For in-person sessions, we have offices in Sydney, Melbourne, Brisbane, and Perth."),
+    ("What is the difference between mediation and arbitration?",
+     "In mediation, you and the other party shape your own agreement — nothing is imposed. In arbitration, an arbitrator hears both sides and makes a binding decision, like a private judge. Mediation keeps control in your hands and is almost always the better first step for family and workplace disputes."),
+]
+
+group_html = ""
+for group_name, slugs in SERVICE_GROUPS:
+    cards = ""
+    for s in slugs:
+        if s in svc_lookup:
+            name, desc = svc_lookup[s]
+            cards += f"""<a href="/{s}/" class="hwh-card">
+  <strong>{esc(name)}</strong>
+  <span>{esc(desc)}</span>
+  <span class="hwh-arr">→</span>
+</a>"""
+    group_html += f"""<div class="hwh-group">
+  <h2 class="hwh-group-title">{esc(group_name)}</h2>
+  <div class="hwh-grid">{cards}</div>
+</div>"""
+
+# Extra services block
+extra_cards = ""
+for s, name, desc in extra_services:
+    extra_cards += f"""<a href="/{s}/" class="hwh-card">
+  <strong>{esc(name)}</strong>
+  <span>{esc(desc)}</span>
+  <span class="hwh-arr">→</span>
+</a>"""
+group_html += f"""<div class="hwh-group">
+  <h2 class="hwh-group-title">Supporting services</h2>
+  <div class="hwh-grid">{extra_cards}</div>
+</div>"""
+
+hwh_styles = """<style>
+.hwh-intro{max-width:680px;margin:0 auto 48px;text-align:center}
+.hwh-group{margin:0 0 48px}
+.hwh-group-title{font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--col-muted,#666);margin:0 0 16px;padding-bottom:10px;border-bottom:1px solid var(--col-border,#e5e7eb)}
+.hwh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.hwh-card{display:flex;flex-direction:column;gap:4px;padding:20px 20px 16px;border:1px solid var(--col-border,#e5e7eb);border-radius:8px;text-decoration:none;color:inherit;background:var(--col-surface,#fff);transition:box-shadow .15s,border-color .15s}
+.hwh-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);border-color:var(--col-primary,#1a6b3a)}
+.hwh-card strong{font-size:1rem;font-weight:600;color:var(--col-heading,#111)}
+.hwh-card span{font-size:.875rem;color:var(--col-muted,#555);line-height:1.4}
+.hwh-card .hwh-arr{margin-top:8px;font-size:.9rem;color:var(--col-primary,#1a6b3a);font-weight:600}
+.hwh-why{background:var(--col-surface2,#f8f9fa);border-radius:10px;padding:36px 40px;margin:48px 0}
+.hwh-why h2{margin-top:0}
+.hwh-why ul{margin:0;padding-left:1.3em}
+.hwh-why li{margin-bottom:10px}
+@media(max-width:600px){.hwh-why{padding:24px 20px}}
+</style>"""
+
+doc = head(
+    "How We Help | Mediation Services — Mediations Australia",
+    "Mediation services for family law, property, parenting, workplace, estate and de facto disputes. Accredited mediators, fixed fees, Australia-wide. Free consultation.",
+    "how-we-help",
+    extra_schema=[
+        org_schema(),
+        breadcrumb_schema([("Home", ""), ("How We Help", "how-we-help")]),
+        article_schema("How We Help — Mediation Services", "All mediation and dispute resolution services offered by Mediations Australia."),
+        faq_schema(qa_hwh),
+    ]
+)
+doc += nav()
+doc += phero(
+    "Every dispute type we resolve",
+    "How We Help — <em>every practice area</em>.",
+    "Mediations Australia resolves family law, property, parenting, workplace, estate, and de facto disputes through accredited mediation. Browse every service area below, or book a free consultation and we'll point you to the right one.",
+    [("Home", ""), ("How We Help", None)]
+)
+doc += f"""<div class="wrap">
+{hwh_styles}
+<div class="hwh-intro">
+  <p>We resolve disputes — privately, efficiently, and without court — across the full range of family, workplace, and civil matters. Every mediator is nationally accredited. Every service comes with a free initial consultation.</p>
+</div>
+{group_html}
+<div class="hwh-why reveal">
+  <h2>Why resolve it through mediation?</h2>
+  <ul>
+    <li><strong>Dramatically cheaper than court.</strong> Litigation routinely costs $30,000–$150,000 per side. Mediation resolves most disputes for a fraction of that.</li>
+    <li><strong>Faster.</strong> Court proceedings take one to three years. Most mediated matters resolve in a single session, within weeks of first contact.</li>
+    <li><strong>Confidential.</strong> Nothing reaches the public record. What's said in mediation stays there — protected by law.</li>
+    <li><strong>You stay in control.</strong> The mediator facilitates; you decide. No outcome is imposed. Agreements you shape yourself are also far more likely to hold.</li>
+    <li><strong>Preserves relationships.</strong> Court is adversarial by design. Mediation is specifically designed to let people reach a resolution they can both live with — and, where children or an ongoing business relationship is involved, to keep working together afterwards.</li>
+    <li><strong>Legally binding outcomes.</strong> Agreements reached in mediation can be formalised as consent orders, binding financial agreements, or deeds of settlement — carrying full legal effect.</li>
+  </ul>
+  <p><a href="/how-mediation-works/">See exactly how the process works →</a></p>
+</div>
+</div>"""
+doc += faq_html(qa_hwh, heading="Common questions about our services")
+doc += cta_band(
+    "Not sure which service fits your situation?",
+    "Book a free 20-minute consultation and we'll tell you exactly which pathway makes sense — with no obligation."
+)
+doc += "</main>" + page_end()
+write("how-we-help", doc)
+
+print("Core pages built: how-mediation-works, about, preparing-for-mediation, contact-us, thank-you, how-we-help")
