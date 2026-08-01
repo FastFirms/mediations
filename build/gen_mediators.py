@@ -72,7 +72,7 @@ d += f"""<main id="main">
         <div class="team-card-body">
           <p class="team-card-name">Dan Toombs</p>
           <p class="team-card-role">Founder, Lawyer &amp; Mediator</p>
-          <p class="team-card-bio">Lawyer and accredited mediator with two decades of experience in family, property and workplace disputes. Founder of Mediations Australia and Winston Churchill Fellow.</p>
+          <p class="team-card-bio">AMDRAS-accredited mediator, multi-award winning lawyer, and published author. Founder of Mediations Australia, National Human Rights Law Award recipient, and Winston Churchill Fellow.</p>
           <span class="team-card-link">View profile →</span>
         </div>
       </a>
