@@ -236,6 +236,7 @@ doc = head(
  extra_schema=[org_schema(),
                breadcrumb_schema([("Home",""),("Contact","contact-us")])])
 doc += nav()
+_contact_form = contact_form_fields(prefix="c", subject="New contact — Mediations Australia")
 doc += f"""<main id="main">
 {crumb_html([("Home",""),("Contact",None)])}
 
@@ -255,7 +256,7 @@ doc += f"""<main id="main">
       <p style="font-size:1.05rem;color:var(--ink-soft);max-width:54ch;margin-bottom:36px">Tell us about your dispute and we'll give you an honest view of whether mediation can help — and how it fits with any legal advice you already have.</p>
 
       <form id="contact-form" novalidate style="display:flex;flex-direction:column;gap:16px">
-        """ + contact_form_fields(prefix="c", subject="New contact — Mediations Australia") + """
+        {_contact_form}
         <p style="font-size:.85rem;color:var(--ink-soft);margin:0">No obligation. We'll respond within one business day.</p>
       </form>
 

@@ -58,6 +58,7 @@ doc = head(
                 "name":"Mediations Australia","publisher":{"@id":f"{DOMAIN}/#organization"}},
                faq_schema(qa_home)])
 doc += nav()
+_home_form = contact_form_fields(prefix="h", field_style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box", subject="Homepage consultation request — Mediations Australia", btn_label='Send request <span class="arr">→</span>')
 doc += f"""<main id="main">
 <section class="phero" style="padding-bottom:clamp(48px,6vw,80px)">
   <div class="phero-blob"></div>
@@ -79,7 +80,7 @@ doc += f"""<main id="main">
       <p style="font-family:var(--serif);font-size:1.35rem;font-weight:400;color:var(--ink);margin:0 0 4px">Book a free consultation</p>
       <p style="font-size:.9rem;color:var(--ink-soft);margin:0 0 22px">We'll respond within one business day.</p>
       <form id="home-form" action="https://formspree.io/f/xwvgjnve" method="POST" novalidate style="display:flex;flex-direction:column;gap:14px">
-        """ + contact_form_fields(prefix="h", field_style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box", subject="Homepage consultation request — Mediations Australia", btn_label='Send request <span class="arr">→</span>') + """
+        {_home_form}
         <p style="font-size:.8rem;color:var(--ink-soft);margin:0;text-align:center">Your details are kept private and confidential.</p>
       </form>
     </div>
