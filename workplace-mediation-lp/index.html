@@ -22,13 +22,13 @@
 .lp-phone-link:hover{color:var(--terra)}
 
 /* Problem band */
-.lp-problem{background:var(--sand-deep);border-top:3px solid var(--terra);padding:2.5rem 0;text-align:center}
-.lp-problem h2{font-size:clamp(1.25rem,2.5vw,1.6rem);margin-bottom:.6rem;color:var(--ink)}
-.lp-problem p{color:var(--ink-soft);max-width:64ch;margin:0 auto 1.5rem;font-size:1.05rem}
-.stat-row{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}
-.stat-box{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:1rem 1.5rem;text-align:center;min-width:140px}
-.stat-box strong{display:block;font-family:var(--serif);font-size:1.75rem;color:var(--terra);line-height:1.1;margin-bottom:.25rem}
-.stat-box span{font-size:.82rem;color:var(--ink-soft);line-height:1.35;display:block}
+.lp-problem{background:var(--sand-deep);border-top:1px solid var(--line);padding:3rem 0}
+.lp-problem h2{font-size:clamp(1.3rem,2.5vw,1.7rem);margin-bottom:.6rem;color:var(--ink);text-align:left}
+.lp-problem .lp-problem-sub{color:var(--ink-soft);max-width:60ch;margin:0 0 2rem;font-size:1rem;text-align:left}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
+.stat-box{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:1.25rem 1.5rem}
+.stat-box strong{display:block;font-family:var(--serif);font-size:1.9rem;color:var(--terra);line-height:1;margin-bottom:.4rem}
+.stat-box span{font-size:.85rem;color:var(--ink-soft);line-height:1.4;display:block}
 
 /* Steps */
 .lp-steps{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-top:1.5rem}
@@ -150,7 +150,7 @@ table.lp-vs tr:last-child td{border-bottom:none}
 <div class="lp-problem">
   <div class="wrap">
     <h2>Don't Let a Workplace Dispute Become a Fair Work Matter</h2>
-    <p>The longer workplace conflict is left unresolved, the more it costs — in productivity, management time, legal advice and damaged team morale.</p>
+    <p class="lp-problem-sub">The longer workplace conflict is left unresolved, the more it costs — in productivity, management time, legal advice and damaged team morale.</p>
     <div class="stat-row">
       <div class="stat-box"><strong>$8k–$25k</strong><span>Typical employer cost if an unfair<br>dismissal claim settles early</span></div>
       <div class="stat-box"><strong>$15k–$70k+</strong><span>Potential employer cost if the<br>matter proceeds to hearing</span></div>
