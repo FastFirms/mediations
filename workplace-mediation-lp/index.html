@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workplace Mediation | Resolve Conflict Before It Escalates | Mediations Australia</title>
+<meta name="description" content="Confidential workplace mediation for employers. Resolve staff conflict quickly — before it reaches the Fair Work Commission. Call 1800 952 380.">
+<link rel="canonical" href="https://mediationsaustralia.com.au/workplace-mediation-lp/">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1a1a2e;
+  --ink-soft:#4a4a6a;
+  --bg:#ffffff;
+  --bg-soft:#f7f7fb;
+  --bg-rule:#e8e8f0;
+  --accent:#1b5e96;
+  --accent-dark:#134778;
+  --accent-light:#e8f0f9;
+  --green:#1a6b3a;
+  --green-bg:#eaf5ee;
+  --warn:#7a2020;
+  --warn-bg:#fdf0f0;
+  --radius:10px;
+  --ff-display:'Fraunces',Georgia,serif;
+  --ff-body:'Hanken Grotesk',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-body);color:var(--ink);background:var(--bg);font-size:1rem;line-height:1.65}
+
+/* STICKY BAR */
+.sticky-bar{position:sticky;top:0;z-index:100;background:var(--accent);color:#fff;padding:.6rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.sticky-bar .brand{font-family:var(--ff-display);font-size:1.05rem;font-weight:600;color:#fff;text-decoration:none;white-space:nowrap}
+.sticky-bar .phone-link{display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:1.05rem;color:#fff;text-decoration:none;white-space:nowrap}
+.sticky-bar .phone-link svg{width:18px;height:18px;fill:#fff}
+.sticky-bar .bar-cta{background:#fff;color:var(--accent);font-weight:700;font-size:.9rem;padding:.45rem 1.1rem;border-radius:6px;text-decoration:none;white-space:nowrap}
+.sticky-bar .bar-cta:hover{background:#e8f0f9}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0d2d4a 0%,#1b5e96 100%);color:#fff;padding:4rem 1.5rem 3.5rem;text-align:center}
+.hero .eyebrow{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .9rem;border-radius:20px;margin-bottom:1.2rem}
+.hero h1{font-family:var(--ff-display);font-size:clamp(2rem,5vw,3rem);font-weight:600;line-height:1.2;max-width:750px;margin:0 auto .8rem;text-wrap:balance}
+.hero h1 em{font-style:italic;color:#93c5fd}
+.hero .sub{font-size:1.15rem;opacity:.9;max-width:600px;margin:0 auto 2rem;line-height:1.6}
+.hero-ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:#fff;color:var(--accent-dark);font-weight:700;font-size:1rem;padding:.85rem 2rem;border-radius:8px;text-decoration:none;border:none;cursor:pointer;transition:background .15s}
+.btn-primary:hover{background:#e8f0f9}
+.btn-phone{background:transparent;color:#fff;font-weight:700;font-size:1rem;padding:.85rem 2rem;border-radius:8px;text-decoration:none;border:2px solid rgba(255,255,255,.5);transition:border-color .15s}
+.btn-phone:hover{border-color:#fff}
+.hero-trust{margin-top:2.5rem;display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;font-size:.85rem;opacity:.8}
+.hero-trust span{display:flex;align-items:center;gap:.4rem}
+
+/* PROBLEM BAND */
+.problem{background:var(--warn-bg);border-top:3px solid #c0392b;padding:2.5rem 1.5rem;text-align:center}
+.problem h2{font-family:var(--ff-display);font-size:1.5rem;color:var(--warn);margin-bottom:.75rem;font-weight:600}
+.problem p{max-width:680px;margin:0 auto;color:var(--ink-soft)}
+.cost-row{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}
+.cost-item{background:#fff;border:1px solid #e8c0c0;border-radius:8px;padding:.9rem 1.4rem;font-size:.9rem;text-align:center}
+.cost-item strong{display:block;font-family:var(--ff-display);font-size:1.4rem;color:var(--warn);margin-bottom:.2rem}
+
+/* SECTION WRAPPER */
+.wrap{max-width:860px;margin:0 auto;padding:3rem 1.5rem}
+.section-title{font-family:var(--ff-display);font-size:1.75rem;font-weight:600;margin-bottom:.5rem;text-wrap:balance}
+.section-sub{color:var(--ink-soft);margin-bottom:2rem;max-width:600px}
+
+/* HOW IT WORKS */
+.steps{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:1.5rem}
+.step{background:var(--accent-light);border-radius:var(--radius);padding:1.4rem}
+.step-num{font-family:var(--ff-display);font-size:2rem;font-weight:600;color:var(--accent);line-height:1;margin-bottom:.5rem;opacity:.5}
+.step h3{font-size:1rem;font-weight:700;margin-bottom:.4rem}
+.step p{font-size:.9rem;color:var(--ink-soft)}
+
+/* VS TABLE */
+.vs-wrap{overflow-x:auto;margin-top:1.5rem}
+table.vs{width:100%;border-collapse:collapse;font-size:.95rem}
+table.vs th{padding:.75rem 1rem;text-align:left;font-weight:700;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase}
+table.vs th:first-child{background:var(--bg-soft);color:var(--ink-soft)}
+table.vs th.good{background:var(--green-bg);color:var(--green)}
+table.vs th.bad{background:var(--warn-bg);color:var(--warn)}
+table.vs td{padding:.7rem 1rem;border-bottom:1px solid var(--bg-rule);vertical-align:top}
+table.vs td:first-child{font-weight:600;color:var(--ink-soft);font-size:.88rem}
+table.vs td.good{background:#f8fdfb;color:var(--green)}
+table.vs td.bad{background:#fefafa;color:var(--warn)}
+table.vs tr:last-child td{border-bottom:none}
+
+/* WHO WE HELP */
+.who-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.5rem}
+.who-card{border:1px solid var(--bg-rule);border-radius:var(--radius);padding:1.2rem 1.4rem}
+.who-card h3{font-size:1rem;font-weight:700;margin-bottom:.4rem}
+.who-card p{font-size:.88rem;color:var(--ink-soft)}
+
+/* TRUST BAND */
+.trust-band{background:var(--bg-soft);padding:2.5rem 1.5rem}
+.trust-inner{max-width:860px;margin:0 auto;display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.trust-item{text-align:center}
+.trust-item .icon{font-size:2rem;margin-bottom:.5rem}
+.trust-item strong{display:block;font-size:1rem;font-weight:700;margin-bottom:.2rem}
+.trust-item p{font-size:.85rem;color:var(--ink-soft)}
+
+/* QUOTE */
+.quote-band{background:var(--accent);color:#fff;padding:2.5rem 1.5rem;text-align:center}
+.quote-band blockquote{font-family:var(--ff-display);font-size:1.3rem;font-style:italic;max-width:700px;margin:0 auto 1rem;line-height:1.5}
+.quote-band cite{font-size:.9rem;opacity:.8;font-style:normal}
+
+/* FORM SECTION */
+.form-section{background:var(--bg-soft);padding:3rem 1.5rem}
+.form-inner{max-width:760px;margin:0 auto}
+.form-inner h2{font-family:var(--ff-display);font-size:1.75rem;font-weight:600;margin-bottom:.4rem;text-wrap:balance}
+.form-inner .form-sub{color:var(--ink-soft);margin-bottom:2rem}
+.phone-option{background:var(--accent-light);border:1px solid #bcd4ef;border-radius:8px;padding:1rem 1.4rem;display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;text-decoration:none;color:var(--ink)}
+.phone-option svg{width:28px;height:28px;fill:var(--accent);flex-shrink:0}
+.phone-option strong{display:block;font-weight:700;font-size:1.05rem;color:var(--accent)}
+.phone-option span{font-size:.85rem;color:var(--ink-soft)}
+.divider-or{display:flex;align-items:center;gap:1rem;margin:1.25rem 0;color:var(--ink-soft);font-size:.85rem}
+.divider-or::before,.divider-or::after{content:'';flex:1;height:1px;background:var(--bg-rule)}
+.lp-form .form-row{display:flex;flex-direction:column;gap:5px;margin-bottom:1rem}
+.lp-form label{font-size:.88rem;font-weight:600;color:var(--ink)}
+.lp-form input,.lp-form select,.lp-form textarea{width:100%;padding:.75rem .9rem;border:1.5px solid var(--bg-rule);border-radius:6px;font-family:var(--ff-body);font-size:.95rem;color:var(--ink);background:#fff;transition:border-color .15s}
+.lp-form input:focus,.lp-form select:focus,.lp-form textarea:focus{outline:none;border-color:var(--accent)}
+.lp-form textarea{resize:vertical;min-height:110px}
+.form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.lp-submit{width:100%;background:var(--accent);color:#fff;font-family:var(--ff-body);font-weight:700;font-size:1.05rem;padding:1rem;border:none;border-radius:8px;cursor:pointer;margin-top:.5rem;transition:background .15s}
+.lp-submit:hover{background:var(--accent-dark)}
+.lp-submit:disabled{opacity:.6;cursor:not-allowed}
+.form-privacy{font-size:.78rem;color:var(--ink-soft);text-align:center;margin-top:.75rem}
+
+/* FOOTER */
+.lp-footer{border-top:1px solid var(--bg-rule);padding:1.5rem;text-align:center;font-size:.82rem;color:var(--ink-soft)}
+.lp-footer a{color:var(--ink-soft)}
+
+@media(max-width:600px){
+  .form-row-2{grid-template-columns:1fr}
+  .sticky-bar .bar-cta{display:none}
+  .hero-ctas .btn-phone{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar">
+  <a class="brand" href="https://mediationsaustralia.com.au/">Mediations Australia</a>
+  <a class="phone-link" href="tel:1800952380">
+    <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/></svg>
+    1800 952 380
+  </a>
+  <a class="bar-cta" href="#contact">Get a free consultation</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="eyebrow">Workplace mediation</div>
+  <h1>Resolve Workplace Conflict<br><em>Before It Escalates</em></h1>
+  <p class="sub">Confidential, accredited workplace mediation for employers. Resolve staff disputes quickly — before they reach the Fair Work Commission.</p>
+  <div class="hero-ctas">
+    <a class="btn-primary" href="#contact">Get a free consultation</a>
+    <a class="btn-phone" href="tel:1800952380">Call 1800 952 380</a>
+  </div>
+  <div class="hero-trust">
+    <span>&#10003; Nationally accredited mediators</span>
+    <span>&#10003; Confidential &amp; without prejudice</span>
+    <span>&#10003; Most matters resolved in one session</span>
+  </div>
+</section>
+
+<!-- PROBLEM BAND -->
+<div class="problem">
+  <h2>Unresolved workplace conflict is more expensive than you think</h2>
+  <p>Left unchecked, a single dispute between two employees can cost a business tens of thousands of dollars — before a single lawyer is involved.</p>
+  <div class="cost-row">
+    <div class="cost-item"><strong>$20k–$80k</strong>Fair Work unfair dismissal<br>legal fees (conservative)</div>
+    <div class="cost-item"><strong>34 days</strong>Average lost productivity per<br>unresolved conflict</div>
+    <div class="cost-item"><strong>2–4 weeks</strong>Typical mediation timeline<br>from referral to agreement</div>
+    <div class="cost-item"><strong>$2k–$5k</strong>Typical mediation cost<br>vs formal proceedings</div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="wrap">
+  <h2 class="section-title">How workplace mediation works</h2>
+  <p class="section-sub">A structured, confidential process — from referral to signed agreement, typically in two to four weeks.</p>
+  <div class="steps">
+    <div class="step"><div class="step-num">01</div><h3>Referral &amp; intake</h3><p>You refer the matter. We contact all parties, explain the process, and confirm confidentiality agreements in writing.</p></div>
+    <div class="step"><div class="step-num">02</div><h3>Individual pre-sessions</h3><p>Each party meets privately with the mediator to outline their perspective. This shapes the agenda and reduces surprises.</p></div>
+    <div class="step"><div class="step-num">03</div><h3>Joint mediation session</h3><p>Both parties meet together with the mediator. Structured conversation, not argument. Most disputes resolve here.</p></div>
+    <div class="step"><div class="step-num">04</div><h3>Written agreement</h3><p>Outcomes are documented in a signed written agreement — practical, owned by the parties, and ready to implement.</p></div>
+  </div>
+</div>
+
+<!-- VS TABLE -->
+<div class="wrap" style="padding-top:0">
+  <h2 class="section-title">Mediation vs the Fair Work Commission</h2>
+  <p class="section-sub">For most workplace disputes, mediation is faster, cheaper, and produces better outcomes for everyone involved.</p>
+  <div class="vs-wrap">
+    <table class="vs">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="good">Workplace Mediation</th>
+          <th class="bad">Fair Work Commission</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Timeline</td><td class="good">2–4 weeks</td><td class="bad">3–12+ months</td></tr>
+        <tr><td>Typical cost</td><td class="good">$2,000–$5,000</td><td class="bad">$20,000–$80,000+</td></tr>
+        <tr><td>Confidentiality</td><td class="good">Fully confidential</td><td class="bad">Public proceedings</td></tr>
+        <tr><td>Working relationship</td><td class="good">Can be preserved</td><td class="bad">Usually damaged</td></tr>
+        <tr><td>Outcome control</td><td class="good">Parties shape the agreement</td><td class="bad">Determined by tribunal</td></tr>
+        <tr><td>Management time</td><td class="good">Minimal</td><td class="bad">Significant — months of involvement</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- WHO WE HELP -->
+<div class="wrap" style="padding-top:0">
+  <h2 class="section-title">The disputes we resolve</h2>
+  <p class="section-sub">We work with HR teams, people &amp; culture managers, and senior leadership across all industries.</p>
+  <div class="who-grid">
+    <div class="who-card"><h3>Colleague conflict</h3><p>Interpersonal breakdowns between staff, including bullying and harassment complaints before they become formal grievances.</p></div>
+    <div class="who-card"><h3>Manager–employee disputes</h3><p>Disputes over performance, communication, or management approach — resolved before they escalate.</p></div>
+    <div class="who-card"><h3>Team restructures</h3><p>Conflict following restructures, redundancy processes, or changes to reporting lines.</p></div>
+    <div class="who-card"><h3>Return-to-work conflict</h3><p>Disputes following leave, injury, or a workplace investigation — a well-known flashpoint.</p></div>
+    <div class="who-card"><h3>Unfair dismissal risk</h3><p>Mediation before termination to reduce Fair Work Commission exposure and document good-faith process.</p></div>
+    <div class="who-card"><h3>Multi-party disputes</h3><p>Group conflict involving teams or multiple parties, structured with individual intakes before joint sessions.</p></div>
+  </div>
+</div>
+
+<!-- TRUST BAND -->
+<div class="trust-band">
+  <div class="trust-inner">
+    <div class="trust-item"><div class="icon">&#9878;&#65039;</div><strong>Nationally accredited</strong><p>All our mediators hold NMAS accreditation and extensive workplace dispute experience.</p></div>
+    <div class="trust-item"><div class="icon">&#128274;</div><strong>Without prejudice</strong><p>Everything said in mediation is legally confidential and cannot be used in any subsequent proceedings.</p></div>
+    <div class="trust-item"><div class="icon">&#128203;</div><strong>Documented outcomes</strong><p>Every resolved dispute ends with a written, signed agreement both parties have shaped themselves.</p></div>
+    <div class="trust-item"><div class="icon">&#127758;</div><strong>Australia-wide</strong><p>In-person sessions in Sydney, Melbourne, Brisbane, and Perth. Online mediation available nationally.</p></div>
+  </div>
+</div>
+
+<!-- QUOTE -->
+<div class="quote-band">
+  <blockquote>"Most workplace disputes we see could have been resolved in a single session three months earlier. By the time organisations call us, they've usually already paid the cost — in management time, sick leave, and damaged teams."</blockquote>
+  <cite>— Dan Toombs, Accredited Mediator, Mediations Australia</cite>
+</div>
+
+<!-- FORM -->
+<div class="form-section" id="contact">
+  <div class="form-inner">
+    <h2>Get a free confidential consultation</h2>
+    <p class="form-sub">Tell us about the dispute. We'll call you back within one business day to discuss how mediation can help — no obligation.</p>
+
+    <a class="phone-option" href="tel:1800952380">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/></svg>
+      <div>
+        <strong>1800 952 380</strong>
+        <span>Mon–Fri 8:30am–5:30pm AEST</span>
+      </div>
+    </a>
+
+    <div class="divider-or">or send us a message</div>
+
+    <form class="lp-form" id="lp-form" novalidate>
+      <div class="form-row-2">
+        <div class="form-row">
+          <label for="lp-name">Your name</label>
+          <input id="lp-name" name="name" type="text" required autocomplete="name" placeholder="Jane Smith">
+        </div>
+        <div class="form-row">
+          <label for="lp-phone">Phone</label>
+          <input id="lp-phone" name="phone" type="tel" required autocomplete="tel" placeholder="0400 000 000">
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="lp-email">Email</label>
+        <input id="lp-email" name="email" type="email" required autocomplete="email" placeholder="jane@company.com.au">
+      </div>
+      <div class="form-row">
+        <label for="lp-role">Your role</label>
+        <select id="lp-role" name="role">
+          <option value="">Select…</option>
+          <option>HR Manager / People &amp; Culture</option>
+          <option>Business Owner / Director</option>
+          <option>Senior Manager</option>
+          <option>Legal / In-house Counsel</option>
+          <option>Employee</option>
+          <option>Other</option>
+      </select>
+      </div>
+      <div class="form-row">
+        <label for="lp-location">Your location</label>
+        <input id="lp-location" name="location" type="text" placeholder="e.g. Sydney NSW" autocomplete="address-level2">
+      </div>
+      <div class="form-row">
+        <label for="lp-message">Brief description of the dispute</label>
+        <textarea id="lp-message" name="message" placeholder="Describe the situation — number of people involved, how long it has been going on, and what outcome you're hoping for. All information is strictly confidential."></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="Workplace mediation enquiry — Landing page">
+      <button class="lp-submit" type="submit">Send — we'll call you back within one business day &#8594;</button>
+      <p class="form-privacy">Your information is confidential and will only be used to respond to your enquiry.</p>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="lp-footer">
+  <a href="https://mediationsaustralia.com.au/">Mediations Australia</a> &nbsp;&middot;&nbsp;
+  <a href="https://mediationsaustralia.com.au/workplace-mediation/">About workplace mediation</a> &nbsp;&middot;&nbsp;
+  <a href="https://mediationsaustralia.com.au/privacy-policy/">Privacy policy</a>
+</div>
+
+<script>
+(function(){
+  var f = document.getElementById('lp-form');
+  if (!f) return;
+  f.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var name = document.getElementById('lp-name').value.trim();
+    var email = document.getElementById('lp-email').value.trim();
+    var phone = document.getElementById('lp-phone').value.trim();
+    if (!name || !email || !phone) {
+      alert('Please fill in your name, phone, and email.');
+      return;
+    }
+    var btn = f.querySelector('button[type=submit]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    try {
+      var r = await fetch('https://formspree.io/f/xwvgjnve', {
+        method: 'POST',
+        body: new FormData(f),
+        headers: { Accept: 'application/json' }
+      });
+      if (r.ok) {
+        window.location.href = '/thank-you/';
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Send — we’ll call you back within one business day →';
+        alert('Something went wrong. Please call us on 1800 952 380.');
+      }
+    } catch(err) {
+      btn.disabled = false;
+      btn.textContent = 'Send — we’ll call you back within one business day →';
+      alert('Something went wrong. Please call us on 1800 952 380.');
+    }
+  });
+})();
+</script>
+</body>
+</html>
