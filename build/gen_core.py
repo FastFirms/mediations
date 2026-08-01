@@ -471,8 +471,17 @@ def make_card(slug, name, desc):
     icon = ICONS.get(slug, DEFAULT_ICON)
     return f"""<article class="card"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">{icon}</svg></div><h3>{esc(name)}</h3><p>{esc(desc)}</p><a class="more" href="/{slug}/">{esc(name)} <span class="arr">→</span></a></article>"""
 
+# Page-specific grouping — differs from SERVICE_GROUPS (which drives the nav megamenu)
+# Estate and workplace get their own section here
+HWH_GROUPS = [
+    ("Family & separation", ["family-law-mediation", "divorce-mediation", "online-divorce", "de-facto-mediation"]),
+    ("Property & finances", ["property-settlement-mediation", "financial-agreements-mediation", "spousal-support-mediation", "consent-orders"]),
+    ("Parenting", ["parenting-plan-mediation", "child-support-mediation", "section-60i-certificates", "grandparents-mediation"]),
+    ("Estate & workplace disputes", ["estate-dispute-mediation", "workplace-mediation"]),
+]
+
 group_html = ""
-for group_name, slugs in SERVICE_GROUPS:
+for group_name, slugs in HWH_GROUPS:
     cards = "".join(make_card(s, *svc_lookup[s]) for s in slugs if s in svc_lookup)
     group_html += f"""<div class="hwh-group">
   <h2 class="hwh-group-title">{esc(group_name)}</h2>
