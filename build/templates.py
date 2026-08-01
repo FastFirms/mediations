@@ -260,7 +260,7 @@ def footer():
       <div class="ll">{locs}</div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Mediations Australia. All rights reserved. This site is general information, not legal advice.</span>
+      <span>© 2026 Mediations Australia. All rights reserved. This site is general information, not legal advice. <a href="/privacy-policy/" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Privacy Policy</a></span>
       <span>Nationally accredited under AMDRAS · Australia-wide &amp; online</span>
     </div>
   </div>
