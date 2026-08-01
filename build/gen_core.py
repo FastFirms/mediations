@@ -498,11 +498,13 @@ hwh_styles = """<style>
 .hwh-intro{max-width:680px;margin:0 auto 48px;text-align:center}
 .hwh-group{margin:0 0 52px}
 .hwh-group-title{font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
-.hwh-why{background:var(--sage-light);border-radius:var(--r);padding:36px 40px;margin:48px 0}
-.hwh-why h2{margin-top:0}
-.hwh-why ul{margin:0;padding-left:1.3em}
-.hwh-why li{margin-bottom:10px}
-@media(max-width:600px){.hwh-why{padding:24px 20px}}
+.hwh-why{background:var(--sage-light);border-radius:var(--r);padding:40px 44px;margin:48px 0}
+.hwh-why h2{margin-top:0;margin-bottom:24px}
+.hwh-why-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 36px}
+.hwh-why-grid div{display:flex;flex-direction:column;gap:4px}
+.hwh-why-grid strong{font-size:1rem;font-weight:700;color:var(--ink)}
+.hwh-why-grid span{font-size:.92rem;color:var(--ink-soft);line-height:1.5}
+@media(max-width:640px){.hwh-why{padding:28px 24px}.hwh-why-grid{grid-template-columns:1fr}}
 </style>"""
 
 doc = head(
@@ -531,15 +533,13 @@ doc += f"""<div class="wrap">
 {group_html}
 <div class="hwh-why reveal">
   <h2>Why resolve it through mediation?</h2>
-  <ul>
-    <li><strong>Dramatically cheaper than court.</strong> Litigation routinely costs $30,000–$150,000 per side. Mediation resolves most disputes for a fraction of that.</li>
-    <li><strong>Faster.</strong> Court proceedings take one to three years. Most mediated matters resolve in a single session, within weeks of first contact.</li>
-    <li><strong>Confidential.</strong> Nothing reaches the public record. What's said in mediation stays there — protected by law.</li>
-    <li><strong>You stay in control.</strong> The mediator facilitates; you decide. No outcome is imposed. Agreements you shape yourself are also far more likely to hold.</li>
-    <li><strong>Preserves relationships.</strong> Court is adversarial by design. Mediation is specifically designed to let people reach a resolution they can both live with — and, where children or an ongoing business relationship is involved, to keep working together afterwards.</li>
-    <li><strong>Legally binding outcomes.</strong> Agreements reached in mediation can be formalised as consent orders, binding financial agreements, or deeds of settlement — carrying full legal effect.</li>
-  </ul>
-  <p><a href="/how-mediation-works/">See exactly how the process works →</a></p>
+  <div class="hwh-why-grid">
+    <div><strong>Cheaper.</strong><span>Litigation runs $30,000–$150,000 per side. Mediation resolves most disputes for a fraction of that.</span></div>
+    <div><strong>Faster.</strong><span>Court takes one to three years. Most matters mediate in a single session within weeks.</span></div>
+    <div><strong>Confidential.</strong><span>Nothing reaches the public record. What's said in mediation is protected by law.</span></div>
+    <div><strong>You decide.</strong><span>No outcome is imposed. Agreements you shape yourself are more likely to hold — and be liveable.</span></div>
+  </div>
+  <p style="margin:24px 0 0"><a href="/how-mediation-works/">See exactly how the process works →</a></p>
 </div>
 </div>"""
 doc += faq_html(qa_hwh, heading="Common questions about our services")
