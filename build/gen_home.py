@@ -237,6 +237,22 @@ doc = doc.replace('id="faq" aria-labelledby="faqh" style="padding-top:0"', 'id="
 doc += cta_band("The first step costs <em>nothing</em> but a phone call.",
  "Tell us about your dispute. We'll give you an honest view of whether mediation can help — and how it fits alongside any legal advice you're already getting.")
 doc += "</main>" + page_end()
+doc += """<script>
+(function(){
+  var f=document.getElementById('home-form');
+  if(!f)return;
+  f.addEventListener('submit',async function(e){
+    e.preventDefault();
+    var btn=f.querySelector('button[type=submit]');
+    btn.disabled=true;btn.textContent='Sending…';
+    try{
+      var r=await fetch('https://formspree.io/f/xwvgjnve',{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});
+      if(r.ok){window.location.href='/thank-you/';}
+      else{btn.disabled=false;btn.innerHTML='Send request <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
+    }catch(err){btn.disabled=false;btn.innerHTML='Send request <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
+  });
+})();
+</script>"""
 write("", doc)
 
 # ============================================================

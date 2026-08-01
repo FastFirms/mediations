@@ -253,9 +253,9 @@ if(f){f.addEventListener('submit',async function(e){
   e.preventDefault();
   const note=document.getElementById('formnote');
   const btn=f.querySelector('button[type=submit]');
-  const req=['name','email','phone'];let ok=true;
+  const req=['b-name','b-email','b-phone'];let ok=true;
   req.forEach(id=>{const el=document.getElementById(id);
-    if(!el.value.trim()){el.style.borderColor='var(--terra)';ok=false;}
+    if(!el||!el.value.trim()){if(el)el.style.borderColor='var(--terra)';ok=false;}
     else{el.style.borderColor='var(--line)';}});
   if(!ok){note.textContent='Please complete the required fields so we can get back to you.';note.style.color='var(--terra-deep)';return;}
   // honeypot tripped -> silently pretend success (don't tip off bots)
