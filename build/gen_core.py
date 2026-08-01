@@ -445,46 +445,51 @@ qa_hwh = [
      "In mediation, you and the other party shape your own agreement — nothing is imposed. In arbitration, an arbitrator hears both sides and makes a binding decision, like a private judge. Mediation keeps control in your hands and is almost always the better first step for family and workplace disputes."),
 ]
 
+# SVG icons keyed by slug — reuse homepage icon set
+ICONS = {
+    "family-law-mediation":         '<path d="M12 2C9.79 2 8 3.79 8 6s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 12c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z" fill="currentColor"/>',
+    "divorce-mediation":            '<path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm1 14.93V17a1 1 0 00-2 0v-.07A8.001 8.001 0 014.07 11H5a1 1 0 000-2h-.93A8.001 8.001 0 0111 4.07V5a1 1 0 002 0v-.93A8.001 8.001 0 0119.93 9H19a1 1 0 000 2h.93A8.001 8.001 0 0113 16.93z" fill="currentColor"/>',
+    "property-settlement-mediation":'<rect x="4" y="8" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 8V6a3 3 0 016 0v2" stroke="currentColor" stroke-width="1.6"/>',
+    "parenting-plan-mediation":     '<path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="currentColor"/>',
+    "section-60i-certificates":     '<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+    "financial-agreements-mediation":'<path d="M12 1v22M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>',
+    "spousal-support-mediation":    '<path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402C1 3.08 3.71 1 6.5 1c1.973 0 3.963.75 5.5 2.3C13.537 1.75 15.527 1 17.5 1 20.29 1 23 3.08 23 7.191c0 4.105-5.37 8.863-11 14.402z" fill="currentColor"/>',
+    "child-support-mediation":      '<path d="M12 2C9.79 2 8 3.79 8 6s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z" fill="currentColor"/>',
+    "de-facto-mediation":           '<path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.6" fill="none"/>',
+    "grandparents-mediation":       '<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>',
+    "consent-orders":               '<path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+    "online-divorce":               '<path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>',
+    "workplace-mediation":          '<path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" stroke="currentColor" stroke-width="1.6" fill="none"/>',
+    "estate-dispute-mediation":     '<path d="M4 9h16M4 9l2-4h12l2 4M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>',
+    "accredited-family-law-mediators":'<path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>',
+    "divorce-counselling":          '<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+    "online-mediation-australia":   '<path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+}
+DEFAULT_ICON = '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/>'
+
+def make_card(slug, name, desc):
+    icon = ICONS.get(slug, DEFAULT_ICON)
+    return f"""<article class="card"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">{icon}</svg></div><h3>{esc(name)}</h3><p>{esc(desc)}</p><a class="more" href="/{slug}/">{esc(name)} <span class="arr">→</span></a></article>"""
+
 group_html = ""
 for group_name, slugs in SERVICE_GROUPS:
-    cards = ""
-    for s in slugs:
-        if s in svc_lookup:
-            name, desc = svc_lookup[s]
-            cards += f"""<a href="/{s}/" class="hwh-card">
-  <strong>{esc(name)}</strong>
-  <span>{esc(desc)}</span>
-  <span class="hwh-arr">→</span>
-</a>"""
+    cards = "".join(make_card(s, *svc_lookup[s]) for s in slugs if s in svc_lookup)
     group_html += f"""<div class="hwh-group">
   <h2 class="hwh-group-title">{esc(group_name)}</h2>
-  <div class="hwh-grid">{cards}</div>
+  <div class="cards">{cards}</div>
 </div>"""
 
-# Extra services block
-extra_cards = ""
-for s, name, desc in extra_services:
-    extra_cards += f"""<a href="/{s}/" class="hwh-card">
-  <strong>{esc(name)}</strong>
-  <span>{esc(desc)}</span>
-  <span class="hwh-arr">→</span>
-</a>"""
+extra_cards = "".join(make_card(s, name, desc) for s, name, desc in extra_services)
 group_html += f"""<div class="hwh-group">
   <h2 class="hwh-group-title">Supporting services</h2>
-  <div class="hwh-grid">{extra_cards}</div>
+  <div class="cards">{extra_cards}</div>
 </div>"""
 
 hwh_styles = """<style>
 .hwh-intro{max-width:680px;margin:0 auto 48px;text-align:center}
-.hwh-group{margin:0 0 48px}
-.hwh-group-title{font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--col-muted,#666);margin:0 0 16px;padding-bottom:10px;border-bottom:1px solid var(--col-border,#e5e7eb)}
-.hwh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-.hwh-card{display:flex;flex-direction:column;gap:4px;padding:20px 20px 16px;border:1px solid var(--col-border,#e5e7eb);border-radius:8px;text-decoration:none;color:inherit;background:var(--col-surface,#fff);transition:box-shadow .15s,border-color .15s}
-.hwh-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);border-color:var(--col-primary,#1a6b3a)}
-.hwh-card strong{font-size:1rem;font-weight:600;color:var(--col-heading,#111)}
-.hwh-card span{font-size:.875rem;color:var(--col-muted,#555);line-height:1.4}
-.hwh-card .hwh-arr{margin-top:8px;font-size:.9rem;color:var(--col-primary,#1a6b3a);font-weight:600}
-.hwh-why{background:var(--col-surface2,#f8f9fa);border-radius:10px;padding:36px 40px;margin:48px 0}
+.hwh-group{margin:0 0 52px}
+.hwh-group-title{font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.hwh-why{background:var(--sage-light);border-radius:var(--r);padding:36px 40px;margin:48px 0}
 .hwh-why h2{margin-top:0}
 .hwh-why ul{margin:0;padding-left:1.3em}
 .hwh-why li{margin-bottom:10px}
