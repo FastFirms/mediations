@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
                        BOOK_URL, PHONE, PHONE_HREF, OFFICES, DOMAIN,
-                       SERVICES, SERVICE_GROUPS)
+                       SERVICES, SERVICE_GROUPS, contact_form_fields)
 
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -254,47 +254,9 @@ doc += f"""<main id="main">
       <h1 style="font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.15;margin-bottom:16px">Let's talk about <em>resolving it</em>.</h1>
       <p style="font-size:1.05rem;color:var(--ink-soft);max-width:54ch;margin-bottom:36px">Tell us about your dispute and we'll give you an honest view of whether mediation can help — and how it fits with any legal advice you already have.</p>
 
-      <form id="contact-form" novalidate style="display:flex;flex-direction:column;gap:18px">
-        <input type="hidden" name="_subject" value="New contact from Mediations Australia website">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-          <div>
-            <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">First name</label>
-            <input class="contact-field" type="text" name="first_name" placeholder="Your first name" required>
-          </div>
-          <div>
-            <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Last name</label>
-            <input class="contact-field" type="text" name="last_name" placeholder="Your last name" required>
-          </div>
-        </div>
-        <div>
-          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Email address</label>
-          <input class="contact-field" type="email" name="_replyto" placeholder="you@example.com" required>
-        </div>
-        <div>
-          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Phone number</label>
-          <input class="contact-field" type="tel" name="phone" placeholder="0400 000 000">
-        </div>
-        <div>
-          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Type of dispute</label>
-          <select class="contact-field" name="dispute_type" style="appearance:none">
-            <option value="">Select a dispute type…</option>
-            <option>Family law / separation</option>
-            <option>Property settlement</option>
-            <option>Parenting arrangements</option>
-            <option>Estate / inheritance</option>
-            <option>Workplace dispute</option>
-            <option>Commercial / business</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div>
-          <label style="display:block;font-size:.87rem;font-weight:600;margin-bottom:6px">Tell us briefly what's happening</label>
-          <textarea class="contact-field" name="message" rows="4" placeholder="A short description — the more you share, the better we can help." style="resize:vertical"></textarea>
-        </div>
-        <div>
-          <button type="submit" class="btn btn-primary" style="font-size:1.05rem;padding:16px 36px">Book a Free Consultation <span class="arr">→</span></button>
-          <p style="margin-top:10px;font-size:.85rem;color:var(--ink-soft)">No obligation. We'll respond within one business day.</p>
-        </div>
+      <form id="contact-form" novalidate style="display:flex;flex-direction:column;gap:16px">
+        """ + contact_form_fields(prefix="c", subject="New contact — Mediations Australia") + """
+        <p style="font-size:.85rem;color:var(--ink-soft);margin:0">No obligation. We'll respond within one business day.</p>
       </form>
 
       <div style="display:flex;gap:28px;flex-wrap:wrap;margin-top:36px;padding-top:32px;border-top:1px solid var(--line);align-items:center">

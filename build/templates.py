@@ -382,4 +382,54 @@ def cta_band(h, p, note=True):
   </div>
 </section>"""
 
+MEDIATION_TYPES = [
+    ("Property Settlement",      "Property Settlement"),
+    ("Parenting",                "Parenting"),
+    ("Property &amp; Parenting", "Property & Parenting"),
+    ("Other Family Law",         "Other Family Law"),
+    ("Workplace",                "Workplace"),
+    ("Estate",                   "Estate"),
+    ("Something else",           "Something else"),
+]
+
+# Shared canonical form fields used across homepage, contact, and booking pages.
+# field_style: inline style string applied to all inputs/select/textarea.
+# prefix: short unique prefix for label `for`/input `id` pairs (avoid id clashes).
+# subject: value for hidden _subject field.
+# btn_label: submit button text.
+def contact_form_fields(prefix="f", field_style="", subject="Consultation request — Mediations Australia", btn_label='Book a Free Consultation <span class="arr">→</span>'):
+    fs = f' style="{field_style}"' if field_style else ''
+    opts = "".join(f'<option value="{v}">{v}</option>' for v, _ in MEDIATION_TYPES)
+    return f"""
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
+        <input type="hidden" name="_subject" value="{esc(subject)}">
+        <div class="form-row">
+          <label for="{prefix}-name">Name</label>
+          <input id="{prefix}-name" name="name" type="text" required autocomplete="name" placeholder="Your full name"{fs}>
+        </div>
+        <div class="form-row">
+          <label for="{prefix}-phone">Phone</label>
+          <input id="{prefix}-phone" name="phone" type="tel" required autocomplete="tel" placeholder="0400 000 000"{fs}>
+        </div>
+        <div class="form-row">
+          <label for="{prefix}-email">Email</label>
+          <input id="{prefix}-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"{fs}>
+        </div>
+        <div class="form-row">
+          <label for="{prefix}-matter">Type of Mediation</label>
+          <select id="{prefix}-matter" name="matter" required{fs}>
+            <option value="" disabled selected>Select…</option>
+            {opts}
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="{prefix}-location">Your Location</label>
+          <input id="{prefix}-location" name="location" type="text" placeholder="e.g. Sydney, Melbourne, or Online"{fs}>
+        </div>
+        <div class="form-row">
+          <label for="{prefix}-message">Brief Explanation</label>
+          <textarea id="{prefix}-message" name="message" rows="4" placeholder="A few sentences about your situation…"{fs}></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:15px 20px">{btn_label}</button>"""
+
 print("templates module ready")

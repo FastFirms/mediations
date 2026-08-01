@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, service_schema,
-                       img, BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
+                       img, BOOK_URL, PHONE, PHONE_HREF, DOMAIN, contact_form_fields)
 
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -78,39 +78,8 @@ doc += f"""<main id="main">
     <div class="d3" style="background:var(--cream);border:1px solid var(--sand-deep);border-radius:22px;padding:clamp(24px,3vw,36px);box-shadow:0 4px 32px rgba(35,41,31,.07)">
       <p style="font-family:var(--serif);font-size:1.35rem;font-weight:400;color:var(--ink);margin:0 0 4px">Book a free consultation</p>
       <p style="font-size:.9rem;color:var(--ink-soft);margin:0 0 22px">We'll respond within one business day.</p>
-      <form action="https://formspree.io/f/xwvgjnve" method="POST" novalidate style="display:flex;flex-direction:column;gap:14px">
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
-        <input type="hidden" name="_subject" value="Homepage consultation request — Mediations Australia">
-        <div>
-          <label for="hname" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Name <span aria-hidden="true" style="color:var(--terra)">*</span></label>
-          <input id="hname" name="name" type="text" required autocomplete="name" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
-        </div>
-        <div>
-          <label for="hphone" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Phone <span aria-hidden="true" style="color:var(--terra)">*</span></label>
-          <input id="hphone" name="phone" type="tel" required autocomplete="tel" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
-        </div>
-        <div>
-          <label for="hemail" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Email <span aria-hidden="true" style="color:var(--terra)">*</span></label>
-          <input id="hemail" name="email" type="email" required autocomplete="email" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
-        </div>
-        <div>
-          <label for="htype" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Type of mediation <span aria-hidden="true" style="color:var(--terra)">*</span></label>
-          <select id="htype" name="matter" required style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
-            <option value="" disabled selected>Select…</option>
-            <option>Family / divorce</option>
-            <option>Property settlement</option>
-            <option>Parenting &amp; children</option>
-            <option>Workplace</option>
-            <option>Estate &amp; inheritance</option>
-            <option>Commercial / business</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div>
-          <label for="hmsg" style="display:block;font-weight:600;font-size:.88rem;margin-bottom:5px">Brief explanation</label>
-          <textarea id="hmsg" name="message" rows="3" placeholder="A few sentences about your situation…" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);resize:vertical;box-sizing:border-box"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:4px">Send request <span class="arr">→</span></button>
+      <form id="home-form" action="https://formspree.io/f/xwvgjnve" method="POST" novalidate style="display:flex;flex-direction:column;gap:14px">
+        """ + contact_form_fields(prefix="h", field_style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box", subject="Homepage consultation request — Mediations Australia", btn_label='Send request <span class="arr">→</span>') + """
         <p style="font-size:.8rem;color:var(--ink-soft);margin:0;text-align:center">Your details are kept private and confidential.</p>
       </form>
     </div>

@@ -150,40 +150,16 @@
 </div></section>
 <section class="sec" style="padding-top:20px"><div class="wrap" style="max-width:920px">
 <div class="reveal" style="display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:start">
-<form id="bookform" action="https://formspree.io/f/xwvgjnve" method="POST" novalidate style="background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:36px;display:flex;flex-direction:column;gap:18px">
-  <!-- Spam honeypot: hidden from humans, bots fill it -->
+<form id="bookform" action="https://formspree.io/f/xwvgjnve" method="POST" novalidate style="background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:36px;display:flex;flex-direction:column;gap:16px">
   <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
-  <!-- Email subject sent to your inbox -->
   <input type="hidden" name="_subject" value="New consultation request — Mediations Australia">
-  <div>
-    <label for="name" style="display:block;font-weight:600;margin-bottom:6px;font-size:.95rem">Your name <span aria-hidden="true" style="color:var(--terra)">*</span></label>
-    <input id="name" name="name" type="text" required autocomplete="name" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand)">
-  </div>
-  <div style="display:flex;gap:14px;flex-wrap:wrap">
-    <div style="flex:1;min-width:180px">
-      <label for="email" style="display:block;font-weight:600;margin-bottom:6px;font-size:.95rem">Email <span aria-hidden="true" style="color:var(--terra)">*</span></label>
-      <input id="email" name="email" type="email" required autocomplete="email" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand)">
-    </div>
-    <div style="flex:1;min-width:180px">
-      <label for="phone" style="display:block;font-weight:600;margin-bottom:6px;font-size:.95rem">Phone <span aria-hidden="true" style="color:var(--terra)">*</span></label>
-      <input id="phone" name="phone" type="tel" required autocomplete="tel" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand)">
-    </div>
-  </div>
-  <div>
-    <label for="matter" style="display:block;font-weight:600;margin-bottom:6px;font-size:.95rem">What's your matter about?</label>
-    <select id="matter" name="matter" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand)">
-      <option value="">Please choose…</option><option value="Family Law Mediation">Family Law Mediation</option><option value="Property Settlement">Property Settlement</option><option value="Parenting Plans">Parenting Plans</option><option value="Section 60I Certificates">Section 60I Certificates</option><option value="Financial Agreements">Financial Agreements</option><option value="Spousal Maintenance">Spousal Maintenance</option><option value="Child Support">Child Support</option><option value="De Facto Disputes">De Facto Disputes</option><option value="Grandparents&#x27; Rights">Grandparents&#x27; Rights</option><option value="Consent Orders">Consent Orders</option><option value="Online Divorce">Online Divorce</option><option value="Workplace Mediation">Workplace Mediation</option><option value="Estate dispute">Estate dispute</option><option value="Commercial dispute">Commercial dispute</option><option value="Other / not sure">Other / not sure</option>
-    </select>
-  </div>
-  <div>
-    <label for="location" style="display:block;font-weight:600;margin-bottom:6px;font-size:.95rem">Your location</label>
-    <input id="location" name="location" type="text" placeholder="e.g. Melbourne, or 'online'" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand)">
-  </div>
-  <div>
-    <label for="message" style="display:block;font-weight:600;margin-bottom:6px;font-size:.95rem">Briefly, how can we help? <span style="font-weight:400;color:var(--ink-soft)">(optional)</span></label>
-    <textarea id="message" name="message" rows="4" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand);resize:vertical"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary" style="justify-content:center;font-size:1.05rem">Request my consultation <span class="arr">→</span></button>
+  <div class="form-row"><label for="b-name">Name</label><input id="b-name" name="name" type="text" required autocomplete="name" placeholder="Your full name" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand)"></div>
+  <div class="form-row"><label for="b-phone">Phone</label><input id="b-phone" name="phone" type="tel" required autocomplete="tel" placeholder="0400 000 000" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand)"></div>
+  <div class="form-row"><label for="b-email">Email</label><input id="b-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand)"></div>
+  <div class="form-row"><label for="b-matter">Type of Mediation</label><select id="b-matter" name="matter" required style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand)"><option value="" disabled selected>Select…</option><option value="Property Settlement">Property Settlement</option><option value="Parenting">Parenting</option><option value="Property &amp; Parenting">Property &amp; Parenting</option><option value="Other Family Law">Other Family Law</option><option value="Workplace">Workplace</option><option value="Estate">Estate</option><option value="Something else">Something else</option></select></div>
+  <div class="form-row"><label for="b-location">Your Location</label><input id="b-location" name="location" type="text" placeholder="e.g. Sydney, Melbourne, or Online" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand)"></div>
+  <div class="form-row"><label for="b-message">Brief Explanation</label><textarea id="b-message" name="message" rows="4" placeholder="A few sentences about your situation…" style="width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:1rem;background:var(--sand);resize:vertical"></textarea></div>
+  <button type="submit" class="btn btn-primary" style="justify-content:center;font-size:1.05rem;padding:15px 20px">Book a Free Consultation <span class="arr">→</span></button>
   <p id="formnote" role="status" aria-live="polite" style="font-size:.88rem;color:var(--ink-soft);margin:0">We'll respond within one business day. Your details are kept private and confidential.</p>
 </form>
 <aside>
