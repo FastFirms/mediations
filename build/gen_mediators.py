@@ -261,7 +261,7 @@ d += f"""<main id="main">
         litigation.</p>
 
         <a href="{BOOK_URL}" class="btn btn-primary" style="margin-top:8px;font-size:1rem;padding:15px 32px">
-          Book a consultation with Dan <span style="margin-left:6px">&#8594;</span>
+          Book a Consultation <span style="margin-left:6px">&#8594;</span>
         </a>
       </div>
 
@@ -410,7 +410,7 @@ d += f"""<main id="main">
         resolutions that are durable because they reflect what the parties actually need.</p>
 
         <a href="{BOOK_URL}" class="btn btn-primary" style="margin-top:8px;font-size:1rem;padding:15px 32px">
-          Book a consultation with Farley <span style="margin-left:6px">&#8594;</span>
+          Book a Consultation <span style="margin-left:6px">&#8594;</span>
         </a>
       </div>
 
@@ -580,7 +580,7 @@ d += f"""<main id="main">
         genuinely compassionate support.</p>
 
         <a href="{BOOK_URL}" class="btn btn-primary" style="margin-top:8px;font-size:1rem;padding:15px 32px">
-          Book a consultation with Prav <span style="margin-left:6px">&#8594;</span>
+          Book a Consultation <span style="margin-left:6px">&#8594;</span>
         </a>
       </div>
 
