@@ -102,7 +102,7 @@ header.nav.scrolled{border-color:var(--line)}
 .phero-blob{position:absolute;width:460px;height:460px;border-radius:50%;background:var(--sage-light);filter:blur(70px);opacity:.45;top:-160px;right:-120px;z-index:0}
 .phero .wrap{position:relative;z-index:2}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sage-deep);background:var(--cream);padding:9px 18px;border-radius:100px;border:1px solid var(--line);margin-bottom:24px}
-.eyebrow .pulse{width:24px;height:24px;border-radius:50%;background:url('/assets/images/dan-toombs.png') center/cover;border:1.5px solid var(--line);flex-shrink:0}
+.eyebrow .pulse{width:24px;height:24px;border-radius:50%;background:url('/assets/images/Dan-Bio.png') center/cover;border:1.5px solid var(--line);flex-shrink:0}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(90,113,89,.5)}70%{box-shadow:0 0 0 12px rgba(90,113,89,0)}100%{box-shadow:0 0 0 0 rgba(90,113,89,0)}}
 .phero h1{font-size:clamp(2.3rem,5.2vw,4rem);max-width:18ch;margin-bottom:28px;line-height:1.15}
 .phero h1 em{font-style:italic;color:var(--sage-deep)}
