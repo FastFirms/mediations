@@ -190,7 +190,7 @@ h2.sec-title{font-size:clamp(2.4rem,4.8vw,3.8rem);line-height:1.18}
    emit them; this hides the inline ones still present on service/resource/core
    pages so the green panel is gone everywhere. */
 .callout{display:none}
-.callout--keep{display:block;background:var(--sage-deep);color:var(--cream);border-radius:22px;padding:34px 38px;margin:38px 0}
+.callout--keep{display:block;background:var(--sage-light);color:var(--ink);border-radius:22px;padding:34px 38px;margin:38px 0}
 .callout h3{color:var(--cream);font-size:1.35rem;margin-bottom:10px}
 .callout p{color:rgba(251,248,242,.85);margin-bottom:0;max-width:60ch}
 .callout a{color:#e6c9b4;text-decoration:underline}
