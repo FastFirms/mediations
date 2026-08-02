@@ -57,7 +57,7 @@ POST_CSS = """
 /* Buttons inside article body must keep white label, not the green underlined link style */
 .post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
 .post-cta{margin:36px 0}
-.post-cta-inner{background:linear-gradient(135deg,var(--sage-deep),var(--sage));color:var(--cream);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.post-cta-inner{background:var(--sage-light);color:var(--ink);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--cream);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}
 .post-cta-inner .btn{flex-shrink:0}
 .post-toc{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:30px}
