@@ -8,6 +8,7 @@ OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.
 
 # Cornerstone posts: (slug, category, title, blurb)
 POSTS = [
+ ("victorian-right-to-work-from-home","Workplace","Victoria's Right to Work From Home","What the new Victorian law means for employers and employees — and why mediation resolves disputes faster than a tribunal."),
  ("online-mediation-australia","Process & preparation","Online Mediation in Australia: How It Works","How online mediation works, when to use it, and how to choose an accredited mediator."),
  ("cost-of-divorce-in-australia","Costs & fees","How Much Does Divorce Cost in Australia? (2026)","A clear breakdown of court fees, lawyer costs, and how mediation saves tens of thousands."),
  ("mediation-with-a-narcissist","High-conflict","Mediation With a Narcissist: Does It Work?","Yes — often better than court. Proven strategies for high-conflict and controlling exes."),
