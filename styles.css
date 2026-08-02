@@ -63,7 +63,7 @@ header.nav.scrolled{border-color:var(--line)}
 .drop a:not(.btn):hover{background:var(--sage-light);color:var(--ink)}
 .drop a:not(.btn) b{font-weight:600;color:var(--ink);font-size:.95rem}
 /* ---- Services megamenu (full-width, anchored to nav) ---- */
-.mega{position:fixed;top:74px;left:50%;transform:translateX(-50%) translateY(8px);width:min(1160px,calc(100vw - 80px));grid-template-columns:repeat(3,1fr) 260px;gap:0;padding:32px 16px 28px 16px;align-items:start}
+.mega{position:fixed;top:74px;left:50%;transform:translateX(-50%) translateY(8px);width:min(1160px,calc(100vw - 80px));grid-template-columns:repeat(3,1fr) 300px;gap:0;padding:32px 16px 28px 16px;align-items:start}
 .has-drop:hover .mega,.has-drop:focus-within .mega,.has-drop.open .mega{transform:translateX(-50%) translateY(0)}
 .mega-col{display:flex;flex-direction:column;gap:0;padding:0 16px}
 .mega-col+.mega-col{border-left:1px solid var(--line)}
@@ -72,7 +72,7 @@ header.nav.scrolled{border-color:var(--line)}
 .mega a:not(.btn) b{font-size:.97rem;font-weight:600}
 .mega a:not(.btn) span{font-size:.78rem;color:var(--ink-soft);line-height:1.35}
 /* resources mega (2 content cols + card) */
-.mega-resources{grid-template-columns:1fr 1fr 220px}
+.mega-resources{grid-template-columns:1fr 1fr 260px}
 .mega-see-all{font-family:var(--sans);font-size:.82rem!important;font-weight:600;color:var(--sage-deep)!important;padding:10px 14px!important;gap:0!important;display:block!important}
 .mega-see-all:hover{background:transparent!important;text-decoration:underline}
 /* promo card */
