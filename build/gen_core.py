@@ -273,7 +273,7 @@ doc += f"""<main id="main">
 
     <div class="contact-sidebar" style="position:sticky;top:100px">
       <div style="background:var(--sage-deep);border-radius:20px;overflow:hidden;color:var(--cream)">
-        <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder, Mediations Australia"
+        <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia"
           style="width:100%;height:260px;object-fit:cover;object-position:center 15%;display:block">
         <div style="padding:28px">
           <p style="font-family:var(--serif);font-size:1.25rem;margin-bottom:4px">Dan Toombs</p>
@@ -360,7 +360,7 @@ doc += f"""<main id="main">
       </div>
 
       <div style="background:var(--sage-deep);border-radius:24px;overflow:hidden;color:var(--cream)">
-        <img src="/assets/images/DanT.png" alt="Dan Toombs — Founder, Mediations Australia"
+        <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia"
           style="width:100%;height:280px;object-fit:cover;object-position:center 15%;display:block">
         <div style="padding:28px 30px">
           <p style="font-family:var(--serif);font-size:1.2rem;margin-bottom:4px">Dan Toombs</p>

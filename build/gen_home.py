@@ -197,7 +197,7 @@ doc += f"""<main id="main">
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px">
 
       <a href="/our-team/dan-toombs/" style="background:var(--sand);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:box-shadow .2s" onmouseover="this.style.boxShadow='0 8px 32px rgba(0,0,0,.12)'" onmouseout="this.style.boxShadow=''">
-        <div style="height:240px;background:url(/assets/images/dan-team.png) center top/cover no-repeat"></div>
+        <div style="height:240px;background:url(/assets/images/Dan-Bio.png) center top/cover no-repeat"></div>
         <div style="padding:22px">
           <p style="font-family:var(--serif);font-size:1.25rem;margin-bottom:3px">Dan Toombs</p>
           <p style="color:var(--sage-deep);font-weight:600;font-size:.9rem;margin-bottom:10px">Founder, Lawyer &amp; Mediator</p>

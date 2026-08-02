@@ -68,7 +68,7 @@ d += f"""<main id="main">
     <div class="team-grid">
 
       <a href="/our-team/dan-toombs/" class="team-card">
-        <div class="team-card-photo" role="img" aria-label="Dan Toombs — Founder, Lawyer and Mediator" style="background-image:url('/assets/images/dan-team.png');background-size:cover;background-position:center top"></div>
+        <div class="team-card-photo" role="img" aria-label="Dan Toombs — Founder, Lawyer and Mediator" style="background-image:url('/assets/images/Dan-Bio.png');background-size:cover;background-position:center top"></div>
         <div class="team-card-body">
           <p class="team-card-name">Dan Toombs</p>
           <p class="team-card-role">Founder, Lawyer &amp; Mediator</p>
@@ -78,7 +78,7 @@ d += f"""<main id="main">
       </a>
 
       <a href="/our-team/farley-tolpen/" class="team-card">
-        <div class="team-card-photo" role="img" aria-label="Farley Tolpen — Accredited Mediator and Lawyer" style="background-image:url('/assets/images/farley-team.png');background-size:cover;background-position:center top"></div>
+        <div class="team-card-photo" role="img" aria-label="Farley Tolpen — Accredited Mediator and Lawyer" style="background-image:url('/assets/images/Farley-Bio.png');background-size:cover;background-position:center top"></div>
         <div class="team-card-body">
           <p class="team-card-name">Farley Tolpen</p>
           <p class="team-card-role">Accredited Mediator &amp; Lawyer</p>
@@ -88,7 +88,7 @@ d += f"""<main id="main">
       </a>
 
       <a href="/our-team/prav-singh-pillay/" class="team-card">
-        <div class="team-card-photo" role="img" aria-label="Prav Singh-Pillay — Lawyer and Accredited Mediator" style="background-image:url('/assets/images/prav-team.png');background-size:cover;background-position:center top"></div>
+        <div class="team-card-photo" role="img" aria-label="Prav Singh-Pillay — Lawyer and Accredited Mediator" style="background-image:url('/assets/images/Prav-Bio.png');background-size:cover;background-position:center top"></div>
         <div class="team-card-body">
           <p class="team-card-name">Prav Singh-Pillay</p>
           <p class="team-card-role">Lawyer &amp; Accredited Mediator</p>
@@ -122,7 +122,7 @@ dan_schema = [
         "name": "Dan Toombs",
         "jobTitle": "Founder & Mediator",
         "url": f"{DOMAIN}/our-team/dan-toombs/",
-        "image": f"{DOMAIN}/assets/images/DanT.png",
+        "image": f"{DOMAIN}/assets/images/Dan-Bio.png",
         "worksFor": {"@id": f"{DOMAIN}/#organization"},
         "hasCredential": [
             {"@type": "EducationalOccupationalCredential", "name": "AMDRAS Accredited Mediator",
@@ -166,7 +166,7 @@ d += f"""<main id="main">
     <div class="mediator-profile">
 
       <aside class="mediator-photo">
-        <img src="/assets/images/DanT.png"
+        <img src="/assets/images/Dan-Bio.png"
              alt="Dan Toombs — Founder and Mediator, Mediations Australia"
              width="260" height="320" loading="eager">
         <table class="cred-table" aria-label="Dan Toombs credentials">
@@ -300,7 +300,7 @@ farley_schema = [
         "name": "Farley Tolpen",
         "jobTitle": "Accredited Mediator & Lawyer",
         "url": f"{DOMAIN}/our-team/farley-tolpen/",
-        "image": f"{DOMAIN}/assets/images/FarleyT.png",
+        "image": f"{DOMAIN}/assets/images/Farley-Bio.png",
         "worksFor": {"@id": f"{DOMAIN}/#organization"},
         "hasCredential": [
             {"@type": "EducationalOccupationalCredential", "name": "NMAS Accredited Mediator",
@@ -342,7 +342,7 @@ d += f"""<main id="main">
     <div class="mediator-profile">
 
       <aside class="mediator-photo">
-        <img src="/assets/images/FarleyT.png"
+        <img src="/assets/images/Farley-Bio.png"
              alt="Farley Tolpen — Accredited Mediator and Lawyer, Mediations Australia"
              width="260" height="320" loading="eager">
         <table class="cred-table" aria-label="Farley Tolpen credentials">
@@ -449,7 +449,7 @@ prav_schema = [
         "name": "Prav Singh-Pillay",
         "jobTitle": "Lawyer, Mediator & Family Dispute Resolution Practitioner",
         "url": f"{DOMAIN}/our-team/prav-singh-pillay/",
-        "image": f"{DOMAIN}/assets/images/Prav.png",
+        "image": f"{DOMAIN}/assets/images/Prav-Bio.png",
         "worksFor": {"@id": f"{DOMAIN}/#organization"},
         "hasCredential": [
             {"@type": "EducationalOccupationalCredential", "name": "Bachelor of Laws",
@@ -501,7 +501,7 @@ d += f"""<main id="main">
     <div class="mediator-profile">
 
       <aside class="mediator-photo">
-        <img src="/assets/images/Prav.png"
+        <img src="/assets/images/Prav-Bio.png"
              alt="Prav Singh-Pillay — Lawyer, Mediator and FDRP, Mediations Australia"
              width="260" height="320" loading="eager">
         <table class="cred-table" aria-label="Prav Singh-Pillay credentials">
