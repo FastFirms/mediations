@@ -338,4 +338,5 @@ footer ul a:hover{color:var(--cream)}
   .stats{gap:24px}
 }
 @media(max-width:900px){.hero-consult-grid{grid-template-columns:1fr!important}.hero-consult-grid>div:last-child{max-width:540px}}
+@media(max-width:600px){.wrap,.wrap-narrow{padding-left:20px;padding-right:20px}article.body{padding-left:20px;padding-right:20px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
