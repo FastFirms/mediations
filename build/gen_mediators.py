@@ -82,7 +82,7 @@ d += f"""<main id="main">
         <div class="team-card-body">
           <p class="team-card-name">Farley Tolpen</p>
           <p class="team-card-role">Accredited Mediator &amp; Lawyer</p>
-          <p class="team-card-bio">Dual-qualified in Australia and the United States with over 40 years of mediation, arbitration and litigation experience. More than 4,500 matters mediated with a 90% resolution rate.</p>
+          <p class="team-card-bio">40+ years of mediation, arbitration and litigation experience across Australia and the United States. Nationally Accredited Mediator (AMDRAS), FDRP, and Family Law Arbitrator. Approximate 4,500+ matters with around a 90% resolution rate.</p>
           <span class="team-card-link">View profile →</span>
         </div>
       </a>
@@ -318,8 +318,8 @@ farley_schema = [
     }
 ]
 
-d = head("Farley Tolpen — Accredited Mediator &amp; Lawyer | Mediations Australia",
-         "Meet Farley Tolpen — dual-qualified mediator and lawyer in Australia and the United States, with over 40 years experience and more than 4,500 matters mediated.",
+d = head("Farley Tolpen — Accredited Mediator, FDRP &amp; Lawyer | Mediations Australia",
+         "Meet Farley Tolpen — Nationally Accredited Mediator (AMDRAS), certified FDRP, and Family Law Arbitrator with 40+ years experience and approximately 4,500+ matters mediated.",
          "our-team/farley-tolpen", extra_schema=farley_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
 d += nav()
@@ -331,7 +331,7 @@ d += f"""<main id="main">
     <div style="max-width:60ch">
       <p class="sec-tag">Meet the team</p>
       <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
-        Farley Tolpen — <em>Accredited Mediator &amp; Lawyer</em>
+        Farley Tolpen — <em>Nationally Accredited Mediator (AMDRAS), Certified FDRP &amp; Lawyer</em>
       </h1>
     </div>
   </div>
@@ -351,7 +351,7 @@ d += f"""<main id="main">
             <tr><td>Certification</td><td>Family Dispute Resolution Practitioner (FDRP)</td></tr>
             <tr><td>Registration</td><td>Family Law Arbitrator</td></tr>
             <tr><td>Admitted</td><td><a href="https://www.qls.com.au/" target="_blank" rel="noopener">Queensland Law Society</a></td></tr>
-            <tr><td>Admitted</td><td><a href="https://www.calbar.ca.gov/" target="_blank" rel="noopener">California State Bar</a></td></tr>
+            <tr><td>Admitted</td><td>Previous — <a href="https://www.calbar.ca.gov/" target="_blank" rel="noopener">California State Bar</a></td></tr>
             <tr><td>Experience</td><td>40+ years mediation, arbitration &amp; litigation</td></tr>
             <tr><td>Track record</td><td>4,500+ matters · 90% resolution rate</td></tr>
           </tbody>
@@ -359,55 +359,67 @@ d += f"""<main id="main">
       </aside>
 
       <div class="mediator-content">
-        <h2>Farley Tolpen — Accredited Mediator &amp; Lawyer</h2>
-        <span class="tag-line">40 years. Two continents. 4,500 matters resolved.</span>
+        <h2>Farley Tolpen — Nationally Accredited Mediator (AMDRAS), FDRP, Arbitrator &amp; Lawyer</h2>
+        <span class="tag-line">40 years. 4,500 matters mediated. High resolution rate.</span>
 
         <p>Farley Tolpen brings a depth of experience that is genuinely rare: over four decades of mediating,
-        arbitrating and litigating across Australia and the United States, with more than 4,500 matters resolved
-        and a 90% settlement rate. Dual-qualified in both jurisdictions, Farley is an accredited National Mediator,
-        a certified Family Dispute Resolution Practitioner, and a registered Family Law Arbitrator — giving clients
-        access to the full range of dispute resolution pathways, all under one roof.</p>
+        arbitrating and litigating across Australia and the United States, with more than 4,500 matters mediated
+        and around a 90% resolution rate. Farley is a Nationally Accredited Mediator, a certified Family Dispute
+        Resolution Practitioner, and a registered Family Law Arbitrator — giving clients access to the full range
+        of dispute resolution pathways, all under one roof. Farley is widely recognised for being a highly
+        experienced professional who is committed to justice and access to fair processes and the best outcomes
+        for clients.</p>
+
+        <h3>A Professional Dedicated to Justice and Fairness</h3>
+        <p>Over 40 years Farley has brought to his practice a strong commitment to serving vulnerable populations
+        and clients. Farley regularly works with matters involving domestic and family violence whereby he creates
+        access to mediation that prioritises the needs of his clients. At a State level in 2023, Farley was
+        recognised by Queensland Corrective Services for his six years of service as an Official Visitor assisting
+        prisoners to manage and resolve their complaints. Prior to this, Farley served as a Lawyer and Board Member
+        for a Queensland Community Legal Centre and as a Board Member of community-based organisations for
+        the homeless.</p>
 
         <h3>Four Decades of Frontline Experience</h3>
         <p>Farley has spent his career working at the sharp end of disputes — in courtrooms, arbitration chambers,
         and mediation rooms across two legal systems. That hands-on litigation background means he understands
-        exactly what is at stake if a matter proceeds: the costs, the timelines, the emotional toll, and the
-        unpredictability of a judge's decision. It is that knowledge — not just of mediation technique, but of
-        what lies on the other side of the table if mediation fails — that shapes how Farley approaches every
-        session.</p>
+        exactly what is at stake if a matter proceeds: the costs, the timelines, the risks and the emotional toll
+        on each of the parties. It is that knowledge — not just of mediation technique, but of what lies on the
+        other side of the table if mediation fails — that shapes how Farley approaches every session.</p>
 
-        <h3>Dual-Qualified: Australia and the United States</h3>
-        <p>Farley is a member of both the
-        <a href="https://www.qls.com.au/" target="_blank" rel="noopener">Queensland Law Society</a> and the
+        <h3>Australia and the United States</h3>
+        <p>Farley is a member of the
+        <a href="https://www.qls.com.au/" target="_blank" rel="noopener">Queensland Law Society</a> and was
+        previously a member of the
         <a href="https://www.calbar.ca.gov/" target="_blank" rel="noopener">California State Bar</a> — a combination
         that gives him a uniquely broad perspective on how legal systems, commercial norms, and dispute resolution
-        cultures differ. For clients with cross-border interests, or matters that touch on US law, that
-        dual qualification is a practical advantage that few mediators in Australia can offer.</p>
+        cultures differ. For clients with cross-border interests, Farley's experience is a practical advantage
+        that few mediators in Australia can offer.</p>
 
         <h3>Specialist Areas</h3>
-        <p>Farley's practice spans the full range of disputes that bring people to mediation:</p>
+        <p>Farley's practice spans the full range of disputes that bring people to mediation including but not
+        limited to the following:</p>
         <ul>
-          <li><a href="/family-law-mediation/">Family law</a> — separations, parenting arrangements, and the full complexity of relationship breakdown</li>
-          <li><a href="/estate-dispute-mediation/">Estate disputes</a> — will contests, inheritance disagreements, and executor conflicts</li>
-          <li><a href="/workplace-mediation/">Workplace mediation</a> — employment disputes, team conflicts, and organisational breakdowns</li>
-          <li>Commercial and business law — partnership disputes, contractor disagreements, and business exits</li>
-          <li>Real estate and construction — property transactions, development disputes, and building contract conflicts</li>
+          <li><a href="/family-law-mediation/">Family law</a> — separations, parenting arrangements, property division and the full complexity of relationship breakdown</li>
+          <li><a href="/estate-dispute-mediation/">Estate disputes</a> — will contests, inheritance disagreements, family maintenance provisions, estate claims, and executor conflicts</li>
+          <li><a href="/workplace-mediation/">Workplace mediation</a> — employment disputes including allegations of bullying, sexual harassment and racial discrimination, team conflicts and organisational breakdowns</li>
+          <li>Commercial and business law — partnership, director and shareholder disputes, contractor disagreements, contract disputes, insurance claims, franchise disputes and business exits</li>
+          <li>Real estate and construction — property transactions, commercial and retail shop lease disputes, easement and boundary disputes, development disputes and building contract conflicts</li>
         </ul>
 
         <h3>What 4,500 Matters Teaches You</h3>
-        <p>The 90% resolution rate across more than 4,500 matters is not just a statistic — it reflects a
-        disciplined understanding of why disputes persist. Farley recognises that the real barriers to resolution
-        are rarely the legal issues on paper. They are the non-financial motivations, the strategic objectives
-        of the parties and their lawyers, the sunk cost of the litigation process, and the human dynamics that
-        make people dig in rather than settle. His job is to understand those dynamics clearly and create the
-        conditions in which both sides can move.</p>
+        <p>The resolution rate of around 90% across more than 4,500 matters is not just a statistic — it reflects
+        a disciplined understanding of why disputes persist. Farley recognises that the real barriers to resolution
+        are rarely the legal issues on paper. They are the non-financial motivations, the strategic objectives of
+        the parties and their lawyers, the sunk cost of the litigation process, and the human dynamics that make
+        people dig in rather than settle. His job is to understand those dynamics clearly and create the conditions
+        in which both sides can move forward.</p>
 
         <h3>A Practical, Outcomes-Focused Approach</h3>
-        <p>Farley does not approach mediation as a procedural exercise. He brings the same rigour and
-        preparation to a mediation that he would bring to a trial — understanding the strengths and weaknesses
-        of each party's position, the likely range of outcomes at court, and the interests that sit beneath
-        each side's stated position. The result is a process that feels substantive, not perfunctory, and
-        resolutions that are durable because they reflect what the parties actually need.</p>
+        <p>Farley does not approach mediation as a procedural exercise. He brings the same rigour and preparation
+        to a mediation that he would bring to a trial — understanding the strengths and weaknesses of each party's
+        position, the likely range of outcomes at court, and the interests that sit beneath each side's stated
+        position. The result is a process that feels substantive, not perfunctory, and resolutions that are durable
+        because they reflect what the parties actually need.</p>
 
         <a href="{BOOK_URL}" class="btn btn-primary" style="margin-top:8px;font-size:1rem;padding:15px 32px">
           Book a Consultation <span style="margin-left:6px">&#8594;</span>
