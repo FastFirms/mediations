@@ -59,7 +59,7 @@ d += f"""<main id="main">
 <!-- ========================================================== -->
 
 <h2>Additional memberships</h2>
-<p style="background:rgba(198,106,63,.08);border-left:3px solid var(--terra);padding:18px 22px;border-radius:8px;color:var(--ink-soft);font-size:.95rem"><strong>Note for the team:</strong> list the firm's other professional memberships here (e.g. Resolution Institute, Law Society memberships for mediator-lawyers, AIFLAM, Family Law Section of the Law Council of Australia, etc.). For each, name the body and link to its website.</p>
+<p style="background:rgba(30,96,64,.08);border-left:3px solid var(--terra);padding:18px 22px;border-radius:8px;color:var(--ink-soft);font-size:.95rem"><strong>Note for the team:</strong> list the firm's other professional memberships here (e.g. Resolution Institute, Law Society memberships for mediator-lawyers, AIFLAM, Family Law Section of the Law Council of Australia, etc.). For each, name the body and link to its website.</p>
 
 <ul>
   <li><strong>[Membership name]</strong> — [Brief description of the body and what membership signifies]. <a href="#">[Body website]</a></li>
@@ -110,7 +110,7 @@ d += f"""<main id="main">
 <!-- ========================================================== -->
 
 <h2>Listen wherever you find your podcasts</h2>
-<p style="background:rgba(198,106,63,.08);border-left:3px solid var(--terra);padding:18px 22px;border-radius:8px;color:var(--ink-soft);font-size:.95rem"><strong>Note for the team:</strong> add the real podcast URLs below (Spotify, Apple Podcasts, Google Podcasts, RSS) once confirmed. If the podcast is no longer active, delete this page rather than leave it stale.</p>
+<p style="background:rgba(30,96,64,.08);border-left:3px solid var(--terra);padding:18px 22px;border-radius:8px;color:var(--ink-soft);font-size:.95rem"><strong>Note for the team:</strong> add the real podcast URLs below (Spotify, Apple Podcasts, Google Podcasts, RSS) once confirmed. If the podcast is no longer active, delete this page rather than leave it stale.</p>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:24px">
   <a href="#" style="background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:20px;text-decoration:none;color:var(--ink);font-weight:600;text-align:center;transition:transform .3s,box-shadow .3s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
@@ -137,7 +137,7 @@ d += f"""<main id="main">
 </ul>
 
 <h2>Episodes</h2>
-<p style="background:rgba(198,106,63,.08);border-left:3px solid var(--terra);padding:18px 22px;border-radius:8px;color:var(--ink-soft);font-size:.95rem"><strong>Note for the team:</strong> add episode cards below — title, guest, date, short description, and the platform links. For SEO, also consider adding a transcript per episode (Google indexes transcripts and they help discovery).</p>
+<p style="background:rgba(30,96,64,.08);border-left:3px solid var(--terra);padding:18px 22px;border-radius:8px;color:var(--ink-soft);font-size:.95rem"><strong>Note for the team:</strong> add episode cards below — title, guest, date, short description, and the platform links. For SEO, also consider adding a transcript per episode (Google indexes transcripts and they help discovery).</p>
 
 <div style="display:flex;flex-direction:column;gap:16px;margin-top:24px">
   <article style="background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:24px">
@@ -200,7 +200,7 @@ d += f"""<main id="main">
 <!-- ========================================================== -->
 
 <h2>Books from our team</h2>
-<p style="background:rgba(198,106,63,.08);border-left:3px solid var(--terra);padding:18px 22px;border-radius:8px;color:var(--ink-soft);font-size:.95rem"><strong>Note for the team:</strong> populate the cards below with real books authored or contributed to by the firm. If the firm has no published books, consider either deleting this page (and the nav/footer links to it) or repurposing it as a "Recommended Reading" curated list.</p>
+<p style="background:rgba(30,96,64,.08);border-left:3px solid var(--terra);padding:18px 22px;border-radius:8px;color:var(--ink-soft);font-size:.95rem"><strong>Note for the team:</strong> populate the cards below with real books authored or contributed to by the firm. If the firm has no published books, consider either deleting this page (and the nav/footer links to it) or repurposing it as a "Recommended Reading" curated list.</p>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-top:30px">
   <article style="background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:24px">

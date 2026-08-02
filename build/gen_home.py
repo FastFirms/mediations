@@ -90,7 +90,7 @@ doc += f"""<main id="main">
 <section class="sec reveal" style="background:var(--ink);color:var(--cream);border-radius:38px;margin:0 16px" aria-labelledby="wedge-h">
   <div class="wrap">
     <div style="text-align:center;max-width:90ch;margin:0 auto 50px">
-      <h2 id="wedge-h" style="font-size:clamp(2rem,4vw,3.2rem);color:var(--cream);margin-bottom:16px">Two ways through a dispute.<br>One is almost always <em style="font-style:italic;color:#e0a87f">quicker, cheaper and leads to better outcomes.</em></h2>
+      <h2 id="wedge-h" style="font-size:clamp(2rem,4vw,3.2rem);color:var(--cream);margin-bottom:16px">Two ways through a dispute.<br>One is almost always <em style="font-style:italic;color:#a8ccb4">quicker, cheaper and leads to better outcomes.</em></h2>
       <p style="color:rgba(251,248,242,.72);font-size:1.1rem">Sometimes court is genuinely necessary — and a good lawyer will tell you when. But for most disputes, mediation gets you there sooner, for less, and with far less strain. Here's the honest comparison.</p>
     </div>
     <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;max-width:920px;margin:0 auto" class="compare">
@@ -175,7 +175,7 @@ doc += f"""<main id="main">
         </div>
       </div>
       <aside style="background:var(--sage-deep);color:var(--cream);border-radius:28px;padding:46px 40px;box-shadow:var(--shadow-lg)">
-        <div style="font-family:var(--serif);font-size:4.5rem;line-height:1;margin-bottom:8px">90<span style="color:#e0a87f">%</span></div>
+        <div style="font-family:var(--serif);font-size:4.5rem;line-height:1;margin-bottom:8px">90<span style="color:#a8ccb4">%</span></div>
         <p style="color:rgba(251,248,242,.82);margin-bottom:28px">of disputes we mediate are resolved — without ever reaching a courtroom.</p>
         <div style="display:flex;flex-direction:column;gap:16px;border-top:1px solid rgba(251,248,242,.18);padding-top:24px">
           <div style="display:flex;align-items:center;gap:12px">{TICK}Thousands of matters resolved</div>
