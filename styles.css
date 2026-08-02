@@ -296,7 +296,7 @@ footer .logo{color:var(--cream);margin-bottom:16px}
 footer h4{color:var(--cream);font-family:var(--sans);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:18px}
 footer ul{list-style:none;display:flex;flex-direction:column;gap:11px;font-size:.93rem}
 footer ul a:hover{color:var(--cream)}
-.foot-offices{font-size:.86rem;line-height:1.7}
+.foot-offices{font-size:.86rem;line-height:1.7;font-family:var(--sans)}
 .foot-offices strong{color:var(--cream);display:block;margin-top:12px;font-weight:600}
 .foot-bottom{display:flex;justify-content:space-between;padding-top:26px;font-size:.84rem;flex-wrap:wrap;gap:12px}
 .foot-locs{margin-top:30px;padding-top:24px;border-top:1px solid rgba(251,248,242,.12)}
