@@ -58,6 +58,7 @@ POSTS = [
  ("what-is-in-the-property-pool","Property & finances","What's in the Property Pool?","Assets, super, businesses, debts and inheritances — what counts in a property settlement."),
  ("delaying-property-settlement","Property & finances","Can My Ex Delay Settlement?","Stalling tactics, time limits, disclosure duties, and how mediation forces progress."),
  ("co-parenting-mediation","Parenting","Co-Parenting Mediation","Resolving ongoing disputes over schedules, decisions and communication — and keeping kids first."),
+ ("victorian-right-to-work-from-home","Workplace","Victoria's Right to Work From Home","What the new Victorian law means for employers and employees — and why mediation resolves disputes faster than a tribunal."),
 ]
 
 ALL_CATS = ["All"] + sorted({cat for _,cat,_,_ in POSTS})

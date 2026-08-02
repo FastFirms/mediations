@@ -19,6 +19,10 @@ AUTHORITY = {
  "frc": ("Family Relationships Online", "https://www.familyrelationships.gov.au/"),
  "amdras": ("Mediator Standards Board (AMDRAS)", "https://msb.org.au/"),
  "fair_work": ("Fair Work Commission", "https://www.fwc.gov.au/"),
+ "veohrc": ("Victorian Equal Opportunity &amp; Human Rights Commission", "https://www.humanrights.vic.gov.au/"),
+ "vcat": ("Victorian Civil and Administrative Tribunal", "https://www.vcat.vic.gov.au/"),
+ "vic_equal_opp_act": ("Equal Opportunity Act 2010 (Vic)", "https://www.legislation.vic.gov.au/in-force/acts/equal-opportunity-act-2010"),
+ "safework_mental": ("Safe Work Australia — mental health", "https://www.safeworkaustralia.gov.au/safety-topic/hazards/mental-health"),
  # Statistics & research
  "abs_divorce": ("ABS Marriages and Divorces, Australia", "https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release"),
  "aifs": ("Australian Institute of Family Studies", "https://aifs.gov.au/"),
@@ -41,6 +45,7 @@ TOPIC_SOURCES = {
  "divorce":      ["fcfcoa_fees","family_law_act","abs_divorce"],
  "consent_orders":["fcfcoa_consent_orders","family_law_act"],
  "workplace":    ["fair_work"],
+ "workplace_vic":["veohrc","vcat","vic_equal_opp_act","safework_mental","fair_work"],
  "de_facto":     ["family_law_act","aifs"],
  "high_conflict":["dsm_pd","respect_1800","fcfcoa_fdr"],
  "process":      ["fcfcoa","ag_fdr","amdras"],
