@@ -58,6 +58,7 @@ doc = head(
                 "name":"Mediations Australia","publisher":{"@id":f"{DOMAIN}/#organization"}},
                faq_schema(qa_home)])
 doc += nav()
+doc += '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet"><style>h1,h2,h3,h4{font-family:"DM Sans",var(--sans)!important}</style>'
 _home_form = contact_form_fields(prefix="h", field_style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box", subject="Homepage consultation request — Mediations Australia", btn_label='Send request <span class="arr">→</span>')
 doc += f"""<main id="main">
 <section class="phero" style="padding-bottom:clamp(48px,6vw,80px)">
