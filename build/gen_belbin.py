@@ -36,8 +36,8 @@ qa = [
 
 blocks = """
 <h2>Most workplace disputes are role problems in disguise</h2>
-<p>When conflict surfaces between colleagues, it usually looks personal. But after mediating
-countless workplace disputes, a pattern emerges: the argument on the surface is rarely the
+<p>When conflict surfaces between colleagues, it usually looks personal. But working with organisations
+on team dynamics, a pattern emerges: the argument on the surface is rarely the
 real problem. Underneath it sits confusion about who is responsible for what, who decides,
 and whose contribution actually counts.</p>
 
