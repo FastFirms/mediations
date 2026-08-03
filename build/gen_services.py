@@ -330,25 +330,52 @@ build(
  "A Section 60I certificate is a document issued by an accredited Family Dispute Resolution Practitioner confirming you attempted mediation before applying to court for parenting orders. Under the Family Law Act 1975 it is generally required to file a parenting application, unless an exemption (such as family violence or urgency) applies.",
  """
  <h2>When do you need a Section 60I certificate?</h2>
- <p>You generally need one before filing any application for parenting orders in the Federal Circuit and Family Court of Australia. It proves you made a genuine effort to resolve the dispute through family dispute resolution before asking a court to decide.</p>
+ <p>Before you can file an application for parenting orders in the <a href="https://www.fcfcoa.gov.au/fl/fdr" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>, you must make a genuine attempt at family dispute resolution — and prove it with a Section 60I certificate. This is a legal requirement under section 60I of the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>. Without the certificate, the court will not accept your application unless an exemption applies.</p>
 
  <h2>What are the five types of Section 60I certificate?</h2>
- <p>An accredited practitioner can issue a certificate stating that:</p>
+ <p>An accredited Family Dispute Resolution Practitioner (FDRP) issues a certificate that describes what happened when family dispute resolution was attempted. There are five possible outcomes:</p>
+ <figure class="tbl"><table><caption>The five Section 60I certificate types</caption>
+ <thead><tr><th>Type</th><th>What it means</th><th>Effect on your court application</th></tr></thead>
+ <tbody>
+ <tr><td>Type 1</td><td>The other party was invited but didn't attend</td><td>Allows you to file in court</td></tr>
+ <tr><td>Type 2</td><td>Both attended and genuinely tried to resolve the dispute</td><td>Allows you to file in court</td></tr>
+ <tr><td>Type 3</td><td>Both attended, but one or both didn't make a genuine effort</td><td>Allows you to file; effort is on record</td></tr>
+ <tr><td>Type 4</td><td>The practitioner assessed it as inappropriate to conduct FDR</td><td>Allows you to file — treated as exempt</td></tr>
+ <tr><td>Type 5</td><td>Mediation started but the practitioner determined it should not continue</td><td>Allows you to file — treated as exempt</td></tr>
+ </tbody></table></figure>
+ <p>A Type 2 outcome — where both parties genuinely tried — is the one you're aiming for, because it often means you've reached agreement and may not need to file at all.</p>
+
+ <h2>When is a certificate not required — the exemptions</h2>
+ <p>Not every parenting dispute requires family dispute resolution first. Exemptions apply in specific circumstances:</p>
  <ul>
-   <li>The other party did not attend, despite being invited</li>
-   <li>Both parties attended and made a genuine effort to resolve the dispute</li>
-   <li>Both parties attended but one or both did not make a genuine effort</li>
-   <li>The practitioner decided the matter was not appropriate for mediation</li>
-   <li>Mediation started but the practitioner decided it was not appropriate to continue</li>
+   <li><strong>Family violence or risk of abuse</strong> — where there is a family violence order or a genuine safety risk to a party or child</li>
+   <li><strong>Urgent situations</strong> — where a child is at immediate risk and urgent orders are needed</li>
+   <li><strong>Inability to participate</strong> — where one party is incapable of effectively participating (for example, through serious illness)</li>
+   <li><strong>Geographical or other impracticability</strong> — where it would be impractical to attend</li>
  </ul>
+ <p>If an exemption may apply to your situation, discuss it in your consultation. We'll advise the correct path — including whether a Type 4 certificate is more appropriate. Your safety and your children's safety always come first. Call <strong>000</strong> in an emergency; <strong>1800RESPECT (1800 737 732)</strong> for confidential support. See <a href="/domestic-violence-and-family-law/">family violence and family law</a>.</p>
 
  <div class="callout">
-   <h3>When a certificate isn't required</h3>
-   <p>Exemptions apply in cases of family violence, child abuse risk, genuine urgency, or where a party is unable to participate. If this is your situation, tell us in your consultation and we'll advise the safest, correct path.</p>
+   <h3>You may not need to file at all</h3>
+   <p>Many families attend FDR, reach agreement through mediation, and never go to court. The certificate is there if you need it — but most disputes resolve before it's used.</p>
  </div>
 
  <h2>How do you get a Section 60I certificate?</h2>
- <p>You attend family dispute resolution with an accredited practitioner. If the matter resolves, you may not need to go to court at all. If it doesn't, the practitioner issues the certificate so you can file. Either way you've moved forward. <a href="/parenting-plan-mediation/">See parenting plan mediation →</a></p>
+ <ol>
+   <li><strong>Engage an accredited FDRP</strong> — only a practitioner accredited under the <a href="https://www.legislation.gov.au/Series/F2008L02247" target="_blank" rel="noopener">Family Law (Family Dispute Resolution Practitioners) Regulations 2008</a> can issue a valid certificate.</li>
+   <li><strong>Intake and assessment</strong> — the practitioner meets with each party separately to understand the issues and check suitability.</li>
+   <li><strong>Attend family dispute resolution</strong> — you participate in mediation, either jointly or (where appropriate) by shuttle.</li>
+   <li><strong>Reach agreement or receive your certificate</strong> — if you resolve the matter, you may formalise it as <a href="/consent-orders-explained/">consent orders</a>. If not, the practitioner issues the appropriate certificate.</li>
+ </ol>
+
+ <h2>What does the process cost and how long does it take?</h2>
+ <p>Our initial consultation is free and the FDR process itself is conducted at fixed, known cost — far less than a contested parenting hearing, which can run for a year or more. Most families complete intake and the mediation session within a few weeks. Even if agreement isn't reached, having the certificate means you've done everything the law requires and you can move to court without further delay. <a href="/how-much-does-mediation-cost/">See what mediation costs →</a></p>
+
+ <h2>Can a certificate be used by the other party against you?</h2>
+ <p>What is said and disclosed in FDR is confidential and cannot generally be used in court proceedings — with limited exceptions for risk to a child or another person. The certificate records the outcome (attended, genuine effort, etc.) — not what was said. The <a href="https://www.fcfcoa.gov.au/fl/fdr" target="_blank" rel="noopener">FCFCOA's family dispute resolution guidance</a> explains the confidentiality framework in full.</p>
+
+ <h2>What if the other parent won't attend?</h2>
+ <p>If you invite the other parent and they don't attend, the practitioner can issue a Type 1 certificate — confirming you tried and they refused — and you can proceed to file. Refusal to attend doesn't block your access to the court; it is recorded on the certificate. <a href="/parenting-plan-mediation/">See parenting plan mediation →</a></p>
  """,
  [("How long is a Section 60I certificate valid?",
    "A Section 60I certificate is generally valid for 12 months from the date of issue. If you don't file within that time, you may need to attend family dispute resolution again."),
@@ -372,23 +399,53 @@ build(
  "A binding financial agreement (BFA) is a private contract between partners that sets out how property, finances and support will be divided if they separate. Mediation helps couples negotiate fair terms, which are then formalised with independent legal advice to make the agreement binding under the Family Law Act.",
  """
  <h2>When can you make a binding financial agreement?</h2>
- <p>BFAs can be made at any stage of a relationship:</p>
+ <p>Under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, BFAs can be made at three stages:</p>
  <ul>
-   <li><strong>Before</strong> a marriage or de facto relationship (sometimes called a prenup)</li>
-   <li><strong>During</strong> the relationship, to clarify financial arrangements</li>
-   <li><strong>After</strong> separation, to finalise property and support</li>
+   <li><strong>Before</strong> a marriage or de facto relationship — what people commonly call a prenuptial agreement or prenup</li>
+   <li><strong>During</strong> the relationship — to clarify how finances work or protect assets acquired since the relationship began</li>
+   <li><strong>After</strong> separation — to finalise property division and support without going to court</li>
  </ul>
+ <p>The same framework applies to married and de facto couples, including same-sex partners. The timing affects which section of the Family Law Act applies, but the core requirements are the same.</p>
 
- <h2>What makes a financial agreement legally binding?</h2>
- <p>For a BFA to be binding under Australian law, strict requirements must be met — most importantly, each party must receive independent legal advice before signing. Mediation handles the hard part (reaching fair terms everyone accepts); the formal legal steps then make it enforceable. We guide you through both.</p>
+ <h2>What must a BFA contain to be legally binding?</h2>
+ <p>A BFA is more than a piece of paper — strict requirements must be met before it is enforceable. The critical ones:</p>
+ <ul>
+   <li>It must be in writing and signed by both parties</li>
+   <li><strong>Each party must receive independent legal advice</strong> from a different lawyer, covering the agreement's effect on their rights and whether it is to their advantage</li>
+   <li>Each lawyer must sign a statement confirming that advice was given</li>
+   <li>A copy of both statements must be provided to both parties</li>
+ </ul>
+ <p>Mediation handles the hardest part — reaching terms both parties genuinely accept. The formal legal steps then make those terms enforceable. We coordinate both so nothing falls through the gaps.</p>
 
- <div class="callout">
-   <h3>BFA or consent orders — which is right for you?</h3>
-   <p>Both can finalise property matters, but they work differently. Consent orders are approved by a court; BFAs are private contracts. We'll help you choose. <a href="/consent-orders/">Compare consent orders →</a></p>
- </div>
+ <h2>BFA vs consent orders — which is right for you?</h2>
+ <figure class="tbl"><table><caption>Binding financial agreement vs consent orders — key differences</caption>
+ <thead><tr><th></th><th>Binding financial agreement (BFA)</th><th>Consent orders</th></tr></thead>
+ <tbody>
+ <tr><td>Court approval required</td><td>No — private contract</td><td>Yes — court approves it</td></tr>
+ <tr><td>Independent legal advice</td><td>Required for each party</td><td>Not required (but recommended)</td></tr>
+ <tr><td>When it can be made</td><td>Before, during or after the relationship</td><td>Only after separation</td></tr>
+ <tr><td>Flexibility</td><td>Higher — can exclude some assets</td><td>Court applies just and equitable test</td></tr>
+ <tr><td>Typical cost</td><td>Higher — two lawyers required</td><td>Lower — one court filing fee</td></tr>
+ <tr><td>Best suited to</td><td>Pre-relationship protection; maximum flexibility after separation</td><td>Most separating couples formalising an agreement</td></tr>
+ </tbody></table></figure>
+ <p>For most separating couples, <a href="/consent-orders-explained/">consent orders</a> are simpler and cheaper. A BFA is the right choice when you need flexibility a court wouldn't grant, or when you're protecting pre-relationship assets. We help you choose. <a href="/bfa-or-consent-orders/">Compare both in detail →</a></p>
 
- <h2>Why mediate a financial agreement?</h2>
- <p>Because financial agreements negotiated adversarially breed resentment and are more likely to be challenged later. Terms reached through mediation tend to be fairer, better understood by both parties, and more durable. <a href="/spousal-support-mediation/">See spousal maintenance →</a></p>
+ <h2>What can a BFA cover?</h2>
+ <ul>
+   <li>The family home and all real property</li>
+   <li>Superannuation — splitting or quarantining it</li>
+   <li>Savings, investments, shares and businesses</li>
+   <li>Debts, mortgages and liabilities</li>
+   <li>Spousal maintenance — ongoing financial support</li>
+   <li>Pre-relationship and inherited assets</li>
+ </ul>
+ <p>Note that BFAs cannot deal with parenting arrangements — those must be resolved separately through a <a href="/parenting-plan-mediation/">parenting plan</a> or consent orders.</p>
+
+ <h2>Can a BFA be challenged or overturned?</h2>
+ <p>Yes, in limited circumstances. A court can set aside a BFA if there was fraud or non-disclosure, if one party was under duress or couldn't understand it, if proper legal advice wasn't obtained, or if circumstances have changed dramatically (such as a child being born after the agreement). Agreements reached fairly through mediation — where both parties had full disclosure, proper legal advice, and genuine input into the terms — are far less likely to be challenged. That's exactly why mediation is the smarter way to reach the terms first.</p>
+
+ <h2>Why negotiate a BFA through mediation?</h2>
+ <p>Because agreements reached adversarially are more likely to breed resentment and face legal challenge later. When both parties understand and genuinely accept the terms — because they negotiated them in a structured, fair process — those terms stick. A mediator also helps both sides avoid common mistakes: overlooking assets, misunderstanding superannuation splits, or agreeing to maintenance terms that won't work in practice. The lawyers then make it binding. <a href="/spousal-support-mediation/">See spousal maintenance mediation →</a> or <a href="/property-settlement-mediation/">property settlement mediation →</a></p>
  """,
  [("What is a binding financial agreement?",
    "A BFA is a private contract between partners setting out how assets, finances and support are handled if they separate. It can be made before, during or after a relationship."),
@@ -411,25 +468,50 @@ build(
  "When one partner can't adequately support themselves after separation, the other may be required to help. Mediation lets you agree on fair, realistic maintenance — based on genuine need and capacity to pay — without a draining court fight.",
  "Spousal maintenance is financial support one partner pays the other after separation when that partner cannot reasonably meet their own needs. Mediation helps couples agree on the amount and duration based on need and capacity to pay, then formalise it in consent orders or a financial agreement.",
  """
- <h2>Who is entitled to spousal maintenance?</h2>
- <p>Spousal maintenance isn't automatic. It depends on two things: one partner's genuine need for support, and the other partner's capacity to pay. A court (or your mediation) weighs factors such as:</p>
+ <h2>What is spousal maintenance — and who qualifies?</h2>
+ <p>Spousal maintenance is financial support paid by one former partner to the other after separation, where that person cannot adequately meet their own reasonable needs. It is not automatic — entitlement depends on genuine need on one side and genuine capacity to pay on the other. Under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, a court (or your mediator) weighs a specific list of factors:</p>
  <ul>
-   <li>Age, health and ability to earn an income</li>
-   <li>Care of children and its effect on earning capacity</li>
-   <li>The standard of living that's reasonable in the circumstances</li>
-   <li>The length of the relationship and its financial impact</li>
+   <li>Age, health and earning capacity of each party</li>
+   <li>Whether one party cares for children, and how that affects their ability to work</li>
+   <li>Commitments of each party to support themselves and any dependants</li>
+   <li>The standard of living that was reasonable during the relationship</li>
+   <li>The duration of the marriage or de facto relationship and its financial impact</li>
+   <li>Whether either party's earning capacity was impaired by the relationship (for example, a parent who stepped back from their career)</li>
  </ul>
 
- <h2>How is spousal maintenance different from child support?</h2>
- <p>Child support is for the costs of raising children and is usually assessed by Services Australia. Spousal maintenance supports a former partner directly. They're separate — and you may deal with both. <a href="/child-support-mediation/">See child support mediation →</a></p>
+ <h2>Spousal maintenance vs child support — the key difference</h2>
+ <p>They are entirely separate. Child support is assessed by <a href="https://www.servicesaustralia.gov.au/child-support" target="_blank" rel="noopener">Services Australia</a> using a formula based on incomes and the care arrangement — it covers the costs of raising children. Spousal maintenance supports the former partner directly. You may be entitled to, or obligated to pay, both at the same time. <a href="/child-support-mediation/">See child support mediation →</a></p>
+
+ <h2>What forms can spousal maintenance take?</h2>
+ <figure class="tbl"><table><caption>Types of spousal maintenance arrangements</caption>
+ <thead><tr><th>Type</th><th>How it works</th><th>Best suited to</th></tr></thead>
+ <tbody>
+ <tr><td>Lump sum</td><td>A one-off payment that finalises all maintenance obligations</td><td>Where the payer has capital but limited ongoing income, or where a clean break is preferred</td></tr>
+ <tr><td>Periodic payments</td><td>Regular payments (weekly, fortnightly or monthly) for a fixed period</td><td>Where the receiving party needs time to retrain, return to work, or rebuild earning capacity</td></tr>
+ <tr><td>Periodic (indefinite)</td><td>Regular payments continuing until further order or specific event</td><td>Age, illness or disability that genuinely limits earning capacity long-term</td></tr>
+ <tr><td>Urgent maintenance</td><td>Immediate short-term support while longer-term arrangements are sorted</td><td>Where one party has immediate need before a settlement is finalised</td></tr>
+ </tbody></table></figure>
+ <p>Mediation lets you design the arrangement that genuinely fits both parties' realities — a court is more constrained in what it can order and less able to tailor payments to individual circumstances.</p>
+
+ <h2>Time limits — urgent maintenance and final applications</h2>
+ <p>Spousal maintenance has time limits you cannot ignore:</p>
+ <ul>
+   <li><strong>Married parties</strong> — you must apply for spousal maintenance within <strong>12 months of the divorce order</strong> becoming final. After that, you generally need the court's permission.</li>
+   <li><strong>De facto partners</strong> — you must apply within <strong>24 months of separation</strong>.</li>
+   <li><strong>Urgent maintenance</strong> — can be sought at any time while you're still within the time limit, including before a final settlement is reached.</li>
+ </ul>
+ <p>Mediation is the fastest way to reach an agreed, binding arrangement well inside these windows. <a href="/de-facto-mediation/">See de facto mediation →</a></p>
 
  <div class="callout">
-   <h3>Maintenance can be a lump sum or periodic</h3>
-   <p>Mediation lets you design arrangements that genuinely fit — a one-off lump sum, periodic payments for a fixed time, or support while a partner retrains. A court order is often more rigid.</p>
+   <h3>Often resolved alongside property settlement</h3>
+   <p>Spousal maintenance and property settlement are separate legal questions, but most couples address them together in a single mediation — which avoids separate proceedings and produces a more coherent overall outcome.</p>
  </div>
 
- <h2>Why mediate spousal maintenance?</h2>
- <p>Because these arrangements work best when both people understand and accept them. Mediation produces sustainable agreements rather than imposed obligations that breed missed payments and return trips to court. <a href="/property-settlement-mediation/">Often it's resolved alongside your property settlement.</a></p>
+ <h2>Can a spousal maintenance agreement be made binding?</h2>
+ <p>Yes. Once you reach agreement through mediation, the arrangement can be formalised as <a href="/consent-orders-explained/">consent orders</a> approved by the court, or as a binding financial agreement. Either makes it enforceable — important because it protects both the receiving party (who needs certainty of payment) and the paying party (who needs certainty of their obligation). We handle the formalisation step. <a href="/property-settlement-mediation/">See property settlement mediation →</a></p>
+
+ <h2>What happens if circumstances change — can maintenance be varied?</h2>
+ <p>Periodic maintenance orders can be varied or discharged by the court if circumstances change significantly — for example if the receiving party remarries or begins earning a sufficient income, or if the paying party's circumstances change dramatically. Lump-sum arrangements, once paid, generally cannot be clawed back. Mediation can also be used to renegotiate maintenance arrangements, often avoiding a return to court.</p>
  """,
  [("Am I automatically entitled to spousal maintenance?",
    "No. Entitlement depends on one partner's genuine need and the other's capacity to pay. Mediation helps you assess both fairly and agree on a realistic arrangement."),
@@ -452,24 +534,50 @@ build(
  "Child support disagreements can poison co-parenting. Mediation gives you a private, practical way to agree on arrangements — including private agreements that go beyond the standard formula — so your children are properly supported and the conflict ends.",
  "Child support mediation helps separated parents resolve disagreements about supporting their children — including private child support agreements, departures from the standard assessment, and how special expenses are shared. It keeps decisions private and cooperative rather than adversarial.",
  """
- <h2>How is child support normally calculated?</h2>
- <p>In Australia, child support is usually assessed by Services Australia using a formula based on both parents' incomes, the care arrangements, and the costs of children. But the formula doesn't fit every family — and that's where mediation helps.</p>
-
- <h2>What can child support mediation resolve?</h2>
+ <h2>How is child support normally calculated in Australia?</h2>
+ <p><a href="https://www.servicesaustralia.gov.au/child-support" target="_blank" rel="noopener">Services Australia</a> administers a formula-based assessment that uses both parents' incomes, the percentage of care each parent provides, and a cost-of-children table based on the number of children and their ages. The formula is designed to be fair in the average case — but most families aren't average, and the standard assessment leaves significant gaps.</p>
+ <p>Common things the assessment does <em>not</em> cover:</p>
  <ul>
-   <li>Private child support agreements that suit your circumstances</li>
-   <li>How school fees, medical costs and extracurricular expenses are shared</li>
-   <li>Disagreements about the assessment or a change in circumstances</li>
-   <li>Arrangements that work alongside your parenting plan</li>
+   <li>Private school fees and uniforms</li>
+   <li>Significant medical, dental or therapy costs</li>
+   <li>Extracurricular activities (sport, music, tutoring)</li>
+   <li>Travel costs for contact arrangements</li>
+   <li>Higher costs in the child's early years</li>
+ </ul>
+ <p>This is the gap mediation fills — building a complete, child-specific arrangement that works alongside the assessment.</p>
+
+ <h2>Private vs binding child support agreements</h2>
+ <figure class="tbl"><table><caption>Types of child support agreement</caption>
+ <thead><tr><th></th><th>Limited agreement</th><th>Binding agreement</th></tr></thead>
+ <tbody>
+ <tr><td>Requires independent legal advice</td><td>No</td><td>Yes — each parent must have their own lawyer</td></tr>
+ <tr><td>Can depart from the assessment</td><td>Only if the amount equals or exceeds the assessment</td><td>Yes — can be above or below the assessment</td></tr>
+ <tr><td>How it's changed</td><td>Either party can end it with 3 months' notice</td><td>Only by court order or a new binding agreement</td></tr>
+ <tr><td>Best for</td><td>Topping up the assessment for special expenses</td><td>Comprehensive private arrangements departing from the formula</td></tr>
+ </tbody></table></figure>
+ <p>For most families, a limited agreement (covering the formula plus agreed special expenses) is the simplest path. A binding agreement suits families with complex or high-cost arrangements. Mediation helps you choose the right structure and agree the terms. <a href="/financial-agreements-mediation/">See financial agreements →</a></p>
+
+ <h2>What can child support mediation actually resolve?</h2>
+ <ul>
+   <li><strong>Special expenses</strong> — how private school fees, medical costs, and activity expenses are split</li>
+   <li><strong>Departures from the assessment</strong> — where the standard formula doesn't reflect the family's actual arrangements</li>
+   <li><strong>Changes in circumstances</strong> — loss of employment, relocation, change in care percentage</li>
+   <li><strong>Disputes about care percentages</strong> — the assessment depends on how much time each parent has the children</li>
+   <li><strong>International arrangements</strong> — where one parent moves overseas</li>
+   <li><strong>Enforcement concerns</strong> — addressing recurring non-payment before it becomes entrenched</li>
  </ul>
 
+ <h2>A worked example: where the formula falls short</h2>
+ <p>Consider a family with two children at a private school where fees are $15,000 per year per child. The Services Australia assessment covers ordinary costs of children based on a generic table — it doesn't know about private school fees, and won't automatically divide them. Without a separate agreement, one parent typically ends up carrying the entire fee while the other relies on the formula payment.</p>
+ <p>In mediation, the parents agree to split school fees 60/40 (reflecting their incomes), add a shared medical account for unplanned health costs, and increase the base payment modestly for the years of highest activity costs. That complete arrangement is formalised as a limited child support agreement and registered with Services Australia. Both parents know exactly where they stand — and the argument over the fee account ends.</p>
+
  <div class="callout">
-   <h3>A binding child support agreement</h3>
-   <p>Parents can make a binding child support agreement that departs from the formula — for example covering private school fees directly. As with a BFA, each parent needs independent legal advice. We guide you through it.</p>
+   <h3>Pairs naturally with your parenting plan</h3>
+   <p>Financial and parenting arrangements are deeply connected — child support depends on the care percentage, which is what the parenting plan sets. Mediating both together in one session produces a consistent, coherent outcome for your children. <a href="/parenting-plan-mediation/">See parenting plan mediation →</a></p>
  </div>
 
- <h2>Why not just rely on the assessment?</h2>
- <p>The formula is a starting point, not a complete solution — it rarely addresses big-ticket items like private schooling or significant medical needs. Mediation lets you build a complete, tailored arrangement that actually reflects your children's lives. <a href="/parenting-plan-mediation/">Pairs naturally with a parenting plan.</a></p>
+ <h2>What if the other parent won't pay what's owed?</h2>
+ <p>Services Australia has collection and enforcement powers for registered assessments — including intercepting tax refunds, registering charges on property, and suspending driver's licences in serious cases. Mediation is most valuable before enforcement becomes necessary: resolving the underlying dispute (often a disagreement about the care percentage or special expenses, not unwillingness to support the children) prevents the conflict recurring. Where enforcement is already underway, mediation can help recalibrate the arrangement so it actually works.</p>
  """,
  [("Can we agree on child support privately instead of using the formula?",
    "Yes. Parents can make a private or binding child support agreement that departs from the standard assessment. Mediation helps you negotiate fair terms; a binding agreement requires independent legal advice."),
@@ -492,19 +600,49 @@ build(
  "De facto and same-sex partners have substantially the same rights as married couples when a relationship ends. Mediation resolves property, financial and parenting matters the same way — quickly, privately and without court — once your relationship qualifies under the law.",
  "De facto relationship mediation resolves property, financial and parenting disputes for unmarried couples, including same-sex partners. De facto partners have similar rights to married couples under the Family Law Act, and mediation offers the same fast, private, out-of-court path to resolution.",
  """
- <h2>What counts as a de facto relationship?</h2>
- <p>You're generally considered de facto if you've lived together on a genuine domestic basis. Courts look at factors including the length of the relationship, whether you lived together, financial interdependence, a shared residence, and whether you have children together. Same-sex relationships are treated identically.</p>
+ <h2>What counts as a de facto relationship under Australian law?</h2>
+ <p>You are generally in a de facto relationship if you live with another person on a genuine domestic basis, but are not married to them. Under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, a court determines whether a de facto relationship exists by weighing:</p>
+ <ul>
+   <li>The duration of the relationship</li>
+   <li>Whether you lived together and for how long</li>
+   <li>The nature and degree of financial dependence or interdependence</li>
+   <li>Whether you owned property together</li>
+   <li>The degree of commitment to a shared life</li>
+   <li>Whether you have children together</li>
+   <li>Whether the relationship was registered under a state or territory law</li>
+ </ul>
+ <p>Same-sex de facto relationships have exactly the same status under Australian federal family law. A minimum period of two years together is generally required to access property rights under the Family Law Act, unless there is a child of the relationship or a party has made significant contributions.</p>
 
- <h2>Do de facto partners have the same rights as married couples?</h2>
- <p>Largely, yes. When a qualifying de facto relationship ends, partners can seek property settlements, superannuation splits and spousal maintenance — much like divorcing couples. The main differences are in time limits and the threshold of proving the relationship existed.</p>
+ <h2>De facto vs married — what's actually different?</h2>
+ <figure class="tbl"><table><caption>Key differences: de facto vs married separating couples</caption>
+ <thead><tr><th></th><th>De facto partners</th><th>Married couples</th></tr></thead>
+ <tbody>
+ <tr><td>Access to property settlement</td><td>Yes — if relationship qualifies</td><td>Yes</td></tr>
+ <tr><td>Superannuation splitting</td><td>Yes</td><td>Yes</td></tr>
+ <tr><td>Spousal maintenance</td><td>Yes</td><td>Yes</td></tr>
+ <tr><td>Time limit to claim</td><td><strong>2 years from separation</strong></td><td>12 months from divorce order</td></tr>
+ <tr><td>Need to prove relationship</td><td>Yes — if disputed</td><td>No — marriage certificate is proof</td></tr>
+ <tr><td>Parenting orders</td><td>Yes — same as married</td><td>Yes</td></tr>
+ </tbody></table></figure>
+ <p>The two-year time limit for de facto property claims is the most important practical difference — it runs from the date of separation, not from any court order. Missing it can mean losing the right to a settlement entirely.</p>
+
+ <h2>Property settlement for de facto couples</h2>
+ <p>The same four-step framework used for married couples applies: identify the asset pool, assess contributions (financial and non-financial), consider future needs, and check the outcome is just and equitable. De facto separations often involve untangling finances that were never formally combined — joint accounts, a home owned by one but paid for together, businesses built during the relationship — which can generate real disagreement about what's in the pool and what each party contributed.</p>
+ <p>Mediation resolves this without the cost of first proving the relationship's existence in contested court proceedings — because both parties attending mediation are implicitly acknowledging the relationship. <a href="/property-settlement-mediation/">See property settlement mediation →</a></p>
+
+ <h2>What if one partner disputes that a de facto relationship existed?</h2>
+ <p>It happens. If the other party claims there was no qualifying relationship, the matter may need to be determined by a court before property rights can be established. Mediation can still help — sometimes an honest conversation with a mediator resolves the dispute about the relationship's nature before it escalates to litigation. Where court proceedings are unavoidable, the property mediation can follow once the relationship question is settled.</p>
 
  <div class="callout">
-   <h3>Time limit: two years</h3>
-   <p>De facto partners generally have two years from separation to apply for property or maintenance orders. Mediation is the fastest way to reach a binding agreement within that window. <a href="/property-settlement-mediation/">See property settlement →</a></p>
+   <h3>Protecting your assets before or during a relationship</h3>
+   <p>If you want to protect pre-relationship assets or clarify financial arrangements before they become complicated, a <a href="/financial-agreements-mediation/">binding financial agreement (de facto BFA)</a> can be made before, during or after the relationship. It's significantly cheaper to negotiate one now than to fight over assets later.</p>
  </div>
 
- <h2>Why mediation suits de facto disputes</h2>
- <p>De facto separations often involve disentangling finances that were never formally combined, which can get contentious fast. Mediation provides the neutral structure to sort it out fairly — and avoids the added cost of first proving the relationship's existence in court. <a href="/financial-agreements-mediation/">A financial agreement can also protect both partners.</a></p>
+ <h2>De facto parenting arrangements</h2>
+ <p>Parenting rights and responsibilities are identical for de facto and married couples — the law focuses on the children, not the parents' relationship status. If you have children and can't agree on arrangements, the same requirement to attempt <a href="/section-60i-certificates/">family dispute resolution</a> before applying to court applies. <a href="/parenting-plan-mediation/">See parenting plan mediation →</a></p>
+
+ <h2>How long does de facto mediation take, and what does it cost?</h2>
+ <p>Most de facto property matters resolve in one or two mediation sessions over a few weeks — far faster than a contested court case, which can run for years and cost tens of thousands in legal fees for each party. Mediation is fixed-fee and typically shared, so you know what you're committing to before you start. <a href="/how-much-does-mediation-cost/">See our fee structure →</a></p>
  """,
  [("Do de facto couples have the same rights as married couples?",
    "Largely yes. Qualifying de facto partners can seek property settlements, superannuation splits and maintenance under the Family Law Act, similar to married couples, with some differences in time limits and proving the relationship."),
@@ -527,24 +665,53 @@ build(
  "When families break down, grandparents can lose contact with grandchildren they love. Australian law recognises children's right to a relationship with people significant to their care — including grandparents — and mediation is the gentlest way to restore and protect that bond.",
  "Grandparents' mediation helps grandparents reach agreement about spending time with their grandchildren after a separation or family conflict. The Family Law Act recognises children's right to maintain relationships with grandparents and other significant people, and mediation resolves this without a contested court case.",
  """
- <h2>Do grandparents have legal rights to see grandchildren?</h2>
- <p>The law focuses on the child's right to maintain meaningful relationships with people significant to their welfare — which expressly includes grandparents. Grandparents can apply for orders to spend time with grandchildren, but mediation is almost always the better first step: it's less adversarial and far easier on the children.</p>
+ <h2>Do grandparents have legal rights to see their grandchildren?</h2>
+ <p>Australian family law doesn't use the language of "grandparent rights" — instead, it focuses on what is in the best interests of the child. The <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> specifically recognises children's right to maintain a relationship with "significant people" in their lives — which expressly includes grandparents and other relatives. Grandparents can apply to the court for parenting orders, and their relationship with the child is a factor the court must consider.</p>
+ <p>In practice, the most important thing grandparents can do is attempt mediation before any court action. Litigation against your own children or their ex-partners tends to permanently poison relationships — the one thing grandparents can least afford to lose.</p>
 
- <h2>When does grandparent mediation help?</h2>
+ <h2>When does grandparent contact mediation help?</h2>
  <ul>
-   <li>After a parental separation that has cut off contact</li>
-   <li>When a family conflict has damaged relationships</li>
-   <li>Where a parent has passed away and contact is at risk</li>
-   <li>When grandparents are providing significant care and need certainty</li>
+   <li>After a parental separation that has cut off contact with one side of the family</li>
+   <li>Where a parent has died and the surviving parent is restricting contact</li>
+   <li>When a family conflict or estrangement has damaged the relationship</li>
+   <li>Where grandparents have been a primary carer and need formal recognition</li>
+   <li>When parents are relocating interstate or overseas and ongoing contact needs to be formalised</li>
+   <li>Where one grandparent has remarried and step-family dynamics have created barriers</li>
  </ul>
 
+ <h2>How does grandparent mediation work?</h2>
+ <p>A neutral, accredited mediator facilitates a conversation between the grandparents and the parent or parents involved, with the focus kept entirely on what is best for the children. The mediator does not take sides — they help everyone move past the grievances and establish a practical arrangement the family can actually maintain.</p>
+ <p>Sessions can be face-to-face or online. Where the relationship between grandparents and parents is very strained, shuttle mediation — where the mediator moves between separate rooms — is often the best approach. Many mediations in these situations result in a written contact agreement that can be included in a <a href="/parenting-plan-mediation/">parenting plan</a> or, if needed, formalised as <a href="/consent-orders-explained/">consent orders</a>.</p>
+
+ <figure class="tbl"><table><caption>Grandparent contact mediation vs applying to court</caption>
+ <thead><tr><th></th><th>Mediation first</th><th>Straight to court</th></tr></thead>
+ <tbody>
+ <tr><td>Effect on family relationships</td><td>Rebuilds communication — less adversarial</td><td>Highly adversarial — typically damages relationships permanently</td></tr>
+ <tr><td>Cost</td><td>Fixed fee, low — often shared</td><td>High — legal fees on both sides</td></tr>
+ <tr><td>Time to outcome</td><td>Weeks</td><td>Months to years</td></tr>
+ <tr><td>Focus</td><td>The children's best interests</td><td>Legal arguments and evidence</td></tr>
+ <tr><td>Result</td><td>Flexible, agreed arrangement</td><td>Rigid court order</td></tr>
+ </tbody></table></figure>
+
  <div class="callout">
-   <h3>The children come first — always</h3>
-   <p>Mediation keeps the focus where it belongs: on what's best for the children, not on adult grievances. That child-centred approach is exactly why it works where confrontation fails.</p>
+   <h3>The court strongly encourages mediation first</h3>
+   <p>Grandparents who apply for parenting orders must (like parents) generally attempt family dispute resolution before the court will accept their application. Mediating first is not just the gentler path — it's usually required.</p>
  </div>
 
- <h2>Why mediate rather than litigate?</h2>
- <p>Court action against your own children or their former partners can permanently fracture a family. Mediation rebuilds communication instead of destroying it — giving you the best chance of a lasting relationship with your grandchildren. <a href="/parenting-plan-mediation/">Arrangements can be included in a parenting plan.</a></p>
+ <h2>What if a parent refuses all contact?</h2>
+ <p>This is the hardest situation. Mediation depends on the parent being willing to participate — you cannot force someone to come. If a parent refuses all contact and won't engage in mediation, the grandparent may need to apply to court, but the court will still want evidence that other avenues were tried first.</p>
+ <p>Often, though, a parent's refusal reflects fear or grievance rather than an absolute position. A skilled mediator, approaching the situation without pressure or blame, achieves contact arrangements in many cases where the grandparent had been told "there's no hope." The mediator's job is to create a safe space where the parent can say what they actually need — which is rarely "no contact forever."</p>
+
+ <h2>What arrangements can be reached?</h2>
+ <p>The arrangements that work best are built around the children's ages, school schedules, and the geography involved. Common outcomes from grandparent mediation include:</p>
+ <ul>
+   <li>Regular scheduled contact (every fortnight, school holidays, birthdays)</li>
+   <li>Video calls where distance is a factor</li>
+   <li>Transition arrangements (grandparents collecting children from school)</li>
+   <li>Overnight stays for older children</li>
+   <li>Inclusion in significant events (Christmas, milestones)</li>
+ </ul>
+ <p>These arrangements can be written into a <a href="/parenting-plan-mediation/">parenting plan</a> alongside the parents' own arrangements, or formalised separately as consent orders if the relationship requires that level of certainty.</p>
  """,
  [("Do grandparents have a legal right to see their grandchildren?",
    "The law recognises a child's right to maintain relationships with significant people including grandparents. Grandparents can apply for time with grandchildren, but mediation is usually the better first step."),
@@ -568,22 +735,48 @@ build(
  "Consent orders are written agreements approved by the Federal Circuit and Family Court of Australia that make your parenting or property arrangements legally binding. You don't attend a hearing — the court reviews your agreement on the papers and, if it's fair, makes it into enforceable orders.",
  """
  <h2>What can consent orders cover?</h2>
+ <p>Consent orders are approved by the <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a> and can cover three broad areas of family law:</p>
  <ul>
-   <li><strong>Parenting</strong> — living arrangements, time with each parent, decision-making</li>
-   <li><strong>Property</strong> — division of assets, debts and superannuation</li>
-   <li><strong>Spousal maintenance</strong> — ongoing financial support</li>
+   <li><strong>Parenting arrangements</strong> — where children live, time with each parent, decision-making about education, health and religion, handover arrangements, travel and overseas access</li>
+   <li><strong>Property and financial matters</strong> — division of real property, superannuation splitting, savings and investments, businesses, debts, and any other assets or liabilities</li>
+   <li><strong>Spousal maintenance</strong> — ongoing financial support, whether as periodic payments or a lump sum</li>
  </ul>
+ <p>You can apply for consent orders covering some or all of these in a single application. Most separating couples address both parenting and property in the one set of orders. For a complete guide, see <a href="/consent-orders-explained/">consent orders explained →</a></p>
 
- <h2>How do consent orders work?</h2>
- <p>Once you reach agreement (often through mediation), an application for consent orders is prepared and lodged with the court. A registrar reviews it to ensure parenting arrangements are in the children's best interests and property division is just and equitable. If satisfied, the court makes the orders — no hearing, no appearance. For a step-by-step walkthrough of the process, costs and timeframes, see our <a href="/consent-orders-explained/">consent orders explained guide</a>.</p>
+ <h2>How the consent orders process works, step by step</h2>
+ <ol>
+   <li><strong>Reach agreement</strong> — usually through mediation, though some couples agree directly</li>
+   <li><strong>Prepare the application</strong> — the terms of your agreement are drafted into the correct legal form (an Application for Consent Orders and a Minute of Proposed Orders)</li>
+   <li><strong>Lodge with the court</strong> — filed through the <a href="https://www.comcourts.gov.au/" target="_blank" rel="noopener">Commonwealth Courts Portal</a>, online, with the relevant filing fee</li>
+   <li><strong>Court review</strong> — a registrar reviews the application on the papers (no hearing required in most cases) to check that parenting arrangements are in the children's best interests and that property division is just and equitable</li>
+   <li><strong>Orders made</strong> — if satisfied, the court makes the orders; you receive a sealed copy, which is enforceable from that date</li>
+ </ol>
+ <p>The typical turnaround for uncontested consent order applications ranges from a few weeks to a few months, depending on the court's workload — far faster than a contested hearing, which can take a year or more.</p>
+
+ <h2>Consent orders vs a parenting plan vs a binding financial agreement</h2>
+ <figure class="tbl"><table><caption>Choosing the right legal instrument for your agreement</caption>
+ <thead><tr><th></th><th>Consent orders</th><th>Parenting plan</th><th>Binding financial agreement (BFA)</th></tr></thead>
+ <tbody>
+ <tr><td>Legally enforceable</td><td>Yes — court order</td><td>No — but courts consider it</td><td>Yes — private contract</td></tr>
+ <tr><td>Court approval required</td><td>Yes</td><td>No</td><td>No</td></tr>
+ <tr><td>Independent legal advice required</td><td>Not required (recommended)</td><td>Not required</td><td>Yes — each party must have their own lawyer</td></tr>
+ <tr><td>Covers parenting</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+ <tr><td>Covers property/finance</td><td>Yes</td><td>No</td><td>Yes</td></tr>
+ <tr><td>Flexibility after agreement</td><td>Parenting: can vary if circumstances change; Property: generally final</td><td>High — flexible by agreement</td><td>Can be varied only by a new BFA or court order</td></tr>
+ <tr><td>Best for</td><td>Most separating couples</td><td>Flexible parenting co-management</td><td>Pre-relationship protection or maximum financial flexibility</td></tr>
+ </tbody></table></figure>
+ <p>For the majority of separating couples, consent orders are the right instrument — they combine court-backed enforceability with a straightforward process and no need for each party to retain separate lawyers. <a href="/bfa-or-consent-orders/">Compare BFAs and consent orders in detail →</a></p>
+
+ <h2>What does the court check before making consent orders?</h2>
+ <p>The registrar does not rubber-stamp whatever you've agreed. For <strong>parenting orders</strong>, they must be satisfied the arrangements are in the best interests of the children. For <strong>property orders</strong>, the division must be just and equitable. Agreements that appear grossly unfair, involve inadequate disclosure, or don't properly protect the children's interests may be returned for revision. Mediation produces agreements that are inherently more likely to pass this test — because the mediator has already tested their fairness and practicality in the process.</p>
 
  <div class="callout">
-   <h3>Consent orders vs a parenting plan vs a BFA</h3>
-   <p>Consent orders are court-approved and enforceable. A <a href="/parenting-plan-mediation/">parenting plan</a> is flexible but not directly enforceable. A <a href="/financial-agreements-mediation/">binding financial agreement</a> is a private contract for financial matters. We help you choose the right instrument.</p>
+   <h3>What happens if consent orders are breached?</h3>
+   <p>Consent orders are enforceable court orders. If parenting orders are breached without reasonable excuse, the aggrieved party can apply to the court for a contravention order — which can result in penalties, make-up time, or changed orders. Property orders are enforceable through the court's execution powers. This is the practical difference between a consent order and a parenting plan.</p>
  </div>
 
- <h2>Why mediate first, then formalise?</h2>
- <p>Because consent orders only work when you actually agree — the court won't impose terms in a consent application. Mediation gets you to that agreement efficiently; consent orders lock it in. It's the complete path from dispute to durable resolution. <a href="/property-settlement-mediation/">Start with property settlement →</a></p>
+ <h2>Can consent orders be changed after they're made?</h2>
+ <p>Property consent orders are generally final — the principle of finality in property settlement means they're difficult to change without showing fraud, non-disclosure, or a significant change in circumstances. Parenting consent orders can be varied if circumstances have changed significantly since they were made (for example, one parent relocating, a child's needs changing, or the existing arrangement breaking down). In both cases, mediation is the first step — most variations are agreed rather than litigated. <a href="/parenting-plan-mediation/">See parenting plan mediation →</a> or <a href="/property-settlement-mediation/">property settlement mediation →</a></p>
  """,
  [("Do I have to go to court for consent orders?",
    "No. Consent orders are reviewed by the court on the papers. If your agreement is fair, the court makes the orders without anyone attending a hearing."),
@@ -685,24 +878,52 @@ build(
  "Workplace mediation is a confidential process where a neutral mediator helps employers and employees resolve disputes — such as unfair dismissal, bullying, harassment or contract disagreements — without proceeding to the Fair Work Commission or court. It's faster, cheaper and helps preserve working relationships.",
  """
  <h2>What workplace disputes can be mediated?</h2>
+ <p>Workplace mediation is available for both individual disputes and broader team conflicts. Common matters we resolve include:</p>
  <ul>
-   <li>Unfair dismissal and termination disputes</li>
-   <li>Bullying, harassment and discrimination complaints</li>
-   <li>Employment contract and entitlement disagreements</li>
-   <li>Interpersonal conflict between colleagues or with management</li>
-   <li>Restructure, redundancy and return-to-work disputes</li>
+   <li><strong>Unfair dismissal and termination disputes</strong> — early resolution before or during a Fair Work Commission process</li>
+   <li><strong>Bullying and harassment complaints</strong> — confidential resolution that doesn't force parties through a formal investigation</li>
+   <li><strong>Discrimination and equal opportunity complaints</strong> — resolving complaints made under the Fair Work Act or state anti-discrimination legislation</li>
+   <li><strong>Employment contract disputes</strong> — entitlements, notice, restraints of trade, commission disagreements</li>
+   <li><strong>Interpersonal conflict</strong> — two colleagues or a manager and direct report whose working relationship has broken down</li>
+   <li><strong>Restructure, redundancy and return-to-work</strong> — where the process has generated conflict that needs resolution alongside the HR process</li>
+   <li><strong>Senior executive and partnership disputes</strong> — board-level or equity partner conflicts where discretion is paramount</li>
  </ul>
 
- <h2>Why mediate workplace disputes early?</h2>
- <p>Because unresolved conflict spreads — it damages morale, productivity and reputation, and can end up at the Fair Work Commission or in court. Early mediation contains the cost and keeps the matter private. For businesses, it's risk management; for employees, it's a fair hearing without a drawn-out fight.</p>
+ <h2>Why resolve workplace disputes early?</h2>
+ <p>Because workplace conflict is contagious and expensive. Research consistently shows that unresolved conflict between two people spreads — teams choose sides, productivity falls, and good people leave. By the time a matter reaches the Fair Work Commission or an employment tribunal, both the direct cost (legal fees, management time, potential orders or settlements) and the indirect cost (damaged morale, reputational risk, recruitment) are substantial.</p>
+ <p>Early mediation contains the cost and keeps the matter private. For employers, it's effective risk management. For employees, it's a fair, confidential hearing without a drawn-out formal process that can feel like a career risk in itself.</p>
 
- <div class="callout">
-   <h3>Good for business, good for people</h3>
-   <p>Mediation delivers neutral, safe conversations where both sides are heard, structured discussion focused on solutions rather than blame, and practical agreements that get workplaces back on track.</p>
- </div>
+ <figure class="tbl"><table><caption>Workplace mediation vs the Fair Work Commission process</caption>
+ <thead><tr><th></th><th>Early workplace mediation</th><th>Fair Work Commission</th></tr></thead>
+ <tbody>
+ <tr><td>Timing</td><td>Immediately — at any point in the dispute</td><td>After dismissal or formal complaint; strict time limits apply</td></tr>
+ <tr><td>Confidential</td><td>Yes — without prejudice</td><td>Generally no — on the public record</td></tr>
+ <tr><td>Who controls the outcome</td><td>The parties</td><td>A commissioner or arbitrator</td></tr>
+ <tr><td>Can preserve the working relationship</td><td>Yes — that's the goal</td><td>Rarely — adversarial by design</td></tr>
+ <tr><td>Typical timeframe</td><td>1–2 sessions over days to weeks</td><td>Months to years</td></tr>
+ <tr><td>Typical cost per party</td><td>Fixed, shared</td><td>Legal representation costs + time</td></tr>
+ </tbody></table></figure>
 
  <h2>How does workplace mediation work?</h2>
- <p>A neutral mediator meets with the parties (together or separately), helps each side be heard, identifies the real issues, and guides everyone toward a practical agreement. It's confidential and 'without prejudice', so people can speak openly. Where useful, the outcome can be documented in a binding agreement.</p>
+ <ol>
+   <li><strong>Initial assessment</strong> — we speak with the parties (or the employer coordinating the process) separately to understand the issues and confirm mediation is appropriate</li>
+   <li><strong>Preparation</strong> — each party is briefed on the process, what to expect, and how to prepare</li>
+   <li><strong>Joint session</strong> — the mediator facilitates a structured conversation where each side is heard, issues are identified, and options explored</li>
+   <li><strong>Shuttle (if needed)</strong> — where parties can't be in the same room, the mediator moves between them</li>
+   <li><strong>Agreement</strong> — practical outcomes are documented and can be made binding (typically as a deed of settlement or workplace agreement)</li>
+ </ol>
+ <p>All discussions are conducted on a 'without prejudice' basis — what is said in mediation generally cannot be used in later legal proceedings. This lets both parties speak openly about the real issues rather than playing a defensive legal game.</p>
+
+ <div class="callout">
+   <h3>What if an unfair dismissal application has already been filed?</h3>
+   <p>No problem. The Fair Work Commission itself offers a <a href="https://www.fwc.gov.au/disputes-at-work/hearings-decisions/conferences" target="_blank" rel="noopener">conciliation process</a> for many unfair dismissal claims — and many parties also choose private mediation alongside or instead of the FWC process because it offers more flexibility and confidentiality. We work with whatever stage the dispute has reached.</p>
+ </div>
+
+ <h2>Who typically engages workplace mediation?</h2>
+ <p>Either party can initiate — the employer or the employee. In practice, employers initiate most workplace mediations once they recognise a conflict is escalating and want to contain it. Employees often request mediation when they want a fair hearing without the risk and expense of a formal complaint or legal claim. HR teams frequently recommend it as the appropriate first step before any formal process begins.</p>
+
+ <h2>Can the outcome be made legally binding?</h2>
+ <p>Yes. Any agreement reached in workplace mediation can be documented as a deed of settlement, which is a legally binding contract. The deed records what was agreed — which might include an apology, a change in working arrangements, a payment, a reference, or simply a commitment to a working protocol. The terms are confidential (unlike a court order or FWC determination) and tailored to what actually resolves the dispute. <a href="/how-much-does-mediation-cost/">See what mediation costs →</a></p>
  """,
  [("Is workplace mediation confidential?",
    "Yes. Workplace mediation is conducted on a 'without prejudice' basis, meaning discussions generally can't be used later in legal proceedings, which lets both sides speak openly."),
