@@ -59,20 +59,20 @@ def localservice_schema(city, state, slug, has_office=False):
 # Keyword-first H1s: target phrase leads, persuasive tail varies by state.
 # Primary ranking phrase "{City} Mediation" appears at the very start of every H1.
 H1S = {
- "NSW":"{c} Mediation — <em>resolve disputes without court</em>.",
- "VIC":"{c} Mediation that <em>keeps you out of court</em>.",
- "QLD":"{c} Mediation — <em>a faster way to resolve disputes</em>.",
- "WA":"{c} Mediation — <em>expert resolution, not litigation</em>.",
- "SA":"{c} Mediation that <em>puts you in control</em>.",
- "ACT":"{c} Mediation — <em>resolve it without the courtroom</em>.",
- "TAS":"{c} Mediation — <em>settle disputes without the battle</em>.",
- "NT":"{c} Mediation — <em>resolution without the courtroom</em>.",
+ "NSW":"{c} <em>Mediation</em>",
+ "VIC":"{c} <em>Mediation</em>",
+ "QLD":"{c} <em>Mediation</em>",
+ "WA":"{c} <em>Mediation</em>",
+ "SA":"{c} <em>Mediation</em>",
+ "ACT":"{c} <em>Mediation</em>",
+ "TAS":"{c} <em>Mediation</em>",
+ "NT":"{c} <em>Mediation</em>",
 }
 
 def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
           office_addr, context, state_note, court_ref):
     nearest = NEAREST[state]
-    h1 = H1S.get(state, "{c} mediation that resolves disputes <em>without court</em>.").format(c=esc(city))
+    h1 = H1S.get(state, "{c} <em>Mediation</em>").format(c=esc(city))
     title = f"{city} Mediation | Accredited Family Mediators"
     desc = (f"Nationally accredited {city} mediators resolve family, property and workplace "
             f"disputes without court — faster and cheaper. Call {PHONE}.")
