@@ -245,8 +245,6 @@ def footer():
           <li><a href="/preparing-for-mediation/">Resources</a></li>
           <li><a href="/our-team/">Our team</a></li>
           <li><a href="/memberships/">Memberships</a></li>
-          <li><a href="/mediation-podcast/">Podcast</a></li>
-          <li><a href="/books/">Books</a></li>
           <li><a href="/contact-us/">Contact</a></li>
           <li><a href="{BOOK_URL}">Book a consultation</a></li>
         </ul>
