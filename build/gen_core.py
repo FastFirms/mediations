@@ -54,7 +54,7 @@ doc = head(
                faq_schema(qa_how)])
 doc += nav()
 doc += phero("A clearer path through a difficult time",
- "How mediation works, <em>step by step</em>.",
+ "How Mediation Works",
  "No jargon, no surprises. Mediation is a structured conversation led by a neutral, accredited mediator who helps everyone reach an agreement — and you decide whether to accept it. Here's exactly what happens, from first call to binding outcome.",
  [("Home",""),("How Mediation Works",None)])
 doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediation is a structured negotiation led by a neutral, accredited mediator who helps everyone reach their own agreement. Unlike a judge, the mediator imposes nothing — you stay in control. It typically resolves in one to two sessions, costs a fraction of court, and the agreement can be made legally binding.</p></div></div>'
@@ -131,7 +131,7 @@ doc = head(
                faq_schema(qa_about)])
 doc += nav()
 doc += phero("We exist because the courts fail most people",
- "We believe the way disputes are resolved is <em>broken</em>. So we fixed it.",
+ "About Mediations Australia",
  "Mediations Australia exists because litigation fails most people who enter it — slower, costlier and more painful than it needs to be. We bring together nationally accredited mediators and experienced family lawyers with one shared philosophy: resolve early, resolve fairly, and keep people out of court wherever possible.",
  [("Home",""),("About",None)])
 doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediations Australia is a national dispute resolution firm of nationally accredited mediators and experienced family lawyers. We help individuals, families and businesses resolve disputes faster and at a fraction of the cost of court, with offices in Sydney, Melbourne, Brisbane and Perth, and online mediation Australia-wide.</p></div></div>'
@@ -183,7 +183,7 @@ doc = head(
                faq_schema(qa_prep)])
 doc += nav()
 doc += phero("Go in prepared — it makes a real difference",
- "Preparing for mediation: <em>everything you need to know</em>.",
+ "Preparing for Mediation",
  "Walking into mediation prepared makes a real difference to the outcome. This practical guide covers what to bring, how to think about what you want, and exactly what to expect on the day — so you arrive calm, clear and ready to resolve things.",
  [("Home",""),("Resources",None),("Preparing for Mediation",None)])
 doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> To prepare for mediation, get clear on your goals and priorities, gather any relevant documents, think about realistic outcomes rather than positions, and arrive ready to focus on solutions instead of blame. Good preparation is one of the biggest predictors of a successful mediation.</p></div></div>'
@@ -485,7 +485,7 @@ doc = head(
 doc += nav()
 doc += phero(
     "Every dispute type we resolve",
-    "How We Help — <em>every practice area</em>.",
+    "How We Help",
     "Mediations Australia resolves family law, property, parenting, workplace, estate, and de facto disputes through accredited mediation. Browse every service area below, or book a free consultation and we'll point you to the right one.",
     [("Home", ""), ("How We Help", None)]
 )

@@ -298,8 +298,7 @@ def build_tier1(slug, city, state, nearest_office, court_ref, local_context, cit
         "faster, cheaper, and more private. Call " + PHONE + "."
     )
 
-    h1 = (ec + " Family Lawyers — "
-          "<em>what to consider before you engage one</em>.")
+    h1 = ec + " Family Lawyers"
 
     answer_box = (
         "Most people searching for family lawyers in " + ec + " are at an early research "
@@ -640,8 +639,7 @@ def build_tier2(slug, city, state, nearest_office, court_ref, local_context):
         "more private. Call " + PHONE + "."
     )
 
-    h1 = (ec + " Family Lawyers — "
-          "<em>what to consider before you engage one</em>.")
+    h1 = ec + " Family Lawyers"
 
     answer_box = (
         "Most people searching for family lawyers in " + ec + " are at an early research "

@@ -73,7 +73,7 @@ build(
  "Property Settlement Mediation | Divide Assets, No Court",
  "Resolve your property settlement through mediation — divide assets, debts and super fairly, then formalise it in consent orders. Fixed-fee, no court.",
  "Property &amp; financial settlements",
- "Property Settlement Mediation — divide assets <em>fairly and finally</em>.",
+ "Property Settlement Mediation",
  "Separating means untangling a shared financial life — the home, savings, super, debts and businesses. Mediation lets you divide it all by agreement, quickly and privately, instead of handing the decision to a court after years of legal fees.",
  "Property settlement mediation is a process where separating partners agree on how to divide assets, debts and superannuation with the help of a neutral mediator, then formalise it through consent orders or a binding financial agreement. It typically resolves in one or two sessions and costs a fraction of litigation.",
  """
@@ -160,7 +160,7 @@ build(
  "Divorce Mediation Australia | Divorce Mediators",
  "Resolve property, parenting and financial matters with experienced divorce mediators — faster and cheaper than court. Fixed-fee, confidential, Australia-wide.",
  "Divorce &amp; separation",
- "Divorce Mediation — settle the terms <em>without court</em>.",
+ "Divorce Mediation",
  "Ending a marriage means untangling parenting, property and finances at the hardest possible time. Divorce mediation gives you a calm, structured way to agree on all of it — guided by a neutral divorce mediator, in weeks rather than years, and on terms you decide together instead of ones a judge imposes.",
  "Divorce mediation is a confidential process where a neutral divorce mediator helps separating couples reach agreement on parenting, property and financial matters without going to court. It usually resolves in one or two sessions, costs a fraction of litigation, and the agreement can be made legally binding through consent orders or a binding financial agreement.",
  """
@@ -240,7 +240,7 @@ build(
  "Parenting Plan Mediation | Custody Agreements, No Court",
  "Parenting plan mediation helps separated parents agree on living arrangements, time and decisions for the children — calmer than a custody court case.",
  "Parenting &amp; children's arrangements",
- "Parenting Plan Mediation — built around <em>your children</em>.",
+ "Parenting Plan Mediation",
  "The hardest part of separating is working out arrangements for the kids. Mediation gives you a calm, structured way to agree on living arrangements, time with each parent and how decisions get made — putting your children first and keeping the choice in your hands.",
  "Parenting plan mediation helps separated parents agree on living arrangements, time-sharing and decision-making for their children, guided by a neutral mediator. It is child-focused, faster and far less costly than a contested parenting case, and for most families it is a required step before court.",
  """
@@ -325,7 +325,7 @@ build(
  "Section 60I Certificates | Family Dispute Resolution",
  "Need a Section 60I certificate before family court? Accredited practitioners issue certificates through mediation to meet your legal obligations.",
  "Required before parenting court action",
- "Section 60I Certificates — issued by <em>accredited practitioners</em>.",
+ "Section 60I Certificates",
  "Before you can apply to court for parenting orders, the law requires you to attempt family dispute resolution first — and prove it with a Section 60I certificate. We conduct the mediation and issue the certificate, so you meet your obligations and genuinely try to resolve things at once.",
  "A Section 60I certificate is a document issued by an accredited Family Dispute Resolution Practitioner confirming you attempted mediation before applying to court for parenting orders. Under the Family Law Act 1975 it is generally required to file a parenting application, unless an exemption (such as family violence or urgency) applies.",
  """
@@ -367,7 +367,7 @@ build(
  "Binding Financial Agreements Mediation | Protect Assets",
  "Negotiate a binding financial agreement through mediation — before, during or after a relationship. Protect assets with accredited mediators.",
  "Binding financial agreements",
- "Financial Agreement Mediation — <em>protect what matters</em>.",
+ "Financial Agreement Mediation",
  "A binding financial agreement sets out how assets and finances are handled if a relationship ends. Mediation is the calm way to negotiate one — whether you're entering a relationship, already in one, or separating — so the terms are genuinely agreed rather than fought over.",
  "A binding financial agreement (BFA) is a private contract between partners that sets out how property, finances and support will be divided if they separate. Mediation helps couples negotiate fair terms, which are then formalised with independent legal advice to make the agreement binding under the Family Law Act.",
  """
@@ -407,7 +407,7 @@ build(
  "Spousal Maintenance Mediation | Fair Support, No Court",
  "Resolve spousal maintenance through mediation. Agree on fair, sustainable support without court — accredited mediators, fixed-fee, formalised properly.",
  "Spousal &amp; partner maintenance",
- "Spousal Maintenance Mediation, settled <em>fairly and respectfully</em>.",
+ "Spousal Maintenance Mediation",
  "When one partner can't adequately support themselves after separation, the other may be required to help. Mediation lets you agree on fair, realistic maintenance — based on genuine need and capacity to pay — without a draining court fight.",
  "Spousal maintenance is financial support one partner pays the other after separation when that partner cannot reasonably meet their own needs. Mediation helps couples agree on the amount and duration based on need and capacity to pay, then formalise it in consent orders or a financial agreement.",
  """
@@ -448,7 +448,7 @@ build(
  "Child Support Mediation Australia | Resolve It Privately",
  "Resolve child support disputes through mediation — private arrangements, departures from assessment and special expenses, without court.",
  "Child support arrangements",
- "Child Support Mediation — resolved <em>privately and fairly</em>.",
+ "Child Support Mediation",
  "Child support disagreements can poison co-parenting. Mediation gives you a private, practical way to agree on arrangements — including private agreements that go beyond the standard formula — so your children are properly supported and the conflict ends.",
  "Child support mediation helps separated parents resolve disagreements about supporting their children — including private child support agreements, departures from the standard assessment, and how special expenses are shared. It keeps decisions private and cooperative rather than adversarial.",
  """
@@ -488,7 +488,7 @@ build(
  "De Facto Relationship Mediation Australia | Same Rights",
  "Resolve de facto relationship disputes through mediation — property, finances and parenting. De facto partners have similar rights to married couples.",
  "De facto &amp; same-sex relationships",
- "De Facto Mediation — <em>same rights, same clarity</em>.",
+ "De Facto Mediation",
  "De facto and same-sex partners have substantially the same rights as married couples when a relationship ends. Mediation resolves property, financial and parenting matters the same way — quickly, privately and without court — once your relationship qualifies under the law.",
  "De facto relationship mediation resolves property, financial and parenting disputes for unmarried couples, including same-sex partners. De facto partners have similar rights to married couples under the Family Law Act, and mediation offers the same fast, private, out-of-court path to resolution.",
  """
@@ -523,7 +523,7 @@ build(
  "Grandparents' Rights Mediation | See Your Grandchildren",
  "Grandparents can use mediation to maintain contact with grandchildren after family breakdown. Resolve arrangements respectfully, without court.",
  "Grandparents &amp; extended family",
- "Grandparents' Rights Mediation — <em>stay part of the family</em>.",
+ "Grandparents' Rights Mediation",
  "When families break down, grandparents can lose contact with grandchildren they love. Australian law recognises children's right to a relationship with people significant to their care — including grandparents — and mediation is the gentlest way to restore and protect that bond.",
  "Grandparents' mediation helps grandparents reach agreement about spending time with their grandchildren after a separation or family conflict. The Family Law Act recognises children's right to maintain relationships with grandparents and other significant people, and mediation resolves this without a contested court case.",
  """
@@ -563,7 +563,7 @@ build(
  "Consent Orders Australia | Legally Binding Agreements",
  "Turn your mediated agreement into legally binding consent orders. We prepare and lodge consent orders for parenting and property — no court hearing required.",
  "Formalising your agreement",
- "Consent Orders — make your agreement <em>legally binding</em>.",
+ "Consent Orders",
  "Reaching agreement is the hard part — consent orders make it stick. They turn what you've agreed into legally enforceable court orders, usually without anyone setting foot in a courtroom. We prepare and lodge them for you.",
  "Consent orders are written agreements approved by the Federal Circuit and Family Court of Australia that make your parenting or property arrangements legally binding. You don't attend a hearing — the court reviews your agreement on the papers and, if it's fair, makes it into enforceable orders.",
  """
@@ -602,7 +602,7 @@ build(
  "Online Divorce in Australia | Apply &amp; Mediate by Video",
  "Apply for divorce online through the courts, and resolve parenting, property and finances by secure video with accredited mediators — anywhere in Australia.",
  "Online &amp; remote mediation",
- "Online Divorce Mediation — <em>wherever you are in Australia</em>.",
+ "Online Divorce Mediation",
  "You don't need to be in the same room — or even the same state — to resolve a separation. Our secure online mediation handles parenting, property and financial matters by video, making expert dispute resolution available across all of Australia, including regional and remote areas.",
  "Online divorce mediation lets separating couples resolve parenting, property and financial matters by secure video conference with an accredited mediator. It offers the same structured process and binding outcomes as in-person mediation, available anywhere in Australia.",
  """
@@ -680,7 +680,7 @@ build(
  "Workplace Mediation Australia | Resolve Disputes Fast",
  "Resolve workplace disputes through mediation — unfair dismissal, bullying, contracts and conflict. Faster than the Fair Work Commission.",
  "Workplace &amp; employment disputes",
- "Workplace Mediation — <em>resolve disputes before they escalate</em>.",
+ "Workplace Mediation",
  "Workplace conflict is costly, stressful and contagious. Mediation resolves disputes — from unfair dismissal claims to bullying complaints — early and confidentially, before they become expensive battles at the Fair Work Commission, so everyone can get back to work.",
  "Workplace mediation is a confidential process where a neutral mediator helps employers and employees resolve disputes — such as unfair dismissal, bullying, harassment or contract disagreements — without proceeding to the Fair Work Commission or court. It's faster, cheaper and helps preserve working relationships.",
  """
