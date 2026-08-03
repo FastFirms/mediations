@@ -227,7 +227,7 @@ d += f"""<main id="main">
 <div class="belbin-hero">
   <div>
     <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
-    <h1 style="margin-top:16px">{h1}</h1>
+    <h1 style="margin-top:16px;font-size:clamp(2.3rem,5.2vw,4rem);line-height:1.15;max-width:none">{h1}</h1>
     <p class="lede" style="margin-bottom:32px">{lede}</p>
     <div class="answer" style="margin:0"><p><strong>In short:</strong> {ans}</p></div>
     <div style="margin-top:32px;display:flex;flex-direction:column;gap:10px;font-size:.92rem;color:var(--ink-soft)">
