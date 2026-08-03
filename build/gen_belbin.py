@@ -143,7 +143,11 @@ schema = [
     faq_schema(qa),
 ]
 BELBIN_FORM = """
-<section id="belbin-enquiry" style="background:var(--sage-light);padding:64px 0 72px">
+<style>
+.belbin-field{width:100%;padding:13px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:1rem;background:var(--cream);color:var(--ink);font-family:var(--sans);box-sizing:border-box;outline:none;transition:border-color .2s}
+.belbin-field:focus{border-color:var(--sage-deep)}
+</style>
+<section id="belbin-enquiry" style="background:var(--sand);padding:64px 0 72px">
 <div class="wrap-narrow">
   <h2 style="margin-top:0;margin-bottom:8px">Enquire about Belbin training</h2>
   <p style="color:var(--ink-soft);margin:0 0 32px;max-width:52ch">Tell us about your team and we'll come back to you with a tailored proposal — no obligation.</p>
@@ -153,27 +157,27 @@ BELBIN_FORM = """
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
       <div class="form-row">
         <label for="b-name">Your name</label>
-        <input id="b-name" name="name" type="text" required autocomplete="name" placeholder="Full name">
+        <input id="b-name" name="name" type="text" required autocomplete="name" placeholder="Full name" class="belbin-field">
       </div>
       <div class="form-row">
         <label for="b-org">Organisation</label>
-        <input id="b-org" name="organisation" type="text" required placeholder="Company or team name">
+        <input id="b-org" name="organisation" type="text" required placeholder="Company or team name" class="belbin-field">
       </div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
       <div class="form-row">
         <label for="b-email">Email</label>
-        <input id="b-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com">
+        <input id="b-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com" class="belbin-field">
       </div>
       <div class="form-row">
         <label for="b-phone">Phone</label>
-        <input id="b-phone" name="phone" type="tel" autocomplete="tel" placeholder="0400 000 000">
+        <input id="b-phone" name="phone" type="tel" autocomplete="tel" placeholder="0400 000 000" class="belbin-field">
       </div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
       <div class="form-row">
         <label for="b-size">Number of people to be trained</label>
-        <select id="b-size" name="team_size" required>
+        <select id="b-size" name="team_size" required class="belbin-field">
           <option value="" disabled selected>Select…</option>
           <option value="1–5">1–5</option>
           <option value="6–10">6–10</option>
@@ -184,7 +188,7 @@ BELBIN_FORM = """
       </div>
       <div class="form-row">
         <label for="b-delivery">Preferred delivery</label>
-        <select id="b-delivery" name="delivery" required>
+        <select id="b-delivery" name="delivery" required class="belbin-field">
           <option value="" disabled selected>Select…</option>
           <option value="In person">In person</option>
           <option value="Online">Online</option>
@@ -194,7 +198,7 @@ BELBIN_FORM = """
     </div>
     <div class="form-row">
       <label for="b-role">Your role</label>
-      <select id="b-role" name="role">
+      <select id="b-role" name="role" class="belbin-field">
         <option value="" disabled selected>Select…</option>
         <option value="HR / People &amp; Culture">HR / People &amp; Culture</option>
         <option value="Senior Leader / Executive">Senior Leader / Executive</option>
@@ -205,7 +209,7 @@ BELBIN_FORM = """
     </div>
     <div class="form-row">
       <label for="b-context">What's prompting this? (optional)</label>
-      <textarea id="b-context" name="context" rows="4" placeholder="e.g. recurring conflict in a team, a restructure, building a new leadership group, WHS obligations…"></textarea>
+      <textarea id="b-context" name="context" rows="4" placeholder="e.g. recurring conflict in a team, a restructure, building a new leadership group, WHS obligations…" class="belbin-field"></textarea>
     </div>
     <button type="submit" id="belbin-submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:15px 20px">Send Enquiry <span class="arr">→</span></button>
     <p style="font-size:.85rem;color:var(--ink-soft);margin:0">We'll respond within one business day.</p>
