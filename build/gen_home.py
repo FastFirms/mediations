@@ -71,10 +71,10 @@ doc += f"""<main id="main">
       <p class="lede d3" style="font-size:clamp(1rem,1.5vw,1.2rem);color:var(--ink-soft);max-width:52ch;margin-bottom:36px">Most disputes don't need a courtroom. Our nationally accredited mediators help separating couples, families, businesses and colleagues reach lasting agreements — faster, more affordably, and on terms they choose together.</p>
       <div class="stats d4" style="margin-bottom:36px">
         <div class="stat"><span class="num"><em>90%</em></span><div class="lbl">resolved at mediation</div></div>
-        <div class="stat"><span class="num">Days</span><div class="lbl">not years in court</div></div>
+        <div class="stat"><span class="num">1 Day</span><div class="lbl">not years in court</div></div>
         <div class="stat"><span class="num">100%</span><div class="lbl">you choose the outcome</div></div>
       </div>
-      <div class="answer d5" style="max-width:60ch"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation for family, property, workplace and estate disputes — resolving 90% of matters without court, typically in days or weeks rather than years. We serve clients across Sydney, Melbourne, Brisbane, Perth and Australia-wide online.</p></div>
+      <div class="answer d5" style="max-width:60ch"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation for family, property, workplace and estate disputes — resolving 90% of matters without court in a single day — not years. We serve clients across Sydney, Melbourne, Brisbane, Perth and Australia-wide online.</p></div>
     </div>
     <div class="d3" style="background:var(--cream);border:1px solid var(--sand-deep);border-radius:22px;padding:clamp(24px,3vw,36px);box-shadow:0 4px 32px rgba(35,41,31,.07)">
       <p style="font-family:var(--serif);font-size:1.35rem;font-weight:400;color:var(--ink);margin:0 0 4px">Book a free consultation</p>

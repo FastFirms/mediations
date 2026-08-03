@@ -130,7 +130,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <h2>{esc(city)} mediation vs going to court: an honest comparison</h2>
 <p>It's worth being clear-eyed about the difference between the two paths, because for most people in {esc(city)} the contrast is stark:</p>
 <ul>
-  <li><strong>Time.</strong> Most {esc(city)} mediations resolve in one or two sessions, often within weeks. A contested matter through {esc(court_ref)} can take one to three years to reach a final hearing.</li>
+  <li><strong>Time.</strong> Most {esc(city)} mediations resolve in a single day. A contested matter through {esc(court_ref)} can take one to three years to reach a final hearing.</li>
   <li><strong>Cost.</strong> Mediation starts with a fixed fee and is usually shared between the parties. Litigation can consume tens or even hundreds of thousands of dollars per side — frequently a significant share of the very assets in dispute.</li>
   <li><strong>Control.</strong> In mediation you design the outcome. In court, a judge who has known your situation for hours decides matters you've lived for years.</li>
   <li><strong>Privacy.</strong> Mediation is confidential and conducted on a "without prejudice" basis. Court proceedings are part of the public record.</li>
@@ -138,7 +138,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 </ul>
 
 <h2>How the {esc(city)} court system fits in</h2>
-<p>{esc(reg_desc)}. {esc(circuit)} {esc(state_note)} Understanding where your matter would otherwise be heard matters, because it shows just how much mediation can save you. Rather than waiting for a listing at {esc(court_ref)}, you can often resolve your dispute within weeks — and if you do reach agreement, we can formalise it so it carries the same legal weight as a court order.</p>
+<p>{esc(reg_desc)}. {esc(circuit)} {esc(state_note)} Understanding where your matter would otherwise be heard matters, because it shows just how much mediation can save you. Rather than waiting for a listing at {esc(court_ref)}, you can often resolve your dispute in a single day — and if you do reach agreement, we can formalise it so it carries the same legal weight as a court order.</p>
 
 <h2>Family, divorce, property and parenting mediation in {esc(city)}</h2>
 <p>Whatever stage of separation you're at, there's a {esc(city)} mediation service built around it:</p>

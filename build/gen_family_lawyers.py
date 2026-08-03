@@ -86,7 +86,7 @@ TIER1 = [
      "Greater Western Sydney’s rapid population growth has not been matched by proportionate "
      "court resources. Waiting times for contested final hearings are among the longest in "
      "the country — which means the practical choice for Penrith families is often between "
-     "resolving through mediation within weeks, or waiting years for a court date while "
+     "resolving through mediation in a single day, or waiting years for a court date while"
      "legal costs accumulate.</p>"),
 
     ("ballarat-family-lawyers", "Ballarat", "VIC", "Melbourne",
@@ -241,8 +241,8 @@ TIER2 = [
      "which circuits to Geelong",
      "Geelong is Victoria’s second city. Family law matters here may be heard at the "
      "Geelong circuit or the Melbourne registry. Either way, contested proceedings take "
-     "considerable time. Many Geelong clients resolve matters through mediation — often "
-     "within weeks, and without the need to travel to Melbourne."),
+     "considerable time. Many Geelong clients resolve matters through mediation in a single day — "
+     "without the need to travel to Melbourne."),
 
     ("toowoomba-family-lawyers", "Toowoomba", "QLD", "Brisbane",
      "the Toowoomba circuit of the Federal Circuit and Family Court of Australia",
@@ -351,7 +351,7 @@ def build_tier1(slug, city, state, nearest_office, court_ref, local_context, cit
             "How long does family law take in " + city + "?",
             "A contested family law matter through " + ecr + " can take one to three years "
             "to reach a final hearing. Mediation, by contrast, typically resolves matters in "
-            "one to two sessions — often within weeks of the initial consultation. The "
+            "a single day — compared to years for a contested court matter. The "
             "difference in time, cost and stress is substantial."
         ),
         (
@@ -507,7 +507,7 @@ def build_tier1(slug, city, state, nearest_office, court_ref, local_context, cit
         "or parenting — commonly costs each party $15,000–$150,000 or more. "
         "Court filing fees are additional. Legal costs are almost never recovered from "
         "the other side in family law.</li>\n"
-        "  <li><strong>Time:</strong> Most " + ec + " mediations resolve within weeks. "
+        "  <li><strong>Time:</strong> Most " + ec + " mediations resolve in 1 day. "
         "A contested matter through " + ecr + " can take one to three years to reach "
         "a final hearing, during which time legal costs accumulate and uncertainty "
         "affects every decision you make.</li>\n"
@@ -679,7 +679,7 @@ def build_tier2(slug, city, state, nearest_office, court_ref, local_context):
         ),
         (
             "How long does mediation take compared to family court in " + city + "?",
-            "Most mediations resolve in one to two sessions, within weeks. A contested "
+            "Most mediations resolve in a single day. A contested "
             "matter through " + ecr + " can take one to three years. The time difference "
             "is one of the most compelling reasons to try mediation first."
         ),

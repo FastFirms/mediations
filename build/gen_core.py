@@ -499,7 +499,7 @@ doc += f"""<div class="wrap">
   <h2>Why resolve it through mediation?</h2>
   <div class="hwh-why-grid">
     <div><strong>Cheaper.</strong><span>Litigation runs $30,000–$150,000 per side. Mediation resolves most disputes for a fraction of that.</span></div>
-    <div><strong>Faster.</strong><span>Court takes one to three years. Most matters mediate in a single session within weeks.</span></div>
+    <div><strong>Faster.</strong><span>Court takes one to three years. Most matters resolve in a single 1-day session.</span></div>
     <div><strong>Confidential.</strong><span>Nothing reaches the public record. What's said in mediation is protected by law.</span></div>
     <div><strong>You decide.</strong><span>No outcome is imposed. Agreements you shape yourself are more likely to hold — and be liveable.</span></div>
   </div>
