@@ -65,10 +65,10 @@ POSTS = [
 ALL_CATS = ["All"] + sorted({cat for _,cat,_,_ in POSTS})
 
 schema=[org_schema(),breadcrumb_schema([("Home",""),("Guides","guides")]),
-        {"@type":"CollectionPage","name":"Mediation & Family Law Guides",
+        {"@type":"CollectionPage","name":"Mediation & Dispute Resolution Guides",
          "url":f"{DOMAIN}/guides/","isPartOf":{"@id":f"{DOMAIN}/#website"}}]
-d=head("Family Law &amp; Mediation Guides | Mediations Australia",
- "Practical, expert guides on mediation, divorce, property settlement, parenting and more — helping you resolve disputes without court. Free consultation.",
+d=head("Mediation &amp; Dispute Resolution Guides | Mediations Australia",
+ "Practical, expert guides on mediation, separation, workplace disputes, estate matters and more — written by accredited mediators to help you resolve disputes without court.",
  "guides",extra_schema=schema)+nav()
 
 import re as _re
@@ -139,8 +139,8 @@ d += f"""<main id="main">
 
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
 <span class="eyebrow"><span class="pulse"></span>Know more, stress less</span>
-<h1>Family law &amp; mediation <em>guides</em>.</h1>
-<p class="lede">Clear, practical answers on separation, property settlement, parenting and more — written by accredited mediators.</p>
+<h1>Mediation &amp; dispute resolution <em>guides</em>.</h1>
+<p class="lede">Clear, practical answers on separation, workplace disputes, estate matters, property settlement, parenting and more — written by accredited mediators.</p>
 <div class="phero-cta">
   <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
   <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
@@ -150,7 +150,7 @@ d += f"""<main id="main">
 <section class="sec" style="padding-top:40px" id="featured">
 <div class="wrap">
   <p class="sec-tag">Featured guides</p>
-  <h2 class="sec-title" style="margin-bottom:28px">In-depth guides by <em>our mediators</em>.</h2>
+  <h2 class="sec-title" style="margin-bottom:28px">In-depth guides across <em>every dispute type</em>.</h2>
   <div class="filter-bar" role="group" aria-label="Filter by topic">{cat_buttons}</div>
   <div class="cards" id="cstone-grid">{cards}</div>
   <p id="no-cat" style="display:none;color:var(--ink-soft);padding:32px 0;text-align:center">No guides in that category yet.</p>
@@ -161,7 +161,7 @@ d += f"""<main id="main">
 <div class="wrap">
   <p class="sec-tag">Full library</p>
   <h2 class="sec-title">Everything we've <em>written</em>.</h2>
-  <p style="color:var(--ink-soft);max-width:56ch;margin:0 0 28px">{n_imp} articles covering every aspect of family law, mediation, separation and dispute resolution in Australia.</p>
+  <p style="color:var(--ink-soft);max-width:56ch;margin:0 0 28px">{n_imp} articles covering family law, workplace disputes, estate matters, mediation process and dispute resolution across Australia.</p>
   <div class="search-wrap">
     <svg class="si" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
     <input type="search" id="asearch" placeholder="Search {n_imp} articles…" aria-label="Search all articles" autocomplete="off">
