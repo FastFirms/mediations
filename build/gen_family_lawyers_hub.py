@@ -128,6 +128,11 @@ def build():
 .fl-hub-toc{font-size:.88rem;color:var(--ink-soft);margin-bottom:32px;line-height:1.8}
 .fl-hub-toc a{color:var(--sage-deep);text-decoration:none}
 .fl-hub-toc a:hover{text-decoration:underline}
+.fl-hub-table{width:100%;border-collapse:collapse;margin:24px 0 40px;font-size:.95rem}
+.fl-hub-table th,.fl-hub-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line)}
+.fl-hub-table thead th{font-weight:700;background:var(--cream)}
+.fl-hub-table tbody tr:last-child td{border-bottom:none}
+.fl-hub-table td:first-child{color:var(--ink-soft)}
 </style>"""
 
     d = head(TITLE, DESC, SLUG, extra_schema=schema) + css + nav()
@@ -160,7 +165,7 @@ def build():
 
 <h2>Why choose mediation over a contested court matter?</h2>
 <div style="overflow-x:auto">
-<table>
+<table class="fl-hub-table">
 <thead><tr><th></th><th>Mediation</th><th>Contested litigation</th></tr></thead>
 <tbody>
 <tr><td>Time to resolution</td><td>1 day</td><td>1&ndash;3 years</td></tr>
