@@ -142,19 +142,10 @@ schema = [
     service_schema(crumb, desc, slug),
     faq_schema(qa),
 ]
-BELBIN_FORM = """
-<style>
-.belbin-field{width:100%;padding:13px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:1rem;background:var(--cream);color:var(--ink);font-family:var(--sans);box-sizing:border-box;outline:none;transition:border-color .2s}
-.belbin-field:focus{border-color:var(--sage-deep)}
-</style>
-<section id="belbin-enquiry" style="background:var(--sand);padding:64px 0 72px">
-<div class="wrap-narrow">
-  <h2 style="margin-top:0;margin-bottom:8px">Enquire about Belbin training</h2>
-  <p style="color:var(--ink-soft);margin:0 0 32px;max-width:52ch">Tell us about your team and we'll come back to you with a tailored proposal — no obligation.</p>
-  <form id="belbin-form" novalidate style="display:flex;flex-direction:column;gap:16px">
+BELBIN_FORM_FIELDS = """
     <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
     <input type="hidden" name="_subject" value="Belbin Team Roles Training Enquiry — Mediations Australia">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
       <div class="form-row">
         <label for="b-name">Your name</label>
         <input id="b-name" name="name" type="text" required autocomplete="name" placeholder="Full name" class="belbin-field">
@@ -164,7 +155,7 @@ BELBIN_FORM = """
         <input id="b-org" name="organisation" type="text" required placeholder="Company or team name" class="belbin-field">
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
       <div class="form-row">
         <label for="b-email">Email</label>
         <input id="b-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com" class="belbin-field">
@@ -174,9 +165,9 @@ BELBIN_FORM = """
         <input id="b-phone" name="phone" type="tel" autocomplete="tel" placeholder="0400 000 000" class="belbin-field">
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
       <div class="form-row">
-        <label for="b-size">Number of people to be trained</label>
+        <label for="b-size">Number of people</label>
         <select id="b-size" name="team_size" required class="belbin-field">
           <option value="" disabled selected>Select…</option>
           <option value="1–5">1–5</option>
@@ -192,35 +183,19 @@ BELBIN_FORM = """
           <option value="" disabled selected>Select…</option>
           <option value="In person">In person</option>
           <option value="Online">Online</option>
-          <option value="Either">Either works for us</option>
+          <option value="Either">Either works</option>
         </select>
       </div>
     </div>
     <div class="form-row">
-      <label for="b-role">Your role</label>
-      <select id="b-role" name="role" class="belbin-field">
-        <option value="" disabled selected>Select…</option>
-        <option value="HR / People &amp; Culture">HR / People &amp; Culture</option>
-        <option value="Senior Leader / Executive">Senior Leader / Executive</option>
-        <option value="Manager / Team Lead">Manager / Team Lead</option>
-        <option value="Business Owner">Business Owner</option>
-        <option value="Other">Other</option>
-      </select>
-    </div>
-    <div class="form-row">
       <label for="b-context">What's prompting this? (optional)</label>
-      <textarea id="b-context" name="context" rows="4" placeholder="e.g. recurring conflict in a team, a restructure, building a new leadership group, WHS obligations…" class="belbin-field"></textarea>
+      <textarea id="b-context" name="context" rows="3" placeholder="e.g. recurring conflict, a restructure, building a new leadership group…" class="belbin-field"></textarea>
     </div>
     <button type="submit" id="belbin-submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:15px 20px">Send Enquiry <span class="arr">→</span></button>
-    <p style="font-size:.85rem;color:var(--ink-soft);margin:0">We'll respond within one business day.</p>
-  </form>
-</div>
-</section>
-<style>
-@media(max-width:600px){
-  #belbin-enquiry [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-}
-</style>
+    <p style="font-size:.82rem;color:var(--ink-soft);margin:0">No obligation. We'll respond within one business day.</p>
+"""
+
+BELBIN_SCRIPT = """
 <script>
 document.getElementById('belbin-form').addEventListener('submit',async function(e){
   e.preventDefault();
@@ -239,16 +214,53 @@ document.getElementById('belbin-form').addEventListener('submit',async function(
 d = head(title, desc, slug, extra_schema=schema) + nav()
 d += f"""<main id="main">
 {crumb_html([("Home", ""), (crumb, None)])}
-<section class="phero"><div class="phero-blob"></div><div class="wrap">
-<span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
-<h1>{h1}</h1><p class="lede">{lede}</p>
-<div class="phero-cta"><a href="#belbin-enquiry" class="btn btn-primary">Enquire About Training <span class="arr">→</span></a>
-<a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
-</div></section>
-<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>
+<style>
+.belbin-hero{{display:grid;grid-template-columns:1fr 480px;gap:64px;align-items:start;padding:72px 0 80px}}
+.belbin-field{{width:100%;padding:13px 16px;border:1.5px solid var(--line);border-radius:10px;font-size:1rem;background:var(--cream);color:var(--ink);font-family:var(--sans);box-sizing:border-box;outline:none;transition:border-color .2s}}
+.belbin-field:focus{{border-color:var(--sage-deep)}}
+.belbin-form-card{{background:var(--cream);border:1.5px solid var(--line);border-radius:16px;padding:32px;box-shadow:0 4px 24px rgba(0,0,0,.07)}}
+@media(max-width:900px){{.belbin-hero{{grid-template-columns:1fr;gap:40px;padding:48px 0 56px}}.belbin-form-card{{padding:24px}}}}
+@media(max-width:600px){{.belbin-hero [style*="grid-template-columns:1fr 1fr"]{{grid-template-columns:1fr!important}}}}
+</style>
+<section style="background:var(--sand)">
+<div class="wrap">
+<div class="belbin-hero">
+  <div>
+    <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
+    <h1 style="margin-top:16px">{h1}</h1>
+    <p class="lede" style="margin-bottom:32px">{lede}</p>
+    <div class="answer" style="margin:0"><p><strong>In short:</strong> {ans}</p></div>
+    <div style="margin-top:32px;display:flex;flex-direction:column;gap:10px;font-size:.92rem;color:var(--ink-soft)">
+      <span>&#10003; Accredited Belbin Team Roles Facilitator</span>
+      <span>&#10003; In person or online, Australia-wide</span>
+      <span>&#10003; Tailored to your team — no obligation</span>
+    </div>
+  </div>
+  <div>
+    <div class="belbin-form-card">
+      <p style="font-weight:700;font-size:1.05rem;margin:0 0 4px">Enquire about Belbin training</p>
+      <p style="font-size:.88rem;color:var(--ink-soft);margin:0 0 20px">Tell us about your team and we'll send a tailored proposal.</p>
+      <form id="belbin-form" novalidate style="display:flex;flex-direction:column;gap:12px">
+        {BELBIN_FORM_FIELDS}
+      </form>
+    </div>
+    <a href="{PHONE_HREF}" style="display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;margin-top:16px">
+      <span style="width:36px;height:36px;border-radius:50%;background:var(--sage-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--sage-deep)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8a15.2 15.2 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      Or call {PHONE}
+    </a>
+  </div>
+</div>
+</div>
+</section>
 <article class="body"><div class="wrap-narrow reveal">{blocks}</div></article>"""
 d += faq_html(qa, heading=f"{crumb} FAQs")
-d += BELBIN_FORM
+d += cta_band(
+    "Ready to build a stronger team?",
+    "Book a free conversation with Dan Toombs — Accredited Belbin Facilitator and Nationally Accredited Mediator."
+)
+d += BELBIN_SCRIPT
 d += "</main>" + page_end()
 
 p = os.path.join(OUT, slug)
