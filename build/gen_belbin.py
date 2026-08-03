@@ -142,22 +142,109 @@ schema = [
     service_schema(crumb, desc, slug),
     faq_schema(qa),
 ]
+BELBIN_FORM = """
+<section id="belbin-enquiry" style="background:var(--sage-light);padding:64px 0 72px">
+<div class="wrap-narrow">
+  <h2 style="margin-top:0;margin-bottom:8px">Enquire about Belbin training</h2>
+  <p style="color:var(--ink-soft);margin:0 0 32px;max-width:52ch">Tell us about your team and we'll come back to you with a tailored proposal — no obligation.</p>
+  <form id="belbin-form" novalidate style="display:flex;flex-direction:column;gap:16px">
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
+    <input type="hidden" name="_subject" value="Belbin Team Roles Training Enquiry — Mediations Australia">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="form-row">
+        <label for="b-name">Your name</label>
+        <input id="b-name" name="name" type="text" required autocomplete="name" placeholder="Full name">
+      </div>
+      <div class="form-row">
+        <label for="b-org">Organisation</label>
+        <input id="b-org" name="organisation" type="text" required placeholder="Company or team name">
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="form-row">
+        <label for="b-email">Email</label>
+        <input id="b-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com">
+      </div>
+      <div class="form-row">
+        <label for="b-phone">Phone</label>
+        <input id="b-phone" name="phone" type="tel" autocomplete="tel" placeholder="0400 000 000">
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="form-row">
+        <label for="b-size">Number of people to be trained</label>
+        <select id="b-size" name="team_size" required>
+          <option value="" disabled selected>Select…</option>
+          <option value="1–5">1–5</option>
+          <option value="6–10">6–10</option>
+          <option value="11–20">11–20</option>
+          <option value="21–50">21–50</option>
+          <option value="50+">50+</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="b-delivery">Preferred delivery</label>
+        <select id="b-delivery" name="delivery" required>
+          <option value="" disabled selected>Select…</option>
+          <option value="In person">In person</option>
+          <option value="Online">Online</option>
+          <option value="Either">Either works for us</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <label for="b-role">Your role</label>
+      <select id="b-role" name="role">
+        <option value="" disabled selected>Select…</option>
+        <option value="HR / People &amp; Culture">HR / People &amp; Culture</option>
+        <option value="Senior Leader / Executive">Senior Leader / Executive</option>
+        <option value="Manager / Team Lead">Manager / Team Lead</option>
+        <option value="Business Owner">Business Owner</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label for="b-context">What's prompting this? (optional)</label>
+      <textarea id="b-context" name="context" rows="4" placeholder="e.g. recurring conflict in a team, a restructure, building a new leadership group, WHS obligations…"></textarea>
+    </div>
+    <button type="submit" id="belbin-submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:15px 20px">Send Enquiry <span class="arr">→</span></button>
+    <p style="font-size:.85rem;color:var(--ink-soft);margin:0">We'll respond within one business day.</p>
+  </form>
+</div>
+</section>
+<style>
+@media(max-width:600px){
+  #belbin-enquiry [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+}
+</style>
+<script>
+document.getElementById('belbin-form').addEventListener('submit',async function(e){
+  e.preventDefault();
+  var btn=document.getElementById('belbin-submit');
+  btn.disabled=true;btn.textContent='Sending…';
+  var data=new FormData(this);
+  try{
+    var r=await fetch('https://formspree.io/f/xwvgjnve',{method:'POST',body:data,headers:{Accept:'application/json'}});
+    if(r.ok){window.location.href='/thank-you/';}
+    else{btn.disabled=false;btn.innerHTML='Send Enquiry <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
+  }catch(err){btn.disabled=false;btn.innerHTML='Send Enquiry <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
+});
+</script>
+"""
+
 d = head(title, desc, slug, extra_schema=schema) + nav()
 d += f"""<main id="main">
 {crumb_html([("Home", ""), (crumb, None)])}
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
 <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
 <h1>{h1}</h1><p class="lede">{lede}</p>
-<div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
+<div class="phero-cta"><a href="#belbin-enquiry" class="btn btn-primary">Enquire About Training <span class="arr">→</span></a>
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
 </div></section>
 <div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>
 <article class="body"><div class="wrap-narrow reveal">{blocks}</div></article>"""
 d += faq_html(qa, heading=f"{crumb} FAQs")
-d += cta_band(
-    "Build stronger teams — <em>before disputes start</em>.",
-    "Book a free consultation with Dan Toombs, Accredited Belbin Facilitator and Nationally Accredited Mediator, to discuss how Belbin training can work for your organisation."
-)
+d += BELBIN_FORM
 d += "</main>" + page_end()
 
 p = os.path.join(OUT, slug)
