@@ -22,6 +22,7 @@ SERVICES = [
     ("consent-orders", "Consent Orders", "Make your agreement legally binding"),
     ("online-divorce", "Online Divorce", "Separate from anywhere in Australia"),
     ("workplace-mediation", "Workplace Mediation", "Resolve disputes before the FWC"),
+    ("belbin-team-roles-training", "Belbin Team Roles", "Build balanced teams, prevent disputes"),
     ("estate-dispute-mediation", "Estate Disputes", "Resolve will and inheritance disputes privately"),
 ]
 
@@ -30,7 +31,7 @@ SERVICES = [
 SERVICE_GROUPS = [
     ("Family & separation", ["family-law-mediation", "divorce-mediation", "online-divorce", "de-facto-mediation"]),
     ("Property & finances", ["property-settlement-mediation", "financial-agreements-mediation", "spousal-support-mediation", "consent-orders", "estate-dispute-mediation"]),
-    ("Parenting & workplace", ["parenting-plan-mediation", "child-support-mediation", "section-60i-certificates", "grandparents-mediation", "workplace-mediation"]),
+    ("Parenting & workplace", ["parenting-plan-mediation", "child-support-mediation", "section-60i-certificates", "grandparents-mediation", "workplace-mediation", "belbin-team-roles-training"]),
 ]
 
 # Primary capital-city + major regional locations
