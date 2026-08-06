@@ -143,16 +143,7 @@ def nav():
             f'<a href="/{s}/"><b>{esc(svc_lookup[s][0])}</b><span>{esc(svc_lookup[s][1])}</span></a>'
             for s in slugs)
         cols += f'<div class="mega-col"><span class="mega-head">{esc(group)}</span>{links}</div>'
-    svc_mega = f"""<div class="drop mega">{cols}
-      <div class="mega-card">
-        <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Nationally Accredited Mediator" class="mega-card-photo">
-        <div class="mega-card-body">
-          <span class="mega-card-tag">Free consultation</span>
-          <p class="mega-card-head">Talk to a Nationally Accredited Mediator today</p>
-          <a class="btn btn-primary mega-card-btn" href="{BOOK_URL}">Book a Free Consultation →</a>
-        </div>
-      </div>
-    </div>"""
+    svc_mega = f"""<div class="drop mega">{cols}</div>"""
     return f"""<header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="/" class="logo"><img src="/assets/images/MA.svg" alt="Mediations Australia" width="180" height="36" loading="eager" style="display:block;height:36px;width:auto"></a>
@@ -185,14 +176,6 @@ def nav():
             <a href="/bfa-or-consent-orders/"><b>BFA or Consent Orders?</b><span>Which is right for you</span></a>
             <a href="/family-law-cost-estimator/"><b>Cost Estimator</b><span>Mediation vs court costs</span></a>
             <a href="/separation-under-one-roof/"><b>Separation Under One Roof</b><span>How it works</span></a>
-          </div>
-          <div class="mega-card">
-            <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Nationally Accredited Mediator" class="mega-card-photo">
-            <div class="mega-card-body">
-              <span class="mega-card-tag">Free consultation</span>
-              <p class="mega-card-head">Talk to a Nationally Accredited Mediator today</p>
-              <a class="btn btn-primary mega-card-btn" href="{BOOK_URL}">Book a Free Consultation →</a>
-            </div>
           </div>
         </div>
       </span>
