@@ -24,6 +24,9 @@ SERVICES = [
     ("workplace-mediation", "Workplace Mediation", "Resolve disputes before the FWC"),
     ("belbin-team-roles-training", "Belbin Team Roles", "Build balanced teams, prevent disputes"),
     ("estate-dispute-mediation", "Estate Disputes", "Resolve will and inheritance disputes privately"),
+    ("commercial-mediation", "Commercial Mediation", "Partnership, contract and business disputes"),
+    ("real-estate-mediation", "Real Estate & Construction", "Lease, building and property disputes"),
+    ("elder-mediation", "Elder & Family Care", "Care arrangements for ageing parents"),
 ]
 
 # Grouped layout for the Services megamenu (scannable categories).
@@ -32,6 +35,7 @@ SERVICE_GROUPS = [
     ("Family & separation", ["family-law-mediation", "divorce-mediation", "online-divorce", "de-facto-mediation"]),
     ("Property & finances", ["property-settlement-mediation", "financial-agreements-mediation", "spousal-support-mediation", "consent-orders", "estate-dispute-mediation"]),
     ("Parenting & workplace", ["parenting-plan-mediation", "child-support-mediation", "section-60i-certificates", "grandparents-mediation", "workplace-mediation", "belbin-team-roles-training"]),
+    ("Business & property", ["commercial-mediation", "real-estate-mediation", "elder-mediation"]),
 ]
 
 # Primary capital-city + major regional locations

@@ -12,6 +12,7 @@ urls = [("", "1.0", "weekly")]
 core = ["family-law-mediation","how-mediation-works","about-mediations-australia",
         "preparing-for-mediation","contact-us","book-a-consultation",
         "family-lawyers","estate-dispute-mediation","collaborative-family-lawyers","family-law-arbitration",
+        "commercial-mediation","real-estate-mediation","elder-mediation",
         "divorce-counselling","our-fee-structure",
         "parenting-plan-template","bfa-or-consent-orders","getting-ready-for-separation",
         "family-law-cost-estimator","separation-under-one-roof",

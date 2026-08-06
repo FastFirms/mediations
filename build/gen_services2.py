@@ -158,6 +158,196 @@ build("divorce-counselling",
  "Care for the <em>whole</em> of separation, not just the paperwork.",
  "Get in touch to learn how counselling and mediation together can help you and your family move forward.")
 
+# ---- COMMERCIAL MEDIATION ----
+build("commercial-mediation",
+ "Commercial Mediation | Business Disputes Australia",
+ "Resolve commercial and business disputes through mediation. Faster, private and cheaper than litigation. Nationally accredited mediators.",
+ "Business &amp; commercial disputes",
+ "Commercial Mediation",
+ "Business disputes are expensive — in legal fees, management distraction, and damaged relationships. Commercial mediation resolves partnership conflicts, contract disagreements, franchise disputes and more in a single session, privately and without litigation.",
+ "Commercial mediation helps Australian businesses resolve disputes — including partnership and shareholder conflicts, contract disagreements, franchise disputes and business exits — quickly, privately and at a fraction of the cost of commercial litigation.",
+ """
+ <h2>What commercial disputes can be mediated?</h2>
+ <p>Mediation is available for the full range of business disputes. The most common matters we resolve include:</p>
+ <ul>
+   <li><strong>Partnership and co-founder disputes</strong> — disagreements over direction, profit sharing, decision-making authority, or a partner's exit</li>
+   <li><strong>Director and shareholder conflicts</strong> — deadlock, minority shareholder oppression, dividend disputes, and director removal</li>
+   <li><strong>Contractor and subcontractor disagreements</strong> — scope creep, payment disputes, defective work and contract termination</li>
+   <li><strong>Contract disputes</strong> — breach of contract, interpretation disputes, enforcement, variation and termination claims</li>
+   <li><strong>Insurance claim disputes</strong> — where an insurer and policyholder disagree on entitlement, scope or quantum</li>
+   <li><strong>Franchise disputes</strong> — franchisee and franchisor conflicts under the <a href="https://www.accc.gov.au/business/industry-codes/franchising-code-of-conduct" target="_blank" rel="noopener">Franchising Code of Conduct</a>, which requires mediation before many disputes can proceed to court</li>
+   <li><strong>Business exits and buyouts</strong> — valuation disputes, earn-out disagreements, and the terms of a departing partner's payout</li>
+ </ul>
+
+ <h2>Why mediate commercial disputes instead of litigating?</h2>
+ <p>Commercial litigation in Australia is expensive, slow and public. A disputed contract matter in the Federal Court or a Supreme Court can take two to four years and cost each party $100,000–$500,000 or more in legal fees — often exceeding the value of the dispute itself. The process is also entirely public, which means confidential business information, pricing, and relationship details become part of the court record.</p>
+ <p>Mediation resolves the same disputes in a single day, privately, at a fixed and shared cost. The business keeps operating. The relationship — often between people who will continue to deal with each other — has a chance of surviving.</p>
+
+ <figure class="tbl"><table><caption>Commercial mediation vs commercial litigation</caption>
+ <thead><tr><th></th><th>Mediation</th><th>Commercial litigation</th></tr></thead>
+ <tbody>
+ <tr><td>Time to resolution</td><td>1 day</td><td>2–4 years</td></tr>
+ <tr><td>Typical cost per party</td><td>$1,500–$4,000</td><td>$100,000–$500,000+</td></tr>
+ <tr><td>Confidential</td><td>Yes — protected by law</td><td>No — public record</td></tr>
+ <tr><td>Who decides the outcome</td><td>The parties</td><td>A judge</td></tr>
+ <tr><td>Business relationship preserved</td><td>Possible — collaborative process</td><td>Rarely — adversarial process</td></tr>
+ <tr><td>Management distraction</td><td>One session</td><td>Years of discovery, affidavits, hearings</td></tr>
+ </tbody></table></figure>
+
+ <h2>Shareholder and director disputes — a closer look</h2>
+ <p>Disputes between co-directors or shareholders are among the most damaging business disputes because the parties are bound together — you can't simply walk away. Common triggers include deadlock on a major decision, one director's conduct damaging the company, disagreement over whether to sell the business, or a minority shareholder who feels oppressed by the majority.</p>
+ <p>Mediation creates the space for an honest commercial conversation about what each party actually wants — which is often quite different from the legal position they've taken. Most director disputes resolve around either a restructured operating agreement, a buyout at an agreed valuation, or a structured exit. A mediator helps the parties get to that conversation without the expense and destruction of a winding-up application or oppression claim.</p>
+
+ <h2>Franchise disputes — mediation is often required first</h2>
+ <p>The <a href="https://www.accc.gov.au/business/industry-codes/franchising-code-of-conduct" target="_blank" rel="noopener">Franchising Code of Conduct</a> (mandatory under Australian Consumer Law) requires franchisors and franchisees to attempt mediation before most disputes can proceed to litigation or arbitration. Our mediators are experienced in the franchise context — understanding the power imbalances, disclosure obligations, and specific Code requirements that shape these disputes. Early mediation resolves most franchise conflicts before they become entrenched.</p>
+
+ <div class="callout">
+   <h3>Commercial mediation agreements are binding</h3>
+   <p>Any settlement reached in commercial mediation can be documented as a deed of settlement — a legally binding contract enforceable in court. You leave the session with a signed agreement, not a promise. The confidentiality of what was said in mediation is protected under Australian law.</p>
+ </div>
+
+ <h2>Business exits and valuation disputes</h2>
+ <p>Business exits generate disputes even between people who started as friends and partners. The common flashpoints: how the business should be valued, what goodwill is worth, the terms of earn-out payments, non-compete obligations, and who keeps key clients or staff. These disputes are often more emotional than technical — the numbers are the battleground, but the real issue is fairness and recognition.</p>
+ <p>Mediation works well here because a skilled mediator separates the commercial questions (which a valuation expert can inform) from the relational ones (which negotiation must resolve). We bring both to the table. <a href="/our-fee-structure/">See our fee structure →</a></p>
+ """,
+ [("What commercial disputes can be resolved through mediation?",
+   "Partnership conflicts, shareholder and director disputes, contract disagreements, contractor claims, insurance disputes, franchise conflicts under the Franchising Code, and business exits can all be mediated."),
+  ("Is a mediated commercial settlement legally binding?",
+   "Yes. Any agreement reached in commercial mediation can be documented as a deed of settlement — a legally binding contract enforceable in court."),
+  ("Does the Franchising Code of Conduct require mediation?",
+   "Yes. The Franchising Code of Conduct (mandatory under Australian Consumer Law) requires parties to attempt mediation before most franchise disputes can proceed to litigation or arbitration."),
+  ("How long does commercial mediation take?",
+   "Most commercial disputes resolve in a single half-day or full-day session. Complex multi-party matters may need two sessions."),
+  ("How much does commercial mediation cost?",
+   "Our commercial mediation is fixed-fee, typically $3,000–$4,500 for the full session, shared equally between the parties.")],
+ "Commercial Mediation",
+ "Resolve the dispute — and keep the business moving.",
+ "Book a free consultation to discuss your commercial dispute. We respond within one business day.")
+
+# ---- REAL ESTATE & CONSTRUCTION MEDIATION ----
+build("real-estate-mediation",
+ "Real Estate & Construction Mediation Australia",
+ "Resolve property and construction disputes through mediation. Lease conflicts, building disputes, easement claims and development disagreements resolved privately.",
+ "Property &amp; construction disputes",
+ "Real Estate & Construction Mediation",
+ "Property and construction disputes can freeze transactions, stall developments, and trap parties in costly litigation for years. Mediation resolves lease conflicts, building disputes, boundary disagreements and development stalemates in a single session — privately, without court.",
+ "Real estate and construction mediation resolves property transaction disputes, commercial and retail lease conflicts, easement and boundary disagreements, development disputes and building contract claims — faster, more privately and far more cheaply than litigation.",
+ """
+ <h2>What property and construction disputes can be mediated?</h2>
+ <ul>
+   <li><strong>Property transaction disputes</strong> — disputes arising from the sale or purchase of property, including misrepresentation, failure to complete, and deposit disagreements</li>
+   <li><strong>Commercial lease disputes</strong> — rent reviews, lease renewals, make-good obligations, outgoings, and landlord/tenant conflicts</li>
+   <li><strong>Retail shop lease disputes</strong> — disputes governed by state retail leases legislation, where mediation is often a mandatory step before litigation</li>
+   <li><strong>Easement and right-of-way disputes</strong> — access, maintenance obligations, and claims that easements are being blocked or exceeded</li>
+   <li><strong>Boundary disputes</strong> — encroachments, fencing disputes, and disputes about survey results</li>
+   <li><strong>Development disputes</strong> — between developers, landowners, neighbours, and councils, including objections, conditions, and development agreement terms</li>
+   <li><strong>Building contract conflicts</strong> — defective work, variations, payment claims, time delays and contract termination under residential and commercial building contracts</li>
+   <li><strong>Strata and owners corporation disputes</strong> — between lot owners, between owners and the strata manager, and disputes about by-laws and levies</li>
+ </ul>
+
+ <h2>Retail shop leases — mediation is often mandatory</h2>
+ <p>Each state and territory has its own retail leases legislation, and most require landlords and tenants to attempt mediation before a dispute can proceed to tribunal or court. In NSW, the <a href="https://www.smallbusiness.nsw.gov.au/retail-leases" target="_blank" rel="noopener">Retail Leases Act 1994</a> provides a mediation pathway through the NSW Small Business Commissioner. In Victoria, the <a href="https://www.vsbc.vic.gov.au/" target="_blank" rel="noopener">Victorian Small Business Commission</a> administers retail lease disputes. Our mediators are familiar with the procedural requirements across all major jurisdictions.</p>
+
+ <h2>Building and construction disputes — why early mediation matters</h2>
+ <p>Building disputes are notoriously expensive to litigate because they require expert evidence — structural engineers, quantity surveyors, building consultants — that accumulates cost quickly. A disputed defects claim worth $80,000 can cost both parties that amount again in legal and expert fees before it gets to hearing.</p>
+ <p>Early mediation resolves most building disputes in a single session. The mediator doesn't determine who is right on the technical question; they help the parties find a practical resolution both can accept. Most building contract disputes settle around an agreed scope of remedial works, a negotiated deduction from the contract price, or a combination of both.</p>
+
+ <figure class="tbl"><table><caption>Common building disputes and typical resolution in mediation</caption>
+ <thead><tr><th>Dispute type</th><th>Common resolution</th></tr></thead>
+ <tbody>
+ <tr><td>Defective work</td><td>Agreed scope of rectification, or a price reduction reflecting the defects</td></tr>
+ <tr><td>Variation claim</td><td>Agreed value for authorised variations; disputed ones written off or reduced</td></tr>
+ <tr><td>Delay / liquidated damages</td><td>Agreed extension of time, partial waiver, or structured payment plan</td></tr>
+ <tr><td>Incomplete works</td><td>Agreed completion timeline or buyout of incomplete scope</td></tr>
+ <tr><td>Payment dispute</td><td>Undisputed amounts paid; disputed claims mediated to an agreed figure</td></tr>
+ </tbody></table></figure>
+
+ <div class="callout">
+   <h3>Strata and neighbours — the value of an early conversation</h3>
+   <p>Neighbour and strata disputes that go to tribunal often leave parties living next door to each other in permanent hostility. Mediation achieves a practical resolution — fencing, noise, access, by-law compliance — before the relationship is permanently poisoned. It's usually over in a single afternoon.</p>
+ </div>
+
+ <h2>Can mediation be used during active court or tribunal proceedings?</h2>
+ <p>Yes. Courts and tribunals regularly refer property and construction disputes to mediation — and parties can choose private mediation at any stage of proceedings, including after claims have been filed. A mediated resolution at any stage saves the remaining cost of the litigation and gives the parties control over the outcome. <a href="/commercial-mediation/">See commercial mediation →</a> or <a href="/estate-dispute-mediation/">estate dispute mediation →</a></p>
+ """,
+ [("What property disputes can be resolved through mediation?",
+   "Property transaction disputes, commercial and retail lease conflicts, easement and boundary claims, development disputes, building contract defects and payment claims, and strata disputes can all be mediated."),
+  ("Is mediation compulsory for retail shop lease disputes?",
+   "In most states and territories, yes — retail leases legislation requires mediation before a dispute can proceed to tribunal or court. We can advise on the correct pathway for your jurisdiction."),
+  ("How much does real estate mediation cost?",
+   "Property and construction mediation is fixed-fee — typically $3,000–$4,500 for the session, shared equally. Far less than a disputed building matter litigated to hearing."),
+  ("Can mediation resolve a dispute already in NCAT or court?",
+   "Yes. Mediation can be used at any stage of proceedings. Courts regularly refer property matters to mediation, and private mediation can resolve the dispute before the next hearing."),
+  ("What happens if we reach agreement in mediation?",
+   "The settlement is documented as a deed of settlement or consent orders — legally binding and enforceable. For court proceedings, the terms can be filed to formally resolve the case.")],
+ "Real Estate & Construction Mediation",
+ "Resolve your property dispute — without the litigation.",
+ "Book a free consultation to discuss your property or construction dispute.")
+
+# ---- ELDER MEDIATION ----
+build("elder-mediation",
+ "Elder Mediation | Family Care Arrangements Australia",
+ "Resolve family decisions about ageing parents through mediation. Care arrangements, living situations and financial agreements — decided together, before they fracture the family.",
+ "Elder &amp; family care",
+ "Elder Mediation",
+ "Decisions about where an ageing parent lives, who provides care, how costs are shared, and questions about granny flats or early inheritance can quietly divide siblings at the hardest time. Elder mediation brings the family together to make these decisions respectfully — before they fracture.",
+ "Elder mediation helps families resolve care arrangements, living situations and financial agreements for ageing parents — including granny flat arrangements, early inheritance questions and disputes about who bears the cost of care — without family conflict or legal proceedings.",
+ """
+ <h2>What is elder mediation?</h2>
+ <p>Elder mediation is a structured conversation, facilitated by a neutral mediator, that helps families make decisions about the care, living arrangements and financial affairs of an ageing parent or family member. Unlike family law mediation — which resolves the aftermath of a breakdown — elder mediation is most effective <em>before</em> the family fractures, when the decisions are still genuinely open and the relationships are still intact.</p>
+ <p>These conversations are hard to have without structure. Each sibling has a different relationship with the parent, different capacity to provide care, different financial circumstances, and different views on what the right thing to do looks like. A mediator creates a safe, structured environment where all of those differences can be heard and addressed — without a family dinner turning into a war.</p>
+
+ <h2>What decisions can elder mediation help with?</h2>
+ <ul>
+   <li><strong>Care arrangements</strong> — who provides care, how responsibilities are shared, what professional care is appropriate, and how to manage a parent's transition from independence to supported living</li>
+   <li><strong>Living situations</strong> — whether a parent moves in with a child, moves to residential aged care, downsizes, or stays in the family home with support</li>
+   <li><strong>Granny flat arrangements</strong> — the financial and practical terms of a parent moving into a child's property, including the Centrelink and tax implications that need legal advice alongside the family conversation</li>
+   <li><strong>Cost sharing</strong> — how the costs of care (in-home support, residential aged care, medical expenses) are shared between siblings, particularly where financial circumstances differ</li>
+   <li><strong>Early inheritance and financial gifts</strong> — whether and how assets are transferred to children now, and how to do so in a way the whole family accepts as fair</li>
+   <li><strong>Enduring power of attorney and guardianship</strong> — who holds these, how decisions are made, and how disagreements between attorneys are resolved</li>
+   <li><strong>Existing family conflict</strong> — where past grievances are making it impossible to make decisions together, and a neutral facilitator is needed to move forward</li>
+ </ul>
+
+ <h2>Why these decisions need structure</h2>
+ <p>Unstructured decision-making under stress creates resentment, suspicion and misunderstanding that escalates. One sibling who provides the most care quietly accumulates grievances. Another who contributes financially doesn't understand why the carer feels undervalued. A parent who wants input into their own future feels sidelined by children who think they're helping.</p>
+ <p>Elder mediation creates the structure that prevents this. It brings everyone to the table with a clear agenda, a neutral facilitator, and a commitment to reach decisions the whole family can support — with the parent's voice at the centre.</p>
+
+ <figure class="tbl"><table><caption>Common elder mediation scenarios and what resolution looks like</caption>
+ <thead><tr><th>Scenario</th><th>What mediation produces</th></tr></thead>
+ <tbody>
+ <tr><td>Parent needs care — siblings disagree on the right arrangement</td><td>A care plan all siblings endorse, with clear roles, review points and a shared cost schedule</td></tr>
+ <tr><td>Parent wants to move in with one child — others have concerns</td><td>A granny flat agreement (for legal advice) covering terms, financial contribution, and exit provisions</td></tr>
+ <tr><td>One sibling is providing care and feels unsupported</td><td>Recognition of the carer's contribution, rebalanced responsibilities, and a financial arrangement that reflects the unequal input</td></tr>
+ <tr><td>Parent wants to give money to one child — others concerned about fairness</td><td>A family agreement on the gift, documented in a way that reduces estate conflict later</td></tr>
+ <tr><td>Siblings cannot agree on who holds power of attorney</td><td>A co-attorney arrangement or a decision-making protocol that gives each sibling confidence</td></tr>
+ </tbody></table></figure>
+
+ <div class="callout">
+   <h3>The parent's voice matters most</h3>
+   <p>Elder mediation keeps the older person's wishes at the centre of every decision. Where a parent has capacity, they participate directly. Where capacity is limited, the mediator ensures their known wishes and values are heard and respected. These are decisions about someone's life — they deserve more than a family argument.</p>
+ </div>
+
+ <h2>When is the right time for elder mediation?</h2>
+ <p>The best time is before a crisis forces a rushed decision — a fall, a hospitalisation, a diagnosis that suddenly makes independent living impossible. At that point, the family is under maximum stress and decisions are made reactively, often poorly.</p>
+ <p>But mediation is also effective after conflict has begun — after siblings have stopped speaking, after a disputed care decision has fractured the family, or after a parent's estate has become the subject of competing claims. It is never too late to have a structured, facilitated conversation.</p>
+
+ <h2>Does elder mediation involve lawyers?</h2>
+ <p>The mediator is not a lawyer and cannot provide legal advice. For matters involving granny flat arrangements, gifts of property, or powers of attorney, we strongly recommend each family member take independent legal advice before signing any formal agreement. The mediator's role is to reach agreed terms; the lawyers make those terms binding and legally sound. <a href="/family-law-mediation/">See family law mediation →</a> or <a href="/estate-dispute-mediation/">estate dispute mediation →</a></p>
+ """,
+ [("What is elder mediation?",
+   "Elder mediation is a facilitated family conversation that helps families make decisions about the care, living arrangements and financial affairs of an ageing parent — before or after family conflict has begun."),
+  ("What decisions can elder mediation help with?",
+   "Care arrangements, living situations (including granny flats), cost sharing between siblings, early inheritance, enduring power of attorney arrangements, and family conflict about how to support an ageing parent."),
+  ("Does the parent participate in elder mediation?",
+   "Yes, where they have capacity — their wishes are at the centre of every decision. Where capacity is limited, the mediator ensures their known wishes are heard and respected throughout the process."),
+  ("When is the right time for elder mediation?",
+   "Before a crisis if possible — while decisions are still open and the family is still communicating. But mediation is also effective after conflict has begun, even after siblings have stopped speaking."),
+  ("Do we need lawyers for elder mediation?",
+   "The mediator is not a lawyer. For granny flat arrangements, property gifts or powers of attorney, we recommend independent legal advice before formalising any agreement.")],
+ "Elder Mediation",
+ "Bring the family together — before the decisions pull it apart.",
+ "Book a free consultation to discuss how elder mediation can help your family.")
+
 # ---- FEE STRUCTURE ----
 build("our-fee-structure",
  "Mediation Fees & Pricing | Mediations Australia",
