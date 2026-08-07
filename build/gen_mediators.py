@@ -10,7 +10,7 @@ OUT = os.path.join(os.path.dirname(__file__), "..")
 
 PAGE_CSS = """<style>
 .mediator-hero{padding:60px 0 0;background:var(--sand)}
-.mediator-profile{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start;padding:48px 0 56px}
+.mediator-profile{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start;padding:48px 0 24px}
 .mediator-photo{position:sticky;top:100px}
 @media(max-width:720px){.mediator-profile{display:block!important}.mediator-photo{position:static!important;width:100%!important;margin-bottom:32px}.mediator-photo img{width:100%!important;height:280px}.mediator-content{width:100%!important}}
 .mediator-photo img{width:100%;height:320px;object-fit:cover;object-position:top;border-radius:16px;display:block;box-shadow:0 8px 32px rgba(0,0,0,.10)}
@@ -161,7 +161,7 @@ d += f"""<main id="main">
   </div>
 </section>
 
-<section style="background:var(--cream);padding-bottom:24px">
+<section style="background:var(--cream)">
   <div class="wrap">
     <div class="mediator-profile">
 
@@ -396,7 +396,7 @@ d += f"""<main id="main">
   </div>
 </section>
 
-<section style="background:var(--cream);padding-bottom:24px">
+<section style="background:var(--cream)">
   <div class="wrap">
     <div class="mediator-profile">
 
@@ -567,7 +567,7 @@ d += f"""<main id="main">
   </div>
 </section>
 
-<section style="background:var(--cream);padding-bottom:24px">
+<section style="background:var(--cream)">
   <div class="wrap">
     <div class="mediator-profile">
 
