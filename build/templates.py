@@ -11,31 +11,66 @@ BOOK_URL = "/book-a-consultation/"
 SERVICES = [
     ("family-law-mediation", "Family Law Mediation", "Parenting & property, resolved without court"),
     ("divorce-mediation", "Divorce Mediation", "Resolve everything that comes with divorce"),
+    ("online-divorce", "Online Divorce", "Separate from anywhere in Australia"),
+    ("de-facto-mediation", "De Facto Disputes", "Same rights, same clear process"),
     ("property-settlement-mediation", "Property Settlement", "Divide assets fairly and finally"),
-    ("parenting-plan-mediation", "Parenting Plans", "Workable arrangements for your children"),
-    ("section-60i-certificates", "Section 60I Certificates", "Required before parenting court action"),
     ("financial-agreements-mediation", "Financial Agreements", "Binding agreements (BFAs), done right"),
     ("spousal-support-mediation", "Spousal Maintenance", "Fair support after separation"),
-    ("child-support-mediation", "Child Support", "Resolve support disputes privately"),
-    ("de-facto-mediation", "De Facto Disputes", "Same rights, same clear process"),
-    ("grandparents-mediation", "Grandparents' Rights", "Stay in your grandchildren's lives"),
     ("consent-orders", "Consent Orders", "Make your agreement legally binding"),
-    ("online-divorce", "Online Divorce", "Separate from anywhere in Australia"),
-    ("workplace-mediation", "Workplace Mediation", "Resolve disputes before the FWC"),
-    ("belbin-team-roles-training", "Belbin Team Roles", "Build balanced teams, prevent disputes"),
-    ("estate-dispute-mediation", "Estate Disputes", "Resolve will and inheritance disputes privately"),
+    ("parenting-plan-mediation", "Parenting Plans", "Workable arrangements for your children"),
+    ("child-support-mediation", "Child Support", "Resolve support disputes privately"),
+    ("section-60i-certificates", "Section 60I Certificates", "Required before parenting court action"),
+    ("grandparents-mediation", "Grandparents' Rights", "Stay in your grandchildren's lives"),
+    ("workplace-mediation", "Workplace & Employment Mediation", "Resolve disputes before the Fair Work Commission"),
+    ("unfair-dismissal-termination-mediation", "Unfair Dismissal & Termination", "The 21-day deadline, and how to protect your rights"),
+    ("workplace-bullying-harassment-mediation", "Bullying & Harassment", "Where mediation helps — and where it doesn't"),
+    ("general-protections-discrimination-mediation", "General Protections & Discrimination", "Adverse action and protected rights, resolved"),
+    ("redundancy-restructure-mediation", "Redundancy & Restructure", "Was your redundancy genuine? Know your position"),
+    ("partnership-executive-exit-mediation", "Partnership & Executive Exit", "High-stakes separations, resolved privately"),
+    ("workplace-investigations-grievance-mediation", "Workplace Investigations & Grievances", "Handle complaints well; repair the workplace"),
+    ("belbin-team-roles-training", "Belbin Team Roles", "Build balanced teams and prevent conflict before it starts"),
     ("commercial-mediation", "Commercial Mediation", "Partnership, contract and business disputes"),
     ("real-estate-mediation", "Real Estate & Construction", "Lease, building and property disputes"),
+    ("estate-dispute-mediation", "Estate & Inheritance Disputes", "Resolve will and inheritance disputes privately"),
     ("elder-mediation", "Elder & Family Care", "Care arrangements for ageing parents"),
 ]
 
-# Grouped layout for the Services megamenu (scannable categories).
-# Slugs reference SERVICES above; workplace + how-it-works live in the menu footer.
+# Grouped layout for the Services megamenu.
+# "---" inserts a visual divider. First item per column renders as a bold lead link.
 SERVICE_GROUPS = [
-    ("Family & separation", ["family-law-mediation", "divorce-mediation", "online-divorce", "de-facto-mediation"]),
-    ("Property & finances", ["property-settlement-mediation", "financial-agreements-mediation", "spousal-support-mediation", "consent-orders", "estate-dispute-mediation"]),
-    ("Parenting & workplace", ["parenting-plan-mediation", "child-support-mediation", "section-60i-certificates", "grandparents-mediation", "workplace-mediation", "belbin-team-roles-training"]),
-    ("Business & property", ["commercial-mediation", "real-estate-mediation", "elder-mediation"]),
+    ("Family & Separation", [
+        "family-law-mediation",
+        "divorce-mediation",
+        "online-divorce",
+        "de-facto-mediation",
+        "property-settlement-mediation",
+        "financial-agreements-mediation",
+        "spousal-support-mediation",
+        "consent-orders",
+    ]),
+    ("Parenting & Children", [
+        "parenting-plan-mediation",
+        "child-support-mediation",
+        "section-60i-certificates",
+        "grandparents-mediation",
+    ]),
+    ("Workplace & Employment", [
+        "workplace-mediation",
+        "unfair-dismissal-termination-mediation",
+        "workplace-bullying-harassment-mediation",
+        "general-protections-discrimination-mediation",
+        "redundancy-restructure-mediation",
+        "partnership-executive-exit-mediation",
+        "workplace-investigations-grievance-mediation",
+        "---",
+        "belbin-team-roles-training",
+    ]),
+    ("Business, Property & Estates", [
+        "commercial-mediation",
+        "real-estate-mediation",
+        "estate-dispute-mediation",
+        "elder-mediation",
+    ]),
 ]
 
 # Primary capital-city + major regional locations
@@ -142,9 +177,25 @@ def nav():
     svc_lookup = {s: (n, d) for s, n, d in SERVICES}
     cols = ""
     for group, slugs in SERVICE_GROUPS:
-        links = "".join(
-            f'<a href="/{s}/"><b>{esc(svc_lookup[s][0])}</b><span>{esc(svc_lookup[s][1])}</span></a>'
-            for s in slugs)
+        links = ""
+        for i, s in enumerate(slugs):
+            if s == "---":
+                links += '<hr style="border:none;border-top:1px solid var(--line);margin:8px 0">'
+            elif i == 0:
+                # First item is the pillar — bold lead link
+                n, d = svc_lookup[s]
+                links += f'<a href="/{s}/" class="mega-lead"><b>{esc(n)}</b><span>{esc(d)}</span></a>'
+            elif s == "belbin-team-roles-training":
+                n, d = svc_lookup[s]
+                links += (f'<a href="/{s}/"><b>{esc(n)}</b>'
+                          f'<span style="display:inline-flex;align-items:center;gap:6px">'
+                          f'<em style="font-style:normal;font-size:.72rem;font-weight:600;letter-spacing:.04em;'
+                          f'text-transform:uppercase;background:var(--sand-deep);color:var(--sage-deep);'
+                          f'padding:1px 6px;border-radius:4px">Training</em></span>'
+                          f'<span>{esc(d)}</span></a>')
+            else:
+                n, d = svc_lookup[s]
+                links += f'<a href="/{s}/"><b>{esc(n)}</b><span>{esc(d)}</span></a>'
         cols += f'<div class="mega-col"><span class="mega-head">{esc(group)}</span>{links}</div>'
     svc_mega = f"""<div class="drop mega">{cols}</div>"""
     return f"""<header class="nav" id="nav">
