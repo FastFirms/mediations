@@ -904,15 +904,16 @@ _wm += f"""<main id="main">
   </div>
   <div class="wrap" style="margin-top:20px">
     <h1 class="d2" style="font-size:clamp(2rem,4.8vw,3.8rem);max-width:22ch;margin-bottom:20px">Workplace Mediation — <em>Resolve It Before It Costs More</em></h1>
-    <p class="lede d3" style="font-size:clamp(1rem,1.4vw,1.15rem);color:var(--ink-soft);max-width:58ch;margin-bottom:32px">A dispute at work rarely stays contained. What begins as one difficult conversation can quickly consume a team, damage a reputation and end up in front of the Fair Work Commission or a court. Our nationally accredited mediators resolve workplace and employment disputes across Australia — often in a single day.</p>
+    <p class="lede d3" style="font-size:clamp(1rem,1.4vw,1.15rem);color:var(--ink-soft);max-width:58ch;margin-bottom:32px"><strong>Workplace disputes rarely stay contained.</strong> Left unresolved, they can consume management time, damage team culture, increase legal costs and expose the organisation to escalating risk. Workplace mediation provides a confidential, structured way to address the conflict early — before positions harden and the cost of resolving it increases.</p>
     <div class="stats d4" style="margin-bottom:32px">
-      <div class="stat"><span class="num"><em>90%</em></span><div class="lbl">resolved at mediation</div></div>
+      <div class="stat"><span class="num"><em>90%</em></span><div class="lbl">resolved at mediation<sup style="font-size:.55em;opacity:.7">*</sup></div></div>
       <div class="stat"><span class="num">1 Day</span><div class="lbl">not months in tribunal</div></div>
       <div class="stat"><span class="num">100%</span><div class="lbl">confidential process</div></div>
     </div>
-    <div class="answer d5" style="max-width:60ch"><p><strong>In short:</strong> Workplace mediation is a voluntary, confidential process in which a neutral mediator helps people resolve an employment dispute without going to court. The mediator does not impose a decision — the parties design the outcome together. We resolve unfair dismissal, bullying, discrimination, partnership and executive conflicts across Australia.</p></div>
+    <p class="d5" style="font-size:.78rem;color:var(--ink-soft);opacity:.7;max-width:52ch;margin-bottom:20px">* The Fair Work Commission reports approximately 3 in 4 unfair dismissal matters settle at conciliation. Our own resolution rate across all workplace mediations is approximately 90%.</p>
+    <div class="answer d5" style="max-width:60ch"><p><strong>The earlier a workplace dispute is addressed, the more options you usually have.</strong> Once positions harden, lawyers become involved or formal proceedings begin, the financial and organisational cost can increase quickly. Mediation gives the parties an opportunity to resolve the problem while they still control the outcome.</p></div>
     <div class="phero-cta d6" style="margin-top:28px">
-      <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+      <a href="{BOOK_URL}" class="btn btn-primary">Discuss Your Workplace Dispute <span class="arr">→</span></a>
       <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
     </div>
   </div>
@@ -921,18 +922,20 @@ _wm += f"""<main id="main">
 <section class="sec reveal" style="background:var(--ink);color:var(--cream);border-radius:38px;margin:0 16px" aria-labelledby="wm-wedge">
   <div class="wrap">
     <div style="text-align:center;max-width:86ch;margin:0 auto 50px">
-      <h2 id="wm-wedge" style="font-size:clamp(1.8rem,3.6vw,3rem);color:var(--cream);margin-bottom:16px;max-width:32ch;margin-left:auto;margin-right:auto">Two ways through a workplace dispute. One is almost always <em style="color:#a8ccb4">faster, cheaper and less damaging.</em></h2>
-      <p style="color:rgba(251,248,242,.72);font-size:1.05rem">Sometimes the Fair Work Commission or court is the right path — and we will tell you when. But for most disputes, mediation gets you there sooner, for less, and with the relationship still intact.</p>
+      <h2 id="wm-wedge" style="font-size:clamp(1.8rem,3.6vw,3rem);color:var(--cream);margin-bottom:16px;max-width:34ch;margin-left:auto;margin-right:auto">Two ways through a workplace dispute. One is usually <em style="color:#a8ccb4">faster, less expensive and easier to control.</em></h2>
+      <p style="color:rgba(251,248,242,.72);font-size:1.05rem">Some workplace disputes require formal proceedings. Many don't. Early mediation gives the parties an opportunity to resolve the problem before the conflict — and its cost — escalates.</p>
     </div>
     <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;max-width:900px;margin:0 auto" class="compare">
       <div style="padding:36px 32px;opacity:.92">
         <h3 style="font-size:1.35rem;margin-bottom:20px;color:var(--cream)">The formal path</h3>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:14px">
-          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Months to over a year of uncertainty</li>
-          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Legal fees + management time + disruption</li>
-          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}A commissioner or judge decides the outcome</li>
-          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Adversarial — working relationships rarely survive</li>
-          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Decisions published and searchable</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Lawyers become involved</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Correspondence and allegations escalate</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Management time increases</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Positions become entrenched</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Costs continue to accumulate</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}The workplace lives with the dispute</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Someone else may ultimately decide the outcome</li>
         </ul>
       </div>
       <div style="width:1px;background:linear-gradient(180deg,transparent,rgba(251,248,242,.18),transparent);position:relative" class="divider">
@@ -941,16 +944,18 @@ _wm += f"""<main id="main">
       <div style="padding:36px 32px">
         <h3 style="font-size:1.35rem;margin-bottom:20px;color:#a8c89f">Mediation first</h3>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:14px">
-          <li style="display:flex;gap:12px">{TICK_w}Resolved in weeks — often a single session</li>
-          <li style="display:flex;gap:12px">{TICK_w}Fixed fee, transparent, usually shared</li>
-          <li style="display:flex;gap:12px">{TICK_w}You design the outcome — not a tribunal</li>
-          <li style="display:flex;gap:12px">{TICK_w}Collaborative — relationships can be preserved</li>
-          <li style="display:flex;gap:12px">{TICK_w}Completely private and confidential</li>
+          <li style="display:flex;gap:12px">{TICK_w}Address the problem early</li>
+          <li style="display:flex;gap:12px">{TICK_w}Bring the right people into the room</li>
+          <li style="display:flex;gap:12px">{TICK_w}Identify what's actually driving the conflict</li>
+          <li style="display:flex;gap:12px">{TICK_w}Test positions and assumptions</li>
+          <li style="display:flex;gap:12px">{TICK_w}Explore practical solutions</li>
+          <li style="display:flex;gap:12px">{TICK_w}Protect working relationships where possible</li>
+          <li style="display:flex;gap:12px">{TICK_w}Keep control of the outcome</li>
         </ul>
       </div>
     </div>
     <div style="text-align:center;margin-top:46px">
-      <p style="font-size:1.15rem;font-family:var(--serif);font-style:italic;color:var(--cream);max-width:52ch;margin:0 auto 26px">"The Fair Work Commission reports around three in four unfair dismissal cases settle at conciliation — well before any hearing. Early resolution is almost always the better option."</p>
+      <p style="font-size:1.15rem;font-family:var(--serif);font-style:italic;color:var(--cream);max-width:56ch;margin:0 auto 26px">"The question isn't whether the dispute is serious enough for mediation. It's whether allowing it to continue is likely to produce a better outcome."</p>
       <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
     </div>
   </div>
@@ -961,7 +966,7 @@ _wm += f"""<main id="main">
     <div class="reveal">
       <p class="sec-tag">Workplace &amp; employment disputes</p>
       <h2 class="sec-title">Choose the area closest to <em>your situation</em>.</h2>
-      <p class="sec-intro">Workplace conflict takes many forms, and each has its own legal context. Select a guide for a detailed breakdown of your rights, time limits and how mediation resolves it.</p>
+      <p class="sec-intro">Workplace conflict takes many forms. Select the situation that most closely matches yours — each guide covers the legal context, time limits and how mediation can help resolve it.</p>
     </div>
     <div class="cards reveal" style="margin-top:44px">
       <article class="card">
@@ -984,14 +989,14 @@ _wm += f"""<main id="main">
       </article>
       <article class="card">
         <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 6V4a4 4 0 018 0v2M9 12h6M9 16h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-        <h3>Partnership &amp; Executive Exit</h3>
-        <p>Partners falling out, directors leaving under strain, senior executives negotiating a dignified exit — resolved privately before it damages the business.</p>
+        <h3>Executive Conflict &amp; Exit</h3>
+        <p>Partners falling out, leadership team conflict, directors under strain, or a senior executive negotiating a dignified exit — resolved privately before it damages the business.</p>
         <a class="more" href="/partnership-executive-exit-mediation/">Read the guide <span class="arr">→</span></a>
       </article>
       <article class="card">
         <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" stroke="currentColor" stroke-width="1.6"/><path d="M16 3H8a2 2 0 00-2 2v2h12V5a2 2 0 00-2-2zM12 13v4M10 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-        <h3>Redundancy &amp; Restructure Disputes</h3>
-        <p>When a restructure is challenged as unfair. The genuine redundancy test, consultation obligations employers miss, and how mediation resolves these without a hearing.</p>
+        <h3>Role, Identity &amp; Restructure Disputes</h3>
+        <p>Redundancy challenges, role changes, restructures and the consultation obligations that are often missed. When a restructure is disputed, early mediation can resolve it before a formal claim is filed.</p>
         <a class="more" href="/redundancy-restructure-mediation/">Read the guide <span class="arr">→</span></a>
       </article>
       <article class="card">
@@ -1008,7 +1013,7 @@ _wm += f"""<main id="main">
   <div class="wrap">
     <p class="sec-tag">How it works</p>
     <h2 class="sec-title">A calm, clear path to <em>agreement</em>.</h2>
-    <p class="sec-intro">No jargon, no surprises. A neutral, accredited mediator guides both sides toward a resolution — and you decide whether to accept it.</p>
+    <p class="sec-intro">You don't need to know how the dispute will be resolved before mediation begins. That's what the process is designed to uncover. We provide a structured, independent process that moves the parties from competing positions towards understanding the real issues, testing possible solutions and — where agreement is possible — documenting a practical way forward.</p>
     <div class="cards reveal" style="margin-top:44px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
       <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">01</h3><h3>Free consultation</h3><p>Understand your position, your options and whether mediation is the right path. Fixed-fee from there — no open-ended billing.</p></article>
       <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">02</h3><h3>Our Mediators engaged</h3><p>Workplace disputes need someone who understands employment law and workplace dynamics. Our mediators are also experienced lawyers.</p></article>
@@ -1024,8 +1029,9 @@ _wm += f"""<main id="main">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center" class="why-grid reveal">
       <div>
         <p class="sec-tag">Fair Work integration</p>
-        <h2 class="sec-title" style="font-size:clamp(1.6rem,2.8vw,2.4rem)">Mediation and the Fair Work system <em>work together</em>.</h2>
-        <p style="color:var(--ink-soft);font-size:1rem;line-height:1.75;margin-bottom:20px">Private mediation and the Fair Work Commission are not alternatives that cancel each other out. Several claim types have strict lodgement deadlines — as little as 21 days. Getting advice early protects your options.</p>
+        <h2 class="sec-title" style="font-size:clamp(1.6rem,2.8vw,2.4rem)">Mediation and the Fair Work system <em>can work together</em>.</h2>
+        <p style="color:var(--ink-soft);font-size:1rem;line-height:1.75;margin-bottom:8px"><strong>You don't have to wait for the dispute to escalate.</strong></p>
+        <p style="color:var(--ink-soft);font-size:1rem;line-height:1.75;margin-bottom:20px">Mediation can occur before a Fair Work application, while a matter is before the Commission, or alongside other workplace processes. Early mediation can be particularly valuable because the organisation and employees may still have more options available before positions harden and substantial legal costs are incurred.</p>
         <div style="display:flex;flex-direction:column;gap:20px;margin-top:24px">
           <div style="display:flex;gap:14px"><span style="flex-shrink:0;width:42px;height:42px;border-radius:12px;background:var(--sand-deep);display:flex;align-items:center;justify-content:center;color:var(--sage-deep)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span><div><h3 style="font-size:1.05rem;margin-bottom:3px">Before you lodge</h3><p style="font-size:.95rem;color:var(--ink-soft)">Use mediation to resolve things directly and avoid the formal process entirely.</p></div></div>
           <div style="display:flex;gap:14px"><span style="flex-shrink:0;width:42px;height:42px;border-radius:12px;background:var(--sand-deep);display:flex;align-items:center;justify-content:center;color:var(--sage-deep)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12l2.5 2.5L16 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3 style="font-size:1.05rem;margin-bottom:3px">Alongside a lodged claim</h3><p style="font-size:.95rem;color:var(--ink-soft)">Reach a settlement faster and on your own terms while a claim is on foot.</p></div></div>
@@ -1045,10 +1051,44 @@ _wm += f"""<main id="main">
     </div>
   </div>
 </section>"""
-_wm += faq_html(qa_wm, heading="Workplace mediation <em>FAQs</em>.", tag="Common questions")
-_wm += cta_band(
-  "Resolve it early — <em>before it costs more</em>.",
-  "Book a free consultation. Tell us what you are facing and we will give you an honest view of whether mediation can help — and how it works alongside any legal steps already in motion.")
+_wm += f"""<section class="sec reveal" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:220px 1fr;gap:60px;align-items:start;max-width:920px;margin:0 auto" class="mediator-pitch">
+      <div style="text-align:center">
+        <img src="/assets/images/Dan-Bio.png"
+             alt="Dan Toombs — Workplace Mediator, Mediations Australia"
+             width="220" height="264"
+             style="width:220px;height:264px;object-fit:cover;object-position:top;border-radius:20px;display:block;margin:0 auto;box-shadow:0 8px 32px rgba(0,0,0,.10)">
+        <p style="font-weight:700;font-size:1rem;margin:16px 0 2px">Dan Toombs</p>
+        <p style="font-size:.85rem;color:var(--ink-soft);margin-bottom:14px">Founder &amp; Mediator</p>
+        <p style="font-size:.82rem;color:var(--sage-deep);font-weight:600;line-height:1.6">AMDRAS Accredited Mediator · Award-Winning Lawyer · Former Tribunal Member, QCAT · Winston Churchill Fellow</p>
+        <a href="/our-team/dan-toombs/" class="btn btn-ghost" style="margin-top:18px;display:inline-block;font-size:.88rem;padding:10px 20px">Meet Dan <span class="arr">→</span></a>
+      </div>
+      <div>
+        <p class="sec-tag" style="margin-bottom:10px">Your mediator</p>
+        <h2 style="font-family:var(--serif);font-size:clamp(1.5rem,2.8vw,2.2rem);margin-bottom:22px;line-height:1.25">Your Mediator</h2>
+        <p style="font-size:1.05rem;color:var(--ink);line-height:1.75;margin-bottom:16px"><strong>Dan has run organisations, not just advised them.</strong> As an award-winning lawyer, former CEO and Board Director, he understands staffing pressures, workplace culture, governance, and what unresolved conflict really costs a business in money, management time and good people.</p>
+        <p style="font-size:1.05rem;color:var(--ink-soft);line-height:1.75;margin-bottom:16px">He also understands adjudication from the inside — as a former tribunal member who has sat as an independent decision-maker, he knows how unpredictable it is to hand a dispute to someone else to decide.</p>
+        <p style="font-size:1.05rem;color:var(--ink-soft);line-height:1.75;margin-bottom:20px">His specialist training in team dynamics (Belbin) and Adaptive Leadership helps him read what's driving a conflict beneath the positions being argued.</p>
+        <p style="font-size:1.05rem;color:var(--ink);line-height:1.75;margin-bottom:0"><strong>That combination lets Dan approach a workplace dispute for what it usually is — not just a legal problem, but an organisational and human one that needs a practical, durable resolution.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>"""
+qa_wm_employer = ("When should an employer consider workplace mediation?",
+ "Mediation is often most effective before a dispute becomes entrenched. Warning signs include repeated complaints, communication breakdown, declining team performance, escalating allegations, management time being consumed by the conflict, employees taking sides, or the prospect of formal proceedings. You do not need to wait until every internal process has failed before considering mediation.")
+_wm += faq_html([qa_wm_employer] + qa_wm, heading="Workplace mediation <em>FAQs</em>.", tag="Common questions")
+_wm += f"""<section class="cta-band" id="book">
+  <div class="phero-blob"></div>
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Resolve it early — <em>before it costs more</em>.</h2>
+      <p>Workplace conflict rarely becomes cheaper or easier with time. If a dispute is consuming management attention, affecting your team or moving towards lawyers, Fair Work or formal proceedings, now is the time to explore whether mediation can change its course. Speak confidentially with Dan about what&rsquo;s happening, what&rsquo;s at stake and the most practical next step.</p>
+      <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Discuss Your Workplace Dispute <span class="arr">→</span></a>
+      <p style="margin-top:16px;font-size:.9rem;color:var(--ink-soft)">Confidential consultation &nbsp;·&nbsp; No obligation &nbsp;·&nbsp; Australia-wide</p>
+    </div>
+  </div>
+</section>"""
 _wm += "</main>" + page_end()
 path = os.path.join(OUT, "workplace-mediation"); os.makedirs(path, exist_ok=True)
 with open(os.path.join(path, "index.html"), "w") as f: f.write(_wm)
