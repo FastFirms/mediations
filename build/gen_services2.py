@@ -931,4 +931,140 @@ build(
  "Private, fast and commercially focused — <em>before it costs you the business</em>.",
  "Book a free consultation. Resolve a partnership or executive exit dispute privately, before it becomes a public, value-destroying court battle.")
 
+build(
+ "redundancy-restructure-mediation",
+ "Redundancy & Restructure Dispute Mediation | Mediations Australia",
+ "When a restructure is challenged as unfair — the genuine redundancy test, consultation obligations, and how mediation resolves these disputes without a Fair Work hearing.",
+ "Workplace &amp; employment disputes",
+ "Redundancy &amp; Restructure Dispute Mediation",
+ "A restructure can be a legitimate business decision. It can also be challenged — and increasingly is. When an employee believes a redundancy was not genuine, or that the consultation process fell short of what the law requires, a formal claim can follow quickly. Mediation offers both sides a faster, private path to resolution before the dispute reaches a hearing.",
+ "A genuine redundancy under the Fair Work Act 2009 (Cth) requires three things: the job no longer exists, the employer has complied with any applicable consultation obligations under a modern award or enterprise agreement, and it was not reasonable to redeploy the person into another role. Where any of these elements is absent, the dismissal may be found to be unfair rather than a genuine redundancy.",
+ """
+ <div class="callout" style="border-left:4px solid var(--terra)">
+   <p><strong>The 21-day deadline applies.</strong> An unfair dismissal application — including one challenging a purported redundancy — must be lodged with the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> within 21 days after the dismissal takes effect. Do not wait.</p>
+ </div>
+
+ <h2>What makes a redundancy challengeable?</h2>
+ <p>The most common grounds for challenging a redundancy are:</p>
+ <ul>
+   <li><strong>Failure to consult.</strong> Many modern awards and enterprise agreements require employers to consult meaningfully with affected employees before a final decision is made. A tick-the-box process, or no process at all, is a frequent basis for challenge.</li>
+   <li><strong>The role was not genuinely eliminated.</strong> If the same or substantially similar duties continue to be performed — by the same person, a contractor, or a new hire — the redundancy may not be genuine.</li>
+   <li><strong>Redeployment was not properly considered.</strong> Employers must consider whether redeployment within the business or an associated entity was reasonable. Overlooking a suitable vacancy is a common error.</li>
+   <li><strong>Targeting.</strong> A redundancy that coincides with a complaint, a general protections matter or a period of absence can attract scrutiny beyond the unfair dismissal framework.</li>
+ </ul>
+
+ <h2>How mediation resolves redundancy disputes</h2>
+ <p>When an unfair dismissal application is lodged over a purported redundancy, the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> will typically offer a conciliation before any hearing. Around three in four unfair dismissal matters — including redundancy challenges — settle at this stage. Private mediation with Mediations Australia can run earlier and on your own timetable, giving you more control over the process and the outcome.</p>
+
+ <p>A mediated settlement in a redundancy dispute can include:</p>
+ <ul>
+   <li>an agreed <strong>compensation payment</strong></li>
+   <li>an agreed <strong>statement of service</strong> or reference</li>
+   <li>a <strong>non-disparagement agreement</strong> on both sides</li>
+   <li><strong>confidentiality</strong> over the terms</li>
+   <li>a <strong>mutual release</strong>, drawing a line under the matter</li>
+ </ul>
+
+ <figure class="tbl"><table><caption>Mediation vs a contested Fair Work hearing on redundancy</caption>
+ <thead><tr><th></th><th>Mediation</th><th>Formal FWC hearing</th></tr></thead>
+ <tbody>
+ <tr><td>Timeframe</td><td>Weeks</td><td>Months to over a year</td></tr>
+ <tr><td>Cost</td><td>Fixed, shared</td><td>Legal fees + preparation</td></tr>
+ <tr><td>Outcome control</td><td>Parties decide</td><td>Commissioner decides</td></tr>
+ <tr><td>Confidential</td><td>Yes</td><td>No — decisions are published</td></tr>
+ <tr><td>Remedies available</td><td>Flexible agreed terms</td><td>Capped compensation or reinstatement</td></tr>
+ </tbody></table></figure>
+
+ <h2>For employers: getting restructures right</h2>
+ <p>Mediation is not only for after a claim is lodged. Employers facing a significant restructure can use facilitated conversation to manage the process more constructively — giving affected employees a genuine voice, reducing the risk of challenge, and preserving goodwill where ongoing relationships matter. A mediator experienced in employment law can help structure the consultation process itself, not just resolve disputes that arise from it.</p>
+
+ <div class="callout">
+   <h3>Support and further help</h3>
+   <p><strong><a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a></strong> — unfair dismissal and redundancy process<br>
+   <strong><a href="https://www.fairwork.gov.au/" target="_blank" rel="noopener">Fair Work Ombudsman</a></strong> — redundancy pay and entitlements<br>
+   <strong><a href="https://www.legalaid.nsw.gov.au/" target="_blank" rel="noopener">Legal Aid NSW</a></strong> — free legal help for eligible people<br>
+   <strong>Lifeline</strong>: 13 11 14 &middot; <strong>Beyond Blue</strong>: 1300 22 4636</p>
+ </div>
+
+ <p style="font-size:.9rem;color:var(--ink-soft);margin-top:32px;font-style:italic">This page is for general information only and does not constitute legal advice. For personalised guidance, please consult a qualified legal professional or accredited mediator.</p>
+ """,
+ [("What is a genuine redundancy?",
+   "Under the Fair Work Act, a genuine redundancy requires that the job no longer exists, the employer complied with any consultation obligations, and redeployment elsewhere in the business was not reasonable. Where any element is missing, a dismissed employee may have grounds for an unfair dismissal claim."),
+  ("Can I challenge a redundancy if I was the only person let go?",
+   "Yes. The number of employees affected is not determinative. A single redundancy can still be challenged if the process was flawed, the role continued in substance, or redeployment was not genuinely considered."),
+  ("How long do I have to lodge a claim?",
+   "21 days from the date the dismissal takes effect. Extensions are only granted in exceptional circumstances — do not wait."),
+  ("Can mediation resolve a redundancy dispute before a claim is lodged?",
+   "Yes. Private mediation can be used at any point — before a formal application, alongside one, or to resolve a dispute that the Commission's conciliation process did not settle."),
+  ("What can a settlement include?",
+   "Because the parties design the outcome, a settlement can include compensation, an agreed reference, a non-disparagement agreement, and confidential terms — things a tribunal cannot order.")],
+ "Redundancy &amp; Restructure Mediation",
+ "Resolve it before the 21-day deadline — <em>and before it escalates</em>.",
+ "Book a free consultation. Whether you are an employee challenging a redundancy or an employer managing a restructure, early advice protects your options.")
+
+build(
+ "workplace-investigations-grievance-mediation",
+ "Workplace Investigations & Grievance Mediation | Mediations Australia",
+ "When to investigate, when to mediate, and how to resolve workplace grievances and repair a team without a drawn-out formal process.",
+ "Workplace &amp; employment disputes",
+ "Workplace Investigations &amp; Grievance Resolution",
+ "A complaint has been made. Someone has raised a grievance. A formal investigation is under way — or being demanded. Getting this step right matters enormously. The wrong process can escalate a manageable situation into a protracted legal dispute, damage the entire team, and expose the organisation to significant liability. The right process resolves the complaint, restores the working environment and keeps everyone's dignity intact.",
+ "A workplace grievance is a formal complaint by an employee about something at work — conduct, a decision, a working condition, or how they have been treated. A workplace investigation is the process by which a complaint is examined, evidence is gathered, and findings are made. Mediation is the process by which the underlying dispute is resolved. These three things are distinct, and knowing when to use which is the critical first decision.",
+ """
+ <h2>When to investigate — and when not to</h2>
+ <p>Not every complaint requires a formal investigation, and not every investigation should lead straight to mediation. The right pathway depends on what the complaint is about, what the person making it actually wants, and what the organisation needs to do to meet its legal obligations.</p>
+
+ <p>A formal investigation is generally appropriate where:</p>
+ <ul>
+   <li>the conduct alleged is serious — misconduct, serious harassment, fraud or safety breaches</li>
+   <li>the organisation needs a factual finding to take disciplinary action or protect itself</li>
+   <li>the alleged conduct may give rise to criminal liability</li>
+   <li>a regulator requires one</li>
+ </ul>
+
+ <p>Mediation — rather than, or alongside, an investigation — is often more appropriate where:</p>
+ <ul>
+   <li>the complaint arises from a breakdown in communication or a relationship conflict rather than clear misconduct</li>
+   <li>both parties want to continue working together</li>
+   <li>the person making the complaint primarily wants to be heard, not to have someone punished</li>
+   <li>an investigation would be disproportionate to what actually happened</li>
+   <li>a swift, constructive resolution would better serve the working environment</li>
+ </ul>
+
+ <h2>Common mistakes organisations make</h2>
+ <ul>
+   <li><strong>Investigating when they should mediate.</strong> A heavy-handed investigation for what is essentially an interpersonal conflict entrenches positions, damages morale and rarely produces a workable outcome.</li>
+   <li><strong>Mediating when they should investigate.</strong> Where serious misconduct is alleged, skipping a proper process to "sort it out quickly" can expose the organisation to claims that it failed in its duty of care.</li>
+   <li><strong>Delaying.</strong> Unresolved complaints fester. The longer a grievance sits without a response, the more it costs — in productivity, in culture, and eventually in legal exposure.</li>
+   <li><strong>Using internal managers as mediators.</strong> A manager who is seen as aligned with the organisation cannot provide the neutrality that effective resolution requires. An independent external mediator changes the dynamic.</li>
+ </ul>
+
+ <h2>How mediation resolves grievances</h2>
+ <p>Where mediation is the right step, our mediators work with both sides to surface the real issues beneath the complaint, give each person a structured opportunity to be heard, and guide the parties toward a practical agreement about how things will work going forward. The agreement might cover communication protocols, working arrangements, an apology, or simply a shared understanding of what happened and why.</p>
+ <p>For employers, early mediation of a grievance demonstrates that the complaint was taken seriously — which matters both to the employee and, if things escalate, to a regulator or tribunal. It is also substantially cheaper and faster than an investigation that leads to a contested termination.</p>
+
+ <div class="callout">
+   <h3>Support and further help</h3>
+   <p><strong><a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a></strong> — workplace rights and dispute processes<br>
+   <strong><a href="https://www.safeworkaustralia.gov.au/" target="_blank" rel="noopener">Safe Work Australia</a></strong> — psychosocial hazards and workplace safety<br>
+   <strong><a href="https://humanrights.gov.au/" target="_blank" rel="noopener">Australian Human Rights Commission</a></strong> — discrimination and harassment<br>
+   <strong>1800RESPECT</strong>: 1800 737 732 &middot; <strong>Lifeline</strong>: 13 11 14 &middot; <strong>Beyond Blue</strong>: 1300 22 4636</p>
+ </div>
+
+ <p style="font-size:.9rem;color:var(--ink-soft);margin-top:32px;font-style:italic">This page is for general information only and does not constitute legal advice. For personalised guidance, please consult a qualified legal professional or accredited mediator.</p>
+ """,
+ [("Do we have to investigate every complaint?",
+   "No. The obligation is to respond appropriately, which depends on the nature of the complaint. Some complaints are better handled through mediation or facilitated conversation than a formal investigation — and choosing the wrong process can make things worse."),
+  ("Can mediation happen alongside an investigation?",
+   "Yes. In some cases an investigation establishes the facts while mediation addresses the relationship and working environment. The two processes can run in sequence or, where appropriate, in parallel."),
+  ("What if the person making the complaint doesn't want to mediate?",
+   "Mediation is voluntary. A mediator will not pressure anyone into the process. Where mediation is not suitable or not wanted, we can advise on alternative approaches."),
+  ("Who should act as mediator — someone internal or external?",
+   "An independent external mediator is almost always preferable in a workplace grievance. An internal person — even a trained HR professional — carries the perception of organisational alignment, which undermines the neutrality the process depends on."),
+  ("How quickly can a grievance be resolved through mediation?",
+   "Most workplace grievance mediations are booked within a few weeks and completed in a single session. Compare this with a formal investigation and disciplinary process, which can take months and leave the working environment worse than before.")],
+ "Investigations &amp; Grievances",
+ "Get the process right from the start — <em>before it becomes something harder to resolve</em>.",
+ "Book a free consultation. We will help you choose the right process — investigation, mediation, or both — and move quickly.")
+
 print("Additional service pages built.")

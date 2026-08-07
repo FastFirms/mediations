@@ -29,7 +29,8 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "who-pays-for-mediation","private-vs-free-mediation","divorce-mediator-vs-divorce-lawyer","mediation-before-divorce","what-happens-if-mediation-fails","what-is-in-the-property-pool","delaying-property-settlement","co-parenting-mediation","online-mediation-australia","victorian-right-to-work-from-home","belbin-team-roles-training",
         "how-we-help","privacy-policy",
         "unfair-dismissal-termination-mediation","workplace-bullying-harassment-mediation",
-        "general-protections-discrimination-mediation","partnership-executive-exit-mediation"]
+        "general-protections-discrimination-mediation","partnership-executive-exit-mediation",
+        "redundancy-restructure-mediation","workplace-investigations-grievance-mediation"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:
