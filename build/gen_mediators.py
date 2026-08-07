@@ -63,7 +63,7 @@ d += f"""<main id="main">
   </div>
 </section>
 
-<section style="background:var(--cream)">
+<section>
   <div class="wrap">
     <div class="team-grid">
 
@@ -161,7 +161,7 @@ d += f"""<main id="main">
   </div>
 </section>
 
-<section style="background:var(--cream)">
+<section>
   <div class="wrap">
     <div class="mediator-profile">
 
@@ -396,7 +396,7 @@ d += f"""<main id="main">
   </div>
 </section>
 
-<section style="background:var(--cream)">
+<section>
   <div class="wrap">
     <div class="mediator-profile">
 
@@ -567,7 +567,7 @@ d += f"""<main id="main">
   </div>
 </section>
 
-<section style="background:var(--cream)">
+<section>
   <div class="wrap">
     <div class="mediator-profile">
 
