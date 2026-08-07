@@ -900,7 +900,7 @@ build(
  <h2>How the process works for high-stakes exits</h2>
  <ol>
    <li><strong>Confidential consultation.</strong> We help you understand your position and whether mediation is the right vehicle.</li>
-   <li><strong>The right mediator.</strong> We match you with a mediator experienced in commercial and executive disputes.</li>
+   <li><strong>The right mediator.</strong> Our mediators are experienced in commercial and executive disputes — you work directly with our own team.</li>
    <li><strong>Careful preparation.</strong> Each side is spoken with privately. In high-conflict matters, sessions are often run in shuttle format, with the mediator moving between separate rooms.</li>
    <li><strong>The session.</strong> Often a single, intensive day — in person or online — focused on a global settlement rather than point-scoring.</li>
    <li><strong>A binding deed.</strong> The outcome is formalised into an enforceable settlement deed, so the terms — including restraints and releases — actually hold.</li>

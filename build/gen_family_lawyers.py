@@ -777,7 +777,7 @@ def build_tier2(slug, city, state, nearest_office, court_ref, local_context):
     doc += (
         "<h2>How mediation works in " + ec + "</h2>\n"
         "<p>The process is straightforward. We begin with a free consultation to understand "
-        "your situation. You are matched with an accredited mediator. The session itself "
+        "your situation. One of our own accredited mediators works with you from there. The session itself "
         "can be conducted in person, in separate rooms, or online — whatever suits "
         "your circumstances. Where agreement is reached, we document it and help you "
         "formalise it as <a href=\"/consent-orders/\">consent orders</a> or a "
