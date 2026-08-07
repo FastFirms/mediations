@@ -143,7 +143,7 @@ dan_schema = [
 ]
 
 d = head("Dan Toombs — Mediator & Founder | Mediations Australia",
-         "Dan Toombs — AMDRAS-accredited mediator, former QCAT Tribunal Member, award-winning lawyer and Winston Churchill Fellow. Founder of Mediations Australia.",
+         "Dan Toombs — AMDRAS-accredited mediator, award-winning lawyer, Winston Churchill Fellow and former Member of the Guardianship &amp; Administration Tribunal Qld (now QCAT). Founder of Mediations Australia.",
          "our-team/dan-toombs", extra_schema=dan_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
 d += nav()
@@ -174,8 +174,8 @@ d += f"""<main id="main">
           <tbody>
             <tr><td colspan="2" style="font-weight:700;color:var(--sage-deep);padding-top:4px;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase">Mediation &amp; Dispute Resolution</td></tr>
             <tr><td colspan="2" style="color:var(--ink-soft);padding-bottom:2px"><a href="https://amdras.au/" target="_blank" rel="noopener">AMDRAS</a> Accredited Mediator</td></tr>
-            <tr><td colspan="2" style="color:var(--ink-soft);padding-bottom:2px">Former Tribunal Member, QCAT</td></tr>
-            <tr><td colspan="2" style="color:var(--ink-soft);padding-bottom:10px">Presided over numerous matters</td></tr>
+            <tr><td colspan="2" style="color:var(--ink-soft);padding-bottom:2px">Former Member, Guardianship &amp; Administration Tribunal (Qld)</td></tr>
+            <tr><td colspan="2" style="color:var(--ink-soft);padding-bottom:10px">(Jurisdiction now within QCAT)</td></tr>
             <tr><td colspan="2" style="font-weight:700;color:var(--sage-deep);padding-top:8px;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase">Legal</td></tr>
             <tr><td colspan="2" style="color:var(--ink-soft);padding-bottom:2px">Multi-Award-Winning Lawyer</td></tr>
             <tr><td colspan="2" style="color:var(--ink-soft);padding-bottom:10px">Published by <a href="https://www.thomsonreuters.com.au/en-au.html" target="_blank" rel="noopener">Thomson Reuters</a></td></tr>
@@ -198,13 +198,13 @@ d += f"""<main id="main">
 
       <div class="mediator-content">
         <h2>Dan Toombs — Mediator &amp; Founder, Mediations Australia</h2>
-        <span class="tag-line">Award-winning lawyer. Former Tribunal Member, QCAT. Nationally accredited mediator. Published author.</span>
+        <span class="tag-line">Award-winning lawyer. Former Member, Guardianship &amp; Administration Tribunal Qld (now QCAT). Nationally accredited mediator. Published author.</span>
 
         <p>Dan Toombs is the Founder of Mediations Australia and an <a href="https://amdras.au/" target="_blank" rel="noopener">AMDRAS-accredited mediator</a>
         who brings a distinctive perspective to resolving difficult disputes.</p>
 
         <p>He has experienced disputes from multiple perspectives: as a lawyer, as a former Tribunal
-        Member at QCAT, as an organisational leader, and now as a mediator. That experience has taught
+        Member of the Guardianship and Administration Tribunal (Queensland) (jurisdiction now within QCAT), as an organisational leader, and now as a mediator. That experience has taught
         him that disputes are rarely about the legal issues alone. Relationships, personalities,
         commercial pressures, organisational dynamics and entrenched positions can all determine whether
         a conflict escalates or finds a way forward.</p>
@@ -224,8 +224,8 @@ d += f"""<main id="main">
         <h3>Understanding Disputes from the Decision-Maker's Perspective</h3>
         <p>Dan is a multi-award-winning lawyer published by
         <a href="https://www.thomsonreuters.com.au/en-au.html" target="_blank" rel="noopener">Thomson Reuters</a>
-        and a former Tribunal Member at the Queensland Civil and Administrative Tribunal (QCAT), where
-        he presided over and determined numerous matters.</p>
+        and a former Member of the Guardianship and Administration Tribunal (Queensland) — the jurisdiction
+        now within QCAT — where he presided over and determined numerous matters.</p>
 
         <p>That experience gives him a perspective relatively few mediators possess. He understands the
         difference between how strongly a party may believe in its position and how that position may
@@ -302,14 +302,14 @@ d += f"""<main id="main">
         relationships or workplace culture. And potentially months or years pursuing an outcome that will
         ultimately be determined by someone else.</p>
 
-        <p>As a former QCAT Tribunal Member who has presided over and determined disputes, Dan understands
+        <p>As a former Member of the Guardianship and Administration Tribunal (Queensland) — the jurisdiction now within QCAT — who has presided over and determined disputes, Dan understands
         first-hand that adjudication necessarily involves uncertainty. Mediation offers a different path.
         It creates a structured and independent environment in which the parties can clarify what really
         matters, test assumptions and positions, realistically assess the alternatives to settlement, and
         explore solutions that may not have emerged through negotiation alone.</p>
 
         <p>Dan brings together four perspectives in that process: the analytical discipline of a lawyer,
-        the perspective of a former QCAT Tribunal Member, the practical judgment of an experienced
+        the perspective of a former Tribunal Member (Guardianship &amp; Administration Tribunal Qld, now QCAT), the practical judgment of an experienced
         organisational leader, and the independence of a mediator. The aim is not agreement at any cost.
         It is a resolution that is practical, workable and capable of enduring after the mediation
         is over.</p>
