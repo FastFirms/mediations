@@ -871,68 +871,96 @@ build(
 build(
  "workplace-mediation",
  "Workplace Mediation Australia | Resolve Disputes Fast",
- "Resolve workplace disputes through mediation — unfair dismissal, bullying, contracts and conflict. Faster than the Fair Work Commission.",
+ "Nationally accredited mediators resolving workplace disputes — unfair dismissal, bullying, harassment, partnership and executive conflicts. Faster, private and above 90% resolution rate.",
  "Workplace &amp; employment disputes",
- "Workplace Mediation",
- "Workplace conflict is costly, stressful and contagious. Mediation resolves disputes — from unfair dismissal claims to bullying complaints — early and confidentially, before they become expensive battles at the Fair Work Commission, so everyone can get back to work.",
- "Workplace mediation is a confidential process where a neutral mediator helps employers and employees resolve disputes — such as unfair dismissal, bullying, harassment or contract disagreements — without proceeding to the Fair Work Commission or court. It's faster, cheaper and helps preserve working relationships.",
+ "Workplace Mediation — <em>Resolve It Before It Costs More</em>",
+ "A dispute at work rarely stays contained. What begins as one difficult conversation can quickly consume a team, damage a reputation and end up in front of the Fair Work Commission or a court. Our nationally accredited mediators resolve workplace and employment disputes across Australia — often in a single day, with a resolution rate above 90%.",
+ "Workplace mediation is a voluntary, confidential process in which a neutral third party — the mediator — helps people in an employment relationship resolve a dispute without going to court or a tribunal. The mediator does not take sides, give evidence or impose a decision. They create a structured, safe conversation that helps each person be heard and guides everyone toward a workable, mutually agreed outcome.",
  """
- <h2>What workplace disputes can be mediated?</h2>
- <p>Workplace mediation is available for both individual disputes and broader team conflicts. Common matters we resolve include:</p>
- <ul>
-   <li><strong>Unfair dismissal and termination disputes</strong> — early resolution before or during a Fair Work Commission process</li>
-   <li><strong>Bullying and harassment complaints</strong> — confidential resolution that doesn't force parties through a formal investigation</li>
-   <li><strong>Discrimination and equal opportunity complaints</strong> — resolving complaints made under the Fair Work Act or state anti-discrimination legislation</li>
-   <li><strong>Employment contract disputes</strong> — entitlements, notice, restraints of trade, commission disagreements</li>
-   <li><strong>Interpersonal conflict</strong> — two colleagues or a manager and direct report whose working relationship has broken down</li>
-   <li><strong>Restructure, redundancy and return-to-work</strong> — where the process has generated conflict that needs resolution alongside the HR process</li>
-   <li><strong>Senior executive and partnership disputes</strong> — board-level or equity partner conflicts where discretion is paramount</li>
- </ul>
-
- <h2>Why resolve workplace disputes early?</h2>
- <p>Because workplace conflict is contagious and expensive. Research consistently shows that unresolved conflict between two people spreads — teams choose sides, productivity falls, and good people leave. By the time a matter reaches the Fair Work Commission or an employment tribunal, both the direct cost (legal fees, management time, potential orders or settlements) and the indirect cost (damaged morale, reputational risk, recruitment) are substantial.</p>
- <p>Early mediation contains the cost and keeps the matter private. For employers, it's effective risk management. For employees, it's a fair, confidential hearing without a drawn-out formal process that can feel like a career risk in itself.</p>
+ <h2>Why workplace disputes are worth resolving early</h2>
+ <p>Australian workplaces are heavily regulated, and the systems that deal with employment disputes are designed to encourage resolution before a formal hearing. The <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> reports that around three in four unfair dismissal cases settle at conciliation — well before any hearing. The reasons to resolve early are practical:</p>
 
  <figure class="tbl"><table><caption>Workplace mediation vs the Fair Work Commission process</caption>
- <thead><tr><th></th><th>Early workplace mediation</th><th>Fair Work Commission</th></tr></thead>
+ <thead><tr><th></th><th>Workplace mediation</th><th>Fair Work Commission</th></tr></thead>
  <tbody>
  <tr><td>Timing</td><td>Immediately — at any point in the dispute</td><td>After dismissal or formal complaint; strict time limits apply</td></tr>
- <tr><td>Confidential</td><td>Yes — without prejudice</td><td>Generally no — on the public record</td></tr>
+ <tr><td>Confidential</td><td>Yes — without prejudice</td><td>Generally no — decisions are published and searchable</td></tr>
  <tr><td>Who controls the outcome</td><td>The parties</td><td>A commissioner or arbitrator</td></tr>
- <tr><td>Can preserve the working relationship</td><td>Yes — that's the goal</td><td>Rarely — adversarial by design</td></tr>
- <tr><td>Typical timeframe</td><td>1–2 sessions over days to weeks</td><td>Months to years</td></tr>
- <tr><td>Typical cost per party</td><td>Fixed, shared</td><td>Legal representation costs + time</td></tr>
+ <tr><td>Preserves working relationships</td><td>Yes — built for this</td><td>Rarely — adversarial by design</td></tr>
+ <tr><td>Typical timeframe</td><td>Weeks — often a single session</td><td>Many months, sometimes over a year</td></tr>
+ <tr><td>Typical cost per party</td><td>Fixed, transparent, shared</td><td>Legal fees + management time + disruption</td></tr>
  </tbody></table></figure>
 
- <h2>How does workplace mediation work?</h2>
- <ol>
-   <li><strong>Initial assessment</strong> — we speak with the parties (or the employer coordinating the process) separately to understand the issues and confirm mediation is appropriate</li>
-   <li><strong>Preparation</strong> — each party is briefed on the process, what to expect, and how to prepare</li>
-   <li><strong>Joint session</strong> — the mediator facilitates a structured conversation where each side is heard, issues are identified, and options explored</li>
-   <li><strong>Shuttle (if needed)</strong> — where parties can't be in the same room, the mediator moves between them</li>
-   <li><strong>Agreement</strong> — practical outcomes are documented and can be made binding (typically as a deed of settlement or workplace agreement)</li>
- </ol>
- <p>All discussions are conducted on a 'without prejudice' basis — what is said in mediation generally cannot be used in later legal proceedings. This lets both parties speak openly about the real issues rather than playing a defensive legal game.</p>
+ <h2>Types of workplace and employment disputes we mediate</h2>
+ <p>Workplace conflict takes many forms, and each has its own legal context and emotional weight. Choose the area closest to your situation for a detailed guide.</p>
 
  <div class="callout">
-   <h3>What if an unfair dismissal application has already been filed?</h3>
-   <p>No problem. The Fair Work Commission itself offers a <a href="https://www.fwc.gov.au/disputes-at-work/hearings-decisions/conferences" target="_blank" rel="noopener">conciliation process</a> for many unfair dismissal claims — and many parties also choose private mediation alongside or instead of the FWC process because it offers more flexibility and confidentiality. We work with whatever stage the dispute has reached.</p>
+   <h3><a href="/unfair-dismissal-termination-mediation/">Unfair Dismissal &amp; Termination Disputes</a></h3>
+   <p>Dismissals, forced resignations and redundancy disagreements. How the 21-day Fair Work deadline works, what settlements typically look like, and how mediation resolves these claims without a hearing.</p>
  </div>
 
- <h2>Who typically engages workplace mediation?</h2>
- <p>Either party can initiate — the employer or the employee. In practice, employers initiate most workplace mediations once they recognise a conflict is escalating and want to contain it. Employees often request mediation when they want a fair hearing without the risk and expense of a formal complaint or legal claim. HR teams frequently recommend it as the appropriate first step before any formal process begins.</p>
+ <div class="callout">
+   <h3><a href="/workplace-bullying-harassment-mediation/">Workplace Bullying &amp; Harassment</a></h3>
+   <p>When repeated unreasonable behaviour is putting health and safety at risk. How mediation can help, when it is not appropriate, and how it sits alongside a stop-bullying application and safety obligations.</p>
+ </div>
+
+ <div class="callout">
+   <h3><a href="/general-protections-discrimination-mediation/">General Protections &amp; Discrimination Claims</a></h3>
+   <p>Adverse action, workplace rights and discrimination on protected grounds. How these claims are handled, the tight time limits, and how conciliation and private mediation can resolve them.</p>
+ </div>
+
+ <div class="callout">
+   <h3><a href="/partnership-executive-exit-mediation/">Partnership &amp; Executive Exit Disputes</a></h3>
+   <p>Business partners falling out, directors leaving under strain, or senior executives negotiating a dignified exit. Resolving high-stakes separations privately, before they damage the business.</p>
+ </div>
+
+ <h2>How workplace mediation works, step by step</h2>
+ <ol>
+   <li><strong>Book a consultation.</strong> You start with a fixed-fee conversation so you understand your position, your options and whether mediation is the right path. There are no surprises on cost.</li>
+   <li><strong>We match you with the right mediator.</strong> Workplace disputes need a mediator who understands employment law and workplace dynamics. Many of our mediators are also experienced lawyers.</li>
+   <li><strong>Preparation.</strong> The mediator speaks with each party privately to understand the issues, the interests behind them, and any safety or power-imbalance concerns that need managing.</li>
+   <li><strong>The session.</strong> Mediation can run with everyone in the room, or in a shuttle format where the mediator moves between separate rooms. It can be held in person or online.</li>
+   <li><strong>Agreement.</strong> In around 90% of our matters, the parties reach agreement in the session itself.</li>
+   <li><strong>Making it binding.</strong> We guide you on turning the agreement into an enforceable outcome — a deed of settlement or a formal terms-of-settlement document.</li>
+ </ol>
+ <p>All discussions are conducted on a without-prejudice basis — what is said in mediation generally cannot be used in later legal proceedings. This confidentiality is what allows people to speak openly and explore settlement.</p>
+
+ <h2>How mediation fits alongside the Fair Work system</h2>
+ <p>Private mediation and the Fair Work system work together — they are not alternatives that cancel each other out. Several types of workplace claim must be lodged with the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> within strict time limits, and the Commission itself offers conciliation. Private mediation can be used:</p>
+ <ul>
+   <li><strong>Before you lodge</strong> — to try to resolve things directly and avoid the formal process entirely</li>
+   <li><strong>Alongside a lodged claim</strong> — to reach a settlement faster and on your own terms</li>
+   <li><strong>In situations the Commission does not cover</strong> — interpersonal conflict, team dynamics, executive exits and commercial partnership disputes</li>
+ </ul>
+ <p>Because deadlines are short — as little as 21 days for an unfair dismissal claim — it is important to get advice quickly so you do not lose a right by waiting. For general information about workplace rights, the <a href="https://www.fairwork.gov.au/" target="_blank" rel="noopener">Fair Work Ombudsman</a> is the primary government source. For work health and safety guidance, see <a href="https://www.safeworkaustralia.gov.au/" target="_blank" rel="noopener">Safe Work Australia</a>.</p>
+
+ <h2>When workplace mediation may not be appropriate</h2>
+ <p>We believe strongly in mediation, but we are honest about its limits. Mediation depends on both people being able to participate freely and safely. It may not be the right first step where:</p>
+ <ul>
+   <li>there is a serious power imbalance that cannot be managed within the process</li>
+   <li>there has been violence, serious sexual harassment, or threats that make a safe conversation impossible</li>
+   <li>a party is not able to negotiate freely — for example because of intimidation or fear of reprisal</li>
+   <li>an urgent legal deadline or a safety risk means a formal application (such as a stop-bullying order) needs to be made first</li>
+ </ul>
+ <p>In these situations, safety and proper advice come before process. A good mediator will tell you honestly if mediation is not suitable for your matter. If you need support: <strong>1800RESPECT</strong> 1800 737 732 &middot; <strong>Lifeline</strong> 13 11 14 &middot; <strong>Beyond Blue</strong> 1300 22 4636.</p>
 
  <h2>Can the outcome be made legally binding?</h2>
- <p>Yes. Any agreement reached in workplace mediation can be documented as a deed of settlement, which is a legally binding contract. The deed records what was agreed — which might include an apology, a change in working arrangements, a payment, a reference, or simply a commitment to a working protocol. The terms are confidential (unlike a court order or FWC determination) and tailored to what actually resolves the dispute. <a href="/how-much-does-mediation-cost/">See what mediation costs →</a></p>
+ <p>Yes. Any agreement reached in workplace mediation can be documented as a deed of settlement — a legally binding contract. The deed records what was agreed, which might include an apology, a change in working arrangements, a payment, a reference, or a commitment to a working protocol. The terms are confidential (unlike a court order or FWC determination) and tailored to what actually resolves the dispute. <a href="/our-fee-structure/">See what mediation costs →</a></p>
+
+ <p style="font-size:.9rem;color:var(--ink-soft);margin-top:32px;font-style:italic">This page is for general information only and does not constitute legal advice. For personalised guidance, please consult a qualified legal professional or accredited mediator.</p>
  """,
- [("Is workplace mediation confidential?",
-   "Yes. Workplace mediation is conducted on a 'without prejudice' basis, meaning discussions generally can't be used later in legal proceedings, which lets both sides speak openly."),
-  ("Can mediation prevent a Fair Work claim?",
-   "Often, yes. Resolving a dispute early through mediation can prevent it escalating to the Fair Work Commission, saving both time and significant cost."),
-  ("Who pays for workplace mediation?",
-   "Arrangements vary. Employers often cover the cost as part of resolving a dispute, though it can be shared. You'll have fee clarity from the outset."),
-  ("Is the outcome of workplace mediation binding?",
-   "The mediation itself is voluntary, but any agreement reached can be documented and made binding, for example as a deed of settlement.")],
+ [("What is workplace mediation?",
+   "Workplace mediation is a voluntary, confidential process in which a neutral mediator helps people in an employment relationship resolve a dispute without going to court or a tribunal. The mediator does not impose a decision — they help the parties reach their own workable agreement."),
+  ("Is workplace mediation legally required in Australia?",
+   "Not across the board. Unlike parenting matters, there is no general legal requirement to mediate a workplace dispute. However, the Fair Work Commission actively encourages conciliation and mediation, and courts expect parties to have made genuine attempts to resolve matters before litigating."),
+  ("How long does workplace mediation take?",
+   "Most workplace mediations are completed in a single session, often within a day. A matter can usually be booked within a few weeks — compared with many months, sometimes over a year, for a contested tribunal or court outcome."),
+  ("Is what I say in mediation confidential?",
+   "Yes. Mediation is conducted on a without-prejudice basis, meaning offers and admissions made during the process usually cannot be used later in court. This confidentiality is what allows people to speak openly and explore settlement."),
+  ("Do I need a lawyer to attend workplace mediation?",
+   "No, it is not mandatory. Many people mediate without a lawyer present. That said, getting legal advice before or after mediation is sensible — especially where the amounts or legal rights involved are significant — so you understand the implications of any agreement before signing."),
+  ("What does workplace mediation cost?",
+   "We use transparent, fixed-fee pricing so you know the cost up front. Fees depend on the complexity and length of the matter, and are typically shared between the parties or as otherwise agreed. See our fee structure page for details.")],
  "Workplace Mediation",
  "Resolve it early — <em>before it costs more</em>.",
  "Book a free initial consultation to resolve a workplace dispute through confidential mediation, before it reaches the Fair Work Commission.")
