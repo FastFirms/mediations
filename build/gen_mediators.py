@@ -142,8 +142,8 @@ dan_schema = [
     }
 ]
 
-d = head("Dan Toombs — Nationally Accredited AMDRAS Mediator | Mediations Australia",
-         "Dan Toombs — AMDRAS-accredited mediator, award-winning lawyer, Winston Churchill Fellow and National Human Rights Law Award recipient. Founder of Mediations Australia.",
+d = head("Dan Toombs — Mediator & Founder | Mediations Australia",
+         "Dan Toombs — AMDRAS-accredited mediator, former QCAT Tribunal Member, award-winning lawyer and Winston Churchill Fellow. Founder of Mediations Australia.",
          "our-team/dan-toombs", extra_schema=dan_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
 d += nav()
@@ -155,7 +155,7 @@ d += f"""<main id="main">
     <div style="max-width:60ch">
       <p class="sec-tag">Meet the team</p>
       <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
-        Dan Toombs — <em>Accredited AMDRAS Mediator &amp; Founder</em>
+        Dan Toombs — <em>Mediator &amp; Founder, Mediations Australia</em>
       </h1>
     </div>
   </div>
@@ -175,6 +175,7 @@ d += f"""<main id="main">
             <tr><td>Accreditation</td><td><a href="https://amdras.au/" target="_blank" rel="noopener">AMDRAS</a> Accredited Mediator</td></tr>
             <tr><td colspan="2" style="font-weight:700;color:var(--sage-deep);padding-top:12px;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase">Legal</td></tr>
             <tr><td>Lawyer</td><td>Multi-Award-Winning Lawyer</td></tr>
+            <tr><td>Tribunal</td><td>Former Tribunal Member, QCAT</td></tr>
             <tr><td>Publisher</td><td><a href="https://www.thomsonreuters.com.au/en-au.html" target="_blank" rel="noopener">Thomson Reuters</a> — Published Author</td></tr>
             <tr><td colspan="2" style="font-weight:700;color:var(--sage-deep);padding-top:12px;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase">Leadership &amp; Governance</td></tr>
             <tr><td>Former CEO</td><td>Community Legal Centre</td></tr>
@@ -195,69 +196,92 @@ d += f"""<main id="main">
       </aside>
 
       <div class="mediator-content">
-        <h2>Dan Toombs — Nationally Accredited AMDRAS Mediator &amp; Founder, Mediations Australia</h2>
-        <span class="tag-line">Award-winning lawyer. Nationally accredited mediator. Published author.</span>
+        <h2>Dan Toombs — Mediator &amp; Founder, Mediations Australia</h2>
+        <span class="tag-line">Award-winning lawyer. Former Tribunal Member, QCAT. Nationally accredited mediator. Published author.</span>
 
         <p>Dan Toombs is the Founder of Mediations Australia and an <a href="https://amdras.au/" target="_blank" rel="noopener">AMDRAS-accredited mediator</a>
-        who brings legal expertise, commercial judgment, organisational leadership and a deep understanding
-        of human behaviour to the mediation room.</p>
+        who brings a distinctive perspective to resolving difficult disputes.</p>
 
-        <p>Throughout his career, Dan has worked in complex situations where law, organisations,
-        relationships and competing interests collide. His approach to mediation reflects that experience:
-        understand what is really driving the conflict, identify what is preventing progress, and help
-        the parties find a practical way forward.</p>
+        <p>He has experienced disputes from multiple perspectives: as a lawyer, as a former Tribunal
+        Member at QCAT, as an organisational leader, and now as a mediator. That experience has taught
+        him that disputes are rarely about the legal issues alone. Relationships, personalities,
+        commercial pressures, organisational dynamics and entrenched positions can all determine whether
+        a conflict escalates or finds a way forward.</p>
+
+        <p>Dan's approach is to understand what is really keeping a dispute stuck, test what is driving
+        the parties' positions, and create the conditions for a practical and enduring resolution.</p>
 
         <p><em>Because unresolved conflict rarely stands still.</em></p>
 
-        <p>Legal costs escalate. Management time is consumed. Relationships deteriorate. Workplace
-        culture can suffer. Positions harden. And the closer a dispute moves towards litigation, the
-        more time and money the parties can spend pursuing an outcome neither can predict with certainty.</p>
+        <p>Legal costs increase. Management time is consumed. Relationships deteriorate. Workplace culture
+        can suffer. Positions harden. And the longer a dispute continues, the more time and money can be
+        spent pursuing an outcome neither party can predict with certainty.</p>
 
-        <p>Mediation offers an opportunity to change that trajectory — and regain control.</p>
+        <p>Mediation offers an opportunity to change that trajectory — while the parties still have
+        control over the outcome.</p>
 
-        <h3>Navigating Complex Problems</h3>
+        <h3>Understanding Disputes from the Decision-Maker's Perspective</h3>
         <p>Dan is a multi-award-winning lawyer published by
-        <a href="https://www.thomsonreuters.com.au/en-au.html" target="_blank" rel="noopener">Thomson Reuters</a>.
-        His legal career has included complex disputes, legislative reform, access to justice and
-        organisational leadership.</p>
+        <a href="https://www.thomsonreuters.com.au/en-au.html" target="_blank" rel="noopener">Thomson Reuters</a>
+        and a former Tribunal Member at the Queensland Civil and Administrative Tribunal (QCAT), where
+        he presided over and determined numerous matters.</p>
 
-        <p>He helped drive significant legislative reform in Australia that improved outcomes for people
-        with mental health and intellectual disabilities caught in the criminal justice system — work
-        recognised with the <strong>Queensland Disability Award</strong>.</p>
+        <p>That experience gives him a perspective relatively few mediators possess. He understands the
+        difference between how strongly a party may believe in its position and how that position may
+        ultimately be assessed by an independent decision-maker. Confidence in a case and certainty of
+        outcome are not the same thing.</p>
 
-        <p>That achievement required more than legal knowledge. It required navigating complex legislative
-        and policy environments, reconciling competing interests, building relationships across institutions
-        and creating a pathway towards meaningful, enduring change.</p>
+        <p>Once a dispute is handed to a tribunal or court, someone else decides. Evidence may be
+        interpreted differently than expected. Witnesses may perform differently under scrutiny. Legal
+        arguments may not carry the weight anticipated. And even a successful outcome can come after
+        considerable expenditure of time, money and energy.</p>
 
-        <p>Those same skills matter in mediation. The dispute being argued about is not always the whole
-        problem. Dan looks at the interests, relationships, organisational pressures and human dynamics
-        beneath the conflict to understand what is keeping it stuck — and where movement may be possible.</p>
+        <p>Mediation gives the parties an opportunity to realistically assess those risks — and explore
+        an outcome they control rather than having one imposed upon them.</p>
+
+        <h3>Navigating Complexity and Competing Interests</h3>
+        <p>Dan's legal career has included complex disputes, legislative reform, access to justice and
+        organisational leadership. He helped drive significant legislative reform in Australia that
+        improved outcomes for people with mental health and intellectual disabilities caught in the
+        criminal justice system — work recognised with the <strong>Queensland Disability Award</strong>.</p>
+
+        <p>Achieving systemic change of this kind required much more than technical legal knowledge. It
+        required navigating complex legislative and policy environments, understanding competing
+        perspectives, building relationships across institutions, overcoming entrenched positions and
+        creating a pathway towards meaningful and enduring change.</p>
+
+        <p>Those same capabilities are central to mediation. The issue being argued about is not always
+        the whole problem. Dan looks at the legal issues alongside the interests, relationships,
+        organisational pressures and human dynamics beneath the conflict to understand what is preventing
+        progress — and where movement may be possible.</p>
 
         <h3>Understanding People and Organisations</h3>
+        <p>Conflict between people can quickly become a problem for an entire organisation. Trust
+        deteriorates. Communication becomes defensive. Managers are drawn in. Colleagues take sides.
+        Productivity suffers. Good people disengage. What began as a disagreement between two people can
+        begin affecting the culture and performance of a wider team.</p>
+
         <p>Dan has specialist training in behaviour, leadership and team dynamics. He is an
         <a href="https://www.belbin.com/" target="_blank" rel="noopener">Accredited Belbin Team Roles Facilitator</a>
         and has trained in
         <a href="https://aali.org.au/" target="_blank" rel="noopener">Adaptive Leadership</a> through the
         Australian Adaptive Leadership Institute, based on the framework developed at Harvard University.</p>
 
-        <p>This experience is particularly valuable in <a href="/workplace-mediation/">workplace</a> and
-        organisational conflict, where damaged trust, communication breakdowns, competing leadership styles
-        and entrenched behaviours can be as important as the legal issues themselves.</p>
-
-        <p>Dan also understands these challenges from the perspective of an organisational leader. He
-        served as CEO of one of Australia's largest community legal centres and as a Board Director of
+        <p>He also understands organisational conflict from the perspective of someone who has actually
+        led an organisation. Dan served as CEO of one of Australia's largest community legal centres and
+        as a Board Director of
         <a href="https://www.legalaid.qld.gov.au/" target="_blank" rel="noopener">Legal Aid Queensland</a>,
-        with responsibility spanning people, strategy, governance, culture and difficult organisational
+        with responsibility spanning people, strategy, governance, organisational culture and difficult
         decisions.</p>
 
         <p>Today, alongside his mediation practice, Dan is Director of
         <a href="https://www.practiceproof.com/" target="_blank" rel="noopener">Practice Proof</a>,
         working with law firms and legal professionals across Australia. This keeps him closely connected
-        to the commercial and organisational realities facing businesses amid major tectonic shifts.
-        He understands not only how disputes arise inside organisations, but the environment people often
-        need to return to once the dispute is over.</p>
+        to the commercial, leadership and organisational realities facing professional firms. He
+        understands not only how disputes arise inside organisations, but something equally important:
+        the environment people may need to return to once the mediation is over.</p>
 
-        <h3>Recognised Leadership</h3>
+        <h3>National and International Recognition</h3>
         <p>Dan's work has been recognised nationally and internationally. He is the recipient of the
         <a href="https://humanrights.gov.au/about-us/what-we-do/human-rights-awards-2026" target="_blank" rel="noopener">National Human Rights Law Award</a>,
         a <a href="https://www.churchilltrust.com.au/" target="_blank" rel="noopener">Winston Churchill Fellow</a>,
@@ -267,39 +291,43 @@ d += f"""<main id="main">
 
         <p>Across that work runs a consistent theme: bringing different perspectives together, navigating
         complexity and finding practical ways through difficult problems. It is that experience Dan
-        brings to mediation.</p>
+        brings to the mediation room.</p>
 
-        <h3>A Better Way Forward</h3>
-        <p>By the time a dispute reaches mediation, the parties may already have spent considerable time,
-        money and energy trying to resolve it. The question is: what will it cost if nothing changes?</p>
+        <h3>The Cost of Leaving a Dispute Unresolved</h3>
+        <p>By the time mediation is being considered, a dispute may already have consumed significant
+        time, money and attention. The more important question is: what will it cost if nothing changes?</p>
 
-        <p>More legal fees. More management time. More uncertainty. More damage to important relationships
-        or workplace culture. And potentially months or years pursuing an outcome that will ultimately be
-        decided by someone else.</p>
+        <p>More legal fees. More management time. More uncertainty. More stress. More damage to commercial
+        relationships or workplace culture. And potentially months or years pursuing an outcome that will
+        ultimately be determined by someone else.</p>
 
-        <p>Mediation offers a different path. Dan provides an independent, structured environment in which
-        the parties can identify what really matters, test their positions and alternatives, confront the
-        practical consequences of continuing the dispute, and explore solutions that may not have emerged
-        through negotiation alone.</p>
+        <p>As a former QCAT Tribunal Member who has presided over and determined disputes, Dan understands
+        first-hand that adjudication necessarily involves uncertainty. Mediation offers a different path.
+        It creates a structured and independent environment in which the parties can clarify what really
+        matters, test assumptions and positions, realistically assess the alternatives to settlement, and
+        explore solutions that may not have emerged through negotiation alone.</p>
 
-        <p>His approach combines the analytical discipline of a lawyer, the commercial judgment of a
-        former CEO, experience navigating complex systems and competing interests, and an understanding
-        of the human behaviour that can keep conflict entrenched. The aim is not agreement at any cost.
-        It is to find a resolution that is practical, workable and capable of enduring after the
-        mediation is over.</p>
+        <p>Dan brings together four perspectives in that process: the analytical discipline of a lawyer,
+        the perspective of a former QCAT Tribunal Member, the practical judgment of an experienced
+        organisational leader, and the independence of a mediator. The aim is not agreement at any cost.
+        It is a resolution that is practical, workable and capable of enduring after the mediation
+        is over.</p>
 
-        <h3>Don't Let the Dispute Decide What Happens Next</h3>
-        <p>Conflict has a way of gathering momentum. The longer it continues, the more people, money
-        and emotion can become invested in it — and the harder it can become to find a way out.</p>
+        <h3>Take Back Control of the Dispute</h3>
+        <p>Conflict has a way of gathering momentum. The longer it continues, the more money, time and
+        emotion become invested in it — and the harder it can become for either side to change course.</p>
 
-        <p>Mediation creates an opportunity to interrupt that trajectory while the parties still have
-        control over the outcome. If a <a href="/workplace-mediation/">workplace</a>,
+        <p>Mediation provides an opportunity to interrupt that trajectory. You do not need to know how the
+        dispute will be resolved before you start. You need to decide whether continuing down the current
+        path is likely to produce a better outcome.</p>
+
+        <p>If a <a href="/workplace-mediation/">workplace</a>,
         <a href="/commercial-mediation/">business or commercial</a> dispute is consuming time, money or
-        attention — or you can see that it is heading in that direction — now is the time to explore
-        whether mediation can change its course.</p>
+        management attention — or beginning to affect important relationships, people or workplace culture
+        — there is value in exploring mediation before the cost of the conflict grows further.</p>
 
-        <p>Talk confidentially with Dan about your dispute and whether mediation can provide a
-        practical way forward.</p>
+        <p>Speak confidentially with Dan about what is happening, what is at stake, and whether mediation
+        can provide a practical way forward.</p>
 
         <a href="{BOOK_URL}" class="btn btn-primary" style="margin-top:8px;font-size:1rem;padding:15px 32px">
           Book a Consultation <span style="margin-left:6px">&#8594;</span>
