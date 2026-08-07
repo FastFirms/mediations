@@ -894,24 +894,27 @@ build(
  <h2>Types of workplace and employment disputes we mediate</h2>
  <p>Workplace conflict takes many forms, and each has its own legal context and emotional weight. Choose the area closest to your situation for a detailed guide.</p>
 
- <div class="callout">
-   <h3><a href="/unfair-dismissal-termination-mediation/">Unfair Dismissal &amp; Termination Disputes</a></h3>
-   <p>Dismissals, forced resignations and redundancy disagreements. How the 21-day Fair Work deadline works, what settlements typically look like, and how mediation resolves these claims without a hearing.</p>
- </div>
-
- <div class="callout">
-   <h3><a href="/workplace-bullying-harassment-mediation/">Workplace Bullying &amp; Harassment</a></h3>
-   <p>When repeated unreasonable behaviour is putting health and safety at risk. How mediation can help, when it is not appropriate, and how it sits alongside a stop-bullying application and safety obligations.</p>
- </div>
-
- <div class="callout">
-   <h3><a href="/general-protections-discrimination-mediation/">General Protections &amp; Discrimination Claims</a></h3>
-   <p>Adverse action, workplace rights and discrimination on protected grounds. How these claims are handled, the tight time limits, and how conciliation and private mediation can resolve them.</p>
- </div>
-
- <div class="callout">
-   <h3><a href="/partnership-executive-exit-mediation/">Partnership &amp; Executive Exit Disputes</a></h3>
-   <p>Business partners falling out, directors leaving under strain, or senior executives negotiating a dignified exit. Resolving high-stakes separations privately, before they damage the business.</p>
+ <div class="cards">
+   <div class="card">
+     <h3><a href="/unfair-dismissal-termination-mediation/" style="color:inherit;text-decoration:none">Unfair Dismissal &amp; Termination Disputes</a></h3>
+     <p>Dismissals, forced resignations and redundancy disagreements. How the 21-day Fair Work deadline works and how mediation resolves these claims without a hearing.</p>
+     <a href="/unfair-dismissal-termination-mediation/" class="more">Read the guide <span class="arr">→</span></a>
+   </div>
+   <div class="card">
+     <h3><a href="/workplace-bullying-harassment-mediation/" style="color:inherit;text-decoration:none">Workplace Bullying &amp; Harassment</a></h3>
+     <p>When repeated unreasonable behaviour creates a health and safety risk. Where mediation helps, when it does not, and how it sits alongside stop-bullying applications.</p>
+     <a href="/workplace-bullying-harassment-mediation/" class="more">Read the guide <span class="arr">→</span></a>
+   </div>
+   <div class="card">
+     <h3><a href="/general-protections-discrimination-mediation/" style="color:inherit;text-decoration:none">General Protections &amp; Discrimination Claims</a></h3>
+     <p>Adverse action, workplace rights and protected attributes. Tight time limits apply — 21 days in dismissal cases. How conciliation and private mediation can resolve these.</p>
+     <a href="/general-protections-discrimination-mediation/" class="more">Read the guide <span class="arr">→</span></a>
+   </div>
+   <div class="card">
+     <h3><a href="/partnership-executive-exit-mediation/" style="color:inherit;text-decoration:none">Partnership &amp; Executive Exit Disputes</a></h3>
+     <p>Business partners falling out, directors leaving under strain, senior executives negotiating a dignified exit. Resolving high-stakes separations privately.</p>
+     <a href="/partnership-executive-exit-mediation/" class="more">Read the guide <span class="arr">→</span></a>
+   </div>
  </div>
 
  <h2>How workplace mediation works, step by step</h2>
