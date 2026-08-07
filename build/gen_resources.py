@@ -507,50 +507,65 @@ build("separation-under-one-roof",
 # ---- UNFAIR DISMISSAL: 21-DAY RULE ----
 build("unfair-dismissal-21-day-rule",
  "Unfair Dismissal: The 21-Day Rule Explained",
- "Missed the 21-day unfair dismissal deadline and your claim is gone. This guide explains who can claim, what happens after you lodge, and how mediation resolves most cases without a hearing.",
+ "An unfair dismissal application must be lodged within 21 calendar days. This guide explains who can claim, what happens at conciliation, what a realistic outcome looks like, and how most cases resolve without a hearing.",
  "Know your deadline — and your options",
  "Unfair Dismissal: <em>The 21-Day Rule Explained</em>",
- "If you have just lost your job and something feels wrong, the 21-day deadline is the single most important fact you need to know. This guide explains who can claim, what happens after lodging, what a realistic outcome looks like, and how most unfair dismissal cases resolve without a hearing.",
- "An unfair dismissal application must be lodged with the Fair Work Commission within 21 calendar days of the dismissal taking effect — not 21 business days. The deadline is unforgiving: extensions are only granted in exceptional circumstances like serious illness or being actively misled. If you have recently lost your job, treat it as urgent.",
+ "If you have just lost your job and something about it feels wrong, you are probably experiencing two things at once: the shock of the dismissal itself, and a creeping worry about what to do next. This guide is written for that moment. It explains the single most important fact about unfair dismissal in Australia — the 21-day deadline — along with who can claim, what actually happens after you lodge, what a realistic outcome looks like, and how most of these disputes resolve without anyone ever setting foot in a courtroom.",
+ "An unfair dismissal application must be lodged with the Fair Work Commission within 21 calendar days of the dismissal taking effect — not 21 business days. The deadline is unforgiving: extensions are only granted in exceptional circumstances. The people who protect their position best are not the ones with the strongest cases — they are the ones who act quickly.",
  """
  <h2>Why 21 days is the number that matters most</h2>
- <p><strong>An unfair dismissal application must be lodged with the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> within 21 calendar days after the dismissal takes effect</strong> — not 21 business days. Weekends and public holidays count. The clock starts on your last day of employment, not the day you were told or the day your final pay landed.</p>
- <p>The Commission can extend this deadline only in "exceptional circumstances." Being upset, unsure of your rights, or not getting around to it are not exceptional. Serious illness or being actively misled might be — but you cannot count on it. <strong>Once 21 days pass, the door generally closes.</strong></p>
+ <p><strong>An unfair dismissal application must be lodged with the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> within 21 calendar days after the dismissal takes effect</strong> — not 21 business days. Weekends and public holidays included. The clock starts on the day your dismissal takes effect, which is usually your last day of employment, not the day you were told and not the day your final pay landed.</p>
+ <p>This deadline is unforgiving by design. The Commission can extend it only in "exceptional circumstances," and the bar for that is genuinely high. Being upset, being unsure of your rights, or simply not getting around to it are not exceptional circumstances. Serious illness, or being actively misled about your dismissal, might be — but you cannot count on it. <strong>The safest assumption is that once 21 days pass, the door closes.</strong></p>
+ <p>The people who protect their position best are not the ones with the strongest cases — they are the ones who act quickly. If you are reading this in the first few days after losing your job, you are in the best possible position. If you are reading it on day 18, you need advice today.</p>
 
  <h2>Are you eligible to claim?</h2>
- <p>Not everyone dismissed can bring an unfair dismissal claim. You generally need to pass all of these:</p>
+ <p>Not everyone who is dismissed can bring an unfair dismissal claim. You generally need to pass all of these:</p>
  <ul>
-   <li><strong>You were dismissed</strong> — including constructive dismissal, where your employer's conduct left you no real choice but to resign.</li>
-   <li><strong>You served the minimum employment period</strong> — 6 months of continuous service, or 12 months for a small business employer (fewer than 15 employees).</li>
-   <li><strong>You are award-covered, agreement-covered, or earn under the high-income threshold</strong> — above the threshold without award or agreement coverage, unfair dismissal is not available.</li>
-   <li><strong>It was not a genuine redundancy</strong> — a genuine redundancy is a complete defence. See our <a href="/redundancy-was-it-genuine/">redundancy guide</a> for the legal test.</li>
+   <li><strong>You were dismissed</strong> — including constructive dismissal, where your employer's conduct left you no real choice but to resign. It does not include a genuine mutual agreement, or resigning simply because you found a better job.</li>
+   <li><strong>You served the minimum employment period</strong> — at least 6 months of continuous service, or 12 months if your employer is a small business employer with fewer than 15 employees.</li>
+   <li><strong>You are award-covered, agreement-covered, or earn under the high-income threshold</strong> — if neither an award nor an agreement applies, you must earn below the high-income threshold (indexed each 1 July). Above that threshold without coverage, unfair dismissal is not available.</li>
+   <li><strong>It was not a genuine redundancy</strong> — a genuine redundancy is a complete defence to an unfair dismissal claim. See our <a href="/redundancy-was-it-genuine/">redundancy guide</a> for the legal test.</li>
  </ul>
- <p>If you do not qualify for unfair dismissal, a <strong>general protections claim</strong> may be open to you — and that also runs on a 21-day deadline in dismissal cases.</p>
+ <p>If you do not qualify for unfair dismissal, that is not necessarily the end of the road. A <strong>general protections claim</strong> may be open to you — and in dismissal cases, that also runs on a 21-day deadline. Choosing the wrong claim, or missing which one applies, can be costly — which is exactly why early advice matters.</p>
 
  <h2>What "unfair" actually means</h2>
- <p>The Commission asks whether your dismissal was <strong>"harsh, unjust or unreasonable."</strong> It weighs: was there a valid reason connected to your capacity or conduct? Were you told that reason and given a chance to respond? Were you warned before being dismissed for performance? A dismissal can be substantively justified but still unfair if the process was botched — and equally, a clumsy-feeling dismissal might be lawful if the reason was sound and the process fair.</p>
+ <p>People often assume that if their dismissal felt unfair, it legally was. The test is narrower than that. The Commission asks whether the dismissal was <strong>"harsh, unjust or unreasonable."</strong> It weighs things like: was there a valid reason connected to your capacity or conduct? Were you told about that reason and given a chance to respond? Were you warned about performance problems before being dismissed for them? Were you allowed a support person in relevant meetings?</p>
+ <p>A dismissal can be substantively justified but still unfair because the process was botched — and equally, a clumsy-feeling dismissal might still be lawful if the reason was sound and the process fair. Understanding this distinction early helps you form a realistic view rather than an emotional one.</p>
 
  <h2>What happens after you lodge</h2>
- <p>The overwhelming majority of unfair dismissal claims never reach a hearing. After lodging (Form F2), the Commission offers <strong>conciliation</strong> — an informal, private, without-prejudice discussion typically held about five weeks after lodging, usually by phone or video, running up to 90 minutes.</p>
- <p>Around <strong>three in four cases settle at or before conciliation.</strong> If not settled, the matter moves to a Commission Member who makes a binding decision — slower, more stressful, and riskier for everyone.</p>
+ <p>Here is the part that surprises most people: the overwhelming majority of unfair dismissal claims never reach a hearing. After you lodge (using Form F2), the employer files a response, and the Commission then offers <strong>conciliation</strong> — an informal, private, without-prejudice discussion designed to help both sides reach their own agreement.</p>
+ <p>Conciliation is typically held about five weeks after the application, runs for up to <strong>90 minutes</strong>, and is usually conducted by phone or video. It is led by an independent conciliator who does not take sides and cannot impose a decision. Their job is to help both parties understand the strengths and weaknesses of their positions and explore whether a settlement is possible.</p>
+ <p>Around <strong>three in four cases settle at or before conciliation.</strong> If a matter does not settle, it moves to a Member who, like a judge, will hear evidence and make a binding decision.</p>
+
+ <h2>How to prepare for conciliation</h2>
+ <p>Preparation is where you give yourself the best chance of a good outcome. Before the day: gather your employment contract, a recent payslip, any warning letters or the dismissal letter, and copies of the application and response. Read the other side's response carefully, even if you disagree with all of it. Write down your key issues and — importantly — the outcome you want and the outcome you would accept. These are rarely the same number, and knowing your range in advance stops you being caught flat-footed.</p>
+ <p>A useful mindset: conciliation is about facts and interests, not about being proven right. Coming in wanting an apology and a formal finding of wrongdoing, rather than a practical settlement, is the most common way people talk themselves out of a good outcome.</p>
 
  <h2>What a realistic outcome looks like</h2>
- <p>Because conciliation lets parties agree to almost anything, settlements are flexible. Common elements include: a payment (often measured in weeks of pay, not a windfall); an agreed statement of service or reference; a non-disparagement clause; and a mutual release with confidentiality. Compensation, if a matter runs to a Member's decision, is capped and indexed annually.</p>
- <p>Private mediation with an accredited mediator can run <em>before</em> you lodge — sometimes resolving things without a formal claim — or alongside a lodged claim for a more tailored process. See our <a href="/unfair-dismissal-termination-mediation/">unfair dismissal mediation page</a> for how we approach it.</p>
+ <p>Because conciliation lets parties agree to almost anything, settlements are flexible in a way a hearing can never be. Common elements include: a payment (often measured in weeks of pay, not a windfall); an agreed statement of service or reference (often more valuable than money for your next job); a non-disparagement agreement; a mutual release; and confidentiality over the terms.</p>
+ <p>Compensation, if a matter runs all the way to a Member's decision, is <strong>capped</strong> (indexed annually) and reinstatement, while technically the primary remedy, is ordered relatively rarely.</p>
+ <p>If you reach agreement, you will sign a <strong>Deed of Settlement</strong> or Terms of Agreement — a binding legal contract. If unrepresented, you are usually given a short cooling-off period (commonly three days) to change your mind — a genuinely important protection, so use that window to think clearly before the agreement becomes final.</p>
+
+ <h2>Where private mediation fits</h2>
+ <p>The Commission's conciliation is not your only option. Private mediation with an accredited mediator can run <em>before</em> you lodge — sometimes resolving things without a formal claim — or <em>alongside</em> a lodged claim, giving you a mediator matched to your matter, more time, and a more tailored process than a 90-minute phone call allows. This is often the better route in more complex or higher-value matters, or where the relationship is worth preserving. See our <a href="/unfair-dismissal-termination-mediation/">unfair dismissal and termination mediation page</a> for how we approach it.</p>
  """,
  [("Does the 21 days include weekends?",
    "Yes. It is 21 calendar days from when the dismissal takes effect, not 21 business days."),
   ("What if I have already missed the 21-day deadline?",
-   "You can apply for an extension, but it is only granted in exceptional circumstances such as serious illness or being actively misled. Get advice immediately."),
+   "You can apply for an extension, but it is only granted in exceptional circumstances such as serious illness or being actively misled. Get advice immediately — do not assume you have no options, but do not assume you will get the extension either."),
   ("What does unfair dismissal actually mean?",
    "The Fair Work Commission asks whether your dismissal was 'harsh, unjust or unreasonable.' This looks at both the reason for dismissal and the fairness of the process — including whether you were warned, consulted, and given a chance to respond."),
   ("Do I need a lawyer at conciliation?",
-   "No. Many people are unrepresented, and the process is designed to be accessible. But advice beforehand on what your claim is realistically worth can significantly change the outcome."),
+   "No. Many people are unrepresented, and the process is designed to be accessible. But advice beforehand — especially on what your claim is realistically worth — can significantly change the outcome."),
+  ("Will I have to face my employer?",
+   "Not in person. Conciliation is by phone or video, and the conciliator can keep the parties in separate virtual rooms if being in the same meeting would be difficult."),
+  ("How much will I get?",
+   "There is no set figure. Many settlements are measured in weeks of pay. The value depends on the strength of your case, your length of service, your loss, and how both sides weigh the risk of a hearing."),
   ("Can private mediation help with an unfair dismissal?",
    "Yes. Private mediation can run before you lodge, to try to resolve directly with your employer, or alongside a lodged claim for a more tailored process than the Commission's 90-minute conciliation call allows.")],
  "Unfair Dismissal: The 21-Day Rule",
- "Act before the clock runs out — <em>we can help</em>.",
- "Book a free consultation to understand your rights and deadlines before the 21-day window closes.")
+ "The 21-day rule rewards people who move quickly.",
+ "If you have been dismissed and something feels wrong, the worst thing you can do is wait and hope for clarity. Talk to us now, while you still have your full options open.")
 
 # ---- IS MEDIATION RIGHT FOR YOUR WORKPLACE DISPUTE? ----
 build("is-mediation-right-for-workplace-dispute",
@@ -558,101 +573,113 @@ build("is-mediation-right-for-workplace-dispute",
  "Mediation resolves most workplace disputes faster and more privately than a tribunal — but not every situation. This honest guide helps you decide whether mediation fits your dispute.",
  "An honest guide to help you decide",
  "Is Mediation Right for Your Workplace Dispute?",
- "We believe deeply in mediation for workplace disputes — and we are going to be honest about when it is not the right answer, because that honesty is part of taking your situation seriously. This guide helps you make a clear-eyed judgement about your own circumstances.",
- "Mediation works best when both people can come to the table able to speak freely and safely, with a genuine aim of finding a workable outcome. It may not be the right first step where there has been violence, serious harassment, severe power imbalance, or where serious allegations need to be independently established first. An honest first conversation will tell you which path fits.",
+ "Mediation resolves the large majority of workplace disputes faster, more privately, and more cheaply than a tribunal or court — and we believe in it deeply. But we are not going to pretend it is the right answer for every situation, because it isn't, and being honest about that is part of taking your circumstances seriously. This guide is designed to help you work out whether mediation genuinely fits your dispute, or whether another path should come first.",
+ "Mediation works best when both people can come to the table able to speak freely and safely, with a genuine aim of finding a workable outcome. It may not be the right first step where there has been violence, serious harassment, a severe power imbalance, or where serious allegations need to be independently established first. An honest initial conversation will tell you which path fits.",
  """
  <h2>What mediation actually is — and is not</h2>
- <p>A mediator is a neutral third party who helps people in a dispute have a structured, confidential conversation and reach their own agreement. The mediator does not judge, does not take sides, and cannot impose a decision. <strong>Mediation is not a watered-down court.</strong> Nobody "wins" and nobody is "found" to have done anything. Its power comes entirely from the fact that the parties themselves control the outcome.</p>
+ <p>A mediator is a neutral third party who helps the people in a dispute have a structured, confidential conversation and reach their own agreement. The mediator does not judge, does not take sides, does not give evidence, and cannot impose a decision on anyone. <strong>Mediation is not a watered-down court.</strong> Nobody "wins" a mediation and nobody is "found" to have done anything. It is a facilitated negotiation, and its entire power comes from the fact that the parties themselves control the outcome.</p>
+ <p>That design is what makes mediation brilliant for some disputes and unsuitable for others. It works when people can come to the table able to speak and negotiate freely. It struggles when they cannot.</p>
 
  <h2>When mediation works well</h2>
  <p>Mediation tends to be the best available option where several of these are true:</p>
  <ul>
-   <li><strong>The relationship needs to continue, or ending it well matters.</strong> Colleagues who will keep working together, or business partners who share an industry. Mediation is built to preserve working relationships; litigation is built to end them.</li>
+   <li><strong>The relationship needs to continue, or ending it well matters.</strong> Colleagues who will keep working together, a manager and report who need a functioning relationship, or business partners who share an industry even after they separate. Mediation is built to preserve working relationships; litigation is built to end them.</li>
    <li><strong>Both people can participate freely and safely.</strong> This is the single most important condition.</li>
-   <li><strong>The dispute is about interests, not just proving fault.</strong> Pay, conditions, workload, recognition, communication breakdown — these are exactly the problems mediation excels at.</li>
-   <li><strong>Speed and privacy matter.</strong> Most workplace mediations resolve in a single session and stay completely confidential.</li>
+   <li><strong>The dispute is about interests, not just proving fault.</strong> Pay, conditions, workload, recognition, a communication breakdown, or a management relationship that has soured — these are exactly the kind of interest-based problems mediation excels at.</li>
+   <li><strong>You want control over the outcome.</strong> In mediation you shape the resolution — an agreed reference, a payment, a change in how things are done, a dignified exit. A tribunal offers a limited menu of remedies and imposes whichever it chooses.</li>
+   <li><strong>Speed and privacy matter.</strong> Most workplace mediations resolve in a single session and stay completely confidential. Tribunal decisions are public and can take many months.</li>
  </ul>
- <p>This covers many disputes: <a href="/unfair-dismissal-termination-mediation/">unfair dismissal</a>, <a href="/redundancy-restructure-mediation/">redundancy</a>, <a href="/general-protections-discrimination-mediation/">general protections matters</a>, <a href="/partnership-executive-exit-mediation/">partnership exits</a>, and most everyday <a href="/workplace-investigations-grievance-mediation/">grievances</a>.</p>
+ <p>This covers a great many disputes: <a href="/unfair-dismissal-termination-mediation/">unfair dismissal and termination</a>, <a href="/redundancy-restructure-mediation/">redundancy disagreements</a>, many <a href="/general-protections-discrimination-mediation/">general protections matters</a>, <a href="/partnership-executive-exit-mediation/">partnership and executive exits</a>, and most everyday <a href="/workplace-investigations-grievance-mediation/">grievances</a>.</p>
 
  <h2>When mediation may not be the right first step</h2>
- <p>Mediation depends on both people being able to negotiate safely. When that condition is absent, mediation can be ineffective at best and harmful at worst. It may not be the right first step where:</p>
+ <p>Here is where we are candid, because it matters. Mediation depends on both people being able to negotiate safely and on a reasonably equal footing. When that condition is absent, mediation can be ineffective at best and harmful at worst. It may not be the right first step where:</p>
  <ul>
-   <li><strong>There has been violence, serious sexual harassment, or threats.</strong> Safety comes before process.</li>
-   <li><strong>There is a severe power imbalance that cannot be managed.</strong> A skilled mediator manages routine imbalance through shuttle mediation and careful process design — but extreme imbalance may prevent a fair outcome.</li>
-   <li><strong>A party fears reprisal or cannot speak honestly.</strong> If fear prevents real negotiation, the conversation is not genuine.</li>
-   <li><strong>The behaviour is ongoing and needs to be stopped urgently.</strong> A stop-bullying application or WHS report may need to come first. See our <a href="/workplace-bullying-harassment-mediation/">bullying and harassment guide</a>.</li>
-   <li><strong>Serious allegations need to be independently established.</strong> Where serious misconduct needs to be factually determined, a proper investigation usually comes first. See our <a href="/workplace-investigations-grievance-mediation/">investigations guide</a>.</li>
+   <li><strong>There has been violence, serious sexual harassment, or threats.</strong> Where the conduct at issue makes a safe, direct conversation impossible, putting the parties together is inappropriate. Safety comes before process, full stop.</li>
+   <li><strong>There is a serious power imbalance that cannot be managed.</strong> Some imbalance is present in almost every workplace dispute, and a skilled mediator manages it routinely — through shuttle mediation, support people, and careful process design. But where the imbalance is so severe that one party genuinely cannot advocate for themselves, mediation may not deliver a fair outcome.</li>
+   <li><strong>A party feels unsafe, intimidated, or fears reprisal.</strong> If someone cannot speak honestly because they fear the consequences, the conversation is not a real negotiation.</li>
+   <li><strong>The behaviour is ongoing and needs to be stopped urgently.</strong> Where bullying or harassment is continuing, a stop-bullying application or work health and safety report may need to come first. See our <a href="/workplace-bullying-harassment-mediation/">bullying and harassment guide</a> for how these fit together.</li>
+   <li><strong>Serious allegations need to be independently established.</strong> Where the dispute turns on whether serious misconduct actually happened — conduct that could lead to dismissal or carry legal consequences — a proper independent investigation usually needs to come first. Our <a href="/workplace-investigations-grievance-mediation/">workplace investigations guide</a> explains the investigate-versus-mediate decision.</li>
  </ul>
- <p>Importantly, "not the right first step" does not mean "never." Mediation frequently has a role <em>later</em> — after facts are established, safety is assured, or a situation is de-escalated — to repair the workplace and agree a way forward.</p>
+ <p>Importantly, "not the right first step" does not always mean "never." Mediation frequently has a valuable role <em>later</em> — after a dispute is de-escalated, after facts are established by an investigation, or once safety is assured — to repair the workplace and agree how people will work together going forward.</p>
+
+ <h2>Two examples, to make it concrete</h2>
+ <p>Consider two disputes that look similar on the surface but call for very different approaches.</p>
+ <p>In the first, a team leader and a long-serving staff member have fallen into a pattern of friction. Meetings are tense, emails have an edge, and each feels the other is undermining them. There is no allegation of anything unsafe — just a working relationship that has gone wrong and is affecting the team. This is close to an ideal mediation case. A single session, with good preparation, could resolve it and reset the relationship.</p>
+ <p>In the second, a junior employee has made a detailed complaint that a senior manager has been sexually harassing them and has implied their job is at risk if they speak up. Here, almost every warning sign is present: a serious allegation that needs to be established, a stark power imbalance, and a person who does not feel safe. Sending these two into a mediation room as a first step would be inappropriate. The right first steps are safety, support, and an independent investigation. Mediation might have a role much later — but not now, and not as a substitute for a proper process.</p>
 
  <h2>How a responsible mediator handles the risky cases</h2>
- <p>Before any workplace mediation, there should be a <strong>screening and preparation stage</strong>: the mediator speaks privately with each party, listens for safety concerns and power imbalances, and forms a judgement about whether mediation is appropriate. That might mean a shuttle format, allowing support people, setting clear ground rules, or — where it is the right call — advising that mediation should not proceed yet. Screening is a genuine safeguard, not a formality.</p>
+ <p>A responsible mediator does not simply take a booking and put two people in a room. Before any workplace mediation, there should be a <strong>screening and preparation stage</strong>: the mediator speaks with each party separately, listens for safety concerns and power imbalances, and forms a judgement about whether mediation is appropriate and, if so, how it should be run. That might mean a shuttle format where the parties never sit face to face, allowing support people, setting clear ground rules, or — where it is the right call — advising that mediation should not proceed yet. Screening is not a formality; it is a genuine safeguard.</p>
  """,
  [("Can my employer force me to mediate?",
    "No. Mediation is voluntary. You should never be pressured into a process that does not feel safe, and you can raise safety or power-imbalance concerns at any point."),
   ("If mediation is not right now, is it ruled out forever?",
    "No. It often becomes appropriate later — after an investigation, once a situation is de-escalated, or once safety is assured — to repair the workplace."),
   ("Will the mediator decide who is right?",
-   "No. A mediator never judges or imposes a decision. If you want a binding ruling on the facts, mediation is not that process."),
+   "No. A mediator never judges or imposes a decision. If you want a binding ruling on the facts, mediation is not that — but very few workplace disputes actually benefit from a public ruling."),
   ("Is workplace mediation confidential?",
-   "Yes. Mediation is confidential and conducted on a without-prejudice basis, which means what is said generally cannot be used against you later."),
+   "Yes. Mediation is confidential and conducted on a without-prejudice basis, which means what is said in the process generally cannot be used against you later — and that protection is a large part of what lets people speak openly and settle."),
   ("How do I know if mediation fits my specific situation?",
-   "The honest test is one question: can both people come to the table able to speak freely and safely, with a genuine aim of finding a workable outcome? If you are unsure, an initial no-obligation conversation will give you a straight assessment.")],
+   "The honest test is a single question: can both people come to the table able to speak freely and safely, with a genuine aim of finding a workable outcome? If you are unsure, an initial no-obligation conversation will give you a straight assessment — including an honest answer when mediation is not the right step.")],
  "Is Mediation Right for Your Workplace Dispute?",
  "Get an honest assessment — <em>not a sales pitch</em>.",
- "Book a free consultation and we will tell you honestly whether mediation fits your situation — including when it does not.")
+ "Not sure whether mediation fits your situation? That is the most useful reason of all to talk to us. We will tell you honestly what your options are — including when mediation is not the right step.")
 
 # ---- REDUNDANCY: WAS IT GENUINE? ----
 build("redundancy-was-it-genuine",
  "Redundancy: Was It Genuine? The Legal Test Explained",
- "A genuine redundancy is a complete defence to unfair dismissal. This guide explains the three-part legal test, the consultation mistake that ends most claims, and how to assess your situation.",
+ "A genuine redundancy is a complete defence to unfair dismissal. This guide explains the three-part legal test, the consultation mistake employers make most often, and how to assess your situation.",
  "Know the three-part test before accepting it",
  "Redundancy: <em>Was It Genuine?</em>",
- "Being made redundant is one of the stranger kinds of job loss — supposedly about the role, not the person, yet it can feel intensely personal. This guide explains what 'genuine redundancy' actually means under Australian law, the part employers get wrong most often, and how to assess whether your situation holds up.",
- "Under section 389 of the Fair Work Act, a dismissal is only a genuine redundancy if all three conditions are met: the job is no longer required by anyone; the employer complied with any applicable consultation obligation; and redeployment was not reasonable. Miss any one element and the redundancy may not be genuine — opening the door to an unfair dismissal claim.",
+ "Being made redundant is one of the strangest kinds of job loss. Unlike being sacked for something you did, redundancy is supposed to be about the role, not the person — and yet it can feel intensely personal, especially when your position disappears but the work somehow doesn't, or when you are the only one let go in a 'restructure.' This guide explains what 'genuine redundancy' actually means under Australian law, why the answer decides whether you can challenge it, the step employers most often get wrong, and how these disputes are resolved without a courtroom fight.",
+ "Under section 389 of the Fair Work Act, a dismissal is only a genuine redundancy if all three conditions are met: the job is no longer required by anyone; the employer complied with any applicable consultation obligation; and redeployment was not reasonable. Miss any one element and the redundancy may not be genuine — opening the door to an unfair dismissal claim. Employers routinely assume the business reason alone is enough. It isn't.",
  """
  <h2>Why "genuine" is the whole ballgame</h2>
- <p>A genuine redundancy is a complete <strong>defence</strong> to an unfair dismissal claim. If your redundancy was genuine, you generally cannot bring an unfair dismissal case no matter how upsetting it was. But if your redundancy was <em>not</em> genuine — even where there was a real business reason — that defence falls away.</p>
- <p>The question is not just "did the business have a reason?" It is "did this dismissal meet every element of the legal test?" That gap is where many valid claims live.</p>
+ <p>Here is the fact that changes everything: a genuine redundancy is a complete <strong>defence</strong> to an unfair dismissal claim. If your redundancy was genuine, you generally cannot bring an unfair dismissal case, no matter how upsetting the situation. But if your redundancy was <em>not</em> genuine — even where there was a real business reason behind it — that defence falls away, and an unfair dismissal claim can proceed on its merits.</p>
+ <p>The question is not just "did the business have a reason?" It is "did this dismissal meet every element of the legal test for genuine redundancy?" Employers routinely assume the first question is the only one that matters. It isn't. And that gap is where a great many valid claims live.</p>
 
  <h2>The three-part test under section 389</h2>
- <p>Under section 389 of the <em>Fair Work Act 2009</em> (Cth), a dismissal is only a genuine redundancy if <strong>all three</strong> of the following are satisfied:</p>
+ <p>Under section 389 of the <em>Fair Work Act 2009</em> (Cth), a dismissal is only a genuine redundancy if <strong>all three</strong> of the following are satisfied. Miss one, and it is not genuine.</p>
  <ol>
-   <li><strong>The job is no longer required by anyone.</strong> The role must have genuinely ceased to be needed because of changes in operational requirements — a downturn, restructure, automation, merger or site closure. If your duties were handed to someone else or a near-identical role was created under a new title, the job arguably still exists.</li>
-   <li><strong>The employer complied with any consultation obligation.</strong> This is the most commonly missed element — see below.</li>
-   <li><strong>Redeployment was not reasonable.</strong> The employer must show there was no other reasonable role you could have been redeployed into within the business or an associated entity.</li>
+   <li><strong>The job is no longer required by anyone.</strong> The role must have genuinely ceased to be needed because of changes in the operational requirements of the business — a downturn, a restructure, automation, a merger, closing a site. The key word is <em>anyone</em>. If your duties were simply handed to someone else, or a near-identical role was created under a new title, the job arguably still exists and the redundancy may not be genuine. Replacing you with a cheaper worker doing the same job is not redundancy.</li>
+   <li><strong>The employer complied with any consultation obligation.</strong> This is the big one — see below.</li>
+   <li><strong>Redeployment was not reasonable.</strong> The employer must show there was no other reasonable role you could have been redeployed into, within the business or an associated entity. If a suitable vacancy existed and you were not offered it — or not genuinely considered for it — the redundancy may fail this limb.</li>
  </ol>
 
  <h2>The part employers most often get wrong: consultation</h2>
- <p>The consultation obligation usually comes not from the <em>Fair Work Act</em> itself, but from the <strong>modern award or enterprise agreement</strong> that covers the employee. Almost every modern award contains a consultation clause triggered by "major workplace change" — and because most employees are covered by an award, the obligation applies far more often than employers assume.</p>
- <p>When it applies, consultation must be <strong>genuine and prior to the decision</strong>. The Fair Work Commission has confirmed repeatedly: <strong>even if consultation would not have changed the outcome, failing to consult means the redundancy is not genuine.</strong> A phone call announcing a decision already made is notification — not consultation.</p>
+ <p>If there is one reason otherwise-lawful redundancies become successful unfair dismissal claims, it is consultation. The obligation usually comes not from the <em>Fair Work Act</em> itself, but from the <strong>modern award or enterprise agreement</strong> that covers the employee. Almost every modern award contains a consultation clause that is triggered by "major workplace change" — and because most employees are covered by an award or agreement, the obligation applies far more often than employers assume.</p>
+ <p>When it applies, consultation is <strong>mandatory and must be genuine</strong>. That means the employer must notify affected employees of the proposed change <em>before</em> the decision is finalised; give them a real opportunity to respond and raise alternatives; and genuinely consider that response. The point that catches employers out, confirmed repeatedly by the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a>: <strong>even if consultation would not have changed the outcome, failing to consult means the redundancy is not genuine.</strong> A quick phone call announcing a decision already made is not consultation — it is notification, and it does not satisfy the obligation.</p>
+
+ <h2>A worked example of where redundancy goes wrong</h2>
+ <p>A business decides, for sound financial reasons, that it can no longer afford a particular role. The owner is certain it is a genuine redundancy — the money simply is not there. They call the employee in, explain the decision, and finish them up that afternoon with their entitlements paid. Clean and decisive, or so it seems.</p>
+ <p>But if that employee is covered by a modern award with a consultation clause — as most are — the employer has just walked into a problem. There was no consultation before the decision was finalised, no opportunity for the employee to respond or suggest alternatives, and no genuine consideration of redeployment. The business reason was real, but the process was not followed. On these facts the redundancy may not be "genuine" for the purposes of section 389 — which means the unfair dismissal defence is gone. Cases with almost exactly these facts come before the Commission regularly, and employers are frequently surprised to learn that their sound business reason did not save them.</p>
 
  <h2>Signs your redundancy may not be genuine</h2>
  <ul>
    <li>Your duties are still being done by other people or under a different job title</li>
    <li>You were told the decision was final before anyone consulted you</li>
-   <li>There were other roles you could have filled, and you were not offered them</li>
-   <li>You were the only person selected and the basis for choosing you is unclear</li>
+   <li>There were other roles you could have filled, and you were not offered or considered for them</li>
+   <li>You were the only person selected, and the basis for choosing you is unclear or feels like a pretext</li>
    <li>Your award or agreement contains a consultation clause that was not followed</li>
  </ul>
- <p>Remember the <strong>21-day deadline</strong>: if you want to challenge a redundancy as unfair dismissal, lodge with the Fair Work Commission within 21 days of the dismissal taking effect. See our <a href="/unfair-dismissal-21-day-rule/">unfair dismissal 21-day rule guide</a>.</p>
+ <p>Remember the <strong>21-day deadline</strong>: if you want to challenge a redundancy as an unfair dismissal, the application must be lodged with the Fair Work Commission within 21 days of the dismissal taking effect. See our <a href="/unfair-dismissal-21-day-rule/">unfair dismissal 21-day rule guide</a>.</p>
+ <p>And if you suspect the redundancy was really a cover for dismissing you because of a protected attribute (age, pregnancy, disability) or because you exercised a workplace right, it may be a <strong>general protections matter</strong> — a different claim with its own deadlines, covered in our <a href="/general-protections-discrimination-mediation/">general protections guide</a>.</p>
 
  <h2>How mediation resolves redundancy disputes</h2>
- <p>Redundancy disputes are often as much about process, communication and dignity as they are about money — which makes them well suited to mediation. Rather than fighting over whether the technical test was met in a public hearing, mediation lets both sides craft a practical resolution: an agreed payment, a reference, outplacement support, confidentiality, and a mutual release. See our <a href="/redundancy-restructure-mediation/">redundancy and restructure mediation page</a> for how we approach it.</p>
+ <p>Redundancy disputes are often as much about process, communication and dignity as they are about money — which makes them well suited to mediation. Rather than fighting over whether the technical test was met in a public hearing, mediation lets both sides craft a practical resolution: an agreed payment or additional entitlement, a reference or statement of service, outplacement or transition support, confidentiality, and a mutual release that ends the matter cleanly. For the employer, it avoids a published unfair dismissal finding. Both sides keep control of the result. See our <a href="/redundancy-restructure-mediation/">redundancy and restructure mediation page</a> for how we approach these matters.</p>
  """,
  [("Is redundancy pay compulsory?",
-   "Minimum redundancy pay and notice are set by the National Employment Standards and any applicable award, based on length of service. Small businesses may be exempt from redundancy pay in some cases."),
+   "Minimum redundancy pay and notice are set by the National Employment Standards and any applicable award or agreement, based on length of service. Small businesses may be exempt from redundancy pay in some cases."),
   ("Can I be made redundant while on leave?",
    "Being on leave does not protect a genuinely redundant role, but it does not remove the consultation and process obligations either. Selecting someone because they are on certain protected leave can raise general protections issues."),
   ("My employer says it is a genuine redundancy. Can I still challenge it?",
-   "Yes. Genuine redundancy is a legal test, not just the employer's label. If the role still exists, consultation was skipped, or redeployment was reasonable and not offered, the redundancy may not be genuine."),
+   "Yes. 'Genuine redundancy' is a legal test, not just the employer's label. If the role still exists, consultation was skipped, or redeployment was reasonable and not offered, the redundancy may not be genuine."),
   ("How long do I have to challenge a redundancy?",
-   "If challenging as an unfair dismissal, 21 calendar days from the dismissal taking effect. Act quickly."),
+   "If challenging as an unfair dismissal, 21 calendar days from the dismissal taking effect. Act quickly — extensions are only granted in exceptional circumstances."),
   ("Does the size of my employer matter?",
-   "Yes. Small businesses (fewer than 15 employees) have a longer minimum employment period and some redundancy-pay exemptions — but they still must consult where an award or agreement requires it.")],
+   "Yes. Small businesses (fewer than 15 employees) have a longer minimum employment period and some redundancy-pay exemptions — but they still have to consult where an award or agreement requires it.")],
  "Redundancy: Was It Genuine?",
  "Know where you stand — <em>before you accept it</em>.",
- "Book a free consultation to find out whether your redundancy meets the legal test — and what your realistic options are.")
+ "Whether you are an employee questioning a redundancy that doesn't sit right, or an employer wanting to run a restructure the right way, an early conversation can save a great deal of stress and cost.")
 
 # ---- CONTESTING A WILL: YOUR OPTIONS ----
 build("contesting-a-will",
@@ -660,34 +687,46 @@ build("contesting-a-will",
  "There are two different ways to challenge a will in Australia, with strict and varying state-by-state deadlines. This guide explains both, the time limits, and why mediation resolves most estate disputes.",
  "Know your options — and your deadlines",
  "Contesting a Will in Australia: <em>Your Options</em>",
- "When someone close to you dies and the will leaves you out — or leaves you far less than you needed — the hurt is real, and it is rarely only about money. This guide explains the two very different ways a will can be challenged, the strict time limits that differ by state, what the process looks like, and why mediation resolves most of these disputes without a court battle.",
- "There are two distinct challenges: a family provision claim (arguing the will fails to make adequate provision for you, not that it is invalid) and a validity challenge (arguing the will should not stand at all — on grounds like lack of testamentary capacity, undue influence, or fraud). Most disputes are family provision claims. Time limits are strict, vary by state, and missing one usually ends your claim permanently.",
+ "When someone close to you dies and the will leaves you out — or leaves you far less than you needed to get by — the hurt is real, and it is rarely only about money. It can feel like a final judgement from someone you loved, or like a stranger's decision imposed on your family. This guide explains, in plain terms, the two very different ways a will can be challenged in Australia, the strict and varying time limits that apply, what the process actually looks like, and why mediation resolves most of these disputes without dragging a grieving family through court.",
+ "There are two distinct challenges: a family provision claim (arguing the will fails to make adequate provision for you, not that it is invalid) and a validity challenge (arguing the will should not stand at all — on grounds like lack of testamentary capacity, undue influence, or fraud). Most disputes are family provision claims. Time limits are strict, vary by state, and missing one usually ends your claim permanently — in Tasmania, the deadline is just three months from probate.",
  """
  <h2>Two very different challenges</h2>
- <p><strong>A family provision claim</strong> — by far the most common. You are not arguing the will is invalid. You accept it is a real, properly made will — but you say it fails to make adequate provision for you, someone the deceased had a responsibility to provide for. The court can redistribute part of the estate to correct that inadequate provision.</p>
- <p><strong>A challenge to the will's validity</strong> — here you are arguing the will itself should not stand at all. Grounds include: <em>testamentary capacity</em> (the deceased was not of sound mind); <em>undue influence</em> (someone pressured them); <em>fraud or forgery</em>; or improper <em>execution</em>.</p>
+ <p><strong>A family provision claim.</strong> This is by far the most common. You are <em>not</em> arguing the will is invalid. You accept it is a real, properly made will — but you say it fails to make adequate provision for you, someone the deceased had a responsibility to provide for. The court can then redistribute part of the estate to correct that inadequate provision. Family provision claims are, in essence, a safety net the law provides for close family and dependants who have been left without proper support.</p>
+ <p><strong>A challenge to the will's validity.</strong> Here you are arguing the will itself should not stand at all. The usual grounds are: the deceased lacked <em>testamentary capacity</em> (they were not of sound mind when they made it); <em>undue influence</em> (someone pressured or coerced them); <em>fraud or forgery</em>; or improper <em>execution</em> (the will was not signed and witnessed correctly). If a validity challenge succeeds, the court may fall back to an earlier valid will, or to the intestacy rules if there is none.</p>
+ <p>Most disputes are family provision claims, so the rest of this guide focuses mainly on those.</p>
 
- <h2>Time limits: strict and different by state</h2>
- <p>This is the most important practical point. <strong>There is no national deadline. Time limits differ across every state and territory, and missing one usually ends your claim permanently.</strong></p>
- <figure><table>
+ <h2>Who can make a family provision claim?</h2>
+ <p>Eligibility varies between states and territories, but the categories generally include: spouses and de facto partners (current and, in some places, former); children, including in many cases adult children and stepchildren; and people who were wholly or partly dependent on the deceased. Being eligible does not guarantee a claim will succeed — it only opens the door. The court then weighs a range of factors including your financial position, the size of the estate, the nature and length of your relationship with the deceased, and the competing needs of other beneficiaries.</p>
+ <p>Importantly, estrangement does not automatically defeat a claim — courts have redirected provision to estranged adult children in genuine financial need — but it is one factor among many.</p>
+
+ <h2>The time limits — strict, and different by state</h2>
+ <p>This is the part that catches people out, and it is the single most important practical point in this guide. <strong>There is no national deadline. Time limits differ across every state and territory, and missing one usually ends your claim permanently.</strong></p>
+ <figure class="tbl"><table>
  <thead><tr><th>State / Territory</th><th>Deadline</th><th>Starts from</th></tr></thead>
  <tbody>
  <tr><td>New South Wales</td><td>12 months</td><td>Date of death</td></tr>
  <tr><td>Victoria</td><td>6 months</td><td>Grant of probate</td></tr>
- <tr><td>Queensland</td><td>6 months (notify); 9 months (file)</td><td>Date of death</td></tr>
+ <tr><td>Queensland</td><td>Notify executor within 6 months; file within 9 months</td><td>Date of death</td></tr>
  <tr><td>South Australia</td><td>6 months</td><td>Grant of probate</td></tr>
  <tr><td>Western Australia</td><td>6 months</td><td>Grant of probate</td></tr>
  <tr><td>Tasmania</td><td>3 months — the shortest in Australia</td><td>Grant of probate</td></tr>
- <tr><td>ACT / NT</td><td>Approximately 6 months</td><td>Grant of probate / date of death</td></tr>
+ <tr><td>ACT / NT</td><td>Generally 6 months</td><td>Grant of probate / date of death</td></tr>
  </tbody></table></figure>
- <p>Courts have only limited discretion to allow a late claim. If you think you may have a claim, get advice immediately — do not wait until you feel emotionally ready. The clock does not.</p>
+ <p>Note that the starting point differs too — some states run from the date of death, others from the grant of probate. Courts have only limited discretion to allow a late claim, usually only where there is a compelling explanation and the estate has not already been distributed. If you think you may have a claim, <strong>get advice immediately</strong>. Do not wait until you feel emotionally ready — the clock does not.</p>
 
  <h2>What the process looks like</h2>
- <p>A family provision claim follows a fairly predictable path, and mediation is built into it. The claim is filed in the relevant Supreme Court; a first directions hearing orders an exchange of financial information; then <strong>mediation is held — in many states, effectively a compulsory step before a final hearing.</strong> If mediation settles the matter, agreed terms go before the court for orders. If not, a judge decides — slower, costlier, and public.</p>
+ <p>In most jurisdictions, a family provision claim follows a fairly predictable path, and mediation is built into it:</p>
+ <ol>
+   <li>The claim is filed with the relevant Supreme Court.</li>
+   <li>A first directions hearing takes place, often around 28 days later, where the court orders an exchange of financial information — the applicant's position and the estate's assets and liabilities.</li>
+   <li><strong>Mediation is then held</strong>, frequently within a few weeks of that hearing. In many states, attempting mediation is effectively a compulsory component before a final hearing. This means that, often within a couple of months of a claim being filed, the applicant, the executor, and the beneficiaries are sitting down to try to resolve it.</li>
+   <li>If it settles, the agreed terms are put to the court and orders are made.</li>
+   <li>If it does not settle, the matter proceeds to a final hearing — a slower, costlier and public outcome.</li>
+ </ol>
 
  <h2>Why mediation, not a court battle</h2>
- <p>Estate disputes are uniquely destructive when litigated — the legal costs come out of the very estate everyone is fighting over, and these disputes happen at the rawest possible time, when grief is fresh and old family tensions resurface sharpened by loss.</p>
- <p>Mediation protects the estate (a fraction of the cost of litigation), is private, is faster (most resolve in a single session versus 12-18 months in court), and preserves relationships. In mediation, the family decides. At a hearing, a judge who never knew the deceased decides for everyone. Our <a href="/estate-dispute-mediation/">estate and inheritance dispute mediation page</a> explains how we approach these sensitive matters.</p>
+ <p>Estate disputes are uniquely destructive when litigated, and mediation is uniquely suited to them. Litigation costs come out of the very estate being fought over — a contested claim that runs to hearing can consume a significant chunk of what is left for everyone. Mediation costs a fraction of that. It is also private (court filings and judgments are public), faster (most resolve in a single session versus 12 to 18 months or more in court), and it preserves relationships that litigation tends to end permanently.</p>
+ <p>This is also worth naming: estate disputes surface at the rawest possible time, in the weeks and months after a death, when grief is fresh. Old family tensions resurface sharpened by loss. A courtroom fight tends to harden these wounds; mediation is structured to let people be heard — sometimes for the first time. In mediation, the family decides. At a hearing, a judge who never knew the deceased decides for everyone. Our <a href="/estate-dispute-mediation/">estate and inheritance dispute mediation page</a> explains how we approach these sensitive matters.</p>
  """,
  [("Can I contest a will if I was left something, just not enough?",
    "Yes. A family provision claim is about whether provision was adequate for your proper maintenance and support — you can be a beneficiary and still claim."),
@@ -698,90 +737,103 @@ build("contesting-a-will",
   ("Do I need a lawyer to contest a will?",
    "Family provision claims are legally technical and most participants are represented. But the resolution itself — mediation — is where matters are usually settled, and that is a process built around agreement, not argument."),
   ("Is mediation mandatory in estate disputes?",
-   "In many states, attempting mediation is effectively a compulsory component of a family provision claim before it can go to a final hearing.")],
+   "In many states, attempting mediation is effectively a compulsory component of a family provision claim before it can proceed to a final hearing."),
+  ("How much does it cost?",
+   "Far less than a contested hearing. Mediator costs are usually shared between the parties, and resolving early preserves more of the estate for everyone.")],
  "Contesting a Will",
  "Talk to us before the deadline passes — <em>time matters here</em>.",
- "Book a free consultation before the deadline in your state — missing it usually ends your options permanently.")
+ "If you believe a will has not made fair provision for you, or should not stand at all, time may already be short — and in some states, very short. Get advice early, while all your options are still open.")
 
 # ---- COMMERCIAL DISPUTE GUIDE ----
 build("commercial-dispute-guide",
- "Commercial Dispute Guide: Resolve Without Court",
+ "Commercial Dispute Guide: Resolving Business Conflict Without Court",
  "Business disputes resolved by mediation are faster, cheaper, and more private than litigation. This guide covers the main types of commercial dispute and why litigation is usually the wrong first move.",
  "Resolve business conflict without litigation",
- "Commercial Dispute Guide: <em>Resolve Business Conflict Without Court</em>",
- "Every business dispute arrives at the worst possible time. Left to escalate, any of them can swallow months of management time, tens of thousands in legal fees, and a good deal of the goodwill your business runs on. This guide explains the main types of commercial dispute, why litigation is so often the wrong first move, and how mediation resolves these matters faster, more cheaply, and more privately.",
+ "Commercial Dispute Guide: <em>Resolving Business Conflict Without Court</em>",
+ "Every business dispute arrives at the worst possible time. A key customer stops paying just when cash is tight. A supplier lets you down in the middle of a big job. A co-founder you have worked beside for a decade suddenly wants out, and cannot agree on the terms. Left to escalate, any of these can swallow months of management time, tens of thousands in legal fees, and a good deal of the goodwill your business runs on. This guide explains the main types of commercial dispute, why litigation is so often the wrong first move, and how mediation resolves these matters faster, more cheaply, and more privately.",
  "Commercial disputes — contract fights, partnership breakdowns, lease disputes, franchise conflicts — are resolved far faster and more cheaply through mediation than litigation. Most commercial mediations resolve in a single session. Litigation routinely takes one to three years, costs substantial money on both sides, and exposes sensitive commercial information to the public record. Many commercial contracts already require mediation before you can litigate.",
  """
  <h2>The common types of commercial dispute</h2>
  <ul>
-   <li><strong>Contract disputes.</strong> Non-payment, defective or late supply, disagreement over what the contract requires, or one party walking away. Most begin as a difference of interpretation that hardens into a standoff.</li>
-   <li><strong>Partnership and shareholder disputes.</strong> Often the most damaging, because they are personal as well as commercial — deadlock over strategy, disagreements about drawings, or a fundamental falling-out. Where a partner or director is leaving, see our <a href="/partnership-executive-exit-mediation/">partnership and executive exit guidance</a>.</li>
-   <li><strong>Commercial and retail lease disputes.</strong> Rent reviews, outgoings, make-good obligations, renewal and assignment. These have their own special rules — see below.</li>
-   <li><strong>Franchise, supply, and distribution disputes.</strong> Disagreements between franchisors and franchisees, or along a supply chain, often governed by the Franchising Code of Conduct.</li>
-   <li><strong>Business sale and purchase disputes.</strong> Earn-outs, warranties, and disagreements about what was promised during a sale.</li>
+   <li><strong>Contract disputes.</strong> Non-payment, defective or late supply, disagreement over what the contract actually requires, or one party walking away from its obligations. Most begin as a difference of interpretation that hardens into a standoff.</li>
+   <li><strong>Partnership and shareholder disputes.</strong> Often the most damaging, because they are personal as well as commercial — deadlock over strategy, disagreement about drawings or reinvestment, one owner feeling they carry the load while another takes the rewards, or a fundamental falling-out. Where a partner or director is leaving, these overlap with our <a href="/partnership-executive-exit-mediation/">partnership and executive exit guidance</a>.</li>
+   <li><strong>Commercial and retail lease disputes.</strong> Rent reviews, outgoings, make-good obligations at end of lease, renewal, and assignment. These have their own special rules — see below.</li>
+   <li><strong>Franchise, supply, and distribution disputes.</strong> Disagreements between franchisors and franchisees, or along a supply chain, often governed by specific codes such as the Franchising Code of Conduct.</li>
+   <li><strong>Business sale and purchase disputes.</strong> Earn-outs, warranties, and disagreements about what was really promised during a sale.</li>
  </ul>
 
  <h2>Why litigation is usually the wrong first move</h2>
  <ul>
-   <li><strong>It destroys value.</strong> Public conflict unsettles customers, staff, suppliers and lenders.</li>
-   <li><strong>It is slow.</strong> Commercial litigation routinely takes one to three years to reach a final hearing.</li>
-   <li><strong>It is expensive.</strong> Legal costs on both sides can run into serious money, and even the "winner" may be out of pocket.</li>
-   <li><strong>It is public.</strong> Sensitive commercial information — your margins, contracts, internal emails — can end up on the public record.</li>
-   <li><strong>It burns relationships.</strong> You often still have to deal with the other side, or share an industry with them.</li>
+   <li><strong>It destroys value.</strong> Public conflict unsettles customers, staff, suppliers and lenders. The reputational damage and distraction can cost far more than the amount in dispute. A partnership fight played out in court can erode the value of the business faster than any settlement figure.</li>
+   <li><strong>It is slow.</strong> Commercial litigation routinely takes one to three years to reach a final hearing. That is years of uncertainty, distraction, and money tied up.</li>
+   <li><strong>It is expensive.</strong> Commercial cases are document-heavy and often require expert evidence. Legal costs on both sides can run into serious money, and even the "winner" may be out of pocket.</li>
+   <li><strong>It is public.</strong> Court filings and judgments are on the public record. Sensitive commercial information — your margins, your contracts, your internal emails — can end up exposed.</li>
+   <li><strong>It burns relationships.</strong> In business you often still have to deal with the other side, or share an industry, suppliers or customers with them.</li>
  </ul>
 
- <h2>A special case: retail and commercial leases</h2>
- <p>Retail lease disputes deserve their own mention because in most of Australia, <strong>mediation is a mandatory step before a tribunal will hear the matter.</strong> In NSW, disputes must go to the <a href="https://www.smallbusiness.nsw.gov.au/" target="_blank" rel="noopener">NSW Small Business Commissioner</a> before NCAT. Victoria uses the Victorian Small Business Commission before VCAT. Queensland, South Australia, Western Australia, the ACT and NT operate similar pathways.</p>
- <p>Many commercial contracts also contain <strong>dispute-resolution clauses</strong> requiring mediation before litigating. If your contract has one, mediation is not just sensible — it may be a contractual precondition to going to court at all. Check your agreement early.</p>
+ <h2>Counting the real cost of a business dispute</h2>
+ <p>When business owners weigh whether to fight or settle, they often look only at the amount in dispute and the legal fees. But the true cost is much broader: the legal fees themselves; the management time diverted from running the business (real money even though it never appears on an invoice); the opportunity cost of decisions delayed and deals not pursued; the strain on cash flow; and the harder-to-measure damage to relationships with customers, staff and suppliers who sense the turmoil.</p>
+ <p>Set against all that, the cost of a mediated resolution — often a single session, shared between the parties — is modest. The question is rarely "can we win?" It is "what will winning cost us, and is there a faster way to an outcome we can live with?"</p>
 
- <h2>What a commercial mediation looks like</h2>
- <p>A typical commercial mediation is a structured, confidential session run by a neutral mediator who understands both the legal framework and commercial realities. Many of our mediators are also experienced lawyers, which matters in complex matters. The mediator meets each side privately and together, helps identify real interests beneath stated positions, and guides the conversation toward a deal. Once agreement is reached, it is captured in a binding deed of settlement — enforceable and final.</p>
+ <h2>A special case: retail and commercial leases</h2>
+ <p>Retail lease disputes deserve their own mention because in most of Australia, <strong>mediation is a mandatory step before a tribunal will hear the matter.</strong> In NSW, retail lease disputes must generally go to the <a href="https://www.smallbusiness.nsw.gov.au/" target="_blank" rel="noopener">NSW Small Business Commissioner</a> for mediation before NCAT. Victoria uses the Victorian Small Business Commission before VCAT. Queensland, South Australia, Western Australia, the ACT and NT operate similar pathways.</p>
+ <p>Many commercial contracts also contain <strong>dispute-resolution clauses</strong> obliging the parties to mediate before litigating. If your contract has one, mediation is not just sensible — it may be a contractual precondition to going to court at all. Check your agreement early.</p>
+
+ <h2>How to prepare for a commercial mediation</h2>
+ <p>Preparation makes the difference between a mediation that resolves and one that stalls. Before the session, get your key documents in order — the contract at the heart of the dispute, the correspondence that shows how it unfolded, and any figures that support your position. Just as importantly, work out your own numbers honestly: what outcome you genuinely want, what you would accept, and what your realistic alternative is if the matter does not settle and instead goes to court. That alternative — the cost, time, risk and disruption of litigating — is the true benchmark against which any settlement offer should be judged.</p>
+ <p>It also helps to separate your interests from your positions. A position is a demand — <em>I want the full amount plus costs.</em> An interest is the underlying need — <em>I need to protect my cash flow, keep this customer, and not set a precedent.</em> Interests can often be satisfied in more than one way, which is where creative commercial settlements come from.</p>
  """,
  [("Is mediation binding in a commercial dispute?",
    "The mediation process is voluntary, but once you sign a settlement agreement or deed, that becomes an enforceable contract. You are not bound until you agree."),
   ("What if the other side refuses to mediate?",
-   "Many contracts require mediation, and for retail leases it is generally mandatory. A refusal to mediate can also be viewed poorly by a court later."),
+   "Many contracts require mediation, and for retail leases it is generally mandatory. Even where it is voluntary, a refusal to mediate can be viewed poorly by a court later."),
   ("Can mediation handle a dispute that is both commercial and personal, like a partnership breakup?",
-   "Yes. A single settlement can resolve the money, the ownership, the restraints, and how the split is communicated, all at once."),
+   "Yes — that is one of its great strengths. A single settlement can resolve the money, the ownership, the restraints, and how the split is communicated, all at once."),
   ("How long does commercial mediation take?",
    "Most commercial mediations resolve in a single session. Compare that with one to three years for litigation."),
   ("Is commercial mediation confidential?",
    "Yes. Mediation is private and without prejudice — a major advantage over public court proceedings.")],
  "Commercial Dispute Guide",
  "Resolve it faster — <em>and keep it private</em>.",
- "Before committing your business to a slow, costly and public legal fight, talk to us about resolving it faster, more privately, and with a commercial outcome that actually works.")
+ "Before you commit your business to a slow, costly and public legal fight, talk to us about resolving it faster, more privately, and with a commercial outcome that actually works.")
 
 # ---- REAL ESTATE & CONSTRUCTION DISPUTES ----
 build("real-estate-construction-disputes",
- "Real Estate &amp; Construction Disputes: Resolve Without Tribunal",
+ "Real Estate &amp; Construction Disputes: Resolving Them Without a Tribunal",
  "Property disputes escalate fast. This guide covers building defects, boundary fights, co-ownership deadlocks, and why mediation resolves most in a single session instead of months at tribunal.",
  "Resolve property disputes without the tribunal fight",
  "Real Estate &amp; Construction Disputes: <em>Resolving Them Without a Tribunal</em>",
- "Property disputes have a particular way of escalating. What starts as a crack in a new wall, a fence in the wrong spot, or a disagreement over a final invoice can quickly become a matter of principle — and then a matter for lawyers. This guide explains the common types of property dispute, the formal pathways that apply, and why mediation is so often the faster, cheaper and less bruising way to resolve them.",
+ "Property disputes have a particular way of escalating. What starts as a crack in a new wall, a fence in the wrong spot, or a disagreement over a final invoice can quickly become a matter of principle — and then a matter for lawyers. Because property is valuable and emotions run high, these disputes are among the most likely to spiral into expensive, drawn-out tribunal or court proceedings. This guide explains the common types of real estate and construction dispute, the formal pathways that may apply, and why mediation is so often the faster, cheaper and less bruising way to resolve them.",
  "Property disputes — building defects, boundary fights, co-ownership deadlocks, strata conflicts — are well suited to mediation because the outcomes people actually want are practical, not just financial. A works schedule, a cost-sharing arrangement, a buy-out. These are things mediation can deliver that a tribunal generally cannot. Most property mediations resolve in a single session.",
  """
  <h2>The common types of property dispute</h2>
  <ul>
-   <li><strong>Building and construction disputes.</strong> Between homeowners and builders, builders and subcontractors, developers and contractors. Flashpoints: defective work, delays, cost overruns, disputed variations. These often turn on technical questions that make litigating them extremely costly.</li>
-   <li><strong>Boundary and fencing disputes.</strong> Encroachments, dividing-fence cost-sharing, and access disputes between neighbours. Frequently more about relationship and principle than money — which is exactly why a purely legal approach so often fails to actually resolve them.</li>
-   <li><strong>Co-ownership disputes.</strong> Siblings who inherited a house, friends who invested together, or a couple who have separated and cannot agree on whether to sell, how to manage the property, or how to divide the proceeds.</li>
-   <li><strong>Strata and owners-corporation disputes.</strong> Conflicts between lot owners or between owners and the body corporate. See our <a href="/strata-neighbour-dispute-mediation/">strata and neighbour dispute guidance</a> for detail.</li>
+   <li><strong>Building and construction disputes.</strong> The largest category — between homeowners and builders, builders and subcontractors, and developers and contractors. Usual flashpoints: defective work, delays, cost overruns, disputed variations, and disagreements about whether work meets the contract or relevant standards. Because they often turn on technical questions, they can become a battle of expert reports, which is exactly what makes litigating them so costly.</li>
+   <li><strong>Boundary and fencing disputes.</strong> Encroachments, dividing-fence cost-sharing, and access disputes between neighbours. These are frequently more about relationship and principle than money — which is precisely why a purely legal approach so often fails to actually resolve them.</li>
+   <li><strong>Co-ownership disputes.</strong> Siblings who inherited a house, friends who invested together, or a couple who have separated and cannot agree on whether to sell, how to manage the property, or how to divide the proceeds. A court can ultimately order a sale, but that is a slow and blunt outcome.</li>
+   <li><strong>Strata and owners-corporation disputes.</strong> Conflicts between lot owners or between owners and the body corporate over levies, by-laws, common property, and building defects. These have their own tribunal pathways and are covered in more depth in our <a href="/strata-neighbour-dispute-mediation/">strata and neighbour dispute guidance</a>.</li>
    <li><strong>Off-the-plan and sale disputes.</strong> Disagreements over whether the finished product matches what was promised, delayed settlements, and disputes about deposits.</li>
  </ul>
 
  <h2>Why property disputes are so well suited to mediation</h2>
  <ul>
-   <li><strong>The outcomes people want are practical, not just financial.</strong> What an owner usually wants is the defect fixed, or the fence agreed, or the property sold on sensible terms. Mediation can deliver a works schedule, a cost-sharing arrangement, or a buy-out. A court generally cannot.</li>
-   <li><strong>The relationship often continues.</strong> Neighbours remain neighbours. Co-owners may still be family. A negotiated agreement can repair what a judgment never can.</li>
-   <li><strong>Speed matters.</strong> Building defects deteriorate while parties argue. A tribunal matter can take many months just to reach a first hearing. Mediation can be arranged and resolved far faster.</li>
+   <li><strong>They are fact-heavy and expert-driven.</strong> Litigating a construction defect means duelling expert reports, site inspections and technical argument — slow and expensive. Mediation lets the parties agree a practical path (an agreed scope of rectification, for instance) without paying two experts to fight it out.</li>
+   <li><strong>The relationship often continues.</strong> Neighbours remain neighbours. Co-owners may still be family. A body corporate and its lot owners have to keep living together. A judgment does not repair that; a negotiated agreement can.</li>
+   <li><strong>The outcomes people actually want are practical, not just financial.</strong> What an owner usually wants is the defect fixed, or the fence agreed, or the property sold on sensible terms. Mediation can deliver a works schedule, a timeline, a cost-sharing arrangement or a buy-out. A court generally cannot.</li>
+   <li><strong>Speed matters.</strong> Building disputes in particular get worse with time — defects deteriorate, costs rise, and positions harden. A tribunal matter can take many months just to reach a first hearing. Mediation can be arranged and resolved far faster.</li>
  </ul>
 
  <h2>The formal pathways — and where mediation fits</h2>
- <p>State civil and administrative tribunals — NCAT in NSW, VCAT in Victoria, QCAT in Queensland — handle a large share of building, strata and tenancy disputes, and frequently encourage or require mediation before a final hearing. Building contracts themselves very often contain dispute-resolution clauses requiring mediation or expert determination before litigating.</p>
- <p>Private mediation can run before you engage any of these processes, alongside them, or as the resolution step within them. The advantage of engaging early is that you may resolve the matter before it hardens into a formal proceeding, saving the cost and delay entirely.</p>
+ <p>State civil and administrative tribunals — NCAT in NSW, VCAT in Victoria, QCAT in Queensland — handle a large share of building, strata and tenancy disputes, and frequently encourage or require mediation or conciliation before a final hearing. Building commissions and fair trading bodies in each state offer complaint and, in some cases, resolution services for residential building work. Building contracts themselves very often contain dispute-resolution clauses requiring mediation or expert determination before litigating.</p>
+ <p>Private mediation can run before you engage any of these processes, alongside them, or as the resolution step within them. The advantage of engaging early is that you may resolve the matter before it hardens into a formal proceeding, saving the cost and delay entirely. Getting advice early also helps you choose the right pathway — some property disputes have time limits or notification requirements that are easy to miss.</p>
 
- <h2>What a property mediation looks like</h2>
- <p>For a construction dispute, mediation often means working through disputed items methodically — which are agreed, which are contested, and what a realistic resolution looks like. Where technical questions are central, the parties can agree to rely on a single jointly-instructed expert rather than competing ones, which alone can save enormous cost. Once agreement is reached, it is recorded in a binding written settlement so the outcome is enforceable.</p>
+ <h2>The hidden costs of fighting a property dispute</h2>
+ <p>The amount named in a property dispute is rarely the real cost. A construction dispute that goes the distance can require multiple expert reports, each running into thousands of dollars, plus solicitors, plus barristers for a hearing — and the defects themselves often worsen while everyone argues, increasing the eventual repair bill. A boundary dispute between neighbours can poison daily life for years and reduce the saleability of both properties. A co-ownership deadlock can leave an asset frozen and deteriorating while its owners pay to fight over it.</p>
+ <p>Set against that, mediation looks very different. A single session, with costs typically shared, can resolve in hours what litigation would take a year or more to grind through — and it can do so in a way that actually fixes the underlying problem rather than just assigning blame.</p>
+
+ <h2>How to prepare for a property mediation</h2>
+ <p>A property mediation goes best when both sides come organised. If yours is a building or construction matter, bring the contract, any variations, the relevant plans and specifications, photographs of the work in question, and any expert reports or quotes for rectification. The clearer you can be about exactly which items are in dispute and what each would cost to resolve, the faster the conversation moves from grievance to solution.</p>
+ <p>For a boundary or co-ownership dispute, bring the title documents, any survey, and a clear sense of the outcome you actually want. As with any mediation, it pays to think through your realistic alternative in advance: what will it cost you, in money and time and stress, if this does not settle and instead goes to a tribunal or court? That figure is the yardstick for any offer on the table.</p>
  """,
  [("My builder and I are at war over defects. Is it too late to mediate?",
    "Almost never. Even matters already in a tribunal are frequently resolved at mediation. The sooner you mediate, the more cost you save."),
@@ -790,12 +842,12 @@ build("real-estate-construction-disputes",
   ("We are co-owners who cannot agree whether to sell. Can mediation help?",
    "Yes. Co-ownership deadlocks are well suited to mediation, which can produce a buy-out, an agreed sale process, or a management arrangement — without the cost and finality of a court-ordered sale."),
   ("Is a retail lease dispute different?",
-   "Yes. In most states you must attempt mediation through the Small Business Commissioner before going to a tribunal."),
+   "Yes. In most states you must attempt mediation through the Small Business Commissioner before going to a tribunal. See our commercial dispute guide for detail."),
   ("How long does property mediation take?",
    "Most property mediations resolve in a single session, compared with many months for a tribunal or court outcome.")],
  "Real Estate &amp; Construction Disputes",
  "Resolve your property dispute — <em>before it spirals</em>.",
- "Book a free consultation before a property disagreement becomes an expensive, drawn-out tribunal fight.")
+ "Before a property disagreement becomes an expensive, drawn-out tribunal fight, talk to us about whether mediation can resolve it quickly and cleanly.")
 
 # ---- WORKPLACE DISPUTE GUIDE ----
 build("workplace-dispute-guide",
@@ -803,45 +855,51 @@ build("workplace-dispute-guide",
  "A plain-English map of your options in an Australian workplace dispute — FWC, unfair dismissal, general protections, bullying, redundancy, and how mediation resolves most without a hearing.",
  "Your rights, your options, plain English",
  "Workplace Dispute Guide: <em>Your Rights, the FWC &amp; Mediation</em>",
- "Trouble at work has a way of taking over your whole life. Whether you have been dismissed, bullied, made redundant, or are an employer facing a claim, the path forward is rarely obvious. This guide cuts through the acronyms to explain your main options, how the Fair Work system fits together, where the critical deadlines are, and how mediation resolves the large majority of these disputes without a hearing.",
+ "Trouble at work has a way of taking over your whole life. Whether you have been dismissed, passed over, bullied, made redundant, or you are an employer facing a claim you did not see coming, the stress is real and the path forward is rarely obvious. There is a maze of acronyms — FWC, NES, awards, general protections — and a lot of conflicting advice online. This guide cuts through it. It explains your main options in plain English, how the Fair Work system fits together, where the critical deadlines are, and how mediation resolves the large majority of these disputes without a hearing.",
  "Australian workplace disputes divide into several distinct legal shapes — unfair dismissal, redundancy, general protections, bullying, partnership exits, and internal grievances — each with different tests and deadlines. The Fair Work Commission is built to encourage resolution before a hearing; the large majority of matters settle at conciliation. Private mediation works alongside the FWC or in situations the Commission does not cover, and resolves most disputes in a single session.",
  """
- <h2>First: the deadlines, because some are brutally short</h2>
- <p>The most important: if you have been dismissed and want to challenge it as unfair dismissal or a general protections claim, you have just <strong>21 calendar days</strong> from when the dismissal takes effect to lodge with the Fair Work Commission. That is three weeks, weekends included. Extensions are only granted in exceptional circumstances. Treat any recent dismissal as urgent.</p>
+ <h2>First, the deadlines — because some are brutally short</h2>
+ <p>Before anything else, understand this: some workplace claims have very short deadlines, and missing them can end your rights entirely. The most important is the <strong>21-day rule</strong>. If you have been dismissed and want to challenge it as an unfair dismissal, or bring a general protections claim involving dismissal, you have just <strong>21 calendar days</strong> from when the dismissal takes effect to lodge with the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a>. That is three weeks, weekends included, and extensions are only granted in exceptional circumstances. If you have recently lost your job and something feels wrong, treat it as urgent and read our <a href="/unfair-dismissal-21-day-rule/">unfair dismissal 21-day rule guide</a> first.</p>
+ <p>Not every workplace matter has such a tight limit — an ongoing pay dispute or a bullying situation works differently — but because you may not know at first which category yours falls into, the safe move is always to get advice early.</p>
 
- <h2>Your main options, plain English</h2>
+ <h2>Your main options — a plain-English map</h2>
  <ul>
-   <li><a href="/unfair-dismissal-termination-mediation/"><strong>Unfair dismissal.</strong></a> Was your dismissal "harsh, unjust or unreasonable"? Tight 21-day deadline; eligibility rules apply.</li>
-   <li><a href="/redundancy-restructure-mediation/"><strong>Redundancy disputes.</strong></a> Was your redundancy genuine? If the role still exists, consultation was skipped, or redeployment was not offered, it may not be — opening an unfair dismissal claim.</li>
-   <li><a href="/general-protections-discrimination-mediation/"><strong>General protections and discrimination.</strong></a> Did you suffer adverse action because you exercised a workplace right or have a protected attribute like age, sex, race, disability, or pregnancy?</li>
-   <li><a href="/workplace-bullying-harassment-mediation/"><strong>Bullying and harassment.</strong></a> Repeated unreasonable behaviour creating a risk to health and safety. Specific avenues apply, including applying to the FWC for a stop-bullying order.</li>
-   <li><a href="/partnership-executive-exit-mediation/"><strong>Partnership and executive exits.</strong></a> High-stakes separations blending employment, commercial and corporate issues.</li>
-   <li><a href="/workplace-investigations-grievance-mediation/"><strong>Workplace investigations and grievances.</strong></a> Knowing when a complaint needs formal investigation, when it is better mediated, and how to handle a grievance without inflaming it.</li>
+   <li><a href="/unfair-dismissal-termination-mediation/"><strong>Unfair dismissal.</strong></a> The question is whether your dismissal was "harsh, unjust or unreasonable." It looks at both the reason for the dismissal and the fairness of the process. Tight 21-day deadline; eligibility rules apply.</li>
+   <li><a href="/redundancy-restructure-mediation/"><strong>Redundancy disputes.</strong></a> The question is whether your redundancy was <em>genuine</em> — because a genuine redundancy is a defence to an unfair dismissal claim. If the role still exists, consultation was skipped, or redeployment was reasonable and not offered, it may not be genuine.</li>
+   <li><a href="/general-protections-discrimination-mediation/"><strong>General protections and discrimination.</strong></a> The question is whether you suffered "adverse action" because you have or exercised a workplace right, or because of a protected attribute like age, sex, race, disability, pregnancy or carer's responsibilities. These claims can be powerful and carry their own deadlines.</li>
+   <li><a href="/workplace-bullying-harassment-mediation/"><strong>Bullying and harassment.</strong></a> Repeated unreasonable behaviour that creates a risk to health and safety. Specific avenues apply, including applying to the Fair Work Commission for an order to stop bullying — aimed at stopping ongoing behaviour rather than awarding compensation.</li>
+   <li><a href="/partnership-executive-exit-mediation/"><strong>Partnership and executive exits.</strong></a> High-stakes separations at the top of a business — partners falling out, directors leaving under strain, senior executives negotiating a dignified departure. These blend employment, commercial and sometimes corporate issues.</li>
+   <li><a href="/workplace-investigations-grievance-mediation/"><strong>Workplace investigations and grievances.</strong></a> Knowing when a matter needs a formal investigation, when it is better mediated, and how to handle a grievance without inflaming it.</li>
  </ul>
 
  <h2>How the Fair Work system actually works</h2>
- <p>The <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> is Australia's national workplace tribunal. Its basic instinct is to encourage resolution, not to run trials. For most claim types, the Commission's first move is to offer <strong>conciliation</strong> — an informal, confidential, without-prejudice discussion designed to help both sides reach their own agreement. The large majority of matters settle at this stage.</p>
- <p>Alongside the Commission: the <a href="https://www.fairwork.gov.au/" target="_blank" rel="noopener">Fair Work Ombudsman</a> handles workplace rights and pay compliance; <a href="https://www.safeworkaustralia.gov.au/" target="_blank" rel="noopener">Safe Work Australia</a> sets the national work health and safety framework, including psychosocial hazards like bullying and role conflict that employers now have a positive duty to manage.</p>
+ <p>The Fair Work Commission is Australia's national workplace tribunal — and it is worth understanding its basic instinct: it is built to encourage resolution, not to run trials. For most claim types, the Commission's first move is to offer <strong>conciliation</strong> — an informal, confidential, without-prejudice discussion led by an impartial staff member, designed to help the two sides reach their own agreement. The large majority of matters settle at this stage. Only the minority that don't go on to a Commission Member for a binding decision.</p>
+ <p>Alongside the Commission sit two other useful government bodies. The <a href="https://www.fairwork.gov.au/" target="_blank" rel="noopener">Fair Work Ombudsman</a> is the go-to source for information about workplace rights, pay and entitlements. <a href="https://www.safeworkaustralia.gov.au/" target="_blank" rel="noopener">Safe Work Australia</a> sets the national framework for work health and safety, including the psychosocial hazards — like role conflict and workplace bullying — that employers now have a positive duty to manage.</p>
 
  <h2>Where private mediation fits alongside all of this</h2>
- <p>Private mediation is not an alternative that competes with the Fair Work system — it works with it. Mediation can be used before you lodge (to resolve directly and sometimes avoid a formal claim altogether), alongside a lodged claim (more time and a tailored process), or in situations the Commission does not cover such as partnership disputes or internal grievances.</p>
- <p>The advantages are consistent: faster (usually a single session), private (no public record), cheaper than a contested hearing, and the outcome stays in your hands.</p>
+ <p>Private mediation is not an alternative that competes with the Fair Work system — it works with it. Mediation can be used in three ways: <strong>before you lodge</strong>, to try to resolve the matter directly and quickly, sometimes avoiding a formal claim altogether; <strong>alongside a lodged claim</strong>, giving you a mediator matched to your specific dispute, more time than a short conciliation call allows, and a process tailored to the matter; or <strong>in situations the Commission does not cover</strong>, such as many partnership disputes or internal grievances.</p>
+ <p>The advantages are consistent across all workplace disputes: faster (usually a single session), private (no public record), cheaper than a contested hearing, and it keeps the outcome in your hands. It also tends to preserve relationships — which matters enormously when the people involved have to keep working together, or when a business cannot afford a public fight.</p>
+ <p>Mediation is not right for every situation, and we are honest about that. Where there is violence, serious harassment, a severe power imbalance, or a need to establish serious facts first, another step may need to come first. Our guide on <a href="/is-mediation-right-for-workplace-dispute/">whether mediation is right for your workplace dispute</a> walks through that honestly.</p>
+
+ <h2>What to expect if you come to us</h2>
+ <p>You start with a fixed-fee consultation — a proper conversation, not a sales pitch — where we listen to your situation, tell you honestly which type of claim or process fits, flag any deadlines that are running, and set out your realistic options. There are no surprises on cost, because the fee is agreed up front.</p>
+ <p>If mediation is the right path, we match you with a mediator who understands both employment law and workplace dynamics. The mediator speaks with each side privately first, to understand the issues and check for any safety or power-imbalance concerns. The session can run with everyone together or in a shuttle format, in person or online. In most matters, agreement is reached in that session, and we guide you on turning it into a binding, enforceable deed of settlement. If mediation is not the right path, we will tell you that too, and point you toward the process that is.</p>
 
  <h2>Preventing disputes before they start</h2>
- <p>A great deal of workplace conflict traces back to team dynamics that were never properly understood: unclear roles, overlapping responsibilities, and behaviour that gets read as personal when it is really structural. <a href="/belbin-team-roles-training/">Belbin Team Roles training</a> helps organisations build balanced teams and give people a shared, non-personal language for difference — heading off conflict before it ever becomes a grievance or a claim.</p>
+ <p>Not every workplace problem is a legal dispute yet — and the cheapest dispute is the one that never happens. A great deal of workplace conflict traces back to team dynamics that were never properly understood: unclear roles, overlapping responsibilities, and behaviour that gets read as personal when it is really structural. <a href="/belbin-team-roles-training/">Belbin Team Roles training</a> helps organisations build balanced teams and give people a shared, non-personal language for difference — heading off conflict before it ever becomes a grievance or a claim.</p>
  """,
  [("I have been dismissed. What is the first thing I should do?",
-   "Check the date your dismissal took effect and count forward 21 days — that is likely your deadline to lodge with the Fair Work Commission. Get advice quickly, well before that date."),
+   "Check the date your dismissal took effect and count forward 21 days — that is likely your deadline to lodge with the Fair Work Commission. Then get advice quickly, well before that date."),
   ("Do I need a lawyer for a workplace dispute?",
    "Not necessarily. Many matters are resolved without one, and Fair Work processes are designed to be accessible. But early advice — even a single consultation — often changes the outcome, especially on which claim applies and what it is worth."),
   ("Is mediation compulsory for workplace disputes?",
-   "There is no across-the-board requirement to mediate (unlike family law parenting matters). But the Commission strongly encourages conciliation, many contracts require mediation, and courts expect genuine attempts at resolution."),
+   "There is no across-the-board requirement to mediate a workplace dispute (unlike family law parenting matters). But the Commission strongly encourages conciliation, many contracts require mediation, and courts expect genuine attempts to resolve before litigating."),
   ("Can an employer use mediation too?",
    "Absolutely. Employers facing a claim, or wanting to handle a grievance or restructure correctly, benefit just as much from early advice and mediation as employees do."),
   ("How much does workplace mediation cost?",
-   "We use transparent, fixed-fee pricing. Mediation is a fraction of the cost of a contested hearing. See our fee structure page for detail.")],
+   "We use transparent, fixed-fee pricing — see our fee structure page. Mediation is a fraction of the cost of a contested hearing.")],
  "Workplace Dispute Guide",
  "Not sure which option fits? <em>Start here.</em>",
- "Book a free consultation to find out which option fits your situation, what the deadlines are, and whether mediation is the right step.")
+ "Workplace disputes are stressful precisely because the path is unclear. Talk it through with someone who can tell you which option fits, what the deadlines are, and whether mediation is the right step.")
 
 print("Resource pages built.")
