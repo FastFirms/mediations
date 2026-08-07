@@ -868,106 +868,177 @@ build(
  "Resolve it from home — <em>anywhere in Australia</em>.",
  "Book a free initial online consultation and resolve your separation by secure video, with the same accredited mediators and binding outcomes as in person.")
 
-build(
- "workplace-mediation",
+# ---- WORKPLACE MEDIATION HUB (bespoke homepage-style layout) ----
+X_w = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="rgba(251,248,242,.4)" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="rgba(251,248,242,.6)" stroke-width="1.5" stroke-linecap="round"/></svg>'
+TICK_w = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#a8c89f" stroke-width="1.5"/><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+qa_wm = [
+ ("What is workplace mediation?",
+  "Workplace mediation is a voluntary, confidential process in which a neutral mediator helps people in an employment relationship resolve a dispute without going to court or a tribunal. The mediator does not impose a decision — they help the parties reach their own workable agreement."),
+ ("Is workplace mediation legally required in Australia?",
+  "Not across the board. Unlike parenting matters, there is no general legal requirement to mediate a workplace dispute. However, the Fair Work Commission actively encourages conciliation and mediation, and courts expect parties to have made genuine attempts to resolve matters before litigating."),
+ ("How long does workplace mediation take?",
+  "Most workplace mediations are completed in a single session, often within a day. A matter can usually be booked within a few weeks — compared with many months, sometimes over a year, for a contested tribunal or court outcome."),
+ ("Is what I say in mediation confidential?",
+  "Yes. Mediation is conducted on a without-prejudice basis, meaning offers and admissions made during the process usually cannot be used later in court. This confidentiality is what allows people to speak openly and explore settlement."),
+ ("Do I need a lawyer to attend workplace mediation?",
+  "No, it is not mandatory. Many people mediate without a lawyer present. Getting legal advice before or after is sensible — especially where significant rights or money are involved — so you understand the implications before signing anything."),
+ ("What does workplace mediation cost?",
+  "We use transparent, fixed-fee pricing so you know the cost up front. Fees are typically shared between the parties. Start with a free consultation — no surprises, no open-ended billing."),
+]
+_wm = head(
  "Workplace Mediation Australia | Resolve Disputes Fast",
  "Nationally accredited mediators resolving workplace disputes — unfair dismissal, bullying, harassment, partnership and executive conflicts. Faster, private and above 90% resolution rate.",
- "Workplace &amp; employment disputes",
- "Workplace Mediation — <em>Resolve It Before It Costs More</em>",
- "A dispute at work rarely stays contained. What begins as one difficult conversation can quickly consume a team, damage a reputation and end up in front of the Fair Work Commission or a court. Our nationally accredited mediators resolve workplace and employment disputes across Australia — often in a single day, with a resolution rate above 90%.",
- "Workplace mediation is a voluntary, confidential process in which a neutral third party — the mediator — helps people in an employment relationship resolve a dispute without going to court or a tribunal. The mediator does not take sides, give evidence or impose a decision. They create a structured, safe conversation that helps each person be heard and guides everyone toward a workable, mutually agreed outcome.",
- """
- <h2>Why workplace disputes are worth resolving early</h2>
- <p>Australian workplaces are heavily regulated, and the systems that deal with employment disputes are designed to encourage resolution before a formal hearing. The <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> reports that around three in four unfair dismissal cases settle at conciliation — well before any hearing. The reasons to resolve early are practical:</p>
+ "workplace-mediation",
+ extra_schema=[org_schema(),
+               breadcrumb_schema([("Home",""),("Workplace Mediation","workplace-mediation")]),
+               service_schema("Workplace Mediation","Nationally accredited workplace mediation across Australia.","workplace-mediation"),
+               faq_schema(qa_wm)])
+_wm += nav()
+_wm += f"""<main id="main">
+{crumb_html([("Home",""),("Workplace Mediation",None)])}
 
- <figure class="tbl"><table><caption>Workplace mediation vs the Fair Work Commission process</caption>
- <thead><tr><th></th><th>Workplace mediation</th><th>Fair Work Commission</th></tr></thead>
- <tbody>
- <tr><td>Timing</td><td>Immediately — at any point in the dispute</td><td>After dismissal or formal complaint; strict time limits apply</td></tr>
- <tr><td>Confidential</td><td>Yes — without prejudice</td><td>Generally no — decisions are published and searchable</td></tr>
- <tr><td>Who controls the outcome</td><td>The parties</td><td>A commissioner or arbitrator</td></tr>
- <tr><td>Preserves working relationships</td><td>Yes — built for this</td><td>Rarely — adversarial by design</td></tr>
- <tr><td>Typical timeframe</td><td>Weeks — often a single session</td><td>Many months, sometimes over a year</td></tr>
- <tr><td>Typical cost per party</td><td>Fixed, transparent, shared</td><td>Legal fees + management time + disruption</td></tr>
- </tbody></table></figure>
+<section class="phero" style="padding-bottom:clamp(48px,6vw,80px)">
+  <div class="phero-blob"></div>
+  <div class="wrap">
+    <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90%+ resolution rate</span>
+  </div>
+  <div class="wrap" style="margin-top:20px">
+    <h1 class="d2" style="font-size:clamp(2rem,4.8vw,3.8rem);max-width:22ch;margin-bottom:20px">Workplace Mediation — <em>Resolve It Before It Costs More</em></h1>
+    <p class="lede d3" style="font-size:clamp(1rem,1.4vw,1.15rem);color:var(--ink-soft);max-width:58ch;margin-bottom:32px">A dispute at work rarely stays contained. What begins as one difficult conversation can quickly consume a team, damage a reputation and end up in front of the Fair Work Commission or a court. Our nationally accredited mediators resolve workplace and employment disputes across Australia — often in a single day.</p>
+    <div class="stats d4" style="margin-bottom:32px">
+      <div class="stat"><span class="num"><em>90%</em></span><div class="lbl">resolved at mediation</div></div>
+      <div class="stat"><span class="num">1 Day</span><div class="lbl">not months in tribunal</div></div>
+      <div class="stat"><span class="num">100%</span><div class="lbl">confidential process</div></div>
+    </div>
+    <div class="answer d5" style="max-width:60ch"><p><strong>In short:</strong> Workplace mediation is a voluntary, confidential process in which a neutral mediator helps people resolve an employment dispute without going to court. The mediator does not impose a decision — the parties design the outcome together. We resolve unfair dismissal, bullying, discrimination, partnership and executive conflicts across Australia.</p></div>
+    <div class="phero-cta d6" style="margin-top:28px">
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
+      <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
+    </div>
+  </div>
+</section>
 
- <h2>Types of workplace and employment disputes we mediate</h2>
- <p>Workplace conflict takes many forms, and each has its own legal context and emotional weight. Choose the area closest to your situation for a detailed guide.</p>
+<section class="sec reveal" style="background:var(--ink);color:var(--cream);border-radius:38px;margin:0 16px" aria-labelledby="wm-wedge">
+  <div class="wrap">
+    <div style="text-align:center;max-width:86ch;margin:0 auto 50px">
+      <h2 id="wm-wedge" style="font-size:clamp(1.8rem,3.6vw,3rem);color:var(--cream);margin-bottom:16px">Two ways through a workplace dispute.<br>One is almost always <em style="color:#a8ccb4">faster, cheaper and less damaging.</em></h2>
+      <p style="color:rgba(251,248,242,.72);font-size:1.05rem">Sometimes the Fair Work Commission or court is the right path — and we will tell you when. But for most disputes, mediation gets you there sooner, for less, and with the relationship still intact.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;max-width:900px;margin:0 auto" class="compare">
+      <div style="padding:36px 32px;opacity:.92">
+        <h3 style="font-size:1.35rem;margin-bottom:20px;color:var(--cream)">The formal path</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px">
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Months to over a year of uncertainty</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Legal fees + management time + disruption</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}A commissioner or judge decides the outcome</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Adversarial — working relationships rarely survive</li>
+          <li style="display:flex;gap:12px;color:var(--cream)">{X_w}Decisions published and searchable</li>
+        </ul>
+      </div>
+      <div style="width:1px;background:linear-gradient(180deg,transparent,rgba(251,248,242,.18),transparent);position:relative" class="divider">
+        <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--terra);color:var(--cream);width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:1.1rem">vs</span>
+      </div>
+      <div style="padding:36px 32px">
+        <h3 style="font-size:1.35rem;margin-bottom:20px;color:#a8c89f">Mediation first</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px">
+          <li style="display:flex;gap:12px">{TICK_w}Resolved in weeks — often a single session</li>
+          <li style="display:flex;gap:12px">{TICK_w}Fixed fee, transparent, usually shared</li>
+          <li style="display:flex;gap:12px">{TICK_w}You design the outcome — not a tribunal</li>
+          <li style="display:flex;gap:12px">{TICK_w}Collaborative — relationships can be preserved</li>
+          <li style="display:flex;gap:12px">{TICK_w}Completely private and confidential</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:46px">
+      <p style="font-size:1.15rem;font-family:var(--serif);font-style:italic;color:var(--cream);max-width:52ch;margin:0 auto 26px">"The Fair Work Commission reports around three in four unfair dismissal cases settle at conciliation — well before any hearing. Early resolution is almost always the better option."</p>
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
 
- <div class="cards">
-   <div class="card">
-     <h3><a href="/unfair-dismissal-termination-mediation/" style="color:inherit;text-decoration:none">Unfair Dismissal &amp; Termination Disputes</a></h3>
-     <p>Dismissals, forced resignations and redundancy disagreements. How the 21-day Fair Work deadline works and how mediation resolves these claims without a hearing.</p>
-     <a href="/unfair-dismissal-termination-mediation/" class="more">Read the guide <span class="arr">→</span></a>
-   </div>
-   <div class="card">
-     <h3><a href="/workplace-bullying-harassment-mediation/" style="color:inherit;text-decoration:none">Workplace Bullying &amp; Harassment</a></h3>
-     <p>When repeated unreasonable behaviour creates a health and safety risk. Where mediation helps, when it does not, and how it sits alongside stop-bullying applications.</p>
-     <a href="/workplace-bullying-harassment-mediation/" class="more">Read the guide <span class="arr">→</span></a>
-   </div>
-   <div class="card">
-     <h3><a href="/general-protections-discrimination-mediation/" style="color:inherit;text-decoration:none">General Protections &amp; Discrimination Claims</a></h3>
-     <p>Adverse action, workplace rights and protected attributes. Tight time limits apply — 21 days in dismissal cases. How conciliation and private mediation can resolve these.</p>
-     <a href="/general-protections-discrimination-mediation/" class="more">Read the guide <span class="arr">→</span></a>
-   </div>
-   <div class="card">
-     <h3><a href="/partnership-executive-exit-mediation/" style="color:inherit;text-decoration:none">Partnership &amp; Executive Exit Disputes</a></h3>
-     <p>Business partners falling out, directors leaving under strain, senior executives negotiating a dignified exit. Resolving high-stakes separations privately.</p>
-     <a href="/partnership-executive-exit-mediation/" class="more">Read the guide <span class="arr">→</span></a>
-   </div>
- </div>
+<section class="sec" id="dispute-types">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="sec-tag">Workplace &amp; employment disputes</p>
+      <h2 class="sec-title">Choose the area closest to <em>your situation</em>.</h2>
+      <p class="sec-intro">Workplace conflict takes many forms, and each has its own legal context. Select a guide for a detailed breakdown of your rights, time limits and how mediation resolves it.</p>
+    </div>
+    <div class="cards reveal" style="margin-top:44px">
+      <article class="card">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 14l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Unfair Dismissal &amp; Termination</h3>
+        <p>Dismissals, forced resignations, redundancy disagreements. The 21-day Fair Work deadline — what it means and how to protect your rights.</p>
+        <a class="more" href="/unfair-dismissal-termination-mediation/">Read the guide <span class="arr">→</span></a>
+      </article>
+      <article class="card">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Workplace Bullying &amp; Harassment</h3>
+        <p>Repeated unreasonable behaviour creating a health and safety risk. Where mediation helps, where it doesn't, and how stop-bullying orders work.</p>
+        <a class="more" href="/workplace-bullying-harassment-mediation/">Read the guide <span class="arr">→</span></a>
+      </article>
+      <article class="card">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>General Protections &amp; Discrimination</h3>
+        <p>Adverse action, workplace rights and protected attributes. Time limits as short as 21 days — how conciliation and mediation resolve these claims.</p>
+        <a class="more" href="/general-protections-discrimination-mediation/">Read the guide <span class="arr">→</span></a>
+      </article>
+      <article class="card">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 6V4a4 4 0 018 0v2M9 12h6M9 16h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Partnership &amp; Executive Exit</h3>
+        <p>Partners falling out, directors leaving under strain, senior executives negotiating a dignified exit — resolved privately before it damages the business.</p>
+        <a class="more" href="/partnership-executive-exit-mediation/">Read the guide <span class="arr">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
 
- <h2>How workplace mediation works, step by step</h2>
- <ol>
-   <li><strong>Book a consultation.</strong> You start with a fixed-fee conversation so you understand your position, your options and whether mediation is the right path. There are no surprises on cost.</li>
-   <li><strong>We match you with the right mediator.</strong> Workplace disputes need a mediator who understands employment law and workplace dynamics. Many of our mediators are also experienced lawyers.</li>
-   <li><strong>Preparation.</strong> The mediator speaks with each party privately to understand the issues, the interests behind them, and any safety or power-imbalance concerns that need managing.</li>
-   <li><strong>The session.</strong> Mediation can run with everyone in the room, or in a shuttle format where the mediator moves between separate rooms. It can be held in person or online.</li>
-   <li><strong>Agreement.</strong> In around 90% of our matters, the parties reach agreement in the session itself.</li>
-   <li><strong>Making it binding.</strong> We guide you on turning the agreement into an enforceable outcome — a deed of settlement or a formal terms-of-settlement document.</li>
- </ol>
- <p>All discussions are conducted on a without-prejudice basis — what is said in mediation generally cannot be used in later legal proceedings. This confidentiality is what allows people to speak openly and explore settlement.</p>
+<section class="sec reveal" id="process" style="background:var(--sand-deep);border-radius:38px;margin:0 16px">
+  <div class="wrap">
+    <p class="sec-tag">How it works</p>
+    <h2 class="sec-title">A calm, clear path to <em>agreement</em>.</h2>
+    <p class="sec-intro">No jargon, no surprises. A neutral, accredited mediator guides both sides toward a resolution — and you decide whether to accept it.</p>
+    <div class="cards reveal" style="margin-top:44px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">01</h3><h3>Free consultation</h3><p>Understand your position, your options and whether mediation is the right path. Fixed-fee from there — no open-ended billing.</p></article>
+      <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">02</h3><h3>Right mediator matched</h3><p>Workplace disputes need someone who understands employment law and workplace dynamics. Many of our mediators are also experienced lawyers.</p></article>
+      <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">03</h3><h3>Private preparation</h3><p>The mediator speaks with each party separately to understand the issues and any safety or power-imbalance concerns before the session.</p></article>
+      <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">04</h3><h3>The session</h3><p>Together or in shuttle format — in person or online. Everyone is heard. The mediator guides, not decides.</p></article>
+      <article class="card"><h3 style="font-family:var(--serif);color:var(--sage);font-size:2rem;opacity:.5">05</h3><h3>Agreement made binding</h3><p>Around 90% of matters resolve in the session. The outcome is formalised into an enforceable deed of settlement.</p></article>
+    </div>
+  </div>
+</section>
 
- <h2>How mediation fits alongside the Fair Work system</h2>
- <p>Private mediation and the Fair Work system work together — they are not alternatives that cancel each other out. Several types of workplace claim must be lodged with the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> within strict time limits, and the Commission itself offers conciliation. Private mediation can be used:</p>
- <ul>
-   <li><strong>Before you lodge</strong> — to try to resolve things directly and avoid the formal process entirely</li>
-   <li><strong>Alongside a lodged claim</strong> — to reach a settlement faster and on your own terms</li>
-   <li><strong>In situations the Commission does not cover</strong> — interpersonal conflict, team dynamics, executive exits and commercial partnership disputes</li>
- </ul>
- <p>Because deadlines are short — as little as 21 days for an unfair dismissal claim — it is important to get advice quickly so you do not lose a right by waiting. For general information about workplace rights, the <a href="https://www.fairwork.gov.au/" target="_blank" rel="noopener">Fair Work Ombudsman</a> is the primary government source. For work health and safety guidance, see <a href="https://www.safeworkaustralia.gov.au/" target="_blank" rel="noopener">Safe Work Australia</a>.</p>
-
- <h2>When workplace mediation may not be appropriate</h2>
- <p>We believe strongly in mediation, but we are honest about its limits. Mediation depends on both people being able to participate freely and safely. It may not be the right first step where:</p>
- <ul>
-   <li>there is a serious power imbalance that cannot be managed within the process</li>
-   <li>there has been violence, serious sexual harassment, or threats that make a safe conversation impossible</li>
-   <li>a party is not able to negotiate freely — for example because of intimidation or fear of reprisal</li>
-   <li>an urgent legal deadline or a safety risk means a formal application (such as a stop-bullying order) needs to be made first</li>
- </ul>
- <p>In these situations, safety and proper advice come before process. A good mediator will tell you honestly if mediation is not suitable for your matter. If you need support: <strong>1800RESPECT</strong> 1800 737 732 &middot; <strong>Lifeline</strong> 13 11 14 &middot; <strong>Beyond Blue</strong> 1300 22 4636.</p>
-
- <h2>Can the outcome be made legally binding?</h2>
- <p>Yes. Any agreement reached in workplace mediation can be documented as a deed of settlement — a legally binding contract. The deed records what was agreed, which might include an apology, a change in working arrangements, a payment, a reference, or a commitment to a working protocol. The terms are confidential (unlike a court order or FWC determination) and tailored to what actually resolves the dispute. <a href="/our-fee-structure/">See what mediation costs →</a></p>
-
- <p style="font-size:.9rem;color:var(--ink-soft);margin-top:32px;font-style:italic">This page is for general information only and does not constitute legal advice. For personalised guidance, please consult a qualified legal professional or accredited mediator.</p>
- """,
- [("What is workplace mediation?",
-   "Workplace mediation is a voluntary, confidential process in which a neutral mediator helps people in an employment relationship resolve a dispute without going to court or a tribunal. The mediator does not impose a decision — they help the parties reach their own workable agreement."),
-  ("Is workplace mediation legally required in Australia?",
-   "Not across the board. Unlike parenting matters, there is no general legal requirement to mediate a workplace dispute. However, the Fair Work Commission actively encourages conciliation and mediation, and courts expect parties to have made genuine attempts to resolve matters before litigating."),
-  ("How long does workplace mediation take?",
-   "Most workplace mediations are completed in a single session, often within a day. A matter can usually be booked within a few weeks — compared with many months, sometimes over a year, for a contested tribunal or court outcome."),
-  ("Is what I say in mediation confidential?",
-   "Yes. Mediation is conducted on a without-prejudice basis, meaning offers and admissions made during the process usually cannot be used later in court. This confidentiality is what allows people to speak openly and explore settlement."),
-  ("Do I need a lawyer to attend workplace mediation?",
-   "No, it is not mandatory. Many people mediate without a lawyer present. That said, getting legal advice before or after mediation is sensible — especially where the amounts or legal rights involved are significant — so you understand the implications of any agreement before signing."),
-  ("What does workplace mediation cost?",
-   "We use transparent, fixed-fee pricing so you know the cost up front. Fees depend on the complexity and length of the matter, and are typically shared between the parties or as otherwise agreed. See our fee structure page for details.")],
- "Workplace Mediation",
- "Resolve it early — <em>before it costs more</em>.",
- "Book a free initial consultation to resolve a workplace dispute through confidential mediation, before it reaches the Fair Work Commission.")
+<section class="sec" id="fair-work">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center" class="why-grid reveal">
+      <div>
+        <p class="sec-tag">Fair Work integration</p>
+        <h2 class="sec-title" style="font-size:clamp(1.6rem,2.8vw,2.4rem)">Mediation and the Fair Work system <em>work together</em>.</h2>
+        <p style="color:var(--ink-soft);font-size:1rem;line-height:1.75;margin-bottom:20px">Private mediation and the Fair Work Commission are not alternatives that cancel each other out. Several claim types have strict lodgement deadlines — as little as 21 days. Getting advice early protects your options.</p>
+        <div style="display:flex;flex-direction:column;gap:20px;margin-top:24px">
+          <div style="display:flex;gap:14px"><span style="flex-shrink:0;width:42px;height:42px;border-radius:12px;background:var(--sand-deep);display:flex;align-items:center;justify-content:center;color:var(--sage-deep)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span><div><h3 style="font-size:1.05rem;margin-bottom:3px">Before you lodge</h3><p style="font-size:.95rem;color:var(--ink-soft)">Use mediation to resolve things directly and avoid the formal process entirely.</p></div></div>
+          <div style="display:flex;gap:14px"><span style="flex-shrink:0;width:42px;height:42px;border-radius:12px;background:var(--sand-deep);display:flex;align-items:center;justify-content:center;color:var(--sage-deep)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12l2.5 2.5L16 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3 style="font-size:1.05rem;margin-bottom:3px">Alongside a lodged claim</h3><p style="font-size:.95rem;color:var(--ink-soft)">Reach a settlement faster and on your own terms while a claim is on foot.</p></div></div>
+          <div style="display:flex;gap:14px"><span style="flex-shrink:0;width:42px;height:42px;border-radius:12px;background:var(--sand-deep);display:flex;align-items:center;justify-content:center;color:var(--sage-deep)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M3 12h18M12 3a15 15 0 010 18 15 15 0 010-18" stroke="currentColor" stroke-width="1.5"/></svg></span><div><h3 style="font-size:1.05rem;margin-bottom:3px">Where the FWC doesn't reach</h3><p style="font-size:.95rem;color:var(--ink-soft)">Team dynamics, executive exits and commercial partnership disputes sit outside the Commission's remit.</p></div></div>
+        </div>
+      </div>
+      <aside style="background:var(--sage-deep);color:var(--cream);border-radius:28px;padding:40px 36px;box-shadow:var(--shadow-lg)">
+        <p style="font-size:.85rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(251,248,242,.55);margin-bottom:12px">Key deadlines</p>
+        <div style="display:flex;flex-direction:column;gap:16px;border-bottom:1px solid rgba(251,248,242,.15);padding-bottom:22px;margin-bottom:22px">
+          <div><p style="font-weight:700;color:var(--cream);margin-bottom:2px">21 days</p><p style="font-size:.92rem;color:rgba(251,248,242,.75)">Unfair dismissal — from the date dismissal takes effect</p></div>
+          <div><p style="font-weight:700;color:var(--cream);margin-bottom:2px">21 days</p><p style="font-size:.92rem;color:rgba(251,248,242,.75)">General protections (dismissal) — from the date dismissal takes effect</p></div>
+          <div><p style="font-weight:700;color:var(--cream);margin-bottom:2px">Act promptly</p><p style="font-size:.92rem;color:rgba(251,248,242,.75)">Stop-bullying applications — while the risk is ongoing</p></div>
+        </div>
+        <p style="font-size:.9rem;color:rgba(251,248,242,.65);margin:0">Don't wait. Extensions are only granted in exceptional circumstances.</p>
+        <a href="{BOOK_URL}" class="btn btn-primary" style="margin-top:22px;width:100%;text-align:center;display:block">Get advice now <span class="arr">→</span></a>
+      </aside>
+    </div>
+  </div>
+</section>"""
+_wm += faq_html(qa_wm, heading="Workplace mediation <em>FAQs</em>.", tag="Common questions")
+_wm += cta_band(
+  "Resolve it early — <em>before it costs more</em>.",
+  "Book a free consultation. Tell us what you are facing and we will give you an honest view of whether mediation can help — and how it works alongside any legal steps already in motion.")
+_wm += "</main>" + page_end()
+path = os.path.join(OUT, "workplace-mediation"); os.makedirs(path, exist_ok=True)
+with open(os.path.join(path, "index.html"), "w") as f: f.write(_wm)
 
 print("\nService pages built.")
-import subprocess
-print(subprocess.run(["ls","/home/claude/mediations/site"],capture_output=True,text=True).stdout)
