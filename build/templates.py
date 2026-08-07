@@ -197,7 +197,7 @@ def nav():
                 n, d = svc_lookup[s]
                 links += f'<a href="/{s}/"><b>{esc(n)}</b><span>{esc(d)}</span></a>'
         cols += f'<div class="mega-col"><span class="mega-head">{esc(group)}</span>{links}</div>'
-    svc_mega = f"""<div class="drop mega">{cols}</div>"""
+    svc_mega = f"""<div class="drop mega mega-services">{cols}</div>"""
     return f"""<header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="/" class="logo"><img src="/assets/images/MA.svg" alt="Mediations Australia" width="180" height="36" loading="eager" style="display:block;height:36px;width:auto"></a>
