@@ -636,4 +636,299 @@ build("costs-of-going-to-court",
  "Mediation costs a <em>fraction</em> of litigation.",
  "Start with a free consultation and find out how mediation can resolve your dispute without the cost and delay of court.")
 
+# ---- WORKPLACE SUB-PAGES ----
+
+build(
+ "unfair-dismissal-termination-mediation",
+ "Unfair Dismissal & Termination Mediation | Mediations Australia",
+ "Resolve unfair dismissal and termination disputes through mediation. 21-day deadline — act fast. Faster, private and cheaper than a Fair Work Commission hearing.",
+ "Workplace &amp; employment disputes",
+ "Unfair Dismissal &amp; Termination Dispute Mediation",
+ "Losing a job is one of the most stressful things that can happen. When a termination is challenged, both sides face a formal claim, legal costs and months of uncertainty. Mediation offers a faster, private and less adversarial path to a resolution that everyone can live with — but the 21-day deadline cannot be missed.",
+ "An unfair dismissal dispute arises when a former employee believes their dismissal was harsh, unjust or unreasonable, and seeks a remedy such as compensation or reinstatement. In the national system, these claims are made to the Fair Work Commission, which then offers the parties a chance to resolve the matter by conciliation before it ever reaches a formal hearing.",
+ """
+ <div class="callout" style="border-left:4px solid var(--terra)">
+   <p><strong>The 21-day deadline you cannot miss.</strong> An unfair dismissal application must be lodged with the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> within 21 days after the dismissal takes effect. Extensions are only granted in exceptional circumstances. Do not let the clock run while you decide what to do.</p>
+ </div>
+
+ <h2>Who can bring an unfair dismissal claim?</h2>
+ <p>Under the <a href="https://www.legislation.gov.au/Details/C2009A00028" target="_blank" rel="noopener">Fair Work Act 2009 (Cth)</a>, a person generally needs to meet all of the following:</p>
+ <ul>
+   <li>They were <strong>dismissed</strong> (including being forced to resign — constructive dismissal)</li>
+   <li>They completed the <strong>minimum employment period</strong> — 6 months, or 12 months if the employer has fewer than 15 employees</li>
+   <li>They earn <strong>below the high-income threshold</strong>, or are covered by a modern award or enterprise agreement</li>
+   <li>The dismissal was <strong>not a genuine redundancy</strong>, and where a small business is involved, the employer did not comply with the Small Business Fair Dismissal Code</li>
+ </ul>
+
+ <h2>How conciliation and mediation resolve these disputes</h2>
+ <p>When an unfair dismissal application is lodged, the Fair Work Commission usually offers a conciliation — an informal, confidential discussion run by an impartial conciliator. The conciliator does not decide who is right; they help the parties explore a settlement. Around three in four unfair dismissal cases are resolved at this stage, without ever reaching a Commission Member for a decision.</p>
+
+ <p>Because the parties design the outcome themselves, a settlement can include things a tribunal cannot order:</p>
+ <ul>
+   <li>an agreed <strong>compensation payment</strong></li>
+   <li>an agreed <strong>statement of service</strong> or reference</li>
+   <li>a <strong>non-disparagement</strong> agreement</li>
+   <li>a <strong>mutual release</strong>, ending the dispute for good</li>
+   <li><strong>confidentiality</strong> over the terms</li>
+ </ul>
+ <p>Private mediation with Mediations Australia can run alongside or instead of the Commission's own process, giving you more time, more privacy and a mediator matched specifically to your matter.</p>
+
+ <figure class="tbl"><table><caption>Mediation vs a contested Fair Work hearing</caption>
+ <thead><tr><th></th><th>Mediation</th><th>Formal FWC hearing</th></tr></thead>
+ <tbody>
+ <tr><td>Timeframe</td><td>Weeks — often one session</td><td>Months to over a year</td></tr>
+ <tr><td>Cost</td><td>Fixed, shared, transparent</td><td>Legal fees + preparation + witnesses</td></tr>
+ <tr><td>Outcome control</td><td>Parties decide</td><td>Commissioner decides</td></tr>
+ <tr><td>Confidential</td><td>Yes — without prejudice</td><td>No — decisions are published</td></tr>
+ <tr><td>Remedies available</td><td>Flexible — agreed terms</td><td>Capped compensation or reinstatement</td></tr>
+ </tbody></table></figure>
+
+ <h2>When to be cautious</h2>
+ <p>If a dismissal is bound up with allegations of serious misconduct, discrimination or bullying, there may be additional legal avenues and different time limits to consider. A general protections claim has a much shorter lodgement window in dismissal cases — see our <a href="/general-protections-discrimination-mediation/">general protections and discrimination guide</a>. Getting early advice ensures you choose the right pathway and do not inadvertently give up a right.</p>
+
+ <div class="callout">
+   <h3>Support and further help</h3>
+   <p><strong><a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a></strong> — unfair dismissal process and forms<br>
+   <strong><a href="https://www.fairwork.gov.au/" target="_blank" rel="noopener">Fair Work Ombudsman</a></strong> — workplace rights and entitlements<br>
+   <strong><a href="https://www.legalaid.nsw.gov.au/" target="_blank" rel="noopener">Legal Aid NSW</a></strong> — free legal help for eligible people<br>
+   <strong>Lifeline</strong>: 13 11 14 &middot; <strong>Beyond Blue</strong>: 1300 22 4636</p>
+ </div>
+
+ <p style="font-size:.9rem;color:var(--ink-soft);margin-top:32px;font-style:italic">This page is for general information only and does not constitute legal advice. For personalised guidance, please consult a qualified legal professional or accredited mediator.</p>
+ """,
+ [("How long do I have to lodge an unfair dismissal claim?",
+   "You have 21 days from the date the dismissal takes effect to lodge with the Fair Work Commission. Extensions are only granted in exceptional circumstances, so act quickly."),
+  ("Will I have to face my employer in person?",
+   "Not necessarily. Fair Work conciliations are usually held by telephone, and private mediation can be run in a shuttle format where the mediator moves between separate rooms so the parties never have to be face to face."),
+  ("What sort of compensation might be agreed?",
+   "Settlements vary widely depending on the circumstances, length of service and the strength of the claim. Because the outcome is negotiated, it can also include non-financial terms such as a reference or an agreed statement of service."),
+  ("Do I need a lawyer?",
+   "It is not mandatory. Many people resolve these matters without a lawyer present. However, given the tight deadlines and the money often at stake, early legal advice is strongly advisable."),
+  ("Can the agreement be made binding?",
+   "Yes. A mediated settlement is typically recorded in a deed of settlement, creating an enforceable legal agreement that ends the dispute.")],
+ "Unfair Dismissal Mediation",
+ "Act fast — <em>the 21-day deadline cannot be missed</em>.",
+ "Book a free consultation now. Whether you have been dismissed or are facing a claim, mediation gives you a faster, private path to resolution.")
+
+build(
+ "workplace-bullying-harassment-mediation",
+ "Workplace Bullying & Harassment Mediation | Mediations Australia",
+ "Mediation for workplace bullying and harassment — resolve complaints early, confidentially and constructively. Honest about when mediation is and isn't appropriate.",
+ "Workplace &amp; employment disputes",
+ "Workplace Bullying &amp; Harassment Mediation",
+ "Being bullied or harassed at work takes a real toll — on your health, your confidence and your ability to do your job. Handled early and well, many of these situations can be resolved through mediation. Handled badly, or where the conduct is serious, they can escalate into tribunal applications, safety regulator involvement and lasting harm. This guide explains where mediation helps, and where it does not.",
+ "Workplace bullying is repeated, unreasonable behaviour directed at a worker or group of workers that creates a risk to health and safety. The key elements are that the behaviour is repeated and unreasonable, and that it creates a health and safety risk. Harassment overlaps with bullying but also includes conduct connected to a protected attribute such as sex, race or disability, and sexual harassment, which is regulated separately and treated very seriously under Australian law.",
+ """
+ <div class="callout" style="border-left:4px solid var(--terra)">
+   <p><strong>If you are in immediate danger, call 000.</strong> For confidential counselling and support, contact 1800RESPECT on 1800 737 732 or Lifeline on 13 11 14.</p>
+ </div>
+
+ <h2>How the law treats bullying and harassment</h2>
+ <p>Workplace bullying is a regulated legal risk with direct consequences for employers. Two important avenues exist alongside internal complaint processes:</p>
+ <ul>
+   <li><strong>Stop-bullying orders.</strong> A worker can apply to the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> for an order to stop bullying at work. The Commission can only make such an order where there is a risk that the bullying will continue — it cannot order a payment of money. It aims to contact the parties within about two weeks and resolve most cases within around 16 weeks, often beginning with voluntary conciliation.</li>
+   <li><strong>Work health and safety duties.</strong> Employers have a positive duty to manage the risk of bullying and harassment. <a href="https://www.safeworkaustralia.gov.au/" target="_blank" rel="noopener">Safe Work Australia</a> publishes national guidance on preventing and responding to these risks.</li>
+ </ul>
+ <p>Depending on the conduct, other pathways may also apply — such as a general protections claim or a discrimination complaint, each with their own time limits. We cover those in our <a href="/general-protections-discrimination-mediation/">general protections and discrimination guide</a>.</p>
+
+ <h2>Where mediation helps</h2>
+ <p>Many bullying and harassment complaints stem from breakdowns in communication, unclear expectations, or interpersonal conflict that has been allowed to fester. In these situations — where both people can participate safely and freely — mediation can be genuinely effective. A skilled mediator can:</p>
+ <ul>
+   <li>give each person a structured, safe space to be heard</li>
+   <li>surface the underlying issues rather than just the surface conflict</li>
+   <li>rebuild a workable professional relationship where the parties must continue working together</li>
+   <li>produce a clear, practical agreement about future conduct and expectations</li>
+ </ul>
+ <p>For employers, offering mediation early can resolve a complaint before it becomes a stop-bullying application or a safety-regulator matter, while demonstrating the organisation took the complaint seriously.</p>
+
+ <h2>When mediation is NOT appropriate</h2>
+ <p>This is the part that matters most, and where we will always be honest with you. Mediation depends on both people being able to take part safely and on an equal enough footing. It is often not the right first step where:</p>
+ <ul>
+   <li>the conduct involves <strong>violence, threats, or serious sexual harassment</strong></li>
+   <li>there is a <strong>serious power imbalance</strong> — for example between a senior manager and a junior worker — that cannot be safely managed</li>
+   <li>a party feels <strong>unsafe, intimidated, or fears reprisal</strong> for speaking honestly</li>
+   <li>the behaviour is <strong>ongoing and needs to be stopped urgently</strong>, which may call for a stop-bullying application or a report to the work health and safety regulator first</li>
+   <li>the matter genuinely requires an <strong>independent investigation</strong> to establish what happened</li>
+ </ul>
+ <p>Pushing two people into a room together can cause real harm when the conditions are not right. A responsible mediator will screen for these issues before proceeding and will tell you plainly if mediation is not suitable — and what to do instead.</p>
+
+ <h2>What to do if you are being bullied or harassed</h2>
+ <ol>
+   <li><strong>Prioritise your safety.</strong> If you are in immediate danger, call 000. If you are distressed, reach out to one of the support services below.</li>
+   <li><strong>Use internal processes where it is safe to do so.</strong> Many workplaces have bullying and grievance policies. The Fair Work Commission encourages workers to use these first, where safe.</li>
+   <li><strong>Keep records.</strong> Note dates, times, what was said or done, and any witnesses.</li>
+   <li><strong>Get advice early.</strong> Different avenues have different time limits, and some depend on the risk continuing. Early advice protects your options.</li>
+   <li><strong>Consider mediation once safety is assured.</strong> Where the conditions are right, mediation can resolve the situation faster and more constructively than a formal process.</li>
+ </ol>
+
+ <div class="callout">
+   <h3>Support and further help</h3>
+   <p><strong>In an emergency:</strong> 000<br>
+   <strong>1800RESPECT</strong> (sexual assault, domestic and family violence): 1800 737 732<br>
+   <strong>Lifeline</strong> (24-hour crisis support): 13 11 14<br>
+   <strong>Beyond Blue</strong> (mental health support): 1300 22 4636<br>
+   <strong><a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a></strong> — stop-bullying applications<br>
+   <strong><a href="https://www.safeworkaustralia.gov.au/" target="_blank" rel="noopener">Safe Work Australia</a></strong> — work health and safety guidance</p>
+ </div>
+
+ <p style="font-size:.9rem;color:var(--ink-soft);margin-top:32px;font-style:italic">This page is for general information only and does not constitute legal advice. Workplace bullying, harassment and safety matters can be serious and time-sensitive. For personalised guidance, consult a qualified legal professional, accredited mediator, or the relevant regulator.</p>
+ """,
+ [("Is mediation always the answer for bullying?",
+   "No. Mediation can be very effective for interpersonal conflict where both parties can participate safely. It is often not appropriate where there is violence, serious harassment, a serious power imbalance, or where the behaviour needs to be stopped urgently. Safety comes first."),
+  ("What is a stop-bullying order?",
+   "It is an order from the Fair Work Commission requiring behaviour to stop. The Commission can only make one where there is a risk the bullying will continue, and it cannot order any payment of money. It is aimed at fixing an active situation rather than compensating for past conduct."),
+  ("Can my employer make me attend mediation?",
+   "Mediation is voluntary. You should never feel pressured into a process that does not feel safe. If you have concerns about safety or power imbalance, raise them — a good mediator will screen for exactly these issues."),
+  ("Will it be confidential?",
+   "Yes. Mediation is a confidential, without-prejudice process, which is part of what allows people to speak openly and reach a genuine resolution.")],
+ "Bullying &amp; Harassment Mediation",
+ "Honest about when mediation helps — <em>and when it doesn't</em>.",
+ "Book a free consultation. We will give you an honest assessment of whether mediation is right for your situation, and what to do if it is not.")
+
+build(
+ "general-protections-discrimination-mediation",
+ "General Protections & Discrimination Claim Mediation | Mediations Australia",
+ "Mediation for general protections and discrimination claims — adverse action, workplace rights, protected attributes. 21-day deadline applies where dismissal is involved.",
+ "Workplace &amp; employment disputes",
+ "General Protections &amp; Discrimination Claim Mediation",
+ "Some of the most serious workplace disputes are not about performance or redundancy, but about whether someone was treated badly because of who they are, or because they exercised a right at work. Mediation and conciliation resolve the large majority of these matters — faster, more privately and less painfully than a contested court case.",
+ "A general protections claim alleges that an employer took adverse action against a person because that person had, or exercised, a workplace right or a protected attribute. Adverse action includes things like dismissing someone, refusing to employ them, or altering their position to their disadvantage. The protections are set out in the Fair Work Act 2009 (Cth) and enforced through the Fair Work Commission.",
+ """
+ <div class="callout" style="border-left:4px solid var(--terra)">
+   <p><strong>Time limits are strict and short.</strong> Where the adverse action involved a dismissal, a general protections application must generally be lodged with the <a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a> within <strong>21 days</strong> of the dismissal taking effect. Act immediately to protect your rights.</p>
+ </div>
+
+ <h2>What are general protections and discrimination claims?</h2>
+ <p>Workplace rights protected under the <a href="https://www.legislation.gov.au/Details/C2009A00028" target="_blank" rel="noopener">Fair Work Act 2009 (Cth)</a> include things like being entitled to a benefit under a workplace law, or making a complaint or inquiry about your employment. Protected attributes include race, sex, age, disability, religion, pregnancy, carer's responsibilities and more. Discrimination claims can also be pursued through federal and state anti-discrimination bodies, which run their own conciliation processes.</p>
+
+ <figure class="tbl"><table><caption>Time limits at a glance</caption>
+ <thead><tr><th>Type of claim</th><th>Where lodged</th><th>Deadline</th></tr></thead>
+ <tbody>
+ <tr><td>General protections — dismissal involved</td><td><a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a></td><td><strong>21 days</strong> from dismissal</td></tr>
+ <tr><td>General protections — no dismissal</td><td>Fair Work Commission</td><td>Longer — act promptly</td></tr>
+ <tr><td>Federal discrimination complaint</td><td><a href="https://humanrights.gov.au/" target="_blank" rel="noopener">Australian Human Rights Commission</a></td><td>Separate deadlines apply</td></tr>
+ <tr><td>State discrimination complaint</td><td>State anti-discrimination body</td><td>Separate deadlines apply</td></tr>
+ </tbody></table></figure>
+
+ <h2>How these disputes are resolved without a trial</h2>
+ <p>When a general protections dismissal claim is lodged, the Fair Work Commission will usually convene a conference — a confidential, without-prejudice discussion led by an impartial Commission Member. Anti-discrimination bodies similarly run conciliation before any matter proceeds to a tribunal or court. In both systems, the design intention is the same: resolve by agreement wherever possible.</p>
+
+ <p>Private mediation with Mediations Australia complements these processes. It can be used:</p>
+ <ul>
+   <li><strong>Before you lodge</strong> — to attempt an early resolution and avoid the formal process</li>
+   <li><strong>Alongside a lodged claim</strong> — to reach a settlement on your own terms and timetable</li>
+   <li><strong>To craft outcomes a court could not order</strong> — such as an agreed reference, a policy change, an apology, or confidential settlement terms</li>
+ </ul>
+
+ <h2>Why mediation suits these matters particularly well</h2>
+ <ul>
+   <li><strong>Sensitivity.</strong> Discrimination claims are personal and often painful. A private process spares both sides the exposure of a public hearing.</li>
+   <li><strong>Speed and cost.</strong> Fully litigated cases can be lengthy and expensive. A negotiated outcome avoids that.</li>
+   <li><strong>Creative remedies.</strong> Because the parties design the outcome, a settlement can address what actually matters — recognition, change, a reference — not just a number.</li>
+   <li><strong>Preserving reputation.</strong> For employers, resolving privately avoids a published finding and the associated reputational and cultural fallout.</li>
+   <li><strong>Control and certainty.</strong> Litigation outcomes are uncertain and imposed. Mediated outcomes are agreed, and therefore predictable.</li>
+ </ul>
+
+ <h2>When to take extra care</h2>
+ <p>Discrimination and general protections matters can involve serious conduct, significant power imbalances, and sometimes overlap with bullying, harassment or safety issues — see our <a href="/workplace-bullying-harassment-mediation/">bullying and harassment guide</a>. Where a person does not feel safe or able to negotiate freely, mediation may not be the right first step, and a formal process or independent advice may be needed instead. A responsible mediator screens for these issues before proceeding.</p>
+
+ <div class="callout">
+   <h3>Support and further help</h3>
+   <p><strong><a href="https://www.fwc.gov.au/" target="_blank" rel="noopener">Fair Work Commission</a></strong> — general protections process<br>
+   <strong><a href="https://www.fairwork.gov.au/" target="_blank" rel="noopener">Fair Work Ombudsman</a></strong> — workplace rights and protections<br>
+   <strong><a href="https://humanrights.gov.au/" target="_blank" rel="noopener">Australian Human Rights Commission</a></strong> — federal discrimination complaints<br>
+   <strong><a href="https://www.legalaid.nsw.gov.au/" target="_blank" rel="noopener">Legal Aid NSW</a></strong> — free legal help for eligible people<br>
+   <strong>Lifeline</strong>: 13 11 14 &middot; <strong>Beyond Blue</strong>: 1300 22 4636</p>
+ </div>
+
+ <p style="font-size:.9rem;color:var(--ink-soft);margin-top:32px;font-style:italic">This page is for general information only and does not constitute legal advice. For personalised guidance, please consult a qualified legal professional or accredited mediator.</p>
+ """,
+ [("What is the difference between a general protections claim and an unfair dismissal claim?",
+   "An unfair dismissal claim asks whether a dismissal was harsh, unjust or unreasonable. A general protections claim asks whether adverse action was taken because the person had or exercised a workplace right or a protected attribute. They have different tests, different remedies, and you generally cannot pursue both for the same dismissal."),
+  ("How long do I have to lodge?",
+   "If a dismissal is involved, generally 21 days from when it took effect. Where no dismissal is involved, a longer period usually applies. Anti-discrimination complaints have their own separate deadlines. Act quickly to protect your rights."),
+  ("Can these claims really be resolved by mediation?",
+   "Yes. Both the Fair Work Commission and anti-discrimination bodies are built around conciliation, and the majority of matters settle without a formal hearing. Private mediation can resolve them even more flexibly."),
+  ("Will the outcome be confidential?",
+   "A mediated or conciliated settlement is generally confidential. A litigated outcome, by contrast, is usually public.")],
+ "General Protections Mediation",
+ "Deadlines are as short as 21 days — <em>act quickly</em>.",
+ "Book a free consultation. These disputes are time-sensitive — the sooner you get advice, the more options you have.")
+
+build(
+ "partnership-executive-exit-mediation",
+ "Partnership & Executive Exit Dispute Mediation | Mediations Australia",
+ "Mediation for business partnership breakdowns and executive exit disputes. Private, fast and commercially focused — resolves ownership, entitlements, restraints and reputation in one process.",
+ "Workplace &amp; employment disputes",
+ "Partnership &amp; Executive Exit Dispute Mediation",
+ "When a business partnership breaks down, or a senior executive's departure turns sour, the stakes are unusually high. These disputes threaten not just individual careers but the business itself — its clients, its staff, its value and its reputation. Mediation is frequently the smartest way through: private, fast and focused on preserving value rather than destroying it.",
+ "Partnership and executive exit disputes arise when business partners, directors or senior executives separate — whether through a falling-out, a forced departure, or a negotiated exit — and disagree about the terms. They sit at the intersection of employment, commercial and sometimes corporate law, which is what makes them complex and what makes a skilled mediator so valuable.",
+ """
+ <h2>Common flashpoints in these disputes</h2>
+ <ul>
+   <li><strong>Partner and shareholder fallouts</strong> — disagreements over strategy, contribution, drawings, or the division of a business when one person wants out</li>
+   <li><strong>Executive exits</strong> — a senior leader being managed out, or negotiating their own departure, with disputes over notice, entitlements, bonuses, equity and reputation</li>
+   <li><strong>Restraints of trade and confidentiality</strong> — arguments over what a departing person can and cannot do next</li>
+   <li><strong>Handover and communication</strong> — how the departure is announced to staff, clients and the market</li>
+ </ul>
+
+ <h2>Why litigation is such a poor fit here</h2>
+ <p>Taking a partnership or executive dispute to court is often the worst available option, because the litigation itself damages the very thing being fought over:</p>
+
+ <figure class="tbl"><table><caption>Court vs mediation for partnership and executive disputes</caption>
+ <thead><tr><th></th><th>Mediation</th><th>Litigation</th></tr></thead>
+ <tbody>
+ <tr><td>Privacy</td><td>Fully private — without prejudice</td><td>Court files and judgments are public</td></tr>
+ <tr><td>Business impact</td><td>Contained and confidential</td><td>Public conflict spooks clients and staff</td></tr>
+ <tr><td>Speed</td><td>Weeks — often a single intensive day</td><td>Commercial litigation can take years</td></tr>
+ <tr><td>Cost</td><td>Fixed, transparent, shared</td><td>Document-heavy; legal fees run high on both sides</td></tr>
+ <tr><td>Outcome</td><td>Parties design the resolution</td><td>Judge decides; remedies are constrained</td></tr>
+ <tr><td>Relationship aftermath</td><td>Built to let everyone move forward</td><td>Reputations and relationships often in ruins</td></tr>
+ </tbody></table></figure>
+
+ <h2>What mediation can achieve that a court cannot</h2>
+ <p>Because the parties design the outcome, mediation can resolve the whole tangle at once — the legal, the financial and the human. A mediated settlement might address:</p>
+ <ul>
+   <li>the <strong>financial terms</strong> of the exit — buyout, entitlements, bonuses, equity</li>
+   <li><strong>restraints and confidentiality</strong> going forward, agreed rather than litigated</li>
+   <li>a <strong>clean division of clients, assets or responsibilities</strong></li>
+   <li>an <strong>agreed narrative</strong> — how the departure is communicated to staff, clients and the market, protecting everyone's reputation</li>
+   <li>a <strong>full mutual release</strong>, drawing a line under the dispute for good</li>
+ </ul>
+ <p>Many of our mediators are also experienced lawyers, which matters here: they understand the commercial and legal architecture of these deals, not just the interpersonal dynamics.</p>
+
+ <h2>How the process works for high-stakes exits</h2>
+ <ol>
+   <li><strong>Confidential consultation.</strong> We help you understand your position and whether mediation is the right vehicle.</li>
+   <li><strong>The right mediator.</strong> We match you with a mediator experienced in commercial and executive disputes.</li>
+   <li><strong>Careful preparation.</strong> Each side is spoken with privately. In high-conflict matters, sessions are often run in shuttle format, with the mediator moving between separate rooms.</li>
+   <li><strong>The session.</strong> Often a single, intensive day — in person or online — focused on a global settlement rather than point-scoring.</li>
+   <li><strong>A binding deed.</strong> The outcome is formalised into an enforceable settlement deed, so the terms — including restraints and releases — actually hold.</li>
+ </ol>
+
+ <h2>When to get additional advice</h2>
+ <p>Partnership and executive disputes frequently involve overlapping legal questions — corporate governance, shareholder agreements, directors' duties, and sometimes general protections issues. See our <a href="/general-protections-discrimination-mediation/">general protections and discrimination guide</a> where a departure is bound up with a protected right. Mediation resolves the dispute, but you should also have your own legal and, where relevant, accounting advice on the substance of any deal.</p>
+
+ <div class="callout">
+   <h3>Support and further help</h3>
+   <p><strong><a href="https://asic.gov.au/" target="_blank" rel="noopener">ASIC</a></strong> — company and directors' obligations<br>
+   <strong><a href="https://www.fairwork.gov.au/" target="_blank" rel="noopener">Fair Work Ombudsman</a></strong> — employment entitlements<br>
+   <strong><a href="https://www.asbfeo.gov.au/" target="_blank" rel="noopener">Australian Small Business and Family Enterprise Ombudsman</a></strong> — small business dispute support<br>
+   <strong>Lifeline</strong>: 13 11 14 &middot; <strong>Beyond Blue</strong>: 1300 22 4636</p>
+ </div>
+
+ <p style="font-size:.9rem;color:var(--ink-soft);margin-top:32px;font-style:italic">This page is for general information only and does not constitute legal advice. For personalised guidance, please consult a qualified legal professional or accredited mediator.</p>
+ """,
+ [("Can mediation handle a dispute that is both commercial and personal?",
+   "Yes — that is exactly its strength. A single mediated settlement can resolve the financial terms, the restraints, the client division and the reputational narrative all at once, which separate legal proceedings struggle to do."),
+  ("Is it confidential?",
+   "Yes. Mediation is private and without prejudice. This is a major advantage over litigation, where filings and judgments are generally public and can expose sensitive commercial information."),
+  ("What if we cannot agree on the value of the business?",
+   "Valuation disagreements are common and can be worked through in mediation, sometimes with the help of an agreed independent expert. The flexibility of the process is well suited to bridging these gaps."),
+  ("Will the agreement be enforceable?",
+   "Yes. Outcomes are formalised into a binding settlement deed, which can include enforceable restraints, releases and payment terms.")],
+ "Partnership &amp; Executive Exit",
+ "Private, fast and commercially focused — <em>before it costs you the business</em>.",
+ "Book a free consultation. Resolve a partnership or executive exit dispute privately, before it becomes a public, value-destroying court battle.")
+
 print("Additional service pages built.")
