@@ -72,7 +72,7 @@ header.nav.scrolled{border-color:var(--line)}
 .mega a:not(.btn) b{font-size:.97rem;font-weight:600}
 .mega a:not(.btn) span{font-size:.78rem;color:var(--ink-soft);line-height:1.35}
 /* resources mega (2 content cols + card) */
-.mega-resources{grid-template-columns:1fr 1fr 260px}
+.mega-resources{grid-template-columns:repeat(4,1fr)}
 .mega-see-all{font-family:var(--sans);font-size:.82rem!important;font-weight:600;color:var(--sage-deep)!important;padding:10px 14px!important;gap:0!important;display:block!important}
 .mega-see-all:hover{background:transparent!important;text-decoration:underline}
 /* promo card */
