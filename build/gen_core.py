@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
-                       BOOK_URL, PHONE, PHONE_HREF, OFFICES, DOMAIN,
+                       person_schema, BOOK_URL, PHONE, PHONE_HREF, OFFICES, DOMAIN,
                        SERVICES, SERVICE_GROUPS, contact_form_fields)
 
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -128,31 +128,40 @@ doc = head(
  "about-mediations-australia",
  extra_schema=[org_schema(),
                breadcrumb_schema([("Home",""),("About","about-mediations-australia")]),
+               person_schema(),
                faq_schema(qa_about)])
 doc += nav()
 doc += phero("We exist because the courts fail most people",
  "About Mediations Australia",
  "Mediations Australia exists because litigation fails most people who enter it — slower, costlier and more painful than it needs to be. We bring together nationally accredited mediators and experienced family lawyers with one shared philosophy: resolve early, resolve fairly, and keep people out of court wherever possible.",
  [("Home",""),("About",None)])
-doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediations Australia is a national dispute resolution firm of nationally accredited mediators and experienced family lawyers. We help individuals, families and businesses resolve disputes faster and at a fraction of the cost of court, with offices in Sydney, Melbourne, Brisbane and Perth, and online mediation Australia-wide.</p></div></div>'
+doc += """<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediations Australia is a national dispute resolution firm founded by Dan Toombs — an AMDRAS-accredited mediator, award-winning lawyer, former tribunal member, and Winston Churchill Fellow. We bring together nationally accredited mediators and experienced family lawyers to help individuals, families and businesses resolve disputes faster and at a fraction of the cost of court. With offices in Sydney, Melbourne, Brisbane and Perth, and secure online mediation available Australia-wide, we resolve over 90% of matters without court. Our approach is built on one conviction: for most disputes, there is a better first step than litigation.</p></div></div>"""
 doc += """<article class="body"><div class="wrap-narrow reveal">
 <h2>Why we exist</h2>
-<p>Australia's courts are overwhelmed with litigation, and the people inside that system pay the price — in time, in money, and in stress. In family law especially, when matters become adversarial they tend to grow more complicated, more emotionally charged and far more expensive. Sometimes court is genuinely unavoidable, and a good lawyer will tell you when. But for the vast majority of disputes, there's a better first step.</p>
-<p>That conviction is why Mediations Australia was founded. We're early-resolution focused, and our mediators and lawyers share that same philosophy.</p>
+<p>Australia's courts are overwhelmed with litigation, and the people inside that system pay the price — in time, in money, and in stress. In family law especially, when matters become adversarial they tend to grow more complicated, more emotionally charged and far more expensive. A contested family law matter can take one to three years and consume tens of thousands of dollars per side in legal fees — often a significant share of the assets in dispute. Sometimes court is genuinely unavoidable, and a good lawyer will tell you when. But for the vast majority of disputes, there is a better first step.</p>
+<p>That conviction is why Mediations Australia was founded. We are early-resolution focused, and every practitioner we work with shares that same philosophy.</p>
 
-<h2>Who we are</h2>
-<p>We bring together practitioners experienced across every facet of dispute resolution — nationally accredited mediators, family lawyers and arbitrators. That blend matters: it means we understand both how to guide a productive conversation and what the legal realities of your matter actually are.</p>
+<h2>Our founder</h2>
+<p>Mediations Australia was founded by <strong>Dan Toombs</strong> — an AMDRAS-accredited mediator, award-winning lawyer, former tribunal member at QCAT, former CEO and Board Director, and Winston Churchill Fellow. Dan brings a combination of experience that is uncommon in dispute resolution: he has run organisations, not merely advised them, and he understands adjudication from the inside. That combination informs the practical, durable approach that Mediations Australia is built on. <a href="/our-team/dan-toombs/">Learn more about Dan →</a></p>
 
 <div class="callout">
   <h3>Nationally accredited under AMDRAS</h3>
-  <p>Our mediators are accredited under the Australian Mediator and Dispute Resolution Accreditation Standards — the national benchmark. With a 90% resolution rate across thousands of matters, our approach works.</p>
+  <p>Our mediators are accredited under the Australian Mediator and Dispute Resolution Accreditation Standards (AMDRAS) — the national benchmark for mediator competency and conduct. Many are also experienced family lawyers. With a 90% resolution rate across thousands of matters, our approach works.</p>
 </div>
 
-<h2>How we work with your lawyer</h2>
-<p>We're not here to replace good legal advice — we work alongside it. Many of the people we help are referred to us by the very solicitors advising them, because experienced lawyers know that mediation usually serves their clients better than a courtroom. If you already have a lawyer, we'll work with them. If you don't, many of our mediators are lawyers themselves.</p>
+<h2>What we do — and what we don't</h2>
+<p>We are a dispute resolution firm, not a law firm. We do not run litigation, file court documents, or represent clients as advocates. What we do is help people reach their own agreements — agreements they design, understand and are far more likely to sustain than outcomes imposed by a judge after years of adversarial process.</p>
+<p>Where legal advice is needed (and it often is), we work alongside whatever lawyer you have. Many of the people we help are referred to us by the very solicitors advising them, because experienced lawyers know that mediation usually serves their clients better than a courtroom.</p>
+
+<h2>How we work</h2>
+<p>Every matter begins with a free initial consultation — no obligation, no billing surprises. We listen to your situation, explain what the process looks like, and give you an honest view of whether mediation can help. From there, the process is structured, confidential, and designed to move at a pace that works for the people involved.</p>
+<p>Sessions can be conducted with all parties in the same room, or in separate rooms with the mediator moving between them — shuttle mediation — where that is more appropriate. Where an agreement is reached, we help formalise it so it carries legal weight, whether through <a href="/consent-orders/">consent orders</a>, a <a href="/financial-agreements-mediation/">binding financial agreement</a>, or a commercial deed.</p>
+
+<h2>Where we serve</h2>
+<p>We have offices in <a href="/sydney-mediation/">Sydney</a>, <a href="/melbourne-mediation/">Melbourne</a>, <a href="/brisbane-mediation/">Brisbane</a> and <a href="/perth-mediation/">Perth</a>, and offer secure online mediation to clients across all of Australia — including regional and remote areas. Online mediation follows the same structured process and produces agreements that are just as binding.</p>
 
 <h2>What we resolve</h2>
-<p>From the deeply personal to the purely commercial: <a href="/family-law-mediation/">family separation</a>, <a href="/property-settlement-mediation/">property settlements</a>, <a href="/workplace-mediation/">workplace conflict</a>, business disputes, contested estates and personal injury claims. Whatever the matter, our goal is the same — a practical, lasting resolution that keeps you out of court.</p>
+<p>From the deeply personal to the purely commercial: <a href="/family-law-mediation/">family separation</a>, <a href="/property-settlement-mediation/">property settlements</a>, <a href="/parenting-plan-mediation/">parenting arrangements</a>, <a href="/workplace-mediation/">workplace conflict</a>, business disputes, contested estates and personal injury claims. Whatever the matter, our goal is the same — a practical, lasting resolution that keeps you out of court.</p>
 </div></article>"""
 doc += faq_html(qa_about, heading="About Mediations Australia — FAQs")
 doc += cta_band("See the difference for <em>yourself</em>.",

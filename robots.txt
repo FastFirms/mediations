@@ -15,4 +15,4 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
-Sitemap: https://mediationsaustralia.com.au/sitemap.xml
+Sitemap: https://www.mediationsaustralia.com.au/sitemap.xml

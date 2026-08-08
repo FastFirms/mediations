@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Shared template components for Mediations Australia site generation."""
-import html, json
+import html, json, datetime
 
-DOMAIN = "https://mediationsaustralia.com.au"
+DOMAIN = "https://www.mediationsaustralia.com.au"
+BUILD_DATE = datetime.date.today().isoformat()  # e.g. "2026-08-08"
 PHONE = "1800 952 380"
 PHONE_HREF = "tel:1800952380"
 BOOK_URL = "/book-a-consultation/"
@@ -383,17 +384,46 @@ def service_schema(name, desc, slug):
 
 DAN_TOOMBS = {
     "@type": "Person",
+    "@id": f"{DOMAIN}/#dan-toombs",
     "name": "Dan Toombs",
     "jobTitle": "Founder & Accredited Mediator",
+    "description": (
+        "Dan Toombs is an AMDRAS-accredited mediator, award-winning lawyer, "
+        "former tribunal member (QCAT), former CEO and Board Director, "
+        "and Winston Churchill Fellow. He founded Mediations Australia to give "
+        "individuals and businesses a practical, durable alternative to litigation."
+    ),
     "url": f"{DOMAIN}/our-team/dan-toombs/",
+    "image": f"{DOMAIN}/assets/images/Dan-Bio.png",
     "sameAs": [
+        "https://www.linkedin.com/in/dantoombs/",
         "https://amdras.au/",
         "https://www.churchilltrust.com.au/",
     ],
+    "knowsAbout": [
+        "Family law mediation",
+        "Workplace mediation",
+        "Commercial mediation",
+        "Dispute resolution",
+        "Fair Work Act",
+        "Belbin Team Roles",
+        "Adaptive Leadership",
+    ],
+    "hasCredential": [
+        {"@type": "EducationalOccupationalCredential", "name": "AMDRAS Accredited Mediator"},
+        {"@type": "EducationalOccupationalCredential", "name": "Winston Churchill Fellow"},
+    ],
+    "memberOf": {"@type": "Organization", "@id": f"{DOMAIN}/#organization"},
 }
+
+def person_schema():
+    """Return the DAN_TOOMBS Person node as a standalone schema block."""
+    return DAN_TOOMBS
 
 def article_schema(headline, desc):
     return {"@type": "Article", "headline": headline, "description": desc,
+            "datePublished": BUILD_DATE, "dateModified": BUILD_DATE,
+            "image": f"{DOMAIN}/assets/images/MA-social.png",
             "author": DAN_TOOMBS,
             "publisher": {"@id": f"{DOMAIN}/#organization"}}
 
