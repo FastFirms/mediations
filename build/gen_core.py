@@ -6,6 +6,7 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, article_schema,
                        person_schema, BOOK_URL, PHONE, PHONE_HREF, OFFICES, DOMAIN,
                        SERVICES, SERVICE_GROUPS, contact_form_fields)
+from gen_mediation_prep import TOOL_HTML as PREP_TOOL_HTML
 
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -170,65 +171,76 @@ doc += "</main>" + page_end()
 write("about-mediations-australia", doc)
 
 # ============================================================
-# PREPARING FOR MEDIATION
+# PREPARING FOR MEDIATION  (includes embedded preparation tool)
 # ============================================================
 qa_prep = [
  ("What should I bring to a mediation session?",
-  "Bring any relevant documents (financial records for property matters, a list of issues you want to cover, and any proposals you've considered), plus an open mind and a focus on outcomes rather than blame."),
+  "Bring any relevant documents — financial records or property valuations for property matters, a list of issues you want to cover, and any proposals you have considered. Having these organised before the session helps you use the time well."),
  ("How should I prepare emotionally for mediation?",
-  "Acknowledge that it may be difficult, focus on your goals rather than past grievances, and consider what you genuinely need versus what you'd merely prefer. A clear sense of priorities helps enormously."),
+  "Acknowledge that it may be difficult. Focus on your goals rather than past grievances, and think about what you genuinely need versus what you would merely prefer. A clear sense of priorities helps enormously — which is exactly what the preparation tool above is designed to help you build."),
  ("Can I bring a support person?",
-  "Often yes, depending on the type of mediation. Discuss it beforehand so suitable arrangements can be made that keep the process balanced and productive."),
+  "Often yes, depending on the type of mediation. Discuss it with your mediator beforehand so suitable arrangements can be made that keep the process balanced and productive."),
  ("What if I'm worried about facing the other person?",
-  "Tell us in advance. 'Shuttle' mediation keeps you in separate rooms with the mediator moving between you, so you never have to be face to face."),
+  "Tell us in advance. Shuttle mediation keeps you in separate rooms with the mediator moving between you, so you never have to be face to face. It is a common and effective option."),
+ ("How long does it take to prepare for mediation?",
+  "There is no fixed answer, but working through the preparation tool above typically takes 10 to 20 minutes. Most people find that thinking through their priorities clearly — even briefly — makes a real difference on the day."),
+ ("Is the preparation tool confidential?",
+  "Yes. Nothing you enter in the tool is stored on our servers. Your answers exist only in your browser session and in any PDF you download. The tool is entirely private."),
+ ("Do I need a lawyer to prepare for mediation?",
+  "Not necessarily. Many people prepare on their own and then involve a lawyer to review or document any agreement. The preparation tool is designed for self-guided use. If legal rights, obligations or formal agreements are involved, independent legal advice is worth considering."),
+ ("What is Family Dispute Resolution?",
+  "Family Dispute Resolution (FDR) is a specific form of dispute resolution for family law matters, conducted by a registered Family Dispute Resolution Practitioner. In many parenting disputes, parties are required to attempt FDR before applying to court for parenting orders. Our preparation tool flags this where relevant. Completing the tool is not FDR and does not produce a section 60I or section 66H certificate."),
 ]
 doc = head(
- "Preparing for Mediation | What to Expect & How to Get Ready",
- "How to prepare for mediation: what to bring, how to think about your goals, and what to expect on the day. A practical guide from accredited mediators.",
+ "Preparing for Mediation | Free Australian Preparation Tool",
+ "Use our free guided tool to prepare for mediation in Australia. Identify issues, clarify priorities, and download a personal Mediation Preparation Summary. Plus: practical tips from accredited mediators.",
  "preparing-for-mediation",
  extra_schema=[org_schema(),
                breadcrumb_schema([("Home",""),("Preparing for Mediation","preparing-for-mediation")]),
-               article_schema("Preparing for Mediation","A practical guide to getting ready for a mediation session."),
+               article_schema("Preparing for Mediation — Free Australian Tool",
+                              "A free guided preparation tool and practical guide for Australians preparing for mediation."),
                faq_schema(qa_prep)])
 doc += nav()
-doc += phero("Go in prepared — it makes a real difference",
+doc += phero("Go in prepared &mdash; it makes a real difference",
  "Preparing for Mediation",
- "Walking into mediation prepared makes a real difference to the outcome. This practical guide covers what to bring, how to think about what you want, and exactly what to expect on the day — so you arrive calm, clear and ready to resolve things.",
+ "Walking into mediation prepared makes a real difference to the outcome. Use our free guided tool to identify your issues, clarify your priorities, and download a personal Mediation Preparation Summary &mdash; then read the practical guide below.",
  [("Home",""),("Resources",None),("Preparing for Mediation",None)])
-doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> To prepare for mediation, get clear on your goals and priorities, gather any relevant documents, think about realistic outcomes rather than positions, and arrive ready to focus on solutions instead of blame. Good preparation is one of the biggest predictors of a successful mediation.</p></div></div>'
+doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> To prepare for mediation, get clear on your goals and priorities, gather any relevant documents, and think about realistic outcomes rather than fixed positions. Our free preparation tool guides you through each step and produces a downloadable PDF summary &mdash; tailored for Australian family and property disputes.</p></div></div>'
+doc += PREP_TOOL_HTML
 doc += """<article class="body"><div class="wrap-narrow reveal">
 <h2>What is mediation, and why prepare?</h2>
 <p>Mediation is a collaborative process where you and the other parties work together, with a neutral mediator, to reach an agreement. Because <em>you</em> shape the outcome, the effort you put in beforehand directly affects what you walk away with. Preparation turns a stressful unknown into a process you can steer.</p>
 
 <h2>Before the day: get clear on your goals</h2>
 <ul>
-  <li>Separate what you genuinely <strong>need</strong> from what you'd merely <strong>prefer</strong>.</li>
-  <li>Think about the other person's likely concerns — understanding them helps you find solutions.</li>
+  <li>Separate what you genuinely <strong>need</strong> from what you&rsquo;d merely <strong>prefer</strong>.</li>
+  <li>Think about the other person&rsquo;s likely concerns &mdash; understanding them helps you find solutions.</li>
   <li>Consider realistic outcomes, not just your opening position.</li>
   <li>Jot down the key issues you want to cover so nothing gets missed.</li>
 </ul>
 
 <h2>What to bring</h2>
 <ul>
-  <li>Relevant documents — for property matters, financial records, valuations and statements.</li>
-  <li>A written list of the issues and any proposals you've thought about.</li>
+  <li>Relevant documents &mdash; for property matters, financial records, valuations and statements.</li>
+  <li>A written list of the issues and any proposals you&rsquo;ve thought about.</li>
   <li>For parenting matters, a sense of the arrangements that would work for your children.</li>
+  <li>Your Mediation Preparation Summary, if you used the tool above.</li>
 </ul>
 
 <div class="callout">
-  <h3>If you're anxious about facing the other person</h3>
-  <p>That's completely normal — and easily managed. Tell us in advance and we can run 'shuttle' mediation, keeping you in separate rooms with the mediator moving between you. You never have to be face to face.</p>
+  <h3>If you&rsquo;re anxious about facing the other person</h3>
+  <p>That&rsquo;s completely normal &mdash; and easily managed. Tell us in advance and we can run shuttle mediation, keeping you in separate rooms with the mediator moving between you. You never have to be face to face.</p>
 </div>
 
 <h2>On the day: how to get the best outcome</h2>
-<p>Focus on the future, not on re-litigating the past. Listen as much as you speak. Stay open to creative solutions you hadn't considered — mediation often produces options a court never could. And remember the mediator is neutral: they're there to help everyone reach agreement, not to judge.</p>
+<p>Focus on the future, not on re-litigating the past. Listen as much as you speak. Stay open to creative solutions you hadn&rsquo;t considered &mdash; mediation often produces outcomes a court never could. And remember the mediator is neutral: they&rsquo;re there to help everyone reach agreement, not to judge.</p>
 
 <h2>A note on safety</h2>
-<p>If your situation involves family violence or concerns about safety, mediation may not be appropriate, and other steps may be needed first. If you're in a crisis or immediate danger, contact emergency services. Tell us about any safety concerns in your consultation and we'll advise the right path. <a href="/section-60i-certificates/">Some matters qualify for exemptions →</a></p>
+<p>If your situation involves family violence or concerns about safety, mediation may not be appropriate, and other steps may be needed first. If you&rsquo;re in a crisis or immediate danger, contact emergency services. Tell us about any safety concerns in your consultation and we&rsquo;ll advise the right path.</p>
 </div></article>"""
-doc += faq_html(qa_prep, heading="Preparing for mediation — FAQs")
+doc += faq_html(qa_prep, heading="Preparing for mediation &mdash; FAQs")
 doc += cta_band("Feel ready. <em>Resolve it.</em>",
- "Book a free initial consultation and we'll walk you through exactly what to expect, so you arrive prepared and confident.")
+ "Book a free initial consultation and we&rsquo;ll walk you through exactly what to expect, so you arrive prepared and confident.")
 doc += "</main>" + page_end()
 write("preparing-for-mediation", doc)
 
