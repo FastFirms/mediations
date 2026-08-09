@@ -383,6 +383,17 @@ PARENTING_BUILDER = """
         <button type="button" class="ppb-btn-dl" id="ppbDownloadBtn">Download PDF Agreement →</button>
         <button type="button" class="ppb-btn-reset" id="ppbRestartBtn">Start Over</button>
       </div>
+      <div style="margin-top:32px;padding:24px 28px;background:var(--sand);border:1px solid var(--line);border-radius:14px;text-align:center">
+        <p style="font-family:var(--sans);font-size:.95rem;color:var(--ink);margin:0 0 14px;line-height:1.6">We hope this parenting plan builder has been useful. If it has, spreading the word helps other separated parents find it — we'd be grateful for a quick Google review.</p>
+        <a href="https://g.page/r/CZcsK4llG5XFEAE/review" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;padding:13px 24px;background:#fff;border:1.5px solid var(--line);border-radius:100px;font-family:var(--sans);font-size:.9rem;font-weight:600;color:var(--ink);text-decoration:none;transition:border-color .2s,box-shadow .2s" onmouseover="this.style.borderColor='var(--sage)';this.style.boxShadow='0 4px 12px rgba(30,96,64,.12)'" onmouseout="this.style.borderColor='var(--line)';this.style.boxShadow='none'">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#f4b400" stroke="#f4b400" stroke-width="1" stroke-linejoin="round"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#f4b400" stroke="#f4b400" stroke-width="1" stroke-linejoin="round"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#f4b400" stroke="#f4b400" stroke-width="1" stroke-linejoin="round"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#f4b400" stroke="#f4b400" stroke-width="1" stroke-linejoin="round"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#f4b400" stroke="#f4b400" stroke-width="1" stroke-linejoin="round"/></svg>
+          Leave a Google Review
+        </a>
+      </div>
     </div>
 
   </form>
