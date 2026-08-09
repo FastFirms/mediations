@@ -7,7 +7,7 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        BOOK_URL, PHONE, PHONE_HREF)
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_article=True):
+def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_article=True,tool_html=None,tool_position='after'):
     extra=article_schema(crumb,desc) if is_article else None
     schema=[org_schema(),breadcrumb_schema([("Home",""),("Resources",None if False else "preparing-for-mediation"),(crumb,slug)])]
     if extra: schema.append(extra)
@@ -21,13 +21,632 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_art
 <div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
 </div></section>
-<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>
-<article class="body"><div class="wrap-narrow reveal">{blocks}</div></article>"""
+<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>"""
+    if tool_html and tool_position=='before': d+=tool_html
+    d+=f"""<article class="body"><div class="wrap-narrow reveal">{blocks}</div></article>"""
+    if tool_html and tool_position=='after': d+=tool_html
     if qa: d+=faq_html(qa,heading=f"{crumb} — FAQs")
     d+=cta_band(cta_h,cta_p)+"</main>"+page_end()
     p=os.path.join(OUT,slug); os.makedirs(p,exist_ok=True)
     open(os.path.join(p,"index.html"),"w").write(d)
     import re; return slug,len(re.sub(r'<[^>]+>',' ',d).split())
+
+# ---- PARENTING PLAN BUILDER TOOL (embedded on parenting-plan-template page) ----
+PARENTING_BUILDER = """
+<section class="sec ppb-outer" style="border-top:2px solid var(--line);padding:80px 0 96px;background:var(--sand)">
+<div class="wrap" style="max-width:860px">
+
+<div style="text-align:center;margin-bottom:56px">
+  <p class="sec-tag">Free interactive tool</p>
+  <h2 class="sec-title" style="margin-bottom:16px">Build Your Parenting Plan <em>Agreement</em></h2>
+  <p style="color:var(--ink-soft);max-width:54ch;margin:0 auto;font-size:1.05rem;line-height:1.7">A free tool for separated parents in Australia. Complete 9 guided steps, then download a ready-to-sign PDF — no account needed, nothing stored on our servers.</p>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:52px">
+  <div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 24px">
+    <div style="width:44px;height:44px;background:rgba(30,96,64,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    </div>
+    <h3 style="font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 8px">Who it&rsquo;s for</h3>
+    <p style="font-size:.9rem;color:var(--ink-soft);line-height:1.65;margin:0">Separated or divorcing parents who want to formalise care arrangements for their children — whether you&rsquo;re starting from scratch or updating an existing plan.</p>
+  </div>
+  <div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 24px">
+    <div style="width:44px;height:44px;background:rgba(30,96,64,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    </div>
+    <h3 style="font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 8px">How to use it</h3>
+    <p style="font-size:.9rem;color:var(--ink-soft);line-height:1.65;margin:0">Work through 9 steps covering every key area — living arrangements, holidays, education, health, finances, and more. Skip any section that doesn&rsquo;t apply and come back any time; your answers autosave as you go.</p>
+  </div>
+  <div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 24px">
+    <div style="width:44px;height:44px;background:rgba(30,96,64,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+    </div>
+    <h3 style="font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 8px">What you get</h3>
+    <p style="font-size:.9rem;color:var(--ink-soft);line-height:1.65;margin:0">A formatted PDF parenting plan agreement, ready for both parties to sign. Covers all standard Australian parenting plan clauses under the Family Law Act 1975. Free to download, private to your device.</p>
+  </div>
+</div>
+<style>@media(max-width:640px){.ppb-intro-grid{grid-template-columns:1fr!important}}</style>
+<script>document.querySelector('.ppb-outer>div>div:nth-child(2)').classList.add('ppb-intro-grid');</script>
+
+<div style="max-width:800px;margin:0 auto">
+
+<style>
+/* ── Builder card ───────────────────────────────────────────── */
+.ppb-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:40px 44px;box-shadow:var(--shadow)}
+/* ── Step indicator ─────────────────────────────────────────── */
+.ppb-stepper{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px;gap:6px}
+.ppb-step{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;cursor:default}
+.ppb-step-dot{width:30px;height:30px;border-radius:50%;border:2px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;font-family:var(--sans);color:var(--ink-soft);transition:all .25s;flex-shrink:0}
+.ppb-step.done .ppb-step-dot{background:var(--sage);border-color:var(--sage);color:#fff}
+.ppb-step.active .ppb-step-dot{background:var(--sage);border-color:var(--sage);color:#fff;box-shadow:0 0 0 4px rgba(30,96,64,.15)}
+.ppb-step-label{font-size:.68rem;font-family:var(--sans);font-weight:500;color:var(--ink-soft);text-align:center;letter-spacing:.01em;display:none}
+.ppb-step.active .ppb-step-label{display:block;color:var(--sage);font-weight:600}
+.ppb-step-connector{height:2px;flex:1;background:var(--line);border-radius:1px;margin-bottom:22px;transition:background .25s;min-width:8px}
+.ppb-step-connector.done{background:var(--sage)}
+/* ── Progress bar ───────────────────────────────────────────── */
+.ppb-progress-wrap{margin-bottom:6px}
+.ppb-progress-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-family:var(--sans);font-size:.82rem;color:var(--ink-soft)}
+.ppb-progress-meta strong{color:var(--ink)}
+.ppb-progress{background:var(--sand-deep);height:6px;border-radius:3px;overflow:hidden}
+.ppb-progress-bar{height:100%;background:var(--sage);border-radius:3px;transition:width .35s cubic-bezier(.16,1,.3,1);width:0%}
+/* ── Section ────────────────────────────────────────────────── */
+.ppb-section{display:none}.ppb-section.active{display:block;animation:ppbFade .2s ease}
+@keyframes ppbFade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.ppb-section-header{margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.ppb-section-title{font-size:1.4rem;color:var(--ink);margin:0 0 4px;font-family:var(--serif);font-weight:500;line-height:1.25}
+.ppb-section-subtitle{font-size:.9rem;color:var(--ink-soft);font-family:var(--sans);margin:0}
+/* ── Form elements ──────────────────────────────────────────── */
+.ppb-form-group{margin-bottom:22px}
+.ppb-form-group label{display:block;margin-bottom:8px;color:var(--ink);font-weight:600;font-size:.88rem;font-family:var(--sans);letter-spacing:.01em}
+.ppb-form-group input,.ppb-form-group select,.ppb-form-group textarea{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font-size:.95rem;box-sizing:border-box;font-family:var(--body-serif);transition:border-color .2s,box-shadow .2s;background:#fff;color:var(--ink)}
+.ppb-form-group input:focus,.ppb-form-group select:focus,.ppb-form-group textarea:focus{outline:none;border-color:var(--sage);box-shadow:0 0 0 3px rgba(30,96,64,.1)}
+.ppb-form-group select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%233d5248' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+.ppb-form-group textarea{min-height:100px;resize:vertical;line-height:1.65}
+/* ── Radio as cards ─────────────────────────────────────────── */
+.ppb-radio-cards{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.ppb-radio-card{display:flex;align-items:center;gap:14px;padding:14px 16px;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;transition:border-color .18s,background .18s;background:#fff}
+.ppb-radio-card:hover{border-color:var(--sage);background:var(--sand)}
+.ppb-radio-card input[type=radio]{width:18px;height:18px;accent-color:var(--sage);flex-shrink:0;cursor:pointer}
+.ppb-radio-card label{color:var(--ink);font-family:var(--sans);font-size:.93rem;cursor:pointer;margin:0;font-weight:400;line-height:1.4}
+.ppb-radio-card.selected{border-color:var(--sage);background:rgba(30,96,64,.04)}
+/* ── Checkboxes ─────────────────────────────────────────────── */
+.ppb-check-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.ppb-check-card{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;transition:border-color .18s,background .18s;background:#fff}
+.ppb-check-card:hover{border-color:var(--sage);background:var(--sand)}
+.ppb-check-card input[type=checkbox]{width:17px;height:17px;accent-color:var(--sage);flex-shrink:0;cursor:pointer}
+.ppb-check-card label{color:var(--ink);font-family:var(--sans);font-size:.88rem;cursor:pointer;margin:0;font-weight:400}
+/* ── Two-column row ─────────────────────────────────────────── */
+.ppb-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+/* ── Required marker ────────────────────────────────────────── */
+.ppb-req{color:var(--sage);font-weight:700}
+/* ── Help text ──────────────────────────────────────────────── */
+.ppb-help{font-size:.8rem;color:var(--ink-soft);margin-top:5px;font-family:var(--sans);line-height:1.5}
+/* ── Nav buttons ────────────────────────────────────────────── */
+.ppb-nav{display:flex;justify-content:space-between;align-items:center;margin-top:36px;padding-top:24px;border-top:1px solid var(--line);gap:12px}
+.ppb-btn-prev{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border:1.5px solid var(--line);border-radius:100px;font-size:.9rem;cursor:pointer;font-weight:600;font-family:var(--sans);background:#fff;color:var(--ink-soft);transition:all .2s}
+.ppb-btn-prev:hover:not(:disabled){border-color:var(--ink);color:var(--ink)}
+.ppb-btn-prev:disabled{opacity:.35;cursor:not-allowed}
+.ppb-btn-next{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border:none;border-radius:100px;font-size:.95rem;cursor:pointer;font-weight:600;font-family:var(--sans);background:var(--sage);color:#fff;transition:all .2s;box-shadow:0 4px 14px rgba(30,96,64,.28)}
+.ppb-btn-next:hover{background:var(--sage-deep);transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,96,64,.32)}
+/* ── Summary ────────────────────────────────────────────────── */
+.ppb-summary{background:var(--sand);border:1px solid var(--line);border-radius:14px;padding:28px;margin-top:4px}
+.ppb-summary-group{margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.ppb-summary-group:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.ppb-summary-group h4{font-family:var(--sans);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sage);margin:0 0 12px}
+.ppb-summary-row{display:flex;gap:12px;margin-bottom:8px;font-size:.9rem}
+.ppb-summary-row strong{font-family:var(--sans);font-weight:600;color:var(--ink);flex-shrink:0;min-width:140px}
+.ppb-summary-row span{color:var(--ink-soft)}
+/* ── Download / restart ─────────────────────────────────────── */
+.ppb-actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.ppb-btn-dl{flex:1;min-width:160px;padding:16px 24px;border:none;border-radius:100px;font-size:1rem;cursor:pointer;font-weight:600;font-family:var(--sans);background:var(--sage);color:#fff;box-shadow:0 4px 14px rgba(30,96,64,.28);transition:all .2s}
+.ppb-btn-dl:hover{background:var(--sage-deep);transform:translateY(-2px)}
+.ppb-btn-reset{flex:1;min-width:140px;padding:16px 24px;border:1.5px solid var(--line);border-radius:100px;font-size:.95rem;cursor:pointer;font-weight:600;font-family:var(--sans);background:#fff;color:var(--ink-soft);transition:all .2s}
+.ppb-btn-reset:hover{border-color:var(--ink);color:var(--ink)}
+/* ── Disclaimer ─────────────────────────────────────────────── */
+.ppb-disclaimer{font-size:.82rem;color:var(--ink-soft);background:var(--sand);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin-top:20px;font-family:var(--sans);line-height:1.65}
+.ppb-disclaimer strong{color:var(--ink)}
+/* ── Error state ────────────────────────────────────────────── */
+.ppb-error{border-color:var(--sage)!important;box-shadow:0 0 0 3px rgba(30,96,64,.15)!important}
+.ppb-error-msg{font-size:.8rem;color:var(--sage);font-family:var(--sans);margin-top:4px;display:none}
+/* ── Responsive ─────────────────────────────────────────────── */
+@media(max-width:640px){
+  .ppb-card{padding:24px 20px}
+  .ppb-row{grid-template-columns:1fr}
+  .ppb-check-grid{grid-template-columns:1fr}
+  .ppb-nav{flex-direction:column-reverse}
+  .ppb-btn-prev,.ppb-btn-next{width:100%;justify-content:center}
+  .ppb-actions{flex-direction:column}
+  .ppb-btn-dl,.ppb-btn-reset{width:100%;text-align:center}
+  .ppb-step-dot{width:24px;height:24px;font-size:.65rem}
+}
+</style>
+
+<div class="ppb-card">
+  <!-- Step indicator -->
+  <div class="ppb-stepper" id="ppbStepper" aria-label="Progress"></div>
+
+  <!-- Progress bar -->
+  <div class="ppb-progress-wrap">
+    <div class="ppb-progress-meta">
+      <span id="ppbStepLabel"><strong>Step 1 of 9:</strong> Parties &amp; Children</span>
+      <span id="ppbStepPct" style="font-weight:600;color:var(--sage)">11%</span>
+    </div>
+    <div class="ppb-progress" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100">
+      <div class="ppb-progress-bar" id="ppbProgressBar"></div>
+    </div>
+  </div>
+
+  <form id="ppbForm" novalidate>
+
+    <!-- Step 1: Parties -->
+    <div class="ppb-section active" data-section="1">
+      <div class="ppb-section-header">
+        <h3 class="ppb-section-title">Parties &amp; Children</h3>
+        <p class="ppb-section-subtitle">The people this agreement is between, and the children it covers.</p>
+      </div>
+      <div class="ppb-row">
+        <div class="ppb-form-group"><label>Party 1 Full Name <span class="ppb-req">*</span></label><input type="text" name="parent1_name" autocomplete="name" required placeholder="Full legal name"></div>
+        <div class="ppb-form-group"><label>Party 2 Full Name <span class="ppb-req">*</span></label><input type="text" name="parent2_name" autocomplete="off" required placeholder="Full legal name"></div>
+      </div>
+      <div class="ppb-row">
+        <div class="ppb-form-group"><label>Party 1 Address</label><input type="text" name="parent1_address" placeholder="Street address, suburb, state"></div>
+        <div class="ppb-form-group"><label>Party 2 Address</label><input type="text" name="parent2_address" placeholder="Street address, suburb, state"></div>
+      </div>
+      <div class="ppb-form-group"><label>Child / Children <span class="ppb-req">*</span></label><textarea name="children_info" required placeholder="Full name and date of birth for each child&#10;e.g. Sarah Elizabeth Smith, born 15 March 2016"></textarea><p class="ppb-help">Include all children covered by this agreement, one per line.</p></div>
+      <div class="ppb-row">
+        <div class="ppb-form-group"><label>Agreement Date <span class="ppb-req">*</span></label><input type="date" name="agreement_date" required></div>
+        <div class="ppb-form-group"><label>Review Date <span class="ppb-help" style="display:inline;font-style:normal">— optional</span></label><input type="date" name="review_date"></div>
+      </div>
+    </div>
+
+    <!-- Step 2: Parental Responsibility -->
+    <div class="ppb-section" data-section="2">
+      <div class="ppb-section-header">
+        <h3 class="ppb-section-title">Parental Responsibility</h3>
+        <p class="ppb-section-subtitle">Who makes major long-term decisions about the children.</p>
+      </div>
+      <div class="ppb-form-group">
+        <label>Parental Responsibility Arrangement <span class="ppb-req">*</span></label>
+        <div class="ppb-radio-cards">
+          <div class="ppb-radio-card"><input type="radio" name="parental_responsibility" value="equal" id="ppb_r1" required><label for="ppb_r1">Equal shared parental responsibility — both parents decide together on major issues</label></div>
+          <div class="ppb-radio-card"><input type="radio" name="parental_responsibility" value="sole_parent1" id="ppb_r2"><label for="ppb_r2">Sole parental responsibility to Party 1</label></div>
+          <div class="ppb-radio-card"><input type="radio" name="parental_responsibility" value="sole_parent2" id="ppb_r3"><label for="ppb_r3">Sole parental responsibility to Party 2</label></div>
+        </div>
+      </div>
+      <div class="ppb-form-group">
+        <label>Major decisions requiring consultation between both parties</label>
+        <div class="ppb-check-grid">
+          <div class="ppb-check-card"><input type="checkbox" name="major_decisions[]" value="education" id="ppb_m1"><label for="ppb_m1">Education</label></div>
+          <div class="ppb-check-card"><input type="checkbox" name="major_decisions[]" value="major medical treatment" id="ppb_m2"><label for="ppb_m2">Major medical treatment</label></div>
+          <div class="ppb-check-card"><input type="checkbox" name="major_decisions[]" value="religious upbringing" id="ppb_m3"><label for="ppb_m3">Religious upbringing</label></div>
+          <div class="ppb-check-card"><input type="checkbox" name="major_decisions[]" value="relocation" id="ppb_m4"><label for="ppb_m4">Relocation</label></div>
+          <div class="ppb-check-card"><input type="checkbox" name="major_decisions[]" value="name changes" id="ppb_m5"><label for="ppb_m5">Name changes</label></div>
+          <div class="ppb-check-card"><input type="checkbox" name="major_decisions[]" value="passport applications" id="ppb_m6"><label for="ppb_m6">Passport applications</label></div>
+        </div>
+      </div>
+      <div class="ppb-form-group"><label>Cultural &amp; Religious Upbringing</label><textarea name="cultural_upbringing" placeholder="e.g. Both parties agree to support the children's participation in cultural events, speak both English and Mandarin at home, and observe significant religious occasions from both families"></textarea><p class="ppb-help">Day-to-day cultural practices, language, dietary requirements, and religious observances — separate from the major-decision veto above.</p></div>
+    </div>
+
+    <!-- Step 3: Living Arrangements -->
+    <div class="ppb-section" data-section="3">
+      <div class="ppb-section-header">
+        <h3 class="ppb-section-title">Living Arrangements</h3>
+        <p class="ppb-section-subtitle">Where the children live and the regular care schedule.</p>
+      </div>
+      <div class="ppb-form-group">
+        <label>The child/children shall live with <span class="ppb-req">*</span></label>
+        <div class="ppb-radio-cards">
+          <div class="ppb-radio-card"><input type="radio" name="primary_residence" value="equal" id="ppb_res1" required><label for="ppb_res1">Both parties equally — shared care arrangement</label></div>
+          <div class="ppb-radio-card"><input type="radio" name="primary_residence" value="parent1" id="ppb_res2"><label for="ppb_res2">Primarily with Party 1</label></div>
+          <div class="ppb-radio-card"><input type="radio" name="primary_residence" value="parent2" id="ppb_res3"><label for="ppb_res3">Primarily with Party 2</label></div>
+        </div>
+      </div>
+      <div class="ppb-form-group">
+        <label>Regular Care Schedule <span class="ppb-req">*</span></label>
+        <select name="schedule_type" required>
+          <option value="">Select a schedule</option>
+          <option value="week about (alternating weeks)">Week about — alternating weeks</option>
+          <option value="2-2-5-5 schedule">2-2-5-5 schedule</option>
+          <option value="2-2-3-3 schedule">2-2-3-3 schedule</option>
+          <option value="alternate weekends">Alternate weekends with one parent</option>
+          <option value="custom">Custom — I'll describe it below</option>
+        </select>
+      </div>
+      <div class="ppb-form-group"><label>Detailed Schedule</label><textarea name="schedule_details" placeholder="Specific days, times, and any weekly variations"></textarea></div>
+      <div class="ppb-form-group"><label>Changeover — time and location</label><textarea name="changeover_details" placeholder="e.g. Friday at 6:00 pm at the child's school"></textarea></div>
+      <div class="ppb-form-group"><label>Grandparents &amp; Extended Family</label><textarea name="extended_family" placeholder="e.g. Both parties support the children maintaining relationships with grandparents and extended family on both sides; reasonable time with extended family may occur during each parent's care time without requiring consent from the other parent"></textarea><p class="ppb-help">The Family Law Act recognises children's right to relationships with grandparents and other significant people in their lives.</p></div>
+    </div>
+
+    <!-- Step 4: Holidays -->
+    <div class="ppb-section" data-section="4">
+      <div class="ppb-section-header">
+        <h3 class="ppb-section-title">Holidays &amp; Special Days</h3>
+        <p class="ppb-section-subtitle">How school holidays and significant days are divided. Leave blank any that don't apply.</p>
+      </div>
+      <div class="ppb-row">
+        <div class="ppb-form-group"><label>Christmas &amp; New Year</label><textarea name="christmas_arrangement" placeholder="e.g. Christmas Day with Party 1 in odd years, Party 2 in even years"></textarea></div>
+        <div class="ppb-form-group"><label>Easter</label><textarea name="easter_arrangement" placeholder="e.g. Easter weekend alternates each year"></textarea></div>
+      </div>
+      <div class="ppb-form-group"><label>School Holiday Periods</label><textarea name="school_holidays" placeholder="e.g. School holidays split equally — each party takes two weeks per term break"></textarea></div>
+      <div class="ppb-row">
+        <div class="ppb-form-group"><label>Children's Birthdays</label><textarea name="children_birthdays" placeholder="e.g. Both parents attend birthday celebrations where possible"></textarea></div>
+        <div class="ppb-form-group"><label>Mother's Day &amp; Father's Day</label><textarea name="parents_day" placeholder="e.g. Children spend Mother's Day with Party 1, Father's Day with Party 2"></textarea></div>
+      </div>
+    </div>
+
+    <!-- Step 5: Communication -->
+    <div class="ppb-section" data-section="5">
+      <div class="ppb-section-header">
+        <h3 class="ppb-section-title">Communication</h3>
+        <p class="ppb-section-subtitle">How the parents communicate, and how the children stay in touch with the other parent.</p>
+      </div>
+      <div class="ppb-form-group">
+        <label>Communication between parents</label>
+        <div class="ppb-check-grid">
+          <div class="ppb-check-card"><input type="checkbox" name="parent_communication[]" value="email" id="ppb_c1"><label for="ppb_c1">Email</label></div>
+          <div class="ppb-check-card"><input type="checkbox" name="parent_communication[]" value="text message" id="ppb_c2"><label for="ppb_c2">Text message</label></div>
+          <div class="ppb-check-card"><input type="checkbox" name="parent_communication[]" value="phone calls" id="ppb_c3"><label for="ppb_c3">Phone calls</label></div>
+          <div class="ppb-check-card"><input type="checkbox" name="parent_communication[]" value="parenting app" id="ppb_c4"><label for="ppb_c4">Parenting app (e.g. OurFamilyWizard)</label></div>
+        </div>
+      </div>
+      <div class="ppb-form-group"><label>Child's contact with the other parent</label><textarea name="child_contact" placeholder="e.g. Daily phone or video call at 7:00 pm when staying with the other parent"></textarea></div>
+      <div class="ppb-form-group"><label>Photos &amp; Social Media</label><textarea name="social_media" placeholder="e.g. Both parties agree not to post images of the children on social media without the other parent's consent; photos shared privately between the parties only"></textarea><p class="ppb-help">One of the most common modern parenting disputes — worth agreeing on explicitly.</p></div>
+    </div>
+
+    <!-- Step 6: Education -->
+    <div class="ppb-section" data-section="6">
+      <div class="ppb-section-header">
+        <h3 class="ppb-section-title">Education</h3>
+        <p class="ppb-section-subtitle">School decisions and extracurricular activities.</p>
+      </div>
+      <div class="ppb-form-group">
+        <label>School Selection</label>
+        <div class="ppb-radio-cards">
+          <div class="ppb-radio-card"><input type="radio" name="school_selection" value="joint decision by both parties" id="ppb_s1"><label for="ppb_s1">Joint decision by both parties</label></div>
+          <div class="ppb-radio-card"><input type="radio" name="school_selection" value="primary carer decides after consultation" id="ppb_s2"><label for="ppb_s2">Primary carer decides after consultation</label></div>
+          <div class="ppb-radio-card"><input type="radio" name="school_selection" value="continue at current school" id="ppb_s3"><label for="ppb_s3">Continue at current school</label></div>
+        </div>
+      </div>
+      <div class="ppb-form-group"><label>Extracurricular Activities</label><textarea name="extracurricular_activities" placeholder="e.g. Both parties support current activities; new activities require agreement"></textarea></div>
+    </div>
+
+    <!-- Step 7: Health -->
+    <div class="ppb-section" data-section="7">
+      <div class="ppb-section-header">
+        <h3 class="ppb-section-title">Health &amp; Medical Care</h3>
+        <p class="ppb-section-subtitle">Medical decision-making and expense responsibilities.</p>
+      </div>
+      <div class="ppb-form-group">
+        <label>Medical Decision Making</label>
+        <div class="ppb-radio-cards">
+          <div class="ppb-radio-card"><input type="radio" name="medical_decisions" value="joint decisions for all medical treatment" id="ppb_md1"><label for="ppb_md1">Joint decisions for all medical treatment</label></div>
+          <div class="ppb-radio-card"><input type="radio" name="medical_decisions" value="joint for major decisions; either parent for routine and emergency care" id="ppb_md2"><label for="ppb_md2">Joint for major decisions; either parent for routine and emergency</label></div>
+          <div class="ppb-radio-card"><input type="radio" name="medical_decisions" value="primary carer decides after consultation" id="ppb_md3"><label for="ppb_md3">Primary carer decides after consultation with the other</label></div>
+        </div>
+      </div>
+      <div class="ppb-row">
+        <div class="ppb-form-group"><label>Health Insurance &amp; Expenses</label><textarea name="medical_expenses" placeholder="e.g. Both parties share Medicare and private health costs equally"></textarea></div>
+        <div class="ppb-form-group"><label>Special Health Needs</label><textarea name="special_health_needs" placeholder="Any ongoing conditions, medications, or specialist requirements"></textarea></div>
+      </div>
+    </div>
+
+    <!-- Step 8: Financial -->
+    <div class="ppb-section" data-section="8">
+      <div class="ppb-section-header">
+        <h3 class="ppb-section-title">Financial Provisions</h3>
+        <p class="ppb-section-subtitle">Child support and how ongoing costs will be shared.</p>
+      </div>
+      <div class="ppb-form-group">
+        <label>Child Support</label>
+        <div class="ppb-radio-cards">
+          <div class="ppb-radio-card"><input type="radio" name="child_support" value="Services Australia child support assessment" id="ppb_cs1"><label for="ppb_cs1">Services Australia assessment</label></div>
+          <div class="ppb-radio-card"><input type="radio" name="child_support" value="private child support agreement between the parties" id="ppb_cs2"><label for="ppb_cs2">Private agreement between the parties</label></div>
+          <div class="ppb-radio-card"><input type="radio" name="child_support" value="no child support payable" id="ppb_cs3"><label for="ppb_cs3">No child support payable</label></div>
+        </div>
+      </div>
+      <div class="ppb-form-group"><label>Child Support Details</label><textarea name="support_details" placeholder="Amount, frequency, and payment method if private agreement"></textarea></div>
+      <div class="ppb-row">
+        <div class="ppb-form-group"><label>Education Expenses</label><textarea name="education_expenses" placeholder="e.g. School fees and uniforms shared equally"></textarea></div>
+        <div class="ppb-form-group"><label>Medical &amp; Dental Expenses</label><textarea name="health_expenses" placeholder="e.g. Out-of-pocket costs shared equally after Medicare rebate"></textarea></div>
+      </div>
+    </div>
+
+    <!-- Step 9: Dispute Resolution -->
+    <div class="ppb-section" data-section="9">
+      <div class="ppb-section-header">
+        <h3 class="ppb-section-title">Dispute Resolution &amp; Other Provisions</h3>
+        <p class="ppb-section-subtitle">How disagreements will be handled, and any other terms you want to include.</p>
+      </div>
+      <div class="ppb-form-group"><label>Dispute Resolution Process</label><textarea name="dispute_process" placeholder="e.g. Direct discussion first, then Family Dispute Resolution with an accredited mediator, then legal proceedings if unresolved"></textarea></div>
+      <div class="ppb-row">
+        <div class="ppb-form-group"><label>Domestic Travel</label><textarea name="travel_domestic" placeholder="e.g. Either parent may travel within Australia with the children; the other parent to be notified at least 7 days in advance with destination and contact details"></textarea></div>
+        <div class="ppb-form-group"><label>International Travel</label><textarea name="travel_international" placeholder="e.g. International travel requires written consent from both parties at least 30 days in advance; passports held by Party 1 and released for travel only by written agreement"></textarea></div>
+      </div>
+      <div class="ppb-row">
+        <div class="ppb-form-group"><label>Relocation</label><textarea name="relocation" placeholder="e.g. Neither party may relocate with the children more than 50km from their current residence without written agreement from the other party or a court order"></textarea></div>
+        <div class="ppb-form-group"><label>Introduction of New Partners</label><textarea name="new_partners" placeholder="e.g. New partners introduced only after 6 months of relationship"></textarea></div>
+      </div>
+      <div class="ppb-form-group"><label>Additional Provisions</label><textarea name="additional_provisions" placeholder="Any other terms the parties agree to include"></textarea></div>
+    </div>
+
+    <!-- Step 10: Review -->
+    <div class="ppb-section" data-section="10">
+      <div class="ppb-section-header">
+        <h3 class="ppb-section-title">Review &amp; Download</h3>
+        <p class="ppb-section-subtitle">Check your answers, then download a ready-to-sign PDF.</p>
+      </div>
+      <div class="ppb-summary" id="ppbPlanSummary"></div>
+      <div class="ppb-disclaimer">
+        <strong>Important:</strong> A parenting plan is a written agreement but is not directly enforceable by a court. To make your arrangements legally enforceable, you must apply for <a href="/consent-orders/">consent orders</a>. Independent legal advice is recommended before signing. This builder is a free tool only — it does not create a lawyer-client relationship with Mediations Australia.
+      </div>
+      <div class="ppb-actions">
+        <button type="button" class="ppb-btn-dl" id="ppbDownloadBtn">Download PDF Agreement →</button>
+        <button type="button" class="ppb-btn-reset" id="ppbRestartBtn">Start Over</button>
+      </div>
+    </div>
+
+  </form>
+
+  <div class="ppb-nav" id="ppbNav">
+    <button type="button" class="ppb-btn-prev" id="ppbPrevBtn" disabled>← Previous</button>
+    <button type="button" class="ppb-btn-next" id="ppbNextBtn">Next →</button>
+  </div>
+</div><!-- /.ppb-card -->
+</div><!-- /max-width wrapper -->
+</div><!-- /.wrap -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+(function(){
+  var TOTAL=10;
+  var STEP_NAMES=['Parties & Children','Parental Responsibility','Living Arrangements','Holidays & Special Days','Communication','Education','Health & Medical','Financial','Dispute Resolution','Review & Download'];
+  var cur=1;
+  var form=document.getElementById('ppbForm');
+  var progBar=document.getElementById('ppbProgressBar');
+  var prevBtn=document.getElementById('ppbPrevBtn');
+  var nextBtn=document.getElementById('ppbNextBtn');
+  var navEl=document.getElementById('ppbNav');
+  var stepperEl=document.getElementById('ppbStepper');
+  var stepLabelEl=document.getElementById('ppbStepLabel');
+  var stepPctEl=document.getElementById('ppbStepPct');
+
+  /* Build mini step dots */
+  for(var i=1;i<=TOTAL;i++){
+    var dot=document.createElement('div');
+    dot.className='ppb-step'+(i===1?' active':'');
+    dot.setAttribute('data-step',i);
+    dot.innerHTML='<div class="ppb-step-dot">'+i+'</div><div class="ppb-step-label">'+STEP_NAMES[i-1]+'</div>';
+    stepperEl.appendChild(dot);
+    if(i<TOTAL){var conn=document.createElement('div');conn.className='ppb-step-connector';conn.setAttribute('data-conn',i);stepperEl.appendChild(conn);}
+  }
+
+  /* Highlight radio-cards on click */
+  form.addEventListener('change',function(e){
+    var el=e.target;
+    if(el.type==='radio'){
+      var name=el.name;
+      form.querySelectorAll('[name="'+name+'"]').forEach(function(r){
+        var card=r.closest('.ppb-radio-card');
+        if(card) card.classList.toggle('selected',r.checked);
+      });
+    }
+  });
+
+  function gd(n){return(new FormData(form).get(n)||'').toString();}
+
+  function updateUI(){
+    var pct=Math.round(cur/TOTAL*100);
+    progBar.style.width=pct+'%';
+    progBar.parentElement.setAttribute('aria-valuenow',pct);
+    stepLabelEl.innerHTML='<strong>Step '+cur+' of '+TOTAL+':</strong> '+STEP_NAMES[cur-1];
+    stepPctEl.textContent=pct+'%';
+    /* Stepper dots */
+    stepperEl.querySelectorAll('.ppb-step').forEach(function(s){
+      var n=parseInt(s.getAttribute('data-step'));
+      s.classList.toggle('done',n<cur);
+      s.classList.toggle('active',n===cur);
+    });
+    stepperEl.querySelectorAll('.ppb-step-connector').forEach(function(c){
+      c.classList.toggle('done',parseInt(c.getAttribute('data-conn'))<cur);
+    });
+    prevBtn.disabled=(cur===1);
+    if(cur===TOTAL){nextBtn.style.display='none';}
+    else if(cur===TOTAL-1){nextBtn.style.display='';nextBtn.innerHTML='Review &amp; Finish →';}
+    else{nextBtn.style.display='';nextBtn.innerHTML='Next →';}
+  }
+
+  function changeSection(dir){
+    form.querySelector('[data-section="'+cur+'"]').classList.remove('active');
+    cur=Math.min(Math.max(cur+dir,1),TOTAL);
+    form.querySelector('[data-section="'+cur+'"]').classList.add('active');
+    if(cur===TOTAL) generateSummary();
+    updateUI();
+    /* Autosave on advance */
+    autosave();
+    /* Scroll builder card into view */
+    document.getElementById('ppbForm').closest('.ppb-card').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  prevBtn.addEventListener('click',function(){changeSection(-1);});
+  nextBtn.addEventListener('click',function(){changeSection(1);});
+
+  function generateSummary(){
+    var fd=new FormData(form);
+    var majors=fd.getAll('major_decisions[]');
+    var comms=fd.getAll('parent_communication[]');
+    var row=function(label,val){return val?'<div class="ppb-summary-row"><strong>'+label+'</strong><span>'+(val||'—')+'</span></div>':'';}
+    var group=function(title,rows){return'<div class="ppb-summary-group"><h4>'+title+'</h4>'+rows+'</div>';};
+    var h='';
+    h+=group('Parties',
+      row('Party 1',gd('parent1_name'))+
+      row('Party 2',gd('parent2_name'))+
+      row('Children',gd('children_info').replace(/\\n/g,'; '))+
+      row('Agreement date',gd('agreement_date'))
+    );
+    h+=group('Parental Responsibility &amp; Residence',
+      row('Parental responsibility',gd('parental_responsibility').replace(/_/g,' '))+
+      (majors.length?row('Joint decisions',majors.join(', ')):'')+
+      row('Children live with',gd('primary_residence').replace(/_/g,' '))+
+      row('Schedule',gd('schedule_type'))
+    );
+    h+=group('Holidays &amp; Communication',
+      row('Christmas',gd('christmas_arrangement'))+
+      row('Easter',gd('easter_arrangement'))+
+      row('School holidays',gd('school_holidays'))+
+      (comms.length?row('Parent communication',comms.join(', ')):'')
+    );
+    h+=group('Education, Health &amp; Finance',
+      row('School selection',gd('school_selection'))+
+      row('Medical decisions',gd('medical_decisions'))+
+      row('Child support',gd('child_support'))
+    );
+    document.getElementById('ppbPlanSummary').innerHTML=h;
+  }
+
+  /* ---- PDF ---- */
+  document.getElementById('ppbDownloadBtn').addEventListener('click',function(){
+    if(typeof window.jspdf==='undefined'){alert('PDF library loading — please wait a moment and try again.');return;}
+    var jsPDF=window.jspdf.jsPDF;
+    var doc=new jsPDF();
+    var fd=new FormData(form);
+    var g=function(n){return(fd.get(n)||'[To be specified]').toString().trim();};
+    var M=20,W=170; var y=30;
+    var chk=function(need){if(y+need>280){doc.addPage();y=20;}};
+    var para=function(text,size,bold,gap){
+      doc.setFont('helvetica',bold?'bold':'normal');doc.setFontSize(size);
+      var lines=doc.splitTextToSize(text,W);
+      chk(lines.length*(size*0.5));
+      doc.text(lines,M,y);y+=lines.length*(size*0.5)+(gap||4);
+    };
+    /* Cover */
+    doc.setFont('helvetica','bold');doc.setFontSize(20);
+    doc.text('PARENTING PLAN AGREEMENT',105,y,{align:'center'});y+=14;
+    doc.setFont('helvetica','normal');doc.setFontSize(12);
+    doc.text('Dated: '+g('agreement_date'),105,y,{align:'center'});y+=8;
+    doc.text('Between '+g('parent1_name')+' and '+g('parent2_name'),105,y,{align:'center'});y+=12;
+    para('Concerning: '+g('children_info').replace(/\\n/g,'; '),11,false,10);
+    para('PREAMBLE',13,true,6);
+    para('This Parenting Plan is made between '+g('parent1_name')+' and '+g('parent2_name')+' in relation to the care, welfare and development of the above-named child/children. The parties acknowledge that it is in the best interests of the child/children that both parents continue to have meaningful relationships with them, consistent with the best interests principle under the Family Law Act 1975 (Cth).',11,false,10);
+    /* Clause 1 */
+    para('1. PARENTAL RESPONSIBILITY',12,true,6);
+    var pr=g('parental_responsibility');
+    if(pr==='equal') para('1.1 The parties shall have equal shared parental responsibility for the child/children.',11,false,4);
+    else if(pr==='sole_parent1') para('1.1 '+g('parent1_name')+' shall have sole parental responsibility for the child/children.',11,false,4);
+    else if(pr==='sole_parent2') para('1.1 '+g('parent2_name')+' shall have sole parental responsibility for the child/children.',11,false,4);
+    var majors=fd.getAll('major_decisions[]');
+    if(majors.length) para('1.2 The following major long-term decisions shall require consultation between both parties: '+majors.join(', ')+'.',11,false,4);
+    if(g('cultural_upbringing')!=='[To be specified]') para('1.3 Cultural and religious upbringing: '+g('cultural_upbringing'),11,false,10);
+    else y+=6;
+    /* Clause 2 */
+    para('2. LIVING ARRANGEMENTS',12,true,6);
+    var res=g('primary_residence');
+    if(res==='equal') para('2.1 The child/children shall spend equal time with both parties in a shared care arrangement.',11,false,4);
+    else if(res==='parent1') para('2.1 The child/children shall live primarily with '+g('parent1_name')+' and spend time with '+g('parent2_name')+' per the schedule below.',11,false,4);
+    else if(res==='parent2') para('2.1 The child/children shall live primarily with '+g('parent2_name')+' and spend time with '+g('parent1_name')+' per the schedule below.',11,false,4);
+    para('2.2 Care schedule: '+g('schedule_type')+'.',11,false,4);
+    if(g('schedule_details')!=='[To be specified]') para('2.3 '+g('schedule_details'),11,false,4);
+    if(g('changeover_details')!=='[To be specified]') para('2.4 Changeovers: '+g('changeover_details'),11,false,4);
+    if(g('extended_family')!=='[To be specified]') para('2.5 Grandparents and extended family: '+g('extended_family'),11,false,10);
+    else y+=6;
+    /* Clause 3 */
+    para('3. HOLIDAYS AND SPECIAL OCCASIONS',12,true,6);
+    [['3.1 Christmas and New Year','christmas_arrangement'],['3.2 Easter','easter_arrangement'],['3.3 School holidays','school_holidays'],['3.4 Birthdays','children_birthdays'],["3.5 Mother's and Father's Day",'parents_day']].forEach(function(a){if(g(a[1])!=='[To be specified]') para(a[0]+': '+g(a[1]),11,false,4);});y+=4;
+    /* Clause 4 */
+    para('4. COMMUNICATION',12,true,6);
+    var comms=fd.getAll('parent_communication[]');
+    if(comms.length) para('4.1 Communication between parents shall be by: '+comms.join(', ')+'.',11,false,4);
+    if(g('child_contact')!=='[To be specified]') para('4.2 The child/children may contact the other parent: '+g('child_contact'),11,false,4);
+    if(g('social_media')!=='[To be specified]') para('4.3 Photos and social media: '+g('social_media'),11,false,10);
+    else y+=6;
+    /* Clause 5 */
+    para('5. EDUCATION',12,true,6);
+    if(g('school_selection')!=='[To be specified]') para('5.1 School selection: '+g('school_selection')+'.',11,false,4);
+    if(g('extracurricular_activities')!=='[To be specified]') para('5.2 Extracurricular activities: '+g('extracurricular_activities'),11,false,10);
+    /* Clause 6 */
+    para('6. HEALTH AND MEDICAL CARE',12,true,6);
+    if(g('medical_decisions')!=='[To be specified]') para('6.1 Medical decision making: '+g('medical_decisions')+'.',11,false,4);
+    if(g('medical_expenses')!=='[To be specified]') para('6.2 Health insurance and expenses: '+g('medical_expenses'),11,false,4);
+    if(g('special_health_needs')!=='[To be specified]') para('6.3 Special health needs: '+g('special_health_needs'),11,false,10);
+    /* Clause 7 */
+    para('7. FINANCIAL PROVISIONS',12,true,6);
+    para('7.1 Child support: '+g('child_support')+'.',11,false,4);
+    if(g('support_details')!=='[To be specified]') para('7.2 Details: '+g('support_details'),11,false,4);
+    if(g('education_expenses')!=='[To be specified]') para('7.3 Education expenses: '+g('education_expenses'),11,false,4);
+    if(g('health_expenses')!=='[To be specified]') para('7.4 Medical and dental expenses: '+g('health_expenses'),11,false,10);
+    /* Clause 8 */
+    para('8. DISPUTE RESOLUTION AND OTHER PROVISIONS',12,true,6);
+    para('8.1 Dispute resolution: '+(g('dispute_process')!=='[To be specified]'?g('dispute_process'):'The parties agree to attempt resolution through direct discussion and, if unresolved, Family Dispute Resolution before commencing court proceedings.'),11,false,4);
+    if(g('travel_domestic')!=='[To be specified]') para('8.2 Domestic travel: '+g('travel_domestic'),11,false,4);
+    if(g('travel_international')!=='[To be specified]') para('8.3 International travel: '+g('travel_international'),11,false,4);
+    if(g('relocation')!=='[To be specified]') para('8.4 Relocation: '+g('relocation'),11,false,4);
+    if(g('new_partners')!=='[To be specified]') para('8.5 Introduction of new partners: '+g('new_partners'),11,false,4);
+    if(g('additional_provisions')!=='[To be specified]') para('8.6 Additional provisions: '+g('additional_provisions'),11,false,10);
+    /* Execution page */
+    doc.addPage();y=20;
+    para('EXECUTION',12,true,6);
+    para('The parties agree to be bound by the terms of this Parenting Plan and acknowledge they have read and understood its contents. This Plan may be varied by mutual written agreement at any time.',11,false,8);
+    doc.setFont('helvetica','italic');doc.setFontSize(9);
+    var notice=doc.splitTextToSize('IMPORTANT: A parenting plan is not a legally enforceable agreement. If you want your agreement to be legally binding and enforceable, you must apply to the Family Court for consent orders. Seek independent legal advice before signing.',W);
+    doc.text(notice,M,y);y+=notice.length*4.5+18;
+    doc.setFont('helvetica','normal');doc.setFontSize(11);
+    doc.text('SIGNED:',M,y);y+=6;
+    doc.line(M,y+14,90,y+14);doc.text(g('parent1_name'),M,y+21);doc.text('Date: __________________',M,y+30);
+    doc.line(110,y+14,180,y+14);doc.text(g('parent2_name'),110,y+21);doc.text('Date: __________________',110,y+30);
+    doc.setFontSize(8);
+    doc.text('Generated by Mediations Australia Parenting Plan Builder — www.mediationsaustralia.com.au',105,288,{align:'center'});
+    doc.save('parenting-plan-agreement.pdf');
+  });
+
+  document.getElementById('ppbRestartBtn').addEventListener('click',function(){
+    if(!confirm('Start over? All entered information will be lost.')) return;
+    form.reset();
+    try{sessionStorage.removeItem('ppbData');}catch(e){}
+    form.querySelectorAll('.ppb-section').forEach(function(s){s.classList.remove('active');});
+    form.querySelector('[data-section="1"]').classList.add('active');
+    cur=1;
+    updateUI();
+  });
+
+  /* Autosave */
+  var saveTimer;
+  form.addEventListener('input',function(){
+    clearTimeout(saveTimer);
+    saveTimer=setTimeout(autosave,800);
+  });
+  function autosave(){
+    var fd=new FormData(form),data={};
+    fd.forEach(function(v,k){
+      if(data[k]===undefined) data[k]=v;
+      else{if(!Array.isArray(data[k])) data[k]=[data[k]]; data[k].push(v);}
+    });
+    try{sessionStorage.setItem('ppbData',JSON.stringify(data));}catch(e){}
+  }
+
+  /* Restore */
+  try{
+    var saved=sessionStorage.getItem('ppbData');
+    if(saved){
+      var data=JSON.parse(saved);
+      Object.keys(data).forEach(function(k){
+        var nodes=form.querySelectorAll('[name="'+k.replace(/"/g,'')+'"]');
+        nodes.forEach(function(f){
+          if(f.type==='radio'||f.type==='checkbox'){
+            f.checked=Array.isArray(data[k])?data[k].includes(f.value):f.value===data[k];
+            if(f.checked&&f.type==='radio'){
+              var card=f.closest('.ppb-radio-card');
+              if(card) card.classList.add('selected');
+            }
+          } else { f.value=data[k]; }
+        });
+      });
+    }
+  }catch(e){}
+
+  updateUI();
+})();
+</script>
+</section>
+"""
 
 # ---- PARENTING PLAN TEMPLATE ----
 build("parenting-plan-template",
@@ -148,7 +767,8 @@ build("parenting-plan-template",
    "Specific enough that neither parent has to negotiate week by week. Vague terms like 'reasonable time' cause disputes. Specify days, times, locations, and fallback arrangements for common scenarios like illness or late pick-up.")],
  "Parenting Plan Template",
  "Build a parenting plan that <em>actually works</em>.",
- "Book a free initial consultation and let an accredited mediator help you create a complete, child-focused parenting plan.")
+ "Book a free initial consultation and let an accredited mediator help you create a complete, child-focused parenting plan.",
+ tool_html=PARENTING_BUILDER,tool_position='before')
 
 # ---- BFA OR CONSENT ORDERS ----
 build("bfa-or-consent-orders",
