@@ -1,288 +1,17 @@
-<!DOCTYPE html>
-<html lang="en-AU">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Preparing for Mediation | Free Australian Preparation Tool</title>
-<meta name="description" content="Use our free guided tool to prepare for mediation in Australia. Identify issues, clarify priorities, and download a personal Mediation Preparation Summary. Plus: practical tips from accredited mediators.">
-<link rel="canonical" href="https://www.mediationsaustralia.com.au/preparing-for-mediation/">
-<link rel="icon" type="image/png" href="/assets/images/favicon.png">
-<link rel="apple-touch-icon" href="/assets/images/favicon.png">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Preparing for Mediation | Free Australian Preparation Tool">
-<meta property="og:description" content="Use our free guided tool to prepare for mediation in Australia. Identify issues, clarify priorities, and download a personal Mediation Preparation Summary. Plus: practical tips from accredited mediators.">
-<meta property="og:url" content="https://www.mediationsaustralia.com.au/preparing-for-mediation/">
-<meta property="og:image" content="https://www.mediationsaustralia.com.au/assets/images/MA-social.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:site_name" content="Mediations Australia">
-<meta property="og:locale" content="en_AU">
-<meta name="twitter:image" content="https://www.mediationsaustralia.com.au/assets/images/MA-social.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Preparing for Mediation | Free Australian Preparation Tool">
-<meta name="twitter:description" content="Use our free guided tool to prepare for mediation in Australia. Identify issues, clarify priorities, and download a personal Mediation Preparation Summary. Plus: practical tips from accredited mediators.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LegalService",
-      "@id": "https://www.mediationsaustralia.com.au/#organization",
-      "name": "Mediations Australia",
-      "description": "Nationally accredited mediators resolving family, business, workplace, property and estate disputes across Australia without court.",
-      "url": "https://www.mediationsaustralia.com.au/",
-      "telephone": "1800 952 380",
-      "areaServed": "AU",
-      "priceRange": "Free initial consultation",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "addressLocality": "Sydney",
-          "streetAddress": "Suite 508, 41/464–480 Kent St, NSW 2000",
-          "addressCountry": "AU"
-        },
-        {
-          "@type": "PostalAddress",
-          "addressLocality": "Melbourne",
-          "streetAddress": "Level 23, 727 Collins St, VIC 3008",
-          "addressCountry": "AU"
-        },
-        {
-          "@type": "PostalAddress",
-          "addressLocality": "Brisbane",
-          "streetAddress": "Suite 507, 198 Adelaide St, QLD 4000",
-          "addressCountry": "AU"
-        },
-        {
-          "@type": "PostalAddress",
-          "addressLocality": "Perth",
-          "streetAddress": "Level 25, 108 St Georges Tce, WA 6000",
-          "addressCountry": "AU"
-        }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/mediationsaustralia",
-        "https://www.linkedin.com/company/mediations-australia",
-        "https://www.youtube.com/@mediationsaustralia"
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.mediationsaustralia.com.au/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Preparing for Mediation",
-          "item": "https://www.mediationsaustralia.com.au/preparing-for-mediation/"
-        }
-      ]
-    },
-    {
-      "@type": "Article",
-      "headline": "Preparing for Mediation — Free Australian Tool",
-      "description": "A free guided preparation tool and practical guide for Australians preparing for mediation.",
-      "datePublished": "2026-08-09",
-      "dateModified": "2026-08-09",
-      "image": "https://www.mediationsaustralia.com.au/assets/images/MA-social.png",
-      "author": {
-        "@type": "Person",
-        "@id": "https://www.mediationsaustralia.com.au/#dan-toombs",
-        "name": "Dan Toombs",
-        "jobTitle": "Founder & Accredited Mediator",
-        "description": "Dan Toombs is an AMDRAS-accredited mediator, award-winning lawyer, former tribunal member (QCAT), former CEO and Board Director, and Winston Churchill Fellow. He founded Mediations Australia to give individuals and businesses a practical, durable alternative to litigation.",
-        "url": "https://www.mediationsaustralia.com.au/our-team/dan-toombs/",
-        "image": "https://www.mediationsaustralia.com.au/assets/images/Dan-Bio.png",
-        "sameAs": [
-          "https://www.linkedin.com/in/dantoombs/",
-          "https://amdras.au/",
-          "https://www.churchilltrust.com.au/"
-        ],
-        "knowsAbout": [
-          "Family law mediation",
-          "Workplace mediation",
-          "Commercial mediation",
-          "Dispute resolution",
-          "Fair Work Act",
-          "Belbin Team Roles",
-          "Adaptive Leadership"
-        ],
-        "hasCredential": [
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "AMDRAS Accredited Mediator"
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "name": "Winston Churchill Fellow"
-          }
-        ],
-        "memberOf": {
-          "@type": "Organization",
-          "@id": "https://www.mediationsaustralia.com.au/#organization"
-        }
-      },
-      "publisher": {
-        "@id": "https://www.mediationsaustralia.com.au/#organization"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What should I bring to a mediation session?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Bring any relevant documents — financial records or property valuations for property matters, a list of issues you want to cover, and any proposals you have considered. Having these organised before the session helps you use the time well."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How should I prepare emotionally for mediation?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Acknowledge that it may be difficult. Focus on your goals rather than past grievances, and think about what you genuinely need versus what you would merely prefer. A clear sense of priorities helps enormously — which is exactly what the preparation tool above is designed to help you build."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I bring a support person?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Often yes, depending on the type of mediation. Discuss it with your mediator beforehand so suitable arrangements can be made that keep the process balanced and productive."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if I'm worried about facing the other person?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tell us in advance. Shuttle mediation keeps you in separate rooms with the mediator moving between you, so you never have to be face to face. It is a common and effective option."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to prepare for mediation?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "There is no fixed answer, but working through the preparation tool above typically takes 10 to 20 minutes. Most people find that thinking through their priorities clearly — even briefly — makes a real difference on the day."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the preparation tool confidential?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Nothing you enter in the tool is stored on our servers. Your answers exist only in your browser session and in any PDF you download. The tool is entirely private."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need a lawyer to prepare for mediation?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not necessarily. Many people prepare on their own and then involve a lawyer to review or document any agreement. The preparation tool is designed for self-guided use. If legal rights, obligations or formal agreements are involved, independent legal advice is worth considering."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is Family Dispute Resolution?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Family Dispute Resolution (FDR) is a specific form of dispute resolution for family law matters, conducted by a registered Family Dispute Resolution Practitioner. In many parenting disputes, parties are required to attempt FDR before applying to court for parenting orders. Our preparation tool flags this where relevant. Completing the tool is not FDR and does not produce a section 60I or section 66H certificate."
-          }
-        }
-      ]
-    }
-  ]
-}
-</script>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GTTR2T25L"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7GTTR2T25L');</script>
-</head>
-<body>
-<a href="#main" class="skip">Skip to main content</a><header class="nav" id="nav">
-  <div class="wrap nav-inner">
-    <a href="/" class="logo"><img src="/assets/images/MA.svg" alt="Mediations Australia" width="180" height="36" loading="eager" style="display:block;height:36px;width:auto"></a>
-    <nav class="nav-links" id="navlinks" aria-label="Primary">
-      <a class="lnk" href="/about-mediations-australia/">About</a>
-      <a class="lnk" href="/our-team/">Our Team</a>
-      <span class="has-drop"><a class="lnk" href="/how-we-help/" aria-haspopup="true">How We Help</a>
-        <div class="drop mega mega-services"><div class="mega-col"><span class="mega-head">Family &amp; Separation</span><a href="/family-law-mediation/" class="mega-lead"><b>Family Law Mediation</b><span>Parenting &amp; property, resolved without court</span></a><a href="/divorce-mediation/"><b>Divorce Mediation</b><span>Resolve everything that comes with divorce</span></a><a href="/online-divorce/"><b>Online Divorce</b><span>Separate from anywhere in Australia</span></a><a href="/de-facto-mediation/"><b>De Facto Disputes</b><span>Same rights, same clear process</span></a><a href="/property-settlement-mediation/"><b>Property Settlement</b><span>Divide assets fairly and finally</span></a><a href="/financial-agreements-mediation/"><b>Financial Agreements</b><span>Binding agreements (BFAs), done right</span></a><a href="/spousal-support-mediation/"><b>Spousal Maintenance</b><span>Fair support after separation</span></a><a href="/consent-orders/"><b>Consent Orders</b><span>Make your agreement legally binding</span></a></div><div class="mega-col"><span class="mega-head">Parenting &amp; Children</span><a href="/parenting-plan-mediation/" class="mega-lead"><b>Parenting Plans</b><span>Workable arrangements for your children</span></a><a href="/child-support-mediation/"><b>Child Support</b><span>Resolve support disputes privately</span></a><a href="/section-60i-certificates/"><b>Section 60I Certificates</b><span>Required before parenting court action</span></a><a href="/grandparents-mediation/"><b>Grandparents&#x27; Rights</b><span>Stay in your grandchildren&#x27;s lives</span></a></div><div class="mega-col"><span class="mega-head">Workplace &amp; Employment</span><a href="/workplace-mediation/" class="mega-lead"><b>Workplace &amp; Employment Mediation</b><span>Resolve disputes before the Fair Work Commission</span></a><a href="/unfair-dismissal-termination-mediation/"><b>Unfair Dismissal &amp; Termination</b><span>The 21-day deadline, and how to protect your rights</span></a><a href="/workplace-bullying-harassment-mediation/"><b>Bullying &amp; Harassment</b><span>Where mediation helps — and where it doesn&#x27;t</span></a><a href="/general-protections-discrimination-mediation/"><b>General Protections &amp; Discrimination</b><span>Adverse action and protected rights, resolved</span></a><a href="/redundancy-restructure-mediation/"><b>Redundancy &amp; Restructure</b><span>Was your redundancy genuine? Know your position</span></a><a href="/partnership-executive-exit-mediation/"><b>Partnership &amp; Executive Exit</b><span>High-stakes separations, resolved privately</span></a><a href="/workplace-investigations-grievance-mediation/"><b>Workplace Investigations &amp; Grievances</b><span>Handle complaints well; repair the workplace</span></a><hr style="border:none;border-top:1px solid var(--line);margin:8px 0"><a href="/belbin-team-roles-training/"><b>Belbin Team Roles</b><span style="display:inline-flex;align-items:center;gap:6px"><em style="font-style:normal;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;background:var(--sand-deep);color:var(--sage-deep);padding:1px 6px;border-radius:4px">Training</em></span><span>Build balanced teams and prevent conflict before it starts</span></a></div><div class="mega-col"><span class="mega-head">Business, Property &amp; Estates</span><a href="/commercial-mediation/" class="mega-lead"><b>Commercial Mediation</b><span>Partnership, contract and business disputes</span></a><a href="/real-estate-mediation/"><b>Real Estate &amp; Construction</b><span>Lease, building and property disputes</span></a><a href="/estate-dispute-mediation/"><b>Estate &amp; Inheritance Disputes</b><span>Resolve will and inheritance disputes privately</span></a><a href="/elder-mediation/"><b>Elder &amp; Family Care</b><span>Care arrangements for ageing parents</span></a></div></div>
-      </span>
-      <a class="lnk" href="/how-mediation-works/">How it works</a>
-      <a class="lnk" href="/our-fee-structure/">Our Fees</a>
-      <span class="has-drop"><a class="lnk" href="/guides/" aria-haspopup="true">Resources</a>
-        <div class="drop mega mega-resources">
-          <div class="mega-col">
-            <span class="mega-head">Start Here</span>
-            <a href="/how-much-does-mediation-cost/"><b>How Much Does Mediation Cost?</b><span>Fees, who pays, and why it beats court</span></a>
-            <a href="/how-long-does-mediation-take/"><b>How Long Does Mediation Take?</b><span>Most resolve in one or two sessions</span></a>
-            <a href="/is-family-law-mediation-compulsory/"><b>Is Mediation Compulsory?</b><span>When it's required and the exemptions</span></a>
-            <a href="/what-happens-if-mediation-fails/"><b>What If Mediation Fails?</b><span>Next steps and your options</span></a>
-            <a href="/preparing-for-mediation/"><b>Preparing for Mediation</b><span>What to expect &amp; how to get ready</span></a>
-            <a href="/family-law-cost-estimator/"><b>Cost Estimator</b><span>Mediation vs court costs</span></a>
-          </div>
-          <div class="mega-col">
-            <span class="mega-head">Family &amp; Separation</span>
-            <a href="/what-am-i-entitled-to-in-a-separation-in-australia/"><b>What Am I Entitled To?</b><span>Property, super and support explained</span></a>
-            <a href="/property-settlement-after-separation/"><b>Property Settlement Guide</b><span>The four-step process, without court</span></a>
-            <a href="/getting-ready-for-separation/"><b>Getting Ready for Separation</b><span>A practical checklist</span></a>
-            <a href="/separation-under-one-roof/"><b>Separation Under One Roof</b><span>How it works legally and practically</span></a>
-            <a href="/parenting-plan-template/"><b>Parenting Plan Template</b><span>What to include in your plan</span></a>
-            <a href="/bfa-or-consent-orders/"><b>BFA or Consent Orders?</b><span>Which is right for you</span></a>
-            <a href="/mediation-with-a-narcissist/"><b>Mediation With a Narcissist</b><span>Strategies for high-conflict situations</span></a>
-          </div>
-          <div class="mega-col">
-            <span class="mega-head">Workplace &amp; Business</span>
-            <a href="/workplace-dispute-guide/"><b>Workplace Dispute Guide</b><span>Your rights, the FWC, and mediation</span></a>
-            <a href="/unfair-dismissal-21-day-rule/"><b>Unfair Dismissal: The 21-Day Rule</b><span>Deadlines, eligibility, what to do</span></a>
-            <a href="/redundancy-was-it-genuine/"><b>Redundancy: Was It Genuine?</b><span>The genuine-redundancy test, plain English</span></a>
-            <a href="/is-mediation-right-for-workplace-dispute/"><b>Is Mediation Right for My Dispute?</b><span>When it helps — and when it doesn't</span></a>
-            <a href="/commercial-dispute-guide/"><b>Commercial Dispute Guide</b><span>Contracts, partnerships, shareholders, leases</span></a>
-            <a href="/belbin-team-roles-training/"><b>Preventing Conflict (Belbin)</b><span>Build balanced teams, prevent disputes</span></a>
-          </div>
-          <div class="mega-col">
-            <span class="mega-head">Estate &amp; Property</span>
-            <a href="/contesting-a-will/"><b>Contesting a Will: Your Options</b><span>Grounds, time limits, mediation</span></a>
-            <a href="/estate-inheritance-dispute-mediation/"><b>Estate &amp; Inheritance Disputes</b><span>Resolve without destroying the family</span></a>
-            <a href="/real-estate-construction-disputes/"><b>Real Estate &amp; Construction Disputes</b><span>Building, boundary and property issues</span></a>
-            <a href="/strata-neighbour-dispute-mediation/"><b>Strata &amp; Neighbour Disputes</b><span>Resolve without a tribunal</span></a>
-            <a href="/guides/" class="mega-see-all">See all guides →</a>
-          </div>
-        </div>
-      </span>
-      <a class="lnk" href="/contact-us/">Contact</a>
-      <a class="btn btn-primary" href="/book-a-consultation/" style="padding:11px 22px;font-size:.92rem">Book a Free Consultation</a>
-    </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </div>
-</header><main id="main">
-<div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/">Resources</a><span>›</span>Preparing for Mediation</nav></div>
-<section class="phero">
-  <div class="phero-blob"></div>
-  <div class="wrap">
-    <span class="eyebrow"><span class="pulse"></span>Go in prepared &mdash; it makes a real difference</span>
-    <h1>Preparing for Mediation</h1>
-    <p class="lede">Walking into mediation prepared makes a real difference to the outcome. Use our free guided tool to identify your issues, clarify your priorities, and download a personal Mediation Preparation Summary &mdash; then read the practical guide below.</p>
-    <div class="phero-cta">
-      <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
-      <a href="tel:1800952380" class="btn btn-ghost">Call 1800 952 380</a>
-    </div>
-  </div>
-</section><div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> To prepare for mediation, get clear on your goals and priorities, gather any relevant documents, and think about realistic outcomes rather than fixed positions. Our free preparation tool guides you through each step and produces a downloadable PDF summary &mdash; tailored for Australian family and property disputes.</p></div></div>
+#!/usr/bin/env python3
+"""Australian Mediation Preparation Tool — prepare-for-mediation page."""
+import os, sys, re
+sys.path.insert(0, os.path.dirname(__file__))
+from templates import (head, nav, page_end, crumb_html, faq_html, cta_band,
+                       org_schema, faq_schema, breadcrumb_schema, article_schema,
+                       BOOK_URL, PHONE, PHONE_HREF)
+
+OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  TOOL HTML
+# ─────────────────────────────────────────────────────────────────────────────
+TOOL_HTML = """
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <section class="sec mpt-outer" style="border-top:2px solid var(--line);padding:80px 0 96px;background:var(--sand)">
 <div class="wrap" style="max-width:860px">
@@ -1067,133 +796,101 @@
   render();
 })();
 </script>
-<article class="body"><div class="wrap-narrow reveal">
-<h2>What is mediation, and why prepare?</h2>
-<p>Mediation is a collaborative process where you and the other parties work together, with a neutral mediator, to reach an agreement. Because <em>you</em> shape the outcome, the effort you put in beforehand directly affects what you walk away with. Preparation turns a stressful unknown into a process you can steer.</p>
+"""
 
-<h2>Before the day: get clear on your goals</h2>
-<ul>
-  <li>Separate what you genuinely <strong>need</strong> from what you&rsquo;d merely <strong>prefer</strong>.</li>
-  <li>Think about the other person&rsquo;s likely concerns &mdash; understanding them helps you find solutions.</li>
-  <li>Consider realistic outcomes, not just your opening position.</li>
-  <li>Jot down the key issues you want to cover so nothing gets missed.</li>
-</ul>
+# ── FAQ ──────────────────────────────────────────────────────────────────────
+qa = [
+    ("What is a Mediation Preparation Summary?",
+     "A Mediation Preparation Summary is a personal document that helps you organise your thinking before a mediation session. It identifies the issues you want to discuss, your current situation, what has already been agreed, and your priorities. It is for your own use and is not a legal document."),
+    ("Is this tool confidential?",
+     "Nothing you enter is stored on Mediations Australia's servers. Your answers exist only in your browser session and in the PDF you download. We treat the privacy of your information seriously."),
+    ("What is the difference between mediation and Family Dispute Resolution?",
+     "Mediation is a process in which an independent mediator helps participants identify issues, discuss concerns, explore options and attempt to reach agreement. Family Dispute Resolution (FDR) is a specific form of dispute resolution for family law matters conducted by a registered Family Dispute Resolution Practitioner. Completing this preparation tool is not FDR and does not result in the issue of a section 60I or section 66H certificate."),
+    ("Do I need a lawyer before using this tool?",
+     "No. This tool is designed to help you prepare independently. However, if legal rights, obligations, deadlines or proposed agreements are involved, we recommend considering independent legal advice. This tool provides general information only and does not give legal advice."),
+    ("What happens after I complete mediation?",
+     "If the parties reach agreement, the mediator may help record it. How an agreement is documented, and whether it is legally binding, depends on the type of dispute and the circumstances. For parenting matters, options include a parenting plan or consent orders. For property matters, options may include a financial agreement or consent orders. Seek legal advice about the appropriate form of any agreement."),
+    ("Can I use this tool if I am in Western Australia?",
+     "Yes. The tool recognises that family-law processes in Western Australia differ from those in other states and territories. When you select Western Australia, the tool surfaces information relevant to the Family Court of Western Australia and the section 66H certificate under the Family Court Act 1997 (WA).")
+]
 
-<h2>What to bring</h2>
-<ul>
-  <li>Relevant documents &mdash; for property matters, financial records, valuations and statements.</li>
-  <li>A written list of the issues and any proposals you&rsquo;ve thought about.</li>
-  <li>For parenting matters, a sense of the arrangements that would work for your children.</li>
-  <li>Your Mediation Preparation Summary, if you used the tool above.</li>
-</ul>
+# ── Article body ──────────────────────────────────────────────────────────────
+BODY = """
+<h2 id="why-prepare">Why preparation matters in mediation</h2>
+<p>Mediation is most effective when both parties arrive with a clear sense of the issues they want to address, the outcome they are hoping for, and the areas where agreement may already exist. Arriving unprepared can mean mediation sessions run over time, revisit territory unnecessarily, or stall on issues that could have been identified in advance.</p>
+<p>A preparation session with a mediator can help &mdash; but having your own thinking organised beforehand means you can use that time productively. Common preparation tasks include identifying the issues in dispute, reviewing any existing arrangements or orders, noting what has already been agreed, and thinking through your priorities. This tool guides you through each of these steps and produces a summary you can keep, bring to your session, or share with your mediator in advance.</p>
 
-<div class="callout">
-  <h3>If you&rsquo;re anxious about facing the other person</h3>
-  <p>That&rsquo;s completely normal &mdash; and easily managed. Tell us in advance and we can run shuttle mediation, keeping you in separate rooms with the mediator moving between you. You never have to be face to face.</p>
+<h2 id="what-is-mediation">What mediation is &mdash; and what it is not</h2>
+<p>Mediation is a process in which an independent mediator helps participants identify the issues in dispute, discuss their concerns, explore options, and attempt to reach their own agreement. The mediator does not decide the outcome and does not take sides. The participants decide whether to agree and on what terms.</p>
+<p>Mediation is different from arbitration or a court hearing, where a decision is imposed on the parties. It is also different from negotiations conducted entirely through lawyers. In mediation, participants speak for themselves, which is why preparation matters. The more clearly you can articulate what you want to discuss, what matters most to you, and where you might have flexibility, the more productively the session can proceed.</p>
+
+<h2 id="fdr">Family Dispute Resolution and parenting matters</h2>
+<p>For parenting disputes in Australia, it is important to understand the difference between ordinary mediation and Family Dispute Resolution (FDR). FDR is a specific process under the <em>Family Law Act 1975</em> (Cth) conducted by a registered Family Dispute Resolution Practitioner. In many parenting matters, parties are required to make a genuine effort to resolve their dispute through FDR before applying to a family law court for parenting orders, unless an exception applies.</p>
+<p>A registered FDR Practitioner may issue a certificate under section 60I of the Act &mdash; or, in Western Australia, section 66H of the <em>Family Court Act 1997</em> (WA) &mdash; in circumstances provided by the legislation. Completing this preparation tool is not FDR, does not satisfy any FDR requirement, and does not result in the issue of any certificate. If you are unsure whether you need to participate in FDR, consider obtaining legal advice.</p>
+
+<h2 id="property-disputes">Preparing for property and financial disputes</h2>
+<p>Property and financial disputes following separation can involve a wide range of assets and liabilities &mdash; the family home, investment properties, superannuation, bank accounts, vehicles, businesses, trusts, and debts. Preparing effectively means identifying all of the issues in scope, understanding what exists, and thinking through your priorities.</p>
+<p>This tool guides you through the key property and financial issues that commonly arise following separation. However, it does not provide legal or financial advice, and it does not constitute financial disclosure for the purposes of any legal process. How a financial agreement is documented, and whether it is legally enforceable, will depend on the circumstances. Consider obtaining independent legal advice about the appropriate form of any agreement reached.</p>
+
+<h2 id="legal-advice">When to seek legal advice</h2>
+<p>This tool is general information only. Consider obtaining independent Australian legal advice if any of the following apply to your situation: there are existing court orders; a proposed agreement involves significant financial interests or property; you are uncertain about your rights or obligations; there are safety concerns of any kind; or a court, tribunal or statutory deadline may be relevant. A family lawyer can advise you about the appropriate form for documenting any agreement reached in mediation.</p>
+<p>If family violence or safety concerns are present, mediation may not be appropriate. Mediators are not able to provide a safe environment for all disputes. In that case, seek advice from a lawyer, contact 1800RESPECT (1800&nbsp;737&nbsp;732), or contact the police if you or your children are at risk.</p>
+"""
+
+# ── Page build ────────────────────────────────────────────────────────────────
+def build():
+    slug = 'prepare-for-mediation'
+    title = 'Free Mediation Preparation Tool | Mediations Australia'
+    desc  = 'Prepare for mediation in Australia with our free guided tool. Identify your issues, clarify priorities and download a personal Mediation Preparation Summary.'
+    h1    = 'Free Australian Mediation <em>Preparation Tool</em>'
+    lede  = ('Organise your thinking, identify the issues you want to discuss, and download '
+             'a personal Mediation Preparation Summary &mdash; tailored for Australian '
+             'family and property disputes.')
+    ans   = ('Preparing for mediation means clarifying the issues in dispute, understanding '
+             'your current situation, and thinking through your priorities and options. This '
+             'free tool guides you through each step and creates a downloadable PDF summary.')
+    crumb = 'Mediation Preparation Tool'
+    cta_h = 'Ready to speak with a mediator?'
+    cta_p = ('Our accredited mediators work across Australia. Book a free consultation '
+             'to discuss your situation.')
+
+    schema = [
+        org_schema(),
+        breadcrumb_schema([("Home",""),("Resources","preparing-for-mediation"),(crumb, slug)]),
+        article_schema(crumb, desc),
+        faq_schema(qa),
+    ]
+
+    d = head(title, desc, slug, extra_schema=schema) + nav()
+    d += f"""<main id="main">
+{crumb_html([("Home",""),("Resources",None),(crumb,None)])}
+<section class="phero"><div class="phero-blob"></div><div class="wrap">
+<span class="eyebrow"><span class="pulse"></span>Free resource</span>
+<h1>{h1}</h1>
+<p class="lede">{lede}</p>
+<div class="phero-cta">
+  <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">&rarr;</span></a>
+  <a href="tel:{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
 </div>
+</div></section>
+<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>"""
 
-<h2>On the day: how to get the best outcome</h2>
-<p>Focus on the future, not on re-litigating the past. Listen as much as you speak. Stay open to creative solutions you hadn&rsquo;t considered &mdash; mediation often produces outcomes a court never could. And remember the mediator is neutral: they&rsquo;re there to help everyone reach agreement, not to judge.</p>
+    d += TOOL_HTML
 
-<h2>A note on safety</h2>
-<p>If your situation involves family violence or concerns about safety, mediation may not be appropriate, and other steps may be needed first. If you&rsquo;re in a crisis or immediate danger, contact emergency services. Tell us about any safety concerns in your consultation and we&rsquo;ll advise the right path.</p>
-</div></article><section class="sec" id="faq" aria-labelledby="faqh" style="padding-top:0">
-  <div class="wrap">
-    <div class="reveal" style="text-align:center;max-width:60ch;margin:0 auto">
-      <p class="sec-tag" style="text-align:center">Questions &amp; answers</p>
-      <h2 class="sec-title" id="faqh" style="margin:0 auto 8px">Preparing for mediation &mdash; FAQs</h2>
-    </div>
-    <div class="faq-wrap reveal"><details class="faq"><summary>What should I bring to a mediation session?<span class="ico">+</span></summary><div class="ans"><p>Bring any relevant documents — financial records or property valuations for property matters, a list of issues you want to cover, and any proposals you have considered. Having these organised before the session helps you use the time well.</p></div></details><details class="faq"><summary>How should I prepare emotionally for mediation?<span class="ico">+</span></summary><div class="ans"><p>Acknowledge that it may be difficult. Focus on your goals rather than past grievances, and think about what you genuinely need versus what you would merely prefer. A clear sense of priorities helps enormously — which is exactly what the preparation tool above is designed to help you build.</p></div></details><details class="faq"><summary>Can I bring a support person?<span class="ico">+</span></summary><div class="ans"><p>Often yes, depending on the type of mediation. Discuss it with your mediator beforehand so suitable arrangements can be made that keep the process balanced and productive.</p></div></details><details class="faq"><summary>What if I&#x27;m worried about facing the other person?<span class="ico">+</span></summary><div class="ans"><p>Tell us in advance. Shuttle mediation keeps you in separate rooms with the mediator moving between you, so you never have to be face to face. It is a common and effective option.</p></div></details><details class="faq"><summary>How long does it take to prepare for mediation?<span class="ico">+</span></summary><div class="ans"><p>There is no fixed answer, but working through the preparation tool above typically takes 10 to 20 minutes. Most people find that thinking through their priorities clearly — even briefly — makes a real difference on the day.</p></div></details><details class="faq"><summary>Is the preparation tool confidential?<span class="ico">+</span></summary><div class="ans"><p>Yes. Nothing you enter in the tool is stored on our servers. Your answers exist only in your browser session and in any PDF you download. The tool is entirely private.</p></div></details><details class="faq"><summary>Do I need a lawyer to prepare for mediation?<span class="ico">+</span></summary><div class="ans"><p>Not necessarily. Many people prepare on their own and then involve a lawyer to review or document any agreement. The preparation tool is designed for self-guided use. If legal rights, obligations or formal agreements are involved, independent legal advice is worth considering.</p></div></details><details class="faq"><summary>What is Family Dispute Resolution?<span class="ico">+</span></summary><div class="ans"><p>Family Dispute Resolution (FDR) is a specific form of dispute resolution for family law matters, conducted by a registered Family Dispute Resolution Practitioner. In many parenting disputes, parties are required to attempt FDR before applying to court for parenting orders. Our preparation tool flags this where relevant. Completing the tool is not FDR and does not produce a section 60I or section 66H certificate.</p></div></details></div>
-  </div>
-</section><section class="cta-band" id="book">
-  <div class="phero-blob"></div>
-  <div class="wrap">
-    <div class="reveal">
-      <h2>Feel ready. <em>Resolve it.</em></h2>
-      <p>Book a free initial consultation and we&rsquo;ll walk you through exactly what to expect, so you arrive prepared and confident.</p>
-      <a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
-      <div class="note"><span><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="var(--sage)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>No obligation</span><span><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="var(--sage)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Transparent pricing</span><span><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="var(--sage)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>In person or online</span></div>
-    </div>
-  </div>
-</section></main><footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="logo"><span class="dot"></span>Mediations Australia</div>
-        <p style="font-size:.95rem;max-width:34ch;margin-bottom:18px">Nationally accredited mediators resolving disputes faster, fairer and without court — right across Australia.</p>
-        <a class="btn btn-primary" href="tel:1800952380" style="font-size:.95rem">Call 1800 952 380</a>
-      </div>
-      <div>
-        <h4>Family Law</h4>
-        <ul>
-          <li><a href="/family-law-mediation/">Family Law Mediation</a></li>
-          <li><a href="/divorce-mediation/">Divorce Mediation</a></li>
-          <li><a href="/property-settlement-mediation/">Property Settlement</a></li>
-          <li><a href="/parenting-plan-mediation/">Parenting Plans</a></li>
-          <li><a href="/child-support-mediation/">Child Support</a></li>
-          <li><a href="/spousal-support-mediation/">Spousal Maintenance</a></li>
-          <li><a href="/consent-orders/">Consent Orders</a></li>
-          <li><a href="/financial-agreements-mediation/">Financial Agreements</a></li>
-          <li><a href="/de-facto-mediation/">De Facto Disputes</a></li>
-          <li><a href="/grandparents-mediation/">Grandparents' Rights</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Other Services</h4>
-        <ul>
-          <li><a href="/workplace-mediation/">Workplace Mediation</a></li>
-          <li><a href="/estate-dispute-mediation/">Estate Disputes</a></li>
-          <li><a href="/online-divorce/">Online Mediation</a></li>
-          <li><a href="/section-60i-certificates/">Section 60I Certificates</a></li>
-          <li><a href="/online-mediation-australia/">Online Australia-wide</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/about-mediations-australia/">About us</a></li>
-          <li><a href="/how-mediation-works/">How it works</a></li>
-          <li><a href="/our-fee-structure/">Our fees</a></li>
-          <li><a href="/preparing-for-mediation/">Resources</a></li>
-          <li><a href="/family-lawyers/">Family lawyers by city</a></li>
-          <li><a href="/our-team/">Our team</a></li>
-          <li><a href="/memberships/">Memberships</a></li>
-          <li><a href="/contact-us/">Contact</a></li>
-          <li><a href="/book-a-consultation/">Book a consultation</a></li>
-        </ul>
-      </div>
-      <div class="foot-offices">
-        <h4>Offices</h4>
-        <strong>Sydney</strong>Suite 508, 41/464–480 Kent St, NSW 2000<strong>Melbourne</strong>Level 23, 727 Collins St, VIC 3008<strong>Brisbane</strong>Suite 507, 198 Adelaide St, QLD 4000<strong>Perth</strong>Level 25, 108 St Georges Tce, WA 6000
-      </div>
-    </div>
-    <div class="foot-locs">
-      <h4>Mediation services near you</h4>
-      <div class="ll"><a href="/sydney-mediation/">Sydney</a> <a href="/melbourne-mediation/">Melbourne</a> <a href="/brisbane-mediation/">Brisbane</a> <a href="/perth-mediation/">Perth</a> <a href="/adelaide-mediation/">Adelaide</a> <a href="/canberra-mediation/">Canberra</a> <a href="/gold-coast-mediation/">Gold Coast</a> <a href="/newcastle-mediation/">Newcastle</a> <a href="/wollongong-mediation/">Wollongong</a> <a href="/geelong-mediation/">Geelong</a> <a href="/hobart-mediation/">Hobart</a> <a href="/darwin-mediation/">Darwin</a> <a href="/cairns-mediation/">Cairns</a> <a href="/townsville-mediation/">Townsville</a> <a href="/toowoomba-mediation/">Toowoomba</a> <a href="/sunshine-coast-mediation/">Sunshine Coast</a> <a href="/bendigo-mediation/">Bendigo</a> <a href="/coffs-harbour-mediation/">Coffs Harbour</a> <a href="/launceston-mediation/">Launceston</a> <a href="/mackay-mediation/">Mackay</a> <a href="/rockhampton-mediation/">Rockhampton</a></div>
-    </div>
-    <div class="foot-bottom">
-      <span>© 2026 Mediations Australia. All rights reserved. This site is general information, not legal advice. <a href="/privacy-policy/" style="color:inherit;text-decoration:underline;text-underline-offset:2px">Privacy Policy</a></span>
-      <span>Nationally accredited under AMDRAS · Australia-wide &amp; online</span>
-    </div>
-  </div>
-</footer><script>
-const nav=document.getElementById('nav');
-addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10),{passive:true});
-const mb=document.getElementById('menuBtn'),nl=document.getElementById('navlinks');
-mb.addEventListener('click',()=>{const o=nl.classList.toggle('open');mb.classList.toggle('open',o);mb.setAttribute('aria-expanded',o)});
-nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nl.classList.remove('open');mb.classList.remove('open');mb.setAttribute('aria-expanded',false)}));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-// Mega menu: JS-driven open/close with close delay so gap between trigger and panel doesn't kill hover
-document.querySelectorAll('.has-drop').forEach(hd=>{
-  let t;
-  const open=()=>{clearTimeout(t);hd.classList.add('open')};
-  const close=()=>{t=setTimeout(()=>hd.classList.remove('open'),150)};
-  hd.addEventListener('mouseenter',open);
-  hd.addEventListener('mouseleave',close);
-  const drop=hd.querySelector('.drop');
-  if(drop){drop.addEventListener('mouseenter',open);drop.addEventListener('mouseleave',close);}
-});
-</script>
-</body>
-</html>
+    d += f'<article class="body"><div class="wrap-narrow reveal">{BODY}</div></article>'
+    d += faq_html(qa, heading=f"{crumb} — Frequently Asked Questions")
+    d += cta_band(cta_h, cta_p)
+    d += "</main>" + page_end()
+
+    p = os.path.join(OUT, slug)
+    os.makedirs(p, exist_ok=True)
+    with open(os.path.join(p, "index.html"), "w") as fh:
+        fh.write(d)
+
+    words = len(re.sub(r'<[^>]+>', ' ', d).split())
+    return slug, words
+
+
+if __name__ == '__main__':
+    slug, words = build()
+    print(f'Built: {slug}/  ({words:,} words)')
