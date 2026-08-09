@@ -148,6 +148,14 @@ PARENTING_BUILDER = """
 /* ── Error state ────────────────────────────────────────────── */
 .ppb-error{border-color:var(--sage)!important;box-shadow:0 0 0 3px rgba(30,96,64,.15)!important}
 .ppb-error-msg{font-size:.8rem;color:var(--sage);font-family:var(--sans);margin-top:4px;display:none}
+/* ── Address autocomplete ───────────────────────────────────── */
+.ppb-addr-drop{position:absolute;top:100%;left:0;right:0;z-index:200;background:#fff;border:1.5px solid var(--sage);border-radius:10px;margin:4px 0 0;padding:4px 0;list-style:none;box-shadow:0 8px 24px rgba(0,0,0,.12);display:none;max-height:220px;overflow-y:auto}
+.ppb-addr-drop.open{display:block}
+.ppb-addr-drop li{padding:10px 14px;font-size:.88rem;font-family:var(--sans);color:var(--ink);cursor:pointer;line-height:1.4;border-bottom:1px solid var(--line)}
+.ppb-addr-drop li:last-child{border-bottom:none}
+.ppb-addr-drop li:hover,.ppb-addr-drop li.focused{background:var(--sand);color:var(--sage)}
+.ppb-addr-drop li.loading{color:var(--ink-soft);cursor:default;font-style:italic}
+.ppb-addr-drop li.loading:hover{background:none}
 /* ── Responsive ─────────────────────────────────────────────── */
 @media(max-width:640px){
   .ppb-card{padding:24px 20px}
@@ -189,8 +197,8 @@ PARENTING_BUILDER = """
         <div class="ppb-form-group"><label>Party 2 Full Name <span class="ppb-req">*</span></label><input type="text" name="parent2_name" autocomplete="off" required placeholder="Full legal name"></div>
       </div>
       <div class="ppb-row">
-        <div class="ppb-form-group"><label>Party 1 Address</label><input type="text" name="parent1_address" placeholder="Street address, suburb, state"><p class="ppb-help">Used in the PDF header. Not required but helps identify the parties.</p></div>
-        <div class="ppb-form-group"><label>Party 2 Address</label><input type="text" name="parent2_address" placeholder="Street address, suburb, state"><p class="ppb-help">Used in the PDF header. Not required but helps identify the parties.</p></div>
+        <div class="ppb-form-group" style="position:relative"><label>Party 1 Address</label><input type="text" name="parent1_address" id="ppbAddr1" autocomplete="off" placeholder="Start typing an address…"><p class="ppb-help">Used in the PDF header. Not required but helps identify the parties.</p><ul class="ppb-addr-drop" id="ppbDrop1"></ul></div>
+        <div class="ppb-form-group" style="position:relative"><label>Party 2 Address</label><input type="text" name="parent2_address" id="ppbAddr2" autocomplete="off" placeholder="Start typing an address…"><p class="ppb-help">Used in the PDF header. Not required but helps identify the parties.</p><ul class="ppb-addr-drop" id="ppbDrop2"></ul></div>
       </div>
       <div class="ppb-form-group"><label>Child / Children <span class="ppb-req">*</span></label><textarea name="children_info" required placeholder="Full name and date of birth for each child&#10;e.g. Sarah Elizabeth Smith, born 15 March 2016"></textarea><p class="ppb-help">Include all children covered by this agreement, one per line. Use full legal names as they appear on birth certificates.</p></div>
       <div class="ppb-row">
@@ -662,6 +670,58 @@ PARENTING_BUILDER = """
   }catch(e){}
 
   updateUI();
+
+  /* ── Address autocomplete (Nominatim, AU only) ── */
+  function addrAuto(inputEl,dropEl){
+    var timer,active=-1,results=[];
+    function close(){dropEl.classList.remove('open');active=-1;}
+    function pick(val){inputEl.value=val;close();}
+    function render(items){
+      dropEl.innerHTML='';
+      results=items;
+      active=-1;
+      if(!items.length){close();return;}
+      items.forEach(function(r,i){
+        var li=document.createElement('li');
+        li.textContent=r;
+        li.addEventListener('mousedown',function(e){e.preventDefault();pick(r);});
+        dropEl.appendChild(li);
+      });
+      dropEl.classList.add('open');
+    }
+    function setActive(n){
+      var lis=dropEl.querySelectorAll('li');
+      lis.forEach(function(l){l.classList.remove('focused');});
+      active=Math.max(0,Math.min(n,lis.length-1));
+      if(lis[active]) lis[active].classList.add('focused');
+    }
+    inputEl.addEventListener('input',function(){
+      clearTimeout(timer);
+      var q=inputEl.value.trim();
+      if(q.length<4){close();return;}
+      dropEl.innerHTML='<li class="loading">Searching…</li>';
+      dropEl.classList.add('open');
+      timer=setTimeout(function(){
+        fetch('https://nominatim.openstreetmap.org/search?format=json&addressdetails=0&limit=6&countrycodes=au&q='+encodeURIComponent(q),{headers:{'Accept-Language':'en'}})
+          .then(function(r){return r.json();})
+          .then(function(data){
+            render(data.map(function(d){return d.display_name.replace(/, Australia$/,'');}).filter(function(v,i,a){return a.indexOf(v)===i;}));
+          })
+          .catch(function(){close();});
+      },350);
+    });
+    inputEl.addEventListener('keydown',function(e){
+      if(!dropEl.classList.contains('open')) return;
+      if(e.key==='ArrowDown'){e.preventDefault();setActive(active+1);}
+      else if(e.key==='ArrowUp'){e.preventDefault();setActive(active-1);}
+      else if(e.key==='Enter'&&active>=0){e.preventDefault();pick(results[active]);}
+      else if(e.key==='Escape'){close();}
+    });
+    document.addEventListener('click',function(e){if(!inputEl.contains(e.target)&&!dropEl.contains(e.target)) close();});
+  }
+  addrAuto(document.getElementById('ppbAddr1'),document.getElementById('ppbDrop1'));
+  addrAuto(document.getElementById('ppbAddr2'),document.getElementById('ppbDrop2'));
+
 })();
 </script>
 </section>
