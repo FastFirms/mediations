@@ -527,6 +527,7 @@
           <div class="ppb-check-card"><input type="checkbox" name="major_decisions[]" value="passport applications" id="ppb_m6"><label for="ppb_m6">Passport applications</label></div>
         </div>
       </div>
+      <div class="ppb-form-group"><label>Cultural &amp; Religious Upbringing</label><textarea name="cultural_upbringing" placeholder="e.g. Both parties agree to support the children's participation in cultural events, speak both English and Mandarin at home, and observe significant religious occasions from both families"></textarea><p class="ppb-help">Day-to-day cultural practices, language, dietary requirements, and religious observances — separate from the major-decision veto above.</p></div>
     </div>
 
     <!-- Step 3: Living Arrangements -->
@@ -556,6 +557,7 @@
       </div>
       <div class="ppb-form-group"><label>Detailed Schedule</label><textarea name="schedule_details" placeholder="Specific days, times, and any weekly variations"></textarea></div>
       <div class="ppb-form-group"><label>Changeover — time and location</label><textarea name="changeover_details" placeholder="e.g. Friday at 6:00 pm at the child's school"></textarea></div>
+      <div class="ppb-form-group"><label>Grandparents &amp; Extended Family</label><textarea name="extended_family" placeholder="e.g. Both parties support the children maintaining relationships with grandparents and extended family on both sides; reasonable time with extended family may occur during each parent's care time without requiring consent from the other parent"></textarea><p class="ppb-help">The Family Law Act recognises children's right to relationships with grandparents and other significant people in their lives.</p></div>
     </div>
 
     <!-- Step 4: Holidays -->
@@ -591,6 +593,7 @@
         </div>
       </div>
       <div class="ppb-form-group"><label>Child's contact with the other parent</label><textarea name="child_contact" placeholder="e.g. Daily phone or video call at 7:00 pm when staying with the other parent"></textarea></div>
+      <div class="ppb-form-group"><label>Photos &amp; Social Media</label><textarea name="social_media" placeholder="e.g. Both parties agree not to post images of the children on social media without the other parent's consent; photos shared privately between the parties only"></textarea><p class="ppb-help">One of the most common modern parenting disputes — worth agreeing on explicitly.</p></div>
     </div>
 
     <!-- Step 6: Education -->
@@ -659,7 +662,11 @@
       </div>
       <div class="ppb-form-group"><label>Dispute Resolution Process</label><textarea name="dispute_process" placeholder="e.g. Direct discussion first, then Family Dispute Resolution with an accredited mediator, then legal proceedings if unresolved"></textarea></div>
       <div class="ppb-row">
-        <div class="ppb-form-group"><label>Travel &amp; Relocation</label><textarea name="travel_relocation" placeholder="e.g. Domestic travel requires 7 days notice; international travel requires written agreement"></textarea></div>
+        <div class="ppb-form-group"><label>Domestic Travel</label><textarea name="travel_domestic" placeholder="e.g. Either parent may travel within Australia with the children; the other parent to be notified at least 7 days in advance with destination and contact details"></textarea></div>
+        <div class="ppb-form-group"><label>International Travel</label><textarea name="travel_international" placeholder="e.g. International travel requires written consent from both parties at least 30 days in advance; passports held by Party 1 and released for travel only by written agreement"></textarea></div>
+      </div>
+      <div class="ppb-row">
+        <div class="ppb-form-group"><label>Relocation</label><textarea name="relocation" placeholder="e.g. Neither party may relocate with the children more than 50km from their current residence without written agreement from the other party or a court order"></textarea></div>
         <div class="ppb-form-group"><label>Introduction of New Partners</label><textarea name="new_partners" placeholder="e.g. New partners introduced only after 6 months of relationship"></textarea></div>
       </div>
       <div class="ppb-form-group"><label>Additional Provisions</label><textarea name="additional_provisions" placeholder="Any other terms the parties agree to include"></textarea></div>
@@ -828,7 +835,9 @@
     else if(pr==='sole_parent1') para('1.1 '+g('parent1_name')+' shall have sole parental responsibility for the child/children.',11,false,4);
     else if(pr==='sole_parent2') para('1.1 '+g('parent2_name')+' shall have sole parental responsibility for the child/children.',11,false,4);
     var majors=fd.getAll('major_decisions[]');
-    if(majors.length) para('1.2 The following major long-term decisions shall require consultation between both parties: '+majors.join(', ')+'.',11,false,10);
+    if(majors.length) para('1.2 The following major long-term decisions shall require consultation between both parties: '+majors.join(', ')+'.',11,false,4);
+    if(g('cultural_upbringing')!=='[To be specified]') para('1.3 Cultural and religious upbringing: '+g('cultural_upbringing'),11,false,10);
+    else y+=6;
     /* Clause 2 */
     para('2. LIVING ARRANGEMENTS',12,true,6);
     var res=g('primary_residence');
@@ -837,7 +846,9 @@
     else if(res==='parent2') para('2.1 The child/children shall live primarily with '+g('parent2_name')+' and spend time with '+g('parent1_name')+' per the schedule below.',11,false,4);
     para('2.2 Care schedule: '+g('schedule_type')+'.',11,false,4);
     if(g('schedule_details')!=='[To be specified]') para('2.3 '+g('schedule_details'),11,false,4);
-    if(g('changeover_details')!=='[To be specified]') para('2.4 Changeovers: '+g('changeover_details'),11,false,10);
+    if(g('changeover_details')!=='[To be specified]') para('2.4 Changeovers: '+g('changeover_details'),11,false,4);
+    if(g('extended_family')!=='[To be specified]') para('2.5 Grandparents and extended family: '+g('extended_family'),11,false,10);
+    else y+=6;
     /* Clause 3 */
     para('3. HOLIDAYS AND SPECIAL OCCASIONS',12,true,6);
     [['3.1 Christmas and New Year','christmas_arrangement'],['3.2 Easter','easter_arrangement'],['3.3 School holidays','school_holidays'],['3.4 Birthdays','children_birthdays'],["3.5 Mother's and Father's Day",'parents_day']].forEach(function(a){if(g(a[1])!=='[To be specified]') para(a[0]+': '+g(a[1]),11,false,4);});y+=4;
@@ -845,7 +856,9 @@
     para('4. COMMUNICATION',12,true,6);
     var comms=fd.getAll('parent_communication[]');
     if(comms.length) para('4.1 Communication between parents shall be by: '+comms.join(', ')+'.',11,false,4);
-    if(g('child_contact')!=='[To be specified]') para('4.2 The child/children may contact the other parent: '+g('child_contact'),11,false,10);
+    if(g('child_contact')!=='[To be specified]') para('4.2 The child/children may contact the other parent: '+g('child_contact'),11,false,4);
+    if(g('social_media')!=='[To be specified]') para('4.3 Photos and social media: '+g('social_media'),11,false,10);
+    else y+=6;
     /* Clause 5 */
     para('5. EDUCATION',12,true,6);
     if(g('school_selection')!=='[To be specified]') para('5.1 School selection: '+g('school_selection')+'.',11,false,4);
@@ -864,9 +877,11 @@
     /* Clause 8 */
     para('8. DISPUTE RESOLUTION AND OTHER PROVISIONS',12,true,6);
     para('8.1 Dispute resolution: '+(g('dispute_process')!=='[To be specified]'?g('dispute_process'):'The parties agree to attempt resolution through direct discussion and, if unresolved, Family Dispute Resolution before commencing court proceedings.'),11,false,4);
-    if(g('travel_relocation')!=='[To be specified]') para('8.2 Travel and relocation: '+g('travel_relocation'),11,false,4);
-    if(g('new_partners')!=='[To be specified]') para('8.3 Introduction of new partners: '+g('new_partners'),11,false,4);
-    if(g('additional_provisions')!=='[To be specified]') para('8.4 Additional provisions: '+g('additional_provisions'),11,false,10);
+    if(g('travel_domestic')!=='[To be specified]') para('8.2 Domestic travel: '+g('travel_domestic'),11,false,4);
+    if(g('travel_international')!=='[To be specified]') para('8.3 International travel: '+g('travel_international'),11,false,4);
+    if(g('relocation')!=='[To be specified]') para('8.4 Relocation: '+g('relocation'),11,false,4);
+    if(g('new_partners')!=='[To be specified]') para('8.5 Introduction of new partners: '+g('new_partners'),11,false,4);
+    if(g('additional_provisions')!=='[To be specified]') para('8.6 Additional provisions: '+g('additional_provisions'),11,false,10);
     /* Execution page */
     doc.addPage();y=20;
     para('EXECUTION',12,true,6);
