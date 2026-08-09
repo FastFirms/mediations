@@ -749,37 +749,7 @@
     else{nextBtn.style.display='';nextBtn.innerHTML='Next →';}
   }
 
-  function validateCurrent(){
-    var curEl=form.querySelector('[data-section="'+cur+'"]');
-    var ok=true;
-    /* Text/select/textarea required */
-    curEl.querySelectorAll('input[required],select[required],textarea[required]').forEach(function(f){
-      if(f.type==='radio'){return;} /* handled below */
-      if(!f.value.trim()){f.classList.add('ppb-error');ok=false;}
-      else{f.classList.remove('ppb-error');}
-    });
-    /* Required radio groups */
-    var radioNames={};
-    curEl.querySelectorAll('input[type=radio][required]').forEach(function(r){radioNames[r.name]=true;});
-    Object.keys(radioNames).forEach(function(n){
-      var checked=curEl.querySelector('[name="'+n+'"]:checked');
-      var cards=curEl.querySelectorAll('[name="'+n+'"]');
-      cards.forEach(function(r){
-        var card=r.closest('.ppb-radio-card');
-        if(card) card.classList.toggle('ppb-error',!checked);
-      });
-      if(!checked) ok=false;
-    });
-    return ok;
-  }
-
   function changeSection(dir){
-    if(dir>0&&!validateCurrent()){
-      /* Scroll to first error */
-      var first=form.querySelector('[data-section="'+cur+'"] .ppb-error');
-      if(first) first.scrollIntoView({behavior:'smooth',block:'center'});
-      return;
-    }
     form.querySelector('[data-section="'+cur+'"]').classList.remove('active');
     cur=Math.min(Math.max(cur+dir,1),TOTAL);
     form.querySelector('[data-section="'+cur+'"]').classList.add('active');
