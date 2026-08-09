@@ -189,13 +189,13 @@ PARENTING_BUILDER = """
         <div class="ppb-form-group"><label>Party 2 Full Name <span class="ppb-req">*</span></label><input type="text" name="parent2_name" autocomplete="off" required placeholder="Full legal name"></div>
       </div>
       <div class="ppb-row">
-        <div class="ppb-form-group"><label>Party 1 Address</label><input type="text" name="parent1_address" placeholder="Street address, suburb, state"></div>
-        <div class="ppb-form-group"><label>Party 2 Address</label><input type="text" name="parent2_address" placeholder="Street address, suburb, state"></div>
+        <div class="ppb-form-group"><label>Party 1 Address</label><input type="text" name="parent1_address" placeholder="Street address, suburb, state"><p class="ppb-help">Used in the PDF header. Not required but helps identify the parties.</p></div>
+        <div class="ppb-form-group"><label>Party 2 Address</label><input type="text" name="parent2_address" placeholder="Street address, suburb, state"><p class="ppb-help">Used in the PDF header. Not required but helps identify the parties.</p></div>
       </div>
-      <div class="ppb-form-group"><label>Child / Children <span class="ppb-req">*</span></label><textarea name="children_info" required placeholder="Full name and date of birth for each child&#10;e.g. Sarah Elizabeth Smith, born 15 March 2016"></textarea><p class="ppb-help">Include all children covered by this agreement, one per line.</p></div>
+      <div class="ppb-form-group"><label>Child / Children <span class="ppb-req">*</span></label><textarea name="children_info" required placeholder="Full name and date of birth for each child&#10;e.g. Sarah Elizabeth Smith, born 15 March 2016"></textarea><p class="ppb-help">Include all children covered by this agreement, one per line. Use full legal names as they appear on birth certificates.</p></div>
       <div class="ppb-row">
-        <div class="ppb-form-group"><label>Agreement Date <span class="ppb-req">*</span></label><input type="date" name="agreement_date" required></div>
-        <div class="ppb-form-group"><label>Review Date <span class="ppb-help" style="display:inline;font-style:normal">— optional</span></label><input type="date" name="review_date"></div>
+        <div class="ppb-form-group"><label>Agreement Date <span class="ppb-req">*</span></label><input type="date" name="agreement_date" required><p class="ppb-help">The date both parties sign. You can set today's date or a future date.</p></div>
+        <div class="ppb-form-group"><label>Review Date — optional</label><input type="date" name="review_date"><p class="ppb-help">Parenting plans often benefit from a scheduled review as children grow. 12 months is a common starting point.</p></div>
       </div>
     </div>
 
@@ -207,6 +207,7 @@ PARENTING_BUILDER = """
       </div>
       <div class="ppb-form-group">
         <label>Parental Responsibility Arrangement <span class="ppb-req">*</span></label>
+        <p class="ppb-help" style="margin-bottom:10px">This is about <strong>decision-making</strong>, not where the children live. Equal shared responsibility is the default under Australian family law — it means both parents must consult on major long-term decisions, regardless of where the children spend most of their time.</p>
         <div class="ppb-radio-cards">
           <div class="ppb-radio-card"><input type="radio" name="parental_responsibility" value="equal" id="ppb_r1" required><label for="ppb_r1">Equal shared parental responsibility — both parents decide together on major issues</label></div>
           <div class="ppb-radio-card"><input type="radio" name="parental_responsibility" value="sole_parent1" id="ppb_r2"><label for="ppb_r2">Sole parental responsibility to Party 1</label></div>
@@ -215,6 +216,7 @@ PARENTING_BUILDER = """
       </div>
       <div class="ppb-form-group">
         <label>Major decisions requiring consultation between both parties</label>
+        <p class="ppb-help" style="margin-bottom:10px">Tick the areas where both parents must agree before a decision is made. Day-to-day decisions (haircuts, what to eat, bedtime) are made by whichever parent the child is with at the time.</p>
         <div class="ppb-check-grid">
           <div class="ppb-check-card"><input type="checkbox" name="major_decisions[]" value="education" id="ppb_m1"><label for="ppb_m1">Education</label></div>
           <div class="ppb-check-card"><input type="checkbox" name="major_decisions[]" value="major medical treatment" id="ppb_m2"><label for="ppb_m2">Major medical treatment</label></div>
@@ -235,6 +237,7 @@ PARENTING_BUILDER = """
       </div>
       <div class="ppb-form-group">
         <label>The child/children shall live with <span class="ppb-req">*</span></label>
+        <p class="ppb-help" style="margin-bottom:10px">This is about <strong>where the children sleep most nights</strong> — their primary home base. It doesn't affect parental responsibility (decision-making), which is set in the previous step.</p>
         <div class="ppb-radio-cards">
           <div class="ppb-radio-card"><input type="radio" name="primary_residence" value="equal" id="ppb_res1" required><label for="ppb_res1">Both parties equally — shared care arrangement</label></div>
           <div class="ppb-radio-card"><input type="radio" name="primary_residence" value="parent1" id="ppb_res2"><label for="ppb_res2">Primarily with Party 1</label></div>
@@ -243,6 +246,7 @@ PARENTING_BUILDER = """
       </div>
       <div class="ppb-form-group">
         <label>Regular Care Schedule <span class="ppb-req">*</span></label>
+        <p class="ppb-help" style="margin-bottom:10px">Choose the pattern that best describes the regular week-to-week routine. <strong>Week about</strong> = one week with each parent. <strong>2-2-5-5</strong> = each parent has 2 fixed days, then alternating 5-day blocks. <strong>2-2-3-3</strong> = shorter blocks that rotate more frequently.</p>
         <select name="schedule_type" required>
           <option value="">Select a schedule</option>
           <option value="week about (alternating weeks)">Week about — alternating weeks</option>
@@ -252,8 +256,8 @@ PARENTING_BUILDER = """
           <option value="custom">Custom — I'll describe it below</option>
         </select>
       </div>
-      <div class="ppb-form-group"><label>Detailed Schedule</label><textarea name="schedule_details" placeholder="Specific days, times, and any weekly variations"></textarea></div>
-      <div class="ppb-form-group"><label>Changeover — time and location</label><textarea name="changeover_details" placeholder="e.g. Friday at 6:00 pm at the child's school"></textarea></div>
+      <div class="ppb-form-group"><label>Detailed Schedule</label><textarea name="schedule_details" placeholder="Specific days, times, and any weekly variations"></textarea><p class="ppb-help">Spell out exactly which days and times the children are with each parent. The more specific, the less room for disagreement later.</p></div>
+      <div class="ppb-form-group"><label>Changeover — time and location</label><textarea name="changeover_details" placeholder="e.g. Friday at 6:00 pm at the child's school"></textarea><p class="ppb-help">Changeover is when the children move from one parent to the other. Specify a neutral, consistent location where possible — school pick-up is often the least stressful option.</p></div>
       <div class="ppb-form-group"><label>Grandparents &amp; Extended Family</label><textarea name="extended_family" placeholder="e.g. Both parties support the children maintaining relationships with grandparents and extended family on both sides; reasonable time with extended family may occur during each parent's care time without requiring consent from the other parent"></textarea><p class="ppb-help">The Family Law Act recognises children's right to relationships with grandparents and other significant people in their lives.</p></div>
     </div>
 
@@ -267,7 +271,7 @@ PARENTING_BUILDER = """
         <div class="ppb-form-group"><label>Christmas &amp; New Year</label><textarea name="christmas_arrangement" placeholder="e.g. Christmas Day with Party 1 in odd years, Party 2 in even years"></textarea></div>
         <div class="ppb-form-group"><label>Easter</label><textarea name="easter_arrangement" placeholder="e.g. Easter weekend alternates each year"></textarea></div>
       </div>
-      <div class="ppb-form-group"><label>School Holiday Periods</label><textarea name="school_holidays" placeholder="e.g. School holidays split equally — each party takes two weeks per term break"></textarea></div>
+      <div class="ppb-form-group"><label>School Holiday Periods</label><textarea name="school_holidays" placeholder="e.g. School holidays split equally — each party takes two weeks per term break"></textarea><p class="ppb-help">School holidays often don't follow the regular week-to-week pattern. Decide here whether they're split equally, follow the normal schedule, or are arranged holiday by holiday. Include who books first and how far in advance.</p></div>
       <div class="ppb-row">
         <div class="ppb-form-group"><label>Children's Birthdays</label><textarea name="children_birthdays" placeholder="e.g. Both parents attend birthday celebrations where possible"></textarea></div>
         <div class="ppb-form-group"><label>Mother's Day &amp; Father's Day</label><textarea name="parents_day" placeholder="e.g. Children spend Mother's Day with Party 1, Father's Day with Party 2"></textarea></div>
@@ -282,6 +286,7 @@ PARENTING_BUILDER = """
       </div>
       <div class="ppb-form-group">
         <label>Communication between parents</label>
+        <p class="ppb-help" style="margin-bottom:10px">Agree on the preferred channel for day-to-day parenting communication. Limiting communication to one or two channels helps reduce conflict and keeps a clear record.</p>
         <div class="ppb-check-grid">
           <div class="ppb-check-card"><input type="checkbox" name="parent_communication[]" value="email" id="ppb_c1"><label for="ppb_c1">Email</label></div>
           <div class="ppb-check-card"><input type="checkbox" name="parent_communication[]" value="text message" id="ppb_c2"><label for="ppb_c2">Text message</label></div>
@@ -289,8 +294,8 @@ PARENTING_BUILDER = """
           <div class="ppb-check-card"><input type="checkbox" name="parent_communication[]" value="parenting app" id="ppb_c4"><label for="ppb_c4">Parenting app (e.g. OurFamilyWizard)</label></div>
         </div>
       </div>
-      <div class="ppb-form-group"><label>Child's contact with the other parent</label><textarea name="child_contact" placeholder="e.g. Daily phone or video call at 7:00 pm when staying with the other parent"></textarea></div>
-      <div class="ppb-form-group"><label>Photos &amp; Social Media</label><textarea name="social_media" placeholder="e.g. Both parties agree not to post images of the children on social media without the other parent's consent; photos shared privately between the parties only"></textarea><p class="ppb-help">One of the most common modern parenting disputes — worth agreeing on explicitly.</p></div>
+      <div class="ppb-form-group"><label>Child's contact with the other parent</label><textarea name="child_contact" placeholder="e.g. Daily phone or video call at 7:00 pm when staying with the other parent"></textarea><p class="ppb-help">Children generally benefit from regular contact with both parents. Set a reasonable time that doesn't disrupt bedtime routines. Both parents should encourage — not block — these calls.</p></div>
+      <div class="ppb-form-group"><label>Photos &amp; Social Media</label><textarea name="social_media" placeholder="e.g. Both parties agree not to post images of the children on social media without the other parent's consent; photos shared privately between the parties only"></textarea><p class="ppb-help">One of the most common sources of conflict post-separation. This clause covers who can post photos of the children publicly — on Instagram, Facebook, TikTok, or any social platform — and under what conditions. Many parents agree that private sharing is fine but public posts require both parties to consent.</p></div>
     </div>
 
     <!-- Step 6: Education -->
@@ -301,13 +306,14 @@ PARENTING_BUILDER = """
       </div>
       <div class="ppb-form-group">
         <label>School Selection</label>
+        <p class="ppb-help" style="margin-bottom:10px">Which school the children attend is a major long-term decision. If you selected equal shared parental responsibility in Step 2, both parents must agree on school changes — this clause spells out how that works in practice.</p>
         <div class="ppb-radio-cards">
           <div class="ppb-radio-card"><input type="radio" name="school_selection" value="joint decision by both parties" id="ppb_s1"><label for="ppb_s1">Joint decision by both parties</label></div>
           <div class="ppb-radio-card"><input type="radio" name="school_selection" value="primary carer decides after consultation" id="ppb_s2"><label for="ppb_s2">Primary carer decides after consultation</label></div>
           <div class="ppb-radio-card"><input type="radio" name="school_selection" value="continue at current school" id="ppb_s3"><label for="ppb_s3">Continue at current school</label></div>
         </div>
       </div>
-      <div class="ppb-form-group"><label>Extracurricular Activities</label><textarea name="extracurricular_activities" placeholder="e.g. Both parties support current activities; new activities require agreement"></textarea></div>
+      <div class="ppb-form-group"><label>Extracurricular Activities</label><textarea name="extracurricular_activities" placeholder="e.g. Both parties support current activities; new activities require agreement"></textarea><p class="ppb-help">Covers sport, music, tutoring, and other regular commitments. Agree on who pays, who transports, and how new activities are approved — especially ones that fall during the other parent's time.</p></div>
     </div>
 
     <!-- Step 7: Health -->
@@ -318,6 +324,7 @@ PARENTING_BUILDER = """
       </div>
       <div class="ppb-form-group">
         <label>Medical Decision Making</label>
+        <p class="ppb-help" style="margin-bottom:10px">Routine care (GP visits, vaccinations, dental check-ups) is usually handled by whichever parent the child is with. This clause is about who decides on <strong>major</strong> treatment — surgery, specialist referrals, ongoing medication, or mental health care.</p>
         <div class="ppb-radio-cards">
           <div class="ppb-radio-card"><input type="radio" name="medical_decisions" value="joint decisions for all medical treatment" id="ppb_md1"><label for="ppb_md1">Joint decisions for all medical treatment</label></div>
           <div class="ppb-radio-card"><input type="radio" name="medical_decisions" value="joint for major decisions; either parent for routine and emergency care" id="ppb_md2"><label for="ppb_md2">Joint for major decisions; either parent for routine and emergency</label></div>
@@ -338,16 +345,17 @@ PARENTING_BUILDER = """
       </div>
       <div class="ppb-form-group">
         <label>Child Support</label>
+        <p class="ppb-help" style="margin-bottom:10px">Child support is a separate legal obligation to this parenting plan. A <strong>Services Australia assessment</strong> calculates the amount based on both parents' incomes and care percentages — this is the most common approach. A <strong>private agreement</strong> is an alternative but must still be fair and in the children's interests.</p>
         <div class="ppb-radio-cards">
           <div class="ppb-radio-card"><input type="radio" name="child_support" value="Services Australia child support assessment" id="ppb_cs1"><label for="ppb_cs1">Services Australia assessment</label></div>
           <div class="ppb-radio-card"><input type="radio" name="child_support" value="private child support agreement between the parties" id="ppb_cs2"><label for="ppb_cs2">Private agreement between the parties</label></div>
           <div class="ppb-radio-card"><input type="radio" name="child_support" value="no child support payable" id="ppb_cs3"><label for="ppb_cs3">No child support payable</label></div>
         </div>
       </div>
-      <div class="ppb-form-group"><label>Child Support Details</label><textarea name="support_details" placeholder="Amount, frequency, and payment method if private agreement"></textarea></div>
+      <div class="ppb-form-group"><label>Child Support Details</label><textarea name="support_details" placeholder="Amount, frequency, and payment method if private agreement"></textarea><p class="ppb-help">If using a private arrangement, state the weekly or monthly amount, the payment method (bank transfer is recommended), and the day of the month it's due.</p></div>
       <div class="ppb-row">
-        <div class="ppb-form-group"><label>Education Expenses</label><textarea name="education_expenses" placeholder="e.g. School fees and uniforms shared equally"></textarea></div>
-        <div class="ppb-form-group"><label>Medical &amp; Dental Expenses</label><textarea name="health_expenses" placeholder="e.g. Out-of-pocket costs shared equally after Medicare rebate"></textarea></div>
+        <div class="ppb-form-group"><label>Education Expenses</label><textarea name="education_expenses" placeholder="e.g. School fees and uniforms shared equally"></textarea><p class="ppb-help">Covers fees, uniforms, excursions, laptops, and tutoring — costs outside the regular child support amount. Agree on how they're split and what counts as an "education expense."</p></div>
+        <div class="ppb-form-group"><label>Medical &amp; Dental Expenses</label><textarea name="health_expenses" placeholder="e.g. Out-of-pocket costs shared equally after Medicare rebate"></textarea><p class="ppb-help">Covers out-of-pocket costs after Medicare and private health rebates. Agree who pays upfront and how the other parent reimburses their share.</p></div>
       </div>
     </div>
 
@@ -357,16 +365,16 @@ PARENTING_BUILDER = """
         <h3 class="ppb-section-title">Dispute Resolution &amp; Other Provisions</h3>
         <p class="ppb-section-subtitle">How disagreements will be handled, and any other terms you want to include.</p>
       </div>
-      <div class="ppb-form-group"><label>Dispute Resolution Process</label><textarea name="dispute_process" placeholder="e.g. Direct discussion first, then Family Dispute Resolution with an accredited mediator, then legal proceedings if unresolved"></textarea></div>
+      <div class="ppb-form-group"><label>Dispute Resolution Process</label><textarea name="dispute_process" placeholder="e.g. Direct discussion first, then Family Dispute Resolution with an accredited mediator, then legal proceedings if unresolved"></textarea><p class="ppb-help">This clause sets out the steps both parents agree to follow when a disagreement arises. A tiered process — direct discussion first, then mediation, then court as a last resort — keeps disputes out of the legal system where possible and is required before most court applications anyway.</p></div>
       <div class="ppb-row">
-        <div class="ppb-form-group"><label>Domestic Travel</label><textarea name="travel_domestic" placeholder="e.g. Either parent may travel within Australia with the children; the other parent to be notified at least 7 days in advance with destination and contact details"></textarea></div>
-        <div class="ppb-form-group"><label>International Travel</label><textarea name="travel_international" placeholder="e.g. International travel requires written consent from both parties at least 30 days in advance; passports held by Party 1 and released for travel only by written agreement"></textarea></div>
+        <div class="ppb-form-group"><label>Domestic Travel</label><textarea name="travel_domestic" placeholder="e.g. Either parent may travel within Australia with the children; the other parent to be notified at least 7 days in advance with destination and contact details"></textarea><p class="ppb-help">Covers family holidays, interstate trips, and visits to relatives within Australia. Agree on how much notice is required and what details need to be shared (destination, dates, contact number).</p></div>
+        <div class="ppb-form-group"><label>International Travel</label><textarea name="travel_international" placeholder="e.g. International travel requires written consent from both parties at least 30 days in advance; passports held by Party 1 and released for travel only by written agreement"></textarea><p class="ppb-help">Taking children overseas without the other parent's consent can be a criminal offence under the Family Law Act. Agree on notice periods, who holds the passports, and how consent is given in writing.</p></div>
       </div>
       <div class="ppb-row">
-        <div class="ppb-form-group"><label>Relocation</label><textarea name="relocation" placeholder="e.g. Neither party may relocate with the children more than 50km from their current residence without written agreement from the other party or a court order"></textarea></div>
-        <div class="ppb-form-group"><label>Introduction of New Partners</label><textarea name="new_partners" placeholder="e.g. New partners introduced only after 6 months of relationship"></textarea></div>
+        <div class="ppb-form-group"><label>Relocation</label><textarea name="relocation" placeholder="e.g. Neither party may relocate with the children more than 50km from their current residence without written agreement from the other party or a court order"></textarea><p class="ppb-help">Relocation — moving far enough to significantly affect the care arrangement — is one of the most litigated issues in family law. This clause doesn't prevent either parent from moving, but requires agreement or a court order before the children move with them.</p></div>
+        <div class="ppb-form-group"><label>Introduction of New Partners</label><textarea name="new_partners" placeholder="e.g. New partners introduced only after 6 months of relationship"></textarea><p class="ppb-help">Covers when and how new romantic partners are introduced to the children. Some parents prefer a minimum relationship duration; others simply ask for advance notice. There's no legal requirement — this is a personal agreement between the parties.</p></div>
       </div>
-      <div class="ppb-form-group"><label>Additional Provisions</label><textarea name="additional_provisions" placeholder="Any other terms the parties agree to include"></textarea></div>
+      <div class="ppb-form-group"><label>Additional Provisions</label><textarea name="additional_provisions" placeholder="Any other terms the parties agree to include"></textarea><p class="ppb-help">Anything not covered in the earlier steps — for example, agreements about screen time, dietary requirements, religious observances, or how to handle school report cards and medical appointments.</p></div>
     </div>
 
     <!-- Step 10: Review -->
