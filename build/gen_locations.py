@@ -171,13 +171,32 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <p>If you were searching for "{esc(city)} family lawyers", you're in the right place. Our team includes accredited family lawyers — but the way we work is different. Rather than starting with the assumption that your matter belongs in court, we start with the question of whether it needs to. For the vast majority of separations, the answer is no: mediation resolves matters faster, far more cheaply, and with less damage to the family. We give you the legal insight of a family lawyer and the resolution focus of a mediator, in one place. <a href="/mediate-or-litigate/">See why mediation usually beats litigation →</a></p>
 
 </div></article>"""
-    # service cards
+    # city-specific service pages (for cities that have them)
+    city_key = slug.replace('-mediation', '')
+    SVC_CITY = {
+        "property-settlement-mediation": ("Property Settlement", "Divide assets, superannuation and the family home by agreement — without court."),
+        "divorce-mediation":             ("Divorce Mediation",   "Resolve property, parenting and finances across the whole separation in one process."),
+        "parenting-mediation":           ("Parenting Arrangements", "Child-focused arrangements agreed by both parents — faster and more durable than court orders."),
+        "workplace-mediation":           ("Workplace Mediation", "Resolve employment disputes, grievances and unfair dismissal claims before they escalate."),
+    }
+    CITIES_WITH_SVC = {"sydney","melbourne","brisbane","perth","adelaide","canberra","gold-coast"}
+    if city_key in CITIES_WITH_SVC:
+        svc_cards = "".join(
+            f'<article class="card"><h3>{esc(name)}</h3><p>{esc(desc)}</p>'
+            f'<a class="more" href="/{svc}-{city_key}/">Learn more <span class="arr">→</span></a></article>'
+            for svc, (name, desc) in SVC_CITY.items())
+        doc += f"""<section class="sec" style="padding-top:0"><div class="wrap">
+<div class="reveal"><p class="sec-tag">{esc(city)} specialist services</p>
+<h2 class="sec-title">{esc(city)} mediation, <em>by dispute type</em>.</h2>
+<p class="sec-intro" style="max-width:54ch">Each service below is tailored specifically to {esc(city)} &mdash; with local court registry detail, realistic cost and timing, and {esc(city)}-specific legal context.</p></div>
+<div class="cards reveal" style="margin-top:46px">{svc_cards}</div></div></section>"""
+    # generic services grid
     cards = "".join(
         f'<article class="card"><h3>{esc(n)}</h3><p>{esc(d)}</p>'
         f'<a class="more" href="/{s}/">Learn more <span class="arr">→</span></a></article>'
         for s, n, d in SERVICES[:6])
     doc += f"""<section class="sec" style="padding-top:0"><div class="wrap">
-<div class="reveal"><p class="sec-tag">Services in {esc(city)}</p>
+<div class="reveal"><p class="sec-tag">All services</p>
 <h2 class="sec-title">Every kind of dispute, <em>resolved locally</em>.</h2></div>
 <div class="cards reveal" style="margin-top:46px">{cards}</div></div></section>"""
     doc += faq_html(qa, heading=f"{city} mediation FAQs")
