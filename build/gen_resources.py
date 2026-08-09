@@ -441,7 +441,7 @@ PARENTING_BUILDER = """
     h+=group('Parties',
       row('Party 1',gd('parent1_name'))+
       row('Party 2',gd('parent2_name'))+
-      row('Children',gd('children_info').replace(/\n/g,'; '))+
+      row('Children',gd('children_info').replace(/\\n/g,'; '))+
       row('Agreement date',gd('agreement_date'))
     );
     h+=group('Parental Responsibility &amp; Residence',
@@ -485,7 +485,7 @@ PARENTING_BUILDER = """
     doc.setFont('helvetica','normal');doc.setFontSize(12);
     doc.text('Dated: '+g('agreement_date'),105,y,{align:'center'});y+=8;
     doc.text('Between '+g('parent1_name')+' and '+g('parent2_name'),105,y,{align:'center'});y+=12;
-    para('Concerning: '+g('children_info').replace(/\n/g,'; '),11,false,10);
+    para('Concerning: '+g('children_info').replace(/\\n/g,'; '),11,false,10);
     para('PREAMBLE',13,true,6);
     para('This Parenting Plan is made between '+g('parent1_name')+' and '+g('parent2_name')+' in relation to the care, welfare and development of the above-named child/children. The parties acknowledge that it is in the best interests of the child/children that both parents continue to have meaningful relationships with them, consistent with the best interests principle under the Family Law Act 1975 (Cth).',11,false,10);
     /* Clause 1 */
