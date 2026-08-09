@@ -7,7 +7,7 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        BOOK_URL, PHONE, PHONE_HREF)
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_article=True,tool_html=None):
+def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_article=True,tool_html=None,tool_position='after'):
     extra=article_schema(crumb,desc) if is_article else None
     schema=[org_schema(),breadcrumb_schema([("Home",""),("Resources",None if False else "preparing-for-mediation"),(crumb,slug)])]
     if extra: schema.append(extra)
@@ -21,9 +21,10 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_art
 <div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
 </div></section>
-<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>
-<article class="body"><div class="wrap-narrow reveal">{blocks}</div></article>"""
-    if tool_html: d+=tool_html
+<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>"""
+    if tool_html and tool_position=='before': d+=tool_html
+    d+=f"""<article class="body"><div class="wrap-narrow reveal">{blocks}</div></article>"""
+    if tool_html and tool_position=='after': d+=tool_html
     if qa: d+=faq_html(qa,heading=f"{crumb} — FAQs")
     d+=cta_band(cta_h,cta_p)+"</main>"+page_end()
     p=os.path.join(OUT,slug); os.makedirs(p,exist_ok=True)
@@ -33,12 +34,41 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,is_art
 # ---- PARENTING PLAN BUILDER TOOL (embedded on parenting-plan-template page) ----
 PARENTING_BUILDER = """
 <section class="sec ppb-outer" style="border-top:2px solid var(--line);padding:80px 0 96px;background:var(--sand)">
-<div class="wrap" style="max-width:800px">
-<div style="text-align:center;margin-bottom:52px">
+<div class="wrap" style="max-width:860px">
+
+<div style="text-align:center;margin-bottom:56px">
   <p class="sec-tag">Free interactive tool</p>
-  <h2 class="sec-title" style="margin-bottom:14px">Build Your Parenting Plan <em>Agreement</em></h2>
-  <p style="color:var(--ink-soft);max-width:52ch;margin:0 auto;font-size:1.05rem;line-height:1.7">Answer the prompts across 9 steps. When you're done, download a ready-to-sign PDF agreement — free, private, and stored only on your device.</p>
+  <h2 class="sec-title" style="margin-bottom:16px">Build Your Parenting Plan <em>Agreement</em></h2>
+  <p style="color:var(--ink-soft);max-width:54ch;margin:0 auto;font-size:1.05rem;line-height:1.7">A free tool for separated parents in Australia. Complete 9 guided steps, then download a ready-to-sign PDF — no account needed, nothing stored on our servers.</p>
 </div>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:52px">
+  <div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 24px">
+    <div style="width:44px;height:44px;background:rgba(30,96,64,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    </div>
+    <h3 style="font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 8px">Who it&rsquo;s for</h3>
+    <p style="font-size:.9rem;color:var(--ink-soft);line-height:1.65;margin:0">Separated or divorcing parents who want to formalise care arrangements for their children — whether you&rsquo;re starting from scratch or updating an existing plan.</p>
+  </div>
+  <div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 24px">
+    <div style="width:44px;height:44px;background:rgba(30,96,64,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    </div>
+    <h3 style="font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 8px">How to use it</h3>
+    <p style="font-size:.9rem;color:var(--ink-soft);line-height:1.65;margin:0">Work through 9 steps covering every key area — living arrangements, holidays, education, health, finances, and more. Skip any section that doesn&rsquo;t apply and come back any time; your answers autosave as you go.</p>
+  </div>
+  <div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 24px">
+    <div style="width:44px;height:44px;background:rgba(30,96,64,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+    </div>
+    <h3 style="font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 8px">What you get</h3>
+    <p style="font-size:.9rem;color:var(--ink-soft);line-height:1.65;margin:0">A formatted PDF parenting plan agreement, ready for both parties to sign. Covers all standard Australian parenting plan clauses under the Family Law Act 1975. Free to download, private to your device.</p>
+  </div>
+</div>
+<style>@media(max-width:640px){.ppb-intro-grid{grid-template-columns:1fr!important}}</style>
+<script>document.querySelector('.ppb-outer>div>div:nth-child(2)').classList.add('ppb-intro-grid');</script>
+
+<div style="max-width:800px;margin:0 auto">
 
 <style>
 /* ── Builder card ───────────────────────────────────────────── */
@@ -361,7 +391,9 @@ PARENTING_BUILDER = """
     <button type="button" class="ppb-btn-prev" id="ppbPrevBtn" disabled>← Previous</button>
     <button type="button" class="ppb-btn-next" id="ppbNextBtn">Next →</button>
   </div>
-</div>
+</div><!-- /.ppb-card -->
+</div><!-- /max-width wrapper -->
+</div><!-- /.wrap -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
@@ -736,7 +768,7 @@ build("parenting-plan-template",
  "Parenting Plan Template",
  "Build a parenting plan that <em>actually works</em>.",
  "Book a free initial consultation and let an accredited mediator help you create a complete, child-focused parenting plan.",
- tool_html=PARENTING_BUILDER)
+ tool_html=PARENTING_BUILDER,tool_position='before')
 
 # ---- BFA OR CONSENT ORDERS ----
 build("bfa-or-consent-orders",
