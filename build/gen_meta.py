@@ -56,7 +56,22 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "questions/what-if-my-ex-refuses-mediation",
         "questions/what-is-a-section-60i-certificate",
         "questions/who-can-issue-a-section-60i-certificate",
-        "questions/how-much-does-family-mediation-cost"]
+        "questions/how-much-does-family-mediation-cost",
+        "questions/how-long-does-family-mediation-take",
+        "questions/what-happens-if-family-mediation-fails",
+        "questions/is-family-mediation-confidential",
+        "questions/can-mediation-cover-parenting-and-property",
+        "questions/can-i-bring-a-lawyer-to-family-mediation",
+        "questions/mediation-family-violence-coercive-control",
+        "questions/what-is-shuttle-mediation",
+        "questions/how-much-does-mediation-cost",
+        "questions/how-long-does-mediation-take",
+        "questions/what-happens-during-mediation",
+        "questions/do-i-need-a-lawyer-for-mediation",
+        "questions/is-mediation-legally-binding",
+        "questions/when-should-hr-use-an-external-mediator",
+        "questions/workplace-investigation-vs-mediation",
+        "questions/is-workplace-mediation-confidential"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:

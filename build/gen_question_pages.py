@@ -506,6 +506,986 @@ qa_page(
 )
 
 
+# ── TIER 1 · PAGES 6–20 ─────────────────────────────────────
+
+qa_page(
+    slug="how-long-does-family-mediation-take",
+    question="How long does family mediation take?",
+    title="How Long Does Family Mediation Take?",
+    desc="Most family mediation sessions are completed in a single day of four to six hours. Complex property and parenting matters may need a second session.",
+    category="family",
+    direct_answer=(
+        "Most family mediation sessions are completed in a single day — typically four "
+        "to six hours. Complex matters involving both parenting and property may require "
+        "a second session, but most disputes are resolved in one appointment."
+    ),
+    body=(
+        f"<h2>Typical session length</h2>"
+        f"<p>A standard family mediation day runs from around 9 am to 3 or 4 pm, "
+        f"with breaks. The first hour is usually spent on introductions and ground "
+        f"rules; the remaining time is focused negotiation. Most families reach a "
+        f"workable agreement before the end of the day.</p>"
+        f"<h2>What affects the time?</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Factor</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Typical impact</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Parenting arrangements only</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Half day to full day</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Property settlement only</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Full day</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Parenting and property combined</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>One to two full days</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>High conflict or complex assets</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>May require a second session</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Shuttle mediation (separate rooms)</td>"
+        f"<td style='padding:.6rem .8rem'>Often slightly longer than joint sessions</td></tr>"
+        f"</tbody></table>"
+        f"<h2>How does this compare to court?</h2>"
+        f"<p>A contested parenting or property matter in the {cite('fcfcoa')} typically "
+        f"takes one to three years from filing to final hearing, with multiple interim "
+        f"appearances along the way. Mediation resolves most matters in a single day — "
+        f"and the agreement reached is binding once formalised.</p>"
+        f"<h2>Preparation speeds things up</h2>"
+        f"<p>Parties who arrive with a clear sense of their priorities, a completed "
+        f"financial statement (for property matters), and relevant documents typically "
+        f"reach agreement faster. See our "
+        f"<a href='/preparing-for-mediation/'>mediation preparation tool</a> to get "
+        f"ready before your session.</p>"
+    ),
+    sources=[
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-much-does-family-mediation-cost",
+        "what-happens-during-mediation",
+        "is-family-mediation-confidential",
+        "do-i-need-mediation-before-family-court",
+        "can-i-bring-a-lawyer-to-family-mediation",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="what-happens-if-family-mediation-fails",
+    question="What happens if family mediation fails?",
+    title="What Happens If Family Mediation Fails?",
+    desc="If family mediation fails, the FDRP issues a Section 60I certificate allowing you to apply to the Family Court. Partial agreements can still be formalised.",
+    category="family",
+    direct_answer=(
+        "If family mediation does not result in a full agreement, the accredited FDRP "
+        "issues a Section 60I certificate. This allows you to file a parenting "
+        "application in the Family Court. Any partial agreements reached during "
+        "mediation can still be documented and formalised."
+    ),
+    body=(
+        f"<h2>What the FDRP does when mediation ends without agreement</h2>"
+        f"<p>The {cite('fcfcoa_fdr')} requires the FDRP to issue a Section 60I "
+        f"certificate recording what happened. The certificate type reflects the "
+        f"reason — whether mediation was genuinely attempted, whether one party "
+        f"failed to participate, or whether FDR was assessed as inappropriate.</p>"
+        f"<p>That certificate is the document you file with the court to show you "
+        f"have satisfied the FDR requirement under the {cite('family_law_act')}.</p>"
+        f"<h2>Partial agreements still have value</h2>"
+        f"<p>It is common for mediation to resolve some issues but not others — for "
+        f"example, agreeing on a parenting schedule but not on the school holiday "
+        f"split. Partial agreements can be documented in a <a href='/parenting-plans-guide/'>"
+        f"parenting plan</a> or formalised as consent orders, reducing the number of "
+        f"issues the court needs to decide.</p>"
+        f"<h2>Going to court after mediation</h2>"
+        f"<p>Court proceedings after a failed mediation do not start from scratch. "
+        f"The issues identified during mediation often help both parties and their "
+        f"lawyers understand where genuine dispute remains, which can narrow the "
+        f"scope and cost of litigation.</p>"
+        f"<h2>Is there anything to try before court?</h2>"
+        f"<p>Yes. If mediation broke down due to communication difficulties, "
+        f"<a href='/shuttle-mediation-guide/'>shuttle mediation</a> (where parties "
+        f"are in separate rooms) may be worth attempting. Some matters that fail in "
+        f"traditional FDR are resolved through collaborative law or with lawyers "
+        f"present. We are happy to advise on next steps after an unsuccessful session.</p>"
+        + callout('If mediation failed because of family violence or safety concerns, do not feel obligated to try again without appropriate safeguards. A Section 60I(8)(b) certificate can be issued where FDR is assessed as not appropriate. See our guide to <a href="/domestic-violence-and-family-law/">family violence and family law</a>.', type='alert') +
+        f""
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth) s.60I",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-is-a-section-60i-certificate",
+        "what-if-my-ex-refuses-mediation",
+        "do-i-need-mediation-before-family-court",
+        "is-family-mediation-confidential",
+        "how-much-does-family-mediation-cost",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="is-family-mediation-confidential",
+    question="Is family mediation confidential?",
+    title="Is Family Mediation Confidential?",
+    desc="Yes — family mediation is confidential. What is said during FDR cannot be used as evidence in court proceedings, with narrow exceptions for safety disclosures.",
+    category="family",
+    direct_answer=(
+        "Yes. Family mediation is confidential. Under the Family Law Act, statements "
+        "made during family dispute resolution are protected — they cannot be used as "
+        "evidence in court proceedings. Narrow exceptions exist for disclosures about "
+        "risk of harm to a child or another person."
+    ),
+    body=(
+        f"<h2>The legal basis for confidentiality</h2>"
+        f"<p>Section 10H of the {cite('family_law_act')} provides that communications "
+        f"made during FDR are inadmissible in court. This protection exists so parties "
+        f"can speak candidly without fear that concessions or compromises made during "
+        f"negotiation will be used against them later.</p>"
+        f"<h2>What the protection covers</h2>"
+        f"<ul>"
+        f"<li>Statements made by either party during the mediation session</li>"
+        f"<li>Documents prepared specifically for use in mediation</li>"
+        f"<li>Proposals and counter-proposals exchanged during FDR</li>"
+        f"<li>Admissions made in the course of negotiation</li>"
+        f"</ul>"
+        f"<h2>Exceptions to confidentiality</h2>"
+        f"<p>The protection does not apply to:</p>"
+        f"<ul>"
+        f"<li>Disclosures about a risk of harm to a child</li>"
+        f"<li>Disclosures about a risk of harm to another person</li>"
+        f"<li>Any agreement reached in writing during or following the session</li>"
+        f"<li>Information that would otherwise be admissible — confidentiality does "
+        f"not protect pre-existing documents simply because they were brought to mediation</li>"
+        f"</ul>"
+        f"<h2>Does the mediator keep notes?</h2>"
+        f"<p>The FDRP keeps session notes for their own records but these are not "
+        f"disclosed to the court. The only document provided to the court is the "
+        f"Section 60I certificate, which records the outcome category — not what "
+        f"was said during the session.</p>"
+        f"<h2>What about agreements reached in mediation?</h2>"
+        f"<p>Any written agreement signed by both parties at the conclusion of "
+        f"mediation is not subject to the confidentiality protection — it can be "
+        f"filed as a <a href='/bfa-or-consent-orders/'>consent order</a> or "
+        f"<a href='/parenting-plans-guide/'>parenting plan</a>. The confidentiality "
+        f"shield protects the negotiation process, not the outcome.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth) s.10H — confidentiality of FDR",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "do-i-need-mediation-before-family-court",
+        "what-happens-during-mediation",
+        "is-mediation-legally-binding",
+        "can-i-bring-a-lawyer-to-family-mediation",
+        "what-happens-if-family-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="can-mediation-cover-parenting-and-property",
+    question="Can mediation deal with parenting and property at the same time?",
+    title="Can Mediation Cover Parenting and Property?",
+    desc="Yes — mediation can resolve parenting and property settlement in one process, usually more efficient than running two separate proceedings.",
+    category="family",
+    direct_answer=(
+        "Yes. Mediation can address both parenting arrangements and property settlement "
+        "in a single process. Resolving both together is often more efficient and leads "
+        "to more durable agreements, because each issue can be considered alongside "
+        "the other."
+    ),
+    body=(
+        f"<h2>Why deal with both together?</h2>"
+        f"<p>Parenting and property are often interconnected. Who keeps the family "
+        f"home may affect where the children live. Child support interacts with "
+        f"property division. Addressing both in mediation lets parties see the full "
+        f"picture and make trade-offs — something courts can struggle to facilitate "
+        f"across separate proceedings.</p>"
+        f"<h2>How a combined session works</h2>"
+        f"<p>Our mediators structure combined sessions so that parenting is typically "
+        f"addressed first — most separating parents find it easier to negotiate "
+        f"finances once they have a clear picture of the co-parenting arrangement. "
+        f"The session then moves to property, superannuation and any other financial "
+        f"matters.</p>"
+        f"<h2>Does combining them take longer?</h2>"
+        f"<p>Yes — a combined parenting and property mediation typically takes a full "
+        f"day and may occasionally require a second session for complex matters. "
+        f"This is still considerably faster and cheaper than running two separate "
+        f"court proceedings.</p>"
+        f"<h2>What about the FDR certificate?</h2>"
+        f"<p>The <a href='/questions/what-is-a-section-60i-certificate/'>Section 60I "
+        f"certificate</a> requirement applies to parenting matters only. There is no "
+        f"equivalent legal precondition for property matters — but courts expect "
+        f"parties to have made genuine resolution attempts before listing a "
+        f"property hearing.</p>"
+        f"<h2>Formalising the agreement</h2>"
+        f"<p>A parenting agreement reached in mediation can be recorded as a "
+        f"<a href='/parenting-plans-guide/'>parenting plan</a> or filed as consent "
+        f"orders. Property agreements are typically formalised through "
+        f"<a href='/bfa-or-consent-orders/'>consent orders or a binding financial "
+        f"agreement</a>. Both can be prepared after the mediation session with the "
+        f"assistance of a family lawyer.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth)",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "do-i-need-mediation-before-family-court",
+        "how-long-does-family-mediation-take",
+        "is-family-mediation-confidential",
+        "how-much-does-family-mediation-cost",
+        "can-i-bring-a-lawyer-to-family-mediation",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="can-i-bring-a-lawyer-to-family-mediation",
+    question="Can I bring a lawyer to family mediation?",
+    title="Can I Bring a Lawyer to Family Mediation?",
+    desc="Yes — you can bring a lawyer to family mediation as a support person or adviser. Their role is to advise you, not to advocate or negotiate on your behalf.",
+    category="family",
+    direct_answer=(
+        "Yes, you can bring a lawyer to family mediation. Their role is to support and "
+        "advise you, not to advocate or run arguments. Most FDRPs welcome lawyers who "
+        "understand the mediation process and can help their client participate "
+        "constructively."
+    ),
+    body=(
+        f"<h2>What a lawyer can do in mediation</h2>"
+        f"<ul>"
+        f"<li>Advise you privately during breaks on the legal implications of proposed "
+        f"agreements</li>"
+        f"<li>Help you understand your rights and entitlements before and after the session</li>"
+        f"<li>Review any draft agreement at the end of the day before you sign</li>"
+        f"<li>Assist with formalising the agreement into consent orders or a binding "
+        f"financial agreement after the session</li>"
+        f"</ul>"
+        f"<h2>What a lawyer should not do in mediation</h2>"
+        f"<p>Mediation is a facilitated negotiation, not a court hearing. A lawyer who "
+        f"interrupts, advocates aggressively, or turns the session into a legal argument "
+        f"can undermine the process. Good mediation lawyers understand the difference "
+        f"between advising a client and running a case.</p>"
+        f"<h2>Does the other party need to agree?</h2>"
+        f"<p>Typically, both parties should be informed if a lawyer is attending so "
+        f"neither side feels ambushed. If one party has a lawyer, the other may also "
+        f"wish to bring one or take independent legal advice before the session.</p>"
+        f"<h2>Getting legal advice before you mediate</h2>"
+        f"<p>Even if you do not bring a lawyer to the session itself, we recommend "
+        f"getting independent legal advice before mediation on property matters — "
+        f"particularly superannuation splitting and the range of outcomes a court "
+        f"might award. This helps you negotiate from an informed position.</p>"
+        f"<p>See our <a href='/family-lawyers/'>family lawyers directory</a> if you "
+        f"need a referral.</p>"
+    ),
+    sources=[
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "is-family-mediation-confidential",
+        "do-i-need-a-lawyer-for-mediation",
+        "what-happens-during-mediation",
+        "how-much-does-family-mediation-cost",
+        "can-mediation-cover-parenting-and-property",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="mediation-family-violence-coercive-control",
+    question="Is mediation suitable where there is family violence or coercive control?",
+    title="Mediation and Family Violence: Is It Suitable?",
+    desc="Mediation is often not appropriate where there is family violence or coercive control. Exemptions from FDR apply, and safety must come first.",
+    category="family",
+    direct_answer=(
+        "Mediation is often not appropriate where there is family violence or coercive "
+        "control. The law recognises this: an accredited FDRP can assess FDR as "
+        "unsuitable and issue a Section 60I certificate allowing court access without "
+        "mediation. Safety must come first — please seek appropriate support before "
+        "considering mediation."
+    ),
+    body=(
+        callout('If you are in immediate danger, call <strong>000</strong>. For support with family violence, call <strong>1800RESPECT on 1800 737 732</strong> (24/7, free, confidential). See also our guide to <a href="/domestic-violence-and-family-law/">family violence and family law</a>.', type='alert') +
+        f"<h2>Why family violence affects mediation</h2>"
+        f"<p>Mediation works best when both parties can participate freely and on "
+        f"reasonably equal terms. Where there is family violence or coercive control, "
+        f"one party may be unable to negotiate safely or freely — meaning any agreement "
+        f"reached may not reflect genuine consent.</p>"
+        f"<h2>The legal exemption</h2>"
+        f"<p>Under section 60I of the {cite('family_law_act')}, you are not required "
+        f"to attempt FDR if there is a risk of family violence. An accredited FDRP can "
+        f"issue a s60I(8)(b) certificate — which allows you to apply to the "
+        f"{cite('fcfcoa')} directly without mediation — if FDR is assessed as not "
+        f"appropriate in the circumstances.</p>"
+        f"<h2>Can mediation ever be appropriate with DV history?</h2>"
+        f"<p>In some situations — where violence is historical rather than ongoing, "
+        f"safety plans are in place, and both parties genuinely consent — carefully "
+        f"managed mediation with appropriate safeguards (such as "
+        f"<a href='/shuttle-mediation-guide/'>shuttle mediation</a>, where parties "
+        f"are in separate rooms and never meet face-to-face) may be considered. "
+        f"This is a decision made carefully by the FDRP in consultation with both "
+        f"parties and relevant support services — never assumed.</p>"
+        f"<h2>Protective orders and mediation</h2>"
+        f"<p>If an Apprehended Violence Order (AVO) or Family Violence Intervention "
+        f"Order is in place, mediation may need to be conducted in a way that complies "
+        f"with the order's conditions. Always disclose any existing orders to the FDRP "
+        f"before a session is scheduled.</p>"
+        f"<h2>Where to get help</h2>"
+        f"<p>1800RESPECT (1800 737 732) offers free, confidential support 24 hours "
+        f"a day. They can also help you access legal services and safety planning. "
+        f"Legal Aid in your state can provide advice on your options when family "
+        f"violence is present.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth) s.60I",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("1800RESPECT — family and domestic violence support",
+         "https://www.1800respect.org.au/"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "do-i-need-mediation-before-family-court",
+        "what-is-a-section-60i-certificate",
+        "what-is-shuttle-mediation",
+        "what-happens-if-family-mediation-fails",
+        "is-family-mediation-confidential",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="what-is-shuttle-mediation",
+    question="What is shuttle mediation?",
+    title="What Is Shuttle Mediation? | Mediations Australia",
+    desc="Shuttle mediation is where parties stay in separate rooms and the mediator moves between them. It is used where face-to-face contact is difficult or unsafe.",
+    category="mediation-process",
+    direct_answer=(
+        "Shuttle mediation is a format where the parties remain in separate rooms "
+        "throughout the session and the mediator moves between them, relaying "
+        "proposals and facilitating negotiation. It is used where face-to-face "
+        "contact is difficult, uncomfortable, or inappropriate."
+    ),
+    body=(
+        f"<h2>How shuttle mediation works</h2>"
+        f"<p>At the start of a shuttle session, the mediator meets with each party "
+        f"separately to understand their position and priorities. The mediator then "
+        f"moves between the rooms, conveying offers and responses, identifying common "
+        f"ground, and working toward an agreement — without the parties ever being "
+        f"in the same space.</p>"
+        f"<h2>When shuttle mediation is used</h2>"
+        f"<ul>"
+        f"<li>Where there is a history of family violence or coercive control</li>"
+        f"<li>Where high conflict makes joint sessions unproductive</li>"
+        f"<li>Where one or both parties find face-to-face contact distressing</li>"
+        f"<li>Where a power imbalance exists between the parties</li>"
+        f"<li>Online mediation — which is inherently shuttle-style by default</li>"
+        f"</ul>"
+        f"<h2>Shuttle vs joint mediation — which is better?</h2>"
+        f"<p>Joint sessions (where both parties are in the same room) can be more "
+        f"efficient and allow direct communication, which sometimes helps parties "
+        f"reach more nuanced agreements. Shuttle mediation takes longer and relies "
+        f"heavily on the mediator's skill in conveying proposals accurately. "
+        f"The right format depends on the circumstances — your FDRP will discuss "
+        f"this with you before the session.</p>"
+        f"<h2>Is shuttle mediation still family dispute resolution?</h2>"
+        f"<p>Yes. Shuttle mediation conducted by an accredited FDRP counts as family "
+        f"dispute resolution under the {cite('family_law_act')}. A Section 60I "
+        f"certificate can be issued following a shuttle session in the same way as "
+        f"a joint session.</p>"
+        f"<h2>Online shuttle mediation</h2>"
+        f"<p>Online mediation via secure video platform is increasingly common and "
+        f"offers a built-in shuttle format — each party joins from a separate "
+        f"location and the mediator manages separate video calls. See our guide to "
+        f"<a href='/online-mediation-australia/'>online mediation in Australia</a>.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth)",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "mediation-family-violence-coercive-control",
+        "what-happens-during-mediation",
+        "is-family-mediation-confidential",
+        "how-long-does-family-mediation-take",
+        "do-i-need-mediation-before-family-court",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="how-much-does-mediation-cost",
+    question="How much does mediation cost in Australia?",
+    title="How Much Does Mediation Cost in Australia?",
+    desc="Mediation costs $1,500–$5,000 per session in Australia, varying by dispute type. Government subsidies apply for family matters. Court costs far more.",
+    category="mediation-process",
+    direct_answer=(
+        "Mediation costs in Australia range from free (through government-subsidised "
+        "family services) to $1,500–$5,000 for a private session, depending on the "
+        "dispute type and provider. Family mediation, workplace mediation, and "
+        "commercial mediation each have different typical costs."
+    ),
+    body=(
+        f"<h2>Cost by dispute type</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Dispute type</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Private cost (approx)</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Subsidised options?</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Family / parenting (private FDRP)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$2,000–$5,000 per day</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes — Family Relationships Centres, FCFCOA</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Property settlement</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$2,500–$5,000 per day</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Limited</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Workplace (employment disputes)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$1,500–$4,000 per day</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Fair Work Commission (conciliation)</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Commercial / business</td>"
+        f"<td style='padding:.6rem .8rem'>$3,000–$8,000+ per day</td>"
+        f"<td style='padding:.6rem .8rem'>No</td></tr>"
+        f"</tbody></table>"
+        f"<h2>What the fee includes</h2>"
+        f"<p>A private mediation fee typically covers the mediator's preparation "
+        f"(reviewing documents and financial information in advance), the session "
+        f"itself, and an agreement summary if the matter resolves. Legal advice, "
+        f"consent orders, and lawyer attendance are separate.</p>"
+        f"<h2>How costs are split</h2>"
+        f"<p>Mediation costs are generally shared equally between the parties. This "
+        f"is negotiable — in some commercial matters, the party that initiated the "
+        f"dispute bears a larger share. In workplace matters, an employer often "
+        f"covers the full cost as part of a workplace investigation or HR response.</p>"
+        f"<h2>The cost of not mediating</h2>"
+        f"<p>A contested family court matter typically costs $20,000–$100,000 per "
+        f"party. A commercial litigation matter can run well beyond that. Mediation "
+        f"resolves most matters in one day at a fraction of that cost. See our "
+        f"<a href='/our-fee-structure/'>fee structure</a> for current rates.</p>"
+    ),
+    sources=[
+        ("Federal Circuit and Family Court of Australia — filing fees",
+         "https://www.fcfcoa.gov.au/fl/fees/fl-fees"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+        ("Fair Work Commission — unfair dismissal conciliation",
+         "https://www.fwc.gov.au/disputes-at-work/unfair-dismissals"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-much-does-family-mediation-cost",
+        "how-long-does-mediation-take",
+        "what-happens-during-mediation",
+        "is-mediation-legally-binding",
+        "do-i-need-a-lawyer-for-mediation",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="how-long-does-mediation-take",
+    question="How long does mediation take?",
+    title="How Long Does Mediation Take? | Mediations Australia",
+    desc="Most mediation sessions take four to six hours in a single day. Complex disputes may need a second session. Court proceedings take months or years.",
+    category="mediation-process",
+    direct_answer=(
+        "Most mediation sessions are completed in a single day — typically four to "
+        "six hours. Complex disputes or those involving multiple parties may need a "
+        "second session. Either way, mediation resolves most disputes in days, not "
+        "the months or years a court hearing can take."
+    ),
+    body=(
+        f"<h2>Typical durations by dispute type</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Dispute type</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Typical session length</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Parenting arrangements</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Half day to full day</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Property settlement</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Full day</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Parenting and property combined</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>One to two full days</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Workplace dispute</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Half day to full day</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Commercial or estate dispute</td>"
+        f"<td style='padding:.6rem .8rem'>Full day, sometimes two</td></tr>"
+        f"</tbody></table>"
+        f"<h2>Time from booking to resolution</h2>"
+        f"<p>With a private mediator, most parties can schedule a session within "
+        f"one to three weeks. Government-subsidised services can have longer wait "
+        f"times. Compare this to a contested family court matter, which typically "
+        f"takes one to three years from filing to final hearing — and a commercial "
+        f"dispute that can run longer still.</p>"
+        f"<h2>What can slow mediation down?</h2>"
+        f"<ul>"
+        f"<li>Incomplete financial disclosure before the session</li>"
+        f"<li>A party who has not received independent legal advice on their options</li>"
+        f"<li>Complex asset structures or business valuations needing expert input</li>"
+        f"<li>High conflict requiring shuttle format rather than joint sessions</li>"
+        f"</ul>"
+        f"<p>Good preparation is the single biggest factor in reducing session time. "
+        f"Use our <a href='/preparing-for-mediation/'>free preparation tool</a> "
+        f"before your session.</p>"
+    ),
+    sources=[
+        ("Federal Circuit and Family Court of Australia",
+         "https://www.fcfcoa.gov.au/"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-much-does-mediation-cost",
+        "what-happens-during-mediation",
+        "how-long-does-family-mediation-take",
+        "do-i-need-a-lawyer-for-mediation",
+        "is-mediation-legally-binding",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="what-happens-during-mediation",
+    question="What happens during mediation?",
+    title="What Happens During Mediation? | Mediations Australia",
+    desc="During mediation a neutral mediator helps parties reach a voluntary agreement. Sessions follow four stages: opening, exploration, negotiation, and agreement.",
+    category="mediation-process",
+    direct_answer=(
+        "During mediation, a neutral accredited mediator facilitates a structured "
+        "conversation between the parties to help them reach a voluntary agreement. "
+        "A typical session moves through four stages: opening and ground rules, "
+        "exploration of each party's concerns, negotiation of options, and "
+        "formalising any agreement reached."
+    ),
+    body=(
+        f"<h2>The four stages of a mediation session</h2>"
+        f"<p><strong>1. Opening</strong> — The mediator introduces themselves, "
+        f"explains the process and ground rules, and confirms that participation is "
+        f"voluntary and confidential. Each party has an opportunity to briefly "
+        f"describe their situation without interruption.</p>"
+        f"<p><strong>2. Exploration</strong> — The mediator helps both parties "
+        f"identify the key issues, understand each other's concerns, and separate "
+        f"positions (what people say they want) from interests (why they want it). "
+        f"This stage often reveals unexpected common ground.</p>"
+        f"<p><strong>3. Negotiation</strong> — Parties generate options and work "
+        f"toward solutions. The mediator does not make decisions or take sides — "
+        f"they ask questions, reality-test proposals, and help keep the conversation "
+        f"productive. Private meetings (caucuses) with each party may occur.</p>"
+        f"<p><strong>4. Agreement</strong> — If the parties reach agreement, the "
+        f"key terms are summarised in writing before everyone leaves. This document "
+        f"is then used to prepare a formal agreement (consent orders, parenting plan, "
+        f"or settlement deed) after the session.</p>"
+        f"<h2>What the mediator does not do</h2>"
+        f"<ul>"
+        f"<li>Give legal advice to either party</li>"
+        f"<li>Make decisions or impose outcomes</li>"
+        f"<li>Take sides or express opinions on who is right</li>"
+        f"<li>Disclose what one party said to the other (in shuttle format)</li>"
+        f"</ul>"
+        f"<h2>Joint vs shuttle format</h2>"
+        f"<p>In a joint session, both parties are in the same room throughout. In "
+        f"<a href='/questions/what-is-shuttle-mediation/'>shuttle mediation</a>, "
+        f"parties remain in separate rooms and the mediator moves between them. "
+        f"The process is the same — only the format differs.</p>"
+        f"<h2>What to bring</h2>"
+        f"<p>For family and property matters, bring financial documents, a list of "
+        f"assets and debts, and any relevant correspondence. Use our "
+        f"<a href='/preparing-for-mediation/'>free preparation tool</a> to organise "
+        f"what you need before the session.</p>"
+    ),
+    sources=[
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+        ("Mediator Standards Board (AMDRAS)",
+         "https://msb.org.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-long-does-mediation-take",
+        "is-family-mediation-confidential",
+        "what-is-shuttle-mediation",
+        "do-i-need-a-lawyer-for-mediation",
+        "is-mediation-legally-binding",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="do-i-need-a-lawyer-for-mediation",
+    question="Do I need a lawyer for mediation?",
+    title="Do I Need a Lawyer for Mediation?",
+    desc="You do not need a lawyer for mediation, but independent legal advice before and after is strongly recommended for property and parenting matters.",
+    category="mediation-process",
+    direct_answer=(
+        "You do not need a lawyer to participate in mediation — and many people "
+        "mediate successfully without one present. However, independent legal advice "
+        "before the session (to understand your rights) and after (to review any "
+        "agreement) is strongly recommended, particularly for property and "
+        "financial matters."
+    ),
+    body=(
+        f"<h2>What a mediator cannot do</h2>"
+        f"<p>The mediator is neutral and cannot give legal advice to either party. "
+        f"They help facilitate the conversation — they cannot tell you whether a "
+        f"proposed property split is fair, what a court would likely award, or "
+        f"whether an agreement protects your interests. Only a lawyer advising you "
+        f"independently can do that.</p>"
+        f"<h2>Why legal advice before mediation matters</h2>"
+        f"<p>Knowing your legal entitlements before you mediate helps you negotiate "
+        f"from an informed position. For property matters, this includes understanding "
+        f"the range of outcomes a court might order, how superannuation is split, and "
+        f"whether any time limits apply. For parenting, it means understanding the "
+        f"best-interests framework and what the court considers.</p>"
+        f"<h2>Why legal review after mediation matters</h2>"
+        f"<p>An agreement reached at mediation is not legally binding until it is "
+        f"formalised — typically as <a href='/bfa-or-consent-orders/'>consent orders "
+        f"or a binding financial agreement</a>. A lawyer should review the terms "
+        f"before you sign, and help prepare the formal documents. Some agreements "
+        f"that seem fair on the day have unintended tax, superannuation, or "
+        f"enforcement consequences that a lawyer will identify.</p>"
+        f"<h2>Bringing a lawyer to the session</h2>"
+        f"<p>You can <a href='/questions/can-i-bring-a-lawyer-to-family-mediation/'>"
+        f"bring a lawyer to mediation</a> as a support person and adviser. This is "
+        f"more common in property and commercial mediations than in parenting "
+        f"sessions. If one party has a lawyer present, the other may wish to "
+        f"arrange the same.</p>"
+        f"<h2>Where to find a family lawyer</h2>"
+        f"<p>Our <a href='/family-lawyers/'>family lawyers directory</a> lists "
+        f"practitioners in major Australian cities who work alongside mediators "
+        f"and understand the process.</p>"
+    ),
+    sources=[
+        ("Federal Circuit and Family Court of Australia",
+         "https://www.fcfcoa.gov.au/"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "can-i-bring-a-lawyer-to-family-mediation",
+        "is-mediation-legally-binding",
+        "what-happens-during-mediation",
+        "is-family-mediation-confidential",
+        "how-much-does-mediation-cost",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="is-mediation-legally-binding",
+    question="Is mediation legally binding?",
+    title="Is Mediation Legally Binding? | Mediations Australia",
+    desc="Mediation is not legally binding itself, but agreements can be formalised as consent orders or a binding financial agreement to become enforceable.",
+    category="mediation-process",
+    direct_answer=(
+        "Mediation itself is not legally binding — it is a voluntary process. However, "
+        "agreements reached in mediation can be made legally binding by formalising "
+        "them as consent orders (filed with the court) or a binding financial "
+        "agreement (signed by both parties with independent legal advice)."
+    ),
+    body=(
+        f"<h2>The difference between the process and the outcome</h2>"
+        f"<p>The mediation session is voluntary and confidential — neither party is "
+        f"compelled to agree to anything. But once an agreement is reached and "
+        f"properly formalised, it becomes as enforceable as any other court order "
+        f"or contract.</p>"
+        f"<h2>How to make a family agreement legally binding</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Agreement type</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>How it is formalised</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Legally binding?</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Parenting plan</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Written and signed by both parents</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Not a court order — good faith agreement</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Consent orders</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Filed with and approved by the court</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes — enforceable as a court order</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Binding financial agreement (BFA)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Signed by both parties with independent legal advice</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes — binding contract</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Workplace or commercial settlement deed</td>"
+        f"<td style='padding:.6rem .8rem'>Signed written agreement</td>"
+        f"<td style='padding:.6rem .8rem'>Yes — enforceable contract</td></tr>"
+        f"</tbody></table>"
+        f"<h2>What happens if someone breaks the agreement?</h2>"
+        f"<p>A consent order can be enforced through the {cite('fcfcoa')} — "
+        f"breach can result in fines, community service, or imprisonment for "
+        f"serious contraventions. A binding financial agreement or settlement deed "
+        f"can be enforced through the courts as a breach of contract.</p>"
+        f"<h2>Should I get legal advice before signing?</h2>"
+        f"<p>Yes — always. A lawyer should review any draft agreement before you "
+        f"formalise it. For binding financial agreements, independent legal advice "
+        f"is a legal requirement — without it the agreement can be set aside. "
+        f"See <a href='/bfa-or-consent-orders/'>consent orders vs BFAs explained</a>.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth)",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — consent orders",
+         "https://www.fcfcoa.gov.au/fl/consent-orders"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-happens-during-mediation",
+        "do-i-need-a-lawyer-for-mediation",
+        "is-family-mediation-confidential",
+        "how-long-does-mediation-take",
+        "how-much-does-mediation-cost",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="when-should-hr-use-an-external-mediator",
+    question="When should HR use an external mediator?",
+    title="When Should HR Use an External Mediator?",
+    desc="Use an external mediator when internal resolution fails, a conflict of interest exists, or the allegations are serious enough to require independent handling.",
+    category="workplace",
+    direct_answer=(
+        "HR should consider an external mediator when internal resolution attempts "
+        "have failed, where there is a real or perceived conflict of interest in "
+        "handling the dispute internally, where the allegations are serious, or where "
+        "the parties have lost confidence in the organisation's ability to resolve "
+        "the matter fairly."
+    ),
+    body=(
+        f"<h2>Signs that internal resolution is insufficient</h2>"
+        f"<ul>"
+        f"<li>The conflict has persisted despite informal management intervention</li>"
+        f"<li>One or both parties have raised a formal grievance</li>"
+        f"<li>The dispute involves a manager and a direct report (inherent power imbalance)</li>"
+        f"<li>HR or a manager is named as a party or witness in the dispute</li>"
+        f"<li>The matter involves bullying, harassment, or discrimination allegations</li>"
+        f"<li>There is legal risk — an unfair dismissal, general protections, or "
+        f"workers compensation claim has been filed or is threatened</li>"
+        f"</ul>"
+        f"<h2>Why external mediation helps</h2>"
+        f"<p>An external mediator has no stake in the organisation's culture, "
+        f"management relationships, or the outcome. Parties are more likely to speak "
+        f"candidly and engage genuinely when they trust the process is independent. "
+        f"External mediation also protects the employer from later claims that the "
+        f"resolution process was biased.</p>"
+        f"<h2>Timing matters</h2>"
+        f"<p>The sooner mediation is initiated, the better. Unresolved workplace "
+        f"conflict tends to escalate — affecting team morale, productivity, and "
+        f"ultimately exposing the employer to {cite('fair_work')} applications, "
+        f"workers compensation claims for psychological injury, and WHS regulator "
+        f"scrutiny. Early mediation is almost always cheaper than late mediation.</p>"
+        f"<h2>Before a Fair Work application is filed</h2>"
+        f"<p>If an employee is considering an unfair dismissal or general protections "
+        f"application, external mediation before the filing deadline can resolve the "
+        f"matter without litigation. Once an application is filed, the "
+        f"{cite('fair_work')} conducts its own conciliation — but the parties have "
+        f"less control over the process and timing.</p>"
+        f"<h2>Confidentiality in workplace mediation</h2>"
+        f"<p>External mediators are bound by confidentiality. What is said in the "
+        f"mediation session cannot be used in subsequent proceedings — this allows "
+        f"frank discussion and genuine compromise without the risk of admissions "
+        f"being used against either party.</p>"
+    ),
+    sources=[
+        ("Fair Work Commission — unfair dismissal and dispute resolution",
+         "https://www.fwc.gov.au/disputes-at-work/unfair-dismissals"),
+        ("Safe Work Australia — managing psychosocial hazards",
+         "https://www.safeworkaustralia.gov.au/safety-topic/hazards/mental-health"),
+        ("Fair Work Ombudsman",
+         "https://www.fairwork.gov.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "workplace-investigation-vs-mediation",
+        "is-workplace-mediation-confidential",
+        "how-much-does-mediation-cost",
+        "what-happens-during-mediation",
+        "is-mediation-legally-binding",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="workplace-investigation-vs-mediation",
+    question="Workplace investigation vs mediation: what's the difference?",
+    title="Workplace Investigation vs Mediation: The Difference",
+    desc="A workplace investigation determines facts. Mediation helps parties reach a voluntary resolution. They serve different purposes and are not interchangeable.",
+    category="workplace",
+    direct_answer=(
+        "A workplace investigation is a formal fact-finding process that produces "
+        "findings and recommendations — it determines what happened. Mediation is a "
+        "facilitated negotiation that helps parties reach a voluntary agreement — it "
+        "resolves the relationship going forward. They serve different purposes and "
+        "are sometimes used together."
+    ),
+    body=(
+        f"<h2>Key differences</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'></th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Investigation</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Mediation</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb);font-weight:600'>Purpose</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Determine facts</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Resolve the dispute</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb);font-weight:600'>Process</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Investigator interviews witnesses, reviews evidence</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Mediator facilitates negotiation between parties</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb);font-weight:600'>Outcome</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Findings of fact, recommendations</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Voluntary agreement between parties</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb);font-weight:600'>Confidential?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Report may be disclosed to parties</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Fully confidential</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;font-weight:600'>Voluntary?</td>"
+        f"<td style='padding:.6rem .8rem'>Employer-directed; parties must participate</td>"
+        f"<td style='padding:.6rem .8rem'>Voluntary — both parties must agree to participate</td></tr>"
+        f"</tbody></table>"
+        f"<h2>When to investigate vs when to mediate</h2>"
+        f"<p>An investigation is appropriate where there are serious allegations "
+        f"that need to be established as fact before any action is taken — for "
+        f"example, allegations of serious misconduct, harassment, or fraud that "
+        f"may lead to disciplinary action or termination.</p>"
+        f"<p>Mediation is appropriate where the primary goal is to repair a "
+        f"working relationship, resolve an ongoing conflict, or reach a settlement "
+        f"— even where some fault is acknowledged. It is also useful where an "
+        f"investigation would be disproportionate to the seriousness of the issue.</p>"
+        f"<h2>Can you do both?</h2>"
+        f"<p>Yes — and sometimes it is the right sequence. An investigation may "
+        f"establish findings that then provide the basis for a mediated resolution "
+        f"of the employment relationship. Alternatively, mediation may be attempted "
+        f"first, and an investigation initiated only if mediation does not resolve "
+        f"the matter. The right sequence depends on the nature and seriousness of "
+        f"the allegations.</p>"
+        f"<p>Our <a href='/workplace-mediation/'>workplace mediation service</a> "
+        f"includes advice on which process is appropriate for your situation.</p>"
+    ),
+    sources=[
+        ("Fair Work Commission — dispute resolution",
+         "https://www.fwc.gov.au/disputes-at-work"),
+        ("Safe Work Australia — managing psychosocial hazards",
+         "https://www.safeworkaustralia.gov.au/safety-topic/hazards/mental-health"),
+        ("Fair Work Ombudsman",
+         "https://www.fairwork.gov.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "when-should-hr-use-an-external-mediator",
+        "is-workplace-mediation-confidential",
+        "is-mediation-legally-binding",
+        "what-happens-during-mediation",
+        "how-much-does-mediation-cost",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="is-workplace-mediation-confidential",
+    question="Is workplace mediation confidential?",
+    title="Is Workplace Mediation Confidential?",
+    desc="Yes. Workplace mediation is confidential. What is said in the session cannot be used in subsequent proceedings, with narrow safety exceptions.",
+    category="workplace",
+    direct_answer=(
+        "Yes. Workplace mediation is confidential. What is said during the session "
+        "cannot be used as evidence in subsequent legal proceedings. Both parties "
+        "and the mediator are bound by confidentiality, which allows frank "
+        "discussion and genuine compromise without risk of admissions being used "
+        "against either party."
+    ),
+    body=(
+        f"<h2>What confidentiality covers</h2>"
+        f"<ul>"
+        f"<li>Statements made by either party during the session</li>"
+        f"<li>Documents shared specifically for use in mediation</li>"
+        f"<li>Offers and counter-offers exchanged during negotiation</li>"
+        f"<li>The mediator's own notes from the session</li>"
+        f"</ul>"
+        f"<h2>What it does not cover</h2>"
+        f"<ul>"
+        f"<li>The fact that mediation occurred (though parties can agree to keep "
+        f"this confidential too)</li>"
+        f"<li>Pre-existing documents — bringing a document to mediation does not "
+        f"make it confidential if it was already discoverable</li>"
+        f"<li>Any written settlement agreement — this is the exception. The agreement "
+        f"itself is not confidential and can be enforced as a contract</li>"
+        f"</ul>"
+        f"<h2>Why confidentiality matters in workplace disputes</h2>"
+        f"<p>Employees are more likely to speak candidly about workplace grievances "
+        f"if they know their words cannot be quoted in a {cite('fair_work')} "
+        f"proceeding or used in a subsequent unfair dismissal application. Employers "
+        f"are more willing to explore flexible settlements when they know a concession "
+        f"in mediation cannot be used as an admission in litigation.</p>"
+        f"<h2>Can the employer share the outcome?</h2>"
+        f"<p>Parties can agree to keep the outcome confidential as part of the "
+        f"settlement — this is common where the resolution involves a financial "
+        f"payment or agreed separation. The settlement agreement typically includes "
+        f"a confidentiality clause binding both parties.</p>"
+        f"<h2>What about workplace investigations?</h2>"
+        f"<p>A workplace investigation is not confidential in the same way — the "
+        f"employer directs the process and the findings are reported. If you are "
+        f"unsure whether an investigation or mediation is more appropriate, see our "
+        f"comparison: <a href='/questions/workplace-investigation-vs-mediation/'>"
+        f"workplace investigation vs mediation</a>.</p>"
+    ),
+    sources=[
+        ("Fair Work Commission — dispute resolution",
+         "https://www.fwc.gov.au/disputes-at-work"),
+        ("Fair Work Ombudsman",
+         "https://www.fairwork.gov.au/"),
+        ("Mediator Standards Board (AMDRAS)",
+         "https://msb.org.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "when-should-hr-use-an-external-mediator",
+        "workplace-investigation-vs-mediation",
+        "is-mediation-legally-binding",
+        "is-family-mediation-confidential",
+        "what-happens-during-mediation",
+    ],
+    read_min=3,
+)
+
+
 # ─────────────────────────────────────────────
 # Build runner
 # ─────────────────────────────────────────────
