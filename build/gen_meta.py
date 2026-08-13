@@ -71,7 +71,10 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "questions/is-mediation-legally-binding",
         "questions/when-should-hr-use-an-external-mediator",
         "questions/workplace-investigation-vs-mediation",
-        "questions/is-workplace-mediation-confidential"]
+        "questions/is-workplace-mediation-confidential",
+        "best-apps-for-separated-parents",
+        "my-ex-wont-sign-divorce-papers",
+        "who-pays-bills-during-separation"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:
