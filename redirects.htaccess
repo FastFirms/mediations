@@ -34,6 +34,7 @@ Redirect 301 /separated-under-one-roof/ /separation-under-one-roof/
 # Batch 2 consolidation redirects
 Redirect 301 /consent-order/ /consent-orders-explained/
 Redirect 301 /consent-orders-example/ /consent-orders-explained/
+Redirect 301 /divorce-property-settlement-your-best-options-in-2022/ /property-settlement-after-separation/
 Redirect 301 /consent-orders-2025-update/ /consent-orders-explained/
 Redirect 301 /how-do-i-change-a-consent-order/ /consent-orders-explained/
 Redirect 301 /how-long-do-consent-orders-take/ /consent-orders-explained/

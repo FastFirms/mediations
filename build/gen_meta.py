@@ -49,7 +49,14 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "how-we-help","privacy-policy",
         "unfair-dismissal-termination-mediation","workplace-bullying-harassment-mediation",
         "general-protections-discrimination-mediation","partnership-executive-exit-mediation",
-        "redundancy-restructure-mediation","workplace-investigations-grievance-mediation"]
+        "redundancy-restructure-mediation","workplace-investigations-grievance-mediation",
+        # Q&A knowledge hub
+        "questions",
+        "questions/do-i-need-mediation-before-family-court",
+        "questions/what-if-my-ex-refuses-mediation",
+        "questions/what-is-a-section-60i-certificate",
+        "questions/who-can-issue-a-section-60i-certificate",
+        "questions/how-much-does-family-mediation-cost"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:
