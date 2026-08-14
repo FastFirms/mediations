@@ -1489,6 +1489,1106 @@ qa_page(
 # ─────────────────────────────────────────────
 # Build runner
 # ─────────────────────────────────────────────
+# ── TIER 2 · PAGES 21–35 ────────────────────────────────────────────────────
+
+qa_page(
+    slug="what-is-family-dispute-resolution",
+    question="What is Family Dispute Resolution?",
+    title="What Is Family Dispute Resolution (FDR)?",
+    desc="FDR is a structured mediation process for separating parents. Most parents must attempt FDR before filing parenting matters in the Family Court.",
+    category="family",
+    direct_answer=(
+        "Family Dispute Resolution (FDR) is a structured, confidential mediation process "
+        "designed to help separating parents resolve disputes about their children without "
+        "going to court. Under the Family Law Act 1975, most parents must attempt FDR "
+        "before they can apply to the Family Court for parenting orders."
+    ),
+    body=(
+        f"<h2>What happens in FDR?</h2>"
+        f"<p>FDR is facilitated by an accredited Family Dispute Resolution Practitioner (FDRP). "
+        f"The FDRP does not take sides or make decisions — they help the parties communicate, "
+        f"identify what each person needs, and work toward an agreement about parenting "
+        f"arrangements. FDR sessions are confidential and what is said cannot generally "
+        f"be used in court proceedings.</p>"
+        f"<p>FDR can be conducted with both parties in the same room (joint session) or in "
+        f"separate rooms with the FDRP moving between them "
+        f"(<a href='/questions/what-is-shuttle-mediation/'>shuttle mediation</a>). "
+        f"It is also available online.</p>"
+        f"<h2>FDR vs ordinary mediation</h2>"
+        f"<p>FDR is a specific type of mediation defined by the {cite('family_law_act')} and "
+        f"regulated by the {cite('fcfcoa_fdr')} accreditation scheme. The key difference is "
+        f"that <strong>only an accredited FDRP can issue a Section 60I certificate</strong> — "
+        f"the document required to file a parenting application in the Family Court. A general "
+        f"mediator, lawyer, or counsellor cannot issue this certificate. See our separate guide: "
+        f"<a href='/questions/whats-the-difference-between-mediation-and-family-dispute-resolution/'>"
+        f"mediation vs FDR</a>.</p>"
+        f"<h2>What FDR covers</h2>"
+        f"<p>FDR addresses parenting and children's matters — where children live, time spent "
+        f"with each parent, communication, schooling, and similar arrangements. It does not "
+        f"cover property or financial matters, which are dealt with through separate "
+        f"mediation or court proceedings.</p>"
+        f"<h2>Who provides FDR?</h2>"
+        f"<p>FDR is provided by:</p>"
+        f"<ul>"
+        f"<li><strong>Family Relationships Centres</strong> — government-funded, subsidised "
+        f"or free for eligible families. Wait times can be longer.</li>"
+        f"<li><strong>Private FDRPs</strong> — faster access, typically at cost. The fee is "
+        f"usually shared between the parties.</li>"
+        f"<li><strong>The {cite('fcfcoa')}</strong> — provides FDR as part of its dispute "
+        f"resolution services.</li>"
+        f"</ul>"
+        f"<h2>What if FDR doesn't resolve the dispute?</h2>"
+        f"<p>If FDR is unsuccessful, the FDRP issues a "
+        f"<a href='/questions/what-is-a-section-60i-certificate/'>Section 60I certificate</a> "
+        f"recording the outcome. That certificate is then filed with the court to show the "
+        f"FDR requirement has been satisfied. Any partial agreement reached during FDR can "
+        f"be documented and formalised as consent orders or a parenting plan.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth) s.60I",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "whats-the-difference-between-mediation-and-family-dispute-resolution",
+        "what-is-a-section-60i-certificate",
+        "do-i-need-mediation-before-family-court",
+        "who-can-issue-a-section-60i-certificate",
+        "is-family-mediation-confidential",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="whats-the-difference-between-mediation-and-family-dispute-resolution",
+    question="What's the difference between mediation and Family Dispute Resolution?",
+    title="Mediation vs Family Dispute Resolution: The Difference",
+    desc="FDR is a specific type of mediation under the Family Law Act. Only an accredited FDRP can issue the Section 60I certificate the Family Court requires.",
+    category="family",
+    direct_answer=(
+        "Family Dispute Resolution (FDR) is a specific type of mediation defined by the "
+        "Family Law Act 1975. The key practical difference is the certificate: only an "
+        "accredited FDRP can issue the Section 60I certificate required to file parenting "
+        "proceedings in the Family Court. A general mediator cannot issue this certificate, "
+        "even if they conduct an identical process."
+    ),
+    body=(
+        f"<h2>What they have in common</h2>"
+        f"<p>Both mediation and FDR are facilitated, confidential processes in which a "
+        f"neutral practitioner helps parties communicate and reach agreement. Both are "
+        f"voluntary in the sense that neither party is forced to agree to anything. Both "
+        f"are generally faster and less expensive than court proceedings.</p>"
+        f"<h2>The critical difference: accreditation and the Section 60I certificate</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Feature</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>FDR</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>General mediation</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Defined by legislation?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes — Family Law Act 1975</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>No — general practice</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Practitioner must be accredited?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes — FDRP accreditation required</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>No mandatory accreditation</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Can issue Section 60I certificate?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>No</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Required before Family Court parenting application?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes (unless exempt)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>No</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Covers property matters?</td>"
+        f"<td style='padding:.6rem .8rem'>No — parenting only</td>"
+        f"<td style='padding:.6rem .8rem'>Yes — any type of dispute</td></tr>"
+        f"</tbody></table>"
+        f"<h2>Does the label matter?</h2>"
+        f"<p>In practice, many FDRPs also conduct general mediation — for property, commercial, "
+        f"or workplace disputes — and many general mediators are also accredited FDRPs. The "
+        f"label matters only when you need a Section 60I certificate for court. Always confirm "
+        f"that your practitioner holds current FDRP accreditation if a court certificate "
+        f"may be needed. You can verify accreditation through the {cite('amdras')}.</p>"
+        f"<h2>When to choose each</h2>"
+        f"<ul>"
+        f"<li>Use an accredited <strong>FDRP</strong> for parenting and children's matters "
+        f"where a Section 60I certificate may be required.</li>"
+        f"<li>Use a <strong>mediator</strong> (FDRP or otherwise) for property, financial, "
+        f"or other disputes where no certificate is needed.</li>"
+        f"<li>For combined parenting and property matters, choose an accredited FDRP who "
+        f"also has experience in property mediation — they can cover both.</li>"
+        f"</ul>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth) s.60I",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Mediator Standards Board (AMDRAS) — FDRP accreditation",
+         "https://msb.org.au/"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-is-family-dispute-resolution",
+        "who-can-issue-a-section-60i-certificate",
+        "what-is-a-section-60i-certificate",
+        "do-i-need-mediation-before-family-court",
+        "what-happens-during-mediation",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="when-can-i-be-exempt-from-family-dispute-resolution",
+    question="When can I be exempt from Family Dispute Resolution?",
+    title="Exemptions From Family Dispute Resolution (FDR)",
+    desc="FDR exemptions apply where there is family violence, urgency, the other party cannot be located, or an FDRP assesses FDR as unsuitable.",
+    category="family",
+    direct_answer=(
+        "You are exempt from the FDR requirement under the Family Law Act if there is "
+        "a risk of family violence or abuse, the matter is urgent, the other party "
+        "cannot be located, or an accredited FDRP assesses FDR as not appropriate in "
+        "the circumstances. An exemption means you can file parenting proceedings "
+        "without a Section 60I certificate."
+    ),
+    body=(
+        callout('If you are in immediate danger, call <strong>000</strong>. For family violence support call <strong>1800RESPECT on 1800 737 732</strong> (free, 24/7). See also our guide to <a href="/domestic-violence-and-family-law/">family violence and family law</a>.', type='alert') +
+        f"<h2>The exemptions under the Family Law Act</h2>"
+        f"<p>Section 60I(9) of the {cite('family_law_act')} lists the circumstances in which "
+        f"a parenting application can be filed without a Section 60I certificate:</p>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Exemption</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>What it covers</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'><strong>Family violence or abuse</strong></td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>A risk of family violence to a party or child, or abuse of a child. No FDR attempt required.</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'><strong>Urgency</strong></td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>The matter is urgent — for example, a child is at immediate risk of harm or removal from Australia.</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'><strong>Other party cannot be located</strong></td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>The other party's whereabouts are unknown and cannot be established.</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'><strong>FDRP assessment as unsuitable</strong></td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>An accredited FDRP has assessed FDR as not appropriate — they issue an s60I(8)(b) certificate.</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'><strong>Contravention proceedings</strong></td>"
+        f"<td style='padding:.6rem .8rem'>The application is about a contravention of an existing parenting order.</td></tr>"
+        f"</tbody></table>"
+        f"<h2>How to use an exemption</h2>"
+        f"<p>If an exemption applies, you do not need to attempt FDR or obtain a Section 60I "
+        f"certificate before filing. You will typically need to file a supporting document or "
+        f"affidavit with the {cite('fcfcoa')} explaining why the exemption applies. The court "
+        f"then decides whether the exemption is made out.</p>"
+        f"<h2>Family violence: no FDR attempt required</h2>"
+        f"<p>The family violence exemption is the most commonly used. You do not need to attempt "
+        f"FDR or contact an FDRP before filing — the exemption applies directly. If you are "
+        f"unsure whether the circumstances qualify, seek legal advice before filing.</p>"
+        f"<h2>FDRP assessment as unsuitable</h2>"
+        f"<p>If you contact an accredited FDRP and they assess FDR as not appropriate — for "
+        f"example, because of a power imbalance, family violence history, or another party's "
+        f"incapacity — they will issue an s60I(8)(b) certificate. This certificate allows "
+        f"you to file parenting proceedings without FDR having been attempted.</p>"
+        f"<p>See also: <a href='/questions/can-i-get-a-s60i-certificate-without-attending-mediation/'>"
+        f"Can I get a Section 60I certificate without attending mediation?</a></p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth) s.60I(9)",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+        ("1800RESPECT — family violence support",
+         "https://www.1800respect.org.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "do-i-need-mediation-before-family-court",
+        "what-is-a-section-60i-certificate",
+        "can-i-get-a-s60i-certificate-without-attending-mediation",
+        "mediation-family-violence-coercive-control",
+        "what-if-my-ex-refuses-mediation",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="can-i-get-a-s60i-certificate-without-attending-mediation",
+    question="Can I get a Section 60I certificate without attending mediation?",
+    title="Section 60I Certificate Without Attending Mediation",
+    desc="Yes — a Section 60I certificate can be issued without attending mediation if FDR is assessed as unsuitable, the other party refuses, or an exemption applies.",
+    category="family",
+    direct_answer=(
+        "Yes. A Section 60I certificate can be issued without attending a full mediation "
+        "session. An accredited FDRP can issue the certificate if they assess FDR as not "
+        "appropriate, if the other party refuses to attend, or if one party does not make "
+        "a genuine effort. In family violence or urgency situations, you may not need a "
+        "certificate at all."
+    ),
+    body=(
+        f"<h2>Certificate types that don't require completing mediation</h2>"
+        f"<p>Under section 60I of the {cite('family_law_act')}, an accredited FDRP can issue "
+        f"five different certificate types. Three of them do not require a completed "
+        f"mediation session:</p>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Certificate type</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>When issued</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Mediation required?</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>s60I(8)(a)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Other party did not attend</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>No</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>s60I(8)(b)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>FDRP assessed FDR as not appropriate</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>No</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>s60I(8)(c)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>One party did not make a genuine effort</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Session started but may not be completed</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>s60I(8)(d)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>FDR started but not completed</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Partial session only</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>s60I(8)(aa)</td>"
+        f"<td style='padding:.6rem .8rem'>Mediation attended, genuine effort by all parties</td>"
+        f"<td style='padding:.6rem .8rem'>Yes — full session</td></tr>"
+        f"</tbody></table>"
+        f"<h2>What the FDRP intake process involves</h2>"
+        f"<p>Before booking a full FDR session, an FDRP conducts an intake assessment — "
+        f"separate appointments with each party to assess the suitability of FDR. If at "
+        f"this stage the FDRP assesses FDR as not appropriate (for example, due to family "
+        f"violence, a significant power imbalance, or one party's incapacity), they can "
+        f"issue an s60I(8)(b) certificate without a full session ever taking place.</p>"
+        f"<h2>What if the other party simply refuses to come?</h2>"
+        f"<p>If you make a genuine effort to initiate FDR and the other party refuses to "
+        f"attend, the FDRP can issue an s60I(8)(a) certificate. This certificate satisfies "
+        f"the court requirement — you are not penalised for the other party's refusal. "
+        f"See also: <a href='/questions/what-if-my-ex-refuses-mediation/'>"
+        f"what if my ex refuses mediation?</a></p>"
+        f"<h2>When no certificate is needed at all</h2>"
+        f"<p>If an exemption applies — family violence, urgency, or the other party cannot "
+        f"be located — you may file parenting proceedings without any certificate. See: "
+        f"<a href='/questions/when-can-i-be-exempt-from-family-dispute-resolution/'>"
+        f"FDR exemptions</a>.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth) s.60I",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-is-a-section-60i-certificate",
+        "who-can-issue-a-section-60i-certificate",
+        "when-can-i-be-exempt-from-family-dispute-resolution",
+        "what-if-my-ex-refuses-mediation",
+        "do-i-need-mediation-before-family-court",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="how-long-is-a-s60i-certificate-valid",
+    question="How long is a Section 60I certificate valid?",
+    title="How Long Is a Section 60I Certificate Valid?",
+    desc="The Court states a Section 60I certificate is valid for 12 months. Seek legal advice before filing if your certificate is older than 12 months.",
+    category="family",
+    direct_answer=(
+        "There is no legislated expiry period for a Section 60I certificate — the Family "
+        "Law Act 1975 does not set a time limit. The Court currently states a s60I "
+        "certificate is valid for 12 months, so use a recent certificate wherever "
+        "possible. If significant time has passed, seek legal advice before filing."
+    ),
+    body=(
+        callout('The <a href="https://www.fcfcoa.gov.au">Federal Circuit and Family Court of Australia</a> currently states that a Section 60I certificate is valid for 12 months. If your certificate is older than 12 months, seek legal advice before filing your parenting application.', type='warning') +
+        f"<h2>What the legislation says</h2>"
+        f"<p>Section 60I of the {cite('family_law_act')} requires a certificate to be filed "
+        f"with a parenting application. The legislation itself does not specify an expiry "
+        f"date — however, the {cite('fcfcoa')} states that certificates are valid for "
+        f"12 months from the date of issue.</p>"
+        f"<h2>Practical guidance</h2>"
+        f"<p>If you received a Section 60I certificate some time ago and have not yet filed, "
+        f"seek legal advice before doing so. Your lawyer can advise whether the court is "
+        f"likely to accept the existing certificate or whether a fresh FDR attempt is "
+        f"advisable in your circumstances.</p>"
+        f"<p>If circumstances have changed significantly since the certificate was issued "
+        f"— for example, new family violence concerns, a change in the child's living "
+        f"arrangements, or a material change in either party's situation — a fresh FDR "
+        f"attempt may be more productive regardless of whether the certificate is still "
+        f"within the 12-month window.</p>"
+        f"<h2>Certificate types and their context</h2>"
+        f"<p>The certificate records the <em>type</em> of outcome from FDR — whether "
+        f"mediation was genuinely attempted, whether a party refused, or whether FDR was "
+        f"assessed as unsuitable. Courts can and do consider the certificate type when "
+        f"dealing with cost applications. A certificate showing one party did not make "
+        f"a genuine effort (s60I(8)(c)) can be taken into account in costs orders against "
+        f"that party.</p>"
+        f"<h2>WA — different rules apply</h2>"
+        f"<p>In Western Australia, family law matters involving children are governed by "
+        f"the Family Court Act 1997 (WA) and section 66H, not s.60I of the Commonwealth "
+        f"Act. The certificate requirements may differ. Always confirm the applicable rules "
+        f"with a WA family lawyer if you are filing in the Family Court of Western Australia.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth) s.60I",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-is-a-section-60i-certificate",
+        "who-can-issue-a-section-60i-certificate",
+        "can-i-get-a-s60i-certificate-without-attending-mediation",
+        "do-i-need-mediation-before-family-court",
+        "what-happens-if-family-mediation-fails",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="can-grandparents-use-family-mediation",
+    question="Can grandparents use family mediation?",
+    title="Can Grandparents Use Family Mediation?",
+    desc="Yes — grandparents can use family mediation to resolve disputes about time with grandchildren, and usually need FDR before applying to the Family Court.",
+    category="family",
+    direct_answer=(
+        "Yes. Grandparents can use family mediation — and in most cases should, before "
+        "applying to the Family Court for contact orders. Mediation gives grandparents "
+        "an opportunity to reach an agreed arrangement with the child's parents without "
+        "the cost and delay of court proceedings."
+    ),
+    body=(
+        f"<h2>Grandparents' rights and mediation</h2>"
+        f"<p>Under the {cite('family_law_act')}, grandparents are among the people who "
+        f"can apply to the {cite('fcfcoa')} for parenting orders — including orders about "
+        f"the time they spend with their grandchildren. Before making such an application, "
+        f"grandparents are generally required to attempt "
+        f"<a href='/questions/what-is-family-dispute-resolution/'>Family Dispute "
+        f"Resolution (FDR)</a>.</p>"
+        f"<h2>Who attends mediation?</h2>"
+        f"<p>Typically, the grandparent(s) and the child's parents. In some cases, other "
+        f"family members may also be involved. The mediator facilitates discussion about "
+        f"what arrangements would be in the child's best interests — which is the paramount "
+        f"consideration under the Family Law Act.</p>"
+        f"<h2>Is mediation required before grandparents can go to court?</h2>"
+        f"<p>Generally yes. The FDR requirement applies to most parenting applications, "
+        f"including those made by grandparents. Exemptions exist (family violence, urgency, "
+        f"the other party cannot be located) — see our guide to "
+        f"<a href='/questions/when-can-i-be-exempt-from-family-dispute-resolution/'>"
+        f"FDR exemptions</a>.</p>"
+        f"<h2>What mediation can achieve for grandparents</h2>"
+        f"<p>Mediation can result in an agreed arrangement for regular contact — specific "
+        f"days, school holiday time, phone calls, or video chats. This agreement can be "
+        f"documented as a parenting plan or formalised as consent orders, giving it legal "
+        f"standing without the cost and adversarial nature of a contested court application.</p>"
+        f"<h2>What if a parent refuses to engage?</h2>"
+        f"<p>If a parent refuses to attend FDR, the FDRP can issue a Section 60I certificate "
+        f"recording the refusal. This satisfies the court requirement and allows the grandparent "
+        f"to file a parenting application. See: "
+        f"<a href='/questions/can-i-get-a-s60i-certificate-without-attending-mediation/'>"
+        f"getting a certificate without completing mediation</a>.</p>"
+        f"<h2>Costs</h2>"
+        f"<p>Private FDRP fees are usually shared between the parties, but in grandparent "
+        f"matters the cost is sometimes borne by the grandparent as the initiating party. "
+        f"Subsidised FDR through Family Relationships Centres is available for grandparent "
+        f"matters. See our full guide to <a href='/grandparents-rights/'>grandparents' rights</a>.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth)",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "do-i-need-mediation-before-family-court",
+        "what-is-family-dispute-resolution",
+        "when-can-i-be-exempt-from-family-dispute-resolution",
+        "can-i-get-a-s60i-certificate-without-attending-mediation",
+        "what-is-a-section-60i-certificate",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="can-we-make-a-parenting-plan-at-mediation",
+    question="Can we make a parenting plan at mediation?",
+    title="Can We Make a Parenting Plan at Mediation?",
+    desc="Yes — a parenting plan can be drafted and signed at mediation. It is not a court order, but formally records both parents' agreed arrangements.",
+    category="family",
+    direct_answer=(
+        "Yes. A parenting plan can be drafted and signed at the conclusion of a successful "
+        "mediation session. A parenting plan is a written agreement between parents — it is "
+        "not a court order, but it is a formal document that records both parents' intentions "
+        "and can be used as the basis for consent orders if the parties wish to make it "
+        "legally enforceable."
+    ),
+    body=(
+        f"<h2>What is a parenting plan?</h2>"
+        f"<p>A parenting plan is a written agreement made under the {cite('family_law_act')} "
+        f"between the parents of a child. It covers how parenting responsibilities will be "
+        f"shared — including where the child lives, time with each parent, education, health, "
+        f"and communication. It does not need to be filed with a court.</p>"
+        f"<h2>How a parenting plan is made at mediation</h2>"
+        f"<p>If parents reach agreement during mediation, the key terms are typically "
+        f"summarised in writing before the session ends. Both parents sign the document "
+        f"at the conclusion of the session. This summary then becomes the parenting plan "
+        f"— or the basis for a more detailed plan prepared by a family lawyer.</p>"
+        f"<p>Some FDRPs assist parties in drafting the plan during the session; others "
+        f"provide a record of agreement that the parties then take to lawyers to formalise. "
+        f"Discuss with your FDRP what documentation they provide at the end of a session.</p>"
+        f"<h2>Is a parenting plan legally binding?</h2>"
+        f"<p>A parenting plan is not a court order — it cannot be directly enforced through "
+        f"the court if one parent breaches it. However:</p>"
+        f"<ul>"
+        f"<li>If one parent consistently departs from the parenting plan, the court can "
+        f"take this into account in subsequent proceedings</li>"
+        f"<li>A parenting plan can be used as the basis for consent orders, which are "
+        f"legally enforceable</li>"
+        f"<li>A later parenting plan supersedes an earlier one under the Family Law Act</li>"
+        f"</ul>"
+        f"<h2>Parenting plan vs consent orders — which is better?</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'></th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Parenting plan</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Consent orders</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Requires court filing?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>No</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Legally enforceable?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>No — good faith only</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes — court order</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Cost to create?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Low</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Moderate (legal drafting + filing fee ~$195)</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Best for?</td>"
+        f"<td style='padding:.6rem .8rem'>Cooperative parents; arrangements likely to change</td>"
+        f"<td style='padding:.6rem .8rem'>Where certainty and enforceability are needed</td></tr>"
+        f"</tbody></table>"
+        f"<p>Our guide to <a href='/parenting-plans-guide/'>parenting plans in Australia</a> "
+        f"covers what to include and when to upgrade to consent orders.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth) s.63C — parenting plans",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — parenting plans",
+         "https://www.fcfcoa.gov.au/fl/pip"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-happens-during-mediation",
+        "do-i-need-mediation-before-family-court",
+        "is-mediation-legally-binding",
+        "can-mediation-cover-parenting-and-property",
+        "is-family-mediation-confidential",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="can-property-settlement-be-resolved-through-mediation",
+    question="Can property settlement be resolved through mediation?",
+    title="Can Property Settlement Be Resolved Through Mediation?",
+    desc="Yes — property settlement can be resolved through mediation. Most separating couples reach agreement, avoiding contested court proceedings.",
+    category="family",
+    direct_answer=(
+        "Yes. Property settlement can be resolved through mediation, and most separating "
+        "couples who attempt it do reach an agreement. An agreement reached at mediation "
+        "can then be formalised as consent orders or a binding financial agreement, making "
+        "it legally enforceable without a contested court hearing."
+    ),
+    body=(
+        f"<h2>How property mediation works</h2>"
+        f"<p>Property mediation follows a similar structure to parenting mediation — a neutral "
+        f"mediator helps both parties identify their assets, debts, and superannuation, "
+        f"understand their legal entitlements, and negotiate a settlement. Sessions typically "
+        f"run for a full day and cover the entire property pool.</p>"
+        f"<p>Unlike parenting FDR, there is no mandatory pre-court mediation requirement for "
+        f"property matters under the {cite('family_law_act')} — but courts expect parties to "
+        f"have made genuine attempts to resolve property before listing for hearing. Parties "
+        f"who have not attempted mediation may face adverse cost orders.</p>"
+        f"<h2>What property mediation covers</h2>"
+        f"<ul>"
+        f"<li>The family home and other real estate</li>"
+        f"<li>Superannuation splitting</li>"
+        f"<li>Savings, investments, and shares</li>"
+        f"<li>Business interests</li>"
+        f"<li>Debts (mortgage, credit cards, personal loans)</li>"
+        f"<li>Spousal maintenance (where applicable)</li>"
+        f"</ul>"
+        f"<h2>What you need to bring to property mediation</h2>"
+        f"<p>Full financial disclosure is required — both parties should have current "
+        f"valuations of all assets, statements for all accounts and superannuation funds, "
+        f"and a clear picture of all debts. Incomplete disclosure is the most common reason "
+        f"property mediation is unsuccessful.</p>"
+        f"<p>See: <a href='/questions/what-should-i-bring-to-family-mediation/'>"
+        f"what to bring to family mediation</a>.</p>"
+        f"<h2>Formalising the agreement</h2>"
+        f"<p>An agreement reached at property mediation can be formalised as:</p>"
+        f"<ul>"
+        f"<li><strong>Consent orders</strong> — filed with the {cite('fcfcoa')} "
+        f"and made as orders of the court. Enforceable and stamp-duty exempt in most states.</li>"
+        f"<li><strong>Binding financial agreement (BFA)</strong> — a contract signed by both "
+        f"parties with independent legal advice. Does not require court filing.</li>"
+        f"</ul>"
+        f"<p>See our full guide: <a href='/bfa-or-consent-orders/'>"
+        f"consent orders vs binding financial agreements</a>.</p>"
+        f"<h2>Time limits</h2>"
+        f"<p>Property applications must be made within 12 months of divorce being granted, "
+        f"or within two years of the end of a de facto relationship. Missing these deadlines "
+        f"requires the court's leave. Don't delay — see "
+        f"<a href='/delaying-property-settlement/'>the risks of delaying property settlement</a>.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth)",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — consent orders",
+         "https://www.fcfcoa.gov.au/fl/consent-orders"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "can-mediation-cover-parenting-and-property",
+        "how-much-does-family-mediation-cost",
+        "is-mediation-legally-binding",
+        "what-is-in-the-property-pool",
+        "bfa-or-consent-orders",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="can-mediation-happen-online",
+    question="Can mediation happen online?",
+    title="Can Mediation Happen Online? | Mediations Australia",
+    desc="Yes — online mediation is fully recognised in Australia for family, workplace, and commercial disputes. It counts as FDR for Section 60I certificate purposes.",
+    category="family",
+    direct_answer=(
+        "Yes. Online mediation is fully available in Australia and is legally recognised "
+        "for all dispute types, including Family Dispute Resolution (FDR). An online "
+        "session conducted by an accredited FDRP carries the same legal weight as an "
+        "in-person session and can result in a Section 60I certificate."
+    ),
+    body=(
+        f"<h2>How online mediation works</h2>"
+        f"<p>Online mediation is conducted via secure video conferencing. The mediator "
+        f"manages separate video calls with each party (shuttle format) or brings both "
+        f"parties into the same call (joint session). Most online platforms support "
+        f"breakout rooms, which replicate the private meeting structure of in-person sessions.</p>"
+        f"<h2>Is online mediation as effective as in-person?</h2>"
+        f"<p>For many disputes, yes. Online mediation works particularly well where:</p>"
+        f"<ul>"
+        f"<li>The parties are in different cities or states</li>"
+        f"<li>One or both parties have mobility or health limitations</li>"
+        f"<li>High conflict makes sharing a physical space difficult</li>"
+        f"<li>Shuttle format is already the preferred approach</li>"
+        f"</ul>"
+        f"<p>Some complex or high-stakes mediations (large property pools, multi-party "
+        f"commercial disputes) may benefit from in-person sessions where non-verbal "
+        f"communication and physical presence can aid negotiation. Discuss the format "
+        f"with your mediator before the session.</p>"
+        f"<h2>Does online FDR count for Section 60I purposes?</h2>"
+        f"<p>Yes. An online FDR session conducted by an accredited FDRP under the "
+        f"{cite('family_law_act')} is fully recognised. The FDRP can issue a Section 60I "
+        f"certificate following an online session in exactly the same way as an in-person "
+        f"session. See our full guide to "
+        f"<a href='/online-mediation-australia/'>online mediation in Australia</a>.</p>"
+        f"<h2>What you need for online mediation</h2>"
+        f"<ul>"
+        f"<li>A reliable internet connection</li>"
+        f"<li>A device with camera and microphone (laptop preferred)</li>"
+        f"<li>A private, quiet location where you will not be interrupted</li>"
+        f"<li>Any documents or financial information the mediator has asked you to prepare</li>"
+        f"</ul>"
+        f"<h2>Is online mediation available across Australia?</h2>"
+        f"<p>Yes — online mediation removes geographic barriers. Parties in rural and regional "
+        f"Australia, and in different states, can participate without travel. We offer online "
+        f"mediation for family, workplace, and commercial matters across all Australian "
+        f"states and territories.</p>"
+    ),
+    sources=[
+        ("Family Law Act 1975 (Cth)",
+         "https://www.legislation.gov.au/Series/C2004A00275"),
+        ("Federal Circuit and Family Court of Australia — Family Dispute Resolution",
+         "https://www.fcfcoa.gov.au/fl/fdr"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-is-shuttle-mediation",
+        "what-happens-during-mediation",
+        "do-i-need-mediation-before-family-court",
+        "is-family-mediation-confidential",
+        "how-long-does-family-mediation-take",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="what-should-i-bring-to-family-mediation",
+    question="What should I bring to family mediation?",
+    title="What to Bring to Family Mediation | Mediations Australia",
+    desc="Bring financial documents, asset and debt lists, super statements, and clear priorities. This guide covers what to prepare before your family mediation session.",
+    category="family",
+    direct_answer=(
+        "For family mediation, bring current financial documents for property matters "
+        "(bank statements, superannuation, property valuations, debts), and for parenting "
+        "matters, a clear picture of your children's current routine and your proposed "
+        "arrangements. Arriving prepared reduces session time and increases the chances "
+        "of reaching agreement."
+    ),
+    body=(
+        f"<h2>For property and financial mediation</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Document type</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>What to bring</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Real estate</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Recent property valuation or agents' appraisals; mortgage statements with current balance</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Superannuation</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Most recent member statement for all funds (both parties)</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Bank accounts</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Statements showing current balances for all joint and individual accounts</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Debts</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Current balances on credit cards, personal loans, car finance</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Income</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Recent pay slips or tax returns for both parties</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Business interests</td>"
+        f"<td style='padding:.6rem .8rem'>Recent financial statements, tax returns, any valuation</td></tr>"
+        f"</tbody></table>"
+        f"<h2>For parenting mediation</h2>"
+        f"<ul>"
+        f"<li>A clear description of the current parenting arrangements (what is actually happening day to day)</li>"
+        f"<li>Your proposed arrangements — written out in specific terms (days, times, handover locations)</li>"
+        f"<li>A list of your children's activities, school, and commitments</li>"
+        f"<li>Any existing court orders or parenting plans that are in place</li>"
+        f"<li>Contact details for the children's school and doctors (if relevant to the dispute)</li>"
+        f"</ul>"
+        f"<h2>Know your priorities before you arrive</h2>"
+        f"<p>Before the session, spend time thinking about:</p>"
+        f"<ul>"
+        f"<li>What outcome matters most to you — your must-haves</li>"
+        f"<li>What you would be willing to compromise on</li>"
+        f"<li>What you think is important for your children (for parenting matters)</li>"
+        f"</ul>"
+        f"<p>Parties who arrive with clear priorities tend to reach agreement faster. "
+        f"Those who arrive without a clear picture of what they want often spend the "
+        f"first half of the session working this out.</p>"
+        f"<h2>What not to bring</h2>"
+        f"<ul>"
+        f"<li>Text messages or social media posts you plan to present as evidence — "
+        f"mediation is not a hearing. Bringing a folder of grievances can derail the "
+        f"process.</li>"
+        f"<li>Your children — children are not present in mediation sessions.</li>"
+        f"<li>Unrealistic expectations — knowing the range of outcomes a court might "
+        f"order (from legal advice) helps you negotiate from an informed position.</li>"
+        f"</ul>"
+        f"<p>Use our <a href='/preparing-for-mediation/'>free preparation tool</a> "
+        f"to organise everything before your session.</p>"
+    ),
+    sources=[
+        ("Federal Circuit and Family Court of Australia — duty of disclosure",
+         "https://www.fcfcoa.gov.au/fl/duty-disclosure"),
+        ("Attorney-General's Department — Family Dispute Resolution",
+         "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-happens-during-mediation",
+        "how-long-does-family-mediation-take",
+        "is-family-mediation-confidential",
+        "can-mediation-cover-parenting-and-property",
+        "do-i-need-a-lawyer-for-mediation",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="how-does-workplace-mediation-work",
+    question="How does workplace mediation work?",
+    title="How Does Workplace Mediation Work?",
+    desc="Workplace mediation is a confidential process where a neutral mediator helps resolve disputes. Most matters resolve in a single day.",
+    category="workplace",
+    direct_answer=(
+        "Workplace mediation is a confidential, facilitated process in which an independent "
+        "mediator helps the parties to a workplace dispute communicate and reach a voluntary "
+        "resolution. Most workplace mediation sessions are completed in a single day. The "
+        "mediator does not take sides, make decisions, or impose outcomes."
+    ),
+    body=(
+        f"<h2>The workplace mediation process</h2>"
+        f"<p>A typical workplace mediation session follows four stages:</p>"
+        f"<p><strong>1. Introduction</strong> — The mediator explains the process, confirms "
+        f"confidentiality, and establishes ground rules. Each party has the opportunity to "
+        f"speak without interruption.</p>"
+        f"<p><strong>2. Exploration</strong> — The mediator helps each party describe their "
+        f"experience, identify what matters most to them, and understand the other party's "
+        f"perspective. Private meetings (caucuses) may occur at this stage.</p>"
+        f"<p><strong>3. Negotiation</strong> — The mediator facilitates discussion of options "
+        f"and helps the parties work toward agreement. The mediator may reality-test "
+        f"proposals and help identify common ground.</p>"
+        f"<p><strong>4. Agreement</strong> — If the parties reach agreement, the key terms "
+        f"are documented in writing and signed by both parties before the session ends. "
+        f"The agreement is a binding contract.</p>"
+        f"<h2>Who attends?</h2>"
+        f"<p>Typically, the two (or more) parties directly in dispute, and the mediator. "
+        f"HR representatives may attend in an observer or support capacity, depending on "
+        f"the organisation's approach. Legal representatives do not typically participate "
+        f"in the session itself, though parties may take legal advice before and after.</p>"
+        f"<h2>How long does it take?</h2>"
+        f"<p>Most workplace mediation sessions are completed in half a day to a full day. "
+        f"Complex matters involving multiple parties may require a second session. "
+        f"Scheduling typically takes one to three weeks from agreement to participate.</p>"
+        f"<h2>What types of disputes does it cover?</h2>"
+        f"<ul>"
+        f"<li>Interpersonal conflict between colleagues</li>"
+        f"<li>Bullying and harassment disputes (where allegations have been assessed as "
+        f"suitable for mediation)</li>"
+        f"<li>Manager/employee relationship breakdowns</li>"
+        f"<li>Unfair dismissal and general protections matters (pre- or post-application)</li>"
+        f"<li>Redundancy and restructure disputes</li>"
+        f"<li>Return-to-work arrangements following workplace injury</li>"
+        f"</ul>"
+        f"<h2>Is the outcome confidential?</h2>"
+        f"<p>Yes — see our detailed guide: "
+        f"<a href='/questions/is-workplace-mediation-confidential/'>"
+        f"is workplace mediation confidential?</a> Both the process and the outcome "
+        f"(unless the parties agree otherwise) are confidential.</p>"
+        f"<h2>What if the dispute involves a {cite('fair_work')} application?</h2>"
+        f"<p>Private workplace mediation can occur before, during, or alongside "
+        f"Fair Work Commission proceedings. Resolving a matter through private mediation "
+        f"gives the parties more control over the outcome and timeline than waiting for "
+        f"a Commission conciliation conference.</p>"
+    ),
+    sources=[
+        ("Fair Work Commission — dispute resolution",
+         "https://www.fwc.gov.au/disputes-at-work"),
+        ("Fair Work Ombudsman",
+         "https://www.fairwork.gov.au/"),
+        ("Safe Work Australia — managing psychosocial hazards",
+         "https://www.safeworkaustralia.gov.au/safety-topic/hazards/mental-health"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "when-should-hr-use-an-external-mediator",
+        "workplace-investigation-vs-mediation",
+        "is-workplace-mediation-confidential",
+        "can-an-employee-refuse-workplace-mediation",
+        "what-happens-if-workplace-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="can-an-employee-refuse-workplace-mediation",
+    question="Can an employee refuse workplace mediation?",
+    title="Can an Employee Refuse Workplace Mediation?",
+    desc="Workplace mediation is voluntary — an employee can refuse. However, refusal may affect ongoing employment and any related Fair Work Commission proceedings.",
+    category="workplace",
+    direct_answer=(
+        "Yes. Workplace mediation is a voluntary process — an employee can refuse to "
+        "participate. However, refusal is not without consequences: it may be taken into "
+        "account by the Fair Work Commission in related proceedings, and it may affect "
+        "how an employer deals with the underlying dispute."
+    ),
+    body=(
+        f"<h2>Mediation is voluntary</h2>"
+        f"<p>Unlike a workplace investigation (which an employer can direct an employee "
+        f"to participate in), mediation requires both parties to agree to participate. "
+        f"An employee cannot be forced to attend or forced to reach agreement at a "
+        f"mediation session.</p>"
+        f"<h2>Consequences of refusing</h2>"
+        f"<p>While an employee cannot be disciplined solely for refusing mediation, "
+        f"refusal can have practical consequences:</p>"
+        f"<ul>"
+        f"<li><strong>Fair Work Commission proceedings.</strong> If a related unfair "
+        f"dismissal or general protections application is before the {cite('fair_work')}, "
+        f"Commission members may take a dim view of unreasonable refusal to attempt "
+        f"resolution — this can affect conciliation outcomes and, in some cases, costs.</li>"
+        f"<li><strong>Employer's response to the dispute.</strong> An employer who has "
+        f"offered mediation in good faith and been refused may feel more confident "
+        f"proceeding with disciplinary action or other steps to manage the situation.</li>"
+        f"<li><strong>Missed opportunity.</strong> Many workplace disputes that proceed "
+        f"to litigation could have been resolved — at lower cost and stress — through "
+        f"mediation. Refusal often prolongs the conflict.</li>"
+        f"</ul>"
+        f"<h2>When is refusal reasonable?</h2>"
+        f"<p>Refusal may be reasonable where:</p>"
+        f"<ul>"
+        f"<li>The employee has safety concerns about meeting the other party</li>"
+        f"<li>The dispute involves allegations so serious that mediation is not an "
+        f"appropriate first step (for example, serious misconduct requiring investigation "
+        f"and findings before any resolution is possible)</li>"
+        f"<li>The employer has not offered adequate support — such as permitting a "
+        f"support person to attend</li>"
+        f"</ul>"
+        f"<h2>Can an employer make mediation a condition of employment?</h2>"
+        f"<p>An employment contract or workplace policy may require participation in "
+        f"a dispute resolution process. If mediation is included in such a process, "
+        f"an employee may be obliged to attend — though they cannot be forced to agree "
+        f"to any outcome. Seek legal advice if your employment agreement contains such "
+        f"a clause and you are uncertain of your obligations.</p>"
+        f"<p>See also: <a href='/questions/workplace-investigation-vs-mediation/'>"
+        f"workplace investigation vs mediation</a> — to understand when investigation "
+        f"is the more appropriate process.</p>"
+    ),
+    sources=[
+        ("Fair Work Commission — dispute resolution",
+         "https://www.fwc.gov.au/disputes-at-work"),
+        ("Fair Work Ombudsman",
+         "https://www.fairwork.gov.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-workplace-mediation-work",
+        "can-a-support-person-attend-workplace-mediation",
+        "workplace-investigation-vs-mediation",
+        "when-should-hr-use-an-external-mediator",
+        "what-happens-if-workplace-mediation-fails",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="can-a-support-person-attend-workplace-mediation",
+    question="Can a support person attend workplace mediation?",
+    title="Can a Support Person Attend Workplace Mediation?",
+    desc="Yes — employees and employers can bring a support person to workplace mediation. Their role is to support, not to advocate or negotiate on behalf of the party.",
+    category="workplace",
+    direct_answer=(
+        "Yes. Both employees and employers can bring a support person to workplace "
+        "mediation. A support person is there to support the participant — not to "
+        "speak on their behalf, advocate, or run arguments. The mediator will confirm "
+        "the role of any support person at the start of the session."
+    ),
+    body=(
+        f"<h2>Who can be a support person?</h2>"
+        f"<p>A support person can be:</p>"
+        f"<ul>"
+        f"<li>A union representative</li>"
+        f"<li>A colleague or friend (with the agreement of both parties)</li>"
+        f"<li>A HR representative (for the employer side)</li>"
+        f"<li>A lawyer or employment law adviser</li>"
+        f"<li>A mental health or wellbeing support person</li>"
+        f"</ul>"
+        f"<h2>What a support person can and cannot do</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>A support person can</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>A support person cannot</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Provide emotional support</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Speak on the participant's behalf</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Advise the participant privately during breaks</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Advocate, argue, or cross-examine</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Help the participant understand proposals</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Interrupt or take over the session</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Assist with documents and note-taking</td>"
+        f"<td style='padding:.6rem .8rem'>Make decisions on the participant's behalf</td></tr>"
+        f"</tbody></table>"
+        f"<h2>Does the other party need to agree?</h2>"
+        f"<p>It is good practice to notify the other party if you intend to bring a support "
+        f"person, particularly if that person is a lawyer. Springing a legal representative "
+        f"on the other side can create an imbalance — if one party has a lawyer, the other "
+        f"may reasonably wish to adjourn and take their own legal advice first.</p>"
+        f"<h2>Union representatives</h2>"
+        f"<p>Under the Fair Work Act 2009 (Cth) and the {cite('fair_work')}, employees have a general right to be "
+        f"represented by a union in workplace matters. A union representative acting as "
+        f"a support person in mediation is consistent with this right — though they should "
+        f"understand the support-not-advocacy role in a mediation context.</p>"
+        f"<h2>Can the mediator exclude a support person?</h2>"
+        f"<p>Yes. A mediator may ask a support person to leave if their conduct is "
+        f"disruptive or undermines the mediation process. A support person who turns "
+        f"the session into a legal argument rather than a facilitated negotiation may "
+        f"be asked to step back or leave.</p>"
+    ),
+    sources=[
+        ("Fair Work Commission — unfair dismissal rights",
+         "https://www.fwc.gov.au/disputes-at-work/unfair-dismissals"),
+        ("Fair Work Ombudsman",
+         "https://www.fairwork.gov.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-workplace-mediation-work",
+        "can-an-employee-refuse-workplace-mediation",
+        "is-workplace-mediation-confidential",
+        "when-should-hr-use-an-external-mediator",
+        "workplace-investigation-vs-mediation",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="can-workplace-mediation-deal-with-bullying-allegations",
+    question="Can workplace mediation deal with bullying allegations?",
+    title="Can Workplace Mediation Deal With Bullying Allegations?",
+    desc="Workplace mediation can address bullying — best suited to interpersonal conflict rather than serious misconduct requiring formal investigation.",
+    category="workplace",
+    direct_answer=(
+        "Workplace mediation can address some bullying disputes — particularly where the "
+        "behaviour is interpersonal and both parties are willing to engage constructively. "
+        "It is generally not appropriate as the sole response where allegations are serious, "
+        "systematic, or involve a significant power imbalance without appropriate safeguards."
+    ),
+    body=(
+        f"<h2>When mediation is appropriate for bullying</h2>"
+        f"<p>Mediation can be an effective response to bullying where:</p>"
+        f"<ul>"
+        f"<li>The behaviour is interpersonal and involves a breakdown in the working "
+        f"relationship (conflict-driven rather than systematic abuse)</li>"
+        f"<li>Both parties are willing to participate genuinely and without coercion</li>"
+        f"<li>The primary goal is restoring a working relationship, not establishing fault</li>"
+        f"<li>No formal investigation is required — or an investigation has been completed "
+        f"and findings are established</li>"
+        f"</ul>"
+        f"<h2>When mediation is not appropriate</h2>"
+        f"<ul>"
+        f"<li>Where the bullying is serious or systematic and requires an investigation "
+        f"to establish facts and accountability</li>"
+        f"<li>Where there is a significant power imbalance (manager bullying a direct "
+        f"report) without appropriate safeguards — shuttle format may mitigate this</li>"
+        f"<li>Where the alleged bully denies any problematic behaviour and is unwilling "
+        f"to engage in good faith</li>"
+        f"<li>Where the safety of the complainant would be at risk</li>"
+        f"</ul>"
+        f"<p>See: <a href='/questions/workplace-investigation-vs-mediation/'>"
+        f"workplace investigation vs mediation</a> — for guidance on which process "
+        f"is more appropriate in your situation.</p>"
+        f"<h2>What about Fair Work Commission anti-bullying applications?</h2>"
+        f"<p>The {cite('fair_work')} has the power to make orders to stop bullying "
+        f"under Part 6-4B of the Fair Work Act 2009 (Cth). Many Fair Work Commission "
+        f"anti-bullying applications are resolved through conciliation — which is a "
+        f"form of facilitated negotiation similar to mediation. Private mediation before "
+        f"filing can resolve matters faster and with more flexibility than Commission "
+        f"proceedings.</p>"
+        f"<h2>Safe Work Australia and psychosocial hazards</h2>"
+        f"<p>Under WHS legislation, employers have a duty to manage psychosocial hazards "
+        f"in the workplace, including bullying — see {cite('safework_mental')} for "
+        f"guidance. Mediation is one tool in a suite of responses — alongside policies, "
+        f"training, and investigation. It should be part of a broader response, not a "
+        f"substitute for it where the situation is serious.</p>"
+        f"<h2>Confidentiality and bullying mediation</h2>"
+        f"<p>Workplace mediation is confidential — what is said in the session cannot "
+        f"be used in subsequent proceedings. This can encourage frank discussion but "
+        f"also means that admissions made in mediation cannot substitute for a formal "
+        f"investigation finding if accountability is the primary concern.</p>"
+    ),
+    sources=[
+        ("Fair Work Commission — anti-bullying applications",
+         "https://www.fwc.gov.au/disputes-at-work/bullying-at-work"),
+        ("Safe Work Australia — managing psychosocial hazards",
+         "https://www.safeworkaustralia.gov.au/safety-topic/hazards/mental-health"),
+        ("Fair Work Ombudsman",
+         "https://www.fairwork.gov.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-workplace-mediation-work",
+        "workplace-investigation-vs-mediation",
+        "when-should-hr-use-an-external-mediator",
+        "is-workplace-mediation-confidential",
+        "what-happens-if-workplace-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="what-happens-if-workplace-mediation-fails",
+    question="What happens if workplace mediation fails?",
+    title="What Happens If Workplace Mediation Fails?",
+    desc="If workplace mediation fails, the dispute continues via Fair Work conciliation, disciplinary action, or litigation. Partial agreements still have value.",
+    category="workplace",
+    direct_answer=(
+        "If workplace mediation fails, the dispute does not simply disappear — it "
+        "continues through other channels. Depending on the nature of the dispute, "
+        "this may mean Fair Work Commission conciliation or arbitration, disciplinary "
+        "action, litigation, or a formal HR process. Partial agreements reached during "
+        "mediation can still have value."
+    ),
+    body=(
+        f"<h2>Partial agreements still have value</h2>"
+        f"<p>Even when a full agreement is not reached, mediation often clarifies the "
+        f"issues in dispute, identifies areas of common ground, and reduces the number "
+        f"of matters that need to be resolved through other means. A partial agreement — "
+        f"for example, on a return-to-work arrangement even where compensation is not "
+        f"resolved — can significantly reduce the scope and cost of any subsequent "
+        f"proceedings.</p>"
+        f"<h2>What comes next — by dispute type</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Dispute type</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Typical next step after failed mediation</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Unfair dismissal</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>FWC conciliation conference; if unresolved, hearing and arbitration</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>General protections</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>FWC conference; if unresolved, Federal Court proceedings</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Workplace bullying</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>FWC anti-bullying application; investigation; WHS regulator referral</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Interpersonal conflict</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Formal HR process; performance management; redeployment or separation</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Discrimination</td>"
+        f"<td style='padding:.6rem .8rem'>State or federal anti-discrimination commission; human rights complaint</td></tr>"
+        f"</tbody></table>"
+        f"<h2>Did the mediation fail — or break down early?</h2>"
+        f"<p>It is worth asking whether mediation genuinely failed or simply broke down "
+        f"before it had a real chance to work. Common reasons mediation does not succeed "
+        f"include: insufficient preparation, one party attending under duress, a "
+        f"mediator not suited to the type of dispute, or the format not matching the "
+        f"circumstances (for example, a joint session in a situation that needed shuttle "
+        f"format). A second attempt with a different mediator or format sometimes resolves "
+        f"matters that did not settle the first time.</p>"
+        f"<h2>Confidentiality after failed mediation</h2>"
+        f"<p>The confidentiality of the mediation process continues after it ends. "
+        f"What was said during mediation cannot be used in subsequent {cite('fair_work')} "
+        f"proceedings or litigation. The fact that mediation was attempted (and failed) "
+        f"may be disclosed, but the content of the discussions may not.</p>"
+        f"<h2>Getting advice on next steps</h2>"
+        f"<p>We recommend both parties seek independent legal advice after a failed "
+        f"mediation before deciding next steps. An employment lawyer can advise on the "
+        f"realistic prospects of the available options, the likely costs, and the "
+        f"timeframes involved.</p>"
+    ),
+    sources=[
+        ("Fair Work Commission — dispute resolution",
+         "https://www.fwc.gov.au/disputes-at-work"),
+        ("Fair Work Ombudsman",
+         "https://www.fairwork.gov.au/"),
+        ("Safe Work Australia",
+         "https://www.safeworkaustralia.gov.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-workplace-mediation-work",
+        "workplace-investigation-vs-mediation",
+        "when-should-hr-use-an-external-mediator",
+        "can-an-employee-refuse-workplace-mediation",
+        "is-workplace-mediation-confidential",
+    ],
+    read_min=3,
+)
+
+
 if __name__ == "__main__":
     print(f"\nBuilding {len(QUESTION_REGISTRY)} Q&A page(s)...")
     print(f"Output: {OUT}/questions/")

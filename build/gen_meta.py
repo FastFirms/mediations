@@ -71,7 +71,25 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "questions/is-mediation-legally-binding",
         "questions/when-should-hr-use-an-external-mediator",
         "questions/workplace-investigation-vs-mediation",
-        "questions/is-workplace-mediation-confidential"]
+        "questions/is-workplace-mediation-confidential",
+        "best-apps-for-separated-parents",
+        "my-ex-wont-sign-divorce-papers",
+        "who-pays-bills-during-separation",
+        "questions/what-is-family-dispute-resolution",
+        "questions/whats-the-difference-between-mediation-and-family-dispute-resolution",
+        "questions/when-can-i-be-exempt-from-family-dispute-resolution",
+        "questions/can-i-get-a-s60i-certificate-without-attending-mediation",
+        "questions/how-long-is-a-s60i-certificate-valid",
+        "questions/can-grandparents-use-family-mediation",
+        "questions/can-we-make-a-parenting-plan-at-mediation",
+        "questions/can-property-settlement-be-resolved-through-mediation",
+        "questions/can-mediation-happen-online",
+        "questions/what-should-i-bring-to-family-mediation",
+        "questions/how-does-workplace-mediation-work",
+        "questions/can-an-employee-refuse-workplace-mediation",
+        "questions/can-a-support-person-attend-workplace-mediation",
+        "questions/can-workplace-mediation-deal-with-bullying-allegations",
+        "questions/what-happens-if-workplace-mediation-fails"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:
