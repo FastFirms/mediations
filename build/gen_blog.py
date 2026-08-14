@@ -101,6 +101,7 @@ def post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=
     if related:
         cards="".join(f'<a href="/{s}/">{esc(l)} →</a>' for s,l in related)
         rel_html=f'<section class="related reveal"><h2>Related guides &amp; services</h2><div class="related-grid">{cards}</div></section>'
+    expert_bio = f"""<aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes. A recipient of the National Human Rights Law Award and a Winston Churchill Fellow, Dan brings legal expertise, strategic insight and practical judgment to dispute resolution.</p><a href="https://www.mediationsaustralia.com.au/our-team/dan-toombs/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div><p style="margin:1rem 0 0;font-size:.8rem;color:var(--muted,#6b7280)">Last reviewed 14 August 2026</p></aside>"""
     d+=f"""<main id="main">
 {crumb_html([("Home",""),("Guides","guides"),(h1[:48]+("…" if len(h1)>48 else ""),None)])}
 <article>
@@ -119,6 +120,7 @@ def post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=
 <div class="post-body"><div class="wrap-narrow">
 {toc_html}
 {body}
+{expert_bio}
 </div></div>
 </article>"""
     if qa: d+=faq_html(qa, heading="Frequently asked questions")
