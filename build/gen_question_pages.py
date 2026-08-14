@@ -2589,6 +2589,1136 @@ qa_page(
 )
 
 
+# ── TIER 3 · PAGES 36–50 ────────────────────────────────────────────────────
+
+qa_page(
+    slug="how-much-does-commercial-mediation-cost",
+    question="How much does commercial mediation cost in Australia?",
+    title="How Much Does Commercial Mediation Cost in Australia?",
+    desc="Commercial mediation typically costs $3,000–$8,000 per party per day in Australia. Costs depend on mediator seniority, dispute complexity, and session length.",
+    category="commercial",
+    direct_answer=(
+        "Commercial mediation in Australia typically costs $3,000–$8,000 per party per day, "
+        "depending on the mediator's seniority and the complexity of the dispute. This is "
+        "significantly less than commercial litigation, which commonly runs to tens of thousands "
+        "of dollars and takes years to resolve."
+    ),
+    body=(
+        f"<h2>What drives the cost of commercial mediation?</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Cost factor</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Typical range</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Mediator daily rate (experienced)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$4,000–$12,000 + GST</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Mediator daily rate (senior barrister/retired judge)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$10,000–$25,000 + GST</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Venue (if not included)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$500–$2,000 per day</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Your legal representation</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$3,000–$10,000+ per day (if instructed)</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Preparation (briefs, position papers)</td>"
+        f"<td style='padding:.6rem .8rem'>$2,000–$5,000 (billed by your lawyers)</td></tr>"
+        f"</tbody></table>"
+        f"<h2>How costs are split</h2>"
+        f"<p>In commercial mediation, the mediator's fee is typically split equally between "
+        f"the parties — each pays half. Parties bear their own legal representation costs. "
+        f"Where a mediation clause in a contract specifies the cost split, that clause governs.</p>"
+        f"<h2>Is commercial mediation cheaper than litigation?</h2>"
+        f"<p>Almost always. A commercial dispute that reaches hearing in the Supreme Court "
+        f"or Federal Court commonly costs each party $150,000–$500,000+ in legal fees over "
+        f"two to four years. A one-day commercial mediation that resolves the matter costs "
+        f"a fraction of this — even accounting for preparation time and legal representation "
+        f"at the session.</p>"
+        f"<h2>Court-ordered mediation</h2>"
+        f"<p>Courts in NSW, Victoria, and other states routinely order commercial disputes "
+        f"to mediation before hearing. Court-annexed mediation may be provided at a reduced "
+        f"cost or no cost through the relevant court's dispute resolution scheme, though "
+        f"wait times are generally longer than private mediation.</p>"
+        f"<h2>Worked example</h2>"
+        f"<p>A contract dispute between two businesses worth $800,000. Both parties instruct "
+        f"solicitors. Private commercial mediator at $8,000/day (split equally: $4,000 each). "
+        f"Each party's solicitor attends at $3,500. Preparation $1,500. <strong>Total per "
+        f"party: approximately $9,000</strong> — compared to $120,000+ each if the matter "
+        f"proceeds to a two-day Supreme Court hearing with barristers.</p>"
+        f"<h2>When is a more expensive mediator worth it?</h2>"
+        f"<p>For large or technically complex disputes, a senior mediator — a retired judge "
+        f"or senior commercial barrister — can command $15,000–$25,000 per day. Their "
+        f"authority, experience, and commercial judgment often produce better outcomes faster "
+        f"in high-stakes matters, making the premium cost-effective overall.</p>"
+    ),
+    sources=[
+        ("Resolution Institute — commercial mediation",
+         "https://www.resolution.institute/"),
+        ("NSW Civil and Administrative Tribunal — ADR",
+         "https://www.ncat.nsw.gov.au/"),
+        ("Federal Court of Australia — mediation",
+         "https://www.fedcourt.gov.au/law-and-practice/alternative-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-commercial-mediation-work",
+        "mediation-vs-arbitration-whats-the-difference",
+        "can-mediation-resolve-a-contract-dispute",
+        "is-commercial-mediation-confidential",
+        "what-happens-if-commercial-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="how-does-commercial-mediation-work",
+    question="How does commercial mediation work?",
+    title="How Does Commercial Mediation Work?",
+    desc="Commercial mediation is a confidential process for business disputes. A neutral mediator facilitates discussion without deciding the outcome.",
+    category="commercial",
+    direct_answer=(
+        "Commercial mediation is a structured, confidential process in which a neutral "
+        "mediator helps the parties to a business dispute reach a negotiated resolution. "
+        "The mediator does not make decisions or impose outcomes — the parties retain "
+        "full control. Most commercial mediations are completed in one to two days."
+    ),
+    body=(
+        f"<h2>Before the session: preparation</h2>"
+        f"<p>Effective commercial mediation requires preparation. Each party typically "
+        f"prepares a confidential position paper (or mediation brief) setting out their "
+        f"case, their key interests, and their settlement parameters. This document is "
+        f"provided to the mediator before the session — it may or may not be shared with "
+        f"the other party, at the submitting party's election.</p>"
+        f"<h2>The mediation session</h2>"
+        f"<p>A typical commercial mediation session follows four stages:</p>"
+        f"<p><strong>1. Opening joint session</strong> — The mediator explains the process "
+        f"and ground rules. Each party (or their legal representative) makes an opening "
+        f"statement. The parties hear each other's perspective, often for the first time "
+        f"in a controlled setting.</p>"
+        f"<p><strong>2. Private meetings (caucus)</strong> — The mediator meets privately "
+        f"with each party in turn. These are the most productive part of the process — "
+        f"the mediator explores each party's real interests, tests the strength of their "
+        f"positions, and begins to identify the parameters of a possible resolution.</p>"
+        f"<p><strong>3. Negotiation</strong> — The mediator moves between the parties "
+        f"(shuttle mediation) or brings them back together to facilitate joint negotiation. "
+        f"The mediator may reality-test proposals, suggest options, and help the parties "
+        f"find creative solutions that a court could not order.</p>"
+        f"<p><strong>4. Agreement</strong> — If the parties reach agreement, the heads "
+        f"of agreement (or a full deed of settlement) are drafted and signed before the "
+        f"session ends. This agreement is a binding contract.</p>"
+        f"<h2>Who attends?</h2>"
+        f"<p>Commercial mediation typically involves: the parties (decision-makers with "
+        f"authority to settle), their legal representatives (solicitors, barristers), and "
+        f"the mediator. Technical experts or insurers may attend where relevant. It is "
+        f"essential that the person attending has genuine authority to settle — sending "
+        f"someone without authority is a common cause of failed mediations.</p>"
+        f"<h2>Is commercial mediation different from court?</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'></th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Commercial mediation</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Court litigation</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Who decides the outcome?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>The parties</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>The judge</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Confidential?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Generally public</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Timeframe</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Days to weeks</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Months to years</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Creative outcomes possible?</td>"
+        f"<td style='padding:.6rem .8rem'>Yes — anything the parties agree</td>"
+        f"<td style='padding:.6rem .8rem'>Limited to what the court can order</td></tr>"
+        f"</tbody></table>"
+    ),
+    sources=[
+        ("Resolution Institute — commercial mediation",
+         "https://www.resolution.institute/"),
+        ("Federal Court of Australia — mediation",
+         "https://www.fedcourt.gov.au/law-and-practice/alternative-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-much-does-commercial-mediation-cost",
+        "mediation-vs-arbitration-whats-the-difference",
+        "is-commercial-mediation-confidential",
+        "can-lawyers-attend-commercial-mediation",
+        "what-happens-if-commercial-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="mediation-vs-arbitration-whats-the-difference",
+    question="Mediation vs arbitration: what's the difference?",
+    title="Mediation vs Arbitration: What's the Difference?",
+    desc="In mediation the parties reach their own agreement. In arbitration the arbitrator decides the outcome like a private judge. Learn which suits your dispute.",
+    category="commercial",
+    direct_answer=(
+        "The key difference is who decides: in mediation, the parties negotiate and reach "
+        "their own agreement with a neutral facilitator. In arbitration, the arbitrator "
+        "hears the evidence and makes a binding decision — like a private judge. Mediation "
+        "preserves control and confidentiality; arbitration produces a binding determination "
+        "when the parties cannot agree."
+    ),
+    body=(
+        f"<h2>Side-by-side comparison</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Feature</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Mediation</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Arbitration</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Who decides the outcome?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>The parties — by agreement</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>The arbitrator — by determination</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Process</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Facilitated negotiation</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Adversarial hearing (evidence, submissions)</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Binding?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes — if a settlement agreement is signed</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes — the award is binding and enforceable</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Confidential?</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Yes (unlike court, which is public)</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Speed</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Days to weeks</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Months to years</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Cost</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Lower</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Higher (closer to litigation)</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Voluntary?</td>"
+        f"<td style='padding:.6rem .8rem'>Yes — parties can walk away</td>"
+        f"<td style='padding:.6rem .8rem'>If agreed or ordered, parties cannot stop the process</td></tr>"
+        f"</tbody></table>"
+        f"<h2>When mediation is the better choice</h2>"
+        f"<p>Mediation is generally preferable when:</p>"
+        f"<ul>"
+        f"<li>Preserving the business relationship matters</li>"
+        f"<li>Both parties are open to compromise</li>"
+        f"<li>A creative, tailored outcome is more valuable than a win/lose determination</li>"
+        f"<li>Speed and cost are priorities</li>"
+        f"</ul>"
+        f"<h2>When arbitration is the better choice</h2>"
+        f"<p>Arbitration is generally preferable when:</p>"
+        f"<ul>"
+        f"<li>The parties cannot agree and need a binding determination</li>"
+        f"<li>A legal finding of fact or law is required</li>"
+        f"<li>One party is unwilling to negotiate in good faith</li>"
+        f"<li>The matter involves international parties (the arbitral award is enforceable "
+        f"internationally under the New York Convention)</li>"
+        f"</ul>"
+        f"<h2>Can you do both?</h2>"
+        f"<p>Yes — many commercial contracts include a tiered dispute resolution clause: "
+        f"negotiation first, then mediation, then arbitration (or litigation). This is "
+        f"best practice. Attempting mediation first rarely delays arbitration significantly, "
+        f"and frequently avoids it entirely. See also our guide to "
+        f"<a href='/arbitration-in-family-law/'>arbitration in family law</a> for the "
+        f"family law context.</p>"
+    ),
+    sources=[
+        ("Resolution Institute — commercial mediation and arbitration",
+         "https://www.resolution.institute/"),
+        ("Federal Court of Australia — alternative dispute resolution",
+         "https://www.fedcourt.gov.au/law-and-practice/alternative-dispute-resolution"),
+        ("ACICA — Australian Centre for International Commercial Arbitration",
+         "https://www.acica.org.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-commercial-mediation-work",
+        "is-commercial-mediation-confidential",
+        "can-mediation-resolve-a-contract-dispute",
+        "what-happens-if-commercial-mediation-fails",
+        "how-much-does-commercial-mediation-cost",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="should-i-mediate-a-shareholder-dispute",
+    question="Should I mediate a shareholder dispute?",
+    title="Should I Mediate a Shareholder Dispute?",
+    desc="Yes — mediation suits most shareholder disputes. It is confidential, faster than litigation, and lets the business keep operating during the process.",
+    category="commercial",
+    direct_answer=(
+        "Yes. Mediation is well suited to most shareholder disputes. It is confidential, "
+        "significantly faster and cheaper than shareholder litigation, and preserves the "
+        "option of keeping the business running while the dispute is resolved. Courts also "
+        "expect parties to have attempted mediation before listing a shareholder matter "
+        "for hearing."
+    ),
+    body=(
+        f"<h2>Why shareholder disputes are well suited to mediation</h2>"
+        f"<p>Shareholder disputes — whether between equal partners, majority and minority "
+        f"shareholders, or family shareholders — typically involve long-standing relationships, "
+        f"significant assets, and ongoing business operations that would be damaged by "
+        f"protracted litigation. Mediation addresses all three concerns:</p>"
+        f"<ul>"
+        f"<li><strong>Confidentiality</strong> — shareholder disputes often involve "
+        f"sensitive financial information. Mediation is confidential; court proceedings "
+        f"are generally public.</li>"
+        f"<li><strong>Speed</strong> — shareholder litigation commonly takes two to four "
+        f"years. Mediation can resolve matters in one to two days.</li>"
+        f"<li><strong>Business continuity</strong> — the business can keep operating during "
+        f"mediation; protracted litigation typically damages operations and key relationships.</li>"
+        f"<li><strong>Creative outcomes</strong> — mediation can produce a buyout at an "
+        f"agreed valuation, a restructured shareholders' agreement, a payment plan, or a "
+        f"staged exit — none of which a court can impose.</li>"
+        f"</ul>"
+        f"<h2>What shareholder mediation can cover</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Dispute type</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Mediation outcome examples</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Shareholder buyout</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Agreed valuation, staged payment, or external sale</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Profit distribution disputes</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Revised distribution formula; arrears settlement</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Director/shareholder deadlock</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Updated shareholders' agreement; board restructure</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Oppression claims</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Buyout, restructure, or agreed exit before court application</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Family shareholder disputes</td>"
+        f"<td style='padding:.6rem .8rem'>Succession arrangements, estate carve-out, or agreed sale</td></tr>"
+        f"</tbody></table>"
+        f"<h2>Does a shareholders' agreement affect the process?</h2>"
+        f"<p>Many shareholders' agreements include a dispute resolution clause requiring "
+        f"mediation before legal proceedings. If yours does, mediation is not just advisable "
+        f"— it may be a contractual precondition to commencing court action. Check your "
+        f"agreement before filing any proceedings.</p>"
+        f"<h2>When mediation may not be enough</h2>"
+        f"<p>Mediation is less suitable where one party has engaged in fraud or serious "
+        f"misconduct, where urgent court orders (such as an injunction to stop asset "
+        f"dissipation) are needed, or where one party refuses to engage in good faith. "
+        f"In those cases, legal proceedings may need to run concurrently with or instead "
+        f"of mediation.</p>"
+    ),
+    sources=[
+        ("Corporations Act 2001 (Cth) — shareholder rights",
+         "https://www.legislation.gov.au/Series/C2004A00818"),
+        ("Resolution Institute — commercial mediation",
+         "https://www.resolution.institute/"),
+        ("ASIC — resolving business disputes",
+         "https://asic.gov.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-commercial-mediation-work",
+        "can-business-partners-use-mediation",
+        "is-commercial-mediation-confidential",
+        "mediation-vs-arbitration-whats-the-difference",
+        "what-happens-if-commercial-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="can-business-partners-use-mediation",
+    question="Can business partners use mediation?",
+    title="Can Business Partners Use Mediation?",
+    desc="Yes — mediation is highly effective for business partnership disputes. It is confidential, fast, and preserves the partnership where possible.",
+    category="commercial",
+    direct_answer=(
+        "Yes. Business partners can use mediation to resolve disputes about profit splits, "
+        "decision-making, roles, exit arrangements, and partnership dissolution. Mediation "
+        "is confidential, faster than litigation, and often produces outcomes that preserve "
+        "the business — or enable a clean exit — without the cost and reputational damage "
+        "of court proceedings."
+    ),
+    body=(
+        f"<h2>What types of partnership disputes suit mediation?</h2>"
+        f"<ul>"
+        f"<li>Profit and loss distribution disputes</li>"
+        f"<li>Disputes about decision-making authority and management roles</li>"
+        f"<li>One partner wanting to exit and disagreement on the buyout price</li>"
+        f"<li>Alleged breach of the partnership agreement</li>"
+        f"<li>Disputes over capital contributions or drawings</li>"
+        f"<li>Clients, intellectual property, or non-compete obligations on exit</li>"
+        f"</ul>"
+        f"<h2>Does a partnership agreement affect the mediation process?</h2>"
+        f"<p>Most well-drafted partnership agreements include a dispute resolution clause "
+        f"requiring the partners to attempt mediation before commencing legal proceedings. "
+        f"If yours does, check whether the clause specifies a particular process, mediator "
+        f"appointment mechanism, or timeframe — you must follow it, or risk breaching the "
+        f"agreement before you have even started.</p>"
+        f"<p>If there is no written partnership agreement, state partnership legislation "
+        f"(which varies by state) provides default rules on how disputes are resolved and how "
+        f"a partnership may be dissolved. Seek legal advice on your state's applicable legislation.</p>"
+        f"<h2>Mediation vs dissolution proceedings</h2>"
+        f"<p>Partners who cannot resolve a dispute face two broad paths: mediation (aiming "
+        f"for an agreed outcome) or court proceedings to dissolve the partnership. Dissolution "
+        f"proceedings are expensive, public, and destructive to the business's goodwill. "
+        f"Many partnerships that reach mediation avoid dissolution entirely — the parties "
+        f"restructure the arrangement, execute a buyout, or agree a clean separation of "
+        f"clients and assets.</p>"
+        f"<h2>Who should attend the mediation?</h2>"
+        f"<p>All partners (or their authorised representatives) should attend with genuine "
+        f"authority to settle. Where the partnership has a business manager or accountant "
+        f"whose information is material to the dispute, they may also attend. Legal "
+        f"representatives often attend commercial partnership mediations but are not "
+        f"required — see our guide: "
+        f"<a href='/questions/can-lawyers-attend-commercial-mediation/'>"
+        f"can lawyers attend commercial mediation?</a></p>"
+        f"<h2>What outcomes can mediation produce?</h2>"
+        f"<ul>"
+        f"<li>A revised partnership agreement with updated terms</li>"
+        f"<li>A buyout of one partner's interest at an agreed valuation</li>"
+        f"<li>A structured wind-down with agreed client and asset allocation</li>"
+        f"<li>A payment plan for arrears or disputed drawings</li>"
+        f"<li>A non-compete or client list allocation on exit</li>"
+        f"</ul>"
+    ),
+    sources=[
+        ("Resolution Institute — commercial mediation",
+         "https://www.resolution.institute/"),
+        ("ASIC — resolving business disputes",
+         "https://asic.gov.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "should-i-mediate-a-shareholder-dispute",
+        "how-does-commercial-mediation-work",
+        "can-mediation-resolve-a-contract-dispute",
+        "is-commercial-mediation-confidential",
+        "what-happens-if-commercial-mediation-fails",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="can-mediation-resolve-a-contract-dispute",
+    question="Can mediation resolve a contract dispute?",
+    title="Can Mediation Resolve a Contract Dispute?",
+    desc="Yes — mediation resolves most contract disputes. It is confidential, cheaper than litigation, and produces binding agreements without a court judgment.",
+    category="commercial",
+    direct_answer=(
+        "Yes. Mediation can resolve most commercial contract disputes — including "
+        "payment defaults, delivery failures, service disputes, and interpretation "
+        "disagreements. A settlement agreement reached at mediation is a binding contract. "
+        "Most commercial contracts also include a dispute resolution clause requiring "
+        "mediation before court proceedings."
+    ),
+    body=(
+        f"<h2>What types of contract disputes suit mediation?</h2>"
+        f"<ul>"
+        f"<li>Payment defaults and invoicing disputes</li>"
+        f"<li>Breach of contract claims (goods not delivered, services not performed)</li>"
+        f"<li>Disputes about the scope or quality of work performed</li>"
+        f"<li>Construction and building contract disputes</li>"
+        f"<li>Supply chain and distribution agreement disputes</li>"
+        f"<li>IT and software contract disputes</li>"
+        f"<li>Franchise agreement disputes</li>"
+        f"<li>Lease and commercial property disputes</li>"
+        f"</ul>"
+        f"<h2>Is mediation required before I can sue?</h2>"
+        f"<p>Many commercial contracts include a dispute resolution clause requiring the "
+        f"parties to attempt mediation (or at least good-faith negotiation) before commencing "
+        f"court proceedings. Failing to comply with such a clause before filing can result "
+        f"in a stay of proceedings and adverse cost orders. Check your contract before "
+        f"filing any claim.</p>"
+        f"<h2>How does a settlement agreement work?</h2>"
+        f"<p>If the parties reach agreement at mediation, the key terms are recorded in "
+        f"a heads of agreement or deed of settlement, signed by both parties before the "
+        f"session ends. This document is a binding contract and can be enforced in the "
+        f"same way as any other commercial agreement. It is not a court order — it does "
+        f"not require filing — but it can be enforced if breached.</p>"
+        f"<h2>What mediation can achieve that a court cannot</h2>"
+        f"<p>A court can only order money or a specific legal remedy. Mediation can produce "
+        f"any outcome the parties agree — including a revised payment schedule, a variation "
+        f"to the contract's ongoing terms, a trade of goods or services in lieu of payment, "
+        f"a mutual release, or a reference for an independent expert to determine a disputed "
+        f"technical question. This flexibility is one of mediation's key advantages for "
+        f"commercial disputes.</p>"
+        f"<h2>Worked example</h2>"
+        f"<p>A builder invoices $280,000 for completed works. The client claims defects "
+        f"and refuses to pay. If litigated in the District Court, costs could exceed "
+        f"$60,000 each over 18 months. At mediation: both parties agree an independent "
+        f"building inspector assesses the defects; the builder agrees to rectify confirmed "
+        f"defects; the client pays $240,000 on a staged schedule. Total mediation cost: "
+        f"under $10,000 each. Matter resolved in one day.</p>"
+    ),
+    sources=[
+        ("Resolution Institute — commercial mediation",
+         "https://www.resolution.institute/"),
+        ("Federal Court of Australia — alternative dispute resolution",
+         "https://www.fedcourt.gov.au/law-and-practice/alternative-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-commercial-mediation-work",
+        "how-much-does-commercial-mediation-cost",
+        "is-commercial-mediation-confidential",
+        "mediation-vs-arbitration-whats-the-difference",
+        "what-happens-if-commercial-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="is-commercial-mediation-confidential",
+    question="Is commercial mediation confidential?",
+    title="Is Commercial Mediation Confidential?",
+    desc="Yes — commercial mediation is confidential. What is said cannot be used in court proceedings or disclosed to third parties without the parties' consent.",
+    category="commercial",
+    direct_answer=(
+        "Yes. Commercial mediation is confidential. What is said during mediation — "
+        "including offers, concessions, and admissions — cannot generally be used in "
+        "subsequent court or arbitration proceedings. This confidentiality is protected "
+        "both by the mediation agreement signed at the start of the session and, in many "
+        "Australian jurisdictions, by legislation."
+    ),
+    body=(
+        f"<h2>How confidentiality is protected</h2>"
+        f"<p>Commercial mediation confidentiality operates at two levels:</p>"
+        f"<p><strong>Contractual protection:</strong> The mediation agreement (signed before "
+        f"the session begins) includes a confidentiality clause binding all participants — "
+        f"the parties, their legal representatives, and the mediator. Any party who breaches "
+        f"this clause may be liable in damages.</p>"
+        f"<p><strong>Legislative protection:</strong> In several Australian states, the "
+        f"confidentiality of mediation communications is reinforced by legislation — for "
+        f"example, under the Evidence Act in NSW and Victoria, mediation communications "
+        f"are protected from disclosure in court proceedings. Confirm the applicable "
+        f"legislation with your legal adviser.</p>"
+        f"<h2>What confidentiality covers</h2>"
+        f"<ul>"
+        f"<li>All offers and counter-offers made during the session</li>"
+        f"<li>Concessions and admissions</li>"
+        f"<li>Documents produced specifically for the mediation (such as confidential "
+        f"position papers)</li>"
+        f"<li>What the mediator says during private meetings (caucus)</li>"
+        f"<li>The fact that a particular settlement position was taken</li>"
+        f"</ul>"
+        f"<h2>What confidentiality does not cover</h2>"
+        f"<ul>"
+        f"<li>The settlement agreement itself — if the parties intend for the agreement "
+        f"to be enforceable, it must be capable of being put before a court if breached. "
+        f"The agreement is confidential as a document but not non-existent.</li>"
+        f"<li>Pre-existing documents produced in the mediation that were already disclosable "
+        f"— producing a document at mediation does not make it privileged if it was not "
+        f"already.</li>"
+        f"<li>Evidence of criminal conduct or child abuse — confidentiality does not "
+        f"protect disclosures that a party is legally required to report.</li>"
+        f"</ul>"
+        f"<h2>Without prejudice privilege</h2>"
+        f"<p>In addition to the mediation agreement, settlement discussions conducted "
+        f"in the context of a genuine attempt to resolve a dispute are generally protected "
+        f"by without prejudice privilege at common law. This means that even if the "
+        f"mediation agreement were silent, the communications would generally not be "
+        f"admissible in court. The two protections — contractual and common law — "
+        f"reinforce each other.</p>"
+        f"<p>For questions about how confidentiality works in family mediation, see: "
+        f"<a href='/questions/is-family-mediation-confidential/'>"
+        f"is family mediation confidential?</a></p>"
+    ),
+    sources=[
+        ("Resolution Institute — commercial mediation",
+         "https://www.resolution.institute/"),
+        ("Evidence Act 1995 (NSW)",
+         "https://www.legislation.nsw.gov.au/view/html/inforce/current/act-1995-025"),
+        ("Federal Court of Australia — alternative dispute resolution",
+         "https://www.fedcourt.gov.au/law-and-practice/alternative-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-commercial-mediation-work",
+        "can-lawyers-attend-commercial-mediation",
+        "mediation-vs-arbitration-whats-the-difference",
+        "can-mediation-resolve-a-contract-dispute",
+        "what-happens-if-commercial-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="can-lawyers-attend-commercial-mediation",
+    question="Can lawyers attend commercial mediation?",
+    title="Can Lawyers Attend Commercial Mediation?",
+    desc="Yes — lawyers regularly attend commercial mediation as advisers and representatives. Their role is to advise, not to run the session adversarially.",
+    category="commercial",
+    direct_answer=(
+        "Yes. Lawyers regularly attend commercial mediation as advisers and legal "
+        "representatives. Unlike court, lawyers do not dominate commercial mediation — "
+        "the process is facilitated by a neutral mediator and the business decision-makers "
+        "at the table are the ones who settle. Lawyers advise, review documents, and help "
+        "formalise any agreement."
+    ),
+    body=(
+        f"<h2>What lawyers do at commercial mediation</h2>"
+        f"<p>At commercial mediation, a lawyer typically:</p>"
+        f"<ul>"
+        f"<li>Prepares the confidential position paper or mediation brief</li>"
+        f"<li>Advises the client on the legal merits and realistic settlement range before "
+        f"and during the session</li>"
+        f"<li>Makes the opening statement on behalf of the client (if a joint session is held)</li>"
+        f"<li>Attends private meetings (caucus) with the client and mediator</li>"
+        f"<li>Reviews and drafts the settlement agreement or heads of agreement</li>"
+        f"<li>Provides real-time advice on whether a proposed settlement is acceptable</li>"
+        f"</ul>"
+        f"<h2>Should both parties have legal representation?</h2>"
+        f"<p>There is no requirement for either party to have legal representation. However, "
+        f"where one party has legal representation and the other does not, a significant "
+        f"imbalance can arise — particularly in complex commercial disputes. The mediator "
+        f"has an obligation to ensure the process is fair, but cannot give legal advice "
+        f"to the unrepresented party. If you are the unrepresented party in a matter "
+        f"where the other side has lawyers, seek at least a pre-mediation legal consultation "
+        f"on your position.</p>"
+        f"<h2>The difference between commercial and family mediation</h2>"
+        f"<p>Legal representation at commercial mediation is more common and less "
+        f"controversial than at family mediation. Commercial disputes typically involve "
+        f"larger amounts, more complex legal issues, and business entities rather than "
+        f"individuals. In family mediation, lawyers sometimes attend but often provide "
+        f"advice only before and after the session. See: "
+        f"<a href='/questions/can-i-bring-a-lawyer-to-family-mediation/'>"
+        f"can I bring a lawyer to family mediation?</a></p>"
+        f"<h2>Barristers at commercial mediation</h2>"
+        f"<p>For high-value or legally complex matters, barristers are sometimes retained "
+        f"specifically for commercial mediation. A barrister's advocacy skills and "
+        f"authoritative assessment of litigation risk can be valuable in persuading the "
+        f"other side (through the mediator) to settle. Some mediators are themselves "
+        f"senior barristers or retired judges — which often concentrates the minds of "
+        f"the parties on the realistic outcomes of litigation.</p>"
+    ),
+    sources=[
+        ("Resolution Institute — commercial mediation",
+         "https://www.resolution.institute/"),
+        ("Federal Court of Australia — alternative dispute resolution",
+         "https://www.fedcourt.gov.au/law-and-practice/alternative-dispute-resolution"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-commercial-mediation-work",
+        "is-commercial-mediation-confidential",
+        "can-mediation-resolve-a-contract-dispute",
+        "how-much-does-commercial-mediation-cost",
+        "what-happens-if-commercial-mediation-fails",
+    ],
+    read_min=2,
+)
+
+qa_page(
+    slug="what-happens-if-commercial-mediation-fails",
+    question="What happens if commercial mediation fails?",
+    title="What Happens If Commercial Mediation Fails?",
+    desc="If commercial mediation fails, parties can proceed to arbitration or court. Partial agreements retain value and confidentiality is preserved.",
+    category="commercial",
+    direct_answer=(
+        "If commercial mediation fails, the parties may proceed to arbitration or court "
+        "proceedings. The confidentiality of the mediation process is preserved — nothing "
+        "said or offered during mediation can be used in the subsequent proceedings. "
+        "Any partial agreement reached during mediation can still be documented and "
+        "relied upon."
+    ),
+    body=(
+        f"<h2>What 'failed' mediation often produces</h2>"
+        f"<p>A mediation that does not produce a full settlement is not necessarily a "
+        f"failure. Even unsuccessful mediations typically:</p>"
+        f"<ul>"
+        f"<li>Narrow the issues in dispute — the parties often agree on facts or "
+        f"quantum elements, leaving fewer matters for a court to determine</li>"
+        f"<li>Produce a partial settlement — some claims or parties may be resolved "
+        f"even if the full matter is not</li>"
+        f"<li>Clarify each party's genuine bottom line, reducing wasted time in "
+        f"subsequent proceedings</li>"
+        f"<li>Demonstrate good faith, which courts take into account in cost orders</li>"
+        f"</ul>"
+        f"<h2>Next steps by dispute type</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Dispute type</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Typical next step</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Contract dispute</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>District or Supreme Court proceedings; or arbitration if the contract requires it</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Shareholder dispute</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Supreme Court oppression proceedings (Corporations Act s.232)</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Building/construction dispute</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>NCAT (NSW), VCAT (Vic), or relevant state tribunal; or expert determination</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>International commercial dispute</td>"
+        f"<td style='padding:.6rem .8rem'>International arbitration under ACICA, ICC, or LCIA rules</td></tr>"
+        f"</tbody></table>"
+        f"<h2>Does failed mediation affect costs in subsequent proceedings?</h2>"
+        f"<p>Yes — and this can cut both ways. If a party attended mediation in bad faith "
+        f"(for example, without genuine authority to settle, or with no intention of "
+        f"settling), courts may penalise that party in costs. Conversely, a party who "
+        f"attended in good faith and made reasonable proposals can use the failed mediation "
+        f"to demonstrate reasonableness — which is relevant to cost outcomes in subsequent "
+        f"proceedings.</p>"
+        f"<h2>Is a second mediation worth trying?</h2>"
+        f"<p>Often yes — particularly where the first mediation broke down early, involved "
+        f"a mediator not well suited to the dispute type, or used a format (such as a "
+        f"joint session) that was inappropriate for the relationship between the parties. "
+        f"A second mediation with a different mediator, a different format, or after "
+        f"interim steps (such as an expert report) resolves many matters that did not "
+        f"settle the first time.</p>"
+    ),
+    sources=[
+        ("Resolution Institute — commercial mediation",
+         "https://www.resolution.institute/"),
+        ("Federal Court of Australia — alternative dispute resolution",
+         "https://www.fedcourt.gov.au/law-and-practice/alternative-dispute-resolution"),
+        ("ACICA — Australian Centre for International Commercial Arbitration",
+         "https://www.acica.org.au/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "how-does-commercial-mediation-work",
+        "mediation-vs-arbitration-whats-the-difference",
+        "is-commercial-mediation-confidential",
+        "can-mediation-resolve-a-contract-dispute",
+        "how-much-does-commercial-mediation-cost",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="can-you-mediate-a-contested-will",
+    question="Can you mediate a contested will?",
+    title="Can You Mediate a Contested Will?",
+    desc="Yes — will and estate disputes can be mediated. Most courts encourage or require mediation before contested probate or family provision matters go to hearing.",
+    category="estate",
+    direct_answer=(
+        "Yes. Contested will and estate disputes can be mediated — and most Australian "
+        "courts require or strongly encourage mediation before a contested probate or "
+        "family provision matter proceeds to hearing. Mediation is confidential, "
+        "significantly cheaper than estate litigation, and preserves family relationships "
+        "more effectively than adversarial proceedings."
+    ),
+    body=(
+        f"<h2>What types of will and estate disputes suit mediation?</h2>"
+        f"<ul>"
+        f"<li>Family provision claims (where a family member believes they were inadequately "
+        f"provided for in a will)</li>"
+        f"<li>Disputes about the validity of a will (undue influence, testamentary capacity)</li>"
+        f"<li>Disputes about the proper construction or interpretation of a will</li>"
+        f"<li>Executor disputes — challenges to an executor's conduct or decision-making</li>"
+        f"<li>Disputes between beneficiaries about asset distribution or valuation</li>"
+        f"</ul>"
+        f"<h2>Is mediation required before estate litigation?</h2>"
+        f"<p>In New South Wales, Victoria, and Queensland, courts routinely order estate "
+        f"disputes to mediation before a contested hearing is listed. In NSW, family provision "
+        f"matters filed in the Supreme Court are almost invariably referred to mediation "
+        f"at an early stage. Parties who proceed to hearing without attempting mediation "
+        f"may face adverse cost orders.</p>"
+        f"<h2>Family provision claims</h2>"
+        f"<p>Family provision claims — brought under the Succession Act 2006 (NSW), "
+        f"Administration and Probate Act 1958 (Vic), or equivalent state legislation — "
+        f"are among the most commonly mediated estate disputes. The mediator helps the "
+        f"parties (the estate executor or administrator, and the claimant) explore the "
+        f"merits of the claim, the assets available, and an appropriate provision without "
+        f"a contested hearing.</p>"
+        f"<h2>Advantages of mediating estate disputes</h2>"
+        f"<ul>"
+        f"<li><strong>Cost</strong> — contested estate litigation can cost $100,000–$300,000+ "
+        f"in legal fees. These costs are often paid from the estate, reducing what "
+        f"beneficiaries receive. Mediation costs a fraction of this.</li>"
+        f"<li><strong>Speed</strong> — estate litigation commonly takes two to four years. "
+        f"Mediation can resolve matters in one to two sessions.</li>"
+        f"<li><strong>Family relationships</strong> — adversarial proceedings permanently "
+        f"damage family relationships. Mediation creates space for constructive dialogue.</li>"
+        f"<li><strong>Estate preservation</strong> — the longer a contested estate is "
+        f"in dispute, the more it costs in ongoing legal and administration fees. "
+        f"Resolution through mediation stops the clock.</li>"
+        f"</ul>"
+    ),
+    sources=[
+        ("Succession Act 2006 (NSW)",
+         "https://www.legislation.nsw.gov.au/view/html/inforce/current/act-2006-080"),
+        ("Supreme Court of NSW — estate disputes",
+         "https://www.supremecourt.justice.nsw.gov.au/"),
+        ("Resolution Institute — estate mediation",
+         "https://www.resolution.institute/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-is-estate-mediation",
+        "can-mediation-resolve-an-inheritance-dispute",
+        "how-much-does-estate-mediation-cost",
+        "when-should-an-estate-dispute-go-to-mediation",
+        "what-happens-if-estate-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="what-is-estate-mediation",
+    question="What is estate mediation?",
+    title="What Is Estate Mediation?",
+    desc="Estate mediation resolves will and inheritance disputes without court. A neutral mediator helps parties reach a negotiated, confidential settlement.",
+    category="estate",
+    direct_answer=(
+        "Estate mediation is a confidential, facilitated process designed to resolve "
+        "disputes about wills, estates, and inheritances. A neutral mediator helps "
+        "the parties — beneficiaries, executors, family members — reach a negotiated "
+        "settlement without the cost and delay of contested court proceedings."
+    ),
+    body=(
+        f"<h2>What estate mediation covers</h2>"
+        f"<p>Estate mediation can address any dispute arising from a will or estate, "
+        f"including:</p>"
+        f"<ul>"
+        f"<li><strong>Family provision claims</strong> — where a family member seeks "
+        f"greater provision from the estate than the will allows</li>"
+        f"<li><strong>Executor disputes</strong> — challenges to an executor's conduct, "
+        f"decisions, or removal</li>"
+        f"<li><strong>Beneficiary disputes</strong> — disagreements between beneficiaries "
+        f"about asset distribution, property values, or allocation of specific assets</li>"
+        f"<li><strong>Will validity disputes</strong> — where the validity of the will "
+        f"is questioned on grounds such as testamentary capacity or undue influence</li>"
+        f"<li><strong>Trust and estate administration disputes</strong> — disputes about "
+        f"how a testamentary trust is being administered</li>"
+        f"</ul>"
+        f"<h2>How does estate mediation work?</h2>"
+        f"<p>Estate mediation follows a similar process to commercial mediation. The "
+        f"mediator meets separately with each party (executor/estate, claimants, and "
+        f"any other beneficiaries) before or during the session, understands each "
+        f"party's position and interests, and facilitates negotiation. Sessions typically "
+        f"run for a full day.</p>"
+        f"<p>Where the estate includes real property or business assets, current valuations "
+        f"are essential — parties should obtain independent valuations before the session "
+        f"to avoid valuation disputes becoming the obstacle to settlement.</p>"
+        f"<h2>Who attends estate mediation?</h2>"
+        f"<p>Typically: the executor (or administrator), the claimant(s), their legal "
+        f"representatives, and the mediator. Where there are multiple beneficiaries, "
+        f"all may need to attend — or appoint one person with authority to settle on "
+        f"behalf of their group. If the estate includes a trustee company or public "
+        f"trustee, a representative with genuine settlement authority must attend.</p>"
+        f"<h2>Is estate mediation confidential?</h2>"
+        f"<p>Yes — estate mediation is confidential. What is said and offered during "
+        f"the session cannot be used in subsequent court proceedings. The settlement "
+        f"agreement itself is binding and enforceable. See our full guide to "
+        f"<a href='/estate-dispute-mediation/'>estate dispute mediation</a>.</p>"
+        f"<h2>When do courts refer estate matters to mediation?</h2>"
+        f"<p>In New South Wales, most family provision matters filed in the Supreme Court "
+        f"are referred to mediation before a hearing is listed. In Victoria and Queensland, "
+        f"courts similarly encourage or order mediation in contested estate matters. "
+        f"See: <a href='/questions/when-should-an-estate-dispute-go-to-mediation/'>"
+        f"when should an estate dispute go to mediation?</a></p>"
+    ),
+    sources=[
+        ("Succession Act 2006 (NSW)",
+         "https://www.legislation.nsw.gov.au/view/html/inforce/current/act-2006-080"),
+        ("Supreme Court of NSW — estate disputes",
+         "https://www.supremecourt.justice.nsw.gov.au/"),
+        ("Resolution Institute — estate mediation",
+         "https://www.resolution.institute/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "can-you-mediate-a-contested-will",
+        "can-mediation-resolve-an-inheritance-dispute",
+        "how-much-does-estate-mediation-cost",
+        "when-should-an-estate-dispute-go-to-mediation",
+        "what-happens-if-estate-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="can-mediation-resolve-an-inheritance-dispute",
+    question="Can mediation resolve an inheritance dispute?",
+    title="Can Mediation Resolve an Inheritance Dispute?",
+    desc="Yes — mediation resolves most inheritance disputes faster and cheaper than court. Family provision claims and executor disputes all suit mediation.",
+    category="estate",
+    direct_answer=(
+        "Yes. Mediation resolves most inheritance disputes — including family provision "
+        "claims, executor disputes, and beneficiary conflicts — faster and at far lower "
+        "cost than court proceedings. Most Australian courts require or strongly encourage "
+        "mediation before a contested inheritance matter proceeds to hearing."
+    ),
+    body=(
+        f"<h2>What makes inheritance disputes suited to mediation?</h2>"
+        f"<p>Inheritance disputes typically involve:</p>"
+        f"<ul>"
+        f"<li>Family members who will have an ongoing relationship after the dispute resolves</li>"
+        f"<li>Finite assets (the estate) that litigation costs diminish for all parties</li>"
+        f"<li>Emotional and relational dimensions that a court cannot address</li>"
+        f"<li>A desire for privacy — court proceedings are public; mediation is confidential</li>"
+        f"</ul>"
+        f"<p>All four features make mediation particularly well-suited compared to "
+        f"adversarial litigation.</p>"
+        f"<h2>Family provision claims</h2>"
+        f"<p>The most common inheritance dispute is a family provision claim — where a "
+        f"family member believes they were inadequately provided for in the will. These "
+        f"claims are brought under state succession legislation (Succession Act 2006 (NSW), "
+        f"Administration and Probate Act 1958 (Vic), or equivalent). They are almost always "
+        f"resolved through mediation in New South Wales, where the Supreme Court refers "
+        f"most claims to mediation before hearing.</p>"
+        f"<h2>What outcomes can mediation produce?</h2>"
+        f"<ul>"
+        f"<li>A lump sum payment to the claimant from the estate</li>"
+        f"<li>Transfer of a specific asset (such as a property) in full or partial "
+        f"satisfaction of a claim</li>"
+        f"<li>A revised distribution of the estate with all parties' agreement</li>"
+        f"<li>A payment schedule where the estate does not have liquid assets available</li>"
+        f"<li>Resolution of executor conduct complaints alongside distribution</li>"
+        f"</ul>"
+        f"<h2>Cost comparison</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Path</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Typical cost (each party)</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Timeframe</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Mediation</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$3,000–$10,000</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>1–3 months</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Supreme Court hearing</td>"
+        f"<td style='padding:.6rem .8rem'>$50,000–$300,000+</td>"
+        f"<td style='padding:.6rem .8rem'>2–4 years</td></tr>"
+        f"</tbody></table>"
+        f"<p>Estate litigation costs are often paid from the estate — reducing what "
+        f"all beneficiaries receive, not just the losing party. Mediation protects the "
+        f"estate for the family.</p>"
+    ),
+    sources=[
+        ("Succession Act 2006 (NSW)",
+         "https://www.legislation.nsw.gov.au/view/html/inforce/current/act-2006-080"),
+        ("Supreme Court of NSW — estate disputes",
+         "https://www.supremecourt.justice.nsw.gov.au/"),
+        ("Resolution Institute — estate mediation",
+         "https://www.resolution.institute/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "can-you-mediate-a-contested-will",
+        "what-is-estate-mediation",
+        "how-much-does-estate-mediation-cost",
+        "when-should-an-estate-dispute-go-to-mediation",
+        "what-happens-if-estate-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="how-much-does-estate-mediation-cost",
+    question="How much does estate mediation cost?",
+    title="How Much Does Estate Mediation Cost?",
+    desc="Estate mediation in Australia typically costs $2,000–$6,000 per party — far less than contested estate litigation, which can cost $50,000–$300,000+ per party.",
+    category="estate",
+    direct_answer=(
+        "Estate mediation in Australia typically costs $2,000–$6,000 per party, including "
+        "the mediator's fee and legal representation at the session. This is a fraction "
+        "of the cost of contested estate litigation, which commonly costs $50,000–$300,000+ "
+        "per party — often paid from the estate itself, reducing what all beneficiaries receive."
+    ),
+    body=(
+        f"<h2>What drives estate mediation costs?</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Cost component</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Typical range</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Mediator's fee (per party, half-day)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$800–$2,000</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Mediator's fee (per party, full day)</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$1,500–$4,000</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Legal representation at session</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>$1,500–$4,000 (solicitor's day rate)</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Preparation (position papers, asset schedules)</td>"
+        f"<td style='padding:.6rem .8rem'>$1,000–$3,000 (billed by your lawyers)</td></tr>"
+        f"</tbody></table>"
+        f"<h2>Who pays for estate mediation?</h2>"
+        f"<p>In estate disputes, the mediator's fee is typically split equally between "
+        f"the estate (on behalf of the executor) and the claimant(s). Each party bears "
+        f"their own legal costs. Where there are multiple claimants, they may share the "
+        f"claimant's portion of the mediator's fee.</p>"
+        f"<p>In court-ordered mediations, costs are sometimes paid from the estate as "
+        f"part of the estate administration costs — subject to the court's orders. "
+        f"Confirm the cost allocation with your legal adviser before booking.</p>"
+        f"<h2>Why litigation is far more expensive</h2>"
+        f"<p>Contested estate matters — particularly family provision claims — are among "
+        f"the most expensive civil disputes in Australia. A two-day Supreme Court hearing "
+        f"with barristers commonly costs $80,000–$200,000 per party in legal fees. "
+        f"These costs are frequently paid from the estate, reducing what all beneficiaries "
+        f"ultimately receive. A one-day mediation that resolves the matter costs all "
+        f"parties combined what a single day of Supreme Court litigation costs one party.</p>"
+        f"<h2>Worked example</h2>"
+        f"<p>A family provision claim against a $1.2M estate. Claimant seeks $250,000. "
+        f"Estate mediation: mediator $2,500 (split $1,250 each), solicitor for claimant "
+        f"$1,800, solicitor for estate $2,000, preparation $1,200 each. "
+        f"<strong>Total per party: approximately $3,000–$4,000.</strong> Settlement: "
+        f"$180,000 to the claimant. Estate proceeds to distribution. If litigated instead: "
+        f"each party spends $80,000–$150,000. Estate is substantially diminished.</p>"
+    ),
+    sources=[
+        ("Succession Act 2006 (NSW)",
+         "https://www.legislation.nsw.gov.au/view/html/inforce/current/act-2006-080"),
+        ("Supreme Court of NSW — probate and estate",
+         "https://www.supremecourt.justice.nsw.gov.au/"),
+        ("Resolution Institute — estate mediation",
+         "https://www.resolution.institute/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-is-estate-mediation",
+        "can-you-mediate-a-contested-will",
+        "can-mediation-resolve-an-inheritance-dispute",
+        "when-should-an-estate-dispute-go-to-mediation",
+        "what-happens-if-estate-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="when-should-an-estate-dispute-go-to-mediation",
+    question="When should an estate dispute go to mediation?",
+    title="When Should an Estate Dispute Go to Mediation?",
+    desc="Mediate an estate dispute as early as possible — before costs escalate. Courts order mediation before contested hearings in most Australian states.",
+    category="estate",
+    direct_answer=(
+        "An estate dispute should go to mediation as early as possible — ideally before "
+        "formal legal proceedings are filed and before legal costs escalate significantly. "
+        "Courts in NSW, Victoria, and Queensland also order estate and family provision "
+        "matters to mediation before a contested hearing is listed."
+    ),
+    body=(
+        f"<h2>The earlier, the better</h2>"
+        f"<p>The single most important factor in estate mediation outcomes is timing. "
+        f"Disputes resolved early — before proceedings are filed, before positions harden, "
+        f"and before significant legal costs have been incurred — settle more easily and "
+        f"at better outcomes for all parties. Once Supreme Court proceedings are underway, "
+        f"costs escalate rapidly and settlement becomes psychologically harder.</p>"
+        f"<h2>Key triggers that indicate it's time for mediation</h2>"
+        f"<ul>"
+        f"<li>A family member indicates they intend to make a family provision claim</li>"
+        f"<li>Beneficiaries are in dispute about asset distribution or property values</li>"
+        f"<li>There is a challenge to the executor's conduct or decision-making</li>"
+        f"<li>A dispute about will validity is emerging and the parties wish to avoid "
+        f"the reputational and relational damage of contested litigation</li>"
+        f"<li>The estate is holding assets (such as real property) that cannot be "
+        f"distributed until the dispute is resolved — mediation resolves the blockage</li>"
+        f"</ul>"
+        f"<h2>Court-ordered mediation</h2>"
+        f"<p>In New South Wales, the Supreme Court refers most family provision matters "
+        f"to mediation within months of filing — often before the first contested hearing. "
+        f"In Victoria and Queensland, courts similarly order or encourage mediation. "
+        f"Parties who wait for a court order lose the opportunity to resolve the matter "
+        f"at lower cost through private mediation first.</p>"
+        f"<h2>Time limits for family provision claims</h2>"
+        f"<p>Family provision claims must be filed within 12 months of the date of death "
+        f"in NSW and most other states. Filing proceedings to protect the limitation period "
+        f"does not prevent the parties from mediating — but it is important not to let "
+        f"mediation delay result in a claim being time-barred. A potential claimant can "
+        f"attempt mediation and file proceedings simultaneously, or file first and then "
+        f"mediate.</p>"
+        f"<h2>What about disputes that arise during administration?</h2>"
+        f"<p>Not all estate disputes are about wills — many arise during the administration "
+        f"of an estate (executor decisions, delays, asset valuations, interim distributions). "
+        f"These disputes suit mediation at any stage of administration. Resolving "
+        f"administration disputes through mediation avoids the cost and delay of beneficiary "
+        f"actions in the Supreme Court.</p>"
+    ),
+    sources=[
+        ("Succession Act 2006 (NSW) — time limits",
+         "https://www.legislation.nsw.gov.au/view/html/inforce/current/act-2006-080"),
+        ("Supreme Court of NSW — estate disputes",
+         "https://www.supremecourt.justice.nsw.gov.au/"),
+        ("Resolution Institute — estate mediation",
+         "https://www.resolution.institute/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-is-estate-mediation",
+        "can-you-mediate-a-contested-will",
+        "can-mediation-resolve-an-inheritance-dispute",
+        "how-much-does-estate-mediation-cost",
+        "what-happens-if-estate-mediation-fails",
+    ],
+    read_min=3,
+)
+
+qa_page(
+    slug="what-happens-if-estate-mediation-fails",
+    question="What happens if estate mediation fails?",
+    title="What Happens If Estate Mediation Fails?",
+    desc="If estate mediation fails, parties proceed to court. Confidentiality is preserved, partial agreements remain valid, and a second attempt often succeeds.",
+    category="estate",
+    direct_answer=(
+        "If estate mediation fails, the parties may proceed to contested court proceedings "
+        "— typically in the Supreme Court. The confidentiality of the mediation process "
+        "is preserved; nothing said or offered in mediation can be used in the subsequent "
+        "litigation. Any partial agreement reached at mediation remains binding."
+    ),
+    body=(
+        f"<h2>What failed estate mediation often still achieves</h2>"
+        f"<p>A mediation that does not produce a full settlement is not necessarily "
+        f"a failure. Even unsuccessful estate mediations frequently:</p>"
+        f"<ul>"
+        f"<li>Narrow the dispute — the parties may agree on asset values or some "
+        f"distribution questions, leaving fewer contested issues for the court</li>"
+        f"<li>Resolve some claimants while others remain in dispute</li>"
+        f"<li>Reveal the other party's real position, helping legal advisers refine "
+        f"their approach to subsequent proceedings</li>"
+        f"<li>Demonstrate good faith, which courts consider in costs orders</li>"
+        f"</ul>"
+        f"<h2>Next steps after failed estate mediation</h2>"
+        f"<table style='width:100%;border-collapse:collapse;margin:1rem 0'>"
+        f"<thead><tr style='background:var(--surf,#f7f8fa)'>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Dispute type</th>"
+        f"<th style='padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--border,#e5e7eb)'>Typical next step</th>"
+        f"</tr></thead><tbody>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Family provision claim</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Contested Supreme Court hearing; costs usually from estate</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Will validity dispute</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Probate proceedings; contested hearing with expert evidence</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Executor dispute</td>"
+        f"<td style='padding:.6rem .8rem;border-bottom:1px solid var(--border,#e5e7eb)'>Application for removal of executor; court administration order</td></tr>"
+        f"<tr><td style='padding:.6rem .8rem'>Beneficiary/distribution dispute</td>"
+        f"<td style='padding:.6rem .8rem'>Administration action in Supreme Court; court-directed distribution</td></tr>"
+        f"</tbody></table>"
+        f"<h2>Costs after failed mediation</h2>"
+        f"<p>Estate litigation costs are usually paid from the estate — meaning all "
+        f"beneficiaries bear the cost of the dispute, not just the losing party. "
+        f"A party who attended mediation in good faith and made reasonable proposals "
+        f"can sometimes use this to their advantage in costs arguments at the conclusion "
+        f"of the proceedings. A party who refused to mediate, or attended in bad faith, "
+        f"may face a personal costs order.</p>"
+        f"<h2>Is a second mediation worth trying?</h2>"
+        f"<p>Yes — often. Estate disputes where the first mediation broke down over "
+        f"asset valuations, executor access to information, or the presence of one "
+        f"difficult party sometimes resolve at a second session once these obstacles "
+        f"are addressed. An independent expert report on property values, or a change "
+        f"in the mediator, sometimes makes the critical difference. Courts support "
+        f"parties attempting a second mediation before hearing.</p>"
+        f"<p>See our full guide: <a href='/estate-dispute-mediation/'>estate dispute "
+        f"mediation in Australia</a>.</p>"
+    ),
+    sources=[
+        ("Succession Act 2006 (NSW)",
+         "https://www.legislation.nsw.gov.au/view/html/inforce/current/act-2006-080"),
+        ("Supreme Court of NSW — estate disputes",
+         "https://www.supremecourt.justice.nsw.gov.au/"),
+        ("Resolution Institute — estate mediation",
+         "https://www.resolution.institute/"),
+    ],
+    reviewer="Dan Toombs",
+    reviewer_slug="dan-toombs",
+    related=[
+        "what-is-estate-mediation",
+        "can-you-mediate-a-contested-will",
+        "can-mediation-resolve-an-inheritance-dispute",
+        "how-much-does-estate-mediation-cost",
+        "when-should-an-estate-dispute-go-to-mediation",
+    ],
+    read_min=3,
+)
+
+
 if __name__ == "__main__":
     print(f"\nBuilding {len(QUESTION_REGISTRY)} Q&A page(s)...")
     print(f"Output: {OUT}/questions/")

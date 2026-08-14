@@ -89,7 +89,22 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "questions/can-an-employee-refuse-workplace-mediation",
         "questions/can-a-support-person-attend-workplace-mediation",
         "questions/can-workplace-mediation-deal-with-bullying-allegations",
-        "questions/what-happens-if-workplace-mediation-fails"]
+        "questions/what-happens-if-workplace-mediation-fails",
+        "questions/how-much-does-commercial-mediation-cost",
+        "questions/how-does-commercial-mediation-work",
+        "questions/mediation-vs-arbitration-whats-the-difference",
+        "questions/should-i-mediate-a-shareholder-dispute",
+        "questions/can-business-partners-use-mediation",
+        "questions/can-mediation-resolve-a-contract-dispute",
+        "questions/is-commercial-mediation-confidential",
+        "questions/can-lawyers-attend-commercial-mediation",
+        "questions/what-happens-if-commercial-mediation-fails",
+        "questions/can-you-mediate-a-contested-will",
+        "questions/what-is-estate-mediation",
+        "questions/can-mediation-resolve-an-inheritance-dispute",
+        "questions/how-much-does-estate-mediation-cost",
+        "questions/when-should-an-estate-dispute-go-to-mediation",
+        "questions/what-happens-if-estate-mediation-fails"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:
