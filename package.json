@@ -1,0 +1,17 @@
+{
+  "name": "mediations-australia",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "schema": "node scripts/schema.mjs",
+    "ingest": "node scripts/ingest.mjs",
+    "extract": "node scripts/extract.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "@vercel/postgres": "^0.10.0",
+    "@vercel/kv": "^3.0.0",
+    "openai": "^4.67.0"
+  }
+}
