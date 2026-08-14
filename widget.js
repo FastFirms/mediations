@@ -149,27 +149,21 @@
     #ma-send:hover    { background:${DEEP}; }
     #ma-send:disabled { opacity:.4;cursor:default; }
 
-    /* ── Mobile — full screen ── */
+    /* ── Mobile ── */
     @media(max-width:600px){
       #ma-btn {
         bottom:calc(16px + env(safe-area-inset-bottom, 0px));
         right:16px;width:54px;height:54px;
       }
       #ma-panel {
-        position:fixed;
-        top:0;left:0;right:0;bottom:0;
-        width:100%;height:100%;
-        max-width:100%;max-height:100%;
-        border-radius:0;border:none;
-        /* push content below status bar */
-        padding-top:env(safe-area-inset-top, 0px);
-        box-sizing:border-box;
-      }
-      #ma-head {
-        padding:14px 16px 12px;
+        bottom:calc(84px + env(safe-area-inset-bottom, 0px));
+        right:12px;left:12px;
+        width:auto;max-width:100%;
+        height:72vh;max-height:72vh;
+        border-radius:16px;
       }
       #ma-form {
-        padding-bottom:calc(10px + env(safe-area-inset-bottom, 0px));
+        padding-bottom:10px;
       }
       .ma-nudge { flex-direction:column;align-items:flex-start; }
     }
