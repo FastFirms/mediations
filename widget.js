@@ -154,9 +154,33 @@
     #ma-send:hover { background:${DEEP}; }
     #ma-send:disabled { opacity:.45;cursor:default; }
 
-    @media(max-width:440px){
-      #ma-panel{right:8px;left:8px;width:auto;bottom:88px;}
-      #ma-btn{bottom:16px;right:16px;}
+    @media(max-width:600px){
+      #ma-btn{
+        bottom:max(16px,env(safe-area-inset-bottom,16px));
+        right:16px;
+        width:54px;height:54px;
+      }
+      #ma-panel{
+        position:fixed;
+        inset:0;
+        width:100%;
+        height:100%;
+        max-width:100%;
+        max-height:100%;
+        bottom:0;right:0;
+        border-radius:0;
+        border:none;
+      }
+      #ma-head{
+        padding-top:max(16px,env(safe-area-inset-top,16px));
+        padding-left:max(18px,env(safe-area-inset-left,18px));
+        padding-right:max(18px,env(safe-area-inset-right,18px));
+      }
+      #ma-form{
+        padding-bottom:max(10px,env(safe-area-inset-bottom,10px));
+        padding-left:max(10px,env(safe-area-inset-left,10px));
+        padding-right:max(10px,env(safe-area-inset-right,10px));
+      }
     }
   `;
 
