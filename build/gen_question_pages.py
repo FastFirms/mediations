@@ -77,13 +77,34 @@ def sources_block(sources):
 
 
 def reviewer_block(reviewer, reviewer_slug):
-    return (f'<div style="display:flex;align-items:center;gap:.75rem;'
-            f'margin-top:2.5rem;padding:.75rem 1rem;background:var(--surf,#f7f8fa);'
-            f'border-radius:8px;font-size:.9rem">'
-            f'<span style="color:var(--muted,#6b7280)">Reviewed by</span>'
-            f'<a href="/our-mediators/" style="font-weight:600">{esc(reviewer)}</a>'
-            f'<span style="color:var(--muted,#6b7280)">·</span>'
-            f'<span style="color:var(--muted,#6b7280)">Last reviewed {REVIEW_DATE}</span></div>')
+    return (
+        f'<aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);'
+        f'border-radius:10px;border:1px solid var(--border,#e5e7eb)">'
+        f'<p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;'
+        f'color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p>'
+        f'<div style="display:flex;gap:1.25rem;align-items:flex-start">'
+        f'<img src="/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" '
+        f'width="80" height="80" loading="lazy" '
+        f'style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px">'
+        f'<div>'
+        f'<p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p>'
+        f'<p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">'
+        f'Founder, Mediations Australia</p>'
+        f'<p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">'
+        f'Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, '
+        f'former Tribunal Member and nationally accredited mediator (AMDRAS). His career '
+        f'spans law, adjudication and organisational leadership, giving him particular '
+        f'insight into the systemic, structural and human dynamics that drive complex '
+        f'disputes. A recipient of the National Human Rights Law Award and a Winston '
+        f'Churchill Fellow, Dan brings legal expertise, strategic insight and practical '
+        f'judgment to dispute resolution.</p>'
+        f'<a href="https://www.mediationsaustralia.com.au/our-team/dan-toombs/" '
+        f'style="font-size:.875rem;font-weight:600">View Dan Toombs’ profile &rarr;</a>'
+        f'</div></div>'
+        f'<p style="margin:1rem 0 0;font-size:.8rem;color:var(--muted,#6b7280)">'
+        f'Last reviewed {REVIEW_DATE}</p>'
+        f'</aside>'
+    )
 
 
 # ─────────────────────────────────────────────
