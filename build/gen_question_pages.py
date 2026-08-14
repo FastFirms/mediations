@@ -83,7 +83,7 @@ def reviewer_block(reviewer, reviewer_slug):
         f'<p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;'
         f'color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p>'
         f'<div style="display:flex;gap:1.25rem;align-items:flex-start">'
-        f'<img src="/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" '
+        f'<img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" '
         f'width="80" height="80" loading="lazy" '
         f'style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px">'
         f'<div>'
