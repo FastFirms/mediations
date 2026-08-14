@@ -1,4 +1,6 @@
 {
+  "outputDirectory": ".",
+  "buildCommand": "",
   "redirects": [
     {
       "source": "/mediation-information/",
