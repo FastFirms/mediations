@@ -294,7 +294,7 @@
       addAI(data.error || data.answer, data.sources, true);
     } catch (_) {
       thinking.remove();
-      addAI('Sorry, something went wrong. Please call 1800 952 380.', [], true);
+      addAI('Sorry, something went wrong. Please call (02) 7227 7373.', [], true);
     } finally {
       send.disabled = false;
       input.focus();

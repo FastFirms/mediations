@@ -4,8 +4,8 @@ import html, json, datetime
 
 DOMAIN = "https://www.mediationsaustralia.com.au"
 BUILD_DATE = datetime.date.today().isoformat()  # e.g. "2026-08-08"
-PHONE = "1800 952 380"
-PHONE_HREF = "tel:1800952380"
+PHONE = "(02) 7227 7373"
+PHONE_HREF = "tel:0272277373"
 BOOK_URL = "/book-a-consultation/"
 
 # ---- Navigation data (shared megamenu) ----

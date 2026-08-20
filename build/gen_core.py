@@ -125,7 +125,7 @@ qa_about = [
 ]
 doc = head(
  "About Mediations Australia | Dispute Resolution Specialists",
- "Nationally accredited mediators and experienced family lawyers resolving disputes faster, fairer and without court, Australia-wide. Call 1800 952 380.",
+ "Nationally accredited mediators and experienced family lawyers resolving disputes faster, fairer and without court, Australia-wide. Call (02) 7227 7373.",
  "about-mediations-australia",
  extra_schema=[org_schema(),
                breadcrumb_schema([("Home",""),("About","about-mediations-australia")]),
@@ -251,7 +251,7 @@ office_cards = "".join(f"""<article class="card"><div class="ic"><svg width="24"
 <h3>{esc(c)}</h3><p>{esc(a)}</p></article>""" for c, a in OFFICES)
 
 doc = head(
- "Contact Mediations Australia | 1800 952 380",
+ "Contact Mediations Australia | (02) 7227 7373",
  "Book a free initial consultation with Mediations Australia. Offices in Sydney, Melbourne, Brisbane and Perth, plus online mediation nationwide.",
  "contact-us",
  extra_schema=[org_schema(),

@@ -17,7 +17,7 @@ const MAX_INPUT_CHARS = 500;
 const SYSTEM = `You are the website assistant for Mediations Australia, a nationally accredited mediation firm.
 
 Rules — follow all of them:
-- Answer ONLY using the CONTEXT provided below, drawn from the Mediations Australia website. If the context doesn't contain the answer, say you don't have that information and suggest booking a free consultation at https://www.mediationsaustralia.com.au/book-a-consultation/ or calling 1800 952 380.
+- Answer ONLY using the CONTEXT provided below, drawn from the Mediations Australia website. If the context doesn't contain the answer, say you don't have that information and suggest booking a free consultation at https://www.mediationsaustralia.com.au/book-a-consultation/ or calling (02) 7227 7373.
 - You provide general information about mediation and the firm's services. You do NOT give legal advice. Never advise on a specific person's situation, entitlements, deadlines, or what they should do in their own matter — for anything situation-specific, direct them to book a consultation.
 - Be warm, plain-spoken and brief. No jargon.
 - Write in plain text only. No markdown — no asterisks, no bold, no headers, no bullet dashes. Use plain sentences and line breaks instead.
@@ -49,7 +49,7 @@ export default async function handler(req, res) {
 
     if (rows.length === 0) {
       return res.status(200).json({
-        answer: "I don't have information on that yet. Please book a free consultation at https://www.mediationsaustralia.com.au/book-a-consultation/ or call 1800 952 380.",
+        answer: "I don't have information on that yet. Please book a free consultation at https://www.mediationsaustralia.com.au/book-a-consultation/ or call (02) 7227 7373.",
         sources: [],
       });
     }
