@@ -203,10 +203,11 @@ async function sendFormspreeNotification(matterId, matterType, partyAName) {
   // Staff alert only. No financial data. Per user instruction and spec §19.
   const payload = new URLSearchParams({
     _subject:     `New Access application — ${matterId}`,
+    _replyto:     'noreply@mediationsaustralia.com.au',
     matter_id:    matterId,
     matter_type:  matterType || 'not specified',
     party_a_name: partyAName,
-    message: `A new Access Mediation application has been submitted and requires staff review. Reference: ${matterId}. No financial information is included in this notification — please log in to the admin panel to review the application.`,
+    message: `New Access Mediation application submitted. Reference: ${matterId}. Matter type: ${matterType || 'not specified'}. No financial information is included in this notification — please review the application in the admin panel.`,
   });
 
   const r = await fetch(FORMSPREE_ENDPOINT, {
