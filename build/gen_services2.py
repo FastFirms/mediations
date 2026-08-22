@@ -359,10 +359,10 @@ build("our-fee-structure",
  """
 <style>
 .fee-hero-note{font-size:.93rem;color:var(--ink-soft);max-width:62ch;margin:0 0 8px}
-.fee-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:28px 0 20px}
-.fee-card{background:#fff;border:1.5px solid var(--line,rgba(13,34,24,.14));border-radius:14px;padding:24px 22px}
-.fee-card-duration{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);margin-bottom:10px}
-.fee-card-price{font-size:2.2rem;font-weight:800;color:var(--sage-deep,#1e6040);line-height:1}
+.fee-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin:32px 0 24px}
+.fee-card{background:#fff;border:1.5px solid var(--line,rgba(13,34,24,.14));border-radius:16px;padding:30px 28px}
+.fee-card-duration{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);margin-bottom:12px}
+.fee-card-price{font-size:2.6rem;font-weight:800;color:var(--sage-deep,#1e6040);line-height:1}
 .fee-card-unit{font-size:.85rem;color:var(--ink-soft);margin:4px 0 12px}
 .fee-card-total{font-size:.9rem;color:var(--ink-soft);margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--line,rgba(13,34,24,.14))}
 .fee-card-total strong{color:var(--ink)}
@@ -394,8 +394,8 @@ build("our-fee-structure",
 .access-full{margin:40px 0 20px}
 .access-full .eyebrow-tag{display:inline-block;font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--sage-deep,#1e6040);background:var(--sage-pale,#f1f5f1);border-radius:100px;padding:4px 12px;margin-bottom:14px}
 .access-assist-box{border:1.5px solid var(--sage-deep,#1e6040);border-radius:12px;padding:20px 22px;margin:20px 0;background:#fff}
-.ast-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--line,rgba(13,34,24,.14));font-size:.9rem;font-family:monospace}
-.ast-row:last-child{border-bottom:none;font-weight:700;color:var(--sage-deep,#1e6040)}
+.ast-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line,rgba(13,34,24,.14));font-size:.93rem}
+.ast-row:last-child{border-bottom:none;font-weight:700;color:var(--sage-deep,#1e6040);padding-top:11px}
 .band-table{width:100%;border-collapse:collapse;margin:16px 0 8px;font-size:.9rem}
 .band-table th{text-align:left;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);padding:0 12px 8px 0;border-bottom:2px solid var(--sage-deep,#1e6040)}
 .band-table td{padding:11px 12px 11px 0;border-bottom:1px solid var(--line,rgba(13,34,24,.14));vertical-align:top;color:var(--ink-soft)}
@@ -416,12 +416,14 @@ build("our-fee-structure",
 .followup-table td:last-child{font-weight:700;color:var(--ink)}
 .followup-table tr:last-child td{border-bottom:none}
 .dual-cta{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 8px}
+.section-sep{border:none;border-top:1px solid var(--line,rgba(13,34,24,.12));margin:48px 0}
 @media(max-width:600px){
-  .fee-card-price{font-size:1.8rem}
+  .fee-card-price{font-size:2rem}
   .fee-cards,.dispute-grid{grid-template-columns:1fr}
   .dual-cta{flex-direction:column}
-  .dual-cta a{width:100%;justify-content:center}
+  .dual-cta a{width:100%;justify-content:center;text-align:center}
   .access-strip{padding:22px 18px 20px}
+  .add-table td,.add-table th{font-size:.82rem}
 }
 </style>
 
@@ -480,12 +482,9 @@ build("our-fee-structure",
   <div class="dispute-card"><h3>Workplace &amp; Commercial</h3><p>Workplace conflict, employment disputes, commercial disagreements and business-partner disputes.</p></div>
   <div class="dispute-card"><h3>Online Mediation</h3><p>Private mediation conducted online throughout Australia at the same pricing.</p></div>
 </div>
-<p style="font-size:.85rem;color:var(--ink-soft);margin-top:6px">The appropriate format and duration depend on the circumstances. We can discuss this at the free initial consultation.</p>
+<p style="font-size:.85rem;color:var(--ink-soft);margin-top:6px">Online mediation follows the same pricing. The appropriate format and duration depend on the circumstances — we can discuss this at the free initial consultation.</p>
 
-<h2>Online mediation &#8212; anywhere in Australia</h2>
-<div class="online-note">
-  Standard online mediator fees follow the same pricing: <strong>$1,500 + GST per participant</strong> for up to 4 hours; <strong>$2,250 + GST per participant</strong> for up to 8 hours, when fees are shared equally. Online mediation may avoid room-hire and travel costs.
-</div>
+<hr class="section-sep">
 
 <h2>Additional costs</h2>
 <table class="add-table">
@@ -498,11 +497,13 @@ build("our-fee-structure",
 </table>
 <p style="font-size:.83rem;color:var(--ink-soft)">Any room, travel or material additional-time cost is discussed before it is incurred.</p>
 
+<hr class="section-sep">
 <h2>Invitation to Mediate</h2>
 <p>If you want Mediations Australia to formally approach another person about participating, we can arrange an Invitation to Mediate.</p>
 <p><strong>Standard matters: $400 + GST</strong></p>
 <div class="invite-note">For <strong>Access Mediation</strong>, ordinary invitation administration is included in the confirmed Access contribution. The $400 standard invitation charge does not apply separately.</div>
 
+<hr class="section-sep">
 <div class="access-full" id="access-mediation-fees">
   <span class="eyebrow-tag">ACCESS MEDIATION</span>
   <h2>Private mediation when the standard fee is out of reach.</h2>
@@ -568,39 +569,9 @@ build("our-fee-structure",
   </ul>
   <p>Participants may have different contributions. The financial basis remains private.</p>
 
-  <h3>What if the other participant earns much more?</h3>
-  <p>You can still qualify. Each participant is assessed individually. A participant will never be charged more than the applicable standard contribution because another participant receives Access assistance.</p>
+  <div class="fdr-note" style="margin-top:20px"><strong>Section 60I certificates are not automatically included</strong> with Access Mediation. If obtaining a certificate may be important to you, tell us before booking so we can identify the appropriate service. If unsure, speak with our team or obtain independent legal advice. <a href="/contact/" style="color:var(--sage-deep,#1e6040)">Talk to our team about FDR &#8594;</a></div>
 
-  <h3>What if my income is higher but I have genuine hardship?</h3>
-  <p>You can request a confidential review. Dependants, unavoidable expenses, separation-related disruption, restricted access to funds and other exceptional circumstances may affect your assessed capacity.</p>
-
-  <h3>Do I need to provide bank statements?</h3>
-  <p>Not ordinarily. The calculator is primarily self-declared. Limited supporting information may be requested where clarification is genuinely required. Please do not send financial documents unless requested.</p>
-
-  <h3>What if I may need a section 60I certificate?</h3>
-  <div class="fdr-note"><strong>A section 60I certificate is not automatically included</strong> with Access Mediation. If obtaining a certificate may be important to you, tell us before booking so we can help identify the appropriate service and practitioner. If unsure, speak with our team or obtain independent legal advice.</div>
-  <div class="dual-cta">
-    <a href="/contact/" class="btn btn-ghost">Talk to Our Team About FDR <span class="arr">&#8594;</span></a>
-  </div>
-
-  <h3 style="margin-top:28px">Booking an Access appointment</h3>
-  <p>The usual payment structure is 50% of the confirmed contribution when the appointment is secured, and 50% five business days before mediation. Payment hardship can be reviewed without increasing the total confirmed contribution.</p>
-
-  <h3>What if another session is needed?</h3>
-  <p>Where appropriate, an additional Access session of up to 90 minutes may be offered. Approved Access assessment ordinarily remains current for 90 days.</p>
-  <table class="followup-table">
-    <thead><tr><th>Access band</th><th>Up to 90 minutes</th></tr></thead>
-    <tbody>
-      <tr><td>Band 1</td><td>$250 + GST</td></tr>
-      <tr><td>Band 2</td><td>$350 + GST</td></tr>
-      <tr><td>Band 3</td><td>$450 + GST</td></tr>
-      <tr><td>Band 4</td><td>$550 + GST</td></tr>
-      <tr><td>Band 5</td><td>$650 + GST</td></tr>
-    </tbody>
-  </table>
-
-  <h3>What happens after mediation?</h3>
-  <p>Mediation does not automatically turn an agreement into court orders or another legally binding document. Depending on the circumstances, participants may need independent legal advice or separate documentation to formalise an agreement.</p>
+  <p style="font-size:.85rem;color:var(--ink-soft);margin-top:12px">Common questions about Access — eligibility, bank statements, the other participant&#8217;s income, hardship, cancellations and what happens after mediation — are answered in the FAQ below.</p>
 
   <div class="dual-cta" style="margin-top:28px">
     <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation <span class="arr">&#8594;</span></a>
