@@ -91,7 +91,7 @@ reconstructing events from memory months or years later.</p>
         + f"""
 <h2 id="top-apps">The 9 best apps for separated parents in Australia</h2>
 
-<h3>1. OurFamilyWizard</h3>
+<h3>1. <a href="https://www.ourfamilywizard.com/au" rel="noopener nofollow" target="_blank">OurFamilyWizard</a></h3>
 <p>OurFamilyWizard remains the gold standard for separated parents in or approaching
 legal proceedings. Its <strong>ToneMeter</strong> flags messages that may read as hostile
 before they are sent — a surprisingly effective circuit-breaker in high-conflict situations.
@@ -102,7 +102,7 @@ specifically for clients where a court record may be needed.</p>
 <p><strong>Best for:</strong> high-conflict situations; cases involving or likely to
 involve legal proceedings.</p>
 
-<h3>2. TalkingParents</h3>
+<h3>2. <a href="https://talkingparents.com" rel="noopener nofollow" target="_blank">TalkingParents</a></h3>
 <p>TalkingParents is a strong alternative to OurFamilyWizard with a similar court-focused
 feature set. All messages are permanently archived and cannot be altered. It produces
 certified PDF records for court use, includes a shared calendar, expense tracking, and
@@ -113,7 +113,7 @@ month for court-record features.</p>
 <p><strong>Best for:</strong> parents who need court-ready records but want a lower cost
 entry point than OurFamilyWizard.</p>
 
-<h3>3. 2Houses</h3>
+<h3>3. <a href="https://www.2houses.com" rel="noopener nofollow" target="_blank">2Houses</a></h3>
 <p>2Houses is a solid mid-tier option with a clean interface, shared calendar, expense
 tracking, and a document store. It lacks tone analysis but is more affordable and
 sufficient for most separated parents who are not in active proceedings.</p>
@@ -121,7 +121,7 @@ sufficient for most separated parents who are not in active proceedings.</p>
 <p><strong>Best for:</strong> moderate-conflict situations; parents who want clear
 structure without the premium price.</p>
 
-<h3>4. AppClose</h3>
+<h3>4. <a href="https://appclose.com" rel="noopener nofollow" target="_blank">AppClose</a></h3>
 <p>AppClose offers tamper-proof messaging, a shared calendar, expense tracking, and
 child information storage on a free plan — making it the best free option for parents
 who need more than a basic calendar. A paid plan adds court-ready PDF reports.</p>
@@ -129,7 +129,7 @@ who need more than a basic calendar. A paid plan adds court-ready PDF reports.</
 <p><strong>Best for:</strong> cost-conscious parents who need co-parenting-specific
 features without an annual subscription.</p>
 
-<h3>5. Custody X Change</h3>
+<h3>5. <a href="https://www.custodyxchange.com" rel="noopener nofollow" target="_blank">Custody X Change</a></h3>
 <p>Custody X Change is built around parenting schedule visualisation and planning rather
 than day-to-day communication. Its standout feature is the ability to create detailed,
 printable parenting schedules with time-percentage calculations — particularly useful
@@ -139,7 +139,7 @@ percentage directly affects assessments.</p>
 <p><strong>Best for:</strong> parents who need to model, calculate, and document time
 arrangements; especially useful when child support percentage is in dispute.</p>
 
-<h3>6. Braid (formerly WeParent)</h3>
+<h3>6. <a href="https://www.braidapp.com" rel="noopener nofollow" target="_blank">Braid</a> (formerly WeParent)</h3>
 <p>Braid focuses on shared finances and child expenses — tracking contributions,
 requesting reimbursements, and maintaining a clear record of who has paid what. Less
 focused on communication and more focused on the financial dimension of co-parenting,
@@ -148,7 +148,7 @@ making it a useful complement to a communication-focused app.</p>
 <p><strong>Best for:</strong> parents whose main source of conflict is money rather
 than scheduling or communication.</p>
 
-<h3>7. FamilyTime</h3>
+<h3>7. <a href="https://familytime.io" rel="noopener nofollow" target="_blank">FamilyTime</a></h3>
 <p>FamilyTime includes a shared family calendar, task lists, and optional location-sharing
 for children. It is not specifically designed for separation but is widely used by
 co-parents who need simple scheduling and optional check-in visibility. Location-sharing
@@ -157,7 +157,7 @@ requires both parents' agreement to enable.</p>
 <p><strong>Best for:</strong> low-conflict co-parents who primarily need scheduling
 coordination and optional location check-in for older children.</p>
 
-<h3>8. Cozi</h3>
+<h3>8. <a href="https://www.cozi.com" rel="noopener nofollow" target="_blank">Cozi</a></h3>
 <p>Cozi is a free family organiser — not purpose-built for separation, but widely used
 by co-parents for its shared calendar, shopping lists, and task coordination. It lacks
 tamper-proof messaging and court-export features. Appropriate only for genuinely
@@ -166,7 +166,7 @@ low-conflict arrangements where a contemporaneous communication record is not ne
 <p><strong>Best for:</strong> low-conflict co-parents who just need a shared calendar
 and have no concerns about needing a communication record.</p>
 
-<h3>9. Google Calendar (shared)</h3>
+<h3>9. <a href="https://calendar.google.com" rel="noopener nofollow" target="_blank">Google Calendar</a> (shared)</h3>
 <p>A shared Google Calendar is not a co-parenting app, but it deserves mention as the
 solution many low-conflict co-parents already use. It provides a shared, real-time
 view of the parenting schedule at no cost. It has no messaging, expense tracking,
@@ -196,7 +196,7 @@ may ever be needed.</p>
 </thead>
 <tbody>
 <tr>
-  <td>OurFamilyWizard</td>
+  <td><a href="https://www.ourfamilywizard.com/au" rel="noopener nofollow" target="_blank">OurFamilyWizard</a></td>
   <td>~$398 (both parents)</td>
   <td>Yes + ToneMeter</td>
   <td>Yes</td>
@@ -204,7 +204,7 @@ may ever be needed.</p>
   <td>High / legal proceedings</td>
 </tr>
 <tr>
-  <td>TalkingParents</td>
+  <td><a href="https://talkingparents.com" rel="noopener nofollow" target="_blank">TalkingParents</a></td>
   <td>Free / ~$240 paid</td>
   <td>Yes — certified</td>
   <td>Yes (paid)</td>
@@ -212,7 +212,7 @@ may ever be needed.</p>
   <td>High / legal proceedings</td>
 </tr>
 <tr>
-  <td>2Houses</td>
+  <td><a href="https://www.2houses.com" rel="noopener nofollow" target="_blank">2Houses</a></td>
   <td>~$360 (both parents)</td>
   <td>Yes</td>
   <td>Yes</td>
@@ -220,7 +220,7 @@ may ever be needed.</p>
   <td>Moderate</td>
 </tr>
 <tr>
-  <td>AppClose</td>
+  <td><a href="https://appclose.com" rel="noopener nofollow" target="_blank">AppClose</a></td>
   <td>Free / ~$180 paid</td>
   <td>Yes</td>
   <td>Paid only</td>
@@ -228,7 +228,7 @@ may ever be needed.</p>
   <td>Moderate / budget</td>
 </tr>
 <tr>
-  <td>Custody X Change</td>
+  <td><a href="https://www.custodyxchange.com" rel="noopener nofollow" target="_blank">Custody X Change</a></td>
   <td>~$30–70 one-off</td>
   <td>No</td>
   <td>Schedule only</td>
@@ -236,7 +236,7 @@ may ever be needed.</p>
   <td>Any — schedule planning tool</td>
 </tr>
 <tr>
-  <td>Braid</td>
+  <td><a href="https://www.braidapp.com" rel="noopener nofollow" target="_blank">Braid</a></td>
   <td>Free / ~$120</td>
   <td>No</td>
   <td>No</td>
@@ -244,7 +244,7 @@ may ever be needed.</p>
   <td>Low–moderate / finance focus</td>
 </tr>
 <tr>
-  <td>FamilyTime</td>
+  <td><a href="https://familytime.io" rel="noopener nofollow" target="_blank">FamilyTime</a></td>
   <td>Free / ~$30–60</td>
   <td>No</td>
   <td>No</td>
@@ -252,7 +252,7 @@ may ever be needed.</p>
   <td>Low — scheduling only</td>
 </tr>
 <tr>
-  <td>Cozi</td>
+  <td><a href="https://www.cozi.com" rel="noopener nofollow" target="_blank">Cozi</a></td>
   <td>Free / ~$45 Gold</td>
   <td>No</td>
   <td>No</td>
@@ -260,7 +260,7 @@ may ever be needed.</p>
   <td>Low — calendar only</td>
 </tr>
 <tr>
-  <td>Google Calendar</td>
+  <td><a href="https://calendar.google.com" rel="noopener nofollow" target="_blank">Google Calendar</a></td>
   <td>Free</td>
   <td>No</td>
   <td>No</td>
