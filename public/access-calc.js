@@ -1,15 +1,15 @@
 /**
- * Access Mediation — multi-step eligibility calculator + application form.
+ * Access Mediation — multi-step contribution calculator + application form.
  * Mounts into: <div id="access-calc-root">
  *
  * Steps:
- *   1  income_band
- *   2  dependants
- *   3  assets_band
- *   4  concession
- *   5  hardship
- *   6  matter_type
- *   7  needs_60i
+ *   1  income_band     · Your income
+ *   2  dependants      · Dependants
+ *   3  assets_band     · Accessible assets
+ *   4  concession      · Concession card
+ *   5  hardship        · Financial hardship
+ *   6  matter_type     · Matter type
+ *   7  needs_60i       · Section 60I
  *   8  → POST /api/access-calc → show result
  *   9  (if eligible/review) → application form → POST /api/access-apply → confirmation
  *
@@ -17,6 +17,7 @@
  *   - Never put financial answers in URLs.
  *   - Answers live only in JS module state and are sent once, server-side, over HTTPS.
  *   - No financial inputs are echoed back in the result display.
+ *   - Analytics events carry only step numbers and result type — never financial values.
  */
 (function () {
   'use strict';
@@ -44,20 +45,22 @@
   var STEPS = [
     {
       key: 'income_band',
+      topic: 'Your income',
       question: 'What is your personal gross annual income?',
-      hint: 'This is your individual income, not household income.',
+      hint: 'Your individual income — not household income.',
       options: [
-        { value: '0-50k',    label: 'Under $50,000' },
+        { value: '0-50k',    label: 'Up to $50,000' },
         { value: '50-75k',   label: '$50,001 – $75,000' },
         { value: '75-100k',  label: '$75,001 – $100,000' },
         { value: '100-125k', label: '$100,001 – $125,000' },
         { value: '125-150k', label: '$125,001 – $150,000' },
-        { value: '150k+',    label: 'Above $150,000' },
+        { value: '150k+',    label: 'More than $150,000' },
       ],
     },
     {
       key: 'dependants',
-      question: 'How many dependants do you have?',
+      topic: 'Dependants',
+      question: 'How many financial dependants do you have?',
       hint: 'Children or other persons financially dependent on you.',
       options: [
         { value: '0',  label: 'None' },
@@ -68,8 +71,9 @@
     },
     {
       key: 'assets_band',
-      question: 'What are your accessible assets (approximate total)?',
-      hint: 'Savings, shares, investment properties, etc. Not your family home or superannuation.',
+      topic: 'Accessible assets',
+      question: 'What are your accessible financial assets (approximate total)?',
+      hint: 'Savings, shares, investment properties and similar. Not your family home or superannuation.',
       options: [
         { value: '<10k',         label: 'Under $10,000' },
         { value: '10-30k',       label: '$10,000 – $30,000' },
@@ -81,6 +85,7 @@
     },
     {
       key: 'concession',
+      topic: 'Concession card',
       question: 'Do you hold a current government concession card?',
       hint: 'For example, a Health Care Card, Pensioner Concession Card, or DVA card.',
       options: [
@@ -91,6 +96,7 @@
     },
     {
       key: 'hardship',
+      topic: 'Financial hardship',
       question: 'Are you experiencing any of the following financial hardship?',
       hint: 'Select the option that best describes your situation.',
       options: [
@@ -104,6 +110,7 @@
     },
     {
       key: 'matter_type',
+      topic: 'Matter type',
       question: 'What type of family law matter do you have?',
       hint: '',
       options: [
@@ -116,49 +123,82 @@
     },
     {
       key: 'needs_60i',
+      topic: 'Section 60I',
       question: 'Do you need a Section 60I certificate?',
-      hint: 'A Section 60I certificate is required before most parenting applications to the Federal Circuit and Family Court. If you are not sure, select "Not sure".',
+      hint: 'Required before most parenting applications to the Federal Circuit and Family Court. Select "Not sure" if you are unsure.',
       options: [
-        { value: 'yes',   label: 'Yes, I need one' },
-        { value: 'no',    label: 'No' },
+        { value: 'yes',    label: 'Yes, I need one' },
+        { value: 'no',     label: 'No' },
         { value: 'unsure', label: 'Not sure' },
       ],
     },
   ];
 
+  // ── Analytics (privacy-safe — never send financial values) ───────────────
+  function track(name, params) {
+    try {
+      if (typeof gtag === 'function') gtag('event', name, params || {});
+    } catch (e) { /* silently ignore */ }
+  }
+
   // ── Styles ────────────────────────────────────────────────────────────────
   var css = [
-    '#acc-calc{font-family:' + FONT + ';max-width:560px;margin:0 auto}',
-    '#acc-progress{display:flex;gap:6px;margin-bottom:28px}',
-    '.acc-pip{flex:1;height:4px;border-radius:2px;background:' + LINE + ';transition:background .3s}',
+    // Container — 660px wide, centred (brief §4)
+    '#acc-calc{font-family:' + FONT + ';max-width:660px;margin:0 auto;background:#fff;border-radius:14px;padding:28px 32px;box-shadow:0 2px 12px rgba(13,34,24,.08)}',
+
+    // Progress — label + bar (brief §5)
+    '#acc-step-label{font-size:.82rem;font-weight:700;color:' + GREEN + ';letter-spacing:.04em;text-transform:uppercase;margin:0 0 10px}',
+    '#acc-progress{display:flex;gap:6px;margin-bottom:24px}',
+    '.acc-pip{flex:1;height:5px;border-radius:3px;background:' + LINE + ';transition:background .3s}',
     '.acc-pip.done{background:' + GREEN + '}',
-    '.acc-pip.active{background:' + GREEN + ';opacity:.55}',
-    '#acc-question{font-size:1.08rem;font-weight:700;color:' + DEEP + ';margin:0 0 6px;line-height:1.4}',
-    '#acc-hint{font-size:.83rem;color:' + MUTED + ';margin:0 0 18px;line-height:1.5}',
-    '.acc-options{display:flex;flex-direction:column;gap:9px}',
-    '.acc-opt{display:flex;align-items:center;gap:12px;padding:11px 15px;border:1.5px solid ' + LINE + ';',
-    '  border-radius:10px;cursor:pointer;background:#fff;transition:border-color .15s,background .15s;text-align:left;width:100%}',
+    '.acc-pip.active{background:' + GREEN + ';opacity:.5}',
+
+    // Question
+    '#acc-question{font-size:1.1rem;font-weight:700;color:' + DEEP + ';margin:0 0 6px;line-height:1.4}',
+    '#acc-hint{font-size:.84rem;color:' + MUTED + ';margin:0 0 20px;line-height:1.5}',
+
+    // Options — large click targets (brief §6)
+    '.acc-options{display:flex;flex-direction:column;gap:10px}',
+    '.acc-opt{display:flex;align-items:center;gap:14px;padding:14px 18px;border:1.5px solid ' + LINE + ';',
+    '  border-radius:10px;cursor:pointer;background:#fff;transition:border-color .15s,background .15s;text-align:left;width:100%;min-height:52px}',
     '.acc-opt:hover,.acc-opt:focus{border-color:' + GREEN + ';background:' + SAND + ';outline:none}',
     '.acc-opt.selected{border-color:' + GREEN + ';background:' + SAND + '}',
-    '.acc-opt-dot{width:17px;height:17px;border-radius:50%;border:2px solid ' + LINE + ';flex-shrink:0;transition:border-color .15s,background .15s}',
+    '.acc-opt-dot{width:18px;height:18px;border-radius:50%;border:2px solid ' + LINE + ';flex-shrink:0;transition:border-color .15s,background .15s}',
     '.acc-opt.selected .acc-opt-dot{border-color:' + GREEN + ';background:' + GREEN + '}',
-    '.acc-opt-label{font-size:.93rem;color:' + DEEP + ';font-weight:500;line-height:1.4}',
-    '#acc-back{background:none;border:none;color:' + MUTED + ';font-size:.83rem;cursor:pointer;padding:0;margin-top:14px;text-decoration:underline}',
-    '#acc-result{padding:22px;border-radius:14px;border:2px solid ' + GREEN + ';background:#fff;margin-top:6px}',
-    '.acc-res-band{font-size:2rem;font-weight:800;color:' + GREEN + ';line-height:1}',
-    '.acc-res-sub{font-size:.88rem;color:' + MUTED + ';margin:6px 0 18px}',
-    '.acc-res-meta{font-size:.88rem;color:' + MUTED + ';margin-bottom:16px}',
+    '.acc-opt-label{font-size:.95rem;color:' + DEEP + ';font-weight:500;line-height:1.4}',
+
+    // Back button
+    '#acc-back{background:none;border:none;color:' + MUTED + ';font-size:.83rem;cursor:pointer;padding:0;margin-top:16px;text-decoration:underline}',
+
+    // Result box — three-row breakdown (brief §9)
+    '#acc-result{padding:26px;border-radius:14px;border:2px solid ' + GREEN + ';background:#fff;margin-top:6px}',
+    '.acc-res-rows{margin:0 0 20px;border-radius:8px;overflow:hidden;border:1px solid ' + LINE + '}',
+    '.acc-res-row{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;font-size:.9rem;border-bottom:1px solid ' + LINE + ';background:#fafafa}',
+    '.acc-res-row:last-child{border-bottom:none;background:' + SAND + ';padding:14px;font-weight:700}',
+    '.acc-res-row-label{color:' + MUTED + '}',
+    '.acc-res-row-value{color:' + DEEP + ';font-weight:600}',
+    '.acc-res-row:last-child .acc-res-row-label{color:' + DEEP + ';font-weight:700}',
+    '.acc-res-price{font-size:2.4rem;font-weight:800;color:' + GREEN + ';line-height:1;margin:0 0 4px}',
+    '.acc-res-sub{font-size:.86rem;color:' + MUTED + ';margin:0 0 20px;line-height:1.5}',
     '.acc-res-disclaimer{font-size:.78rem;color:' + MUTED + ';line-height:1.5;margin-top:16px;padding-top:12px;border-top:1px solid ' + LINE + '}',
+
+    // Buttons
     '.acc-apply-btn{display:inline-flex;align-items:center;gap:8px;background:' + GREEN + ';color:#fff;',
-    '  border:none;border-radius:100px;padding:12px 26px;font-family:' + FONT + ';font-size:.95rem;font-weight:700;cursor:pointer;transition:background .2s;text-decoration:none}',
+    '  border:none;border-radius:100px;padding:13px 28px;font-family:' + FONT + ';font-size:.95rem;font-weight:700;cursor:pointer;transition:background .2s;text-decoration:none}',
     '.acc-apply-btn:hover{background:' + DEEP + ';color:#fff}',
-    '.acc-review-note{padding:13px 15px;background:#fff9e6;border-left:4px solid #f0a500;border-radius:0 8px 8px 0;font-size:.86rem;line-height:1.6;margin-bottom:18px}',
+    '.acc-talk-link{display:inline-block;margin-left:16px;font-size:.88rem;color:' + GREEN + ';text-decoration:underline;vertical-align:middle}',
+    '.acc-btn-row{margin-top:18px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}',
+
+    // Review note
+    '.acc-review-note{padding:13px 16px;background:#fff9e6;border-left:4px solid #f0a500;border-radius:0 8px 8px 0;font-size:.86rem;line-height:1.6;margin-bottom:18px}',
+
+    // Application form
     '.acc-form{margin-top:22px}',
     '.acc-form h3{color:' + DEEP + ';margin:0 0 18px;font-size:1rem}',
     '.acc-field{margin-bottom:16px}',
     '.acc-field label{display:block;font-size:.86rem;font-weight:600;color:' + DEEP + ';margin-bottom:4px}',
     '.acc-field input,.acc-field textarea,.acc-field select{width:100%;box-sizing:border-box;border:1.5px solid ' + LINE + ';',
-    '  border-radius:9px;padding:9px 12px;font-family:' + FONT + ';font-size:.88rem;color:' + DEEP + ';background:' + SAND + ';outline:none;transition:border-color .2s}',
+    '  border-radius:9px;padding:10px 13px;font-family:' + FONT + ';font-size:.88rem;color:' + DEEP + ';background:' + SAND + ';outline:none;transition:border-color .2s}',
     '.acc-field input:focus,.acc-field textarea:focus{border-color:' + GREEN + ';background:#fff}',
     '.acc-section-label{font-size:.88rem;font-weight:700;color:' + DEEP + ';margin:22px 0 6px;border-bottom:1px solid ' + LINE + ';padding-bottom:6px}',
     '.acc-section-hint{font-size:.79rem;color:' + MUTED + ';margin-bottom:12px;line-height:1.5}',
@@ -167,18 +207,27 @@
     '.acc-consent label{font-size:.83rem;color:' + MUTED + ';line-height:1.5}',
     '.acc-consent a{color:' + GREEN + '}',
     '.acc-submit{display:block;width:100%;background:' + GREEN + ';color:#fff;border:none;border-radius:100px;',
-    '  padding:13px 20px;font-family:' + FONT + ';font-size:.95rem;font-weight:700;cursor:pointer;transition:background .2s;margin-top:10px}',
+    '  padding:14px 20px;font-family:' + FONT + ';font-size:.95rem;font-weight:700;cursor:pointer;transition:background .2s;margin-top:12px}',
     '.acc-submit:hover{background:' + DEEP + '}',
     '.acc-submit:disabled{opacity:.4;cursor:default}',
     '.acc-error{padding:11px 15px;background:#fdecea;border-left:4px solid #d32f2f;border-radius:0 8px 8px 0;font-size:.86rem;color:#b71c1c;margin:10px 0}',
-    '.acc-confirm{text-align:center;padding:30px 20px}',
-    '.acc-confirm-icon{font-size:2.8rem;margin-bottom:10px;color:' + GREEN + '}',
+    '.acc-confirm{text-align:center;padding:30px 16px}',
+    '.acc-confirm-icon{font-size:2.6rem;margin-bottom:10px;color:' + GREEN + '}',
     '.acc-confirm h3{color:' + GREEN + ';margin:0 0 10px;font-size:1.1rem}',
     '.acc-confirm p{font-size:.9rem;color:' + MUTED + ';line-height:1.6;margin:0 0 10px}',
     '.acc-confirm strong{color:' + DEEP + '}',
     '.acc-restart{display:inline-block;margin-top:16px;font-size:.83rem;color:' + GREEN + ';cursor:pointer;text-decoration:underline}',
-    '.acc-loading{text-align:center;padding:36px 0;color:' + MUTED + ';font-size:.88rem;font-style:italic}',
+    '.acc-loading{text-align:center;padding:40px 0;color:' + MUTED + ';font-size:.88rem}',
     '.acc-field-hint{font-size:.77rem;color:' + MUTED + ';margin:3px 0 0;line-height:1.4}',
+
+    // Mobile (brief §21)
+    '@media(max-width:600px){',
+    '#acc-calc{padding:20px 16px;border-radius:10px}',
+    '.acc-opt{padding:13px 14px;min-height:48px}',
+    '.acc-res-price{font-size:2rem}',
+    '.acc-apply-btn{width:100%;justify-content:center}',
+    '.acc-talk-link{display:block;margin:8px 0 0}',
+    '}',
   ].join('');
 
   var styleEl = document.createElement('style');
@@ -212,7 +261,7 @@
     if (currentStep < STEPS.length) {
       renderStep(wrap);
     } else if (!calcResult) {
-      wrap.appendChild(el('div', { class: 'acc-loading', text: 'Checking your eligibility…' }));
+      wrap.appendChild(el('div', { class: 'acc-loading', text: 'Calculating your indicative contribution…' }));
       postCalc();
     } else if (!applyResult) {
       renderResult(wrap);
@@ -221,7 +270,14 @@
     }
   }
 
+  // ── Progress — Step X of Y · Topic (brief §5) ────────────────────────────
   function progress(wrap) {
+    var s = STEPS[currentStep];
+    var label = el('p', {
+      id: 'acc-step-label',
+      text: 'Step ' + (currentStep + 1) + ' of ' + STEPS.length + ' · ' + s.topic,
+    });
+    wrap.appendChild(label);
     var prog = el('div', { id: 'acc-progress' });
     STEPS.forEach(function (_, i) {
       prog.appendChild(el('div', {
@@ -231,9 +287,14 @@
     wrap.appendChild(prog);
   }
 
-  // ── Step ──────────────────────────────────────────────────────────────────
+  // ── Step (brief §6 — large click targets) ────────────────────────────────
   function renderStep(wrap) {
     var s = STEPS[currentStep];
+
+    // Fire start event on first step
+    if (currentStep === 0) track('access_calculator_start');
+    track('access_calculator_step', { step: currentStep + 1 });
+
     progress(wrap);
     wrap.appendChild(el('p', { id: 'acc-question', text: s.question }));
     if (s.hint) wrap.appendChild(el('p', { id: 'acc-hint', text: s.hint }));
@@ -251,6 +312,7 @@
       btn.addEventListener('click', function () {
         answers[s.key] = o.value;
         currentStep++;
+        if (currentStep === STEPS.length) track('access_calculator_complete');
         render();
       });
       opts.appendChild(btn);
@@ -264,16 +326,18 @@
     }
   }
 
-  // ── Result ────────────────────────────────────────────────────────────────
+  // ── Result — three-row breakdown (brief §9) ───────────────────────────────
   function renderResult(wrap) {
     var r = calcResult;
+
+    track('access_result_type', { type: r.result_type });
 
     if (r.result_type === 'fdr_routing') {
       var b = el('div', { id: 'acc-result' });
       b.appendChild(el('p', { html: '<strong>Your matter may require a Family Dispute Resolution (FDR) process</strong> to obtain a Section 60I certificate.' }));
       b.appendChild(el('p', { class: 'acc-res-disclaimer',
         text: 'Please call us to discuss whether your matter is eligible for FDR, the process involved, and your contribution options. We cannot issue a certificate in advance or guarantee one will be issued.' }));
-      b.appendChild(el('a', { href: 'tel:0272277373', class: 'acc-apply-btn', html: 'Call (02) 7227 7373' }));
+      b.appendChild(el('a', { href: 'tel:0272277373', class: 'acc-apply-btn', html: 'Call (02) 7227 7373' }));
       wrap.appendChild(b);
       return;
     }
@@ -284,38 +348,62 @@
       sb.appendChild(el('p', { text: 'Based on your answers, your income is above the Access Mediation threshold. The standard individual contribution for a 3-hour session is ' + fmt(r.standard_contribution_ex_gst) + '.' }));
       sb.appendChild(el('p', { class: 'acc-res-disclaimer',
         text: 'If you believe your circumstances should be reviewed, please call us to discuss.' }));
-      sb.appendChild(el('a', { href: '/book-a-consultation/', class: 'acc-apply-btn', html: 'Book a Standard Consultation →' }));
+      sb.appendChild(el('a', { href: '/book-a-consultation/', class: 'acc-apply-btn', html: 'Book a Free Consultation →' }));
       wrap.appendChild(sb);
       return;
     }
 
-    // eligible or review
+    // eligible or review — three-row result
     var box = el('div', { id: 'acc-result' });
 
     if (r.result_type === 'review') {
       box.appendChild(el('div', { class: 'acc-review-note',
-        html: '<strong>Your application requires staff review.</strong> Your circumstances do not fit neatly within the automatic bands — this does not mean you are ineligible. Our team will assess your individual circumstances and confirm your contribution.' }));
+        html: '<strong>Your application requires staff review.</strong> Your circumstances do not fit neatly within the automatic assessment — this does not mean you are ineligible. Our team will assess your individual circumstances and confirm your contribution.' }));
     }
 
     if (r.contribution_ex_gst != null) {
-      box.appendChild(el('div', { class: 'acc-res-band', text: fmt(r.contribution_ex_gst) }));
-      box.appendChild(el('p', { class: 'acc-res-sub', text: 'Your indicative individual contribution (ex GST) for a 3-hour session' }));
-      box.appendChild(el('p', { class: 'acc-res-meta',
-        html: 'Standard contribution: <strong>' + fmt(r.standard_contribution_ex_gst) + '</strong>'
-          + (r.access_assistance_ex_gst != null
-            ? '&ensp;•&ensp;Access assistance: <strong>' + fmt(r.access_assistance_ex_gst) + '</strong>'
-            : '') }));
+      // Heading
+      box.appendChild(el('h3', { style: 'margin:0 0 16px;font-size:1rem;color:' + DEEP, text: 'Your indicative Access contribution' }));
+
+      // Three-row breakdown
+      var rows = el('div', { class: 'acc-res-rows' });
+      var r1 = el('div', { class: 'acc-res-row' });
+      r1.appendChild(el('span', { class: 'acc-res-row-label', text: 'Standard individual contribution' }));
+      r1.appendChild(el('span', { class: 'acc-res-row-value', text: fmt(r.standard_contribution_ex_gst) }));
+      rows.appendChild(r1);
+
+      if (r.access_assistance_ex_gst != null && r.access_assistance_ex_gst > 0) {
+        var r2 = el('div', { class: 'acc-res-row' });
+        r2.appendChild(el('span', { class: 'acc-res-row-label', text: 'Access assistance' }));
+        r2.appendChild(el('span', { class: 'acc-res-row-value', style: 'color:' + GREEN, text: '−$' + r.access_assistance_ex_gst.toLocaleString('en-AU') }));
+        rows.appendChild(r2);
+      }
+
+      var r3 = el('div', { class: 'acc-res-row' });
+      r3.appendChild(el('span', { class: 'acc-res-row-label', text: 'Your contribution' }));
+      r3.appendChild(el('span', { class: 'acc-res-row-value', style: 'color:' + GREEN + ';font-size:1.1rem', text: fmt(r.contribution_ex_gst) }));
+      rows.appendChild(r3);
+      box.appendChild(rows);
+
+      box.appendChild(el('p', { class: 'acc-res-sub',
+        text: 'Your individual contribution for an Access Mediation of up to 3 hours. The other participant is assessed separately.' }));
     }
 
     box.appendChild(el('p', { class: 'acc-res-disclaimer',
       text: 'This is your indicative contribution only. If you apply, we confirm your contribution after reviewing your application. Access places are limited. Financial eligibility does not guarantee a booking — mediation suitability is assessed separately.' }));
 
-    var applyBtn = el('button', { class: 'acc-apply-btn', type: 'button', html: 'Apply for Access Mediation →' });
+    var btnRow = el('div', { class: 'acc-btn-row' });
+    var applyBtn = el('button', { class: 'acc-apply-btn', type: 'button', text: 'Apply for an Access appointment →' });
     applyBtn.addEventListener('click', function () {
+      track('access_application_cta');
       box.style.display = 'none';
       renderApplicationForm(wrap);
     });
-    box.appendChild(applyBtn);
+    btnRow.appendChild(applyBtn);
+    var talkLink = el('a', { href: '/book-a-consultation/', class: 'acc-talk-link', text: 'Talk to our team' });
+    talkLink.addEventListener('click', function () { track('access_consultation_cta'); });
+    btnRow.appendChild(talkLink);
+    box.appendChild(btnRow);
     wrap.appendChild(box);
   }
 
@@ -356,7 +444,7 @@
     chk1.required = true;
     c1.appendChild(chk1);
     c1.appendChild(el('label', { for: 'acf-privacy',
-      html: 'I have read and agree to the <a href="/privacy-policy/" target="_blank">Privacy Policy</a>. I consent to Mediations Australia collecting and using my personal information to assess my Access Mediation eligibility and arrange a session.' }));
+      html: 'I have read and agree to the <a href="/privacy-policy/" target="_blank">Privacy Policy</a>. I consent to Mediations Australia collecting and using my personal information to assess my Access Mediation application and arrange a session.' }));
     form.appendChild(c1);
 
     var c2 = el('div', { class: 'acc-consent' });
@@ -364,7 +452,7 @@
     chk2.required = true;
     c2.appendChild(chk2);
     c2.appendChild(el('label', { for: 'acf-accuracy',
-      text: 'I declare that the information I have provided is accurate to the best of my knowledge. I understand that providing false information may affect my eligibility.' }));
+      text: 'I declare that the information I have provided is accurate to the best of my knowledge. I understand that providing false information may affect my application.' }));
     form.appendChild(c2);
 
     var errDiv = el('div', { style: 'display:none' });
@@ -441,7 +529,7 @@
         ? 'Access capacity is currently full. You have been added to the waitlist and we will contact you as soon as a place becomes available.'
         : 'Our team will review your application and be in touch within 1–2 business days to confirm your contribution and arrange scheduling.',
     }));
-    conf.appendChild(el('p', { text: 'If you have any questions in the meantime, please call (02) 7227 7373.' }));
+    conf.appendChild(el('p', { text: 'If you have any questions in the meantime, please call (02) 7227 7373.' }));
 
     var restart = el('span', { class: 'acc-restart', text: 'Start a new enquiry' });
     restart.addEventListener('click', function () {
@@ -464,11 +552,12 @@
     .then(function (r) { return r.json(); })
     .then(function (d) { calcResult = d; render(); })
     .catch(function () {
-      root.innerHTML = '<div class="acc-error">Unable to check eligibility right now. Please call '
-        + '<a href="tel:0272277373" style="color:#b71c1c">(02) 7227 7373</a> or try again later.</div>';
+      root.innerHTML = '<div class="acc-error">Unable to check your contribution right now. Please call '
+        + '<a href="tel:0272277373" style="color:#b71c1c">(02) 7227 7373</a> or try again shortly.</div>';
     });
   }
 
   // ── Boot ──────────────────────────────────────────────────────────────────
+  track('access_page_view');
   render();
 })();

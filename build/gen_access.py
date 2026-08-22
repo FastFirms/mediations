@@ -2,8 +2,8 @@
 """
 Generate /access-mediation/ — the Access Mediation landing page.
 
-Access Mediation is a limited reduced-contribution pathway for eligible
-participants who cannot afford the standard mediation contribution.
+Revised per UX brief: calculator first, band table in accordion,
+no public Band 1-5 labels, simplified eligibility language.
 
 Build: python3 build/gen_access.py
 Output: access-mediation/index.html
@@ -43,16 +43,16 @@ QA = [
      "Eligibility is assessed on your personal gross annual income (generally below $150,000), "
      "accessible assets, number of dependants, any concession card status, and genuine hardship. "
      "Each case is reviewed individually. You can check your indicative contribution using our "
-     "calculator above — it takes about two minutes."),
+     "calculator above — it takes about 60 seconds."),
 
-    ("How are the contributions calculated?",
-     "Your contribution is based on your personal income band, adjusted for assets, dependants "
+    ("How are contributions calculated?",
+     "Your contribution is based on your personal income, adjusted for accessible assets, dependants "
      "(3 or more), concession status, or material hardship. The maximum automatic reduction is "
      "one band. Any adjustment is applied to your contribution only — your partner's assessment "
      "is completely separate and private."),
 
     ("Will my partner know my contribution or financial details?",
-     "No. Each participant's financial assessment is entirely private. Your income band, assets, "
+     "No. Each participant's financial assessment is entirely private. Your income, assets, "
      "hardship circumstances and contribution are never shared with the other participant, their "
      "lawyer, or anyone outside authorised staff. Participants may have different contributions — "
      "but neither party is told the financial basis for the other's contribution."),
@@ -63,18 +63,18 @@ QA = [
      "mediation suitability (including any family safety screening) is assessed separately by our "
      "staff before a booking is confirmed."),
 
-    ("What is the standard contribution and what does Access Mediation save me?",
-     "The standard individual contribution for a 3-hour mediation session is $1,500 + GST. "
-     "Access contributions range from $495 to $1,295 + GST per person. At Band 1, Access "
-     "Mediation provides $1,005 in assistance per participant (the gap between $495 and the "
-     "$1,500 standard). This assistance is funded by Mediations Australia and is not a "
-     "government subsidy."),
+    ("What is Access assistance?",
+     "Access assistance is the difference between the standard individual contribution ($1,500 + GST "
+     "for a 3-hour session) and your assessed Access contribution. For example, at the lowest band "
+     "the Access assistance is $1,005 — reducing your contribution from $1,500 to $495 + GST. "
+     "This assistance is funded by Mediations Australia and is not a government subsidy."),
 
-    ("What if I need a Section 60I Certificate?",
+    ("What if I need a Section 60I certificate?",
      "Section 60I certificates are issued following a recognised Family Dispute Resolution (FDR) "
-     "process. If you indicate that you require one, our team will discuss whether your matter "
-     "is eligible for FDR and explain the process. We cannot issue a certificate in advance or "
-     "guarantee one will be issued — it depends on the conduct of the process."),
+     "process. If obtaining a certificate may be important in your circumstances, please tell us "
+     "before booking so we can help identify the appropriate service and practitioner. "
+     "If you are unsure whether you require one, speak with our team or obtain independent legal advice. "
+     "We cannot issue a certificate in advance or guarantee one will be issued."),
 
     ("Can I apply if my income is above $150,000?",
      "Generally, income above $150,000 per year attracts the standard contribution. However, if "
@@ -96,55 +96,77 @@ QA = [
 ]
 
 
-def band_table():
+def band_table_accordion():
+    """Band table inside a <details> accordion — no Band 1-5 labels."""
     rows = [
-        ("Band 1", "$0 – $50,000",        "$495",   "$1,005"),
-        ("Band 2", "$50,001 – $75,000",   "$695",   "$805"),
-        ("Band 3", "$75,001 – $100,000",  "$895",   "$605"),
-        ("Band 4", "$100,001 – $125,000", "$1,095", "$405"),
-        ("Band 5", "$125,001 – $150,000", "$1,295", "$205"),
-        ("Standard", "Above $150,000",    "$1,500", "—"),
+        ("Up to $50,000",          "$495"),
+        ("$50,001 – $75,000",      "$695"),
+        ("$75,001 – $100,000",     "$895"),
+        ("$100,001 – $125,000",    "$1,095"),
+        ("$125,001 – $150,000",    "$1,295"),
+        ("More than $150,000",     "Standard contribution, subject to exceptional hardship review"),
     ]
     row_html = "".join(
-        f'<tr><td><strong>{b}</strong></td><td>{i}</td>'
-        f'<td><strong>{c} + GST</strong></td><td>{a}</td></tr>'
-        for b, i, c, a in rows
+        f'<tr><td>{i}</td><td><strong>{c} + GST</strong></td></tr>'
+        for i, c in rows
     )
-    return f"""<div class="table-scroll">
-<table class="data-table">
-  <caption>Access Mediation — indicative contributions per participant (3-hour session)</caption>
-  <thead>
-    <tr>
-      <th>Band</th>
-      <th>Personal gross annual income</th>
-      <th>Your contribution (ex GST)</th>
-      <th>Access assistance</th>
-    </tr>
-  </thead>
-  <tbody>{row_html}</tbody>
-  <tfoot>
-    <tr><td colspan="4">Contributions are per participant for a 3-hour session. Assets, dependants, concession status and hardship may adjust your band. All figures exclude GST.</td></tr>
-  </tfoot>
-</table>
-</div>"""
+    return f"""<details class="band-accordion">
+  <summary class="band-accordion-toggle">Prefer to see the contribution bands? <span class="band-acc-arr">&#8595;</span></summary>
+  <div class="band-accordion-body">
+    <div class="table-scroll">
+    <table class="data-table">
+      <caption>Access Mediation — indicative contributions per participant (3-hour session)</caption>
+      <thead>
+        <tr>
+          <th>Personal gross annual income</th>
+          <th>Indicative contribution</th>
+        </tr>
+      </thead>
+      <tbody>{row_html}</tbody>
+      <tfoot>
+        <tr><td colspan="2">These amounts are indicative. Accessible financial resources, dependants and exceptional hardship may affect the final contribution. All figures exclude GST.</td></tr>
+      </tfoot>
+    </table>
+    </div>
+  </div>
+</details>"""
+
+
+def calculator_section():
+    """Calculator first — the primary conversion element."""
+    return f"""<section class="calc-section" id="check-contribution">
+  <div class="wrap-narrow">
+    <h2>Check your indicative contribution</h2>
+    <p class="lede-sm">Answer a few questions about your own financial circumstances. Takes about 60 seconds. No documents are required to check. Your answers are private and are not shared with the other participant.</p>
+    <div id="access-calc-root" data-calc="access">
+      <!-- Access Mediation calculator mounts here (access-calc.js) -->
+      <noscript>
+        <div class="notice">
+          Please enable JavaScript to use the contribution calculator, or call us on
+          <a href="{PHONE_HREF}">{PHONE}</a> and we will assess your contribution over the phone.
+        </div>
+      </noscript>
+    </div>
+    {band_table_accordion()}
+  </div>
+</section>"""
 
 
 def how_it_works():
+    """Simplified 4-step process per UX brief §10."""
     steps = [
-        ("1", "Check your eligibility",
-         "Use our two-minute calculator to receive your indicative contribution based on your "
-         "personal financial circumstances. Your partner is not involved in this step."),
-        ("2", "Submit your application",
-         "Complete the short application form. We ask for your contact details, a brief description "
-         "of your matter, and the other participant's contact details so we can send an invitation. "
-         "No financial documents are required at this stage."),
-        ("3", "We confirm and schedule",
-         "Our team reviews your application within 1–2 business days, confirms your contribution "
-         "and checks mediation suitability. We then contact both participants to arrange a session."),
-        ("4", "Mediation session",
-         "Your Access session runs for up to 3 hours with an accredited family mediator. A "
-         "50% deposit secures your booking; the balance is due at the session. If you reach "
-         "agreement, we can assist with documentation of parenting plans or consent orders."),
+        ("1", "Check your indicative contribution",
+         "Answer a few questions about your own financial circumstances. "
+         "Takes about 60 seconds. You do not need to upload documents to check."),
+        ("2", "Submit an application if you want to proceed",
+         "We confirm your contribution before an appointment is booked. "
+         "No financial documents are required at the application stage."),
+        ("3", "The other participant is contacted separately",
+         "Their financial circumstances are assessed privately and independently. "
+         "One participant&#8217;s income does not affect what the other pays."),
+        ("4", "Mediation is arranged if appropriate and available",
+         "Normal intake, safety, suitability and availability requirements still apply. "
+         "Access places are limited and allocated within monthly capacity."),
     ]
     items = "".join(
         f'<div class="step reveal">'
@@ -156,57 +178,55 @@ def how_it_works():
     return f'<section class="steps-section"><div class="wrap"><h2>How Access Mediation works</h2>{items}</div></section>'
 
 
-def calculator_section():
-    """Placeholder div that access-calc.js mounts the multi-step calculator into."""
-    return f"""<section class="calc-section" id="check-eligibility">
+def who_for_section():
+    """Simplified 'who is this for' section per UX brief §11."""
+    return f"""<section class="who-section reveal">
   <div class="wrap-narrow">
-    <h2>Check your indicative contribution</h2>
-    <p class="lede-sm">Answer a few questions about your personal financial circumstances. Takes about two minutes. Your answers are not shared with the other participant.</p>
-    <div id="access-calc-root" data-calc="access">
-      <!-- Access Mediation calculator mounts here (access-calc.js) -->
-      <noscript>
-        <div class="notice">
-          Please enable JavaScript to use the eligibility calculator, or call us on
-          <a href="{PHONE_HREF}">{PHONE}</a> and we will assess your eligibility over the phone.
-        </div>
-      </noscript>
-    </div>
+    <h2>Who is Access Mediation for?</h2>
+    <p>Access Mediation may be suitable if you can contribute toward private mediation but paying the standard fee would cause genuine financial difficulty.</p>
+    <p>We consider your circumstances individually, including:</p>
+    <ul class="check-list">
+      <li>your personal income;</li>
+      <li>financial dependants;</li>
+      <li>accessible savings and investments;</li>
+      <li>exceptional financial hardship.</li>
+    </ul>
+    <p><strong>Your former partner&#8217;s income does not determine whether you qualify.</strong></p>
+    <p>The calculator provides an indicative contribution. We confirm your contribution before an Access appointment is booked.</p>
+    <p style="font-size:.88rem;color:var(--ink-soft,#3d5248)">Access Mediation is <strong>not available</strong> for purely commercial, employment, or neighbourhood disputes. Matters involving family violence or safety concerns are carefully screened — call us on <a href="{PHONE_HREF}" style="color:var(--sage-deep,#1e6040)">{PHONE}</a> before applying.</p>
   </div>
 </section>"""
 
 
-def eligibility_section():
-    return f"""<section class="elig-section reveal">
-  <div class="wrap">
-    <h2>Who can apply for Access Mediation?</h2>
-    <p>Access Mediation is a limited pathway — not a universal right. Each application is reviewed individually. You may be eligible if:</p>
-    <ul class="check-list">
-      <li>Your personal gross annual income is below $150,000</li>
-      <li>Your accessible assets do not substantially exceed your income-band contribution</li>
-      <li>Your matter involves family law — parenting arrangements, property settlement, or both</li>
-      <li>You do not already have a funded FDR pathway (e.g. Legal Aid) available to you</li>
-    </ul>
-    <p>Your contribution may be reduced by one band if you have three or more dependants, hold a current concession card, or face genuine material hardship. Both adjustments cannot stack — the maximum automatic reduction is one band.</p>
-    <p>Access Mediation is <strong>not available</strong> for purely commercial, employment, or neighbourhood disputes, or where a participant has accessible assets well above $150,000.</p>
-    <div class="elig-note">
-      <strong>Family violence and safety.</strong> If there are safety concerns, family violence, or a significant power imbalance, call us on
-      <a href="{PHONE_HREF}">{PHONE}</a> before applying. We will discuss safety screening, whether mediation is appropriate, and what protections can be put in place.
+def inaccessible_assets_section():
+    """New section per UX brief §12."""
+    return """<section class="assets-section reveal">
+  <div class="wrap-narrow">
+    <div class="asset-callout">
+      <h3>What if I have assets but cannot access them?</h3>
+      <p>We look at financial capacity, not simply what you own on paper.</p>
+      <p>Ordinary family home and superannuation are not treated as readily accessible resources. If funds or assets are currently inaccessible — for example, because they are disputed, frozen, or tied up in a property — you can ask us to review your circumstances individually.</p>
     </div>
   </div>
 </section>"""
 
 
 def privacy_note():
+    """Strengthened privacy section per UX brief §13."""
     return """<section class="privacy-section reveal">
   <div class="wrap-narrow">
-    <h2>Your financial information stays private</h2>
-    <p>Each participant&#8217;s financial assessment is completely separate and confidential. Your income band, assets, hardship circumstances, concession status, and contribution are never shared with:</p>
-    <ul>
-      <li>The other participant or their legal representative</li>
-      <li>Anyone outside authorised Mediations Australia staff</li>
-      <li>Any third-party service, analytics platform, or advertising system</li>
+    <h2>Your financial assessment is private.</h2>
+    <p>Each participant is assessed separately. We do not tell the other participant your:</p>
+    <ul class="privacy-list">
+      <li>income;</li>
+      <li>accessible asset information;</li>
+      <li>concession status;</li>
+      <li>hardship information;</li>
+      <li>reasons for your contribution;</li>
+      <li>Access assistance amount.</li>
     </ul>
-    <p>Participants may have different contributions. Neither party is told the financial basis for the other&#8217;s assessment. Your application is held securely and used only to assess eligibility and arrange your session.</p>
+    <p>Participants may pay different amounts.</p>
+    <p><strong>The amount either participant pays does not affect the mediator&#8217;s independence, neutrality or professional obligations.</strong></p>
   </div>
 </section>"""
 
@@ -214,35 +234,60 @@ def privacy_note():
 def extra_css():
     return """<style>
 /* ── Access Mediation page-specific styles ── */
-.calc-section{background:var(--sage-pale,#f1f5f1);padding:60px 0}
-.lede-sm{color:var(--muted);margin-bottom:28px;font-size:.97rem}
-#access-calc-root{min-height:200px}
+.calc-section{background:var(--sage-pale,#f1f5f1);padding:52px 0}
+.lede-sm{color:var(--ink-soft,#3d5248);margin-bottom:24px;font-size:.97rem;line-height:1.6;max-width:62ch}
+#access-calc-root{min-height:160px}
 .notice{padding:16px 20px;background:#fff3cd;border-left:4px solid #f0a500;border-radius:6px;font-size:.9rem}
-.steps-section{padding:60px 0}
-.steps-section h2{margin-bottom:32px}
-.step{display:flex;gap:20px;align-items:flex-start;margin-bottom:28px}
-.step-num{width:40px;height:40px;border-radius:50%;background:var(--green,#1e6040);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;flex-shrink:0;margin-top:2px}
-.step-body h3{margin:0 0 6px;font-size:1.05rem}
-.step-body p{margin:0;color:var(--muted);font-size:.93rem;line-height:1.6}
-.elig-section{padding:60px 0;background:var(--sage-pale,#f1f5f1)}
-.elig-section h2{margin-bottom:16px}
-.elig-section>div>p{font-size:.95rem;line-height:1.6}
-.check-list{list-style:none;padding:0;margin:16px 0}
-.check-list li{padding-left:28px;position:relative;margin-bottom:10px;font-size:.95rem;line-height:1.5}
-.check-list li::before{content:"✓";position:absolute;left:0;color:var(--green,#1e6040);font-weight:700}
-.elig-note{margin-top:24px;padding:16px 20px;background:#fff;border-left:4px solid var(--green,#1e6040);border-radius:0 8px 8px 0;font-size:.9rem;line-height:1.6}
-.privacy-section{padding:50px 0}
-.privacy-section h2{margin-bottom:12px}
-.privacy-section ul{margin:16px 0;padding-left:24px}
-.privacy-section li{margin-bottom:8px;font-size:.95rem;line-height:1.5}
+
+/* band accordion */
+.band-accordion{margin-top:28px;border:1px solid var(--line,rgba(13,34,24,.14));border-radius:10px;overflow:hidden;background:#fff}
+.band-accordion-toggle{list-style:none;padding:14px 18px;font-size:.93rem;font-weight:600;color:var(--sage-deep,#1e6040);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.band-accordion-toggle::-webkit-details-marker{display:none}
+details[open] .band-acc-arr{transform:rotate(180deg)}
+.band-acc-arr{display:inline-block;transition:transform .2s;font-size:.8rem}
+.band-accordion-body{padding:0 18px 18px}
+
+/* steps */
+.steps-section{padding:52px 0}
+.steps-section h2{margin-bottom:28px}
+.step{display:flex;gap:20px;align-items:flex-start;margin-bottom:24px}
+.step-num{width:38px;height:38px;border-radius:50%;background:var(--sage-deep,#1e6040);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.97rem;flex-shrink:0;margin-top:2px}
+.step-body h3{margin:0 0 5px;font-size:1rem}
+.step-body p{margin:0;color:var(--ink-soft,#3d5248);font-size:.91rem;line-height:1.6}
+
+/* who section */
+.who-section{padding:48px 0;background:var(--sage-pale,#f1f5f1)}
+.who-section h2{margin-bottom:12px}
+.check-list{list-style:none;padding:0;margin:12px 0 16px}
+.check-list li{padding-left:26px;position:relative;margin-bottom:9px;font-size:.93rem;line-height:1.5}
+.check-list li::before{content:"✓";position:absolute;left:0;color:var(--sage-deep,#1e6040);font-weight:700}
+
+/* assets callout */
+.assets-section{padding:36px 0}
+.asset-callout{background:#fff;border:1.5px solid var(--sage-deep,#1e6040);border-radius:12px;padding:22px 24px}
+.asset-callout h3{margin:0 0 8px;font-size:1rem;color:var(--sage-deep,#1e6040)}
+.asset-callout p{margin:0 0 8px;font-size:.91rem;color:var(--ink-soft,#3d5248);line-height:1.6}
+.asset-callout p:last-child{margin:0}
+
+/* privacy */
+.privacy-section{padding:48px 0;background:var(--sage-pale,#f1f5f1)}
+.privacy-section h2{margin-bottom:10px}
+.privacy-list{list-style:none;padding:0;margin:12px 0 16px}
+.privacy-list li{padding-left:24px;position:relative;margin-bottom:8px;font-size:.91rem;color:var(--ink-soft,#3d5248);line-height:1.45}
+.privacy-list li::before{content:"\2717";position:absolute;left:0;color:var(--sage-deep,#1e6040);font-weight:700}
+
+/* shared data-table */
 .data-table{width:100%;border-collapse:collapse;font-size:.9rem}
-.data-table th{background:var(--green,#1e6040);color:#fff;padding:10px 14px;text-align:left}
-.data-table td{padding:10px 14px;border-bottom:1px solid #e8efe9;vertical-align:top}
-.data-table tfoot td{font-size:.8rem;color:var(--muted);padding:10px 14px;border-bottom:none}
+.data-table th{background:var(--sage-deep,#1e6040);color:#fff;padding:10px 14px;text-align:left}
+.data-table td{padding:10px 14px;border-bottom:1px solid rgba(13,34,24,.1);vertical-align:top}
+.data-table tfoot td{font-size:.8rem;color:var(--ink-soft,#3d5248);padding:10px 14px;border-bottom:none;font-style:italic}
 .data-table tbody tr:nth-child(even) td{background:#f8fbf8}
-.table-scroll{overflow-x:auto;margin:24px 0 32px}
-.body-section{padding:50px 0}
-.body-section h2{margin-bottom:8px}
+.table-scroll{overflow-x:auto;margin:12px 0 0}
+
+@media(max-width:600px){
+  .calc-section,.steps-section,.who-section,.privacy-section,.assets-section{padding:36px 0}
+  .band-accordion-toggle{font-size:.88rem}
+}
 </style>"""
 
 
@@ -265,7 +310,7 @@ def build():
     <h1>{H1}</h1>
     <p class="lede">{LEDE}</p>
     <div class="phero-cta">
-      <a href="#check-eligibility" class="btn btn-primary">Check My Eligibility <span class="arr">&#8595;</span></a>
+      <a href="#check-contribution" class="btn btn-primary">Check My Indicative Contribution <span class="arr">&#8595;</span></a>
       <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
     </div>
   </div>
@@ -275,16 +320,29 @@ def build():
                  f'<div class="answer reveal"><p><strong>In short:</strong> {ANSWER}</p></div>'
                  f'</div>')
 
-    html_doc += f'<section class="body-section reveal"><div class="wrap"><h2>Access contribution bands</h2>{band_table()}</div></section>'
+    # Calculator FIRST (brief §3)
     html_doc += calculator_section()
+
+    # How it works
     html_doc += how_it_works()
-    html_doc += eligibility_section()
+
+    # Who it's for (simplified)
+    html_doc += who_for_section()
+
+    # Inaccessible assets callout
+    html_doc += inaccessible_assets_section()
+
+    # Privacy
     html_doc += privacy_note()
+
+    # FAQ (renamed FAQ 6: "What is Access assistance?")
     html_doc += faq_html(QA, heading="Access Mediation FAQs")
+
+    # Final CTA — primary: Check My Access Contribution (brief §16)
     html_doc += cta_band(
-        "Ready to check your eligibility?",
-        "Use our two-minute calculator above, or call us to discuss your situation confidentially. "
-        "Access places are limited — check early.",
+        "Find out what your contribution could be.",
+        "Use our short calculator for an indicative Access contribution. "
+        "It takes about 60 seconds and you do not need to upload financial documents to check.",
     )
     html_doc += "</main>" + page_end()
     html_doc = html_doc.replace("</body>", '<script src="/access-calc.js" defer></script>\n</body>')
