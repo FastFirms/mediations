@@ -494,7 +494,7 @@ build("our-fee-structure",
 <h2>How does this compare with going to court?</h2>
 <p>A contested family law or commercial matter typically costs <strong>$30,000–$150,000+ per side</strong> in legal fees, takes one to three years, and offers no certainty of outcome. A full-day mediation shared between two parties costs each person around $2,475 — and around 90% of disputes we mediate resolve on the day. <a href="/costs-of-going-to-court/">See the full cost comparison →</a></p>
 
-<div class="callout callout-access" style="border-color:var(--sage-deep,#1e6040);background:var(--sage-pale,#f1f5f1)">
+<div class="callout-access" style="display:block;margin:28px 0;padding:20px 24px;border-left:4px solid var(--sage-deep,#1e6040);background:var(--sage-pale,#f1f5f1);border-radius:0 10px 10px 0">
   <h3 style="color:var(--sage-deep,#1e6040)">Can&#8217;t afford the standard contribution? Access Mediation may help.</h3>
   <p>Access Mediation is a limited reduced-contribution pathway for eligible family law participants. Individual contributions are assessed on your personal income, assets, dependants and hardship circumstances &#8212; not your partner&#8217;s. Contributions start from <strong>$495 + GST per person</strong> for a 3-hour session.</p>
   <p>Places are limited and subject to availability. <a href="/access-mediation/" style="color:var(--sage-deep,#1e6040);font-weight:600">Check your indicative contribution &#8594;</a></p>
