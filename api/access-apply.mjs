@@ -364,7 +364,6 @@ export default async function handler(req, res) {
   }
 
   // 7. Staff notification via Formspree (no financial data — staff alert only)
-  let notificationDebug = 'sent';
   try {
     await sendFormspreeNotification(matterId, body.matter_type, partyAName);
     await sql`
@@ -374,7 +373,6 @@ export default async function handler(req, res) {
     `;
   } catch (err) {
     // Non-fatal — application is saved; staff can find it in admin
-    notificationDebug = err.message;
     console.error('[access-apply] Formspree error (non-fatal):', err);
     await sql`
       UPDATE access_applications SET notification_error = ${err.message}
@@ -393,7 +391,5 @@ export default async function handler(req, res) {
     review_flags:                 calcResult.review_flags,
     capacity_remaining:           capacityRemaining,
     waitlisted:                   isWaitlisted,
-    // TEMP DEBUG — remove once Formspree is confirmed working
-    _notification_debug:          notificationDebug,
   });
 }
