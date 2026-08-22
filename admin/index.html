@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Access Mediation — Admin</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --sage: #1e6040;
+    --sage-light: #e8f2ec;
+    --ink: #0d2218;
+    --mid: #4a5e54;
+    --line: #d0ddd6;
+    --bg: #f7faf8;
+    --white: #fff;
+    --radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--bg);
+  }
+
+  /* Auth */
+  #auth-screen { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+  .auth-card {
+    background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 40px; width: 100%; max-width: 380px; text-align: center;
+  }
+  .auth-card h1 { font-size: 1.25rem; margin-bottom: 6px; }
+  .auth-card p  { color: var(--mid); font-size: .9rem; margin-bottom: 24px; }
+  .auth-card input {
+    width: 100%; padding: 10px 14px; border: 1px solid var(--line);
+    border-radius: var(--radius); font-size: 1rem; margin-bottom: 12px;
+  }
+  .auth-card button {
+    width: 100%; padding: 11px; background: var(--sage); color: #fff;
+    border: none; border-radius: var(--radius); font-size: 1rem; cursor: pointer;
+  }
+  #auth-error { color: #c0392b; font-size: .85rem; margin-top: 10px; min-height: 20px; }
+
+  /* Layout */
+  #app { display: none; flex-direction: column; min-height: 100vh; }
+  header {
+    background: var(--sage); color: #fff; padding: 14px 24px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  header h1 { font-size: 1rem; font-weight: 600; flex: 1; }
+  .logout-btn {
+    background: rgba(255,255,255,.15); border: none; color: #fff;
+    padding: 6px 14px; border-radius: var(--radius); cursor: pointer; font-size: .85rem;
+  }
+  main { flex: 1; padding: 24px; max-width: 1100px; margin: 0 auto; width: 100%; }
+
+  /* Stats */
+  .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+  .stat-card {
+    background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 14px 20px; flex: 1; min-width: 120px;
+  }
+  .stat-card .val { font-size: 1.8rem; font-weight: 700; line-height: 1; }
+  .stat-card .lbl { font-size: .8rem; color: var(--mid); margin-top: 4px; }
+
+  /* Table */
+  .table-wrap {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: var(--radius); overflow-x: auto;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--line); font-size: .875rem; }
+  th {
+    background: var(--sage-light); font-weight: 600; font-size: .8rem;
+    text-transform: uppercase; letter-spacing: .04em; color: var(--sage);
+  }
+  tr:last-child td { border-bottom: none; }
+  tr[data-matter]:hover td { background: #f0f8f4; cursor: pointer; }
+  .mono { font-family: 'SF Mono','Fira Mono',monospace; font-size: .8rem; }
+
+  /* Badges */
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: .75rem; font-weight: 600; }
+  .b-eligible  { background:#d4edda; color:#155724; }
+  .b-review    { background:#fff3cd; color:#856404; }
+  .b-standard  { background:#cce5ff; color:#004085; }
+  .b-waitlist  { background:#f8d7da; color:#721c24; }
+  .b-approved  { background:#d4edda; color:#155724; }
+  .b-declined  { background:#f8d7da; color:#721c24; }
+  .b-booked    { background:#d1ecf1; color:#0c5460; }
+  .b-done      { background:#e2e3e5; color:#383d41; }
+  .b-new       { background:#e2e3e5; color:#383d41; }
+  .b-fdr       { background:#cce5ff; color:#004085; }
+
+  /* Detail panel */
+  #detail-panel {
+    position: fixed; top: 0; right: 0; bottom: 0; width: 520px; max-width: 100vw;
+    background: var(--white); box-shadow: -4px 0 24px rgba(0,0,0,.12);
+    overflow-y: auto; z-index: 100; transform: translateX(100%); transition: transform .25s ease;
+  }
+  #detail-panel.open { transform: translateX(0); }
+  .panel-header {
+    position: sticky; top: 0; background: var(--white); border-bottom: 1px solid var(--line);
+    padding: 16px 20px; display: flex; align-items: center; gap: 12px; z-index: 1;
+  }
+  .panel-header h2 { font-size: 1rem; flex: 1; }
+  .close-btn {
+    background: none; border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 4px 12px; cursor: pointer; font-size: .85rem;
+  }
+  .panel-body { padding: 20px; }
+
+  .sec-label {
+    font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
+    color: var(--mid); margin: 20px 0 8px;
+  }
+  .sec-label:first-child { margin-top: 0; }
+
+  .kv { display: grid; grid-template-columns: 140px 1fr; gap: 6px 12px; }
+  .kv dt { color: var(--mid); font-size: .85rem; }
+  .kv dd { font-size: .85rem; word-break: break-word; }
+
+  .contrib-box {
+    background: var(--sage-light); border: 1px solid #b2d8c3; border-radius: var(--radius);
+    padding: 12px 16px; margin: 10px 0;
+    display: grid; grid-template-columns: 1fr auto;
+  }
+  .contrib-box .lbl  { font-size: .85rem; color: var(--mid); }
+  .contrib-box .amt  { font-size: 1.4rem; font-weight: 700; color: var(--sage); }
+  .contrib-box .band { font-size: 1rem; font-weight: 700; color: var(--sage); }
+
+  .flags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .flag  { background: #fff3cd; color: #856404; border-radius: 4px; padding: 2px 8px; font-size: .75rem; }
+
+  .status-form { margin-top: 20px; background: var(--bg); border-radius: var(--radius); padding: 16px; }
+  .status-form label { font-size: .85rem; font-weight: 600; display: block; margin-bottom: 6px; }
+  .status-form select, .status-form textarea {
+    width: 100%; padding: 8px 10px; border: 1px solid var(--line);
+    border-radius: var(--radius); font-size: .9rem; margin-bottom: 10px; background: var(--white);
+  }
+  .status-form textarea { resize: vertical; min-height: 68px; }
+  .update-btn {
+    background: var(--sage); color: #fff; border: none; border-radius: var(--radius);
+    padding: 9px 20px; cursor: pointer; font-size: .9rem;
+  }
+  .update-btn:disabled { opacity: .5; cursor: default; }
+  #update-msg { font-size: .85rem; margin-top: 8px; min-height: 18px; }
+
+  .audit-entry {
+    font-size: .8rem; border-left: 3px solid var(--line); padding: 6px 12px; margin-bottom: 8px;
+  }
+  .audit-entry .act  { font-weight: 600; }
+  .audit-entry .time { color: var(--mid); }
+
+  .loading { padding: 40px; text-align: center; color: var(--mid); }
+  .empty   { padding: 40px; text-align: center; color: var(--mid); font-size: .9rem; }
+
+  @media (max-width: 600px) {
+    main { padding: 16px; }
+    #detail-panel { width: 100%; }
+    .kv { grid-template-columns: 1fr; }
+    .kv dt { margin-top: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<div id="auth-screen">
+  <div class="auth-card">
+    <h1>Mediations Australia</h1>
+    <p>Access Mediation Admin</p>
+    <input type="password" id="token-input" placeholder="Admin password" autocomplete="current-password">
+    <button id="login-btn">Sign in</button>
+    <div id="auth-error"></div>
+  </div>
+</div>
+
+<div id="app">
+  <header>
+    <h1>Access Mediation — Applications</h1>
+    <button class="logout-btn" id="logout-btn">Sign out</button>
+  </header>
+  <main>
+    <div class="stats" id="stats-bar"></div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Reference</th>
+            <th>Submitted</th>
+            <th>Name</th>
+            <th>Matter</th>
+            <th>Result</th>
+            <th>Status</th>
+            <th>Band · Contribution</th>
+          </tr>
+        </thead>
+        <tbody id="apps-tbody">
+          <tr><td colspan="7" class="loading">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<div id="detail-panel">
+  <div class="panel-header">
+    <h2 id="panel-title">Application</h2>
+    <button class="close-btn" id="close-panel">✕ Close</button>
+  </div>
+  <div class="panel-body" id="panel-body"></div>
+</div>
+
+<script>
+let TOKEN = sessionStorage.getItem('adm_tok') ?? '';
+let allRows = [];
+
+// ── Auth ──────────────────────────────────────────────────────────────────
+async function tryLogin() {
+  const t = document.getElementById('token-input').value.trim();
+  if (!t) return;
+  document.getElementById('auth-error').textContent = '';
+  const r = await fetch('/api/admin?view=list', { headers: { Authorization: `Bearer ${t}` } });
+  if (r.status === 401) { document.getElementById('auth-error').textContent = 'Incorrect password.'; return; }
+  TOKEN = t;
+  sessionStorage.setItem('adm_tok', TOKEN);
+  showApp();
+}
+document.getElementById('login-btn').onclick = tryLogin;
+document.getElementById('token-input').onkeydown = e => { if (e.key === 'Enter') tryLogin(); };
+document.getElementById('logout-btn').onclick = () => {
+  sessionStorage.removeItem('adm_tok'); TOKEN = '';
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('auth-screen').style.display = 'flex';
+};
+if (TOKEN) showApp();
+
+// ── API ───────────────────────────────────────────────────────────────────
+async function api(path, opts = {}) {
+  const r = await fetch(path, {
+    ...opts,
+    headers: { Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json', ...(opts.headers ?? {}) },
+  });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return r.json();
+}
+
+// ── List ──────────────────────────────────────────────────────────────────
+async function showApp() {
+  document.getElementById('auth-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'flex';
+  await loadList();
+}
+
+async function loadList() {
+  try {
+    const data = await api('/api/admin?view=list');
+    allRows = data.rows ?? [];
+    renderStats(allRows);
+    renderTable(allRows);
+  } catch(e) {
+    document.getElementById('apps-tbody').innerHTML =
+      `<tr><td colspan="7" class="empty">Error: ${esc(e.message)}</td></tr>`;
+  }
+}
+
+function renderStats(rows) {
+  const eligible = rows.filter(r => r.status === 'AUTO_ELIGIBLE' || r.status === 'APPROVED').length;
+  const reviews  = rows.filter(r => r.status === 'REVIEW_REQUIRED').length;
+  const waitlist = rows.filter(r => r.status === 'WAITLISTED').length;
+  document.getElementById('stats-bar').innerHTML = `
+    <div class="stat-card"><div class="val">${rows.length}</div><div class="lbl">Total applications</div></div>
+    <div class="stat-card"><div class="val">${eligible}</div><div class="lbl">Eligible / Approved</div></div>
+    <div class="stat-card"><div class="val">${reviews}</div><div class="lbl">Needs review</div></div>
+    <div class="stat-card"><div class="val">${waitlist}</div><div class="lbl">Waitlisted</div></div>`;
+}
+
+const STATUS_BADGE = {
+  AUTO_ELIGIBLE:   ['b-eligible', 'Eligible'],
+  APPROVED:        ['b-approved', 'Approved'],
+  REVIEW_REQUIRED: ['b-review',   'Review'],
+  STANDARD_FEE:    ['b-standard', 'Standard fee'],
+  WAITLISTED:      ['b-waitlist', 'Waitlisted'],
+  DECLINED:        ['b-declined', 'Declined'],
+  BOOKED:          ['b-booked',   'Booked'],
+  COMPLETED:       ['b-done',     'Completed'],
+  NEW:             ['b-new',      'New'],
+};
+const RESULT_BADGE = {
+  eligible:    ['b-eligible', 'Eligible'],
+  review:      ['b-review',   'Review'],
+  standard:    ['b-standard', 'Standard'],
+  fdr_routing: ['b-fdr',      'FDR routing'],
+};
+
+function badge(map, key) {
+  const [cls, lbl] = map[key] ?? ['b-new', key ?? '—'];
+  return `<span class="badge ${cls}">${lbl}</span>`;
+}
+
+function fmt(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  return d.toLocaleDateString('en-AU', { day:'2-digit', month:'short', year:'numeric' })
+    + ' ' + d.toLocaleTimeString('en-AU', { hour:'2-digit', minute:'2-digit' });
+}
+
+function money(n) {
+  if (n === null || n === undefined) return '—';
+  return '$' + Number(n).toLocaleString('en-AU');
+}
+
+function renderTable(rows) {
+  if (!rows.length) {
+    document.getElementById('apps-tbody').innerHTML = '<tr><td colspan="7" class="empty">No applications yet.</td></tr>';
+    return;
+  }
+  document.getElementById('apps-tbody').innerHTML = rows.map(r => `
+    <tr data-matter="${esc(r.matter_id)}">
+      <td class="mono">${esc(r.matter_id)}</td>
+      <td>${fmt(r.submitted_at ?? r.created_at)}</td>
+      <td>${esc(r.party_a_name ?? '—')}</td>
+      <td>${esc(r.matter_type ?? '—')}</td>
+      <td>${badge(RESULT_BADGE, r.result_type)}</td>
+      <td>${badge(STATUS_BADGE, r.status)}</td>
+      <td>${r.calculated_band ? `Band ${r.calculated_band} &nbsp;· &nbsp;${money(r.calculated_contribution_ex_gst)} ex GST` : '—'}</td>
+    </tr>`).join('');
+
+  document.getElementById('apps-tbody').querySelectorAll('tr[data-matter]').forEach(tr =>
+    tr.addEventListener('click', () => openDetail(tr.dataset.matter))
+  );
+}
+
+// ── Detail panel ──────────────────────────────────────────────────────────
+async function openDetail(matterId) {
+  document.getElementById('panel-title').textContent = matterId;
+  document.getElementById('panel-body').innerHTML = '<div class="loading">Loading…</div>';
+  document.getElementById('detail-panel').classList.add('open');
+  try {
+    const data = await api(`/api/admin?view=detail&matter_id=${encodeURIComponent(matterId)}`);
+    renderDetail(data);
+  } catch(e) {
+    document.getElementById('panel-body').innerHTML = `<div class="empty">Error: ${esc(e.message)}</div>`;
+  }
+}
+
+document.getElementById('close-panel').onclick = () =>
+  document.getElementById('detail-panel').classList.remove('open');
+
+function renderDetail({ matter, assessments, application, audit_log }) {
+  const a  = (assessments ?? []).find(x => x.participant_role === 'party_a') ?? assessments?.[0] ?? {};
+  const ap = application ?? {};
+  const flags = Array.isArray(a.review_flags) ? a.review_flags : [];
+
+  let h = `
+    <div class="sec-label">Application</div>
+    <dl class="kv">
+      <dt>Reference</dt><dd class="mono">${esc(matter.matter_id)}</dd>
+      <dt>Status</dt><dd>${badge(STATUS_BADGE, matter.status)}</dd>
+      <dt>Submitted</dt><dd>${fmt(ap.submitted_at ?? matter.created_at)}</dd>
+      <dt>Matter type</dt><dd>${esc(matter.matter_type ?? '—')}</dd>
+    </dl>
+
+    <div class="sec-label">Party A — Contact</div>
+    <dl class="kv">
+      <dt>Name</dt><dd>${esc(ap.party_a_name ?? '—')}</dd>
+      <dt>Email</dt><dd>${esc(ap.party_a_email ?? '—')}</dd>
+      <dt>Phone</dt><dd>${esc(ap.party_a_phone ?? '—')}</dd>
+      <dt>Preferred timing</dt><dd>${esc(ap.preferred_timing ?? '—')}</dd>
+    </dl>`;
+
+  if (ap.other_party_name) {
+    h += `
+    <div class="sec-label">Other party</div>
+    <dl class="kv">
+      <dt>Name</dt><dd>${esc(ap.other_party_name)}</dd>
+      <dt>Email</dt><dd>${esc(ap.other_party_email ?? '—')}</dd>
+      <dt>Phone</dt><dd>${esc(ap.other_party_phone ?? '—')}</dd>
+      <dt>Relationship</dt><dd>${esc(ap.relationship_to_other ?? '—')}</dd>
+    </dl>`;
+  }
+
+  h += `<div class="sec-label">Financial assessment</div>`;
+
+  if (a.calculated_contribution_ex_gst !== null && a.calculated_contribution_ex_gst !== undefined) {
+    h += `
+    <div class="contrib-box">
+      <div><div class="lbl">Access contribution (ex GST)</div><div class="amt">${money(a.calculated_contribution_ex_gst)}</div></div>
+      <div style="text-align:right"><div class="lbl">Band</div><div class="band">${a.calculated_band ?? '—'}</div></div>
+    </div>`;
+  }
+
+  h += `
+    <dl class="kv">
+      <dt>Result</dt><dd>${badge(RESULT_BADGE, a.result_type)}</dd>
+      <dt>Income band</dt><dd>${esc(a.income_band ?? '—')}</dd>
+      <dt>Assets band</dt><dd>${esc(a.assets_band ?? '—')}</dd>
+      <dt>Accessible assets</dt><dd>${a.assets_accessible === false ? 'No (inaccessible)' : 'Yes'}</dd>
+      <dt>Concession</dt><dd>${esc(a.concession_status ?? '—')}</dd>
+      <dt>Hardship</dt><dd>${esc(a.hardship_category ?? '—')}</dd>
+      <dt>Dependants</dt><dd>${esc(a.dependants_band ?? '—')}</dd>
+      <dt>Needs 60I</dt><dd>${esc(a.needs_60i ?? '—')}</dd>
+    </dl>`;
+
+  if (flags.length) {
+    h += `<div class="sec-label">Review flags</div>
+    <div class="flags">${flags.map(f => `<span class="flag">${esc(f)}</span>`).join('')}</div>`;
+  }
+
+  h += `
+    <div class="sec-label">Notification</div>
+    <dl class="kv">
+      <dt>Sent at</dt><dd>${fmt(ap.notification_sent_at)}</dd>
+      <dt>Error</dt><dd>${esc(ap.notification_error ?? '—')}</dd>
+    </dl>
+
+    <div class="status-form">
+      <label for="status-sel">Update status</label>
+      <select id="status-sel">${
+        ['NEW','AUTO_ELIGIBLE','REVIEW_REQUIRED','STANDARD_FEE','APPROVED','DECLINED','WAITLISTED','BOOKED','COMPLETED']
+          .map(s => `<option value="${s}"${s===matter.status?' selected':''}>${s}</option>`).join('')
+      }</select>
+      <label for="notes-in">Notes (optional)</label>
+      <textarea id="notes-in" placeholder="Internal note…"></textarea>
+      <button class="update-btn" id="update-btn" data-matter="${esc(matter.matter_id)}">Update status</button>
+      <div id="update-msg"></div>
+    </div>`;
+
+  if (audit_log?.length) {
+    h += `<div class="sec-label">Audit log</div>` +
+      audit_log.map(e => `
+        <div class="audit-entry">
+          <span class="act">${esc(e.action)}</span> · <span class="time">${fmt(e.created_at)}</span> · ${esc(e.actor)}
+          ${e.new_value ? `<div style="color:var(--mid);margin-top:2px;font-size:.78rem;">${esc(JSON.stringify(e.new_value))}</div>` : ''}
+        </div>`).join('');
+  }
+
+  document.getElementById('panel-body').innerHTML = h;
+
+  document.getElementById('update-btn').onclick = async function () {
+    const btn    = this;
+    const mid    = btn.dataset.matter;
+    const status = document.getElementById('status-sel').value;
+    const notes  = document.getElementById('notes-in').value.trim();
+    const msg    = document.getElementById('update-msg');
+    btn.disabled = true; msg.style.color = 'inherit'; msg.textContent = 'Saving…';
+    try {
+      await api('/api/admin', { method: 'PATCH', body: JSON.stringify({ matter_id: mid, status, notes }) });
+      msg.textContent = `✓ Updated to ${status}`; msg.style.color = 'green';
+      loadList();
+    } catch(e) {
+      msg.textContent = `Error: ${e.message}`; msg.style.color = '#c0392b';
+    } finally { btn.disabled = false; }
+  };
+}
+
+function esc(s) {
+  if (s === null || s === undefined) return '—';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+</script>
+</body>
+</html>
