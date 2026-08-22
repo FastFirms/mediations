@@ -35,28 +35,35 @@ export default async function handler(req, res) {
     const view = req.query?.view ?? 'list';
 
     if (view === 'list') {
-      const { rows } = await sql`
-        SELECT
-          m.matter_id,
-          m.status,
-          m.matter_type,
-          m.created_at,
-          app.party_a_name,
-          app.party_a_email,
-          app.submitted_at,
-          app.notification_sent_at,
-          app.notification_error,
-          a.result_type,
-          a.review_flags,
-          a.calculated_band,
-          a.calculated_contribution_ex_gst
-        FROM access_matters m
-        LEFT JOIN access_applications app ON app.matter_id = m.matter_id
-        LEFT JOIN access_assessments  a   ON a.matter_id  = m.matter_id
-                                          AND a.participant_role = 'party_a'
-        ORDER BY m.created_at DESC
-        LIMIT 200;
-      `;
+      // Use SELECT * on each table and join in JS to avoid 500s from
+      // missing optional columns (notification_sent_at etc may not exist yet).
+      const [mRows, appRows, aRows] = await Promise.all([
+        sql`SELECT * FROM access_matters ORDER BY created_at DESC LIMIT 200;`,
+        sql`SELECT * FROM access_applications;`,
+        sql`SELECT * FROM access_assessments WHERE participant_role = 'party_a';`,
+      ]);
+
+      const appMap = {};
+      appRows.rows.forEach(r => { appMap[r.matter_id] = r; });
+      const aMap = {};
+      aRows.rows.forEach(r => { aMap[r.matter_id] = r; });
+
+      const rows = mRows.rows.map(m => ({
+        matter_id:                    m.matter_id,
+        status:                       m.status,
+        matter_type:                  m.matter_type,
+        created_at:                   m.created_at,
+        party_a_name:                 appMap[m.matter_id]?.party_a_name ?? null,
+        party_a_email:                appMap[m.matter_id]?.party_a_email ?? null,
+        submitted_at:                 appMap[m.matter_id]?.submitted_at ?? appMap[m.matter_id]?.created_at ?? m.created_at,
+        notification_sent_at:         appMap[m.matter_id]?.notification_sent_at ?? null,
+        notification_error:           appMap[m.matter_id]?.notification_error ?? null,
+        result_type:                  aMap[m.matter_id]?.result_type ?? null,
+        review_flags:                 aMap[m.matter_id]?.review_flags ?? [],
+        calculated_band:              aMap[m.matter_id]?.calculated_band ?? null,
+        calculated_contribution_ex_gst: aMap[m.matter_id]?.calculated_contribution_ex_gst ?? null,
+      }));
+
       return res.status(200).json({ rows });
     }
 
@@ -97,7 +104,7 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: `status must be one of: ${ALLOWED_STATUSES.join(', ')}` });
 
     await sql`
-      UPDATE access_matters SET status = ${status}, updated_at = now()
+      UPDATE access_matters SET status = ${status}
       WHERE matter_id = ${matter_id};
     `;
 
