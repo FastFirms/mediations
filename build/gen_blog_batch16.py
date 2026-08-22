@@ -20,33 +20,36 @@ from authority_sources import cite
 
 post(
     slug="best-apps-for-separated-parents",
-    title="Best Apps for Separated Parents in Australia",
-    desc="The top co-parenting apps used by separated Australian parents — from shared calendars to expense tracking and court-admissible communication logs.",
+    title="Best Apps for Separated Parents in Australia (2026)",
+    desc="The 9 best co-parenting apps for separated Australian parents — shared calendars, court-admissible logs, expense tracking, and what to do when an app isn't enough.",
     category="Parenting",
-    h1="The Best Apps for Separated Parents — <em>and the One Thing They Can't Replace</em>",
+    h1="The Best Apps for Separated Parents — <em>and What to Do When They Stop Working</em>",
     dek=(
         "Co-parenting technology has genuinely improved life for thousands of separated "
         "Australian families. The right app reduces conflict, documents communication, "
-        "and keeps both parents informed. Here is what actually works — and where apps "
-        "reach their limits."
+        "and keeps both parents informed. Here are nine apps that actually work — "
+        "and an honest account of where even the best app reaches its limit."
     ),
     toc=[
         ("why-apps-help", "Why co-parenting apps reduce conflict"),
         ("what-to-look-for", "What to look for in a co-parenting app"),
-        ("top-apps", "The top apps for separated parents in Australia"),
+        ("top-apps", "The 9 best apps for separated parents in Australia"),
         ("app-comparison", "Side-by-side comparison"),
         ("court-admissible", "Court-admissible communication logs"),
         ("expense-tracking", "Tracking shared expenses without arguments"),
-        ("what-apps-cant-do", "What apps cannot do"),
+        ("when-apps-fail", "When apps can't keep co-parents on track"),
+        ("what-apps-cant-do", "What apps cannot do — and what comes next"),
         ("worked-example", "Worked example: Aisha and Daniel"),
         ("faq", "Frequently asked questions"),
     ],
     body=(
         key_takeaway(
-            "The most effective co-parenting apps for separated Australian parents are "
-            "OurFamilyWizard, 2Houses, and AppClose — each suited to different conflict "
-            "levels and budgets. Apps reduce miscommunication and create a record, but they "
-            "work best alongside a clear parenting plan agreed through mediation."
+            "The most effective co-parenting apps for separated Australian parents in 2026 are "
+            "OurFamilyWizard and TalkingParents (high conflict / court-ready), 2Houses and AppClose "
+            "(moderate conflict / budget), and Custody X Change (schedule planning). Apps reduce "
+            "miscommunication and create a record, but they work best alongside a clear parenting "
+            "plan agreed through mediation — and when the arrangement itself breaks down, "
+            "mediation is the right next step, not a different app."
         )
         + f"""
 <h2 id="why-apps-help">Why co-parenting apps reduce conflict</h2>
@@ -63,7 +66,7 @@ in the first two years after separation, when conflict tends to be highest.</p>
 {cite('fcfcoa')}, timestamped, unedited communication is far more useful than
 reconstructing events from memory months or years later.</p>
 """
-        + inline_cta("If you're still working out the parenting arrangements, a mediator can help you reach a plan that both parents can actually follow.")
+        + inline_cta("Still working out the parenting arrangements? A mediator can help you reach a plan both parents can follow — before the conflict escalates.")
         + f"""
 <h2 id="what-to-look-for">What to look for in a co-parenting app</h2>
 <p>Not all apps are equal. Before choosing, consider:</p>
@@ -78,61 +81,109 @@ reconstructing events from memory months or years later.</p>
   records, passports, and parenting orders — accessible to both parents.</li>
   <li><strong>Court export.</strong> The ability to produce a formatted PDF of all
   communications for use in legal proceedings if needed.</li>
-  <li><strong>Australian privacy compliance.</strong> The app should comply with Australian
-  Privacy Act requirements for data storage and handling.</li>
+  <li><strong>Australian privacy compliance.</strong> The app should comply with the
+  Australian Privacy Act 1988 for data storage and handling.</li>
+  <li><strong>Neutral communication only.</strong> In high-conflict situations, it helps
+  if the platform keeps communication strictly child-focused and removes the emotional
+  triggers of a personal messaging thread.</li>
 </ul>
 """
         + f"""
-<h2 id="top-apps">The top apps for separated parents in Australia</h2>
+<h2 id="top-apps">The 9 best apps for separated parents in Australia</h2>
 
-<h3>OurFamilyWizard</h3>
-<p>OurFamilyWizard is the most court-accepted co-parenting platform in use in Australia
-and internationally. Its <strong>ToneMeter</strong> feature flags messages that may be
-read as hostile before they are sent — a surprisingly effective circuit-breaker in
-high-conflict situations. It includes a shared calendar, expense log, info bank for
-documents, and a journal. Messages cannot be edited or deleted after sending.</p>
-<p><strong>Cost:</strong> approximately AUD $199 per parent per year. Some family
-lawyers recommend it specifically for clients in high-conflict arrangements because of
-the court-ready export.</p>
-<p><strong>Best for:</strong> high-conflict situations; cases involving legal proceedings
-or where a court record may be needed.</p>
+<h3>1. OurFamilyWizard</h3>
+<p>OurFamilyWizard remains the gold standard for separated parents in or approaching
+legal proceedings. Its <strong>ToneMeter</strong> flags messages that may read as hostile
+before they are sent — a surprisingly effective circuit-breaker in high-conflict situations.
+Messages cannot be edited or deleted after sending. It includes a shared calendar, expense
+log, info bank, and a journal feature. Family lawyers across Australia recommend it
+specifically for clients where a court record may be needed.</p>
+<p><strong>Cost:</strong> approximately AUD $199 per parent per year.</p>
+<p><strong>Best for:</strong> high-conflict situations; cases involving or likely to
+involve legal proceedings.</p>
 
-<h3>2Houses</h3>
+<h3>2. TalkingParents</h3>
+<p>TalkingParents is a strong alternative to OurFamilyWizard with a similar court-focused
+feature set. All messages are permanently archived and cannot be altered. It produces
+certified PDF records for court use, includes a shared calendar, expense tracking, and
+a document vault. Its interface is arguably simpler than OurFamilyWizard, which some
+users find easier to adopt under stress.</p>
+<p><strong>Cost:</strong> free basic plan; paid plans from approximately AUD $10–$20 per
+month for court-record features.</p>
+<p><strong>Best for:</strong> parents who need court-ready records but want a lower cost
+entry point than OurFamilyWizard.</p>
+
+<h3>3. 2Houses</h3>
 <p>2Houses is a solid mid-tier option with a clean interface, shared calendar, expense
-tracking, and a document store. It lacks OurFamilyWizard's tone analysis but is more
-affordable and sufficient for the majority of separated parents.</p>
+tracking, and a document store. It lacks tone analysis but is more affordable and
+sufficient for most separated parents who are not in active proceedings.</p>
 <p><strong>Cost:</strong> approximately AUD $15–$20 per month per household.</p>
-<p><strong>Best for:</strong> moderate-conflict situations; parents who want structure
-without the premium price.</p>
+<p><strong>Best for:</strong> moderate-conflict situations; parents who want clear
+structure without the premium price.</p>
 
-<h3>Cozi</h3>
+<h3>4. AppClose</h3>
+<p>AppClose offers tamper-proof messaging, a shared calendar, expense tracking, and
+child information storage on a free plan — making it the best free option for parents
+who need more than a basic calendar. A paid plan adds court-ready PDF reports.</p>
+<p><strong>Cost:</strong> free; paid plan approximately AUD $15/month.</p>
+<p><strong>Best for:</strong> cost-conscious parents who need co-parenting-specific
+features without an annual subscription.</p>
+
+<h3>5. Custody X Change</h3>
+<p>Custody X Change is built around parenting schedule visualisation and planning rather
+than day-to-day communication. Its standout feature is the ability to create detailed,
+printable parenting schedules with time-percentage calculations — particularly useful
+for child support calculations under {cite('services_australia_cs')} where the care
+percentage directly affects assessments.</p>
+<p><strong>Cost:</strong> one-off purchase approximately AUD $30–$70 depending on plan.</p>
+<p><strong>Best for:</strong> parents who need to model, calculate, and document time
+arrangements; especially useful when child support percentage is in dispute.</p>
+
+<h3>6. Braid (formerly WeParent)</h3>
+<p>Braid focuses on shared finances and child expenses — tracking contributions,
+requesting reimbursements, and maintaining a clear record of who has paid what. Less
+focused on communication and more focused on the financial dimension of co-parenting,
+making it a useful complement to a communication-focused app.</p>
+<p><strong>Cost:</strong> free basic; premium approximately AUD $10/month.</p>
+<p><strong>Best for:</strong> parents whose main source of conflict is money rather
+than scheduling or communication.</p>
+
+<h3>7. FamilyTime</h3>
+<p>FamilyTime includes a shared family calendar, task lists, and optional location-sharing
+for children. It is not specifically designed for separation but is widely used by
+co-parents who need simple scheduling and optional check-in visibility. Location-sharing
+requires both parents' agreement to enable.</p>
+<p><strong>Cost:</strong> free tier available; premium approximately AUD $30–$60/year.</p>
+<p><strong>Best for:</strong> low-conflict co-parents who primarily need scheduling
+coordination and optional location check-in for older children.</p>
+
+<h3>8. Cozi</h3>
 <p>Cozi is a free family organiser — not purpose-built for separation, but widely used
-by separated parents for its shared calendar and shopping/task lists. It lacks messaging
-logs and court-export features. Appropriate only for low-conflict arrangements.</p>
-<p><strong>Cost:</strong> free (Cozi Gold is approximately AUD $45/year for extra features).</p>
-<p><strong>Best for:</strong> low-conflict co-parents who just need a shared calendar.</p>
+by co-parents for its shared calendar, shopping lists, and task coordination. It lacks
+tamper-proof messaging and court-export features. Appropriate only for genuinely
+low-conflict arrangements where a contemporaneous communication record is not needed.</p>
+<p><strong>Cost:</strong> free; Cozi Gold approximately AUD $45/year for extra features.</p>
+<p><strong>Best for:</strong> low-conflict co-parents who just need a shared calendar
+and have no concerns about needing a communication record.</p>
 
-<h3>AppClose</h3>
-<p>AppClose is a free co-parenting app that includes messaging, a shared calendar,
-expense tracking, and child information storage. A paid version adds court-ready
-reports. It is less widely known in Australia than OurFamilyWizard but offers
-comparable core features at a lower price point.</p>
-<p><strong>Cost:</strong> free, with paid plan approximately AUD $15/month.</p>
-<p><strong>Best for:</strong> cost-conscious parents who need more than a basic calendar.</p>
-
-<h3>MyMedici</h3>
-<p>MyMedici is an Australian-built platform designed for family coordination including
-separated parents. It includes a calendar, shared task lists, and a family hub. Less
-court-focused than OurFamilyWizard but built with Australian privacy standards.</p>
-<p><strong>Cost:</strong> free tier available; premium approximately AUD $100/year.</p>
-<p><strong>Best for:</strong> parents who prefer an Australian-developed product.</p>
+<h3>9. Google Calendar (shared)</h3>
+<p>A shared Google Calendar is not a co-parenting app, but it deserves mention as the
+solution many low-conflict co-parents already use. It provides a shared, real-time
+view of the parenting schedule at no cost. It has no messaging, expense tracking,
+court-export capability, or tamper-proof record — but for parents who communicate
+well and simply need visibility of the schedule, it works without any learning curve
+or subscription.</p>
+<p><strong>Cost:</strong> free.</p>
+<p><strong>Best for:</strong> genuinely low-conflict co-parents who communicate well
+and need only schedule visibility. Not appropriate if conflict is present or a record
+may ever be needed.</p>
 """
-        + inline_cta("A clear parenting plan — agreed through mediation — makes co-parenting apps far more effective. Book a free initial consultation.")
+        + inline_cta("A clear parenting plan agreed through mediation makes co-parenting apps far more effective — because both parents know what they are implementing.")
         + f"""
 <h2 id="app-comparison">Side-by-side comparison</h2>
 <figure class="tbl">
 <table>
-<caption>Co-parenting app comparison for Australian separated parents</caption>
+<caption>Co-parenting app comparison for Australian separated parents (2026)</caption>
 <thead>
 <tr>
   <th>App</th>
@@ -140,17 +191,25 @@ court-focused than OurFamilyWizard but built with Australian privacy standards.<
   <th>Tamper-proof msgs</th>
   <th>Court export</th>
   <th>Expense tracking</th>
-  <th>Best for</th>
+  <th>Conflict level suited to</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td>OurFamilyWizard</td>
   <td>~$398 (both parents)</td>
+  <td>Yes + ToneMeter</td>
   <td>Yes</td>
   <td>Yes</td>
+  <td>High / legal proceedings</td>
+</tr>
+<tr>
+  <td>TalkingParents</td>
+  <td>Free / ~$240 paid</td>
+  <td>Yes — certified</td>
+  <td>Yes (paid)</td>
   <td>Yes</td>
-  <td>High conflict / legal proceedings</td>
+  <td>High / legal proceedings</td>
 </tr>
 <tr>
   <td>2Houses</td>
@@ -158,15 +217,39 @@ court-focused than OurFamilyWizard but built with Australian privacy standards.<
   <td>Yes</td>
   <td>Yes</td>
   <td>Yes</td>
-  <td>Moderate conflict</td>
+  <td>Moderate</td>
 </tr>
 <tr>
   <td>AppClose</td>
-  <td>Free / ~$360 paid</td>
+  <td>Free / ~$180 paid</td>
   <td>Yes</td>
   <td>Paid only</td>
   <td>Yes</td>
-  <td>Budget-conscious</td>
+  <td>Moderate / budget</td>
+</tr>
+<tr>
+  <td>Custody X Change</td>
+  <td>~$30–70 one-off</td>
+  <td>No</td>
+  <td>Schedule only</td>
+  <td>No</td>
+  <td>Any — schedule planning tool</td>
+</tr>
+<tr>
+  <td>Braid</td>
+  <td>Free / ~$120</td>
+  <td>No</td>
+  <td>No</td>
+  <td>Yes — focused</td>
+  <td>Low–moderate / finance focus</td>
+</tr>
+<tr>
+  <td>FamilyTime</td>
+  <td>Free / ~$30–60</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>Low — scheduling only</td>
 </tr>
 <tr>
   <td>Cozi</td>
@@ -174,19 +257,19 @@ court-focused than OurFamilyWizard but built with Australian privacy standards.<
   <td>No</td>
   <td>No</td>
   <td>No</td>
-  <td>Low conflict / calendar only</td>
+  <td>Low — calendar only</td>
 </tr>
 <tr>
-  <td>MyMedici</td>
-  <td>Free / ~$100</td>
-  <td>Partial</td>
+  <td>Google Calendar</td>
+  <td>Free</td>
   <td>No</td>
-  <td>Yes</td>
-  <td>Australian privacy preference</td>
+  <td>No</td>
+  <td>No</td>
+  <td>Low — already communicating well</td>
 </tr>
 </tbody>
 </table>
-<p class="source-note">Prices are indicative as at mid-2026 and may vary. Check each provider's current pricing.</p>
+<p class="source-note">Prices indicative as at mid-2026. Check each provider's current pricing. Paid plan costs assume one parent's annual subscription unless noted.</p>
 </figure>
 """
         + f"""
@@ -196,16 +279,16 @@ communicate now will matter later. SMS and email can be screenshotted, cropped, 
 presented selectively. Co-parenting apps with tamper-proof logging produce a complete,
 unedited record — which courts tend to find more credible than cherry-picked
 screenshots.</p>
-<p>OurFamilyWizard explicitly markets its court-export feature to family lawyers and
-is the most commonly recommended platform by Australian family law practitioners for
-this purpose. If you are currently in proceedings — or think you might be — it is
-worth the subscription cost.</p>
+<p>OurFamilyWizard and TalkingParents both explicitly market their court-export features
+to family lawyers and are the most commonly recommended platforms by Australian family
+law practitioners for this purpose. If you are currently in proceedings — or think you
+might be — the subscription cost is justified.</p>
 <p>One practical note: switching communication to a dedicated app mid-dispute can
 itself be contentious if the other parent refuses to use it. A mediator can help you
-agree on a communication platform as part of a parenting plan, which avoids the
-standoff entirely.</p>
+agree on a communication platform as part of a parenting plan, which removes the
+standoff entirely and gives both parents a clean start.</p>
 """
-        + inline_cta("Having trouble getting the other parent to agree on ground rules? A mediator can help you establish a communication framework both parents will actually follow.")
+        + inline_cta("Struggling to get the other parent to agree on communication ground rules? A mediator can include the platform in a parenting plan you both sign.")
         + f"""
 <h2 id="expense-tracking">Tracking shared expenses without arguments</h2>
 <p>Shared child-related expenses — medical costs, school excursions, sport fees,
@@ -218,18 +301,56 @@ tracking create a log of what was spent, what was agreed, and what remains outst
 removing the "I never agreed to pay for that" ambiguity.</p>
 <p>A well-drafted parenting plan will specify which categories of expense require
 prior agreement and how they are to be split. This is something we routinely work
-through with parents in mediation — the app then just implements the plan.</p>
+through in mediation — the app then simply implements the plan both parents have
+already agreed on.</p>
 """
-        + inline_cta("Need help agreeing on how to split expenses? Our mediators work through parenting finances with you so both parents know exactly where they stand.")
+        + inline_cta("Disputes about expenses are one of the most common issues we help separated parents resolve. Our mediators work through the detail so both parents know exactly where they stand.")
         + f"""
-<h2 id="what-apps-cant-do">What apps cannot do</h2>
-<p>Co-parenting apps are tools, not solutions. They cannot:</p>
+<h2 id="when-apps-fail">When apps can't keep co-parents on track</h2>
+<p>Apps work best when both parents are genuinely trying to make them work. When the
+co-parenting relationship itself is the problem, the app becomes a new venue for the
+same old dispute. Common signs that an app alone isn't enough:</p>
+<ul>
+  <li><strong>One parent refuses to use the agreed platform.</strong> If the other parent
+  reverts to informal channels, ignores notifications, or never responds through the app,
+  the communication structure breaks down. This isn't a technology problem.</li>
+  <li><strong>The arrangement itself is no longer working.</strong> A week-about schedule
+  that worked when the children were 5 and 8 may not work when they are 9 and 12. Apps
+  can't renegotiate the underlying arrangement — they can only implement it.</li>
+  <li><strong>Disputes are about what the plan says, not logistics.</strong> If the
+  argument is about what was agreed — not just what's happening this weekend — the
+  plan needs to be revisited, not better logged.</li>
+  <li><strong>The app is being used as evidence-gathering rather than coordination.</strong>
+  When messages become strategic rather than practical, the co-parenting relationship has
+  broken down beyond what communication tools can fix.</li>
+  <li><strong>Expenses remain in constant dispute despite an app log.</strong> If both
+  parents can see the record but still can't agree on contributions, the underlying
+  expense framework needs to be resolved — usually through a revised parenting plan.</li>
+  <li><strong>You've already tried two or three different apps.</strong> Switching platforms
+  is not the solution. If the conflict has followed you from one app to the next, the
+  arrangement itself — not the technology — is what needs to change.</li>
+</ul>
+<p>These are signs that mediation is the right next step. The app was never going to
+resolve a disagreement about the underlying arrangement; it was only ever going to help
+implement one that both parents had already agreed on.</p>
+<p><strong>Dan Toombs, FDRP:</strong> "I regularly see parents who have tried every app
+on the market. The technology isn't the issue. What they actually need is to sit down
+together — with a neutral third party — and revisit what the arrangement is. Once that's
+clear, any app will do."</p>
+"""
+        + inline_cta("If the app has stopped working and the arrangement itself needs revisiting, co-parenting mediation is the right next step. We work with separated parents across Australia.")
+        + f"""
+<h2 id="what-apps-cant-do">What apps cannot do — and what comes next</h2>
+<p>Even the best co-parenting app cannot:</p>
 <ul>
   <li>Create a parenting arrangement where none has been agreed</li>
-  <li>Resolve a genuine dispute about where a child lives or spends time</li>
-  <li>Replace the co-parenting relationship — a child's wellbeing depends on both
-  parents being able to work together, not on which app they use</li>
+  <li>Resolve a genuine dispute about where a child lives or how much time each parent
+  has — that requires agreement, consent orders, or a court decision</li>
+  <li>Replace the co-parenting relationship itself — a child's wellbeing depends on
+  both parents being able to work together</li>
   <li>Protect a parent or child where there is family violence or safety risk</li>
+  <li>Force compliance — if a parent ignores the app, there is no enforcement mechanism
+  short of legal proceedings</li>
 </ul>
 """
         + callout(
@@ -240,78 +361,117 @@ through with parents in mediation — the app then just implements the plan.</p>
             "confidential support, or see our guide to domestic violence and family law."
         )
         + f"""
-<p>The foundation of good co-parenting is a clear, agreed arrangement — one that both
-parents understand and can actually follow. A <a href="/parenting-plans-guide/">parenting
-plan</a> agreed through <a href="/child-custody-mediation/">mediation</a> gives the app
-something real to implement. Without it, you are using sophisticated software to manage
-an unresolved dispute.</p>
+<p>When an app stops being enough, the escalation path usually looks like this:</p>
+<ol>
+  <li><strong>Co-parenting mediation.</strong> A Family Dispute Resolution Practitioner
+  (FDRP) meets with both parents — together or in separate sessions — to revisit the
+  parenting arrangement. This is the fastest and lowest-cost route to a revised, agreed
+  plan. Under the {cite('family_law_act')}, an FRC certificate from a registered FDRP
+  is required before most parenting applications can be filed in court.</li>
+  <li><strong>Consent orders.</strong> A revised parenting plan reached in mediation
+  can be filed with the {cite('fcfcoa')} as consent orders — making it legally
+  enforceable without a contested hearing.</li>
+  <li><strong>Family court proceedings.</strong> If mediation genuinely cannot resolve
+  the dispute — because of safety concerns, one parent refusing to engage, or
+  intractable disagreement — court proceedings may be necessary. This is a last resort:
+  contested parenting hearings are slow, expensive, and hard on children.</li>
+</ol>
+<p>Most co-parenting disputes that look like they need a court hearing can be resolved
+in one or two mediation sessions — at a fraction of the cost and time. The app record
+from OurFamilyWizard or TalkingParents, if you have been using one, becomes useful
+context to bring into that process.</p>
 """
-        + inline_cta("Ready to agree on a parenting arrangement? Our FDR practitioners work with separated parents across Australia — in person and online.")
+        + inline_cta("Most parenting arrangements that break down can be revised through mediation — without going to court. Book a free initial consultation to explore your options.")
         + f"""
 <h2 id="worked-example">Worked example: Aisha and Daniel</h2>
-<p>Aisha and Daniel separated in early 2025, with two children aged 7 and 10. Their
+<p>Aisha and Daniel separated in early 2024, with two children aged 7 and 10. Their
 initial week-about arrangement was agreed verbally but created constant friction: missed
-pickups, disputed school holiday splits, and ongoing arguments over who had paid for
+pickups, disputed school holiday splits, and ongoing arguments about who had paid for
 swimming lessons.</p>
+<p>They tried two different co-parenting apps before reaching us. The apps logged the
+disputes clearly — but the underlying arrangement was never properly agreed, so the
+same conflicts kept repeating through whichever platform they used.</p>
 <p>Through mediation, they formalised a parenting plan that specified:</p>
 <ul>
   <li>Week-about care with handover Sunday 5 pm at a neutral location</li>
   <li>Extraordinary expenses over $150 requiring both parents' written agreement before
-  being incurred</li>
-  <li>School holidays alternating yearly, with Christmas Eve–26 December with one parent
-  and 27 December–New Year with the other</li>
+  being incurred, with a 48-hour response window</li>
+  <li>School holidays split 50/50 with a specific Christmas formula agreed in advance
+  for the next three years</li>
   <li>OurFamilyWizard as the agreed communication platform for all co-parenting matters</li>
+  <li>A review clause: either parent could request a mediation review session if
+  circumstances changed significantly</li>
 </ul>
-<p>Within three months, both reported significantly less conflict. The app did not
-change their relationship — but the plan gave them clear rules, and the app gave them
-a record to point to when disputes arose. The parenting plan was later filed as consent
-orders, making it legally enforceable.</p>
+<p>Within three months, both reported significantly less conflict. The app had not
+changed — but for the first time, it was implementing a plan both parents had actually
+agreed on. The parenting plan was later filed as consent orders, making it legally
+enforceable.</p>
 <p><strong>Dan Toombs, FDRP:</strong> "I see this pattern constantly. Parents arrive
-with an app already installed and no agreement underneath it. The technology is
-fine — but without a clear parenting plan, the app just becomes another place to
-have the same argument."</p>
+with two or three apps already tried and discarded. The technology was never the problem.
+What they needed was a clear, agreed arrangement underneath it — and someone neutral to
+help them get there. Once we had that, they went back to a simple app and it worked fine."</p>
 """
-        + inline_cta("A parenting plan agreed through mediation gives co-parenting apps something real to work with. Book a consultation to get started.")
+        + inline_cta("A parenting plan agreed through mediation gives co-parenting apps something real to implement. Book a consultation to get started.")
     ),
     qa=[
         (
+            "What is the best co-parenting app in Australia in 2026?",
+            "For high-conflict situations or where a court record may be needed, "
+            "OurFamilyWizard or TalkingParents are the strongest options. For moderate "
+            "conflict, 2Houses or AppClose offer good features at lower cost. For low "
+            "conflict, Cozi or a shared Google Calendar may be sufficient. The right app "
+            "depends on your conflict level, budget, and whether legal proceedings are possible."
+        ),
+        (
             "What is the best free co-parenting app in Australia?",
-            "Cozi is the most popular free option, but it lacks tamper-proof messaging "
-            "and court-export features. AppClose offers a free tier with more co-parenting "
-            "specific features. For high-conflict situations, OurFamilyWizard or 2Houses "
-            "are worth the cost."
+            "AppClose offers the strongest free co-parenting feature set — tamper-proof "
+            "messaging, shared calendar, and expense tracking at no cost. TalkingParents "
+            "also has a free tier. Cozi is popular but lacks a tamper-proof message log. "
+            "For high-conflict situations, a paid app is worth the investment."
         ),
         (
             "Can co-parenting app messages be used in Family Court?",
             "Yes — messages from apps with tamper-proof logging such as OurFamilyWizard "
-            "can be exported in a court-ready format. They are generally considered more "
-            "reliable than screenshots of SMS or email, which can be edited or taken "
-            "out of context."
+            "and TalkingParents can be exported in a court-ready certified format. They are "
+            "generally considered more reliable than screenshots of SMS or email, which "
+            "can be cropped or taken out of context."
         ),
         (
             "What if the other parent refuses to use a co-parenting app?",
-            "You cannot force the other parent to use an app. However, if you are working "
-            "through a parenting plan in mediation, the choice of communication platform "
-            "can be included as one of the agreed terms. Refusal to use an agreed platform "
-            "can be relevant in any subsequent court proceedings."
+            "You cannot force the other parent to use an app. However, if you reach a "
+            "parenting plan through mediation, the communication platform can be included "
+            "as one of the agreed terms. Refusal to use an agreed platform can be relevant "
+            "in subsequent court proceedings. If the other parent simply won't engage, "
+            "mediation to revisit the arrangement is usually the right step."
+        ),
+        (
+            "What should I do when a co-parenting app stops working?",
+            "If the app is logging disputes but the underlying conflict keeps repeating, "
+            "the arrangement itself — not the technology — needs to change. Co-parenting "
+            "mediation with a Family Dispute Resolution Practitioner is usually the right "
+            "next step. Most arrangements that seem to need a court hearing can be revised "
+            "through one or two mediation sessions."
         ),
         (
             "Do co-parenting apps track location?",
-            "Some apps include optional location-sharing features. Whether to use these "
-            "is a matter for both parents to agree on. If there is a family violence "
-            "concern, location-sharing should not be enabled without specialist advice."
-        ),
-        (
-            "Is OurFamilyWizard available in Australia?",
-            "Yes. OurFamilyWizard is available to Australian users and is widely recommended "
-            "by Australian family law practitioners. Pricing is in USD — check their website "
-            "for current rates."
+            "Some apps, including FamilyTime, include optional location-sharing features. "
+            "Whether to use these is a matter for both parents to agree on. If there is a "
+            "family violence concern, location-sharing should not be enabled without "
+            "specialist advice — call 1800RESPECT on 1800 737 732."
         ),
         (
             "What is the difference between a parenting plan and a co-parenting app?",
             "A parenting plan is a written agreement about how separated parents will raise "
-            "their children. A co-parenting app helps implement that agreement day-to-day. "
-            "The plan comes first — the app makes it easier to follow."
+            "their children — where the children live, when each parent has time with them, "
+            "how decisions are made, and how expenses are split. A co-parenting app helps "
+            "implement that agreement day-to-day. The plan comes first. Without a clear plan, "
+            "even the best app becomes another place to have the same argument."
+        ),
+        (
+            "Is OurFamilyWizard available in Australia?",
+            "Yes. OurFamilyWizard is available to Australian users and is widely recommended "
+            "by Australian family law practitioners. Pricing is listed in USD — check their "
+            "website for current rates and convert to AUD."
         ),
     ],
     related=[
@@ -322,7 +482,7 @@ have the same argument."</p>
         ("high-conflict-mediation", "Mediation in High-Conflict Separations"),
         ("questions/do-i-need-mediation-before-family-court", "Do I Need Mediation Before Family Court?"),
     ],
-    read_min=7,
+    read_min=11,
 )
 
 # ─────────────────────────────────────────────────────────────────────────────
