@@ -20,7 +20,7 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p):
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
 </div></section>
 <div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>
-<article class="body"><div class="wrap-narrow reveal">{blocks}</div></article>"""
+<article class="body"><div class="wrap-narrow">{blocks}</div></article>"""
     d+=faq_html(qa,heading=f"{crumb} FAQs")+cta_band(cta_h,cta_p)+"</main>"+page_end()
     p=os.path.join(OUT,slug); os.makedirs(p,exist_ok=True)
     open(os.path.join(p,"index.html"),"w").write(d)
