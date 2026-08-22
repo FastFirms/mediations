@@ -212,7 +212,14 @@ async function sendFormspreeNotification(matterId, matterType, partyAName) {
 
   const r = await fetch(FORMSPREE_ENDPOINT, {
     method:  'POST',
-    headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+    headers: {
+      'Accept':       'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded',
+      // Spoof browser-like origin so Formspree's spam filter doesn't silently
+      // discard server-to-server submissions from Vercel's IP ranges.
+      'Origin':       'https://www.mediationsaustralia.com.au',
+      'Referer':      'https://www.mediationsaustralia.com.au/access-mediation/',
+    },
     body:    payload.toString(),
   });
   if (!r.ok) {
@@ -357,6 +364,7 @@ export default async function handler(req, res) {
   }
 
   // 7. Staff notification via Formspree (no financial data — staff alert only)
+  let notificationDebug = 'sent';
   try {
     await sendFormspreeNotification(matterId, body.matter_type, partyAName);
     await sql`
@@ -366,6 +374,7 @@ export default async function handler(req, res) {
     `;
   } catch (err) {
     // Non-fatal — application is saved; staff can find it in admin
+    notificationDebug = err.message;
     console.error('[access-apply] Formspree error (non-fatal):', err);
     await sql`
       UPDATE access_applications SET notification_error = ${err.message}
@@ -384,5 +393,7 @@ export default async function handler(req, res) {
     review_flags:                 calcResult.review_flags,
     capacity_remaining:           capacityRemaining,
     waitlisted:                   isWaitlisted,
+    // TEMP DEBUG — remove once Formspree is confirmed working
+    _notification_debug:          notificationDebug,
   });
 }
