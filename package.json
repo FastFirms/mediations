@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "schema": "node scripts/schema.mjs",
+    "access-schema": "node scripts/access-schema.mjs",
     "ingest": "node scripts/ingest.mjs",
     "extract": "node scripts/extract.mjs"
   },
