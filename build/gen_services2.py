@@ -416,6 +416,7 @@ build("our-fee-structure",
 .followup-table td:last-child{font-weight:700;color:var(--ink)}
 .followup-table tr:last-child td{border-bottom:none}
 .dual-cta{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 8px}
+.dual-cta .btn-ghost{color:var(--sage-deep,#1e6040)!important;border-color:var(--sage-deep,#1e6040)!important}
 .section-sep{border:none;border-top:1px solid var(--line,rgba(13,34,24,.12));margin:48px 0}
 @media(max-width:600px){
   .fee-card-price{font-size:2rem}
