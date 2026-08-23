@@ -333,7 +333,7 @@ same old dispute. Common signs that an app alone isn't enough:</p>
 <p>These are signs that mediation is the right next step. The app was never going to
 resolve a disagreement about the underlying arrangement; it was only ever going to help
 implement one that both parents had already agreed on.</p>
-<p><strong>Dan Toombs, FDRP:</strong> "I regularly see parents who have tried every app
+<p><strong>Dan Toombs, AMDRAS Accredited Mediator and Lawyer:</strong> "I regularly see parents who have tried every app
 on the market. The technology isn't the issue. What they actually need is to sit down
 together — with a neutral third party — and revisit what the arrangement is. Once that's
 clear, any app will do."</p>
@@ -406,7 +406,7 @@ same conflicts kept repeating through whichever platform they used.</p>
 changed — but for the first time, it was implementing a plan both parents had actually
 agreed on. The parenting plan was later filed as consent orders, making it legally
 enforceable.</p>
-<p><strong>Dan Toombs, FDRP:</strong> "I see this pattern constantly. Parents arrive
+<p><strong>Dan Toombs, AMDRAS Accredited Mediator and Lawyer:</strong> "I see this pattern constantly. Parents arrive
 with two or three apps already tried and discarded. The technology was never the problem.
 What they needed was a clear, agreed arrangement underneath it — and someone neutral to
 help them get there. Once we had that, they went back to a simple app and it worked fine."</p>
@@ -575,7 +575,7 @@ else. They may be:</p>
 </ul>
 <p>Understanding which of these is actually happening is the key to resolving it —
 and often the right tool is mediation, not a court application.</p>
-<p><strong>Dan Toombs, FDRP:</strong> "I've sat with many people who've told me their
+<p><strong>Dan Toombs, AMDRAS Accredited Mediator and Lawyer:</strong> "I've sat with many people who've told me their
 ex 'won't cooperate'. In almost every case, what the other party is actually worried
 about is the financial outcome — not the divorce itself. Once we address that fear
 directly, the cooperation usually follows."</p>
@@ -977,7 +977,7 @@ it took to finalise the property settlement.</p>
 transferred to Rebecca, who refinanced in her own name, with Tom receiving a cash
 payment from the equity plus a superannuation split. Total mediation cost: approximately
 $5,000 shared. Estimated litigation cost if contested: $60,000–$120,000 each.</p>
-<p><strong>Dan Toombs, FDRP:</strong> "The interim financial arrangement is often the
+<p><strong>Dan Toombs, AMDRAS Accredited Mediator and Lawyer:</strong> "The interim financial arrangement is often the
 hardest conversation to have, because both parties feel financially squeezed right when
 their expenses have doubled. Getting that arrangement right in the first few months of
 separation prevents a huge amount of conflict later."</p>
