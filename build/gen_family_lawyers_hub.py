@@ -100,7 +100,7 @@ QA = [
     ("Is mediation available in my city?",
      "Yes. We offer online mediation to clients anywhere in Australia, and in-person sessions in Sydney, Melbourne, Brisbane, Perth and Adelaide. The city guides on this page cover the local court context for each region."),
     ("How much does family mediation cost compared to going to court?",
-     "Mediation typically costs $3,000-$8,000 total, shared between the parties. A contested family law matter through court commonly costs each party $30,000-$150,000 or more, and takes one to three years to resolve."),
+     "Mediation typically costs $3,000–$4,500 total, shared between the parties. A contested family law matter through court commonly costs each party $30,000–$150,000 or more, and takes one to three years to resolve."),
     ("What types of family law matters can be mediated?",
      "Property settlement, parenting arrangements, spousal maintenance, superannuation splitting, estate disputes, and separation agreements can all be resolved through mediation. We also provide section 60I certificates required before filing parenting matters in court."),
     ("What is a section 60I certificate and do I need one?",
@@ -169,7 +169,7 @@ def build():
 <thead><tr><th></th><th>Mediation</th><th>Contested litigation</th></tr></thead>
 <tbody>
 <tr><td>Time to resolution</td><td>1 day</td><td>1&ndash;3 years</td></tr>
-<tr><td>Typical total cost (per party)</td><td>$1,500&ndash;$4,000</td><td>$30,000&ndash;$150,000+</td></tr>
+<tr><td>Typical total cost (per party)</td><td>$1,500&ndash;$2,250</td><td>$30,000&ndash;$150,000+</td></tr>
 <tr><td>Who decides the outcome</td><td>You</td><td>A judge</td></tr>
 <tr><td>Confidential</td><td>Yes &mdash; protected by law</td><td>No &mdash; public record</td></tr>
 <tr><td>Preserves co-parenting relationship</td><td>Collaborative by design</td><td>Adversarial by design</td></tr>

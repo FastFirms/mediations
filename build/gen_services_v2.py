@@ -173,8 +173,8 @@ service_page(
 <figure class="tbl"><table><caption>Mediation vs court \u2014 typical costs</caption>
 <thead><tr><th>Path</th><th>Typical total cost</th><th>Time to resolution</th></tr></thead>
 <tbody>
-<tr><td><strong>Mediation</strong> (full process, shared)</td><td>$3,000\u2013$7,000</td><td>1\u20133 sessions over weeks</td></tr>
-<tr><td>Mediation + consent orders</td><td>$5,000\u2013$9,000</td><td>Add 2\u20136 weeks for filing</td></tr>
+<tr><td><strong>Mediation</strong> (full process, shared)</td><td>$3,000\u2013$4,500</td><td>1\u20132 sessions over weeks</td></tr>
+<tr><td>Mediation + consent orders</td><td>$5,000\u2013$7,500</td><td>Add 2\u20136 weeks for filing</td></tr>
 <tr><td>Contested litigation (each party)</td><td>$50,000\u2013$200,000+</td><td>1\u20133 years</td></tr>
 </tbody></table></figure>
 
@@ -214,7 +214,7 @@ service_page(
         ("Is family law mediation compulsory in Australia?",
          "For most parenting matters, yes \u2014 you must attempt family dispute resolution and obtain a Section 60I certificate before applying to court, unless an exemption applies. For property matters, mediation isn't strictly compulsory but the courts expect genuine pre-action efforts to resolve."),
         ("How much does family law mediation cost?",
-         "Private mediation typically costs $3,000\u2013$7,000 total, usually shared between the parties \u2014 so each person's share is around half that. Free and low-cost options are available through Family Relationship Centres for parenting matters."),
+         "Private mediation typically costs $3,000\u2013$4,500 total, usually shared between the parties \u2014 so each person's share is around half that. Free and low-cost options are available through Family Relationship Centres for parenting matters."),
         ("How long does the mediation process take?",
          "The mediation session itself typically runs half a day to a full day. Around 90% of family matters resolve in one or two sessions \u2014 a matter of weeks rather than the one to three years a contested court case can take."),
         ("Do I need a lawyer to attend mediation?",
@@ -325,7 +325,7 @@ service_page(
 <p>For more complex matters \u2014 businesses, family trusts, defined-benefit super, cryptocurrency holdings \u2014 mediation works well because it's <em>flexible</em>. A court has a limited set of orders it can make; in mediation you can craft creative solutions (offsets, staged payouts, retained interests) that a judge wouldn't impose. <a href="/business-in-divorce/">See business in divorce \u2192</a></p>
 
 <h2 id="costs">Costs and timeframes</h2>
-<p>Property settlement mediation typically costs $3,000\u2013$7,000 total, usually shared between the parties. The mediation session itself is usually a full day, with most matters resolving in that single day or, sometimes, with a follow-up half-day. The full process from initial consultation to filed consent orders typically takes 4\u201310 weeks. Compare that to one to three years for a contested matter, with each party paying $50,000\u2013$200,000+ in legal fees.</p>
+<p>Property settlement mediation typically costs $3,000\u2013$4,500 total, usually shared between the parties. The mediation session itself is usually a full day, with most matters resolving in that single day or, sometimes, with a follow-up half-day. The full process from initial consultation to filed consent orders typically takes 4\u201310 weeks. Compare that to one to three years for a contested matter, with each party paying $50,000\u2013$200,000+ in legal fees.</p>
 """ + inline_cta("Time is money in property settlement \u2014 both literally. The sooner you start, the more there is to share.") + """
 
 <h2 id="binding">Making the agreement binding</h2>

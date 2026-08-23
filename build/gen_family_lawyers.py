@@ -81,7 +81,7 @@ TIER1 = [
      "litigation consumes a meaningful portion of it. A contested matter through the Parramatta "
      "registry, with both parties paying legal fees for 18-24 months, can easily cost "
      "$60,000-$120,000 in combined legal costs. Mediation typically resolves the same matter "
-     "for $4,000-$10,000 total, shared between the parties.</p>"
+     "for $3,000–$4,500 total, shared between the parties.</p>"
      "<p>The Parramatta registry is one of the busiest family law registries in Australia. "
      "Greater Western Sydney’s rapid population growth has not been matched by proportionate "
      "court resources. Waiting times for contested final hearings are among the longest in "
@@ -328,7 +328,7 @@ def build_tier1(slug, city, state, nearest_office, court_ref, local_context, cit
             "costs $15,000 to $150,000 or more per side, and that’s before court filing "
             "fees and barrister costs. Most matters settle before a final hearing, but the "
             "legal costs incurred getting there are rarely recovered. Mediation, by contrast, "
-            "typically costs $2,000–$8,000 total, shared between both parties."
+            "typically costs $3,000–$4,500 total, shared between both parties."
         ),
         (
             "Can I use a mediator instead of a family lawyer in " + city + "?",
@@ -757,8 +757,8 @@ def build_tier2(slug, city, state, nearest_office, court_ref, local_context):
         "<h2>Mediation vs engaging a family lawyer in "
         + ec + ": the honest comparison</h2>\n"
         "<ul>\n"
-        "  <li><strong>Cost.</strong> Mediation typically costs $2,000–$8,000 total "
-        "(shared). Family law litigation commonly costs each party $15,000–$150,000 "
+        "  <li><strong>Cost.</strong> Mediation typically costs $3,000–$4,500 total, "
+        "shared between the parties. Family law litigation commonly costs each party $15,000–$150,000 "
         "or more. Legal costs in family law are almost never recovered from the other side.</li>\n"
         "  <li><strong>Time.</strong> Most " + ec + " mediations resolve in weeks. A "
         "contested matter through " + ecr + " can take one to three years.</li>\n"
