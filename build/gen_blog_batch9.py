@@ -35,7 +35,7 @@ disputes, estate and wills disagreements, and property matters. Fees are fixed a
 quoted before any session begins. Jump to the section that matches your dispute
 using the links in the table, or read the full guide below.</p>
 <figure class="tbl"><table><caption>Mediations Australia \u2014 indicative fee ranges by dispute type (2026, per person, excl. GST)</caption>
-<thead><tr><th>Dispute type</th><th>3-hour session</th><th>Full day</th><th>Typical timeframe to resolve</th></tr></thead>
+<thead><tr><th>Dispute type</th><th>3.5-hour session</th><th>Full day</th><th>Typical timeframe to resolve</th></tr></thead>
 <tbody>
 <tr><td><a href="#family-mediation">Family &amp; separation</a></td><td>$1,500</td><td>$2,250</td><td>1 day; 1\u20132 weeks to book</td></tr>
 <tr><td><a href="#workplace-mediation">Workplace &amp; employment</a></td><td>$1,500\u2013$2,000</td><td>$2,250\u2013$3,500</td><td>1 day; often bookable within days</td></tr>
@@ -55,7 +55,7 @@ type of mediation in Australia.</p>
 <figure class="tbl"><table><caption>Family mediation \u2014 Mediations Australia fee schedule (excl. GST)</caption>
 <thead><tr><th>Session</th><th>Per person</th><th>Both parties</th><th>Suits</th></tr></thead>
 <tbody>
-<tr><td>3-hour session</td><td>$1,500</td><td>$3,000</td><td>Parenting matters; focused property issues</td></tr>
+<tr><td>3.5-hour session</td><td>$1,500</td><td>$3,000</td><td>Parenting matters; focused property issues</td></tr>
 <tr><td>Full day</td><td>$2,250</td><td>$4,500</td><td>Combined parenting and property; complex matters</td></tr>
 <tr><td>Additional time / hr</td><td>$400</td><td>$800</td><td>Overruns</td></tr>
 <tr><td>Section 60I certificate</td><td colspan="3">Included \u2014 required for court filing on parenting matters</td></tr>
@@ -186,7 +186,7 @@ assets, dependants, and circumstances \u2014 not their former partner's financia
 position. Contributions start from $495 + GST per person. Assessment details
 are never shared with the other party.</p>
 <figure class="tbl"><table><caption>Access Mediation contribution bands (indicative, per person, excl. GST)</caption>
-<thead><tr><th>Band</th><th>3-hour session</th><th>Full day</th></tr></thead>
+<thead><tr><th>Band</th><th>3.5-hour session</th><th>Full day</th></tr></thead>
 <tbody>
 <tr><td>Band A (lowest)</td><td>from $495</td><td>from $745</td></tr>
 <tr><td>Band B</td><td>from $745</td><td>from $995</td></tr>

@@ -98,8 +98,8 @@ post(
 <thead><tr><th>Session type</th><th>Fee (ex GST)</th><th>Typical duration</th></tr></thead>
 <tbody>
   <tr><td>Free initial consultation</td><td>$0</td><td>20–30 min</td></tr>
-  <tr><td>Half-day mediation</td><td>$3,000</td><td>Up to 4 hours</td></tr>
-  <tr><td>Full-day mediation</td><td>$4,500</td><td>Up to 8 hours</td></tr>
+  <tr><td>Half-day mediation</td><td>$3,000</td><td>3.5 hours</td></tr>
+  <tr><td>Full-day mediation</td><td>$4,500</td><td>6.5 hours</td></tr>
   <tr><td>Additional time (if required)</td><td>$400/hr</td><td>—</td></tr>
 </tbody>
 </table>
@@ -159,7 +159,7 @@ post(
     ("Is online mediation appropriate where there has been family violence?",
      "Online mediation can be appropriate in some family violence situations — but only where thorough screening has confirmed it is safe, each party is in a secure private location, and the mediator has specific experience managing these sessions. Our registered FDRPs conduct detailed pre-session screening for all family matters. Where the risk level makes mediation inappropriate, we will say so and suggest alternative pathways."),
     ("How long does an online mediation session take?",
-     "Most disputes resolve in a half-day (up to 4 hours) or full-day (up to 8 hours) session. Complex property settlements or multi-issue family matters may require a full day. We will give you an honest assessment of likely session length in the initial consultation, based on the issues involved and the parties' readiness to negotiate."),
+     "Most disputes resolve in a half-day (3.5 hours) or full-day (6.5 hours) session. Complex property settlements or multi-issue family matters may require a full day. We will give you an honest assessment of likely session length in the initial consultation, based on the issues involved and the parties' readiness to negotiate."),
     ("Can lawyers attend an online mediation?",
      "Yes. Lawyers can attend online sessions as advisers to their clients. They join via the same video platform and can participate in both joint sessions and private caucuses. Many of our clients attend with a solicitor; others prefer to attend without legal representation and seek advice separately. We are happy to work either way."),
   ],

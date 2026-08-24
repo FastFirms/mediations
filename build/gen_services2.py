@@ -355,7 +355,7 @@ build("our-fee-structure",
  "MEDIATION FEES",
  "Mediation fees, clearly explained.",
  "You should know what mediation is likely to cost before you commit. Your initial consultation is free. If you decide to proceed, we confirm the applicable fee before the mediation is booked.",
- "How fees work depends on your dispute type. For family and property matters, the fee is usually shared equally between the two participants — $1,500 + GST each for up to 4 hours, or $2,250 + GST each for up to 8 hours. For workplace matters, the fee is typically paid entirely by the employer — employees do not pay. For commercial disputes, the arrangement is confirmed before proceeding. The initial consultation is always free.",
+ "How fees work depends on your dispute type. For family and property matters, the fee is usually shared equally between the two participants — $1,500 + GST each for a 3.5-hour session, or $2,250 + GST each for a 6.5-hour full-day session. For workplace matters, the fee is typically paid entirely by the employer — employees do not pay. For commercial disputes, the arrangement is confirmed before proceeding. The initial consultation is always free.",
  """
 <style>
 /* ── Dispute-type nav ──────────────────────────────────────────── */
@@ -494,14 +494,14 @@ build("our-fee-structure",
 
   <div class="fee-cards">
     <div class="fee-card">
-      <div class="fee-card-duration">Session up to 4 hours</div>
+      <div class="fee-card-duration">Session 3.5 hours</div>
       <div class="fee-card-price">$1,500 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
       <div class="fee-card-unit">per participant</div>
       <div class="fee-card-note"><strong>$3,000 + GST total</strong> when shared equally</div>
       <div class="fee-card-includes">Covers pre-mediation administration, preparation, and the scheduled session.</div>
     </div>
     <div class="fee-card">
-      <div class="fee-card-duration">Session up to 8 hours</div>
+      <div class="fee-card-duration">Session 6.5 hours</div>
       <div class="fee-card-price">$2,250 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
       <div class="fee-card-unit">per participant</div>
       <div class="fee-card-note"><strong>$4,500 + GST total</strong> when shared equally</div>
@@ -552,14 +552,14 @@ build("our-fee-structure",
 
   <div class="fee-cards">
     <div class="fee-card">
-      <div class="fee-card-duration">Session up to 4 hours</div>
+      <div class="fee-card-duration">Session 3.5 hours</div>
       <div class="fee-card-price">$3,000 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
       <div class="fee-card-unit">invoiced to the employer</div>
       <div class="fee-card-note">Suitable for <strong>straightforward two-party matters</strong> — most early-stage workplace disputes</div>
       <div class="fee-card-includes">Includes individual intake meetings, preparation, and the mediation session.</div>
     </div>
     <div class="fee-card">
-      <div class="fee-card-duration">Session up to 8 hours</div>
+      <div class="fee-card-duration">Session 6.5 hours</div>
       <div class="fee-card-price">$4,500 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
       <div class="fee-card-unit">invoiced to the employer</div>
       <div class="fee-card-note">Suitable for <strong>complex or entrenched disputes</strong> requiring a full day</div>
@@ -605,14 +605,14 @@ build("our-fee-structure",
 
   <div class="fee-cards">
     <div class="fee-card">
-      <div class="fee-card-duration">Session up to 4 hours</div>
+      <div class="fee-card-duration">Session 3.5 hours</div>
       <div class="fee-card-price">$3,000 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
       <div class="fee-card-unit">total — payment split confirmed upfront</div>
       <div class="fee-card-note">Suitable for <strong>focused disputes</strong> between two parties</div>
       <div class="fee-card-includes">Covers preparation, intake, and the scheduled session.</div>
     </div>
     <div class="fee-card">
-      <div class="fee-card-duration">Session up to 8 hours</div>
+      <div class="fee-card-duration">Session 6.5 hours</div>
       <div class="fee-card-price">$4,500 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
       <div class="fee-card-unit">total — payment split confirmed upfront</div>
       <div class="fee-card-note">Suitable for <strong>complex matters</strong> with multiple issues</div>
@@ -682,7 +682,7 @@ build("our-fee-structure",
     <div class="ast-row"><span>Your contribution</span><span>$495 + GST</span></div>
   </div>
 
-  <h3 style="margin-top:28px">Access contributions — session up to 3 hours</h3>
+  <h3 style="margin-top:28px">Access contributions — session 3.5 hours</h3>
   <table class="band-table">
     <thead><tr><th>Gross personal income</th><th>Indicative contribution</th></tr></thead>
     <tbody>
@@ -696,7 +696,7 @@ build("our-fee-structure",
   </table>
   <p class="band-note">Accessible financial resources, dependants and exceptional hardship may affect the final contribution.</p>
 
-  <h3>If the matter needs longer — up to 6 hours</h3>
+  <h3>If the matter needs longer — full day (6.5 hours)</h3>
   <p>Where complexity requires more time, eligible participants may be offered up to six hours. Duration is determined by the matter, not the income band.</p>
   <table class="band-table">
     <thead><tr><th>Gross personal income</th><th>Indicative 6-hour contribution</th></tr></thead>
@@ -738,7 +738,7 @@ build("our-fee-structure",
 </div>
 """,
  [("How much does mediation cost?",
-   "A session of up to 4 hours is $3,000 + GST total, usually $1,500 + GST per participant when shared equally. A session of up to 8 hours is $4,500 + GST total, usually $2,250 + GST per participant. The initial consultation is always free."),
+   "A half-day session (3.5 hours) is $3,000 + GST total, usually $1,500 + GST per participant when shared equally. A full-day session (6.5 hours) is $4,500 + GST total, usually $2,250 + GST per participant. The initial consultation is always free."),
   ("Is the initial consultation free?",
    "Yes, completely free with no obligation. It is how we assess your matter, explain your options, and give you an honest view of whether mediation is right for you."),
   ("Is the fee shared between participants?",
@@ -748,7 +748,7 @@ build("our-fee-structure",
   ("Are there any hidden fees?",
    "No. All fees are fixed and agreed upfront. If room hire, travel or additional mediation time may apply, we discuss the cost before it is incurred."),
   ("What is Access Mediation?",
-   "Access Mediation is a limited reduced-contribution pathway for eligible participants who would experience genuine difficulty paying the standard fee. Contributions are assessed individually based on personal income, assets, dependants and hardship circumstances, starting from $495 + GST per person for a 3-hour session."),
+   "Access Mediation is a limited reduced-contribution pathway for eligible participants who would experience genuine difficulty paying the standard fee. Contributions are assessed individually based on personal income, assets, dependants and hardship circumstances, starting from $495 + GST per person for a 3.5-hour session."),
   ("Can I qualify if the other participant earns more?",
    "Yes. Each participant is assessed individually. One participant's financial circumstances do not determine what the other pays."),
   ("Can both participants qualify for Access Mediation?",
