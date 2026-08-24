@@ -63,6 +63,15 @@ POSTS = [
  ("delaying-property-settlement","Property & finances","Can My Ex Delay Settlement?","Stalling tactics, time limits, disclosure duties, and how mediation forces progress."),
  ("co-parenting-mediation","Parenting","Co-Parenting Mediation","Resolving ongoing disputes over schedules, decisions and communication — and keeping kids first."),
  ("victorian-right-to-work-from-home","Workplace","Victoria's Right to Work From Home","What the new Victorian law means for employers and employees — and why mediation resolves disputes faster than a tribunal."),
+ # Access Mediation affordability cluster
+ ("cant-afford-mediation","Costs & fees","Can't Afford Mediation? Your Options in Australia","Free, subsidised, Legal Aid, and reduced-fee private — every realistic pathway if standard fees are out of reach."),
+ ("is-family-mediation-free-australia","Costs & fees","Is Family Mediation Free in Australia?","When mediation can be free, when it's subsidised, and what to do if neither option applies to you."),
+ ("low-cost-family-mediation-australia","Costs & fees","Low-Cost Family Mediation in Australia","FRCs, community FDR, Legal Aid, and reduced-fee private mediation compared on cost, wait time, and complexity."),
+ ("who-pays-mediation-one-person-earns-more","Costs & fees","Who Pays When One Person Earns More?","How individual assessment works — and why your partner's income doesn't determine your mediation fee."),
+ ("does-mediation-have-to-be-paid-50-50","Costs & fees","Does Mediation Have to Be Paid 50/50?","No — here's how fee arrangements actually work and when an unequal contribution is legitimate."),
+ ("asset-rich-cash-poor-mediation","Costs & fees","Asset Rich but Cash Poor: Can I Get Reduced-Fee Mediation?","Owning a home or super doesn't mean you have accessible cash — how financial capacity is really assessed."),
+ ("family-relationship-centre-vs-private-mediation","Family Mediation","Family Relationship Centre vs Private Mediation","An honest 10-factor comparison — when an FRC is the right call and when private mediation is worth it."),
+ ("legal-aid-vs-private-mediation","Family Mediation","Legal Aid vs Private Mediation","What Legal Aid covers, how it compares with private options, and what to do if you don't qualify."),
 ]
 
 ALL_CATS = ["All"] + sorted({cat for _,cat,_,_ in POSTS})
