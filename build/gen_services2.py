@@ -361,36 +361,36 @@ build("our-fee-structure",
 /* ── Dispute-type nav ──────────────────────────────────────────── */
 .dtype-nav{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 36px;padding:0;list-style:none}
 .dtype-nav a{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:100px;font-size:.93rem;font-weight:700;text-decoration:none;border:2px solid transparent;transition:background .15s,border-color .15s,color .15s}
-.dtype-nav a.dn-family{background:var(--sage-pale,#f1f5f1);color:var(--sage-deep,#1e6040);border-color:var(--sage-deep,#1e6040)}
-.dtype-nav a.dn-family:hover{background:var(--sage-deep,#1e6040);color:#fff}
-.dtype-nav a.dn-workplace{background:#eaf2ff;color:#1d4ed8;border-color:#2563eb}
-.dtype-nav a.dn-workplace:hover{background:#2563eb;color:#fff}
-.dtype-nav a.dn-commercial{background:#faf5eb;color:#92400e;border-color:#b45309}
-.dtype-nav a.dn-commercial:hover{background:#b45309;color:#fff}
-.dtype-nav a.dn-access{background:#fff;color:var(--ink-soft);border-color:var(--line,rgba(13,34,24,.2))}
-.dtype-nav a.dn-access:hover{border-color:var(--sage-deep,#1e6040);color:var(--sage-deep,#1e6040)}
+.dtype-nav a.dn-family{background:var(--sage,#1e6040);color:#fff;border-color:var(--sage,#1e6040)}
+.dtype-nav a.dn-family:hover{background:var(--sage-deep,#0d2218);border-color:var(--sage-deep,#0d2218)}
+.dtype-nav a.dn-workplace{background:var(--sand-deep,#e3ece4);color:var(--ink,#0d2218);border-color:var(--ink,#0d2218)}
+.dtype-nav a.dn-workplace:hover{background:var(--ink,#0d2218);color:#fff}
+.dtype-nav a.dn-commercial{background:var(--sand,#f1f5f1);color:var(--ink-soft,#3d5248);border-color:var(--ink-soft,#3d5248)}
+.dtype-nav a.dn-commercial:hover{background:var(--ink-soft,#3d5248);color:#fff}
+.dtype-nav a.dn-access{background:var(--cream,#f7faf7);color:var(--ink-soft,#3d5248);border-color:var(--line,rgba(13,34,24,.2))}
+.dtype-nav a.dn-access:hover{border-color:var(--sage,#1e6040);color:var(--sage,#1e6040)}
 .dtype-nav svg{width:16px;height:16px;flex-shrink:0}
 /* ── Section styling ───────────────────────────────────────────── */
 .fee-section{scroll-margin-top:80px;padding:40px 0 8px;border-top:2px solid var(--line,rgba(13,34,24,.12))}
 .fee-section:first-of-type{border-top:none;padding-top:0}
 .fee-section-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;border-radius:100px;padding:5px 14px;margin-bottom:14px}
-.fse-family{background:var(--sage-pale,#f1f5f1);color:var(--sage-deep,#1e6040)}
-.fse-workplace{background:#eaf2ff;color:#1d4ed8}
-.fse-commercial{background:#faf5eb;color:#92400e}
-.fse-access{background:#f5f0ff;color:#6d28d9}
+.fse-family{background:var(--sage,#1e6040);color:#fff}
+.fse-workplace{background:var(--sand-deep,#e3ece4);color:var(--ink,#0d2218)}
+.fse-commercial{background:var(--sand,#f1f5f1);color:var(--ink-soft,#3d5248)}
+.fse-access{background:var(--sage-light,#d8ead9);color:var(--sage,#1e6040)}
 .fee-section h2{margin:0 0 6px;font-size:1.55rem}
 .fee-section .section-intro{font-size:.97rem;color:var(--ink-soft);margin:0 0 24px;max-width:68ch;line-height:1.6}
 /* ── Who pays badge ────────────────────────────────────────────── */
 .who-pays-badge{display:inline-flex;align-items:center;gap:10px;border-radius:12px;padding:14px 20px;margin:0 0 24px;font-size:.93rem;line-height:1.45}
-.wpb-family{background:var(--sage-pale,#f1f5f1);border:1.5px solid var(--sage-deep,#1e6040)}
-.wpb-workplace{background:#eaf2ff;border:1.5px solid #2563eb}
-.wpb-commercial{background:#faf5eb;border:1.5px solid #b45309}
+.wpb-family{background:var(--sage-light,#d8ead9);border:1.5px solid var(--sage,#1e6040)}
+.wpb-workplace{background:var(--sand-deep,#e3ece4);border:2px solid var(--ink,#0d2218)}
+.wpb-commercial{background:var(--sand,#f1f5f1);border:1.5px solid var(--ink-soft,#3d5248)}
 .who-pays-badge strong{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px;opacity:.7}
 /* ── Fee cards ─────────────────────────────────────────────────── */
 .fee-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin:0 0 24px}
-.fee-card{background:#fff;border:1.5px solid var(--line,rgba(13,34,24,.14));border-radius:16px;padding:28px 26px}
+.fee-card{background:var(--cream,#f7faf7);border:1.5px solid var(--line,rgba(13,34,24,.14));border-radius:16px;padding:28px 26px}
 .fee-card-duration{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);margin-bottom:10px}
-.fee-card-price{font-size:2.5rem;font-weight:800;color:var(--sage-deep,#1e6040);line-height:1}
+.fee-card-price{font-size:2.5rem;font-weight:800;color:var(--sage,#1e6040);line-height:1}
 .fee-card-unit{font-size:.85rem;color:var(--ink-soft);margin:4px 0 12px}
 .fee-card-note{font-size:.88rem;color:var(--ink-soft);margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--line,rgba(13,34,24,.14))}
 .fee-card-note strong{color:var(--ink)}
@@ -399,13 +399,13 @@ build("our-fee-structure",
 .info-list{list-style:none;padding:0;margin:0 0 20px}
 .info-list li{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line,rgba(13,34,24,.09));font-size:.93rem;line-height:1.5}
 .info-list li:last-child{border-bottom:none}
-.info-list li::before{content:"✓";color:var(--sage-deep,#1e6040);font-weight:700;flex-shrink:0;margin-top:1px}
+.info-list li::before{content:"✓";color:var(--sage,#1e6040);font-weight:700;flex-shrink:0;margin-top:1px}
 /* ── Callout box ───────────────────────────────────────────────── */
 .fee-callout{border-radius:12px;padding:18px 22px;margin:20px 0;font-size:.9rem;line-height:1.6}
-.fc-green{background:var(--sage-pale,#f1f5f1);border-left:4px solid var(--sage-deep,#1e6040)}
-.fc-blue{background:#eaf2ff;border-left:4px solid #2563eb}
-.fc-amber{background:#faf5eb;border-left:4px solid #b45309}
-.fc-purple{background:#f5f0ff;border-left:4px solid #6d28d9}
+.fc-green{background:var(--sage-light,#d8ead9);border-left:4px solid var(--sage,#1e6040)}
+.fc-blue{background:var(--sand-deep,#e3ece4);border-left:4px solid var(--ink,#0d2218)}
+.fc-amber{background:var(--sand,#f1f5f1);border-left:4px solid var(--ink-soft,#3d5248)}
+.fc-purple{background:var(--sage-light,#d8ead9);border-left:4px solid var(--sage,#1e6040)}
 /* ── Access strip (inline) ─────────────────────────────────────── */
 .access-strip{background:var(--sage-deep,#1e6040);color:#fff;border-radius:14px;padding:26px 28px 22px;margin:28px 0 0}
 .access-strip h2,.access-strip h3{color:#fff;margin:0 0 8px}
@@ -488,7 +488,7 @@ build("our-fee-structure",
   <p class="section-intro">Covers parenting arrangements, property settlement, superannuation splitting, de facto disputes, estate matters, and separation agreements. The standard fee is divided equally between the two participants — you each pay your own share.</p>
 
   <div class="who-pays-badge wpb-family">
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1e6040" stroke-width="1.8"><circle cx="11" cy="8" r="3.5"/><path d="M4.5 19c0-3.59 2.91-6.5 6.5-6.5s6.5 2.91 6.5 6.5"/></svg>
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--sage,#1e6040)" stroke-width="1.8"><circle cx="11" cy="8" r="3.5"/><path d="M4.5 19c0-3.59 2.91-6.5 6.5-6.5s6.5 2.91 6.5 6.5"/></svg>
     <div><strong>Who pays</strong>The fee is shared equally between the two participants. A 50/50 split is standard — each person pays their own share. You may agree to a different split, but no arrangement gives either party greater influence.</div>
   </div>
 
@@ -546,7 +546,7 @@ build("our-fee-structure",
   <p class="section-intro">Covers conflicts between employees, manager-staff disputes, team breakdowns, bullying or harassment complaints, and employment relationship difficulties. The employer or organisation arranges and funds the mediation — employees do not pay to participate.</p>
 
   <div class="who-pays-badge wpb-workplace">
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1d4ed8" stroke-width="1.8"><rect x="3" y="7" width="16" height="11" rx="1.5"/><path d="M7 7V5.5A4.5 4.5 0 0115 7"/></svg>
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--ink,#0d2218)" stroke-width="1.8"><rect x="3" y="7" width="16" height="11" rx="1.5"/><path d="M7 7V5.5A4.5 4.5 0 0115 7"/></svg>
     <div><strong>Who pays</strong>The employer or organisation pays. A single invoice is issued to the business. Employees participating in the mediation are not expected to contribute anything toward the cost.</div>
   </div>
 
@@ -599,7 +599,7 @@ build("our-fee-structure",
   <p class="section-intro">Covers business partner disputes, contract disagreements, shareholder matters, neighbour disputes, estate and inheritance conflicts, and other civil matters not covered above. The same fee schedule applies — who pays is agreed before you proceed.</p>
 
   <div class="who-pays-badge wpb-commercial">
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#92400e" stroke-width="1.8"><path d="M4 18V8l7-5 7 5v10"/><path d="M9 18v-5h4v5"/></svg>
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--ink-soft,#3d5248)" stroke-width="1.8"><path d="M4 18V8l7-5 7 5v10"/><path d="M9 18v-5h4v5"/></svg>
     <div><strong>Who pays</strong>Arrangements vary by matter. The fee may be split equally, weighted by agreement, or paid by one party. We confirm the payment structure at the free consultation — before anything is booked.</div>
   </div>
 
