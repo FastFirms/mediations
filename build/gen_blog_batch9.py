@@ -5,232 +5,263 @@ sys.path.insert(0, os.path.dirname(__file__))
 from gen_blog import post, inline_cta, callout, key_takeaway
 from authority_sources import cite
 
-# ---- HOW MUCH DOES MEDIATION COST (substantially rewritten 2026-08) ----
+# ---- HOW MUCH DOES MEDIATION COST (all dispute types, rewritten 2026-08) ----
 post("how-much-does-mediation-cost",
  "How Much Does Mediation Cost in Australia? (2026 Guide)",
- "How much does mediation cost in 2026? Mediations Australia's full fee schedule, Access Mediation reduced-fee pathway, free FRC options, and how all of it compares to court.",
+ "How much does mediation cost in 2026? Family, workplace, commercial, estate, and property dispute fees \u2014 Mediations Australia's full schedule and how all types compare to court.",
  "Costs &amp; fees",
- "How Much Does Mediation Cost in Australia? <em>2026 Full Guide</em>",
- "Mediation costs far less than most people expect \u2014 and a fraction of going to court. This guide covers the full picture: Mediations Australia's fee schedule, our Access Mediation reduced-fee pathway for eligible participants, free government-funded options, and how everything stacks up against the cost of litigation.",
- [("our-fees",          "Mediations Australia's fees"),
-  ("access-mediation",  "Access Mediation \u2014 reduced-fee pathway"),
-  ("all-options",       "All your options compared"),
-  ("what-affects",      "What affects the cost?"),
-  ("who-pays",          "Who pays for mediation?"),
-  ("cant-afford",       "What if standard fees are out of reach?"),
-  ("vs-court",          "How mediation compares to court"),
-  ("value",             "Why it's worth it")],
+ "How Much Does Mediation Cost in Australia? <em>2026 Guide by Dispute Type</em>",
+ "Mediation costs depend on what kind of dispute you're resolving \u2014 family separation, a workplace conflict, a commercial disagreement, an estate dispute, or a property matter each has its own context and fee range. This guide covers all of them: Mediations Australia's fees for each type, the Access Mediation reduced-fee pathway for family matters, free government-funded options, and how every option compares to going to court.",
+ [("at-a-glance",        "Fees at a glance \u2014 all dispute types"),
+  ("family-mediation",   "Family &amp; separation mediation"),
+  ("workplace-mediation","Workplace &amp; employment mediation"),
+  ("commercial-mediation","Commercial &amp; business mediation"),
+  ("estate-mediation",   "Estate &amp; wills disputes"),
+  ("property-mediation", "Property &amp; real estate disputes"),
+  ("access-mediation",   "Access Mediation \u2014 reduced-fee pathway"),
+  ("vs-court",           "How mediation compares to court"),
+  ("value",              "Why mediation is worth it")],
  key_takeaway(
-     "Mediations Australia charges $1,500 + GST per person for a 3-hour session "
-     "and $2,250 + GST per person for a full day. Eligible participants may qualify "
-     "for our Access Mediation reduced-fee pathway, with contributions assessed from "
-     "$495 + GST per person. Government-funded Family Relationship Centres offer free "
-     "or low-cost FDR for parenting matters. Either way, mediation costs a fraction of "
-     "what a contested court case runs \u2014 typically tens of thousands per side."
+     "Mediation fees depend on the dispute type. Family and separation mediation "
+     "typically costs $1,500\u2013$2,250 + GST per person per session; workplace and "
+     "commercial matters are similar. Estate and property disputes are typically "
+     "quoted by complexity. In all cases, mediation costs a fraction of what "
+     "litigation runs \u2014 usually settled in weeks, not years."
  )
  + f"""
-<h2 id="our-fees">Mediations Australia's Fees</h2>
-<p>We publish our fees openly so you can plan with certainty. All sessions include
-pre-mediation intake calls, the mediation itself, and a section 60I certificate
-where required for parenting matters. There are no hidden extras.</p>
-<figure class="tbl"><table><caption>Mediations Australia standard fee schedule (2026, excl. GST)</caption>
-<thead><tr><th>Session type</th><th>Per person</th><th>Both parties total</th><th>Suits</th></tr></thead>
+<h2 id="at-a-glance">Fees at a Glance \u2014 All Dispute Types</h2>
+<p>Mediations Australia handles family separation, workplace conflict, commercial
+disputes, estate and wills disagreements, and property matters. Fees are fixed and
+quoted before any session begins. Jump to the section that matches your dispute
+using the links in the table, or read the full guide below.</p>
+<figure class="tbl"><table><caption>Mediations Australia \u2014 indicative fee ranges by dispute type (2026, per person, excl. GST)</caption>
+<thead><tr><th>Dispute type</th><th>3-hour session</th><th>Full day</th><th>Typical timeframe to resolve</th></tr></thead>
 <tbody>
-<tr><td>3-hour session</td><td>$1,500 + GST</td><td>$3,000 + GST</td><td>Parenting matters, focused property issues, initial sessions</td></tr>
-<tr><td>Full day (6 hours)</td><td>$2,250 + GST</td><td>$4,500 + GST</td><td>Combined parenting and property; complex matters</td></tr>
-<tr><td>Additional time (per hour)</td><td>$400 + GST</td><td>$800 + GST</td><td>Where the matter runs longer than scheduled</td></tr>
-<tr><td>Section 60I certificate</td><td>Included</td><td>Included</td><td>Parenting matters where court filing may follow</td></tr>
-<tr><td>Agreement drafting</td><td colspan="3">By arrangement \u2014 ask at consultation</td></tr>
+<tr><td><a href="#family-mediation">Family &amp; separation</a></td><td>$1,500</td><td>$2,250</td><td>1 day; 1\u20132 weeks to book</td></tr>
+<tr><td><a href="#workplace-mediation">Workplace &amp; employment</a></td><td>$1,500\u2013$2,000</td><td>$2,250\u2013$3,500</td><td>1 day; often bookable within days</td></tr>
+<tr><td><a href="#commercial-mediation">Commercial &amp; business</a></td><td>from $2,000</td><td>from $3,500</td><td>1\u20132 days</td></tr>
+<tr><td><a href="#estate-mediation">Estate &amp; wills</a></td><td>from $1,500 pp</td><td>from $2,500 pp</td><td>1\u20132 days</td></tr>
+<tr><td><a href="#property-mediation">Property &amp; real estate</a></td><td>from $1,500 pp</td><td>from $2,500 pp</td><td>Half day to full day</td></tr>
 </tbody></table></figure>
-<p>Fees are fixed, not hourly \u2014 you know your cost before the session begins.
+<p>All sessions include pre-mediation intake calls and, where relevant, a section 60I
+certificate or written agreement summary.
 <a href="/our-fee-structure/">Full fee schedule with all scenarios \u2192</a></p>
+
+<h2 id="family-mediation">Family &amp; Separation Mediation</h2>
+<p>Family mediation covers parenting arrangements, property settlement, consent
+orders, and the full range of post-separation decisions. It is the area where
+government-subsidised alternatives also exist \u2014 making it the most cost-variable
+type of mediation in Australia.</p>
+<figure class="tbl"><table><caption>Family mediation \u2014 Mediations Australia fee schedule (excl. GST)</caption>
+<thead><tr><th>Session</th><th>Per person</th><th>Both parties</th><th>Suits</th></tr></thead>
+<tbody>
+<tr><td>3-hour session</td><td>$1,500</td><td>$3,000</td><td>Parenting matters; focused property issues</td></tr>
+<tr><td>Full day</td><td>$2,250</td><td>$4,500</td><td>Combined parenting and property; complex matters</td></tr>
+<tr><td>Additional time / hr</td><td>$400</td><td>$800</td><td>Overruns</td></tr>
+<tr><td>Section 60I certificate</td><td colspan="3">Included \u2014 required for court filing on parenting matters</td></tr>
+</tbody></table></figure>
+<p>Government-funded {cite("frc")} (Family Relationship Centres) offer free or
+low-cost FDR for parenting matters \u2014 useful for simpler arrangements, though
+private mediation handles complexity and combined property/parenting matters
+that FRCs typically can't. Our <a href="#access-mediation">Access Mediation</a>
+pathway offers assessed reduced fees from $495 + GST per person for eligible
+participants.</p>
+<p>See: <a href="/family-law-mediation/">Family law mediation</a> \u00b7
+<a href="/cost-of-divorce-in-australia/">Cost of divorce</a> \u00b7
+<a href="/consent-orders-explained/">Consent orders</a></p>
 """
  + inline_cta(
-     "Fixed fees, no surprises. Get a clear picture of what your mediation will cost.",
-     btn="Book a free consultation"
+     "Separating? Get a clear fixed quote before your first session.",
+     btn="Book a family mediation consultation"
  )
  + f"""
-<h2 id="access-mediation">Access Mediation \u2014 Our Reduced-Fee Pathway</h2>
-<p>Standard fees are not the only option at Mediations Australia. Our
-<a href="/access-mediation/">Access Mediation</a> pathway offers individually
-assessed reduced contributions for eligible participants who cannot comfortably
-pay standard rates.</p>
-<p>Under Access Mediation, each participant's contribution is assessed separately
-based on their own income, accessible assets, number of dependants, and
-circumstances \u2014 not their former partner's financial position. You may qualify
-for a reduced contribution even if your partner pays the standard rate. Neither
-party is told the other's contribution or the financial basis behind it.</p>
+<h2 id="workplace-mediation">Workplace &amp; Employment Mediation</h2>
+<p>Workplace mediation resolves conflicts between employees and employers, between
+colleagues, and in cases involving bullying, harassment, unfair dismissal, or
+breakdown in a working relationship. It is most often initiated by the employer
+\u2014 but employees can engage Mediations Australia independently.</p>
+<figure class="tbl"><table><caption>Workplace mediation \u2014 indicative fees (excl. GST)</caption>
+<thead><tr><th>Engagement type</th><th>Indicative fee</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>2-party dispute (half day)</td><td>from $1,500 per person</td><td>Interpersonal breakdown, team conflict</td></tr>
+<tr><td>2-party dispute (full day)</td><td>from $2,250 per person</td><td>Bullying, harassment, unfair dismissal matters</td></tr>
+<tr><td>Multi-party / team mediation</td><td>Quoted by scope</td><td>More than 2 parties; complex team dynamics</td></tr>
+<tr><td>Employer-funded sessions</td><td>Full session rate</td><td>Employer pays; employee outlay is nil</td></tr>
+</tbody></table></figure>
+<p>The <a href="https://www.fairwork.gov.au/about-us/what-we-do/providing-dispute-resolution" target="_blank" rel="noopener">Fair Work Commission</a> provides a free conciliation service for unfair dismissal
+and general protections claims \u2014 useful, but limited in scope and outcome
+flexibility. Private workplace mediation gives employers and employees more control
+over timing, outcome, and confidentiality.</p>
+<p>See: <a href="/workplace-bullying-harassment-mediation/">Workplace bullying &amp; harassment</a> \u00b7
+<a href="/unfair-dismissal-termination-mediation/">Unfair dismissal mediation</a> \u00b7
+<a href="/is-mediation-right-for-workplace-dispute/">Is mediation right for your dispute?</a></p>
+"""
+ + inline_cta(
+     "Workplace conflict rarely resolves itself. Get expert guidance on the right process.",
+     btn="Enquire about workplace mediation"
+ )
+ + f"""
+<h2 id="commercial-mediation">Commercial &amp; Business Mediation</h2>
+<p>Commercial mediation covers contract disputes, partnership disagreements, supplier
+or customer conflicts, franchise disputes, and business relationship breakdowns.
+Fees reflect the commercial complexity involved and are typically higher than
+family matters \u2014 but still a fraction of commercial litigation costs.</p>
+<figure class="tbl"><table><caption>Commercial mediation \u2014 indicative fees (excl. GST)</caption>
+<thead><tr><th>Matter type</th><th>Indicative fee</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Standard commercial dispute</td><td>from $2,000 per person</td><td>Contract, supplier, customer conflicts</td></tr>
+<tr><td>Complex / multi-party commercial</td><td>from $3,500 per person per day</td><td>Partnership breakdown, franchise, IP</td></tr>
+<tr><td>Commercial lease dispute</td><td>from $1,500 per person</td><td>Landlord/tenant; retail and commercial leases</td></tr>
+</tbody></table></figure>
+<p>Commercial litigation \u2014 even a relatively simple contract dispute \u2014 routinely
+costs $50,000\u2013$200,000+ per side before it reaches a hearing. {cite("fcfcoa")}
+data shows the median commercial dispute running 18\u201324 months. Mediation
+resolves the same matter in a day, with a binding outcome both parties craft.</p>
+<p>See: <a href="/commercial-mediation/">Commercial mediation overview</a> \u00b7
+<a href="/commercial-dispute-guide/">Commercial dispute guide</a> \u00b7
+<a href="/commercial-lease-dispute-mediation-australia/">Commercial lease disputes</a></p>
+"""
+ + inline_cta(
+     "Commercial disputes get expensive fast. Talk to us before costs escalate.",
+     btn="Enquire about commercial mediation"
+ )
+ + f"""
+<h2 id="estate-mediation">Estate &amp; Wills Disputes</h2>
+<p>Estate disputes \u2014 contesting a will, challenging the distribution of an estate,
+or resolving executor conflicts \u2014 are emotionally charged and, in court, can
+consume a significant portion of the estate itself in legal fees. Mediation is
+particularly effective here because the parties are usually family members who will
+remain connected long after the dispute ends.</p>
+<figure class="tbl"><table><caption>Estate mediation \u2014 indicative fees (excl. GST)</caption>
+<thead><tr><th>Matter type</th><th>Indicative fee</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Will dispute (2 parties)</td><td>from $1,500 per person</td><td>Contesting validity, family provision claims</td></tr>
+<tr><td>Estate distribution (multi-party)</td><td>from $2,500 per person per day</td><td>Multiple beneficiaries; complex assets</td></tr>
+<tr><td>Executor conflict</td><td>from $1,500 per person</td><td>Executor vs beneficiary disagreements</td></tr>
+</tbody></table></figure>
+<p>Contested probate proceedings and family provision claims under the Succession Act
+can run to six figures in legal costs \u2014 often more than the parties would have
+received had they simply mediated. The {cite("ag_fdr")} notes that FDR is effective
+across a wide range of civil disputes including estate matters.</p>
+<p>See: <a href="/estate-dispute-mediation/">Estate dispute mediation</a> \u00b7
+<a href="/contesting-a-will/">Contesting a will</a> \u00b7
+<a href="/elder-mediation/">Elder mediation</a></p>
+"""
+ + inline_cta(
+     "An estate dispute can consume what you're trying to protect. Talk to us first.",
+     btn="Enquire about estate mediation"
+ )
+ + """
+<h2 id="property-mediation">Property &amp; Real Estate Disputes</h2>
+<p>Property disputes span strata and neighbour conflicts, construction
+disagreements, real estate transaction disputes, and boundary or easement
+issues. These matters often involve people who will continue to have an ongoing
+relationship \u2014 making a negotiated resolution far more durable than a court order.</p>
+<figure class="tbl"><table><caption>Property mediation \u2014 indicative fees (excl. GST)</caption>
+<thead><tr><th>Matter type</th><th>Indicative fee</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Neighbour / strata dispute</td><td>from $1,500 per person</td><td>Noise, boundaries, common property</td></tr>
+<tr><td>Real estate / construction</td><td>from $1,500\u2013$2,500 per person</td><td>Contract disputes, defects, delays</td></tr>
+<tr><td>Co-owner dispute</td><td>from $1,500 per person</td><td>Sale, renovation, cost sharing</td></tr>
+</tbody></table></figure>
+<p>Many property disputes can also be brought before VCAT or state tribunals at
+low cost \u2014 but tribunal proceedings are formal, adversarial, and create a public
+record. Private mediation resolves the same matter confidentially, usually in a
+single session.</p>
+<p>See: <a href="/real-estate-mediation/">Real estate mediation</a> \u00b7
+<a href="/strata-neighbour-dispute-mediation/">Strata &amp; neighbour disputes</a> \u00b7
+<a href="/real-estate-construction-disputes/">Construction disputes</a></p>
+"""
+ + inline_cta(
+     "Property disputes don't have to go to tribunal. See how mediation works.",
+     btn="Enquire about property mediation"
+ )
+ + f"""
+<h2 id="access-mediation">Access Mediation \u2014 Reduced-Fee Pathway for Family Matters</h2>
+<p>For family and separation matters, Mediations Australia offers
+<a href="/access-mediation/">Access Mediation</a> \u2014 individually assessed
+reduced contributions for eligible participants who cannot comfortably pay
+standard rates. Each participant is assessed on their own income, accessible
+assets, dependants, and circumstances \u2014 not their former partner's financial
+position. Contributions start from $495 + GST per person. Assessment details
+are never shared with the other party.</p>
 <figure class="tbl"><table><caption>Access Mediation contribution bands (indicative, per person, excl. GST)</caption>
-<thead><tr><th>Income band</th><th>3-hour session</th><th>Full day</th></tr></thead>
+<thead><tr><th>Band</th><th>3-hour session</th><th>Full day</th></tr></thead>
 <tbody>
 <tr><td>Band A (lowest)</td><td>from $495</td><td>from $745</td></tr>
 <tr><td>Band B</td><td>from $745</td><td>from $995</td></tr>
 <tr><td>Band C</td><td>from $995</td><td>from $1,350</td></tr>
 <tr><td>Standard rate</td><td>$1,500</td><td>$2,250</td></tr>
 </tbody></table></figure>
-<p>Assessment also considers accessible assets (not just property you own on paper),
-dependants, concession card status, and genuine hardship. The same accredited
-mediators deliver every Access Mediation session \u2014 the reduced contribution
-reflects your financial capacity, not the quality of the service.</p>
-<p>{cite("ag_fdr")} provides context on registered FDR providers across Australia,
-including the distinction between government-funded and private services.</p>
+<p>The same accredited mediators deliver every Access Mediation session.
+See also: <a href="/cant-afford-mediation/">can't afford mediation?</a> and
+<a href="/is-family-mediation-free-australia/">is family mediation free?</a></p>
 """
  + inline_cta(
-     "Think you might qualify? The indicative calculator takes 60 seconds.",
+     "Check whether you qualify for a reduced contribution \u2014 the calculator takes 60 seconds.",
      btn="Check your Access Mediation contribution"
  )
  + f"""
-<h2 id="all-options">All Your Options Compared</h2>
-<p>Australia's family mediation landscape covers a spectrum from free to full-price.
-Here's an honest comparison so you can choose what fits your situation.</p>
-<figure class="tbl"><table><caption>Family mediation options in Australia \u2014 2026 comparison</caption>
-<thead><tr><th>Option</th><th>Typical cost pp</th><th>Wait time</th><th>Complexity handled</th><th>Mediator choice</th></tr></thead>
+<h2 id="vs-court">How Mediation Compares to Court \u2014 Across All Dispute Types</h2>
+<p>Regardless of dispute type, the same fundamental comparison holds. Courts are
+expensive, slow, adversarial, and public. Mediation is fast, private, and leaves
+the outcome in your hands. The figures differ by matter, but the direction never does.</p>
+<figure class="tbl"><table><caption>Mediation vs court \u2014 indicative comparison by dispute type</caption>
+<thead><tr><th>Dispute type</th><th>Mediation cost pp</th><th>Litigation cost per side</th><th>Mediation timeframe</th></tr></thead>
 <tbody>
-<tr>
-  <td><strong>Mediations Australia</strong> (standard)</td>
-  <td>$1,500\u2013$2,250 + GST</td>
-  <td>1\u20132 weeks</td>
-  <td>Full range incl. property</td>
-  <td>Yes \u2014 specialist accredited</td>
-</tr>
-<tr>
-  <td><strong>Access Mediation</strong> (assessed)</td>
-  <td>from $495 + GST</td>
-  <td>1\u20132 weeks</td>
-  <td>Full range incl. property</td>
-  <td>Yes \u2014 same mediators</td>
-</tr>
-<tr>
-  <td>Family Relationship Centre (FRC)</td>
-  <td>Free to low-cost</td>
-  <td>Often weeks\u2013months</td>
-  <td>Parenting focus; simpler matters</td>
-  <td>No \u2014 assigned</td>
-</tr>
-<tr>
-  <td>{cite("legal_aid")}</td>
-  <td>Free if eligible</td>
-  <td>Variable</td>
-  <td>Varies by state</td>
-  <td>No</td>
-</tr>
-<tr>
-  <td>Contested court case</td>
-  <td>$30,000\u2013$100,000+</td>
-  <td>1\u20133 years</td>
-  <td>All matters</td>
-  <td>No \u2014 judge assigned</td>
-</tr>
+<tr><td>Family / separation</td><td>from $495\u2013$2,250 + GST</td><td>$30,000\u2013$100,000+</td><td>Weeks</td></tr>
+<tr><td>Workplace</td><td>from $1,500 + GST</td><td>$20,000\u2013$80,000+</td><td>Days to weeks</td></tr>
+<tr><td>Commercial</td><td>from $2,000 + GST</td><td>$50,000\u2013$200,000+</td><td>Days to weeks</td></tr>
+<tr><td>Estate / wills</td><td>from $1,500 + GST</td><td>$40,000\u2013$150,000+</td><td>Days to weeks</td></tr>
+<tr><td>Property</td><td>from $1,500 + GST</td><td>$10,000\u2013$60,000+</td><td>Half day to days</td></tr>
 </tbody></table></figure>
-<p>Court cost ranges are indicative only. See the {cite("fcfcoa_fees")} for current
-filing fees, which are in addition to legal representation costs.</p>
+<p>Court cost ranges are indicative and vary significantly by complexity and
+jurisdiction. See {cite("fcfcoa_fees")} for current Family Court filing fees as
+a benchmark for family matters.</p>
 
-<h2 id="what-affects">What Affects the Cost?</h2>
-<ul>
-  <li><strong>Session length</strong> \u2014 3-hour vs full-day; most property matters benefit from a full day.</li>
-  <li><strong>Complexity</strong> \u2014 a parenting arrangement is simpler than a combined property and parenting dispute involving a business.</li>
-  <li><strong>Number of sessions</strong> \u2014 most matters resolve in one session; complex matters occasionally need two.</li>
-  <li><strong>Online vs in person</strong> \u2014 <a href="/online-mediation-australia/">online mediation</a> is available and costs the same; it can reduce your travel time.</li>
-  <li><strong>Lawyers attending</strong> \u2014 you don't need a lawyer in the room, but you can bring one. Their cost is separate.</li>
-  <li><strong>Formalising the agreement</strong> \u2014 <a href="/consent-orders-explained/">consent orders</a> are an additional step that makes your agreement binding and enforceable.</li>
-</ul>
-
-<h2 id="who-pays">Who Pays for Mediation?</h2>
-<p>In standard private mediation each participant pays their own per-person fee \u2014
-which is why the fee is quoted per person rather than as a single total. There is no
-rule requiring a 50/50 split; you can agree any arrangement.</p>
-<p>Under Access Mediation, each participant is assessed individually and pays their
-own assessed contribution independently. You do not need your former partner's
-agreement to apply for a reduced contribution \u2014 and they will not be told your
-financial details or contribution level.</p>
-<p>See <a href="/who-pays-mediation-one-person-earns-more/">who pays when one person
-earns more</a> and <a href="/does-mediation-have-to-be-paid-50-50/">does mediation
-have to be paid 50/50</a> for a full explanation.</p>
-"""
- + callout(
-     "Your fee is private",
-     "Under Access Mediation, your contribution and the financial basis for it are "
-     "never shared with the other participant. Two people in the same session can pay "
-     "different amounts without either knowing what the other contributes."
- )
- + f"""
-<h2 id="cant-afford">What If Standard Fees Are Out of Reach?</h2>
-<p>Standard private mediation fees are not the only option. In order of cost:</p>
-<ol>
-  <li><strong>Access Mediation</strong> \u2014 our own reduced-fee pathway. Assessed individually from $495 + GST per person. Same mediators, same quality.
-      <a href="/access-mediation/">Check your indicative contribution \u2192</a></li>
-  <li><strong>Family Relationship Centres</strong> \u2014 government-funded FDR, free or low-cost. Best for parenting matters.
-      {cite("frc")} lists centres near you.</li>
-  <li><strong>Legal Aid</strong> \u2014 free for eligible people on lower incomes who pass a means and merit test.
-      {cite("legal_aid")} covers all states.</li>
-</ol>
-<p>See <a href="/cant-afford-mediation/">can't afford mediation? Your options in Australia</a>
-and <a href="/is-family-mediation-free-australia/">is family mediation free?</a> for
-a full breakdown of each pathway.</p>
-
-<h2 id="vs-court">How Mediation Compares to Court</h2>
-<p>This is the comparison that matters. A contested family court case can cost each
-party $30,000\u2013$100,000 or more in legal fees alone, over one to three years, in a
-public process where a judge \u2014 not you \u2014 makes the decisions. Mediation resolves
-the same dispute for a few thousand dollars in weeks, privately, with you in
-control of the outcome.</p>
-<figure class="tbl"><table><caption>Mediation vs a contested court case</caption>
-<thead><tr><th></th><th>Mediation</th><th>Contested court</th></tr></thead>
-<tbody>
-<tr><td>Cost</td><td>$1,500\u2013$2,250 per person (or less under Access Mediation)</td><td>$30,000\u2013$100,000+ per side</td></tr>
-<tr><td>Timeframe</td><td>Weeks</td><td>1\u20133 years</td></tr>
-<tr><td>Who decides</td><td>You and your former partner</td><td>A judge</td></tr>
-<tr><td>Privacy</td><td>Private and confidential</td><td>Public court process</td></tr>
-<tr><td>Co-parenting relationship</td><td>Preserved</td><td>Often damaged</td></tr>
-</tbody></table></figure>
-<p><a href="/cost-of-divorce-in-australia/">See the full cost of divorce breakdown \u2192</a></p>
-"""
- + inline_cta(
-     "There's rarely a good reason to go straight to court. Find out what mediation would cost for your matter.",
-     btn="Book a free consultation"
- )
- + """
-<h2 id="value">Why It's Worth It</h2>
-<p>Beyond the numbers, mediation delivers what litigation can't: speed, privacy,
-control over the outcome, and a co-parenting relationship that survives the process.
-The money you save stays with your family. The time you save goes back to your life.
-And the agreement you reach is one you both made \u2014 which means you're both more
-likely to keep it.</p>
-<p>We're nationally accredited mediators who handle the full range of family and
-property matters. Fixed fees. Transparent process. Access Mediation available for
-eligible participants. <a href="/what-is-mediation-in-family-law/">See how mediation
-works \u2192</a></p>
+<h2 id="value">Why Mediation Is Worth It \u2014 for Any Dispute</h2>
+<p>Across every dispute type, mediation delivers the same core advantage over
+litigation: you stay in control of the outcome. A court imposes a decision;
+mediation produces an agreement. Agreements reached through mediation have a
+far higher voluntary compliance rate than court orders, because both parties
+had a hand in making them.</p>
+<p>The other constants: mediation is confidential (no public record), typically
+resolved in days rather than years, and preserves whatever ongoing relationship
+exists \u2014 whether that's a co-parenting arrangement, a business partnership, or
+a neighbour you'll see every day. Mediations Australia handles all dispute types
+with nationally accredited mediators, fixed fees, and transparent process.
+<a href="/what-is-mediation-in-family-law/">How mediation works \u2192</a></p>
 """
  ,
- [("How much does family mediation cost in Australia?",
-   "Mediations Australia charges $1,500 + GST per person for a 3-hour session and "
-   "$2,250 + GST per person for a full day. Eligible participants may qualify for "
-   "Access Mediation, with assessed contributions from $495 + GST per person. "
-   "Government-funded Family Relationship Centres are free or low-cost for parenting matters."),
-  ("What is Access Mediation?",
-   "Access Mediation is Mediations Australia's reduced-fee pathway for eligible "
-   "participants. Each person's contribution is assessed individually based on their "
-   "income, accessible assets, dependants, and circumstances. Contributions start "
-   "from $495 + GST per person. Assessment details are private."),
-  ("Who pays for mediation?",
-   "In standard private mediation each participant pays their own per-person fee. "
-   "Under Access Mediation each participant is assessed and pays independently. "
-   "There is no rule requiring a 50/50 split."),
-  ("Is there free family mediation in Australia?",
-   "Yes. Government-funded Family Relationship Centres offer free or low-cost FDR, "
-   "primarily for parenting matters. Legal Aid may also fund participation for "
-   "eligible people. Access Mediation is not free but offers assessed reduced fees."),
-  ("Is mediation cheaper than going to court?",
-   "Substantially. Mediation costs $1,500\u2013$2,250 per person (or less under Access "
-   "Mediation) versus $30,000\u2013$100,000+ per side in a contested court case. "
-   "Mediation resolves matters in weeks; litigation takes one to three years.")],
- [("access-mediation",                        "Access Mediation"),
-  ("cant-afford-mediation",                   "Can't Afford Mediation?"),
-  ("our-fee-structure",                       "Our Fee Structure"),
-  ("cost-of-divorce-in-australia",            "Cost of Divorce"),
-  ("family-law-cost-estimator",               "Cost Estimator"),
-  ("who-pays-mediation-one-person-earns-more","Who Pays When One Earns More?")],
- read_min=9)
+ [("How much does mediation cost in Australia?",
+   "It depends on the dispute type. Family mediation at Mediations Australia costs "
+   "$1,500\u2013$2,250 + GST per person per session; workplace and commercial disputes "
+   "are similar or higher depending on complexity. Estate and property mediation "
+   "starts from $1,500 per person. All are a small fraction of court costs."),
+  ("Does mediation cost the same for every type of dispute?",
+   "No. Commercial and multi-party disputes typically cost more than two-party "
+   "family or property matters because of added complexity. Family mediation also "
+   "has a reduced-fee Access Mediation pathway not available for other dispute types."),
+  ("Is there a cheaper option for family mediation?",
+   "Yes \u2014 two options. Government-funded Family Relationship Centres offer free "
+   "or low-cost FDR for parenting matters. Mediations Australia's Access Mediation "
+   "pathway offers assessed contributions from $495 + GST per person for eligible "
+   "participants across all family matters including property."),
+  ("Who pays for workplace mediation?",
+   "Most workplace mediation is funded by the employer \u2014 employees typically pay "
+   "nothing. Where both parties engage independently, costs are negotiated. Fair "
+   "Work Commission conciliation is free but limited in scope."),
+  ("Is mediation cheaper than court for commercial disputes?",
+   "Substantially. Commercial litigation commonly costs $50,000\u2013$200,000+ per "
+   "side over 18\u201324 months. Commercial mediation typically costs $2,000\u2013$3,500 "
+   "per person and resolves in a single session.")],
+ [("commercial-mediation",           "Commercial Mediation"),
+  ("workplace-bullying-harassment-mediation", "Workplace Mediation"),
+  ("estate-dispute-mediation",       "Estate Disputes"),
+  ("access-mediation",               "Access Mediation"),
+  ("real-estate-mediation",          "Property Mediation"),
+  ("cost-of-divorce-in-australia",   "Cost of Divorce")],
+ read_min=12)
 print("how-much-does-mediation-cost built")
 
 # ---- ARBITRATION IN FAMILY LAW (absorbs 1) ----
