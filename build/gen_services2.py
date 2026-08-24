@@ -447,7 +447,7 @@ build("our-fee-structure",
     <div class="fee-card-includes">Suitable where more time is appropriate because of the number or complexity of issues.</div>
   </div>
 </div>
-<p class="fee-share-note">A 50/50 division is common, but not compulsory. Participants may agree to divide the fee differently. Paying a larger share does not give a participant greater influence over the mediator or outcome.</p>
+<p class="fee-share-note"><strong>Family and property matters:</strong> a 50/50 split between the two participants is the most common arrangement. Participants may agree to divide the fee differently — paying a larger share does not give a participant greater influence over the mediator or outcome.<br><br><strong>Workplace matters:</strong> the fee is typically paid by the employer or organisation, not divided between employees. A single invoice is issued to the business, and employees do not need to fund their own participation.<br><br><strong>Commercial matters:</strong> arrangements vary — the fee may be split equally, weighted by agreement, or paid entirely by one party. We confirm the arrangement before proceeding.</p>
 <div class="dual-cta">
   <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation <span class="arr">&#8594;</span></a>
   <a href="/access-mediation/" class="btn btn-ghost">Can&#8217;t afford the standard fee? &#8594;</a>
@@ -480,7 +480,7 @@ build("our-fee-structure",
 <div class="dispute-grid">
   <div class="dispute-card"><h3>Family Law &amp; Separation</h3><p>Parenting arrangements, property settlement, de facto disputes and separation-related disagreements.</p></div>
   <div class="dispute-card"><h3>Property &amp; Estate</h3><p>Property settlements, estate and inheritance disputes, trust disputes and ownership disagreements.</p></div>
-  <div class="dispute-card"><h3>Workplace &amp; Commercial</h3><p>Workplace conflict, employment disputes, commercial disagreements and business-partner disputes.</p></div>
+  <div class="dispute-card"><h3>Workplace &amp; Commercial</h3><p>Workplace conflict, employment disputes, commercial disagreements and business-partner disputes. <strong>For workplace matters, the fee is usually paid by the employer — employees do not fund their own participation.</strong></p></div>
   <div class="dispute-card"><h3>Online Mediation</h3><p>Private mediation conducted online throughout Australia at the same pricing.</p></div>
 </div>
 <p style="font-size:.85rem;color:var(--ink-soft);margin-top:6px">Online mediation follows the same pricing. The appropriate format and duration depend on the circumstances — we can discuss this at the free initial consultation.</p>
@@ -586,9 +586,9 @@ build("our-fee-structure",
   ("Is the initial consultation free?",
    "Yes, completely free with no obligation. It is how we assess your matter, explain your options, and give you an honest view of whether mediation is right for you."),
   ("Is the fee shared between participants?",
-   "In most cases, yes. A 50/50 split is common but not compulsory. Participants may agree to divide the fee differently. Paying a larger share does not give any participant greater influence over the mediator or outcome."),
+   "It depends on the dispute type. For family law and property matters, a 50/50 split between participants is the most common arrangement — though participants can agree to divide the fee differently. For workplace matters, the fee is typically paid entirely by the employer or organisation; employees are not expected to fund their own participation. For commercial disputes, the arrangement varies and is confirmed before proceeding. Paying a larger share does not give any participant greater influence over the mediator or outcome."),
   ("Do you charge the same fees for all dispute types?",
-   "The standard fee structure applies broadly across family law, property, workplace and commercial disputes. Matters with three or more parties or exceptional complexity may be quoted individually after the initial consultation."),
+   "The same standard fee schedule applies across family law, property, workplace and commercial disputes. What changes is who pays: family and property matters are usually shared equally between the two participants; workplace matters are typically invoiced to the employer or organisation; commercial arrangements vary. Matters with three or more parties or exceptional complexity may be quoted individually after the initial consultation."),
   ("Are there any hidden fees?",
    "No. All fees are fixed and agreed upfront. If room hire, travel or additional mediation time may apply, we discuss the cost before it is incurred."),
   ("What is Access Mediation?",
