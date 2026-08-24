@@ -59,8 +59,9 @@ post("who-pays-for-mediation",
    "No. The mediator is neutral and does not act for either party, regardless of who pays the fee. Their role is to help you both reach an agreement.")],
  [("how-much-does-mediation-cost","How Much Does Mediation Cost?"),
   ("private-vs-free-mediation","Private vs Free Mediation"),
-  ("family-law-mediation","Family Law Mediation"),
-  ("mediate-or-litigate","Mediate or Litigate?"),
+  ("cant-afford-mediation","Can't Afford Mediation?"),
+  ("does-mediation-have-to-be-paid-50-50","Does Mediation Have to Be 50/50?"),
+  ("access-mediation","Access Mediation"),
   ("our-fee-structure","Our Fee Structure")],
  read_min=8)
 
@@ -114,8 +115,9 @@ post("private-vs-free-mediation",
    "Yes. Many families try the free system first and move to private mediation if matters are complex, urgent, or need to be formalised quickly.")],
  [("who-pays-for-mediation","Who Pays for Mediation?"),
   ("how-much-does-mediation-cost","How Much Does Mediation Cost?"),
-  ("family-law-mediation","Family Law Mediation"),
-  ("property-settlement-mediation","Property Settlement Mediation"),
+  ("cant-afford-mediation","Can't Afford Mediation?"),
+  ("is-family-mediation-free-australia","Is Family Mediation Free?"),
+  ("access-mediation","Access Mediation"),
   ("how-mediation-works","How Mediation Works")],
  read_min=8)
 
