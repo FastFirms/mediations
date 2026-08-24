@@ -70,13 +70,12 @@ PAGE_CSS = """<style>
 
 /* matching section */
 .ot-matching{padding:80px 0;background:var(--cream)}
-.ot-match-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.ot-match-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
 @media(max-width:900px){.ot-match-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.ot-match-grid{grid-template-columns:1fr}}
-.ot-match-item{display:flex;gap:14px;align-items:flex-start}
-.ot-match-dot{width:10px;height:10px;background:var(--sage-deep);border-radius:50%;flex-shrink:0;margin-top:6px}
-.ot-match-item h3{font-size:1rem;font-weight:700;margin-bottom:4px}
-.ot-match-item p{font-size:.93rem;color:var(--ink-soft);line-height:1.6;margin:0}
+.ot-match-card{background:var(--sand);border:1px solid var(--line);border-radius:14px;padding:26px 22px}
+.ot-match-card h3{font-size:1rem;font-weight:700;margin-bottom:6px;color:var(--ink)}
+.ot-match-card p{font-size:.95rem;color:var(--ink-soft);line-height:1.65;margin:0}
 
 /* australia-wide */
 .ot-aus{padding:80px 0;background:var(--sand)}
@@ -288,52 +287,34 @@ d += f"""<main id="main">
     </div>
     <div class="ot-match-grid" style="margin-top:48px">
 
-      <div class="ot-match-item">
-        <div class="ot-match-dot"></div>
-        <div>
-          <h3>Nature of the dispute</h3>
-          <p>Family, workplace, commercial, estate, property — different disputes call for different experience and sometimes different processes.</p>
-        </div>
+      <div class="ot-match-card">
+        <h3>Nature of the dispute</h3>
+        <p>Family, workplace, commercial, estate, property — different disputes call for different experience and sometimes different processes.</p>
       </div>
 
-      <div class="ot-match-item">
-        <div class="ot-match-dot"></div>
-        <div>
-          <h3>Professional experience</h3>
-          <p>We match the practitioner's professional background to the substance of the dispute — not just their general accreditation.</p>
-        </div>
+      <div class="ot-match-card">
+        <h3>Professional experience</h3>
+        <p>We match the practitioner's professional background to the substance of the dispute — not just their general accreditation.</p>
       </div>
 
-      <div class="ot-match-item">
-        <div class="ot-match-dot"></div>
-        <div>
-          <h3>Complexity</h3>
-          <p>A two-party parenting matter and a multi-party commercial dispute require different approaches. We scale accordingly.</p>
-        </div>
+      <div class="ot-match-card">
+        <h3>Complexity</h3>
+        <p>A two-party parenting matter and a multi-party commercial dispute require different approaches. We scale accordingly.</p>
       </div>
 
-      <div class="ot-match-item">
-        <div class="ot-match-dot"></div>
-        <div>
-          <h3>Mediation or arbitration</h3>
-          <p>For most disputes, mediation is the right starting point. Where a binding decision is needed, arbitration may be more appropriate — we'll explain the difference.</p>
-        </div>
+      <div class="ot-match-card">
+        <h3>Mediation or arbitration</h3>
+        <p>For most disputes, mediation is the right starting point. Where a binding decision is needed, arbitration may be more appropriate — we'll explain the difference.</p>
       </div>
 
-      <div class="ot-match-item">
-        <div class="ot-match-dot"></div>
-        <div>
-          <h3>Location</h3>
-          <p>We operate in person in Sydney, Melbourne, Brisbane, and Perth, and fully online across Australia. We find a format that works.</p>
-        </div>
+      <div class="ot-match-card">
+        <h3>Location &amp; format</h3>
+        <p>In person anywhere in Australia, or online for any matter worldwide. We find a format that works for everyone involved.</p>
       </div>
 
-      <div class="ot-match-item">
-        <div class="ot-match-dot"></div>
-        <div>
-          <h3>Availability</h3>
-          <p>Some matters are urgent. Where timing matters, we work to find a practitioner who can meet your schedule.</p>
-        </div>
+      <div class="ot-match-card">
+        <h3>Availability</h3>
+        <p>Some matters are urgent. Where timing matters, we work to find a practitioner who can meet your schedule.</p>
       </div>
 
     </div>
