@@ -355,7 +355,7 @@ build("our-fee-structure",
  "MEDIATION FEES",
  "Mediation fees, clearly explained.",
  "You should know what mediation is likely to cost before you commit. Your initial consultation is free. If you decide to proceed, we confirm the applicable fee before the mediation is booked.",
- "The standard individual contribution is $1,500 + GST for a session of up to 4 hours, or $2,250 + GST for up to 8 hours. Fees are commonly shared equally between two participants. The initial consultation is always free. A reduced-contribution Access Mediation pathway is available for eligible participants.",
+ "How fees work depends on your dispute type. For family and property matters, the fee is usually shared equally between the two participants — $1,500 + GST each for up to 4 hours, or $2,250 + GST each for up to 8 hours. For workplace matters, the fee is typically paid entirely by the employer — employees do not pay. For commercial disputes, the arrangement is confirmed before proceeding. The initial consultation is always free.",
  """
 <style>
 .fee-hero-note{font-size:.93rem;color:var(--ink-soft);max-width:62ch;margin:0 0 8px}
@@ -418,9 +418,17 @@ build("our-fee-structure",
 .dual-cta{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 8px}
 .dual-cta .btn-ghost{color:var(--sage-deep,#1e6040)!important;border-color:var(--sage-deep,#1e6040)!important}
 .section-sep{border:none;border-top:1px solid var(--line,rgba(13,34,24,.12));margin:48px 0}
+.who-pays-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0 8px}
+.who-pays-card{border-radius:14px;padding:22px 22px 20px;border:2px solid transparent}
+.who-pays-family{background:var(--sage-pale,#f1f5f1);border-color:var(--sage-deep,#1e6040)}
+.who-pays-workplace{background:#eaf2ff;border-color:#2563eb}
+.who-pays-commercial{background:#faf5eb;border-color:#b45309}
+.who-pays-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);margin-bottom:6px}
+.who-pays-rule{font-size:1.02rem;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.3}
+.who-pays-detail{font-size:.84rem;color:var(--ink-soft);line-height:1.55}
 @media(max-width:600px){
   .fee-card-price{font-size:2rem}
-  .fee-cards,.dispute-grid{grid-template-columns:1fr}
+  .fee-cards,.dispute-grid,.who-pays-grid{grid-template-columns:1fr}
   .dual-cta{flex-direction:column}
   .dual-cta a{width:100%;justify-content:center;text-align:center}
   .access-strip{padding:22px 18px 20px}
@@ -428,26 +436,43 @@ build("our-fee-structure",
 }
 </style>
 
-<p class="fee-hero-note">For most two-participant mediations, the standard fee is shared equally. Your initial consultation is always free.</p>
+<h2>Who pays — it depends on your dispute type</h2>
+<div class="who-pays-grid">
+  <div class="who-pays-card who-pays-family">
+    <div class="who-pays-label">Family &amp; Property</div>
+    <div class="who-pays-rule">Fee split equally between both parties</div>
+    <div class="who-pays-detail">Each person pays their own share. A 50/50 split is standard — so a $3,000 session costs $1,500 each. You can agree to divide it differently, but no split gives either party greater influence.</div>
+  </div>
+  <div class="who-pays-card who-pays-workplace">
+    <div class="who-pays-label">Workplace</div>
+    <div class="who-pays-rule">Employer pays — employees pay nothing</div>
+    <div class="who-pays-detail">The employer or organisation funds the mediation. A single invoice goes to the business. Employees are not expected to contribute anything toward the cost of participating.</div>
+  </div>
+  <div class="who-pays-card who-pays-commercial">
+    <div class="who-pays-label">Commercial &amp; Other</div>
+    <div class="who-pays-rule">Confirmed before you proceed</div>
+    <div class="who-pays-detail">The arrangement varies — split equally, weighted, or paid entirely by one party. We confirm the payment structure before anything is booked. No surprises.</div>
+  </div>
+</div>
 
-<h2>Standard Mediation Fees</h2>
+<h2 style="margin-top:40px">Standard Mediation Fees</h2>
+<p style="font-size:.93rem;color:var(--ink-soft);margin:0 0 20px">The same rate applies across all dispute types. What changes is who pays — see above.</p>
 <div class="fee-cards">
   <div class="fee-card">
-    <div class="fee-card-duration">Up to 4 hours</div>
-    <div class="fee-card-price">$1,500 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
-    <div class="fee-card-unit">usually per participant</div>
-    <div class="fee-card-total"><strong>$3,000 + GST total</strong> when shared equally between two participants</div>
+    <div class="fee-card-duration">Session up to 4 hours</div>
+    <div class="fee-card-price">$3,000 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
+    <div class="fee-card-unit">total fee for the session</div>
+    <div class="fee-card-total">Family &amp; property: <strong>$1,500 + GST each</strong> when split equally</div>
     <div class="fee-card-includes">Includes pre-mediation administration, preparation and the scheduled mediation session.</div>
   </div>
   <div class="fee-card">
-    <div class="fee-card-duration">Up to 8 hours</div>
-    <div class="fee-card-price">$2,250 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
-    <div class="fee-card-unit">usually per participant</div>
-    <div class="fee-card-total"><strong>$4,500 + GST total</strong> when shared equally between two participants</div>
-    <div class="fee-card-includes">Suitable where more time is appropriate because of the number or complexity of issues.</div>
+    <div class="fee-card-duration">Session up to 8 hours</div>
+    <div class="fee-card-price">$4,500 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
+    <div class="fee-card-unit">total fee for the session</div>
+    <div class="fee-card-total">Family &amp; property: <strong>$2,250 + GST each</strong> when split equally</div>
+    <div class="fee-card-includes">Suitable where more time is needed for complex or multi-issue matters.</div>
   </div>
 </div>
-<p class="fee-share-note"><strong>Family and property matters:</strong> a 50/50 split between the two participants is the most common arrangement. Participants may agree to divide the fee differently — paying a larger share does not give a participant greater influence over the mediator or outcome.<br><br><strong>Workplace matters:</strong> the fee is typically paid by the employer or organisation, not divided between employees. A single invoice is issued to the business, and employees do not need to fund their own participation.<br><br><strong>Commercial matters:</strong> arrangements vary — the fee may be split equally, weighted by agreement, or paid entirely by one party. We confirm the arrangement before proceeding.</p>
 <div class="dual-cta">
   <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation <span class="arr">&#8594;</span></a>
   <a href="/access-mediation/" class="btn btn-ghost">Can&#8217;t afford the standard fee? &#8594;</a>
