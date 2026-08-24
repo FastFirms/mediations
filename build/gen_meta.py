@@ -104,7 +104,16 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "questions/can-mediation-resolve-an-inheritance-dispute",
         "questions/how-much-does-estate-mediation-cost",
         "questions/when-should-an-estate-dispute-go-to-mediation",
-        "questions/what-happens-if-estate-mediation-fails"]
+        "questions/what-happens-if-estate-mediation-fails",
+        # Access Mediation SEO cluster
+        "cant-afford-mediation",
+        "is-family-mediation-free-australia",
+        "low-cost-family-mediation-australia",
+        "who-pays-mediation-one-person-earns-more",
+        "does-mediation-have-to-be-paid-50-50",
+        "asset-rich-cash-poor-mediation",
+        "family-relationship-centre-vs-private-mediation",
+        "legal-aid-vs-private-mediation"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:

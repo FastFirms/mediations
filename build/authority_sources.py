@@ -18,6 +18,8 @@ AUTHORITY = {
  "ag_fdr": ("Attorney-General's Dept \u2014 Family Dispute Resolution", "https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution"),
  "frc": ("Family Relationships Online", "https://www.familyrelationships.gov.au/"),
  "amdras": ("Mediator Standards Board (AMDRAS)", "https://msb.org.au/"),
+ "legal_aid": ("National Legal Aid", "https://www.legalaid.gov.au/"),
+ "ag_frc": ("Attorney-General's Dept — Family Relationship Centres", "https://www.ag.gov.au/families-and-marriage/families/family-relationship-centres"),
  "fair_work": ("Fair Work Commission", "https://www.fwc.gov.au/"),
  "veohrc": ("Victorian Equal Opportunity &amp; Human Rights Commission", "https://www.humanrights.vic.gov.au/"),
  "vcat": ("Victorian Civil and Administrative Tribunal", "https://www.vcat.vic.gov.au/"),
@@ -49,6 +51,7 @@ TOPIC_SOURCES = {
  "de_facto":     ["family_law_act","aifs"],
  "high_conflict":["dsm_pd","respect_1800","fcfcoa_fdr"],
  "process":      ["fcfcoa","ag_fdr","amdras"],
+ "affordability": ["ag_fdr","frc","legal_aid","ag_frc"],
  "wa":           ["family_court_wa","family_law_act"],
 }
 
