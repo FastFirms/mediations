@@ -3,15 +3,16 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html,
-                       org_schema, breadcrumb_schema,
+                       org_schema, breadcrumb_schema, faq_html, faq_schema, cta_band,
                        DOMAIN, BOOK_URL, PHONE, PHONE_HREF)
 
 OUT = os.path.join(os.path.dirname(__file__), "..")
 
+# Shared CSS — index page + bio pages
 PAGE_CSS = """<style>
+/* ── shared: bio pages ───────────────────────────────────── */
 .mediator-hero{padding:60px 0 0;background:var(--sand)}
 .mediator-profile{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:start;padding:48px 0 24px}
-.mediator-photo{}
 @media(max-width:720px){.mediator-profile{display:block!important}.mediator-photo{position:static!important;width:100%!important;margin-bottom:32px}.mediator-photo img{width:100%!important;height:280px}.mediator-content{width:100%!important}}
 .mediator-photo img{width:100%;height:320px;object-fit:cover;object-position:top;border-radius:16px;display:block;box-shadow:0 8px 32px rgba(0,0,0,.10)}
 .cred-table{margin-top:24px;width:100%;border-collapse:collapse;font-size:.85rem}
@@ -27,48 +28,156 @@ PAGE_CSS = """<style>
 .booking-strip{background:var(--sage-deep);color:var(--cream);padding:48px 0;text-align:center;margin-top:24px}
 .booking-strip h2{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:12px}
 .booking-strip p{font-size:1.05rem;opacity:.88;max-width:54ch;margin:0 auto 28px}
-.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:32px;padding:56px 0}
-.team-card{background:var(--sand);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:box-shadow .2s}
+
+/* ── index page only ─────────────────────────────────────── */
+.ot-hero{padding:56px 0 48px;background:var(--sand)}
+.ot-hero-inner{max-width:64ch}
+.ot-eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-deep);margin-bottom:10px}
+.ot-h1{font-family:var(--serif);font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin-bottom:18px}
+.ot-intro{font-size:1.1rem;color:var(--ink-soft);max-width:58ch;line-height:1.7}
+
+/* team cards */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:0}
+@media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.team-grid{grid-template-columns:1fr}}
+.team-card{background:var(--cream);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .2s}
 .team-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.12)}
 .team-card-photo{height:260px;background-repeat:no-repeat;background-color:var(--sand-deep)}
-.team-card-body{padding:24px}
+.team-card-body{padding:24px;flex:1;display:flex;flex-direction:column}
 .team-card-name{font-family:var(--serif);font-size:1.3rem;margin-bottom:4px}
-.team-card-role{color:var(--sage-deep);font-weight:600;font-size:.92rem;margin-bottom:10px}
-.team-card-bio{font-size:.95rem;color:var(--ink-soft);line-height:1.65;margin-bottom:16px}
+.team-card-role{color:var(--sage-deep);font-weight:600;font-size:.9rem;margin-bottom:10px;letter-spacing:.02em}
+.team-card-bio{font-size:.95rem;color:var(--ink-soft);line-height:1.65;margin-bottom:16px;flex:1}
 .team-card-link{font-size:.9rem;font-weight:600;color:var(--terra)}
+
+/* broader capability band */
+.ot-network{background:var(--sage-deep);color:var(--cream);padding:80px 0}
+.ot-network-inner{max-width:72ch;margin:0 auto;text-align:center}
+.ot-network .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.7;margin-bottom:14px}
+.ot-network h2{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.2;margin-bottom:20px}
+.ot-network p{font-size:1.05rem;line-height:1.75;opacity:.88;max-width:62ch;margin:0 auto 20px}
+.ot-feature-stmt{font-family:var(--serif);font-size:clamp(1.25rem,2.5vw,1.7rem);font-style:italic;margin:32px auto 36px;line-height:1.35;max-width:50ch;opacity:.95}
+
+/* expertise grid */
+.ot-expertise{padding:80px 0;background:var(--sand)}
+.ot-exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+@media(max-width:900px){.ot-exp-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.ot-exp-grid{grid-template-columns:1fr}}
+.ot-exp-card{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:28px 24px;text-decoration:none;color:inherit;display:block;transition:box-shadow .2s}
+.ot-exp-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.09)}
+.ot-exp-icon{font-size:1.8rem;margin-bottom:12px}
+.ot-exp-card h3{font-size:1.05rem;font-weight:700;margin-bottom:8px;color:var(--ink)}
+.ot-exp-card p{font-size:.92rem;color:var(--ink-soft);line-height:1.6;margin:0}
+
+/* matching section */
+.ot-matching{padding:80px 0;background:var(--cream)}
+.ot-match-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+@media(max-width:900px){.ot-match-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.ot-match-grid{grid-template-columns:1fr}}
+.ot-match-item{display:flex;gap:14px;align-items:flex-start}
+.ot-match-dot{width:10px;height:10px;background:var(--sage-deep);border-radius:50%;flex-shrink:0;margin-top:6px}
+.ot-match-item h3{font-size:1rem;font-weight:700;margin-bottom:4px}
+.ot-match-item p{font-size:.93rem;color:var(--ink-soft);line-height:1.6;margin:0}
+
+/* australia-wide */
+.ot-aus{padding:80px 0;background:var(--sand)}
+.ot-aus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+@media(max-width:900px){.ot-aus-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.ot-aus-grid{grid-template-columns:1fr}}
+.ot-office{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:22px 18px}
+.ot-office strong{display:block;font-size:.95rem;font-weight:700;color:var(--sage-deep);margin-bottom:6px}
+.ot-office span{font-size:.87rem;color:var(--ink-soft);line-height:1.5}
+
+/* mediation vs arbitration */
+.ot-mva{padding:80px 0;background:var(--cream)}
+.ot-mva-cards{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+@media(max-width:640px){.ot-mva-cards{grid-template-columns:1fr}}
+.ot-mva-card{background:var(--sand);border:1px solid var(--line);border-radius:16px;padding:36px 28px}
+.ot-mva-card h3{font-family:var(--serif);font-size:1.4rem;margin-bottom:14px;color:var(--ink)}
+.ot-mva-card p{font-size:.97rem;color:var(--ink-soft);line-height:1.7;margin-bottom:14px}
+.ot-mva-sub{text-align:center;margin-top:36px}
+.ot-mva-sub p{font-size:1rem;color:var(--ink-soft);margin-bottom:18px}
+
+/* section utility */
+.ot-sec-hdr{text-align:center;max-width:62ch;margin:0 auto}
+.ot-sec-hdr .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-deep);margin-bottom:10px}
+.ot-sec-hdr h2{font-family:var(--serif);font-size:clamp(1.7rem,3.5vw,2.4rem);margin-bottom:14px;color:var(--ink)}
+.ot-sec-hdr p{font-size:1rem;color:var(--ink-soft);line-height:1.7}
 </style>"""
 
 # ============================================================
-# /our-team/ INDEX PAGE
+# /our-team/ INDEX PAGE  (9-section rebuild per brief 2026-08)
 # ============================================================
 
-idx_schema = [org_schema(), breadcrumb_schema([("Home",""),("Our Team","our-team")])]
-d = head("Our Team | Mediations Australia",
-         "Meet our nationally accredited mediators and lawyers — experienced across family law, property, commercial and workplace disputes. Based across Australia.",
+TEAM_FAQ = [
+    ("Is this the full Mediations Australia team?",
+     "Dan Toombs, Farley Tolpen, and Prav Singh-Pillay are the core people behind Mediations Australia. "
+     "Depending on the nature and complexity of your matter, Mediations Australia can also draw on a broader network "
+     "of mediators, arbitrators, and dispute resolution professionals."),
+    ("How do I choose a mediator?",
+     "You don't need to choose before speaking with us. When you book a consultation, we discuss the nature of "
+     "the dispute, what you're hoping to achieve, and which practitioner is best suited to your matter. "
+     "We'll explain who we'd recommend and why."),
+    ("Can you help with disputes outside family law?",
+     "Yes. Our core team handles family and separation matters, workplace and employment disputes, commercial "
+     "and business conflicts, estate and wills disagreements, and property matters. We can also refer to "
+     "appropriate specialists in the broader network for matters requiring specific expertise."),
+    ("Do you have access to arbitrators?",
+     "Farley Tolpen is a registered Family Law Arbitrator and can conduct arbitration for property and financial "
+     "matters. For other commercial arbitration needs, we can help identify appropriate practitioners."),
+    ("How do I know a practitioner has relevant experience for my dispute?",
+     "When you contact us, we ask about the nature of the dispute before recommending a practitioner. "
+     "Experience, professional background, and availability are all considered. You can also review "
+     "individual team profiles to understand each person's specialist areas and track record."),
+    ("Can you help with disputes outside major cities?",
+     "Yes. Mediations Australia offers mediation online as well as in person across Sydney, Melbourne, "
+     "Brisbane, and Perth. Online mediation is equally effective for most matters and removes the need "
+     "for travel entirely."),
+    ("Is online mediation as effective as in-person?",
+     "For most disputes, online mediation achieves outcomes comparable to in-person sessions. "
+     "It removes the need for travel, can reduce costs, and often makes it easier to schedule sessions "
+     "across locations. Our practitioners are experienced in conducting online mediation effectively. "
+     "<a href='/online-mediation-australia/'>Learn more about online mediation.</a>"),
+]
+
+idx_schema = [
+    org_schema(),
+    breadcrumb_schema([("Home",""),("Our Team","our-team")]),
+    faq_schema([(q, a) for q, a in TEAM_FAQ]),
+]
+
+d = head("Our Team — Experienced Dispute Resolution | Mediations Australia",
+         "Meet the core team at Mediations Australia — Dan Toombs, Farley Tolpen, and Prav Singh-Pillay — "
+         "accredited mediators and lawyers handling family, workplace, commercial, estate and property disputes across Australia.",
          "our-team", extra_schema=idx_schema)
 d = d.replace("</head>", PAGE_CSS + "</head>")
 d += nav()
 
 d += f"""<main id="main">
 {crumb_html([("Home",""),("Our team",None)])}
-<section class="mediator-hero">
+
+<!-- ①  HERO -->
+<section class="ot-hero">
   <div class="wrap">
-    <div style="max-width:64ch">
-      <p class="sec-tag">Meet the team</p>
-      <h1 style="font-family:var(--serif);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px">
-        Our Team — <em>accredited, experienced, lawyer-aware</em>
-      </h1>
-      <p style="font-size:1.1rem;color:var(--ink-soft);max-width:58ch">Our team brings together nationally accredited mediators and experienced family lawyers. Whether you need mediation, legal advice, or both, we have the expertise to help.</p>
+    <div class="ot-hero-inner">
+      <p class="ot-eyebrow">Meet the team</p>
+      <h1 class="ot-h1">Our Team — <em>experienced dispute resolution, backed by broader expertise</em></h1>
+      <p class="ot-intro">Mediations Australia is built around a core team of nationally accredited mediators and lawyers — Dan Toombs, Farley Tolpen, and Prav Singh-Pillay — each with deep experience across the disputes that matter most to individuals, families, and businesses. Depending on the nature of your matter, we can also draw on a broader network of mediators, arbitrators, and dispute resolution professionals.</p>
     </div>
   </div>
 </section>
 
-<section>
+<!-- ②  CORE TEAM -->
+<section style="padding:64px 0;background:var(--cream)">
   <div class="wrap">
-    <div class="team-grid">
+    <div class="ot-sec-hdr" style="margin-bottom:0">
+      <h2>Meet Our Core Team</h2>
+      <p>Our core team brings together extensive experience in mediation, law and dispute resolution.</p>
+    </div>
+    <div class="team-grid" style="margin-top:48px">
 
       <a href="/our-team/dan-toombs/" class="team-card">
-        <div class="team-card-photo" role="img" aria-label="Dan Toombs — Founder, Lawyer and Mediator" style="background-image:url('/assets/images/Dan-Bio.png');background-size:cover;background-position:center top"></div>
+        <div class="team-card-photo" role="img" aria-label="Dan Toombs — Founder, Lawyer and Mediator"
+             style="background-image:url('/assets/images/Dan-Bio.png');background-size:cover;background-position:center top"></div>
         <div class="team-card-body">
           <p class="team-card-name">Dan Toombs</p>
           <p class="team-card-role">Founder, Lawyer &amp; Mediator</p>
@@ -78,17 +187,19 @@ d += f"""<main id="main">
       </a>
 
       <a href="/our-team/farley-tolpen/" class="team-card">
-        <div class="team-card-photo" role="img" aria-label="Farley Tolpen — Accredited Mediator and Lawyer" style="background-image:url('/assets/images/Farley-Bio.png');background-size:cover;background-position:center top"></div>
+        <div class="team-card-photo" role="img" aria-label="Farley Tolpen — Accredited Mediator and Lawyer"
+             style="background-image:url('/assets/images/Farley-Bio.png');background-size:cover;background-position:center top"></div>
         <div class="team-card-body">
           <p class="team-card-name">Farley Tolpen</p>
           <p class="team-card-role">Accredited Mediator &amp; Lawyer</p>
-          <p class="team-card-bio">40+ years of mediation, arbitration and litigation experience across Australia and the United States. Nationally Accredited Mediator (AMDRAS), FDRP, and Family Law Arbitrator. Approximate 4,500+ matters with around a 90% resolution rate.</p>
+          <p class="team-card-bio">40+ years of mediation, arbitration and litigation experience across Australia and the United States. Nationally Accredited Mediator (AMDRAS), FDRP, and registered Family Law Arbitrator.</p>
           <span class="team-card-link">View profile →</span>
         </div>
       </a>
 
       <a href="/our-team/prav-singh-pillay/" class="team-card">
-        <div class="team-card-photo" role="img" aria-label="Prav Singh-Pillay — Lawyer and Accredited Mediator" style="background-image:url('/assets/images/Prav-Bio.png');background-size:cover;background-position:center top"></div>
+        <div class="team-card-photo" role="img" aria-label="Prav Singh-Pillay — Lawyer and Accredited Mediator"
+             style="background-image:url('/assets/images/Prav-Bio.png');background-size:cover;background-position:center top"></div>
         <div class="team-card-body">
           <p class="team-card-name">Prav Singh-Pillay</p>
           <p class="team-card-role">Lawyer &amp; Accredited Mediator</p>
@@ -100,6 +211,207 @@ d += f"""<main id="main">
     </div>
   </div>
 </section>
+
+<!-- ③  BROADER CAPABILITY -->
+<section class="ot-network">
+  <div class="wrap">
+    <div class="ot-network-inner">
+      <p class="eyebrow">Beyond our core team</p>
+      <h2>Access to a broader network of mediators and arbitrators</h2>
+      <p>Our core team handles a wide range of disputes directly. For matters that require specific expertise — specialist areas of law, particular industry knowledge, or additional practitioners for complex multi-party disputes — Mediations Australia can draw on a broader network of mediators, arbitrators, and dispute resolution professionals.</p>
+      <p>We don't claim a specific number. What we offer is honest guidance: when you contact us about a matter, we'll tell you clearly who is best placed to help, whether that's a member of our core team or someone from the broader network — and why.</p>
+      <p class="ot-feature-stmt">"Start with the dispute. We can help determine the right way forward."</p>
+      <a href="{BOOK_URL}" class="btn" style="background:var(--cream);color:var(--sage-deep);font-size:1rem;padding:15px 32px;font-weight:700">
+        Book a Free Consultation →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ④  EXPERTISE GRID -->
+<section class="ot-expertise">
+  <div class="wrap">
+    <div class="ot-sec-hdr">
+      <p class="eyebrow">Dispute resolution expertise</p>
+      <h2>Different disputes require different expertise</h2>
+      <p>Mediations Australia and its broader network work across the full range of civil, family, and commercial disputes. The right practitioner depends on the nature of your matter.</p>
+    </div>
+    <div class="ot-exp-grid">
+
+      <a href="/family-law-mediation/" class="ot-exp-card">
+        <div class="ot-exp-icon">👨‍👩‍👧</div>
+        <h3>Family &amp; Separation</h3>
+        <p>Parenting arrangements, property settlement, consent orders, financial agreements, and the full range of post-separation decisions.</p>
+      </a>
+
+      <a href="/workplace-mediation/" class="ot-exp-card">
+        <div class="ot-exp-icon">💼</div>
+        <h3>Workplace &amp; Employment</h3>
+        <p>Bullying, harassment, unfair dismissal, team conflict, discrimination, and workplace relationship breakdowns.</p>
+      </a>
+
+      <a href="/commercial-mediation/" class="ot-exp-card">
+        <div class="ot-exp-icon">🤝</div>
+        <h3>Business &amp; Commercial</h3>
+        <p>Partnership disputes, contract conflicts, shareholder disagreements, franchise matters, and commercial relationship breakdowns.</p>
+      </a>
+
+      <a href="/real-estate-mediation/" class="ot-exp-card">
+        <div class="ot-exp-icon">🏠</div>
+        <h3>Property &amp; Construction</h3>
+        <p>Neighbour disputes, strata conflicts, real estate transaction disputes, construction defects, and co-owner disagreements.</p>
+      </a>
+
+      <a href="/estate-dispute-mediation/" class="ot-exp-card">
+        <div class="ot-exp-icon">📋</div>
+        <h3>Estates &amp; Inheritance</h3>
+        <p>Contesting wills, executor conflicts, inheritance disputes, family provision claims, and estate distribution disagreements.</p>
+      </a>
+
+      <a href="/arbitration-in-family-law/" class="ot-exp-card">
+        <div class="ot-exp-icon">⚖️</div>
+        <h3>Arbitration</h3>
+        <p>Where a binding decision is needed but litigation should be avoided — private arbitration for property, financial, and commercial matters.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ⑤  MATCHING -->
+<section class="ot-matching">
+  <div class="wrap">
+    <div class="ot-sec-hdr">
+      <p class="eyebrow">Finding the right practitioner</p>
+      <h2>You don't need to choose a mediator before speaking with us</h2>
+      <p>When you contact us, we discuss the matter and identify who is best placed to help. Here's what we consider.</p>
+    </div>
+    <div class="ot-match-grid" style="margin-top:48px">
+
+      <div class="ot-match-item">
+        <div class="ot-match-dot"></div>
+        <div>
+          <h3>Nature of the dispute</h3>
+          <p>Family, workplace, commercial, estate, property — different disputes call for different experience and sometimes different processes.</p>
+        </div>
+      </div>
+
+      <div class="ot-match-item">
+        <div class="ot-match-dot"></div>
+        <div>
+          <h3>Professional experience</h3>
+          <p>We match the practitioner's professional background to the substance of the dispute — not just their general accreditation.</p>
+        </div>
+      </div>
+
+      <div class="ot-match-item">
+        <div class="ot-match-dot"></div>
+        <div>
+          <h3>Complexity</h3>
+          <p>A two-party parenting matter and a multi-party commercial dispute require different approaches. We scale accordingly.</p>
+        </div>
+      </div>
+
+      <div class="ot-match-item">
+        <div class="ot-match-dot"></div>
+        <div>
+          <h3>Mediation or arbitration</h3>
+          <p>For most disputes, mediation is the right starting point. Where a binding decision is needed, arbitration may be more appropriate — we'll explain the difference.</p>
+        </div>
+      </div>
+
+      <div class="ot-match-item">
+        <div class="ot-match-dot"></div>
+        <div>
+          <h3>Location</h3>
+          <p>We operate in person in Sydney, Melbourne, Brisbane, and Perth, and fully online across Australia. We find a format that works.</p>
+        </div>
+      </div>
+
+      <div class="ot-match-item">
+        <div class="ot-match-dot"></div>
+        <div>
+          <h3>Availability</h3>
+          <p>Some matters are urgent. Where timing matters, we work to find a practitioner who can meet your schedule.</p>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:48px">
+      <p style="font-size:1rem;color:var(--ink-soft);margin-bottom:20px">Not sure who you need? Start with a conversation.</p>
+      <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1rem;padding:15px 32px">Speak With Our Team →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥  AUSTRALIA-WIDE -->
+<section class="ot-aus">
+  <div class="wrap">
+    <div class="ot-sec-hdr">
+      <p class="eyebrow">Australia-wide</p>
+      <h2>Dispute resolution wherever you are</h2>
+      <p>Mediations Australia operates in person across four major cities and fully online across Australia. Distance is not a barrier to getting the right practitioner for your matter.</p>
+    </div>
+    <div class="ot-aus-grid">
+      <div class="ot-office"><strong>Sydney</strong><span>Suite 508, 41/464–480 Kent St NSW 2000</span></div>
+      <div class="ot-office"><strong>Melbourne</strong><span>Level 23, 727 Collins St VIC 3008</span></div>
+      <div class="ot-office"><strong>Brisbane</strong><span>Suite 507, 198 Adelaide St QLD 4000</span></div>
+      <div class="ot-office"><strong>Perth</strong><span>Level 25, 108 St Georges Tce WA 6000</span></div>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a href="/online-mediation-australia/" class="btn" style="background:var(--sage-deep);color:var(--cream);font-size:.97rem;padding:14px 30px">
+        Online mediation — how it works →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ⑦  MEDIATION VS ARBITRATION -->
+<section class="ot-mva">
+  <div class="wrap">
+    <div class="ot-sec-hdr">
+      <h2>Mediation or arbitration?</h2>
+      <p>The right process depends on the dispute. Here's the difference.</p>
+    </div>
+    <div class="ot-mva-cards">
+      <div class="ot-mva-card">
+        <h3>Mediation</h3>
+        <p>A confidential, structured process in which an independent mediator helps the parties reach their own agreement. You stay in control of the outcome. The mediator decides nothing — they create the conditions for the parties to resolve the dispute themselves.</p>
+        <p>Mediation is suitable for most family, workplace, commercial, estate, and property disputes. It is faster, cheaper, and more private than court — and the agreements reached tend to hold because both parties had a hand in making them.</p>
+        <a href="/what-is-mediation-in-family-law/" style="font-size:.92rem;font-weight:700;color:var(--sage-deep)">Learn about mediation →</a>
+      </div>
+      <div class="ot-mva-card">
+        <h3>Arbitration</h3>
+        <p>A private process in which a qualified arbitrator hears both sides and makes a binding determination — like a private judge, but faster and more flexible than court. The decision is binding and can be registered with the court.</p>
+        <p>Arbitration is appropriate where the parties need a definitive decision, cannot reach agreement through mediation, and want to avoid the cost and delay of litigation. In family law, arbitration is available for property and financial matters only.</p>
+        <a href="/arbitration-in-family-law/" style="font-size:.92rem;font-weight:700;color:var(--sage-deep)">Learn about arbitration →</a>
+      </div>
+    </div>
+    <div class="ot-mva-sub">
+      <p>Not sure which process is appropriate for your dispute?</p>
+      <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:.97rem;padding:14px 30px">Book a Free Consultation →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧  FAQ -->
+{faq_html(TEAM_FAQ, heading="Common questions about our team", tag="Questions &amp; answers")}
+
+<!-- ⑨  FINAL CTA -->
+<section class="cta-band" id="book">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="sec-tag" style="text-align:center;color:var(--sage);opacity:.8;letter-spacing:.1em">NOT SURE WHO YOU NEED?</p>
+      <h2>Start with a conversation</h2>
+      <p>Tell us about your dispute and we'll explain who is best placed to help, what process makes sense, and what to expect — with no obligation and no commitment.</p>
+      <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation →</a>
+      <div style="margin-top:20px">
+        <a href="{PHONE_HREF}" style="font-size:1rem;color:var(--cream);opacity:.85;text-decoration:none">or call {PHONE}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>"""
 
 d += page_end()
