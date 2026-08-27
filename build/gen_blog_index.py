@@ -248,6 +248,17 @@ d += f"""<main id="main">
 {topic_nav()}
 
 {"".join(topic_section(tid, ik, label, posts) for tid, ik, label, posts in TOPICS)}
+
+<section class="tsec" id="more-articles">
+<div class="wrap">
+  <div class="tsec-hd">
+    <span class="tsec-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+    <h2>More articles &amp; guides</h2>
+    <span class="tsec-count">{len(imported_items)} articles</span>
+  </div>
+  <div class="aa-filter-wrap"><input type="search" id="aa-search" placeholder="Filter these articles…" aria-label="Filter articles" autocomplete="off"></div>
+  <div class="gcards" id="aa-grid">{"".join(f'<a href="/{s}/" class="gcard aa-item"><span class="gcard-title">{esc(t)}</span><span class="gcard-arr">→</span></a>' for s,t in imported_items)}</div>
+</div></section>
 """
 
 d += cta_band("Can't find what you're <em>looking for</em>?",
@@ -297,6 +308,12 @@ d = d.replace("</head>", """<style>
 .gcard-arr{grid-column:2;grid-row:1/3;color:var(--sage-deep);font-size:1.2rem;align-self:center;opacity:.4;transition:opacity .15s,transform .15s}
 .gcard:hover .gcard-arr{opacity:1;transform:translateX(4px)}
 
+/* More articles filter */
+.aa-filter-wrap{margin-bottom:24px}
+#aa-search{width:100%;max-width:440px;padding:12px 18px;border:1.5px solid var(--line);border-radius:10px;font-size:.95rem;font-family:inherit;color:var(--ink);background:#fff;outline:none;transition:border-color .15s}
+#aa-search:focus{border-color:var(--sage)}
+.aa-item{align-items:center}
+
 @media(max-width:768px){
   .gcards{grid-template-columns:1fr}
   .tnav-inner{gap:8px}
@@ -315,6 +332,17 @@ d = d.replace("</body>", f"""<script>
     if(!q)return text;
     var re=new RegExp('('+q.replace(/[.*+?^${{}}()|[\\]\\\\]/g,'\\\\$&')+')','gi');
     return text.replace(re,'<em>$1</em>');
+  }}
+  // Filter the "more articles" section
+  var aas=document.getElementById('aa-search');
+  var aag=document.getElementById('aa-grid');
+  if(aas&&aag){{
+    aas.addEventListener('input',function(){{
+      var q=this.value.trim().toLowerCase();
+      Array.from(aag.querySelectorAll('.aa-item')).forEach(function(el){{
+        el.hidden=q.length>1&&el.textContent.toLowerCase().indexOf(q)===-1;
+      }});
+    }});
   }}
   inp.addEventListener('input',function(){{
     var q=this.value.trim();
