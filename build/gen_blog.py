@@ -106,7 +106,7 @@ def post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=
 {crumb_html([("Home",""),("Guides","guides"),(h1[:48]+("…" if len(h1)>48 else ""),None)])}
 <article>
 <header class="post-hero"><div class="wrap-narrow">
-  <div class="post-meta"><span class="cat">{esc(category)}</span><span>{read_min} min read</span></div>
+  <div class="post-meta"><span class="cat">{category}</span><span>{read_min} min read</span></div>
   <h1>{h1}</h1>
   <p class="lede" style="margin-top:16px">{dek}</p>
   <div class="author-byline">
