@@ -73,6 +73,11 @@ POSTS = [
  ("asset-rich-cash-poor-mediation","Costs & fees","Asset Rich but Cash Poor: Can I Get Reduced-Fee Mediation?","Owning a home or super doesn't mean you have accessible cash — how financial capacity is really assessed."),
  ("family-relationship-centre-vs-private-mediation","Family Mediation","Family Relationship Centre vs Private Mediation","An honest 10-factor comparison — when an FRC is the right call and when private mediation is worth it."),
  ("legal-aid-vs-private-mediation","Family Mediation","Legal Aid vs Private Mediation","What Legal Aid covers, how it compares with private options, and what to do if you don't qualify."),
+ # Imported post rebuilds — batch 19
+ ("consent-orders-2026-update","Consent orders","Consent Orders 2026: Key Changes &amp; Process","Updated 2026 guide — what changed with the family law reforms, how to apply, and what mediation has to do with it."),
+ ("family-court-process-2026","Family court","The Family Court Process in Australia (2026)","Step-by-step: from filing to trial, how long it takes, what it costs, and when mediation is the smarter first step."),
+ ("are-mediation-agreements-legally-binding","The process","Are Mediation Agreements Legally Binding?","Heads of agreement, consent orders, BFAs and parenting plans — what each one means for enforceability."),
+ ("high-conflict-family-law-mediation","High conflict","High-Conflict Family Law Mediation","When mediation works in high-conflict separation, when it doesn't, and how shuttle mediation extends the range."),
 ]
 
 ALL_CATS = ["All"] + sorted({cat for _,cat,_,_ in POSTS})

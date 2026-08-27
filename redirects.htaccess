@@ -306,3 +306,7 @@ Redirect 301 /mediation-resources/how-much-does-mediation-cost/ /how-much-does-m
 Redirect 301 /mediation-resources/difference-between-mediation-conciliation/ /conciliation-vs-mediation/
 Redirect 301 /mediation-resources/family-law-mediation-what-happens-if-i-dont-want-to-do-it/ /is-family-law-mediation-compulsory/
 Redirect 301 /mediation-resources/how-mediation-can-help-in-financial-agreements/ /binding-financial-agreements-guide/
+
+# Imported post rebuilds — slug date updates (2025/2024 → 2026)
+Redirect 301 /consent-orders-2025-update/ /consent-orders-2026-update/
+Redirect 301 /family-court-process-2024-update/ /family-court-process-2026/
