@@ -17,7 +17,7 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "parenting-plan-template","bfa-or-consent-orders","getting-ready-for-separation",
         "family-law-cost-estimator","separation-under-one-roof",
         "unfair-dismissal-21-day-rule","is-mediation-right-for-workplace-dispute",
-        "redundancy-was-it-genuine","contesting-a-will","commercial-dispute-guide",
+        "redundancy-was-it-genuine","contesting-a-will","commercial-dispute-guide","estate-inheritance-dispute-mediation",
         "real-estate-construction-disputes","workplace-dispute-guide",
         "guides","cost-of-divorce-in-australia","mediation-with-a-narcissist",
         "what-am-i-entitled-to-in-a-separation-in-australia","how-long-does-mediation-take",

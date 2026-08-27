@@ -11,6 +11,7 @@ POSTS = [
  ("best-apps-for-separated-parents","Parenting","Best Apps for Separated Parents in Australia","OurFamilyWizard, 2Houses, AppClose and more — the co-parenting apps that reduce conflict and create a court-admissible record."),
  ("my-ex-wont-sign-divorce-papers","Divorce","My Ex Won't Sign the Divorce Papers","In Australia your ex cannot block a divorce. Sole-applicant process, costs, and what they're usually really resisting."),
  ("who-pays-bills-during-separation","Property","Who Pays Bills During Separation?","Mortgage, utilities, joint credit cards — who is responsible and how to set up an interim arrangement that protects you both."),
+ ("estate-inheritance-dispute-mediation","Estate disputes","Estate &amp; Inheritance Dispute Mediation","How mediation resolves contested wills, family provision claims, executor disputes and superannuation conflicts — faster and cheaper than court."),
  ("victorian-right-to-work-from-home","Workplace","Victoria's Right to Work From Home","What the new Victorian law means for employers and employees — and why mediation resolves disputes faster than a tribunal."),
  ("online-mediation-australia","Process & preparation","Online Mediation in Australia: How It Works","How online mediation works, when to use it, and how to choose an accredited mediator."),
  ("cost-of-divorce-in-australia","Costs & fees","How Much Does Divorce Cost in Australia? (2026)","A clear breakdown of court fees, lawyer costs, and how mediation saves tens of thousands."),
