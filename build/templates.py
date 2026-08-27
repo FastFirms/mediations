@@ -106,7 +106,7 @@ OFFICES = [
     ("Perth", "Level 25, 108 St Georges Tce, WA 6000"),
 ]
 
-def esc(s): return html.escape(s, quote=True)
+def esc(s): return html.escape(html.unescape(str(s)), quote=True)
 
 def img(src, alt, w, h, cls="photo", caption=None, eager=False, srcset=None, sizes=None):
     """Responsive, CWV-safe <img> wrapped in <figure>. Drop optimised files
