@@ -146,7 +146,7 @@ def topic_nav():
         count = len(posts)
         icon = TOPIC_ICONS.get(icon_key, "")
         items += f'<a href="#{tid}" class="tnav-item"><span class="tnav-icon">{icon}</span><span class="tnav-label">{esc(label)}</span><span class="tnav-count">{count}</span></a>'
-    return f'<nav class="topic-nav" aria-label="Guide topics">{items}</nav>'
+    return f'<nav class="topic-nav" aria-label="Guide topics"><div class="wrap tnav-inner">{items}</div></nav>'
 
 # ── GUIDE CARD (compact, list-style within a topic) ───────────────────────────
 def guide_card(slug, title, blurb):
@@ -273,35 +273,34 @@ d = d.replace("</head>", """<style>
 .sr-none{padding:18px;color:var(--ink-soft);font-size:.92rem;text-align:center}
 
 /* Topic nav */
-.topic-nav{display:flex;flex-wrap:wrap;gap:8px;padding:28px 0;background:var(--cream);border-bottom:1px solid var(--line)}
-.topic-nav{justify-content:center}
-.tnav-item{display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:100px;border:1.5px solid var(--line);background:var(--sand);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:500;transition:all .15s;white-space:nowrap}
-.tnav-item:hover{border-color:var(--sage);color:var(--sage-deep);background:#fff}
+.topic-nav{background:var(--cream);border-bottom:1px solid var(--line);padding:20px 0}
+.tnav-inner{display:flex;flex-wrap:wrap;gap:10px}
+.tnav-item{display:flex;align-items:center;gap:9px;padding:12px 20px;border-radius:100px;border:1.5px solid var(--line);background:#fff;color:var(--ink);text-decoration:none;font-size:.92rem;font-weight:500;transition:all .15s;white-space:nowrap}
+.tnav-item:hover{border-color:var(--sage);color:var(--sage-deep);background:var(--sand)}
 .tnav-icon{color:var(--sage-deep);display:flex;align-items:center;flex-shrink:0}
-.tnav-count{background:var(--sage-light);color:var(--sage-deep);border-radius:100px;padding:1px 8px;font-size:.76rem;font-weight:600}
+.tnav-count{background:var(--sage-light);color:var(--sage-deep);border-radius:100px;padding:2px 10px;font-size:.78rem;font-weight:600}
 
 /* Topic sections */
-.tsec{padding:52px 0;border-bottom:1px solid var(--line)}
+.tsec{padding:60px 0;border-bottom:1px solid var(--line)}
 .tsec:nth-child(even){background:var(--cream)}
-.tsec-hd{display:flex;align-items:center;gap:14px;margin-bottom:28px}
-.tsec-icon{width:44px;height:44px;border-radius:12px;background:var(--sage-light);color:var(--sage-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.tsec-hd h2{margin:0;font-size:1.5rem}
-.tsec-count{margin-left:auto;font-size:.85rem;color:var(--ink-soft);white-space:nowrap;flex-shrink:0}
+.tsec-hd{display:flex;align-items:center;gap:16px;margin-bottom:32px}
+.tsec-icon{width:48px;height:48px;border-radius:14px;background:var(--sage-light);color:var(--sage-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.tsec-hd h2{margin:0;font-size:1.6rem}
+.tsec-count{margin-left:auto;font-size:.88rem;color:var(--ink-soft);white-space:nowrap;flex-shrink:0}
 
-/* Guide cards — compact list-row style */
-.gcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2px}
-.gcard{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:2px 12px;align-items:start;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink);transition:all .15s;margin:3px}
-.gcard:hover{border-color:var(--sage);box-shadow:0 2px 12px rgba(0,0,0,.08)}
-.gcard-title{font-weight:600;font-size:.97rem;color:var(--ink);grid-column:1;line-height:1.35}
-.gcard-blurb{font-size:.84rem;color:var(--ink-soft);line-height:1.5;grid-column:1;margin-top:4px}
-.gcard-arr{grid-column:2;grid-row:1/3;color:var(--sage-deep);font-size:1.1rem;align-self:center;opacity:.5;transition:opacity .15s,transform .15s}
-.gcard:hover .gcard-arr{opacity:1;transform:translateX(3px)}
+/* Guide cards */
+.gcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.gcard{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:4px 14px;align-items:start;padding:22px 24px;background:#fff;border:1.5px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink);transition:all .15s}
+.gcard:hover{border-color:var(--sage);box-shadow:0 4px 18px rgba(0,0,0,.09);transform:translateY(-1px)}
+.gcard-title{font-weight:600;font-size:1.02rem;color:var(--ink);grid-column:1;line-height:1.4}
+.gcard-blurb{font-size:.87rem;color:var(--ink-soft);line-height:1.55;grid-column:1;margin-top:6px}
+.gcard-arr{grid-column:2;grid-row:1/3;color:var(--sage-deep);font-size:1.2rem;align-self:center;opacity:.4;transition:opacity .15s,transform .15s}
+.gcard:hover .gcard-arr{opacity:1;transform:translateX(4px)}
 
-@media(max-width:640px){
+@media(max-width:768px){
   .gcards{grid-template-columns:1fr}
-  .topic-nav{gap:6px;padding:20px 16px}
-  .tnav-item{padding:8px 14px;font-size:.82rem}
-  .tnav-label{display:none}
+  .tnav-inner{gap:8px}
+  .tnav-item{padding:10px 16px;font-size:.86rem}
 }
 </style></head>""")
 
