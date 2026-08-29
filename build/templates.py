@@ -131,9 +131,11 @@ def img(src, alt, w, h, cls="photo", caption=None, eager=False, srcset=None, siz
     cap = f'<figcaption>{esc(caption)}</figcaption>' if caption else ''
     return f'<figure class="{cls}">{tag}{cap}</figure>'
 
-def head(title, desc, slug, og_type="website", extra_schema=None):
-    """Build <head> with full SEO/AEO meta + JSON-LD."""
-    canonical = f"{DOMAIN}/" if slug == "" else f"{DOMAIN}/{slug}/"
+def head(title, desc, slug, og_type="website", extra_schema=None, canonical_url=None):
+    """Build <head> with full SEO/AEO meta + JSON-LD.
+    canonical_url: override the default canonical (e.g. point a /questions/ page at its parent cornerstone).
+    """
+    canonical = canonical_url if canonical_url else (f"{DOMAIN}/" if slug == "" else f"{DOMAIN}/{slug}/")
     schema_blocks = extra_schema or []
     schema_json = json.dumps({"@context": "https://schema.org", "@graph": schema_blocks},
                              ensure_ascii=False, indent=2) if schema_blocks else ""

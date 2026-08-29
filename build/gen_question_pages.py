@@ -108,6 +108,60 @@ def reviewer_block(reviewer, reviewer_slug):
 
 
 # ─────────────────────────────────────────────
+# Canonical map: question slug → parent cornerstone slug
+# Questions listed here will have their canonical pointing at the cornerstone,
+# consolidating ranking signals and resolving keyword cannibalisation.
+# Questions not listed self-canonicalise (no parent cornerstone yet).
+# ─────────────────────────────────────────────
+CANONICAL_MAP = {
+    # Cost & fees
+    "how-much-does-mediation-cost":             "how-much-does-mediation-cost",
+    "how-much-does-family-mediation-cost":      "how-much-does-mediation-cost",
+    "how-much-does-estate-mediation-cost":      "how-much-does-mediation-cost",
+    "how-much-does-commercial-mediation-cost":  "how-much-does-mediation-cost",
+    "who-pays-for-mediation":                   "who-pays-for-mediation",
+    # Process
+    "how-long-does-family-mediation-take":      "how-long-does-mediation-take",
+    "how-long-does-mediation-take":             "how-long-does-mediation-take",
+    "what-happens-during-mediation":            "what-is-mediation-in-family-law",
+    "what-is-family-dispute-resolution":        "what-is-mediation-in-family-law",
+    "is-mediation-legally-binding":             "are-mediation-agreements-legally-binding",
+    "what-if-my-ex-refuses-mediation":          "is-family-law-mediation-compulsory",
+    "do-i-need-mediation-before-family-court":  "is-family-law-mediation-compulsory",
+    "what-is-a-section-60i-certificate":        "is-family-law-mediation-compulsory",
+    "can-i-get-a-s60i-certificate-without-attending-mediation": "is-family-law-mediation-compulsory",
+    "what-is-shuttle-mediation":                "shuttle-mediation-guide",
+    "can-mediation-happen-online":              "online-mediation-australia",
+    "do-i-need-a-lawyer-for-mediation":         "divorce-mediator-vs-divorce-lawyer",
+    "can-i-bring-a-lawyer-to-family-mediation": "divorce-mediator-vs-divorce-lawyer",
+    # Parenting & children
+    "can-mediation-cover-parenting-and-property": "child-custody-mediation",
+    "can-we-make-a-parenting-plan-at-mediation":  "parenting-plans-guide",
+    "can-grandparents-use-family-mediation":       "grandparents-rights",
+    # Property
+    "can-property-settlement-be-resolved-through-mediation": "property-settlement-mediation-guide",
+    # Workplace
+    "how-does-workplace-mediation-work":               "workplace-mediation-guide",
+    "can-a-support-person-attend-workplace-mediation":  "workplace-mediation-guide",
+    "can-an-employee-refuse-workplace-mediation":       "workplace-mediation-guide",
+    "can-workplace-mediation-deal-with-bullying-allegations": "workplace-mediation-guide",
+    "how-does-commercial-mediation-work":               "workplace-mediation-guide",
+    "can-business-partners-use-mediation":              "workplace-mediation-guide",
+    "can-mediation-resolve-a-contract-dispute":         "workplace-mediation-guide",
+    # Estate
+    "can-mediation-resolve-an-inheritance-dispute": "estate-inheritance-dispute-mediation",
+    "can-you-mediate-a-contested-will":             "estate-inheritance-dispute-mediation",
+    "what-is-estate-mediation":                     "estate-inheritance-dispute-mediation",
+    # Misc
+    "is-family-mediation-confidential":        "what-is-mediation-in-family-law",
+    "is-workplace-mediation-confidential":     "workplace-mediation-guide",
+    "can-lawyers-attend-commercial-mediation": "divorce-mediator-vs-divorce-lawyer",
+}
+
+_DOMAIN = "https://www.mediationsaustralia.com.au"
+
+
+# ─────────────────────────────────────────────
 # Core builder
 # ─────────────────────────────────────────────
 
@@ -130,6 +184,10 @@ def qa_page(slug, question, title, desc, category,
     cat_label = CATEGORY_LABELS.get(category, "Mediation")
     full_slug = f"questions/{slug}"
 
+    # Canonical: point to parent cornerstone if mapped, else self-canonicalise
+    parent = CANONICAL_MAP.get(slug)
+    canonical_url = f"{_DOMAIN}/{parent}/" if parent else None
+
     schema = [
         org_schema(),
         breadcrumb_schema([
@@ -140,7 +198,7 @@ def qa_page(slug, question, title, desc, category,
         faq_schema([(question, direct_answer)]),
     ]
 
-    doc = head(title, desc, full_slug, extra_schema=schema)
+    doc = head(title, desc, full_slug, extra_schema=schema, canonical_url=canonical_url)
     doc += nav()
     doc += f"""<main id="main">
 {crumb_html([("Home",""),("Questions &amp; Answers","questions"),(esc(question),None)])}
