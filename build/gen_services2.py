@@ -7,10 +7,13 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        BOOK_URL, PHONE, PHONE_HREF)
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p):
+def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,canonical_url=None,noindex=False):
     schema=[org_schema(),breadcrumb_schema([("Home",""),(crumb,slug)]),
             service_schema(crumb,desc,slug),faq_schema(qa)]
-    d=head(title,desc,slug,extra_schema=schema)+nav()
+    d=head(title,desc,slug,extra_schema=schema,canonical_url=canonical_url)+nav()
+    if noindex:
+        d=d.replace('<meta name="robots" content="index, follow',
+                    '<meta name="robots" content="noindex, follow')
     d+=f"""<main id="main">
 {crumb_html([("Home",""),(crumb,None)])}
 <section class="phero"><div class="phero-blob"></div><div class="wrap">
@@ -767,7 +770,8 @@ build("our-fee-structure",
    "For most people, yes. Mediation involves a fixed, known fee agreed before you proceed. Court proceedings involve ongoing legal costs that are difficult to predict and can extend for months or years. We recommend obtaining independent legal advice about your specific circumstances.")],
  "Our Fee Structure",
  "READY TO TAKE THE NEXT STEP?",
- "Know the cost before you commit.")
+ "Know the cost before you commit.",
+ noindex=True)  # Pricing/service page — noindex to avoid cannibalising /how-much-does-mediation-cost/
 
 
 build("costs-of-going-to-court",
@@ -896,7 +900,8 @@ build("costs-of-going-to-court",
    "If mediation doesn't resolve your dispute you are not worse off — you retain all rights to proceed to court. In most cases you will have a clearer picture of the issues and a narrower set of disputes, which reduces the cost and time of any subsequent litigation.")],
  "Costs of Going to Court",
  "Mediation costs a <em>fraction</em> of litigation.",
- "Start with a free consultation and find out how mediation can resolve your dispute without the cost and delay of court.")
+ "Start with a free consultation and find out how mediation can resolve your dispute without the cost and delay of court.",
+ canonical_url="https://www.mediationsaustralia.com.au/how-much-does-mediation-cost/")  # Canonical → cost cornerstone
 
 # ---- WORKPLACE SUB-PAGES ----
 
