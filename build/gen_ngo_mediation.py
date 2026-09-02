@@ -20,7 +20,7 @@ from authority_sources import cite
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SLUG   = "ngo-not-for-profit-mediation"
-TITLE  = "NGO & Not-for-Profit Workplace Mediation"
+TITLE  = "Workplace Mediation for Not-for-Profits (NGOs)"
 DESC   = ("Independent workplace mediation for NGOs, charities and not-for-profits across Australia. "
           "Resolve executive conflict, board disputes and post-investigation breakdown confidentially.")
 H1     = "Workplace mediation for <em>NGOs and not-for-profits</em>."

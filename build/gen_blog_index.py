@@ -263,7 +263,7 @@ HIGH_CONFLICT = [
 ]
 
 WORKPLACE = [
-    ("ngo-not-for-profit-mediation",   "NGO & Not-for-Profit Workplace Mediation",           "Independent mediation for NGOs, charities and not-for-profits — executive conflict, board disputes, post-investigation breakdown."),
+    ("ngo-not-for-profit-mediation",   "Workplace Mediation for Not-for-Profits (NGOs)",     "Independent mediation for NGOs, charities and not-for-profits — executive conflict, board disputes, post-investigation breakdown."),
     ("workplace-mediation-guide",      "Workplace Mediation in Australia",                  "How it resolves workplace conflict, the Fair Work process, and the benefits."),
     ("victorian-right-to-work-from-home","Victoria's Right to Work From Home",              "What the law means for employers and employees — and resolving disputes fast."),
     ("commercial-lease-dispute-mediation-australia", "Commercial Lease Disputes: How Mediation Resolves Them", "Commercial Lease Disputes: How Mediation Resolves Them"),
