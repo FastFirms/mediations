@@ -31,6 +31,7 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "how-much-does-mediation-cost","arbitration-in-family-law","pets-and-family-law","same-sex-family-law","changes-to-family-law-act-2025","stepparent-rights","surrogacy-laws","can-you-record-your-ex","best-divorce-lawyers-sydney","parental-alienation-australia","memberships",
         "who-pays-for-mediation","private-vs-free-mediation","divorce-mediator-vs-divorce-lawyer","mediation-before-divorce","what-happens-if-mediation-fails","what-is-in-the-property-pool","delaying-property-settlement","co-parenting-mediation","online-mediation-australia","victorian-right-to-work-from-home","belbin-team-roles-training",
         "prepare-for-mediation",
+        "ngo-not-for-profit-mediation",
         # service-city pages
         "property-settlement-mediation-sydney","divorce-mediation-sydney",
         "parenting-mediation-sydney","workplace-mediation-sydney",
