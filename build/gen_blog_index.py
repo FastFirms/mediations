@@ -104,6 +104,7 @@ PROPERTY = [
     ("consent-orders-2026-update",     "Consent Orders 2026: What Changed",                  "The 2025 reforms, updated process, and what you need to know this year."),
     ("superannuation-and-divorce",     "Superannuation and Divorce",                         "How super splitting works, valuation, and why it matters — especially for carers."),
     ("property-settlement-mediation-guide", "Property Settlement Mediation Guide",           "How to prepare, what to bring, what to expect on the day."),
+    ("property-settlement-timeline",   "Property Settlement Timeline in Australia",          "Mediation: 3–6 months. Court: 2–5 years. Every path explained with costs."),
     ("what-is-in-the-property-pool",   "What's in the Property Pool?",                      "Assets, super, businesses, debts and inheritances — what counts."),
     ("spousal-maintenance-guide",      "Spousal Maintenance in Australia",                   "Who pays, how much, how long it lasts, and how it differs from child support."),
     ("business-in-divorce",            "Business in Divorce",                                "How businesses and trusts are valued and divided — and how to protect yours."),
@@ -285,6 +286,7 @@ WORKPLACE = [
 
 ESTATE = [
     ("estate-inheritance-dispute-mediation","Estate & Inheritance Dispute Mediation",       "Contested wills, family provision claims, executor disputes — resolved faster than court."),
+    ("executor-dispute-mediation",          "Executor Disputes in Australia",               "Beneficiary vs executor dispute? Your legal rights, how mediation resolves it, and when court is necessary."),
     ("consent-order", "Consent Order: Will They Keep Their Promise?", "Don't risk your children's future on handshake deals. Learn how to make your agreements legally binding through mediation and consent orders, saving…"),
     ("contesting-a-will-in-australia-can-mediation-avoid-a-court-battle", "Contesting a Will in Australia: Can Mediation Avoid Court?", "Over 80% of contested will claims settle at mediation. Learn how family provision claims work in Australia and how mediation can save your family t..."),
     ("contesting-a-will-with-mediation", "Contesting a Will with Mediation: A Comprehensive Guide…", "Contesting a will with mediation saves 80% on legal costs. Resolve inheritance disputes faster without court. Expert Australian mediators. Confiden..."),

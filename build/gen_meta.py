@@ -119,7 +119,10 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "consent-orders-2026-update",
         "family-court-process-2026",
         "are-mediation-agreements-legally-binding",
-        "high-conflict-family-law-mediation"]
+        "high-conflict-family-law-mediation",
+        # Batch 20 — new cornerstones
+        "executor-dispute-mediation",
+        "property-settlement-timeline"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:

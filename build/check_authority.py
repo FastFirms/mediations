@@ -14,7 +14,8 @@ BLOG=['cost-of-divorce-in-australia','mediation-with-a-narcissist','consent-orde
       'does-mediation-have-to-be-paid-50-50','asset-rich-cash-poor-mediation',
       'family-relationship-centre-vs-private-mediation','legal-aid-vs-private-mediation',
       'consent-orders-2026-update','family-court-process-2026',
-      'are-mediation-agreements-legally-binding','high-conflict-family-law-mediation']
+      'are-mediation-agreements-legally-binding','high-conflict-family-law-mediation',
+      'executor-dispute-mediation','property-settlement-timeline']
 
 def content_only(s):
     s=re.sub(r'<header.*?</header>','',s,flags=re.S)
