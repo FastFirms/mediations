@@ -12,6 +12,15 @@ sys.path.insert(0, os.path.dirname(__file__))
 from gen_blog import post, inline_cta, callout, key_takeaway
 from authority_sources import cite
 
+# ── Availability notice — shown at the top of every Access cluster page ───────
+_AVAIL = """<div style="display:flex;gap:14px;align-items:flex-start;background:#fff8e1;border:2px solid #f0a500;border-radius:12px;padding:20px 24px;margin-bottom:28px">
+  <span style="font-size:1.4rem;flex-shrink:0;margin-top:2px" aria-hidden="true">⚠️</span>
+  <div>
+    <strong style="display:block;font-size:1.05rem;margin-bottom:6px;color:#7a4f00">Access Mediation is currently booked out until November 2026.</strong>
+    <p style="margin:0;font-size:.93rem;color:#5c3900;line-height:1.55">We are not taking new Access Mediation bookings at this time. If your matter is urgent, please call us on <a href="tel:1800952380" style="color:#7a4f00;font-weight:600">1800 952 380</a> to discuss your options, including standard-rate availability and referrals.</p>
+  </div>
+</div>"""
+
 # ─────────────────────────────────────────────────────────────────────────────
 # PAGE 1 — /cant-afford-mediation/
 # ─────────────────────────────────────────────────────────────────────────────
@@ -37,8 +46,8 @@ post(
         ("without-lawyer",       "Can I mediate without a lawyer?"),
         ("access-mediation",     "When might Access Mediation be relevant?"),
     ],
-    body=(
-        key_takeaway(
+    body=(_AVAIL
+        + key_takeaway(
             "Private mediation is not the only option. Australia has free and low-cost "
             "family dispute resolution pathways — including Family Relationship Centres, "
             "community FDR, Legal Aid, and reduced-fee private mediation — and the right "
@@ -240,8 +249,8 @@ post(
         ("is-access-free", "Is Access Mediation free?"),
         ("how-to-choose",  "How to choose the right option"),
     ],
-    body=(
-        key_takeaway(
+    body=(_AVAIL
+        + key_takeaway(
             "Family mediation can be free in Australia through government-funded Family "
             "Relationship Centres, community FDR providers, and, for eligible people, "
             "Legal Aid. However, free services have eligibility requirements, can have "
@@ -468,8 +477,8 @@ post(
         ("comparison",        "Comparing the main options"),
         ("how-access-works",  "How Access Mediation works"),
     ],
-    body=(
-        key_takeaway(
+    body=(_AVAIL
+        + key_takeaway(
             "Family mediation in Australia ranges from free (through government-funded FRCs "
             "and community services) to standard private rates of $1,500–$2,250 per person "
             "per session. Between those extremes, some private providers offer assessed "
@@ -690,8 +699,8 @@ post(
         ("cant-afford-share", "What if I can't afford my share?"),
         ("next-steps",        "Next steps"),
     ],
-    body=(
-        key_takeaway(
+    body=(_AVAIL
+        + key_takeaway(
             "There is no rule that mediation fees must be divided equally. The arrangement "
             "depends on the provider, the agreement between participants, and — where a "
             "reduced-fee pathway is used — each person's individually assessed financial "
@@ -848,8 +857,8 @@ post(
         ("access-model",    "Access Mediation's individual assessment model"),
         ("how-to-arrange",  "How to arrange a different split"),
     ],
-    body=(
-        key_takeaway(
+    body=(_AVAIL
+        + key_takeaway(
             "No. Mediation fees do not necessarily have to be divided equally. How "
             "the cost is allocated depends on the provider, the service model, any "
             "agreement between participants, and — where a reduced-fee pathway is "
@@ -1017,8 +1026,8 @@ post(
         ("superannuation",  "What about superannuation?"),
         ("next-steps",      "What happens next?"),
     ],
-    body=(
-        key_takeaway(
+    body=(_AVAIL
+        + key_takeaway(
             "Owning a house or having superannuation does not automatically disqualify "
             "you from reduced-fee mediation. Financial capacity is assessed on accessible "
             "funds — your income and liquid assets — not on the total value of assets "
@@ -1197,8 +1206,8 @@ post(
         ("when-private",      "When private mediation may be better"),
         ("gap",               "What if an FRC is not suitable but standard fees are difficult?"),
     ],
-    body=(
-        key_takeaway(
+    body=(_AVAIL
+        + key_takeaway(
             "Family Relationship Centres are free or low-cost government-funded services "
             "primarily suited to parenting matters between cooperative parents. Private "
             "mediation is more flexible, faster, and better suited to complex matters "
@@ -1378,8 +1387,8 @@ post(
         ("dont-qualify",       "What if I don't qualify for Legal Aid?"),
         ("where-access-fits",  "Where Access Mediation fits"),
     ],
-    body=(
-        key_takeaway(
+    body=(_AVAIL
+        + key_takeaway(
             "Legal Aid provides funded legal assistance to eligible people in lower income "
             "brackets — it is not itself a mediation service. Private mediation is a "
             "separately delivered process. If you do not qualify for Legal Aid and "

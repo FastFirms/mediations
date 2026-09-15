@@ -231,6 +231,17 @@ def privacy_note():
 </section>"""
 
 
+AVAIL_BANNER = """<div class="avail-notice wrap-narrow">
+  <div class="avail-notice-inner">
+    <span class="avail-icon" aria-hidden="true">⚠️</span>
+    <div>
+      <strong>Access Mediation is currently booked out until November 2026.</strong>
+      <p>We are not taking new Access Mediation bookings at this time. If your matter is urgent, please call us on <a href="tel:1800952380">1800 952 380</a> to discuss your options, including standard-rate availability and referrals.</p>
+    </div>
+  </div>
+</div>"""
+
+
 def extra_css():
     return """<style>
 /* ── Access Mediation page-specific styles ── */
@@ -238,6 +249,13 @@ def extra_css():
 .lede-sm{color:var(--ink-soft,#3d5248);margin-bottom:24px;font-size:.97rem;line-height:1.6;max-width:62ch}
 #access-calc-root{min-height:160px}
 .notice{padding:16px 20px;background:#fff3cd;border-left:4px solid #f0a500;border-radius:6px;font-size:.9rem}
+/* availability banner */
+.avail-notice{margin:28px auto;max-width:800px;padding:0 20px}
+.avail-notice-inner{display:flex;gap:16px;align-items:flex-start;background:#fff8e1;border:2px solid #f0a500;border-radius:12px;padding:20px 24px}
+.avail-icon{font-size:1.4rem;flex-shrink:0;margin-top:2px}
+.avail-notice-inner strong{display:block;font-size:1.05rem;margin-bottom:6px;color:#7a4f00}
+.avail-notice-inner p{margin:0;font-size:.93rem;color:#5c3900;line-height:1.55}
+.avail-notice-inner a{color:#7a4f00;font-weight:600}
 
 /* band accordion */
 .band-accordion{margin-top:28px;border:1px solid var(--line,rgba(13,34,24,.14));border-radius:10px;overflow:hidden;background:#fff}
@@ -316,6 +334,7 @@ def build():
   </div>
 </section>"""
 
+    html_doc += AVAIL_BANNER
     html_doc += (f'<div class="wrap-narrow">'
                  f'<div class="answer reveal"><p><strong>In short:</strong> {ANSWER}</p></div>'
                  f'</div>')
