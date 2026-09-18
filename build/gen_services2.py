@@ -26,7 +26,7 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,canoni
 <div class="wrap svc-layout" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">
   <div>
     <div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div>
-    <article class="body" style="padding:0"><div class="reveal">{blocks}</div></article>
+    <article class="body" style="padding:0"><div>{blocks}</div></article>
   </div>
   <aside style="position:sticky;top:24px">{quiz_card()}</aside>
 </div>"""
