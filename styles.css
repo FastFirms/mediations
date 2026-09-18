@@ -345,4 +345,5 @@ footer ul a:hover{color:var(--cream)}
 @media(max-width:767px){.mediator-pitch{grid-template-columns:1fr!important;gap:28px!important}.mediator-pitch>div:first-child{max-width:100%;text-align:center}.mediator-pitch>div:first-child img{width:100%!important;height:auto!important;max-width:100%!important}}
 @media(max-width:767px){.booking-grid{grid-template-columns:1fr!important;gap:32px!important}}
 @media(max-width:680px){.compare{grid-template-columns:1fr!important;gap:0!important}.compare .divider{display:none}}
+@media(max-width:900px){.svc-layout{grid-template-columns:1fr!important}.svc-layout aside{position:static!important;width:100%}.hero-quiz-grid{grid-template-columns:1fr!important}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}

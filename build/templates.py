@@ -945,7 +945,6 @@ def service_hero_with_quiz(eyebrow, h1, lede, crumb_items):
     return f"""{crumb}
 <section class="phero" style="padding-bottom:clamp(48px,6vw,80px)">
   <div class="phero-blob"></div>
-  <style>@media(max-width:900px){{.hero-quiz-grid{{grid-template-columns:1fr!important}}}}</style>
   <div class="wrap hero-quiz-grid" style="display:grid;grid-template-columns:1fr 400px;gap:clamp(32px,5vw,64px);align-items:start">
     <div>
       <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
