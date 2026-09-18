@@ -76,47 +76,47 @@ doc += f"""<main id="main">
       <div class="answer d5" style="max-width:60ch"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation for family, property, workplace and estate disputes across Australia. Founded by Dan Toombs — an AMDRAS-accredited mediator, award-winning lawyer, and former tribunal member — our team resolves over 90% of matters without court, typically in a single day rather than the one to three years a contested matter takes. Mediation costs a fraction of litigation, keeps the decision in your hands rather than a judge&rsquo;s, and the agreement can be made legally binding. We help clients anywhere in Australia.</p></div>
     </div>
     <div class="d3" id="hero-check" style="background:var(--sage-deep);color:var(--cream);border-radius:22px;padding:clamp(24px,3vw,34px);box-shadow:0 4px 32px rgba(13,34,24,.18)">
-      <p style="font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.5);margin:0 0 8px">Free 60-second check</p>
-      <p style="font-family:var(--body-serif);font-size:clamp(1.1rem,2vw,1.4rem);font-weight:400;color:var(--cream);margin:0 0 22px;line-height:1.3">Will mediation work for my situation?</p>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+        <span style="font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#a8c89f;font-weight:500">Free 60-second check</span>
+      </div>
+      <p style="font-family:var(--body-serif);font-size:clamp(1.1rem,2vw,1.35rem);font-weight:400;color:var(--cream);margin:0 0 20px;line-height:1.3">Will mediation work<br>for my situation?</p>
+      <div class="qprogress" aria-hidden="true"><div class="qprogress-fill" id="qpfill" style="width:33%"></div></div>
       <div id="quiz60">
         <div class="qstep" id="qs1">
-          <p class="qlabel">Question 1 of 3</p>
-          <p class="qtext">What needs to be sorted out?</p>
+          <p class="qlabel"><span class="qdots"><span class="qdot qd-on"></span><span class="qdot"></span><span class="qdot"></span></span>What needs to be sorted out?</p>
           <div class="qopts">
-            <button class="qbtn" onclick="q60next(1,'property')">Property &amp; finances</button>
-            <button class="qbtn" onclick="q60next(1,'parenting')">Parenting arrangements</button>
-            <button class="qbtn" onclick="q60next(1,'both')">Both — parenting and property</button>
-            <button class="qbtn" onclick="q60next(1,'other')">Workplace, business or estate dispute</button>
+            <button class="qbtn" onclick="q60next(1,'property')"><span class="qcircle"></span>Property &amp; finances</button>
+            <button class="qbtn" onclick="q60next(1,'parenting')"><span class="qcircle"></span>Parenting arrangements</button>
+            <button class="qbtn" onclick="q60next(1,'both')"><span class="qcircle"></span>Both — parenting and property</button>
+            <button class="qbtn" onclick="q60next(1,'other')"><span class="qcircle"></span>Workplace, business or estate dispute</button>
           </div>
         </div>
         <div class="qstep" id="qs2" hidden>
-          <p class="qlabel">Question 2 of 3</p>
-          <p class="qtext">Where are things up to?</p>
+          <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-on"></span><span class="qdot"></span></span>Where are things up to?</p>
           <div class="qopts">
-            <button class="qbtn" onclick="q60next(2,'early')">Just separated or at an early stage</button>
-            <button class="qbtn" onclick="q60next(2,'stalled')">Negotiations have stalled</button>
-            <button class="qbtn" onclick="q60next(2,'solicitor')">We&rsquo;ve been through solicitors</button>
-            <button class="qbtn" onclick="q60next(2,'court')">Court proceedings have started</button>
+            <button class="qbtn" onclick="q60next(2,'early')"><span class="qcircle"></span>Just separated or at an early stage</button>
+            <button class="qbtn" onclick="q60next(2,'stalled')"><span class="qcircle"></span>Negotiations have stalled</button>
+            <button class="qbtn" onclick="q60next(2,'solicitor')"><span class="qcircle"></span>We&rsquo;ve been through solicitors</button>
+            <button class="qbtn" onclick="q60next(2,'court')"><span class="qcircle"></span>Court proceedings have started</button>
           </div>
           <button class="qback" onclick="q60back(1)">&#8592; Back</button>
         </div>
         <div class="qstep" id="qs3" hidden>
-          <p class="qlabel">Question 3 of 3</p>
-          <p class="qtext">How is the other person likely to respond?</p>
+          <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-done"></span><span class="qdot qd-on"></span></span>How is the other person likely to respond?</p>
           <div class="qopts">
-            <button class="qbtn" onclick="q60result('strong')">They&rsquo;d probably agree to mediate</button>
-            <button class="qbtn" onclick="q60result('likely')">Honestly, I&rsquo;m not sure</button>
-            <button class="qbtn" onclick="q60result('possible')">I don&rsquo;t think they&rsquo;ll come</button>
-            <button class="qbtn" onclick="q60result('safety')">There&rsquo;s high conflict or safety concerns</button>
+            <button class="qbtn" onclick="q60result('strong')"><span class="qcircle"></span>They&rsquo;d probably agree to mediate</button>
+            <button class="qbtn" onclick="q60result('likely')"><span class="qcircle"></span>Honestly, I&rsquo;m not sure</button>
+            <button class="qbtn" onclick="q60result('possible')"><span class="qcircle"></span>I don&rsquo;t think they&rsquo;ll come</button>
+            <button class="qbtn" onclick="q60result('safety')"><span class="qcircle"></span>There&rsquo;s high conflict or safety concerns</button>
           </div>
           <button class="qback" onclick="q60back(2)">&#8592; Back</button>
         </div>
         <div class="qstep" id="qresult" hidden>
-          <div id="qbadge" style="display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;font-size:.75rem;font-weight:500;margin-bottom:14px"></div>
+          <div id="qbadge"></div>
           <p id="qverdict" style="font-family:var(--body-serif);font-size:1.2rem;line-height:1.3;margin:0 0 10px;color:var(--cream)"></p>
-          <p id="qnote" style="font-size:.88rem;line-height:1.6;color:rgba(255,255,255,.72);margin:0 0 18px"></p>
-          <div id="qbullets" style="display:grid;gap:8px;padding:16px 18px;background:rgba(255,255,255,.07);border-radius:12px;margin-bottom:20px"></div>
-          <a href="/contact-us/" class="btn btn-primary" style="width:100%;text-align:center;justify-content:center;display:flex;padding:13px 20px">Book a free consultation <span class="arr">&#8594;</span></a>
+          <p id="qnote" style="font-size:.87rem;line-height:1.65;color:rgba(216,234,217,.72);margin:0 0 16px"></p>
+          <div id="qbullets" style="display:grid;gap:9px;padding:15px 17px;background:rgba(168,200,159,.08);border:1px solid rgba(168,200,159,.18);border-radius:12px;margin-bottom:20px"></div>
+          <a href="/contact-us/" class="btn btn-primary" style="width:100%;text-align:center;justify-content:center;display:flex;padding:14px 20px;font-size:.95rem">Book a free consultation <span class="arr">&#8594;</span></a>
           <button class="qback" onclick="q60reset()" style="width:100%;text-align:center;margin-top:10px">&#8592; Start again</button>
         </div>
       </div>
@@ -124,47 +124,59 @@ doc += f"""<main id="main">
   </div>
 </section>
 <style>
-#quiz60 .qlabel{{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);margin:0 0 5px}}
-#quiz60 .qtext{{font-family:var(--body-serif);font-size:1.15rem;line-height:1.3;color:var(--cream);margin:0 0 15px}}
-#quiz60 .qopts{{display:grid;gap:8px}}
-#quiz60 .qbtn{{text-align:left;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);padding:12px 15px;border-radius:11px;font-size:.92rem;color:var(--cream);cursor:pointer;transition:background .15s,border-color .15s;font-family:var(--sans);line-height:1.4}}
-#quiz60 .qbtn:hover{{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35)}}
-#quiz60 .qback{{margin-top:12px;background:none;border:none;color:rgba(255,255,255,.45);font-size:.8rem;cursor:pointer;padding:0;font-family:var(--sans)}}
-#quiz60 .qback:hover{{color:rgba(255,255,255,.8)}}
-@keyframes qfade{{from{{opacity:0;transform:translateY(5px)}}to{{opacity:1;transform:translateY(0)}}}}
-#quiz60 .qstep:not([hidden]){{animation:qfade .22s ease both}}
+.qprogress{{height:3px;background:rgba(168,200,159,.15);border-radius:999px;margin-bottom:22px;overflow:hidden}}
+.qprogress-fill{{height:100%;background:linear-gradient(90deg,#4a9e6a,#a8c89f);border-radius:999px;transition:width .4s cubic-bezier(.4,0,.2,1)}}
+#quiz60 .qlabel{{display:flex;align-items:center;gap:10px;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:rgba(216,234,217,.55);margin:0 0 12px;font-family:var(--sans)}}
+.qdots{{display:flex;gap:5px;flex-shrink:0}}
+.qdot{{width:6px;height:6px;border-radius:50%;background:rgba(168,200,159,.25);transition:background .3s,transform .3s}}
+.qdot.qd-on{{background:#a8c89f;transform:scale(1.25)}}
+.qdot.qd-done{{background:rgba(168,200,159,.55)}}
+#quiz60 .qopts{{display:grid;gap:7px}}
+#quiz60 .qbtn{{display:flex;align-items:center;gap:12px;text-align:left;border:1px solid rgba(168,200,159,.18);background:rgba(168,200,159,.04);padding:12px 16px;border-radius:11px;font-size:.92rem;color:rgba(247,250,247,.82);cursor:pointer;transition:background .16s,border-color .16s,transform .16s,color .16s;font-family:var(--sans);line-height:1.4;width:100%}}
+#quiz60 .qbtn:hover{{background:rgba(168,200,159,.13);border-color:rgba(168,200,159,.5);color:var(--cream);transform:translateX(3px)}}
+#quiz60 .qbtn:active{{background:rgba(168,200,159,.22);transform:translateX(3px) scale(.98)}}
+.qcircle{{width:16px;height:16px;border-radius:50%;border:1.5px solid rgba(168,200,159,.35);flex-shrink:0;transition:border-color .16s,background .16s}}
+#quiz60 .qbtn:hover .qcircle{{border-color:#a8c89f;background:rgba(168,200,159,.25)}}
+#quiz60 .qback{{margin-top:13px;background:none;border:none;color:rgba(216,234,217,.4);font-size:.8rem;cursor:pointer;padding:0;font-family:var(--sans);transition:color .15s}}
+#quiz60 .qback:hover{{color:rgba(216,234,217,.85)}}
+#qbadge{{display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em}}
+@keyframes qfade{{from{{opacity:0;transform:translateY(6px)}}to{{opacity:1;transform:translateY(0)}}}}
+#quiz60 .qstep:not([hidden]){{animation:qfade .24s ease both}}
 @media(max-width:900px){{#hero-check{{order:-1}}}}
 </style>
 <script>
 var _q60={{t:null,s:null}};
+function _q60prog(w){{document.getElementById('qpfill').style.width=w;}}
 function q60next(step,val){{
   if(step===1)_q60.t=val;else _q60.s=val;
   document.getElementById('qs'+step).hidden=true;
   document.getElementById('qs'+(step+1)).hidden=false;
+  _q60prog(step===1?'66%':'100%');
 }}
 function q60back(step){{
   document.getElementById('qs'+(step+1)).hidden=true;
   document.getElementById('qs'+step).hidden=false;
+  _q60prog(step===1?'33%':'66%');
 }}
 function q60result(party){{
   document.getElementById('qs3').hidden=true;
   var badge=document.getElementById('qbadge'),verdict=document.getElementById('qverdict'),note=document.getElementById('qnote'),bullets=document.getElementById('qbullets');
   var vt,nt,bl;
   if(party==='safety'){{
-    badge.style.cssText='display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;font-size:.75rem;font-weight:500;margin-bottom:14px;background:rgba(240,165,0,.18);color:#f5c347';
-    badge.textContent='Needs careful design';
+    badge.style.cssText='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(240,165,0,.15);border:1px solid rgba(240,165,0,.3);color:#f5c347';
+    badge.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Needs careful design';
     vt='Mediation may still be the right path — with the right structure.';
     nt="Where there's high conflict or a safety concern we assess suitability first, then design the session so you're never in the same room, or exempt you and document it properly.";
     bl=['Confidential intake and safety screening before any joint contact.','Shuttle mediation: separate rooms or separate video links, staggered times.','If an exemption applies, we help you document it correctly.'];
   }} else if(party==='possible'){{
-    badge.style.cssText='display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;font-size:.75rem;font-weight:500;margin-bottom:14px;background:rgba(168,200,159,.12);color:#a8c89f';
-    badge.textContent='Worth a conversation';
+    badge.style.cssText='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(168,200,159,.12);border:1px solid rgba(168,200,159,.28);color:#a8c89f';
+    badge.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Worth a conversation';
     vt="You don't need them to say yes before you call us.";
     nt="We never contact the other party without your say-so. A free consultation helps you understand your options — and often the other party comes around once they understand what's involved.";
     bl=['We can explain how to approach the other party in a way that works.','Many matters proceed once both sides understand the cost of the alternative.','If they won\\'t engage, we advise on the next step.'];
   }} else {{
-    badge.style.cssText='display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;font-size:.75rem;font-weight:500;margin-bottom:14px;background:rgba(168,200,159,.12);color:#a8c89f';
-    badge.textContent='Strong fit for mediation';
+    badge.style.cssText='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(168,200,159,.14);border:1px solid rgba(168,200,159,.32);color:#a8c89f';
+    badge.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Strong fit for mediation';
     vt=party==='strong'?'Your matter is well-suited to mediation.':'Mediation is likely a good fit — let\\'s talk through the specifics.';
     nt='An honest read on whether mediation suits your matter. No cost, no obligation.';
     if(_q60.t==='parenting'||_q60.t==='both'){{
@@ -176,13 +188,14 @@ function q60result(party){{
     }}
   }}
   verdict.textContent=vt; note.textContent=nt;
-  bullets.innerHTML=bl.map(function(b){{return'<div style="display:flex;gap:10px;font-size:.86rem;color:rgba(255,255,255,.82);line-height:1.5"><span style="color:#a8c89f;flex-shrink:0">&#10003;</span>'+b+'</div>';}}).join('');
+  bullets.innerHTML=bl.map(function(b){{return'<div style="display:flex;gap:10px;font-size:.85rem;color:rgba(216,234,217,.88);line-height:1.5"><span style="color:#a8c89f;flex-shrink:0;margin-top:1px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>'+b+'</div>';}}).join('');
   document.getElementById('qresult').hidden=false;
 }}
 function q60reset(){{
   _q60={{t:null,s:null}};
   ['qs2','qs3','qresult'].forEach(function(id){{document.getElementById(id).hidden=true;}});
   document.getElementById('qs1').hidden=false;
+  _q60prog('33%');
 }}
 </script>
 
