@@ -59,19 +59,19 @@ doc = head(
                faq_schema(qa_home)])
 doc += nav()
 doc += f"""<main id="main">
-<section class="phero" style="padding-bottom:clamp(48px,6vw,80px);background-image:linear-gradient(rgba(13,34,24,.72),rgba(13,34,24,.62)),url('/assets/images/homepage-hero.png');background-size:cover;background-position:center top">
+<section class="phero" style="padding-bottom:clamp(48px,6vw,80px);background-image:linear-gradient(rgba(247,250,247,.93),rgba(247,250,247,.93)),url('/assets/images/homepage-hero.png');background-size:cover;background-position:center top">
   <div class="phero-blob" style="opacity:.35"></div>
   <div class="wrap">
     <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
   </div>
   <div class="wrap hero-consult-grid" style="display:grid;grid-template-columns:1fr 420px;gap:clamp(32px,5vw,72px);align-items:start;margin-top:20px">
     <div>
-      <h1 class="d2" style="font-size:clamp(2.2rem,4.8vw,4.2rem);max-width:18ch;margin-bottom:24px;color:var(--cream)">Mediation for Family, Workplace <em style="color:#a8c89f">&amp; Estate Disputes.</em></h1>
-      <p class="lede d3" style="font-size:clamp(1rem,1.5vw,1.2rem);color:rgba(216,234,217,.88);max-width:52ch;margin-bottom:36px">Most disputes don't need a courtroom. Our nationally accredited mediators help separating couples, families, businesses and colleagues reach lasting agreements — faster, more affordably, and on terms they choose together.</p>
-      <div class="stats d4" style="margin-bottom:36px;--stat-lbl:#a8c89f">
-        <div class="stat"><span class="num" style="color:var(--cream)"><em>90%</em></span><div class="lbl" style="color:rgba(168,200,159,.85)">resolved at mediation</div></div>
-        <div class="stat"><span class="num" style="color:var(--cream)">1 Day</span><div class="lbl" style="color:rgba(168,200,159,.85)">not years in court</div></div>
-        <div class="stat"><span class="num" style="color:var(--cream)">100%</span><div class="lbl" style="color:rgba(168,200,159,.85)">you choose the outcome</div></div>
+      <h1 class="d2" style="font-size:clamp(2.2rem,4.8vw,4.2rem);max-width:18ch;margin-bottom:24px">Mediation for Family, Workplace <em>&amp; Estate Disputes.</em></h1>
+      <p class="lede d3" style="font-size:clamp(1rem,1.5vw,1.2rem);color:var(--ink-soft);max-width:52ch;margin-bottom:36px">Most disputes don't need a courtroom. Our nationally accredited mediators help separating couples, families, businesses and colleagues reach lasting agreements — faster, more affordably, and on terms they choose together.</p>
+      <div class="stats d4" style="margin-bottom:36px">
+        <div class="stat"><span class="num"><em>90%</em></span><div class="lbl">resolved at mediation</div></div>
+        <div class="stat"><span class="num">1 Day</span><div class="lbl">not years in court</div></div>
+        <div class="stat"><span class="num">100%</span><div class="lbl">you choose the outcome</div></div>
       </div>
     </div>
     <div class="d3" id="hero-check" style="background:var(--sage-deep);color:var(--cream);border-radius:22px;padding:clamp(24px,3vw,34px);box-shadow:0 4px 32px rgba(13,34,24,.18)">
