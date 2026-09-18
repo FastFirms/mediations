@@ -443,7 +443,7 @@ service_page(
         ("get-started","Getting started"),
     ],
     takeaway=key_takeaway(
-        "A Section 60I certificate is the document an accredited Family Dispute Resolution Practitioner (FDRP) issues to record that you've attempted Family Dispute Resolution for a parenting matter. You generally need one before you can file a parenting application in court, unless an exemption applies. There are five certificate types, depending on what actually happened in the FDR process. We're accredited to issue them."
+        "A Section 60I certificate is issued by an accredited Family Dispute Resolution Practitioner to confirm that FDR was attempted for a parenting matter. You generally need one before you can file a parenting application in court — and we’re accredited to issue it."
     ),
     body_html=f"""
 <h2 id="what-is">What is a Section 60I certificate?</h2>
@@ -453,18 +453,14 @@ service_page(
 """ + inline_cta("Need a Section 60I certificate so you can move forward? Book a consultation \u2014 we're accredited to issue them.") + """
 
 <h2 id="when-required">When you need one</h2>
-<p>You need a Section 60I certificate (or a valid exemption) before you can file:</p>
-<ul>
-  <li>An application for a parenting order</li>
-  <li>An application to vary an existing parenting order (with some exceptions)</li>
-</ul>
 
-<p>You do NOT need a Section 60I certificate for:</p>
-<ul>
-  <li>Property or financial matters \u2014 they have different pre-action requirements</li>
-  <li>Divorce applications</li>
-  <li>Matters that fall within a recognised exemption (see below)</li>
-</ul>
+<figure class="tbl"><table><caption>Section 60I certificate \u2014 required vs not required</caption>
+<thead><tr><th>Required</th><th>Not required</th></tr></thead>
+<tbody>
+<tr><td>Applying for a parenting order</td><td>Property or financial matters</td></tr>
+<tr><td>Varying an existing parenting order</td><td>Divorce applications</td></tr>
+<tr><td>&nbsp;</td><td>Matters covered by a recognised exemption</td></tr>
+</tbody></table></figure>
 
 <h2 id="types">The five certificate types</h2>
 <p>The certificate doesn't say who's \"right\" \u2014 it records what happened. There are five recognised types under the Act:</p>
@@ -518,7 +514,8 @@ service_page(
 <p>If matters don't fully resolve and a certificate is issued, the cost is essentially the same \u2014 the certificate is part of the FDR process, not an additional fee. From initial consultation to certificate (if needed) typically takes 4\u20138 weeks, depending on scheduling and how complex the issues are.</p>
 
 <h2 id="get-started">Getting started</h2>
-<p>The first step is a free initial consultation. We'll explain the process, assess whether FDR is appropriate for your situation, and outline how the certificate would be issued if needed. Most parenting matters resolve at FDR \u2014 the certificate is the backup, not the primary goal.</p>
+<p>The first step is a free initial consultation. We\u2019ll explain the process, assess whether FDR is appropriate, and outline how the certificate would be issued if needed. Most parenting matters resolve at mediation \u2014 the certificate is the backup, not the primary goal.</p>
+""" + inline_cta("Ready to get started? Book a free consultation \u2014 we\u2019ll explain the process and what to expect.") + """
 """,
     faq_items=[
         ("What is a Section 60I certificate?",
