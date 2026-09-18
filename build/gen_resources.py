@@ -43,7 +43,7 @@ PARENTING_BUILDER = """
   <p style="color:var(--ink-soft);max-width:54ch;margin:0 auto;font-size:1.05rem;line-height:1.7">A free tool for separated parents in Australia. Complete 9 guided steps, then download a ready-to-sign PDF — no account needed, nothing stored on our servers.</p>
 </div>
 
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:52px">
+<div class="ppb-intro-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:52px">
   <div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 24px">
     <div style="width:44px;height:44px;background:rgba(30,96,64,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -67,7 +67,6 @@ PARENTING_BUILDER = """
   </div>
 </div>
 <style>@media(max-width:640px){.ppb-intro-grid{grid-template-columns:1fr!important}}</style>
-<script>document.querySelector('.ppb-outer>div>div:nth-child(2)').classList.add('ppb-intro-grid');</script>
 
 <div style="max-width:800px;margin:0 auto">
 
