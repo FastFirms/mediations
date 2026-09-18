@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, service_schema,
-                       service_hero_with_quiz,
+                       quiz_card,
                        BOOK_URL, PHONE, PHONE_HREF)
 
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,10 +26,10 @@ def phero(eyebrow, h1, lede):
 </section>"""
 
 def answer(text):
-    return f'<div class="wrap"><div class="answer reveal" style="max-width:72ch"><p><strong>In short:</strong> {text}</p></div></div>'
+    return f'<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {text}</p></div></div>'
 
 def body(blocks):
-    return f'<article class="body"><div class="wrap reveal">{blocks}</div></article>'
+    return f'<article class="body"><div class="wrap-narrow reveal">{blocks}</div></article>'
 
 def build(slug, title, desc, eyebrow, h1, lede, ans, blocks, qa, crumb_name, cta_h, cta_p):
     schema = [org_schema(),
@@ -38,9 +38,30 @@ def build(slug, title, desc, eyebrow, h1, lede, ans, blocks, qa, crumb_name, cta
               faq_schema(qa)]
     html_doc = head(title, desc, slug, extra_schema=schema)
     html_doc += nav()
-    html_doc += f"<main id=\"main\">" + service_hero_with_quiz(eyebrow, h1, lede, [("Home",""), (crumb_name, None)])
-    html_doc += answer(ans)
-    html_doc += body(blocks)
+    phero_html = f"""<main id="main">
+{crumb_html([("Home",""),(crumb_name,None)])}
+<section class="phero">
+  <div class="phero-blob"></div>
+  <div class="wrap">
+    <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
+    <h1>{h1}</h1>
+    <p class="lede">{lede}</p>
+    <div class="phero-cta">
+      <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
+      <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
+    </div>
+  </div>
+</section>"""
+    html_doc += phero_html
+    html_doc += f"""<div class="wrap svc-layout" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">
+  <div>
+    <div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div>
+    <article class="body" style="padding:0"><div class="reveal">{blocks}</div></article>
+  </div>
+  <aside style="position:sticky;top:24px">
+    {quiz_card()}
+  </aside>
+</div>"""
     html_doc += faq_html(qa, heading=f"{crumb_name} FAQs")
     html_doc += cta_band(cta_h, cta_p)
     html_doc += "</main>" + page_end()

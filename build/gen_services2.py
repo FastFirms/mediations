@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, service_schema,
-                       service_hero_with_quiz,
+                       quiz_card,
                        BOOK_URL, PHONE, PHONE_HREF)
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -15,9 +15,21 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,canoni
     if noindex:
         d=d.replace('<meta name="robots" content="index, follow',
                     '<meta name="robots" content="noindex, follow')
-    d+="<main id=\"main\">" + service_hero_with_quiz(eyebrow,h1,lede,[("Home",""),(crumb,None)])
-    d+=f'<div class="wrap"><div class="answer reveal" style="max-width:72ch"><p><strong>In short:</strong> {ans}</p></div></div>'
-    d+=f'<article class="body"><div class="wrap reveal">{blocks}</div></article>'
+    d+=f"""<main id="main">
+{crumb_html([("Home",""),(crumb,None)])}
+<section class="phero"><div class="phero-blob"></div><div class="wrap">
+<span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
+<h1>{h1}</h1><p class="lede">{lede}</p>
+<div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
+<a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a></div>
+</div></section>
+<div class="wrap svc-layout" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">
+  <div>
+    <div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div>
+    <article class="body" style="padding:0"><div class="reveal">{blocks}</div></article>
+  </div>
+  <aside style="position:sticky;top:24px">{quiz_card()}</aside>
+</div>"""
     d+=faq_html(qa,heading=f"{crumb} FAQs")+cta_band(cta_h,cta_p)+"</main>"+page_end()
     p=os.path.join(OUT,slug); os.makedirs(p,exist_ok=True)
     open(os.path.join(p,"index.html"),"w").write(d)
