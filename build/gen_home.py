@@ -161,11 +161,11 @@ function q60result(party){{
     badge.textContent='Worth a conversation';
     vt="You don't need them to say yes before you call us.";
     nt="We never contact the other party without your say-so. A free consultation helps you understand your options — and often the other party comes around once they understand what's involved.";
-    bl=['We can explain how to approach the other party in a way that works.','Many matters proceed once both sides understand the cost of the alternative.','If they won\'t engage, we advise on the next step.'];
+    bl=['We can explain how to approach the other party in a way that works.','Many matters proceed once both sides understand the cost of the alternative.','If they won\\'t engage, we advise on the next step.'];
   }} else {{
     badge.style.cssText='display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;font-size:.75rem;font-weight:500;margin-bottom:14px;background:rgba(168,200,159,.12);color:#a8c89f';
     badge.textContent='Strong fit for mediation';
-    vt=party==='strong'?'Your matter is well-suited to mediation.':'Mediation is likely a good fit — let\'s talk through the specifics.';
+    vt=party==='strong'?'Your matter is well-suited to mediation.':'Mediation is likely a good fit — let\\'s talk through the specifics.';
     nt='An honest read on whether mediation suits your matter. No cost, no obligation.';
     if(_q60.t==='parenting'||_q60.t==='both'){{
       bl=['Section 60I certificate if required — we issue it.','Parenting plan converted into enforceable consent orders.','Child-focused process with full confidentiality protections.'];
