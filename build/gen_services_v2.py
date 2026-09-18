@@ -73,6 +73,7 @@ def service_page(slug, title, desc, breadcrumb_label, eyebrow, h1_html, lede, to
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
 </div></div></section>
 
+<style>@media(max-width:900px){{.svc-layout{{grid-template-columns:1fr!important}}.svc-layout aside{{position:static!important;width:100%}}}}</style>
 <div class="wrap svc-layout" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">
 <div>
 {takeaway}
