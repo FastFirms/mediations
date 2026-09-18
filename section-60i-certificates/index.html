@@ -618,7 +618,7 @@ function _qMultiToggle(el,contId){
 }
 function _qSetupMulti(optsId,contId){
   document.getElementById(optsId).querySelectorAll('.qcheck').forEach(function(el){
-    el.onclick=function(){_qMultiToggle(el,contId);};
+    el.onclick=function(e){e.preventDefault();_qMultiToggle(el,contId);};
   });
 }
 function qMultiNext(stepId,field,to,opts){
