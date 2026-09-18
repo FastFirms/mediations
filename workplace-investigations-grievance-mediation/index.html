@@ -263,51 +263,111 @@
  </div></article>
   </div>
   <aside style="position:sticky;top:24px"><div id="hero-check" style="background:var(--sage-deep);color:var(--cream);border-radius:22px;padding:clamp(24px,3vw,34px);box-shadow:0 4px 32px rgba(13,34,24,.18)">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
-        <span style="font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#a8c89f;font-weight:500">Free 60-second check</span>
-      </div>
-      <p style="font-family:var(--body-serif);font-size:clamp(1.1rem,2vw,1.35rem);font-weight:400;color:var(--cream);margin:0 0 20px;line-height:1.3">Will mediation work<br>for my situation?</p>
-      <div class="qprogress" aria-hidden="true"><div class="qprogress-fill" id="qpfill" style="width:33%"></div></div>
-      <div id="quiz60">
-        <div class="qstep" id="qs1">
-          <p class="qlabel"><span class="qdots"><span class="qdot qd-on"></span><span class="qdot"></span><span class="qdot"></span></span>What needs to be sorted out?</p>
-          <div class="qopts">
-            <button class="qbtn" onclick="q60next(1,'property')"><span class="qcircle"></span>Property &amp; finances</button>
-            <button class="qbtn" onclick="q60next(1,'parenting')"><span class="qcircle"></span>Parenting arrangements</button>
-            <button class="qbtn" onclick="q60next(1,'both')"><span class="qcircle"></span>Both — parenting and property</button>
-            <button class="qbtn" onclick="q60next(1,'other')"><span class="qcircle"></span>Workplace, business or estate dispute</button>
-          </div>
-        </div>
-        <div class="qstep" id="qs2" hidden>
-          <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-on"></span><span class="qdot"></span></span>Where are things up to?</p>
-          <div class="qopts">
-            <button class="qbtn" onclick="q60next(2,'early')"><span class="qcircle"></span>Just separated or at an early stage</button>
-            <button class="qbtn" onclick="q60next(2,'stalled')"><span class="qcircle"></span>Negotiations have stalled</button>
-            <button class="qbtn" onclick="q60next(2,'solicitor')"><span class="qcircle"></span>We&rsquo;ve been through solicitors</button>
-            <button class="qbtn" onclick="q60next(2,'court')"><span class="qcircle"></span>Court proceedings have started</button>
-          </div>
-          <button class="qback" onclick="q60back(1)">&#8592; Back</button>
-        </div>
-        <div class="qstep" id="qs3" hidden>
-          <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-done"></span><span class="qdot qd-on"></span></span>How is the other person likely to respond?</p>
-          <div class="qopts">
-            <button class="qbtn" onclick="q60result('strong')"><span class="qcircle"></span>They&rsquo;d probably agree to mediate</button>
-            <button class="qbtn" onclick="q60result('likely')"><span class="qcircle"></span>Honestly, I&rsquo;m not sure</button>
-            <button class="qbtn" onclick="q60result('possible')"><span class="qcircle"></span>I don&rsquo;t think they&rsquo;ll come</button>
-            <button class="qbtn" onclick="q60result('safety')"><span class="qcircle"></span>There&rsquo;s high conflict or safety concerns</button>
-          </div>
-          <button class="qback" onclick="q60back(2)">&#8592; Back</button>
-        </div>
-        <div class="qstep" id="qresult" hidden>
-          <div id="qbadge"></div>
-          <p id="qverdict" style="font-family:var(--body-serif);font-size:1.2rem;line-height:1.3;margin:0 0 10px;color:var(--cream)"></p>
-          <p id="qnote" style="font-size:.87rem;line-height:1.65;color:rgba(216,234,217,.72);margin:0 0 16px"></p>
-          <div id="qbullets" style="display:grid;gap:9px;padding:15px 17px;background:rgba(168,200,159,.08);border:1px solid rgba(168,200,159,.18);border-radius:12px;margin-bottom:20px"></div>
-          <a href="/contact-us/" class="btn btn-primary" style="width:100%;text-align:center;justify-content:center;display:flex;padding:14px 20px;font-size:.95rem">Book a free consultation <span class="arr">&#8594;</span></a>
-          <button class="qback" onclick="q60reset()" style="width:100%;text-align:center;margin-top:10px">&#8592; Start again</button>
-        </div>
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+    <span style="font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#a8c89f;font-weight:500">Free 60-second check</span>
+  </div>
+  <p style="font-family:var(--body-serif);font-size:clamp(1.1rem,2vw,1.35rem);font-weight:400;color:var(--cream);margin:0 0 20px;line-height:1.3">Will mediation work<br>for my situation?</p>
+  <div class="qprogress" aria-hidden="true"><div class="qprogress-fill" id="qpfill" style="width:25%"></div></div>
+  <div id="quiz60">
+    <div class="qstep" id="qs1">
+      <p class="qlabel"><span class="qdots"><span class="qdot qd-on"></span><span class="qdot"></span><span class="qdot"></span><span class="qdot"></span></span>What needs to be sorted out?</p>
+      <div class="qopts">
+        <button class="qbtn" onclick="q60cat('property')"><span class="qcircle"></span>Property &amp; finances</button>
+        <button class="qbtn" onclick="q60cat('parenting')"><span class="qcircle"></span>Parenting &amp; children</button>
+        <button class="qbtn" onclick="q60cat('both')"><span class="qcircle"></span>Both &mdash; property and parenting</button>
+        <button class="qbtn" onclick="q60cat('other')"><span class="qcircle"></span>Workplace, business or estate</button>
       </div>
     </div>
+    <div class="qstep" id="qs2_property" hidden>
+      <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-on"></span><span class="qdot"></span><span class="qdot"></span></span>Where are things at?</p>
+      <div class="qopts">
+        <button class="qbtn" onclick="q60s2('fresh')"><span class="qcircle"></span>We haven&rsquo;t started dividing anything yet</button>
+        <button class="qbtn" onclick="q60s2('stalled')"><span class="qcircle"></span>We&rsquo;ve talked but can&rsquo;t reach agreement</button>
+        <button class="qbtn" onclick="q60s2('solicitors')"><span class="qcircle"></span>Solicitors are involved or exchanging letters</button>
+        <button class="qbtn" onclick="q60s2('court')"><span class="qcircle"></span>Court proceedings have already started</button>
+      </div>
+      <button class="qback" onclick="q60s2back()">&#8592; Back</button>
+    </div>
+    <div class="qstep" id="qs2_parenting" hidden>
+      <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-on"></span><span class="qdot"></span><span class="qdot"></span></span>What does the parenting situation look like?</p>
+      <div class="qopts">
+        <button class="qbtn" onclick="q60s2('informal')"><span class="qcircle"></span>Nothing is formalised &mdash; we&rsquo;re working it out</button>
+        <button class="qbtn" onclick="q60s2('broken')"><span class="qcircle"></span>An arrangement exists but it&rsquo;s not working</button>
+        <button class="qbtn" onclick="q60s2('formalise')"><span class="qcircle"></span>We want to make our plan legally binding</button>
+        <button class="qbtn" onclick="q60s2('orders')"><span class="qcircle"></span>One of us wants to change existing court orders</button>
+      </div>
+      <button class="qback" onclick="q60s2back()">&#8592; Back</button>
+    </div>
+    <div class="qstep" id="qs2_both" hidden>
+      <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-on"></span><span class="qdot"></span><span class="qdot"></span></span>Which is the more pressing need right now?</p>
+      <div class="qopts">
+        <button class="qbtn" onclick="q60s2('parenting_first')"><span class="qcircle"></span>Sorting out the children&rsquo;s arrangements</button>
+        <button class="qbtn" onclick="q60s2('property_first')"><span class="qcircle"></span>Dividing the property and finances</button>
+        <button class="qbtn" onclick="q60s2('equal')"><span class="qcircle"></span>Both are equally urgent</button>
+        <button class="qbtn" onclick="q60s2('guidance')"><span class="qcircle"></span>I need guidance on where to start</button>
+      </div>
+      <button class="qback" onclick="q60s2back()">&#8592; Back</button>
+    </div>
+    <div class="qstep" id="qs2_other" hidden>
+      <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-on"></span><span class="qdot"></span><span class="qdot"></span></span>What type of dispute is it?</p>
+      <div class="qopts">
+        <button class="qbtn" onclick="q60s2('workplace')"><span class="qcircle"></span>Workplace or employment</button>
+        <button class="qbtn" onclick="q60s2('business')"><span class="qcircle"></span>Business or commercial</button>
+        <button class="qbtn" onclick="q60s2('estate')"><span class="qcircle"></span>Estate or inheritance</button>
+        <button class="qbtn" onclick="q60s2('else')"><span class="qcircle"></span>Something else</button>
+      </div>
+      <button class="qback" onclick="q60s2back()">&#8592; Back</button>
+    </div>
+    <div class="qstep" id="qs3_property" hidden>
+      <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-done"></span><span class="qdot qd-on"></span><span class="qdot"></span></span>What&rsquo;s the main asset involved?</p>
+      <div class="qopts">
+        <button class="qbtn" onclick="q60s3('home')"><span class="qcircle"></span>The family home &mdash; who keeps it or how to sell</button>
+        <button class="qbtn" onclick="q60s3('super')"><span class="qcircle"></span>Superannuation &amp; savings</button>
+        <button class="qbtn" onclick="q60s3('complex')"><span class="qcircle"></span>A business, investment property or trust</button>
+        <button class="qbtn" onclick="q60s3('general')"><span class="qcircle"></span>Several of the above, or I&rsquo;m not sure</button>
+      </div>
+      <button class="qback" onclick="q60s3back()">&#8592; Back</button>
+    </div>
+    <div class="qstep" id="qs3_parenting" hidden>
+      <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-done"></span><span class="qdot qd-on"></span><span class="qdot"></span></span>How is communication with the other parent?</p>
+      <div class="qopts">
+        <button class="qbtn" onclick="q60s3('ok')"><span class="qcircle"></span>We can talk reasonably when we need to</button>
+        <button class="qbtn" onclick="q60s3('difficult')"><span class="qcircle"></span>It&rsquo;s difficult but we manage</button>
+        <button class="qbtn" onclick="q60s3('broken')"><span class="qcircle"></span>Communication has largely broken down</button>
+        <button class="qbtn" onclick="q60s3('nocontact')"><span class="qcircle"></span>We only speak through lawyers or family</button>
+      </div>
+      <button class="qback" onclick="q60s3back()">&#8592; Back</button>
+    </div>
+    <div class="qstep" id="qs3_both" hidden>
+      <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-done"></span><span class="qdot qd-on"></span><span class="qdot"></span></span>Are you currently living separately?</p>
+      <div class="qopts">
+        <button class="qbtn" onclick="q60s3('settled')"><span class="qcircle"></span>Yes &mdash; the transition has been relatively calm</button>
+        <button class="qbtn" onclick="q60s3('tense')"><span class="qcircle"></span>Yes &mdash; but it&rsquo;s still tense and evolving</button>
+        <button class="qbtn" onclick="q60s3('together')"><span class="qcircle"></span>No &mdash; we&rsquo;re still in the same home</button>
+        <button class="qbtn" onclick="q60s3('complicated')"><span class="qcircle"></span>It&rsquo;s complicated</button>
+      </div>
+      <button class="qback" onclick="q60s3back()">&#8592; Back</button>
+    </div>
+    <div class="qstep" id="qs3_other" hidden>
+      <p class="qlabel"><span class="qdots"><span class="qdot qd-done"></span><span class="qdot qd-done"></span><span class="qdot qd-on"></span><span class="qdot"></span></span>How urgent is resolution?</p>
+      <div class="qopts">
+        <button class="qbtn" onclick="q60s3('urgent')"><span class="qcircle"></span>Time limits are approaching (Fair Work, court deadlines)</button>
+        <button class="qbtn" onclick="q60s3('serious')"><span class="qcircle"></span>It&rsquo;s serious but not immediately time-critical</button>
+        <button class="qbtn" onclick="q60s3('preventive')"><span class="qcircle"></span>We want to resolve it before it escalates</button>
+        <button class="qbtn" onclick="q60s3('proceedings')"><span class="qcircle"></span>Formal proceedings have already started</button>
+      </div>
+      <button class="qback" onclick="q60s3back()">&#8592; Back</button>
+    </div>
+    <div class="qstep" id="qresult" hidden>
+      <div id="qbadge"></div>
+      <p id="qverdict" style="font-family:var(--body-serif);font-size:1.2rem;line-height:1.3;margin:0 0 10px;color:var(--cream)"></p>
+      <p id="qnote" style="font-size:.87rem;line-height:1.65;color:rgba(216,234,217,.72);margin:0 0 16px"></p>
+      <div id="qbullets" style="display:grid;gap:9px;padding:15px 17px;background:rgba(168,200,159,.08);border:1px solid rgba(168,200,159,.18);border-radius:12px;margin-bottom:20px"></div>
+      <a href="/contact-us/" class="btn btn-primary" style="width:100%;text-align:center;justify-content:center;display:flex;padding:14px 20px;font-size:.95rem">Book a free consultation <span class="arr">&#8594;</span></a>
+      <button class="qback" onclick="q60reset()" style="width:100%;text-align:center;margin-top:10px">&#8592; Start again</button>
+    </div>
+  </div>
+</div>
 <style>
 .qprogress{height:3px;background:rgba(168,200,159,.15);border-radius:999px;margin-bottom:22px;overflow:hidden}
 .qprogress-fill{height:100%;background:linear-gradient(90deg,#4a9e6a,#a8c89f);border-radius:999px;transition:width .4s cubic-bezier(.4,0,.2,1)}
@@ -330,57 +390,150 @@
 @media(max-width:900px){#hero-check{order:-1}}
 </style>
 <script>
-var _q60={t:null,s:null};
+var _q60={t:null,s2:null,s3:null};
+var _BG='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(168,200,159,.14);border:1px solid rgba(168,200,159,.32);color:#a8c89f';
+var _BY='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(240,165,0,.15);border:1px solid rgba(240,165,0,.3);color:#f5c347';
+var _IC='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+var _IH='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>';
+var _IW='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>';
 function _q60prog(w){document.getElementById('qpfill').style.width=w;}
-function q60next(step,val){
-  if(step===1)_q60.t=val;else _q60.s=val;
-  document.getElementById('qs'+step).hidden=true;
-  document.getElementById('qs'+(step+1)).hidden=false;
-  _q60prog(step===1?'66%':'100%');
+function _q60badge(st,ic,lbl){var b=document.getElementById('qbadge');b.style.cssText=st;b.innerHTML=ic+lbl;}
+function _q60set(vt,nt,bl){
+  document.getElementById('qverdict').textContent=vt;
+  document.getElementById('qnote').textContent=nt;
+  document.getElementById('qbullets').innerHTML=bl.map(function(b){return'<div style="display:flex;gap:10px;font-size:.85rem;color:rgba(216,234,217,.88);line-height:1.5"><span style="color:#a8c89f;flex-shrink:0;margin-top:1px">'+_IC+'</span>'+b+'</div>';}).join('');
 }
-function q60back(step){
-  document.getElementById('qs'+(step+1)).hidden=true;
-  document.getElementById('qs'+step).hidden=false;
-  _q60prog(step===1?'33%':'66%');
+function q60cat(val){
+  _q60.t=val;
+  document.getElementById('qs1').hidden=true;
+  document.getElementById('qs2_'+val).hidden=false;
+  _q60prog('50%');
 }
-function q60result(party){
-  document.getElementById('qs3').hidden=true;
-  var badge=document.getElementById('qbadge'),verdict=document.getElementById('qverdict'),note=document.getElementById('qnote'),bullets=document.getElementById('qbullets');
-  var vt,nt,bl;
-  if(party==='safety'){
-    badge.style.cssText='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(240,165,0,.15);border:1px solid rgba(240,165,0,.3);color:#f5c347';
-    badge.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Needs careful design';
-    vt='Mediation may still be the right path — with the right structure.';
-    nt='Where there\'s high conflict or a safety concern we assess suitability first, then design the session so you\'re never in the same room, or exempt you and document it properly.';
-    bl=['Confidential intake and safety screening before any joint contact.','Shuttle mediation: separate rooms or separate video links, staggered times.','If an exemption applies, we help you document it correctly.'];
-  } else if(party==='possible'){
-    badge.style.cssText='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(168,200,159,.12);border:1px solid rgba(168,200,159,.28);color:#a8c89f';
-    badge.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Worth a conversation';
-    vt='You don\'t need them to say yes before you call us.';
-    nt='We never contact the other party without your say-so. A free consultation helps you understand your options — and often the other party comes around once they understand what\'s involved.';
-    bl=['We can explain how to approach the other party in a way that works.','Many matters proceed once both sides understand the cost of the alternative.','If they won\'t engage, we advise on the next step.'];
-  } else {
-    badge.style.cssText='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(168,200,159,.14);border:1px solid rgba(168,200,159,.32);color:#a8c89f';
-    badge.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Strong fit for mediation';
-    vt=party==='strong'?'Your matter is well-suited to mediation.':'Mediation is likely a good fit — let\'s talk through the specifics.';
-    nt='An honest read on whether mediation suits your matter. No cost, no obligation.';
-    if(_q60.t==='parenting'||_q60.t==='both'){
-      bl=['Section 60I certificate if required — we issue it.','Parenting plan converted into enforceable consent orders.','Child-focused process with full confidentiality protections.'];
-    } else if(_q60.t==='other'){
-      bl=['Workplace, estate and business disputes resolved outside court.','Commercially sensitive matters stay completely private.','Fixed fee quoted before you commit to anything.'];
-    } else {
-      bl=['Property settlement finalised without years of court.','Agreement formalised as legally binding consent orders.','Fixed fee quoted in writing before you commit.'];
+function q60s2(val){
+  _q60.s2=val;
+  document.getElementById('qs2_'+_q60.t).hidden=true;
+  document.getElementById('qs3_'+_q60.t).hidden=false;
+  _q60prog('75%');
+}
+function q60s2back(){
+  document.getElementById('qs2_'+_q60.t).hidden=true;
+  document.getElementById('qs1').hidden=false;
+  _q60prog('25%');
+}
+function q60s3(val){
+  _q60.s3=val;
+  document.getElementById('qs3_'+_q60.t).hidden=true;
+  q60result();
+}
+function q60s3back(){
+  document.getElementById('qs3_'+_q60.t).hidden=true;
+  document.getElementById('qs2_'+_q60.t).hidden=false;
+  _q60prog('50%');
+}
+function q60result(){
+  var t=_q60.t,s2=_q60.s2,s3=_q60.s3,vt,nt,bl;
+  if(t==='property'){
+    if(s2==='fresh'){
+      _q60badge(_BG,_IC,'Strong fit for mediation');
+      vt='An ideal time to mediate — before positions harden.';
+      nt='Starting early means you control the outcome. Most property settlements are reached in a single day, with no lawyers in the room if you prefer.';
+    }else if(s2==='stalled'){
+      _q60badge(_BG,_IC,'Strong fit for mediation');
+      vt='Mediation is exactly the right step when direct talks have stalled.';
+      nt='A skilled mediator opens a path forward that solicitor letters and direct negotiation can\'t. Most stalled matters resolve within a single session.';
+    }else if(s2==='solicitors'){
+      _q60badge(_BG,_IC,'Strong fit for mediation');
+      vt='Mediation works alongside your lawyers, not instead of them.';
+      nt='A mediated agreement is reached faster and at a fraction of the cost of continuing by correspondence. Your solicitor can review any outcome before you sign.';
+    }else{
+      _q60badge(_BG,_IH,'Worth a conversation');
+      vt='Even with proceedings underway, most property matters settle before a hearing.';
+      nt='Courts frequently encourage mediation — and most disputes settle on terms both parties prefer to a judge\'s decision. It\'s not too late.';
+    }
+    if(s3==='home'){bl=['Sale, transfer or retention of the family home structured to suit both parties.','Stamp duty and CGT implications explained before you agree.','Outcome formalised as legally binding consent orders.'];}
+    else if(s3==='super'){bl=['Superannuation splitting orders drafted and filed with the court.','We work alongside your financial advisers where needed.','Agreement formalised so both parties can move forward cleanly.'];}
+    else if(s3==='complex'){bl=['Business assets, trusts and investment properties all within scope.','Commercially sensitive — everything stays completely private.','Mediator with commercial experience guides the valuation process.'];}
+    else{bl=['Property settlement finalised without years of court.','Agreement formalised as legally binding consent orders.','Fixed fee quoted in writing before you commit to anything.'];}
+  }else if(t==='parenting'){
+    if(s2==='orders'){
+      _q60badge(_BG,_IH,'Worth a conversation');
+      vt='Changing existing orders works best when both parties agree — mediation gets you there.';
+      nt='Courts want to see evidence of attempted agreement before varying orders. Mediation produces that agreement faster, and at far less cost than going back to court.';
+      bl=['Agreed variation is faster and cheaper than a contested court application.','Changed circumstances documented in any new agreement.','Children\'s needs remain the central focus throughout.'];
+    }else{
+      _q60badge(_BG,_IC,'Strong fit for mediation');
+      if(s2==='formalise'){
+        vt='Formalising your arrangement is straightforward — we issue the certificate courts require.';
+        nt='A Section 60I certificate from our service is required before applying for consent orders. We can have your parenting plan formalised and ready to file.';
+        bl=['Section 60I certificate issued — required before courts accept consent order applications.','Parenting plan converted into binding consent orders.','Child-focused process, fully confidential.'];
+      }else if(s3==='broken'||s3==='nocontact'){
+        vt='Even when communication has broken down, mediation still works.';
+        nt='We use shuttle mediation where needed — separate rooms, staggered times — keeping the focus entirely on what\'s best for the children, without direct contact.';
+        bl=['Shuttle mediation: separate rooms and staggered times — no direct contact required.','Safety screening completed before any joint process begins.','Section 60I certificate issued if court orders are later needed.'];
+      }else{
+        vt='A parenting plan through mediation gives you both clarity and legal protection.';
+        nt='Mediated parenting plans can be formalised as consent orders — legally binding and enforceable. Most matters are fully resolved in a single session.';
+        bl=['Parenting plan resolved and formalised as consent orders.','Section 60I certificate issued — ready for court if ever needed.','Child-centred process with full confidentiality protections.'];
+      }
+    }
+  }else if(t==='both'){
+    _q60badge(_BG,_IC,'Strong fit for mediation');
+    if(s2==='parenting_first'){
+      vt='Sorting the parenting plan first is often the right call.';
+      nt='Once arrangements for the children are settled, property negotiations become clearer and less emotionally charged. We handle both in one cohesive process.';
+      bl=['Parenting plan formalised first, property settlement to follow.','Section 60I certificate issued — ready for consent orders.','Both issues resolved in fewer sessions than handling them separately.'];
+    }else if(s2==='property_first'){
+      vt='Financial clarity often makes parenting negotiations more straightforward.';
+      nt='We structure the mediation to address both in the most efficient order — one mediator, one process, one outcome.';
+      bl=['Property settlement reached and formalised as consent orders.','Parenting plan addressed in the same or a follow-up session.','One cohesive process — more efficient, less stressful.'];
+    }else if(s2==='guidance'){
+      vt='A free consultation will help you identify the right starting point.';
+      nt='When both property and parenting need attention, the right order depends on urgency and what\'s driving the most tension. We\'ll help you work that out at no cost.';
+      bl=['Free initial consultation — no obligation.','We assess priority and recommend a clear starting point.','Both issues handled in one cohesive mediation process.'];
+    }else{
+      vt='Both property and parenting can be resolved in the same mediation process.';
+      nt='Handling both together is more efficient and less stressful — one mediator, one process, one outcome. Most matters are fully resolved within two sessions.';
+      bl=['Parenting plan and property settlement reached in one process.','Section 60I certificate issued — consent orders ready to file.','Fixed fee covers both issues — no billing surprises.'];
+    }
+  }else{
+    if(s2==='workplace'){
+      if(s3==='urgent'){
+        _q60badge(_BY,_IW,'Act quickly — time limits apply');
+        vt='Fair Work time limits are strict — don\'t wait to get advice.';
+        nt='Unfair dismissal applications must be lodged within 21 days. General protections and other Fair Work matters have similar limits. We can arrange a rapid assessment this week.';
+        bl=['Same-week appointments available for urgent Fair Work matters.','Early mediation prevents costly tribunal proceedings.','Confidential assessment at no obligation.'];
+      }else{
+        _q60badge(_BG,_IC,'Strong fit for mediation');
+        vt='Workplace mediation protects relationships and avoids tribunal costs.';
+        nt='Resolving a dispute before a formal complaint is filed protects everyone — the employee, the employer and the working relationship. Most workplace matters settle in a single session.';
+        bl=['Completely confidential — nothing leaves the mediation room.','Preserves the employment relationship where possible.','Faster and far less costly than a Fair Work or tribunal process.'];
+      }
+    }else if(s2==='business'){
+      _q60badge(_BG,_IC,'Strong fit for mediation');
+      vt='Commercial disputes resolved through mediation are binding, private and fast.';
+      nt='Business and partnership disputes typically resolve in one to two sessions. The outcome is as binding as a court order — but reached in days, not years.';
+      bl=['Commercially sensitive — everything remains completely private.','Binding agreement enforceable as a contract.','A fraction of the cost and time of commercial litigation.'];
+    }else if(s2==='estate'){
+      _q60badge(_BG,_IC,'Strong fit for mediation');
+      vt='Estate disputes fought through court erode the very estate being contested.';
+      nt='A Family Provision claim through court can cost more than the estate is worth. Mediation gives every party a voice, preserves family relationships and resolves matters in weeks rather than years.';
+      bl=['Suitable for contested wills, Family Provision claims and executor disputes.','Agreement reached before legal costs deplete the estate.','Completely confidential — family matters stay within the family.'];
+    }else{
+      _q60badge(_BG,_IH,'Worth a conversation');
+      vt='Mediation works across a wide range of disputes — let\'s talk through yours.';
+      nt='A free consultation helps us assess whether mediation is the right fit and, if so, how to structure it for the best possible outcome.';
+      bl=['Free confidential consultation — no obligation.','Wide range of dispute types within scope.','If mediation isn\'t the right fit, we\'ll say so honestly.'];
     }
   }
-  verdict.textContent=vt; note.textContent=nt;
-  bullets.innerHTML=bl.map(function(b){return'<div style="display:flex;gap:10px;font-size:.85rem;color:rgba(216,234,217,.88);line-height:1.5"><span style="color:#a8c89f;flex-shrink:0;margin-top:1px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>'+b+'</div>';}).join('');
+  _q60set(vt,nt,bl);
+  _q60prog('100%');
   document.getElementById('qresult').hidden=false;
 }
 function q60reset(){
-  _q60={t:null,s:null};
-  ['qs2','qs3','qresult'].forEach(function(id){document.getElementById(id).hidden=true;});
+  _q60={t:null,s2:null,s3:null};
+  ['qs2_property','qs2_parenting','qs2_both','qs2_other','qs3_property','qs3_parenting','qs3_both','qs3_other','qresult'].forEach(function(id){document.getElementById(id).hidden=true;});
   document.getElementById('qs1').hidden=false;
-  _q60prog('33%');
+  _q60prog('25%');
 }
 </script></aside>
 </div><section class="sec" id="faq" aria-labelledby="faqh" style="padding-top:0">
