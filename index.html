@@ -214,46 +214,116 @@
       </div>
       <div class="answer d5" style="max-width:60ch"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation for family, property, workplace and estate disputes across Australia. Founded by Dan Toombs — an AMDRAS-accredited mediator, award-winning lawyer, and former tribunal member — our team resolves over 90% of matters without court, typically in a single day rather than the one to three years a contested matter takes. Mediation costs a fraction of litigation, keeps the decision in your hands rather than a judge&rsquo;s, and the agreement can be made legally binding. We help clients anywhere in Australia.</p></div>
     </div>
-    <div class="d3" style="background:var(--cream);border:1px solid var(--sand-deep);border-radius:22px;padding:clamp(24px,3vw,36px);box-shadow:0 4px 32px rgba(35,41,31,.07)">
-      <p style="font-family:var(--serif);font-size:1.35rem;font-weight:400;color:var(--ink);margin:0 0 4px">Book a free consultation</p>
-      <p style="font-size:.9rem;color:var(--ink-soft);margin:0 0 22px">We'll respond within one business day.</p>
-      <form id="home-form" action="https://formspree.io/f/xwvgjnve" method="POST" novalidate style="display:flex;flex-direction:column;gap:14px">
-        
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
-        <input type="hidden" name="_subject" value="Homepage consultation request — Mediations Australia">
-        <div class="form-row">
-          <label for="h-name">Name</label>
-          <input id="h-name" name="name" type="text" required autocomplete="name" placeholder="Your full name" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+    <div class="d3" id="hero-check" style="background:var(--sage-deep);color:var(--cream);border-radius:22px;padding:clamp(24px,3vw,34px);box-shadow:0 4px 32px rgba(13,34,24,.18)">
+      <p style="font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.5);margin:0 0 8px">Free 60-second check</p>
+      <p style="font-family:var(--body-serif);font-size:clamp(1.1rem,2vw,1.4rem);font-weight:400;color:var(--cream);margin:0 0 22px;line-height:1.3">Will mediation work for my situation?</p>
+      <div id="quiz60">
+        <div class="qstep" id="qs1">
+          <p class="qlabel">Question 1 of 3</p>
+          <p class="qtext">What needs to be sorted out?</p>
+          <div class="qopts">
+            <button class="qbtn" onclick="q60next(1,'property')">Property &amp; finances</button>
+            <button class="qbtn" onclick="q60next(1,'parenting')">Parenting arrangements</button>
+            <button class="qbtn" onclick="q60next(1,'both')">Both — parenting and property</button>
+            <button class="qbtn" onclick="q60next(1,'other')">Workplace, business or estate dispute</button>
+          </div>
         </div>
-        <div class="form-row">
-          <label for="h-phone">Phone</label>
-          <input id="h-phone" name="phone" type="tel" required autocomplete="tel" placeholder="0400 000 000" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+        <div class="qstep" id="qs2" hidden>
+          <p class="qlabel">Question 2 of 3</p>
+          <p class="qtext">Where are things up to?</p>
+          <div class="qopts">
+            <button class="qbtn" onclick="q60next(2,'early')">Just separated or at an early stage</button>
+            <button class="qbtn" onclick="q60next(2,'stalled')">Negotiations have stalled</button>
+            <button class="qbtn" onclick="q60next(2,'solicitor')">We&rsquo;ve been through solicitors</button>
+            <button class="qbtn" onclick="q60next(2,'court')">Court proceedings have started</button>
+          </div>
+          <button class="qback" onclick="q60back(1)">&#8592; Back</button>
         </div>
-        <div class="form-row">
-          <label for="h-email">Email</label>
-          <input id="h-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
+        <div class="qstep" id="qs3" hidden>
+          <p class="qlabel">Question 3 of 3</p>
+          <p class="qtext">How is the other person likely to respond?</p>
+          <div class="qopts">
+            <button class="qbtn" onclick="q60result('strong')">They&rsquo;d probably agree to mediate</button>
+            <button class="qbtn" onclick="q60result('likely')">Honestly, I&rsquo;m not sure</button>
+            <button class="qbtn" onclick="q60result('possible')">I don&rsquo;t think they&rsquo;ll come</button>
+            <button class="qbtn" onclick="q60result('safety')">There&rsquo;s high conflict or safety concerns</button>
+          </div>
+          <button class="qback" onclick="q60back(2)">&#8592; Back</button>
         </div>
-        <div class="form-row">
-          <label for="h-matter">Type of Mediation</label>
-          <select id="h-matter" name="matter" required style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
-            <option value="" disabled selected>Select…</option>
-            <option value="Property Settlement">Property Settlement</option><option value="Parenting">Parenting</option><option value="Property &amp; Parenting">Property &amp; Parenting</option><option value="Other Family Law">Other Family Law</option><option value="Workplace">Workplace</option><option value="Estate">Estate</option><option value="Something else">Something else</option>
-          </select>
+        <div class="qstep" id="qresult" hidden>
+          <div id="qbadge" style="display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;font-size:.75rem;font-weight:500;margin-bottom:14px"></div>
+          <p id="qverdict" style="font-family:var(--body-serif);font-size:1.2rem;line-height:1.3;margin:0 0 10px;color:var(--cream)"></p>
+          <p id="qnote" style="font-size:.88rem;line-height:1.6;color:rgba(255,255,255,.72);margin:0 0 18px"></p>
+          <div id="qbullets" style="display:grid;gap:8px;padding:16px 18px;background:rgba(255,255,255,.07);border-radius:12px;margin-bottom:20px"></div>
+          <a href="/contact-us/" class="btn btn-primary" style="width:100%;text-align:center;justify-content:center;display:flex;padding:13px 20px">Book a free consultation <span class="arr">&#8594;</span></a>
+          <button class="qback" onclick="q60reset()" style="width:100%;text-align:center;margin-top:10px">&#8592; Start again</button>
         </div>
-        <div class="form-row">
-          <label for="h-location">Your Location</label>
-          <input id="h-location" name="location" type="text" placeholder="e.g. Sydney, Melbourne, or Online" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box">
-        </div>
-        <div class="form-row">
-          <label for="h-message">Brief Explanation</label>
-          <textarea id="h-message" name="message" rows="4" placeholder="A few sentences about your situation…" style="width:100%;padding:11px 14px;border:1.5px solid var(--sand-deep);border-radius:10px;font-family:var(--sans);font-size:.95rem;background:var(--sand);box-sizing:border-box"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:15px 20px">Send request <span class="arr">→</span></button>
-        <p style="font-size:.8rem;color:var(--ink-soft);margin:0;text-align:center">Your details are kept private and confidential.</p>
-      </form>
+      </div>
     </div>
   </div>
 </section>
+<style>
+#quiz60 .qlabel{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);margin:0 0 5px}
+#quiz60 .qtext{font-family:var(--body-serif);font-size:1.15rem;line-height:1.3;color:var(--cream);margin:0 0 15px}
+#quiz60 .qopts{display:grid;gap:8px}
+#quiz60 .qbtn{text-align:left;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);padding:12px 15px;border-radius:11px;font-size:.92rem;color:var(--cream);cursor:pointer;transition:background .15s,border-color .15s;font-family:var(--sans);line-height:1.4}
+#quiz60 .qbtn:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35)}
+#quiz60 .qback{margin-top:12px;background:none;border:none;color:rgba(255,255,255,.45);font-size:.8rem;cursor:pointer;padding:0;font-family:var(--sans)}
+#quiz60 .qback:hover{color:rgba(255,255,255,.8)}
+@keyframes qfade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+#quiz60 .qstep:not([hidden]){animation:qfade .22s ease both}
+@media(max-width:900px){#hero-check{order:-1}}
+</style>
+<script>
+var _q60={t:null,s:null};
+function q60next(step,val){
+  if(step===1)_q60.t=val;else _q60.s=val;
+  document.getElementById('qs'+step).hidden=true;
+  document.getElementById('qs'+(step+1)).hidden=false;
+}
+function q60back(step){
+  document.getElementById('qs'+(step+1)).hidden=true;
+  document.getElementById('qs'+step).hidden=false;
+}
+function q60result(party){
+  document.getElementById('qs3').hidden=true;
+  var badge=document.getElementById('qbadge'),verdict=document.getElementById('qverdict'),note=document.getElementById('qnote'),bullets=document.getElementById('qbullets');
+  var vt,nt,bl;
+  if(party==='safety'){
+    badge.style.cssText='display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;font-size:.75rem;font-weight:500;margin-bottom:14px;background:rgba(240,165,0,.18);color:#f5c347';
+    badge.textContent='Needs careful design';
+    vt='Mediation may still be the right path — with the right structure.';
+    nt="Where there's high conflict or a safety concern we assess suitability first, then design the session so you're never in the same room, or exempt you and document it properly.";
+    bl=['Confidential intake and safety screening before any joint contact.','Shuttle mediation: separate rooms or separate video links, staggered times.','If an exemption applies, we help you document it correctly.'];
+  } else if(party==='possible'){
+    badge.style.cssText='display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;font-size:.75rem;font-weight:500;margin-bottom:14px;background:rgba(168,200,159,.12);color:#a8c89f';
+    badge.textContent='Worth a conversation';
+    vt="You don't need them to say yes before you call us.";
+    nt="We never contact the other party without your say-so. A free consultation helps you understand your options — and often the other party comes around once they understand what's involved.";
+    bl=['We can explain how to approach the other party in a way that works.','Many matters proceed once both sides understand the cost of the alternative.','If they won't engage, we advise on the next step.'];
+  } else {
+    badge.style.cssText='display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:999px;font-size:.75rem;font-weight:500;margin-bottom:14px;background:rgba(168,200,159,.12);color:#a8c89f';
+    badge.textContent='Strong fit for mediation';
+    vt=party==='strong'?'Your matter is well-suited to mediation.':'Mediation is likely a good fit — let's talk through the specifics.';
+    nt='An honest read on whether mediation suits your matter. No cost, no obligation.';
+    if(_q60.t==='parenting'||_q60.t==='both'){
+      bl=['Section 60I certificate if required — we issue it.','Parenting plan converted into enforceable consent orders.','Child-focused process with full confidentiality protections.'];
+    } else if(_q60.t==='other'){
+      bl=['Workplace, estate and business disputes resolved outside court.','Commercially sensitive matters stay completely private.','Fixed fee quoted before you commit to anything.'];
+    } else {
+      bl=['Property settlement finalised without years of court.','Agreement formalised as legally binding consent orders.','Fixed fee quoted in writing before you commit.'];
+    }
+  }
+  verdict.textContent=vt; note.textContent=nt;
+  bullets.innerHTML=bl.map(function(b){return'<div style="display:flex;gap:10px;font-size:.86rem;color:rgba(255,255,255,.82);line-height:1.5"><span style="color:#a8c89f;flex-shrink:0">&#10003;</span>'+b+'</div>';}).join('');
+  document.getElementById('qresult').hidden=false;
+}
+function q60reset(){
+  _q60={t:null,s:null};
+  ['qs2','qs3','qresult'].forEach(function(id){document.getElementById(id).hidden=true;});
+  document.getElementById('qs1').hidden=false;
+}
+</script>
 
 <section class="sec reveal" style="background:var(--ink);color:var(--cream);border-radius:38px;margin:0 16px" aria-labelledby="wedge-h">
   <div class="wrap">
