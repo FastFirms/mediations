@@ -613,18 +613,18 @@ function q60result(party){
     badge.style.cssText='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(240,165,0,.15);border:1px solid rgba(240,165,0,.3);color:#f5c347';
     badge.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Needs careful design';
     vt='Mediation may still be the right path — with the right structure.';
-    nt='Where there\'s high conflict or a safety concern we assess suitability first, then design the session so you\'re never in the same room, or exempt you and document it properly.';
+    nt='Where there\\'s high conflict or a safety concern we assess suitability first, then design the session so you\\'re never in the same room, or exempt you and document it properly.';
     bl=['Confidential intake and safety screening before any joint contact.','Shuttle mediation: separate rooms or separate video links, staggered times.','If an exemption applies, we help you document it correctly.'];
   } else if(party==='possible'){
     badge.style.cssText='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(168,200,159,.12);border:1px solid rgba(168,200,159,.28);color:#a8c89f';
     badge.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Worth a conversation';
-    vt='You don\'t need them to say yes before you call us.';
-    nt='We never contact the other party without your say-so. A free consultation helps you understand your options — and often the other party comes around once they understand what\'s involved.';
-    bl=['We can explain how to approach the other party in a way that works.','Many matters proceed once both sides understand the cost of the alternative.','If they won\'t engage, we advise on the next step.'];
+    vt='You don\\'t need them to say yes before you call us.';
+    nt='We never contact the other party without your say-so. A free consultation helps you understand your options — and often the other party comes around once they understand what\\'s involved.';
+    bl=['We can explain how to approach the other party in a way that works.','Many matters proceed once both sides understand the cost of the alternative.','If they won\\'t engage, we advise on the next step.'];
   } else {
     badge.style.cssText='display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;font-size:.74rem;font-weight:600;margin-bottom:14px;letter-spacing:.03em;background:rgba(168,200,159,.14);border:1px solid rgba(168,200,159,.32);color:#a8c89f';
     badge.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Strong fit for mediation';
-    vt=party==='strong'?'Your matter is well-suited to mediation.':'Mediation is likely a good fit — let\'s talk through the specifics.';
+    vt=party==='strong'?'Your matter is well-suited to mediation.':'Mediation is likely a good fit — let\\'s talk through the specifics.';
     nt='An honest read on whether mediation suits your matter. No cost, no obligation.';
     if(_q60.t==='parenting'||_q60.t==='both'){
       bl=['Section 60I certificate if required — we issue it.','Parenting plan converted into enforceable consent orders.','Child-focused process with full confidentiality protections.'];
