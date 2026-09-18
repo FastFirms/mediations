@@ -352,7 +352,7 @@ doc += f"""<main id="main">
 {crumb_html([("Home",""),("Thank You",None)])}
 <section style="background:var(--sand);padding:80px 0 100px;min-height:60vh;display:flex;align-items:center">
   <div class="wrap">
-    <div style="display:grid;grid-template-columns:1fr 400px;gap:64px;align-items:center;max-width:960px;margin:0 auto">
+    <div class="ty-grid" style="display:grid;grid-template-columns:1fr 400px;gap:64px;align-items:center;max-width:960px;margin:0 auto">
 
       <div>
         <span style="display:inline-block;width:56px;height:56px;border-radius:50%;background:var(--sage-light);display:flex;align-items:center;justify-content:center;margin-bottom:24px">
@@ -380,7 +380,7 @@ doc += f"""<main id="main">
         </div>
       </div>
 
-      <div style="background:var(--sage-deep);border-radius:24px;overflow:hidden;color:var(--cream)">
+      <div class="ty-sidebar" style="background:var(--sage-deep);border-radius:24px;overflow:hidden;color:var(--cream)">
         <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia"
           style="width:100%;height:280px;object-fit:cover;object-position:center 15%;display:block">
         <div style="padding:28px 30px">
@@ -395,8 +395,8 @@ doc += f"""<main id="main">
 </section>
 <style>
 @media(max-width:700px){{
-  .ty-grid{{grid-template-columns:1fr!important}}
-  .ty-sidebar{{display:none}}
+  .ty-grid{{grid-template-columns:1fr!important;gap:32px!important}}
+  .ty-sidebar{{order:2}}
 }}
 </style>
 </main>""" + page_end()
