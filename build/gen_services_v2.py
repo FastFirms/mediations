@@ -21,8 +21,9 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema, service_schema,
-                       BOOK_URL, PHONE, PHONE_HREF, DOMAIN)
+                       BOOK_URL, PHONE, PHONE_HREF, DOMAIN, quiz_card)
 from authority_sources import cite
+# quiz_card imported so service_page() can add the quiz sidebar below the hero
 
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -72,11 +73,14 @@ def service_page(slug, title, desc, breadcrumb_label, eyebrow, h1_html, lede, to
 <a href="{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
 </div></div></section>
 
-<section class="sec"><div class="wrap-narrow">
+<div class="wrap svc-layout" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">
+<div>
 {takeaway}
 {toc(toc_items)}
 {body_html}
-</div></section>
+</div>
+<aside style="position:sticky;top:24px">{quiz_card()}</aside>
+</div>
 
 <section class="sec-tint"><div class="wrap-narrow">
 {faq_html(faq_items, heading=breadcrumb_label + " — frequently asked")}
