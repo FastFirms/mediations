@@ -790,8 +790,8 @@ build("our-fee-structure",
  "READY TO TAKE THE NEXT STEP?",
  "Know the cost before you commit.",
  noindex=True,  # Pricing/service page — noindex to avoid cannibalising /how-much-does-mediation-cost/
- bg_image="/assets/images/hero-mediation-session.jpg",
- bg_pos="center 50%")
+ bg_image="/assets/images/hero-our-fees.jpg",
+ bg_pos="center 40%")
 
 
 build("costs-of-going-to-court",
