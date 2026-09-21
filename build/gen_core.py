@@ -487,7 +487,13 @@ group_html += f"""<div class="hwh-group">
 </div>"""
 
 hwh_styles = """<style>
-.hwh-intro{max-width:680px;margin:0 auto 48px;text-align:center}
+.hwh-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:0 0 52px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.hwh-trust-item{padding:24px 28px;display:flex;flex-direction:column;gap:4px;border-right:1px solid var(--line)}
+.hwh-trust-item:last-child{border-right:none}
+.hwh-trust-num{font-family:var(--body-serif);font-size:1.6rem;font-weight:400;color:var(--sage);line-height:1}
+.hwh-trust-label{font-size:.82rem;font-weight:600;color:var(--ink);margin:4px 0 2px}
+.hwh-trust-desc{font-size:.8rem;color:var(--ink-soft);line-height:1.5}
+@media(max-width:640px){.hwh-trust{grid-template-columns:1fr}.hwh-trust-item{border-right:none;border-bottom:1px solid var(--line)}.hwh-trust-item:last-child{border-bottom:none}}
 .hwh-group{margin:0 0 52px}
 .hwh-group-title{font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
 .hwh-why{background:var(--sage-light);border-radius:var(--r);padding:40px 44px;margin:48px 0}
@@ -521,8 +527,10 @@ doc += phero(
 )
 doc += f"""<div class="wrap">
 {hwh_styles}
-<div class="hwh-intro">
-  <p>We resolve disputes — privately, efficiently, and without court — across the full range of family, workplace, and civil matters. Every mediator is nationally accredited. Every service comes with a free initial consultation.</p>
+<div class="hwh-trust">
+  <div class="hwh-trust-item"><span class="hwh-trust-num">90%</span><span class="hwh-trust-label">Resolution rate</span><span class="hwh-trust-desc">Most disputes resolved in a single day — without going to court.</span></div>
+  <div class="hwh-trust-item"><span class="hwh-trust-num">100%</span><span class="hwh-trust-label">Nationally accredited</span><span class="hwh-trust-desc">Every mediator holds formal NMAS accreditation. No juniors, no shortcuts.</span></div>
+  <div class="hwh-trust-item"><span class="hwh-trust-num">Fixed</span><span class="hwh-trust-label">Transparent fees</span><span class="hwh-trust-desc">No hourly billing surprises. You know the cost before you commit.</span></div>
 </div>
 {group_html}
 <div class="hwh-why reveal">
