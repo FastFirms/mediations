@@ -528,7 +528,7 @@ doc += phero(
     "How We Help",
     "Mediations Australia resolves family law, property, parenting, workplace, estate, and de facto disputes through accredited mediation. Browse every service area below, or book a free consultation and we'll point you to the right one.",
     [("Home", ""), ("How We Help", None)],
-    bg_image="/assets/images/hero-how-we-help.jpg",
+    bg_image="/assets/images/hero-how-we-help-new.jpg",
     bg_pos="center 40%"
 )
 doc += f"""<div class="wrap" style="margin-top:52px">
