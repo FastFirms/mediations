@@ -366,12 +366,16 @@ footer ul a:hover{color:var(--cream)}
 @media(max-width:767px){.booking-grid{grid-template-columns:1fr!important;gap:32px!important}}
 @media(max-width:680px){.compare{grid-template-columns:1fr!important;gap:0!important}.compare .divider{display:none}}
 @media(max-width:900px){.svc-layout{grid-template-columns:1fr!important}.svc-layout aside{position:static!important;width:100%}.hero-quiz-grid{grid-template-columns:1fr!important}}
+/* Hero with bg image: constrain text to the cream zone on desktop */
+.phero[style] h1{max-width:14ch}
+.phero[style] .lede{max-width:38ch}
+/* Hero with bg image: vertical gradient overlay on mobile */
 @media(max-width:767px){
   .phero[style]{background-position:center center!important}
   .phero[style]::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(247,250,247,1) 0%,rgba(247,250,247,.97) 40%,rgba(247,250,247,.82) 65%,rgba(247,250,247,.5) 85%,rgba(247,250,247,.2) 100%);z-index:1}
   .phero[style] .phero-blob{display:none}
   .phero[style] .wrap{z-index:2;position:relative}
-  .phero[style] h1{color:var(--ink)}
-  .phero[style] .lede{color:var(--ink-soft)}
+  .phero[style] h1{color:var(--ink);max-width:none}
+  .phero[style] .lede{color:var(--ink-soft);max-width:none}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
