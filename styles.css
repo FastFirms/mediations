@@ -366,9 +366,6 @@ footer ul a:hover{color:var(--cream)}
 @media(max-width:767px){.booking-grid{grid-template-columns:1fr!important;gap:32px!important}}
 @media(max-width:680px){.compare{grid-template-columns:1fr!important;gap:0!important}.compare .divider{display:none}}
 @media(max-width:900px){.svc-layout{grid-template-columns:1fr!important}.svc-layout aside{position:static!important;width:100%}.hero-quiz-grid{grid-template-columns:1fr!important}}
-/* Hero with bg image: constrain text to the cream zone on desktop */
-.phero[style] h1{max-width:14ch}
-.phero[style] .lede{max-width:38ch}
 /* Hero with bg image: vertical gradient overlay on mobile */
 @media(max-width:767px){
   .phero[style]{background-position:center center!important}

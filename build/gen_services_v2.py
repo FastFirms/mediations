@@ -63,7 +63,7 @@ def service_page(slug, title, desc, breadcrumb_label, eyebrow, h1_html, lede, to
     if schema_extra: schema.extend(schema_extra)
 
     if bg_image:
-        hero_style = f' style="background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.92) 30%,rgba(247,250,247,.25) 50%,rgba(247,250,247,0) 65%),url(\'{bg_image}\');background-size:cover;background-position:{bg_pos};position:relative"'
+        hero_style = f' style="background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.95) 38%,rgba(247,250,247,.7) 55%,rgba(247,250,247,.2) 75%,rgba(247,250,247,0) 82%),url(\'{bg_image}\');background-size:cover;background-position:{bg_pos};position:relative"'
         blob_style = ' style="opacity:.2"'
     else:
         hero_style = ""

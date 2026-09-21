@@ -59,7 +59,7 @@ doc = head(
                faq_schema(qa_home)])
 doc += nav()
 doc += f"""<main id="main">
-<section class="phero" style="padding-bottom:clamp(48px,6vw,80px);background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.92) 30%,rgba(247,250,247,.25) 50%,rgba(247,250,247,0) 65%),url('/assets/images/hero-mediation-session.jpg');background-size:cover;background-position:center 55%;position:relative">
+<section class="phero" style="padding-bottom:clamp(48px,6vw,80px);background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.95) 38%,rgba(247,250,247,.7) 55%,rgba(247,250,247,.2) 75%,rgba(247,250,247,0) 82%),url('/assets/images/hero-mediation-session.jpg');background-size:cover;background-position:center 55%;position:relative">
   <div class="phero-blob" style="opacity:.2"></div>
   <div class="wrap">
     <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
