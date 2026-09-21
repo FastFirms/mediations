@@ -59,7 +59,7 @@ doc = head(
                faq_schema(qa_home)])
 doc += nav()
 doc += f"""<main id="main">
-<section class="phero" style="padding-bottom:clamp(48px,6vw,80px);background-image:linear-gradient(rgba(247,250,247,.82),rgba(247,250,247,.82)),url('/assets/images/hero-dan-consultation.png');background-size:cover;background-position:center 20%">
+<section class="phero" style="padding-bottom:clamp(48px,6vw,80px)">
   <div class="phero-blob" style="opacity:.35"></div>
   <div class="wrap">
     <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
