@@ -368,11 +368,6 @@ footer ul a:hover{color:var(--cream)}
 @media(max-width:900px){.svc-layout{grid-template-columns:1fr!important}.svc-layout aside{position:static!important;width:100%}.hero-quiz-grid{grid-template-columns:1fr!important}}
 /* Hero with bg image: vertical gradient overlay on mobile */
 @media(max-width:767px){
-  .phero[style]{background-position:center center!important;min-height:640px;display:flex;flex-direction:column;justify-content:flex-start}
-  .phero[style]::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(247,250,247,1) 0%,rgba(247,250,247,.95) 42%,rgba(247,250,247,.5) 62%,rgba(247,250,247,.1) 80%,rgba(247,250,247,0) 100%);z-index:1}
-  .phero[style] .phero-blob{display:none}
-  .phero[style] .wrap{z-index:2;position:relative}
-  .phero[style] h1{color:var(--ink);max-width:none}
-  .phero[style] .lede{color:var(--ink-soft);max-width:none}
+  .phero[style]{background-image:none!important}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
