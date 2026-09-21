@@ -144,7 +144,7 @@ doc += f"""<main id="main">
   <div class="wrap">
     <div style="max-width:52ch;margin-bottom:48px">
       <p class="sec-tag">Meet the team</p>
-      <h2 class="sec-title">The people <em>behind every resolution</em></h2>
+      <h2 class="sec-title">A team of Mediators <em>across Australia</em></h2>
       <p style="font-size:1.05rem;color:var(--ink-soft)">Our team brings together nationally accredited mediators and experienced lawyers — each with a proven track record of resolving disputes without court.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px">
@@ -180,11 +180,10 @@ doc += f"""<main id="main">
       </a>
 
     </div>
-    <div style="margin-top:36px;text-align:center">
-      <a href="/our-team/" class="btn btn-ghost">Meet the full team →</a>
-    </div>
+
   </div>
-</section>"""
+</section>
+"""
 doc += faq_html(qa_home, heading="Everything you might be <em>wondering</em>.", tag="Common questions")
 doc = doc.replace('id="faq" aria-labelledby="faqh" style="padding-top:0"', 'id="faq" aria-labelledby="faqh" style="padding-top:80px"', 1)
 doc += cta_band("The first step costs <em>nothing</em> but a phone call.",
