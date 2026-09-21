@@ -610,8 +610,6 @@ service_page(
 
 <p>If you're unsure whether your situation is one we can help with, the best approach is a brief confidential conversation. There is no obligation and no cost to that initial discussion.</p>
 
-<blockquote><p>"In my experience, the best outcomes come when the employer refers early \u2014 before lawyers are involved and before people have dug into fixed positions. Once a formal claim is filed, the dynamic changes completely."</p><p>\u2014 Dan Toombs, Principal Mediator</p></blockquote>
-
 <h2 id="how">How the process works</h2>
 <ol>
   <li><p><strong>Referral and confidentiality.</strong> The workplace, or the parties themselves, refers the matter to us. Before anything proceeds, everyone confirms in writing their agreement to participate and to maintain confidentiality. This foundational step is what makes candid conversation possible in subsequent stages. We aim to complete initial intake contact within three business days of referral.</p></li>
