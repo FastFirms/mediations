@@ -465,12 +465,12 @@
     <!-- Result -->
     <div class="qstep" id="qresult" hidden>
       <div id="qbadge"></div>
-      <p id="qverdict" style="font-family:var(--body-serif);font-size:1.15rem;line-height:1.35;margin:0 0 10px;color:var(--cream)"></p>
-      <p id="qnote" style="font-size:.86rem;line-height:1.65;color:rgba(216,234,217,.72);margin:0 0 16px"></p>
+      <p id="qverdict" style="font-family:var(--body-serif);font-size:1.15rem;line-height:1.35;margin:0 0 10px;color:var(--ink)"></p>
+      <p id="qnote" style="font-size:.86rem;line-height:1.65;color:rgba(30,60,40,.72);margin:0 0 16px"></p>
       <div id="qbullets" style="display:grid;gap:9px;padding:15px 17px;background:rgba(168,200,159,.08);border:1px solid rgba(168,200,159,.18);border-radius:12px;margin-bottom:20px"></div>
       <a href="/contact-us/" class="btn btn-primary" style="width:100%;text-align:center;justify-content:center;display:flex;padding:14px 20px;font-size:.95rem">Book a free consultation <span class="arr">&#8594;</span></a>
       <button class="qback" onclick="qReset()" style="width:100%;text-align:center;margin-top:10px">&#8592; Start again</button>
-      <p style="font-size:.72rem;color:rgba(216,234,217,.32);margin:12px 0 0;line-height:1.5;text-align:center">General guidance only &mdash; not legal advice. If safety is a concern, call 1800RESPECT (1800 737 732).</p>
+      <p style="font-size:.72rem;color:rgba(30,60,40,.42);margin:12px 0 0;line-height:1.5;text-align:center">General guidance only &mdash; not legal advice. If safety is a concern, call 1800RESPECT (1800 737 732).</p>
     </div>
   </div>
 </div>
@@ -525,7 +525,7 @@ function _qbadge(st,ic,lbl){var b=document.getElementById('qbadge');b.style.cssT
 function _qset(vt,nt,bl){
   document.getElementById('qverdict').textContent=vt;
   document.getElementById('qnote').textContent=nt;
-  document.getElementById('qbullets').innerHTML=bl.map(function(b){return'<div style="display:flex;gap:10px;font-size:.84rem;color:rgba(216,234,217,.88);line-height:1.5"><span style="color:#a8c89f;flex-shrink:0;margin-top:2px">'+_IC+'</span><span>'+b+'</span></div>';}).join('');
+  document.getElementById('qbullets').innerHTML=bl.map(function(b){return'<div style="display:flex;gap:10px;font-size:.84rem;color:rgba(30,60,40,.85);line-height:1.5"><span style="color:#2d7a4a;flex-shrink:0;margin-top:2px">'+_IC+'</span><span>'+b+'</span></div>';}).join('');
 }
 function _qshow(id){document.getElementById(id).hidden=false;}
 function _qhide(id){document.getElementById(id).hidden=true;}
