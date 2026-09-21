@@ -16,7 +16,7 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,canoni
         d=d.replace('<meta name="robots" content="index, follow',
                     '<meta name="robots" content="noindex, follow')
     if bg_image:
-        hero_style=f' style="background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.92) 38%,rgba(247,250,247,.55) 62%,rgba(247,250,247,.18) 100%),url(\'{bg_image}\');background-size:cover;background-position:{bg_pos};position:relative"'
+        hero_style=f' style="background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.92) 30%,rgba(247,250,247,.25) 50%,rgba(247,250,247,0) 65%),url(\'{bg_image}\');background-size:cover;background-position:{bg_pos};position:relative"'
         blob_style=' style="opacity:.2"'
     else:
         hero_style=''
