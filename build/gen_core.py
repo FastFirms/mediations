@@ -16,11 +16,18 @@ def write(slug, doc):
     with open(os.path.join(path, "index.html"), "w") as f:
         f.write(doc)
 
-def phero(eyebrow, h1, lede, crumb):
+def phero(eyebrow, h1, lede, crumb, bg_image=None, bg_pos="center 55%"):
+    if bg_image:
+        bg_style = f"background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.92) 38%,rgba(247,250,247,.55) 62%,rgba(247,250,247,.18) 100%),url('{bg_image}');background-size:cover;background-position:{bg_pos};position:relative"
+        blob_opacity = ' style="opacity:.2"'
+    else:
+        bg_style = ""
+        blob_opacity = ""
+    section_style = f' style="{bg_style}"' if bg_style else ""
     return f"""<main id="main">
 {crumb_html(crumb)}
-<section class="phero">
-  <div class="phero-blob"></div>
+<section class="phero"{section_style}>
+  <div class="phero-blob"{blob_opacity}></div>
   <div class="wrap">
     <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
     <h1>{h1}</h1>
@@ -508,7 +515,9 @@ doc += phero(
     "Every dispute type we resolve",
     "How We Help",
     "Mediations Australia resolves family law, property, parenting, workplace, estate, and de facto disputes through accredited mediation. Browse every service area below, or book a free consultation and we'll point you to the right one.",
-    [("Home", ""), ("How We Help", None)]
+    [("Home", ""), ("How We Help", None)],
+    bg_image="/assets/images/hero-how-we-help.jpg",
+    bg_pos="center 40%"
 )
 doc += f"""<div class="wrap">
 {hwh_styles}
