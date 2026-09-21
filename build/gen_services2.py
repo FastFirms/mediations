@@ -8,16 +8,22 @@ from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        BOOK_URL, PHONE, PHONE_HREF)
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,canonical_url=None,noindex=False):
+def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,canonical_url=None,noindex=False,bg_image=None,bg_pos="center 50%"):
     schema=[org_schema(),breadcrumb_schema([("Home",""),(crumb,slug)]),
             service_schema(crumb,desc,slug),faq_schema(qa)]
     d=head(title,desc,slug,extra_schema=schema,canonical_url=canonical_url)+nav()
     if noindex:
         d=d.replace('<meta name="robots" content="index, follow',
                     '<meta name="robots" content="noindex, follow')
+    if bg_image:
+        hero_style=f' style="background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.92) 38%,rgba(247,250,247,.55) 62%,rgba(247,250,247,.18) 100%),url(\'{bg_image}\');background-size:cover;background-position:{bg_pos};position:relative"'
+        blob_style=' style="opacity:.2"'
+    else:
+        hero_style=''
+        blob_style=''
     d+=f"""<main id="main">
 {crumb_html([("Home",""),(crumb,None)])}
-<section class="phero"><div class="phero-blob"></div><div class="wrap">
+<section class="phero"{hero_style}><div class="phero-blob"{blob_style}></div><div class="wrap">
 <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
 <h1>{h1}</h1><p class="lede">{lede}</p>
 <div class="phero-cta"><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
@@ -231,7 +237,9 @@ build("commercial-mediation",
    "Our commercial mediation is fixed-fee, typically $3,000–$4,500 for the full session, shared equally between the parties.")],
  "Commercial Mediation",
  "Resolve the dispute — and keep the business moving.",
- "Book a free consultation to discuss your commercial dispute. We respond within one business day.")
+ "Book a free consultation to discuss your commercial dispute. We respond within one business day.",
+ bg_image="/assets/images/hero-estate-dispute-mediation.jpg",
+ bg_pos="center 50%")
 
 # ---- REAL ESTATE & CONSTRUCTION MEDIATION ----
 build("real-estate-mediation",
@@ -291,7 +299,9 @@ build("real-estate-mediation",
    "The settlement is documented as a deed of settlement or consent orders — legally binding and enforceable. For court proceedings, the terms can be filed to formally resolve the case.")],
  "Real Estate & Construction Mediation",
  "Resolve your property dispute — without the litigation.",
- "Book a free consultation to discuss your property or construction dispute.")
+ "Book a free consultation to discuss your property or construction dispute.",
+ bg_image="/assets/images/hero-financial-agreements-mediation.jpg",
+ bg_pos="center 50%")
 
 # ---- ELDER MEDIATION ----
 build("elder-mediation",
@@ -355,7 +365,9 @@ build("elder-mediation",
    "The mediator is not a lawyer. For granny flat arrangements, property gifts or powers of attorney, we recommend independent legal advice before formalising any agreement.")],
  "Elder Mediation",
  "Bring the family together — before the decisions pull it apart.",
- "Book a free consultation to discuss how elder mediation can help your family.")
+ "Book a free consultation to discuss how elder mediation can help your family.",
+ bg_image="/assets/images/hero-consent-orders-mediation.jpg",
+ bg_pos="center 50%")
 
 # ---- FEE STRUCTURE ----
 build("our-fee-structure",
@@ -981,7 +993,9 @@ build(
    "Yes. A mediated settlement is typically recorded in a deed of settlement, creating an enforceable legal agreement that ends the dispute.")],
  "Unfair Dismissal Mediation",
  "Act fast — <em>the 21-day deadline cannot be missed</em>.",
- "Book a free consultation now. Whether you have been dismissed or are facing a claim, mediation gives you a faster, private path to resolution.")
+ "Book a free consultation now. Whether you have been dismissed or are facing a claim, mediation gives you a faster, private path to resolution.",
+ bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_pos="center 50%")
 
 build(
  "workplace-bullying-harassment-mediation",
@@ -1056,7 +1070,9 @@ build(
    "Yes. Mediation is a confidential, without-prejudice process, which is part of what allows people to speak openly and reach a genuine resolution.")],
  "Bullying &amp; Harassment Mediation",
  "Honest about when mediation helps — <em>and when it doesn't</em>.",
- "Book a free consultation. We will give you an honest assessment of whether mediation is right for your situation, and what to do if it is not.")
+ "Book a free consultation. We will give you an honest assessment of whether mediation is right for your situation, and what to do if it is not.",
+ bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_pos="center 50%")
 
 build(
  "general-protections-discrimination-mediation",
@@ -1126,7 +1142,9 @@ build(
    "A mediated or conciliated settlement is generally confidential. A litigated outcome, by contrast, is usually public.")],
  "General Protections Mediation",
  "Deadlines are as short as 21 days — <em>act quickly</em>.",
- "Book a free consultation. These disputes are time-sensitive — the sooner you get advice, the more options you have.")
+ "Book a free consultation. These disputes are time-sensitive — the sooner you get advice, the more options you have.",
+ bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_pos="center 50%")
 
 build(
  "partnership-executive-exit-mediation",
@@ -1202,7 +1220,9 @@ build(
    "Yes. Outcomes are formalised into a binding settlement deed, which can include enforceable restraints, releases and payment terms.")],
  "Partnership &amp; Executive Exit",
  "Private, fast and commercially focused — <em>before it costs you the business</em>.",
- "Book a free consultation. Resolve a partnership or executive exit dispute privately, before it becomes a public, value-destroying court battle.")
+ "Book a free consultation. Resolve a partnership or executive exit dispute privately, before it becomes a public, value-destroying court battle.",
+ bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_pos="center 50%")
 
 build(
  "redundancy-restructure-mediation",
@@ -1273,7 +1293,9 @@ build(
    "Because the parties design the outcome, a settlement can include compensation, an agreed reference, a non-disparagement agreement, and confidential terms — things a tribunal cannot order.")],
  "Redundancy &amp; Restructure Mediation",
  "Resolve it before the 21-day deadline — <em>and before it escalates</em>.",
- "Book a free consultation. Whether you are an employee challenging a redundancy or an employer managing a restructure, early advice protects your options.")
+ "Book a free consultation. Whether you are an employee challenging a redundancy or an employer managing a restructure, early advice protects your options.",
+ bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_pos="center 50%")
 
 build(
  "workplace-investigations-grievance-mediation",
@@ -1338,6 +1360,8 @@ build(
    "Most workplace grievance mediations are booked within a few weeks and completed in a single session. Compare this with a formal investigation and disciplinary process, which can take months and leave the working environment worse than before.")],
  "Investigations &amp; Grievances",
  "Get the process right from the start — <em>before it becomes something harder to resolve</em>.",
- "Book a free consultation. We will help you choose the right process — investigation, mediation, or both — and move quickly.")
+ "Book a free consultation. We will help you choose the right process — investigation, mediation, or both — and move quickly.",
+ bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_pos="center 50%")
 
 print("Additional service pages built.")
