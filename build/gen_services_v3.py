@@ -622,7 +622,7 @@ service_page(
 <p>Most workplace matters resolve in a single session. The whole process \u2014 from referral to documented agreement \u2014 typically completes within two to four weeks. Complex matters involving multiple parties or entrenched conflict may require additional sessions, but this is the exception rather than the rule.</p>
 
 <h2 id="benefits">The benefits for employers</h2>
-<p>Unresolved workplace conflict is significantly more expensive than most employers realise. Australian research consistently estimates the total cost of workplace conflict \u2014 in lost productivity, absenteeism, staff turnover, and management time \u2014 at tens of billions of dollars annually. A single mediation engagement typically costs $2,000\u2013$5,000; a Fair Work unfair dismissal proceeding can easily reach $20,000\u2013$80,000 in legal fees alone, before accounting for the internal management time consumed by the process.</p>
+<p>Unresolved workplace conflict is significantly more expensive than most employers realise. Australian research consistently estimates the total cost of workplace conflict \u2014 in lost productivity, absenteeism, staff turnover, and management time \u2014 at tens of billions of dollars annually. A single mediation engagement typically costs $1,500\u2013$4,000; a Fair Work unfair dismissal proceeding can easily reach $20,000\u2013$80,000 in legal fees alone, before accounting for the internal management time consumed by the process.</p>
 
 <ul>
   <li><strong>Cost</strong> \u2014 a fraction of what formal grievance investigations, Fair Work proceedings, or staff turnover cost. The return on investment for early mediation is substantial.</li>
@@ -664,7 +664,7 @@ service_page(
 <thead><tr><th></th><th>Workplace mediation</th><th>Fair Work Commission</th></tr></thead>
 <tbody>
 <tr><td>When</td><td>Early \u2014 before formal claims</td><td>After a claim is lodged</td></tr>
-<tr><td>Cost</td><td>$2,500\u2013$6,500 fixed fee</td><td>$20,000\u2013$80,000+ in legal fees</td></tr>
+<tr><td>Cost</td><td>$1,500\u2013$4,000 fixed fee</td><td>$20,000\u2013$80,000+ in legal fees</td></tr>
 <tr><td>Time</td><td>2\u20134 weeks to resolution</td><td>Several months minimum</td></tr>
 <tr><td>Outcome</td><td>Parties shape the agreement</td><td>Conciliated or arbitrated decision</td></tr>
 <tr><td>Privacy</td><td>Completely confidential</td><td>Some matters become public</td></tr>
@@ -679,7 +679,7 @@ service_page(
 """ + inline_cta("Early mediation is dramatically cheaper than letting things escalate. We respond fast.") + """
 
 <h2 id="costs">Costs and timeframes</h2>
-<p>Workplace mediation is billed as a single fixed fee covering the intake meetings, the mediation session, and the documented agreement. Our fees typically range from <strong>$2,500 for a straightforward two-party dispute</strong> to <strong>$6,500 for a more complex multi-party or multi-session matter</strong>. Disbursements such as travel for in-person sessions outside our primary service areas may apply and will be advised upfront.</p>
+<p>Workplace mediation is billed as a single fixed fee covering the intake meetings, the mediation session, and the documented agreement. Our fees typically range from <strong>$1,500 for a straightforward two-party dispute</strong> to <strong>$4,000 for a more complex multi-party or multi-session matter</strong>. Disbursements such as travel for in-person sessions outside our primary service areas may apply and will be advised upfront.</p>
 
 <p>To put those figures in context: a formal grievance investigation \u2014 involving HR, management, and potentially external investigators \u2014 typically consumes $5,000\u2013$15,000 in management time alone, before any external costs. Defending an unfair dismissal claim at the Fair Work Commission commonly runs to $20,000\u2013$80,000 in legal fees, and that figure can rise sharply if the matter proceeds past conciliation. The cost of losing a key employee and replacing them \u2014 accounting for recruitment, onboarding, and the productivity gap during transition \u2014 is typically 50\u2013150% of annual salary.</p>
 
