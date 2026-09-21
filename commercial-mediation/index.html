@@ -773,5 +773,21 @@ document.querySelectorAll('.has-drop').forEach(hd=>{
   if(drop){drop.addEventListener('mouseenter',open);drop.addEventListener('mouseleave',close);}
 });
 </script>
+<script>
+(function(){
+  if(window.innerWidth>=768)return;
+  var h=document.querySelector('.phero[style]');
+  if(!h)return;
+  var urls=(h.style.backgroundImage||'').match(/url\([^)]+\)/g);
+  if(!urls||!urls.length)return;
+  var img=urls[urls.length-1];
+  h.style.backgroundImage=img;
+  h.style.backgroundSize='100% auto';
+  h.style.backgroundPosition='center bottom';
+  h.style.backgroundRepeat='no-repeat';
+  h.style.backgroundColor='#f7faf7';
+  h.style.paddingBottom=Math.round(window.innerWidth*0.5625)+'px';
+})();
+</script>
 </body>
 </html>
