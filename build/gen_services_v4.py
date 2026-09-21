@@ -342,7 +342,7 @@ service_page(
 <p>It's worth being honest: grandparents don't have an automatic, freestanding \"right\" to see grandchildren. What they do have is the right to apply for a parenting order, and the law expressly recognises that children benefit from relationships with grandparents and other significant people. The framing matters \u2014 the law looks at it as <em>the child's</em> right to maintain meaningful relationships, not the adult's right of access.</p>
 
 <p>In practice that's a strong basis. For grandparents who've been part of the children's lives, the best-interests test usually supports maintaining the connection.</p>
-""" + inline_cta("Being kept from your grandchildren is painful. We can help you find a way back \u2014 book a consultation.") + """
+""" + inline_cta("Being kept from your grandchildren is painful. We can help you find a way back \u2014 book a consultation.") + f"""
 
 <h2 id=\"when\">When mediation helps</h2>
 <ul>
