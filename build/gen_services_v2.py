@@ -82,7 +82,7 @@ def service_page(slug, title, desc, breadcrumb_label, eyebrow, h1_html, lede, to
 </div></div></section>
 
 <div class="wrap svc-layout" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">
-<div>
+<div class="svc-body">
 {takeaway}
 {toc(toc_items)}
 {body_html}
