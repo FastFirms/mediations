@@ -55,16 +55,24 @@ def related_grid(items):
     return f'''<section class="sec-tint"><div class="wrap-narrow"><h2>Related guides &amp; services</h2><div class="related-grid">{cards}</div></div></section>'''
 
 def service_page(slug, title, desc, breadcrumb_label, eyebrow, h1_html, lede, toc_items,
-                 takeaway, body_html, faq_items, related_items, schema_extra=None):
+                 takeaway, body_html, faq_items, related_items, schema_extra=None,
+                 bg_image=None, bg_pos="center 55%"):
     """Generate one cornerstone-depth service page."""
     schema = [org_schema(), breadcrumb_schema([("Home",""),(breadcrumb_label,slug)]),
               service_schema(title, desc, slug), faq_schema(faq_items)]
     if schema_extra: schema.extend(schema_extra)
 
+    if bg_image:
+        hero_style = f' style="background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.92) 38%,rgba(247,250,247,.55) 62%,rgba(247,250,247,.18) 100%),url(\'{bg_image}\');background-size:cover;background-position:{bg_pos};position:relative"'
+        blob_style = ' style="opacity:.2"'
+    else:
+        hero_style = ""
+        blob_style = ""
+
     d = head(title, desc, slug, extra_schema=schema) + nav()
     d += f'''<main id="main">
 {crumb_html([("Home",""),(breadcrumb_label,None)])}
-<section class="phero"><div class="phero-blob"></div><div class="wrap">
+<section class="phero"{hero_style}><div class="phero-blob"{blob_style}></div><div class="wrap">
 <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
 <h1>{h1_html}</h1>
 <p class="lede">{lede}</p>
@@ -240,6 +248,8 @@ service_page(
         ("mediate-or-litigate","Mediate or Litigate?"),
         ("high-conflict-mediation","High-Conflict Mediation"),
     ],
+    bg_image="/assets/images/hero-family-law-mediation.jpg",
+    bg_pos="center 40%",
 )
 
 # =====================================================================
