@@ -525,7 +525,7 @@ doc += phero(
     bg_image="/assets/images/hero-how-we-help.jpg",
     bg_pos="center 40%"
 )
-doc += f"""<div class="wrap">
+doc += f"""<div class="wrap" style="margin-top:52px">
 {hwh_styles}
 <div class="hwh-trust">
   <div class="hwh-trust-item"><span class="hwh-trust-num">90%</span><span class="hwh-trust-label">Resolution rate</span><span class="hwh-trust-desc">Most disputes resolved in a single day — without going to court.</span></div>
