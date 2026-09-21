@@ -144,6 +144,8 @@ service_page(
         ("is-family-law-mediation-compulsory","Is Mediation Compulsory?"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-parenting-plan-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -281,6 +283,8 @@ service_page(
         ("property-settlement-after-separation","Property Settlement Guide"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-consent-orders-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -418,6 +422,8 @@ service_page(
         ("de-facto-mediation","De Facto Mediation"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-financial-agreements-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -543,6 +549,8 @@ service_page(
         ("family-court-process","The Family Court Process"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-section-60i-certificates.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -718,6 +726,8 @@ service_page(
         ("preparing-for-mediation","Preparing for Mediation"),
         ("about-mediations-australia","About Mediations Australia"),
     ],
+    bg_image="/assets/images/hero-workplace-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -835,6 +845,8 @@ service_page(
         ("high-conflict-mediation","High-Conflict Mediation"),
         ("divorce-without-a-lawyer","Divorce Without a Lawyer"),
     ],
+    bg_image="/assets/images/hero-online-divorce-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 print("\nBatch 2 service cornerstones built (5 pages).")

@@ -64,7 +64,9 @@ doc += nav()
 doc += phero("A clearer path through a difficult time",
  "How Mediation Works",
  "No jargon, no surprises. Mediation is a structured conversation led by a neutral, accredited mediator who helps everyone reach an agreement — and you decide whether to accept it. Here's exactly what happens, from first call to binding outcome.",
- [("Home",""),("How Mediation Works",None)])
+ [("Home",""),("How Mediation Works",None)],
+ bg_image="/assets/images/hero-preparing-for-mediation.jpg",
+ bg_pos="center 50%")
 doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediation is a structured negotiation led by a neutral, accredited mediator who helps everyone reach their own agreement. Unlike a judge, the mediator imposes nothing — you stay in control. It typically resolves in one to two sessions, costs a fraction of court, and the agreement can be made legally binding.</p></div></div>'
 doc += """<article class="body"><div class="wrap-narrow reveal">
 <h2>The five steps of mediation</h2>
@@ -142,7 +144,9 @@ doc += nav()
 doc += phero("We exist because the courts fail most people",
  "About Mediations Australia",
  "Mediations Australia exists because litigation fails most people who enter it — slower, costlier and more painful than it needs to be. We bring together nationally accredited mediators and experienced family lawyers with one shared philosophy: resolve early, resolve fairly, and keep people out of court wherever possible.",
- [("Home",""),("About",None)])
+ [("Home",""),("About",None)],
+ bg_image="/assets/images/hero-accredited-family-mediators.jpg",
+ bg_pos="center 50%")
 doc += """<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediations Australia is a national dispute resolution firm founded by Dan Toombs — an AMDRAS-accredited mediator, award-winning lawyer, former tribunal member, and Winston Churchill Fellow. We bring together nationally accredited mediators and experienced family lawyers to help individuals, families and businesses resolve disputes faster and at a fraction of the cost of court. With offices in Sydney, Melbourne, Brisbane and Perth, and secure online mediation available Australia-wide, we resolve over 90% of matters without court. Our approach is built on one conviction: for most disputes, there is a better first step than litigation.</p></div></div>"""
 doc += """<article class="body"><div class="wrap-narrow reveal">
 <h2>Why we exist</h2>
@@ -211,7 +215,9 @@ doc += nav()
 doc += phero("Go in prepared &mdash; it makes a real difference",
  "Preparing for Mediation",
  "Walking into mediation prepared makes a real difference to the outcome. Use our free guided tool to identify your issues, clarify your priorities, and download a personal Mediation Preparation Summary &mdash; then read the practical guide below.",
- [("Home",""),("Resources",None),("Preparing for Mediation",None)])
+ [("Home",""),("Resources",None),("Preparing for Mediation",None)],
+ bg_image="/assets/images/hero-preparing-for-mediation.jpg",
+ bg_pos="center 50%")
 doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> To prepare for mediation, get clear on your goals and priorities, gather any relevant documents, and think about realistic outcomes rather than fixed positions. Our free preparation tool guides you through each step and produces a downloadable PDF summary &mdash; tailored for Australian family and property disputes.</p></div></div>'
 doc += PREP_TOOL_HTML
 doc += """<article class="body"><div class="wrap-narrow reveal">

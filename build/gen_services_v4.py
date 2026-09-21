@@ -114,6 +114,8 @@ service_page(
         ("family-law-mediation","Family Law Mediation"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-financial-agreements-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -222,6 +224,8 @@ service_page(
         ("how-mediation-works","How Mediation Works"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-parenting-plan-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -304,6 +308,8 @@ service_page(
         ("family-law-mediation","Family Law Mediation"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-de-facto-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -401,6 +407,8 @@ service_page(
         ("consent-orders","Consent Orders"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-consent-orders-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -498,6 +506,8 @@ service_page(
         ("consent-orders","Consent Orders"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-family-law-arbitration.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -601,6 +611,8 @@ service_page(
         ("about-mediations-australia","About Mediations Australia"),
         ("contact-us","Contact"),
     ],
+    bg_image="/assets/images/hero-estate-dispute-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -695,6 +707,8 @@ service_page(
         ("collaborative-family-lawyers","Collaborative Family Lawyers"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-accredited-family-mediators.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -803,6 +817,8 @@ service_page(
         ("preparing-for-mediation","Preparing for Mediation"),
         ("best-divorce-lawyers-sydney","Best Divorce Lawyers in Sydney"),
     ],
+    bg_image="/assets/images/hero-de-facto-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 
@@ -890,6 +906,8 @@ service_page(
         ("how-mediation-works","How Mediation Works"),
         ("contact-us","Contact"),
     ],
+    bg_image="/assets/images/hero-divorce-counselling.jpg",
+    bg_pos="center 50%",
 )
 
 print("\nBatch 3 service cornerstones built (7 pages).")

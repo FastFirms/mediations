@@ -378,6 +378,8 @@ service_page(
         ("business-in-divorce","Business in Divorce"),
         ("preparing-for-mediation","Preparing for Mediation"),
     ],
+    bg_image="/assets/images/hero-property-settlement-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 # =====================================================================
@@ -490,6 +492,8 @@ service_page(
         ("mothers-rights","Mothers' Rights"),
         ("domestic-violence-and-family-law","Domestic Violence & Family Law"),
     ],
+    bg_image="/assets/images/hero-parenting-plan-mediation.jpg",
+    bg_pos="center 50%",
 )
 
 print("\nBatch 1 complete: 3 cornerstone-depth service pages built.")
