@@ -368,7 +368,7 @@ footer ul a:hover{color:var(--cream)}
 @media(max-width:900px){.svc-layout{grid-template-columns:1fr!important}.svc-layout aside{position:static!important;width:100%}.hero-quiz-grid{grid-template-columns:1fr!important}}
 /* Hero with bg image: vertical gradient overlay on mobile */
 @media(max-width:767px){
-  .phero[style]{background-size:cover,100% auto!important;background-position:0 0,center bottom!important;padding-bottom:56vw!important}
+  .phero[style]{background-size:cover,100% auto!important;background-position:0 0,center bottom!important;background-repeat:no-repeat,no-repeat!important;background-color:#f7faf7!important;padding-bottom:56vw!important}
   .phero[style] .phero-blob{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
