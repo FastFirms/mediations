@@ -65,7 +65,7 @@ doc += phero("A clearer path through a difficult time",
  "How Mediation Works",
  "No jargon, no surprises. Mediation is a structured conversation led by a neutral, accredited mediator who helps everyone reach an agreement — and you decide whether to accept it. Here's exactly what happens, from first call to binding outcome.",
  [("Home",""),("How Mediation Works",None)],
- bg_image="/assets/images/hero-preparing-for-mediation.jpg",
+ bg_image="/assets/images/hero-mediation-session.jpg",
  bg_pos="center 50%")
 doc += '<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediation is a structured negotiation led by a neutral, accredited mediator who helps everyone reach their own agreement. Unlike a judge, the mediator imposes nothing — you stay in control. It typically resolves in one to two sessions, costs a fraction of court, and the agreement can be made legally binding.</p></div></div>'
 doc += """<article class="body"><div class="wrap-narrow reveal">
