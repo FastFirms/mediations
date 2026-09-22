@@ -291,9 +291,16 @@ URLS = [
 ]
 
 
+class _Follow308(urllib.request.HTTPRedirectHandler):
+    def http_error_308(self, req, fp, code, msg, headers):
+        return self.http_error_302(req, fp, code, msg, headers)
+
+_opener = urllib.request.build_opener(_Follow308())
+
 def fetch_html(url):
+    url = url.replace("://mediationsaustralia.com.au/", "://www.mediationsaustralia.com.au/")
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; SiteImporter/1.0)"})
-    with urllib.request.urlopen(req, timeout=20) as r:
+    with _opener.open(req, timeout=20) as r:
         return r.read().decode("utf-8", errors="replace")
 
 
@@ -345,6 +352,13 @@ def extract_article_body(html):
         body = _div_contents(html, cls)
         if body:
             return body
+    # Fallback: static-site post-body div (used when fetching from live static pages)
+    m = re.search(r'<div class="post-body"><div class="wrap-narrow">(.*?)<aside\b', html, re.S)
+    if m and len(m.group(1).strip()) > 200:
+        return m.group(1).strip()
+    m = re.search(r'<div class="post-body"><div class="wrap-narrow">(.*?)</div>\s*</div>\s*<', html, re.S)
+    if m and len(m.group(1).strip()) > 200:
+        return m.group(1).strip()
     # Fallback: full <article> contents
     m = re.search(r"<article[^>]*>(.*?)</article>", html, re.S | re.I)
     if m and len(m.group(1).strip()) > 200:
@@ -378,6 +392,14 @@ def truncate(s, limit):
     return s[: limit - 1].rsplit(" ", 1)[0] + "…"
 
 
+# Slugs whose WP URL 308-redirects to a different path — map to the actual fetch URL.
+FETCH_URL_OVERRIDES = {
+    "mediation-vs-collaborative-law":        "https://www.mediationsaustralia.com.au/mediate-or-litigate/",
+    "australia-lgbt-marriage-mediation":     "https://www.mediationsaustralia.com.au/same-sex-family-law/",
+    "mediation-in-property-settlement-cases":"https://www.mediationsaustralia.com.au/property-settlement-mediation-guide/",
+    "what-is-a-dvo-everything-you-need-to-know": "https://www.mediationsaustralia.com.au/domestic-violence-and-family-law/",
+}
+
 # Override title/desc/h1 for specific slugs (CTR fixes, stale WP data).
 # Slugs listed here are force-rebuilt even if the directory already exists.
 META_OVERRIDES = {
@@ -386,6 +408,10 @@ META_OVERRIDES = {
         "desc":  "What's the difference between mediation and collaborative law? Compare costs, process and legal outcomes to choose the right path. Free consult.",
         "h1":    "Mediation vs Collaborative Law: Key Differences Explained",
     },
+    # Force-rebuild to recover lost body content
+    "preparing-for-mediation": {},
+    "costs-of-going-to-court": {},
+    "estate-dispute-mediation": {},
 }
 
 def read_existing_body(slug):
@@ -399,25 +425,35 @@ def read_existing_body(slug):
     return m.group(1).strip() if m else ""
 
 def build_page(url, slug):
-    if slug in META_OVERRIDES and os.path.exists(os.path.join(OUT, slug)):
-        body = read_existing_body(slug)
-        ov = META_OVERRIDES[slug]
+    ov = META_OVERRIDES.get(slug, {})
+    existing_body = read_existing_body(slug) if ov and ov.get("title") else ""
+    # Discard extracted body if it contains nested post-hero (means it was a bad prior rebuild)
+    if existing_body and 'class="post-hero"' in existing_body:
+        existing_body = ""
+    if ov and ov.get("title") and existing_body:
+        # Has explicit title override and recoverable body — apply new meta
+        body   = existing_body
         title  = ov["title"]
         desc   = ov["desc"]
         h1_raw = ov.get("h1", title)
     else:
-        html = fetch_html(url)
-        title = extract_meta_title(html)
-        desc = extract_meta_desc(html)
-        h1_raw = extract_h1(html)
+        fetch_url = FETCH_URL_OVERRIDES.get(slug, url)
+        html = fetch_html(fetch_url)
         body = extract_article_body(html)
 
-        title = _unescape(title)
-        h1_raw = _unescape(h1_raw)
-        if not title:
-            title = slug.replace("-", " ").title()
-        if not h1_raw:
-            h1_raw = title
+        # Apply META_OVERRIDES title/desc/h1 if present; otherwise take from fetched page
+        if ov.get("title"):
+            title  = ov["title"]
+            desc   = ov["desc"]
+            h1_raw = ov.get("h1", title)
+        else:
+            title = _unescape(extract_meta_title(html))
+            desc  = extract_meta_desc(html)
+            h1_raw = _unescape(extract_h1(html))
+            if not title:
+                title = slug.replace("-", " ").title()
+            if not h1_raw:
+                h1_raw = title
 
         body = re.sub(r"^\s*<h1[^>]*>.*?</h1>\s*", "", body, flags=re.S | re.I)
         body = clean_body(body)
