@@ -19,11 +19,11 @@ POST_CSS = """<style>
 /* Hero — 2-column */
 .post-hero{padding:0;border-bottom:1px solid var(--line);overflow:hidden}
 .hero-inner{display:grid;grid-template-columns:1fr;max-width:1180px;margin:0 auto;padding:48px 24px 0}
-@media(min-width:800px){.hero-inner{grid-template-columns:1fr 360px;gap:48px;padding:60px 48px 0;align-items:stretch}}
+@media(min-width:800px){.hero-inner{grid-template-columns:1fr 380px;gap:48px;padding:60px 48px 0;align-items:start}}
 .hero-text{padding-bottom:36px}
 .post-meta{display:flex;gap:12px;align-items:center;font-size:.88rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
 .post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 16px;border-radius:100px;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
-.hero-text h1{font-size:clamp(2rem,4.5vw,3.1rem);line-height:1.1;letter-spacing:-.03em;margin:0 0 18px;font-family:'Hanken Grotesk',var(--sans);font-weight:700;color:var(--ink)}
+.hero-text h1{font-size:clamp(2.3rem,5.2vw,4rem);line-height:1.15;letter-spacing:-.015em;margin:0 0 18px;font-family:var(--serif);font-weight:500;color:var(--ink)}
 .hero-dek{font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:0 0 28px;font-family:var(--serif);max-width:54ch;line-height:1.65}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;align-items:center}
 .btn-outline-dark{display:inline-flex;align-items:center;padding:13px 22px;border:2px solid var(--sage-deep);color:var(--sage-deep);border-radius:8px;font-weight:600;font-size:.95rem;text-decoration:none;white-space:nowrap;transition:background .18s,color .18s}
@@ -36,7 +36,7 @@ POST_CSS = """<style>
 .author-cred{font-size:.82rem;color:var(--ink-soft)}
 /* Hero art box */
 .hero-art{display:none}
-@media(min-width:800px){.hero-art{display:flex;flex-direction:column;justify-content:flex-end;background:var(--sage-deep);border-radius:20px 20px 0 0;min-height:300px;position:relative;overflow:hidden;padding:28px;align-self:stretch}}
+@media(min-width:800px){.hero-art{display:flex;flex-direction:column;justify-content:flex-end;background:var(--sage-deep);border-radius:20px;aspect-ratio:1/1;width:100%;position:relative;overflow:hidden;padding:28px}}
 .hero-art-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.18}
 .hero-float{position:relative;z-index:2;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:16px 18px;display:flex;gap:12px;align-items:center}
 .hero-float-icon{width:34px;height:34px;flex-shrink:0;color:rgba(255,255,255,.88)}
