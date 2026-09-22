@@ -13,50 +13,111 @@ from templates import head, nav, page_end, esc, crumb_html, BOOK_URL, PHONE, PHO
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 POST_CSS = """<style>
-.post-hero{padding:36px 0 8px}
-.post-meta{display:flex;gap:16px;align-items:center;font-size:.9rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
-.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 14px;border-radius:100px;font-weight:600;font-size:.82rem}
-.author-byline{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:18px;border-top:1px solid var(--sand-deep)}
+/* Reading progress bar */
+.progress-track{position:fixed;top:0;left:0;right:0;height:3px;z-index:999;pointer-events:none}
+.progress-bar{height:100%;width:0;background:var(--sage-deep);transition:width .1s linear}
+/* Hero */
+.post-hero{padding:40px 0 0;border-bottom:1px solid var(--line)}
+.post-meta{display:flex;gap:12px;align-items:center;font-size:.88rem;color:var(--ink-soft);margin-bottom:16px;flex-wrap:wrap}
+.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:4px 14px;border-radius:100px;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
+.author-byline{display:flex;align-items:center;gap:14px;margin-top:20px;padding:16px 0;border-top:1px solid var(--line)}
 .author-byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .author-byline div{display:flex;flex-direction:column;gap:2px}
 .author-name{font-weight:600;font-size:.95rem;color:var(--ink)}
 .author-name a{color:inherit;text-decoration:none}
 .author-cred{font-size:.82rem;color:var(--ink-soft)}
-.post-body{padding:30px 0 60px}
-.post-body h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:42px 0 14px}
-.post-body h2:first-child{margin-top:0}
-.post-body h3{font-size:1.25rem;margin:30px 0 10px}
-.post-body p{font-size:1.07rem;color:var(--ink-soft);margin-bottom:18px;max-width:70ch}
-.post-body ul,.post-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:11px}
-.post-body ul li{position:relative;padding-left:30px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch}
-.post-body ul li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;background:var(--sage-light);border-radius:50%}
-.post-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:8px;height:5px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
-.post-body ol{counter-reset:li}
-.post-body ol li{position:relative;padding-left:42px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch;counter-increment:li}
-.post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
-.post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
-.post-body a:hover{color:var(--terra)}
-.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
-.post-body .table-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:20px 0 28px;overflow-x:auto}
-.post-body table{width:100%;border-collapse:collapse;font-size:.98rem;background:var(--cream);display:table}
-.post-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
-.post-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
-.post-body tr:last-child td{border-bottom:none}
-.post-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+/* 2-column content grid */
+.content-grid{max-width:1180px;margin:0 auto;padding:0 24px;display:block}
+@media(min-width:980px){.content-grid{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:0 48px;align-items:start}}
+/* Sidebar TOC (desktop) */
+.toc-desktop{display:none}
+@media(min-width:980px){.toc-desktop{display:block;position:sticky;top:96px;align-self:start}}
+.toc-inner{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:32px}
+.toc-label{font-size:.75rem;font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);margin:0 0 14px}
+.toc-list{list-style:none;padding:0;margin:0;counter-reset:toc;display:flex;flex-direction:column}
+.toc-list li{counter-increment:toc;display:block}
+.toc-list a{display:flex;gap:10px;padding:7px 0;font-size:.87rem;color:var(--sage-deep);text-decoration:none;border-bottom:1px solid var(--line);line-height:1.35;align-items:baseline}
+.toc-list li:last-child a{border-bottom:none}
+.toc-list a::before{content:counter(toc,decimal-leading-zero);font-size:.7rem;font-weight:700;color:var(--ink-soft);flex-shrink:0;min-width:24px}
+.toc-list a:hover{color:var(--terra)}
+/* Mobile TOC (collapsible) */
+.toc-mobile{background:var(--cream);border:1px solid var(--line);border-radius:14px;margin:24px 0 28px;overflow:hidden}
+@media(min-width:980px){.toc-mobile{display:none}}
+.toc-mobile summary{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;cursor:pointer;font-weight:600;font-size:.95rem;list-style:none;user-select:none;color:var(--ink)}
+.toc-mobile summary::-webkit-details-marker{display:none}
+.toc-mobile .chevron{width:18px;height:18px;transition:transform .25s;flex-shrink:0;color:var(--ink-soft)}
+.toc-mobile[open] .chevron{transform:rotate(180deg)}
+.toc-mobile .toc-list{padding:0 18px 14px}
+.toc-mobile .toc-list a{border-bottom:1px solid var(--line)}
+.toc-mobile .toc-list li:last-child a{border-bottom:none}
+/* Article body */
+.article-body{padding:32px 0 60px;min-width:0}
+.article-body h2{font-size:clamp(1.4rem,3vw,2rem);margin:40px 0 12px;scroll-margin-top:90px}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-size:1.2rem;margin:28px 0 8px;scroll-margin-top:90px}
+.article-body p{font-size:1.06rem;color:var(--ink-soft);margin-bottom:18px;max-width:68ch}
+.article-body ul,.article-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.article-body ul li{position:relative;padding-left:28px;color:var(--ink-soft);font-size:1.04rem}
+.article-body ul li::before{content:"";position:absolute;left:0;top:8px;width:15px;height:15px;background:var(--sage-light);border-radius:50%}
+.article-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:7px;height:4px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
+.article-body ol{counter-reset:li}
+.article-body ol li{position:relative;padding-left:40px;color:var(--ink-soft);font-size:1.04rem;counter-increment:li}
+.article-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:25px;height:25px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:600}
+.article-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
+.article-body a:hover{color:var(--terra)}
+.article-body a.btn,.article-body a.btn:hover{color:#fff;text-decoration:none}
+/* Tables */
+.article-body .table-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:20px 0 28px;overflow-x:auto}
+.article-body table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream);display:table}
+.article-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
+.article-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+.article-body tr:last-child td{border-bottom:none}
+.article-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+/* Answer / key-takeaway box */
+.answer{background:var(--sage-light);border-left:4px solid var(--sage-deep);border-radius:0 14px 14px 0;padding:20px 26px;margin:0 0 28px}
+.answer p{color:var(--ink);font-size:1.05rem;margin:0;max-width:none!important}
+.answer strong{color:var(--sage-deep)}
+/* CTA blocks — dark green */
 .post-cta{margin:36px 0}
-.post-cta-inner{background:var(--sage-light);color:var(--ink);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
-.post-cta-inner p{color:var(--ink);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}
-.post-cta-inner .btn{flex-shrink:0}
-.post-toc{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:30px}
-.post-toc h2{font-size:1rem!important;margin:0 0 12px!important;text-transform:uppercase;letter-spacing:.08em;font-family:var(--sans);font-weight:600;color:var(--ink-soft)}
-.post-toc ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin:0;padding:0}
-.post-toc ul li{padding:0}
-.post-toc ul li::before,.post-toc ul li::after{display:none}
-.post-toc a{font-size:.96rem;color:var(--sage-deep);text-decoration:none}
-.post-toc a:hover{color:var(--terra);text-decoration:underline}
+.post-cta-inner{background:var(--sage-deep);color:var(--cream);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.post-cta-inner p{color:var(--cream)!important;font-family:var(--serif);font-size:1.15rem;font-style:italic;margin:0!important;max-width:none!important;flex:1;min-width:240px}
+.post-cta-inner .btn{flex-shrink:0;background:var(--cream);color:var(--sage-deep)!important;font-weight:700;text-decoration:none!important}
+.post-cta-inner .btn:hover{background:#fff}
+/* Source note */
 .source-note{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin:-12px 0 24px}
-@media(max-width:600px){.post-body h2{font-size:1.4rem}.post-cta-inner{flex-direction:column;align-items:stretch}.post-cta-inner .btn{width:100%;justify-content:center}}
+/* Legacy wrappers pass-through */
+.post-body,.body-import{display:contents}
+/* Mobile */
+@media(max-width:600px){.article-body h2{font-size:1.35rem}.post-cta-inner{flex-direction:column;align-items:stretch}.post-cta-inner .btn{width:100%;text-align:center}}
 </style>"""
+
+_CHEVRON = '<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>'
+_PROG_JS = '<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script>'
+
+def _extract_toc(body):
+    """Pull the inline post-toc nav out of body. Returns (cleaned_body, ul_items_html)."""
+    m = re.search(r'<nav[^>]*class="[^"]*post-toc[^"]*"[^>]*>.*?<ul>(.*?)</ul>.*?</nav>', body, re.S | re.I)
+    if not m:
+        return body, ""
+    ul_inner = m.group(1).strip()
+    cleaned = re.sub(r'<nav[^>]*class="[^"]*post-toc[^"]*"[^>]*>.*?</nav>', '', body, flags=re.S | re.I).strip()
+    return cleaned, ul_inner
+
+def _toc_blocks(items):
+    """Return (sidebar_html, mobile_html) from TOC list items HTML string."""
+    if not items:
+        return "", ""
+    sidebar = (
+        '<aside class="toc-desktop" aria-label="Table of contents">'
+        '<div class="toc-inner"><p class="toc-label">In this guide</p>'
+        f'<ul class="toc-list">{items}</ul></div></aside>'
+    )
+    mobile = (
+        '<details class="toc-mobile">'
+        f'<summary><span>In this guide</span>{_CHEVRON}</summary>'
+        f'<ul class="toc-list">{items}</ul></details>'
+    )
+    return sidebar, mobile
 
 EXPERT_BIO = """<aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes.</p><a href="/our-mediators/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div></aside>"""
 
@@ -783,7 +844,10 @@ def build_page(url, slug):
         doc = doc.replace("</head>", POST_CSS + "</head>")
         doc += nav()
         _crumb_label = h1_raw[:48] + ("…" if len(h1_raw) > 48 else "")
+        _body_clean, _toc_items = _extract_toc(body)
+        _sidebar, _mobile_toc = _toc_blocks(_toc_items)
         doc += f"""<main id="main">
+<div class="progress-track"><div class="progress-bar" id="prog"></div></div>
 {crumb_html([("Home",""),("Guides","guides"),(_crumb_label,None)])}
 <article>
 <header class="post-hero"><div class="wrap-narrow">
@@ -797,19 +861,24 @@ def build_page(url, slug):
     </div>
   </div>
 </div></header>
-<div class="post-body"><div class="wrap-narrow">
+<div class="content-grid">
+{_sidebar}
+<div class="article-body">
+{_mobile_toc}
 <div class="body-import">
-{body}
+{_body_clean}
 </div>
 {EXPERT_BIO}
-</div></div>
+</div>
+</div>
 </article>
 <section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
 <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
 <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
 </div></div></section>
-</main>"""
+</main>
+{_PROG_JS}"""
         doc += page_end()
         path = os.path.join(OUT, slug)
         os.makedirs(path, exist_ok=True)
@@ -861,7 +930,10 @@ def build_page(url, slug):
     doc = doc.replace("</head>", POST_CSS + "</head>")
     doc += nav()
     _crumb_label = h1_raw[:48] + ("…" if len(h1_raw) > 48 else "")
+    _body_clean, _toc_items = _extract_toc(body)
+    _sidebar, _mobile_toc = _toc_blocks(_toc_items)
     doc += f"""<main id="main">
+<div class="progress-track"><div class="progress-bar" id="prog"></div></div>
 {crumb_html([("Home",""),("Guides","guides"),(_crumb_label,None)])}
 <article>
 <header class="post-hero"><div class="wrap-narrow">
@@ -875,19 +947,24 @@ def build_page(url, slug):
     </div>
   </div>
 </div></header>
-<div class="post-body"><div class="wrap-narrow">
+<div class="content-grid">
+{_sidebar}
+<div class="article-body">
+{_mobile_toc}
 <div class="body-import">
-{body}
+{_body_clean}
 </div>
 {EXPERT_BIO}
-</div></div>
+</div>
+</div>
 </article>
 <section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
 <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
 <a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
 </div></div></section>
-</main>"""
+</main>
+{_PROG_JS}"""
     doc += page_end()
 
     path = os.path.join(OUT, slug)
