@@ -37,7 +37,8 @@ POST_CSS = """<style>
 .post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
 .post-body a:hover{color:var(--terra)}
 .post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
-.post-body table{width:100%;border-collapse:collapse;margin:20px 0 28px;font-size:.98rem;background:var(--cream);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.post-body .table-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:20px 0 28px;overflow-x:auto}
+.post-body table{width:100%;border-collapse:collapse;font-size:.98rem;background:var(--cream)}
 .post-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
 .post-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
 .post-body tr:last-child td{border-bottom:none}
@@ -364,6 +365,13 @@ def extract_article_body(html):
     if m and len(m.group(1).strip()) > 200:
         return m.group(1).strip()
     return ""
+
+
+def _wrap_tables(html):
+    """Wrap bare <table> elements in a div so border-radius/overflow work in all browsers."""
+    html = re.sub(r'<table(\b)', r'<div class="table-wrap"><table\1', html)
+    html = re.sub(r'</table>', r'</table></div>', html)
+    return html
 
 
 def clean_body(html):
@@ -748,7 +756,7 @@ def build_page(url, slug):
     ov = META_OVERRIDES.get(slug, {})
     # If the override provides body directly, use it without fetching
     if ov.get("title") and ov.get("body"):
-        body   = ov["body"]
+        body   = _wrap_tables(ov["body"])
         title  = ov["title"]
         desc   = ov["desc"]
         h1_raw = ov.get("h1", title)
@@ -824,6 +832,7 @@ def build_page(url, slug):
         body = re.sub(r"^\s*<h1[^>]*>.*?</h1>\s*", "", body, flags=re.S | re.I)
         body = clean_body(body)
 
+    body = _wrap_tables(body)
     title = truncate(title, 60)
     desc = truncate(desc, 160) if desc else truncate(title + " — Mediations Australia.", 160)
 
