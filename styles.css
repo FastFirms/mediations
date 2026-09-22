@@ -195,7 +195,8 @@ h2.sec-title{font-size:clamp(2.4rem,4.8vw,3.8rem);line-height:1.18}
 .body-import ul{list-style:disc}
 .body-import ol{list-style:decimal}
 .body-import li{margin-bottom:8px}
-.body-import table{width:100%;border-collapse:collapse;margin:28px 0;font-size:.96rem;overflow-x:auto;display:block}
+.body-import .table-wrap{overflow-x:auto;margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.body-import table{width:100%;border-collapse:collapse;font-size:.96rem;display:table}
 .body-import th{background:var(--sage);color:var(--cream);padding:10px 14px;text-align:left;font-weight:600}
 .body-import td{padding:9px 14px;border-bottom:1px solid var(--sand-deep)}
 .body-import tr:nth-child(even) td{background:var(--cream)}
