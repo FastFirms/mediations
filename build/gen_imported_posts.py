@@ -36,12 +36,12 @@ POST_CSS = """<style>
 .author-cred{font-size:.82rem;color:var(--ink-soft)}
 /* Hero art box */
 .hero-art{display:none}
-@media(min-width:800px){.hero-art{display:flex;flex-direction:column;justify-content:flex-end;background:var(--sage-deep);border-radius:20px;aspect-ratio:1/1;width:100%;position:relative;overflow:hidden;padding:28px}}
-.hero-art-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.18}
-.hero-float{position:relative;z-index:2;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:16px 18px;display:flex;gap:12px;align-items:center}
-.hero-float-icon{width:34px;height:34px;flex-shrink:0;color:rgba(255,255,255,.88)}
-.hero-float-text strong{display:block;font-size:.88rem;color:#fff;font-weight:600;margin-bottom:2px}
-.hero-float-text span{font-size:.76rem;color:rgba(255,255,255,.65)}
+@media(min-width:800px){.hero-art{display:flex;flex-direction:column;justify-content:flex-end;border-radius:20px;aspect-ratio:1/1;width:100%;position:relative;overflow:hidden;padding:20px}}
+.hero-art-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-float{position:relative;z-index:2;background:rgba(255,255,255,.82);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);border-radius:14px;padding:14px 16px;display:flex;gap:12px;align-items:center}
+.hero-float-icon{width:32px;height:32px;flex-shrink:0;color:var(--sage-deep)}
+.hero-float-text strong{display:block;font-size:.85rem;color:var(--ink);font-weight:600;margin-bottom:2px}
+.hero-float-text span{font-size:.74rem;color:var(--ink-soft)}
 /* 2-column content grid */
 .content-grid{max-width:1180px;margin:0 auto;padding:0 24px;display:block}
 @media(min-width:980px){.content-grid{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:0 48px;align-items:start}}
@@ -109,18 +109,10 @@ POST_CSS = """<style>
 
 _CHEVRON = '<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>'
 
-_HERO_ART = """<div class="hero-art" aria-hidden="true">
-  <div class="hero-art-bg"><svg viewBox="0 0 360 300" fill="none" xmlns="http://www.w3.org/2000/svg" width="360" height="300">
-    <circle cx="100" cy="150" r="90" fill="white"/>
-    <circle cx="260" cy="150" r="90" fill="white"/>
-    <circle cx="180" cy="90" r="36" fill="white"/>
-    <line x1="80" y1="210" x2="280" y2="210" stroke="white" stroke-width="2.5"/>
-    <line x1="180" y1="126" x2="180" y2="240" stroke="white" stroke-width="2.5"/>
-    <circle cx="80" cy="210" r="16" fill="white" fill-opacity="0.5"/>
-    <circle cx="280" cy="210" r="16" fill="white" fill-opacity="0.5"/>
-    <line x1="143" y1="155" x2="162" y2="108" stroke="white" stroke-width="1.5" stroke-dasharray="4 3"/>
-    <line x1="217" y1="155" x2="198" y2="108" stroke="white" stroke-width="1.5" stroke-dasharray="4 3"/>
-  </svg></div>
+def _hero_art(h1_raw):
+    alt = f"{h1_raw} — Mediations Australia"
+    return f"""<div class="hero-art">
+  <img src="/assets/images/mediation-session-hero.webp" alt="{alt}" width="380" height="380" loading="eager" class="hero-art-img">
   <div class="hero-float">
     <svg class="hero-float-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.86 0 3.59.57 5.03 1.53"/><path d="M21 3l-6 6"/><path d="M15 3h6v6"/></svg>
     <div class="hero-float-text">
@@ -906,7 +898,7 @@ def build_page(url, slug):
     </div>
   </div>
 </div>
-{_HERO_ART}
+{_hero_art(h1_raw)}
 </div>
 </header>
 <div class="content-grid">
@@ -1003,7 +995,7 @@ def build_page(url, slug):
     </div>
   </div>
 </div>
-{_HERO_ART}
+{_hero_art(h1_raw)}
 </div>
 </header>
 <div class="content-grid">
