@@ -800,12 +800,13 @@ def build_page(url, slug):
 </div>
 {EXPERT_BIO}
 </div></div>
-<div class="cta-inline"><div class="wrap"><div class="cta-inline-inner">
-  <h2>Ready to resolve it <em>without court?</em></h2>
-  <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
-  <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
-</div></div></div>
-</article></main>"""
+</article>
+<section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
+<h2>Ready to resolve it <em>without court</em>?</h2>
+<p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
+<a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
+</div></div></section>
+</main>"""
         doc += page_end()
         path = os.path.join(OUT, slug)
         os.makedirs(path, exist_ok=True)
