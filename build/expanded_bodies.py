@@ -115,11 +115,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/property-settlement-in-family-law/">Property settlement in family law — how it works</a></li>
-<li><a href="/consent-orders/">Consent Orders after mediation — the complete guide</a></li>
-<li><a href="/cost-of-divorce-in-australia/">The full cost of divorce in Australia</a></li>
-<li><a href="/binding-financial-agreement/">Binding Financial Agreements explained</a></li>
-<li><a href="/family-mediation/">Family mediation — how Mediations Australia can help</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/binding-financial-agreement/">binding financial agreements</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
 </ul>
 <p>For full disclosure obligations in court proceedings, see the <a href="https://www.fcfcoa.gov.au/fl/duty-disclosure" target="_blank" rel="noopener">Federal Circuit and Family Court duty of disclosure</a> guidance and the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>.</p>
 """,
@@ -213,11 +213,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/parenting-mediation-sydney/">Parenting mediation — how it works</a></li>
-<li><a href="/child-custody-mediation/">Child custody mediation in Australia</a></li>
-<li><a href="/co-parenting-mediation/">Co-parenting mediation — building a workable plan</a></li>
-<li><a href="/consent-orders/">Consent Orders — making your parenting agreement binding</a></li>
-<li><a href="/family-mediation/">About Mediations Australia</a></li>
+<li><a href="/parenting-mediation-sydney/">parenting mediation</a></li>
+<li><a href="/child-custody-mediation/">child custody mediation</a></li>
+<li><a href="/co-parenting-mediation/">co-parenting mediation</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
 </ul>
 <p>For information on your legal obligations and the Family Dispute Resolution framework, see <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">Attorney-General's Department — Family Dispute Resolution</a> and <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a>.</p>
 """,
@@ -311,11 +311,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/family-mediation-process-guide/">The family mediation process — step by step</a></li>
-<li><a href="/family-mediation/">Mediations Australia — our approach</a></li>
-<li><a href="/cost-of-divorce-in-australia/">What does mediation cost compared to court?</a></li>
-<li><a href="/what-is-mediation-in-family-law/">What is mediation in family law?</a></li>
-<li><a href="/consent-orders/">Consent Orders — making agreements binding</a></li>
+<li><a href="/family-mediation-process-guide/">family mediation process guide</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/what-is-mediation-in-family-law/">what is mediation in family law</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
 </ul>
 <p>Mediation sessions are conducted under strict confidentiality rules in the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (s 10H). For accredited mediator standards, see the <a href="https://msb.org.au/" target="_blank" rel="noopener">Mediator Standards Board</a>.</p>
 """,
@@ -418,11 +418,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/cost-of-divorce-in-australia/">The full cost of divorce in Australia — court vs mediation</a></li>
-<li><a href="/cant-afford-mediation/">Can't afford mediation? Options and alternatives</a></li>
-<li><a href="/family-mediation/">About Mediations Australia and our fees</a></li>
-<li><a href="/property-settlement-in-family-law/">Property settlement — what to expect</a></li>
-<li><a href="/consent-orders/">Consent Orders — the affordable way to finalise your settlement</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/cant-afford-mediation/">can't afford mediation</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
 </ul>
 <p>For government-funded mediation options, see <a href="https://www.ag.gov.au/families-and-marriage/families/family-relationship-centres" target="_blank" rel="noopener">Attorney-General's Department — Family Relationship Centres</a> and <a href="https://www.legalaid.gov.au/" target="_blank" rel="noopener">National Legal Aid</a>.</p>
 """,
@@ -520,11 +520,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/property-settlement-in-family-law/">Property settlement in family law — the complete process</a></li>
-<li><a href="/consent-orders/">Consent Orders — making your property agreement enforceable</a></li>
-<li><a href="/binding-financial-agreement/">Binding Financial Agreements vs Consent Orders</a></li>
-<li><a href="/cost-of-divorce-in-australia/">Cost of divorce and property settlement in Australia</a></li>
-<li><a href="/family-mediation/">How Mediations Australia approaches property mediation</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/binding-financial-agreement/">binding financial agreements vs consent orders</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
 </ul>
 <p>See also the <a href="https://www.fcfcoa.gov.au/fl/consent-orders" target="_blank" rel="noopener">Federal Circuit and Family Court — Consent Orders</a> guidance and the <a href="https://www.fcfcoa.gov.au/fl/duty-disclosure" target="_blank" rel="noopener">duty of disclosure</a> requirements.</p>
 """,
@@ -625,11 +625,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/parenting-mediation-sydney/">Parenting mediation — what to expect</a></li>
-<li><a href="/child-custody-mediation/">Child custody mediation in Australia</a></li>
-<li><a href="/co-parenting-mediation/">Co-parenting mediation — building a workable arrangement</a></li>
-<li><a href="/consent-orders/">Making your parenting agreement legally binding</a></li>
-<li><a href="/family-mediation/">About our accredited FDR practitioners</a></li>
+<li><a href="/parenting-mediation-sydney/">parenting mediation</a></li>
+<li><a href="/child-custody-mediation/">child custody mediation</a></li>
+<li><a href="/co-parenting-mediation/">co-parenting mediation</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
 </ul>
 <p>The Section 60I certificate requirement is explained in the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (s 60I). For accredited practitioners, see <a href="https://www.fcfcoa.gov.au/fl/fdr" target="_blank" rel="noopener">FCFCOA — Family Dispute Resolution</a>.</p>
 """,
@@ -737,11 +737,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/property-settlement-in-family-law/">Property settlement — how spousal maintenance fits in</a></li>
-<li><a href="/consent-orders/">Consent Orders — making maintenance arrangements enforceable</a></li>
-<li><a href="/binding-financial-agreement/">Binding Financial Agreements for maintenance</a></li>
-<li><a href="/cost-of-divorce-in-australia/">The financial cost of separation in Australia</a></li>
-<li><a href="/family-mediation/">How Mediations Australia approaches financial mediation</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/binding-financial-agreement/">binding financial agreements</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
 </ul>
 <p>Spousal maintenance is governed by <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (ss 72–74). For child support (a separate regime), see <a href="https://www.servicesaustralia.gov.au/child-support" target="_blank" rel="noopener">Services Australia — Child Support</a>.</p>
 """,
@@ -832,11 +832,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/family-mediation-process-guide/">How family mediation works — step by step</a></li>
-<li><a href="/family-mediation/">Mediations Australia — our FDR process</a></li>
-<li><a href="/parenting-mediation-sydney/">Parenting mediation — what happens in a session</a></li>
-<li><a href="/cost-of-divorce-in-australia/">Cost of going to court vs mediation</a></li>
-<li><a href="/what-is-mediation-in-family-law/">What is family law mediation?</a></li>
+<li><a href="/family-mediation-process-guide/">family mediation process guide</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/parenting-mediation-sydney/">parenting mediation</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/what-is-mediation-in-family-law/">what is mediation in family law</a></li>
 </ul>
 <p>The FDR requirement and exemptions are set out in the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (s 60I). Government-funded FDR is available through <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a>.</p>
 """,
@@ -936,11 +936,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/family-mediation/">About Mediations Australia — our mediators and their backgrounds</a></li>
-<li><a href="/family-mediation-process-guide/">What happens in a family mediation session</a></li>
-<li><a href="/consent-orders/">Consent Orders — making your agreement legally binding</a></li>
-<li><a href="/property-settlement-in-family-law/">Property settlement mediation — what to expect</a></li>
-<li><a href="/cost-of-divorce-in-australia/">How much does mediation cost?</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/family-mediation-process-guide/">family mediation process guide</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
 </ul>
 <p>For accreditation standards for Family Dispute Resolution Practitioners, see the <a href="https://msb.org.au/" target="_blank" rel="noopener">Mediator Standards Board (AMDRAS)</a>. The <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a> provides guidance on when court proceedings are needed.</p>
 """,
@@ -1052,11 +1052,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/family-mediation/">About Mediations Australia — your first step after separation</a></li>
-<li><a href="/family-mediation-process-guide/">The family mediation process explained</a></li>
-<li><a href="/cost-of-divorce-in-australia/">How much does separation cost? Court vs mediation</a></li>
-<li><a href="/property-settlement-in-family-law/">Property settlement — what are you entitled to?</a></li>
-<li><a href="/parenting-mediation-sydney/">Parenting mediation — getting arrangements in place quickly</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/family-mediation-process-guide/">family mediation process guide</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/parenting-mediation-sydney/">parenting mediation</a></li>
 </ul>
 <p>For government-funded Family Relationship Centres, see the <a href="https://www.ag.gov.au/families-and-marriage/families/family-relationship-centres" target="_blank" rel="noopener">Attorney-General's Department</a>. For your legal rights upon separation, the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> is the primary legislation.</p>
 """,
@@ -1156,11 +1156,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/family-mediation/">About Mediations Australia — our mediation approach</a></li>
-<li><a href="/family-mediation-process-guide/">How family mediation works — step by step</a></li>
-<li><a href="/cost-of-divorce-in-australia/">What does separation really cost in Australia?</a></li>
-<li><a href="/property-settlement-in-family-law/">Property settlement — the four-step process</a></li>
-<li><a href="/consent-orders/">Consent Orders — making your agreement legally binding</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/family-mediation-process-guide/">family mediation process guide</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
 </ul>
 <p>For family dispute resolution policy and government-funded options, see the <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">Attorney-General's Department — Family Dispute Resolution</a>.</p>
 """,
@@ -1256,11 +1256,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/cost-of-divorce-in-australia/">The full cost of divorce in Australia — court vs mediation</a></li>
-<li><a href="/property-settlement-in-family-law/">Property settlement after separation — your rights and timeline</a></li>
-<li><a href="/consent-orders/">Consent Orders — formalising your property agreement</a></li>
-<li><a href="/applying-for-a-divorce-in-australia/">Applying for divorce in Australia — step-by-step guide</a></li>
-<li><a href="/family-mediation/">How Mediations Australia can help during separation</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/applying-for-a-divorce-in-australia/">applying for divorce in Australia</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
 </ul>
 <p>Official divorce information and filing: <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>. For ABS marriage and divorce statistics, see <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener">ABS Marriages and Divorces, Australia</a>.</p>
 """,
@@ -1355,11 +1355,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/applying-for-a-divorce-in-australia/">Applying for divorce in Australia — full step-by-step guide</a></li>
-<li><a href="/how-long-does-a-divorce-take/">How long does a divorce take in Australia?</a></li>
-<li><a href="/property-settlement-in-family-law/">Property settlement — what you're entitled to after separation</a></li>
-<li><a href="/cost-of-divorce-in-australia/">The full cost of divorce in Australia</a></li>
-<li><a href="/consent-orders/">Consent Orders — the most affordable way to finalise property</a></li>
+<li><a href="/applying-for-a-divorce-in-australia/">applying for divorce in Australia</a></li>
+<li><a href="/how-long-does-a-divorce-take/">how long does a divorce take</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
 </ul>
 <p>Official divorce application portal: <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>. For marriage certificate replacements, contact the Registry of Births, Deaths and Marriages in the state where you were married.</p>
 """,
@@ -1461,11 +1461,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/property-settlement-in-family-law/">Property settlement in family law — the four-step process</a></li>
-<li><a href="/consent-orders/">Consent Orders — the most common way to formalise a financial agreement</a></li>
-<li><a href="/binding-financial-agreement/">Binding Financial Agreements — what you need to know</a></li>
-<li><a href="/cost-of-divorce-in-australia/">Financial cost of separation — court vs mediation</a></li>
-<li><a href="/family-mediation/">About Mediations Australia's financial mediation approach</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/binding-financial-agreement/">binding financial agreements</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
 </ul>
 <p>Financial disclosure obligations are set out in the <a href="https://www.fcfcoa.gov.au/fl/duty-disclosure" target="_blank" rel="noopener">FCFCOA duty of disclosure</a> guidance. For Consent Orders process: <a href="https://www.fcfcoa.gov.au/fl/consent-orders" target="_blank" rel="noopener">FCFCOA — Consent Orders</a>.</p>
 """,
@@ -1574,11 +1574,11 @@ EXPANDED = {
 
 <h2 id="related">Related guides</h2>
 <ul>
-<li><a href="/what-is-mediation-in-family-law/">What is family law mediation?</a></li>
-<li><a href="/family-mediation-process-guide/">How the family mediation process works</a></li>
-<li><a href="/cost-of-divorce-in-australia/">The cost of separation — court vs mediation</a></li>
-<li><a href="/consent-orders/">Consent Orders — making your agreement legally binding</a></li>
-<li><a href="/family-mediation/">Book a session with Mediations Australia</a></li>
+<li><a href="/what-is-mediation-in-family-law/">what is mediation in family law</a></li>
+<li><a href="/family-mediation-process-guide/">family mediation process guide</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
 </ul>
 <p>For family dispute resolution information and accredited practitioners: <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">Attorney-General's Department — FDR</a>. For government-funded options: <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a>.</p>
 """,
