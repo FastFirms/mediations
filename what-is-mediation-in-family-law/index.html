@@ -152,16 +152,32 @@
 /* Reading progress bar */
 .progress-track{position:fixed;top:0;left:0;right:0;height:3px;z-index:999;pointer-events:none}
 .progress-bar{height:100%;width:0;background:var(--sage-deep);transition:width .1s linear}
-/* Hero */
-.post-hero{padding:40px 0 0;border-bottom:1px solid var(--line)}
-.post-meta{display:flex;gap:12px;align-items:center;font-size:.88rem;color:var(--ink-soft);margin-bottom:16px;flex-wrap:wrap}
-.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:4px 14px;border-radius:100px;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
-.author-byline{display:flex;align-items:center;gap:14px;margin-top:20px;padding:16px 0;border-top:1px solid var(--line)}
+/* Hero — 2-column */
+.post-hero{padding:0;border-bottom:1px solid var(--line);overflow:hidden}
+.hero-inner{display:grid;grid-template-columns:1fr;max-width:1180px;margin:0 auto;padding:48px 24px 0}
+@media(min-width:800px){.hero-inner{grid-template-columns:1fr 360px;gap:48px;padding:60px 48px 0;align-items:end}}
+.hero-text{padding-bottom:36px}
+.post-meta{display:flex;gap:12px;align-items:center;font-size:.88rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
+.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 16px;border-radius:100px;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
+.hero-text h1{font-size:clamp(2rem,4.5vw,3.1rem);line-height:1.12;letter-spacing:-.02em;margin:0 0 18px;font-family:var(--serif);font-weight:700;color:var(--ink)}
+.hero-dek{font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:0 0 28px;font-family:var(--serif);max-width:54ch;line-height:1.65}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;align-items:center}
+.btn-outline-dark{display:inline-flex;align-items:center;padding:13px 22px;border:2px solid var(--sage-deep);color:var(--sage-deep);border-radius:8px;font-weight:600;font-size:.95rem;text-decoration:none;white-space:nowrap;transition:background .18s,color .18s}
+.btn-outline-dark:hover{background:var(--sage-deep);color:#fff;text-decoration:none}
+.author-byline{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid var(--line)}
 .author-byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .author-byline div{display:flex;flex-direction:column;gap:2px}
 .author-name{font-weight:600;font-size:.95rem;color:var(--ink)}
 .author-name a{color:inherit;text-decoration:none}
 .author-cred{font-size:.82rem;color:var(--ink-soft)}
+/* Hero art box */
+.hero-art{display:none}
+@media(min-width:800px){.hero-art{display:flex;flex-direction:column;justify-content:flex-end;background:var(--sage-deep);border-radius:20px 20px 0 0;min-height:300px;position:relative;overflow:hidden;padding:28px}}
+.hero-art-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.18}
+.hero-float{position:relative;z-index:2;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:16px 18px;display:flex;gap:12px;align-items:center}
+.hero-float-icon{width:34px;height:34px;flex-shrink:0;color:rgba(255,255,255,.88)}
+.hero-float-text strong{display:block;font-size:.88rem;color:#fff;font-weight:600;margin-bottom:2px}
+.hero-float-text span{font-size:.76rem;color:rgba(255,255,255,.65)}
 /* 2-column content grid */
 .content-grid{max-width:1180px;margin:0 auto;padding:0 24px;display:block}
 @media(min-width:980px){.content-grid{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:0 48px;align-items:start}}
@@ -286,9 +302,16 @@
 <div class="progress-track"><div class="progress-bar" id="prog"></div></div>
 <div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/guides/">Guides</a><span>›</span>What Is Mediation in Family Law?</nav></div>
 <article>
-<header class="post-hero"><div class="wrap-narrow">
+<header class="post-hero">
+<div class="hero-inner">
+<div class="hero-text">
   <div class="post-meta"><span class="cat">Guide</span><span>9 min read</span></div>
   <h1>What Is Mediation in Family Law?</h1>
+  <p class="hero-dek">What is mediation in family law in Australia? A plain-language guide to how the process works, what a mediator does, costs, and how it compares to court.</p>
+  <div class="hero-actions">
+    <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a>
+    <a href="tel:0272277373" class="btn-outline-dark">Call (02) 7227 7373</a>
+  </div>
   <div class="author-byline">
     <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
     <div>
@@ -296,7 +319,29 @@
       <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS · Multi-Award Winning Lawyer</span>
     </div>
   </div>
-</div></header>
+</div>
+<div class="hero-art" aria-hidden="true">
+  <div class="hero-art-bg"><svg viewBox="0 0 360 300" fill="none" xmlns="http://www.w3.org/2000/svg" width="360" height="300">
+    <circle cx="100" cy="150" r="90" fill="white"/>
+    <circle cx="260" cy="150" r="90" fill="white"/>
+    <circle cx="180" cy="90" r="36" fill="white"/>
+    <line x1="80" y1="210" x2="280" y2="210" stroke="white" stroke-width="2.5"/>
+    <line x1="180" y1="126" x2="180" y2="240" stroke="white" stroke-width="2.5"/>
+    <circle cx="80" cy="210" r="16" fill="white" fill-opacity="0.5"/>
+    <circle cx="280" cy="210" r="16" fill="white" fill-opacity="0.5"/>
+    <line x1="143" y1="155" x2="162" y2="108" stroke="white" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <line x1="217" y1="155" x2="198" y2="108" stroke="white" stroke-width="1.5" stroke-dasharray="4 3"/>
+  </svg></div>
+  <div class="hero-float">
+    <svg class="hero-float-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.86 0 3.59.57 5.03 1.53"/><path d="M21 3l-6 6"/><path d="M15 3h6v6"/></svg>
+    <div class="hero-float-text">
+      <strong>Free initial consultation</strong>
+      <span>No obligation &middot; nationally accredited</span>
+    </div>
+  </div>
+</div>
+</div>
+</header>
 <div class="content-grid">
 <aside class="toc-desktop" aria-label="Table of contents"><div class="toc-inner"><p class="toc-label">In this guide</p><ul class="toc-list"><li><a href="#definition">What mediation is — and isn't</a></li>
 <li><a href="#role-of-mediator">The mediator's role</a></li>
