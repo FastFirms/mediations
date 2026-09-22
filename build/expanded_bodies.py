@@ -112,6 +112,16 @@ EXPANDED = {
 <p>Use the ATO's SuperMatch service through myGov. It searches across all registered funds and identifies accounts linked to your tax file number — including ones from previous employment you may have forgotten about.</p>
 <h3>Can I be penalised for an honest mistake in disclosure?</h3>
 <p>Courts distinguish between deliberate concealment and honest error. Where you discover an oversight after settlement, the appropriate course is to disclose immediately. Courts are far more forgiving of mistakes corrected promptly than of deliberate non-disclosure.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/property-settlement-in-family-law/">Property settlement in family law — how it works</a></li>
+<li><a href="/consent-orders/">Consent Orders after mediation — the complete guide</a></li>
+<li><a href="/cost-of-divorce-in-australia/">The full cost of divorce in Australia</a></li>
+<li><a href="/binding-financial-agreement/">Binding Financial Agreements explained</a></li>
+<li><a href="/family-mediation/">Family mediation — how Mediations Australia can help</a></li>
+</ul>
+<p>For full disclosure obligations in court proceedings, see the <a href="https://www.fcfcoa.gov.au/fl/duty-disclosure" target="_blank" rel="noopener">Federal Circuit and Family Court duty of disclosure</a> guidance and the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>.</p>
 """,
 },
 
@@ -200,6 +210,16 @@ EXPANDED = {
 <p>A Parenting Plan can be superseded by a later agreement or a court order. Consent Orders can only be changed by a further order or by a new agreement filed with the court. If enforceability matters to you, ask about formalising your arrangement as Consent Orders.</p>
 <h3>What if we agree on most things but not everything?</h3>
 <p>Partial agreements are common and valuable. If you can reach agreement on most issues in mediation, the remaining disputed matters can be referred to court with those agreed issues already resolved — which significantly reduces the scope and cost of any subsequent proceedings.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/parenting-mediation-sydney/">Parenting mediation — how it works</a></li>
+<li><a href="/child-custody-mediation/">Child custody mediation in Australia</a></li>
+<li><a href="/co-parenting-mediation/">Co-parenting mediation — building a workable plan</a></li>
+<li><a href="/consent-orders/">Consent Orders — making your parenting agreement binding</a></li>
+<li><a href="/family-mediation/">About Mediations Australia</a></li>
+</ul>
+<p>For information on your legal obligations and the Family Dispute Resolution framework, see <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">Attorney-General's Department — Family Dispute Resolution</a> and <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a>.</p>
 """,
 },
 
@@ -288,6 +308,16 @@ EXPANDED = {
 <p>Yes. Mediation is confidential under section 10H of the Family Law Act. What is said in the session cannot be used as evidence in later court proceedings (with limited exceptions for safety threats). This confidentiality is what allows people to speak openly about their real concerns and interests.</p>
 <h3>What if we start but can't reach a full agreement?</h3>
 <p>A partial agreement is still valuable — it narrows the issues in dispute and reduces the cost and scope of any subsequent court proceedings. The mediator will issue the appropriate Section 60I certificate for parenting matters, and you can proceed to court with the unresolved issues.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation-process-guide/">The family mediation process — step by step</a></li>
+<li><a href="/family-mediation/">Mediations Australia — our approach</a></li>
+<li><a href="/cost-of-divorce-in-australia/">What does mediation cost compared to court?</a></li>
+<li><a href="/what-is-mediation-in-family-law/">What is mediation in family law?</a></li>
+<li><a href="/consent-orders/">Consent Orders — making agreements binding</a></li>
+</ul>
+<p>Mediation sessions are conducted under strict confidentiality rules in the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (s 10H). For accredited mediator standards, see the <a href="https://msb.org.au/" target="_blank" rel="noopener">Mediator Standards Board</a>.</p>
 """,
 },
 
@@ -385,6 +415,16 @@ EXPANDED = {
 <p>Often yes — online mediation eliminates venue costs, reduces travel costs for both parties, and can sometimes be completed more efficiently. Our online sessions are equally effective for most matters and available Australia-wide regardless of where you are located.</p>
 <h3>Can I get a refund if mediation doesn't reach agreement?</h3>
 <p>This depends on the mediator's fee structure. At Mediations Australia, we use fixed fees agreed upfront. Where a session cannot proceed due to circumstances beyond the parties' control, we have a fair cancellation and rescheduling policy that we explain at the time of booking.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/cost-of-divorce-in-australia/">The full cost of divorce in Australia — court vs mediation</a></li>
+<li><a href="/cant-afford-mediation/">Can't afford mediation? Options and alternatives</a></li>
+<li><a href="/family-mediation/">About Mediations Australia and our fees</a></li>
+<li><a href="/property-settlement-in-family-law/">Property settlement — what to expect</a></li>
+<li><a href="/consent-orders/">Consent Orders — the affordable way to finalise your settlement</a></li>
+</ul>
+<p>For government-funded mediation options, see <a href="https://www.ag.gov.au/families-and-marriage/families/family-relationship-centres" target="_blank" rel="noopener">Attorney-General's Department — Family Relationship Centres</a> and <a href="https://www.legalaid.gov.au/" target="_blank" rel="noopener">National Legal Aid</a>.</p>
 """,
 },
 
@@ -477,6 +517,16 @@ EXPANDED = {
 <p>An informal arrangement is better than nothing but is not legally binding. Either party can change their mind. Formalising your arrangement through Consent Orders or a BFA protects both parties and provides legal certainty going forward.</p>
 <h3>How long does the Consent Orders process take after mediation?</h3>
 <p>A family lawyer prepares the application, which is signed by both parties and filed with the court. In most cases, Consent Orders are approved by a Registrar within 4–8 weeks of filing, without the need for a court hearing. Your mediator can refer you to an appropriate family lawyer to prepare the documents efficiently.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/property-settlement-in-family-law/">Property settlement in family law — the complete process</a></li>
+<li><a href="/consent-orders/">Consent Orders — making your property agreement enforceable</a></li>
+<li><a href="/binding-financial-agreement/">Binding Financial Agreements vs Consent Orders</a></li>
+<li><a href="/cost-of-divorce-in-australia/">Cost of divorce and property settlement in Australia</a></li>
+<li><a href="/family-mediation/">How Mediations Australia approaches property mediation</a></li>
+</ul>
+<p>See also the <a href="https://www.fcfcoa.gov.au/fl/consent-orders" target="_blank" rel="noopener">Federal Circuit and Family Court — Consent Orders</a> guidance and the <a href="https://www.fcfcoa.gov.au/fl/duty-disclosure" target="_blank" rel="noopener">duty of disclosure</a> requirements.</p>
 """,
 },
 
@@ -572,6 +622,16 @@ EXPANDED = {
 <p>You can still obtain a Section 60I certificate. If the other party refuses to participate, the FDRP issues a Type 1 certificate confirming that one party was invited and refused. This certificate allows you to proceed with your court application. The fact that the other party refused to participate may be noted unfavourably by the court when making any costs order.</p>
 <h3>Do I need a lawyer to attend the FDR session?</h3>
 <p>No. The FDR session is conducted by the FDRP and does not require lawyers to be present. However, getting independent legal advice before and after the session is strongly recommended so that you understand your rights and the implications of any agreement reached.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/parenting-mediation-sydney/">Parenting mediation — what to expect</a></li>
+<li><a href="/child-custody-mediation/">Child custody mediation in Australia</a></li>
+<li><a href="/co-parenting-mediation/">Co-parenting mediation — building a workable arrangement</a></li>
+<li><a href="/consent-orders/">Making your parenting agreement legally binding</a></li>
+<li><a href="/family-mediation/">About our accredited FDR practitioners</a></li>
+</ul>
+<p>The Section 60I certificate requirement is explained in the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (s 60I). For accredited practitioners, see <a href="https://www.fcfcoa.gov.au/fl/fdr" target="_blank" rel="noopener">FCFCOA — Family Dispute Resolution</a>.</p>
 """,
 },
 
@@ -674,6 +734,16 @@ EXPANDED = {
 <p>Yes, potentially. Section 83 of the Family Law Act provides that a court may discharge or vary a maintenance order if the recipient is cohabiting with another person in a de facto relationship. This is not automatic — the court assesses whether the new relationship genuinely reduces the recipient's financial need.</p>
 <h3>What if maintenance payments are not made?</h3>
 <p>If maintenance is formalised as Consent Orders and the payer defaults, the recipient can apply to the court for enforcement. This includes applying for garnishment of wages, property, or bank accounts. This is one of the key reasons to formalise a maintenance arrangement rather than relying on an informal agreement.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/property-settlement-in-family-law/">Property settlement — how spousal maintenance fits in</a></li>
+<li><a href="/consent-orders/">Consent Orders — making maintenance arrangements enforceable</a></li>
+<li><a href="/binding-financial-agreement/">Binding Financial Agreements for maintenance</a></li>
+<li><a href="/cost-of-divorce-in-australia/">The financial cost of separation in Australia</a></li>
+<li><a href="/family-mediation/">How Mediations Australia approaches financial mediation</a></li>
+</ul>
+<p>Spousal maintenance is governed by <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (ss 72–74). For child support (a separate regime), see <a href="https://www.servicesaustralia.gov.au/child-support" target="_blank" rel="noopener">Services Australia — Child Support</a>.</p>
 """,
 },
 
@@ -759,6 +829,16 @@ EXPANDED = {
 <p>Many people who have this view have not experienced well-facilitated mediation. Court proceedings are enormously expensive, slow, and uncertain — and they typically end in a negotiated outcome anyway, just later. If you believe your case is strong enough for court, get legal advice first. In most cases, experienced family lawyers encourage mediation even for strong cases — because trial outcomes are never guaranteed and the costs are real.</p>
 <h3>Can I attend mediation and then still go to court?</h3>
 <p>Yes. Attending mediation and reaching a partial agreement does not prevent you from proceeding to court on the remaining unresolved issues. If FDR produces no agreement, the FDRP issues a certificate allowing you to file. Attending FDR is not a commitment to settle — it is a commitment to genuinely explore settlement. The court option remains open if FDR fails.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation-process-guide/">How family mediation works — step by step</a></li>
+<li><a href="/family-mediation/">Mediations Australia — our FDR process</a></li>
+<li><a href="/parenting-mediation-sydney/">Parenting mediation — what happens in a session</a></li>
+<li><a href="/cost-of-divorce-in-australia/">Cost of going to court vs mediation</a></li>
+<li><a href="/what-is-mediation-in-family-law/">What is family law mediation?</a></li>
+</ul>
+<p>The FDR requirement and exemptions are set out in the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (s 60I). Government-funded FDR is available through <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a>.</p>
 """,
 },
 
@@ -853,6 +933,16 @@ EXPANDED = {
 <p>No. The mediator is neutral and cannot give legal advice to either party. They can help parties understand the legal framework generally (for example, how courts approach the four-step property settlement process), but they cannot advise you on whether a specific outcome is in your best legal interests. That is your lawyer's role.</p>
 <h3>Do I need a lawyer for a Parenting Plan?</h3>
 <p>No — a Parenting Plan does not require legal advice or court involvement. However, a lawyer can help ensure the plan covers all relevant issues and is clearly drafted. If you want your arrangement to be fully enforceable as a court order, you will need a lawyer to prepare and file Consent Orders.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation/">About Mediations Australia — our mediators and their backgrounds</a></li>
+<li><a href="/family-mediation-process-guide/">What happens in a family mediation session</a></li>
+<li><a href="/consent-orders/">Consent Orders — making your agreement legally binding</a></li>
+<li><a href="/property-settlement-in-family-law/">Property settlement mediation — what to expect</a></li>
+<li><a href="/cost-of-divorce-in-australia/">How much does mediation cost?</a></li>
+</ul>
+<p>For accreditation standards for Family Dispute Resolution Practitioners, see the <a href="https://msb.org.au/" target="_blank" rel="noopener">Mediator Standards Board (AMDRAS)</a>. The <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a> provides guidance on when court proceedings are needed.</p>
 """,
 },
 
@@ -959,6 +1049,16 @@ EXPANDED = {
 <p>You cannot force your partner to engage with any dispute resolution process. However, you can proceed without them in certain ways: for parenting matters, a refusal to attend FDR generates a certificate allowing you to file in court; for property matters, you can file in court without their participation. Document all attempts to engage in good faith — this matters if costs are argued later.</p>
 <h3>Is there a waiting list for mediation?</h3>
 <p>Government-funded services (Family Relationship Centres, Relationships Australia) often have waiting lists of weeks to months. Private practitioners like Mediations Australia are typically available much faster — often within days to two weeks. If timeliness matters, a private mediator is usually the better choice.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation/">About Mediations Australia — your first step after separation</a></li>
+<li><a href="/family-mediation-process-guide/">The family mediation process explained</a></li>
+<li><a href="/cost-of-divorce-in-australia/">How much does separation cost? Court vs mediation</a></li>
+<li><a href="/property-settlement-in-family-law/">Property settlement — what are you entitled to?</a></li>
+<li><a href="/parenting-mediation-sydney/">Parenting mediation — getting arrangements in place quickly</a></li>
+</ul>
+<p>For government-funded Family Relationship Centres, see the <a href="https://www.ag.gov.au/families-and-marriage/families/family-relationship-centres" target="_blank" rel="noopener">Attorney-General's Department</a>. For your legal rights upon separation, the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> is the primary legislation.</p>
 """,
 },
 
