@@ -8,9 +8,44 @@ import os, sys, re, time, urllib.request, urllib.error
 from html import unescape as _unescape
 
 sys.path.insert(0, os.path.dirname(__file__))
-from templates import head, nav, page_end, esc, BOOK_URL, PHONE, PHONE_HREF, DOMAIN, org_schema, breadcrumb_schema
+from templates import head, nav, page_end, esc, crumb_html, BOOK_URL, PHONE, PHONE_HREF, DOMAIN, org_schema, breadcrumb_schema, article_schema
 
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+POST_CSS = """<style>
+.post-hero{padding:36px 0 8px}
+.post-meta{display:flex;gap:16px;align-items:center;font-size:.9rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
+.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 14px;border-radius:100px;font-weight:600;font-size:.82rem}
+.author-byline{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:18px;border-top:1px solid var(--sand-deep)}
+.author-byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.author-byline div{display:flex;flex-direction:column;gap:2px}
+.author-name{font-weight:600;font-size:.95rem;color:var(--ink)}
+.author-name a{color:inherit;text-decoration:none}
+.author-cred{font-size:.82rem;color:var(--ink-soft)}
+.post-body{padding:30px 0 60px}
+.post-body h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:42px 0 14px}
+.post-body h2:first-child{margin-top:0}
+.post-body h3{font-size:1.25rem;margin:30px 0 10px}
+.post-body p{font-size:1.07rem;color:var(--ink-soft);margin-bottom:18px;max-width:70ch}
+.post-body ul,.post-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:11px}
+.post-body ul li{position:relative;padding-left:30px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch}
+.post-body ul li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;background:var(--sage-light);border-radius:50%}
+.post-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:8px;height:5px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
+.post-body ol{counter-reset:li}
+.post-body ol li{position:relative;padding-left:42px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch;counter-increment:li}
+.post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
+.post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
+.post-body a:hover{color:var(--terra)}
+.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
+.post-body table{width:100%;border-collapse:collapse;margin:20px 0 28px;font-size:.98rem;background:var(--cream);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.post-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
+.post-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+.post-body tr:last-child td{border-bottom:none}
+.post-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+@media(max-width:600px){.post-body h2{font-size:1.4rem}}
+</style>"""
+
+EXPERT_BIO = """<aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes.</p><a href="/our-mediators/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div></aside>"""
 
 URLS = [
     "https://mediationsaustralia.com.au/what-is-alimony-in-australia/",
@@ -393,25 +428,38 @@ def build_page(url, slug):
     title = truncate(title, 60)
     desc = truncate(desc, 160) if desc else truncate(title + " — Mediations Australia.", 160)
 
-    schema = [org_schema(), breadcrumb_schema([("Home", ""), ("Guides", "guides"), (h1_raw, None)])]
-    doc = head(title, desc, slug, extra_schema=schema)
+    _h1_plain = h1_raw[:60]
+    schema = [org_schema(), breadcrumb_schema([("Home", ""), ("Guides", "guides"), (_h1_plain, None)]), article_schema(title, desc)]
+    doc = head(title, desc, slug, og_type="article", extra_schema=schema)
+    doc = doc.replace("</head>", POST_CSS + "</head>")
     doc += nav()
+    _crumb_label = h1_raw[:48] + ("…" if len(h1_raw) > 48 else "")
     doc += f"""<main id="main">
-<div class="wrap-narrow" style="padding:clamp(40px,6vw,72px) 0 clamp(56px,7vw,96px)">
-  <nav class="crumb" aria-label="Breadcrumb">
-    <a href="/">Home</a> <span aria-hidden="true">›</span>
-    <a href="/guides/">Guides</a> <span aria-hidden="true">›</span>
-    <span>{esc(h1_raw)}</span>
-  </nav>
-  <h1 style="margin-top:24px">{esc(h1_raw)}</h1>
-  <div class="body-import">
+{crumb_html([("Home",""),("Guides","guides"),(_crumb_label,None)])}
+<article>
+<header class="post-hero"><div class="wrap-narrow">
+  <div class="post-meta"><span class="cat">Guide</span><span>8 min read</span></div>
+  <h1>{esc(h1_raw)}</h1>
+  <div class="author-byline">
+    <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
+    <div>
+      <span class="author-name"><a href="/our-mediators/">Dan Toombs</a></span>
+      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS · Multi-Award Winning Lawyer</span>
+    </div>
+  </div>
+</div></header>
+<div class="post-body"><div class="wrap-narrow">
+<div class="body-import">
 {body}
-  </div>
-  <div class="cta-inline" style="margin-top:48px;padding:32px;background:var(--sage-light);border-radius:16px">
-    <p><strong>Need help resolving your dispute?</strong> Our accredited mediators can help — book a free consultation today.</p>
-    <a href="{BOOK_URL}" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
-  </div>
 </div>
+{EXPERT_BIO}
+</div></div>
+</article>
+<section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
+<h2>Ready to resolve it <em>without court</em>?</h2>
+<p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
+<a href="{BOOK_URL}" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
+</div></div></section>
 </main>"""
     doc += page_end()
 
