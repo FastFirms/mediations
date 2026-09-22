@@ -3103,7 +3103,563 @@ EXPANDED = {
 """,
 },
 
+
+# ─── BATCH 7 (5 pages) ──────────────────────────────────────────────────────
+
+"five-benefits-of-using-mediation-to-resolve-divorce-issues": {
+    "title": "5 Benefits of Using Mediation to Resolve Divorce Issues",
+    "desc":  "Five key benefits of using mediation to resolve divorce issues in Australia — cost, speed, privacy, control, and protecting children from conflict.",
+    "h1":    "Five Benefits of Using Mediation to Resolve Divorce Issues",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Mediation offers separating couples a faster, cheaper, more private, and less damaging pathway than divorce litigation. The five key benefits — cost savings, speed, privacy, party control, and better outcomes for children — make mediation the clear first choice for resolving divorce-related disputes in Australia for most families.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#benefit1">Benefit 1: Dramatically lower cost</a></li>
+<li><a href="#benefit2">Benefit 2: Much faster resolution</a></li>
+<li><a href="#benefit3">Benefit 3: Privacy and confidentiality</a></li>
+<li><a href="#benefit4">Benefit 4: You control the outcome</a></li>
+<li><a href="#benefit5">Benefit 5: Better for children and co-parenting</a></li>
+<li><a href="#how-it-works">How divorce mediation works in practice</a></li>
+<li><a href="#what-mediation-covers">What divorce mediation covers</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="benefit1">Benefit 1: Dramatically lower cost</h2>
+<p>Divorce litigation is one of the most expensive things an individual can go through. Legal fees for a fully contested property and parenting matter can exceed $100,000–$175,000 per party. Even a "simple" contested matter involves filing fees, solicitor correspondence, interim hearing costs, and pre-trial procedure — easily reaching $30,000–$60,000 per party before a final hearing.</p>
+<p><a href="/family-mediation/">Family mediation</a> costs a fraction of this. A typical mediation at Mediations Australia — covering both parenting and property matters — involves individual intake sessions and one to two joint sessions, with a total cost shared between both parties that is usually $3,000–$8,000 combined. Adding legal advice around the mediation and consent orders to formalise the agreement, the all-in cost for a fully mediated and formalised outcome is typically $6,000–$15,000 combined — compared to $60,000–$350,000 combined for litigation.</p>
+<table><thead><tr><th>Pathway</th><th>Typical total cost (combined)</th></tr></thead><tbody>
+<tr><td>Mediation + consent orders</td><td>$6,000–$15,000</td></tr>
+<tr><td>Uncontested court proceedings</td><td>$5,000–$20,000</td></tr>
+<tr><td>Contested court (partial hearing)</td><td>$60,000–$120,000</td></tr>
+<tr><td>Fully contested final hearing</td><td>$100,000–$350,000+</td></tr>
+</tbody></table>
+<p>Money spent on litigation is money unavailable for housing, children's needs, and building two separate lives. The cost advantage of mediation is not just a convenience — for many families, it is a financial lifeline.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Resolve your divorce issues without the enormous cost of court. Mediation at Mediations Australia is a fixed, shared fee. Book a free consultation to find out more.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="benefit2">Benefit 2: Much faster resolution</h2>
+<p>Contested proceedings in the Federal Circuit and Family Court of Australia currently take 2–4 years from filing to a final hearing. That is 2–4 years of uncertainty for you, your finances, your housing, and — critically — your children's living arrangements.</p>
+<p>Mediation timelines are fundamentally different. Most mediation processes are completed within 2–8 weeks from initial contact. Complex matters may take 2–4 months. Even accounting for the time to formalise agreement as consent orders (4–8 additional weeks), the total time from first contact to binding agreement is typically 6–16 weeks.</p>
+<p>Speed matters for practical and emotional reasons. Certainty allows both parties to make decisions about housing, schooling, and finances. The sooner parenting arrangements are settled, the sooner children can adapt to a new normal. Years of uncertainty — which is what court proceedings involve — are themselves harmful to children's wellbeing.</p>
+
+<h2 id="benefit3">Benefit 3: Privacy and confidentiality</h2>
+<p>Court proceedings in Australia are, with limited exceptions, public. Court records are accessible, and while the names of parties in family law proceedings are protected, the proceedings themselves — including the allegations made in affidavits and the findings of fact made by judges — are part of the public record.</p>
+<p>Mediation is entirely private. What is said in mediation cannot, with narrow exceptions, be used in subsequent court proceedings. The details of your financial position, your parenting concerns, and the terms of any agreement you reach remain confidential between you, the other party, and the mediator. For business owners, people in public roles, or anyone for whom financial privacy matters, mediation provides protection that litigation cannot.</p>
+<p>This confidentiality also creates conditions for more honest negotiation. People speak more candidly — and creatively — about options when they know the conversation is protected than when they know it may end up in a sworn affidavit.</p>
+
+<h2 id="benefit4">Benefit 4: You control the outcome</h2>
+<p>In court, a judge decides the outcome. That judge spends a few days hearing evidence about your family's history and then issues orders that both parties must comply with for years. The outcome is uncertain, the process is unpredictable, and the orders may bear little resemblance to what either party actually wanted.</p>
+<p>In mediation, you and your ex-partner design the outcome — with the mediator's help. No agreement is made without your consent. You can include arrangements tailored to your specific family circumstances — arrangements a court would never order but that make perfect practical sense for your situation. You can build in flexibility, review periods, and specific provisions that reflect your children's actual needs and your real financial circumstances.</p>
+<p>Research consistently shows that people comply better with agreements they reached themselves than with orders imposed on them by a court. Durable, self-directed arrangements produce better long-term outcomes — for both adults and children.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Design your own outcome — don't leave it to a court. Our mediators help you reach an agreement that works for your specific family. Free consultation.</p><a href="/book-a-consultation/" class="btn btn-primary">Take control — book a consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="benefit5">Benefit 5: Better for children and co-parenting</h2>
+<p>Divorce litigation is adversarial by design. Filing affidavits requires itemising the other parent's failures. Cross-examination at hearing is designed to discredit. The adversarial process damages the co-parenting relationship — which is exactly what the children need to be functional for the next 15 or more years.</p>
+<p>Decades of research by the <a href="https://aifs.gov.au/" target="_blank" rel="noopener">Australian Institute of Family Studies</a> establishes clearly that children's outcomes after parental separation are determined primarily by the level of ongoing parental conflict — not by the separation itself. Children of separated parents who cooperate effectively and minimise conflict fare as well as children in intact families on most wellbeing measures. Children exposed to prolonged high-conflict litigation fare significantly worse.</p>
+<p>Mediation is designed to reduce conflict — not eliminate it, but structure and contain it in ways that make cooperation more achievable. Many parents who arrive at mediation unable to exchange a civil word leave with a workable parenting arrangement and a communication framework that makes co-parenting manageable. This is the environment in which their children will thrive.</p>
+
+<h2 id="how-it-works">How divorce mediation works in practice</h2>
+<p>At Mediations Australia, the process for divorce-related disputes follows a structured pathway:</p>
+<ol>
+<li><strong>Initial contact and intake:</strong> You contact us and complete a brief intake form. We arrange separate individual intake sessions with each party to understand the issues, explain the process, and assess suitability.</li>
+<li><strong>Joint mediation session:</strong> Both parties meet with the mediator for a structured session covering the identified issues — parenting arrangements, property division, or both. Sessions typically run 3–6 hours.</li>
+<li><strong>Agreement documentation:</strong> If agreement is reached, the terms are documented at the session in a written summary. This forms the basis for formal legal documents.</li>
+<li><strong>Formalisation:</strong> Your lawyers (or we can refer you to lawyers) prepare consent orders or a Binding Financial Agreement based on the agreed terms. These documents make the agreement legally binding.</li>
+</ol>
+
+<h2 id="what-mediation-covers">What divorce mediation covers</h2>
+<p>Divorce mediation can address all the issues that arise when a marriage ends:</p>
+<ul>
+<li><strong>Parenting arrangements:</strong> Where the children live, time with each parent, parental responsibility for major decisions, holiday arrangements, changeover logistics</li>
+<li><strong>Property division:</strong> Division of the family home, investment properties, superannuation, savings, investments, business interests, and debts</li>
+<li><strong>Spousal maintenance:</strong> Whether any ongoing financial support is appropriate and if so, for how long and in what amount</li>
+<li><strong>Child support:</strong> While child support is calculated by the Child Support Agency formula, mediation can address top-up agreements and how shared care arrangements interact with child support</li>
+</ul>
+<p>Note: divorce itself (the legal dissolution of the marriage) is a separate administrative process from property and parenting matters. Mediation addresses the latter. The divorce application is made to the FCFCOA separately and requires 12 months of separation.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Is mediation compulsory before divorce proceedings?</h3>
+<p>Mediation (specifically FDR) is compulsory before filing parenting proceedings under the Family Law Act. It is not compulsory for property proceedings, though it is strongly encouraged. Divorce proceedings (the dissolution of the marriage) do not require mediation — they are a separate administrative process.</p>
+<h3>Can mediation address everything, or do some issues need to go to court?</h3>
+<p>Mediation can address the full range of divorce-related issues — parenting, property, and financial matters. Issues that cannot be addressed in mediation include applications for domestic violence orders (which go to the Magistrates Court or equivalent) and urgent matters requiring interim court protection. For most families resolving an ordinary separation, mediation can cover the full scope of what needs to be resolved.</p>
+<h3>What if we can't agree on everything in mediation?</h3>
+<p>Partial agreement is common and valuable. If you resolve parenting arrangements but not property (or vice versa), you have still eliminated the most critical or most conflict-generating issues and narrowed the scope of any subsequent process. Many families reach full agreement on parenting and handle property separately — or reach full agreement in a second mediation session after taking legal advice.</p>
+<h3>Do I need a lawyer for divorce mediation?</h3>
+<p>Not in the mediation room — but independent legal advice before and after the session is strongly advisable. A lawyer can advise whether the proposed agreement is within the range of likely court outcomes and whether you should accept or push further. Having legal advice outside the mediation session is different from having a lawyer at the table.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/co-parenting-mediation/">co-parenting mediation</a></li>
+</ul>
+<p>Research on children and parental separation: <a href="https://aifs.gov.au/" target="_blank" rel="noopener">Australian Institute of Family Studies</a>. For the legal framework: <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>.</p>
+""",
+},
+
+"how-to-sell-property-during-a-divorce": {
+    "title": "How to Sell Property During a Divorce in Australia",
+    "desc":  "How to sell property during a divorce in Australia — what the law requires, how to handle a reluctant co-owner, proceeds, tax, and how mediation helps.",
+    "h1":    "How to Sell Property During a Divorce in Australia",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Selling property during or after divorce requires both owners to cooperate — one party cannot force a sale without a court order. If your ex-partner refuses to agree to sell or to the terms of the sale, mediation is the fastest and cheapest way to resolve the dispute before seeking court orders. Understanding your legal position early protects both your interests and the property's value.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#legal-position">The legal position on property sale</a></li>
+<li><a href="#both-agree">When both parties agree to sell</a></li>
+<li><a href="#one-refuses">When one party refuses to sell</a></li>
+<li><a href="#one-wants-to-keep">When one party wants to keep the property</a></li>
+<li><a href="#proceeds">How sale proceeds are divided</a></li>
+<li><a href="#tax">Tax considerations</a></li>
+<li><a href="#mortgage">The mortgage during separation</a></li>
+<li><a href="#mediation">How mediation resolves property disputes</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="legal-position">The legal position on property sale during divorce</h2>
+<p>In Australian family law, property held jointly (or in either party's name) is subject to the property settlement process under Part VIII of the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>. Neither party can unilaterally sell jointly owned property during or after separation without the other's consent — regardless of whose name is on the title.</p>
+<p>The family home and any investment properties are typically among the largest assets in the property pool. How they are dealt with — sold, transferred, or retained — is often the central dispute in a property settlement. Understanding your rights and obligations before taking any steps is essential.</p>
+<p>Until a property settlement is finalised (either by agreement or court order), both parties retain their legal interest in jointly owned property. Selling without the other's consent would require them to sign the transfer documents — which they can refuse. The only mechanism to force a sale over objection is a court order.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Disagreement about the family home is one of the most common sources of conflict in separation. Our mediators help couples resolve property disputes quickly and privately. Free consultation.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="both-agree">When both parties agree to sell</h2>
+<p>If both parties agree the property should be sold, the process is relatively straightforward:</p>
+<ol>
+<li>Appoint a real estate agent — ideally by agreement, but if you cannot agree, a court can appoint one</li>
+<li>Set the listing price and terms — again by agreement; significant disagreement on price can be resolved through an independent valuation</li>
+<li>Both parties sign the agency agreement and, at exchange, the contract for sale</li>
+<li>At settlement, the proceeds are held in trust (typically by a solicitor or conveyancer) pending agreement on division</li>
+<li>The net proceeds (after mortgage repayment, agent fees, legal costs) are divided in accordance with the agreed property settlement</li>
+</ol>
+<p>Even where both parties agree on the sale, disagreement on how the proceeds are divided is common. This is a property settlement question — which means the net proceeds are part of the overall property pool and are divided according to the four-step framework applying contributions and future needs, not necessarily 50/50.</p>
+
+<h2 id="one-refuses">When one party refuses to sell</h2>
+<p>If your ex-partner refuses to agree to sell the property, your options are:</p>
+<ul>
+<li><strong>Negotiate through mediation:</strong> The fastest and cheapest option. A mediator helps both parties explore the reasons for the refusal and work toward a resolution — which might be an agreed sale, a buyout, or a deferred sale arrangement.</li>
+<li><strong>Apply to court for a sale order:</strong> The FCFCOA can make orders requiring the property to be sold — including appointing a trustee for sale if one party is obstructing the process. Court proceedings are slower and more expensive but are available where mediation fails.</li>
+<li><strong>Partition proceedings:</strong> In some circumstances, proceedings in the Supreme Court under state legislation can force a sale of jointly owned property. This is a separate jurisdiction from family law and is used less commonly since the Family Law Act provides adequate jurisdiction in most cases.</li>
+</ul>
+<p>Refusal to agree to sell is often a negotiating position rather than a final stance. Understanding what lies behind the refusal — fear of homelessness, attachment to the property, disagreement about price, concern about where the proceeds will go — is the key to resolving it. A skilled mediator does exactly this.</p>
+
+<h2 id="one-wants-to-keep">When one party wants to keep the property</h2>
+<p>It is common for one party to want to retain the family home — often the primary carer of the children, who values continuity for the children's schooling and routine. If one party wants to keep the property:</p>
+<ul>
+<li>They need to <strong>buy out</strong> the other party's share — paying the other party an amount equal to their share of the property's net equity</li>
+<li>They need to <strong>refinance the mortgage</strong> into their own name (or with a new co-borrower) — the bank will need to be satisfied they can service the loan independently. This is often the practical obstacle — the keeping party may not qualify for the loan on a single income</li>
+<li>They may need to <strong>offset</strong> the other party's property share against other assets — for example, the keeping party might receive the home and the other party a larger share of superannuation or cash</li>
+</ul>
+<p>If the keeping party cannot refinance but is committed to retaining the property, options include: a deferred sale arrangement (property sold when the youngest child finishes school), a shared ownership arrangement for a fixed period, or assistance from family to fund the buyout.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Deciding whether to sell or keep the family home is one of the biggest decisions in a separation. Our mediators help you work through all the options — including buyout and deferred sale arrangements.</p><a href="/book-a-consultation/" class="btn btn-primary">Get expert guidance — free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="proceeds">How sale proceeds are divided</h2>
+<p>Sale proceeds are not automatically split 50/50. They are divided in accordance with the property settlement — which applies the four-step process (identify, contributions, future needs, just and equitable) to determine each party's share of the overall pool.</p>
+<p>The net proceeds (after repayment of the mortgage, agent commission, legal costs, and any other agreed deductions) form part of the overall property pool. Where the property is the major asset, the division of proceeds will broadly reflect the division of the overall pool — but this must be calculated as part of the full property settlement, not in isolation.</p>
+<p>Mediated agreements about proceeds should be confirmed by a lawyer and formalised as consent orders or a Binding Financial Agreement before the property is sold, or simultaneously with the sale — to avoid disputes about division at settlement.</p>
+
+<h2 id="tax">Tax considerations when selling property during divorce</h2>
+<p>Key tax matters to be aware of:</p>
+<ul>
+<li><strong>Capital gains tax (CGT):</strong> The main residence exemption applies to the family home if it has been your primary residence throughout the period of ownership. However, where one party has moved out, the exemption may be limited. In family law property transfers (not sales, but transfers between parties under a court order or written agreement), roll-over relief applies — the CGT event is deferred until the receiving party later sells the property. Speak to a tax adviser about your specific circumstances.</li>
+<li><strong>Stamp duty:</strong> In most Australian states, transfers of property between former domestic partners (including under court orders or binding written agreements) are exempt from stamp duty or attract a concession. This exemption applies to transfers between parties, not necessarily to sales to third parties. Check your state's exemption rules.</li>
+<li><strong>GST:</strong> GST does not apply to sales of residential property by private individuals. If the property is a commercial or investment property used for business purposes, the GST position is more complex.</li>
+</ul>
+<p>Tax advice from an accountant familiar with family law property transfers is important before finalising any arrangement — particularly for investment properties, business real estate, or properties that have not been the primary residence throughout the period of ownership.</p>
+
+<h2 id="mortgage">The mortgage during separation</h2>
+<p>Who pays the mortgage during separation — before the property settlement is finalised — is a critical practical question. Important points:</p>
+<ul>
+<li><strong>Both parties remain liable</strong> for the mortgage until it is refinanced or discharged, regardless of who lives in the property</li>
+<li><strong>Non-payment harms both parties</strong> — a default affects both parties' credit records and risks the mortgagee taking possession and selling the property under power of sale</li>
+<li><strong>Occupancy costs</strong> — the party living in the property is generally expected to contribute to its occupancy costs (mortgage, rates, insurance). In some property settlements, payments made by the occupying party toward the mortgage are treated as a contribution to the property pool</li>
+<li><strong>Agreement on interim payments</strong> is important — this is often part of the early mediation discussion, even before the full property settlement is resolved</li>
+</ul>
+
+<h2 id="mediation">How mediation resolves property sale disputes</h2>
+<p><a href="/property-settlement-in-family-law/">Property settlement mediation</a> is the fastest and most cost-effective way to resolve disputes about selling the family home or investment properties. In mediation, both parties can:</p>
+<ul>
+<li>Agree on whether the property will be sold or one party will keep it</li>
+<li>If selling: agree on timing, agent selection, listing price, and reserve</li>
+<li>If one party is keeping it: agree on the buyout amount, refinancing timeline, and offset against other assets</li>
+<li>Agree on how interim mortgage payments will be handled</li>
+<li>Agree on how net proceeds will be divided as part of the overall property settlement</li>
+</ul>
+<p>An agreement reached in mediation is then formalised as consent orders — giving it the same legal force as any court order, including the power to compel both parties to sign transfer documents.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Can I change the locks or refuse my ex access to the property?</h3>
+<p>Generally no — both parties retain rights of access to jointly owned property until a court order says otherwise. Changing the locks without agreement or court authority can expose you to legal liability and is likely to escalate conflict. If there is family violence or a safety concern, seek urgent legal advice and consider applying for a domestic violence order that includes exclusion from the property.</p>
+<h3>What if my ex-partner is damaging the property?</h3>
+<p>Deliberate damage to property after separation can be treated as dissipation of assets — the court has the power to notionally add back the value of assets that have been dissipated or wasted. Document any damage and take legal advice promptly.</p>
+<h3>Can the property be sold before the property settlement is finalised?</h3>
+<p>Yes — in fact, this is common. The property can be sold and the proceeds held in a solicitor's trust account pending finalisation of the property settlement. This avoids the mortgage continuing to accrue and preserves the asset value. The consent orders can specify how the proceeds are to be distributed when they issue.</p>
+<h3>What happens to the proceeds if one party has already left the home?</h3>
+<p>The proceeds are divided in accordance with the property settlement — not based on who has been living in the property. The party who moved out does not lose their share of the equity simply because they left. Occupancy arrangements during the period of separation may be a factor in the contributions analysis, but are not determinative.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/binding-financial-agreement/">binding financial agreements</a></li>
+</ul>
+<p>For property law and transfer duty exemptions, see your state Revenue Office. For the Family Law Act framework: <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (Part VIII). Court filing: <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>.</p>
+""",
+},
+
+"how-to-resolve-your-family-law-dispute-online": {
+    "title": "How to Resolve Your Family Law Dispute Online | Australia",
+    "desc":  "Online family law dispute resolution in Australia — how online mediation works, who it suits, what to expect, and how to get started from anywhere in the country.",
+    "h1":    "How to Resolve Your Family Law Dispute Online",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Online family law mediation and FDR are fully available in Australia — and just as legally effective as in-person sessions. Mediations Australia conducts sessions via secure video conference for parties anywhere in the country. Online sessions produce the same Section 60I certificates, the same binding agreements, and the same quality of outcomes as in-person mediation — with the added convenience of no travel and scheduling flexibility that suits separated families.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#is-online-valid">Is online mediation legally valid?</a></li>
+<li><a href="#how-it-works">How online mediation works</a></li>
+<li><a href="#who-suits">Who online mediation suits</a></li>
+<li><a href="#technology">Technology and setup</a></li>
+<li><a href="#online-fdr">Online FDR and the Section 60I certificate</a></li>
+<li><a href="#online-property">Online property mediation</a></li>
+<li><a href="#limitations">Are there any limitations?</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="is-online-valid">Is online mediation legally valid in Australia?</h2>
+<p>Yes — completely. Online family law mediation and Family Dispute Resolution (FDR) conducted via video conference is fully legally valid under Australian family law. The <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> and the FDR Practitioner Regulations do not require in-person attendance. A Section 60I certificate issued after an online FDR session is just as valid as one issued after an in-person session. Agreements reached in online mediation are formalised in exactly the same way.</p>
+<p>Online dispute resolution has been available in Australia for many years, and its use expanded significantly from 2020. The courts, legal practitioners, and accrediting bodies have fully accepted online FDR and mediation as standard practice — not as a lesser alternative to in-person sessions.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>We conduct online mediation sessions for families across Australia — from Brisbane to Perth, Darwin to Hobart. Book a free consultation and we will explain exactly how the online process works for your situation.</p><a href="/book-a-consultation/" class="btn btn-primary">Book your online consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="how-it-works">How online mediation works</h2>
+<p>At Mediations Australia, our online mediation process follows the same structure as in-person sessions:</p>
+<ol>
+<li><strong>Initial contact and booking:</strong> You contact us by phone, email, or online booking. We explain the process and send you intake forms.</li>
+<li><strong>Individual intake session (online):</strong> You meet with your mediator via secure video conference — a private session where you explain your situation, ask questions, and are screened for suitability. The other party has a separate intake session.</li>
+<li><strong>Joint mediation session (online):</strong> Both parties join a secure video conference with the mediator. The mediator manages the session — opening, facilitating issue identification, and guiding the negotiation. Sessions typically run 3–5 hours.</li>
+<li><strong>Breakout rooms:</strong> Modern video conferencing platforms allow the mediator to put one party in a private "breakout room" while speaking separately with the other — replicating the shuttle technique used in in-person mediation.</li>
+<li><strong>Agreement documentation:</strong> If agreement is reached, the mediator documents the agreed terms in a written summary shared via screen share and email during the session. Both parties confirm agreement before the session ends.</li>
+<li><strong>Formalisation:</strong> The agreed terms are sent to both parties (and their lawyers if applicable) for formalisation as consent orders or a Binding Financial Agreement.</li>
+</ol>
+
+<h2 id="who-suits">Who online mediation suits</h2>
+<p>Online mediation is particularly well-suited to:</p>
+<ul>
+<li><strong>Parties in different cities or states:</strong> Where parties have relocated post-separation and attending the same physical location would be impractical or expensive</li>
+<li><strong>Regional and remote families:</strong> Access to specialist family mediators in regional and remote Australia is limited — online mediation removes geography as a barrier</li>
+<li><strong>High-conflict situations:</strong> Where face-to-face contact creates safety or anxiety concerns, online sessions allow full participation without physical proximity</li>
+<li><strong>Busy professionals:</strong> Online sessions can often be scheduled earlier, later, or more flexibly than in-person sessions — without travel time added</li>
+<li><strong>Parents managing childcare:</strong> Attending online from home, with childcare arrangements for the session only, is often more manageable than travelling to a practitioner's office</li>
+</ul>
+
+<h2 id="technology">Technology and setup</h2>
+<p>Online mediation requires minimal technology. You need:</p>
+<ul>
+<li>A device with a camera and microphone — laptop, desktop, tablet, or smartphone</li>
+<li>A stable internet connection</li>
+<li>A private space where you will not be overheard — important for confidentiality and for your ability to speak candidly</li>
+<li>The video conferencing platform our team uses (typically Zoom or a similar platform) — free to download and use</li>
+</ul>
+<p>We send detailed setup instructions before every session. If you are not confident with the technology, our team will do a brief test call with you before the session to make sure everything is working. Technical difficulty is almost never a barrier to participating — if your camera or microphone fails during a session, we have fallback options including phone audio combined with screen sharing for documents.</p>
+<p>If technology is genuinely a barrier (for example, no internet access at home or limited digital literacy), speak to our team. We can explore options including conducting your individual intake by telephone and your joint session at a local Family Relationship Centre or community facility.</p>
+
+<h2 id="online-fdr">Online FDR and the Section 60I certificate</h2>
+<p>For parenting disputes, Family Dispute Resolution conducted online produces the same Section 60I certificate as in-person FDR. The certificate records the outcome of the FDR process — whether full agreement, partial agreement, or an impasse — and authorises the holder to file parenting proceedings if needed. The certificate's legal validity does not depend on whether the session was conducted in person or online.</p>
+<p>All of Mediations Australia's practitioners who conduct parenting FDR hold accreditation as Family Dispute Resolution Practitioners (FDRPs) — the accreditation required to issue valid Section 60I certificates. This accreditation applies regardless of whether sessions are conducted in person or via video conference.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Need a Section 60I certificate? We issue valid certificates after online FDR sessions for families anywhere in Australia. Book your intake session today.</p><a href="/book-a-consultation/" class="btn btn-primary">Book your online FDR session <span class="arr">→</span></a></div></div>
+
+<h2 id="online-property">Online property mediation</h2>
+<p>Property settlement mediation conducted online works particularly well because of the document-sharing capabilities of video conferencing platforms. During a property mediation session:</p>
+<ul>
+<li>Financial documents can be shared on screen by any party or the mediator</li>
+<li>A shared spreadsheet of the property pool can be updated in real time as values are agreed</li>
+<li>Settlement calculators and comparison documents can be displayed during the negotiation</li>
+<li>Agreement terms can be drafted on screen in real time, reviewed by both parties, and confirmed before the session ends</li>
+</ul>
+<p>Some practitioners find that online property mediation is more efficient than in-person sessions — the ability to share and annotate documents digitally streamlines the information-gathering phase considerably.</p>
+
+<h2 id="limitations">Are there any limitations to online mediation?</h2>
+<p>Online mediation is suitable for the vast majority of family law disputes. However, there are some circumstances where in-person sessions may be preferable or necessary:</p>
+<ul>
+<li><strong>Complex documents or exhibits:</strong> Where the mediation involves large volumes of physical documents (for example, complex business records), in-person review may be more practical — though digital document management is increasingly capable.</li>
+<li><strong>Very high emotion or distress:</strong> In some cases, the physical presence of the mediator and the formality of meeting in a dedicated space helps regulate very high emotional states. For most matters, online sessions manage emotion effectively.</li>
+<li><strong>Technology access issues:</strong> Where a party genuinely cannot access adequate technology, in-person sessions may be necessary. Our team can help explore alternatives.</li>
+</ul>
+<p>There is no evidence that online mediation produces worse outcomes than in-person mediation for family law matters. Agreement rates are comparable, and satisfaction with the process is high.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Can I use a phone instead of a video call?</h3>
+<p>In some circumstances — particularly for individual intake sessions — audio-only calls are possible. For joint mediation sessions, video is strongly preferred as it allows the mediator to observe non-verbal communication, manage the dynamics between parties more effectively, and share documents during the session. If video is not possible, speak to our team about alternatives.</p>
+<h3>Is the online session recorded?</h3>
+<p>No. Sessions are not recorded. Mediation is a confidential process, and recording would breach the confidentiality protections. If you want to keep notes, you may do so in writing during the session — but audio or video recording by any party is not permitted.</p>
+<h3>What if there is a technical problem during the session?</h3>
+<p>Our mediators are experienced in managing technical issues. If a connection drops, we pause the session and reconnect. If a party's video fails, we can continue with audio only. In the rare case of a significant technical failure, we reschedule without additional cost. Technical issues have not prevented any of our sessions from proceeding to a conclusion.</p>
+<h3>Is online mediation cheaper than in-person?</h3>
+<p>At Mediations Australia, our fees are the same for online and in-person sessions. However, you save on travel costs, parking, and the time cost of travel — which can be significant for parties in different cities. For regional and remote clients, the absence of a need to travel to a capital city for in-person sessions represents a significant practical and cost saving.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/family-mediation-process-guide/">family mediation process guide</a></li>
+<li><a href="/what-is-a-section-60i-certificate-why-do-i-need-one/">Section 60I certificate</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/parenting-mediation-sydney/">parenting mediation</a></li>
+</ul>
+<p>For government-funded online FDR services: <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">Attorney-General's Department — Family Dispute Resolution</a>. For Family Relationship Centres that offer online services: <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a>.</p>
+""",
+},
+
+"what-is-a-dvo-everything-you-need-to-know": {
+    "title": "What Is a DVO? Domestic Violence Orders Explained",
+    "desc":  "What is a DVO (domestic violence order) in Australia? How DVOs work, how to apply, what they cover, and how they interact with family law proceedings.",
+    "h1":    "What Is a DVO? Everything You Need to Know About Domestic Violence Orders",
+    "read_min": "10",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> A Domestic Violence Order (DVO) — also called a Protection Order, AVO, IVO, or similar depending on the state — is a court order that protects a person from family violence by restricting what the respondent can do. DVOs are issued by Magistrates Courts (not the Family Court), operate independently of family law proceedings, and can include conditions such as no contact, exclusion from the home, and prohibitions on approaching the protected person. If you are experiencing family violence, call 000 (emergency) or 1800RESPECT (1800 737 732).</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#what-is">What a DVO is and what it does</a></li>
+<li><a href="#types">Types of orders across Australia</a></li>
+<li><a href="#who-applies">Who can apply for a DVO</a></li>
+<li><a href="#how-to-apply">How to apply</a></li>
+<li><a href="#conditions">Typical conditions</a></li>
+<li><a href="#breach">What happens if a DVO is breached</a></li>
+<li><a href="#family-law">How DVOs interact with family law proceedings</a></li>
+<li><a href="#mediation">DVOs and mediation</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="what-is">What a DVO is and what it does</h2>
+<p>A Domestic Violence Order (DVO) is a court order designed to protect a person (the "aggrieved" or "protected person") from domestic or family violence. It is made by a Magistrates Court — not the Family Court — and operates as a civil order, though breach of a DVO is a criminal offence.</p>
+<p>A DVO restricts the behaviour of the person it is made against (the "respondent"). It does not by itself result in criminal penalties — the respondent is not convicted of any offence simply because a DVO is made against them. However, if the respondent breaches the conditions of the DVO, that breach is a criminal offence with serious consequences.</p>
+<p>"Family violence" in Australian law is broadly defined. It includes not only physical violence but also: emotional and psychological abuse, financial abuse, coercive control, threats, stalking, property damage, and using children to cause fear or harm. A DVO can protect against any of these forms of violence.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>If family violence is present in your situation, your safety comes first. Contact 1800RESPECT (1800 737 732) or police (000). When you are safe and ready, we can discuss whether mediation is appropriate for your circumstances.</p><a href="/book-a-consultation/" class="btn btn-primary">Free confidential consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="types">Types of domestic violence orders across Australian states</h2>
+<table><thead><tr><th>State/Territory</th><th>Name of order</th></tr></thead><tbody>
+<tr><td>Queensland</td><td>Domestic Violence Order (DVO) or Protection Order</td></tr>
+<tr><td>New South Wales</td><td>Apprehended Violence Order (AVO) — specifically Apprehended Domestic Violence Order (ADVO)</td></tr>
+<tr><td>Victoria</td><td>Family Violence Intervention Order (FVIO)</td></tr>
+<tr><td>Western Australia</td><td>Family Violence Restraining Order (FVRO)</td></tr>
+<tr><td>South Australia</td><td>Intervention Order</td></tr>
+<tr><td>Tasmania</td><td>Family Violence Order (FVO)</td></tr>
+<tr><td>ACT</td><td>Family Violence Order (FVO)</td></tr>
+<tr><td>Northern Territory</td><td>Domestic Violence Order (DVO)</td></tr>
+</tbody></table>
+<p>All of these operate on similar principles, though the specific procedures and conditions vary by state and territory. An order made in one state is registered and enforceable in all other states and territories under the National Domestic Violence Order Scheme.</p>
+
+<h2 id="who-applies">Who can apply for a DVO</h2>
+<p>The following people can apply for a DVO:</p>
+<ul>
+<li><strong>The aggrieved person themselves</strong> — this is the most common situation</li>
+<li><strong>Police</strong> — police routinely apply for DVOs on behalf of victims who may be unwilling or unable to apply themselves. Police can apply for a temporary protection order without the victim's consent in some states.</li>
+<li><strong>A person on behalf of someone unable to apply</strong> — for example, a parent applying on behalf of a child</li>
+</ul>
+<p>The respondent (the person the order is made against) can be a current or former spouse, de facto partner, or family member. DVOs cover intimate partner relationships but also extend to other family relationships — parents, children, siblings, and other relatives.</p>
+
+<h2 id="how-to-apply">How to apply for a DVO</h2>
+<p>The process varies by state but typically involves:</p>
+<ol>
+<li><strong>Contact police or go to a Magistrates Court:</strong> You can report to police (who will apply on your behalf) or apply directly at the Magistrates Court registry</li>
+<li><strong>Temporary/interim order:</strong> An urgent interim DVO can be made by the court on the same day, often without the respondent being present (ex parte). This provides immediate protection while the matter is listed for a full hearing.</li>
+<li><strong>Full hearing:</strong> Both parties are given an opportunity to present their case at a hearing. The respondent can consent to the order (without admitting wrongdoing) or contest it.</li>
+<li><strong>Final order:</strong> If the court is satisfied on the balance of probabilities that the respondent has committed or is likely to commit domestic violence, a final DVO is made. Final orders can last 1–5 years or indefinitely depending on the circumstances.</li>
+</ol>
+<p>Legal representation is not required to apply for a DVO. Legal Aid in most states provides free assistance for DVO applicants who need it.</p>
+
+<h2 id="conditions">Typical DVO conditions</h2>
+<p>A DVO can include a range of conditions tailored to the specific circumstances. Common conditions include:</p>
+<ul>
+<li>The respondent must not commit acts of domestic violence against the protected person</li>
+<li>No contact — by any means, including phone, text, email, or through third parties</li>
+<li>No approach within a specified distance of the protected person, their home, workplace, or children's school</li>
+<li>Exclusion from the family home — even if the respondent is on the title or lease</li>
+<li>No publication of images or information about the protected person online</li>
+</ul>
+<p>Conditions can also be made to protect children listed on the DVO, allowing the protected person to seek child-contact arrangements that are consistent with the DVO's conditions.</p>
+
+<h2 id="breach">What happens if a DVO is breached</h2>
+<p>Breaching a DVO condition is a criminal offence in every Australian state and territory. Penalties vary but typically include fines and/or imprisonment. In some states, a first breach may result in a fine or community service; subsequent breaches, or serious breaches involving violence, attract imprisonment.</p>
+<p>If a respondent breaches a DVO, the aggrieved person should report the breach to police immediately. Police are required to investigate and may arrest the respondent. Documentary evidence of the breach — screenshots of messages, records of unwanted contact, witness statements — is helpful.</p>
+<p>Do not minimise or dismiss breaches. Even "minor" breaches (a text message, appearing near the protected person's home) demonstrate that the respondent is not complying with the order and should be reported.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>If you are safe and considering how to resolve family law matters alongside a DVO, talk to us. We can advise on whether and how mediation can be part of your pathway forward.</p><a href="/book-a-consultation/" class="btn btn-primary">Free confidential consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="family-law">How DVOs interact with family law proceedings</h2>
+<p>DVOs and family law proceedings (parenting and property) operate in different legal systems — DVOs in the state Magistrates Court, family law matters in the FCFCOA. They can and do overlap:</p>
+<ul>
+<li>A DVO against a parent does not automatically end that parent's parenting time with children — it may restrict <em>how</em> handovers occur but not necessarily the time itself</li>
+<li>The FCFCOA can make parenting orders consistent with a DVO, including supervised contact or changeovers through a neutral third party</li>
+<li>Evidence of family violence is a significant factor in the FCFCOA's assessment of parenting orders — it can affect which parent has primary responsibility and what safety conditions are placed on contact</li>
+<li>A DVO does not prevent property proceedings in the Family Court</li>
+<li>The courts are required to communicate and cooperate where both proceedings are on foot</li>
+</ul>
+<p>If you have a DVO and parenting proceedings are also underway, it is essential to ensure both courts are aware of the other proceedings. Notify your family law practitioner of any DVO and notify the Magistrates Court of any family law proceedings.</p>
+
+<h2 id="mediation">DVOs and mediation — when mediation applies</h2>
+<p>Where family violence is present, mediation is generally not appropriate as a first step. The Family Law Act exempts parties from the FDR requirement where there is family violence — you may be able to file parenting proceedings without first attempting FDR.</p>
+<p>However, the presence of a DVO does not permanently rule out all forms of dispute resolution. In some circumstances — where the violence is historical, where appropriate safeguards are in place, and where both parties consent — specialist family dispute resolution with specific safety protocols may be appropriate later in the process. This is a specialist assessment that should be made by an experienced FDRP with family violence training, not a general assumption.</p>
+<p>If you are not sure whether mediation is appropriate in your circumstances, speak to a family lawyer or contact 1800RESPECT (1800 737 732) for guidance.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Can a DVO prevent me from seeing my children?</h3>
+<p>A DVO protects the named aggrieved person and any named children. It can restrict how you have contact with the children — for example, requiring handovers to take place through a third party rather than directly. It does not automatically end your parenting time. Parenting arrangements are determined by the Family Court, which must consider family violence as a key factor.</p>
+<h3>Will a DVO appear on my criminal record?</h3>
+<p>A DVO is a civil order — it is not a criminal conviction and does not appear on your standard criminal record. However, in some states, DVOs are disclosed on certain background checks (for example, Working with Children checks, firearms licences, and some employment checks). This varies by state.</p>
+<h3>Can I defend or oppose a DVO application?</h3>
+<p>Yes. The respondent can contest the application at the hearing, present evidence, and cross-examine witnesses. Legal representation is advisable if you intend to contest a DVO. The court applies a civil standard of proof (balance of probabilities), not the criminal standard (beyond reasonable doubt).</p>
+<h3>What is coercive control and is it covered by DVOs?</h3>
+<p>Coercive control — a pattern of behaviour that dominates and controls another person through isolation, monitoring, financial control, and psychological manipulation — is recognised as domestic violence in Australian law. Queensland, New South Wales, and other states have specific offences covering coercive control. DVOs can include conditions that address coercive control behaviours.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/when-is-mediation-not-a-good-idea/">when mediation is not appropriate</a></li>
+<li><a href="/parenting-mediation-sydney/">parenting mediation</a></li>
+<li><a href="/family-mediation-process-guide/">family mediation process guide</a></li>
+<li><a href="/is-family-law-mediation-compulsory/">is family law mediation compulsory</a></li>
+</ul>
+<p>If you are experiencing family violence: <a href="https://www.1800respect.org.au/" target="_blank" rel="noopener">1800RESPECT (1800 737 732)</a> — 24/7. For the legal framework: <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a> and your state Magistrates Court.</p>
+""",
+},
+
+"what-is-mediation-in-family-law": {
+    "title": "What Is Mediation in Family Law? A Plain-Language Guide",
+    "desc":  "What is mediation in family law in Australia? A plain-language guide to how the process works, what a mediator does, costs, and how it compares to court.",
+    "h1":    "What Is Mediation in Family Law?",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Mediation in family law is a structured, confidential process where a neutral mediator helps separating parties reach their own agreements about parenting and property — without a judge deciding for them. It is faster, cheaper, and less damaging than court. For parenting disputes, it is legally required before you can file proceedings. For most families, it is also simply the better path.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#definition">What mediation is — and isn't</a></li>
+<li><a href="#role-of-mediator">The mediator's role</a></li>
+<li><a href="#what-it-covers">What family law mediation covers</a></li>
+<li><a href="#the-process">How the process works</a></li>
+<li><a href="#fdr">FDR and the Section 60I certificate</a></li>
+<li><a href="#cost">What mediation costs</a></li>
+<li><a href="#vs-court">How it compares to court</a></li>
+<li><a href="#after">After mediation — making it binding</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="definition">What mediation is — and isn't</h2>
+<p>Family law mediation is a structured negotiation process facilitated by a neutral third party — the mediator. Both parties in a separation or divorce attend together (after separate individual intake sessions) and work through the issues that need to be resolved: parenting arrangements, property division, spousal maintenance, and other matters arising from the end of the relationship.</p>
+<p>What mediation is NOT:</p>
+<ul>
+<li>Not a court — the mediator has no power to impose an outcome or make orders</li>
+<li>Not counselling or therapy — the mediator is not helping the parties process the separation emotionally, though the process may have that effect</li>
+<li>Not legal advice — the mediator does not advise either party on their legal rights or what a court would decide</li>
+<li>Not arbitration — an arbitrator makes binding decisions; a mediator does not</li>
+</ul>
+<p>The defining feature of mediation is party self-determination: the outcome is whatever the parties agree to, not what a third party imposes. No agreement is reached without both parties' consent.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Wondering if mediation is right for your situation? Book a free, no-obligation consultation with our team. We can explain the process and assess whether it suits your circumstances.</p><a href="/book-a-consultation/" class="btn btn-primary">Free consultation — find out more <span class="arr">→</span></a></div></div>
+
+<h2 id="role-of-mediator">The mediator's role</h2>
+<p>A skilled mediator does several things that a party negotiating alone simply cannot do:</p>
+<ul>
+<li><strong>Facilitates communication</strong> — creates conditions where each party can speak and be heard without interruption, threat, or dismissal</li>
+<li><strong>Manages the process</strong> — keeps the discussion structured, redirects unproductive tangents, ensures both parties participate equally</li>
+<li><strong>Identifies the real issues</strong> — helps parties separate the legal dispute from the emotional conflict, and identify what they genuinely need from the outcome</li>
+<li><strong>Generates options</strong> — helps parties think beyond their opening positions to creative solutions neither had considered</li>
+<li><strong>Reality-tests proposals</strong> — asks questions about whether proposed terms are practically workable, legally achievable, and durable</li>
+<li><strong>Maintains impartiality</strong> — does not advocate for either party or allow the more assertive party to dominate</li>
+</ul>
+<p>The mediator's neutrality is fundamental. A mediator who takes sides has failed at the core function of the role. Accredited family mediators are trained to maintain impartiality even in high-conflict situations and to manage parties who attempt to dominate or manipulate the process.</p>
+
+<h2 id="what-it-covers">What family law mediation covers</h2>
+<p>Family law mediation can address the full range of issues that arise from separation:</p>
+<table><thead><tr><th>Category</th><th>Issues addressed</th></tr></thead><tbody>
+<tr><td>Parenting</td><td>Where children live, time with each parent, parental responsibility, school holidays, communication between parents, changeover arrangements</td></tr>
+<tr><td>Property</td><td>Division of the family home, investment properties, superannuation, savings, investments, business interests, debts</td></tr>
+<tr><td>Financial support</td><td>Spousal maintenance (if applicable), child support top-up arrangements</td></tr>
+<tr><td>Practical arrangements</td><td>Who stays in the family home, management of joint debts during the separation period, sale of assets</td></tr>
+</tbody></table>
+<p>Not all matters are suitable for mediation. Where there is family violence or significant safety concerns, mediation may not be appropriate. Where assets are being hidden and court discovery powers are needed, mediation may need to follow disclosure rather than precede it. An experienced mediator will assess suitability at the intake stage.</p>
+
+<h2 id="the-process">How the mediation process works</h2>
+<p>At Mediations Australia, the <a href="/family-mediation-process-guide/">process</a> follows a clear structure:</p>
+<ul>
+<li><strong>Step 1 — Contact and booking:</strong> You contact us by phone or online. We explain the process and take brief details about your situation.</li>
+<li><strong>Step 2 — Individual intake sessions:</strong> Each party has a private, confidential session with the mediator before the joint session. This allows the mediator to understand each party's perspective, screen for suitability, and prepare for the joint session.</li>
+<li><strong>Step 3 — Joint mediation session:</strong> Both parties attend together (in person or via video conference). The mediator facilitates discussion across the agreed issues. Sessions typically run 3–6 hours. Breaks and private sessions with the mediator are available.</li>
+<li><strong>Step 4 — Agreement and documentation:</strong> If agreement is reached, the terms are documented in writing during the session. This written record forms the basis for formal legal documents.</li>
+<li><strong>Step 5 — Formalisation:</strong> The agreed terms are converted to consent orders or a Binding Financial Agreement by lawyers — making them legally binding and enforceable.</li>
+</ul>
+
+<h2 id="fdr">FDR and the Section 60I certificate</h2>
+<p>For parenting disputes specifically, the relevant process is Family Dispute Resolution (FDR) — a specific statutory form of mediation required by section 60I of the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> before parenting proceedings can be filed in the FCFCOA. FDR must be conducted by an accredited Family Dispute Resolution Practitioner (FDRP).</p>
+<p>At the conclusion of FDR, the FDRP issues a Section 60I certificate recording the outcome. There are five types of certificate — each reflecting a different FDR outcome. The certificate is filed with any subsequent parenting application. Without it (or without a claimed exemption), the court will not accept the application.</p>
+<p>All FDR is a form of mediation, but not all mediation is FDR. For property matters, general mediation (not requiring FDRP accreditation) is appropriate. For parenting matters, FDRP accreditation is required to issue a valid Section 60I certificate. Mediations Australia's parenting practitioners hold FDRP accreditation.</p>
+
+<h2 id="cost">What mediation costs</h2>
+<p>The cost of family law mediation varies based on the complexity of the matter and the number of sessions required. At Mediations Australia:</p>
+<ul>
+<li>Individual intake sessions are billed at a set hourly rate</li>
+<li>Joint sessions are typically charged at a total daily rate shared between the parties</li>
+<li>Most matters are resolved in one or two joint sessions</li>
+<li>Total cost is typically $3,000–$8,000 combined for a straightforward matter</li>
+</ul>
+<p>Government-funded FDR services are available through Family Relationship Centres for parties who qualify — though these services typically have longer waiting times than private practitioners.</p>
+<p>By comparison, a day of contested litigation typically costs each party $3,000–$8,000 in legal fees alone. A fully contested parenting and property matter can cost $100,000–$350,000 combined. The cost advantage of mediation is significant.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Ready to resolve your family law matter without the cost and damage of court? Book a free initial consultation with our team to find out how mediation can work for you.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="vs-court">How mediation compares to court</h2>
+<table><thead><tr><th>Factor</th><th>Mediation</th><th>Court</th></tr></thead><tbody>
+<tr><td>Who decides</td><td>The parties</td><td>A judge</td></tr>
+<tr><td>Typical cost (combined)</td><td>$3,000–$15,000</td><td>$60,000–$350,000+</td></tr>
+<tr><td>Timeline</td><td>Weeks to months</td><td>2–4 years (contested)</td></tr>
+<tr><td>Confidentiality</td><td>Fully confidential</td><td>Public proceedings</td></tr>
+<tr><td>Co-parenting impact</td><td>Generally preserves relationship</td><td>Generally damages relationship</td></tr>
+<tr><td>Outcome certainty</td><td>Certain (if agreement reached)</td><td>Uncertain until judge rules</td></tr>
+<tr><td>Legally binding</td><td>After formalisation as consent orders</td><td>Yes — court orders</td></tr>
+</tbody></table>
+
+<h2 id="after">After mediation — making it binding</h2>
+<p>A mediated agreement is not automatically legally binding. The two mechanisms to make it enforceable are:</p>
+<ul>
+<li><strong>Consent orders:</strong> You apply to the FCFCOA for the agreed terms to be made into court orders. The court reviews the application (without a hearing for most matters) and issues orders. Cost: filing fee of $170 plus approximately $1,500–$3,500 in legal fees for preparation. Consent orders are fully enforceable as court orders.</li>
+<li><strong>Binding Financial Agreement (BFA):</strong> A contract signed by both parties with independent legal advice, enforceable without court approval. BFAs require both parties to have received independent legal advice from separate lawyers. They are sometimes used where the parties want more privacy or flexibility in drafting terms.</li>
+</ul>
+<p>Skipping formalisation is a common and costly mistake. An informal agreement — even documented in writing — can be difficult to enforce if the other party later changes their mind. Consent orders provide full legal certainty.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>How long does family law mediation take?</h3>
+<p>Individual intake sessions are typically 60–90 minutes each. Joint mediation sessions run 3–6 hours. Most matters are resolved in one joint session; complex matters may require two. From initial contact to a documented agreement, the typical timeframe is 2–8 weeks. Add 4–8 weeks for consent orders, and most families have a binding, formalised outcome within 3–4 months.</p>
+<h3>Can I bring my lawyer to mediation?</h3>
+<p>Yes. Lawyers can attend mediation sessions as support persons or as legal advisers in the room, depending on the mediator's approach. Many people prefer to have their lawyer available for consultation between sessions rather than present throughout — this keeps the session less formal and less expensive while still ensuring legal advice is accessible.</p>
+<h3>What happens if we can't reach agreement?</h3>
+<p>If mediation does not produce a full agreement, the mediator issues a Section 60I certificate (for parenting matters) or a written summary of what was and was not agreed (for property matters). This allows the parties to proceed to court for unresolved issues. Partial agreement is documented and preserved — parties do not lose the ground they have already covered.</p>
+<h3>Is mediation suitable if my ex is difficult or refuses to engage genuinely?</h3>
+<p>The mediator's role includes managing difficult dynamics and ensuring the process is not dominated by one party. If one party consistently refuses to engage genuinely, the mediator will issue a Type 4 Section 60I certificate (for parenting FDR) — which the other party can use when filing in court. A party's refusal to engage in good faith is a matter the court can take into account.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation-process-guide/">family mediation process guide</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/parenting-mediation-sydney/">parenting mediation</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+</ul>
+<p>The FDR framework is in the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (Part II, Division 2). For government-funded FDR services: <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">Attorney-General's Department</a>.</p>
+""",
+},
+
 }  # end EXPANDED dict
+
 
 
 
