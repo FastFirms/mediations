@@ -43,7 +43,19 @@ POST_CSS = """<style>
 .post-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
 .post-body tr:last-child td{border-bottom:none}
 .post-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
-@media(max-width:600px){.post-body h2{font-size:1.4rem}}
+.post-cta{margin:36px 0}
+.post-cta-inner{background:var(--sage-light);color:var(--ink);border-radius:20px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.post-cta-inner p{color:var(--ink);font-family:var(--serif);font-size:1.2rem;font-style:italic;margin:0;flex:1;min-width:240px}
+.post-cta-inner .btn{flex-shrink:0}
+.post-toc{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:30px}
+.post-toc h2{font-size:1rem!important;margin:0 0 12px!important;text-transform:uppercase;letter-spacing:.08em;font-family:var(--sans);font-weight:600;color:var(--ink-soft)}
+.post-toc ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin:0;padding:0}
+.post-toc ul li{padding:0}
+.post-toc ul li::before,.post-toc ul li::after{display:none}
+.post-toc a{font-size:.96rem;color:var(--sage-deep);text-decoration:none}
+.post-toc a:hover{color:var(--terra);text-decoration:underline}
+.source-note{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin:-12px 0 24px}
+@media(max-width:600px){.post-body h2{font-size:1.4rem}.post-cta-inner{flex-direction:column;align-items:stretch}.post-cta-inner .btn{width:100%;justify-content:center}}
 </style>"""
 
 EXPERT_BIO = """<aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes.</p><a href="/our-mediators/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div></aside>"""
