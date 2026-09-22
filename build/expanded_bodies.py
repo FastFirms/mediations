@@ -3658,7 +3658,563 @@ EXPANDED = {
 """,
 },
 
+
+# ─── BATCH 8 (5 pages) ──────────────────────────────────────────────────────
+
+"what-am-i-entitled-to-in-a-separation-in-australia": {
+    "title": "What Am I Entitled to in a Separation in Australia?",
+    "desc":  "What are you entitled to in a separation in Australia? How property, superannuation, parenting, and spousal maintenance are decided under Australian family law.",
+    "h1":    "What Am I Entitled to in a Separation in Australia?",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> In a separation, you are not automatically entitled to 50% of the assets. Australian family law uses a four-step process to work out each party's share, taking into account contributions (financial and non-financial) and future needs. Superannuation, the family home, investments, and debts are all included. Most entitlements are negotiable — and mediation is the fastest, cheapest way to reach a fair outcome without court.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#not-50-50">Why separation is not automatically 50/50</a></li>
+<li><a href="#four-step">The four-step property settlement process</a></li>
+<li><a href="#what-is-included">What is included in the property pool</a></li>
+<li><a href="#super">Superannuation splitting</a></li>
+<li><a href="#parenting">Parenting entitlements</a></li>
+<li><a href="#spousal-maintenance">Spousal maintenance</a></li>
+<li><a href="#time-limits">Time limits to be aware of</a></li>
+<li><a href="#how-mediation-helps">How mediation determines entitlements</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="not-50-50">Why separation is not automatically 50/50</h2>
+<p>A common misconception is that a separated couple splits everything down the middle. Australian family law does not work that way. The division of property on separation is governed by Part VIII of the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, which requires an individualised assessment of each party's contributions, circumstances, and future needs.</p>
+<p>What you are "entitled to" depends on: how long the relationship lasted; the contributions each party made (financial, non-financial, and as a homemaker and parent); each party's financial circumstances going forward; and what is just and equitable given all of those factors. A short marriage with roughly equal incomes and no children often results in something close to 50/50. A long marriage where one party sacrificed their career to raise children often results in a significantly different split.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Not sure what you're entitled to? Our mediators can help you understand your position and reach a fair agreement — without the cost of litigation. Book a free consultation today.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="four-step">The four-step property settlement process</h2>
+<p>Australian courts apply a structured four-step process to determine property entitlements. Mediators and lawyers use the same framework to negotiate settlements:</p>
+<ol>
+<li><strong>Identify the property pool:</strong> List all assets and liabilities of both parties — regardless of whose name they are in — as at the date of the hearing or agreement. Include the family home, investment properties, superannuation, bank accounts, shares, vehicles, business interests, and all debts.</li>
+<li><strong>Assess contributions:</strong> Work out each party's contributions — both to the acquisition of property (financial contributions like income and inheritances) and to the welfare of the family (non-financial contributions including homemaking, childrearing, and unpaid support of a partner's business). Both types of contribution are given weight.</li>
+<li><strong>Adjust for future needs:</strong> Consider factors that affect each party's future financial circumstances — age, health, income-earning capacity, whether one party will be the primary carer of children, and whether there is a disparity in financial resources. These factors can shift the split significantly from the contributions baseline.</li>
+<li><strong>Just and equitable check:</strong> The final division must be just and equitable — a broad fairness test. A court (or mediating parties) considers whether the proposed split is fair in all the circumstances.</li>
+</ol>
+
+<h2 id="what-is-included">What is included in the property pool</h2>
+<table><thead><tr><th>Asset type</th><th>Included?</th></tr></thead><tbody>
+<tr><td>Family home</td><td>Yes</td></tr>
+<tr><td>Investment properties</td><td>Yes</td></tr>
+<tr><td>Superannuation</td><td>Yes (split separately)</td></tr>
+<tr><td>Bank accounts (in either name)</td><td>Yes</td></tr>
+<tr><td>Shares and investments</td><td>Yes</td></tr>
+<tr><td>Business interests</td><td>Yes (at market value)</td></tr>
+<tr><td>Vehicles, boats, furniture</td><td>Yes</td></tr>
+<tr><td>Inheritances received during the relationship</td><td>Generally yes</td></tr>
+<tr><td>Inheritances expected (not yet received)</td><td>No</td></tr>
+<tr><td>Gifts from third parties</td><td>Yes (but may be weighted differently)</td></tr>
+<tr><td>Debts (mortgages, credit cards, loans)</td><td>Yes — reduce the net pool</td></tr>
+</tbody></table>
+<p>Assets in a third party's name (such as a family trust or a company) may also be included if the court is satisfied they are effectively under a party's control. This is a complex area requiring legal advice.</p>
+
+<h2 id="super">Superannuation splitting</h2>
+<p>Superannuation is included in the property pool but cannot be paid out as cash (except in very limited circumstances). Instead, a superannuation splitting order transfers a portion of one party's super into the other party's super fund. This is one of the most important entitlements in longer relationships, particularly where one party has had lower super contributions due to time spent as a carer.</p>
+<p>To split superannuation, you need a superannuation splitting agreement (formalised as part of consent orders or a Binding Financial Agreement) and must comply with the trustee's requirements. This process takes 4–8 weeks beyond finalisation of the main settlement.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Superannuation splitting is one of the most overlooked and most valuable entitlements in longer relationships. Our mediators help ensure nothing is left on the table. Free consultation.</p><a href="/book-a-consultation/" class="btn btn-primary">Protect your entitlements — free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="parenting">Parenting entitlements</h2>
+<p>When children are involved, "entitlement" is framed differently — the focus is on the children's best interests, not the parents' rights. Under the Family Law Act (as amended in 2023), there is no presumption that parents share equal time with children. Each parenting arrangement is assessed on the specific circumstances of the family, with the child's safety and wellbeing as the primary consideration.</p>
+<p>What you are likely to achieve in parenting arrangements depends on: your relationship with the children; each parent's capacity to meet the children's needs; any family violence concerns; where the children live and go to school; and what is least disruptive to the children's established routines. Parenting arrangements are highly individual and resist formulaic answers.</p>
+<p><a href="/family-mediation/">Family mediation</a> for parenting produces durable, workable arrangements because parents design them — courts impose them. Self-designed arrangements typically reflect the family's actual circumstances better than court orders.</p>
+
+<h2 id="spousal-maintenance">Spousal maintenance</h2>
+<p>Spousal maintenance is a payment from one former partner to the other to meet their reasonable needs where they cannot support themselves adequately and the other party has the capacity to pay. It is not automatic — it requires both conditions to be met.</p>
+<p>It is most commonly relevant where one party has been out of the workforce for an extended period raising children, and their income-earning capacity has been significantly reduced. Spousal maintenance can be agreed as a lump sum or periodically payments, for a defined term or ongoing. It is taxable income for the recipient and generally tax-deductible for the payer.</p>
+
+<h2 id="time-limits">Time limits to be aware of</h2>
+<p>Critical time limits apply to property claims on separation:</p>
+<ul>
+<li><strong>De facto couples:</strong> Must file property proceedings within 2 years of the end of the relationship</li>
+<li><strong>Married couples:</strong> Must file property proceedings within 12 months of the divorce becoming final (i.e., after the 1-year separation period plus the divorce application and waiting period — in practice 2.5–3 years after separation)</li>
+</ul>
+<p>Missing these time limits means you need the court's leave (permission) to proceed — which is not guaranteed. Mediation and reaching agreement before these deadlines removes the risk entirely.</p>
+
+<h2 id="how-mediation-helps">How mediation determines entitlements</h2>
+<p><a href="/property-settlement-in-family-law/">Property settlement mediation</a> helps both parties understand their likely range of entitlements and reach an agreement within that range without the cost and delay of court. The mediator does not tell you what the law says you are entitled to — that is the role of your lawyer. But the mediator helps both parties move from their opening positions toward a negotiated outcome.</p>
+<p>Most property settlements reached in mediation fall within the range a court would order — which means the outcome is fair, and both parties avoided the time and cost of getting there through litigation.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Am I entitled to half of everything even if I didn't work?</h3>
+<p>Non-financial contributions — including homemaking and caring for children — are given legal weight in Australian family law. A party who was the primary carer and homemaker during a long relationship will typically receive a significant share of the property pool even if they made limited financial contributions. The precise weight given to non-financial contributions depends on the length of the relationship and all surrounding circumstances.</p>
+<h3>What if my partner hid assets during the relationship?</h3>
+<p>Both parties are required to make full and frank disclosure of all assets and liabilities. If you suspect assets have been hidden or underdisclosed, your lawyer can seek orders for disclosure, subpoena financial records, or engage a forensic accountant. Hidden assets that are later discovered can result in the property settlement being revisited by a court.</p>
+<h3>Can we agree on a different split than what the law would give us?</h3>
+<p>Yes — provided the agreement is just and equitable. Parties can agree to virtually any division they choose. If the agreed division is significantly outside the range a court would order, both parties' lawyers should flag this, and independent legal advice is strongly recommended before formalising the agreement as consent orders or a BFA.</p>
+<h3>Does fault (like infidelity) affect what I am entitled to?</h3>
+<p>No. Australian family law is no-fault. The cause of the relationship breakdown — including infidelity — is not relevant to the property settlement. Contributions and future needs are what matter.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+<li><a href="/binding-financial-agreement/">binding financial agreements</a></li>
+</ul>
+<p>For the legal framework: <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (Part VIII). For superannuation splitting: <a href="https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/superannuation-and-relationship-breakdown" target="_blank" rel="noopener">ATO — Superannuation and relationship breakdown</a>.</p>
+""",
+},
+
+"how-are-contributions-assessed-in-family-law-matters": {
+    "title": "How Are Contributions Assessed in Family Law?",
+    "desc":  "How contributions are assessed in Australian family law property settlements — financial, non-financial, homemaker and parent contributions, and initial contributions.",
+    "h1":    "How Are Contributions Assessed in Family Law Matters?",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> In Australian family law, contributions to the property pool are assessed across four categories: direct financial contributions (income, inheritances), indirect financial contributions (paying household expenses), non-financial contributions (homemaking, renovation), and contributions as homemaker and parent (raising children). All four categories are given weight — a party who was the primary carer makes a recognised legal contribution even if they earned no income. The assessment is qualitative, not formulaic.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#why-contributions-matter">Why contributions assessment matters</a></li>
+<li><a href="#four-categories">The four categories of contributions</a></li>
+<li><a href="#initial">Initial contributions and inheritances</a></li>
+<li><a href="#homemaker">Homemaker and parent contributions</a></li>
+<li><a href="#length">How relationship length affects contributions</a></li>
+<li><a href="#adjustment">The future needs adjustment</a></li>
+<li><a href="#examples">Worked examples</a></li>
+<li><a href="#mediation">How contributions are assessed in mediation</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="why-contributions-matter">Why contributions assessment matters</h2>
+<p>The assessment of contributions is the second step of the four-step property settlement process under Part VIII of the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>. It answers the question: given all the contributions each party made to the relationship and its property, what percentage of the pool does each party's contribution represent?</p>
+<p>The contributions assessment is not the final answer — it is then adjusted for future needs. But contributions provide the starting point, and in long relationships they often set the range within which negotiation occurs.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Contributions assessment is often where property settlements get stuck. Our mediators help both parties reach a fair view of contributions and move toward agreement. Free consultation.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="four-categories">The four categories of contributions</h2>
+<p>Section 79(4) of the Family Law Act requires the court to take into account the following categories of contribution:</p>
+<table><thead><tr><th>Category</th><th>Examples</th></tr></thead><tbody>
+<tr><td>Direct financial contributions</td><td>Income, business profits, inheritance, gifts of money, proceeds from sale of pre-relationship assets</td></tr>
+<tr><td>Indirect financial contributions</td><td>Paying household expenses that freed the other party to earn or invest, guaranteeing loans, paying rates and insurance</td></tr>
+<tr><td>Non-financial contributions</td><td>Renovating the family home with labour, maintaining property, building or improving a business through unpaid work</td></tr>
+<tr><td>Contributions as homemaker and parent</td><td>Managing the household, raising children, supporting a partner's career advancement by taking on domestic responsibilities</td></tr>
+</tbody></table>
+<p>No single category automatically outweighs another. A party who earned $2 million over the course of the marriage made a substantial financial contribution — but a party who raised three children full-time for 15 years also made a substantial contribution, and courts have consistently affirmed the equal value of these different contribution types.</p>
+
+<h2 id="initial">Initial contributions and inheritances</h2>
+<p>Property brought into the relationship by one party — a pre-relationship home, a savings balance, an inheritance — is treated as a "initial contribution" by that party. However, the weight given to initial contributions diminishes over time. In a short relationship (under 5 years), an initial contribution of significant value may weigh heavily. In a long relationship (15 years+), the same initial contribution may be substantially diluted by the joint contributions made over the course of the relationship.</p>
+<p>Inheritances received during the relationship are generally treated as contributions by the receiving party — but the court considers whether the inheritance was used for joint benefit (reducing its weight as an individual contribution) or kept separately (preserving its weight). An inheritance immediately paid into the mortgage or holiday fund is treated differently from an inheritance kept in a separate account and maintained as separate property.</p>
+
+<h2 id="homemaker">Homemaker and parent contributions in detail</h2>
+<p>Section 79(4)(c) of the Family Law Act specifically directs the court to consider contributions made "to the welfare of the family constituted by the parties to the marriage and any children of the marriage, including any contribution made in the capacity of homemaker or parent." This section was deliberately enacted to ensure that unpaid domestic labour is given legal recognition.</p>
+<p>What this means in practice:</p>
+<ul>
+<li>A party who stayed home to raise children while the other party built a career made a recognised legal contribution</li>
+<li>That contribution supported the other party's income-earning capacity — and the assets acquired from that income are partly attributable to the homemaker's support</li>
+<li>The longer the period of primary caring, and the younger the children were when that caring was done, the more weight is generally given to the homemaker contribution</li>
+</ul>
+<p>Homemaker contributions are assessed qualitatively — there is no formula that converts years of parenting into a percentage. Courts have recognised homemaker contributions at anywhere from 40% to 60% of the combined contributions, depending on the length of the relationship and all surrounding circumstances.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Whether you were the primary earner or the primary carer, your contributions matter in a property settlement. Our mediators help both parties reach a fair view. Book a free consultation.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="length">How relationship length affects contributions</h2>
+<p>Relationship length is one of the most important contextual factors in contributions assessment:</p>
+<ul>
+<li><strong>Short relationships (under 5 years):</strong> Initial contributions carry significant weight. The court may return each party close to what they brought in, adjusted for joint contributions during the relationship.</li>
+<li><strong>Medium relationships (5–15 years):</strong> A blend of initial contributions and ongoing contributions. Initial contributions diluted but still relevant. Joint homemaker contributions increasingly recognised.</li>
+<li><strong>Long relationships (15+ years):</strong> Initial contributions are substantially or entirely diluted. The ongoing financial and non-financial contributions are the dominant factor. Outcomes tend toward equality as a starting point, then adjusted for future needs.</li>
+</ul>
+
+<h2 id="adjustment">The future needs adjustment</h2>
+<p>After contributions are assessed, the result is adjusted for "future needs" under section 75(2) (for married couples) or section 90SF(3) (for de facto couples). Factors include:</p>
+<ul>
+<li>Age and state of health of each party</li>
+<li>Income, property, and financial resources</li>
+<li>Physical and mental capacity for employment</li>
+<li>Whether a party has care of a child under 18</li>
+<li>Standard of living during the relationship</li>
+<li>Duration of the marriage and its effect on earning capacity</li>
+</ul>
+<p>The future needs adjustment typically shifts the contributions-based percentage toward the party with greater economic disadvantage — often the primary carer, who has reduced earning capacity and bears the ongoing cost of childcare.</p>
+
+<h2 id="examples">Worked examples</h2>
+<p><strong>Example 1 — Long marriage, homemaker party:</strong> 20-year marriage. Husband earned $120,000/year for most of the marriage. Wife worked part-time for the first five years then left paid work to raise three children. Property pool: $1.8m. Contributions assessment: approximately equal, given the length of the relationship and the wife's substantial homemaker contributions. Future needs adjustment: 5–10% additional to wife, given her reduced earning capacity and primary care of the youngest child. Likely outcome: wife 55–60%, husband 40–45%.</p>
+<p><strong>Example 2 — Short relationship, initial contribution:</strong> 3-year de facto relationship. Partner A owned a home worth $800,000 at the commencement of the relationship. Partner B contributed $50,000 toward renovations and shared household expenses. Property pool: $900,000 (home now worth $900,000 less $200,000 mortgage). Contributions assessment: Partner A 80%, Partner B 20%, given the dominance of Partner A's initial contribution in a short relationship. Future needs: modest adjustment for Partner B, who has lower income. Likely outcome: Partner A 75–80%, Partner B 20–25%.</p>
+
+<h2 id="mediation">How contributions are assessed in mediation</h2>
+<p>In <a href="/property-settlement-in-family-law/">property settlement mediation</a>, the mediator does not make a binding assessment of contributions — that is a legal question for lawyers and, ultimately, courts. But the mediator helps parties:</p>
+<ul>
+<li>Identify all contributions both parties made</li>
+<li>Explore where their assessments of those contributions differ and why</li>
+<li>Understand the range within which a court might resolve any dispute</li>
+<li>Move from competing positions toward an agreed split</li>
+</ul>
+<p>Having a lawyer provide an independent opinion on likely contributions outcomes before mediation — and bringing that opinion to the session — allows parties to negotiate from an informed position.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Do contributions during the relationship only matter, or does pre-relationship property count?</h3>
+<p>Both matter. Pre-relationship property brought in by a party is assessed as an initial contribution. Property acquired during the relationship through joint effort is assessed as joint contributions. The weight of pre-relationship property diminishes over time.</p>
+<h3>What if one party was responsible for a debt incurred during the relationship?</h3>
+<p>Debts incurred recklessly or for the sole benefit of one party may be treated as that party's sole liability — reducing their share of the net pool. This is sometimes called a "negative contribution" or dissipation argument. Evidence of the circumstances of the debt is important.</p>
+<h3>Are gambling losses or wastefulness taken into account?</h3>
+<p>Yes. Courts have the power to "notionally add back" assets that have been wasted or dissipated. If one party gambled away $50,000 after separation, the court may treat that $50,000 as still part of the pool for the purpose of the settlement, effectively making the wasting party bear the loss from their own share.</p>
+<h3>Can we agree on our own assessment of contributions without going to court?</h3>
+<p>Absolutely. Most property settlements are reached by agreement in negotiation or mediation. The parties (with their lawyers) agree on an outcome that they both consider fair — without needing a court to adjudicate contributions. The agreed outcome is then formalised as consent orders.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/what-am-i-entitled-to-in-a-separation-in-australia/">what you are entitled to in a separation</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/binding-financial-agreement/">binding financial agreements</a></li>
+</ul>
+<p>For the legislative framework: <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (sections 79 and 75(2)). For research on homemaker contributions: <a href="https://aifs.gov.au/" target="_blank" rel="noopener">Australian Institute of Family Studies</a>.</p>
+""",
+},
+
+"how-are-contributions-assessed-in-family-law-matters-2": {
+    "title": "Contributions in Family Law: The Complete Guide",
+    "desc":  "A complete guide to how contributions are assessed in Australian family law — types of contribution, adjustments, worked examples, and negotiation in mediation.",
+    "h1":    "Contributions in Family Law: Types, Assessment, and Negotiation",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Australian family law assesses contributions across four categories — direct financial, indirect financial, non-financial, and homemaker/parent contributions. All four carry legal weight. The outcome of the contributions assessment is a starting percentage for each party, which is then adjusted for future needs. Understanding both steps helps parties negotiate from an informed position — and mediation is the most efficient way to reach agreement without the cost of a court hearing.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#legal-basis">The legal basis for contributions assessment</a></li>
+<li><a href="#direct-financial">Direct financial contributions</a></li>
+<li><a href="#indirect-financial">Indirect financial contributions</a></li>
+<li><a href="#non-financial">Non-financial contributions</a></li>
+<li><a href="#homemaker">Homemaker and parenting contributions</a></li>
+<li><a href="#weighting">How courts weight different contributions</a></li>
+<li><a href="#post-separation">Post-separation contributions</a></li>
+<li><a href="#negotiating">Negotiating contributions in mediation</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="legal-basis">The legal basis for contributions assessment</h2>
+<p>Section 79(4) of the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> directs the Federal Circuit and Family Court of Australia to take into account the contributions that each party made to the property of the parties. This provision covers both acquisitions and improvements to property, and explicitly includes contributions as homemaker and parent.</p>
+<p>The contributions assessment is the second step of the four-step process (after identifying the property pool and before adjusting for future needs). It does not produce a final number — it produces a range, which is then moved by the section 75(2) future needs factors. Most property settlements involve contributions in the range 40:60 to 60:40, though extreme cases outside this range are possible.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Understanding contributions in family law is complex — but our mediators help both parties find fair common ground. Book a free consultation to discuss your situation.</p><a href="/book-a-consultation/" class="btn btn-primary">Free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="direct-financial">Direct financial contributions</h2>
+<p>Direct financial contributions are the clearest category to identify and quantify. They include:</p>
+<ul>
+<li>Wages and salary earned during the relationship</li>
+<li>Business income and profits</li>
+<li>Investment returns, rental income</li>
+<li>Proceeds from sale of assets owned before the relationship</li>
+<li>Inheritances and gifts of money</li>
+<li>Lump sum payments, redundancy payments, insurance proceeds</li>
+</ul>
+<p>Importantly, direct financial contributions are assessed on a global basis for the whole relationship — not year by year. A party who earned more in the early years of the relationship does not automatically "get credit" for that year in isolation from the rest of the relationship.</p>
+
+<h2 id="indirect-financial">Indirect financial contributions</h2>
+<p>Indirect financial contributions are those that did not directly acquire property but freed the other party to do so. They include:</p>
+<ul>
+<li>Paying household expenses (rent, bills, groceries) that enabled the other party to invest or save</li>
+<li>Guaranteeing loans or providing security for the other party's borrowings</li>
+<li>Financial support provided to the relationship that was not directed at a specific asset</li>
+</ul>
+<p>Indirect financial contributions are often overlooked in negotiations but can be significant, particularly in relationships where one party had a higher income and the other "kept the household running" so the higher earner could build wealth.</p>
+
+<h2 id="non-financial">Non-financial contributions</h2>
+<p>Non-financial contributions are contributions of labour, skill, and effort rather than money. They include:</p>
+<ul>
+<li>Renovating the family home — labour, project management, sourcing materials</li>
+<li>Building or maintaining investment properties</li>
+<li>Unpaid work in a family business</li>
+<li>Managing and improving agricultural land</li>
+</ul>
+<p>Non-financial contributions can be very significant. A party who contributed $150,000 of labour to a renovation that added $300,000 in value to the property has made a substantial non-financial contribution — equivalent in economic terms to a $150,000 financial contribution, and arguably more valuable given the leveraged return.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>If you've made significant non-financial contributions — renovation, unpaid business work, property management — our mediators help ensure those contributions are properly recognised in your settlement. Free consultation.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="homemaker">Homemaker and parenting contributions</h2>
+<p>This is the category that most commonly determines the difference between a 50/50 split and a more adjusted outcome in long relationships. Section 79(4)(c) directs the court to consider "contributions made to the welfare of the family ... including any contribution made in the capacity of homemaker or parent."</p>
+<p>Homemaker and parenting contributions include:</p>
+<ul>
+<li>Managing the household — cooking, cleaning, organising, maintenance coordination</li>
+<li>Raising children — attending school events, medical appointments, sport, homework</li>
+<li>Supporting a partner's career by managing the domestic sphere so they could work longer hours or travel</li>
+<li>Managing a household during extended periods when the other party was away for work</li>
+</ul>
+<p>These contributions are recognised as co-equal with financial contributions. A party who left paid work for 10 years to raise children, managing the household full-time while their partner built a career, has made a legal contribution that the court takes seriously and that parties in mediation should take seriously.</p>
+
+<h2 id="weighting">How courts weight different contributions</h2>
+<p>There is no statutory formula for weighting contributions — it is a matter of judicial discretion, informed by the totality of the circumstances. Principles from case law include:</p>
+<ul>
+<li><strong>Equality of contribution in long marriages:</strong> Courts have frequently recognised that in a long marriage where both parties contributed across all categories, overall contributions are often assessed as equal — even where financial contributions were heavily weighted toward one party.</li>
+<li><strong>Dilution of initial contributions over time:</strong> A significant asset brought into the relationship loses weight as the relationship lengthens and joint contributions accumulate.</li>
+<li><strong>Exceptional financial contribution:</strong> Where one party made an extraordinary financial contribution (a large inheritance, a successful business sale), the court may depart from equality even in a long relationship.</li>
+<li><strong>Wasted contributions:</strong> Where one party's conduct (gambling, reckless spending) diminished the pool, the court may treat the wasted assets as notionally remaining in the pool, charged against the wasting party's share.</li>
+</ul>
+
+<h2 id="post-separation">Post-separation contributions</h2>
+<p>Contributions made after separation but before finalisation of the property settlement are also taken into account. These include:</p>
+<ul>
+<li>Payments toward the mortgage on the family home (where the paying party does not live there)</li>
+<li>Maintaining and managing investment properties</li>
+<li>Significant increases in asset value driven by one party's post-separation efforts</li>
+<li>Conversely, waste or dissipation of assets post-separation</li>
+</ul>
+<p>Post-separation contributions are assessed separately from contributions during the relationship, and may shift the overall contributions percentage if they are significant.</p>
+
+<h2 id="negotiating">Negotiating contributions in mediation</h2>
+<p>In <a href="/property-settlement-in-family-law/">property settlement mediation</a>, the contributions discussion is often the most sensitive part of the session. Both parties come with a view of what they contributed, and those views frequently diverge significantly. The mediator's role is to:</p>
+<ul>
+<li>Help each party articulate their contributions clearly and specifically</li>
+<li>Ensure each party genuinely hears and considers what the other party contributed</li>
+<li>Introduce legal context (typically from each party's lawyer) about the range of outcomes a court might reach</li>
+<li>Move the discussion from "who did more" (a contest) to "what is fair given all of this" (a negotiation)</li>
+</ul>
+<p>Most parties enter mediation with an overly optimistic view of their own contributions and an overly critical view of the other party's. The mediator's reality-testing role is essential to moving both parties toward a negotiated centre.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>If I earned most of the money, do I get most of the property?</h3>
+<p>Not automatically. Financial contributions are one of four categories. A party who earned more financially may have done so because the other party managed the household and raised the children — which is a legal contribution. Courts assess the totality of contributions, not just the financial ones.</p>
+<h3>My partner brought significant assets into the relationship. Do they keep them?</h3>
+<p>Not necessarily — particularly in a long relationship. Initial contributions dilute over time. Assets brought into a short relationship are more likely to be returned to the contributing party than those brought into a 20-year relationship.</p>
+<h3>Does it matter who filed for divorce or who "caused" the breakdown?</h3>
+<p>No. Australian family law is no-fault. The reason the relationship ended is not relevant to contributions assessment. What matters is what each party contributed, not why the relationship broke down.</p>
+<h3>Can contributions be waived or given up in a settlement?</h3>
+<p>Yes. Parties can agree to any division they choose, including one that does not reflect the strict legal assessment of contributions, provided both parties have independent legal advice and the agreement is just and equitable. Consent orders give legal effect to whatever the parties agree.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/what-am-i-entitled-to-in-a-separation-in-australia/">what you are entitled to in a separation</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/cost-of-divorce-in-australia/">cost of divorce in Australia</a></li>
+</ul>
+<p>Legislative basis: <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> (sections 79(4), 75(2)). For research on gender and family law contributions: <a href="https://aifs.gov.au/" target="_blank" rel="noopener">Australian Institute of Family Studies</a>.</p>
+""",
+},
+
+"mediation-with-a-narcissist": {
+    "title": "Mediation With a Narcissist: What Actually Works",
+    "desc":  "Can mediation work with a narcissist? What to expect, strategies that work, what to watch for, and when mediation may not be appropriate in high-conflict cases.",
+    "h1":    "Mediation With a Narcissist: What Actually Works",
+    "read_min": "10",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Mediation with a narcissistic or high-conflict person is more difficult — but for many families, it is still achievable and preferable to years of costly litigation. The key is an experienced mediator who can manage dominating behaviour, shuttle techniques that reduce direct conflict, and a strategy that focuses on interests rather than positions. Preparation is everything. If you're experiencing genuine family violence or coercive control, different rules apply — speak to a lawyer first.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#what-to-expect">What to expect from mediation with a narcissist</a></li>
+<li><a href="#tactics">Common tactics and how mediators manage them</a></li>
+<li><a href="#shuttle">Why shuttle mediation often works better</a></li>
+<li><a href="#preparation">Preparation strategies that help</a></li>
+<li><a href="#focus-interests">Focusing on interests, not personalities</a></li>
+<li><a href="#when-not">When mediation is not appropriate</a></li>
+<li><a href="#after">After mediation — protecting the agreement</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="what-to-expect">What to expect from mediation with a narcissist</h2>
+<p>Mediating with a person who displays narcissistic or high-conflict traits is genuinely more challenging than mediating with someone willing to negotiate in good faith. But "more challenging" does not mean impossible. Many of Mediations Australia's most productive sessions involve one party who was described by the other as a narcissist — and the outcome is often a workable agreement that avoids years of court proceedings.</p>
+<p>What you can typically expect:</p>
+<ul>
+<li><strong>Positional opening:</strong> A high-conflict person often opens with extreme demands, framed as non-negotiable</li>
+<li><strong>Blame narratives:</strong> Significant time may be spent attributing fault and recounting grievances rather than discussing future arrangements</li>
+<li><strong>Control of the room:</strong> Attempts to dominate the discussion, speak over the other party, or reframe every issue around themselves</li>
+<li><strong>Shifting goalposts:</strong> Once one point is conceded, a new demand appears</li>
+<li><strong>Agreement in the room, reversal later:</strong> Some high-conflict people agree in the session and then refuse to sign or comply</li>
+</ul>
+<p>An experienced mediator is trained in all of these dynamics and has specific techniques for managing each one.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Our mediators have extensive experience managing high-conflict and difficult personalities. Don't let your ex's behaviour force you into court. Book a free consultation to discuss your situation.</p><a href="/book-a-consultation/" class="btn btn-primary">Free consultation — discuss your situation <span class="arr">→</span></a></div></div>
+
+<h2 id="tactics">Common tactics and how mediators manage them</h2>
+<p>Skilled mediators have a toolkit specifically for managing high-conflict behaviour:</p>
+<ul>
+<li><strong>Reframing:</strong> The mediator translates blame and grievance into forward-focused questions. "She always puts herself first" becomes "What arrangements would make you feel your needs are being considered?"</li>
+<li><strong>Process management:</strong> Strict time allocation and turn-taking prevents one party from dominating the floor</li>
+<li><strong>Reality-testing:</strong> The mediator asks the high-conflict party questions about what a court is likely to do, making extreme positions harder to maintain</li>
+<li><strong>Breaking sessions into caucuses:</strong> If joint discussion is unproductive, the mediator can meet with each party separately</li>
+<li><strong>Redirecting to interests:</strong> "What outcome do you actually need here?" is harder to answer with a blame narrative than a positional demand</li>
+<li><strong>Documenting agreements in real time:</strong> Writing down each agreed point prevents later "I didn't agree to that" revisionism</li>
+</ul>
+
+<h2 id="shuttle">Why shuttle mediation often works better</h2>
+<p>Shuttle mediation — where the mediator moves between parties who are in separate rooms (or on separate video calls) rather than meeting jointly — is often the most effective format for high-conflict personalities. Its advantages:</p>
+<ul>
+<li>Removes the "performance" dynamic — a narcissistic person in a joint room may play to an audience and dig in; alone with the mediator they may be more flexible</li>
+<li>Prevents direct confrontation that escalates conflict and produces reactive positions</li>
+<li>Allows the mediator to test proposals with each party privately before bringing them to the table</li>
+<li>Reduces the distress for the other party, who does not have to sit across from someone using intimidation tactics</li>
+</ul>
+<p>At Mediations Australia, we can run sessions in shuttle format at the outset where individual intake sessions suggest this would be more productive. You do not have to sit in the same room as someone who has treated you badly.</p>
+
+<h2 id="preparation">Preparation strategies that help</h2>
+<p>If you are going into mediation with a high-conflict person, preparation is your most important tool:</p>
+<ol>
+<li><strong>Know your BATNA:</strong> Your Best Alternative to a Negotiated Agreement — what happens if mediation fails and you go to court. Understanding this prevents you from accepting an unreasonable deal in the room.</li>
+<li><strong>Get legal advice first:</strong> Know what a court is likely to do. A high-conflict person often uses your uncertainty against you. Knowledge is protection.</li>
+<li><strong>Prepare financially:</strong> Have your financial documents ready — valuations, superannuation statements, tax returns. High-conflict people sometimes use financial obfuscation as a tactic; being prepared limits its impact.</li>
+<li><strong>Brief the mediator:</strong> Use your individual intake session to alert the mediator to specific tactics your ex uses. The mediator can then prepare strategies specifically for your situation.</li>
+<li><strong>Manage your own reactivity:</strong> Responses to provocation are your vulnerability. Practise staying calm and focused on outcome, not engagement.</li>
+<li><strong>Have a support person:</strong> A lawyer or trusted support person can attend as support, take notes, and help you debrief between sessions.</li>
+</ol>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Preparation is the key to mediating successfully with a high-conflict person. Book a consultation and we'll help you develop a strategy specific to your situation.</p><a href="/book-a-consultation/" class="btn btn-primary">Prepare strategically — book a consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="focus-interests">Focusing on interests, not personalities</h2>
+<p>One of the most important principles in high-conflict mediation is keeping the focus on interests and outcomes, not on the other person's personality or behaviour. Attempting to diagnose, label, or challenge a high-conflict person's behaviour in the session is almost always counterproductive — it escalates defensiveness and entrenches positions.</p>
+<p>What works instead:</p>
+<ul>
+<li>Focus entirely on what you need from the outcome</li>
+<li>Respond to proposals on their merits, not on the motive behind them</li>
+<li>Avoid relitigating past grievances, which the other party will use to dominate the session</li>
+<li>Accept workable proposals even if they come with obnoxious framing</li>
+</ul>
+<p>A workable parenting arrangement is a workable parenting arrangement — regardless of whether it was proposed generously or grudgingly. Focus on the substance of the agreement, not the manner in which it was offered.</p>
+
+<h2 id="when-not">When mediation is not appropriate</h2>
+<p>Not every high-conflict situation is suitable for mediation. Mediation is generally not appropriate where:</p>
+<ul>
+<li>There is a history of family violence or coercive control that makes the power imbalance too significant for fair negotiation</li>
+<li>One party is genuinely afraid of the other and cannot participate without safety risk</li>
+<li>One party has a significant mental health impairment that prevents meaningful participation</li>
+<li>One party is concealing significant assets and court disclosure powers are needed</li>
+</ul>
+<p>If you are experiencing family violence or coercive control, contact 1800RESPECT (1800 737 732) or 000. You may be exempt from the FDR requirement under the Family Law Act, allowing you to file parenting proceedings without first attempting mediation.</p>
+<p>"Narcissist" is sometimes used loosely to describe a difficult ex-partner rather than a clinical diagnosis. Many people who are described this way are genuinely high-conflict without meeting clinical criteria — and are still able to mediate productively with the right mediator. The question is not whether someone is difficult, but whether mediation is safe and whether genuine agreement is achievable.</p>
+
+<h2 id="after">After mediation — protecting the agreement</h2>
+<p>High-conflict people sometimes agree in mediation and then refuse to sign the formal documents, or comply for a period and then revert. Protecting against this:</p>
+<ul>
+<li>Document agreements carefully in the session — both parties sign a written summary before leaving</li>
+<li>Formalise as consent orders as quickly as possible — once orders are made, breach carries consequences</li>
+<li>Build compliance mechanisms into the agreement — specific obligations, timeframes, and consequences for breach</li>
+<li>Keep records of all communication and any breach of the agreed terms</li>
+</ul>
+<p>Consent orders give both parties the legal protection of court-enforceable terms. For a high-conflict person, knowing that non-compliance has real consequences is often the most effective compliance mechanism.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Can a narcissist be ordered to attend mediation?</h3>
+<p>For parenting disputes, both parties are required to attempt FDR before filing. If one party refuses to attend, the mediator issues a certificate allowing the other party to file in court — and the refusing party's non-cooperation is on the record. Courts take a dim view of parties who refuse to engage with dispute resolution.</p>
+<h3>What if my ex uses mediation to delay proceedings?</h3>
+<p>A mediator who recognises that a party is attending in bad faith or using the process for delay can terminate the session and issue a certificate accordingly. Good-faith participation is required, not merely attendance.</p>
+<h3>Should I tell the mediator about my ex's diagnosis?</h3>
+<p>You can share relevant context in your intake session about what you expect from the other party. Clinical diagnoses are not necessary — it is more useful to describe specific behaviours so the mediator can prepare strategies. The mediator will not share what you have said with the other party.</p>
+<h3>Is shuttle mediation more expensive?</h3>
+<p>Shuttle mediation may take longer because the mediator is not working with both parties simultaneously. This can increase the time cost. However, a failed joint session that escalates to litigation costs far more. At Mediations Australia, we assess the best format for your specific situation during the intake process.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/when-is-mediation-not-a-good-idea/">when mediation is not appropriate</a></li>
+<li><a href="/family-mediation-process-guide/">family mediation process guide</a></li>
+<li><a href="/parenting-mediation-sydney/">parenting mediation</a></li>
+<li><a href="/is-family-law-mediation-compulsory/">is family law mediation compulsory</a></li>
+</ul>
+<p>If you are experiencing family violence: <a href="https://www.1800respect.org.au/" target="_blank" rel="noopener">1800RESPECT (1800 737 732)</a> — 24/7 confidential support. For the FDR exemption framework: <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>.</p>
+""",
+},
+
+"australia-lgbt-marriage-mediation": {
+    "title": "LGBTQ+ Family Law Mediation in Australia",
+    "desc":  "LGBTQ+ family law mediation in Australia — same-sex couples, de facto rights, parenting arrangements, donor agreements, and how mediation protects your family.",
+    "h1":    "LGBTQ+ Family Law Mediation in Australia",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> LGBTQ+ couples in Australia have the same family law rights as heterosexual couples under the Marriage Act 1961 (for married couples) and the Family Law Act 1975 (for both married and de facto couples). Same-sex parenting arrangements, property settlements, and de facto entitlements are all governed by the same framework. Mediation is available to all couples regardless of gender or sexuality, and Mediations Australia provides a fully inclusive, respectful service for all families.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#legal-framework">The legal framework for LGBTQ+ couples</a></li>
+<li><a href="#de-facto">De facto relationship rights</a></li>
+<li><a href="#property">Property settlement for same-sex couples</a></li>
+<li><a href="#parenting">Parenting arrangements and legal parentage</a></li>
+<li><a href="#donor">Donor agreements and surrogacy</a></li>
+<li><a href="#mediation">How mediation helps LGBTQ+ families</a></li>
+<li><a href="#wa">Different rules in Western Australia</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="legal-framework">The legal framework for LGBTQ+ couples in Australia</h2>
+<p>Since the Marriage Amendment (Definition and Religious Freedoms) Act 2017 came into force on 9 December 2017, same-sex couples have had the right to marry in Australia. Married same-sex couples have exactly the same legal rights and obligations as married heterosexual couples — including under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> for property settlements, parenting arrangements, and spousal maintenance.</p>
+<p>Same-sex de facto couples (those not married but living together in a committed relationship) have also been covered by the Family Law Act since 2009, when the Family Law Amendment (De Facto Financial Matters and other Measures) Act extended federal jurisdiction to de facto couples of any gender. (Note: Western Australia has different rules — see below.)</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Mediations Australia provides a fully inclusive mediation service for LGBTQ+ families. Our mediators are experienced in same-sex family law and treat all families with equal respect. Book a free consultation.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="de-facto">De facto relationship rights</h2>
+<p>A de facto relationship under the Family Law Act is one where two people (of any gender) live together on a genuine domestic basis but are not married. The definition does not require cohabitation — couples who live apart for work reasons may still qualify — but cohabitation is the most common indicator.</p>
+<p>To access de facto property rights under the Family Law Act, at least one of the following must apply:</p>
+<ul>
+<li>The couple have lived together for at least 2 years</li>
+<li>There is a child of the relationship</li>
+<li>One party made substantial contributions to the property or welfare of the other, and failure to make an order would result in serious injustice</li>
+</ul>
+<p>Once the de facto threshold is established, property and spousal maintenance rights mirror those of married couples exactly. The two-year time limit for filing property proceedings after the relationship ends also applies.</p>
+
+<h2 id="property">Property settlement for same-sex couples</h2>
+<p>Property settlement for same-sex couples — married or de facto — follows exactly the same four-step process as for heterosexual couples:</p>
+<ol>
+<li>Identify all assets and liabilities of both parties</li>
+<li>Assess contributions — financial, non-financial, and as homemaker/parent</li>
+<li>Adjust for future needs (income disparity, caring responsibilities, health)</li>
+<li>Determine a just and equitable division</li>
+</ol>
+<p>All assets in either party's name are potentially included — including superannuation. Superannuation splitting is available to same-sex couples in the same way as to heterosexual couples.</p>
+<p><a href="/property-settlement-in-family-law/">Property settlement mediation</a> for same-sex couples follows the same process as for any family. The mediator helps both parties identify the property pool, work through contributions, and reach an agreed split — avoiding the cost and delay of court proceedings.</p>
+
+<h2 id="parenting">Parenting arrangements and legal parentage</h2>
+<p>Parenting arrangements for children of LGBTQ+ families are determined by the same best-interests framework as for any family. The critical issue is often legal parentage — who is legally recognised as a parent — which affects:</p>
+<ul>
+<li>Parental responsibility (decision-making authority)</li>
+<li>Parenting orders and time arrangements</li>
+<li>Child support obligations</li>
+<li>Inheritance and next-of-kin status</li>
+</ul>
+<p>Under the Family Law Act, the woman who gives birth is always the legal mother. For same-sex female couples using donor insemination, the non-birth partner is presumed to be a legal parent if the couple are married or de facto partners at the time of conception — provided the donor is not the other parent. This was extended to same-sex couples by state-level reforms that have now been implemented across most Australian jurisdictions.</p>
+<p>For same-sex male couples who have used surrogacy, parentage is a more complex question governed by state legislation on surrogacy and parentage orders. A parentage order from the Family Court may be needed to vest legal parentage in the intended parents.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Parenting arrangements for LGBTQ+ families can involve complex parentage questions. Our mediators help families navigate these issues and design parenting plans that work. Free consultation.</p><a href="/book-a-consultation/" class="btn btn-primary">Free consultation — discuss your family's situation <span class="arr">→</span></a></div></div>
+
+<h2 id="donor">Donor agreements and surrogacy</h2>
+<p>Donor agreements (between a couple and a known sperm or egg donor) are private agreements that set out the intended legal relationship between the donor and any resulting child. Important points:</p>
+<ul>
+<li>Donor agreements are not legally binding under Australian law — they are not enforceable contracts</li>
+<li>A known donor may apply to be recognised as a legal parent or to have contact with the child, regardless of what a donor agreement says</li>
+<li>Mediation between intended parents and a known donor is an important tool for setting clear expectations and managing disputes before they become litigation</li>
+</ul>
+<p>For surrogacy, commercial surrogacy is prohibited in all Australian states and territories. Altruistic surrogacy is permitted in most states, subject to strict conditions. Parentage orders from the Family Court are needed to transfer legal parentage from the surrogate to the intended parents after birth.</p>
+
+<h2 id="mediation">How mediation helps LGBTQ+ families</h2>
+<p><a href="/family-mediation/">Family mediation</a> is available to all couples — married, de facto, same-sex, or different-sex. The mediation process does not depend on the legal form of the relationship — it depends on whether there are issues to resolve. For LGBTQ+ families, mediation can be particularly valuable because:</p>
+<ul>
+<li>Family structures may be more complex — involving donors, co-parents, or extended family members with significant caring roles — and a court applying standard parenting frameworks may not produce the most workable outcome</li>
+<li>Mediation allows parties to design arrangements that reflect the actual relationships in the family, not those a standard court order would impose</li>
+<li>Privacy concerns may be heightened — particularly for families in smaller communities or where one party has not been fully open about their sexuality</li>
+<li>Mediation preserves co-parenting relationships more effectively than litigation</li>
+</ul>
+
+<h2 id="wa">Different rules in Western Australia</h2>
+<p>Western Australia has its own family property legislation — the Family Court Act 1997 (WA) — which applies to de facto couples rather than the federal Family Law Act. Same-sex de facto couples in WA have equivalent rights to married couples under WA legislation. However, the specific processes and timeframes differ, and WA matters are heard in the Family Court of Western Australia rather than the federal FCFCOA. If you are in WA, it is important to get advice from a WA family law practitioner about the specific regime that applies to you.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Do same-sex couples have any different rights in property settlements?</h3>
+<p>No — since 2009 for de facto couples and 2017 for married couples, same-sex couples have exactly the same property rights as heterosexual couples under the Family Law Act. The four-step property settlement process applies identically.</p>
+<h3>What if my relationship doesn't fit the standard de facto model?</h3>
+<p>The de facto definition is broad and allows for a range of relationship structures. Courts look at all the circumstances of the relationship — shared finances, domestic arrangements, public acknowledgment, duration — rather than a rigid checklist. If you are unsure whether your relationship qualifies, a family lawyer can advise on the specific facts.</p>
+<h3>Can we include a donor or co-parent in a mediation about parenting arrangements?</h3>
+<p>Yes — with agreement of all parties. Mediation can involve more than two people where the family structure makes this appropriate. A mediator experienced in LGBTQ+ family law can facilitate a multi-party session involving intended parents, a donor, or a co-parent. Speak to us about your family's specific situation.</p>
+<h3>Is our mediation session confidential?</h3>
+<p>Yes — mediation is fully confidential. What is said in the session cannot be used in court proceedings. This is particularly important where one or more parties values privacy about their relationship or family structure.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation/">family mediation</a></li>
+<li><a href="/property-settlement-in-family-law/">property settlement in family law</a></li>
+<li><a href="/parenting-mediation-sydney/">parenting mediation</a></li>
+<li><a href="/consent-orders/">consent orders</a></li>
+<li><a href="/what-am-i-entitled-to-in-a-separation-in-australia/">what you are entitled to in a separation</a></li>
+</ul>
+<p>For the legislative framework: <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>. For information on LGBTQ+ family law: <a href="https://www.ag.gov.au/families-and-marriage" target="_blank" rel="noopener">Attorney-General's Department — Families and Marriage</a>.</p>
+""",
+},
+
 }  # end EXPANDED dict
+
 
 
 
