@@ -343,23 +343,52 @@ def truncate(s, limit):
     return s[: limit - 1].rsplit(" ", 1)[0] + "…"
 
 
+# Override title/desc/h1 for specific slugs (CTR fixes, stale WP data).
+# Slugs listed here are force-rebuilt even if the directory already exists.
+META_OVERRIDES = {
+    "mediation-vs-collaborative-law": {
+        "title": "Mediation vs Collaborative Law: Key Differences Explained",
+        "desc":  "What's the difference between mediation and collaborative law? Compare costs, process and legal outcomes to choose the right path. Free consult.",
+        "h1":    "Mediation vs Collaborative Law: Key Differences Explained",
+    },
+}
+
+def read_existing_body(slug):
+    """Extract body-import div from already-built page, for meta-override rebuilds."""
+    path = os.path.join(OUT, slug, "index.html")
+    if not os.path.exists(path):
+        return ""
+    with open(path, encoding="utf-8") as f:
+        html = f.read()
+    m = re.search(r'<div class="body-import">(.*?)</div>\s*<div class="cta-inline"', html, re.S)
+    return m.group(1).strip() if m else ""
+
 def build_page(url, slug):
-    html = fetch_html(url)
-    title = extract_meta_title(html)
-    desc = extract_meta_desc(html)
-    h1_raw = extract_h1(html)
-    body = extract_article_body(html)
+    if slug in META_OVERRIDES and os.path.exists(os.path.join(OUT, slug)):
+        body = read_existing_body(slug)
+        ov = META_OVERRIDES[slug]
+        title  = ov["title"]
+        desc   = ov["desc"]
+        h1_raw = ov.get("h1", title)
+    else:
+        html = fetch_html(url)
+        title = extract_meta_title(html)
+        desc = extract_meta_desc(html)
+        h1_raw = extract_h1(html)
+        body = extract_article_body(html)
 
-    # Unescape so esc() doesn't double-encode (e.g. &amp; → & then esc() → &amp; correctly)
-    title = _unescape(title)
-    h1_raw = _unescape(h1_raw)
-    if not title:
-        title = slug.replace("-", " ").title()
-    if not h1_raw:
-        h1_raw = title
+        title = _unescape(title)
+        h1_raw = _unescape(h1_raw)
+        if not title:
+            title = slug.replace("-", " ").title()
+        if not h1_raw:
+            h1_raw = title
 
-    body = re.sub(r"^\s*<h1[^>]*>.*?</h1>\s*", "", body, flags=re.S | re.I)
-    body = clean_body(body)
+        body = re.sub(r"^\s*<h1[^>]*>.*?</h1>\s*", "", body, flags=re.S | re.I)
+        body = clean_body(body)
+
+    title = truncate(title, 60)
+    desc = truncate(desc, 160) if desc else truncate(title + " — Mediations Australia.", 160)
 
     title = truncate(title, 60)
     desc = truncate(desc, 160) if desc else truncate(title + " — Mediations Australia.", 160)
@@ -408,7 +437,7 @@ built, skipped, failed = [], [], []
 total = len(unique_urls)
 
 for i, (url, slug) in enumerate(unique_urls, 1):
-    if slug in existing:
+    if slug in existing and slug not in META_OVERRIDES:
         skipped.append(slug)
         continue
     try:
