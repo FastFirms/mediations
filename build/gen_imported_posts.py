@@ -422,6 +422,8 @@ FETCH_URL_OVERRIDES = {
 
 # Override title/desc/h1 for specific slugs (CTR fixes, stale WP data).
 # Slugs listed here are force-rebuilt even if the directory already exists.
+from expanded_bodies import EXPANDED as _EXPANDED  # batch-expanded body content
+
 META_OVERRIDES = {
     "mediation-vs-collaborative-law": {
         "title": "Mediation vs Collaborative Law: Key Differences Explained",
@@ -753,6 +755,7 @@ META_OVERRIDES = {
 """,
     },
 }
+META_OVERRIDES.update(_EXPANDED)  # merge batch-expanded bodies
 
 def read_existing_body(slug):
     """Extract body-import div from already-built page, for meta-override rebuilds."""
