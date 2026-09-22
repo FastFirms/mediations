@@ -1062,5 +1062,528 @@ EXPANDED = {
 """,
 },
 
+
+# ─── BATCH 3 (5 pages) ──────────────────────────────────────────────────────
+
+"mediation-vs-collaborative-law": {
+    "title": "Mediation vs Collaborative Law: Which Is Right for You?",
+    "desc":  "What's the difference between mediation and collaborative law in Australia? Compare costs, process, outcomes, and which suits your separation best.",
+    "h1":    "Mediation vs Collaborative Law: What's the Difference?",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Both mediation and collaborative law are non-court dispute resolution processes that help separating couples reach agreement without litigation. Mediation uses a single neutral facilitator; collaborative law uses each party's own specially trained lawyer working together. For most separating couples, mediation is faster, cheaper, and just as effective. Collaborative law suits complex matters where legal advice must be integrated into each negotiation step.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#what-is-mediation">What is mediation?</a></li>
+<li><a href="#what-is-collaborative">What is collaborative law?</a></li>
+<li><a href="#key-differences">Key differences at a glance</a></li>
+<li><a href="#cost">Cost comparison</a></li>
+<li><a href="#how-long">How long each process takes</a></li>
+<li><a href="#which-suits">Which process suits which situations</a></li>
+<li><a href="#when-neither">When neither may be appropriate</a></li>
+<li><a href="#combining">Combining both processes</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="what-is-mediation">What is mediation?</h2>
+<p>Family law mediation is a structured negotiation process facilitated by a neutral third party — the mediator. The mediator does not take sides, does not give legal advice to either party, and does not make decisions. Their role is to help both parties communicate, identify their underlying interests, and reach a voluntary agreement on parenting and property matters.</p>
+<p>In Australia, mediation for parenting matters must be conducted by an accredited Family Dispute Resolution Practitioner (FDRP) under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>. For property matters, any skilled mediator can facilitate — accreditation as an FDRP is not required, though it is common in family law practices like Mediations Australia.</p>
+<p>Mediation is typically conducted in a single session (half-day or full-day) or across two to three sessions for complex matters. The parties may attend with or without lawyers present in the room. The session produces a written summary of any agreed outcomes, which is then formalised as Consent Orders or a Binding Financial Agreement.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Wondering which process is right for your situation? Our mediators can help you decide — no obligation.</p><a href="/book-a-consultation/" class="btn btn-primary">Free consultation — get clarity <span class="arr">→</span></a></div></div>
+
+<h2 id="what-is-collaborative">What is collaborative law?</h2>
+<p>Collaborative law (or collaborative practice) is a structured negotiation process where both parties engage their own specially trained collaborative lawyers, and all four parties commit in writing — via a Participation Agreement — to resolving the dispute without going to court. If the collaborative process breaks down and either party files court proceedings, both collaborative lawyers must withdraw entirely from the matter.</p>
+<p>This withdrawal provision is the defining feature of collaborative law — it creates a powerful incentive for all participants to find a negotiated solution, because going to court means starting again with new lawyers. Beyond the two lawyers, collaborative teams often include neutral financial advisers, child specialists, and psychologists to provide expert input without the adversarial dynamic of court-appointed experts.</p>
+<p>Collaborative law is relatively new in Australia and is practiced by a smaller group of specially trained family lawyers. It tends to be used for higher-value or more complex disputes where the parties want legal advice integrated into every stage of negotiation, rather than obtained separately outside the mediation room.</p>
+
+<h2 id="key-differences">Key differences at a glance</h2>
+<table><thead><tr><th>Feature</th><th>Mediation</th><th>Collaborative Law</th></tr></thead><tbody>
+<tr><td>Neutral third party</td><td>Yes — the mediator facilitates</td><td>No — two partisan lawyers work together</td></tr>
+<tr><td>Legal advice in the room</td><td>Not typically — lawyers advise outside the session</td><td>Yes — each party's lawyer is present throughout</td></tr>
+<tr><td>Commitment not to go to court</td><td>No — court option always remains open</td><td>Yes — signed Participation Agreement</td></tr>
+<tr><td>If process fails</td><td>Either party can proceed to court with same advisers</td><td>Both lawyers must withdraw; parties start over</td></tr>
+<tr><td>Typical cost</td><td>$2,500–$8,000 total (shared)</td><td>$15,000–$60,000+ per party</td></tr>
+<tr><td>Typical duration</td><td>1–4 sessions over 2–8 weeks</td><td>3–12 meetings over 3–12 months</td></tr>
+<tr><td>Suitable for</td><td>Most separating couples</td><td>Complex matters needing integrated legal advice</td></tr>
+</tbody></table>
+
+<h2 id="cost">Cost comparison</h2>
+<p>Cost is one of the most significant differences between the two processes. Mediation at Mediations Australia uses fixed, shared fees — both parties share the cost of the mediator's time, which typically totals $2,500–$8,000 depending on complexity and session length.</p>
+<p>Collaborative law involves each party paying their own collaborative lawyer — at typical family law hourly rates of $350–$600/hour — plus any neutral specialists engaged by the team. A typical collaborative matter might involve 6–10 four-way meetings plus preparation time, costing each party $15,000–$60,000 or more. For some high-value matters, this is appropriate and efficient. For most typical separating couples, it is disproportionate.</p>
+
+<h2 id="how-long">How long each process takes</h2>
+<p>Mediation can typically be arranged within 1–4 weeks and completed in one or two sessions. From the decision to mediate to a signed agreement summary, the total timeline is often 4–8 weeks. Formalising the outcome as Consent Orders adds another 4–8 weeks of court processing.</p>
+<p>Collaborative law takes significantly longer — typically 3–12 months for a standard matter, depending on complexity, the number of issues in dispute, and the availability of the collaborative team. The additional time reflects the integrated nature of the process and the involvement of multiple professionals at each stage.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>For most families, mediation resolves the matter in weeks at a fraction of the cost. Let us show you how.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a session — resolve faster <span class="arr">→</span></a></div></div>
+
+<h2 id="which-suits">Which process suits which situations</h2>
+<p><strong>Mediation tends to work best when:</strong></p>
+<ul>
+<li>Both parties are willing to negotiate in good faith</li>
+<li>The financial matters are relatively straightforward (a home, superannuation, standard assets)</li>
+<li>Parenting arrangements are the main dispute</li>
+<li>Both parties are obtaining independent legal advice separately</li>
+<li>Speed and cost-efficiency are priorities</li>
+<li>Either party is comfortable speaking for themselves in a facilitated setting</li>
+</ul>
+<p><strong>Collaborative law may be more appropriate when:</strong></p>
+<ul>
+<li>The matter involves a significant business, complex trust structures, or offshore assets</li>
+<li>One or both parties need legal guidance integrated into every step of negotiation</li>
+<li>There are significant power imbalances that make a single facilitated session difficult</li>
+<li>The parties value the certainty of the non-court commitment and the involvement of a full professional team</li>
+<li>Budget is not the primary constraint</li>
+</ul>
+
+<h2 id="when-neither">When neither may be appropriate</h2>
+<p>Both mediation and collaborative law require a minimum level of good faith participation from both parties. Where there is a significant risk of family violence, active concealment of assets, serious power imbalances that cannot be managed through process design, or where a party is not engaging genuinely in any negotiation process, court proceedings may be necessary. If you are experiencing family violence, contact the police (000) or 1800RESPECT (1800 737 732) — your safety comes first, before any dispute resolution process.</p>
+
+<h2 id="combining">Combining both processes</h2>
+<p>The two processes are not mutually exclusive. Some couples begin with collaborative law and, if the collaborative team becomes entrenched, bring in a mediator to break the impasse. Others use a mediator for parenting arrangements and collaborative lawyers for complex property matters running in parallel. The key is choosing the right tool for the specific issue — not committing to one process for everything.</p>
+<p>At Mediations Australia, we are familiar with both processes. Where collaborative law is the better fit for your situation, we can say so and refer you to an appropriate collaborative practitioner. Our goal is the right outcome for you — not fitting every matter into the same mould.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Can mediation and collaborative law produce the same legal outcome?</h3>
+<p>Yes. Both processes can produce outcomes formalised as Consent Orders or Binding Financial Agreements — the same legal documents available after court proceedings. The process is different; the legal outcome can be identical.</p>
+<h3>What happens if collaborative law breaks down and we switch to mediation?</h3>
+<p>If the collaborative process breaks down and both parties want to try mediation before going to court, they can engage a mediator separately. The collaborative lawyers withdraw from the matter, and both parties would need new legal advisers if they wanted legal representation at the mediation. The advantage of switching to mediation is cost — mediation is typically far less expensive than continuing with a full collaborative team.</p>
+<h3>Is collaborative law available everywhere in Australia?</h3>
+<p>Collaborative law is available in all major Australian cities but is less widely available in regional areas. The pool of trained collaborative lawyers is smaller than the pool of family mediators. If collaborative law is the right fit for your matter, the <a href="https://www.aifs.gov.au/" target="_blank" rel="noopener">Australian Institute of Family Studies</a> and various family law associations can assist with finding accredited collaborative practitioners.</p>
+<h3>Do I need a lawyer for mediation?</h3>
+<p>You do not need a lawyer in the mediation room, but getting independent legal advice before and after your session is strongly recommended. See our guide on <a href="/the-role-of-the-lawyer-in-mediation/">the role of the lawyer in mediation</a> for more detail.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/family-mediation/">About Mediations Australia — our mediation approach</a></li>
+<li><a href="/family-mediation-process-guide/">How family mediation works — step by step</a></li>
+<li><a href="/cost-of-divorce-in-australia/">What does separation really cost in Australia?</a></li>
+<li><a href="/property-settlement-in-family-law/">Property settlement — the four-step process</a></li>
+<li><a href="/consent-orders/">Consent Orders — making your agreement legally binding</a></li>
+</ul>
+<p>For family dispute resolution policy and government-funded options, see the <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">Attorney-General's Department — Family Dispute Resolution</a>.</p>
+""",
+},
+
+"how-long-does-a-divorce-take": {
+    "title": "How Long Does a Divorce Take in Australia? | Full Timeline",
+    "desc":  "How long does divorce take in Australia? The 12-month separation rule, application process, processing times, and how to speed things up. Full 2024 guide.",
+    "h1":    "How Long Does a Divorce Take in Australia?",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> In Australia, you cannot apply for divorce until you have been separated for at least 12 months. After applying, the court typically grants a divorce order within 28–90 days. The divorce itself takes a minimum of about 13–14 months from the date of separation. Importantly, divorce only ends the marriage — it does not resolve property settlement or parenting arrangements, which should be dealt with separately and urgently.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#12-months">The 12-month separation rule</a></li>
+<li><a href="#how-to-apply">How to apply for divorce</a></li>
+<li><a href="#processing-times">How long the court takes</a></li>
+<li><a href="#hearing">Do you need to attend a hearing?</a></li>
+<li><a href="#timeline">Full divorce timeline</a></li>
+<li><a href="#property-urgency">Why property settlement is urgent</a></li>
+<li><a href="#parenting">What about parenting arrangements?</a></li>
+<li><a href="#de-facto">De facto couples — no divorce needed</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="12-months">The 12-month separation rule</h2>
+<p>Under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, the only ground for divorce in Australia is the irretrievable breakdown of the marriage, evidenced by 12 months of separation. There is no requirement to prove fault, adultery, or any specific conduct. The sole question is whether you have been separated for at least 12 months.</p>
+<p>"Separation" does not require living in separate houses. Couples can be "separated under one roof" — still living at the same address but no longer in a marital relationship. In these cases, you must provide evidence of separation to the court, such as a statutory declaration from someone who knew you as a couple and is aware of the separation.</p>
+<p>If you reconcile and then separate again within the 12 months, the time apart can be combined as long as no single period of reconciliation exceeded three months. If reconciliation exceeded three months, the 12-month clock starts again.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>While the divorce application is processing, your property settlement and parenting arrangements need attention — don't leave these until after the divorce. Talk to us now.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="how-to-apply">How to apply for divorce</h2>
+<p>Divorce applications in Australia are made through the <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia (FCFCOA)</a> via the Commonwealth Courts Portal. The application can be made jointly (both parties apply together) or by one party (a sole application). A joint application is simpler as service requirements are different.</p>
+<p>The application requires:</p>
+<ul>
+<li>Your marriage certificate (original or certified copy)</li>
+<li>Evidence of Australian citizenship or residency (if not evident from the marriage certificate)</li>
+<li>Evidence of the date and circumstances of separation if you lived under one roof</li>
+<li>Arrangements for children under 18 (the court must be satisfied these are adequate)</li>
+<li>Payment of the filing fee (see the FCFCOA fee schedule — filing fee concessions apply for Health Care Card holders)</li>
+</ul>
+
+<h2 id="processing-times">How long does the court take to process a divorce?</h2>
+<p>Once your application is filed and properly served on your spouse (for sole applications), the court lists the matter for a divorce hearing or considers it on the papers. Current processing times from filing to divorce order are typically 28–90 days, though this varies with court workloads. You can track your application status through the Commonwealth Courts Portal.</p>
+<p>The divorce order does not take effect immediately — it takes effect one month and one day after it is made by the court. So from filing to a divorce becoming final, allow approximately 2–4 months.</p>
+
+<h2 id="hearing">Do you need to attend a hearing?</h2>
+<p>Many divorce applications are dealt with on the papers without the need to attend a hearing. You must attend a hearing if:</p>
+<ul>
+<li>You made a sole application and there are children of the marriage under 18</li>
+<li>You wish to contest the divorce (rare — the sole ground is irretrievable breakdown, so most divorces are uncontested)</li>
+<li>The court requires clarification of the arrangements for children</li>
+</ul>
+<p>Joint applications generally do not require attendance at a hearing. For sole applications with no children, attendance is typically not required.</p>
+
+<h2 id="timeline">Full divorce timeline</h2>
+<table><thead><tr><th>Stage</th><th>Timeframe from separation</th></tr></thead><tbody>
+<tr><td>Date of separation</td><td>Day 0</td></tr>
+<tr><td>Earliest you can apply for divorce</td><td>12 months</td></tr>
+<tr><td>Application filed and served</td><td>12–13 months</td></tr>
+<tr><td>Divorce hearing / court considers papers</td><td>13–16 months</td></tr>
+<tr><td>Divorce order made</td><td>13–16 months</td></tr>
+<tr><td>Divorce order takes effect (final)</td><td>14–17 months</td></tr>
+</tbody></table>
+<p>Total minimum time from separation to final divorce: approximately 13 months (if everything proceeds without delays). A realistic expectation for most people is 14–18 months from separation to a final divorce order.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>The divorce timeline is fixed by law — but property settlement and parenting can and should be resolved much sooner. Our mediators can help you reach agreement well before the divorce is finalised.</p><a href="/book-a-consultation/" class="btn btn-primary">Start the conversation today <span class="arr">→</span></a></div></div>
+
+<h2 id="property-urgency">Why property settlement is urgent — even before divorce</h2>
+<p>This is one of the most important points many separating couples miss: divorce and property settlement are entirely separate legal processes. You can finalise a property settlement at any time after separation — you do not need to wait for the divorce. In fact, waiting is dangerous.</p>
+<p>Once a divorce order is made, you have only <strong>12 months</strong> to apply to a court for property orders. After that, you need leave of the court to proceed — and leave is not always granted. Many people lose significant property entitlements because they waited until after the divorce and then found themselves out of time.</p>
+<p>The smart approach: begin property settlement negotiations through mediation as soon as both parties are ready — ideally well within the first 12 months of separation, and certainly well before the divorce is finalised.</p>
+
+<h2 id="parenting">What about parenting arrangements?</h2>
+<p>Like property settlement, parenting arrangements are entirely separate from the divorce process. The court that handles divorce (FCFCOA) also handles parenting disputes, but as separate proceedings. Parenting arrangements can — and should — be established as soon as possible after separation, regardless of where the divorce application is up to.</p>
+<p>Mediating parenting arrangements early creates stability for children and prevents conflict from escalating. An agreement reached in mediation can be formalised as a Parenting Plan or as Consent Orders with the court.</p>
+
+<h2 id="de-facto">De facto couples — no divorce needed</h2>
+<p>De facto couples in Australia do not apply for divorce — because they were never legally married. Instead, they may need to apply for property orders or spousal maintenance orders, subject to the same time limits: 2 years from the end of the de facto relationship. There is no equivalent of the 12-month waiting period for property or parenting matters for de facto couples, though the property framework is otherwise very similar to that for married couples.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Can I divorce if I don't know where my spouse is?</h3>
+<p>Yes. If you cannot locate your spouse to serve them with the divorce application, you can apply to the court for substituted service (service by another method, such as posting to a last known address or serving a relative) or for dispensation with service. The court has a process for this.</p>
+<h3>Can my spouse contest the divorce?</h3>
+<p>In Australia, a spouse cannot contest the divorce on the basis that they do not want to be divorced — the only ground is irretrievable breakdown evidenced by 12 months' separation. A spouse can contest the divorce if they dispute that 12 months of separation has occurred, or if they dispute the adequacy of arrangements for children. True contested divorces are rare.</p>
+<h3>Do I need a lawyer for the divorce application?</h3>
+<p>No. Many people apply for divorce themselves through the Commonwealth Courts Portal without a lawyer. The application process is relatively straightforward. However, a lawyer can help ensure the application is properly completed and served, which avoids delays from procedural errors.</p>
+<h3>What happens to my will and superannuation after divorce?</h3>
+<p>A divorce order revokes any gift to a former spouse under a will made before the divorce, and any appointment of a former spouse as executor. Your will does not automatically update in all respects — get legal advice and update your will and superannuation beneficiary nominations promptly after separation, not after the divorce.</p>
+<h3>What if I remarry before the divorce is finalised?</h3>
+<p>Remarrying before a divorce is finalised is bigamy — a serious criminal offence. Do not enter a new marriage until your divorce order has taken effect (one month and one day after the divorce order is made).</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/cost-of-divorce-in-australia/">The full cost of divorce in Australia — court vs mediation</a></li>
+<li><a href="/property-settlement-in-family-law/">Property settlement after separation — your rights and timeline</a></li>
+<li><a href="/consent-orders/">Consent Orders — formalising your property agreement</a></li>
+<li><a href="/applying-for-a-divorce-in-australia/">Applying for divorce in Australia — step-by-step guide</a></li>
+<li><a href="/family-mediation/">How Mediations Australia can help during separation</a></li>
+</ul>
+<p>Official divorce information and filing: <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>. For ABS marriage and divorce statistics, see <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener">ABS Marriages and Divorces, Australia</a>.</p>
+""",
+},
+
+"divorce-without-a-lawyer": {
+    "title": "Divorce Without a Lawyer in Australia | DIY Divorce Guide",
+    "desc":  "Can you get divorced without a lawyer in Australia? Yes. This guide covers DIY divorce applications, when you need legal help, and what you must not overlook.",
+    "h1":    "Divorce Without a Lawyer: What You Need to Know",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> You can apply for divorce in Australia without a lawyer — the online application through the Commonwealth Courts Portal is designed to be completed by parties themselves. However, the divorce application only ends the marriage. Property settlement and parenting arrangements require separate legal steps, and getting these wrong without advice can cost far more than a lawyer would have. DIY divorce is fine; DIY property settlement without understanding your rights is risky.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#can-you">Can you get divorced without a lawyer?</a></li>
+<li><a href="#how-to">How to apply for divorce yourself</a></li>
+<li><a href="#joint-vs-sole">Joint vs sole application</a></li>
+<li><a href="#children">What if there are children?</a></li>
+<li><a href="#what-not-covered">What divorce does NOT cover</a></li>
+<li><a href="#property-risks">The risks of going it alone on property</a></li>
+<li><a href="#mediation-role">Where mediation fits in</a></li>
+<li><a href="#when-get-advice">When you should get legal advice</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="can-you">Can you get divorced without a lawyer?</h2>
+<p>Yes. In Australia, you do not need a lawyer to apply for divorce. The <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia (FCFCOA)</a> has designed the divorce application to be completed by parties themselves through the Commonwealth Courts Portal (comcourts.gov.au). The application is form-based, the court fee is fixed and published, and most straightforward divorces do not require a court hearing.</p>
+<p>This is quite different from some other jurisdictions. In Australia, because divorce is no-fault (the only ground is irretrievable breakdown after 12 months' separation), the proceedings are rarely contested in any meaningful way. For straightforward matters, a lawyer is genuinely not required to obtain the divorce order itself.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>The divorce application is the easy part. Property settlement and parenting arrangements are where the stakes are highest — and where we can help you reach an agreement without court.</p><a href="/book-a-consultation/" class="btn btn-primary">Free consultation — protect your entitlements <span class="arr">→</span></a></div></div>
+
+<h2 id="how-to">How to apply for divorce yourself</h2>
+<p>The steps for a self-represented divorce application are:</p>
+<ul>
+<li><strong>Step 1 — Confirm eligibility.</strong> You must have been separated for at least 12 months. Either you or your spouse must be an Australian citizen, living in Australia, or ordinarily resident in Australia for the past 12 months.</li>
+<li><strong>Step 2 — Gather documents.</strong> You need your marriage certificate (or a certified copy). If the certificate is in a language other than English, you need an NAATI-certified translation. If you do not have the certificate, the Registry of Births, Deaths and Marriages in the state where you married can issue a replacement.</li>
+<li><strong>Step 3 — Create a Commonwealth Courts Portal account.</strong> Go to comcourts.gov.au and create an account. The portal guides you through the application.</li>
+<li><strong>Step 4 — Complete the application.</strong> Fill in the Application for Divorce form online. You will need to state the date of separation, whether you have children under 18, and confirm the separation circumstances.</li>
+<li><strong>Step 5 — Pay the filing fee.</strong> The standard fee is published on the FCFCOA website. A reduced fee applies for Health Care Card holders.</li>
+<li><strong>Step 6 — Serve the other party (sole applications only).</strong> If applying alone, you must serve the divorce application on your spouse at least 28 days before the hearing date (42 days if overseas). The portal provides guidance on service requirements. You cannot serve it yourself — it must be served by someone else (a friend, process server, or Australia Post special delivery).</li>
+<li><strong>Step 7 — Attend the hearing if required.</strong> Most divorces are dealt with on the papers. You must attend if there are children under 18 and you made a sole application.</li>
+</ul>
+
+<h2 id="joint-vs-sole">Joint vs sole application</h2>
+<p>A joint application (both parties apply together) is simpler than a sole application. There are no service requirements — both parties have already signed the application. Joint applications also typically do not require either party to attend court. If you and your spouse are on reasonable terms and both want the divorce, a joint application is usually the easier path.</p>
+<p>A sole application is required if your spouse refuses to cooperate or cannot be located. Service on the other party is required, and proof of service must be filed before the hearing. If the other party cannot be found, substituted service or dispensation with service can be applied for.</p>
+
+<h2 id="children">What if there are children?</h2>
+<p>If there are children of the marriage under 18, the court must be satisfied that proper arrangements have been made for their care, welfare, and development. This does not mean a formal parenting order must be in place before the divorce — the court simply needs to be satisfied that adequate arrangements exist (including informal arrangements). However, if you made a sole application, you must attend the hearing if there are children under 18.</p>
+<p>Formalising parenting arrangements — through a Parenting Plan or Consent Orders — is strongly recommended regardless of the divorce application status. Informal arrangements are not legally enforceable and can break down.</p>
+
+<h2 id="what-not-covered">What divorce does NOT cover</h2>
+<p>This is the most important section for anyone considering DIY divorce. A divorce order does one thing: it legally ends the marriage. It does not:</p>
+<ul>
+<li>Divide property or superannuation</li>
+<li>Deal with spousal maintenance</li>
+<li>Create enforceable parenting arrangements</li>
+<li>Cancel debts owed jointly</li>
+<li>Update wills, superannuation beneficiary nominations, or life insurance</li>
+<li>Change the name on property titles</li>
+</ul>
+<p>All of these require separate steps. And critically — once your divorce is finalised, you have only <strong>12 months</strong> to apply to a court for property orders. Many people let this time pass without realising it, losing the ability to claim what they are legally entitled to.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Don't let the property settlement deadline sneak past you. Most couples can resolve property through mediation well before the divorce is finalised.</p><a href="/book-a-consultation/" class="btn btn-primary">Start property talks today <span class="arr">→</span></a></div></div>
+
+<h2 id="property-risks">The risks of going it alone on property</h2>
+<p>Property settlement under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a> involves a four-step assessment process that considers both parties' contributions (financial and non-financial) and future needs. Getting this wrong — by agreeing to a split that does not reflect what the law would provide — can mean leaving money on the table, or overpaying.</p>
+<p>Common traps for people who negotiate property without legal advice include: not including all assets in the pool (cryptocurrency, superannuation, business interests, debts owed to you); not understanding how superannuation splitting works; accepting a property split that a court would regard as inadequate; and formalising an agreement informally (without Consent Orders or a BFA) so that either party can walk away from it later.</p>
+
+<h2 id="mediation-role">Where mediation fits in</h2>
+<p>Even if you are doing your divorce application yourself, using a mediator for property and parenting matters is one of the most cost-effective decisions you can make. A mediation session costs a fraction of contested court proceedings, produces outcomes you both control, and can be completed in days or weeks rather than months or years.</p>
+<p>You do not need a lawyer to attend mediation — though getting independent legal advice before and after the session is strongly recommended. At Mediations Australia, we see many couples who handle their own divorce application and use mediation to resolve property and parenting — a sensible, cost-effective combination.</p>
+
+<h2 id="when-get-advice">When you should get legal advice even for DIY divorce</h2>
+<ul>
+<li>If you have children and are unsure whether the arrangements you have in place satisfy the court's requirements</li>
+<li>If your spouse is overseas or cannot be located</li>
+<li>If you have been married in another country and are unsure whether your marriage certificate is acceptable</li>
+<li>If you separated under one roof and are unsure how to evidence the separation</li>
+<li>For property and parenting matters — always get at least one legal consultation before finalising any agreement</li>
+</ul>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>How much does it cost to apply for divorce without a lawyer?</h3>
+<p>The FCFCOA filing fee for a divorce application is published on the court's website. A reduced fee applies for Health Care Card holders. If you need a process server to serve the application, add approximately $100–$300 for service. Total DIY divorce cost is typically $500–$1,000 all-in — compared to $2,500–$5,000 with a lawyer handling the application for you.</p>
+<h3>How long does a DIY divorce take?</h3>
+<p>The timeline is the same as with a lawyer: you must wait 12 months from separation to apply, and the court takes 28–90 days to process the application after service. Total time from separation to final divorce: approximately 14–18 months.</p>
+<h3>Can I change my name after divorce without a lawyer?</h3>
+<p>Yes. After a divorce order is made, you can revert to a previous surname using the divorce certificate as evidence of name change (for most purposes). For identity documents (passport, driver's licence), you apply to the relevant authority using the divorce certificate.</p>
+<h3>What if my ex won't sign the divorce application?</h3>
+<p>A joint application requires both parties to sign. If your spouse won't sign, make a sole application instead. Your spouse does not need to consent to the divorce — they only need to be served with the application and given the opportunity to respond.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/applying-for-a-divorce-in-australia/">Applying for divorce in Australia — full step-by-step guide</a></li>
+<li><a href="/how-long-does-a-divorce-take/">How long does a divorce take in Australia?</a></li>
+<li><a href="/property-settlement-in-family-law/">Property settlement — what you're entitled to after separation</a></li>
+<li><a href="/cost-of-divorce-in-australia/">The full cost of divorce in Australia</a></li>
+<li><a href="/consent-orders/">Consent Orders — the most affordable way to finalise property</a></li>
+</ul>
+<p>Official divorce application portal: <a href="https://www.fcfcoa.gov.au/" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>. For marriage certificate replacements, contact the Registry of Births, Deaths and Marriages in the state where you were married.</p>
+""",
+},
+
+"how-mediation-can-help-in-financial-agreements": {
+    "title": "How Mediation Helps with Financial Agreements | Australia",
+    "desc":  "How mediation helps couples reach and formalise financial agreements after separation. Covers Consent Orders, BFAs, superannuation splitting, and disclosure.",
+    "h1":    "How Mediation Can Help You Reach a Financial Agreement",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Mediation is one of the most effective ways to reach a fair financial agreement after separation. Rather than handing the decision to a court, mediation allows both parties to negotiate an outcome in a structured, confidential setting — with full financial disclosure, a neutral facilitator, and control over the result. Most property disputes that go to mediation resolve without needing a court hearing.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#financial-agreements">Financial agreements in family law</a></li>
+<li><a href="#what-mediation-does">What mediation does for financial disputes</a></li>
+<li><a href="#disclosure">Disclosure — the foundation of any financial agreement</a></li>
+<li><a href="#property-pool">Identifying and valuing the property pool</a></li>
+<li><a href="#superannuation">Superannuation splitting in mediation</a></li>
+<li><a href="#types-of-outcome">Types of financial agreement outcomes</a></li>
+<li><a href="#making-binding">Making the agreement legally binding</a></li>
+<li><a href="#timeline">How long financial mediation takes</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="financial-agreements">Financial agreements in family law</h2>
+<p>After separation, couples need to divide their shared assets, liabilities, and superannuation in a way that is legally final and enforceable. Under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, courts have broad power to make orders about property division — but the great majority of property settlements in Australia are reached by agreement between the parties, not by a judge.</p>
+<p>A financial agreement reached after separation can be formalised as Consent Orders (approved by the Federal Circuit and Family Court) or as a Binding Financial Agreement (BFA — a formal contract executed with independent legal advice on both sides). Both are legally binding and enforceable.</p>
+<p>Getting to a financial agreement is where mediation adds enormous value. Rather than exchanging lawyers' letters for months before agreeing on a settlement, mediation brings both parties together to negotiate directly — in a confidential, structured session — and typically produces a written agreement within weeks of commencing the process.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Property settlement doesn't have to mean court. Most couples resolve it in one or two mediation sessions. Talk to us about how.</p><a href="/book-a-consultation/" class="btn btn-primary">Free consultation — resolve your financial dispute <span class="arr">→</span></a></div></div>
+
+<h2 id="what-mediation-does">What mediation does for financial disputes</h2>
+<p>In a financial mediation session, the mediator:</p>
+<ul>
+<li><strong>Ensures both parties have exchanged financial disclosure</strong> — the mediator confirms that both parties have provided full and frank financial information before negotiation begins. Without this, any agreement reached is at risk of being set aside later.</li>
+<li><strong>Helps identify all assets and liabilities</strong> — the mediator facilitates a structured process for identifying every asset, liability, superannuation fund, and financial interest that forms part of the property pool.</li>
+<li><strong>Keeps discussions focused on interests, not positions</strong> — instead of "I want the house" vs "I want the house," the mediator helps both parties articulate what they actually need (security, liquidity, a home for the children) and explores how multiple arrangements could meet those needs.</li>
+<li><strong>Reality-tests proposals</strong> — the mediator can help parties understand whether a proposed split is within the range a court would consider just and equitable, using their knowledge of the Family Law Act framework (without giving legal advice to either party).</li>
+<li><strong>Drafts the written agreement summary</strong> — at the end of a successful session, the mediator prepares a written summary of what was agreed, which forms the basis of the Consent Orders or BFA.</li>
+</ul>
+
+<h2 id="disclosure">Disclosure — the foundation of any financial agreement</h2>
+<p>The duty of financial disclosure is a legal obligation under the Family Law Rules. Both parties must disclose all assets, liabilities, income, superannuation, and financial interests — including those held through companies, trusts, or informal arrangements. Without genuine disclosure, no financial agreement reached in mediation is safe — a court can set aside a settlement years later if it discovers assets were concealed.</p>
+<p>At Mediations Australia, we ask both parties to provide standard financial documents before the session: last two years' tax returns, recent payslips, property valuations, superannuation statements, bank statements, and any business documents. This preparation ensures the session is productive rather than spending time gathering basic information.</p>
+
+<h2 id="property-pool">Identifying and valuing the property pool</h2>
+<p>The property pool includes all assets and liabilities of both parties — regardless of whose name they are in. This includes:</p>
+<ul>
+<li>The family home and any investment properties</li>
+<li>Bank accounts, shares, managed funds, and cryptocurrency</li>
+<li>Superannuation of each party (valued using member statements)</li>
+<li>Vehicles, boats, and other personal property of significant value</li>
+<li>Business interests, including shares in companies and partnership interests</li>
+<li>Trust assets where either party is a beneficiary or has effective control</li>
+<li>Mortgages, credit cards, personal loans, HECS-HELP, and other liabilities</li>
+</ul>
+<p>Valuing some assets — particularly businesses, investment properties, and SMSFs — may require independent valuations by a qualified expert. In mediation, the parties can agree on a single joint valuer (reducing cost) rather than each obtaining separate valuations for litigation purposes.</p>
+
+<h2 id="superannuation">Superannuation splitting in mediation</h2>
+<p>Superannuation is often the largest or second-largest asset in a property pool, and it is frequently misunderstood in negotiations. Superannuation is not cash — it is a future entitlement — and it is dealt with through a separate splitting process under the Family Law Act. Superannuation splitting can be agreed in mediation and formalised through Consent Orders, which are then sent to the relevant superannuation fund for implementation.</p>
+<p>In mediation, we help parties understand the mechanics of superannuation splitting — including the need for a superannuation agreement (or flagging order) and the role of the fund trustee — so that the agreement reached is actually implementable. Some superannuation products (particularly defined benefit schemes and some SMSFs) have specific requirements that need to be understood before agreeing on a split.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Superannuation splitting and property valuation are complex — our mediators have helped hundreds of couples navigate both. Let us help you.</p><a href="/book-a-consultation/" class="btn btn-primary">Talk to a mediator — no obligation <span class="arr">→</span></a></div></div>
+
+<h2 id="types-of-outcome">Types of financial agreement outcomes</h2>
+<p>Mediation can produce a range of financial outcomes, including:</p>
+<table><thead><tr><th>Outcome type</th><th>What it involves</th></tr></thead><tbody>
+<tr><td>Property transfer</td><td>One party transfers their interest in the family home (or other property) to the other</td></tr>
+<tr><td>Property sale and division</td><td>The family home (or investment property) is sold and proceeds divided in agreed proportions</td></tr>
+<tr><td>Superannuation split</td><td>A proportion of one party's superannuation is split to a fund in the other party's name</td></tr>
+<tr><td>Offset arrangement</td><td>One party keeps more property; the other keeps more superannuation (or cash) of equivalent value</td></tr>
+<tr><td>Lump sum maintenance</td><td>A single payment by one party to address an income disparity</td></tr>
+<tr><td>Periodic maintenance</td><td>Ongoing payments by the higher-earning party, agreed for a defined period</td></tr>
+</tbody></table>
+<p>Often, agreements combine several of these elements. The advantage of mediation is that parties can design bespoke arrangements that suit their actual circumstances — a level of flexibility that court orders cannot always achieve.</p>
+
+<h2 id="making-binding">Making the agreement legally binding</h2>
+<p>A financial agreement reached in mediation must be formalised to be legally enforceable. The written summary from the mediation session is not itself a court order or contract — it is the starting point for formal documentation. Options include:</p>
+<ul>
+<li><strong>Consent Orders:</strong> Both parties sign the application, which is filed with the FCFCOA. A Registrar approves it without a hearing in most cases. Cost: typically $1,500–$3,500 in legal fees to prepare and file. This is the most common pathway.</li>
+<li><strong>Binding Financial Agreement (BFA):</strong> A formal contract prepared by a family lawyer, with each party receiving independent legal advice before signing. More flexible than Consent Orders in some respects (can be entered before or during a relationship, not just after). More expensive to prepare.</li>
+</ul>
+<p>An informal agreement — even one carefully written by both parties — is not legally enforceable. Either party can resile from it. Formalising it is essential for financial security.</p>
+
+<h2 id="timeline">How long financial mediation takes</h2>
+<p>A straightforward financial mediation typically involves one intake session (individual, 1–2 hours each) and one joint session (half-day or full-day). From initial contact to a written agreement summary, most matters resolve within 4–8 weeks. Complex matters — involving businesses, trusts, or significant asset valuations — may take longer if valuations need to be obtained first.</p>
+<p>After the mediation, allow a further 6–12 weeks for Consent Orders to be prepared and approved by the court, or longer for a BFA to be drafted and independently advised on.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Does mediation produce a legally binding financial agreement?</h3>
+<p>Not directly. Mediation produces a written summary of what was agreed. That summary becomes legally binding only when formalised as Consent Orders or a BFA. Both routes require legal steps after the mediation session — and both of those documents are fully legally enforceable once executed.</p>
+<h3>What if we can't agree on what the assets are worth?</h3>
+<p>If there is a genuine dispute about value (commonly for the family home, a business, or an SMSF), both parties can agree to use a single joint valuer. The valuer's report is then used as the agreed value in mediation. This is significantly cheaper than each party obtaining separate valuations for litigation.</p>
+<h3>What if one party is hiding assets?</h3>
+<p>If you genuinely believe the other party is concealing assets, you should raise this with your lawyer before the mediation session. In court proceedings, there are formal processes for discovery and subpoenas. In mediation, you can also decline to proceed until satisfactory disclosure is provided. Signing a financial agreement based on incomplete disclosure creates real legal risk for both parties.</p>
+<h3>Can we agree on property in mediation even if we haven't agreed on parenting?</h3>
+<p>Yes. Financial and parenting matters can be mediated separately or together. Many couples choose to resolve parenting arrangements first (which affects each party's practical housing and financial needs) and then address property. Others address both together. The mediator can facilitate either approach.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/property-settlement-in-family-law/">Property settlement in family law — the four-step process</a></li>
+<li><a href="/consent-orders/">Consent Orders — the most common way to formalise a financial agreement</a></li>
+<li><a href="/binding-financial-agreement/">Binding Financial Agreements — what you need to know</a></li>
+<li><a href="/cost-of-divorce-in-australia/">Financial cost of separation — court vs mediation</a></li>
+<li><a href="/family-mediation/">About Mediations Australia's financial mediation approach</a></li>
+</ul>
+<p>Financial disclosure obligations are set out in the <a href="https://www.fcfcoa.gov.au/fl/duty-disclosure" target="_blank" rel="noopener">FCFCOA duty of disclosure</a> guidance. For Consent Orders process: <a href="https://www.fcfcoa.gov.au/fl/consent-orders" target="_blank" rel="noopener">FCFCOA — Consent Orders</a>.</p>
+""",
+},
+
+"the-7-most-common-questions-about-mediation": {
+    "title": "7 Most Common Questions About Family Mediation | Australia",
+    "desc":  "The most common questions about family mediation in Australia — answered fully. Cost, confidentiality, lawyers, outcomes, and what happens if you can't agree.",
+    "h1":    "The 7 Most Common Questions About Family Mediation — Answered",
+    "read_min": "9",
+    "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Family mediation is confidential, voluntary (with limited exceptions for parenting matters), and typically resolves family law disputes in weeks rather than years. Most people who try mediation are glad they did — even those who arrive sceptical. These are the questions we are asked most often, answered directly.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#q1">1. Do I have to do mediation?</a></li>
+<li><a href="#q2">2. What happens in a mediation session?</a></li>
+<li><a href="#q3">3. Is mediation confidential?</a></li>
+<li><a href="#q4">4. Do I need a lawyer?</a></li>
+<li><a href="#q5">5. How much does mediation cost?</a></li>
+<li><a href="#q6">6. What if we can't reach agreement?</a></li>
+<li><a href="#q7">7. Is a mediated agreement legally binding?</a></li>
+<li><a href="#bonus">Bonus: Is mediation right for my situation?</a></li>
+<li><a href="#faq">More questions answered</a></li>
+</ul></nav>
+
+<h2 id="q1">1. Do I have to do mediation?</h2>
+<p>For <strong>parenting disputes</strong>, the answer is effectively yes — unless an exemption applies. Under the <a href="https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/fla1975114/" target="_blank" rel="noopener">Family Law Act 1975</a>, attending Family Dispute Resolution (FDR) with an accredited practitioner is a legal prerequisite before you can file parenting proceedings in the Federal Circuit and Family Court of Australia. If you refuse, you receive a certificate that shows your refusal — and the other party can proceed to court without you.</p>
+<p>For <strong>property disputes</strong>, mediation is not legally mandatory. You can file in court for property orders without first attempting mediation. However, the court expects parties to have genuinely attempted negotiation before filing, and a party who refuses all reasonable efforts at resolution risks an adverse costs order.</p>
+<p>Exemptions from the FDR requirement exist where there is family violence, a risk to a child's safety, or urgency. If an exemption applies to your situation, speak to a family lawyer before deciding whether to proceed.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Not sure whether the FDR requirement applies to you? Talk to us — we can explain your situation and options clearly.</p><a href="/book-a-consultation/" class="btn btn-primary">Free consultation — get clear answers <span class="arr">→</span></a></div></div>
+
+<h2 id="q2">2. What happens in a mediation session?</h2>
+<p>A typical family mediation session at Mediations Australia follows this structure:</p>
+<ul>
+<li><strong>Intake (individual):</strong> Before the joint session, each party meets separately with the mediator to discuss their situation, concerns, and goals — without the other party present. This intake is confidential to each party.</li>
+<li><strong>Opening:</strong> The joint session begins with the mediator explaining the process, ground rules, and confidentiality arrangements.</li>
+<li><strong>Each party's perspective:</strong> Each party has the opportunity to describe their situation and what matters most to them — without interruption.</li>
+<li><strong>Issue identification:</strong> The mediator works with both parties to identify the issues that need to be resolved.</li>
+<li><strong>Exploration and negotiation:</strong> The mediator facilitates structured discussion — exploring options, testing ideas, and helping both parties understand each other's positions.</li>
+<li><strong>Agreement:</strong> Where agreement is reached on any issues, these are written into a session summary. Where agreement is not reached, the mediator identifies what remains in dispute.</li>
+<li><strong>Close:</strong> The mediator provides a written summary of agreed outcomes, which the parties take away and use as the basis for formal legal documents.</li>
+</ul>
+<p>Sessions typically run 3–6 hours. Complex matters may require two sessions. Most people find the structured environment of mediation far less stressful than the adversarial nature of court proceedings.</p>
+
+<h2 id="q3">3. Is mediation confidential?</h2>
+<p>Yes. Family mediation is strictly confidential under section 10H of the Family Law Act. This means:</p>
+<ul>
+<li>What is said in the mediation session cannot be used as evidence in later court proceedings</li>
+<li>The mediator cannot be called as a witness in court</li>
+<li>Neither party can refer to statements made in the session in court affidavits</li>
+</ul>
+<p>The confidentiality has two exceptions: where a disclosure in the session amounts to a genuine threat to someone's safety, the mediator may be required to report it; and where both parties consent to disclosure of specific information. Outside these exceptions, confidentiality is absolute — it is one of the features that makes mediation work, because people can speak honestly about their real concerns without fear of those statements being weaponised.</p>
+<p>Note: the written agreement summary produced at the end of a successful mediation is not confidential — it is the starting point for the formal Consent Orders or BFA that formalise the outcome.</p>
+
+<h2 id="q4">4. Do I need a lawyer?</h2>
+<p>You do not need a lawyer in the mediation room. Many people mediate without a lawyer present and reach effective agreements. However, getting independent legal advice <em>before</em> the session (so you understand your legal entitlements) and <em>after</em> the session (before signing any formal documentation) is strongly recommended.</p>
+<p>Your lawyer's role in the mediation process is as your adviser — not your advocate at the table. The most effective mediation dynamic is usually one where both parties speak for themselves, with legal advice obtained outside the session. Where matters are particularly complex (significant business interests, trust structures, or high-value assets), having a lawyer in the room may be warranted.</p>
+<p>See our full guide on <a href="/the-role-of-the-lawyer-in-mediation/">the role of the lawyer in mediation</a> for more detail.</p>
+
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Mediation works best when both parties come prepared. We can help you understand what to bring and how to make the most of your session.</p><a href="/book-a-consultation/" class="btn btn-primary">Prepare for mediation — talk to us <span class="arr">→</span></a></div></div>
+
+<h2 id="q5">5. How much does mediation cost?</h2>
+<p>At Mediations Australia, we use fixed fees so there are no surprises. The total cost of a full-day mediation session (covering both parenting and property) is shared between both parties, making the per-party cost significantly lower than the per-hour cost of contested court proceedings.</p>
+<p>To put it in perspective:</p>
+<table><thead><tr><th>Process</th><th>Typical total cost (per party)</th><th>Typical timeline</th></tr></thead><tbody>
+<tr><td>Mediation (Mediations Australia)</td><td>$1,250–$4,000 (shared total)</td><td>4–8 weeks</td></tr>
+<tr><td>Consent Orders preparation (after mediation)</td><td>$1,500–$3,500</td><td>6–10 weeks (after mediation)</td></tr>
+<tr><td>Contested property hearing (per party)</td><td>$50,000–$175,000+</td><td>2–4+ years</td></tr>
+</tbody></table>
+<p>Government-funded mediation is available through <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a> and Family Relationship Centres (free or income-assessed), though waiting lists can be long. Private practitioners like Mediations Australia are typically available within 1–2 weeks.</p>
+
+<h2 id="q6">6. What if we can't reach agreement?</h2>
+<p>Not reaching a full agreement in mediation does not mean the process has failed. Partial agreements are extremely common and valuable — they narrow the issues in dispute and reduce the cost of any subsequent court proceedings. An agreement on parenting but not property, for example, saves significant court time and legal cost.</p>
+<p>Where no agreement is reached at all, the mediator for parenting matters issues a Section 60I certificate — certifying that both parties attended but could not resolve the dispute (or that one party failed to attend or make a genuine effort). This certificate allows either party to proceed to the FCFCOA for parenting orders. For property matters, either party can file in court at any time.</p>
+<p>In our experience, the vast majority of matters that reach mediation — including many that parties believed were unresolvable — do produce an agreement. The structured environment and the presence of a skilled, neutral mediator creates conditions that make agreement possible when it seemed impossible.</p>
+
+<h2 id="q7">7. Is a mediated agreement legally binding?</h2>
+<p>Not automatically. A mediated agreement becomes legally binding when it is formalised through one of two routes:</p>
+<ul>
+<li><strong>Consent Orders:</strong> The written mediation summary is used by a family lawyer to prepare an Application for Consent Orders, signed by both parties and filed with the FCFCOA. A Registrar approves it — usually within 4–8 weeks and without a hearing. Once approved, it is a court order and fully enforceable.</li>
+<li><strong>Binding Financial Agreement (BFA):</strong> A formal contract prepared by a family lawyer, with each party receiving independent legal advice before signing. Once signed, it is legally binding without court approval.</li>
+</ul>
+<p>An informal agreement — even a carefully written one — is not legally enforceable. Either party can walk away from it. Formalising the outcome of mediation is essential and is the final step in the process.</p>
+
+<h2 id="bonus">Bonus: Is mediation right for my situation?</h2>
+<p>Mediation works well for most separating couples where both parties are willing to engage in good faith. It is particularly effective where:</p>
+<ul>
+<li>Both parties want to maintain a co-parenting relationship</li>
+<li>The financial matters are within a range both parties understand</li>
+<li>Speed and cost matter</li>
+<li>Both parties want control over the outcome rather than handing it to a court</li>
+</ul>
+<p>Mediation is not suitable where there is active family violence and one party is unsafe, where one party is concealing assets and will not disclose honestly, or where there is a genuine urgency requiring immediate court orders (for example, a risk of a child being removed from Australia). In these cases, court proceedings may be necessary — and the appropriate exemptions from the FDR requirement exist.</p>
+<p>If you are unsure whether mediation is right for your situation, the best first step is a conversation with an accredited mediator. At Mediations Australia, our initial consultation is free and will tell you honestly whether our process is the right fit.</p>
+
+<h2 id="faq">More questions answered</h2>
+<h3>Can we do mediation online?</h3>
+<p>Yes. Online mediation is fully available at Mediations Australia and is equally effective for most matters. Video sessions allow parties to participate from anywhere in Australia — useful for couples in different cities or where travel is difficult. Shuttle mediation (parties in separate video rooms) is also available for high-conflict situations.</p>
+<h3>Can we do separate sessions if we don't want to be in the same room?</h3>
+<p>Yes. Shuttle mediation — where the mediator moves between the two parties in separate rooms (or separate video calls) — is available and commonly used where direct interaction would be too difficult or unsafe. Shuttle mediation takes longer but can be effective for high-conflict matters.</p>
+<h3>What if mediation produces an agreement but one party changes their mind?</h3>
+<p>An unsigned or informal agreement is not legally enforceable. Once formalised as Consent Orders or a BFA, the agreement is binding and enforceable as a court order (Consent Orders) or a legal contract (BFA). This is why formalising the outcome promptly after mediation is so important — it prevents either party from simply walking away.</p>
+<h3>How do I find an accredited mediator?</h3>
+<p>Accredited Family Dispute Resolution Practitioners are registered under the <em>Family Law (Family Dispute Resolution Practitioners) Regulations 2008</em>. Mediations Australia's practitioners hold this accreditation and can issue Section 60I certificates for parenting matters. You can also search for accredited practitioners through the <a href="https://msb.org.au/" target="_blank" rel="noopener">Mediator Standards Board</a>.</p>
+
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/what-is-mediation-in-family-law/">What is family law mediation?</a></li>
+<li><a href="/family-mediation-process-guide/">How the family mediation process works</a></li>
+<li><a href="/cost-of-divorce-in-australia/">The cost of separation — court vs mediation</a></li>
+<li><a href="/consent-orders/">Consent Orders — making your agreement legally binding</a></li>
+<li><a href="/family-mediation/">Book a session with Mediations Australia</a></li>
+</ul>
+<p>For family dispute resolution information and accredited practitioners: <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">Attorney-General's Department — FDR</a>. For government-funded options: <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener">Family Relationships Online</a>.</p>
+""",
+},
+
 }  # end EXPANDED dict
+
 
