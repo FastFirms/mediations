@@ -408,10 +408,330 @@ META_OVERRIDES = {
         "desc":  "What's the difference between mediation and collaborative law? Compare costs, process and legal outcomes to choose the right path. Free consult.",
         "h1":    "Mediation vs Collaborative Law: Key Differences Explained",
     },
-    # Force-rebuild to recover lost body content
-    "preparing-for-mediation": {},
-    "costs-of-going-to-court": {},
-    "estate-dispute-mediation": {},
+    "costs-of-going-to-court": {
+        "title": "The Real Cost of Going to Court in Australia",
+        "desc":  "Court costs in Australia: filing fees, lawyer fees, hidden costs, time. See what family court actually costs — and the cheaper alternative.",
+        "h1":    "The Real Cost of Going to Court in Australia",
+        "read_min": "10",
+        "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> A contested family law matter in Australia typically costs each party $30,000–$100,000 in legal fees alone, takes one to three years, and hands all decisions to a judge. For most disputes, mediation resolves the same issues in weeks for a fraction of that cost — with an agreement you control.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#filing-fees">Court filing fees</a></li>
+<li><a href="#lawyer-fees">Lawyer and barrister fees</a></li>
+<li><a href="#hidden-costs">Hidden costs most people miss</a></li>
+<li><a href="#total-cost">What a contested case actually costs</a></li>
+<li><a href="#time-cost">The cost of time</a></li>
+<li><a href="#emotional-cost">Emotional and relationship cost</a></li>
+<li><a href="#comparison">Court vs mediation: full comparison</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="filing-fees">Court filing fees</h2>
+<p>The Federal Circuit and Family Court of Australia (FCFCOA) charges filing fees at every stage. These are government fees — separate from anything you pay a lawyer — and they add up quickly.</p>
+<table><thead><tr><th>Application type</th><th>Fee (2026)</th></tr></thead><tbody>
+<tr><td>Initiating application (financial/parenting)</td><td>$365</td></tr>
+<tr><td>Response to initiating application</td><td>$185</td></tr>
+<tr><td>Each interim hearing day</td><td>$545</td></tr>
+<tr><td>First trial day</td><td>$1,090</td></tr>
+<tr><td>Each subsequent trial day</td><td>$545</td></tr>
+<tr><td>Subpoena (per subpoena)</td><td>$55</td></tr>
+</tbody></table>
+<p>A case that runs to a three-day trial — not unusual for contested property settlements — will accumulate $2,725 in court fees alone, before a single hour of legal time is charged. Hardship exemptions exist but are narrowly applied.</p>
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Concerned about what court will cost you? Get an honest picture in a free consultation — no obligation.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="lawyer-fees">Lawyer and barrister fees</h2>
+<p>Court fees are the smallest item on the bill. Solicitor and barrister fees dwarf them.</p>
+<p><strong>Solicitor fees</strong> for family law matters in Australia typically run $350–$600 per hour depending on experience and city. A solicitor will spend time on correspondence, disclosure, court documents, conferences, and preparation — easily 50–150 hours on a contested matter before the trial begins.</p>
+<p><strong>Barrister fees</strong> are charged separately. For a hearing day, a family law barrister charges $3,000–$8,000 per day. Preparation — reading briefs, drafting submissions — adds further fees at $400–$800 per hour.</p>
+<table><thead><tr><th>Fee type</th><th>Typical range</th></tr></thead><tbody>
+<tr><td>Solicitor hourly rate</td><td>$350–$600/hr</td></tr>
+<tr><td>Barrister daily rate (hearing)</td><td>$3,000–$8,000/day</td></tr>
+<tr><td>Barrister preparation rate</td><td>$400–$800/hr</td></tr>
+<tr><td>Family report (psychologist)</td><td>$3,500–$8,000</td></tr>
+<tr><td>Property valuation</td><td>$500–$2,000</td></tr>
+<tr><td>Business valuation</td><td>$5,000–$25,000</td></tr>
+</tbody></table>
+
+<h2 id="hidden-costs">Hidden costs most people miss</h2>
+<p>The line items above are visible. These costs often go unbudgeted:</p>
+<ul>
+<li><strong>Subpoenas and third-party disclosure.</strong> Obtaining bank records, superannuation statements, business records, and tax documents each generates subpoena fees, compliance costs, and solicitor time to review.</li>
+<li><strong>Independent children's lawyer (ICL).</strong> Where the court appoints an ICL, both parties typically share the cost: $5,000–$15,000 in total.</li>
+<li><strong>Lost income.</strong> Attending hearings, conferences, and meetings means time away from work. A three-day trial costs three days of income — plus preparation days either side.</li>
+<li><strong>Ongoing housing costs.</strong> While proceedings drag on, you may maintain two households instead of one. For a case lasting 18 months, that duplication is real money.</li>
+<li><strong>Mental health support.</strong> Litigation is psychologically gruelling. Counselling, therapy, and GP visits are a real cost of contested court proceedings that never appears in a legal bill.</li>
+<li><strong>Cost orders against you.</strong> If a judge finds your conduct unreasonable — refusing a reasonable offer, for example — they can order you to pay part of the other side's costs. This is rare but real.</li>
+</ul>
+
+<h2 id="total-cost">What a contested case actually costs</h2>
+<p>Aggregating court fees, solicitor fees, barrister fees, and expert reports, a <strong>contested family law property settlement</strong> in Australia typically costs each party:</p>
+<table><thead><tr><th>Case complexity</th><th>Each party's legal costs</th><th>Total (both parties combined)</th></tr></thead><tbody>
+<tr><td>Simple (2–3 hearing days, consent possible)</td><td>$15,000–$35,000</td><td>$30,000–$70,000</td></tr>
+<tr><td>Moderate (4–8 hearing days, some contest)</td><td>$35,000–$70,000</td><td>$70,000–$140,000</td></tr>
+<tr><td>Complex (business assets, business valuation, trial)</td><td>$70,000–$150,000+</td><td>$140,000–$300,000+</td></tr>
+</tbody></table>
+<p>That money comes from the asset pool. A couple with $600,000 in assets can spend $100,000 in combined legal fees — reducing the pool available to both parties by one sixth before it is divided.</p>
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Ready to protect more of your asset pool? Mediation typically costs a fraction of court for the same result.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="time-cost">The cost of time</h2>
+<p>The FCFCOA is under significant pressure. Wait times between filing and a final hearing vary but a contested trial — when parties cannot settle — routinely takes <strong>12–24 months</strong> from filing to judgment in most registries. Complex cases take longer.</p>
+<p>During that period:</p>
+<ul>
+<li>Property cannot be sold or refinanced without both parties' consent or a court order</li>
+<li>Superannuation remains unsplit</li>
+<li>Business decisions are constrained</li>
+<li>Emotional closure is deferred</li>
+<li>Legal bills accumulate at every interlocutory step</li>
+</ul>
+<p>Children's matters resolve faster in many cases — the court prioritises interim parenting orders — but final parenting orders after a contested hearing can still take 12+ months.</p>
+
+<h2 id="emotional-cost">Emotional and relationship cost</h2>
+<p>Litigation is adversarial by design. Each side builds a case against the other. Evidence of bad conduct, parenting failures, financial dishonesty, or infidelity may be placed before a judge. Once documents are filed and positions hardened, co-parenting relationships — which must survive for years — are often seriously damaged.</p>
+<p>Research consistently shows that parties who negotiate their own agreements (through mediation or direct negotiation) report higher satisfaction, greater compliance, and better co-parenting outcomes than those whose arrangements are imposed by a judge. A court order tells you what you must do; a mediated agreement reflects what you agreed to do. The difference in how it feels — and how it holds — is significant.</p>
+<blockquote><p>"The cases I see in court are rarely ones where court was the only option. Most could have been resolved earlier, with less damage, if both parties had engaged with mediation first. By the time they reach a trial, the relationship — and often the asset pool — is in much worse shape than it needed to be."</p><footer>— Dan Toombs, Founder &amp; Accredited Mediator, Mediations Australia</footer></blockquote>
+
+<h2 id="comparison">Court vs mediation: full comparison</h2>
+<table><thead><tr><th>Factor</th><th>Family Court</th><th>Mediation</th></tr></thead><tbody>
+<tr><td>Typical cost (per party)</td><td>$30,000–$100,000+</td><td>$1,500–$5,000 total (shared)</td></tr>
+<tr><td>Timeframe</td><td>12–36 months</td><td>Days to weeks</td></tr>
+<tr><td>Who decides</td><td>Judge</td><td>You and your ex-partner</td></tr>
+<tr><td>Privacy</td><td>Public record (mostly)</td><td>Fully confidential</td></tr>
+<tr><td>Flexibility</td><td>Limited — court's orders</td><td>High — tailored to your family</td></tr>
+<tr><td>Co-parenting impact</td><td>Often damaging</td><td>Usually preserves relationship</td></tr>
+<tr><td>Enforceability</td><td>Binding court orders</td><td>Binding via consent orders or BFA</td></tr>
+<tr><td>Resolution rate</td><td>~5% reach a final trial</td><td>~85–90% reach agreement</td></tr>
+</tbody></table>
+<p>The 5% figure is important: around 95% of family law matters in Australia settle before trial — often at the courthouse door, under enormous financial and emotional pressure. Mediation achieves the same settlement, usually in far less time, at far lower cost, and with you in control of the outcome rather than a barrister bargaining on your behalf.</p>
+<div class="post-cta reveal"><div class="post-cta-inner"><p>See if mediation is right for your situation — a free initial consultation takes 30 minutes.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="faq">Frequently asked questions</h2>
+<details><summary>Can I get legal aid for family court in Australia?</summary><p>Legal aid is available but means-tested and merit-tested. Eligibility thresholds are low — most people with a modest income and any assets do not qualify. Legal Aid offices also have limited capacity, and representation is often restricted to children's matters. Most property disputes proceed without legal aid.</p></details>
+<details><summary>What if we settle before trial — will I still pay all those costs?</summary><p>No. Costs are proportional to the stage at which you settle. If you settle after filing but before any hearing, your combined costs may be $15,000–$40,000 rather than $100,000+. This is why settling early — ideally through mediation before filing — makes such a significant financial difference.</p></details>
+<details><summary>Can the court order my ex to pay my legal costs?</summary><p>In limited circumstances. Family law courts generally make costs orders against a party whose conduct was unreasonable — for example, repeatedly ignoring subpoenas, making false allegations, or rejecting a reasonable offer that the court later betters. These orders are not automatic and are the exception rather than the rule.</p></details>
+<details><summary>Is mediation legally binding?</summary><p>A mediated agreement itself is not automatically binding — but it can be made binding in two ways: by filing it with the court as consent orders (which the court approves and issues), or by having solicitors draft it as a Binding Financial Agreement under the Family Law Act. Either approach gives you the certainty of a binding document with the efficiency of mediation.</p></details>
+<details><summary>Does mediation work if my ex won't cooperate?</summary><p>Mediation requires both parties to attend and engage. If your ex refuses, you may need to obtain a Section 60I certificate (which confirms genuine attempts at FDR were made) before the court will hear your application. We can advise on this and on situations where mediation is not appropriate — including cases involving family violence or where one party refuses to disclose financial information honestly.</p></details>
+""",
+    },
+
+    "estate-dispute-mediation": {
+        "title": "Estate Dispute Mediation in Australia",
+        "desc":  "Families fighting over estates and wills? Mediation resolves inheritance disputes faster and cheaper than court, without destroying family relationships.",
+        "h1":    "Estate Dispute Mediation in Australia",
+        "read_min": "9",
+        "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Estate and inheritance disputes — contested wills, executor conflicts, family provision claims — can be resolved through mediation in weeks rather than years. Mediation is private, preserves family relationships, and typically costs a fraction of litigation. Most inheritance disputes that go to court settle eventually anyway, but only after enormous cost to both the estate and the family.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#types">Types of estate disputes we mediate</a></li>
+<li><a href="#why-mediation">Why mediation works for estate disputes</a></li>
+<li><a href="#process">The mediation process for estate disputes</a></li>
+<li><a href="#costs">Costs: mediation vs probate litigation</a></li>
+<li><a href="#family-provision">Family provision claims and mediation</a></li>
+<li><a href="#executor">When the executor is the problem</a></li>
+<li><a href="#when-not">When mediation isn't appropriate</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="types">Types of estate disputes we mediate</h2>
+<p>Inheritance disputes take many forms. Mediation can address almost all of them:</p>
+<ul>
+<li><strong>Contested wills.</strong> A beneficiary or excluded family member claims the will is invalid — because the testator lacked capacity, was unduly influenced, or the will was incorrectly witnessed.</li>
+<li><strong>Family provision claims.</strong> An eligible person (spouse, child, former spouse, de facto partner, dependant) claims inadequate provision was made for them in the will or on intestacy.</li>
+<li><strong>Executor disputes.</strong> Beneficiaries challenge how the executor is administering the estate — delays, poor investment decisions, conflicts of interest, or suspected misappropriation.</li>
+<li><strong>Jointly-held property and assets.</strong> Disagreements about what falls within the estate versus assets held in trust, joint names, or through superannuation nominations.</li>
+<li><strong>Superannuation death benefit disputes.</strong> Where a dependant challenges a trustee's decision about how super is paid following death.</li>
+<li><strong>Business succession disputes.</strong> Where the deceased held an interest in a family business and successors disagree about valuation, buyouts, or ongoing management.</li>
+<li><strong>Disagreements about estate administration.</strong> Sale of the family home, distribution timing, valuing personal items with sentimental significance.</li>
+</ul>
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Estate disputes can escalate quickly. Early mediation protects the estate and the family. Book a free consultation.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="why-mediation">Why mediation works for estate disputes</h2>
+<p>Estate disputes have a particular character that makes mediation especially well-suited. Unlike commercial disputes between strangers, inheritance conflicts occur within families — people who will remain related for life and who share children, grandchildren, and memories. The stakes are not only financial; they are relational and emotional.</p>
+<p>Litigation destroys what mediation can preserve. A court process in which siblings file affidavits detailing each other's failings, question the deceased's mental capacity, or allege undue influence causes harm that outlasts the outcome. Many families that litigate an estate dispute do not recover from it.</p>
+<p>Mediation creates a different dynamic:</p>
+<ul>
+<li><strong>Confidentiality.</strong> Unlike court proceedings, mediation is private. Nothing said in mediation can be used against a party in subsequent litigation. Families can speak honestly without fear of it appearing in a judgment.</li>
+<li><strong>Flexibility.</strong> A court can only divide money. A mediator can help parties reach agreements that involve property, personal items, ongoing arrangements, apologies, and relationship repair — things no judge can order.</li>
+<li><strong>Speed.</strong> Probate litigation takes one to three years. Estate mediation typically resolves disputes in one or two sessions over a matter of weeks.</li>
+<li><strong>Estate preservation.</strong> Legal fees in contested estate matters are typically paid from the estate — reducing what beneficiaries receive. Mediation protects the estate.</li>
+</ul>
+
+<h2 id="process">The mediation process for estate disputes</h2>
+<p>Estate mediations follow a structured but flexible process:</p>
+<ol>
+<li><strong>Pre-mediation preparation.</strong> Each party provides relevant documents — the will, asset valuations, superannuation statements, correspondence from the executor. The mediator reviews these before the session and may speak with each party individually.</li>
+<li><strong>Joint session opening.</strong> The mediator explains the process, ground rules, and confidentiality. Each party has an opportunity to describe their perspective and what they are seeking.</li>
+<li><strong>Separate sessions (caucus).</strong> The mediator meets privately with each party — often multiple times — to explore interests beneath stated positions, test options, and reality-check expectations.</li>
+<li><strong>Negotiation and agreement.</strong> The mediator helps parties move from positions to interests, and from interests to workable options. Where agreement is reached, it is documented.</li>
+<li><strong>Formalising the outcome.</strong> Depending on the nature of the dispute, the agreement may be formalised as a deed of settlement, consent orders in the Supreme Court, or a variation to the estate distribution recorded by the executor.</li>
+</ol>
+<p>Solicitors may attend or be available for advice without actively running the process. Many parties find that having their solicitor present — but in a supporting rather than leading role — gives them confidence without escalating the process into adversarial territory.</p>
+
+<h2 id="costs">Costs: mediation vs probate litigation</h2>
+<table><thead><tr><th>Factor</th><th>Contested probate litigation</th><th>Estate mediation</th></tr></thead><tbody>
+<tr><td>Typical duration</td><td>1–3 years</td><td>2–8 weeks</td></tr>
+<tr><td>Legal costs (per party)</td><td>$30,000–$120,000+</td><td>$2,000–$8,000 total (shared)</td></tr>
+<tr><td>Who pays</td><td>Often the estate (reducing distribution)</td><td>Parties share mediator fee</td></tr>
+<tr><td>Privacy</td><td>Public (Supreme Court proceedings)</td><td>Fully confidential</td></tr>
+<tr><td>Relationship impact</td><td>Typically severe</td><td>Usually manageable</td></tr>
+<tr><td>Outcome flexibility</td><td>Limited — court orders only</td><td>Tailored — can include non-financial elements</td></tr>
+</tbody></table>
+<p>The cost comparison is stark. Legal costs in estate litigation are routinely paid from the estate — meaning every dollar spent on lawyers comes out of what beneficiaries inherit. A $500,000 estate that incurs $150,000 in combined legal fees distributes $350,000. Mediation costs a few thousand dollars.</p>
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Protect the estate and the family. Speak to a specialist estate mediator at no cost.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="family-provision">Family provision claims and mediation</h2>
+<p>Family provision claims — where an eligible person challenges a will on the ground that inadequate provision was made for them — are among the most common estate disputes in Australia. Each state and territory has its own legislation governing these claims, with different eligibility criteria and time limits:</p>
+<table><thead><tr><th>State/Territory</th><th>Governing legislation</th><th>Time limit to file</th></tr></thead><tbody>
+<tr><td>NSW</td><td>Succession Act 2006 (NSW)</td><td>12 months from death</td></tr>
+<tr><td>VIC</td><td>Administration and Probate Act 1958 (VIC)</td><td>6 months from grant of probate</td></tr>
+<tr><td>QLD</td><td>Succession Act 1981 (QLD)</td><td>9 months from death</td></tr>
+<tr><td>WA</td><td>Family Provision Act 1972 (WA)</td><td>6 months from grant of probate</td></tr>
+<tr><td>SA</td><td>Inheritance (Family Provision) Act 1972 (SA)</td><td>6 months from grant of probate</td></tr>
+</tbody></table>
+<p>Mediation can be used for family provision claims at any stage — before filing, after filing but before hearing, or (with court direction) during proceedings. Many courts actively encourage parties to attempt mediation before listing a final hearing. The Supreme Court of NSW, for example, routinely refers family provision matters to mediation.</p>
+
+<h2 id="executor">When the executor is the problem</h2>
+<p>Executors have significant obligations — to administer the estate promptly, honestly, and in accordance with the will. Where beneficiaries are concerned that an executor is not meeting those obligations, the options range from informal resolution to an application to the Supreme Court to remove the executor.</p>
+<p>Mediation offers a middle path. In a structured session, beneficiaries can raise concerns about delays, asset handling, or suspected self-dealing. The executor can respond with their perspective and the practical constraints they face. Many executor disputes arise from miscommunication and poor transparency rather than bad faith — and mediation resolves those efficiently without the nuclear option of court proceedings.</p>
+<p>Where there is genuine evidence of misappropriation or fraud, mediation is less appropriate — legal advice and potentially court action are warranted. We will say this plainly if it applies to your situation.</p>
+
+<h2 id="when-not">When mediation isn't appropriate</h2>
+<p>Mediation is not right for every estate dispute. It is unlikely to succeed where:</p>
+<ul>
+<li>There is strong evidence of fraud, forgery, or financial elder abuse — these require court investigation and potentially police involvement</li>
+<li>A party lacks the legal or mental capacity to participate meaningfully</li>
+<li>There is a significant power imbalance and one party cannot advocate for themselves even with support</li>
+<li>Emergency orders are needed to freeze assets or prevent dissipation of the estate</li>
+</ul>
+<p>If any of these apply, we will tell you in the initial consultation and help you understand your options.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<details><summary>Does the executor have to attend mediation?</summary><p>The executor is a necessary party to most estate mediations — they administer the estate and must implement any agreement. We can assist with engaging executors who are reluctant, and explain the practical and legal implications of refusing to participate in good faith.</p></details>
+<details><summary>What if some beneficiaries are overseas or interstate?</summary><p>Mediations Australia conducts estate mediations online and by videoconference. Parties can participate from anywhere in Australia or internationally. We have experience facilitating multi-party estate mediations where parties are geographically dispersed.</p></details>
+<details><summary>Will we need lawyers at the mediation?</summary><p>Solicitors can attend but are not required. Many parties prefer to have legal advice available — either with their solicitor present or available by phone — without having lawyers run the session. We recommend that any agreement reached is reviewed by a solicitor before being signed.</p></details>
+<details><summary>How long does an estate mediation session take?</summary><p>Most estate mediations take a full day (six to eight hours). Complex disputes involving multiple parties, a contested will, and significant assets may require a second session. We schedule adequate time and do not rush outcomes.</p></details>
+<details><summary>Can we mediate a disputed will if probate has already been granted?</summary><p>Yes. Probate being granted does not prevent mediation — it simply means the executor has formal authority to administer the estate. Family provision claims and distribution disputes can still be mediated after probate is granted.</p></details>
+""",
+    },
+
+    "preparing-for-mediation": {
+        "title": "How to Prepare for Mediation in Australia",
+        "desc":  "Practical guide to preparing for family law mediation in Australia — what to bring, what to expect, and how to get the best outcome from your session.",
+        "h1":    "How to Prepare for Mediation in Australia",
+        "read_min": "8",
+        "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Good preparation makes mediation significantly more effective. Know your financial position, think about your priorities (not just your positions), bring the right documents, and arrive with an open mind about solutions you haven't yet considered. Parties who prepare well reach better agreements faster — and feel more confident and in control throughout the process.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#before">Before your mediation session</a></li>
+<li><a href="#documents">Documents to bring</a></li>
+<li><a href="#financial">Understanding your financial position</a></li>
+<li><a href="#priorities">Knowing your priorities</a></li>
+<li><a href="#on-the-day">What to expect on the day</a></li>
+<li><a href="#emotional">Preparing emotionally</a></li>
+<li><a href="#parenting">Preparing for parenting mediations</a></li>
+<li><a href="#after">After mediation</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="before">Before your mediation session</h2>
+<p>The work you do before sitting down in a mediation session determines much of what is possible once you are there. Most mediations that fail do so because one or both parties arrived without having thought through what they actually need — as distinct from what they want or what they fear the other party will demand.</p>
+<p>A useful framework before any mediation: separate your <strong>positions</strong> (what you are asking for) from your <strong>interests</strong> (why you are asking for it). "I want to keep the house" is a position. "I need housing stability for the children for the next three years" is an interest. Interests are usually more flexible than positions — there may be more than one way to meet them. Mediators work at the level of interests, not positions.</p>
+<p>Before the session, also think about:</p>
+<ul>
+<li>What would a fair outcome actually look like?</li>
+<li>What are you willing to give to get what you most need?</li>
+<li>What happens if mediation doesn't reach agreement — what does that alternative actually cost you?</li>
+<li>What does the other party genuinely need, and is there a way to meet that while also meeting yours?</li>
+</ul>
+<div class="post-cta reveal"><div class="post-cta-inner"><p>Not sure what to expect from your first mediation? Our team can walk you through the process in a free call.</p><a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a></div></div>
+
+<h2 id="documents">Documents to bring</h2>
+<p>For property settlement and financial mediations, bring organised copies of everything relevant to your financial position. You do not need to have exchanged formal disclosure documents before mediation (though it helps), but both parties need a reasonable picture of the asset pool to have a productive conversation.</p>
+<table><thead><tr><th>Category</th><th>What to bring</th></tr></thead><tbody>
+<tr><td>Real estate</td><td>Recent valuation or comparable sales; current mortgage statement; rates notice</td></tr>
+<tr><td>Bank accounts</td><td>Statements for all accounts in your name (past 12 months)</td></tr>
+<tr><td>Superannuation</td><td>Latest member statement for each fund; rollover amounts if consolidated</td></tr>
+<tr><td>Vehicles</td><td>Redbook valuation; finance payout figure if applicable</td></tr>
+<tr><td>Debts</td><td>All loan statements: home loan, car loans, personal loans, credit cards</td></tr>
+<tr><td>Business interests</td><td>Most recent financial statements; any valuation already obtained</td></tr>
+<tr><td>Investments</td><td>Share portfolio statements; managed fund values; trust documents</td></tr>
+<tr><td>Legal documents</td><td>Any existing court orders; pre-nuptial or financial agreements</td></tr>
+</tbody></table>
+<p>Do not wait until you have everything perfectly organised — bring what you have. The mediator can work with imprecise figures and note what remains to be confirmed. Perfect information is rarely available; approximate information, honestly given, is workable.</p>
+
+<h2 id="financial">Understanding your financial position</h2>
+<p>You do not need a lawyer or accountant to prepare for mediation, but you do need to understand your own financial situation reasonably well. Before the session:</p>
+<ul>
+<li><strong>Know your total assets.</strong> List everything you own — jointly or separately — and a realistic current value for each item.</li>
+<li><strong>Know your total liabilities.</strong> List all debts — mortgage, credit cards, personal loans, tax debts, HECS — and the current payout amount.</li>
+<li><strong>Calculate the net pool.</strong> Assets minus liabilities gives you the net pool available to divide. Understanding this figure helps you evaluate any proposal quickly.</li>
+<li><strong>Know your superannuation balance.</strong> Super is an asset of the relationship in most cases. Log into your fund's member portal to get a current balance.</li>
+<li><strong>Understand your post-settlement income needs.</strong> What do you need to live on? What housing can you afford after settlement? These practical realities should guide what you negotiate for.</li>
+</ul>
+<p>If you are unsure about any of these, a brief consultation with a family law solicitor before mediation is worthwhile — not to have the solicitor negotiate for you, but to make sure you understand your legal entitlements before you make decisions.</p>
+
+<h2 id="priorities">Knowing your priorities</h2>
+<p>The most effective negotiators in mediation know what they genuinely need versus what they would like. Before the session, rank your priorities honestly:</p>
+<ul>
+<li>What is the single most important thing you need from this settlement?</li>
+<li>What would you give up to secure it?</li>
+<li>What matters least to you — and could you trade that away?</li>
+<li>Are there non-financial things you need: an apology, a commitment about the children's schooling, an agreement about how you communicate going forward?</li>
+</ul>
+<p>Understanding your own priorities helps you avoid being distracted by issues that feel important but are not actually central to your situation. Many mediations stall over relatively minor assets (a car, a piece of furniture, a pet) when the real issues are about housing security, income, or the children's arrangements. Know what you actually care about before you walk in.</p>
+
+<h2 id="on-the-day">What to expect on the day</h2>
+<p>A typical family law mediation session runs four to eight hours. Most people find this a significant commitment — emotionally as well as practically.</p>
+<p>The session will generally follow this structure:</p>
+<ol>
+<li><strong>Opening.</strong> The mediator explains the process, confirms confidentiality, and invites each party to give an opening statement — what they are here for and what they hope to achieve. This is not a debate; each party speaks without interruption.</li>
+<li><strong>Information exchange.</strong> The mediator helps both parties understand the factual landscape — the asset pool, the key issues, areas of agreement and disagreement.</li>
+<li><strong>Private sessions.</strong> The mediator will meet privately with each party (called caucus). This is where you can speak frankly about what you really need, what you are concerned about, and what you might be willing to accept. What you say in caucus is confidential unless you authorise the mediator to share it.</li>
+<li><strong>Joint negotiation.</strong> The mediator helps the parties move toward agreement, testing proposals and exploring options. This may involve multiple rounds of private sessions.</li>
+<li><strong>Agreement (if reached).</strong> If the parties reach agreement, it is documented — usually as a written summary that both parties sign. This is then formalised by solicitors into consent orders or a binding financial agreement.</li>
+</ol>
+<p>Bring snacks or lunch. Be prepared for the session to go longer than anticipated if agreement is within reach. The mediator will manage the pace and call breaks as needed.</p>
+
+<h2 id="emotional">Preparing emotionally</h2>
+<p>Mediation is a structured professional process, but it covers deeply personal ground. You may be discussing your home, your children, your financial future, and your relationship with someone you are in conflict with. Emotional preparation matters as much as practical preparation.</p>
+<ul>
+<li><strong>Get enough sleep the night before.</strong> Decision-making deteriorates significantly when you are tired. This is not the moment to stay up late reviewing documents.</li>
+<li><strong>Eat before you arrive.</strong> Low blood sugar affects judgment and patience. Do not arrive hungry.</li>
+<li><strong>Have a support person available (not in the room).</strong> A friend, family member, or counsellor you can call during a break — not to advise on the legal issues, but to decompress and stay grounded.</li>
+<li><strong>Have a plan for intense moments.</strong> There will be moments that feel unfair, where you want to react or shut down. Know in advance that you can ask for a break, request private time with the mediator, or take a few minutes outside.</li>
+<li><strong>Remember the alternative.</strong> When mediation feels hard, the comparison is not an easier conversation — it is the alternative of two to three years of litigation, $50,000–$100,000 in legal costs, and a judge making your decisions.</li>
+</ul>
+<blockquote><p>"The most valuable thing I see clients do before mediation is think seriously about what they are actually trying to achieve — not just what they are afraid of losing. That shift from fear to clarity changes what is possible in the room."</p><footer>— Dan Toombs, Founder &amp; Accredited Mediator, Mediations Australia</footer></blockquote>
+
+<h2 id="parenting">Preparing for parenting mediations</h2>
+<p>Parenting mediations have a different emphasis to financial ones. The focus is on the children's needs and how both parents will meet them. To prepare:</p>
+<ul>
+<li><strong>Know your children's current routine</strong> in detail — school days, activities, care arrangements, medical appointments, relationships with extended family</li>
+<li><strong>Think about what the children need</strong> (not just what you want) — stability, both parents, particular activities, school continuity</li>
+<li><strong>Consider how decisions will be made</strong> — schooling, medical care, religion, extracurricular activities — and what arrangements you need for these</li>
+<li><strong>Think practically about logistics</strong> — where each parent lives, work schedules, transport, school holidays, special occasions</li>
+<li><strong>Be prepared to discuss communication</strong> — how you and the other parent will communicate about the children going forward, and what you each need that arrangement to look like</li>
+</ul>
+<p>Children do not attend mediation. Their voices may be represented through a family report (written by a psychologist who interviews the children and both parents) if one has been prepared — but more commonly, the mediator will invite each parent to speak to the children's needs from their own perspective.</p>
+
+<h2 id="after">After mediation</h2>
+<p>If you reach agreement, the next steps depend on the type of agreement:</p>
+<ul>
+<li><strong>Financial agreement.</strong> The summary document from mediation goes to solicitors, who draft either a Binding Financial Agreement (BFA) or an application for consent orders. Both are legally binding once properly executed. This process typically takes two to six weeks.</li>
+<li><strong>Parenting agreement.</strong> May be formalised as consent orders through the court (binding and enforceable) or as a parenting plan (not legally binding but documented). Consent orders are generally recommended where there is any concern about compliance.</li>
+</ul>
+<p>If mediation does not reach full agreement, partial agreements can still be recorded and help narrow the issues in any subsequent process. An impasse in mediation is not a failure — it clarifies where the genuine disagreement lies and often leads to faster resolution once both parties have had time to reflect.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+<details><summary>Do I need a lawyer at mediation?</summary><p>No — and many people mediate without a solicitor present. However, for complex financial matters or where you are unsure of your legal entitlements, having a solicitor available (either in the room or by phone) gives you confidence to make informed decisions. We recommend a solicitor review any agreement before you sign.</p></details>
+<details><summary>What if my ex won't disclose their finances honestly?</summary><p>Mediation depends on reasonable financial transparency. If you have strong evidence that your ex is concealing assets or income, raise this with the mediator before or at the start of the session. Mediation can still proceed where disclosure is imperfect, but you should not agree to a financial settlement based on information you have real reason to doubt. A solicitor can advise on the formal disclosure obligations that apply in court proceedings.</p></details>
+<details><summary>Can I change my mind after signing the mediation agreement?</summary><p>The summary from mediation is generally not itself binding — it becomes binding once solicitors formalise it as consent orders or a BFA. Until that final document is signed, either party can withdraw. However, walking away from a mediated agreement has consequences: it may affect your credibility in any subsequent proceedings, and you will bear the cost and delay of a different process.</p></details>
+<details><summary>How long does a typical mediation session take?</summary><p>Family law property mediations typically take four to eight hours. Parenting mediations are often shorter — two to four hours for less complex arrangements. We schedule full days to avoid rushing any agreement, and we are transparent about this upfront so you can arrange your day accordingly.</p></details>
+<details><summary>What if I feel unsafe or intimidated?</summary><p>Your safety is the first priority. If you have family violence concerns, tell us before the session — we will arrange separate arrival times, separate waiting areas, and can conduct the entire mediation via shuttle (no joint sessions) or by video. Mediation is not appropriate where there is an active safety risk, and we will not proceed in a way that puts you at risk.</p></details>
+""",
+    },
 }
 
 def read_existing_body(slug):
@@ -426,6 +746,52 @@ def read_existing_body(slug):
 
 def build_page(url, slug):
     ov = META_OVERRIDES.get(slug, {})
+    # If the override provides body directly, use it without fetching
+    if ov.get("title") and ov.get("body"):
+        body   = ov["body"]
+        title  = ov["title"]
+        desc   = ov["desc"]
+        h1_raw = ov.get("h1", title)
+        title = truncate(title, 60)
+        desc  = truncate(desc, 160)
+        _h1_plain = h1_raw[:60]
+        schema = [org_schema(), breadcrumb_schema([("Home", ""), ("Guides", "guides"), (_h1_plain, None)]), article_schema(title, desc)]
+        doc = head(title, desc, slug, og_type="article", extra_schema=schema)
+        doc = doc.replace("</head>", POST_CSS + "</head>")
+        doc += nav()
+        _crumb_label = h1_raw[:48] + ("…" if len(h1_raw) > 48 else "")
+        doc += f"""<main id="main">
+{crumb_html([("Home",""),("Guides","guides"),(_crumb_label,None)])}
+<article>
+<header class="post-hero"><div class="wrap-narrow">
+  <div class="post-meta"><span class="cat">Guide</span><span>{ov.get("read_min","9")} min read</span></div>
+  <h1>{esc(h1_raw)}</h1>
+  <div class="author-byline">
+    <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
+    <div>
+      <span class="author-name"><a href="/our-mediators/">Dan Toombs</a></span>
+      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS · Multi-Award Winning Lawyer</span>
+    </div>
+  </div>
+</div></header>
+<div class="post-body"><div class="wrap-narrow">
+<div class="body-import">
+{body}
+</div>
+{EXPERT_BIO}
+</div></div>
+<div class="cta-inline"><div class="wrap"><div class="cta-inline-inner">
+  <h2>Ready to resolve it <em>without court?</em></h2>
+  <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
+  <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>
+</div></div></div>
+</article></main>"""
+        doc += page_end()
+        path = os.path.join(OUT, slug)
+        os.makedirs(path, exist_ok=True)
+        with open(os.path.join(path, "index.html"), "w", encoding="utf-8") as f:
+            f.write(doc)
+        return
     existing_body = read_existing_body(slug) if ov and ov.get("title") else ""
     # Discard extracted body if it contains nested post-hero (means it was a bad prior rebuild)
     if existing_body and 'class="post-hero"' in existing_body:
