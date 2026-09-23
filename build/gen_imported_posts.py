@@ -908,13 +908,18 @@ META_OVERRIDES = {
 META_OVERRIDES.update(_EXPANDED)  # merge batch-expanded bodies
 
 def read_existing_body(slug):
-    """Extract body-import div from already-built page, for meta-override rebuilds."""
+    """Extract body content from already-built page (new or old format)."""
     path = os.path.join(OUT, slug, "index.html")
     if not os.path.exists(path):
         return ""
     with open(path, encoding="utf-8") as f:
         html = f.read()
+    # New design format
     m = re.search(r'<div class="body-import">(.*?)</div>\s*(?:<aside|<div class="cta-inline")', html, re.S)
+    if m:
+        return m.group(1).strip()
+    # Old format (pre-new-design)
+    m = re.search(r'<div class="post-body">(.*?)</div>\s*(?:<div class="post-cta|<section class="cta-band|</article)', html, re.S)
     return m.group(1).strip() if m else ""
 
 def read_existing_meta(slug):
