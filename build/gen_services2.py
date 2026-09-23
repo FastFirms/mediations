@@ -238,7 +238,7 @@ build("commercial-mediation",
  "Commercial Mediation",
  "Resolve the dispute — and keep the business moving.",
  "Book a free consultation to discuss your commercial dispute. We respond within one business day.",
- bg_image="/assets/images/hero-estate-dispute-mediation.jpg",
+ bg_image="/assets/images/hero-commercial-mediation.jpg",
  bg_pos="center 50%")
 
 # ---- REAL ESTATE & CONSTRUCTION MEDIATION ----
@@ -300,7 +300,7 @@ build("real-estate-mediation",
  "Real Estate & Construction Mediation",
  "Resolve your property dispute — without the litigation.",
  "Book a free consultation to discuss your property or construction dispute.",
- bg_image="/assets/images/hero-financial-agreements-mediation.jpg",
+ bg_image="/assets/images/hero-real-estate-mediation.jpg",
  bg_pos="center 50%")
 
 # ---- ELDER MEDIATION ----
@@ -929,7 +929,7 @@ build(
  "unfair-dismissal-termination-mediation",
  "Unfair Dismissal & Termination Mediation | Mediations Australia",
  "Resolve unfair dismissal and termination disputes through mediation. 21-day deadline — act fast. Faster, private and cheaper than a Fair Work Commission hearing.",
- "Workplace &amp; employment disputes",
+ "Unfair dismissal &amp; termination disputes",
  "Unfair Dismissal &amp; Termination Dispute Mediation",
  "Losing a job is one of the most stressful things that can happen. When a termination is challenged, both sides face a formal claim, legal costs and months of uncertainty. Mediation offers a faster, private and less adversarial path to a resolution that everyone can live with — but the 21-day deadline cannot be missed.",
  "An unfair dismissal dispute arises when a former employee believes their dismissal was harsh, unjust or unreasonable, and seeks a remedy such as compensation or reinstatement. In the national system, these claims are made to the Fair Work Commission, which then offers the parties a chance to resolve the matter by conciliation before it ever reaches a formal hearing.",
@@ -996,14 +996,14 @@ build(
  "Unfair Dismissal Mediation",
  "Act fast — <em>the 21-day deadline cannot be missed</em>.",
  "Book a free consultation now. Whether you have been dismissed or are facing a claim, mediation gives you a faster, private path to resolution.",
- bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_image="/assets/images/hero-unfair-dismissal-mediation.jpg",
  bg_pos="center 50%")
 
 build(
  "workplace-bullying-harassment-mediation",
  "Workplace Bullying & Harassment Mediation | Mediations Australia",
  "Mediation for workplace bullying and harassment — resolve complaints early, confidentially and constructively. Honest about when mediation is and isn't appropriate.",
- "Workplace &amp; employment disputes",
+ "Workplace bullying &amp; harassment disputes",
  "Workplace Bullying &amp; Harassment Mediation",
  "Being bullied or harassed at work takes a real toll — on your health, your confidence and your ability to do your job. Handled early and well, many of these situations can be resolved through mediation. Handled badly, or where the conduct is serious, they can escalate into tribunal applications, safety regulator involvement and lasting harm. This guide explains where mediation helps, and where it does not.",
  "Workplace bullying is repeated, unreasonable behaviour directed at a worker or group of workers that creates a risk to health and safety. The key elements are that the behaviour is repeated and unreasonable, and that it creates a health and safety risk. Harassment overlaps with bullying but also includes conduct connected to a protected attribute such as sex, race or disability, and sexual harassment, which is regulated separately and treated very seriously under Australian law.",
@@ -1073,14 +1073,14 @@ build(
  "Bullying &amp; Harassment Mediation",
  "Honest about when mediation helps — <em>and when it doesn't</em>.",
  "Book a free consultation. We will give you an honest assessment of whether mediation is right for your situation, and what to do if it is not.",
- bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_image="/assets/images/hero-workplace-bullying-mediation.jpg",
  bg_pos="center 50%")
 
 build(
  "general-protections-discrimination-mediation",
  "General Protections & Discrimination Claim Mediation | Mediations Australia",
  "Mediation for general protections and discrimination claims — adverse action, workplace rights, protected attributes. 21-day deadline applies where dismissal is involved.",
- "Workplace &amp; employment disputes",
+ "General protections &amp; discrimination disputes",
  "General Protections &amp; Discrimination Claim Mediation",
  "Some of the most serious workplace disputes are not about performance or redundancy, but about whether someone was treated badly because of who they are, or because they exercised a right at work. Mediation and conciliation resolve the large majority of these matters — faster, more privately and less painfully than a contested court case.",
  "A general protections claim alleges that an employer took adverse action against a person because that person had, or exercised, a workplace right or a protected attribute. Adverse action includes things like dismissing someone, refusing to employ them, or altering their position to their disadvantage. The protections are set out in the Fair Work Act 2009 (Cth) and enforced through the Fair Work Commission.",
@@ -1145,14 +1145,14 @@ build(
  "General Protections Mediation",
  "Deadlines are as short as 21 days — <em>act quickly</em>.",
  "Book a free consultation. These disputes are time-sensitive — the sooner you get advice, the more options you have.",
- bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_image="/assets/images/hero-general-protections-mediation.jpg",
  bg_pos="center 50%")
 
 build(
  "partnership-executive-exit-mediation",
  "Partnership & Executive Exit Dispute Mediation | Mediations Australia",
  "Mediation for business partnership breakdowns and executive exit disputes. Private, fast and commercially focused — resolves ownership, entitlements, restraints and reputation in one process.",
- "Workplace &amp; employment disputes",
+ "Partnership &amp; executive exit disputes",
  "Partnership &amp; Executive Exit Dispute Mediation",
  "When a business partnership breaks down, or a senior executive's departure turns sour, the stakes are unusually high. These disputes threaten not just individual careers but the business itself — its clients, its staff, its value and its reputation. Mediation is frequently the smartest way through: private, fast and focused on preserving value rather than destroying it.",
  "Partnership and executive exit disputes arise when business partners, directors or senior executives separate — whether through a falling-out, a forced departure, or a negotiated exit — and disagree about the terms. They sit at the intersection of employment, commercial and sometimes corporate law, which is what makes them complex and what makes a skilled mediator so valuable.",
@@ -1223,14 +1223,14 @@ build(
  "Partnership &amp; Executive Exit",
  "Private, fast and commercially focused — <em>before it costs you the business</em>.",
  "Book a free consultation. Resolve a partnership or executive exit dispute privately, before it becomes a public, value-destroying court battle.",
- bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_image="/assets/images/hero-partnership-executive-exit-mediation.jpg",
  bg_pos="center 50%")
 
 build(
  "redundancy-restructure-mediation",
  "Redundancy & Restructure Dispute Mediation | Mediations Australia",
  "When a restructure is challenged as unfair — the genuine redundancy test, consultation obligations, and how mediation resolves these disputes without a Fair Work hearing.",
- "Workplace &amp; employment disputes",
+ "Redundancy &amp; restructure disputes",
  "Redundancy &amp; Restructure Dispute Mediation",
  "A restructure can be a legitimate business decision. It can also be challenged — and increasingly is. When an employee believes a redundancy was not genuine, or that the consultation process fell short of what the law requires, a formal claim can follow quickly. Mediation offers both sides a faster, private path to resolution before the dispute reaches a hearing.",
  "A genuine redundancy under the Fair Work Act 2009 (Cth) requires three things: the job no longer exists, the employer has complied with any applicable consultation obligations under a modern award or enterprise agreement, and it was not reasonable to redeploy the person into another role. Where any of these elements is absent, the dismissal may be found to be unfair rather than a genuine redundancy.",
@@ -1296,14 +1296,14 @@ build(
  "Redundancy &amp; Restructure Mediation",
  "Resolve it before the 21-day deadline — <em>and before it escalates</em>.",
  "Book a free consultation. Whether you are an employee challenging a redundancy or an employer managing a restructure, early advice protects your options.",
- bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_image="/assets/images/hero-redundancy-restructure-mediation.jpg",
  bg_pos="center 50%")
 
 build(
  "workplace-investigations-grievance-mediation",
  "Workplace Investigations & Grievance Mediation | Mediations Australia",
  "When to investigate, when to mediate, and how to resolve workplace grievances and repair a team without a drawn-out formal process.",
- "Workplace &amp; employment disputes",
+ "Workplace investigations &amp; grievances",
  "Workplace Investigations &amp; Grievance Resolution",
  "A complaint has been made. Someone has raised a grievance. A formal investigation is under way — or being demanded. Getting this step right matters enormously. The wrong process can escalate a manageable situation into a protracted legal dispute, damage the entire team, and expose the organisation to significant liability. The right process resolves the complaint, restores the working environment and keeps everyone's dignity intact.",
  "A workplace grievance is a formal complaint by an employee about something at work — conduct, a decision, a working condition, or how they have been treated. A workplace investigation is the process by which a complaint is examined, evidence is gathered, and findings are made. Mediation is the process by which the underlying dispute is resolved. These three things are distinct, and knowing when to use which is the critical first decision.",
@@ -1363,7 +1363,7 @@ build(
  "Investigations &amp; Grievances",
  "Get the process right from the start — <em>before it becomes something harder to resolve</em>.",
  "Book a free consultation. We will help you choose the right process — investigation, mediation, or both — and move quickly.",
- bg_image="/assets/images/hero-workplace-mediation.jpg",
+ bg_image="/assets/images/hero-workplace-investigations-mediation.jpg",
  bg_pos="center 50%")
 
 print("Additional service pages built.")
