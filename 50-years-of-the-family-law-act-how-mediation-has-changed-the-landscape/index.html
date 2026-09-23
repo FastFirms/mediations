@@ -98,8 +98,8 @@
       "@type": "Article",
       "headline": "50 Years of the Family Law Act: How Mediation Has Changed…",
       "description": "50 Years of the Family Law Act: How Mediation Has Changed… — Mediations Australia.",
-      "datePublished": "2026-09-22",
-      "dateModified": "2026-09-22",
+      "datePublished": "2026-09-23",
+      "dateModified": "2026-09-23",
       "image": "https://www.mediationsaustralia.com.au/assets/images/MA-social.png",
       "author": {
         "@type": "Person",
@@ -149,36 +149,99 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GTTR2T25L"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7GTTR2T25L');</script>
 <style>
-.post-hero{padding:36px 0 8px}
-.post-meta{display:flex;gap:16px;align-items:center;font-size:.9rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
-.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 14px;border-radius:100px;font-weight:600;font-size:.82rem}
-.author-byline{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:18px;border-top:1px solid var(--sand-deep)}
+/* Reading progress bar */
+.progress-track{position:fixed;top:0;left:0;right:0;height:3px;z-index:999;pointer-events:none}
+.progress-bar{height:100%;width:0;background:var(--sage-deep);transition:width .1s linear}
+/* Hero — 2-column */
+.post-hero{padding:0;border-bottom:1px solid var(--line);overflow:hidden}
+.hero-inner{display:grid;grid-template-columns:1fr;max-width:1180px;margin:0 auto;padding:48px 24px 0}
+@media(min-width:800px){.hero-inner{grid-template-columns:1fr 380px;gap:48px;padding:60px 48px 0;align-items:start}}
+.hero-text{padding-bottom:36px}
+.post-meta{display:flex;gap:12px;align-items:center;font-size:.88rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
+.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 16px;border-radius:100px;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
+.hero-text h1{font-size:clamp(2.3rem,5.2vw,4rem);line-height:1.15;letter-spacing:-.015em;margin:0 0 18px;font-family:var(--serif);font-weight:500;color:var(--ink)}
+.hero-dek{font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:0 0 28px;font-family:var(--serif);max-width:54ch;line-height:1.65}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;align-items:center}
+.btn-outline-dark{display:inline-flex;align-items:center;padding:13px 22px;border:2px solid var(--sage-deep);color:var(--sage-deep);border-radius:8px;font-weight:600;font-size:.95rem;text-decoration:none;white-space:nowrap;transition:background .18s,color .18s}
+.btn-outline-dark:hover{background:var(--sage-deep);color:#fff;text-decoration:none}
+.author-byline{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid var(--line)}
 .author-byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .author-byline div{display:flex;flex-direction:column;gap:2px}
 .author-name{font-weight:600;font-size:.95rem;color:var(--ink)}
 .author-name a{color:inherit;text-decoration:none}
 .author-cred{font-size:.82rem;color:var(--ink-soft)}
-.post-body{padding:30px 0 60px}
-.post-body h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:42px 0 14px}
-.post-body h2:first-child{margin-top:0}
-.post-body h3{font-size:1.25rem;margin:30px 0 10px}
-.post-body p{font-size:1.07rem;color:var(--ink-soft);margin-bottom:18px;max-width:70ch}
-.post-body ul,.post-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:11px}
-.post-body ul li{position:relative;padding-left:30px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch}
-.post-body ul li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;background:var(--sage-light);border-radius:50%}
-.post-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:8px;height:5px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
-.post-body ol{counter-reset:li}
-.post-body ol li{position:relative;padding-left:42px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch;counter-increment:li}
-.post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
-.post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
-.post-body a:hover{color:var(--terra)}
-.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
-.post-body table{width:100%;border-collapse:collapse;margin:20px 0 28px;font-size:.98rem;background:var(--cream);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
-.post-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
-.post-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
-.post-body tr:last-child td{border-bottom:none}
-.post-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
-@media(max-width:600px){.post-body h2{font-size:1.4rem}}
+/* Hero art box */
+.hero-art{display:block;width:100%;aspect-ratio:4/3;border-radius:16px;overflow:hidden;position:relative;margin-top:4px}
+@media(min-width:800px){.hero-art{aspect-ratio:1/1;border-radius:20px;margin-top:0}}
+.hero-art-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-usps{position:absolute;bottom:0;left:0;right:0;padding:14px 16px;z-index:2;display:flex;flex-direction:column;gap:6px}
+.hero-usp{display:flex;align-items:center;gap:9px;background:var(--sage-light);border-radius:8px;padding:8px 13px}
+.hero-usp-icon{width:15px;height:15px;flex-shrink:0;color:var(--sage-deep)}
+.hero-usp span{font-size:.78rem;font-weight:600;color:var(--ink);line-height:1.3}
+/* 2-column content grid */
+.content-grid{max-width:1180px;margin:0 auto;padding:0 24px;display:block}
+@media(min-width:980px){.content-grid{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:0 48px;align-items:start}}
+/* Sidebar TOC (desktop) */
+.toc-desktop{display:none}
+@media(min-width:980px){.toc-desktop{display:block;position:sticky;top:96px;align-self:start}}
+.toc-inner{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:32px}
+.toc-label{font-size:.75rem;font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);margin:0 0 14px}
+.toc-list{list-style:none;padding:0;margin:0;counter-reset:toc;display:flex;flex-direction:column}
+.toc-list li{counter-increment:toc;display:block}
+.toc-list a{display:flex;gap:10px;padding:7px 0;font-size:.87rem;color:var(--sage-deep);text-decoration:none;border-bottom:1px solid var(--line);line-height:1.35;align-items:baseline}
+.toc-list li:last-child a{border-bottom:none}
+.toc-list a::before{content:counter(toc,decimal-leading-zero);font-size:.7rem;font-weight:700;color:var(--ink-soft);flex-shrink:0;min-width:24px}
+.toc-list a:hover{color:var(--terra)}
+/* Mobile TOC (collapsible) */
+.toc-mobile{background:var(--cream);border:1px solid var(--line);border-radius:14px;margin:24px 0 28px;overflow:hidden}
+@media(min-width:980px){.toc-mobile{display:none}}
+.toc-mobile summary{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;cursor:pointer;font-weight:600;font-size:.95rem;list-style:none;user-select:none;color:var(--ink)}
+.toc-mobile summary::-webkit-details-marker{display:none}
+.toc-mobile .chevron{width:18px;height:18px;transition:transform .25s;flex-shrink:0;color:var(--ink-soft)}
+.toc-mobile[open] .chevron{transform:rotate(180deg)}
+.toc-mobile .toc-list{padding:0 18px 14px}
+.toc-mobile .toc-list a{border-bottom:1px solid var(--line)}
+.toc-mobile .toc-list li:last-child a{border-bottom:none}
+/* Article body */
+.article-body{padding:32px 0 60px;min-width:0}
+.article-body h2{font-size:clamp(1.4rem,3vw,2rem);margin:40px 0 12px;scroll-margin-top:90px}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-size:1.2rem;margin:28px 0 8px;scroll-margin-top:90px}
+.article-body p{font-size:1.06rem;color:var(--ink-soft);margin-bottom:18px;max-width:68ch}
+.article-body ul,.article-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.article-body ul li{position:relative;padding-left:28px;color:var(--ink-soft);font-size:1.04rem}
+.article-body ul li::before{content:"";position:absolute;left:0;top:8px;width:15px;height:15px;background:var(--sage-light);border-radius:50%}
+.article-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:7px;height:4px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
+.article-body ol{counter-reset:li}
+.article-body ol li{position:relative;padding-left:40px;color:var(--ink-soft);font-size:1.04rem;counter-increment:li}
+.article-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:25px;height:25px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:600}
+.article-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
+.article-body a:hover{color:var(--terra)}
+.article-body a.btn,.article-body a.btn:hover{color:#fff;text-decoration:none}
+/* Tables */
+.article-body .table-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:20px 0 28px;overflow-x:auto}
+.article-body table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream);display:table}
+.article-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
+.article-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+.article-body tr:last-child td{border-bottom:none}
+.article-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+/* Answer / key-takeaway box */
+.answer{background:var(--sage-light);border-left:4px solid var(--sage-deep);border-radius:0 14px 14px 0;padding:20px 26px;margin:0 0 28px}
+.answer p{color:var(--ink);font-size:1.05rem;margin:0;max-width:none!important}
+.answer strong{color:var(--sage-deep)}
+/* CTA blocks — dark green */
+.post-cta{margin:36px 0}
+.post-cta-inner{background:var(--sage-light);border-radius:20px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.post-cta-inner p{color:var(--ink)!important;font-family:var(--serif);font-size:1.1rem;font-style:italic;margin:0!important;max-width:none!important;flex:1;min-width:240px;line-height:1.5}
+.post-cta-inner .btn{flex-shrink:0;background:var(--sage-deep);color:#fff!important;font-weight:700;text-decoration:none!important;border-radius:100px;white-space:nowrap}
+.post-cta-inner .btn:hover{background:var(--ink);text-decoration:none!important}
+/* Source note */
+.source-note{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin:-12px 0 24px}
+/* Legacy wrappers pass-through */
+.post-body,.body-import{display:contents}
+/* Mobile */
+@media(max-width:799px){.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn,.hero-actions .btn-outline-dark{width:100%;text-align:center;justify-content:center;box-sizing:border-box}}
+@media(max-width:600px){.article-body h2{font-size:1.35rem}.post-cta-inner{flex-direction:column;align-items:stretch}.post-cta-inner .btn{width:100%;text-align:center}}
 </style></head>
 <body>
 <a href="#main" class="skip">Skip to main content</a><header class="nav" id="nav">
@@ -237,32 +300,55 @@
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header><main id="main">
+<div class="progress-track"><div class="progress-bar" id="prog"></div></div>
 <div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/guides/">Guides</a><span>›</span>50 Years of the Family Law Act: How Mediation Ha…</nav></div>
 <article>
-<header class="post-hero"><div class="wrap-narrow">
+<header class="post-hero">
+<div class="hero-inner">
+<div class="hero-text">
   <div class="post-meta"><span class="cat">Guide</span><span>8 min read</span></div>
   <h1>50 Years of the Family Law Act: How Mediation Has Changed the Landscape</h1>
+  <p class="hero-dek">50 Years of the Family Law Act: How Mediation Has Changed… — Mediations Australia.</p>
+  <div class="hero-actions">
+    <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a>
+    <a href="tel:0272277373" class="btn-outline-dark">Call (02) 7227 7373</a>
+  </div>
   <div class="author-byline">
-    <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs" width="44" height="44" loading="eager">
+    <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
     <div>
       <span class="author-name"><a href="/our-mediators/">Dan Toombs</a></span>
-      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS</span>
+      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS · Multi-Award Winning Lawyer</span>
     </div>
   </div>
-</div></header>
-<div class="post-body"><div class="wrap-narrow">
+</div>
+<div class="hero-art">
+  <img src="/assets/images/family-law-mediation-consultation.webp" alt="50 Years of the Family Law Act: How Mediation Has Changed the Landscape — Mediations Australia" width="380" height="380" loading="eager" class="hero-art-img">
+  <div class="hero-usps">
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Nationally Accredited AMDRAS Mediators</span></div>
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Up to 90% Cheaper than Going to Court/Tribunal</span></div>
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Australia-Wide + Free Consultation &amp; No Obligation</span></div>
+  </div>
+</div>
+</div>
+</header>
+<div class="content-grid">
+
+<div class="article-body">
+
 <div class="body-import">
 <div class="content-inner">  <p>When relationships break down, the path forward can feel overwhelming. For separating couples in Australia, understanding your options is the first step toward a resolution that protects your family&#8217;s wellbeing, preserves your financial resources, and minimises emotional trauma.</p> <p>In 2025, we mark 50 years since the Family Law Act 1975 fundamentally transformed how Australian families navigate separation and divorce. This landmark legislation introduced the concept of &#8220;no-fault&#8221; divorce, removing the need to prove wrongdoing or assign blame. It was a revolutionary shift—one that recognised that when marriages end, families need support and practical solutions, not courtroom battles.</p> <p>Yet despite these progressive foundations, many separating couples still find themselves drawn into adversarial legal processes that are costly, emotionally draining, and damaging to the co-parenting relationships they&#8217;ll need to maintain for years to come. The good news? There&#8217;s a better way forward—and it&#8217;s been embedded in Australian family law from the very beginning. It&#8217;s <a href="/family-law-mediation/">family law mediation</a>.</p> <h3>The Vision Behind the Family Law Act: Resolution Over Confrontation</h3> <p>When the <a href="https://www.legislation.gov.au/C2004A00275/2019-03-10/text" target="_blank" rel="noopener">Family Law Act</a> came into effect on January 5, 1976, it represented a seismic shift in how Australia approached family breakdown. Prior to this, divorce required proof of matrimonial fault—adultery, cruelty, desertion, or habitual drunkenness. Couples were forced to air private grievances in public forums, often fabricating or exaggerating claims simply to meet legal requirements. The process was humiliating, expensive, and deeply harmful to families.</p> <p>The 1975 Act introduced a single ground for divorce: irretrievable breakdown of marriage, evidenced by 12 months&#8217; separation. This &#8220;no-fault&#8221; approach acknowledged a fundamental truth—that assigning blame doesn&#8217;t help families move forward. Instead, the legislation&#8217;s focus shifted to what truly mattered: the best interests of children, fair property division, and supporting families to rebuild their lives.</p> <p>Crucially, the Family Law Act also established the Family Court of Australia with a unique mandate: not just to adjudicate disputes, but to help families resolve them. Embedded within the legislation was a clear preference for conciliation and mediation over litigation—a recognition that families achieve better outcomes when they work together to find solutions rather than fighting in court.</p> <h3>Why Mediation Aligns Perfectly with Modern Family Law</h3> <p>The philosophy underpinning the Family Law Act—that families should be supported to resolve disputes constructively—remains as relevant today as it was 50 years ago. In fact, subsequent reforms have only strengthened the emphasis on alternative dispute resolution.</p> <p>The 2006 amendments to the Family Law Act made family dispute resolution (FDR) a mandatory step before most parenting matters can proceed to court. Separating couples must now attend mediation and make a genuine effort to resolve parenting disputes before filing court applications (except in cases involving family violence or urgent child safety concerns).</p> <p>This requirement isn&#8217;t bureaucratic red tape—it&#8217;s a recognition that mediation delivers better outcomes for Australian families. Research consistently shows that parents who reach agreements through mediation are more satisfied with outcomes, comply with arrangements more reliably, and maintain better co-parenting relationships than those who litigate.</p> <p><strong>Mediation offers separating couples:</strong></p> <p><strong>Cost-effectiveness:</strong> Court proceedings can cost tens of thousands of dollars in legal fees, expert reports, and court costs. Mediation typically costs a fraction of this amount, with many sessions concluding in just a few hours or days rather than months or years of litigation.</p> <p><strong>Confidentiality:</strong> What&#8217;s discussed in mediation stays in mediation. Unlike court proceedings, which become public record, mediation protects your family&#8217;s privacy and prevents sensitive information from becoming accessible to others.</p> <p><strong>Control over outcomes:</strong> In court, a judge who has spent limited time with your family makes binding decisions. In mediation, you and your former partner craft solutions that reflect your family&#8217;s unique circumstances, values, and needs.</p> <p><strong>Faster resolution:</strong> Court backlogs mean parenting and property matters can take 12-18 months or longer to reach final hearing. Mediation can resolve disputes in weeks, allowing your family to move forward and establish stability quickly.</p> <p><strong>Preservation of relationships:</strong> When you have children together, your relationship with your former partner doesn&#8217;t end—it transforms into a co-parenting partnership. Mediation focuses on collaboration and communication, skills that serve families long after separation is finalised.</p> <p><strong>Reduced emotional trauma:</strong> Litigation is inherently adversarial. Mediation creates a safe, supportive environment where both parties feel heard and respected, significantly reducing the emotional distress associated with family breakdown.</p> <h3>What Separating Couples Need to Know About Family Mediation</h3> <p>If you&#8217;re facing separation, understanding how mediation works within the Australian family law framework can help you make informed decisions about your path forward.</p> <h3>When Is Mediation Appropriate?</h3> <p>Family mediation is suitable for most separating couples dealing with:</p> <ul> <li><strong>Parenting arrangements:</strong> Where children will live, how much time they&#8217;ll spend with each parent, how decisions about education and health will be made, and how you&#8217;ll communicate as co-parents.</li> <li><strong>Property and financial settlements:</strong> Division of assets including the family home, superannuation, savings, debts, and other property, as well as spousal maintenance considerations.</li> <li><strong>Child support:</strong> While child support is typically calculated using the Child Support Agency formula, parents can agree to variations or alternative arrangements through mediation.</li> </ul> <p>Mediation may not be appropriate in situations involving family violence, child abuse, or where significant power imbalances make it impossible for one party to negotiate freely and safely. In these circumstances, legal representation and court protection may be necessary first steps.</p> <h3>The Family Dispute Resolution Process</h3> <p>Family dispute resolution in Australia follows a structured process designed to support constructive dialogue:</p> <ol> <li><strong>Initial assessment:</strong> You&#8217;ll meet individually with an accredited family dispute resolution practitioner (FDRP) who will assess whether mediation is appropriate and safe for your circumstances.</li> <li><strong>Pre-mediation preparation:</strong> The FDRP will help you identify the issues to be discussed, gather necessary information (financial documents, children&#8217;s schedules, etc.), and prepare for productive conversations.</li> <li><strong>Joint mediation sessions:</strong> You, your former partner, and the FDRP meet together (either in person or via video conference). The mediator facilitates discussion, helps you explore options, and guides you toward mutually acceptable solutions. Your mediator remains neutral and doesn&#8217;t provide legal advice or make decisions for you.</li> <li><strong>Agreement documentation:</strong> If you reach agreement, the FDRP can help document your decisions. For parenting plans, this may be an informal written agreement. For property settlements or parenting orders you want enforceable, you&#8217;ll need to formalise agreements through Consent Orders filed with the Federal Circuit and Family Court.</li> <li><strong>Section 60I Certificate:</strong> If you attempt mediation in good faith but cannot reach agreement on parenting matters, the FDRP will issue a Section 60I certificate, which allows you to file a court application if necessary.</li> </ol> <h3>The Role of Legal Advice in Mediation</h3> <p>While mediation is the preferred pathway for resolving family disputes, independent legal advice plays an important complementary role. Before finalising any agreement—particularly regarding property division—it&#8217;s wise to have a family lawyer review the proposed terms and explain your legal rights and obligations.</p> <p>Legal advice helps ensure that:</p> <ul> <li>Property settlements are fair and comply with the Family Law Act&#8217;s requirements</li> <li>Parenting arrangements genuinely reflect children&#8217;s best interests</li> <li>You understand the long-term implications of any agreement</li> <li>Documentation is properly prepared and legally enforceable</li> </ul> <p>Think of legal advice as a safety net—it supports the mediation process by giving you confidence that agreements are legally sound, without taking control away from you or transforming your dispute into an adversarial battle.</p> <h3>The Evolution of Family Law: Continuing to Prioritise Children&#8217;s Wellbeing</h3> <p>The past 50 years have seen the Family Law Act evolve through numerous amendments, each reflecting growing understanding of what children need when their parents separate.</p> <p>The 2006 reforms introduced the concept of &#8220;equal shared parental responsibility&#8221;—not a presumption of equal time, but rather a requirement that both parents remain involved in major decisions about their children&#8217;s lives unless there are safety concerns. This recognised research showing that children generally benefit from meaningful relationships with both parents.</p> <p>The 2012 amendments further refined the framework, clarifying that children&#8217;s safety must take priority over other considerations and that &#8220;equal time&#8221; is only appropriate when it serves children&#8217;s best interests and is reasonably practicable—not a starting point imposed on every family.</p> <p>Most recently, the Family Law Amendment Act 2023 has strengthened protections for children and families affected by family violence, improved information-sharing between family law and child protection systems, and enhanced case management to resolve disputes more efficiently.</p> <p>Throughout these changes, one principle has remained constant: families achieve the best outcomes when they can resolve disputes cooperatively, with professional support, rather than through adversarial litigation.</p> <h3>Why Litigation Should Be Your Last Resort</h3> <p>While the family law system provides court processes when they&#8217;re genuinely necessary, litigation comes with significant costs that extend far beyond legal fees.</p> <p><strong>Financial costs:</strong> Legal representation for contested family law proceedings commonly costs $30,000-$100,000 or more, depending on complexity. Expert reports (property valuations, family assessments, etc.) add thousands more. Court filing fees, barrister costs for hearings, and ongoing solicitor fees quickly deplete the asset pool that should be supporting your family&#8217;s future.</p> <p><strong>Time costs:</strong> From filing an initiating application to final hearing typically takes 12-18 months, often longer in complex cases. During this time, your life remains in limbo—you may be unable to sell property, relocate for employment, or establish stable routines for children.</p> <p><strong>Emotional costs:</strong> The adversarial nature of litigation amplifies conflict. Affidavits detailing your former partner&#8217;s failings, cross-examination designed to undermine credibility, and the winner-takes-all dynamic of court hearings inflict psychological harm on everyone involved—especially children, who often feel caught in the middle.</p> <p><strong>Relationship costs:</strong> If you have children together, you&#8217;ll be co-parenting for years to come—attending school events, celebrating milestones, navigating adolescence together. Litigation destroys the goodwill and communication that makes effective co-parenting possible.</p> <p><strong>Uncertainty costs:</strong> Even after investing time, money, and emotional energy in litigation, outcomes remain unpredictable. Judicial discretion means you cannot guarantee results, and appeals processes can extend disputes even further.</p> <h3>Taking the First Step: How Mediations Australia Supports Separating Couples</h3> <p>At Mediations Australia, we understand that separation is one of life&#8217;s most challenging transitions. Our experienced, accredited family dispute resolution practitioners are committed to helping you navigate this difficult time with dignity, respect, and focus on your family&#8217;s future.</p> <p><strong>We provide:</strong></p> <ul> <li>A safe, confidential environment for productive conversations</li> <li>Neutral facilitation that ensures both voices are heard</li> <li>Practical guidance to help you explore creative solutions</li> <li>Focus on children&#8217;s best interests and your family&#8217;s unique needs</li> <li>Efficient processes that resolve disputes in weeks, not years</li> <li>Significantly lower costs than traditional litigation</li> <li>Support for both parenting and property matters</li> </ul> <p>Whether you&#8217;re just beginning to consider separation or you&#8217;re already navigating complex disputes, mediation offers a pathway forward that protects what matters most: your children&#8217;s wellbeing, your financial security, and your ability to move forward constructively.</p> <h3>Conclusion: Honouring 50 Years of Progressive Family Law</h3> <p>The Family Law Act 1975 represented a fundamental shift in how Australia supports families through separation—moving from blame and punishment to understanding and practical assistance. Fifty years later, that progressive vision continues to guide how we approach family breakdown.</p> <p>Mediation embodies the spirit of the Family Law Act: recognising that when relationships end, families need support to find constructive solutions, not courtroom battles that deepen wounds and drain resources. By choosing mediation first, you&#8217;re not only saving time and money—you&#8217;re investing in your family&#8217;s future, maintaining relationships that matter, and modelling constructive conflict resolution for your children.</p> <p>If you&#8217;re facing separation, you don&#8217;t have to navigate this journey alone, and you don&#8217;t have to let the process become a battlefield. Mediation offers a better way—one that&#8217;s been proven effective for Australian families for five decades.</p> <p><strong>Take the first step today.</strong> Contact Mediations Australia to learn how our family dispute resolution services can help you and your former partner reach fair, practical agreements that allow everyone to move forward with dignity and hope.</p> <hr /> <p><strong>Disclaimer:</strong> This article is for general information purposes only and is not a substitute for professional legal advice. The Family Law Act 1975 and related legislation contain complex provisions that may apply differently to individual circumstances. Consult a qualified family lawyer or accredited family dispute resolution practitioner for personalised guidance about your specific situation.</p> </div>
 </div>
 <aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes.</p><a href="/our-mediators/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div></aside>
-</div></div>
+</div>
+</div>
 </article>
 <section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
-<p>Book a free initial consultation — no obligation.</p>
-<a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">&rarr;</span></a>
+<p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
+<a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
 </div></div></section>
-</main><footer>
+</main>
+<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script><footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>

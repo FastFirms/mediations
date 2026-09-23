@@ -98,8 +98,8 @@
       "@type": "Article",
       "headline": "What is the Difference Between Mediation and Conciliation",
       "description": "What is the difference between Mediation and conciliation? What is best for your particular family law dispute is best achieved by consulting one of our…",
-      "datePublished": "2026-09-22",
-      "dateModified": "2026-09-22",
+      "datePublished": "2026-09-23",
+      "dateModified": "2026-09-23",
       "image": "https://www.mediationsaustralia.com.au/assets/images/MA-social.png",
       "author": {
         "@type": "Person",
@@ -149,36 +149,99 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GTTR2T25L"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7GTTR2T25L');</script>
 <style>
-.post-hero{padding:36px 0 8px}
-.post-meta{display:flex;gap:16px;align-items:center;font-size:.9rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
-.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 14px;border-radius:100px;font-weight:600;font-size:.82rem}
-.author-byline{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:18px;border-top:1px solid var(--sand-deep)}
+/* Reading progress bar */
+.progress-track{position:fixed;top:0;left:0;right:0;height:3px;z-index:999;pointer-events:none}
+.progress-bar{height:100%;width:0;background:var(--sage-deep);transition:width .1s linear}
+/* Hero — 2-column */
+.post-hero{padding:0;border-bottom:1px solid var(--line);overflow:hidden}
+.hero-inner{display:grid;grid-template-columns:1fr;max-width:1180px;margin:0 auto;padding:48px 24px 0}
+@media(min-width:800px){.hero-inner{grid-template-columns:1fr 380px;gap:48px;padding:60px 48px 0;align-items:start}}
+.hero-text{padding-bottom:36px}
+.post-meta{display:flex;gap:12px;align-items:center;font-size:.88rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
+.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 16px;border-radius:100px;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
+.hero-text h1{font-size:clamp(2.3rem,5.2vw,4rem);line-height:1.15;letter-spacing:-.015em;margin:0 0 18px;font-family:var(--serif);font-weight:500;color:var(--ink)}
+.hero-dek{font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:0 0 28px;font-family:var(--serif);max-width:54ch;line-height:1.65}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;align-items:center}
+.btn-outline-dark{display:inline-flex;align-items:center;padding:13px 22px;border:2px solid var(--sage-deep);color:var(--sage-deep);border-radius:8px;font-weight:600;font-size:.95rem;text-decoration:none;white-space:nowrap;transition:background .18s,color .18s}
+.btn-outline-dark:hover{background:var(--sage-deep);color:#fff;text-decoration:none}
+.author-byline{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid var(--line)}
 .author-byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .author-byline div{display:flex;flex-direction:column;gap:2px}
 .author-name{font-weight:600;font-size:.95rem;color:var(--ink)}
 .author-name a{color:inherit;text-decoration:none}
 .author-cred{font-size:.82rem;color:var(--ink-soft)}
-.post-body{padding:30px 0 60px}
-.post-body h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:42px 0 14px}
-.post-body h2:first-child{margin-top:0}
-.post-body h3{font-size:1.25rem;margin:30px 0 10px}
-.post-body p{font-size:1.07rem;color:var(--ink-soft);margin-bottom:18px;max-width:70ch}
-.post-body ul,.post-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:11px}
-.post-body ul li{position:relative;padding-left:30px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch}
-.post-body ul li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;background:var(--sage-light);border-radius:50%}
-.post-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:8px;height:5px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
-.post-body ol{counter-reset:li}
-.post-body ol li{position:relative;padding-left:42px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch;counter-increment:li}
-.post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
-.post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
-.post-body a:hover{color:var(--terra)}
-.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
-.post-body table{width:100%;border-collapse:collapse;margin:20px 0 28px;font-size:.98rem;background:var(--cream);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
-.post-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
-.post-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
-.post-body tr:last-child td{border-bottom:none}
-.post-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
-@media(max-width:600px){.post-body h2{font-size:1.4rem}}
+/* Hero art box */
+.hero-art{display:block;width:100%;aspect-ratio:4/3;border-radius:16px;overflow:hidden;position:relative;margin-top:4px}
+@media(min-width:800px){.hero-art{aspect-ratio:1/1;border-radius:20px;margin-top:0}}
+.hero-art-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-usps{position:absolute;bottom:0;left:0;right:0;padding:14px 16px;z-index:2;display:flex;flex-direction:column;gap:6px}
+.hero-usp{display:flex;align-items:center;gap:9px;background:var(--sage-light);border-radius:8px;padding:8px 13px}
+.hero-usp-icon{width:15px;height:15px;flex-shrink:0;color:var(--sage-deep)}
+.hero-usp span{font-size:.78rem;font-weight:600;color:var(--ink);line-height:1.3}
+/* 2-column content grid */
+.content-grid{max-width:1180px;margin:0 auto;padding:0 24px;display:block}
+@media(min-width:980px){.content-grid{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:0 48px;align-items:start}}
+/* Sidebar TOC (desktop) */
+.toc-desktop{display:none}
+@media(min-width:980px){.toc-desktop{display:block;position:sticky;top:96px;align-self:start}}
+.toc-inner{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:32px}
+.toc-label{font-size:.75rem;font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);margin:0 0 14px}
+.toc-list{list-style:none;padding:0;margin:0;counter-reset:toc;display:flex;flex-direction:column}
+.toc-list li{counter-increment:toc;display:block}
+.toc-list a{display:flex;gap:10px;padding:7px 0;font-size:.87rem;color:var(--sage-deep);text-decoration:none;border-bottom:1px solid var(--line);line-height:1.35;align-items:baseline}
+.toc-list li:last-child a{border-bottom:none}
+.toc-list a::before{content:counter(toc,decimal-leading-zero);font-size:.7rem;font-weight:700;color:var(--ink-soft);flex-shrink:0;min-width:24px}
+.toc-list a:hover{color:var(--terra)}
+/* Mobile TOC (collapsible) */
+.toc-mobile{background:var(--cream);border:1px solid var(--line);border-radius:14px;margin:24px 0 28px;overflow:hidden}
+@media(min-width:980px){.toc-mobile{display:none}}
+.toc-mobile summary{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;cursor:pointer;font-weight:600;font-size:.95rem;list-style:none;user-select:none;color:var(--ink)}
+.toc-mobile summary::-webkit-details-marker{display:none}
+.toc-mobile .chevron{width:18px;height:18px;transition:transform .25s;flex-shrink:0;color:var(--ink-soft)}
+.toc-mobile[open] .chevron{transform:rotate(180deg)}
+.toc-mobile .toc-list{padding:0 18px 14px}
+.toc-mobile .toc-list a{border-bottom:1px solid var(--line)}
+.toc-mobile .toc-list li:last-child a{border-bottom:none}
+/* Article body */
+.article-body{padding:32px 0 60px;min-width:0}
+.article-body h2{font-size:clamp(1.4rem,3vw,2rem);margin:40px 0 12px;scroll-margin-top:90px}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-size:1.2rem;margin:28px 0 8px;scroll-margin-top:90px}
+.article-body p{font-size:1.06rem;color:var(--ink-soft);margin-bottom:18px;max-width:68ch}
+.article-body ul,.article-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.article-body ul li{position:relative;padding-left:28px;color:var(--ink-soft);font-size:1.04rem}
+.article-body ul li::before{content:"";position:absolute;left:0;top:8px;width:15px;height:15px;background:var(--sage-light);border-radius:50%}
+.article-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:7px;height:4px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
+.article-body ol{counter-reset:li}
+.article-body ol li{position:relative;padding-left:40px;color:var(--ink-soft);font-size:1.04rem;counter-increment:li}
+.article-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:25px;height:25px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:600}
+.article-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
+.article-body a:hover{color:var(--terra)}
+.article-body a.btn,.article-body a.btn:hover{color:#fff;text-decoration:none}
+/* Tables */
+.article-body .table-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:20px 0 28px;overflow-x:auto}
+.article-body table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream);display:table}
+.article-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
+.article-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+.article-body tr:last-child td{border-bottom:none}
+.article-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+/* Answer / key-takeaway box */
+.answer{background:var(--sage-light);border-left:4px solid var(--sage-deep);border-radius:0 14px 14px 0;padding:20px 26px;margin:0 0 28px}
+.answer p{color:var(--ink);font-size:1.05rem;margin:0;max-width:none!important}
+.answer strong{color:var(--sage-deep)}
+/* CTA blocks — dark green */
+.post-cta{margin:36px 0}
+.post-cta-inner{background:var(--sage-light);border-radius:20px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.post-cta-inner p{color:var(--ink)!important;font-family:var(--serif);font-size:1.1rem;font-style:italic;margin:0!important;max-width:none!important;flex:1;min-width:240px;line-height:1.5}
+.post-cta-inner .btn{flex-shrink:0;background:var(--sage-deep);color:#fff!important;font-weight:700;text-decoration:none!important;border-radius:100px;white-space:nowrap}
+.post-cta-inner .btn:hover{background:var(--ink);text-decoration:none!important}
+/* Source note */
+.source-note{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin:-12px 0 24px}
+/* Legacy wrappers pass-through */
+.post-body,.body-import{display:contents}
+/* Mobile */
+@media(max-width:799px){.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn,.hero-actions .btn-outline-dark{width:100%;text-align:center;justify-content:center;box-sizing:border-box}}
+@media(max-width:600px){.article-body h2{font-size:1.35rem}.post-cta-inner{flex-direction:column;align-items:stretch}.post-cta-inner .btn{width:100%;text-align:center}}
 </style></head>
 <body>
 <a href="#main" class="skip">Skip to main content</a><header class="nav" id="nav">
@@ -237,32 +300,55 @@
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header><main id="main">
+<div class="progress-track"><div class="progress-bar" id="prog"></div></div>
 <div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Difference Between Mediation and Conciliation</nav></div>
 <article>
-<header class="post-hero"><div class="wrap-narrow">
+<header class="post-hero">
+<div class="hero-inner">
+<div class="hero-text">
   <div class="post-meta"><span class="cat">Guide</span><span>8 min read</span></div>
   <h1>Difference Between Mediation and Conciliation</h1>
+  <p class="hero-dek">What is the difference between Mediation and conciliation? What is best for your particular family law dispute is best achieved by consulting one of our…</p>
+  <div class="hero-actions">
+    <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a>
+    <a href="tel:0272277373" class="btn-outline-dark">Call (02) 7227 7373</a>
+  </div>
   <div class="author-byline">
-    <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs" width="44" height="44" loading="eager">
+    <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
     <div>
       <span class="author-name"><a href="/our-mediators/">Dan Toombs</a></span>
-      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS</span>
+      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS · Multi-Award Winning Lawyer</span>
     </div>
   </div>
-</div></header>
-<div class="post-body"><div class="wrap-narrow">
+</div>
+<div class="hero-art">
+  <img src="/assets/images/family-law-mediation-consultation.webp" alt="Difference Between Mediation and Conciliation — Mediations Australia" width="380" height="380" loading="eager" class="hero-art-img">
+  <div class="hero-usps">
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Nationally Accredited AMDRAS Mediators</span></div>
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Up to 90% Cheaper than Going to Court/Tribunal</span></div>
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Australia-Wide + Free Consultation &amp; No Obligation</span></div>
+  </div>
+</div>
+</div>
+</header>
+<div class="content-grid">
+
+<div class="article-body">
+
 <div class="body-import">
 <div class="content-inner">  <div id="fws_6a4504289b8f0" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row"><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop"></div></div></div><div class="row_col_wrap_12 col span_12 dark left"> <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0"> <div class="vc_column-inner"> <div class="wpb_wrapper"> <div class="wpb_raw_code wpb_content_element wpb_raw_html"> <div class="wpb_wrapper"> <iframe data-testid="embed-iframe" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture; gyroscope;" nitro-lazy-src="https://open.spotify.com/embed/episode/26u5uFJCtM3KdUV6GTlGvY?utm_source=generator" class="nitro-lazy"></iframe> </div> </div> </div> </div> </div> </div></div> <div id="fws_6a4504289bee4" data-column-margin="default" data-midnight="dark" class="wpb_row vc_row-fluid vc_row"><div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false"><div class="inner-wrap row-bg-layer"><div class="row-bg viewport-desktop"></div></div></div><div class="row_col_wrap_12 col span_12 dark left"> <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0"> <div class="vc_column-inner"> <div class="wpb_wrapper"> <div class="wpb_text_column wpb_content_element "> <div class="wpb_wrapper"> <p data-start="473" data-end="877">Two of the most common processes in family law dispute resolution are mediation and conciliation. They sound similar, and they do share some common ground, but they also have important differences. Understanding those differences can be critical in choosing the right process for your circumstances—and in feeling confident that the process you choose will genuinely help move you towards a resolution.</p> <p data-start="879" data-end="915">In this article, we’ll break down:</p> <ul data-start="917" data-end="1134"> <li data-start="917" data-end="965"> <p data-start="919" data-end="965">The role of mediation in family law disputes</p> </li> <li data-start="966" data-end="1013"> <p data-start="968" data-end="1013">The role of conciliation and how it differs</p> </li> <li data-start="1014" data-end="1056"> <p data-start="1016" data-end="1056">The advantages and limitations of each</p> </li> <li data-start="1057" data-end="1134"> <p data-start="1059" data-end="1134">Practical tips for deciding which approach might suit your situation best</p> </li> </ul> <p data-start="1141" data-end="1201">Understanding Alternative Dispute Resolution in Family Law</p> <p data-start="1203" data-end="1308">Before we get into mediation and conciliation specifically, it helps to understand the broader context.</p> <p data-start="1310" data-end="1738">Alternative Dispute Resolution (ADR)—often shortened simply to “dispute resolution”—is a catch-all term for processes that aim to resolve disagreements without going through a full court trial. In Australia’s family law system, ADR processes are not just encouraged; in many cases, they’re required before you can apply to the court for orders (with some exceptions, such as urgent matters or cases involving family violence).</p> <p data-start="1740" data-end="2087">The reasoning is simple: court proceedings are costly, time-consuming, and stressful. They can also make it harder for separated couples—especially parents—to work together in the long run. ADR processes like mediation and conciliation provide a less adversarial environment, which can preserve or even improve communication between the parties.</p> <h3 data-start="2094" data-end="2114">What is Mediation?</h3> <p data-start="2116" data-end="2353">Mediation is perhaps the most well-known ADR process in Australia. At its core, it’s an informal, structured discussion between two or more people who are in disagreement, facilitated by an impartial, trained professional—the mediator.</p> <p data-start="2355" data-end="2419">In family law mediation, the focus is often on issues such as:</p> <ul data-start="2421" data-end="2768"> <li data-start="2421" data-end="2584"> <p data-start="2423" data-end="2584">Parenting arrangements (e.g., where children will live, how much time they’ll spend with each parent, how decisions about education or healthcare will be made)</p> </li> <li data-start="2585" data-end="2672"> <p data-start="2587" data-end="2672">Financial matters (e.g., child support arrangements, who pays for certain expenses)</p> </li> <li data-start="2673" data-end="2768"> <p data-start="2675" data-end="2768">Property division (e.g., how to split the family home, vehicles, savings, and other assets)</p> </li> </ul> <p data-start="2770" data-end="2865">The mediator’s role is to provide the framework for these discussions. They help the parties:</p> <ol data-start="2867" data-end="3030"> <li data-start="2867" data-end="2903"> <p data-start="2870" data-end="2903">Identify the issues in dispute.</p> </li> <li data-start="2904" data-end="2962"> <p data-start="2907" data-end="2962">Explore each party’s needs, concerns, and priorities.</p> </li> <li data-start="2963" data-end="2998"> <p data-start="2966" data-end="2998">Brainstorm possible solutions.</p> </li> <li data-start="2999" data-end="3030"> <p data-start="3002" data-end="3030">Move towards an agreement.</p> </li> </ol> <h3 data-start="3032" data-end="3059">Key Features of Mediation</h3> <ul data-start="3061" data-end="3506"> <li data-start="3061" data-end="3120"> <p data-start="3063" data-end="3120">Neutral and impartial: The mediator doesn’t take sides.</p> </li> <li data-start="3121" data-end="3217"> <p data-start="3123" data-end="3217">Party-driven solutions: The mediator does not impose a decision or suggest a “right” answer.</p> </li> <li data-start="3218" data-end="3345"> <p data-start="3220" data-end="3345">Focus on communication: The aim is to help each party understand the other’s perspective, even if they don’t agree with it.</p> </li> <li data-start="3346" data-end="3506"> <p data-start="3348" data-end="3506">Confidential: What’s said in mediation generally can’t be used in court later (with some exceptions, such as disclosures of child abuse or threats of harm).</p> </li> </ul> <p data-start="3508" data-end="3766">In family law mediation, the mediator deliberately avoids offering specific recommendations about how the dispute should be resolved. Instead, they guide the conversation in a way that allows the parties themselves to create a mutually acceptable solution.</p> <h3 data-start="3773" data-end="3800">The Benefits of Mediation</h3> <p data-start="3802" data-end="3854">Mediation offers a number of practical advantages:</p> <ol data-start="3856" data-end="4420"> <li data-start="3856" data-end="3937"> <p data-start="3859" data-end="3937">Cost-effectiveness – It is generally far less expensive than going to court.</p> </li> <li data-start="3938" data-end="4063"> <p data-start="3941" data-end="4063">Speed – A mediation can often be arranged and completed within weeks, whereas court cases may take months or even years.</p> </li> <li data-start="4064" data-end="4192"> <p data-start="4067" data-end="4192">Flexibility – Solutions can be tailored to the specific needs of the family, rather than following a rigid legal framework.</p> </li> <li data-start="4193" data-end="4287"> <p data-start="4196" data-end="4287">Control – The parties retain control over the outcome, rather than handing it to a judge.</p> </li> <li data-start="4288" data-end="4420"> <p data-start="4291" data-end="4420">Preservation of relationships – Particularly valuable where parents will need to maintain an ongoing co-parenting relationship.</p> </li> </ol> <h3 data-start="4427" data-end="4457">The Limitations of Mediation</h3> <p data-start="4459" data-end="4550">While mediation can be highly effective, it’s not a magic wand. Some limitations include:</p> <ul data-start="4552" data-end="4983"> <li data-start="4552" data-end="4663"> <p data-start="4554" data-end="4663">No guaranteed agreement – If the parties can’t find common ground, the process may not resolve the dispute.</p> </li> <li data-start="4664" data-end="4827"> <p data-start="4666" data-end="4827">Not always suitable – In cases involving serious power imbalances, family violence, or unwillingness to engage in good faith, mediation may not be appropriate.</p> </li> <li data-start="4828" data-end="4983"> <p data-start="4830" data-end="4983">Non-binding outcome – Unless an agreement is formalised through consent orders or a binding financial agreement, the outcome isn’t legally enforceable.</p> </li> </ul> <h3 data-start="4990" data-end="5024">What Happens If Mediation Fails?</h3> <p data-start="4990" data-end="5024">If mediation doesn’t result in an agreement, the dispute may move to a more formal process—potentially to court—where a third party such as a judge will impose a binding decision. However, even in these cases, mediation often helps narrow the issues in dispute, which can make the court process shorter and less costly.</p> <h3 data-start="5354" data-end="5377">What is Conciliation?</h3> <p data-start="5379" data-end="5620">Like mediation, conciliation is an informal process that aims to resolve disputes without going to court. It’s often quicker, cheaper, and less stressful than litigation. A neutral professional—the conciliator—facilitates the negotiations.</p> <p data-start="5622" data-end="5721">But here’s the key difference: the conciliator plays a more interventionist role than a mediator.</p> <p data-start="5723" data-end="5819">Whereas a mediator focuses on helping the parties find their own solutions, a conciliator may:</p> <ul data-start="5821" data-end="6030"> <li data-start="5821" data-end="5884"> <p data-start="5823" data-end="5884">Offer an opinion on how the dispute could best be resolved.</p> </li> <li data-start="5885" data-end="5939"> <p data-start="5887" data-end="5939">Suggest specific terms for a potential settlement.</p> </li> <li data-start="5940" data-end="6030"> <p data-start="5942" data-end="6030">Provide a non-binding recommendation based on the facts and legal principles involved.</p> </li> </ul> <h3 data-start="6037" data-end="6066">The Role of the Conciliator</h3> <p data-start="6068" data-end="6094">A conciliator typically:</p> <ol data-start="6096" data-end="6479"> <li data-start="6096" data-end="6184"> <p data-start="6099" data-end="6184">Meets with each party separately to understand their position, concerns, and goals.</p> </li> <li data-start="6185" data-end="6258"> <p data-start="6188" data-end="6258">Identifies the factual and legal issues at the heart of the dispute.</p> </li> <li data-start="6259" data-end="6303"> <p data-start="6262" data-end="6303">Offers advice about possible solutions.</p> </li> <li data-start="6304" data-end="6392"> <p data-start="6307" data-end="6392">Suggests compromises or concessions that might move the parties towards resolution.</p> </li> <li data-start="6393" data-end="6479"> <p data-start="6396" data-end="6479">Makes recommendations for the parties to consider—either individually or jointly.</p> </li> </ol> <p data-start="6481" data-end="6721">The conciliator’s recommendations are not legally binding unless the parties choose to formalise them in a legally enforceable agreement. However, the process can provide valuable guidance, especially when the parties are at a standstill.</p> <h3 data-start="6728" data-end="6770">When is Conciliation Used in Family Law?</h3> <p data-start="6772" data-end="6997">Conciliation is particularly common in property settlement disputes. For example, the Family Court of Australia and the Federal Circuit Court often refer parties to conciliation conferences as part of the pre-trial process.</p> <p data-start="6999" data-end="7237">In these settings, the conciliator—often a registrar of the court—can draw on legal knowledge to give parties a realistic sense of how a judge might decide their case. This can encourage more practical and legally informed negotiations.</p> <h3 data-start="7244" data-end="7274">The Benefits of Conciliation</h3> <ul data-start="7276" data-end="7654"> <li data-start="7276" data-end="7407"> <p data-start="7278" data-end="7407">Guided by expertise – The conciliator can give insight into the likely legal outcomes, helping parties make informed decisions.</p> </li> <li data-start="7408" data-end="7532"> <p data-start="7410" data-end="7532">Encourages compromise – Parties may be more willing to move from entrenched positions when a neutral expert suggests it.</p> </li> <li data-start="7533" data-end="7654"> <p data-start="7535" data-end="7654">Still less formal than court – The process is generally less intimidating and more flexible than a courtroom setting.</p> </li> </ul> <h3 data-start="7661" data-end="7694">The Limitations of Conciliation</h3> <ul data-start="7696" data-end="8055"> <li data-start="7696" data-end="7781"> <p data-start="7698" data-end="7781">Non-binding outcome – Like mediation, the result isn’t binding unless formalised.</p> </li> <li data-start="7782" data-end="7913"> <p data-start="7784" data-end="7913">Potential for pressure – Some parties may feel pressured to accept a recommendation, even if it doesn’t fully meet their needs.</p> </li> <li data-start="7914" data-end="8055"> <p data-start="7916" data-end="8055">Less focus on relationship building – Because the process is more interventionist, it can sometimes be less collaborative than mediation.</p> </li> </ul> <h3 data-start="8062" data-end="8118">Mediation vs Conciliation: Which One is Right for You?</h3> <p data-start="8120" data-end="8177">Choosing between mediation and conciliation depends on:</p> <ul data-start="8179" data-end="8773"> <li data-start="8179" data-end="8327"> <p data-start="8181" data-end="8327">The nature of the dispute – Is it mostly about communication and understanding, or is it more about applying legal principles to a set of facts?</p> </li> <li data-start="8328" data-end="8474"> <p data-start="8330" data-end="8474">Your relationship with the other party – Is there a foundation for collaborative problem-solving, or is guidance from a neutral expert needed?</p> </li> <li data-start="8475" data-end="8637"> <p data-start="8477" data-end="8637">How much input you want from the facilitator – Do you want to design the solution yourselves (mediation) or get recommendations from an expert (conciliation)?</p> </li> <li data-start="8638" data-end="8773"> <p data-start="8640" data-end="8773">The stage of your matter – Mediation is often used early; conciliation may come later, especially if legal issues are more defined.</p> </li> </ul> <h3 data-start="8780" data-end="8795">Case Examples</h3> <p data-start="8797" data-end="9120"><strong>Case A: Parenting Dispute</strong></p> <p data-start="8797" data-end="9120">Sarah and Tom have separated and are struggling to agree on a weekly schedule for their children. They both want to maintain a cooperative co-parenting relationship. In this case, mediation allows them to openly discuss their needs and craft a tailored arrangement without outside suggestions.</p> <p data-start="9122" data-end="9392"><strong>Case B: Property Settlement</strong></p> <p data-start="9122" data-end="9392">Alex and Jordan can’t agree on how to split their assets. Both are entrenched in their positions. A conciliation conference with a registrar helps them understand how the law would likely apply to their situation, leading to a settlement.</p> <h3 data-start="9399" data-end="9415">Final Thoughts</h3> <p data-start="9417" data-end="9633">Both mediation and conciliation aim to help you resolve disputes without the stress, expense, and delay of going to court. The key differences lie in the role of the facilitator and the level of input they provide.</p> <p data-start="9635" data-end="9934">At Mediations Australia, we can help you determine the most suitable process for your circumstances—whether that’s mediation, conciliation, or another form of dispute resolution. Our team works with families every day to find practical, lasting solutions.</p> <p data-start="9936" data-end="10092" data-is-last-node="" data-is-only-node="">If you’re facing a family law dispute and want to explore your options, we invite you to book a free appointment with one of our family law experts today.</p> </div> </div> </div> </div> </div> </div></div> </div>
 </div>
 <aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes.</p><a href="/our-mediators/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div></aside>
-</div></div>
+</div>
+</div>
 </article>
 <section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
-<p>Book a free initial consultation — no obligation.</p>
-<a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">&rarr;</span></a>
+<p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
+<a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
 </div></div></section>
-</main><footer>
+</main>
+<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script><footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>

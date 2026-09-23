@@ -98,8 +98,8 @@
       "@type": "Article",
       "headline": "Shinohara & Shinohara: How the 2025 Family Law Changes…",
       "description": "Shinohara & Shinohara: How the 2025 Family Law Changes… — Mediations Australia.",
-      "datePublished": "2026-09-22",
-      "dateModified": "2026-09-22",
+      "datePublished": "2026-09-23",
+      "dateModified": "2026-09-23",
       "image": "https://www.mediationsaustralia.com.au/assets/images/MA-social.png",
       "author": {
         "@type": "Person",
@@ -149,36 +149,99 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GTTR2T25L"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7GTTR2T25L');</script>
 <style>
-.post-hero{padding:36px 0 8px}
-.post-meta{display:flex;gap:16px;align-items:center;font-size:.9rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
-.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 14px;border-radius:100px;font-weight:600;font-size:.82rem}
-.author-byline{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:18px;border-top:1px solid var(--sand-deep)}
+/* Reading progress bar */
+.progress-track{position:fixed;top:0;left:0;right:0;height:3px;z-index:999;pointer-events:none}
+.progress-bar{height:100%;width:0;background:var(--sage-deep);transition:width .1s linear}
+/* Hero — 2-column */
+.post-hero{padding:0;border-bottom:1px solid var(--line);overflow:hidden}
+.hero-inner{display:grid;grid-template-columns:1fr;max-width:1180px;margin:0 auto;padding:48px 24px 0}
+@media(min-width:800px){.hero-inner{grid-template-columns:1fr 380px;gap:48px;padding:60px 48px 0;align-items:start}}
+.hero-text{padding-bottom:36px}
+.post-meta{display:flex;gap:12px;align-items:center;font-size:.88rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
+.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 16px;border-radius:100px;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
+.hero-text h1{font-size:clamp(2.3rem,5.2vw,4rem);line-height:1.15;letter-spacing:-.015em;margin:0 0 18px;font-family:var(--serif);font-weight:500;color:var(--ink)}
+.hero-dek{font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:0 0 28px;font-family:var(--serif);max-width:54ch;line-height:1.65}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;align-items:center}
+.btn-outline-dark{display:inline-flex;align-items:center;padding:13px 22px;border:2px solid var(--sage-deep);color:var(--sage-deep);border-radius:8px;font-weight:600;font-size:.95rem;text-decoration:none;white-space:nowrap;transition:background .18s,color .18s}
+.btn-outline-dark:hover{background:var(--sage-deep);color:#fff;text-decoration:none}
+.author-byline{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid var(--line)}
 .author-byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .author-byline div{display:flex;flex-direction:column;gap:2px}
 .author-name{font-weight:600;font-size:.95rem;color:var(--ink)}
 .author-name a{color:inherit;text-decoration:none}
 .author-cred{font-size:.82rem;color:var(--ink-soft)}
-.post-body{padding:30px 0 60px}
-.post-body h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:42px 0 14px}
-.post-body h2:first-child{margin-top:0}
-.post-body h3{font-size:1.25rem;margin:30px 0 10px}
-.post-body p{font-size:1.07rem;color:var(--ink-soft);margin-bottom:18px;max-width:70ch}
-.post-body ul,.post-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:11px}
-.post-body ul li{position:relative;padding-left:30px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch}
-.post-body ul li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;background:var(--sage-light);border-radius:50%}
-.post-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:8px;height:5px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
-.post-body ol{counter-reset:li}
-.post-body ol li{position:relative;padding-left:42px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch;counter-increment:li}
-.post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
-.post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
-.post-body a:hover{color:var(--terra)}
-.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
-.post-body table{width:100%;border-collapse:collapse;margin:20px 0 28px;font-size:.98rem;background:var(--cream);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
-.post-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
-.post-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
-.post-body tr:last-child td{border-bottom:none}
-.post-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
-@media(max-width:600px){.post-body h2{font-size:1.4rem}}
+/* Hero art box */
+.hero-art{display:block;width:100%;aspect-ratio:4/3;border-radius:16px;overflow:hidden;position:relative;margin-top:4px}
+@media(min-width:800px){.hero-art{aspect-ratio:1/1;border-radius:20px;margin-top:0}}
+.hero-art-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-usps{position:absolute;bottom:0;left:0;right:0;padding:14px 16px;z-index:2;display:flex;flex-direction:column;gap:6px}
+.hero-usp{display:flex;align-items:center;gap:9px;background:var(--sage-light);border-radius:8px;padding:8px 13px}
+.hero-usp-icon{width:15px;height:15px;flex-shrink:0;color:var(--sage-deep)}
+.hero-usp span{font-size:.78rem;font-weight:600;color:var(--ink);line-height:1.3}
+/* 2-column content grid */
+.content-grid{max-width:1180px;margin:0 auto;padding:0 24px;display:block}
+@media(min-width:980px){.content-grid{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:0 48px;align-items:start}}
+/* Sidebar TOC (desktop) */
+.toc-desktop{display:none}
+@media(min-width:980px){.toc-desktop{display:block;position:sticky;top:96px;align-self:start}}
+.toc-inner{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:32px}
+.toc-label{font-size:.75rem;font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);margin:0 0 14px}
+.toc-list{list-style:none;padding:0;margin:0;counter-reset:toc;display:flex;flex-direction:column}
+.toc-list li{counter-increment:toc;display:block}
+.toc-list a{display:flex;gap:10px;padding:7px 0;font-size:.87rem;color:var(--sage-deep);text-decoration:none;border-bottom:1px solid var(--line);line-height:1.35;align-items:baseline}
+.toc-list li:last-child a{border-bottom:none}
+.toc-list a::before{content:counter(toc,decimal-leading-zero);font-size:.7rem;font-weight:700;color:var(--ink-soft);flex-shrink:0;min-width:24px}
+.toc-list a:hover{color:var(--terra)}
+/* Mobile TOC (collapsible) */
+.toc-mobile{background:var(--cream);border:1px solid var(--line);border-radius:14px;margin:24px 0 28px;overflow:hidden}
+@media(min-width:980px){.toc-mobile{display:none}}
+.toc-mobile summary{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;cursor:pointer;font-weight:600;font-size:.95rem;list-style:none;user-select:none;color:var(--ink)}
+.toc-mobile summary::-webkit-details-marker{display:none}
+.toc-mobile .chevron{width:18px;height:18px;transition:transform .25s;flex-shrink:0;color:var(--ink-soft)}
+.toc-mobile[open] .chevron{transform:rotate(180deg)}
+.toc-mobile .toc-list{padding:0 18px 14px}
+.toc-mobile .toc-list a{border-bottom:1px solid var(--line)}
+.toc-mobile .toc-list li:last-child a{border-bottom:none}
+/* Article body */
+.article-body{padding:32px 0 60px;min-width:0}
+.article-body h2{font-size:clamp(1.4rem,3vw,2rem);margin:40px 0 12px;scroll-margin-top:90px}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-size:1.2rem;margin:28px 0 8px;scroll-margin-top:90px}
+.article-body p{font-size:1.06rem;color:var(--ink-soft);margin-bottom:18px;max-width:68ch}
+.article-body ul,.article-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.article-body ul li{position:relative;padding-left:28px;color:var(--ink-soft);font-size:1.04rem}
+.article-body ul li::before{content:"";position:absolute;left:0;top:8px;width:15px;height:15px;background:var(--sage-light);border-radius:50%}
+.article-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:7px;height:4px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
+.article-body ol{counter-reset:li}
+.article-body ol li{position:relative;padding-left:40px;color:var(--ink-soft);font-size:1.04rem;counter-increment:li}
+.article-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:25px;height:25px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:600}
+.article-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
+.article-body a:hover{color:var(--terra)}
+.article-body a.btn,.article-body a.btn:hover{color:#fff;text-decoration:none}
+/* Tables */
+.article-body .table-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:20px 0 28px;overflow-x:auto}
+.article-body table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream);display:table}
+.article-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
+.article-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+.article-body tr:last-child td{border-bottom:none}
+.article-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+/* Answer / key-takeaway box */
+.answer{background:var(--sage-light);border-left:4px solid var(--sage-deep);border-radius:0 14px 14px 0;padding:20px 26px;margin:0 0 28px}
+.answer p{color:var(--ink);font-size:1.05rem;margin:0;max-width:none!important}
+.answer strong{color:var(--sage-deep)}
+/* CTA blocks — dark green */
+.post-cta{margin:36px 0}
+.post-cta-inner{background:var(--sage-light);border-radius:20px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.post-cta-inner p{color:var(--ink)!important;font-family:var(--serif);font-size:1.1rem;font-style:italic;margin:0!important;max-width:none!important;flex:1;min-width:240px;line-height:1.5}
+.post-cta-inner .btn{flex-shrink:0;background:var(--sage-deep);color:#fff!important;font-weight:700;text-decoration:none!important;border-radius:100px;white-space:nowrap}
+.post-cta-inner .btn:hover{background:var(--ink);text-decoration:none!important}
+/* Source note */
+.source-note{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin:-12px 0 24px}
+/* Legacy wrappers pass-through */
+.post-body,.body-import{display:contents}
+/* Mobile */
+@media(max-width:799px){.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn,.hero-actions .btn-outline-dark{width:100%;text-align:center;justify-content:center;box-sizing:border-box}}
+@media(max-width:600px){.article-body h2{font-size:1.35rem}.post-cta-inner{flex-direction:column;align-items:stretch}.post-cta-inner .btn{width:100%;text-align:center}}
 </style></head>
 <body>
 <a href="#main" class="skip">Skip to main content</a><header class="nav" id="nav">
@@ -237,32 +300,55 @@
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header><main id="main">
+<div class="progress-track"><div class="progress-bar" id="prog"></div></div>
 <div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Shinohara &amp; Shinohara: How the 2025 Family Law C…</nav></div>
 <article>
-<header class="post-hero"><div class="wrap-narrow">
+<header class="post-hero">
+<div class="hero-inner">
+<div class="hero-text">
   <div class="post-meta"><span class="cat">Guide</span><span>8 min read</span></div>
   <h1>Shinohara &amp; Shinohara: How the 2025 Family Law Changes Abolished Add-Backs</h1>
+  <p class="hero-dek">Shinohara &amp; Shinohara: How the 2025 Family Law Changes… — Mediations Australia.</p>
+  <div class="hero-actions">
+    <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a>
+    <a href="tel:0272277373" class="btn-outline-dark">Call (02) 7227 7373</a>
+  </div>
   <div class="author-byline">
-    <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs" width="44" height="44" loading="eager">
+    <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
     <div>
       <span class="author-name"><a href="/our-mediators/">Dan Toombs</a></span>
-      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS</span>
+      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS · Multi-Award Winning Lawyer</span>
     </div>
   </div>
-</div></header>
-<div class="post-body"><div class="wrap-narrow">
+</div>
+<div class="hero-art">
+  <img src="/assets/images/family-law-mediation-consultation.webp" alt="Shinohara & Shinohara: How the 2025 Family Law Changes Abolished Add-Backs — Mediations Australia" width="380" height="380" loading="eager" class="hero-art-img">
+  <div class="hero-usps">
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Nationally Accredited AMDRAS Mediators</span></div>
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Up to 90% Cheaper than Going to Court/Tribunal</span></div>
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Australia-Wide + Free Consultation &amp; No Obligation</span></div>
+  </div>
+</div>
+</div>
+</header>
+<div class="content-grid">
+
+<div class="article-body">
+
 <div class="body-import">
 <div class="content-inner">  <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Imagine you&#8217;re going through a separation, and your former partner has already withdrawn substantial funds from joint accounts or sold assets without your agreement. Under the old system, you might have expected the Court to simply &#8220;add back&#8221; those amounts to the property pool, treating them as if they still existed. After the landmark Full Court decision in <em>Shinohara &amp; Shinohara</em> [2025] FedCFamC1A 126, that approach is no longer available.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">This decision, delivered on 23 July 2025, has fundamentally transformed how <a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="/property-settlement-in-family-law/">property settlements in family law</a> are determined in Australia. For separating couples, understanding these changes is crucial—not just for Court proceedings, but especially for those seeking to resolve matters through mediation, where the new legal framework directly shapes what outcomes are achievable.</p> <h2 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">What Were Add-Backs?</h2> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Before the <a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="https://www.legislation.gov.au/C2024A00118/latest/text" target="_blank" rel="noopener">Family Law Amendment Act 2024</a> came into effect on 10 June 2025, the Courts applied a well-established practice known as &#8220;add-backs.&#8221; This concept allowed judges to notionally restore assets to the property pool even though those assets no longer existed at the time of trial.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The Full Court case of <em>Omacini &amp; Omacini</em> (2005) FLC 93-218 identified three distinct categories of add-backs:</p> <ul class=":mb-0 :mt-1.5 :gap-1.5 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-2 pl-8 mb-3"> <li class="whitespace-normal break-words pl-2"><strong>Legal fees</strong>: Where one party paid legal costs from joint or individual assets</li> <li class="whitespace-normal break-words pl-2"><strong>Wastage</strong>: Reckless, negligent, or wanton dissipation of assets, such as gambling losses or extravagant spending</li> <li class="whitespace-normal break-words pl-2"><strong>Premature distribution</strong>: Early distribution of matrimonial property before formal settlement</li> </ul> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The practical effect was significant. If your former partner had spent $100,000 from joint savings before trial, the Court could treat that amount as if it still existed in the pool. The spending party would then receive a reduced share of the actual remaining assets to account for what they had already taken.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">This mathematical &#8220;fix&#8221; provided a relatively straightforward mechanism for addressing perceived unfairness when assets disappeared during separation.</p> <h2 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">The Family Law Amendment Act 2024: A Fundamental Shift</h2> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The <a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="https://www.fcfcoa.gov.au/news-and-media-centre/fla-changes/fla2024" target="_blank" rel="noopener">amendments to the Family Law Act 1975</a> that commenced on 10 June 2025 introduced sweeping changes to property settlement law. Among the most significant was the rewording of <a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="/section-79-of-the-family-law-act-1975/">section 79</a>, which governs how Courts determine property settlements.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Under the new section 79(3)(a)(i), the Court must now identify &#8220;the existing legal and equitable rights and interests in any property of the parties to the marriage or either of them.&#8221;</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The critical word is &#8220;existing.&#8221; According to the <a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="https://www.ag.gov.au/families-and-marriage/publications/family-law-changes-june-2025-information-family-law-professionals" target="_blank" rel="noopener">Attorney-General&#8217;s Department fact sheet</a>, this language was deliberately chosen to limit the property pool to assets that actually exist at the time of trial—not notional or historical assets that have since been disposed of.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The amendments also codify the four-step Stanford pathway that Courts have traditionally followed, while integrating enhanced recognition of family violence and its economic impacts into the assessment framework.</p> <h2 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">The Shinohara Decision: Confirming the End of Add-Backs</h2> <h3 class="text-text-100 mt-2 -mb-1 text-base font-bold">Background of the Case</h3> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The parties in <em>Shinohara</em> had a relatively short marriage of approximately five years. Following separation, they sold investment properties and their former matrimonial home. The proceeds from these sales were used to pay legal fees and other expenses.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">By the time of trial, the parties had agreed to record approximately $592,768 as &#8220;add-backs&#8221; on their balance sheet—$239,992 received by the father and $352,776 by the mother. The remaining pool available for distribution was approximately $589,155 (excluding superannuation, which was to be divided separately).</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The primary judge at first instance did not include the notional add-backs in the asset pool, limiting the division to assets that existed at trial. This effectively halved the pool that the parties had expected to divide.</p> <h3 class="text-text-100 mt-2 -mb-1 text-base font-bold">The Full Court&#8217;s Ruling</h3> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">On appeal, the Full Court (Justices Williams, Altobelli, and Campton) delivered a unanimous judgment that, while allowing the appeal on procedural fairness grounds, definitively confirmed the legislative abolition of add-backs.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The Court stated unequivocally at paragraph 121:</p> <blockquote class="ml-2 border-l-4 border-border-300/10 pl-4 text-text-300"> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">&#8220;The text of s 79(3)(a)(i) is clear. Only the existing property of the parties is to be identified and only that existing property is to be divided or adjusted.&#8221;</p> </blockquote> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">This means that if money has been spent, assets sold, or property otherwise disposed of before trial, those amounts cannot be artificially restored to the pool. What exists is what gets divided.</p> <h3 class="text-text-100 mt-2 -mb-1 text-base font-bold">How Dissipated Assets Are Now Treated</h3> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">While add-backs as a balance sheet entry are abolished, the Full Court clarified that dissipated assets remain relevant—just through a different mechanism. At paragraph 149, the Court explained:</p> <blockquote class="ml-2 border-l-4 border-border-300/10 pl-4 text-text-300"> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">&#8220;So that it is clear, s 79 now directs that the categories identified in <em>Omacini</em> pre-amendment that were notionally added back are to be considered in ensuring a just and equitable outcome, either by way of historical contributions, or by way of their relationship to and impact upon the current and future circumstances at the s 79(5) stage.&#8221;</p> </blockquote> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">In practical terms, this means:</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Under section 79(4) (Contributions)</strong>: The Court can discount the contributions of a party who wasted or dissipated assets. If your former partner squandered $100,000 through gambling, this negatively affected their contributions to the relationship and can result in a percentage adjustment in your favour.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Under section 79(5) (Current and Future Circumstances)</strong>: The Court can consider how the dissipation of assets has impacted each party&#8217;s current financial position and future needs. A party who has already received a benefit from spent funds may have their needs assessment adjusted accordingly.</p> <h2 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">Practical Implications for Separating Couples</h2> <h3 class="text-text-100 mt-2 -mb-1 text-base font-bold">Why This Matters for Your Settlement</h3> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The abolition of add-backs has profound implications for anyone navigating property settlement, whether through the Courts or, preferably, through <a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="/family-mediation/">mediation</a>.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Financial decisions now carry permanent consequences.</strong> Money spent during separation cannot be mathematically restored. Parties can no longer assume that a mediator or judge will simply &#8220;add back&#8221; funds to equalise the pool.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Record-keeping is more critical than ever.</strong> Without the add-back mechanism, you must demonstrate exactly how dissipated assets should affect contributions or needs assessments. This requires detailed evidence of:</p> <ul class=":mb-0 :mt-1.5 :gap-1.5 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-2 pl-8 mb-3"> <li class="whitespace-normal break-words pl-2">When assets were disposed of</li> <li class="whitespace-normal break-words pl-2">Whether the disposal was agreed upon or unilateral</li> <li class="whitespace-normal break-words pl-2">How proceeds were used</li> <li class="whitespace-normal break-words pl-2">The impact on the overall pool composition</li> </ul> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Early protective action may be essential.</strong> Since assets cannot be notionally restored, parties concerned about dissipation should consider seeking urgent Court orders such as asset preservation injunctions or interim property orders before funds disappear.</p> <h3 class="text-text-100 mt-2 -mb-1 text-base font-bold">Why Mediation Is More Important Than Ever</h3> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The <em>Shinohara</em> decision and the 2025 amendments make <a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="/family-law-mediation-for-property-settlements/">family law mediation</a> an even more attractive option for resolving property disputes.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Cost-effectiveness becomes paramount.</strong> Under the new framework, legal fees paid from joint assets cannot be added back. Every dollar spent on litigation permanently reduces the pool available for division. Mediation typically costs a fraction of Court proceedings, preserving more assets for both parties.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Speed protects the asset pool.</strong> Court proceedings can take months or years. During that time, assets can be depleted through ordinary living expenses, legal costs, or deliberate dissipation. Mediation can often resolve matters in days or weeks, capturing the pool at its highest value.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Control over outcomes remains with the parties.</strong> In Court, judges must apply the new legislative framework strictly. In mediation, parties retain flexibility to reach creative agreements that acknowledge past asset movements in ways that feel fair to both sides—provided the overall outcome is just and equitable.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Preservation of relationships.</strong> The adversarial nature of litigation often exacerbates conflict. Mediation&#8217;s collaborative approach helps preserve co-parenting relationships and reduces emotional harm.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">At <a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="/">Mediations Australia</a>, our experienced family mediators understand the implications of the <em>Shinohara</em> decision and can help you navigate the new property settlement landscape to achieve an outcome that works for your unique circumstances.</p> <h2 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">Practical Steps to Protect Your Position</h2> <h3 class="text-text-100 mt-2 -mb-1 text-base font-bold">Immediately After Separation</h3> <ol class=":mb-0 :mt-1.5 :gap-1.5 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-decimal flex flex-col gap-2 pl-8 mb-3"> <li class="whitespace-normal break-words pl-2"><strong>Document the asset pool.</strong> Create a comprehensive record of all assets and liabilities as they existed at separation, including bank statements, superannuation valuations, property appraisals, and business accounts.</li> <li class="whitespace-normal break-words pl-2"><strong>Monitor financial movements.</strong> Keep records of any asset sales, withdrawals, or expenditure by either party following separation.</li> <li class="whitespace-normal break-words pl-2"><strong>Consider protective measures.</strong> If you have genuine concerns about asset dissipation, seek urgent legal advice about injunctions or <a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="/how-to-lodge-a-caveat-over-property-in-family-law-matters/">caveats on property</a>.</li> <li class="whitespace-normal break-words pl-2"><strong>Engage in mediation early.</strong> The sooner you commence resolution discussions, the more likely you are to preserve assets for division.</li> </ol> <h3 class="text-text-100 mt-2 -mb-1 text-base font-bold">Preparing for Settlement Negotiations</h3> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Whether proceeding through mediation or Court, you must now be prepared to address dissipated assets within the contributions and needs framework rather than as balance sheet add-backs. This requires:</p> <ul class=":mb-0 :mt-1.5 :gap-1.5 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-2 pl-8 mb-3"> <li class="whitespace-normal break-words pl-2">Evidence demonstrating the timing and circumstances of asset disposals</li> <li class="whitespace-normal break-words pl-2">Arguments about how dissipation should affect contribution percentages</li> <li class="whitespace-normal break-words pl-2">Analysis of how each party&#8217;s current and future circumstances have been impacted</li> </ul> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">An experienced family mediator can help structure these discussions productively and guide both parties toward mutually acceptable solutions.</p> <h2 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">Formalising Your Agreement</h2> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Once you reach agreement through mediation, it is essential to formalise the outcome to ensure it is legally binding and enforceable. The two primary options are:</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong><a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="/consent-orders-2025-update/">Consent Orders</a></strong>: These are orders made by the Court with the consent of both parties. They carry the full force of Court orders and can include property division, superannuation splitting, and spousal maintenance arrangements. The Court must be satisfied that the orders are just and equitable under the new section 79 framework.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong><a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="/binding-financial-agreement/">Binding Financial Agreements</a></strong>: These are private contracts between the parties that do not require Court approval. Each party must receive independent legal advice, and the agreement must comply with strict formal requirements under Part VIIIA of the Family Law Act.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Your mediator can explain the advantages and limitations of each option and help you prepare for the next steps in formalising your agreement.</p> <h2 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">Looking Ahead: Adapting to the New Landscape</h2> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The <em>Shinohara</em> decision represents a watershed moment in Australian family law. For practitioners, litigants, and separating couples alike, the message is clear: the rules have changed, and strategies must adapt accordingly.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">For those entering separation now, the key takeaways are:</p> <ul class=":mb-0 :mt-1.5 :gap-1.5 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-2 pl-8 mb-3"> <li class="whitespace-normal break-words pl-2"><strong>Act promptly</strong> to document and protect assets</li> <li class="whitespace-normal break-words pl-2"><strong>Maintain detailed records</strong> of all financial transactions</li> <li class="whitespace-normal break-words pl-2"><strong>Choose mediation</strong> to minimise costs and preserve the asset pool</li> <li class="whitespace-normal break-words pl-2"><strong>Understand the new framework</strong> when negotiating settlements</li> <li class="whitespace-normal break-words pl-2"><strong>Seek professional guidance</strong> from mediators and lawyers who understand the 2025 amendments</li> </ul> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">The abolition of add-backs does not mean that fairness is impossible to achieve—only that the pathway to fairness has changed. Through careful preparation, informed negotiation, and the collaborative process of mediation, separating couples can still reach outcomes that appropriately recognise each party&#8217;s contributions and needs.</p> <h2 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">How Mediations Australia Can Help</h2> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">At Mediations Australia, we specialise in helping separating couples resolve property settlement disputes quickly, cost-effectively, and fairly. Our nationally accredited mediators are fully across the implications of the <em>Shinohara</em> decision and the 2025 Family Law Act amendments.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">We offer flexible mediation services including:</p> <ul class=":mb-0 :mt-1.5 :gap-1.5 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-2 pl-8 mb-3"> <li class="whitespace-normal break-words pl-2"><strong>Online mediation</strong> for convenience and accessibility</li> <li class="whitespace-normal break-words pl-2"><strong>Shuttle mediation</strong> where direct communication is difficult</li> <li class="whitespace-normal break-words pl-2"><strong>Legally-assisted mediation</strong> where parties wish to have lawyers present</li> </ul> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Our goal is simple: to help you resolve your dispute faster, better, and cheaper than litigation while achieving an outcome that is fair and workable for both parties.</p> <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">If you are navigating property settlement following separation and want to understand how the <em>Shinohara</em> decision affects your situation, <a class="underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current" href="/contact/">contact Mediations Australia today</a> for a confidential discussion.</p> </div>
 </div>
 <aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes.</p><a href="/our-mediators/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div></aside>
-</div></div>
+</div>
+</div>
 </article>
 <section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
-<p>Book a free initial consultation — no obligation.</p>
-<a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">&rarr;</span></a>
+<p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
+<a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
 </div></div></section>
-</main><footer>
+</main>
+<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script><footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>

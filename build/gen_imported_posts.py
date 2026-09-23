@@ -110,13 +110,71 @@ POST_CSS = """<style>
 
 _CHEVRON = '<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>'
 
-def _hero_art(h1_raw):
+_HERO_IMAGE_POOL = [
+    "family-law-mediation-consultation.webp",
+    "mediation-initial-consultation-australia.webp",
+    "family-mediation-separated-parents.webp",
+    "family-mediation-private-consultation.webp",
+    "mediation-private-consultation-session.webp",
+    "family-mediation-initial-intake.webp",
+    "family-mediation-note-taking-session.webp",
+    "mediation-intake-consultation.webp",
+]
+
+def _get_hero_image(slug):
+    s = slug.lower()
+    if "60i" in s or "certificate" in s:
+        return "section-60i-certificate-mediation.webp"
+    if "consent-order" in s:
+        return "consent-orders-document-review.webp"
+    if "review-consent" in s or "consent-review" in s:
+        return "consent-orders-review-mediation.webp"
+    if "consent" in s:
+        return "consent-orders-client-speaking-mediation.webp"
+    if "binding-financial" in s or "bfa" in s:
+        return "binding-financial-agreement-mediation.webp"
+    if "parenting-plan" in s:
+        return "parenting-plan-mediation.webp"
+    if "parenting" in s and "custody" in s:
+        return "parenting-custody-dispute-mediation.webp"
+    if "parenting" in s or "custody" in s or "children" in s:
+        return "parenting-dispute-mediation.webp"
+    if "property-settlement" in s:
+        return "property-settlement-mediation.webp"
+    if "property" in s:
+        return "property-settlement-discussion.webp"
+    if "divorce" in s:
+        return "divorce-mediation-separated-couple.webp"
+    if "de-facto" in s or "defacto" in s or "de_facto" in s:
+        return "de-facto-mediation-consultation.webp"
+    if "separat" in s:
+        return "divorce-settlement-mediation.webp"
+    if "estate" in s or "probate" in s or "will-dispute" in s or "inherit" in s:
+        return "estate-dispute-mediation.webp"
+    if "workplace" in s or "employ" in s:
+        return "workplace-mediation-session.webp"
+    if "commercial" in s or "business" in s or "contract" in s or "franchise" in s:
+        return "commercial-mediation-dispute-resolution.webp"
+    if "financial" in s or "asset" in s or "superannuation" in s or "matrimonial" in s:
+        return "financial-agreement-mediation.webp"
+    if "family-law" in s or "family-court" in s or "family" in s:
+        return "family-law-mediation-consultation.webp"
+    if "cost" in s or "fee" in s or "price" in s or "afford" in s or "cheap" in s:
+        return "mediation-intake-consultation.webp"
+    if "arbitration" in s:
+        return "commercial-dispute-resolution-boardroom.webp"
+    if "court" in s or "litigation" in s or "tribunal" in s:
+        return "commercial-business-dispute-mediation.webp"
+    return _HERO_IMAGE_POOL[hash(slug) % len(_HERO_IMAGE_POOL)]
+
+def _hero_art(h1_raw, slug=""):
+    img = _get_hero_image(slug)
     alt = f"{h1_raw} — Mediations Australia"
     _check = '<svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>'
     _shield = '<svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'
     _cal = '<svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>'
     return f"""<div class="hero-art">
-  <img src="/assets/images/mediation-session-hero.webp" alt="{alt}" width="380" height="380" loading="eager" class="hero-art-img">
+  <img src="/assets/images/{img}" alt="{alt}" width="380" height="380" loading="eager" class="hero-art-img">
   <div class="hero-usps">
     <div class="hero-usp">{_check}<span>Nationally Accredited AMDRAS Mediators</span></div>
     <div class="hero-usp">{_shield}<span>Up to 90% Cheaper than Going to Court/Tribunal</span></div>
@@ -856,8 +914,22 @@ def read_existing_body(slug):
         return ""
     with open(path, encoding="utf-8") as f:
         html = f.read()
-    m = re.search(r'<div class="body-import">(.*?)</div>\s*<div class="cta-inline"', html, re.S)
+    m = re.search(r'<div class="body-import">(.*?)</div>\s*(?:<aside|<div class="cta-inline")', html, re.S)
     return m.group(1).strip() if m else ""
+
+def read_existing_meta(slug):
+    path = os.path.join(OUT, slug, "index.html")
+    if not os.path.exists(path):
+        return None, None, None
+    with open(path, encoding="utf-8") as f:
+        html = f.read()
+    title_m = re.search(r'<title>([^<]+)</title>', html)
+    desc_m = re.search(r'<meta name="description" content="([^"]+)"', html)
+    h1_m = re.search(r'<h1[^>]*>([^<]+)</h1>', html)
+    title = _unescape(title_m.group(1)).replace(' | Mediations Australia', '').replace(' - Mediations Australia', '').strip() if title_m else None
+    desc = _unescape(desc_m.group(1)) if desc_m else None
+    h1 = _unescape(h1_m.group(1)) if h1_m else None
+    return title, desc, h1
 
 def build_page(url, slug):
     ov = META_OVERRIDES.get(slug, {})
@@ -900,7 +972,7 @@ def build_page(url, slug):
     </div>
   </div>
 </div>
-{_hero_art(h1_raw)}
+{_hero_art(h1_raw, slug)}
 </div>
 </header>
 <div class="content-grid">
@@ -927,7 +999,7 @@ def build_page(url, slug):
         with open(os.path.join(path, "index.html"), "w", encoding="utf-8") as f:
             f.write(doc)
         return
-    existing_body = read_existing_body(slug) if ov and ov.get("title") else ""
+    existing_body = read_existing_body(slug)
     # Discard extracted body if it contains nested post-hero (means it was a bad prior rebuild)
     if existing_body and 'class="post-hero"' in existing_body:
         existing_body = ""
@@ -937,6 +1009,13 @@ def build_page(url, slug):
         title  = ov["title"]
         desc   = ov["desc"]
         h1_raw = ov.get("h1", title)
+    elif existing_body:
+        # Non-expanded post with existing built HTML — recover meta from it, no fetch needed
+        body = existing_body
+        _et, _ed, _eh = read_existing_meta(slug)
+        title  = _et or slug.replace("-", " ").title()
+        desc   = _ed or ""
+        h1_raw = _eh or title
     else:
         fetch_url = FETCH_URL_OVERRIDES.get(slug, url)
         html = fetch_html(fetch_url)
@@ -997,7 +1076,7 @@ def build_page(url, slug):
     </div>
   </div>
 </div>
-{_hero_art(h1_raw)}
+{_hero_art(h1_raw, slug)}
 </div>
 </header>
 <div class="content-grid">
@@ -1042,9 +1121,6 @@ built, skipped, failed = [], [], []
 total = len(unique_urls)
 
 for i, (url, slug) in enumerate(unique_urls, 1):
-    if slug in existing and slug not in META_OVERRIDES:
-        skipped.append(slug)
-        continue
     try:
         build_page(url, slug)
         built.append(slug)

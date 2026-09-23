@@ -98,8 +98,8 @@
       "@type": "Article",
       "headline": "Consent Orders Example",
       "description": "Are you looking for Consent Orders Example, in this article we provide a full example of consent orders, including everything you need...",
-      "datePublished": "2026-09-22",
-      "dateModified": "2026-09-22",
+      "datePublished": "2026-09-23",
+      "dateModified": "2026-09-23",
       "image": "https://www.mediationsaustralia.com.au/assets/images/MA-social.png",
       "author": {
         "@type": "Person",
@@ -149,36 +149,99 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GTTR2T25L"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7GTTR2T25L');</script>
 <style>
-.post-hero{padding:36px 0 8px}
-.post-meta{display:flex;gap:16px;align-items:center;font-size:.9rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
-.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 14px;border-radius:100px;font-weight:600;font-size:.82rem}
-.author-byline{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:18px;border-top:1px solid var(--sand-deep)}
+/* Reading progress bar */
+.progress-track{position:fixed;top:0;left:0;right:0;height:3px;z-index:999;pointer-events:none}
+.progress-bar{height:100%;width:0;background:var(--sage-deep);transition:width .1s linear}
+/* Hero — 2-column */
+.post-hero{padding:0;border-bottom:1px solid var(--line);overflow:hidden}
+.hero-inner{display:grid;grid-template-columns:1fr;max-width:1180px;margin:0 auto;padding:48px 24px 0}
+@media(min-width:800px){.hero-inner{grid-template-columns:1fr 380px;gap:48px;padding:60px 48px 0;align-items:start}}
+.hero-text{padding-bottom:36px}
+.post-meta{display:flex;gap:12px;align-items:center;font-size:.88rem;color:var(--ink-soft);margin-bottom:18px;flex-wrap:wrap}
+.post-meta .cat{background:var(--sage-light);color:var(--sage-deep);padding:5px 16px;border-radius:100px;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
+.hero-text h1{font-size:clamp(2.3rem,5.2vw,4rem);line-height:1.15;letter-spacing:-.015em;margin:0 0 18px;font-family:var(--serif);font-weight:500;color:var(--ink)}
+.hero-dek{font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:0 0 28px;font-family:var(--serif);max-width:54ch;line-height:1.65}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;align-items:center}
+.btn-outline-dark{display:inline-flex;align-items:center;padding:13px 22px;border:2px solid var(--sage-deep);color:var(--sage-deep);border-radius:8px;font-weight:600;font-size:.95rem;text-decoration:none;white-space:nowrap;transition:background .18s,color .18s}
+.btn-outline-dark:hover{background:var(--sage-deep);color:#fff;text-decoration:none}
+.author-byline{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid var(--line)}
 .author-byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .author-byline div{display:flex;flex-direction:column;gap:2px}
 .author-name{font-weight:600;font-size:.95rem;color:var(--ink)}
 .author-name a{color:inherit;text-decoration:none}
 .author-cred{font-size:.82rem;color:var(--ink-soft)}
-.post-body{padding:30px 0 60px}
-.post-body h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:42px 0 14px}
-.post-body h2:first-child{margin-top:0}
-.post-body h3{font-size:1.25rem;margin:30px 0 10px}
-.post-body p{font-size:1.07rem;color:var(--ink-soft);margin-bottom:18px;max-width:70ch}
-.post-body ul,.post-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:11px}
-.post-body ul li{position:relative;padding-left:30px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch}
-.post-body ul li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;background:var(--sage-light);border-radius:50%}
-.post-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:8px;height:5px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
-.post-body ol{counter-reset:li}
-.post-body ol li{position:relative;padding-left:42px;color:var(--ink-soft);font-size:1.05rem;max-width:66ch;counter-increment:li}
-.post-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
-.post-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
-.post-body a:hover{color:var(--terra)}
-.post-body a.btn,.post-body a.btn:hover{color:#fff;text-decoration:none}
-.post-body table{width:100%;border-collapse:collapse;margin:20px 0 28px;font-size:.98rem;background:var(--cream);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
-.post-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
-.post-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
-.post-body tr:last-child td{border-bottom:none}
-.post-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
-@media(max-width:600px){.post-body h2{font-size:1.4rem}}
+/* Hero art box */
+.hero-art{display:block;width:100%;aspect-ratio:4/3;border-radius:16px;overflow:hidden;position:relative;margin-top:4px}
+@media(min-width:800px){.hero-art{aspect-ratio:1/1;border-radius:20px;margin-top:0}}
+.hero-art-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-usps{position:absolute;bottom:0;left:0;right:0;padding:14px 16px;z-index:2;display:flex;flex-direction:column;gap:6px}
+.hero-usp{display:flex;align-items:center;gap:9px;background:var(--sage-light);border-radius:8px;padding:8px 13px}
+.hero-usp-icon{width:15px;height:15px;flex-shrink:0;color:var(--sage-deep)}
+.hero-usp span{font-size:.78rem;font-weight:600;color:var(--ink);line-height:1.3}
+/* 2-column content grid */
+.content-grid{max-width:1180px;margin:0 auto;padding:0 24px;display:block}
+@media(min-width:980px){.content-grid{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:0 48px;align-items:start}}
+/* Sidebar TOC (desktop) */
+.toc-desktop{display:none}
+@media(min-width:980px){.toc-desktop{display:block;position:sticky;top:96px;align-self:start}}
+.toc-inner{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:32px}
+.toc-label{font-size:.75rem;font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);margin:0 0 14px}
+.toc-list{list-style:none;padding:0;margin:0;counter-reset:toc;display:flex;flex-direction:column}
+.toc-list li{counter-increment:toc;display:block}
+.toc-list a{display:flex;gap:10px;padding:7px 0;font-size:.87rem;color:var(--sage-deep);text-decoration:none;border-bottom:1px solid var(--line);line-height:1.35;align-items:baseline}
+.toc-list li:last-child a{border-bottom:none}
+.toc-list a::before{content:counter(toc,decimal-leading-zero);font-size:.7rem;font-weight:700;color:var(--ink-soft);flex-shrink:0;min-width:24px}
+.toc-list a:hover{color:var(--terra)}
+/* Mobile TOC (collapsible) */
+.toc-mobile{background:var(--cream);border:1px solid var(--line);border-radius:14px;margin:24px 0 28px;overflow:hidden}
+@media(min-width:980px){.toc-mobile{display:none}}
+.toc-mobile summary{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;cursor:pointer;font-weight:600;font-size:.95rem;list-style:none;user-select:none;color:var(--ink)}
+.toc-mobile summary::-webkit-details-marker{display:none}
+.toc-mobile .chevron{width:18px;height:18px;transition:transform .25s;flex-shrink:0;color:var(--ink-soft)}
+.toc-mobile[open] .chevron{transform:rotate(180deg)}
+.toc-mobile .toc-list{padding:0 18px 14px}
+.toc-mobile .toc-list a{border-bottom:1px solid var(--line)}
+.toc-mobile .toc-list li:last-child a{border-bottom:none}
+/* Article body */
+.article-body{padding:32px 0 60px;min-width:0}
+.article-body h2{font-size:clamp(1.4rem,3vw,2rem);margin:40px 0 12px;scroll-margin-top:90px}
+.article-body h2:first-child{margin-top:0}
+.article-body h3{font-size:1.2rem;margin:28px 0 8px;scroll-margin-top:90px}
+.article-body p{font-size:1.06rem;color:var(--ink-soft);margin-bottom:18px;max-width:68ch}
+.article-body ul,.article-body ol{margin:0 0 22px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.article-body ul li{position:relative;padding-left:28px;color:var(--ink-soft);font-size:1.04rem}
+.article-body ul li::before{content:"";position:absolute;left:0;top:8px;width:15px;height:15px;background:var(--sage-light);border-radius:50%}
+.article-body ul li::after{content:"";position:absolute;left:4px;top:11px;width:7px;height:4px;border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg)}
+.article-body ol{counter-reset:li}
+.article-body ol li{position:relative;padding-left:40px;color:var(--ink-soft);font-size:1.04rem;counter-increment:li}
+.article-body ol li::before{content:counter(li);position:absolute;left:0;top:0;width:25px;height:25px;background:var(--sage);color:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:600}
+.article-body a{color:var(--sage-deep);text-decoration:underline;text-underline-offset:2px}
+.article-body a:hover{color:var(--terra)}
+.article-body a.btn,.article-body a.btn:hover{color:#fff;text-decoration:none}
+/* Tables */
+.article-body .table-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:20px 0 28px;overflow-x:auto}
+.article-body table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream);display:table}
+.article-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
+.article-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+.article-body tr:last-child td{border-bottom:none}
+.article-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+/* Answer / key-takeaway box */
+.answer{background:var(--sage-light);border-left:4px solid var(--sage-deep);border-radius:0 14px 14px 0;padding:20px 26px;margin:0 0 28px}
+.answer p{color:var(--ink);font-size:1.05rem;margin:0;max-width:none!important}
+.answer strong{color:var(--sage-deep)}
+/* CTA blocks — dark green */
+.post-cta{margin:36px 0}
+.post-cta-inner{background:var(--sage-light);border-radius:20px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.post-cta-inner p{color:var(--ink)!important;font-family:var(--serif);font-size:1.1rem;font-style:italic;margin:0!important;max-width:none!important;flex:1;min-width:240px;line-height:1.5}
+.post-cta-inner .btn{flex-shrink:0;background:var(--sage-deep);color:#fff!important;font-weight:700;text-decoration:none!important;border-radius:100px;white-space:nowrap}
+.post-cta-inner .btn:hover{background:var(--ink);text-decoration:none!important}
+/* Source note */
+.source-note{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin:-12px 0 24px}
+/* Legacy wrappers pass-through */
+.post-body,.body-import{display:contents}
+/* Mobile */
+@media(max-width:799px){.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn,.hero-actions .btn-outline-dark{width:100%;text-align:center;justify-content:center;box-sizing:border-box}}
+@media(max-width:600px){.article-body h2{font-size:1.35rem}.post-cta-inner{flex-direction:column;align-items:stretch}.post-cta-inner .btn{width:100%;text-align:center}}
 </style></head>
 <body>
 <a href="#main" class="skip">Skip to main content</a><header class="nav" id="nav">
@@ -237,32 +300,55 @@
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header><main id="main">
+<div class="progress-track"><div class="progress-bar" id="prog"></div></div>
 <div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Consent Orders Example</nav></div>
 <article>
-<header class="post-hero"><div class="wrap-narrow">
+<header class="post-hero">
+<div class="hero-inner">
+<div class="hero-text">
   <div class="post-meta"><span class="cat">Guide</span><span>8 min read</span></div>
   <h1>Consent Orders Example</h1>
+  <p class="hero-dek">Are you looking for Consent Orders Example, in this article we provide a full example of consent orders, including everything you need...</p>
+  <div class="hero-actions">
+    <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a>
+    <a href="tel:0272277373" class="btn-outline-dark">Call (02) 7227 7373</a>
+  </div>
   <div class="author-byline">
-    <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs" width="44" height="44" loading="eager">
+    <img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="44" height="44" loading="eager">
     <div>
       <span class="author-name"><a href="/our-mediators/">Dan Toombs</a></span>
-      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS</span>
+      <span class="author-cred">Founder &amp; Accredited Mediator · AMDRAS · Multi-Award Winning Lawyer</span>
     </div>
   </div>
-</div></header>
-<div class="post-body"><div class="wrap-narrow">
+</div>
+<div class="hero-art">
+  <img src="/assets/images/consent-orders-document-review.webp" alt="Consent Orders Example — Mediations Australia" width="380" height="380" loading="eager" class="hero-art-img">
+  <div class="hero-usps">
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Nationally Accredited AMDRAS Mediators</span></div>
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Up to 90% Cheaper than Going to Court/Tribunal</span></div>
+    <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Australia-Wide + Free Consultation &amp; No Obligation</span></div>
+  </div>
+</div>
+</div>
+</header>
+<div class="content-grid">
+
+<div class="article-body">
+
 <div class="body-import">
 <div class="content-inner">  <h2>Consent Orders Example Australia</h2> <p>If you are looking for a consent orders example, the most useful starting point is not a random template. It is understanding what consent orders are designed to do, what they can cover, and how the wording needs to match your actual circumstances.</p> <p>In Australian family law, consent orders are commonly used to formalise an agreement after separation about parenting arrangements, property settlement, superannuation splitting, or spousal maintenance. Once approved by the Court, they have legal force.</p> <p>This guide explains what consent orders are, when they are used, what a practical consent orders example usually includes, and why mediation is often the step that helps people get to a consent-order-ready agreement in the first place.</p> <p>If you are searching for a consent orders example Australia resource, the real goal is to understand the structure and clause types that may be needed before any final drafting is prepared for your own matter.</p> <h2>What Are Consent Orders?</h2> <p>Consent orders are orders made by the Federal Circuit and Family Court of Australia with the agreement of both parties. They are not just a private understanding written down between former partners. They become court orders once approved.</p> <p>That matters because the orders are intended to provide clarity, finality and enforceability. If one party later fails to comply, the existence of formal orders can make the legal position far clearer than an informal agreement.</p> <p>Consent orders are often used after negotiation, legal advice, or mediation, where the parties have reached broad agreement and want that agreement turned into a binding outcome.</p> <h3>What consent orders can cover</h3> <ul> <li>parenting arrangements</li> <li>property settlement</li> <li>superannuation splitting</li> <li>spousal maintenance</li> <li>related procedural steps, dates and obligations</li> </ul> <h2>When Should You Use Consent Orders?</h2> <p>Consent orders are usually worth considering when both parties agree on the outcome, but want the protection and certainty of a legally binding arrangement.</p> <p>That can be particularly important where assets are being transferred, a property is being sold, superannuation is being split, or parenting arrangements need to be clearly and formally documented.</p> <h3>Common situations where consent orders are used</h3> <ul> <li>parents agree on where children live and how time is shared</li> <li>a separating couple agrees on how assets and debts will be divided</li> <li>the parties want finality around financial claims</li> <li>one party needs enforceable obligations rather than informal promises</li> <li>the agreement needs to be recorded clearly to reduce future disputes</li> </ul> <p>Where the parties do not agree, consent orders are not the starting point. In that case, negotiation, mediation or court processes may be needed before any final orders can be made.</p> <h2>Consent Orders vs Parenting Plans</h2> <p>People often confuse consent orders with parenting plans, but they are not the same thing.</p> <p>A parenting plan is a written agreement between parents. It can be useful, practical and flexible, but it is not automatically enforceable in the same way as consent orders. Consent orders are generally the stronger option where certainty and enforceability matter.</p> <p>For more on that distinction, see <a href="/parenting-plan-template/">Parenting Plan Template</a> and <a href="/parenting-plans-example/">Parenting Plans Example</a>.</p> <h3>Consent orders are often better where</h3> <ul> <li>the arrangements need to be binding</li> <li>the issues are more complex</li> <li>there is a history of conflict or non-compliance</li> <li>property or superannuation issues are involved</li> <li>the parties want greater finality</li> </ul> <h2>What Does a Consent Orders Example Usually Include?</h2> <p>A practical consent orders example is usually much more structured and precise than people expect. It is not just a broad statement that the parties agree to be reasonable. It needs to set out the actual orders being sought in clear, workable language.</p> <h3>A consent orders example will usually include</h3> <ul> <li>the names of the parties</li> <li>court and application details</li> <li>a clear sequence of numbered orders</li> <li>specific obligations, dates, timeframes or percentages</li> <li>clear drafting about what happens, when, and who is responsible</li> </ul> <p>The more practical and precise the wording is, the less room there is for later argument.</p> <h2>Example Clause Categories in Parenting Consent Orders</h2> <p>A parenting-focused consent orders example will usually contain categories of clauses rather than vague statements of goodwill.</p> <h3>Parenting clauses often deal with</h3> <ul> <li>where the children live</li> <li>when the children spend time with each parent</li> <li>changeover arrangements</li> <li>school holiday and Christmas arrangements</li> <li>medical and education decision-making</li> <li>communication arrangements</li> <li>travel, passports, or notice requirements</li> </ul> <p>For example, an order might specify the exact days, times and locations for changeover, rather than simply saying the children will spend &#8220;reasonable time&#8221; with the other parent. Specific wording is usually more useful than broad wording.</p> <h2>Example Clause Categories in Property Consent Orders</h2> <p>Property consent orders also need precision. A vague agreement about &#8220;splitting assets fairly&#8221; is not the same as a workable set of proposed court orders.</p> <h3>Property clauses often deal with</h3> <ul> <li>who retains or transfers the family home</li> <li>whether a property is sold and how proceeds are divided</li> <li>mortgage refinance obligations</li> <li>bank account and investment allocation</li> <li>debt responsibility</li> <li>superannuation splitting</li> <li>lump sum payments and deadlines</li> <li>final release of financial claims</li> </ul> <p>Good drafting usually sets out the sequence of steps clearly, including who must sign what, what deadlines apply, and what happens if a sale or transfer is required.</p> <h2>Can Consent Orders Cover Spousal Maintenance?</h2> <p>Yes. Where appropriate, consent orders can also deal with spousal maintenance.</p> <p>That may involve periodic payments, lump sum arrangements, or in some cases the finalisation of future maintenance claims. Because maintenance can have long-term consequences, legal advice is especially important before those terms are locked in.</p> <h2>What Makes a Good Consent Orders Example Useful?</h2> <p>The best examples are useful because they show structure, not because they can be copied word for word.</p> <p>Every family has different children, assets, debts, timelines and risks. A clause that works well in one matter may be wrong or incomplete in another. That is why the goal is not to blindly download a template. The goal is to understand the type of detail and precision the Court expects.</p> <h3>A useful example should show</h3> <ul> <li>clear numbered orders</li> <li>specific timeframes and events</li> <li>plain and precise language</li> <li>logical sequencing of obligations</li> <li>enough detail to be workable in real life</li> </ul> <h2>Common Mistakes People Make</h2> <p>Some of the biggest problems with consent orders come from bad drafting, not bad intentions.</p> <h3>Common mistakes include</h3> <ul> <li>vague or incomplete wording</li> <li>missing dates, deadlines or percentages</li> <li>failing to deal properly with superannuation</li> <li>not setting out sale or transfer steps clearly enough</li> <li>assuming the Court will approve any agreement just because both parties signed it</li> <li>using a generic template without adapting it to the actual facts</li> </ul> <p>The Court still needs to be satisfied that the proposed orders are appropriate. In property matters, that includes whether the proposed outcome appears just and equitable. In parenting matters, the arrangements need to be workable and child-focused.</p> <h2>How Mediation Helps Before Consent Orders</h2> <p>Many people reach a consent-order-ready agreement through mediation.</p> <p>Mediation can help parties identify the real issues, work through parenting and property arrangements more efficiently, reduce legal costs, and move from conflict toward a practical agreement that can later be formalised.</p> <p>That is one reason consent orders and mediation often sit close together in the real-world process. Mediation helps people reach agreement. Consent orders help formalise it.</p> <p>See <a href="/family-law-mediation/">Family Law Mediation</a> and <a href="/property-settlement-mediation/">Property Settlement Mediation</a>.</p> <h2>What Happens After Agreement Is Reached?</h2> <p>Once agreement is reached, the proposed orders are drafted and filed with the Court together with the required application material. The Court then reviews the documents.</p> <p>If the Court is satisfied that the proposed orders are appropriate, orders can often be made without the parties attending a hearing. That is one of the reasons consent orders can be such a practical path forward when agreement has already been reached.</p> <h3>Typical next steps</h3> <ul> <li>finalise the terms of agreement</li> <li>prepare the proposed orders carefully</li> <li>complete the required application documents</li> <li>file the material with the Court</li> <li>wait for the Court to review the application</li> </ul> <h2>When You Should Get Legal Advice</h2> <p>Even where both parties agree, legal advice is often worth getting before consent orders are filed.</p> <p>That becomes more important where there are children involved, significant property issues, superannuation interests, trusts, businesses, maintenance questions, or concerns about fairness and future enforceability.</p> <p>A good agreement can still create problems if the drafting is unclear or if one key issue has been missed.</p> <h2>Frequently Asked Questions</h2> <h3>Are consent orders legally binding?</h3> <p>Yes. Once made by the Court, consent orders are legally binding and enforceable.</p> <h3>Do I have to go to court to get consent orders?</h3> <p>Usually not. In many matters, the application and proposed orders are filed and dealt with on the documents without the parties needing to appear in person.</p> <h3>Can consent orders cover both parenting and property?</h3> <p>Yes. Depending on the agreement reached, they can deal with parenting issues, financial issues, or both.</p> <h3>Can consent orders be changed later?</h3> <p>Sometimes, but not easily. The answer depends on the type of orders and what has changed since they were made.</p> <h3>Can I just use an online consent orders example and file it?</h3> <p>That is risky. An example can help you understand structure and clause categories, but it is not a substitute for making sure the orders fit your actual situation.</p> <h2>Conclusion</h2> <p>A good consent orders example shows structure, precision and practical drafting. It helps you understand what kinds of clauses are commonly used and why detail matters, but it should never be treated as a one-size-fits-all solution.</p> <p>If you are trying to move from agreement to binding orders after separation, mediation can help you get there more efficiently and with less conflict.</p> <p>If you want help working toward a practical agreement that can be formalised properly, <a href="/book-a-consultation/">book a consultation</a>.</p> </div>
 </div>
 <aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes.</p><a href="/our-mediators/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div></aside>
-</div></div>
+</div>
+</div>
 </article>
 <section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
-<p>Book a free initial consultation — no obligation.</p>
-<a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">&rarr;</span></a>
+<p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
+<a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
 </div></div></section>
-</main><footer>
+</main>
+<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script><footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
