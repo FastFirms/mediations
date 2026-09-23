@@ -118,9 +118,9 @@ def _hero_art(h1_raw):
     return f"""<div class="hero-art">
   <img src="/assets/images/mediation-session-hero.webp" alt="{alt}" width="380" height="380" loading="eager" class="hero-art-img">
   <div class="hero-usps">
-    <div class="hero-usp">{_check}<span>Nationally accredited AMDRAS mediators</span></div>
-    <div class="hero-usp">{_shield}<span>Up to 90% cheaper than going to court</span></div>
-    <div class="hero-usp">{_cal}<span>Free initial consultation — no obligation</span></div>
+    <div class="hero-usp">{_check}<span>Nationally Accredited AMDRAS Mediators</span></div>
+    <div class="hero-usp">{_shield}<span>Up to 90% Cheaper than Going to Court/Tribunal</span></div>
+    <div class="hero-usp">{_cal}<span>Australia-Wide + Free Consultation &amp; No Obligation</span></div>
   </div>
 </div>"""
 _PROG_JS = '<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script>'
