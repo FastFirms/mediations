@@ -183,8 +183,16 @@ def _hero_art(h1_raw, slug=""):
 </div>"""
 _PROG_JS = '<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script>'
 
+def _slugify(text):
+    """Convert heading text to a URL-safe id."""
+    text = re.sub(r'<[^>]+>', '', text)
+    text = _unescape(text).lower().strip()
+    text = re.sub(r'[^a-z0-9]+', '-', text)
+    return text.strip('-')[:50]
+
 def _extract_toc(body):
-    """Pull inline post-toc nav from body, or auto-generate from h2 id= tags.
+    """Pull inline post-toc nav from body, or auto-generate from h2 tags.
+    Adds id= attributes to bare h2 tags so anchor links work.
     Returns (cleaned_body, ul_items_html)."""
     # Try explicit post-toc nav first
     m = re.search(r'<nav[^>]*class="[^"]*post-toc[^"]*"[^>]*>.*?<ul>(.*?)</ul>.*?</nav>', body, re.S | re.I)
@@ -192,15 +200,29 @@ def _extract_toc(body):
         ul_inner = m.group(1).strip()
         cleaned = re.sub(r'<nav[^>]*class="[^"]*post-toc[^"]*"[^>]*>.*?</nav>', '', body, flags=re.S | re.I).strip()
         return cleaned, ul_inner
-    # Auto-generate from <h2 id="..."> tags in the body
-    headings = re.findall(r'<h2[^>]*\bid="([^"]+)"[^>]*>(.*?)</h2>', body, re.S | re.I)
-    if len(headings) >= 2:
-        items = "".join(
-            f'<li><a href="#{hid}">{re.sub(r"<[^>]+>", "", txt).strip()}</a></li>'
-            for hid, txt in headings
-        )
-        return body, items
-    return body, ""
+    # Find all h2 tags (with or without id=)
+    h2_tags = list(re.finditer(r'<h2([^>]*)>(.*?)</h2>', body, re.S | re.I))
+    if len(h2_tags) < 2:
+        return body, ""
+    items = []
+    new_body = body
+    offset = 0
+    for tag in h2_tags:
+        attrs, inner = tag.group(1), tag.group(2)
+        id_m = re.search(r'\bid="([^"]+)"', attrs)
+        if id_m:
+            hid = id_m.group(1)
+        else:
+            # Generate and inject an id= attribute
+            hid = _slugify(inner)
+            new_tag = f'<h2 id="{hid}"{attrs}>{inner}</h2>'
+            start, end = tag.start() + offset, tag.end() + offset
+            new_body = new_body[:start] + new_tag + new_body[end:]
+            offset += len(new_tag) - (end - start)
+        label = re.sub(r'<[^>]+>', '', inner).strip()
+        if label:
+            items.append(f'<li><a href="#{hid}">{esc(label)}</a></li>')
+    return new_body, "".join(items)
 
 def _toc_blocks(items):
     """Return (sidebar_html, mobile_html) from TOC list items HTML string."""
@@ -568,6 +590,10 @@ def clean_body(html):
     html = re.sub(r"<div[^>]+class=\"[^\"]*wp-block-[^\"]*\"[^>]*>", "<div>", html, flags=re.I)
     # Strip WP "Summarise with AI" widget and similar injected containers
     html = re.sub(r'<div[^>]+class="[^"]*summarize-with-ai[^"]*"[^>]*>.*?</div>', "", html, flags=re.S | re.I)
+    # Strip WP content-inner wrapper divs (page builder residue)
+    html = re.sub(r'<div[^>]+class="[^"]*content-inner[^"]*"[^>]*>', '', html, flags=re.I)
+    # Strip Tailwind/AI-generated class attributes from inline elements (they have no CSS on this site)
+    html = re.sub(r'(<(?:p|a|li|span|em|strong|blockquote)\b[^>]*?)\s+class="[^"]*(?:font-|break-|whitespace-|leading-\[|underline|decoration-|hover:|focus:)[^"]*"', r'\1', html, flags=re.I)
     # Fix double-encoded entities (e.g. &amp;amp; → &amp; so browser renders & correctly)
     html = re.sub(r"&amp;(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);", r"&\1;", html)
     return html.strip()
@@ -1117,15 +1143,20 @@ def build_page(url, slug):
     # Discard extracted body if it contains nested post-hero (means it was a bad prior rebuild)
     if existing_body and 'class="post-hero"' in existing_body:
         existing_body = ""
+    def _clean_existing(b):
+        b = re.sub(r'<div[^>]+class="[^"]*content-inner[^"]*"[^>]*>', '', b, flags=re.I)
+        b = re.sub(r'(<(?:p|a|li|span|em|strong|blockquote)\b[^>]*?)\s+class="[^"]*(?:font-|break-|whitespace-|leading-\[|underline|decoration-|hover:|focus:)[^"]*"', r'\1', b, flags=re.I)
+        return b
+
     if ov and ov.get("title") and existing_body:
         # Has explicit title override and recoverable body — apply new meta
-        body   = existing_body
+        body   = _clean_existing(existing_body)
         title  = ov["title"]
         desc   = ov["desc"]
         h1_raw = ov.get("h1", title)
     elif existing_body:
         # Non-expanded post with existing built HTML — recover meta from it, no fetch needed
-        body = existing_body
+        body = _clean_existing(existing_body)
         _et, _ed, _eh = read_existing_meta(slug)
         title  = _et or slug.replace("-", " ").title()
         desc   = _ed or ""
