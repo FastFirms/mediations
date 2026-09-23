@@ -907,6 +907,33 @@ META_OVERRIDES = {
 }
 META_OVERRIDES.update(_EXPANDED)  # merge batch-expanded bodies
 
+def _strip_wp_markup(html):
+    """Extract real article text from WordPress page-builder HTML (wpb_row/vc_row wrappers)."""
+    if 'wpb_row' not in html and 'vc_row' not in html and 'vc_col-sm' not in html:
+        return html
+    # Extract content from wpb_text_column sections only (skip wpb_raw_html which has embeds/iframes)
+    chunks = re.findall(
+        r'class="wpb_text_column[^"]*"[^>]*>.*?<div class="wpb_wrapper">(.*?)</div>\s*</div>\s*</div>',
+        html, re.S
+    )
+    if chunks:
+        # Filter out chunks that are mostly non-text (quiz widgets, shortcodes, etc.)
+        text_chunks = []
+        for chunk in chunks:
+            text_only = re.sub(r'<[^>]+>', ' ', chunk)
+            text_only = re.sub(r'\s+', ' ', text_only).strip()
+            # Only keep chunks with substantial readable text (p/h tags, not just widget divs)
+            if len(text_only) > 100 and re.search(r'<[ph][1-6]?\b', chunk, re.I):
+                text_chunks.append(chunk.strip())
+        if text_chunks:
+            return '\n'.join(text_chunks)
+    # Fallback: strip WP builder wrapper divs, keeping semantic content inside
+    cleaned = re.sub(r'<div[^>]+class="[^"]*wpb_raw_html[^"]*"[^>]*>.*?</div>\s*</div>', '', html, flags=re.S)
+    for cls in ('wpb_row', 'vc_row', 'vc_col', 'wpb_column', 'vc_column_container',
+                'content-inner', 'row_col_wrap', 'row-bg-wrap', 'wpb_wrapper', 'vc_column-inner'):
+        cleaned = re.sub(r'<div[^>]+class="[^"]*' + cls + r'[^"]*"[^>]*>', '', cleaned, flags=re.I)
+    return cleaned
+
 def read_existing_body(slug):
     """Extract body content from already-built page (new or old format)."""
     path = os.path.join(OUT, slug, "index.html")
@@ -917,10 +944,14 @@ def read_existing_body(slug):
     # New design format
     m = re.search(r'<div class="body-import">(.*?)</div>\s*(?:<aside|<div class="cta-inline")', html, re.S)
     if m:
-        return m.group(1).strip()
+        body = m.group(1).strip()
+        return _strip_wp_markup(body)
     # Old format (pre-new-design)
     m = re.search(r'<div class="post-body">(.*?)</div>\s*(?:<div class="post-cta|<section class="cta-band|</article)', html, re.S)
-    return m.group(1).strip() if m else ""
+    if m:
+        body = m.group(1).strip()
+        return _strip_wp_markup(body)
+    return ""
 
 def read_existing_meta(slug):
     path = os.path.join(OUT, slug, "index.html")
