@@ -121,7 +121,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
   </div>
 </section>
 <div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> Mediations Australia provides nationally accredited mediation in {esc(city)}, resolving family, property, workplace and commercial disputes faster and at a fraction of the cost of court. We serve {esc(regions)}, in person and through secure online mediation across {esc(state)}, with a 90% resolution rate and free initial consultations.</p></div></div>
-<article class="body"><div class="wrap-narrow reveal">
+<article class="body"><div class="wrap-narrow">
 
 <h2>Why choose mediation in {esc(city)}?</h2>
 <p>When a relationship breaks down — whether between separating partners, business owners, employer and employee, or family members — the instinct is often to engage lawyers and prepare for court. But for the overwhelming majority of {esc(city)} disputes, litigation is the slowest, most expensive and most stressful path available. {esc(context)}</p>
