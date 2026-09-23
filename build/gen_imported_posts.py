@@ -632,6 +632,165 @@ FETCH_URL_OVERRIDES = {
 from expanded_bodies import EXPANDED as _EXPANDED  # batch-expanded body content
 
 META_OVERRIDES = {
+    # ── Noindex off-topic imports ──────────────────────────────────────────────
+    "parenting-payments-in-australia": {
+        "noindex": True,
+    },
+    "how-do-i-contact-centrelink": {
+        "noindex": True,
+    },
+
+    # ── Internal link injections (body_suffix) ─────────────────────────────────
+    "what-is-a-restraining-order": {
+        "body_suffix": """
+<div class="answer reveal" style="margin-top:2rem">
+<h3>Need mediation, not a restraining order?</h3>
+<p>A restraining order addresses safety. But for the underlying family dispute — parenting arrangements, property division, separation — mediation is almost always the better first step. Our nationally accredited mediators work with families across Australia:</p>
+<ul>
+<li><strong><a href="/perth-mediation/">Perth family mediators</a></strong> — serving the Perth CBD, Fremantle, Joondalup and the wider Perth metro area.</li>
+<li><strong><a href="/sydney-mediation/">Sydney family mediators</a></strong> — serving the Sydney CBD, North Shore, Eastern Suburbs, Inner West and Parramatta.</li>
+<li><strong><a href="/melbourne-mediation/">Melbourne family mediators</a></strong> — serving Melbourne CBD, inner east, inner north, the Mornington Peninsula and outer suburbs.</li>
+<li><strong><a href="/brisbane-mediation/">Brisbane family mediators</a></strong> — serving Brisbane CBD, Ipswich, Logan, the Redlands and South East Queensland.</li>
+<li><a href="/family-law-mediation/">All family mediation services →</a></li>
+</ul>
+<p><a href="/book-a-consultation/" class="btn btn-primary" style="margin-top:0.5rem">Book a Free Consultation</a></p>
+</div>""",
+    },
+
+    # ── Consent orders cornerstone (2,000+ words) ──────────────────────────────
+    "consent-orders-2025-update": {
+        "title": "Consent Orders in Australia: 2025 Complete Guide",
+        "desc":  "Everything you need to know about consent orders in Australia — costs, process, timeline and the 2025 changes. Written by accredited family mediators.",
+        "h1":    "Consent Orders in Australia: 2025 Complete Guide",
+        "read_min": "12",
+        "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> Consent orders are court-approved agreements that formalise property settlements, superannuation splits and parenting arrangements after separation. They carry the same legal weight as a contested court order — but are reached by agreement, usually without a court hearing. Costs typically run $2,400–$5,500 all-in, and approval takes 6–12 weeks. The 2025 Family Law Act changes did not remove consent orders but did alter what courts consider "just and equitable" — meaning your agreement must reflect the updated framework.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#what-are-consent-orders">What are consent orders?</a></li>
+<li><a href="#types">Types of consent orders</a></li>
+<li><a href="#process">The consent orders process, step by step</a></li>
+<li><a href="#costs-timeline">Costs and timeline: a worked example</a></li>
+<li><a href="#consent-orders-vs-bfa">Consent orders vs binding financial agreements</a></li>
+<li><a href="#after">After consent orders are made</a></li>
+<li><a href="#vary">Can consent orders be changed?</a></li>
+<li><a href="#2025-changes">2025 Family Law Act changes and consent orders</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="what-are-consent-orders">What Are Consent Orders?</h2>
+<p>A consent order is a written agreement between separated or divorcing parties that has been approved by the Federal Circuit and Family Court of Australia (FCFCOA). Once approved, it becomes a legally binding court order — enforceable in the same way as an order made after a contested hearing, but without the parties ever having to appear before a judge.</p>
+<p>The critical distinction is that consent orders are reached by <em>agreement</em>. The court's role is to review the agreement and confirm that it is just and equitable (for property orders) or in the best interests of the child (for parenting orders) — not to impose its own decision. If the court is satisfied, the orders are sealed and both parties receive a sealed copy. The whole process usually happens on the papers, without a hearing.</p>
+<p>Consent orders are one of the most important tools in Australian family law. They give separated families the certainty of a court order with the efficiency and control of a negotiated agreement. Most are reached following family dispute resolution (mediation) or solicitor-led negotiation.</p>
+
+<h2 id="types">Types of Consent Orders</h2>
+<h3>Property and financial consent orders</h3>
+<p>Property consent orders divide assets, liabilities and superannuation between the parties. They can cover the family home, investment properties, bank accounts, vehicles, business interests, share portfolios, and any debts. Superannuation splitting orders — which direct a portion of one party's superannuation to the other — are a common component of property orders and require a separate procedural step.</p>
+<p>Property orders must be applied for within <strong>12 months of the date a divorce order takes effect</strong> (for married couples) or <strong>within 2 years of the end of a de facto relationship</strong>. Waiting beyond these time limits requires the court's permission — which is not automatically granted.</p>
+
+<h3>Parenting consent orders</h3>
+<p>Parenting consent orders cover all arrangements relating to children: where they live, how much time they spend with each parent, how major decisions (education, medical treatment, religion) are made, and how parents communicate about the children. They replace the older concept of "custody and access" and can be as detailed or as brief as the parents decide.</p>
+<p>Parenting orders can be made without a divorce. They are available to any separated parents — married, de facto, or never-partnered — and can be applied for at any time. Unlike property orders, there is no time limit.</p>
+
+<h3>Maintenance and spousal support orders</h3>
+<p>In some cases, consent orders include ongoing spousal maintenance — regular payments from one party to the other, typically where one party has significantly lower earning capacity following the relationship. These are less common than property and parenting orders, and are always time-limited.</p>
+
+<h2 id="process">The Consent Orders Process, Step by Step</h2>
+<p>The process of obtaining consent orders involves more steps than many people expect. Understanding the sequence helps avoid delays — and mistakes that cause orders to be rejected.</p>
+<ol>
+<li><strong>Reach agreement.</strong> The parties must first agree on the terms. Most do this through mediation, solicitor-led negotiation, or direct discussion with legal advice. No agreement = no consent orders. This is where mediation is most valuable: it structures the conversation, surfaces issues early, and reaches durable agreements faster than litigation.</li>
+<li><strong>Prepare the documents.</strong> A draft Minutes of Consent and an Application for Consent Orders (Form 11) must be prepared and filed with the court. The documents must use prescribed language and follow the court's formatting requirements. Errors in drafting are the most common reason applications are returned.</li>
+<li><strong>Complete financial disclosure.</strong> For property orders, both parties must provide full disclosure of their financial position. Each party completes a financial statement disclosing assets, liabilities, income and superannuation. The duty of disclosure under the <em>Family Law Rules</em> is not optional — non-disclosure is a basis for setting aside orders later.</li>
+<li><strong>File with the court.</strong> The Application for Consent Orders, Minutes of Consent, financial statements and any supporting documents are filed with the FCFCOA. The filing fee is currently $160 for consent orders (eligible concession cardholders may apply for a fee reduction).</li>
+<li><strong>Registrar review.</strong> A judicial registrar reviews the application on the papers. They check that the orders are just and equitable (property) or in the best interests of the child (parenting). They may seek more information, request changes to the terms, or in rare cases list the matter for a short hearing.</li>
+<li><strong>Orders sealed and issued.</strong> If approved, the court seals the orders. Both parties receive sealed copies. Property orders typically include a direction to the relevant title office, share registry, superannuation fund or other institution.</li>
+</ol>
+
+<h2 id="costs-timeline">Costs and Timeline: A Worked Example</h2>
+<p>One of the most common questions we hear is: <em>what does it actually cost to get consent orders?</em> Here is a realistic worked example for a property settlement (home + superannuation, no children) reaching agreement through mediation.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Step</th><th>Typical cost</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Initial legal advice</td><td>$300–$600 per party</td><td>One consult to understand your rights before negotiating</td></tr>
+<tr><td>Family mediation</td><td>$1,800–$3,600 shared</td><td>One or two sessions; cost split between parties</td></tr>
+<tr><td>Drafting consent orders</td><td>$600–$1,500</td><td>Solicitor-drafted; complexity varies</td></tr>
+<tr><td>FCFCOA filing fee</td><td>$160</td><td>Per application; hardship waivers available</td></tr>
+<tr><td>Superannuation split (if applicable)</td><td>$500–$1,000</td><td>Fund trustee approval process adds cost and time</td></tr>
+<tr><td><strong>Total (typical range)</strong></td><td><strong>$2,400–$5,500</strong></td><td><strong>Per party; shared costs reduce the total significantly</strong></td></tr>
+</tbody></table></div>
+<p>Compare this to a contested property hearing, which commonly costs $30,000–$80,000 per party (FCFCOA figures) and takes 12–24 months to reach a final hearing. The financial case for reaching agreement — and formalising it through consent orders — is overwhelming for the vast majority of separations.</p>
+<p><strong>Timeline from agreement to sealed orders:</strong> once the application is filed, approval typically takes <strong>6–12 weeks</strong> for straightforward property matters. Complex matters or those involving superannuation splitting orders may take longer. Parenting consent orders with no financial component can be faster.</p>
+
+<blockquote><p>"The biggest mistake people make with consent orders is waiting. Property orders have a time limit — 12 months from the divorce order for married couples. We've had clients come to us after the window had passed who had to apply to the court for special leave just to formalise an agreement they'd already reached. Start the process while it's still straightforward." — Dan Toombs, Founder, Mediations Australia</p></blockquote>
+
+<h2 id="consent-orders-vs-bfa">Consent Orders vs Binding Financial Agreements</h2>
+<p>The other common way to formalise a financial settlement is through a binding financial agreement (BFA), sometimes called a "pre-nup" or "post-nup." The two mechanisms are quite different:</p>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>Consent orders</th><th>Binding financial agreement</th></tr></thead>
+<tbody>
+<tr><td><strong>Court involvement</strong></td><td>Yes — court reviews and approves</td><td>No — purely private contract</td></tr>
+<tr><td><strong>Legal advice required</strong></td><td>Not mandatory (but strongly advised)</td><td>Yes — both parties must get independent legal advice</td></tr>
+<tr><td><strong>Can cover superannuation splitting</strong></td><td>Yes, with trustee involvement</td><td>Yes, for regulated super funds</td></tr>
+<tr><td><strong>Easier to set aside</strong></td><td>Harder — court order</td><td>Easier — more grounds for challenge</td></tr>
+<tr><td><strong>Cost to set aside</strong></td><td>High — needs court proceedings</td><td>Lower — contract law principles apply</td></tr>
+<tr><td><strong>Best for</strong></td><td>Most post-separation settlements</td><td>Pre-nuptial agreements; complex business arrangements</td></tr>
+</tbody></table></div>
+<p>For most post-separation property settlements, consent orders are the preferred option because the court's involvement provides certainty and makes the orders harder to challenge later. BFAs are typically used for pre-nuptial or post-nuptial arrangements, or where the parties have specific reasons for wanting to keep the settlement entirely private.</p>
+
+<h2 id="after">After Consent Orders Are Made</h2>
+<p>Once consent orders are sealed, both parties are bound by their terms. Non-compliance is a serious matter: the court can impose penalties including fines, enforcement orders, or in extreme cases, imprisonment.</p>
+<p>For property orders, the practical steps following sealing typically include:</p>
+<ul>
+<li>Transferring title of real property (the solicitor prepares the transfer documents and lodges them with the title office)</li>
+<li>Refinancing the mortgage if one party is retaining the family home</li>
+<li>Splitting or rolling over superannuation (each fund trustee has its own process and timeframes — typically 2–4 weeks after receiving the sealed order)</li>
+<li>Transferring or selling vehicles, shares and other assets as specified</li>
+<li>Closing or separating joint accounts and liabilities</li>
+</ul>
+<p>For parenting orders, the transition to the new arrangements should be planned carefully, especially where children are involved. We recommend explaining the new arrangements to children in age-appropriate terms and giving them time to adjust — changes in living arrangements are significant for children regardless of how well-planned they are.</p>
+
+<h2 id="vary">Can Consent Orders Be Changed?</h2>
+<p>Consent orders can be varied, but not easily — and the threshold is higher for property orders than for parenting orders.</p>
+<p><strong>Property consent orders</strong> can be set aside or varied in limited circumstances: if there has been a significant miscarriage of justice due to fraud, non-disclosure, duress or a material change in circumstances, or if circumstances have changed so dramatically that compliance would be impractical or cause significant injustice. This is a high bar. The court's reluctance to reopen settled property matters is by design — finality is one of the main benefits of consent orders.</p>
+<p><strong>Parenting consent orders</strong> are easier to vary, because the best interests of the child remain paramount and children's circumstances change. A significant change in circumstances — a parent relocating, a child's needs changing, a new safety concern — provides grounds to apply to vary. Many parenting matters are reviewed as children age.</p>
+<p>If you expect your parenting arrangements to evolve, it is worth considering a parenting plan (less formal, more flexible) alongside or instead of consent orders, or building review points into the consent orders themselves.</p>
+
+<h2 id="2025-changes">2025 Family Law Act Changes and Consent Orders</h2>
+<p>The <em>Family Law Amendment Act 2024</em> made significant changes that took effect in 2025, and they have implications for consent orders:</p>
+<p><strong>Property settlements:</strong> The 2025 amendments (following the High Court's Ascot Investments / Shinohara decision) have largely resolved the controversial "add-backs" debate. Courts can no longer routinely add back to the property pool amounts that one party spent before trial — which changes the negotiation landscape for property settlements. If your separation predates 2025 and a property settlement was being negotiated under earlier principles, it is worth reviewing the position with a lawyer.</p>
+<p><strong>Parenting matters:</strong> The 2023 amendments (already in force before 2025) removed the presumption of equal shared parental responsibility. Courts now focus purely on the best interests of the child, without a default presumption toward equal time or equal responsibility. Consent orders for parenting arrangements should reflect this: rather than anchoring on "equal time," they should focus on what actually works for the child. Our mediators ensure parenting agreements reflect the post-2023 legal landscape.</p>
+<p><strong>Financial agreements:</strong> The Albanese government flagged reforms to binding financial agreements in 2024, potentially requiring legal advice to be certified in a prescribed form. If you are considering a BFA rather than consent orders, take current legal advice on the requirements.</p>
+<p>These changes reinforce the case for getting consent orders formalised by people who understand the current law — not templates from the internet.</p>
+
+<p><a href="/book-a-consultation/" class="btn btn-primary">Talk to a Mediator — Free Consultation</a></p>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<h3>Do I need a lawyer to get consent orders?</h3>
+<p>You don't legally need a lawyer, but it is strongly advisable for property matters. Errors in drafting consent orders — wrong terminology, incomplete financial disclosure, incorrect superannuation procedures — are the most common reason applications are returned or, worse, result in orders that don't do what the parties intended. Most people engage a solicitor to draft the Minutes of Consent, even when they've negotiated the terms themselves through mediation.</p>
+
+<h3>Can I do consent orders without court?</h3>
+<p>Not for formal consent orders — the court must approve and seal them. However, the process almost always happens entirely on the papers (no court attendance required). You file the application and, 6–12 weeks later, receive your sealed orders. The exception is where the registrar identifies a concern and lists the matter for a short hearing — this is uncommon.</p>
+
+<h3>What happens if one party refuses to sign?</h3>
+<p>Consent orders require both parties' signatures. If one party refuses, you cannot obtain consent orders — you would need to apply for orders through the contested litigation process, or try mediation first to reach agreement. An accredited mediator can often help parties who are "almost there" find the final point of agreement.</p>
+
+<h3>How long do consent orders take to be approved?</h3>
+<p>Once filed, most straightforward consent orders are approved in 6–12 weeks. Complex matters, or those involving superannuation splitting, may take longer. The registrar may also request additional information, which adds time. Filing complete and correct documents from the start is the best way to avoid delays.</p>
+
+<h3>Can consent orders cover superannuation?</h3>
+<p>Yes. Superannuation splitting orders can be included in consent orders for most regulated super funds. The process requires notification to the fund trustee, who has 28 days to flag any concerns. Once the orders are sealed, the trustee implements the split as directed. Self-managed superannuation funds (SMSFs) have additional complexity — get specialist advice.</p>
+
+<h3>What is the difference between consent orders and a parenting plan?</h3>
+<p>A parenting plan is a written agreement signed by both parents, but it is not a court order — it is not directly enforceable. Consent orders are court-approved and enforceable. Many families start with a parenting plan for flexibility, then formalise arrangements through consent orders as they stabilise. If you think arrangements may need adjusting as children grow, a parenting plan (or consent orders with built-in review points) is worth considering.</p>
+
+<h3>What if I need to change consent orders?</h3>
+<p>Property consent orders can be set aside on limited grounds (fraud, non-disclosure, significant change in circumstances). Parenting consent orders can be varied where there has been a significant change in circumstances. In both cases, mediation is worth trying before going to court — and is often required for parenting matters.</p>
+
+<h3>Are consent orders the same as a divorce?</h3>
+<p>No. Divorce legally ends a marriage — it does not divide property or determine parenting arrangements. Consent orders (or a contested hearing) do that. You can apply for divorce without having finalised property or parenting matters, but the 12-month time limit for property consent orders starts running from the date the divorce order takes effect. Don't confuse the two processes.</p>"""
+    },
+
     "five-things-to-do-before-uttering-i-want-a-divorce": {
         "title": "Five Things to Do Before You Say 'I Want a Divorce'",
         "desc":  "Before you say 'I want a divorce', these five steps protect your finances, your children and your future. A practical guide from an accredited mediator.",
@@ -1098,6 +1257,8 @@ def build_page(url, slug):
         _h1_plain = h1_raw[:60]
         schema = [org_schema(), breadcrumb_schema([("Home", ""), ("Guides", "guides"), (_h1_plain, None)]), article_schema(title, desc)]
         doc = head(title, desc, slug, og_type="article", extra_schema=schema)
+        if ov.get("noindex"):
+            doc = doc.replace('content="index, follow, max-image-preview:large"', 'content="noindex, nofollow"')
         doc = doc.replace("</head>", POST_CSS + "</head>")
         doc += nav()
         _crumb_label = h1_raw[:48] + ("…" if len(h1_raw) > 48 else "")
@@ -1199,6 +1360,8 @@ def build_page(url, slug):
         body = clean_body(body)
 
     body = _wrap_tables(body)
+    if ov.get("body_suffix"):
+        body = body + ov["body_suffix"]
     title = truncate(title, 60)
     desc = truncate(desc, 160) if desc else truncate(title + " — Mediations Australia.", 160)
 
@@ -1208,6 +1371,8 @@ def build_page(url, slug):
     _h1_plain = h1_raw[:60]
     schema = [org_schema(), breadcrumb_schema([("Home", ""), ("Guides", "guides"), (_h1_plain, None)]), article_schema(title, desc)]
     doc = head(title, desc, slug, og_type="article", extra_schema=schema)
+    if ov.get("noindex"):
+        doc = doc.replace('content="index, follow, max-image-preview:large"', 'content="noindex, nofollow"')
     doc = doc.replace("</head>", POST_CSS + "</head>")
     doc += nav()
     _crumb_label = h1_raw[:48] + ("…" if len(h1_raw) > 48 else "")

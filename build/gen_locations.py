@@ -171,6 +171,81 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <p>If you were searching for "{esc(city)} family lawyers", you're in the right place. Our team includes accredited family lawyers — but the way we work is different. Rather than starting with the assumption that your matter belongs in court, we start with the question of whether it needs to. For the vast majority of separations, the answer is no: mediation resolves matters faster, far more cheaply, and with less damage to the family. We give you the legal insight of a family lawyer and the resolution focus of a mediator, in one place. <a href="/mediate-or-litigate/">See why mediation usually beats litigation →</a></p>
 
 </div></article>"""
+
+    # ── EXPANDED LOCAL CONTENT (fatten pages substantially) ─────────────────
+    STATE_COURT_COSTS = {
+        "NSW": ("$30,000–$80,000", "12–24 months"),
+        "VIC": ("$30,000–$80,000", "12–24 months"),
+        "QLD": ("$25,000–$75,000", "10–22 months"),
+        "WA":  ("$25,000–$75,000", "10–22 months"),
+        "SA":  ("$20,000–$65,000", "10–20 months"),
+        "ACT": ("$25,000–$70,000", "10–20 months"),
+        "TAS": ("$20,000–$65,000", "10–20 months"),
+        "NT":  ("$20,000–$65,000", "10–20 months"),
+    }
+    lit_cost, lit_time = STATE_COURT_COSTS.get(state, ("$25,000–$70,000", "12–24 months"))
+
+    SUBURB_DETAIL = {
+        "sydney-mediation": "the Sydney CBD, Surry Hills, Pyrmont, the North Shore (Chatswood, St Leonards, Pymble), the Eastern Suburbs (Bondi, Randwick, Maroubra), the Northern Beaches (Manly, Dee Why, Mona Vale), the Hills District (Castle Hill, Kellyville), Parramatta and Greater Western Sydney (Blacktown, Penrith, Campbelltown), the Inner West (Leichhardt, Marrickville, Strathfield) and Wollongong",
+        "melbourne-mediation": "Melbourne CBD, Fitzroy, Collingwood, South Yarra, the inner east (Hawthorn, Kew, Camberwell), the eastern suburbs (Box Hill, Glen Waverley, Knox), the south-east (Dandenong, Berwick, Frankston), the west (Footscray, Sunshine, Werribee), the northern suburbs (Preston, Bundoora, Epping) and the Mornington Peninsula",
+        "brisbane-mediation": "Brisbane CBD, New Farm, Teneriffe, Woolloongabba, the northern suburbs (Chermside, Aspley, Bracken Ridge), the south side (Mount Gravatt, Sunnybank, Capalaba), Ipswich, the western corridor, Logan, the Redlands and Bayside",
+        "perth-mediation": "Perth CBD, Subiaco, Leederville, Victoria Park, the northern suburbs (Joondalup, Wanneroo, Burns Beach), the southern suburbs (Fremantle, Cockburn, Mandurah, Rockingham) and the eastern suburbs (Midland, Mundaring)",
+        "adelaide-mediation": "the Adelaide CBD, the inner eastern suburbs (Burnside, Kensington, Norwood), the northern suburbs (Elizabeth, Salisbury, Gawler), the southern suburbs (Noarlunga, Morphett Vale, Aldinga) and the Adelaide Hills",
+        "canberra-mediation": "all ACT suburbs — Tuggeranong, Woden, Belconnen, Gungahlin, the Inner North and Inner South — and Queanbeyan and the surrounding Capital Region of NSW",
+        "gold-coast-mediation": "Southport, Surfers Paradise, Broadbeach, Burleigh Heads, Robina, Coomera, Hope Island, Helensvale, Upper Coomera and Coolangatta",
+        "newcastle-mediation": "Newcastle CBD, the Hunter Valley, Lake Macquarie, Maitland, Cessnock, the Upper Hunter, Port Stephens and the Central Coast",
+        "wollongong-mediation": "Wollongong, Shellharbour, Kiama, Albion Park, Dapto, the Illawarra and the NSW South Coast from Nowra to Ulladulla",
+        "geelong-mediation": "Geelong, Torquay, Lara, Leopold, Drysdale, Ocean Grove, Barwon Heads, Colac and the Surf Coast",
+        "hobart-mediation": "Hobart, Kingston, Glenorchy, the Derwent Valley, the Huon Valley and southern Tasmania",
+        "darwin-mediation": "Darwin, Palmerston, the rural area, Katherine and the Top End",
+        "cairns-mediation": "Cairns, the northern beaches, the Atherton Tablelands, Port Douglas and Far North Queensland",
+        "townsville-mediation": "Townsville, the northern beaches, Thuringowa, Ayr and North Queensland",
+        "toowoomba-mediation": "Toowoomba, the Darling Downs, the Lockyer Valley and South West Queensland",
+        "sunshine-coast-mediation": "Maroochydore, Noosa, Caloundra, Nambour, Mooloolaba and the wider Sunshine Coast",
+        "bendigo-mediation": "Bendigo, the Loddon region, Castlemaine, Heathcote and central Victoria",
+        "coffs-harbour-mediation": "Coffs Harbour, the Mid North Coast, Grafton, Woolgoolga and surrounding regions",
+        "launceston-mediation": "Launceston, the Tamar Valley, Devonport, Burnie and northern Tasmania",
+        "mackay-mediation": "Mackay, the Whitsundays, Proserpine, Sarina and the central Queensland coast",
+        "rockhampton-mediation": "Rockhampton, Gladstone, Yeppoon, Emerald and central Queensland",
+    }
+    suburb_detail = SUBURB_DETAIL.get(slug, f"across {esc(regions)}")
+
+    doc += f"""<section class="sec" style="padding-top:0"><div class="wrap-narrow reveal">
+<h2>Mediation costs in {esc(city)}: what you can expect to pay</h2>
+<p>Cost is the most common concern we hear from {esc(city)} clients considering mediation. Here is an honest comparison — drawn from real Australian figures — so you can make an informed decision.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Approach</th><th>Typical cost (per party)</th><th>Timeframe</th><th>Who decides</th></tr></thead>
+<tbody>
+<tr><td><strong>Mediation (Mediations Australia)</strong></td><td>$1,500–$4,500 total shared</td><td>1–2 sessions, often same day</td><td>You and the other party</td></tr>
+<tr><td>Mediation with solicitor support</td><td>$3,000–$8,000 total</td><td>2–4 weeks</td><td>You and the other party</td></tr>
+<tr><td>Solicitor-negotiated settlement</td><td>$8,000–$25,000 each</td><td>3–9 months</td><td>Lawyers negotiate</td></tr>
+<tr><td>Contested court hearing ({esc(court_ref)})</td><td>{lit_cost} each</td><td>{lit_time}</td><td>Judge</td></tr>
+</tbody></table></div>
+<p>The most important figure in this table is not what you spend on mediation — it is what you avoid spending on litigation. A contested property settlement drawn from {esc(court_ref)} can cost both parties more than $100,000 combined, with funds drawn directly from the asset pool that was supposed to be divided. Mediation costs a fraction of this. And because the initial consultation is free, there is genuinely no cost to finding out whether it will help.</p>
+<p>For most parenting matters in {esc(city)}, resolution happens in a single session of three to five hours. Property settlements involving more complex assets may take two sessions. That is still far faster and cheaper than the alternative.</p>
+<p><a href="/how-much-does-mediation-cost/">See our full guide to mediation costs in Australia →</a></p>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap-narrow reveal">
+<h2>Areas and suburbs we serve in {esc(city)}</h2>
+<p>Our {esc(city)} mediation service covers {suburb_detail}, as well as regional {esc(state)} through our secure online mediation service.</p>
+<p>Online mediation gives {esc(city)} and regional {esc(state)} clients access to exactly the same nationally accredited mediators as our in-person sessions — with no travel required. Agreements reached online are just as legally valid once formalised through consent orders or a binding financial agreement. If you are unsure whether we serve your area, call us on {PHONE} and we will give you an immediate answer.</p>
+{f'<p>Our {esc(city)} office is at {esc(office_addr)}, with accessible facilities and parking nearby.</p>' if has_office else f'<p>Our nearest office is in {esc(NEAREST[state])}, and we arrange {esc(city)} in-person sessions by prior arrangement — or conduct your matter entirely online, which most regional {esc(state)} clients prefer.</p>'}
+<p><a href="/online-divorce/">Find out more about our online mediation service →</a></p>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap-narrow reveal">
+<h2>2025 family law changes: what they mean for {esc(city)} clients</h2>
+<p>The <em>Family Law Amendment Act 2024</em> made significant changes that took effect in May 2025. They affect how property settlements and parenting arrangements are assessed — including, critically, the <em>consent orders</em> that formalise mediated agreements.</p>
+<ul>
+<li><strong>Property settlements:</strong> Following the High Court's Ascot Investments decision, the controversial "add-backs" practice has largely been removed. Courts can no longer routinely add back amounts one party spent before trial, which changes the negotiating landscape — and makes reaching agreement through mediation even more valuable, because you control the outcome rather than waiting for a court to apply evolving law to your circumstances.</li>
+<li><strong>Parenting arrangements:</strong> The 2023 amendments (already in effect) removed the presumption of equal shared parental responsibility. Courts now focus purely on what is in the child's best interests, without a default presumption toward equal time. An agreed parenting plan reached in mediation gives both parents far more control over the outcome than any court order — and reflects what actually works for the family rather than a legal default.</li>
+<li><strong>Family violence emphasis:</strong> The amended Act gives greater weight to family violence considerations in both property and parenting matters. Where there are safety concerns, special mediation arrangements — including shuttle mediation, where parties never meet — are available. Call us to discuss this confidentially.</li>
+</ul>
+<p>These changes make the case for early mediation in {esc(city)} stronger than ever. In a legal landscape that is actively evolving, an agreed outcome now is more predictable than waiting for a judge to apply new law to your circumstances — possibly 12–24 months from now.</p>
+<p><a href="/changes-to-the-family-law-act-2025-you-must-know/">Read our full guide to the 2025 Family Law Act changes →</a></p>
+</div></section>"""
+
     # city-specific service pages (for cities that have them)
     city_key = slug.replace('-mediation', '')
     SVC_CITY = {
