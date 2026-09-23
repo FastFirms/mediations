@@ -169,8 +169,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 
 <h2>{esc(city)} family lawyers <em>and</em> mediators</h2>
 <p>If you were searching for "{esc(city)} family lawyers", you're in the right place. Our team includes accredited family lawyers — but the way we work is different. Rather than starting with the assumption that your matter belongs in court, we start with the question of whether it needs to. For the vast majority of separations, the answer is no: mediation resolves matters faster, far more cheaply, and with less damage to the family. We give you the legal insight of a family lawyer and the resolution focus of a mediator, in one place. <a href="/mediate-or-litigate/">See why mediation usually beats litigation →</a></p>
-
-</div></article>"""
+"""  # close article f-string
 
     # ── EXPANDED LOCAL CONTENT (fatten pages substantially) ─────────────────
     STATE_COURT_COSTS = {
@@ -210,8 +209,8 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
     }
     suburb_detail = SUBURB_DETAIL.get(slug, f"across {esc(regions)}")
 
-    doc += f"""<section class="sec" style="padding-top:0"><div class="wrap-narrow reveal">
-<h2>Mediation costs in {esc(city)}: what you can expect to pay</h2>
+    doc += f"""
+<h2 id="costs">Mediation costs in {esc(city)}: what you can expect to pay</h2>
 <p>Cost is the most common concern we hear from {esc(city)} clients considering mediation. Here is an honest comparison — drawn from real Australian figures — so you can make an informed decision.</p>
 <figure class="tbl"><table>
 <thead><tr><th>Approach</th><th>Typical cost (per party)</th><th>Timeframe</th><th>Who decides</th></tr></thead>
@@ -224,18 +223,14 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <p>The most important figure in this table is not what you spend on mediation — it is what you avoid spending on litigation. A contested property settlement drawn from {esc(court_ref)} can cost both parties more than $100,000 combined, with funds drawn directly from the asset pool that was supposed to be divided. Mediation costs a fraction of this. And because the initial consultation is free, there is genuinely no cost to finding out whether it will help.</p>
 <p>For most parenting matters in {esc(city)}, resolution happens in a single session of three to five hours. Property settlements involving more complex assets may take two sessions. That is still far faster and cheaper than the alternative.</p>
 <p><a href="/how-much-does-mediation-cost/">See our full guide to mediation costs in Australia →</a></p>
-</div></section>
 
-<section class="sec" style="padding-top:0"><div class="wrap-narrow reveal">
-<h2>Areas and suburbs we serve in {esc(city)}</h2>
+<h2 id="areas">Areas and suburbs we serve in {esc(city)}</h2>
 <p>Our {esc(city)} mediation service covers {suburb_detail}, as well as regional {esc(state)} through our secure online mediation service.</p>
 <p>Online mediation gives {esc(city)} and regional {esc(state)} clients access to exactly the same nationally accredited mediators as our in-person sessions — with no travel required. Agreements reached online are just as legally valid once formalised through consent orders or a binding financial agreement. If you are unsure whether we serve your area, call us on {PHONE} and we will give you an immediate answer.</p>
 {f'<p>Our {esc(city)} office is at {esc(office_addr)}, with accessible facilities and parking nearby.</p>' if has_office else f'<p>Our nearest office is in {esc(NEAREST[state])}, and we arrange {esc(city)} in-person sessions by prior arrangement — or conduct your matter entirely online, which most regional {esc(state)} clients prefer.</p>'}
 <p><a href="/online-divorce/">Find out more about our online mediation service →</a></p>
-</div></section>
 
-<section class="sec" style="padding-top:0"><div class="wrap-narrow reveal">
-<h2>2025 family law changes: what they mean for {esc(city)} clients</h2>
+<h2 id="law-changes">2025 family law changes: what they mean for {esc(city)} clients</h2>
 <p>The <em>Family Law Amendment Act 2024</em> made significant changes that took effect in May 2025. They affect how property settlements and parenting arrangements are assessed — including, critically, the <em>consent orders</em> that formalise mediated agreements.</p>
 <ul>
 <li><strong>Property settlements:</strong> Following the High Court's Ascot Investments decision, the controversial "add-backs" practice has largely been removed. Courts can no longer routinely add back amounts one party spent before trial, which changes the negotiating landscape — and makes reaching agreement through mediation even more valuable, because you control the outcome rather than waiting for a court to apply evolving law to your circumstances.</li>
@@ -244,7 +239,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 </ul>
 <p>These changes make the case for early mediation in {esc(city)} stronger than ever. In a legal landscape that is actively evolving, an agreed outcome now is more predictable than waiting for a judge to apply new law to your circumstances — possibly 12–24 months from now.</p>
 <p><a href="/changes-to-the-family-law-act-2025-you-must-know/">Read our full guide to the 2025 Family Law Act changes →</a></p>
-</div></section>"""
+</div></article>"""
 
     # city-specific service pages (for cities that have them)
     city_key = slug.replace('-mediation', '')
