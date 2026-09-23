@@ -202,10 +202,17 @@ def _extract_toc(body):
         ul_inner = m.group(1).strip()
         cleaned = re.sub(r'<nav[^>]*class="[^"]*post-toc[^"]*"[^>]*>.*?</nav>', '', body, flags=re.S | re.I).strip()
         return cleaned, ul_inner
-    # Find all h2 tags (with or without id=)
+    # Find all h2 tags (with or without id=); fall back to h3 if fewer than 2
     h2_tags = list(re.finditer(r'<h2([^>]*)>(.*?)</h2>', body, re.S | re.I))
     if len(h2_tags) < 2:
-        return body, ""
+        h3_tags = list(re.finditer(r'<h3([^>]*)>(.*?)</h3>', body, re.S | re.I))
+        if len(h3_tags) < 2:
+            return body, ""
+        # Promote h3 → h2 and use them for the TOC
+        h2_tags = h3_tags
+        _promote_h3 = True
+    else:
+        _promote_h3 = False
     items = []
     new_body = body
     offset = 0
@@ -214,10 +221,15 @@ def _extract_toc(body):
         id_m = re.search(r'\bid="([^"]+)"', attrs)
         if id_m:
             hid = id_m.group(1)
+            if _promote_h3:
+                new_tag = f'<h2 id="{hid}"{attrs}>{inner}</h2>'
+                start, end = tag.start() + offset, tag.end() + offset
+                new_body = new_body[:start] + new_tag + new_body[end:]
+                offset += len(new_tag) - (end - start)
         else:
-            # Generate and inject an id= attribute
+            # Generate and inject an id= attribute (and promote h3→h2 if needed)
             hid = _slugify(inner)
-            new_tag = f'<h2 id="{hid}"{attrs}>{inner}</h2>'
+            new_tag = f'<h2 id="{hid}">{inner}</h2>'
             start, end = tag.start() + offset, tag.end() + offset
             new_body = new_body[:start] + new_tag + new_body[end:]
             offset += len(new_tag) - (end - start)
@@ -594,8 +606,8 @@ def clean_body(html):
     html = re.sub(r'<div[^>]+class="[^"]*summarize-with-ai[^"]*"[^>]*>.*?</div>', "", html, flags=re.S | re.I)
     # Strip WP content-inner wrapper divs (page builder residue)
     html = re.sub(r'<div[^>]+class="[^"]*content-inner[^"]*"[^>]*>', '', html, flags=re.I)
-    # Strip Tailwind/AI-generated class attributes from inline elements (they have no CSS on this site)
-    html = re.sub(r'(<(?:p|a|li|span|em|strong|blockquote)\b[^>]*?)\s+class="[^"]*(?:font-|break-|whitespace-|leading-\[|underline|decoration-|hover:|focus:)[^"]*"', r'\1', html, flags=re.I)
+    # Strip Tailwind/AI-generated class attributes from inline elements and headings
+    html = re.sub(r'(<(?:p|a|li|span|em|strong|blockquote|h[2-6])\b[^>]*?)\s+class="[^"]*(?:font-|text-|break-|whitespace-|leading-\[|underline|decoration-|hover:|focus:|-mb-|-mt-)[^"]*"', r'\1', html, flags=re.I)
     # Fix double-encoded entities (e.g. &amp;amp; → &amp; so browser renders & correctly)
     html = re.sub(r"&amp;(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);", r"&\1;", html)
     return html.strip()
@@ -1148,7 +1160,7 @@ def build_page(url, slug):
         existing_body = ""
     def _clean_existing(b):
         b = re.sub(r'<div[^>]+class="[^"]*content-inner[^"]*"[^>]*>', '', b, flags=re.I)
-        b = re.sub(r'(<(?:p|a|li|span|em|strong|blockquote)\b[^>]*?)\s+class="[^"]*(?:font-|break-|whitespace-|leading-\[|underline|decoration-|hover:|focus:)[^"]*"', r'\1', b, flags=re.I)
+        b = re.sub(r'(<(?:p|a|li|span|em|strong|blockquote|h[2-6])\b[^>]*?)\s+class="[^"]*(?:font-|text-|break-|whitespace-|leading-\[|underline|decoration-|hover:|focus:|-mb-|-mt-)[^"]*"', r'\1', b, flags=re.I)
         return b
 
     if ov and ov.get("title") and existing_body:
