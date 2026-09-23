@@ -89,8 +89,8 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Who Pays Bills During Separation in Australia?",
-          "item": "https://www.mediationsaustralia.com.au/"
+          "name": "Who Pays Bills During Separation — and How to Avoid the Most",
+          "item": "https://www.mediationsaustralia.com.au/who-pays-bills-during-separation/"
         }
       ]
     },
@@ -141,6 +141,59 @@
       "publisher": {
         "@id": "https://www.mediationsaustralia.com.au/#organization"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is legally responsible for the mortgage during separation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both spouses remain jointly and severally liable for the mortgage until it is refinanced or the property is sold. The bank does not recognise a separation agreement — if one party stops paying, the other remains fully liable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I stop paying bills if my ex is living in the house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stopping payments on joint debts risks harming your credit and can accelerate enforcement action. The practical approach is to reach an interim agreement — usually through mediation — that reflects who is getting the benefit of the property."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to joint debt in an Australian property settlement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the property settlement under the Family Law Act, debts are allocated to one party as part of the overall adjustment. If a joint debt is allocated to your spouse, they are responsible for it — but you remain liable to the creditor until the debt is refinanced or paid out."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I close a joint bank account during separation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You generally have the right to operate or close a joint account, but doing so unilaterally — particularly if it leaves your spouse without access to funds — can be viewed poorly by the Family Court and may breach financial disclosure obligations. Get advice before taking this step."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my ex runs up debt on a joint credit card after separation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Post-separation spending on a joint card is generally allocated to the cardholder who incurred it in the property settlement, but the bank holds both parties responsible. The practical solution is to remove yourself or your spouse as a joint cardholder as quickly as possible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to keep paying insurance on assets my ex is using?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The occupying spouse should bear the insurance costs for assets they are using. However, if a joint asset is uninsured and something goes wrong, both parties bear the loss. Negotiate who pays, but keep the cover in place."
+          }
+        }
+      ]
     }
   ]
 }
@@ -219,17 +272,18 @@
 .article-body a:hover{color:var(--terra)}
 .article-body a.btn,.article-body a.btn:hover{color:#fff;text-decoration:none}
 /* Tables */
+.article-body table,.article-body .table-wrap table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream)}
 .article-body .table-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:20px 0 28px;overflow-x:auto}
-.article-body table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream);display:table}
 .article-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
 .article-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
 .article-body tr:last-child td{border-bottom:none}
 .article-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+.article-body figure.tbl{margin:0 0 28px;overflow-x:auto}
 /* Answer / key-takeaway box */
 .answer{background:var(--sage-light);border-left:4px solid var(--sage-deep);border-radius:0 14px 14px 0;padding:20px 26px;margin:0 0 28px}
 .answer p{color:var(--ink);font-size:1.05rem;margin:0;max-width:none!important}
 .answer strong{color:var(--sage-deep)}
-/* CTA blocks — dark green */
+/* CTA blocks */
 .post-cta{margin:36px 0}
 .post-cta-inner{background:var(--sage-light);border-radius:20px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--ink)!important;font-family:var(--serif);font-size:1.1rem;font-style:italic;margin:0!important;max-width:none!important;flex:1;min-width:240px;line-height:1.5}
@@ -237,6 +291,12 @@
 .post-cta-inner .btn:hover{background:var(--ink);text-decoration:none!important}
 /* Source note */
 .source-note{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin:-12px 0 24px}
+/* Related grid */
+.related{background:var(--sand-deep);border-radius:24px;padding:40px;margin-top:20px}
+.related h2{font-size:1.4rem;margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.related a{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-weight:600;color:var(--ink);font-size:.98rem;transition:transform .3s,box-shadow .3s}
+.related a:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 /* Legacy wrappers pass-through */
 .post-body,.body-import{display:contents}
 /* Mobile */
@@ -301,14 +361,14 @@
   </div>
 </header><main id="main">
 <div class="progress-track"><div class="progress-bar" id="prog"></div></div>
-<div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Who Pays Bills During Separation in Australia?</nav></div>
+<div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/guides/">Guides</a><span>›</span>Who Pays Bills During Separation — and How to Av…</nav></div>
 <article>
 <header class="post-hero">
 <div class="hero-inner">
 <div class="hero-text">
-  <div class="post-meta"><span class="cat">Guide</span><span>8 min read</span></div>
-  <h1>Who Pays Bills During Separation in Australia?</h1>
-  <p class="hero-dek">Who is responsible for the mortgage, utilities, and joint debts during separation? Australian law explained with a practical worked example.</p>
+  <div class="post-meta"><span class="cat">Property</span><span>8 min read</span></div>
+  <h1>Who Pays Bills During Separation — <em>and How to Avoid the Most Common Traps</em></h1>
+  <p class="hero-dek">The question of who pays the mortgage, the car loan, the utilities, and the joint credit card during separation has no single legal answer — but there are clear</p>
   <div class="hero-actions">
     <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a>
     <a href="tel:0272277373" class="btn-outline-dark">Call (02) 7227 7373</a>
@@ -322,7 +382,7 @@
   </div>
 </div>
 <div class="hero-art">
-  <img src="/assets/images/divorce-settlement-mediation.webp" alt="Who Pays Bills During Separation in Australia? — Mediations Australia" width="380" height="380" loading="eager" class="hero-art-img">
+  <img src="/assets/images/divorce-settlement-mediation.webp" alt="Who Pays Bills During Separation — and How to Avoid the Most Common Traps — Mediations Australia" width="380" height="380" loading="eager" class="hero-art-img">
   <div class="hero-usps">
     <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Nationally Accredited AMDRAS Mediators</span></div>
     <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Up to 90% Cheaper than Going to Court/Tribunal</span></div>
@@ -332,12 +392,10 @@
 </div>
 </header>
 <div class="content-grid">
-<aside class="toc-desktop" aria-label="Table of contents"><div class="toc-inner"><p class="toc-label">In this guide</p><ul class="toc-list"><li><a href="#legal-position">The legal position: joint debts, joint responsibility</a></li><li><a href="#mortgage">The family home mortgage</a></li><li><a href="#utilities-and-insurance">Utilities, insurance, and running costs</a></li><li><a href="#joint-credit-cards">Joint credit cards and personal loans</a></li><li><a href="#who-gets-the-benefit">The key question: who is getting the benefit?</a></li><li><a href="#interim-agreement">Reaching an interim financial agreement</a></li><li><a href="#what-not-to-do">What not to do during separation</a></li><li><a href="#worked-example">Worked example: Tom and Rebecca</a></li><li><a href="#faq">Frequently asked questions</a></li></ul></div></aside>
+<aside class="toc-desktop"><div class="toc-inner"><p class="toc-label">In this guide</p><ul class="toc-list"><li><a href="#legal-position">The legal position: joint debts, joint responsibility</a></li><li><a href="#mortgage">The family home mortgage</a></li><li><a href="#utilities-and-insurance">Utilities, insurance, and running costs</a></li><li><a href="#joint-credit-cards">Joint credit cards and personal loans</a></li><li><a href="#who-gets-the-benefit">The key question: who is getting the benefit?</a></li><li><a href="#interim-agreement">Reaching an interim financial agreement</a></li><li><a href="#what-not-to-do">What not to do during separation</a></li><li><a href="#worked-example">Worked example: Tom and Rebecca</a></li><li><a href="#faq">Frequently asked questions</a></li></ul></div></aside>
 <div class="article-body">
-<details class="toc-mobile"><summary><span>In this guide</span><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary><ul class="toc-list"><li><a href="#legal-position">The legal position: joint debts, joint responsibility</a></li><li><a href="#mortgage">The family home mortgage</a></li><li><a href="#utilities-and-insurance">Utilities, insurance, and running costs</a></li><li><a href="#joint-credit-cards">Joint credit cards and personal loans</a></li><li><a href="#who-gets-the-benefit">The key question: who is getting the benefit?</a></li><li><a href="#interim-agreement">Reaching an interim financial agreement</a></li><li><a href="#what-not-to-do">What not to do during separation</a></li><li><a href="#worked-example">Worked example: Tom and Rebecca</a></li><li><a href="#faq">Frequently asked questions</a></li></ul></details>
+<details class="toc-mobile"><summary>In this guide <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary><ul class="toc-list"><li><a href="#legal-position">The legal position: joint debts, joint responsibility</a></li><li><a href="#mortgage">The family home mortgage</a></li><li><a href="#utilities-and-insurance">Utilities, insurance, and running costs</a></li><li><a href="#joint-credit-cards">Joint credit cards and personal loans</a></li><li><a href="#who-gets-the-benefit">The key question: who is getting the benefit?</a></li><li><a href="#interim-agreement">Reaching an interim financial agreement</a></li><li><a href="#what-not-to-do">What not to do during separation</a></li><li><a href="#worked-example">Worked example: Tom and Rebecca</a></li><li><a href="#faq">Frequently asked questions</a></li></ul></details>
 <div class="body-import">
-<div class="wrap-narrow">
-
 <div class="answer reveal"><p><strong>Key takeaway:</strong> During separation, both spouses remain legally responsible for joint debts regardless of who is living in the property or using the service. The practical rule is: whoever benefits pays, and both parties document everything. An interim agreement — ideally reached through mediation — protects both parties until the property settlement is finalised.</p></div>
 <h2 id="legal-position">The legal position: joint debts, joint responsibility</h2>
 <p>Separation does not change your legal obligations to creditors. If you and your spouse
@@ -387,7 +445,7 @@ gives you more options.</p>
 </div>
 <h2 id="utilities-and-insurance">Utilities, insurance, and running costs</h2>
 <figure class="tbl">
-<div class="table-wrap"><table>
+<table>
 <caption>Who typically pays household bills during separation in Australia</caption>
 <thead>
 <tr>
@@ -433,7 +491,7 @@ gives you more options.</p>
   <td>Simplest to separate immediately</td>
 </tr>
 </tbody>
-</table></div>
+</table>
 <p class="source-note">These are practical defaults, not legal rules. Your interim agreement
 should specify what applies in your situation.</p>
 </figure>
@@ -552,20 +610,23 @@ separation prevents a huge amount of conflict later."</p>
     <a href="/book-a-consultation/" class="btn btn-primary">Book a free consultation <span class="arr">→</span></a>
   </div>
 </div>
-<aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes. A recipient of the National Human Rights Law Award and a Winston Churchill Fellow, Dan brings legal expertise, strategic insight and practical judgment to dispute resolution.</p><a href="https://www.mediationsaustralia.com.au/our-team/dan-toombs/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div><p style="margin:1rem 0 0;font-size:.8rem;color:var(--muted,#6b7280)">Last reviewed 14 August 2026</p></aside>
-</div>
 </div>
 <aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes.</p><a href="/our-mediators/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div></aside>
 </div>
 </div>
-</article>
-<section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
+</article><section class="sec" id="faq" aria-labelledby="faqh" style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;max-width:60ch;margin:0 auto">
+      <p class="sec-tag" style="text-align:center">Questions &amp; answers</p>
+      <h2 class="sec-title" id="faqh" style="margin:0 auto 8px">Frequently asked questions</h2>
+    </div>
+    <div class="faq-wrap reveal"><details class="faq"><summary>Who is legally responsible for the mortgage during separation?<span class="ico">+</span></summary><div class="ans"><p>Both spouses remain jointly and severally liable for the mortgage until it is refinanced or the property is sold. The bank does not recognise a separation agreement — if one party stops paying, the other remains fully liable.</p></div></details><details class="faq"><summary>Can I stop paying bills if my ex is living in the house?<span class="ico">+</span></summary><div class="ans"><p>Stopping payments on joint debts risks harming your credit and can accelerate enforcement action. The practical approach is to reach an interim agreement — usually through mediation — that reflects who is getting the benefit of the property.</p></div></details><details class="faq"><summary>What happens to joint debt in an Australian property settlement?<span class="ico">+</span></summary><div class="ans"><p>In the property settlement under the Family Law Act, debts are allocated to one party as part of the overall adjustment. If a joint debt is allocated to your spouse, they are responsible for it — but you remain liable to the creditor until the debt is refinanced or paid out.</p></div></details><details class="faq"><summary>Can I close a joint bank account during separation?<span class="ico">+</span></summary><div class="ans"><p>You generally have the right to operate or close a joint account, but doing so unilaterally — particularly if it leaves your spouse without access to funds — can be viewed poorly by the Family Court and may breach financial disclosure obligations. Get advice before taking this step.</p></div></details><details class="faq"><summary>What if my ex runs up debt on a joint credit card after separation?<span class="ico">+</span></summary><div class="ans"><p>Post-separation spending on a joint card is generally allocated to the cardholder who incurred it in the property settlement, but the bank holds both parties responsible. The practical solution is to remove yourself or your spouse as a joint cardholder as quickly as possible.</p></div></details><details class="faq"><summary>Do I have to keep paying insurance on assets my ex is using?<span class="ico">+</span></summary><div class="ans"><p>The occupying spouse should bear the insurance costs for assets they are using. However, if a joint asset is uninsured and something goes wrong, both parties bear the loss. Negotiate who pays, but keep the cover in place.</p></div></details></div>
+  </div>
+</section><div class="wrap" style="padding-bottom:40px"><section class="related reveal"><h2>Related guides &amp; services</h2><div class="related-grid"><a href="/property-settlement-after-separation/">Property Settlement After Separation →</a><a href="/property-settlement-mediation-guide/">Property Settlement Mediation Guide →</a><a href="/bfa-or-consent-orders/">Consent Orders vs Binding Financial Agreements →</a><a href="/what-is-in-the-property-pool/">What Is In the Property Pool? →</a><a href="/separation-guide/">The Complete Separation Guide →</a><a href="/delaying-property-settlement/">The Risks of Delaying Property Settlement →</a></div></section></div><section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
 <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
 <a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
-</div></div></section>
-</main>
-<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script><footer>
+</div></div></section><script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script></main><footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>

@@ -90,7 +90,7 @@
           "@type": "ListItem",
           "position": 3,
           "name": "How Much Does Divorce Cost in Australia? (2026 Guide)",
-          "item": "https://www.mediationsaustralia.com.au/"
+          "item": "https://www.mediationsaustralia.com.au/cost-of-divorce-in-australia/"
         }
       ]
     },
@@ -141,6 +141,51 @@
       "publisher": {
         "@id": "https://www.mediationsaustralia.com.au/#organization"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is divorce expensive if both parties agree?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. An uncontested divorce is far cheaper — the main cost is the court filing fee of around $1,100 (or about $375 if eligible for a reduced fee). Legal costs are lower because there are no disputes to resolve."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does an uncontested divorce cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically between $1,100 and $5,000, depending on whether you use a lawyer or handle it yourself. Fixed-fee services help manage the expense."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a divorce with children more expensive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can be, due to potential disputes over parenting arrangements. The filing fee is the same, but legal and mediation costs may rise if disagreements arise. Family Dispute Resolution is generally required first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to pay my spouse's divorce costs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually each party pays their own legal costs. In certain circumstances a court may order one party to contribute to the other's costs, but this is the exception rather than the rule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does mediation cost compared to court?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mediation typically costs $3,500–$4,500 for a full day, shared between parties, versus tens of thousands per side for a contested court case. It's also far faster."
+          }
+        }
+      ]
     }
   ]
 }
@@ -219,17 +264,18 @@
 .article-body a:hover{color:var(--terra)}
 .article-body a.btn,.article-body a.btn:hover{color:#fff;text-decoration:none}
 /* Tables */
+.article-body table,.article-body .table-wrap table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream)}
 .article-body .table-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:20px 0 28px;overflow-x:auto}
-.article-body table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream);display:table}
 .article-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
 .article-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
 .article-body tr:last-child td{border-bottom:none}
 .article-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+.article-body figure.tbl{margin:0 0 28px;overflow-x:auto}
 /* Answer / key-takeaway box */
 .answer{background:var(--sage-light);border-left:4px solid var(--sage-deep);border-radius:0 14px 14px 0;padding:20px 26px;margin:0 0 28px}
 .answer p{color:var(--ink);font-size:1.05rem;margin:0;max-width:none!important}
 .answer strong{color:var(--sage-deep)}
-/* CTA blocks — dark green */
+/* CTA blocks */
 .post-cta{margin:36px 0}
 .post-cta-inner{background:var(--sage-light);border-radius:20px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--ink)!important;font-family:var(--serif);font-size:1.1rem;font-style:italic;margin:0!important;max-width:none!important;flex:1;min-width:240px;line-height:1.5}
@@ -237,6 +283,12 @@
 .post-cta-inner .btn:hover{background:var(--ink);text-decoration:none!important}
 /* Source note */
 .source-note{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin:-12px 0 24px}
+/* Related grid */
+.related{background:var(--sand-deep);border-radius:24px;padding:40px;margin-top:20px}
+.related h2{font-size:1.4rem;margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.related a{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-weight:600;color:var(--ink);font-size:.98rem;transition:transform .3s,box-shadow .3s}
+.related a:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 /* Legacy wrappers pass-through */
 .post-body,.body-import{display:contents}
 /* Mobile */
@@ -306,9 +358,9 @@
 <header class="post-hero">
 <div class="hero-inner">
 <div class="hero-text">
-  <div class="post-meta"><span class="cat">Guide</span><span>8 min read</span></div>
-  <h1>How Much Does Divorce Cost in Australia? (2026 Guide)</h1>
-  <p class="hero-dek">How much does divorce cost in 2026? Court fees, lawyer rates, property settlement and mediation costs — and how to save tens of thousands.</p>
+  <div class="post-meta"><span class="cat">Costs &amp; fees</span><span>11 min read</span></div>
+  <h1>How Much Does Divorce Cost in Australia? <em>(2026 Guide)</em></h1>
+  <p class="hero-dek">A divorce in Australia can cost anywhere from around $1,100 for a straightforward application to well over $100,000 for a contested case involving property and </p>
   <div class="hero-actions">
     <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a>
     <a href="tel:0272277373" class="btn-outline-dark">Call (02) 7227 7373</a>
@@ -332,9 +384,9 @@
 </div>
 </header>
 <div class="content-grid">
-
+<aside class="toc-desktop"><div class="toc-inner"><p class="toc-label">In this guide</p><ul class="toc-list"><li><a href="#understanding-divorce">Understanding divorce in Australia</a></li><li><a href="#filing-fees">Filing fees and fee reductions</a></li><li><a href="#lawyer-costs">Legal representation costs</a></li><li><a href="#court-costs">Court and expert report costs</a></li><li><a href="#property-settlement">Property settlement and financial agreements</a></li><li><a href="#mediation-cost">Mediation: the cost-effective alternative</a></li><li><a href="#managing-costs">How to manage your divorce costs</a></li></ul></div></aside>
 <div class="article-body">
-
+<details class="toc-mobile"><summary>In this guide <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary><ul class="toc-list"><li><a href="#understanding-divorce">Understanding divorce in Australia</a></li><li><a href="#filing-fees">Filing fees and fee reductions</a></li><li><a href="#lawyer-costs">Legal representation costs</a></li><li><a href="#court-costs">Court and expert report costs</a></li><li><a href="#property-settlement">Property settlement and financial agreements</a></li><li><a href="#mediation-cost">Mediation: the cost-effective alternative</a></li><li><a href="#managing-costs">How to manage your divorce costs</a></li></ul></details>
 <div class="body-import">
 <div class="answer reveal"><p><strong>Key takeaway:</strong> The divorce application itself is a fixed government fee of around $1,100 (or about $375 with a concession). The costs that vary enormously are legal representation, expert reports and property disputes — where a contested case can exceed $100,000 per side. Mediation typically resolves matters for $3,500–$4,500 in total, shared between parties.</p></div>
 <p>Some marriages break down beyond repair, and divorce brings both emotional and financial strain. To put it in context, the <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener">Australian Bureau of Statistics</a> recorded roughly 48,000–49,000 divorces granted in a recent year, and independent reporting has put the cost of a typical divorce somewhere between $10,000 and $20,000 — though once property and parenting disputes are added, the total can climb past $100,000. Understanding where the money actually goes is the first step to keeping your own costs under control — and as you'll see, <a href="/divorce-mediation/">divorce mediation</a> is the single biggest lever for bringing the total down.</p>
@@ -371,14 +423,33 @@
 
 <h2 id="lawyer-costs">Legal representation costs</h2>
 <p>Professional legal fees are usually the largest single cost in a divorce. Family lawyer rates vary widely with seniority:</p>
-
+<figure class="tbl"><table><caption>Indicative family lawyer hourly rates (AUD)</caption>
+<thead><tr><th>Position</th><th>Hourly rate (AUD)</th></tr></thead>
+<tbody>
+<tr><td>Junior solicitor</td><td>$250 – $450</td></tr>
+<tr><td>Mid-level solicitor</td><td>$400 – $550</td></tr>
+<tr><td>Senior solicitor / partner</td><td>$500 – $800</td></tr>
+</tbody></table></figure>
 <p>For straightforward, uncontested divorces, many firms offer fixed-fee packages, commonly in the $2,000–$5,000 range depending on complexity. Fixed fees give you cost certainty — but they usually assume the matter stays uncontested.</p>
 
 <h2 id="court-costs">Court and expert report costs</h2>
 <p>If a matter is contested and proceeds through the courts, additional fees apply across the life of the case:</p>
-
+<figure class="tbl"><table><caption>Indicative court-related fees (AUD)</caption>
+<thead><tr><th>Court process</th><th>Estimated cost (AUD)</th></tr></thead>
+<tbody>
+<tr><td>Daily hearing fee</td><td>$770 (before a Registrar) – $1,045 (before a Judge)</td></tr>
+<tr><td>Setting-down fee</td><td>$770 – $1,045</td></tr>
+<tr><td>Conciliation conference</td><td>~$480</td></tr>
+</tbody></table></figure>
 <p>Complex matters often require expert assessments, which add further cost:</p>
-
+<figure class="tbl"><table><caption>Indicative expert report costs (AUD)</caption>
+<thead><tr><th>Service</th><th>Estimated cost (AUD)</th></tr></thead>
+<tbody>
+<tr><td>House valuation</td><td>$400 – $800</td></tr>
+<tr><td>Business valuation</td><td>$3,000 – $10,000</td></tr>
+<tr><td>Family report</td><td>~$3,300 per parent</td></tr>
+<tr><td>Financial assessment</td><td>Varies with complexity</td></tr>
+</tbody></table></figure>
 <p>Uncontested divorces are far cheaper; contested matters — especially those involving financial disputes or parenting battles — escalate quickly as court appearances and expert reports accumulate.</p>
 <div class="post-cta reveal">
   <div class="post-cta-inner">
@@ -388,7 +459,14 @@
 </div>
 <h2 id="property-settlement">Property settlement and financial agreements</h2>
 <p>Although legally separate from the divorce, the property settlement is often the largest part of the overall cost. Typical expenses include:</p>
-
+<figure class="tbl"><table><caption>Indicative property settlement costs (AUD)</caption>
+<thead><tr><th>Service</th><th>Estimated cost (AUD)</th></tr></thead>
+<tbody>
+<tr><td>Consent orders (court filing fee)</td><td>~$200</td></tr>
+<tr><td>Legal documentation</td><td>$3,000 – $4,500</td></tr>
+<tr><td>Binding financial agreement</td><td>$4,500 – $10,000</td></tr>
+<tr><td>Mediation sessions</td><td>$150 – $300 per hour</td></tr>
+</tbody></table></figure>
 <p>A legally binding settlement — through <a href="/consent-orders/">consent orders</a> or a <a href="/financial-agreements-mediation/">binding financial agreement</a> — is essential. Without one, a former spouse can later claim financial entitlements even after the divorce is finalised. <a href="/what-am-i-entitled-to-in-a-separation-in-australia/">Learn what you're entitled to in a separation →</a></p>
 <h3>Family Dispute Resolution for matters involving children</h3>
 <p>For divorces involving children, Family Dispute Resolution is generally a mandatory step before court. Costs vary — government-funded services may be free or low-cost, while private mediation costs more but typically moves faster. <a href="/section-60i-certificates/">You'll need a Section 60I certificate to proceed to court →</a></p>
@@ -396,7 +474,12 @@
 <h2 id="mediation-cost">Mediation: the cost-effective alternative</h2>
 <p>Here's the comparison that matters most. Before heading to court, most couples are expected to attempt <a href="https://www.ag.gov.au/families-and-marriage/families/family-dispute-resolution" target="_blank" rel="noopener">family dispute resolution</a> — and private mediation commonly costs in the range of $5,000–$7,000 in total, shared between the parties. Many providers, including focused mediation practices, resolve matters for less. The point is the scale of the saving: a contested court case can cost <em>each</em> party tens of thousands of dollars, while mediation resolves the same dispute for a few thousand in total.</p>
 <p>For context, here is an indicative fixed-fee mediation structure:</p>
-
+<figure class="tbl"><table><caption>Indicative mediation fees (AUD)</caption>
+<thead><tr><th>Service</th><th>Cost (AUD)</th></tr></thead>
+<tbody>
+<tr><td>Invitation to mediation &amp; certificates</td><td>$350 + GST</td></tr>
+<tr><td>Full day of mediation &amp; Heads of Agreement</td><td>$3,500 – $4,500 + GST</td></tr>
+</tbody></table></figure>
 <p>Beyond cost, mediation is faster, private, and keeps the decision in your hands rather than a judge's. <a href="/how-mediation-works/">See exactly how mediation works →</a></p>
 <div class="post-cta reveal">
   <div class="post-cta-inner">
@@ -406,7 +489,15 @@
 </div>
 <h2 id="cost-timeline">Costs stage by stage: what to expect and when</h2>
 <p>One reason divorce costs catch people off guard is that they don't arrive all at once. Here's how costs typically accumulate across the life of a separation:</p>
-
+<figure class="tbl"><table><caption>Stage-by-stage divorce cost timeline (AUD)</caption>
+<thead><tr><th>Stage</th><th>Typical timeframe</th><th>Key costs</th><th>Estimated range</th></tr></thead>
+<tbody>
+<tr><td>Initial advice &amp; filing</td><td>Months 1–3</td><td>Divorce application, initial legal consultation</td><td>$1,100–$3,000</td></tr>
+<tr><td>Disclosure &amp; negotiation</td><td>Months 2–6</td><td>Document gathering, financial disclosure, correspondence</td><td>$3,000–$8,000</td></tr>
+<tr><td>Mediation (if chosen)</td><td>Months 2–4</td><td>Mediator fees, heads of agreement</td><td>$3,500–$7,000 total</td></tr>
+<tr><td>Formalising the agreement</td><td>Months 4–8</td><td>Consent orders, BFA, property transfer stamp duty</td><td>$2,000–$6,000</td></tr>
+<tr><td>Contested court (if litigation)</td><td>Months 6–36+</td><td>Hearing fees, expert reports, ongoing legal representation</td><td>$30,000–$100,000+ per side</td></tr>
+</tbody></table></figure>
 <p>The biggest variable is whether the matter stays out of court. Couples who reach agreement through mediation typically complete the process in months two to four, before the most expensive stages ever materialise.</p>
 
 <h2 id="case-comparison">Two families, very different bills</h2>
@@ -430,18 +521,24 @@
   <li><strong>Stay organised.</strong> Missing deadlines and court dates causes delays that add cost.</li>
 </ol>
 <p>The bottom line: the cost of divorce in Australia is largely within your control. Choosing resolution over litigation protects both your finances and your wellbeing — and for most families, mediation is the smartest first step.</p>
+
 </div>
 <aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes.</p><a href="/our-mediators/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div></aside>
 </div>
 </div>
-</article>
-<section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
+</article><section class="sec" id="faq" aria-labelledby="faqh" style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;max-width:60ch;margin:0 auto">
+      <p class="sec-tag" style="text-align:center">Questions &amp; answers</p>
+      <h2 class="sec-title" id="faqh" style="margin:0 auto 8px">Frequently asked questions</h2>
+    </div>
+    <div class="faq-wrap reveal"><details class="faq"><summary>Is divorce expensive if both parties agree?<span class="ico">+</span></summary><div class="ans"><p>No. An uncontested divorce is far cheaper — the main cost is the court filing fee of around $1,100 (or about $375 if eligible for a reduced fee). Legal costs are lower because there are no disputes to resolve.</p></div></details><details class="faq"><summary>How much does an uncontested divorce cost?<span class="ico">+</span></summary><div class="ans"><p>Typically between $1,100 and $5,000, depending on whether you use a lawyer or handle it yourself. Fixed-fee services help manage the expense.</p></div></details><details class="faq"><summary>Is a divorce with children more expensive?<span class="ico">+</span></summary><div class="ans"><p>It can be, due to potential disputes over parenting arrangements. The filing fee is the same, but legal and mediation costs may rise if disagreements arise. Family Dispute Resolution is generally required first.</p></div></details><details class="faq"><summary>Do I have to pay my spouse&#x27;s divorce costs?<span class="ico">+</span></summary><div class="ans"><p>Usually each party pays their own legal costs. In certain circumstances a court may order one party to contribute to the other's costs, but this is the exception rather than the rule.</p></div></details><details class="faq"><summary>How much does mediation cost compared to court?<span class="ico">+</span></summary><div class="ans"><p>Mediation typically costs $3,500–$4,500 for a full day, shared between parties, versus tens of thousands per side for a contested court case. It's also far faster.</p></div></details></div>
+  </div>
+</section><div class="wrap" style="padding-bottom:40px"><section class="related reveal"><h2>Related guides &amp; services</h2><div class="related-grid"><a href="/what-am-i-entitled-to-in-a-separation-in-australia/">What Am I Entitled To? →</a><a href="/property-settlement-mediation/">Property Settlement Mediation →</a><a href="/our-fee-structure/">Our Fee Structure →</a><a href="/consent-orders/">Consent Orders →</a><a href="/how-mediation-works/">How Mediation Works →</a><a href="/getting-ready-for-separation/">Getting Ready for Separation →</a></div></section></div><section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
 <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
 <a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
-</div></div></section>
-</main>
-<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script><footer>
+</div></div></section><script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script></main><footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>

@@ -89,8 +89,8 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "High-Conflict Family Law Mediation: Does It Work?",
-          "item": "https://www.mediationsaustralia.com.au/"
+          "name": "High-Conflict Family Law Mediation — When It Works, When It ",
+          "item": "https://www.mediationsaustralia.com.au/high-conflict-family-law-mediation/"
         }
       ]
     },
@@ -141,6 +141,51 @@
       "publisher": {
         "@id": "https://www.mediationsaustralia.com.au/#organization"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you mediate when there has been family violence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes, but only with appropriate safeguards. An accredited FDR practitioner must conduct a screening assessment. Shuttle mediation (no face-to-face contact) and safety planning are required where violence is a factor. Where the risk is ongoing and cannot be adequately managed, mediation is not appropriate and the party at risk should seek legal advice and support. 1800RESPECT (1800 737 732) provides 24/7 advice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if the other party tries to manipulate the mediation process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Accredited mediators are trained to recognise and manage bad-faith participation. If one party is using the process to gather information, delay proceedings, or pressure the other party, the mediator can terminate the session. Document specific behaviours and discuss them with the mediator in the private intake session before the main session begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I bring a lawyer to high-conflict mediation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can. Many clients in high-conflict matters bring a lawyer as a support person or adviser. Having legal advice available during the session can help you assess proposals in real time. Discuss this with the mediator beforehand so the process can be structured accordingly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between high-conflict mediation and regular mediation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The process is the same — a neutral mediator facilitates negotiation. What differs is the structure: high-conflict mediation typically involves more thorough pre-mediation intake, shuttle format (separate rooms), longer sessions, and a mediator with specific experience in managing entrenched conflict and difficult interpersonal dynamics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can children's needs be addressed in high-conflict mediation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and they must be — particularly in parenting matters. Accredited family mediators are specifically trained in child-focused and child-inclusive mediation. Child-inclusive mediation involves a specialist practitioner meeting with the children and reporting their views and needs to the parents through the mediator. This often breaks deadlocks that purely parent-focused processes cannot."
+          }
+        }
+      ]
     }
   ]
 }
@@ -219,17 +264,18 @@
 .article-body a:hover{color:var(--terra)}
 .article-body a.btn,.article-body a.btn:hover{color:#fff;text-decoration:none}
 /* Tables */
+.article-body table,.article-body .table-wrap table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream)}
 .article-body .table-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:20px 0 28px;overflow-x:auto}
-.article-body table{width:100%;border-collapse:collapse;font-size:.97rem;background:var(--cream);display:table}
 .article-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
 .article-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
 .article-body tr:last-child td{border-bottom:none}
 .article-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+.article-body figure.tbl{margin:0 0 28px;overflow-x:auto}
 /* Answer / key-takeaway box */
 .answer{background:var(--sage-light);border-left:4px solid var(--sage-deep);border-radius:0 14px 14px 0;padding:20px 26px;margin:0 0 28px}
 .answer p{color:var(--ink);font-size:1.05rem;margin:0;max-width:none!important}
 .answer strong{color:var(--sage-deep)}
-/* CTA blocks — dark green */
+/* CTA blocks */
 .post-cta{margin:36px 0}
 .post-cta-inner{background:var(--sage-light);border-radius:20px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .post-cta-inner p{color:var(--ink)!important;font-family:var(--serif);font-size:1.1rem;font-style:italic;margin:0!important;max-width:none!important;flex:1;min-width:240px;line-height:1.5}
@@ -237,6 +283,12 @@
 .post-cta-inner .btn:hover{background:var(--ink);text-decoration:none!important}
 /* Source note */
 .source-note{font-size:.85rem;color:var(--ink-soft);font-style:italic;margin:-12px 0 24px}
+/* Related grid */
+.related{background:var(--sand-deep);border-radius:24px;padding:40px;margin-top:20px}
+.related h2{font-size:1.4rem;margin-bottom:20px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.related a{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-weight:600;color:var(--ink);font-size:.98rem;transition:transform .3s,box-shadow .3s}
+.related a:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 /* Legacy wrappers pass-through */
 .post-body,.body-import{display:contents}
 /* Mobile */
@@ -301,14 +353,14 @@
   </div>
 </header><main id="main">
 <div class="progress-track"><div class="progress-bar" id="prog"></div></div>
-<div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/guides/">Guides</a><span>›</span>High-Conflict Family Law Mediation: Does It Work…</nav></div>
+<div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/guides/">Guides</a><span>›</span>High-Conflict Family Law Mediation — When It Wor…</nav></div>
 <article>
 <header class="post-hero">
 <div class="hero-inner">
 <div class="hero-text">
-  <div class="post-meta"><span class="cat">Guide</span><span>8 min read</span></div>
-  <h1>High-Conflict Family Law Mediation: Does It Work?</h1>
-  <p class="hero-dek">Can mediation work in high-conflict separation? What the research says, when it is and isn&#x27;t appropriate, and how shuttle and specialised mediation can help.</p>
+  <div class="post-meta"><span class="cat">High conflict</span><span>13 min read</span></div>
+  <h1>High-Conflict Family Law Mediation — <em>When It Works, When It Doesn't, and What to Do Instead</em></h1>
+  <p class="hero-dek">High-conflict separation is one of the hardest things a family can go through. Entrenched positions, past trauma, communication breakdowns, and sometimes allega</p>
   <div class="hero-actions">
     <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a>
     <a href="tel:0272277373" class="btn-outline-dark">Call (02) 7227 7373</a>
@@ -322,7 +374,7 @@
   </div>
 </div>
 <div class="hero-art">
-  <img src="/assets/images/family-law-mediation-consultation.webp" alt="High-Conflict Family Law Mediation: Does It Work? — Mediations Australia" width="380" height="380" loading="eager" class="hero-art-img">
+  <img src="/assets/images/family-law-mediation-consultation.webp" alt="High-Conflict Family Law Mediation — When It Works, When It Doesn't, and What to Do Instead — Mediations Australia" width="380" height="380" loading="eager" class="hero-art-img">
   <div class="hero-usps">
     <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Nationally Accredited AMDRAS Mediators</span></div>
     <div class="hero-usp"><svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Up to 90% Cheaper than Going to Court/Tribunal</span></div>
@@ -332,12 +384,10 @@
 </div>
 </header>
 <div class="content-grid">
-<aside class="toc-desktop" aria-label="Table of contents"><div class="toc-inner"><p class="toc-label">In this guide</p><ul class="toc-list"><li><a href="#what-is-high-conflict">What is high-conflict separation?</a></li><li><a href="#can-it-work">Can mediation work in high-conflict cases?</a></li><li><a href="#when-not-appropriate">When mediation is not appropriate</a></li><li><a href="#shuttle-mediation">Shuttle mediation</a></li><li><a href="#power-imbalances">Managing power imbalances</a></li><li><a href="#narcissism-personality">Personality disorders and difficult behaviours</a></li><li><a href="#preparing">How to prepare</a></li><li><a href="#outcomes">What outcomes are possible?</a></li><li><a href="#when-to-litigate">When litigation is the right answer</a></li></ul></div></aside>
+<aside class="toc-desktop"><div class="toc-inner"><p class="toc-label">In this guide</p><ul class="toc-list"><li><a href="#what-is-high-conflict">What is high-conflict separation?</a></li><li><a href="#can-it-work">Can mediation work in high-conflict cases?</a></li><li><a href="#when-not-appropriate">When mediation is not appropriate</a></li><li><a href="#shuttle-mediation">Shuttle mediation</a></li><li><a href="#power-imbalances">Managing power imbalances</a></li><li><a href="#narcissism-personality">Personality disorders and difficult behaviours</a></li><li><a href="#preparing">How to prepare</a></li><li><a href="#outcomes">What outcomes are possible?</a></li><li><a href="#when-to-litigate">When litigation is the right answer</a></li></ul></div></aside>
 <div class="article-body">
-<details class="toc-mobile"><summary><span>In this guide</span><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary><ul class="toc-list"><li><a href="#what-is-high-conflict">What is high-conflict separation?</a></li><li><a href="#can-it-work">Can mediation work in high-conflict cases?</a></li><li><a href="#when-not-appropriate">When mediation is not appropriate</a></li><li><a href="#shuttle-mediation">Shuttle mediation</a></li><li><a href="#power-imbalances">Managing power imbalances</a></li><li><a href="#narcissism-personality">Personality disorders and difficult behaviours</a></li><li><a href="#preparing">How to prepare</a></li><li><a href="#outcomes">What outcomes are possible?</a></li><li><a href="#when-to-litigate">When litigation is the right answer</a></li></ul></details>
+<details class="toc-mobile"><summary>In this guide <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary><ul class="toc-list"><li><a href="#what-is-high-conflict">What is high-conflict separation?</a></li><li><a href="#can-it-work">Can mediation work in high-conflict cases?</a></li><li><a href="#when-not-appropriate">When mediation is not appropriate</a></li><li><a href="#shuttle-mediation">Shuttle mediation</a></li><li><a href="#power-imbalances">Managing power imbalances</a></li><li><a href="#narcissism-personality">Personality disorders and difficult behaviours</a></li><li><a href="#preparing">How to prepare</a></li><li><a href="#outcomes">What outcomes are possible?</a></li><li><a href="#when-to-litigate">When litigation is the right answer</a></li></ul></details>
 <div class="body-import">
-<div class="wrap-narrow">
-
 <div class="answer reveal"><p><strong>Key takeaway:</strong> Mediation can work in many high-conflict separations — but not all. The key factors are whether both parties can participate safely and whether the conflict stems from communication breakdown (which mediation addresses well) or from fundamentally incompatible positions, safety risks, or one party's unwillingness to engage in good faith (which it does not). Shuttle mediation, pre-mediation intake, and specialist mediators experienced in high-conflict dynamics significantly extend the range of cases where mediation is viable.</p></div>
 <h2 id="what-is-high-conflict">What Is High-Conflict Separation?</h2>
 <p>High-conflict separation is not simply a separation where the parties disagree. Most
@@ -500,20 +550,23 @@ with the clear understanding that the court remains available if it fails.</p>
 &middot; <a href="/mediation-with-a-narcissist/">Mediation with a narcissist</a>
 &middot; <a href="/domestic-violence-and-family-law/">Family violence and family law</a></p>
 
-<aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes. A recipient of the National Human Rights Law Award and a Winston Churchill Fellow, Dan brings legal expertise, strategic insight and practical judgment to dispute resolution.</p><a href="https://www.mediationsaustralia.com.au/our-team/dan-toombs/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div><p style="margin:1rem 0 0;font-size:.8rem;color:var(--muted,#6b7280)">Last reviewed 14 August 2026</p></aside>
-</div>
 </div>
 <aside style="margin-top:3rem;padding:1.5rem;background:var(--surf,#f7f8fa);border-radius:10px;border:1px solid var(--border,#e5e7eb)"><p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted,#6b7280);margin:0 0 1rem">About the expert</p><div style="display:flex;gap:1.25rem;align-items:flex-start"><img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder, Mediations Australia" width="80" height="80" loading="lazy" style="border-radius:50%;flex-shrink:0;object-fit:cover;width:80px;height:80px"><div><p style="font-weight:700;margin:0 0 .15rem;font-size:1rem">Dan Toombs</p><p style="margin:0 0 .75rem;color:var(--muted,#6b7280);font-size:.875rem">Founder, Mediations Australia</p><p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.6">Dan Toombs is the Founder of Mediations Australia, an award-winning lawyer, former Tribunal Member and nationally accredited mediator (AMDRAS). His career spans law, adjudication and organisational leadership, giving him particular insight into the systemic, structural and human dynamics that drive complex disputes.</p><a href="/our-mediators/" style="font-size:.875rem;font-weight:600">View Dan Toombs&#x2019; profile &rarr;</a></div></div></aside>
 </div>
 </div>
-</article>
-<section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
+</article><section class="sec" id="faq" aria-labelledby="faqh" style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;max-width:60ch;margin:0 auto">
+      <p class="sec-tag" style="text-align:center">Questions &amp; answers</p>
+      <h2 class="sec-title" id="faqh" style="margin:0 auto 8px">Frequently asked questions</h2>
+    </div>
+    <div class="faq-wrap reveal"><details class="faq"><summary>Can you mediate when there has been family violence?<span class="ico">+</span></summary><div class="ans"><p>Sometimes, but only with appropriate safeguards. An accredited FDR practitioner must conduct a screening assessment. Shuttle mediation (no face-to-face contact) and safety planning are required where violence is a factor. Where the risk is ongoing and cannot be adequately managed, mediation is not appropriate and the party at risk should seek legal advice and support. 1800RESPECT (1800 737 732) provides 24/7 advice.</p></div></details><details class="faq"><summary>What if the other party tries to manipulate the mediation process?<span class="ico">+</span></summary><div class="ans"><p>Accredited mediators are trained to recognise and manage bad-faith participation. If one party is using the process to gather information, delay proceedings, or pressure the other party, the mediator can terminate the session. Document specific behaviours and discuss them with the mediator in the private intake session before the main session begins.</p></div></details><details class="faq"><summary>Should I bring a lawyer to high-conflict mediation?<span class="ico">+</span></summary><div class="ans"><p>You can. Many clients in high-conflict matters bring a lawyer as a support person or adviser. Having legal advice available during the session can help you assess proposals in real time. Discuss this with the mediator beforehand so the process can be structured accordingly.</p></div></details><details class="faq"><summary>What is the difference between high-conflict mediation and regular mediation?<span class="ico">+</span></summary><div class="ans"><p>The process is the same — a neutral mediator facilitates negotiation. What differs is the structure: high-conflict mediation typically involves more thorough pre-mediation intake, shuttle format (separate rooms), longer sessions, and a mediator with specific experience in managing entrenched conflict and difficult interpersonal dynamics.</p></div></details><details class="faq"><summary>Can children&#x27;s needs be addressed in high-conflict mediation?<span class="ico">+</span></summary><div class="ans"><p>Yes, and they must be — particularly in parenting matters. Accredited family mediators are specifically trained in child-focused and child-inclusive mediation. Child-inclusive mediation involves a specialist practitioner meeting with the children and reporting their views and needs to the parents through the mediator. This often breaks deadlocks that purely parent-focused processes cannot.</p></div></details></div>
+  </div>
+</section><div class="wrap" style="padding-bottom:40px"><section class="related reveal"><h2>Related guides &amp; services</h2><div class="related-grid"><a href="/shuttle-mediation-guide/">Shuttle Mediation Guide →</a><a href="/mediation-with-a-narcissist/">Mediation With a Narcissist →</a><a href="/domestic-violence-and-family-law/">Family Violence and Family Law →</a><a href="/is-family-law-mediation-compulsory/">Is Family Mediation Compulsory? →</a><a href="/how-mediation-works/">How Mediation Works →</a><a href="/child-custody-mediation/">Child Custody Mediation →</a></div></section></div><section class="cta-band" id="book"><div class="phero-blob"></div><div class="wrap"><div class="reveal">
 <h2>Ready to resolve it <em>without court</em>?</h2>
 <p>Book a free initial consultation and get honest, expert advice on your situation — with no obligation.</p>
 <a href="/book-a-consultation/" class="btn btn-primary" style="font-size:1.1rem;padding:18px 38px">Book a Free Consultation <span class="arr">→</span></a>
-</div></div></section>
-</main>
-<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script><footer>
+</div></div></section><script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script></main><footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
