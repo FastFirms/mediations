@@ -83,7 +83,7 @@ POST_CSS = """<style>
 .toc-mobile .toc-list a{border-bottom:1px solid var(--line)}
 .toc-mobile .toc-list li:last-child a{border-bottom:none}
 /* Article body */
-.article-body{padding:32px 0 60px;min-width:0}
+.article-body{padding:32px 0 60px;min-width:0;grid-column:2}
 .article-body h2{font-size:clamp(1.4rem,3vw,2rem);margin:40px 0 12px;scroll-margin-top:90px}
 .article-body h2:first-child{margin-top:0}
 .article-body h3{font-size:1.2rem;margin:28px 0 8px;scroll-margin-top:90px}

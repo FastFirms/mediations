@@ -45,6 +45,7 @@ POST_CSS = """<style>
 /* 2-column content grid */
 .content-grid{max-width:1180px;margin:0 auto;padding:0 24px;display:block}
 @media(min-width:980px){.content-grid{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:0 48px;align-items:start}}
+@media(min-width:980px){.content-grid.no-toc{grid-template-columns:1fr;max-width:820px}}
 /* Sidebar TOC (desktop) */
 .toc-desktop{display:none}
 @media(min-width:980px){.toc-desktop{display:block;position:sticky;top:96px;align-self:start}}
@@ -67,7 +68,7 @@ POST_CSS = """<style>
 .toc-mobile .toc-list a{border-bottom:1px solid var(--line)}
 .toc-mobile .toc-list li:last-child a{border-bottom:none}
 /* Article body */
-.article-body{padding:32px 0 60px;min-width:0}
+.article-body{padding:32px 0 60px;min-width:0;grid-column:2}
 .article-body h2{font-size:clamp(1.4rem,3vw,2rem);margin:40px 0 12px;scroll-margin-top:90px}
 .article-body h2:first-child{margin-top:0}
 .article-body h3{font-size:1.2rem;margin:28px 0 8px;scroll-margin-top:90px}
@@ -1089,6 +1090,7 @@ def build_page(url, slug):
         _crumb_label = h1_raw[:48] + ("…" if len(h1_raw) > 48 else "")
         _body_clean, _toc_items = _extract_toc(body)
         _sidebar, _mobile_toc = _toc_blocks(_toc_items)
+        _grid_class = "content-grid" if _sidebar else "content-grid no-toc"
         _dek = esc(desc[:160]) if desc else ""
         doc += f"""<main id="main">
 <div class="progress-track"><div class="progress-bar" id="prog"></div></div>
@@ -1115,7 +1117,7 @@ def build_page(url, slug):
 {_hero_art(h1_raw, slug)}
 </div>
 </header>
-<div class="content-grid">
+<div class="{_grid_class}">
 {_sidebar}
 <div class="article-body">
 {_mobile_toc}
@@ -1198,6 +1200,7 @@ def build_page(url, slug):
     _crumb_label = h1_raw[:48] + ("…" if len(h1_raw) > 48 else "")
     _body_clean, _toc_items = _extract_toc(body)
     _sidebar, _mobile_toc = _toc_blocks(_toc_items)
+    _grid_class = "content-grid" if _sidebar else "content-grid no-toc"
     _dek = esc(desc[:160]) if desc else ""
     doc += f"""<main id="main">
 <div class="progress-track"><div class="progress-bar" id="prog"></div></div>
@@ -1224,7 +1227,7 @@ def build_page(url, slug):
 {_hero_art(h1_raw, slug)}
 </div>
 </header>
-<div class="content-grid">
+<div class="{_grid_class}">
 {_sidebar}
 <div class="article-body">
 {_mobile_toc}
