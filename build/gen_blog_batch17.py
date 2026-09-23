@@ -17,7 +17,7 @@ _AVAIL = """<div style="display:flex;gap:14px;align-items:flex-start;background:
   <span style="font-size:1.4rem;flex-shrink:0;margin-top:2px" aria-hidden="true">⚠️</span>
   <div>
     <strong style="display:block;font-size:1.05rem;margin-bottom:6px;color:#7a4f00">Access Mediation is currently booked out until November 2026.</strong>
-    <p style="margin:0;font-size:.93rem;color:#5c3900;line-height:1.55">We are not taking new Access Mediation bookings at this time. If your matter is urgent, please call us on <a href="tel:1800952380" style="color:#7a4f00;font-weight:600">1800 952 380</a> to discuss your options, including standard-rate availability and referrals.</p>
+    <p style="margin:0;font-size:.93rem;color:#5c3900;line-height:1.55">We are not taking new Access Mediation bookings at this time. If your matter is urgent, please <a href="/book-a-consultation/" style="color:#7a4f00;font-weight:600">book a free consultation</a> or call us on <a href="tel:0272277373" style="color:#7a4f00;font-weight:600">(02) 7227 7373</a> to discuss your options.</p>
   </div>
 </div>"""
 

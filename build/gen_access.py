@@ -236,7 +236,7 @@ AVAIL_BANNER = """<div class="avail-notice wrap-narrow">
     <span class="avail-icon" aria-hidden="true">⚠️</span>
     <div>
       <strong>Access Mediation is currently booked out until November 2026.</strong>
-      <p>We are not taking new Access Mediation bookings at this time. If your matter is urgent, please call us on <a href="tel:1800952380">1800 952 380</a> to discuss your options, including standard-rate availability and referrals.</p>
+      <p>We are not taking new Access Mediation bookings at this time. If your matter is urgent, please <a href="/book-a-consultation/">book a free consultation</a> or call us on <a href="tel:0272277373">(02) 7227 7373</a> to discuss your options, including standard-rate availability and referrals.</p>
     </div>
   </div>
 </div>"""

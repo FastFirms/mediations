@@ -11,7 +11,7 @@ opts+='<option value="Estate dispute">Estate dispute</option><option value="Comm
 
 title="Book a Free Mediation Consultation | Mediations Australia"
 desc=("Book a fixed-fee mediation consultation with Mediations Australia. "
-      "Tell us about your dispute and how mediation can help. Call 1800 952 380.")
+      "Tell us about your dispute and how mediation can help. Call (02) 7227 7373.")
 schema=[org_schema(),breadcrumb_schema([("Home",""),("Book a Consultation","book-a-consultation")])]
 d=head(title,desc,"book-a-consultation",extra_schema=schema)+nav()
 d+=f"""<main id="main">
@@ -100,11 +100,11 @@ if(f){f.addEventListener('submit',async function(e){
       note.style.color='var(--sage-deep)';btn.textContent='Request sent \\u2713';f.reset();
     }else{
       const data=await res.json().catch(()=>({}));
-      const msg=(data.errors&&data.errors.map(x=>x.message).join(', '))||'Sorry, something went wrong. Please try again, or call us on 1800 952 380.';
+      const msg=(data.errors&&data.errors.map(x=>x.message).join(', '))||'Sorry, something went wrong. Please try again, or call us on (02) 7227 7373.';
       note.textContent=msg;note.style.color='var(--terra-deep)';btn.disabled=false;btn.textContent='Request my consultation';
     }
   }catch(err){
-    note.textContent='Network error \\u2014 please try again, or call us on 1800 952 380.';
+    note.textContent='Network error \\u2014 please try again, or call us on (02) 7227 7373.';
     note.style.color='var(--terra-deep)';btn.disabled=false;btn.textContent='Request my consultation';
   }
 });}
