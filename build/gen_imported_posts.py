@@ -36,13 +36,13 @@ POST_CSS = """<style>
 .author-cred{font-size:.82rem;color:var(--ink-soft)}
 /* Hero art box */
 .hero-art{display:none}
-@media(min-width:800px){.hero-art{display:flex;flex-direction:column;gap:10px;width:100%}}
-.hero-art-photo{position:relative;width:100%;aspect-ratio:1/1;border-radius:20px;overflow:hidden}
+@media(min-width:800px){.hero-art{display:block;width:100%;aspect-ratio:1/1;border-radius:20px;overflow:hidden;position:relative}}
 .hero-art-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
-.hero-usps{display:flex;flex-direction:column;gap:7px}
-.hero-usp{display:flex;align-items:center;gap:10px;background:var(--sage-light);border-radius:10px;padding:9px 14px}
-.hero-usp-icon{width:18px;height:18px;flex-shrink:0;color:var(--sage-deep)}
-.hero-usp span{font-size:.8rem;font-weight:600;color:var(--ink);line-height:1.3}
+.hero-art-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.62) 0%,transparent 55%);pointer-events:none}
+.hero-usps{position:absolute;bottom:0;left:0;right:0;padding:16px 20px;z-index:2;display:flex;flex-direction:column;gap:7px}
+.hero-usp{display:flex;align-items:center;gap:9px}
+.hero-usp-icon{width:16px;height:16px;flex-shrink:0;color:#fff;opacity:.9}
+.hero-usp span{font-size:.78rem;font-weight:600;color:#fff;line-height:1.3;text-shadow:0 1px 3px rgba(0,0,0,.4)}
 /* 2-column content grid */
 .content-grid{max-width:1180px;margin:0 auto;padding:0 24px;display:block}
 @media(min-width:980px){.content-grid{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:0 48px;align-items:start}}
@@ -112,13 +112,12 @@ _CHEVRON = '<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="current
 
 def _hero_art(h1_raw):
     alt = f"{h1_raw} — Mediations Australia"
-    _check = '<svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>'
-    _shield = '<svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'
-    _cal = '<svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>'
+    _check = '<svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>'
+    _shield = '<svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'
+    _cal = '<svg class="hero-usp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>'
     return f"""<div class="hero-art">
-  <div class="hero-art-photo">
-    <img src="/assets/images/mediation-session-hero.webp" alt="{alt}" width="380" height="380" loading="eager" class="hero-art-img">
-  </div>
+  <img src="/assets/images/mediation-session-hero.webp" alt="{alt}" width="380" height="380" loading="eager" class="hero-art-img">
+  <div class="hero-art-grad"></div>
   <div class="hero-usps">
     <div class="hero-usp">{_check}<span>Nationally accredited AMDRAS mediators</span></div>
     <div class="hero-usp">{_shield}<span>Up to 75% cheaper than going to court</span></div>
