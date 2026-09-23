@@ -45,7 +45,8 @@ POST_CSS = """<style>
 /* 2-column content grid */
 .content-grid{max-width:1180px;margin:0 auto;padding:0 24px;display:block}
 @media(min-width:980px){.content-grid{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:0 48px;align-items:start}}
-@media(min-width:980px){.content-grid.no-toc{grid-template-columns:1fr;max-width:820px}}
+@media(min-width:980px){.content-grid.no-toc{grid-template-columns:1fr}}
+@media(min-width:980px){.content-grid.no-toc .article-body{max-width:760px;margin:0 auto}}
 /* Sidebar TOC (desktop) */
 .toc-desktop{display:none}
 @media(min-width:980px){.toc-desktop{display:block;position:sticky;top:96px;align-self:start}}
