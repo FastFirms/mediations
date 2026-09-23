@@ -120,7 +120,7 @@ def _hero_art(h1_raw):
   <div class="hero-art-grad"></div>
   <div class="hero-usps">
     <div class="hero-usp">{_check}<span>Nationally accredited AMDRAS mediators</span></div>
-    <div class="hero-usp">{_shield}<span>Up to 75% cheaper than going to court</span></div>
+    <div class="hero-usp">{_shield}<span>Up to 90% cheaper than going to court</span></div>
     <div class="hero-usp">{_cal}<span>Free initial consultation — no obligation</span></div>
   </div>
 </div>"""
