@@ -122,7 +122,11 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "high-conflict-family-law-mediation",
         # Batch 20 — new cornerstones
         "executor-dispute-mediation",
-        "property-settlement-timeline"]
+        "property-settlement-timeline",
+        # Batch 21 — new cornerstones
+        "contesting-a-will-nsw",
+        "elder-care-guardianship-disputes",
+        "health-complaints-medical-negligence"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:

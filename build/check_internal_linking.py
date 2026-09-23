@@ -39,6 +39,7 @@ BLOG = [
     "who-pays-for-mediation","private-vs-free-mediation","divorce-mediator-vs-divorce-lawyer",
     "mediation-before-divorce","what-happens-if-mediation-fails","what-is-in-the-property-pool",
     "delaying-property-settlement","co-parenting-mediation",
+    "contesting-a-will-nsw","elder-care-guardianship-disputes","health-complaints-medical-negligence",
 ]
 
 fails = []

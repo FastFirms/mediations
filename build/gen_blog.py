@@ -148,6 +148,12 @@ _HERO_IMAGE_POOL = [
 
 def _get_hero_image(slug):
     s = slug.lower()
+    if "contesting-a-will-nsw" in s:
+        return "blog-contesting-will-nsw-mediation.jpg"
+    if "elder-care-guardianship" in s:
+        return "blog-elder-care-guardianship-mediation.jpg"
+    if "health-complaints-medical-negligence" in s:
+        return "blog-health-complaints-medical-negligence.jpg"
     if "60i" in s or "certificate" in s:
         return "section-60i-certificate-mediation.webp"
     if "consent-order" in s:

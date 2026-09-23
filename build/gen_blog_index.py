@@ -282,6 +282,7 @@ WORKPLACE = [
     ("workplace-bullying-complaints-how-mediation-can-help", "Workplace Bullying Complaints: How Mediation Can Help", "Facing a workplace bullying complaint? Learn how mediation resolves bullying disputes faster and more effectively than formal tribunal proceedings..."),
     ("workplace-discrimination-mediation-your-options-in-australia", "Workplace Discrimination Mediation Your Options in Australia", "Explore your options for resolving workplace discrimination in Australia through mediation, including AHRC, Fair Work Commission, and private media..."),
     ("workplace-disputes-are-surging-why-early-mediation-is-the-smarter-path-forward", "Workplace Disputes Are Surging: Why Mediation is Best", "Australian workplaces are experiencing an unprecedented wave of formal disputes, with the Fair Work Commission facing record-breaking caseloads"),
+    ("health-complaints-medical-negligence", "Health Complaints & Medical Negligence Disputes", "How Ahpra, state health complaints bodies and conciliation work — and when private mediation can help resolve the practical fallout."),
 ]
 
 ESTATE = [
@@ -291,6 +292,8 @@ ESTATE = [
     ("contesting-a-will-in-australia-can-mediation-avoid-a-court-battle", "Contesting a Will in Australia: Can Mediation Avoid Court?", "Over 80% of contested will claims settle at mediation. Learn how family provision claims work in Australia and how mediation can save your family t..."),
     ("contesting-a-will-with-mediation", "Contesting a Will with Mediation: A Comprehensive Guide…", "Contesting a will with mediation saves 80% on legal costs. Resolve inheritance disputes faster without court. Expert Australian mediators. Confiden..."),
     ("why-you-have-to-update-your-will-after-separation", "Updating Your Will After Separation?", "Separation and Estate Planning: Get expert legal assistance from Mediation Australia to navigate this critical juncture effectively."),
+    ("contesting-a-will-nsw", "Contesting a Will in NSW", "Family provision claims under the Succession Act 2006 (NSW), the 12-month deadline, and how mediation resolves them without court."),
+    ("elder-care-guardianship-disputes", "Elder Care & Guardianship Disputes", "How mediation helps families resolve elder care, guardianship and power of attorney disputes — and when it isn't appropriate."),
 ]
 
 LEGAL_UPDATES = [

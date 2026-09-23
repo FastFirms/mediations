@@ -287,10 +287,10 @@ helping families get there.</p>
     related=[
         ("estate-dispute-mediation",              "Estate Dispute Mediation — our service"),
         ("contesting-a-will-with-mediation",      "Contesting a Will with Mediation"),
+        ("contesting-a-will-nsw",                 "Contesting a Will in NSW"),
+        ("elder-care-guardianship-disputes",      "Elder Care & Guardianship Disputes"),
         ("how-much-does-mediation-cost",          "How Much Does Mediation Cost?"),
-        ("what-is-mediation-in-family-law",       "What Is Mediation?"),
         ("property-settlement-mediation-guide",   "Property Settlement Mediation Guide"),
-        ("commercial-mediation",                  "Commercial Mediation"),
     ],
     read_min=12,
 )
