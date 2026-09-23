@@ -184,13 +184,23 @@ def _hero_art(h1_raw, slug=""):
 _PROG_JS = '<script>(function(){var b=document.getElementById("prog");if(!b)return;function u(){var s=document.documentElement.scrollTop||document.body.scrollTop,h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?Math.round(s/h*100):0)+"%"}window.addEventListener("scroll",u,{passive:true});u()})();</script>'
 
 def _extract_toc(body):
-    """Pull the inline post-toc nav out of body. Returns (cleaned_body, ul_items_html)."""
+    """Pull inline post-toc nav from body, or auto-generate from h2 id= tags.
+    Returns (cleaned_body, ul_items_html)."""
+    # Try explicit post-toc nav first
     m = re.search(r'<nav[^>]*class="[^"]*post-toc[^"]*"[^>]*>.*?<ul>(.*?)</ul>.*?</nav>', body, re.S | re.I)
-    if not m:
-        return body, ""
-    ul_inner = m.group(1).strip()
-    cleaned = re.sub(r'<nav[^>]*class="[^"]*post-toc[^"]*"[^>]*>.*?</nav>', '', body, flags=re.S | re.I).strip()
-    return cleaned, ul_inner
+    if m:
+        ul_inner = m.group(1).strip()
+        cleaned = re.sub(r'<nav[^>]*class="[^"]*post-toc[^"]*"[^>]*>.*?</nav>', '', body, flags=re.S | re.I).strip()
+        return cleaned, ul_inner
+    # Auto-generate from <h2 id="..."> tags in the body
+    headings = re.findall(r'<h2[^>]*\bid="([^"]+)"[^>]*>(.*?)</h2>', body, re.S | re.I)
+    if len(headings) >= 2:
+        items = "".join(
+            f'<li><a href="#{hid}">{re.sub(r"<[^>]+>", "", txt).strip()}</a></li>'
+            for hid, txt in headings
+        )
+        return body, items
+    return body, ""
 
 def _toc_blocks(items):
     """Return (sidebar_html, mobile_html) from TOC list items HTML string."""
@@ -530,9 +540,16 @@ def extract_article_body(html):
 
 
 def _wrap_tables(html):
-    """Wrap bare <table> elements in a div so border-radius/overflow work in all browsers."""
-    html = re.sub(r'<table(\b)', r'<div class="table-wrap"><table\1', html)
-    html = re.sub(r'</table>', r'</table></div>', html)
+    """Wrap bare <table> elements in a div so border-radius/overflow work in all browsers.
+    Idempotent — strips existing table-wrap wrappers first to prevent double-wrapping on rebuild."""
+    # Strip any existing table-wrap divs immediately around a table (prevent triple nesting)
+    while '<div class="table-wrap"><div class="table-wrap">' in html:
+        html = html.replace('<div class="table-wrap"><div class="table-wrap">', '<div class="table-wrap">')
+        html = re.sub(r'</table>(</div>){2,}', '</table></div>', html)
+    # Wrap any still-bare tables (not preceded by table-wrap)
+    html = re.sub(r'(?<!["\w])(?<!wrap">)<table(\b)', r'<div class="table-wrap"><table\1', html)
+    # Don't double-add closing div
+    html = re.sub(r'</table>(?!</div>)', r'</table></div>', html)
     return html
 
 
