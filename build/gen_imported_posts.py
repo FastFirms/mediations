@@ -575,6 +575,67 @@ FETCH_URL_OVERRIDES = {
 from expanded_bodies import EXPANDED as _EXPANDED  # batch-expanded body content
 
 META_OVERRIDES = {
+    "five-things-to-do-before-uttering-i-want-a-divorce": {
+        "title": "Five Things to Do Before You Say 'I Want a Divorce'",
+        "desc":  "Before you say 'I want a divorce', these five steps protect your finances, your children and your future. A practical guide from an accredited mediator.",
+        "h1":    "Five Things to Do Before You Say 'I Want a Divorce'",
+        "read_min": "7",
+        "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> The words "I want a divorce" cannot be unsaid. Before you say them, five practical steps — from understanding your financial position to exploring alternatives to court — can protect your assets, preserve your parenting relationship, and keep control of the outcome in your hands.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#understand-finances">1. Understand your financial position</a></li>
+<li><a href="#get-legal-advice">2. Get independent legal advice</a></li>
+<li><a href="#think-about-children">3. Put your children first</a></li>
+<li><a href="#explore-mediation">4. Explore mediation before court</a></li>
+<li><a href="#protect-documents">5. Protect and copy important documents</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="understand-finances">1. Understand Your Financial Position</h2>
+<p>Before a separation conversation begins, get a clear picture of the shared financial landscape. Many people are surprised to discover how much — or how little — they actually know about their household finances.</p>
+<p>Make a list of all assets and liabilities: the family home and its current market value, any investment properties, superannuation balances (yours and your partner's), bank accounts, share portfolios, vehicles, and any outstanding debts including mortgages, personal loans and credit cards.</p>
+<p>This matters for two reasons. First, it gives you a realistic view of what a property settlement might look like. Second, it prevents assets from disappearing or being moved in the early days of separation — a scenario that happens more often than people expect.</p>
+<p>If you don't have ready access to financial records, now is the time to find them. Bank statements, tax returns, superannuation statements and mortgage documents are all relevant. Under Australian family law, both parties have a duty of disclosure — but the obligation only becomes enforceable once proceedings begin.</p>
+
+<h2 id="get-legal-advice">2. Get Independent Legal Advice</h2>
+<p>You don't need a lawyer to separate, but you do need to understand your legal rights before you act. A single consultation with a family lawyer — sometimes called a "preliminary advice" session — will tell you what you're entitled to, what the likely timeframes are, and what your options are.</p>
+<p>Australian family law applies a four-step process to property settlements: identifying the asset pool, assessing contributions (financial and non-financial), considering future needs, and arriving at a just and equitable outcome. The split is not automatically 50/50 — it depends on the specific facts of your relationship.</p>
+<p>Knowing this before you have the separation conversation means you're not negotiating from a position of ignorance. It also means you won't make promises — "you can have the house" or "I'll pay for the kids' school fees" — that you later discover you can't keep.</p>
+<blockquote><p>"The people who come to mediation least prepared are usually those who had the separation conversation before they understood their own position. A single legal advice session changes everything." — Dan Toombs, Founder, Mediations Australia</p></blockquote>
+
+<h2 id="think-about-children">3. Put Your Children First</h2>
+<p>If you have children, how you handle the first days and weeks of separation will shape your co-parenting relationship for years. Courts always apply the principle of what is in the best interests of the child — and this should be your guide too.</p>
+<p>Before any conversation with your partner, think through some practical questions: Where will the children live? How will school pickup, medical appointments and holidays be managed? How will you communicate about the children after separation?</p>
+<p>The research on children and separation is clear: children recover well from separation when both parents remain involved, cooperative, and shielded from conflict. They struggle when they're caught in the middle, used as messengers, or exposed to ongoing hostility.</p>
+<p>A parenting plan doesn't need to be finalised before you separate — but having thought through a workable interim arrangement shows good faith and reduces early conflict. It also makes any future mediation or negotiation smoother, because you're starting from a position of "here's what could work" rather than entrenched positions.</p>
+
+<h2 id="explore-mediation">4. Explore Mediation Before Court</h2>
+<p>Most people assume separation means lawyers, court and years of conflict. It doesn't have to. In Australia, mediation — and specifically Family Dispute Resolution (FDR) — is required by law before most parenting matters can go to court. But many families also use mediation to resolve property and financial issues without litigation.</p>
+<p>The advantages are significant. Mediation typically costs a fraction of contested court proceedings. It's faster — weeks or months rather than one to three years. And critically, the agreement you reach is one you've both had input into, which makes it more durable than an order imposed by a judge.</p>
+<p>Nationally accredited mediators are neutral — they don't represent either party and don't give legal advice. Their role is to facilitate a structured conversation that helps both parties identify interests, explore options and reach agreements they can live with.</p>
+<p>Before you say "I want a divorce," it's worth understanding that mediation may make the whole process far less painful than you fear.</p>
+<p><a href="/book-a-consultation/" class="btn btn-primary">Talk to a Mediator — Free Consultation</a></p>
+
+<h2 id="protect-documents">5. Protect and Copy Important Documents</h2>
+<p>In the early days of separation, important documents can go missing — sometimes accidentally, sometimes not. Before any difficult conversation, it's prudent to locate and copy key records.</p>
+<p>The documents most relevant to a property settlement include: recent tax returns for both parties, superannuation statements, bank and credit card statements for the past 12 months, mortgage documents and property valuations, business financial statements if either party owns a business, and life insurance policies.</p>
+<p>You don't need to remove originals. In most cases, photographing or scanning documents is sufficient. The goal is to ensure you have access to records that establish the asset pool, because once separation is announced, access to joint accounts and shared filing systems can quickly become contested.</p>
+<p>Store copies somewhere secure — a personal email account, a USB kept away from the family home, or with a trusted family member.</p>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+<h3>Do I need to be legally separated before starting mediation?</h3>
+<p>No. Mediation can begin at any point — before or after a formal separation. Many couples use it to negotiate the terms of their separation while still living together.</p>
+<h3>What is the difference between separation and divorce in Australia?</h3>
+<p>Separation is the decision to end the relationship — there is no formal legal process to separate. Divorce is the legal dissolution of a marriage, which requires a court order and can only be applied for after 12 months of separation. You can negotiate property settlements and parenting arrangements before applying for divorce.</p>
+<h3>Does it matter who says "I want a divorce" first?</h3>
+<p>No. Under Australian family law, separation is assessed by the conduct and intention of the parties, not by who initiated it. There is no legal advantage to initiating separation.</p>
+<h3>Can we use mediation even if things are hostile?</h3>
+<p>Yes, in many cases. Mediators are trained to manage high-conflict dynamics. Shuttle mediation — where parties are in separate rooms — is often used when direct communication is difficult. There are, however, circumstances where mediation is not appropriate, including situations involving family violence or significant power imbalances.</p>
+<h3>How soon after separation should I see a mediator?</h3>
+<p>As soon as possible. Early engagement with a mediator typically produces better outcomes — before positions harden, before legal costs accumulate, and before children are exposed to prolonged conflict.</p>
+""",
+    },
     "mediation-vs-collaborative-law": {
         "title": "Mediation vs Collaborative Law: Key Differences Explained",
         "desc":  "What's the difference between mediation and collaborative law? Compare costs, process and legal outcomes to choose the right path. Free consult.",
