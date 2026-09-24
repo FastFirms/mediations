@@ -791,6 +791,283 @@ META_OVERRIDES = {
 <p>No. Divorce legally ends a marriage — it does not divide property or determine parenting arrangements. Consent orders (or a contested hearing) do that. You can apply for divorce without having finalised property or parenting matters, but the 12-month time limit for property consent orders starts running from the date the divorce order takes effect. Don't confuse the two processes.</p>"""
     },
 
+
+    # ── AI-Overview-resistant cornerstones ────────────────────────────────────
+    "best-apps-for-separated-parents": {
+        "title": "Best Apps for Separated Parents in Australia (2025)",
+        "desc":  "An accredited mediator's guide to the best co-parenting apps for separated Australian parents — what works, what to avoid, and how to pick one that holds up in court.",
+        "h1":    "Best Apps for Separated Parents in Australia (2025)",
+        "read_min": "9",
+        "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> The best co-parenting app for separated Australian parents is one that both parties will actually use. In 2025, <strong>OurFamilyWizard</strong> and <strong>Talking Parents</strong> are the leading court-admissible options with tamper-proof message logs, while <strong>AppClose</strong> and <strong>Cozi</strong> suit lower-conflict situations. No app replaces a formalised parenting plan or consent orders — but the right one dramatically reduces misunderstandings and conflict between sessions.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#why-apps-matter">Why co-parenting apps matter after separation</a></li>
+<li><a href="#top-apps">Top co-parenting apps: comparison table</a></li>
+<li><a href="#ourfamilywizard">OurFamilyWizard — best for court-admissible records</a></li>
+<li><a href="#talking-parents">Talking Parents — best free court-ready option</a></li>
+<li><a href="#appclose">AppClose — best for lower-conflict co-parenting</a></li>
+<li><a href="#what-to-look-for">What to look for when choosing an app</a></li>
+<li><a href="#app-and-mediation">How apps fit into mediation and parenting plans</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="why-apps-matter">Why Co-Parenting Apps Matter After Separation</h2>
+<p>Most post-separation conflict doesn't happen in a courtroom — it happens in text messages, missed pickups and arguments about who said what three months ago. Co-parenting apps don't solve conflict, but they do three things that dramatically reduce it: they keep all communication in one documented place, they create schedules both parties can see in real time, and they produce records that are admissible if matters escalate.</p>
+<p>As an accredited family mediator, I see the same pattern repeatedly: families who use a dedicated co-parenting app have measurably lower communication conflict by the time they reach a second mediation session (if they need one at all). The accountability a shared platform creates — where both parties know every message is logged and timestamped — changes the tone of communication almost immediately.</p>
+<p>That said, an app is a tool, not a solution. It works best when it sits alongside a properly documented parenting plan or consent orders that set out the rules clearly — because an app can record what was said, but it can't enforce what was agreed.</p>
+
+<h2 id="top-apps">Top Co-Parenting Apps: Comparison Table</h2>
+<figure class="tbl"><table>
+<thead><tr><th>App</th><th>Cost</th><th>Court-admissible logs</th><th>Shared calendar</th><th>Expense tracking</th><th>Best for</th></tr></thead>
+<tbody>
+<tr><td><strong>OurFamilyWizard</strong></td><td>~$99–$199/yr per parent</td><td>Yes — certified</td><td>Yes</td><td>Yes</td><td>High-conflict; court proceedings</td></tr>
+<tr><td><strong>Talking Parents</strong></td><td>Free (premium ~$9.99/mo)</td><td>Yes — unalterable</td><td>Yes</td><td>Basic</td><td>Any conflict level; budget-conscious</td></tr>
+<tr><td><strong>AppClose</strong></td><td>Free (premium ~$9.99/mo)</td><td>Limited</td><td>Yes</td><td>Yes</td><td>Lower conflict; practical co-parenting</td></tr>
+<tr><td><strong>Cozi</strong></td><td>Free (premium ~$29.99/yr)</td><td>No</td><td>Yes</td><td>No</td><td>Low conflict; blended families</td></tr>
+<tr><td><strong>2Houses</strong></td><td>~$10/mo</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Financial transparency; EU-origin</td></tr>
+</tbody></table></figure>
+
+<h2 id="ourfamilywizard">OurFamilyWizard — Best for Court-Admissible Records</h2>
+<p>OurFamilyWizard (OFW) is the most widely used co-parenting platform in Australian family law proceedings. Its key differentiator is the <strong>ToneMeter</strong> — an AI tool that flags hostile or inflammatory language before a message is sent — and its certified, tamper-proof message logs that courts accept as evidence without additional authentication.</p>
+<p>OFW is particularly useful where there has been a history of disputed communications, where matters are already before the court, or where one party has a pattern of rewriting history. The ability to generate a printable, certified communication log that a judge, registrar or family report writer can review has real practical value.</p>
+<p>The cost (~$99–$199 per parent per year) is higher than alternatives, but for families in litigation or high-conflict situations it is modest compared to the legal costs of disputed communications. Many family lawyers now recommend OFW as standard in contested parenting matters.</p>
+<blockquote><p>"I recommend OurFamilyWizard to clients who are in, or likely to enter, contested proceedings. The certified logs remove an enormous source of dispute — whether a message was sent, what it said, and how it was worded. That dispute resolution cost alone often justifies the subscription." — Dan Toombs, Founder, Mediations Australia</p></blockquote>
+
+<h2 id="talking-parents">Talking Parents — Best Free Court-Ready Option</h2>
+<p>Talking Parents offers unalterable message logs and a shared calendar at no cost, with premium features (phone call recording, additional storage) available for around $9.99/month. It is the strongest free option for parents who need court-admissible communication records but don't require the full feature set of OurFamilyWizard.</p>
+<p>Messages in Talking Parents cannot be edited or deleted by either party once sent — the immutability of the record is its main selling point. This makes it suitable for parenting matters that may proceed to the court, without the OFW price tag.</p>
+<p>For the majority of separated Australian families who are not in active litigation but want a documented record as a precaution, Talking Parents offers the best combination of functionality and cost.</p>
+
+<h2 id="appclose">AppClose — Best for Lower-Conflict Co-Parenting</h2>
+<p>AppClose is designed for practical co-parenting rather than dispute management. It includes a shared calendar, expense tracking, a journal for documenting child-related events, and basic messaging — but its communication logs are not court-certified in the same way as OFW or Talking Parents.</p>
+<p>For separated families with low to medium conflict who primarily need schedule coordination and expense splitting, AppClose is easier to use and introduces less adversarial friction than a court-focused platform. The expense tracking feature is particularly useful for managing child-related costs where both parents contribute.</p>
+
+<h2 id="what-to-look-for">What to Look For When Choosing an App</h2>
+<p>Beyond the specific platforms above, the right co-parenting app for your family depends on:</p>
+<ul>
+<li><strong>Conflict level.</strong> High conflict or active proceedings → OurFamilyWizard. Lower conflict → AppClose or Cozi. Uncertain → Talking Parents (scales either way).</li>
+<li><strong>Whether both parties will use it.</strong> The best app in the world doesn't work if one party refuses to engage. Start with something simple if buy-in is uncertain — you can always upgrade.</li>
+<li><strong>Expense tracking needs.</strong> If child costs are a source of conflict, choose an app with built-in expense logging and request/approval workflows.</li>
+<li><strong>Device compatibility.</strong> All major apps support iOS and Android. Confirm web browser access if either parent doesn't have a smartphone.</li>
+<li><strong>Privacy from new partners.</strong> Consider whether notifications or shared accounts could create issues with new relationships.</li>
+</ul>
+
+<h2 id="app-and-mediation">How Apps Fit Into Mediation and Parenting Plans</h2>
+<p>A co-parenting app is most effective when it sits alongside a properly documented parenting arrangement — either a <a href="/parenting-plan-mediation/">parenting plan</a> agreed through mediation, or <a href="/consent-orders/">consent orders</a> approved by the court. The app provides the communication infrastructure; the plan provides the rules.</p>
+<p>In mediation, we often help separating parents agree on which app they'll use and how — for example, agreeing that all child-related communication happens through the app (not text messages), that each party responds within 24 hours to time-sensitive messages, and that financial requests for child-related expenses are submitted through the app's expense tool. These agreements can be written into the parenting plan itself.</p>
+<p>If you're at the stage of choosing a co-parenting app, you may also be at the stage where mediation can help establish the parenting arrangements the app will support. <a href="/parenting-plan-mediation/">Read more about parenting plan mediation →</a></p>
+<p><a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a></p>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<h3>Are co-parenting app messages admissible in Australian court?</h3>
+<p>OurFamilyWizard and Talking Parents both produce certified, unalterable message logs that Australian family courts accept as evidence without additional authentication steps. Standard text messages are also admissible but can be disputed — the advantage of a dedicated platform is the tamper-proof, timestamped record. If there is any prospect of court proceedings, use a court-ready platform from the start.</p>
+
+<h3>Can I be forced to use a particular co-parenting app?</h3>
+<p>A court can include a direction to use a specific co-parenting app as part of a parenting order, and this happens in high-conflict cases. More commonly, app use is agreed between the parties — either directly or through mediation — and written into a parenting plan. If your co-parent refuses to use any app, document your communications carefully in whatever medium they use.</p>
+
+<h3>What if my co-parent won't use a co-parenting app?</h3>
+<p>You can't force a co-parent to use an app outside of a court order. If they won't engage with any communication platform, the practical alternative is to keep all communications in writing (email or text) and save records systematically. If communication breakdown is serious, mediation can help establish communication protocols — and an app recommendation is often part of that outcome.</p>
+
+<h3>Is there a free co-parenting app with court-admissible logs?</h3>
+<p>Yes — Talking Parents offers unalterable message logs at no cost (the free tier includes the core court-ready features). OurFamilyWizard requires a paid subscription but has more comprehensive features. For the majority of separated parents who need court-ready records without active litigation costs, Talking Parents is the best free option.</p>
+
+<h3>Do I need a co-parenting app if I have consent orders?</h3>
+<p>Consent orders set out the rules — a co-parenting app helps implement them day-to-day and creates a record if compliance is later disputed. Most families benefit from using both. An app doesn't replace the legal framework consent orders provide; it makes living within that framework smoother and less conflictual.</p>"""
+    },
+
+    "my-ex-wont-sign-divorce-papers": {
+        "title": "My Ex Won't Sign Divorce Papers: What Happens Next",
+        "desc":  "In Australia, your ex cannot block a divorce by refusing to sign. Here's exactly what to do — step by step — including how mediation can resolve the underlying dispute.",
+        "h1":    "My Ex Won't Sign Divorce Papers: What Happens Next",
+        "read_min": "8",
+        "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> In Australia, your ex cannot prevent a divorce by refusing to sign. After 12 months of separation, one party can apply for divorce without the other's consent — the court doesn't require both signatures. What your ex CAN complicate is the property settlement and parenting arrangements. That's where mediation matters most.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#can-they-stop-it">Can my ex actually stop the divorce?</a></li>
+<li><a href="#how-divorce-works">How Australian divorce works — the 12-month rule</a></li>
+<li><a href="#one-party-application">Applying for divorce without your ex's agreement</a></li>
+<li><a href="#what-they-can-dispute">What your ex CAN dispute — and what to do about it</a></li>
+<li><a href="#timeline">Realistic timeline: from application to finalised</a></li>
+<li><a href="#mediation-role">Where mediation fits in</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="can-they-stop-it">Can My Ex Actually Stop the Divorce?</h2>
+<p>No. Under Australian law, divorce cannot be blocked by one party refusing to sign or engage with the process. This is a fundamental feature of Australia's no-fault divorce system, which was introduced with the <em>Family Law Act 1975</em>. Neither party has to prove fault, and neither party has the power to prevent the other from divorcing once the legal requirements are met.</p>
+<p>What your ex CAN do is make the associated matters — property settlement, parenting arrangements, spousal maintenance — more difficult to resolve. And those are the things that actually affect your life long-term. The divorce itself is a legal formality; it's the financial and parenting outcomes that deserve your attention.</p>
+
+<h2 id="how-divorce-works">How Australian Divorce Works — the 12-Month Rule</h2>
+<p>To apply for divorce in Australia, you must have been separated for at least 12 months. "Separated" means you have been living apart — emotionally, practically, or in some cases physically within the same home. You don't need your ex's agreement or signature to establish that you are separated.</p>
+<p>Key points about the Australian divorce process:</p>
+<ul>
+<li><strong>No fault required.</strong> The only ground for divorce in Australia is irretrievable breakdown of the marriage, established by 12 months' separation. You don't need to prove anything about why the relationship ended.</li>
+<li><strong>One party can apply.</strong> Either party can file a sole application for divorce. The other party is served with the application but cannot veto it.</li>
+<li><strong>Children's welfare is assessed separately.</strong> Where there are children under 18, the court checks that satisfactory arrangements are in place — but this is a separate consideration, not a reason to refuse the divorce itself.</li>
+<li><strong>Time limits on property orders.</strong> You have 12 months from the date the divorce order takes effect to apply for property consent orders or court orders. Missing this deadline requires the court's permission — which is not automatic.</li>
+</ul>
+
+<h2 id="one-party-application">Applying for Divorce Without Your Ex's Agreement</h2>
+<p>A sole application for divorce is straightforward. You file through the <a href="https://www.fcfcoa.gov.au/fl/divorce" target="_blank" rel="noopener">Federal Circuit and Family Court of Australia</a>. The steps are:</p>
+<ol>
+<li><strong>Confirm 12 months' separation.</strong> You'll need to state the date of separation in the application.</li>
+<li><strong>File the application.</strong> Online via the FCFCOA portal. The filing fee is currently $1,060 (reduced fee for eligible concession cardholders).</li>
+<li><strong>Serve your ex.</strong> For a sole application, you must serve your ex with the application at least 28 days before the hearing (42 days if they're overseas). You cannot serve them yourself — this must be done by someone else (a process server, friend, or family member over 18).</li>
+<li><strong>Attend the hearing (if required).</strong> If you have children under 18, you generally need to attend. Without children under 18, attendance is usually not required for a sole application.</li>
+<li><strong>Divorce order takes effect.</strong> One month and one day after the court makes the order.</li>
+</ol>
+<p>If your ex cannot be located for service, there are substituted service orders available. If your ex is overseas, different timelines apply but the process is essentially the same.</p>
+
+<h2 id="what-they-can-dispute">What Your Ex CAN Dispute — and What To Do About It</h2>
+<p>While your ex cannot stop the divorce, they can make property and parenting matters contentious. This is where most of the real conflict — and cost — sits.</p>
+<figure class="tbl"><table>
+<thead><tr><th>Matter</th><th>Can ex block?</th><th>Time limit</th><th>Best first step</th></tr></thead>
+<tbody>
+<tr><td>The divorce itself</td><td>No</td><td>Apply after 12 months separation</td><td>Sole application to FCFCOA</td></tr>
+<tr><td>Property settlement</td><td>Can delay and complicate</td><td>12 months from divorce order</td><td>Mediation first; court if necessary</td></tr>
+<tr><td>Parenting arrangements</td><td>Can dispute terms (not your right to apply)</td><td>No time limit</td><td>Family dispute resolution (mediation)</td></tr>
+<tr><td>Spousal maintenance</td><td>Can dispute amount/duration</td><td>12 months from divorce order</td><td>Mediation or legal negotiation</td></tr>
+</tbody></table></figure>
+<p>For property matters, the 12-month window after the divorce order is critical. Many people focus on the divorce and miss the fact that their property settlement clock is now running. Don't let the deadline pass.</p>
+
+<h2 id="timeline">Realistic Timeline: From Application to Finalised</h2>
+<p>Here is a realistic worked timeline for a sole divorce application in Australia:</p>
+<ul>
+<li><strong>Week 1:</strong> File sole application online with FCFCOA. Pay $1,060 filing fee (or reduced amount if eligible).</li>
+<li><strong>Weeks 1–3:</strong> Arrange service on your ex (process server ~$150–$300 typically).</li>
+<li><strong>4 weeks before hearing:</strong> Service must be complete.</li>
+<li><strong>Hearing date:</strong> Usually 6–10 weeks after filing. Typically 5–10 minutes if uncontested and no children under 18.</li>
+<li><strong>+1 month + 1 day:</strong> Divorce order takes effect. Property settlement clock starts.</li>
+<li><strong>Total from filing to final order:</strong> Usually 3–4 months.</li>
+</ul>
+<blockquote><p>"The question I hear most from people whose ex 'won't cooperate' is whether they can be stopped. The answer is no — but that relief is often followed by: 'So what do I do about the house?' That's the real question, and it's the one mediation is designed to answer. We help both parties reach a property and parenting agreement without court, which is almost always faster, cheaper and less damaging than litigation." — Dan Toombs, Founder, Mediations Australia</p></blockquote>
+
+<h2 id="mediation-role">Where Mediation Fits In</h2>
+<p>Mediation doesn't affect the divorce application itself — that proceeds regardless. What mediation does is resolve the matters your ex CAN complicate: the property settlement, the parenting arrangements, superannuation splitting and any maintenance.</p>
+<p>For parenting matters, <a href="/family-law-mediation/">family dispute resolution</a> is legally required before most parenting applications can be filed with the court. For property matters, it's not mandatory but it is almost always faster and cheaper than litigation — particularly given the 12-month window that runs from the divorce order date.</p>
+<p>In our experience, even high-conflict situations can reach resolution through mediation when the parties are properly prepared and the process is well-structured. The fact that your ex "won't cooperate" on the divorce doesn't mean they won't engage in a mediated property or parenting process — the incentive to avoid court costs is powerful for both parties.</p>
+<p><a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a></p>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<h3>What if my ex ignores the divorce application after being served?</h3>
+<p>If your ex is properly served but doesn't respond, the divorce proceeds without them. They don't need to reply, agree, or attend the hearing. Ignoring a divorce application doesn't stop it — the court will grant the order if the legal requirements are satisfied.</p>
+
+<h3>Can my ex contest the divorce on the grounds that the marriage isn't over?</h3>
+<p>Technically, your ex can file a response disputing that 12 months of separation has occurred. In practice, this is very rarely successful — especially where both parties have been living separately, told others about the separation, or have existing interim parenting or financial arrangements. Courts are rarely persuaded that a marriage hasn't broken down when one party has filed for divorce.</p>
+
+<h3>Does my ex have to attend the hearing?</h3>
+<p>For a sole application, no. Your ex is served with the application and can attend if they wish, but they are not required to. The hearing is usually brief (5–10 minutes) and uncontested if the legal requirements are met.</p>
+
+<h3>What happens to the property if my ex won't agree to a settlement?</h3>
+<p>If your ex won't negotiate a property settlement, you have two options: apply to the court for property orders (contested litigation), or seek court-ordered mediation first. Litigation can take 12–24 months and cost $30,000–$80,000+ per party. Most property matters are resolved before a contested hearing — but the process of filing and negotiating under litigation pressure is expensive. Starting with mediation avoids this entirely for the majority of cases.</p>
+
+<h3>Is there a time limit on property settlements after divorce?</h3>
+<p>Yes — 12 months from the date the divorce order takes effect. After this, you need the court's permission to apply for property orders, which is not automatically granted. Don't let this window pass. If your ex won't negotiate, begin the mediation or legal process well before the 12-month deadline.</p>
+
+<h3>We separated but haven't formally divorced. Does the 12-month rule still apply?</h3>
+<p>For a divorce application, yes — you need 12 months of separation. But property and parenting applications can be made without a divorce. For de facto couples, property time limits run from the end of the relationship (not a divorce order) — generally 2 years. If you're uncertain about the timeline that applies to your situation, get legal advice promptly.</p>"""
+    },
+
+    "who-pays-bills-during-separation": {
+        "title": "Who Pays the Bills During Separation in Australia?",
+        "desc":  "Understand exactly who is responsible for the mortgage, utilities, car loans and credit cards during separation — and what to do when your ex stops paying.",
+        "h1":    "Who Pays the Bills During Separation in Australia?",
+        "read_min": "9",
+        "body": """
+<div class="answer reveal"><p><strong>Key takeaway:</strong> During separation, both parties remain legally responsible for any <em>joint</em> debt — regardless of who lives in the property or uses the asset. Individual debts stay with the named person. The family court does not intervene in day-to-day bills while you are separated, but it can make interim orders and will consider financial conduct when dividing the asset pool. The practical answer: document everything, get an interim agreement in place quickly, and don't let unresolved bills become a lever in the property settlement.</p></div>
+
+<nav class="post-toc reveal" aria-label="Contents"><h2>In this guide</h2><ul>
+<li><a href="#joint-vs-individual">Joint debts vs individual debts: who owes what</a></li>
+<li><a href="#mortgage">The family home mortgage during separation</a></li>
+<li><a href="#utilities">Utilities, rates and household bills</a></li>
+<li><a href="#credit-cards">Credit cards and personal loans</a></li>
+<li><a href="#car">Car loans and vehicle expenses</a></li>
+<li><a href="#when-ex-stops">When your ex stops paying</a></li>
+<li><a href="#interim-agreements">Getting an interim financial agreement</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ul></nav>
+
+<h2 id="joint-vs-individual">Joint Debts vs Individual Debts: Who Owes What</h2>
+<p>The starting point is straightforward: a creditor (bank, utility company, landlord) looks at whose name is on the account. If you're both named, you're both liable — regardless of what your separation agreement says. If only one person is named, only that person is liable to the creditor, even if the other person benefited from or incurred the debt.</p>
+<p>This distinction matters because separation agreements or consent orders operate between the two of you — they don't change your obligations to third-party creditors. A consent order saying "your ex will pay the mortgage" doesn't stop the bank coming after you if they don't pay, because the bank isn't party to your consent order.</p>
+<figure class="tbl"><table>
+<thead><tr><th>Debt type</th><th>Who owes the creditor?</th><th>What happens in the property settlement?</th></tr></thead>
+<tbody>
+<tr><td>Joint mortgage</td><td>Both parties jointly and severally</td><td>Included in asset pool; allocated with property</td></tr>
+<tr><td>Joint credit card</td><td>Both parties</td><td>Included as liability in the pool</td></tr>
+<tr><td>Individual mortgage (one name)</td><td>The named party only</td><td>Still included in the asset pool</td></tr>
+<tr><td>Individual credit card</td><td>The named party only</td><td>May be included if used for family expenses</td></tr>
+<tr><td>Utilities in one name</td><td>The named party only</td><td>Rarely included; treated as living expenses</td></tr>
+<tr><td>Car loan in one name</td><td>The named party only</td><td>Included as liability attached to the vehicle</td></tr>
+</tbody></table></figure>
+
+<h2 id="mortgage">The Family Home Mortgage During Separation</h2>
+<p>The family home mortgage is usually the biggest financial issue during separation. The practical questions are: who stays in the house, who pays the mortgage, and what happens to it in the property settlement?</p>
+<p>If the mortgage is in both names, both parties remain legally liable to the bank regardless of who lives there. If the person staying in the house stops paying, the bank can pursue both of you — including affecting both credit ratings.</p>
+<p>Common interim arrangements:</p>
+<ul>
+<li><strong>One party stays and pays.</strong> The remaining party pays the mortgage. The leaving party's continuing contribution is acknowledged in the property settlement (typically by an adjustment in their favour at settlement, or by the staying party receiving the property and refinancing into their sole name).</li>
+<li><strong>One party stays, both continue paying.</strong> Less common, but used where the leaving party can't immediately refinance off the loan and both parties can afford to maintain repayments.</li>
+<li><strong>Property is sold.</strong> Where neither party can maintain the mortgage alone, or neither wants the property, the home is sold and proceeds divided — either by agreement or court order.</li>
+</ul>
+<p>Whatever arrangement you reach, document it formally as quickly as possible — either through a <a href="/parenting-plan-mediation/">parenting and financial agreement</a> reached in mediation, or through interim consent orders.</p>
+
+<h2 id="utilities">Utilities, Rates and Household Bills</h2>
+<p>Ongoing household bills — electricity, gas, water, internet, rates — are generally treated as living expenses and aren't directly part of the property settlement. Who pays them during separation depends on who lives in the property and whose name is on the accounts.</p>
+<p>If one party remains in the family home, it's generally expected that they pay the ongoing utilities and rates as part of their occupancy costs. If the property is rented out, rates and utilities become part of the rental income/expense calculation.</p>
+<p>Council rates present a specific issue: they're usually payable by the owner(s) regardless of who occupies the property. If both names are on the title, both are legally responsible for rates arrears. Local councils can pursue unpaid rates against the property itself, which complicates any future sale.</p>
+
+<h2 id="credit-cards">Credit Cards and Personal Loans</h2>
+<p>Joint credit cards remain the liability of both card holders until the account is closed or refinanced into one person's name. During separation, both parties can typically continue to use a joint card — which is a significant risk if one party is spending freely in anticipation of a property settlement.</p>
+<p>Practical steps to take early in separation:</p>
+<ul>
+<li>Freeze or close joint credit card accounts, or at minimum remove one party's card</li>
+<li>Obtain your credit reports (free from Equifax, Illion or Experian) to identify all joint accounts</li>
+<li>Request removal as a joint account holder where possible — note this requires the other party's cooperation or refinancing into a sole name</li>
+<li>Document any large post-separation expenditure on joint accounts, as this may be relevant to the property settlement</li>
+</ul>
+<blockquote><p>"The issue I see most frequently in property mediation isn't a complicated asset structure — it's that one party has continued to incur joint debt during separation without the other's knowledge or agreement. By the time people reach mediation, the credit card debt has grown significantly and both parties are jointly liable. The earlier you get an interim financial agreement in place, the better." — Dan Toombs, Founder, Mediations Australia</p></blockquote>
+
+<h2 id="car">Car Loans and Vehicle Expenses</h2>
+<p>Car loans are typically in one party's name and attached to the specific vehicle. The loan stays with the named borrower in the eyes of the lender — even if the other party drives the car after separation. In the property settlement, the vehicle and its associated loan are included in the asset pool: the vehicle is an asset, the loan is a liability.</p>
+<p>If the vehicle is in joint names or the loan is joint, both parties are liable to the lender regardless of who has possession of the car. As with credit cards, having possession of the vehicle doesn't protect you from liability under a joint loan if the other party stops paying.</p>
+
+<h2 id="when-ex-stops">When Your Ex Stops Paying</h2>
+<p>If your ex stops contributing to joint debts — the mortgage, credit cards, car loans — you face a choice: cover the payments yourself, let the debt default, or take legal action.</p>
+<p>Letting joint debt default affects both parties' credit ratings and can result in enforcement action against the property. It's almost always the worst financial outcome. Covering the payments yourself preserves your credit rating and the asset, but creates an ongoing imbalance that should be documented and addressed in the property settlement.</p>
+<p>If your ex is refusing to pay joint debts in a way that puts an asset at serious risk, you can apply to the court for urgent interim orders. The court can make orders requiring a party to maintain mortgage payments or other critical financial obligations pending the final property settlement. This is a measure of last resort — most situations are resolved more quickly and cheaply through mediation.</p>
+<p>Whatever you pay in excess of your agreed share during separation should be documented — bank statements, loan statements, payment records — as it is directly relevant to the property settlement.</p>
+
+<h2 id="interim-agreements">Getting an Interim Financial Agreement</h2>
+<p>The most effective way to manage ongoing bills during separation is an interim financial agreement — a documented arrangement covering who pays what while the property settlement is being negotiated. This doesn't have to be a formal legal document initially, but it should be in writing and signed by both parties.</p>
+<p>Mediation is the most efficient way to reach an interim financial agreement. In a single session, a mediator can help both parties agree on mortgage contributions, household bills, debt management and any maintenance arrangements — producing a written agreement both parties sign. This can then be formalised through <a href="/consent-orders/">consent orders</a> if needed.</p>
+<p>An interim agreement reduces the risk of one party incurring debt unilaterally, gives both parties clarity about their financial obligations, and reduces the scope for financial conflict during what is already a stressful period.</p>
+<p><a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation</a></p>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<h3>Do I have to keep paying the mortgage if I've moved out?</h3>
+<p>If your name is on the mortgage, you remain legally liable to the bank regardless of whether you live in the property. Stopping payments will affect your credit rating and may trigger enforcement action. The practical solution is to reach an interim agreement — through mediation or direct negotiation — about how mortgage payments will be managed pending the property settlement. Your ongoing payments can be factored into the final property division.</p>
+
+<h3>Can my ex run up debt on a joint account without my consent?</h3>
+<p>Yes — both account holders can typically use a joint account until it is frozen or closed, even after separation. If you're concerned about post-separation spending on joint accounts, freeze or close them as soon as possible. Post-separation expenditure may be relevant to the property settlement, but it's easier to prevent than to remedy.</p>
+
+<h3>What counts as "wastage" of marital assets during separation?</h3>
+<p>Following the High Court's Ascot Investments decision (effective 2025), courts can no longer automatically add back amounts one party spent before trial. However, deliberate waste, reckless spending or disposal of assets to defeat the other party's claims can still be considered in the property settlement in appropriate circumstances. Courts look at the full financial conduct of both parties — keeping records of significant financial transactions during separation is advisable.</p>
+
+<h3>Can the court make my ex pay the bills?</h3>
+<p>The court can make interim orders requiring a party to maintain mortgage payments or other obligations pending the final property settlement. In practice, interim orders are sought where there is an urgent risk to a significant asset — for example, imminent mortgage default. They are not routine; the court expects parties to try mediation and negotiation first. An urgent interim hearing is available in genuinely time-critical situations.</p>
+
+<h3>How do ongoing bills affect the property settlement?</h3>
+<p>All significant debts — mortgage, car loans, credit cards — are included in the asset pool. Who paid what during separation is relevant context for the settlement, particularly if one party has been paying joint obligations the other has abandoned. Document your payments carefully. An unequal financial contribution during separation is a factor courts and mediators take into account when dividing assets.</p>
+
+<h3>We have children — does that affect who pays the bills?</h3>
+<p>The parent with primary care of the children often has a stronger case for remaining in the family home (which affects who pays the mortgage). Child support — the financial transfer between parents for the cost of raising children — is separate from property settlement bills and is calculated under the Child Support Scheme administered by Services Australia. Child support payments are not a substitute for property settlement, and do not offset each other.</p>"""
+    },
+
     "five-things-to-do-before-uttering-i-want-a-divorce": {
         "title": "Five Things to Do Before You Say 'I Want a Divorce'",
         "desc":  "Before you say 'I want a divorce', these five steps protect your finances, your children and your future. A practical guide from an accredited mediator.",
