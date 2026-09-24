@@ -23,19 +23,13 @@ Redirect 301 /costs-of-mediation/ /how-much-does-mediation-cost/
 Redirect 301 /what-am-i-entitled-to-in-a-separation/ /what-am-i-entitled-to-in-a-separation-in-australia/
 Redirect 301 /what-am-i-entitled-to-in-a-divorce-or-separation-in-australia/ /what-am-i-entitled-to-in-a-separation-in-australia/
 Redirect 301 /how-to-get-ready-for-mediation/ /preparing-for-mediation/
-Redirect 301 /how-to-prepare-for-a-property-settlement-mediation/ /preparing-for-mediation/
-Redirect 301 /how-to-get-ready-for-property-settlement-mediation/ /preparing-for-mediation/
 Redirect 301 /shuttle-mediation/ /shuttle-mediation-guide/
-Redirect 301 /consent-order/ /consent-orders/
-Redirect 301 /spousal-maintenance/ /spousal-support-mediation/
-Redirect 301 /de-facto-relationships/ /de-facto-mediation/
 Redirect 301 /separated-under-one-roof/ /separation-under-one-roof/
 
 # Batch 2 consolidation redirects
 Redirect 301 /consent-order/ /consent-orders-explained/
 Redirect 301 /consent-orders-example/ /consent-orders-explained/
 Redirect 301 /divorce-property-settlement-your-best-options-in-2022/ /property-settlement-after-separation/
-Redirect 301 /consent-orders-2025-update/ /consent-orders-explained/
 Redirect 301 /how-do-i-change-a-consent-order/ /consent-orders-explained/
 Redirect 301 /how-long-do-consent-orders-take/ /consent-orders-explained/
 Redirect 301 /how-long-do-consent-orders-take-in-family-law-matters/ /consent-orders-explained/
@@ -166,7 +160,6 @@ Redirect 301 /when-is-mediation-not-a-good-idea/ /high-conflict-mediation/
 Redirect 301 /grandparents-rights-how-to-see-your-grandchildren-2022-update/ /grandparents-rights/
 Redirect 301 /grandparents-custody-in-australia/ /grandparents-rights/
 Redirect 301 /what-are-the-mothers-rights-in-family-law/ /mothers-rights/
-Redirect 301 /shuttle-mediation/ /shuttle-mediation-guide/
 Redirect 301 /the-pros-and-cons-of-shuttle-mediation/ /shuttle-mediation-guide/
 Redirect 301 /conciliation-in-family-law/ /conciliation-vs-mediation/
 Redirect 301 /difference-between-mediation-conciliation/ /conciliation-vs-mediation/
@@ -187,7 +180,6 @@ Redirect 301 /how-to-resolve-your-property-settlement-with-mediation-in-australi
 Redirect 301 /what-happens-to-business-in-divorce/ /business-in-divorce/
 Redirect 301 /can-you-sue-a-family-trust-in-australia/ /business-in-divorce/
 Redirect 301 /family-loan-agreement-matters/ /business-in-divorce/
-Redirect 301 /family-court-process-2024-update/ /family-court-process/
 Redirect 301 /what-are-procedural-orders-in-family-court/ /family-court-process/
 Redirect 301 /final-hearing-in-family-law-disputes/ /family-court-process/
 Redirect 301 /what-is-a-litigation-guardian-in-australia/ /family-court-process/
@@ -246,7 +238,6 @@ Redirect 301 /family-law-practitioners/ /our-mediators/
 # GSC Priority 1: recover equity from broken/misdirected URLs (Jul 2026 audit)
 # /our-fees/ had canonical pointing to /costs-of-mediation/ on live site (0 impressions)
 Redirect 301 /our-fees/ /our-fee-structure/
-Redirect 301 /costs-of-mediation/ /how-much-does-mediation-cost/
 # /2024-guide-for-preparing-for-mediation/ had bad canonical (0 impressions)
 Redirect 301 /2024-guide-for-preparing-for-mediation/ /preparing-for-mediation/
 # /grandparents-rights-how-to-see-your-grandchildren-2024-update/ was 404 with no redirect
@@ -310,3 +301,14 @@ Redirect 301 /mediation-resources/how-mediation-can-help-in-financial-agreements
 # Imported post rebuilds — slug date updates (2025/2024 → 2026)
 Redirect 301 /consent-orders-2025-update/ /consent-orders-2026-update/
 Redirect 301 /family-court-process-2024-update/ /family-court-process-2026/
+
+# Missing redirects added 2026-09-24
+Redirect 301 /co-parenting-mediation/ /child-custody-mediation/
+Redirect 301 /parenting-mediation/ /parenting-plan-mediation/
+Redirect 301 /separation-agreements/ /separation-guide/
+Redirect 301 /rules-of-separation-in-marriage/ /separation-guide/
+Redirect 301 /benefits-of-using-mediation-for-child-custody-disputes/ /child-custody-mediation/
+Redirect 301 /online-divorce-form/ /online-divorce/
+Redirect 301 /apply-divorce-online/ /divorce-mediation/
+Redirect 301 /how-to-resolve-family-law-disputes-online/ /online-divorce/
+Redirect 301 /what-is-common-questions-about-mediation/ /what-is-mediation/
