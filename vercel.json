@@ -39,7 +39,7 @@
     },
     {
       "source": "/accredited-family-law-mediators/",
-      "destination": "/our-mediators/",
+      "destination": "/our-team/",
       "permanent": true
     },
     {
@@ -269,7 +269,7 @@
     },
     {
       "source": "/family-law-practitioners/",
-      "destination": "/our-mediators/",
+      "destination": "/our-team/",
       "permanent": true
     },
     {
@@ -724,7 +724,7 @@
     },
     {
       "source": "/team-single/",
-      "destination": "/our-mediators/",
+      "destination": "/our-team/",
       "permanent": true
     },
     {
@@ -1000,6 +1000,8 @@
     { "source": "/perth-family-law-medition", "destination": "/perth-mediation/", "permanent": true },
     { "source": "/perth-family-lawyers-2/", "destination": "/perth-mediation/", "permanent": true },
     { "source": "/perth-family-lawyers-2", "destination": "/perth-mediation/", "permanent": true },
+    { "source": "/perth-family-law-mediation/", "destination": "/perth-mediation/", "permanent": true },
+    { "source": "/perth-family-law-mediation", "destination": "/perth-mediation/", "permanent": true },
     { "source": "/adelaide-family-mediation/", "destination": "/adelaide-mediation/", "permanent": true },
     { "source": "/adelaide-family-mediation", "destination": "/adelaide-mediation/", "permanent": true },
     { "source": "/canberra-mediation-services/", "destination": "/canberra-mediation/", "permanent": true },

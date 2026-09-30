@@ -632,6 +632,11 @@ FETCH_URL_OVERRIDES = {
 from expanded_bodies import EXPANDED as _EXPANDED  # batch-expanded body content
 
 META_OVERRIDES = {
+    # ── Title / desc overrides ────────────────────────────────────────────────
+    "conflict-resolution-in-the-workplace": {
+        "title": "Conflict Resolution in the Workplace | Strategy & Mediation",
+        "desc": "Workplace conflict can be costly. Learn practical resolution strategies, key considerations for Australian workplaces, and when mediation may help.",
+    },
     # ── Noindex off-topic imports ──────────────────────────────────────────────
     "parenting-payments-in-australia": {
         "noindex": True,

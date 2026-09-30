@@ -14,7 +14,7 @@ Redirect 301 /family-law-melbourne-mediation/ /melbourne-mediation/
 Redirect 301 /make-an-appointment/ /book-a-consultation/
 Redirect 301 /lawyer-booking/ /book-a-consultation/
 Redirect 301 /online-mediation-enquiry/ /book-a-consultation/
-Redirect 301 /team-single/ /our-mediators/
+Redirect 301 /team-single/ /our-team/
 Redirect 301 /qld/ /brisbane-mediation/
 Redirect 301 /mediation/ /how-mediation-works/
 Redirect 301 /resolve-your-property-settlement-with-mediation-in-australia/ /property-settlement-mediation/
@@ -232,8 +232,8 @@ Redirect 301 /mandurah-family-lawyers/ /perth-mediation/
 Redirect 301 /campbelltown-family-lawyers/ /sydney-mediation/
 
 # Newly built pages: lawyer/mediator URL variants -> our-mediators
-Redirect 301 /accredited-family-law-mediators/ /our-mediators/
-Redirect 301 /family-law-practitioners/ /our-mediators/
+Redirect 301 /accredited-family-law-mediators/ /our-team/
+Redirect 301 /family-law-practitioners/ /our-team/
 
 # GSC Priority 1: recover equity from broken/misdirected URLs (Jul 2026 audit)
 # /our-fees/ had canonical pointing to /costs-of-mediation/ on live site (0 impressions)
@@ -264,6 +264,7 @@ Redirect 301 /family-law-gold-coast-mediation/ /gold-coast-mediation/
 Redirect 301 /family-law-perth-mediation/ /perth-mediation/
 Redirect 301 /perth-family-law-medition/ /perth-mediation/
 Redirect 301 /perth-family-law-medition /perth-mediation/
+Redirect 301 /perth-family-law-mediation/ /perth-mediation/
 Redirect 301 /perth-family-lawyers-2/ /perth-mediation/
 Redirect 301 /adelaide-family-mediation/ /adelaide-mediation/
 Redirect 301 /canberra-mediation-services/ /canberra-mediation/
