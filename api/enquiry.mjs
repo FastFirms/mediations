@@ -69,7 +69,7 @@ const VALID_TIMING   = new Set(['urgent','within_2_weeks','within_month','flexib
 const VALID_FEE_PREF = new Set([
   'standard_private','want_fee_information','standard_fee_hardship','need_free_service','unsure',
 ]);
-const VALID_SAFETY   = new Set(['no','yes','prefer_not_to_say']);
+const VALID_SAFETY   = new Set(['no','yes']);
 const VALID_VARIANTS = new Set(['guided','quick']);
 const FAMILY_CATS    = new Set(['family_parenting','family_property','family_combined']);
 
@@ -104,7 +104,7 @@ function validateQuickPayload(b) {
 // ── Routing engine ─────────────────────────────────────────────────────────────
 
 function determineSafetyFlag(b) {
-  if (b.safety_flag === 'yes' || b.safety_flag === 'prefer_not_to_say') return true;
+  if (b.safety_flag === 'yes') return true;
   return false;
 }
 
@@ -228,7 +228,7 @@ async function findExisting(submissionId) {
 
 async function sendFormspreeNotification(submissionId, route, b) {
   const isHumanReview = route.operational_queue === 'HUMAN_REVIEW';
-  const isSafetyFlagged = b.safety_flag === 'yes' || b.safety_flag === 'prefer_not_to_say';
+  const isSafetyFlagged = b.safety_flag === 'yes';
 
   let payload;
   if (isHumanReview) {

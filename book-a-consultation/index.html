@@ -333,15 +333,14 @@ var STEPS = [
     id:'safety', label:'Step 6 — Safety and contact', prog:'84%',
     render: function() {
       var safetyOpts = [
-        {v:'no',             l:'No, nothing to flag'},
-        {v:'yes',            l:'Yes — I would like someone to review this'},
-        {v:'prefer_not_to_say', l:'Prefer not to say'},
+        {v:'no',  l:'No'},
+        {v:'yes', l:'Yes'},
       ];
       var html = '<div style="margin-bottom:14px;padding:10px 12px;background:#f0f8f0;border-left:3px solid var(--sage);border-radius:0 6px 6px 0;font-size:.85rem">'
                + 'Is there anything about safety, pressure, how we contact you, or an urgent legal deadline that you want a mediator to know before we get in touch?'
                + '</div>'
                + _radioStep('safety_flag', safetyOpts, _state.answers.safety_flag);
-      if (_state.answers.safety_flag === 'yes' || _state.answers.safety_flag === 'prefer_not_to_say') {
+      if (_state.answers.safety_flag === 'yes') {
         document.getElementById('enq-safety-notice').style.display = 'block';
         html += '<p style="font-size:.85rem;color:var(--ink-soft);margin-top:12px">You do not need to provide further details. Our team will contact you carefully and in confidence.</p>';
       } else {
