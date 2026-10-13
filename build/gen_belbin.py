@@ -201,9 +201,16 @@ document.getElementById('belbin-form').addEventListener('submit',async function(
   e.preventDefault();
   var btn=document.getElementById('belbin-submit');
   btn.disabled=true;btn.textContent='Sending…';
-  var data=new FormData(this);
+  var org=this.querySelector('[name=organisation]').value.trim();
+  var ctx=this.querySelector('[name=context]').value.trim();
+  var msg=[org?'Organisation: '+org:'',ctx?'Context: '+ctx:''].filter(Boolean).join('\\n')||undefined;
+  var payload={form_variant:'quick',privacy_consent:true,
+    name:this.querySelector('[name=name]').value.trim(),
+    email:this.querySelector('[name=email]').value.trim()||undefined,
+    phone:this.querySelector('[name=phone]').value.trim()||undefined,
+    matter_category:'other_unsure',message:msg};
   try{
-    var r=await fetch('https://formspree.io/f/xwvgjnve',{method:'POST',body:data,headers:{Accept:'application/json'}});
+    var r=await fetch('/api/enquiry',{method:'POST',body:JSON.stringify(payload),headers:{'Content-Type':'application/json','Accept':'application/json'}});
     if(r.ok){window.location.href='/thank-you/';}
     else{btn.disabled=false;btn.innerHTML='Send Enquiry <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
   }catch(err){btn.disabled=false;btn.innerHTML='Send Enquiry <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}

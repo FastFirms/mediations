@@ -296,7 +296,6 @@ table.lp-vs tr:last-child td{border-bottom:none}
           <label for="lp-message">Brief description of the dispute</label>
           <textarea id="lp-message" name="message" placeholder="Number of people involved, how long it has been going on, and what outcome you're hoping for. All information is strictly confidential."></textarea>
         </div>
-        <input type="hidden" name="_subject" value="Workplace mediation enquiry — Google Ads LP">
         <button class="lp-submit" type="submit">Send — we'll call you back today &#8594;</button>
         <p class="lp-privacy">Your information is confidential and will only be used to respond to your enquiry.</p>
       </form>
@@ -315,37 +314,50 @@ table.lp-vs tr:last-child td{border-bottom:none}
 
 <script>
 (function(){
-  var f = document.getElementById('lp-form');
+  var f = document.getElementById(‘lp-form’);
   if (!f) return;
-  f.addEventListener('submit', async function(e) {
+  f.addEventListener(‘submit’, async function(e) {
     e.preventDefault();
-    var name = document.getElementById('lp-name').value.trim();
-    var email = document.getElementById('lp-email').value.trim();
-    var phone = document.getElementById('lp-phone').value.trim();
-    if (!name || !email || !phone) {
-      alert('Please fill in your name, phone, and email.');
+    var name = document.getElementById(‘lp-name’).value.trim();
+    var email = document.getElementById(‘lp-email’).value.trim();
+    var phone = document.getElementById(‘lp-phone’).value.trim();
+    if (!name || (!email && !phone)) {
+      alert(‘Please fill in your name and email or phone.’);
       return;
     }
-    var btn = f.querySelector('button[type=submit]');
+    var btn = f.querySelector(‘button[type=submit]’);
     btn.disabled = true;
-    btn.textContent = 'Sending…';
+    btn.textContent = ‘Sending…’;
+    var role = document.getElementById(‘lp-role’).value.trim();
+    var msg = document.getElementById(‘lp-message’).value.trim();
+    var combined = [role ? ‘Role: ‘ + role : ‘’, msg].filter(Boolean).join(‘\n’) || undefined;
+    var payload = {
+      form_variant: ‘quick’,
+      privacy_consent: true,
+      name: name,
+      email: email || undefined,
+      phone: phone || undefined,
+      matter_category: ‘workplace_employment’,
+      city: document.getElementById(‘lp-location’).value.trim() || undefined,
+      message: combined
+    };
     try {
-      var r = await fetch('https://formspree.io/f/xwvgjnve', {
-        method: 'POST',
-        body: new FormData(f),
-        headers: { Accept: 'application/json' }
+      var r = await fetch(‘/api/enquiry’, {
+        method: ‘POST’,
+        body: JSON.stringify(payload),
+        headers: { ‘Content-Type’: ‘application/json’, Accept: ‘application/json’ }
       });
       if (r.ok) {
-        window.location.href = '/thank-you/';
+        window.location.href = ‘/thank-you/’;
       } else {
         btn.disabled = false;
-        btn.textContent = 'Send — we’ll call you back within one business day →';
-        alert('Something went wrong. Please call us on (02) 7227 7373.');
+        btn.textContent = ‘Send — we’ll call you back within one business day →’;
+        alert(‘Something went wrong. Please call us on (02) 7227 7373.’);
       }
     } catch(err) {
       btn.disabled = false;
-      btn.textContent = 'Send — we’ll call you back within one business day →';
-      alert('Something went wrong. Please call us on (02) 7227 7373.');
+      btn.textContent = ‘Send — we’ll call you back within one business day →’;
+      alert(‘Something went wrong. Please call us on (02) 7227 7373.’);
     }
   });
 })();

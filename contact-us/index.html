@@ -171,8 +171,6 @@
 
       <form id="contact-form" novalidate style="display:flex;flex-direction:column;gap:16px">
         
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
-        <input type="hidden" name="_subject" value="New contact — Mediations Australia">
         <div class="form-row">
           <label for="c-name">Name</label>
           <input id="c-name" name="name" type="text" required autocomplete="name" placeholder="Your full name">
@@ -360,9 +358,16 @@ document.getElementById('contact-form').addEventListener('submit',async function
   e.preventDefault();
   var btn=this.querySelector('button[type=submit]');
   btn.disabled=true;btn.textContent='Sending…';
-  var data=new FormData(this);
+  var MATTER={'Property Settlement':'family_property','Parenting':'family_parenting','Property & Parenting':'family_combined','Other Family Law':'other_unsure','Workplace':'workplace_employment','Estate':'estate_inheritance','Something else':'other_unsure'};
+  var payload={form_variant:'quick',privacy_consent:true,
+    name:this.querySelector('[name=name]').value.trim(),
+    email:this.querySelector('[name=email]').value.trim()||undefined,
+    phone:this.querySelector('[name=phone]').value.trim()||undefined,
+    matter_category:MATTER[this.querySelector('[name=matter]').value]||'other_unsure',
+    city:this.querySelector('[name=location]').value.trim()||undefined,
+    message:this.querySelector('[name=message]').value.trim()||undefined};
   try{
-    var r=await fetch('https://formspree.io/f/xwvgjnve',{method:'POST',body:data,headers:{Accept:'application/json'}});
+    var r=await fetch('/api/enquiry',{method:'POST',body:JSON.stringify(payload),headers:{'Content-Type':'application/json','Accept':'application/json'}});
     if(r.ok){window.location.href='/thank-you/';}
     else{btn.disabled=false;btn.innerHTML='Book a Free Consultation <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
   }catch(err){btn.disabled=false;btn.innerHTML='Book a Free Consultation <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}

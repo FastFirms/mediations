@@ -198,7 +198,7 @@ doc += """<script>
     var btn=f.querySelector('button[type=submit]');
     btn.disabled=true;btn.textContent='Sending…';
     try{
-      var r=await fetch('https://formspree.io/f/xwvgjnve',{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});
+      var r=await fetch('/api/enquiry',{method:'POST',body:JSON.stringify({form_variant:'quick',privacy_consent:true,name:f.querySelector('[name=name]')?.value?.trim(),email:f.querySelector('[name=email]')?.value?.trim()||undefined,phone:f.querySelector('[name=phone]')?.value?.trim()||undefined}),headers:{'Content-Type':'application/json','Accept':'application/json'}});
       if(r.ok){window.location.href='/thank-you/';}
       else{btn.disabled=false;btn.innerHTML='Send request <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
     }catch(err){btn.disabled=false;btn.innerHTML='Send request <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
