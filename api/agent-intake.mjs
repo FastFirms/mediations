@@ -28,9 +28,9 @@
  *   restricted: true, submitted_at
  *   — no contact detail, no category, no timing
  *
- * Cursor format: base64-encoded JSON { t: <ISO timestamp>, id: <UUID> }
- * Stable composite (submitted_at, submission_id) comparison prevents skipping
- * enquiries when multiple records share the same timestamp.
+ * Cursor format: opaque base64-encoded JSON { seq: <bigint as string> }
+ * Uses the BIGSERIAL `id` column — monotonically increasing, no timestamp
+ * precision issues, guaranteed stable pagination across timestamp ties.
  *
  * NEVER returns: name, email, phone, message, safety_flag detail, free text,
  *                contact details, branch answers, or IP addresses.
@@ -41,8 +41,6 @@ import { sql } from '@vercel/postgres';
 const RATE_LIMIT_WINDOW = 60 * 60 * 1000; // 1 hour
 const RATE_LIMIT_MAX    = 60;
 const _rateMap          = new Map();
-
-const NIL_UUID = '00000000-0000-0000-0000-000000000000';
 
 function isRateLimited(label) {
   const now  = Date.now();
@@ -60,25 +58,22 @@ function authenticateAgent(req) {
   return 'agent';
 }
 
-// Decode an opaque base64 cursor into { t: ISO, id: UUID }.
-// Returns null if the cursor is absent or malformed.
+// Decode an opaque base64 cursor into { seq: BigInt }.
+// Returns null if absent or malformed.
 function decodeCursor(raw) {
   if (!raw) return null;
   try {
-    const json = Buffer.from(raw, 'base64').toString('utf8');
-    const parsed = JSON.parse(json);
-    if (typeof parsed.t !== 'string' || typeof parsed.id !== 'string') return null;
-    const ts = new Date(parsed.t);
-    if (isNaN(ts.getTime())) return null;
-    return { t: ts.toISOString(), id: parsed.id };
+    const parsed = JSON.parse(Buffer.from(raw, 'base64').toString('utf8'));
+    if (typeof parsed.seq !== 'string' || !/^\d+$/.test(parsed.seq)) return null;
+    return { seq: BigInt(parsed.seq) };
   } catch {
     return null;
   }
 }
 
-// Encode { t: ISO, id: UUID } into an opaque base64 cursor string.
-function encodeCursor(t, id) {
-  return Buffer.from(JSON.stringify({ t, id })).toString('base64');
+// Encode the BIGSERIAL id as an opaque base64 cursor string.
+function encodeCursor(seq) {
+  return Buffer.from(JSON.stringify({ seq: seq.toString() })).toString('base64');
 }
 
 export default async function handler(req, res) {
@@ -100,16 +95,18 @@ export default async function handler(req, res) {
     return res.status(429).json({ error: 'Rate limit exceeded — 60 requests per hour.' });
   }
 
-  const limit = Math.min(Math.max(parseInt(req.query?.limit ?? '20', 10), 1), 50);
+  const limit  = Math.min(Math.max(parseInt(req.query?.limit ?? '20', 10), 1), 50);
   const cursor = decodeCursor(req.query?.cursor ?? null);
 
   let rows;
   try {
     if (cursor) {
-      // Stable composite cursor: (submitted_at, submission_id) > (cursor.t, cursor.id)
-      // Postgres tuple comparison is equivalent to: submitted_at > t OR (submitted_at = t AND submission_id::text > id)
+      // Stable cursor: WHERE id > cursor.seq ORDER BY id ASC
+      // BIGSERIAL is monotonically increasing — no timestamp precision issues.
+      const afterSeq = cursor.seq.toString();
       rows = await sql`
         SELECT
+          id,
           submission_id,
           operational_queue,
           safety_flag,
@@ -128,15 +125,16 @@ export default async function handler(req, res) {
           review_reasons,
           tags
         FROM enquiries
-        WHERE (submitted_at, submission_id::text) > (${cursor.t}::timestamptz, ${cursor.id})
-        ORDER BY submitted_at ASC, submission_id ASC
+        WHERE id > ${afterSeq}::bigint
+        ORDER BY id ASC
         LIMIT ${limit}
       `;
     } else {
-      // No cursor: return last 24 hours, anchored at the nil UUID sentinel
+      // No cursor: return records from the last 24 hours.
       const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
       rows = await sql`
         SELECT
+          id,
           submission_id,
           operational_queue,
           safety_flag,
@@ -156,7 +154,7 @@ export default async function handler(req, res) {
           tags
         FROM enquiries
         WHERE submitted_at >= ${since}::timestamptz
-        ORDER BY submitted_at ASC, submission_id ASC
+        ORDER BY id ASC
         LIMIT ${limit}
       `;
     }
@@ -164,13 +162,13 @@ export default async function handler(req, res) {
     return res.status(503).json({ error: 'Database temporarily unavailable. Retry shortly.' });
   }
 
-  const cursorLabel = cursor ? `t=${cursor.t},id=${cursor.id}` : 'last24h';
+  const cursorLabel = cursor ? `seq=${cursor.seq}` : 'last24h';
   sql`
     INSERT INTO enquiry_audit_log (enquiry_submission_id, event_type, actor, reason)
     VALUES (NULL, 'AGENT_INTAKE_ACCESS', 'grokbot', ${`cursor=${cursorLabel} rows=${rows.rows.length}`})
   `.catch(() => {});
 
-  const items       = [];
+  const items         = [];
   let restrictedCount = 0;
 
   for (const row of rows.rows) {
@@ -210,10 +208,8 @@ export default async function handler(req, res) {
     }
   }
 
-  const lastItem = rows.rows[rows.rows.length - 1];
-  const nextCursor = lastItem
-    ? encodeCursor(new Date(lastItem.submitted_at).toISOString(), lastItem.submission_id)
-    : null;
+  const lastItem   = rows.rows[rows.rows.length - 1];
+  const nextCursor = lastItem ? encodeCursor(BigInt(lastItem.id)) : null;
 
   return res.status(200).json({
     items,
