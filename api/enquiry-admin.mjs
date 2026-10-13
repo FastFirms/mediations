@@ -19,6 +19,18 @@
 
 import { sql } from '@vercel/postgres';
 
+// Simple in-memory rate limiter for admin endpoint.
+// 30 requests per 60 seconds per authenticated user name.
+const _adminRateMap = new Map();
+function adminRateLimited(userName) {
+  const now = Date.now();
+  const window = 60_000;
+  const max = 30;
+  const hits = (_adminRateMap.get(userName) ?? []).filter(t => t > now - window);
+  _adminRateMap.set(userName, [...hits, now]);
+  return hits.length >= max;
+}
+
 const ALLOWED_QUEUES = [
   'HUMAN_REVIEW','ACCESS_REVIEW','PUBLIC_SERVICE_INFORMATION',
   'PREPARATION_NURTURE','PRIORITY_INTAKE','ENGAGE_OTHER_PARTY','GENERAL_INTAKE',
@@ -58,6 +70,10 @@ export default async function handler(req, res) {
   const user = authenticateAdmin(req);
   if (!user) {
     return res.status(401).json({ error: 'Unauthorised' });
+  }
+
+  if (adminRateLimited(user.name)) {
+    return res.status(429).json({ error: 'Too many requests — slow down.' });
   }
 
   // ── LIST ──────────────────────────────────────────────────────────────────
@@ -111,6 +127,12 @@ export default async function handler(req, res) {
 
       if (!eRes.rows.length) return res.status(404).json({ error: 'Not found' });
 
+      // Audit who accessed restricted detail view
+      await sql`
+        INSERT INTO enquiry_audit_log (enquiry_submission_id, event_type, actor, reason)
+        VALUES (${id}, 'ADMIN_ACCESS', ${user.name}, ${'GET detail'})
+      `.catch(() => {});
+
       return res.status(200).json({
         enquiry:        eRes.rows[0],
         contact:        cRes.rows[0] ?? null,
@@ -127,7 +149,8 @@ export default async function handler(req, res) {
     if (user.role !== 'admin') {
       return res.status(403).json({ error: 'Forbidden — admin role required for queue overrides' });
     }
-    const { submission_id, queue, notes } = req.body ?? {};
+    const { submission_id, queue, notes: rawNotes } = req.body ?? {};
+    const notes = typeof rawNotes === 'string' ? rawNotes.slice(0, 500) : null;
     if (!submission_id) return res.status(400).json({ error: 'submission_id required' });
     if (!ALLOWED_QUEUES.includes(queue)) {
       return res.status(400).json({ error: `queue must be one of: ${ALLOWED_QUEUES.join(', ')}` });
