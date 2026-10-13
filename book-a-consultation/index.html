@@ -470,6 +470,7 @@ function _renderStep(idx) {
 
   _clearError();
   _state.step = idx;
+  try { if(typeof gtag!=='undefined') gtag('event','step_completed',{step_index:idx}); } catch(e){}
 }
 
 function _onRadioChange(r) {

@@ -204,21 +204,6 @@ async function checkRateLimit(ip) {
   }
 }
 
-// ── Idempotency check ─────────────────────────────────────────────────────────
-
-async function findExisting(submissionId) {
-  try {
-    const result = await sql`
-      SELECT submission_id, operational_queue FROM enquiries
-      WHERE submission_id = ${submissionId}
-      LIMIT 1
-    `;
-    return result.rows[0] ?? null;
-  } catch {
-    return null;
-  }
-}
-
 // ── Formspree notification (minimal — no sensitive data) ──────────────────────
 //
 // HUMAN_REVIEW: ultra-minimal payload — no name, no _replyto, no category.
@@ -259,26 +244,30 @@ async function sendFormspreeNotification(submissionId, route, b) {
     };
   }
 
-  // Attempt with one retry on failure
+  let attempts = 0;
+  let lastError = null;
   for (let attempt = 0; attempt < 2; attempt++) {
+    attempts++;
     try {
       const r = await fetch(FORMSPREE_ENDPOINT, {
         method:  'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body:    JSON.stringify(payload),
       });
-      if (r.ok) return true;
+      if (r.ok) return { ok: true, attempts, lastError: null };
+      lastError = `http_${r.status}`;
     } catch {
-      // network error — retry once
+      lastError = 'network_error';
+      if (attempt < 1) await new Promise(res => setTimeout(res, 1000));
     }
   }
-  return false; // notification failed; submission still persisted in Neon
+  return { ok: false, attempts, lastError };
 }
 
 // ── Neon writes ───────────────────────────────────────────────────────────────
 
 async function writeEnquiry({ submissionId, formVariant, b, route, ip, attribution }) {
-  await sql`
+  const result = await sql`
     INSERT INTO enquiries (
       submission_id, form_variant, schema_version, routing_rules_version,
       submitted_at, matter_category, stage, desired_outcome, party_b_status,
@@ -305,7 +294,16 @@ async function writeEnquiry({ submissionId, formVariant, b, route, ip, attributi
       ${attribution.utm_campaign ?? null},
       ${CONSENT_VER}, ${b.privacy_consent}, ${b.accuracy_declaration ?? false}
     )
+    ON CONFLICT (submission_id) DO NOTHING
   `;
+
+  // Duplicate: ON CONFLICT fired — return existing record data
+  if (result.rowCount === 0) {
+    const existing = await sql`
+      SELECT submission_id, operational_queue FROM enquiries WHERE submission_id = ${submissionId} LIMIT 1
+    `;
+    return { inserted: false, existing: existing.rows[0] ?? null };
+  }
 
   // Contact details in separate restricted table
   await sql`
@@ -345,6 +343,8 @@ async function writeEnquiry({ submissionId, formVariant, b, route, ip, attributi
     INSERT INTO enquiry_audit_log (enquiry_submission_id, event_type, actor)
     VALUES (${submissionId}, 'SUBMITTED', ${ip})
   `;
+
+  return { inserted: true };
 }
 
 // ── Main handler ──────────────────────────────────────────────────────────────
@@ -395,17 +395,6 @@ export default async function handler(req, res) {
     ? b.submission_id
     : crypto.randomUUID();
 
-  const existing = await findExisting(submissionId);
-  if (existing) {
-    return res.status(200).json({
-      ok: true,
-      submission_id: existing.submission_id,
-      reference: `MA-ENQ-${existing.submission_id.split('-')[0].toUpperCase()}`,
-      operational_queue: existing.operational_queue,
-      duplicate: true,
-    });
-  }
-
   // ── Routing ─────────────────────────────────────────────────────────────────
   const route = formVariant === 'guided'
     ? determineRoute(b)
@@ -420,16 +409,43 @@ export default async function handler(req, res) {
     utm_campaign:  (typeof b.attribution_utm_campaign === 'string') ? b.attribution_utm_campaign.slice(0, 100) : null,
   };
 
-  // ── Write to Neon ───────────────────────────────────────────────────────────
-  await writeEnquiry({ submissionId, formVariant, b, route, ip, attribution });
-
-  // ── Formspree notification (non-blocking — staff backup) ───────────────────
-  const notified = await sendFormspreeNotification(submissionId, route, b);
-  if (notified) {
-    try {
-      await sql`UPDATE enquiries SET formspree_notified = TRUE WHERE submission_id = ${submissionId}`;
-    } catch { /* non-fatal */ }
+  // ── Write to Neon (atomic ON CONFLICT idempotency) ──────────────────────────
+  let writeResult;
+  try {
+    writeResult = await writeEnquiry({ submissionId, formVariant, b, route, ip, attribution });
+  } catch {
+    // Neon unavailable — return truthful error with alternative contact route.
+    // Do NOT tell the visitor their enquiry was received.
+    return res.status(503).json({
+      error: 'We could not save your enquiry right now. Please call us on (02) 7227 7373 or email hello@mediationsaustralia.com.au and we will help you directly.',
+      fallback: true,
+    });
   }
+
+  // Duplicate submission_id — idempotent 200
+  if (!writeResult.inserted) {
+    const ex = writeResult.existing;
+    const sid = ex?.submission_id ?? submissionId;
+    return res.status(200).json({
+      ok: true,
+      submission_id: sid,
+      reference: `MA-ENQ-${sid.replace(/-/g,'').slice(0,8).toUpperCase()}`,
+      operational_queue: ex?.operational_queue ?? route.operational_queue,
+      duplicate: true,
+    });
+  }
+
+  // ── Formspree notification + attempt tracking ───────────────────────────────
+  const notifResult = await sendFormspreeNotification(submissionId, route, b);
+  try {
+    await sql`
+      UPDATE enquiries
+      SET formspree_notified      = ${notifResult.ok},
+          notification_attempts   = ${notifResult.attempts},
+          notification_last_error = ${notifResult.lastError}
+      WHERE submission_id = ${submissionId}
+    `;
+  } catch { /* non-fatal — submission is safe in Neon */ }
 
   // ── Response ────────────────────────────────────────────────────────────────
   const refShort = submissionId.replace(/-/g, '').slice(0, 8).toUpperCase();

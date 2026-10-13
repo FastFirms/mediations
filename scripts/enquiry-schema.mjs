@@ -54,6 +54,9 @@ async function run() {
       consent_version               TEXT,
       privacy_consent               BOOLEAN NOT NULL DEFAULT FALSE,
       accuracy_declaration          BOOLEAN NOT NULL DEFAULT FALSE,
+      formspree_notified            BOOLEAN NOT NULL DEFAULT FALSE,
+      notification_attempts         INTEGER NOT NULL DEFAULT 0,
+      notification_last_error       TEXT,
       created_at                    TIMESTAMPTZ NOT NULL DEFAULT NOW()
     )
   `;
@@ -95,9 +98,11 @@ async function run() {
   `;
   console.log('  ✓ enquiry_audit_log');
 
-  // Stage C column additions (ADD COLUMN IF NOT EXISTS is idempotent)
+  // Stage C/D column additions (ADD COLUMN IF NOT EXISTS is idempotent)
   await sql`ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS formspree_notified BOOLEAN NOT NULL DEFAULT FALSE`;
-  console.log('  ✓ stage-c columns');
+  await sql`ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS notification_attempts INTEGER NOT NULL DEFAULT 0`;
+  await sql`ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS notification_last_error TEXT`;
+  console.log('  ✓ stage-c/d columns');
 
   // Indexes for common queries
   await sql`CREATE INDEX IF NOT EXISTS idx_enquiries_queue ON enquiries(operational_queue)`;
