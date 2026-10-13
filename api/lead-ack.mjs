@@ -81,9 +81,9 @@ function formatAEDT(date) {
 const CSS = `
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;background:#f5f4f1;color:#1a1a1a;min-height:100vh}
-.hdr{background:#175233;padding:20px 24px}
-.hdr h1{font-family:'PT Serif',serif;color:#fff;font-size:1.2rem;font-weight:700}
-.hdr p{color:#a8c4b5;font-size:.78rem;margin-top:2px}
+.hdr{background:#175233;padding:16px 24px}
+.hdr-logo{height:28px;display:block;filter:brightness(0) invert(1)}
+.hdr p{color:#a8c4b5;font-size:.78rem;margin-top:4px}
 .main{max-width:480px;margin:48px auto;padding:0 16px}
 .card{background:#fff;border-radius:8px;padding:32px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
 h2{font-family:'PT Serif',serif;font-size:1.3rem;font-weight:700;color:#175233;margin-bottom:12px}
@@ -97,7 +97,7 @@ p{color:#444;margin-bottom:14px}
 const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=DM+Sans:wght@400;500&display=swap">`;
 
 function shell(body) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mediations Australia</title>${FONTS}<style>${CSS}</style></head><body><header class="hdr"><h1>Mediations Australia</h1><p>Intake management</p></header><main class="main">${body}</main></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mediations Australia</title>${FONTS}<style>${CSS}</style></head><body><header class="hdr"><img src="/assets/images/MA.svg" alt="Mediations Australia" class="hdr-logo"><p>Intake management</p></header><main class="main">${body}</main></body></html>`;
 }
 
 function pageConfirm(ref, id, token) {
