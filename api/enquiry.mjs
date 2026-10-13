@@ -33,7 +33,7 @@
 
 import { sql } from '@vercel/postgres';
 
-const FORMSPREE_ENDPOINT  = 'https://formspree.io/f/xwvgjnve';
+const FORMSPREE_ENDPOINT  = 'https://formspree.io/f/mnpjbroe';
 const ROUTING_RULES_VER   = '2026-10-v1';
 const CONSENT_VER         = '2026-10-v1';
 const RATE_LIMIT_WINDOW   = 15 * 60 * 1000;  // 15 minutes in ms
