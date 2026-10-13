@@ -26,6 +26,11 @@ TITLE = "Book a Mediation Consultation | Mediations Australia"
 DESC  = "Tell us about your dispute and we'll give you an honest view of whether mediation can help. No obligation. In person or online across Australia."
 CANON = f"https://{DOMAIN}/book-a-consultation/"
 
+CONTACT_SLUG  = "contact-us"
+CONTACT_TITLE = "Contact Mediations Australia | (02) 7227 7373"
+CONTACT_DESC  = "Book a free initial consultation with Mediations Australia. Offices in Sydney, Melbourne, Brisbane and Perth, plus online mediation nationwide."
+CONTACT_CANON = f"https://{DOMAIN}/contact-us/"
+
 SCHEMA = """{
   "@context": "https://schema.org",
   "@graph": [
@@ -50,6 +55,35 @@ SCHEMA = """{
       "itemListElement": [
         {"@type":"ListItem","position":1,"name":"Home","item":"https://mediationsaustralia.com.au/"},
         {"@type":"ListItem","position":2,"name":"Book a Consultation","item":"https://mediationsaustralia.com.au/book-a-consultation/"}
+      ]
+    }
+  ]
+}"""
+
+CONTACT_SCHEMA = """{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LegalService",
+      "@id": "https://mediationsaustralia.com.au/#organization",
+      "name": "Mediations Australia",
+      "description": "Nationally accredited mediators resolving family, business, workplace, property and estate disputes across Australia without court.",
+      "url": "https://mediationsaustralia.com.au/",
+      "telephone": "(02) 7227 7373",
+      "areaServed": "AU",
+      "priceRange": "Fixed-fee consultations",
+      "address": [
+        {"@type":"PostalAddress","addressLocality":"Sydney","streetAddress":"Suite 508, 41/464\\u2013480 Kent St, NSW 2000","addressCountry":"AU"},
+        {"@type":"PostalAddress","addressLocality":"Melbourne","streetAddress":"Level 23, 727 Collins St, VIC 3008","addressCountry":"AU"},
+        {"@type":"PostalAddress","addressLocality":"Brisbane","streetAddress":"Suite 507, 198 Adelaide St, QLD 4000","addressCountry":"AU"},
+        {"@type":"PostalAddress","addressLocality":"Perth","streetAddress":"Level 25, 108 St Georges Tce, WA 6000","addressCountry":"AU"}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://mediationsaustralia.com.au/"},
+        {"@type":"ListItem","position":2,"name":"Contact Us","item":"https://mediationsaustralia.com.au/contact-us/"}
       ]
     }
   ]
@@ -716,5 +750,34 @@ def build():
     print(f"Built: {path}  [{'V2 guided' if V2 else 'V1 fallback'}]")
 
 
+def build_contact():
+    """Generates /contact-us/index.html with the guided V2 form."""
+    doc = f"""{head(CONTACT_TITLE, CONTACT_DESC, CONTACT_SLUG, extra_schema=[CONTACT_SCHEMA])}
+{nav()}
+<main id="main">
+<div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>&rsaquo;</span>Contact Us</nav></div>
+<section class="phero"><div class="phero-blob"></div><div class="wrap">
+<span class="eyebrow"><span class="pulse"></span>Fixed-fee &middot; No obligation &middot; In person or online</span>
+<h1>Contact us &mdash; <em>we&rsquo;ll be in touch.</em></h1>
+<p class="lede">Tell us a little about your situation and we&rsquo;ll respond as soon as we can. There&rsquo;s no obligation &mdash; just an honest conversation about whether mediation can help.</p>
+</div></section>
+<section class="sec" style="padding-top:20px"><div class="wrap" style="max-width:920px">
+<!-- ENQUIRY_FORM_V2=1 -->
+<div class="booking-grid" style="display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:start">
+{guided_form_html()}
+{ASIDE_HTML}
+</div>
+</div></section>
+</main>{page_end()}"""
+
+    path = os.path.join(OUT, CONTACT_SLUG, "index.html")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(doc)
+    print(f"Built: {path}  [V2 guided — contact-us]")
+
+
 if __name__ == "__main__":
     build()
+    if V2:
+        build_contact()
