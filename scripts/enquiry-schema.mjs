@@ -104,6 +104,13 @@ async function run() {
   await sql`ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS notification_last_error TEXT`;
   console.log('  ✓ stage-c/d columns');
 
+  // MA-OPS-003: Farley receipt acknowledgement
+  await sql`ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS acknowledged_at TIMESTAMPTZ`;
+  await sql`ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS acknowledged_via VARCHAR(32)`;
+  await sql`ALTER TABLE enquiries ADD COLUMN IF NOT EXISTS ack_user_agent TEXT`;
+  await sql`CREATE INDEX IF NOT EXISTS idx_enquiries_unacked ON enquiries(submitted_at) WHERE acknowledged_at IS NULL`;
+  console.log('  ✓ ma-ops-003 columns');
+
   // Indexes for common queries
   await sql`CREATE INDEX IF NOT EXISTS idx_enquiries_queue ON enquiries(operational_queue)`;
   await sql`CREATE INDEX IF NOT EXISTS idx_enquiries_submitted ON enquiries(submitted_at DESC)`;

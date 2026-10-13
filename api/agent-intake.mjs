@@ -136,6 +136,7 @@ const SELECT_COLS = [
   'notification_attempts', 'notification_last_error',
   'attribution_landing', 'attribution_utm_source', 'attribution_utm_medium',
   'attribution_utm_campaign',
+  'acknowledged_at',
 ].join(', ');
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -239,6 +240,7 @@ function buildFullItem(row, contact, branchMap) {
         : 'quick',
     },
     formspree_notified: row.formspree_notified ?? false,
+    acknowledged_at:    row.acknowledged_at ?? null,
   };
 }
 
@@ -269,6 +271,7 @@ function buildDefaultItem(row) {
     notification_last_error: row.notification_last_error,
     tags:                    row.tags,
     submitted_at:            row.submitted_at,
+    acknowledged_at:         row.acknowledged_at ?? null,
   };
 }
 
