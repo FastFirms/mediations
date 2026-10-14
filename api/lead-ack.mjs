@@ -80,40 +80,60 @@ function formatAEDT(date) {
 
 const CSS = `
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;background:#f5f4f1;color:#1a1a1a;min-height:100vh}
-.hdr{background:#175233;padding:16px 24px}
-.hdr-logo{height:28px;display:block;filter:brightness(0) invert(1)}
-.hdr p{color:#a8c4b5;font-size:.78rem;margin-top:4px}
-.main{max-width:480px;margin:48px auto;padding:0 16px}
-.card{background:#fff;border-radius:8px;padding:32px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-h2{font-family:'PT Serif',serif;font-size:1.3rem;font-weight:700;color:#175233;margin-bottom:12px}
-p{color:#444;margin-bottom:14px}
-.ref{font-family:monospace;font-size:.88rem;background:#f0ede8;padding:2px 8px;border-radius:4px;color:#175233}
-.btn{display:inline-block;background:#175233;color:#fff;border:none;padding:12px 28px;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;cursor:pointer;margin-top:8px}
-.btn:hover{background:#1f6b42}
-.tstamp{font-size:.95rem;color:#175233;font-weight:500}
+body{margin:0;background:#f5f4f1;font:16px/1.55 "DM Sans",Helvetica,Arial,sans-serif;color:#333}
+.card{max-width:480px;margin:32px auto;background:#fff;border:1px solid #e6e3dd;border-top:8px solid #175233;border-radius:16px;padding:28px}
+@media(max-width:520px){.card{margin:0;border-radius:0;min-height:100vh}}
+.logo{display:block;width:180px;height:auto;margin-bottom:28px}
+.label{font:700 12px/1 "DM Sans",sans-serif;letter-spacing:1.4px;text-transform:uppercase;color:#175233;margin:0 0 10px}
+h1{font:700 26px/1.25 "PT Serif",Georgia,serif;color:#111;margin:0 0 12px}
+.time{font:700 22px/1.3 "DM Sans",sans-serif;color:#111;margin:8px 0 0}
+.muted{color:#5c5c5c;font-size:14px;margin-top:8px}
+.btn{display:block;width:100%;height:56px;margin:20px 0 10px;background:#f5c347;border:2px solid #f5c347;border-radius:10px;color:#1a1a1a;font:700 18px "DM Sans",sans-serif;cursor:pointer;text-align:center;line-height:52px}
+.btn:focus-visible{outline:3px solid #175233;outline-offset:2px}
+.icon{width:48px;height:48px;border:2px solid #175233;border-radius:50%;color:#175233;font:700 24px/44px sans-serif;text-align:center;margin-bottom:16px}
+.icon.neutral{border-color:#5c5c5c;color:#5c5c5c}
 `.trim();
 
-const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=DM+Sans:wght@400;500&display=swap">`;
+const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=DM+Sans:wght@400;700&display=swap">`;
 
-function shell(body) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mediations Australia</title>${FONTS}<style>${CSS}</style></head><body><header class="hdr"><img src="/assets/images/MA.svg" alt="Mediations Australia" class="hdr-logo"><p>Intake management</p></header><main class="main">${body}</main></body></html>`;
+function shell(title, body) {
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${title} · Mediations Australia</title>${FONTS}<style>${CSS}</style></head><body><main class="card"><img class="logo" src="/assets/images/email/ma-logo-black.png" alt="Mediations Australia">${body}</main></body></html>`;
 }
 
 function pageConfirm(ref, id, token) {
-  return shell(`<div class="card"><h2>Confirm receipt</h2><p>Enquiry <span class="ref">${ref}</span> has been assigned to you.</p><p>Click below to confirm you have received and reviewed this lead.</p><form method="POST" action="/api/lead-ack"><input type="hidden" name="id" value="${id}"><input type="hidden" name="t" value="${token}"><button class="btn" type="submit">Confirm receipt</button></form></div>`);
+  return shell('Confirm receipt',
+    `<p class="label">Lead receipt</p>
+<h1>Confirm you&rsquo;ve received ${ref}</h1>
+<form method="POST" action="/api/lead-ack">
+  <input type="hidden" name="id" value="${id}">
+  <input type="hidden" name="t" value="${token}">
+  <button class="btn" type="submit">Confirm receipt</button>
+</form>
+<p class="muted">This only logs the time you picked it up.</p>`);
 }
 
 function pageAlreadyAcked(ref, ackedAt) {
-  return shell(`<div class="card"><h2>Already logged</h2><p>Enquiry <span class="ref">${ref}</span></p><p>Receipt was previously logged at</p><p class="tstamp">${formatAEDT(ackedAt)}</p></div>`);
+  return shell('Already logged',
+    `<div class="icon">&#10003;</div>
+<h1>Already logged</h1>
+<p class="muted">${ref}</p>
+<p class="time">${formatAEDT(ackedAt)}</p>
+<p class="muted">You can close this page.</p>`);
 }
 
 function pageThanks(ref, ackedAt) {
-  return shell(`<div class="card"><h2>Thanks Farley</h2><p>Enquiry <span class="ref">${ref}</span></p><p>Receipt logged at</p><p class="tstamp">${formatAEDT(ackedAt)}</p></div>`);
+  return shell('Receipt logged',
+    `<div class="icon">&#10003;</div>
+<h1>Thanks Farley, receipt logged</h1>
+<p class="time">${formatAEDT(ackedAt)}</p>
+<p class="muted">${ref} &middot; you can close this page.</p>`);
 }
 
 function pageInvalid() {
-  return shell(`<div class="card"><h2>Link not valid</h2><p>This link isn't valid or has expired. Contact the intake team if you need assistance.</p></div>`);
+  return shell('Link not valid',
+    `<div class="icon neutral">i</div>
+<h1>This link isn&rsquo;t valid</h1>
+<p>It may have expired or been copied incorrectly. If you need help, contact the Mediations Australia office.</p>`);
 }
 
 // ── Handler ────────────────────────────────────────────────────────────────────
