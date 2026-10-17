@@ -71,6 +71,8 @@ PARENTING = [
     ("grandparents-rights",            "Grandparents' Rights in Australia",                  "How grandparents seek time with grandchildren — and why mediation comes first."),
     ("best-apps-for-separated-parents","Best Apps for Separated Parents",                    "Co-parenting apps that reduce conflict and create a court-admissible record."),
     ("stepparent-rights",              "Step-Parent Rights in Australia",                    "Parental responsibility, contact after separation, and staying in a child's life."),
+    ("section-60i-certificate-guide",  "Section 60I Certificate Guide",                      "What the FDR certificate is, the four types, exemptions, and how to get one before filing."),
+    ("relocation-with-children-after-separation", "Relocating with Children After Separation", "No automatic right to relocate — the best-interests test, notice, consent, and mediation's role."),
     ("12-best-strategies-for-effective-parenting-plans-in-australia", "12 Best Strategies for Effective Parenting Plans in…", "Creating a solid parenting plans is important for families going through separation or divorce. At Mediations Australia,"),
     ("5-reasons-why-you-should-consider-mediation-for-child-custody-disputes", "Five Reasons to Consider Mediation for Child Custody…", "Mediation for child custody offers a less adversarial, cost-effective, and child-centric approach compared to lengthy court battles."),
     ("binding-child-support-agreements-in-australia-important-2026-update", "Binding Child Support Agreements Australia", "Learn how binding child support agreements work in Australia. Understand legal requirements, payment options, and how mediation helps create fair a..."),

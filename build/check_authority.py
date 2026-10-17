@@ -16,7 +16,8 @@ BLOG=['cost-of-divorce-in-australia','mediation-with-a-narcissist','consent-orde
       'consent-orders-2026-update','family-court-process-2026',
       'are-mediation-agreements-legally-binding','high-conflict-family-law-mediation',
       'executor-dispute-mediation','property-settlement-timeline',
-      'contesting-a-will-nsw','elder-care-guardianship-disputes','health-complaints-medical-negligence']
+      'contesting-a-will-nsw','elder-care-guardianship-disputes','health-complaints-medical-negligence',
+      'section-60i-certificate-guide','relocation-with-children-after-separation']
 
 def content_only(s):
     s=re.sub(r'<header.*?</header>','',s,flags=re.S)
