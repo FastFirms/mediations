@@ -164,33 +164,6 @@ def guided_form_html():
     </div>
   </div>
 
-  <!-- Standard enquiry form (No selected) -->
-  <div id="enq-quick" style="display:none;border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:20px;background:var(--sand)">
-    <p style="font-size:.85rem;font-weight:600;color:var(--sage-deep);margin:0 0 12px;text-transform:uppercase;letter-spacing:.04em">Send an enquiry</p>
-    <div id="enq-quick-form" style="display:flex;flex-direction:column;gap:12px">
-      <input id="qk-name" type="text" placeholder="Your name *" autocomplete="name" required style="width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:9px;font-family:var(--sans);font-size:.95rem;background:#fff">
-      <input id="qk-email" type="email" placeholder="Email address *" autocomplete="email" required style="width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:9px;font-family:var(--sans);font-size:.95rem;background:#fff">
-      <input id="qk-phone" type="tel" placeholder="Phone number *" autocomplete="tel" required style="width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:9px;font-family:var(--sans);font-size:.95rem;background:#fff">
-      <textarea id="qk-msg" rows="2" placeholder="Briefly, what's this about? (optional)" style="width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:9px;font-family:var(--sans);font-size:.95rem;background:#fff;resize:vertical"></textarea>
-      <label style="display:flex;gap:8px;align-items:flex-start;font-size:.82rem;color:var(--ink-soft);cursor:pointer">
-        <input id="qk-consent" type="checkbox" style="margin-top:2px;flex-shrink:0">
-        I agree to the <a href="/privacy-policy/" target="_blank" style="color:var(--sage-deep)">privacy policy</a>
-      </label>
-      <input type="text" id="qk-hp" style="position:absolute;left:-9999px;opacity:0" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <p id="qk-note" role="status" aria-live="polite" style="font-size:.82rem;color:var(--ink-soft);margin:0;display:none"></p>
-      <button id="qk-submit" class="btn btn-primary" style="justify-content:center;font-size:.95rem">Send enquiry <span class="arr">&rarr;</span></button>
-    </div>
-    <div id="qk-confirm" style="display:none;text-align:center;padding:12px 0">
-      <p style="color:var(--sage-deep);font-weight:600;margin:0 0 4px">Enquiry received</p>
-      <p id="qk-ref" style="font-size:.82rem;color:var(--ink-soft);margin:0"></p>
-    </div>
-    <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--line)">
-      <button id="enq-guided-btn" class="btn" style="width:100%;justify-content:center;font-size:.88rem;background:none;border:1px solid var(--sage-deep);color:var(--sage-deep);padding:10px 16px">
-        Find the right mediation pathway &rarr;
-      </button>
-    </div>
-  </div>
-
   <!-- Law firm referral form (Yes selected) -->
   <div id="enq-lawfirm" style="display:none;border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:20px;background:var(--sand)">
     <p style="font-size:.85rem;font-weight:600;color:var(--sage-deep);margin:0 0 12px;text-transform:uppercase;letter-spacing:.04em">Law firm referral</p>
@@ -239,7 +212,7 @@ def guided_form_html():
     <div id="enq-error" role="alert" style="display:none;color:var(--terra-deep);font-size:.85rem;margin-top:8px"></div>
 
     <button id="enq-cancel" style="display:block;width:100%;background:none;border:none;color:var(--ink-soft);font-size:.8rem;margin-top:12px;cursor:pointer;padding:8px">
-      &larr; Use quick enquiry instead
+      &larr; Change my answer
     </button>
   </div>
 
@@ -599,16 +572,10 @@ document.getElementById('enq-submit').addEventListener('click', function() {
   _submitGuided();
 });
 
-document.getElementById('enq-guided-btn').addEventListener('click', function() {
-  document.getElementById('enq-quick').style.display = 'none';
-  document.getElementById('enq-guided').style.display = 'block';
-  // Analytics (non-sensitive)
-  try { if(typeof gtag!=='undefined') gtag('event','enquiry_started',{form_variant:'guided'}); } catch(e){}
-});
-
 document.getElementById('enq-cancel').addEventListener('click', function() {
   document.getElementById('enq-guided').style.display = 'none';
-  document.getElementById('enq-quick').style.display = 'block';
+  document.getElementById('enq-lawfirm').style.display = 'none';
+  document.getElementById('enq-gateway').style.display = 'block';
 });
 
 // ── Submission (guided) ───────────────────────────────────────────────────────
@@ -671,69 +638,12 @@ function _submitGuided() {
 // ── Gateway: Are you a law firm? ─────────────────────────────────────────────
 document.getElementById('enq-gw-no').addEventListener('click', function() {
   document.getElementById('enq-gateway').style.display = 'none';
-  document.getElementById('enq-quick').style.display = 'block';
+  document.getElementById('enq-guided').style.display = 'block';
+  try { if(typeof gtag!=='undefined') gtag('event','enquiry_started',{form_variant:'guided'}); } catch(e){}
 });
 document.getElementById('enq-gw-yes').addEventListener('click', function() {
   document.getElementById('enq-gateway').style.display = 'none';
   document.getElementById('enq-lawfirm').style.display = 'block';
-});
-
-// ── Submission (quick enquiry) ────────────────────────────────────────────────
-document.getElementById('qk-submit').addEventListener('click', function() {
-  var name    = (document.getElementById('qk-name')?.value||'').trim();
-  var email   = (document.getElementById('qk-email')?.value||'').trim();
-  var phone   = (document.getElementById('qk-phone')?.value||'').trim();
-  var msg     = (document.getElementById('qk-msg')?.value||'').trim().slice(0,300);
-  var consent = document.getElementById('qk-consent')?.checked;
-  var hp      = document.getElementById('qk-hp')?.value||'';
-  var note    = document.getElementById('qk-note');
-  var btn     = document.getElementById('qk-submit');
-
-  if (hp) {
-    document.getElementById('qk-quick-form')?.querySelectorAll('input,textarea,button').forEach(function(el){el.style.display='none';});
-    document.getElementById('qk-confirm').style.display='block';
-    document.getElementById('qk-ref').textContent='Reference: MA-ENQ-BLOCKED';
-    return;
-  }
-  if (!name)    { note.textContent='Please enter your name.'; note.style.display='block'; return; }
-  if (!email)   { note.textContent='Please enter your email address.'; note.style.display='block'; return; }
-  if (!phone)   { note.textContent='Please enter your phone number.'; note.style.display='block'; return; }
-  if (!consent) { note.textContent='Please confirm you agree to the privacy policy.'; note.style.display='block'; return; }
-
-  btn.disabled = true; btn.textContent = 'Sending…'; note.style.display='none';
-
-  fetch('/api/enquiry', {
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({
-      form_variant:'quick',
-      name:         name,
-      email:        email,
-      phone:        phone,
-      message:      msg || null,
-      safe_email:   true,
-      safe_phone:   true,
-      privacy_consent: true,
-      _hp: ''
-    })
-  })
-  .then(function(r){ return r.json(); })
-  .then(function(d) {
-    if (d.ok) {
-      document.getElementById('qk-confirm').style.display='block';
-      document.getElementById('qk-ref').textContent='Reference: '+d.reference;
-      document.getElementById('enq-quick-form').style.display='none';
-      document.getElementById('enq-guided-btn').style.display='none';
-      try { if(typeof gtag!=='undefined') gtag('event','quick_enquiry_submitted'); } catch(e){}
-    } else {
-      btn.disabled = false; btn.textContent = 'Send enquiry →';
-      note.textContent = d.error || 'Something went wrong. Please try again.'; note.style.display='block';
-    }
-  })
-  .catch(function() {
-    btn.disabled=false; btn.textContent='Send enquiry →';
-    note.textContent='Network error. Please try again or call us.'; note.style.display='block';
-  });
 });
 
 // ── Submission (law firm referral) ────────────────────────────────────────────
@@ -798,7 +708,7 @@ document.getElementById('lf-submit').addEventListener('click', function() {
 
 // ── Success screen ────────────────────────────────────────────────────────────
 function _showSuccess(ref, queue) {
-  document.getElementById('enq-app').querySelectorAll('#enq-gateway,#enq-quick,#enq-lawfirm,#enq-guided').forEach(function(el){el.style.display='none';});
+  document.getElementById('enq-app').querySelectorAll('#enq-gateway,#enq-lawfirm,#enq-guided').forEach(function(el){el.style.display='none';});
   var s = document.getElementById('enq-success');
   s.style.display = 'block';
   document.getElementById('enq-success-ref').textContent = 'Reference: ' + ref;
