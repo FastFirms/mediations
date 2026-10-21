@@ -129,7 +129,10 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "health-complaints-medical-negligence",
         # Batch 22 — new cornerstones
         "section-60i-certificate-guide",
-        "relocation-with-children-after-separation"]
+        "relocation-with-children-after-separation",
+        # Batch 23 — new cornerstones
+        "what-age-can-a-child-choose-which-parent-to-live-with",
+        "hiding-assets-in-divorce"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:
