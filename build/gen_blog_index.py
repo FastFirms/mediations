@@ -335,9 +335,47 @@ TOPICS = [
 
 # Build flat slug set for imported detection
 cornerstone_slugs = set()
+_all_posts = {}
 for _,_,_,posts in TOPICS:
-    for slug,_,_ in posts:
+    for slug, title, blurb in posts:
         cornerstone_slugs.add(slug)
+        _all_posts[slug] = (title, blurb)
+
+# ── FEATURED / RECENT ─────────────────────────────────────────────────────────
+# Update FEATURED_SLUG to the newest article each batch.
+FEATURED_SLUG = "relocation-with-children-after-separation"
+RECENT_SLUGS = [
+    "section-60i-certificate-guide",
+    "binding-child-support-agreements-in-australia-important-2026-update",
+    "hiding-assets-in-divorce",
+]
+
+
+def featured_section():
+    ft, fb = _all_posts.get(FEATURED_SLUG, (FEATURED_SLUG, ""))
+    recent_cards = ""
+    for rs in RECENT_SLUGS:
+        rt, rb = _all_posts.get(rs, (rs, ""))
+        recent_cards += (
+            f'<a href="/{esc(rs)}/" class="rec-card">'
+            f'<span class="rec-title">{esc(rt)}</span>'
+            f'<span class="rec-blurb">{esc(rb)}</span>'
+            f'<span class="rec-arr">→</span>'
+            f'</a>'
+        )
+    return (
+        f'<section class="featured-sec"><div class="wrap">'
+        f'<p class="featured-label"><span class="pulse"></span>Newest guide</p>'
+        f'<a href="/{esc(FEATURED_SLUG)}/" class="featured-card">'
+        f'<div class="featured-body">'
+        f'<h2 class="featured-title">{esc(ft)}</h2>'
+        f'<p class="featured-blurb">{esc(fb)}</p>'
+        f'<span class="featured-cta">Read this guide &rarr;</span>'
+        f'</div>'
+        f'</a>'
+        f'<div class="rec-grid">{recent_cards}</div>'
+        f'</div></section>'
+    )
 
 # ── SCHEMA ────────────────────────────────────────────────────────────────────
 schema=[org_schema(),breadcrumb_schema([("Home",""),("Guides","guides")]),
@@ -448,6 +486,8 @@ d += f"""<main id="main">
   <div id="search-results" class="search-results" hidden></div>
 </div></section>
 
+{featured_section()}
+
 {topic_nav()}
 
 {"".join(topic_section(tid, ik, label, posts) for tid, ik, label, posts in TOPICS)}
@@ -461,6 +501,22 @@ d += "</main>" + page_end()
 d = d.replace("</head>", """<style>
 /* Hero */
 .guides-hero{padding:56px 0 48px;background:var(--sand)}
+/* Featured / recent section */
+.featured-sec{padding:40px 0 0;background:var(--cream)}
+.featured-label{display:flex;align-items:center;gap:8px;font-size:.8rem;font-weight:700;color:var(--sage-deep);text-transform:uppercase;letter-spacing:.07em;margin:0 0 14px}
+.featured-card{display:block;background:#fff;border:2px solid var(--sage);border-radius:16px;padding:28px 32px;text-decoration:none;color:var(--ink);transition:box-shadow .15s,transform .15s;margin-bottom:20px}
+.featured-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.1);transform:translateY(-2px)}
+.featured-title{font-family:var(--serif);font-size:clamp(1.3rem,2.5vw,1.8rem);font-weight:500;color:var(--ink);margin:0 0 10px;line-height:1.3}
+.featured-blurb{font-size:.97rem;color:var(--ink-soft);line-height:1.65;margin:0 0 16px}
+.featured-cta{display:inline-block;font-size:.9rem;font-weight:600;color:var(--sage-deep)}
+.rec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-bottom:40px}
+.rec-card{display:grid;grid-template-rows:auto auto auto;padding:18px 20px;background:#fff;border:1.5px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);transition:border-color .15s,box-shadow .15s}
+.rec-card:hover{border-color:var(--sage);box-shadow:0 3px 12px rgba(0,0,0,.07)}
+.rec-title{font-weight:600;font-size:.95rem;color:var(--ink);line-height:1.4;margin-bottom:6px}
+.rec-blurb{font-size:.83rem;color:var(--ink-soft);line-height:1.55}
+.rec-arr{font-size:.95rem;color:var(--sage-deep);opacity:.5;margin-top:10px;transition:opacity .15s,transform .15s}
+.rec-card:hover .rec-arr{opacity:1;transform:translateX(4px)}
+@media(max-width:640px){.rec-grid{grid-template-columns:1fr}.featured-card{padding:20px 18px}}
 .guides-hero h1{font-size:clamp(2rem,4vw,3rem);margin-bottom:16px}
 .ghero-search{position:relative;display:flex;align-items:center;max-width:560px;margin-top:28px}
 .ghero-search svg{position:absolute;left:18px;color:var(--ink-soft);pointer-events:none;flex-shrink:0}
