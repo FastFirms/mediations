@@ -238,7 +238,7 @@ def post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=
         cards = "".join(f'<a href="/{s}/">{esc(l)} →</a>' for s, l in related)
         rel_html = f'<section class="related reveal"><h2>Related guides &amp; services</h2><div class="related-grid">{cards}</div></section>'
     _crumb_label = _h1_plain[:48] + ("…" if len(_h1_plain) > 48 else "")
-    _dek = esc(dek[:160]) if dek else ""
+    _dek = esc(dek) if dek else ""
     d += f"""<main id="main">
 <div class="progress-track"><div class="progress-bar" id="prog"></div></div>
 {crumb_html([("Home",""),("Guides","guides"),(_crumb_label,None)])}
