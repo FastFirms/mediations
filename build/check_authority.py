@@ -18,7 +18,8 @@ BLOG=['cost-of-divorce-in-australia','mediation-with-a-narcissist','consent-orde
       'executor-dispute-mediation','property-settlement-timeline',
       'contesting-a-will-nsw','elder-care-guardianship-disputes','health-complaints-medical-negligence',
       'section-60i-certificate-guide','relocation-with-children-after-separation',
-      'what-age-can-a-child-choose-which-parent-to-live-with','hiding-assets-in-divorce']
+      'what-age-can-a-child-choose-which-parent-to-live-with','hiding-assets-in-divorce',
+      'christmas-parenting-arrangements-after-separation','how-to-change-parenting-orders']
 
 def content_only(s):
     s=re.sub(r'<header.*?</header>','',s,flags=re.S)

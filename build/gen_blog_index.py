@@ -75,6 +75,8 @@ PARENTING = [
     ("relocation-with-children-after-separation", "Relocating with Children After Separation", "No automatic right to relocate — the best-interests test, notice, consent, and mediation's role."),
     ("what-age-can-a-child-choose-which-parent-to-live-with", "What Age Can a Child Choose Where to Live?", "No set age — how children's views are weighed and heard without putting them in the middle."),
     ("hiding-assets-in-divorce",       "Hiding Assets in Divorce",                           "The duty of disclosure, warning signs, how hidden assets are traced, and the consequences."),
+    ("christmas-parenting-arrangements-after-separation", "Christmas Parenting Arrangements After Separation", "Common Christmas schedules, the court's November cut-off, holiday travel and agreeing early."),
+    ("how-to-change-parenting-orders", "How to Change Parenting Orders", "Varying orders by agreement, the significant change test, 60I certificates, costs and timeframes."),
     ("12-best-strategies-for-effective-parenting-plans-in-australia", "12 Best Strategies for Effective Parenting Plans in…", "Creating a solid parenting plans is important for families going through separation or divorce. At Mediations Australia,"),
     ("5-reasons-why-you-should-consider-mediation-for-child-custody-disputes", "Five Reasons to Consider Mediation for Child Custody…", "Mediation for child custody offers a less adversarial, cost-effective, and child-centric approach compared to lengthy court battles."),
     ("binding-child-support-agreements-in-australia-important-2026-update", "Binding Child Support Agreements Australia", "Learn how binding child support agreements work in Australia. Understand legal requirements, payment options, and how mediation helps create fair a..."),
@@ -343,11 +345,11 @@ for _,_,_,posts in TOPICS:
 
 # ── FEATURED / RECENT ─────────────────────────────────────────────────────────
 # Update FEATURED_SLUG to the newest article each batch.
-FEATURED_SLUG = "relocation-with-children-after-separation"
+FEATURED_SLUG = "christmas-parenting-arrangements-after-separation"
 RECENT_SLUGS = [
-    "section-60i-certificate-guide",
-    "binding-child-support-agreements-in-australia-important-2026-update",
+    "how-to-change-parenting-orders",
     "hiding-assets-in-divorce",
+    "relocation-with-children-after-separation",
 ]
 
 
