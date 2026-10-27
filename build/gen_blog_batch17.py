@@ -29,7 +29,7 @@ post(
     "Can't Afford Mediation? Your Options in Australia",
     "Can't afford private mediation? Compare free, community, Legal Aid and reduced-fee options available in Australia. Honest guide covering all realistic pathways.",
     "Costs &amp; fees",
-    "Can't Afford Mediation? <em>Your Realistic Options in Australia</em>",
+    "Your Options If You <em>Can't Afford Mediation</em>",
     ("If standard private mediation fees are genuinely out of reach, you may still have "
      "several pathways available in Australia — including government-supported Family Dispute "
      "Resolution, Legal Aid services, community providers, and reduced-fee private mediation. "
@@ -233,7 +233,7 @@ post(
     "Is Family Mediation Free in Australia?",
     "Is family mediation free in Australia? Explains when it can be free, which services are subsidised, and what to do if you don't qualify for free FDR.",
     "Costs &amp; fees",
-    "Is Family Mediation Free in Australia? <em>What You Need to Know</em>",
+    "Is Family Mediation <em>Free in Australia</em>?",
     ("Family mediation can be free in Australia — but only through specific government-funded "
      "services, and only if you meet their eligibility requirements. This guide explains exactly "
      "when mediation is free, when it is subsidised, and what your options are if neither applies "
@@ -460,7 +460,7 @@ post(
     "Low-Cost Family Mediation in Australia: A Complete Guide",
     "Find low-cost family mediation options in Australia — FRCs, community FDR, Legal Aid, and reduced-fee private mediation compared honestly on cost, wait times, and suitability.",
     "Costs &amp; fees",
-    "Low-Cost Family Mediation in Australia: <em>A Complete Guide</em>",
+    "Low-Cost Family Mediation <em>in Australia</em>",
     ("Not everyone can comfortably pay standard private mediation fees. Australia has several "
      "lower-cost and reduced-fee family mediation pathways — from government-funded Family "
      "Relationship Centres to fee-assessed private mediation. This guide compares them "
@@ -845,7 +845,7 @@ post(
     "Does Mediation Have to Be Paid 50/50?",
     "Does mediation have to be paid 50/50? No — here's how fee arrangements actually work in Australian family mediation, including reduced-fee and unequal-contribution options.",
     "Costs &amp; fees",
-    "Does Mediation Have to Be Paid 50/50? <em>What the Rules Actually Say</em>",
+    "Does Mediation Have to <em>Be Paid 50/50</em>?",
     ("Mediation fees do not have to be divided equally. How costs are allocated depends "
      "on the mediator, the service model, any agreement between participants, and the "
      "circumstances of the matter. This page explains the common arrangements and when "
@@ -1011,7 +1011,7 @@ post(
     "Asset Rich but Cash Poor: Can I Get Reduced-Fee Mediation?",
     "Own a home but can't afford mediation? Being asset-rich doesn't mean cash is available. How reduced-fee mediation assesses financial capacity — not just what you own.",
     "Costs &amp; fees",
-    "Asset Rich but Cash Poor: <em>Can I Get Reduced-Fee Mediation?</em>",
+    "Asset Rich but Cash Poor <em>Mediation Options</em>",
     ("Owning a home or having superannuation does not mean you have accessible cash. "
      "After separation, many people have assets on paper but very limited liquid funds. "
      "This guide explains how financial capacity is assessed for reduced-fee mediation — "
@@ -1193,7 +1193,7 @@ post(
     "Family Relationship Centre vs Private Mediation",
     "FRC vs private mediation in Australia — an honest comparison of cost, wait times, complexity, and who each option suits. Includes when reduced-fee private may be the better fit.",
     "Family Mediation",
-    "Family Relationship Centre vs Private Mediation: <em>An Honest Comparison</em>",
+    "Family Relationship Centre <em>vs Private Mediation</em>",
     ("Family Relationship Centres and private mediation are both legitimate pathways "
      "for resolving family disputes in Australia — but they suit different situations. "
      "This guide compares them honestly so you can choose the right option for "
@@ -1374,7 +1374,7 @@ post(
     "Legal Aid vs Private Mediation: Which Is Right for You?",
     "Legal Aid vs private mediation in Australia — what Legal Aid covers for family mediation, how it compares with private options, and what to do if you don't qualify.",
     "Family Mediation",
-    "Legal Aid vs Private Mediation: <em>Which Option Is Right for You?</em>",
+    "Legal Aid vs <em>Private Mediation</em>",
     ("Legal Aid and private mediation are not the same thing — and understanding the "
      "difference can help you choose the right pathway for your family law matter. "
      "This guide explains what Legal Aid covers, how private mediation compares, and "

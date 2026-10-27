@@ -16,8 +16,7 @@ post(
     "Beneficiary vs executor dispute in Australia? Mediation resolves most in weeks. "
     "Learn your rights, the process, and how to avoid expensive litigation.",
     "Estate disputes",
-    "Executor Disputes in Australia — <em>When Mediation Is the Smarter First Step (and When It Isn't)</em>",
-    ("When a family member dies and the estate doesn't move the way beneficiaries expected, "
+    "Executor Dispute Mediation <em>in Australia</em>"    ("When a family member dies and the estate doesn't move the way beneficiaries expected, "
      "conflict can escalate quickly. Disputes between beneficiaries and executors are among "
      "the most emotionally charged — and legally avoidable — disputes in Australian family "
      "and estate law. In most cases, mediation resolves them faster, cheaper, and with less "
@@ -268,8 +267,7 @@ post(
     "How long does property settlement take after separation in Australia? From weeks "
     "via mediation to years in court — here's what to expect at every stage.",
     "Property settlement",
-    "Property Settlement Timeline in Australia — <em>What Takes So Long, and How to Speed It Up</em>",
-    ("One of the first questions separating couples ask is: how long will this take? "
+    "Property Settlement Timeline <em>in Australia</em>"    ("One of the first questions separating couples ask is: how long will this take? "
      "The honest answer is: anywhere from a few months (if you use mediation and reach "
      "agreement) to several years (if the matter goes to contested hearing in the "
      "Federal Circuit and Family Court of Australia). Understanding the timeline — and "

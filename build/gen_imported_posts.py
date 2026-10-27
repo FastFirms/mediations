@@ -885,7 +885,7 @@ META_OVERRIDES = {
     "my-ex-wont-sign-divorce-papers": {
         "title": "My Ex Won't Sign Divorce Papers: What Happens Next",
         "desc":  "In Australia, your ex cannot block a divorce by refusing to sign. Here's exactly what to do — step by step — including how mediation can resolve the underlying dispute.",
-        "h1":    "My Ex Won't Sign Divorce Papers: What Happens Next",
+        "h1":    "My Ex Won't Sign <em>the Divorce Papers</em>",
         "read_min": "8",
         "body": """
 <div class="answer reveal"><p><strong>Key takeaway:</strong> In Australia, your ex cannot prevent a divorce by refusing to sign. After 12 months of separation, one party can apply for divorce without the other's consent — the court doesn't require both signatures. What your ex CAN complicate is the property settlement and parenting arrangements. That's where mediation matters most.</p></div>

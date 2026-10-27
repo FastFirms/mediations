@@ -13,7 +13,7 @@ post(
     "Buying Out Your Ex's Share of the Family Home",
     "How to buy out your ex's share of the family home in Australia: valuation, refinancing, stamp duty, tax and how mediation turns a handshake into a binding deal.",
     "Property &amp; Finances",
-    "Buying out your ex's share of the family home: <em>a calm, practical path to keeping the house</em>",
+    "Buying out your ex's share of <em>the family home</em>",
     ("For many separating couples the most workable outcome is that one person keeps the family home "
      "and the other is paid out. It keeps children in a familiar neighbourhood and avoids a forced sale. "
      "But a buy-out is really three separate questions: what is the home worth, can the person staying "
@@ -148,7 +148,7 @@ post(
     "Is Inheritance Included in a Property Settlement?",
     "Is an inheritance part of the property pool after separation? How Australian courts treat inheritances, when they're protected and how to settle by mediation.",
     "Property &amp; Finances",
-    "Inheritance in a property settlement: <em>what counts, what's protected and what's fair</em>",
+    "Inheritance in a <em>property settlement</em>",
     ("Receiving an inheritance is usually a family event, not a financial plan. Then a relationship ends, "
      "and a question follows: does my former partner get a share? The honest answer is that it depends on "
      "timing, size and what happened to the money. This guide explains how Australian family law approaches "

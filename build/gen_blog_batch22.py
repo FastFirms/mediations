@@ -16,7 +16,7 @@ post(
     "What a Section 60I FDR certificate is, when you need one, the four types, "
     "exemptions, how to get one, and what it means for your parenting application.",
     "Family law mediation",
-    "Section 60I Certificate: <em>What it is and why you need it before filing</em>",
+    "Section 60I Certificates <em>Explained</em>",
     ("If you're hoping to file for parenting orders in the Federal Circuit and Family "
      "Court of Australia — orders about where your children live, how much time they "
      "spend with each parent, or parental responsibility — you will almost certainly "
@@ -279,7 +279,7 @@ post(
     "How Australian law handles parental relocation — notice, the best-interests "
     "test, what to do if your ex objects, and why mediation is the smarter first step.",
     "Parenting &amp; children",
-    "Relocating with Children After Separation: <em>What Australian law says and how to reach agreement</em>",
+    "Relocating With Children <em>After Separation</em>",
     ("You've been offered a job in Brisbane. Your support network is in Adelaide. Your "
      "new partner lives in Perth. Whatever the reason, wanting to relocate after separation "
      "when children are involved is one of the most emotionally and legally complex "

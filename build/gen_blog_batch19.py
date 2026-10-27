@@ -13,8 +13,7 @@ post(
     "Updated 2026 guide to consent orders in Australia — what changed, how to apply, "
     "how long it takes, and what mediation has to do with it.",
     "Consent orders",
-    "Consent Orders 2026 — <em>What Changed, What Stayed the Same, and How to Get Them Right</em>",
-    ("Consent orders remain the gold standard for turning a mediated property settlement "
+    "Consent Orders <em>2026 Update</em>"    ("Consent orders remain the gold standard for turning a mediated property settlement "
      "or parenting agreement into a court order — without going to court. The 2025 family "
      "law reforms and updated FCFCOA fee schedule mean there are important procedural updates "
      "for 2026. This guide covers what changed and how to navigate the process correctly."),
@@ -244,8 +243,7 @@ post(
     "Step-by-step guide to the FCFCOA family court process in 2026 — from filing to "
     "hearing, how long it takes, what it costs, and when to consider mediation instead.",
     "Family court",
-    "The Family Court Process in Australia (2026) — <em>What Actually Happens and How to Avoid It</em>",
-    ("Most separating couples in Australia will never need to go to court. But understanding "
+    "The Family Court Process <em>in 2026</em>"    ("Most separating couples in Australia will never need to go to court. But understanding "
      "the family court process — what happens, in what order, and at what cost — is the "
      "clearest argument for mediation. This is the 2026 guide to the Federal Circuit and "
      "Family Court of Australia's process, updated for the 2025 reforms."),
@@ -667,8 +665,7 @@ post(
     "Can mediation work in high-conflict separation? What the research says, when "
     "it is and isn't appropriate, and how shuttle and specialised mediation can help.",
     "High conflict",
-    "High-Conflict Family Law Mediation — <em>When It Works, When It Doesn't, and What to Do Instead</em>",
-    ("High-conflict separation is one of the hardest things a family can go through. "
+    "Does High-Conflict <em>Family Law Mediation</em> Work?"    ("High-conflict separation is one of the hardest things a family can go through. "
      "Entrenched positions, past trauma, communication breakdowns, and sometimes allegations "
      "of family violence make the question of whether mediation is appropriate anything but "
      "simple. This guide gives an honest answer."),

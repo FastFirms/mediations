@@ -12,8 +12,7 @@ post(
     "How mediation resolves contested wills, family provision claims, executor disputes "
     "and superannuation conflicts faster and for far less than court. Australia-wide guide.",
     "Estate disputes",
-    "Estate &amp; Inheritance Dispute Mediation in Australia — <em>Resolve Without Destroying the Family</em>",
-    ("Estate disputes — contested wills, family provision claims, executor conflicts, "
+    "Estate &amp; Inheritance <em>Dispute Mediation</em>"    ("Estate disputes — contested wills, family provision claims, executor conflicts, "
      "and superannuation disagreements — are on the rise across Australia. Mediation "
      "resolves most of them in a single session, without the years and legal costs of "
      "Supreme Court litigation, and with far less damage to the family relationships "

@@ -13,8 +13,7 @@ post(
     "How debts are treated in Australian property settlements: joint liability, credit "
     "cards, mortgages, and reaching a fair agreement through mediation.",
     "Property &amp; Finances",
-    "Who is responsible for debts after separation? <em>The answer is more complicated — and more fixable — than most people expect</em>",
-    ("Separation often focuses on dividing assets — the house, super, savings. But debts are just "
+    "Who is responsible for debts <em>after separation</em>?"  ("Separation often focuses on dividing assets — the house, super, savings. But debts are just "
      "as much a part of the property pool, and they can be just as contentious. Joint credit cards "
      "that one partner kept using, a mortgage when neither person can afford the repayments alone, "
      "a personal loan taken out in one name for a shared purpose — these questions come up in almost "

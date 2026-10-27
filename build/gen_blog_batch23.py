@@ -16,7 +16,7 @@ post(
     "There is no set age in Australia. How courts weigh a child's views, how those views "
     "are heard, and how child-inclusive mediation gives children a voice.",
     "Parenting &amp; children",
-    "What age can a child choose which parent to live with? <em>The honest answer is there isn't one</em>",
+    "What age can a child <em>choose a parent</em>?",
     ("It is one of the most common questions separated parents ask — and one of the most "
      "misunderstood. Many people believe a child gets to decide at 12, or 14, or 16. In "
      "Australia, no such rule exists. A child's views matter, and they matter more as the "
@@ -237,7 +237,7 @@ post(
     "Suspect your ex is hiding assets? The duty of disclosure, warning signs, how hidden "
     "assets are uncovered, and the consequences under Australian family law.",
     "Property &amp; finances",
-    "Hiding assets in divorce: <em>why full disclosure protects everyone</em>",
+    "Why hiding assets in divorce <em>backfires</em>",
     ("Few things erode trust after separation faster than the suspicion that your former partner "
      "is not being honest about money. Perhaps a bank account has gone quiet, a business is "
      "suddenly 'struggling', or cash is moving to a relative. Australian family law takes hidden "

@@ -10,8 +10,7 @@ post(
   title="Victoria's Right to Work From Home: What It Means",
   desc="Victoria's new right to work from home shifts the burden to employers from September 2026. Here's what the law says and why mediation resolves disputes faster.",
   category="Workplace",
-  h1="Victoria's Right to Work From Home — <em>what employers and employees need to know</em>",
-  dek="In July 2026, Victoria introduced legislation turning remote work from a favour into a legal right. For most employers, the new entitlement takes effect on 1 September 2026. Here is what the law actually says, where disputes are likely to arise, and why mediation is almost always the better first step.",
+  h1="Victoria's Right to <em>Work From Home</em>"  dek="In July 2026, Victoria introduced legislation turning remote work from a favour into a legal right. For most employers, the new entitlement takes effect on 1 September 2026. Here is what the law actually says, where disputes are likely to arise, and why mediation is almost always the better first step.",
   toc=[
     ("what-the-bill-does",       "What the Bill actually does"),
     ("where-disputes-happen",    "Where disputes will happen"),

@@ -21,7 +21,7 @@ post(
     "How family provision claims work in NSW, the 12-month deadline under the "
     "Succession Act 2006, and how mediation resolves will disputes without court.",
     "Estate disputes",
-    "Contesting a Will in NSW: <em>How Mediation Resolves Family Provision Claims</em>",
+    "Contesting a Will in NSW <em>Through Mediation</em>",
     ("Losing a parent or loved one is hard enough. Discovering you've been left out of "
      "their will — or given far less than you expected — adds a second layer of grief "
      "many families aren't prepared for. In New South Wales, family provision claims are "
@@ -151,7 +151,7 @@ post(
     "How mediation helps families resolve elder care, guardianship and power of "
     "attorney disputes in Australia — and when mediation isn't appropriate.",
     "Estate disputes",
-    "Elder Care &amp; Guardianship Disputes: <em>How Mediation Helps Families Find Common Ground</em>",
+    "Elder Care &amp; Guardianship <em>Dispute Mediation</em>",
     ("Decisions about an ageing parent's care, living arrangements, or finances can bring "
      "long-simmering family tensions to the surface. Siblings may disagree about whether "
      "mum or dad should move into aged care, who should hold power of attorney, or how "
@@ -261,7 +261,7 @@ post(
     "How health complaints and medical negligence disputes are resolved in Australia "
     "— Ahpra, state health complaints bodies, conciliation, and private mediation.",
     "Workplace disputes",
-    "Health Complaints &amp; Medical Negligence Disputes: <em>How Mediation Can Help</em>",
+    "Health Complaints &amp; <em>Medical Negligence</em> Mediation",
     ("A difficult hospital stay, a missed diagnosis, or a breakdown in communication with "
      "a treating practitioner can leave patients, families, and health professionals all "
      "wanting the same thing: a fair, timely resolution. In Australia, most health-related "

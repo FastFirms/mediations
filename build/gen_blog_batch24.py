@@ -16,7 +16,7 @@ post(
     "How separated parents share Christmas and summer holidays in Australia: common "
     "schedules, court cut-off dates, travel rules and agreeing early in mediation.",
     "Parenting &amp; children",
-    "Christmas parenting arrangements after separation: <em>a calmer holiday starts with an early agreement</em>",
+    "Christmas parenting arrangements <em>after separation</em>",
     ("For separated families, Christmas can be the most emotionally loaded week of the year. "
      "Who wakes up with the children, who hosts lunch, who gets the beach week — small questions "
      "that can turn into big disputes when they are left to December. This guide covers the "
@@ -234,7 +234,7 @@ post(
     "How to vary parenting orders in Australia: changing by agreement, the significant "
     "change test, 60I certificates, costs, timeframes and mediation.",
     "Parenting &amp; children",
-    "How to change parenting orders in Australia: <em>agreement first, court only when you must</em>",
+    "How to change parenting orders <em>by agreement</em>",
     ("Parenting orders are made for children as they are at one point in time. Children grow, "
      "parents move, jobs change, and an arrangement that worked for a four-year-old may not work "
      "for a fourteen-year-old. This guide explains the ways final parenting orders can be changed "

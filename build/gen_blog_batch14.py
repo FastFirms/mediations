@@ -10,7 +10,7 @@ post(
   "Online Mediation in Australia: How It Works",
   "How online mediation works in Australia, when to use it, what it costs, and how to choose an accredited mediator. Practical guide from a registered FDRP.",
   "Process &amp; preparation",
-  "Online Mediation in Australia: <em>How It Works, When to Use It, and What to Expect</em>",
+  "How Online Mediation <em>Works in Australia</em>",
   "Online mediation is now mainstream in Australia — accepted by courts, available for every dispute type, and in many cases just as effective as sitting in a room together. Here is what you need to know before you book.",
   [
     ("what-is",        "What is online mediation?"),

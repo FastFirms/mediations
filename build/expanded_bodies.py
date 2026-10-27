@@ -1269,7 +1269,7 @@ EXPANDED = {
 "divorce-without-a-lawyer": {
     "title": "Divorce Without a Lawyer in Australia | DIY Divorce Guide",
     "desc":  "Can you get divorced without a lawyer in Australia? Yes. This guide covers DIY divorce applications, when you need legal help, and what you must not overlook.",
-    "h1":    "Divorce Without a Lawyer: What You Need to Know",
+    "h1":    "Divorce Without a Lawyer <em>in Australia</em>",
     "read_min": "9",
     "body": """
 <div class="answer reveal"><p><strong>Key takeaway:</strong> You can apply for divorce in Australia without a lawyer — the online application through the Commonwealth Courts Portal is designed to be completed by parties themselves. However, the divorce application only ends the marriage. Property settlement and parenting arrangements require separate legal steps, and getting these wrong without advice can cost far more than a lawyer would have. DIY divorce is fine; DIY property settlement without understanding your rights is risky.</p></div>
@@ -2426,7 +2426,7 @@ EXPANDED = {
 "property-settlement-after-separation": {
     "title": "Property Settlement After Separation in Australia",
     "desc":  "A complete guide to property settlement after separation in Australia. The 4-step process, timeframes, what assets are included, and how mediation helps.",
-    "h1":    "Property Settlement After Separation: A Complete Australian Guide",
+    "h1":    "Property Settlement <em>After Separation</em>",
     "read_min": "10",
     "body": """
 <div class="answer reveal"><p><strong>Key takeaway:</strong> Property settlement after separation involves dividing all assets and liabilities accumulated during the relationship — not just the matrimonial home. Australian courts use a four-step process to determine what's fair. You have 12 months from the date of divorce to apply for property orders (or 2 years from the end of a de facto relationship). Most couples reach agreement through <a href="/property-settlement-in-family-law/">property settlement mediation</a> without needing a court to decide.</p></div>
@@ -3993,7 +3993,7 @@ EXPANDED = {
 "mediation-with-a-narcissist": {
     "title": "Mediation With a Narcissist: What Actually Works",
     "desc":  "Can mediation work with a narcissist? What to expect, strategies that work, what to watch for, and when mediation may not be appropriate in high-conflict cases.",
-    "h1":    "Mediation With a Narcissist: What Actually Works",
+    "h1":    "Mediation With a Narcissist <em>That Actually Works</em>",
     "read_min": "10",
     "body": """
 <div class="answer reveal"><p><strong>Key takeaway:</strong> Mediation with a narcissistic or high-conflict person is more difficult — but for many families, it is still achievable and preferable to years of costly litigation. The key is an experienced mediator who can manage dominating behaviour, shuttle techniques that reduce direct conflict, and a strategy that focuses on interests rather than positions. Preparation is everything. If you're experiencing genuine family violence or coercive control, different rules apply — speak to a lawyer first.</p></div>

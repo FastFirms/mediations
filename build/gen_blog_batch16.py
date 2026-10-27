@@ -494,8 +494,7 @@ post(
     title="My Ex Won't Sign the Divorce Papers",
     desc="In Australia, your spouse cannot block a divorce by refusing to sign. Learn how a sole-applicant divorce works, typical costs, and when mediation helps.",
     category="Divorce",
-    h1="My Ex Won't Sign the Divorce Papers — <em>Here's What Actually Happens</em>",
-    dek=(
+    h1="My Ex Won't Sign <em>the Divorce Papers</em>"    dek=(
         "One of the most common fears after separation: what if my ex refuses to sign "
         "the divorce? The answer is more straightforward than most people expect — "
         "and the refusal itself usually has nothing to do with the divorce papers at all."
