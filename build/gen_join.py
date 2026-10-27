@@ -2,7 +2,7 @@
 """Generate /join-our-mediator-network/ — mediator network expression of interest.
 
 Build: python3 build/gen_join.py
-Posts to /api/mediator-eoi (separate from all client intake).
+Posts directly to a dedicated Formspree form (separate from all client intake).
 No payment, fee-split or earnings information may appear on this page.
 """
 import os, sys
@@ -175,14 +175,13 @@ def form_html():
 <div class="eoi-done" id="eoiDone" tabindex="-1" hidden>
   <h3>Thank you for your interest</h3>
   <p>Thank you for your interest in the Mediations Australia Mediator Network. We've received your expression of interest. Our team will review your information and contact you if we'd like to discuss next steps. Submission does not guarantee acceptance or future work.</p>
-  <p style="margin-top:14px!important;font-size:.92rem">Reference: <strong id="eoiRef"></strong></p>
 </div>"""
 
 
 JS = """<script>
 (function(){
   var f=document.getElementById('eoiForm'); if(!f) return;
-  var sid=(window.crypto&&crypto.randomUUID)?crypto.randomUUID():null, started=false, busy=false;
+  var started=false, busy=false;
   function ev(n){try{if(window.gtag)gtag('event',n,{form_name:'mediator_network_eoi'})}catch(e){}}
   ev('mediator_eoi_view');
   function start(){if(!started){started=true;ev('mediator_eoi_start')}}
@@ -213,7 +212,7 @@ JS = """<script>
     return e}
   function fail(msg){ev('mediator_eoi_submit_error');fe.textContent=msg;fe.hidden=false}
   f.addEventListener('submit',function(x){x.preventDefault();if(busy)return;clear();
-    var d={submission_id:sid,_hp:v('_hp'),name:v('name'),email:v('email'),phone:v('phone'),city:v('city'),state:v('state'),
+    var d={_gotcha:v('_hp'),name:v('name'),email:v('email'),phone:v('phone'),city:v('city'),state:v('state'),
       organisation:v('organisation'),website:v('website'),practice_type:v('practice_type'),credential_types:vals('credential_types'),
       credential_body:v('credential_body'),credential_identifier:v('credential_identifier'),experience_band:v('experience_band'),
       practice_areas:vals('practice_areas'),background:v('background'),regions_served:v('regions_served'),delivery_mode:(vals('delivery_mode')[0]||''),
@@ -222,12 +221,12 @@ JS = """<script>
       marketing_opt_in:f.elements.marketing_opt_in.checked};
     var e=check(d);if(Object.keys(e).length){show(e);return}
     busy=true;btn.disabled=true;txt.textContent='Submitting…';
-    fetch('/api/mediator-eoi',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})
+    d._subject='Mediator Network EOI — '+d.name+' ('+d.state+')';d._replyto=d.email;d.source='mediator_network_eoi';
+    fetch('https://formspree.io/f/xoeeerjo',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
       .then(function(r){return r.json().catch(function(){return{}}).then(function(j){return{s:r.status,j:j}})})
       .then(function(r){
-        if(r.s===200&&r.j.ok){ev('mediator_eoi_submit_success');f.hidden=true;document.getElementById('eoiRef').textContent=r.j.reference||'';var dn=document.getElementById('eoiDone');dn.hidden=false;dn.focus();return}
-        if(r.j.fields)show(r.j.fields);
-        fail(r.j.error||'Something went wrong. Please try again.')})
+        if(r.s>=200&&r.s<300){ev('mediator_eoi_submit_success');f.hidden=true;var dn=document.getElementById('eoiDone');dn.hidden=false;dn.focus();return}
+        fail('Something went wrong. Please try again, or email hello@mediationsaustralia.com.au.')})
       .catch(function(){fail('We could not reach our server. Please check your connection and try again.')})
       .then(function(){busy=false;btn.disabled=false;txt.textContent='Submit Expression of Interest'})});
 })();
