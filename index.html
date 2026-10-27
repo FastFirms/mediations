@@ -197,7 +197,7 @@
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header><main id="main">
-<section class="phero" style="padding-bottom:clamp(48px,6vw,80px);background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.95) 38%,rgba(247,250,247,.7) 55%,rgba(247,250,247,.2) 75%,rgba(247,250,247,0) 82%),url('/assets/images/hero-mediation-session.jpg');background-size:cover;background-position:center 55%;position:relative">
+<section class="phero" style="padding-bottom:clamp(48px,6vw,80px);background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.95) 38%,rgba(247,250,247,.7) 55%,rgba(247,250,247,.15) 72%,rgba(247,250,247,0) 80%),url('/assets/images/hero-australian-mediators-panel.webp');background-size:cover;background-position:center 40%;position:relative">
   <div class="phero-blob" style="opacity:.2"></div>
   <div class="wrap">
     <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
@@ -857,7 +857,7 @@ document.querySelectorAll('.has-drop').forEach(hd=>{
     var btn=f.querySelector('button[type=submit]');
     btn.disabled=true;btn.textContent='Sending…';
     try{
-      var r=await fetch('https://formspree.io/f/xwvgjnve',{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});
+      var r=await fetch('/api/enquiry',{method:'POST',body:JSON.stringify({form_variant:'quick',privacy_consent:true,name:f.querySelector('[name=name]')?.value?.trim(),email:f.querySelector('[name=email]')?.value?.trim()||undefined,phone:f.querySelector('[name=phone]')?.value?.trim()||undefined}),headers:{'Content-Type':'application/json','Accept':'application/json'}});
       if(r.ok){window.location.href='/thank-you/';}
       else{btn.disabled=false;btn.innerHTML='Send request <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
     }catch(err){btn.disabled=false;btn.innerHTML='Send request <span class="arr">→</span>';alert('Something went wrong. Please try again or call us directly.');}
