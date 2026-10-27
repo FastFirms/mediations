@@ -45,6 +45,12 @@ samples in CLAUDE.md §13 to calibrate.
 Every cornerstone targets **≥1,000 body words** and includes, in this order:
 
 1. Keyword-first `<h1>` with an italic `<em>` emphasis on the emotional/wedge part.
+   **HARD RULE — short titles:** the H1 is **60 characters or fewer** (visible text) and is
+   **one phrase**: no subtitle after a colon, dash or question mark, and no second sentence.
+   The `<em>` part is at most 3 words. Put the extra angle in the `dek`, not the H1.
+   Good: `How to change parenting orders <em>without court</em>` (48).
+   Bad: `How to change parenting orders in Australia: agreement first, court only when you must` (86).
+   `python3 check_titles.py` enforces this and fails the build.
 2. A **Key takeaway** answer box that directly answers the page's question in 1–2
    sentences (this is the AEO signal answer engines cite — make it quotable).
 3. A table-of-contents jump menu.

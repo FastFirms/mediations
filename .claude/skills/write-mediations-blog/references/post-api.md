@@ -19,7 +19,7 @@ post(slug, title, desc, category, h1, dek, toc, body, qa, related, read_min=7)
 | `title` | str | `<title>` + OG/Twitter title | **≤ 60 chars** (R8) |
 | `desc` | str | meta description + OG/Twitter desc | **≤ 160 chars** (R8) |
 | `category` | str | the pill/tag label | HTML-escape `&` as `&amp;` (e.g. `"Costs &amp; fees"`) |
-| `h1` | str | the on-page H1 | **keyword-first** (R1), wrap the emotional/wedge part in `<em>…</em>` |
+| `h1` | str | the on-page H1 | **keyword-first** (R1), wrap the emotional/wedge part in `<em>…</em>`. **HARD RULE: ≤ 60 visible characters, one phrase, no `:` / `—` / `?` subtitle, `<em>` ≤ 3 words** — enforced by `check_titles.py` |
 | `dek` | str | the lede paragraph under the H1 | 1–3 sentences, sets up the answer |
 | `toc` | list[tuple] | `[(anchor_id, label), …]` | one entry per H2; `anchor_id` must match each H2's `id` |
 | `body` | str | the full article HTML | see "Assembling the body" below |
@@ -91,7 +91,7 @@ rel='noopener'>…</a>`. `check_authority.py` accepts both quote styles.
 
 ## Worked checklist before you build
 
-- [ ] H1 keyword-first with an `<em>` emphasis
+- [ ] H1 keyword-first with an `<em>` emphasis, ≤ 60 characters, no subtitle (`check_titles.py` passes)
 - [ ] `title` ≤ 60, `desc` ≤ 160
 - [ ] `key_takeaway()` is the first thing in `body` and directly answers the question
 - [ ] 7–8 `<h2>` sections, each `id` present in `toc`
