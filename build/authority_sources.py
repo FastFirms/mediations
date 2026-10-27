@@ -28,6 +28,8 @@ AUTHORITY = {
  # Statistics & research
  "abs_divorce": ("ABS Marriages and Divorces, Australia", "https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release"),
  "aifs": ("Australian Institute of Family Studies", "https://aifs.gov.au/"),
+ "ato": ("Australian Taxation Office", "https://www.ato.gov.au/"),
+ "moneysmart": ("MoneySmart (ASIC)", "https://moneysmart.gov.au/"),
  # Support / safety
  "respect_1800": ("1800RESPECT", "https://www.1800respect.org.au/"),
  "dsm_pd": ("APA \u2014 personality disorders (DSM-5)", "https://www.psychiatry.org/patients-families/personality-disorders/what-are-personality-disorders"),

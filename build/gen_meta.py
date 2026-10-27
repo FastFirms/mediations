@@ -76,6 +76,8 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "best-apps-for-separated-parents",
         "my-ex-wont-sign-divorce-papers",
         "who-pays-bills-during-separation",
+        "buying-out-your-ex-family-home-australia",
+        "inheritance-in-property-settlement-australia",
         "questions/what-is-family-dispute-resolution",
         "questions/whats-the-difference-between-mediation-and-family-dispute-resolution",
         "questions/when-can-i-be-exempt-from-family-dispute-resolution",

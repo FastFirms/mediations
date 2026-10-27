@@ -115,6 +115,8 @@ PROPERTY = [
     ("spousal-maintenance-guide",      "Spousal Maintenance in Australia",                   "Who pays, how much, how long it lasts, and how it differs from child support."),
     ("business-in-divorce",            "Business in Divorce",                                "How businesses and trusts are valued and divided — and how to protect yours."),
     ("who-is-responsible-for-debts-after-separation", "Who Is Responsible for Debts After Separation?", "How debts sit in the property pool, joint vs sole-name liability, and reaching a mediated agreement."),
+    ("buying-out-your-ex-family-home-australia", "Buying Out Your Ex's Share of the Home", "Valuation, refinancing, stamp duty and tax, and how to make a buy-out binding."),
+    ("inheritance-in-property-settlement-australia", "Is Inheritance Included in a Settlement?", "How inheritances and gifts are treated, and when they're protected."),
     ("who-pays-bills-during-separation","Who Pays Bills During Separation?",                 "Mortgage, utilities, joint cards — and how to set up an interim arrangement."),
     ("pets-and-family-law",            "Pets and Family Law",                                "Who gets the pet after separation and the 2025 law changes."),
     ("delaying-property-settlement",   "Can My Ex Delay Settlement?",                        "Stalling tactics, time limits, and how mediation forces progress."),

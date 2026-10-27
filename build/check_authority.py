@@ -20,7 +20,8 @@ BLOG=['cost-of-divorce-in-australia','mediation-with-a-narcissist','consent-orde
       'section-60i-certificate-guide','relocation-with-children-after-separation',
       'what-age-can-a-child-choose-which-parent-to-live-with','hiding-assets-in-divorce',
       'christmas-parenting-arrangements-after-separation','how-to-change-parenting-orders',
-      'who-is-responsible-for-debts-after-separation']
+      'who-is-responsible-for-debts-after-separation',
+      'buying-out-your-ex-family-home-australia','inheritance-in-property-settlement-australia']
 
 def content_only(s):
     s=re.sub(r'<header.*?</header>','',s,flags=re.S)
