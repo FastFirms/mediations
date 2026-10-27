@@ -206,6 +206,7 @@ def nav():
     <a href="/" class="logo"><img src="/assets/images/MA.svg" alt="Mediations Australia" width="180" height="36" loading="eager" style="display:block;height:36px;width:auto"></a>
     <nav class="nav-links" id="navlinks" aria-label="Primary">
       <a class="lnk" href="/about-mediations-australia/">About</a>
+      <a class="lnk" href="/join-our-mediator-network/">Join Us</a>
 <span class="has-drop"><a class="lnk" href="/how-we-help/" aria-haspopup="true">How We Help</a>
         {svc_mega}
       </span>
@@ -304,6 +305,7 @@ def footer():
           <li><a href="/preparing-for-mediation/">Resources</a></li>
           <li><a href="/family-lawyers/">Family lawyers by city</a></li>
           <li><a href="/our-team/">Our team</a></li>
+          <li><a href="/join-our-mediator-network/">Join our mediator network</a></li>
           <li><a href="/memberships/">Memberships</a></li>
           <li><a href="/contact-us/">Contact</a></li>
           <li><a href="{BOOK_URL}">Book a consultation</a></li>
