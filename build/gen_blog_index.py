@@ -348,7 +348,7 @@ for _,_,_,posts in TOPICS:
 
 # ── FEATURED / RECENT ─────────────────────────────────────────────────────────
 # Update FEATURED_SLUG to the newest article each batch.
-FEATURED_SLUG = "who-is-responsible-for-debts-after-separation"
+FEATURED_SLUG = "inheritance-in-property-settlement-australia"
 RECENT_SLUGS = [
     "how-to-change-parenting-orders",
     "hiding-assets-in-divorce",
