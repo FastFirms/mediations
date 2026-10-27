@@ -140,20 +140,23 @@ doc += f"""<main id="main">
   </div>
 </section>
 
-<section class="sec reveal" style="padding-top:80px;padding-bottom:80px">
-  <div class="wrap">
-    <div style="max-width:52ch;margin-bottom:48px">
-      <p class="sec-tag">Meet the team</p>
-      <h2 class="sec-title">A team of Mediators <em>across Australia</em></h2>
-      <p style="font-size:1.05rem;color:var(--ink-soft)">Our team brings together nationally accredited mediators and experienced lawyers — each with a proven track record of resolving disputes without court.</p>
-    </div>
-  </div>
+<section class="sec reveal" style="padding:0;position:relative;overflow:hidden">
   <img src="/assets/images/mediations-australia-accredited-mediators.webp"
        alt="Mediations Australia — nationally accredited mediators and experienced lawyers across Australia"
        width="1847" height="852"
        loading="lazy"
        decoding="async"
        style="width:100%;height:auto;display:block">
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,#f7faf7 0%,rgba(247,250,247,.6) 18%,transparent 38%,transparent 72%,rgba(247,250,247,.7) 88%,#f7faf7 100%),linear-gradient(to right,#f7faf7 0%,transparent 10%,transparent 90%,#f7faf7 100%)"></div>
+  <div style="position:absolute;top:0;left:0;right:0;padding:clamp(36px,5vw,72px) 0">
+    <div class="wrap">
+      <div style="max-width:52ch">
+        <p class="sec-tag">Meet the team</p>
+        <h2 class="sec-title">A team of Mediators <em>across Australia</em></h2>
+        <p style="font-size:1.05rem;color:var(--ink-soft)">Our team brings together nationally accredited mediators and experienced lawyers — each with a proven track record of resolving disputes without court.</p>
+      </div>
+    </div>
+  </div>
 </section>
 """
 doc += faq_html(qa_home, heading="Everything you might be <em>wondering</em>.", tag="Common questions")
