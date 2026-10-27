@@ -146,7 +146,7 @@ doc += f"""<main id="main">
       <p class="sec-tag">Meet the team</p>
       <h2 class="sec-title">A team of Mediators <em>across Australia</em></h2>
       <p style="font-size:1.05rem;color:var(--ink-soft)">Our team brings together nationally accredited mediators and experienced lawyers — each with a proven track record of resolving disputes without court.</p>
-      <a href="{BOOK_URL}" class="btn" style="margin-top:28px;display:inline-block">Book a Free Consultation</a>
+      <div style="margin-top:28px"><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a></div>
     </div>
   </div>
 </section>
