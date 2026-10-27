@@ -225,7 +225,7 @@ JS = """<script>
     fetch('https://formspree.io/f/xoeeerjo',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
       .then(function(r){return r.json().catch(function(){return{}}).then(function(j){return{s:r.status,j:j}})})
       .then(function(r){
-        if(r.s>=200&&r.s<300){ev('mediator_eoi_submit_success');f.hidden=true;var dn=document.getElementById('eoiDone');dn.hidden=false;dn.focus();return}
+        if(r.s>=200&&r.s<300){ev('mediator_eoi_submit_success');f.hidden=true;var dn=document.getElementById('eoiDone');dn.hidden=false;setTimeout(function(){location.href='/join-our-mediator-network/thank-you/'},350);return}
         fail('Something went wrong. Please try again, or email hello@mediationsaustralia.com.au.')})
       .catch(function(){fail('We could not reach our server. Please check your connection and try again.')})
       .then(function(){busy=false;btn.disabled=false;txt.textContent='Submit Expression of Interest'})});
@@ -343,6 +343,53 @@ def build():
     with open(os.path.join(path, "index.html"), "w") as fh:
         fh.write(doc)
     print(f"Built: /{SLUG}/")
+    build_thanks()
+
+
+def build_thanks():
+    slug = f"{SLUG}/thank-you"
+    doc = head("Thank You | Join Our Mediator Network | Mediations Australia",
+               "Thank you for your expression of interest in the Mediations Australia Mediator Network.",
+               slug, extra_schema=[org_schema()])
+    doc = doc.replace('<meta name="robots" content="index, follow, max-image-preview:large">',
+                      '<meta name="robots" content="noindex, follow">')
+    doc += nav()
+    doc += f"""<main id="main">
+{crumb_html([("Home",""),("Join Our Mediator Network",SLUG),("Thank you",None)])}
+<section class="phero">
+  <div class="phero-blob"></div>
+  <div class="wrap">
+    <span class="eyebrow"><span class="pulse"></span>Expression of interest received</span>
+    <h1>Thank you for your <em>interest</em></h1>
+    <p class="lede">We've received your expression of interest in the Mediations Australia Mediator Network. Our team will review your information and contact you if we'd like to discuss next steps.</p>
+    <div class="phero-cta">
+      <a href="/" class="btn btn-primary">Back to Home <span class="arr">→</span></a>
+      <a href="/about-mediations-australia/" class="btn btn-ghost">Learn About Mediations Australia</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding:0">
+  <div class="wrap-narrow">
+    <p class="sec-tag">What happens next</p>
+    <h2 style="margin-top:10px">Our review <em>process</em></h2>
+    <ol>
+      <li><strong>We review your information.</strong> Each expression of interest is considered individually against our network needs, practice areas and locations.</li>
+      <li><strong>We may be in touch.</strong> If there's a potential fit, we may contact you to discuss your experience, availability and professional requirements.</li>
+      <li><strong>Next steps by invitation.</strong> Where appropriate, we may request verification documents or arrange a conversation before considering network participation.</li>
+    </ol>
+    <div class="answer"><p><strong>Please note:</strong> Submission does not guarantee acceptance to the network or future work. If you need to update anything you've sent, email <a href="mailto:hello@mediationsaustralia.com.au">hello@mediationsaustralia.com.au</a>.</p></div>
+  </div>
+</section>
+</main>"""
+    doc += page_end()
+    doc = doc.replace("</head>", CSS + "\n</head>")
+    doc = doc.replace("</body>", "<script>try{if(window.gtag)gtag('event','mediator_eoi_thank_you_view',{form_name:'mediator_network_eoi'})}catch(e){}</script>\n</body>")
+    path = os.path.join(OUT, slug)
+    os.makedirs(path, exist_ok=True)
+    with open(os.path.join(path, "index.html"), "w") as fh:
+        fh.write(doc)
+    print(f"Built: /{slug}/")
 
 
 if __name__ == "__main__":

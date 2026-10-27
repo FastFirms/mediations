@@ -478,7 +478,7 @@ document.querySelectorAll('.has-drop').forEach(hd=>{
     fetch('https://formspree.io/f/xoeeerjo',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
       .then(function(r){return r.json().catch(function(){return{}}).then(function(j){return{s:r.status,j:j}})})
       .then(function(r){
-        if(r.s>=200&&r.s<300){ev('mediator_eoi_submit_success');f.hidden=true;var dn=document.getElementById('eoiDone');dn.hidden=false;dn.focus();return}
+        if(r.s>=200&&r.s<300){ev('mediator_eoi_submit_success');f.hidden=true;var dn=document.getElementById('eoiDone');dn.hidden=false;setTimeout(function(){location.href='/join-our-mediator-network/thank-you/'},350);return}
         fail('Something went wrong. Please try again, or email hello@mediationsaustralia.com.au.')})
       .catch(function(){fail('We could not reach our server. Please check your connection and try again.')})
       .then(function(){busy=false;btn.disabled=false;txt.textContent='Submit Expression of Interest'})});
