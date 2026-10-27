@@ -140,22 +140,22 @@ doc += f"""<main id="main">
   </div>
 </section>
 
-<section class="sec reveal" style="padding-bottom:0">
-  <div class="wrap" style="padding-bottom:clamp(32px,4vw,56px)">
+<section class="sec reveal" style="padding-top:80px;padding-bottom:0;background:#f7faf7">
+  <div class="wrap" style="margin-bottom:40px">
     <div style="max-width:52ch">
       <p class="sec-tag">Meet the team</p>
       <h2 class="sec-title">A team of Mediators <em>across Australia</em></h2>
       <p style="font-size:1.05rem;color:var(--ink-soft)">Our team brings together nationally accredited mediators and experienced lawyers — each with a proven track record of resolving disputes without court.</p>
     </div>
   </div>
-  <div style="position:relative;overflow:hidden">
+  <div style="position:relative;line-height:0">
     <img src="/assets/images/mediations-australia-accredited-mediators.webp"
          alt="Mediations Australia — nationally accredited mediators and experienced lawyers across Australia"
          width="1847" height="852"
          loading="lazy"
          decoding="async"
          style="width:100%;height:auto;display:block">
-    <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,#f7faf7 0%,transparent 14%,transparent 82%,#f7faf7 100%),linear-gradient(to right,#f7faf7 0%,transparent 8%,transparent 92%,#f7faf7 100%)"></div>
+    <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,#f7faf7 0%,transparent 20%,transparent 78%,#f7faf7 100%),linear-gradient(to right,#f7faf7 0%,transparent 6%,transparent 94%,#f7faf7 100%)"></div>
   </div>
 </section>
 """
