@@ -147,15 +147,13 @@ doc += f"""<main id="main">
       <h2 class="sec-title">A team of Mediators <em>across Australia</em></h2>
       <p style="font-size:1.05rem;color:var(--ink-soft)">Our team brings together nationally accredited mediators and experienced lawyers — each with a proven track record of resolving disputes without court.</p>
     </div>
-    <img src="/assets/images/mediations-australia-accredited-mediators.webp"
-         alt="Mediations Australia — nationally accredited mediators and experienced lawyers across Australia"
-         width="1847" height="852"
-         loading="lazy"
-         decoding="async"
-         style="width:100%;height:auto;border-radius:16px;display:block;margin-bottom:32px">
-    <a href="/about-mediations-australia/" class="btn btn-ghost">Meet the full team <span class="arr">→</span></a>
-
   </div>
+  <img src="/assets/images/mediations-australia-accredited-mediators.webp"
+       alt="Mediations Australia — nationally accredited mediators and experienced lawyers across Australia"
+       width="1847" height="852"
+       loading="lazy"
+       decoding="async"
+       style="width:100%;height:auto;display:block">
 </section>
 """
 doc += faq_html(qa_home, heading="Everything you might be <em>wondering</em>.", tag="Common questions")
