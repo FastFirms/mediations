@@ -691,7 +691,11 @@ document.addEventListener('DOMContentLoaded',function(){
   </div>
 </section>
 
-<section class="sec reveal" style="background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.97) 30%,rgba(247,250,247,.8) 48%,rgba(247,250,247,.2) 66%,rgba(247,250,247,0) 76%),url('/assets/images/mediations-australia-accredited-mediators.webp');background-size:cover;background-position:center 40%;padding:clamp(60px,7vw,110px) 0">
+<style>
+.team-panel{background:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.97) 30%,rgba(247,250,247,.8) 48%,rgba(247,250,247,.2) 66%,rgba(247,250,247,0) 76%),url('/assets/images/mediations-australia-accredited-mediators.webp') center 40%/cover no-repeat,#f7faf7;padding:clamp(60px,7vw,110px) 0}
+@media(max-width:760px){.team-panel{background:linear-gradient(to bottom,#f7faf7 0%,rgba(247,250,247,0) 45%) center bottom/100% 300px no-repeat,linear-gradient(to right,#f7faf7 0%,rgba(247,250,247,0) 12%,rgba(247,250,247,0) 88%,#f7faf7 100%) center bottom/100% 300px no-repeat,url('/assets/images/mediations-australia-accredited-mediators.webp') center bottom/auto 300px no-repeat,#f7faf7;padding:56px 0 260px}}
+</style>
+<section class="sec reveal team-panel">
   <div class="wrap">
     <div style="max-width:52ch">
       <p class="sec-tag">Meet the team</p>
