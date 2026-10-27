@@ -136,6 +136,8 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         # Batch 24 — new cornerstones
         "christmas-parenting-arrangements-after-separation",
         "how-to-change-parenting-orders",
+        # Recruitment
+        "join-our-mediator-network",
         "who-is-responsible-for-debts-after-separation"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
