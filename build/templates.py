@@ -205,12 +205,11 @@ def nav():
   <div class="wrap nav-inner">
     <a href="/" class="logo"><img src="/assets/images/MA.svg" alt="Mediations Australia" width="180" height="36" loading="eager" style="display:block;height:36px;width:auto"></a>
     <nav class="nav-links" id="navlinks" aria-label="Primary">
-      <a class="lnk" href="/about-mediations-australia/">About</a>
-      <a class="lnk" href="/join-our-mediator-network/">Join Us</a>
+      <a class="lnk" href="/about-mediations-australia/">About Us</a>
 <span class="has-drop"><a class="lnk" href="/how-we-help/" aria-haspopup="true">How We Help</a>
         {svc_mega}
       </span>
-      <a class="lnk" href="/how-mediation-works/">How it works</a>
+      <a class="lnk" href="/how-mediation-works/">The Process</a>
       <a class="lnk" href="/our-fee-structure/">Our Fees</a>
       <span class="has-drop"><a class="lnk" href="/guides/" aria-haspopup="true">Resources</a>
         <div class="drop mega mega-resources">
@@ -252,7 +251,8 @@ def nav():
           </div>
         </div>
       </span>
-      <a class="lnk" href="/contact-us/">Contact</a>
+      <a class="lnk" href="/join-our-mediator-network/">Join Us</a>
+      <a class="lnk" href="/contact-us/">Contact Us</a>
       <a class="btn btn-primary" href="{BOOK_URL}" style="padding:11px 22px;font-size:.92rem">Book a Free Consultation</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
