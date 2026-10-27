@@ -140,22 +140,13 @@ doc += f"""<main id="main">
   </div>
 </section>
 
-<section class="sec reveal" style="padding-top:80px;padding-bottom:0;background:#f7faf7">
-  <div class="wrap" style="margin-bottom:40px">
+<section class="sec reveal" style="background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.97) 30%,rgba(247,250,247,.8) 48%,rgba(247,250,247,.2) 66%,rgba(247,250,247,0) 76%),url('/assets/images/mediations-australia-accredited-mediators.webp');background-size:cover;background-position:center 40%;padding:clamp(60px,7vw,110px) 0">
+  <div class="wrap">
     <div style="max-width:52ch">
       <p class="sec-tag">Meet the team</p>
       <h2 class="sec-title">A team of Mediators <em>across Australia</em></h2>
       <p style="font-size:1.05rem;color:var(--ink-soft)">Our team brings together nationally accredited mediators and experienced lawyers — each with a proven track record of resolving disputes without court.</p>
     </div>
-  </div>
-  <div style="position:relative;line-height:0">
-    <img src="/assets/images/mediations-australia-accredited-mediators.webp"
-         alt="Mediations Australia — nationally accredited mediators and experienced lawyers across Australia"
-         width="1847" height="852"
-         loading="lazy"
-         decoding="async"
-         style="width:100%;height:auto;display:block">
-    <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,#f7faf7 0%,transparent 20%,transparent 78%,#f7faf7 100%),linear-gradient(to right,#f7faf7 0%,transparent 6%,transparent 94%,#f7faf7 100%)"></div>
   </div>
 </section>
 """
