@@ -21,7 +21,8 @@ BLOG=['cost-of-divorce-in-australia','mediation-with-a-narcissist','consent-orde
       'what-age-can-a-child-choose-which-parent-to-live-with','hiding-assets-in-divorce',
       'christmas-parenting-arrangements-after-separation','how-to-change-parenting-orders',
       'who-is-responsible-for-debts-after-separation',
-      'buying-out-your-ex-family-home-australia','inheritance-in-property-settlement-australia']
+      'buying-out-your-ex-family-home-australia','inheritance-in-property-settlement-australia',
+      'should-i-move-out-of-the-family-home','how-to-tell-children-about-separation']
 
 def content_only(s):
     s=re.sub(r'<header.*?</header>','',s,flags=re.S)

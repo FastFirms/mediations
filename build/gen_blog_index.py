@@ -11,6 +11,7 @@ OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.
 # Each entry: (slug, title, blurb)
 
 SEPARATION = [
+    ("should-i-move-out-of-the-family-home", "Should I Move Out of the Family Home?", "What moving out changes for property, children and bills, and what to agree first."),
     ("separation-guide",               "Separation in Australia: Complete Guide",            "First steps, the date of separation, who stays in the house, and protecting yourself."),
     ("de-facto-relationships-guide",   "De Facto Relationships & Separation",                "What counts as de facto, how assets are split, the two-year limit."),
     ("how-to-get-a-divorce-in-australia-a-step-by-step-guide", "How to Get a Divorce in Australia", "Eligibility, the 12-month rule, applying online, cost, and serving papers."),
@@ -61,6 +62,7 @@ SEPARATION = [
 ]
 
 PARENTING = [
+    ("how-to-tell-children-about-separation", "How to Tell Your Children About Separation", "What to say at each age, timing, what to avoid, and planning it with your ex."),
     ("child-custody-mediation",        "Child Custody Mediation",                            "What the law says about custody, 50/50 care, and how parents agree without court."),
     ("parenting-plans-guide",          "Parenting Plans in Australia",                       "What to include, whether it's binding, and how to agree one through mediation."),
     ("fathers-rights",                 "Fathers' Rights After Separation",                   "The truth about 50/50 care, parental responsibility, and securing meaningful time."),
@@ -348,8 +350,9 @@ for _,_,_,posts in TOPICS:
 
 # ── FEATURED / RECENT ─────────────────────────────────────────────────────────
 # Update FEATURED_SLUG to the newest article each batch.
-FEATURED_SLUG = "inheritance-in-property-settlement-australia"
+FEATURED_SLUG = "how-to-tell-children-about-separation"
 RECENT_SLUGS = [
+    "should-i-move-out-of-the-family-home",
     "how-to-change-parenting-orders",
     "hiding-assets-in-divorce",
     "relocation-with-children-after-separation",

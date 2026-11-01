@@ -78,6 +78,8 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "who-pays-bills-during-separation",
         "buying-out-your-ex-family-home-australia",
         "inheritance-in-property-settlement-australia",
+        "should-i-move-out-of-the-family-home",
+        "how-to-tell-children-about-separation",
         "questions/what-is-family-dispute-resolution",
         "questions/whats-the-difference-between-mediation-and-family-dispute-resolution",
         "questions/when-can-i-be-exempt-from-family-dispute-resolution",
