@@ -13,7 +13,7 @@ post(
     "Ex Not Following Parenting Orders? Your Options",
     "If your ex is ignoring parenting orders, you have options beyond court. How contravention works, what a court can do, and when mediation is the smarter step.",
     "Parenting",
-    "Ex not following parenting orders: <em>your options</em>",
+    "Ex not following parenting orders <em>your options</em>",
     ("When parenting orders are made, you expect them to be followed. When your ex stops following them, it is "
      "stressful, and it is tempting to head straight back to court. Sometimes that is necessary. Often there is "
      "a calmer, faster and cheaper first step. This guide explains what counts as a contravention, what a court "
