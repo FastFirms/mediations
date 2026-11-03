@@ -22,7 +22,8 @@ BLOG=['cost-of-divorce-in-australia','mediation-with-a-narcissist','consent-orde
       'christmas-parenting-arrangements-after-separation','how-to-change-parenting-orders',
       'who-is-responsible-for-debts-after-separation',
       'buying-out-your-ex-family-home-australia','inheritance-in-property-settlement-australia',
-      'should-i-move-out-of-the-family-home','how-to-tell-children-about-separation']
+      'should-i-move-out-of-the-family-home','how-to-tell-children-about-separation',
+      'ex-not-following-parenting-orders','new-partner-after-separation']
 
 def content_only(s):
     s=re.sub(r'<header.*?</header>','',s,flags=re.S)
