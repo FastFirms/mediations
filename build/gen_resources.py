@@ -671,17 +671,45 @@ PARENTING_BUILDER = """
 """
 
 # ---- PARENTING PLAN TEMPLATE ----
+# Download box shown above the builder on /parenting-plan-template/ (brief §4.1)
+PPT_DOWNLOAD_BOX = """<div class="wrap-narrow"><div class="answer reveal" style="margin-top:1.5rem">
+<p style="margin:0 0 .5rem"><strong>Download the free template:</strong> a blank parenting plan worksheet, no sign-up needed.</p>
+<p style="margin:0;display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn btn-primary" href="/downloads/parenting-plan-template.pdf">PDF (5 pages, 140 KB)</a>
+<a class="btn btn-ghost" href="/downloads/parenting-plan-template.docx">Word, editable (13 KB)</a></p>
+<p style="margin:.6rem 0 0;font-size:.85rem">A discussion worksheet, not a court document. <a href="#download">How to use it</a></p>
+</div></div>"""
+
 build("parenting-plan-template",
- "Parenting Plan Template Australia | What to Include (2026)",
- "A complete guide to what belongs in a parenting plan in Australia — living arrangements, time, decisions, holidays and dispute resolution. Build yours with accredited mediators.",
+ "Free Parenting Plan Template Australia | PDF & Word",
+ "Download a free editable parenting plan template, explore practical examples, and understand how a parenting plan differs from enforceable court orders.",
  "A practical guide for separated parents",
- "Parenting Plan Template",
- "A parenting plan is the practical backbone of co-parenting after separation. This guide walks through every section a thorough Australian parenting plan should cover — with worked examples, common mistakes to avoid, and how to turn a draft into an arrangement that actually holds.",
- "A parenting plan should cover where the children live, how time is shared week to week, holidays and special occasions, how major decisions are made, communication between parents, travel arrangements, and how disputes will be handled. A mediator helps parents negotiate each section so the plan reflects the children's real needs rather than what either parent prefers.",
+ "Free parenting plan template for Australian parents",
+ "Download our free parenting plan template as a <a href=\"/downloads/parenting-plan-template.pdf\"><strong>PDF</strong></a> or editable <a href=\"/downloads/parenting-plan-template.docx\"><strong>Word document</strong></a>, with no sign-up. Then use this guide to work through every section a thorough Australian parenting plan should cover, with worked examples and common mistakes to avoid.",
+ "A parenting plan records agreed arrangements for children after separation. A template can help parents discuss practical details, but it does not replace individual legal advice or become a court order simply because it is signed. Download the blank worksheet below (PDF or Word), use the checklist to consider your child's needs, and seek help where safety concerns or disagreement make discussion difficult.",
  """
  <h2>What is a parenting plan?</h2>
  <p>A parenting plan is a written agreement between separated parents that sets out how their children will be raised across two households. Under the <a href="https://www.legislation.gov.au/Details/C2021C00095" target="_blank" rel="noopener">Family Law Act 1975</a>, a parenting plan must be in writing and signed and dated by both parents. It is not a court order, but a court will consider it in any later dispute — and it is far more useful than an oral agreement that each party later remembers differently.</p>
  <p>A parenting plan is different from <a href="/consent-orders/">consent orders</a>, which are court-approved and directly enforceable. Many families use a parenting plan as a starting point and later formalise it as consent orders once arrangements have settled.</p>
+
+ <h2 id="download">Download the blank parenting plan (PDF and Word)</h2>
+ <p>Our free parenting plan template is a <strong>discussion worksheet</strong> with ten sections and space to write what you agree. No email or sign-up is needed.</p>
+ <ul>
+   <li><a href="/downloads/parenting-plan-template.pdf">Parenting plan template, PDF</a> (5 pages, about 140 KB): print it and fill it in by hand.</li>
+   <li><a href="/downloads/parenting-plan-template.docx">Parenting plan template, Word</a> (about 13 KB): type into it on a computer and save your own copy.</li>
+ </ul>
+ <h3>How to use, edit and print it</h3>
+ <p>Work through each section together, or separately before a mediation session. Leave sections blank if they do not apply. When you have agreed, Family Relationships Online explains that a parenting plan must be <strong>in writing, dated and signed by both parents</strong>, and can include ways to change arrangements and resolve disagreements (<a href="https://www.familyrelationships.gov.au/separation/family-mediation-dispute-res" target="_blank" rel="noopener">Family Relationships Online</a>). Keep a signed copy each. Children do not sign the plan.</p>
+ <h3>When not to use a generic template</h3>
+ <p>A template is a starting point, not a solution for every family. Get advice before relying on one if:</p>
+ <ul>
+   <li>there is family violence, abuse, coercion or a risk to a child;</li>
+   <li>court orders already exist about the children;</li>
+   <li>one parent wants to relocate a long distance;</li>
+   <li>a child has complex health or developmental needs;</li>
+   <li>you cannot discuss arrangements without pressure or fear.</li>
+ </ul>
+ <p>Prefer to build your plan step by step on screen? The interactive builder above walks you through the same topics.</p>
 
  <h2>The full template: what to cover section by section</h2>
 
@@ -752,6 +780,10 @@ build("parenting-plan-template",
  <h3>10. Review and variation</h3>
  <p>Children's needs change. Build in a scheduled review — annually, or when a child changes school — and agree on a process for proposing changes. A plan that can be updated by agreement is far more durable than one that can only be changed through court.</p>
 
+ <h2 id="states">Is this template valid in NSW, Queensland and Victoria?</h2>
+ <p>Yes, the same template works across Australia. Parenting plans are part of federal family law under the <a href="https://www.legislation.gov.au/C2004A00275/latest/text" target="_blank" rel="noopener">Family Law Act 1975</a>, so there is no separate NSW, Queensland or Victorian parenting plan. What changes between families is the content, not the state.</p>
+ <p><strong>Western Australia</strong> is the exception in procedure: WA has its own Family Court, and de facto matters there run under WA law. If you live in WA, check the <a href="https://www.familycourt.wa.gov.au/" target="_blank" rel="noopener">Family Court of Western Australia</a> or get local advice before formalising anything.</p>
+
  <h2>Parenting plan vs consent orders: which do you need?</h2>
  <figure class="tbl"><table>
  <thead><tr><th></th><th>Parenting plan</th><th>Consent orders</th></tr></thead>
@@ -763,6 +795,9 @@ build("parenting-plan-template",
  <tr><td>Best for</td><td>Early-stage, cooperative arrangements</td><td>Where you want certainty and enforceability</td></tr>
  </tbody></table></figure>
 
+ <h3>If you already have parenting orders</h3>
+ <p>Do not assume a new parenting plan simply replaces existing court orders. How a later plan interacts with orders is a legal question, so get legal advice before agreeing to different arrangements or acting on them.</p>
+
  <h2>Common mistakes in parenting plans</h2>
  <ul>
    <li><strong>Too vague</strong> — "reasonable time with each parent" sounds flexible but causes constant negotiation and disputes.</li>
@@ -772,10 +807,23 @@ build("parenting-plan-template",
    <li><strong>No review mechanism</strong> — a plan written when a child is 4 won't suit a teenager.</li>
  </ul>
 
+ <h2 id="safety">Safety and suitability</h2>
+ <p>A parenting plan should be agreed freely. If you feel pressured, afraid or unsafe, do not use the template to negotiate directly with the other parent. A family dispute resolution practitioner assesses whether mediation is suitable, considering family violence, safety, bargaining power and risks to children, and may offer separate-room, telephone or video sessions. In an emergency call <strong>000</strong>; for confidential support call <a href="https://www.1800respect.org.au/" target="_blank" rel="noopener">1800RESPECT</a> on 1800 737 732.</p>
+
  <h2>How mediation helps you build a better plan</h2>
  <p>A mediator doesn't draft the plan for you — they help you and the other parent work through each section together, drawing out the details that matter, surfacing disagreements early, and finding workable solutions. The result is a plan both parents have genuinely agreed to, which is what makes it last. <a href="/parenting-plan-mediation/">See parenting plan mediation →</a></p>
  """,
- [("What should be included in a parenting plan in Australia?",
+ [("Is there a free parenting plan template I can download?",
+   "Yes. Our parenting plan template is free to download as a PDF or editable Word document, with no sign-up. It is a discussion worksheet, not a court document."),
+  ("Is a parenting plan the same as a court order?",
+   "No. A parenting plan records an agreement between parents, while a court order is made by a court. Parents can record mediation agreements in a written parenting plan and renegotiate it over time. Get legal advice about enforceability and any existing orders."),
+  ("What makes a written parenting plan?",
+   "Family Relationships Online says a parenting plan must be in writing, dated and signed by both parents. Those formal features do not mean any arrangement is safe or suitable, so seek individual advice before signing."),
+  ("Do we have to sit together to work on the plan?",
+   "Not necessarily. An FDR practitioner assesses whether mediation is suitable and may offer separate-room, telephone or video sessions. Tell the practitioner about any concerns before starting."),
+  ("Is there a different template for NSW, Queensland or Victoria?",
+   "No. Parenting plans fall under federal family law, so the same template works in every state. Western Australia has its own Family Court, so WA parents should check local procedures."),
+  ("What should be included in a parenting plan in Australia?",
    "Living arrangements, weekly time with each parent, school holiday allocation, special occasions, major decision-making, communication between parents, travel, changeover arrangements, dispute resolution, and how the plan will be reviewed. The more specific it is, the fewer disputes arise."),
   ("Is a parenting plan legally binding in Australia?",
    "No. A parenting plan is not a court order and cannot be directly enforced. However, a court will consider it in any later dispute, and it is far more useful than a verbal agreement. To make arrangements directly enforceable, formalise them as consent orders."),
@@ -790,7 +838,7 @@ build("parenting-plan-template",
  "Parenting Plan Template",
  "Build a parenting plan that <em>actually works</em>.",
  "Book a free initial consultation and let an accredited mediator help you create a complete, child-focused parenting plan.",
- tool_html=PARENTING_BUILDER,tool_position='before')
+ tool_html=PPT_DOWNLOAD_BOX+PARENTING_BUILDER,tool_position='before')
 
 # ---- BFA OR CONSENT ORDERS ----
 build("bfa-or-consent-orders",
@@ -1068,12 +1116,12 @@ build("family-law-cost-estimator",
 
 # ---- SEPARATION UNDER ONE ROOF ----
 build("separation-under-one-roof",
- "Separation Under One Roof | How It Works in Australia",
- "Separated but still living together? Learn how separation under one roof works in Australia, what you need to show, and how mediation helps. Free consultation.",
+ "Separated Under One Roof: Centrelink & Divorce Evidence",
+ "Find the official SS293 form, understand Centrelink assessment and distinguish it from the affidavit evidence needed for a divorce application.",
  "Managing together until you can live apart",
- "Separation Under One Roof",
+ "Separated under one roof in Australia",
  "Many couples separate while still living in the same home — for financial reasons, for the children, or while they sort out next steps. This guide explains how 'separation under one roof' is recognised in Australia and how to handle it.",
- "Separation under one roof means a couple has separated but continues to live in the same home. It is recognised in Australia, but you may need to show that the relationship has genuinely ended — through changes in finances, sleeping arrangements, and how you present to others.",
+ "Separation under one roof means a relationship has ended while both people still live in the same home. Centrelink's assessment (form SS293) and the evidence the Court needs for a divorce are separate processes: SS293 is a Services Australia form, not a divorce affidavit, and completing it does not guarantee a particular payment.",
  """
  <h2>What is separation under one roof?</h2>
  <p>"Separation under one roof" describes a couple who have decided their relationship is over but continue, at least for a time, to live in the same home. It is common and entirely valid. People stay under one roof for financial reasons — running two households is expensive — for the stability of the children, while a property settlement is sorted out, or simply because finding somewhere else to live takes time.</p>
@@ -1098,9 +1146,25 @@ build("separation-under-one-roof",
  <div class="callout"><h3>The date of separation matters</h3>
  <p>Your date of separation sets the clock running on time limits for both divorce and property. It can also affect Centrelink entitlements and how assets are valued. If you're separated under one roof, pin the date down early so you understand exactly where you stand.</p></div>
 
- <h2>The affidavit you'll need when you apply for divorce</h2>
- <p>When you have lived under the same roof during the 12-month separation period, the court won't simply take your word for it. You will usually need to file an <strong>affidavit</strong> setting out the changes in your relationship — sleeping arrangements, finances, household duties and social life — together with a <strong>corroborating affidavit from an independent person</strong>, such as a friend or family member, who can confirm they understood you to be separated. The <a href="https://www.fcfcoa.gov.au/fl/divorce" target="_blank" rel="noopener">FCFCOA divorce process</a> sets out exactly what these affidavits should cover.</p>
- <p>It sounds onerous, but in practice it is a short, factual statement. The earlier you have clarity on your separation date and the changes that followed, the simpler this step becomes.</p>
+ <h2>Divorce: the affidavit evidence the Court needs</h2>
+ <p>If you lived under one roof during the 12-month separation period, the <a href="https://www.fcfcoa.gov.au/fl/pubs/separated-under-one-roof" target="_blank" rel="noopener">Federal Circuit and Family Court</a> requires you to support your divorce application with an <strong>affidavit</strong>: a written statement sworn or affirmed before an authorised witness such as a lawyer or Justice of the Peace.</p>
+ <h3>Sole vs joint applications</h3>
+ <figure class="tbl"><table><caption>Affidavits required (Court guidance)</caption>
+ <thead><tr><th>Application</th><th>Affidavits</th></tr></thead>
+ <tbody>
+ <tr><td>Sole (you apply alone)</td><td>Your own affidavit, and you should also file an affidavit by an independent person such as a family member, friend or neighbour</td></tr>
+ <tr><td>Joint (you apply together)</td><td>Each spouse files a separate affidavit; if only one of you can, file an independent person's affidavit as well</td></tr>
+ </tbody></table></figure>
+ <h3>What the affidavit needs to explain</h3>
+ <p>The Court asks you to show a change in the marriage, gradual or sudden, by explaining any:</p>
+ <ul>
+   <li>change in sleeping arrangements;</li>
+   <li>reduction in shared activities or family outings;</li>
+   <li>decline in performing household duties for each other;</li>
+   <li>division of finances, such as separate bank accounts;</li>
+   <li>other matters showing the marriage has broken down, such as telling family and friends.</li>
+ </ul>
+ <p>It should also explain <strong>why you continued to live in the same home</strong> and whether you intend to change that, the <strong>arrangements for any children under 18</strong> during that time, and which <strong>government departments</strong> (such as Centrelink or Child Support) you told about the separation, attaching any correspondence. These are examples of evidence, not a checklist that guarantees an outcome.</p>
 
  <h2>How your separation date affects time limits</h2>
  <p>Separation isn't only about divorce. It also starts the clock on the deadlines for finalising a property settlement, and those deadlines differ for married and de facto couples.</p>
@@ -1113,8 +1177,14 @@ build("separation-under-one-roof",
  </tbody></table></figure>
  <p>Applying after a deadline isn't impossible, but you need the court's permission, which adds cost and uncertainty. If a deadline is approaching, it is worth formalising arrangements while everyone is still cooperating. <a href="/property-settlement-after-separation/">Read our property settlement guide →</a></p>
 
- <h2>Centrelink, tax and finances while under one roof</h2>
- <p>Once you separate, you may be assessed as a single person for some payments even if you still share an address. <a href="https://www.servicesaustralia.gov.au/separating" target="_blank" rel="noopener">Services Australia</a> can recognise you as separated under one roof and may ask for a separation form and supporting details. Being upfront and consistent — the same separation date you'd give the court — keeps things clean across the board and avoids problems down the track.</p>
+ <h2>Centrelink: the official SS293 form</h2>
+ <p>If you receive, or are claiming, a Centrelink payment, Services Australia uses the <a href="https://www.servicesaustralia.gov.au/ss293" target="_blank" rel="noopener">Relationship details – Separated under one roof form (SS293)</a> to assess whether to pay you as a single person or as a member of a couple. Download it from the official page rather than a copy elsewhere, because forms are updated.</p>
+ <h3>Two forms, and a safety exception</h3>
+ <p>Services Australia says you and your ex-partner each need to complete a form, and your ex-partner returns theirs to you so you can submit both. <strong>If it puts you at risk, your ex-partner does not need to complete the form.</strong> Do not make unsafe contact simply to get paperwork; tell Services Australia about your situation.</p>
+ <h3>No payment amount is guaranteed</h3>
+ <p>Completing SS293 lets Services Australia make an assessment; it does not guarantee single-rate payments or any particular amount. Ask Services Australia about your eligibility and actual circumstances. Use the same separation date and facts you would give the Court, so your records are consistent.</p>
+ <div class="callout"><h3>SS293 is not a divorce form</h3>
+ <p>SS293 is for Centrelink. The Court separately requires affidavit evidence for a divorce where you lived under one roof. One does not satisfy the other.</p></div>
 
  <h2>Living together while separated: practical tips</h2>
  <p>The arrangement works best when expectations are clear. A few things make a real difference:</p>
@@ -1125,6 +1195,9 @@ build("separation-under-one-roof",
    <li><strong>Document the change</strong> — note your separation date and the adjustments that followed, which helps with both divorce and Centrelink later.</li>
    <li><strong>Plan the exit</strong> — treat the shared-roof period as temporary and agree a rough timeline for one person to move on.</li>
  </ul>
+
+ <h2>Safety and getting advice</h2>
+ <p>Living with a former partner can become unsafe. If you are in immediate danger, call <strong>000</strong>. For confidential support, contact <a href="https://www.1800respect.org.au/" target="_blank" rel="noopener">1800RESPECT</a> on 1800 737 732. Mediation may not be appropriate where there is family violence; see <a href="/domestic-violence-and-family-law/">domestic violence and family law</a>. For questions about your divorce application or property rights, get independent legal advice.</p>
 
  <h2>How mediation helps when you're still living together</h2>
  <p>Living together while separated can be tense, and small frictions — bills, the school run, who uses the kitchen when — can escalate quickly. <a href="/family-law-mediation/">Mediation</a> provides a structured, neutral way to agree on living arrangements, finances and parenting while you remain under the same roof, and to plan an orderly transition out of it.</p>
@@ -1140,6 +1213,14 @@ build("separation-under-one-roof",
    "It can affect time limits for divorce and property applications, Centrelink entitlements, and how assets are valued. Getting clarity on your separation date early helps you understand your legal position."),
   ("Can you still claim Centrelink as separated if you live together?",
    "You may be assessed as single even while sharing an address. Services Australia can recognise separation under one roof and may ask for a separation form and supporting details."),
+  ("Is SS293 the divorce form?",
+   "No. SS293 helps Services Australia assess whether you are paid as a single person or as a member of a couple. The Court separately requires affidavit evidence where separation under one roof is relevant to a divorce application."),
+  ("Must my former partner complete SS293?",
+   "Services Australia says each person generally completes a form, but your ex-partner does not need to if doing so puts you at risk. Read the current official instructions and ask Services Australia about your situation."),
+  ("What evidence might the Court need?",
+   "The Court lists changes in sleeping arrangements, shared activities, household duties and finances, and other evidence the marriage has broken down. It also asks why you stayed in the home and about arrangements for children."),
+  ("Does separation under one roof guarantee a payment amount?",
+   "No. Services Australia uses the SS293 information to assess single or couple status. Ask Services Australia about eligibility and your actual circumstances; no amount can be promised from separation alone."),
   ("Can we mediate while still living together?",
    "Yes. Mediation can help you agree on living arrangements, finances and parenting while under one roof, and can be conducted in separate rooms or online if being together is difficult.")],
  "Separation Under One Roof",
