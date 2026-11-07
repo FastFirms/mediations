@@ -685,7 +685,7 @@ build("parenting-plan-template",
  "Download a free editable parenting plan template, explore practical examples, and understand how a parenting plan differs from enforceable court orders.",
  "A practical guide for separated parents",
  "Free parenting plan template for Australian parents",
- "A parenting plan is the practical backbone of co-parenting after separation. This guide walks through every section a thorough Australian parenting plan should cover — with worked examples, common mistakes to avoid, and how to turn a draft into an arrangement that actually holds.",
+ "Download our free parenting plan template as a <a href=\"/downloads/parenting-plan-template.pdf\"><strong>PDF</strong></a> or editable <a href=\"/downloads/parenting-plan-template.docx\"><strong>Word document</strong></a>, with no sign-up. Then use this guide to work through every section a thorough Australian parenting plan should cover, with worked examples and common mistakes to avoid.",
  "A parenting plan records agreed arrangements for children after separation. A template can help parents discuss practical details, but it does not replace individual legal advice or become a court order simply because it is signed. Download the blank worksheet below (PDF or Word), use the checklist to consider your child's needs, and seek help where safety concerns or disagreement make discussion difficult.",
  """
  <h2>What is a parenting plan?</h2>
