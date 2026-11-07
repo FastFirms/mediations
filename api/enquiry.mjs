@@ -76,8 +76,12 @@ const FAMILY_CATS    = new Set(['family_parenting','family_property','family_com
 function isNonEmpty(v) { return typeof v === 'string' && v.trim().length > 0; }
 function isBool(v)     { return v === true || v === false; }
 
+const VALID_STATES = new Set(['NSW','VIC','QLD','WA','SA','TAS','ACT','NT','OUTSIDE_AU','UNSURE']);
+
 function validateGuidedPayload(b) {
   const errs = [];
+  if (b.state != null && !VALID_STATES.has(b.state)) errs.push('invalid state');
+  if (b.city != null && (typeof b.city !== 'string' || b.city.length > 80)) errs.push('invalid city');
   if (!VALID_CATEGORIES.has(b.matter_category))   errs.push('invalid matter_category');
   if (!VALID_STAGES.has(b.stage))                  errs.push('invalid stage');
   if (!VALID_PARTY_B.has(b.party_b_status))        errs.push('invalid party_b_status');
@@ -235,6 +239,8 @@ async function sendFormspreeNotification(submissionId, route, b) {
       stage:                       b.stage ?? null,
       delivery_preference:         b.delivery_preference ?? null,
       timing:                      b.timing ?? null,
+      state:                       b.state ?? null,
+      suburb_or_postcode:          b.city ?? null,
       safe_email:                  b.safe_email ?? null,
       safe_voicemail:              b.safe_voicemail ?? null,
       preferred_contact_time:      b.preferred_contact_time ?? null,

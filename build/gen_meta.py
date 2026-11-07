@@ -164,6 +164,21 @@ seen = set()
 urls = [u for u in urls
         if u[0] not in REDIRECTED and not (u[0] in seen or seen.add(u[0]))]
 
+# Never list a URL whose built page canonicalises elsewhere (sitemap = canonical URLs only).
+import re as _re
+def _self_canonical(slug):
+    f = os.path.join(OUT, slug, "index.html") if slug else os.path.join(OUT, "index.html")
+    try:
+        m = _re.search(r'rel="canonical" href="([^"]+)"', open(f, encoding="utf-8").read())
+    except OSError:
+        return True
+    want = f"{DOMAIN}/" if slug == "" else f"{DOMAIN}/{slug}/"
+    return (not m) or m.group(1) == want
+_dropped = [u[0] for u in urls if not _self_canonical(u[0])]
+urls = [u for u in urls if u[0] not in _dropped]
+if _dropped:
+    print(f"excluded {len(_dropped)} non-self-canonical URLs")
+
 entries = ""
 for slug, pri, freq in urls:
     loc = f"{DOMAIN}/" if slug == "" else f"{DOMAIN}/{slug}/"
