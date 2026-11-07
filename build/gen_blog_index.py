@@ -131,7 +131,7 @@ PROPERTY = [
     ("binding-financial-agreement-what-you-need-to-know", "Binding Financial Agreement: What You Need to Know", "A Binding Financial Agreement is a contract between two people who are in a relationship. It's like a prenuptial agreement. Learn what you need to..."),
     ("can-you-sue-a-family-trust-in-australia", "Can You Sue a Family Trust in Australia? Exploring…", "Can you sue a family trust in Australia? While you can't sue a trust directly, we help resolve trustee disputes through mediation - saving tens of…"),
     ("consent-orders-2025-update", "Consent Orders: Important 2025 Update", "Important updates on Consent orders. They are a legally binding agreement that is made between parties involved in a legal dispute and is approved..."),
-    ("consent-orders-example", "Consent Orders Example", "Are you looking for Consent Orders Example, in this article we provide a full example of consent orders, including everything you need..."),
+    ("consent-orders-example", "Consent Orders Examples in Australia", "How property and parenting consent orders are set out, with fictional illustrative examples."),
     ("cryptocurrency-and-digital-assets-in-property-settlements", "Cryptocurrency and Digital Assets in Property Settlements", "Cryptocurrency and Digital Assets in Property Settlements is becoming a huge issue. In this article, we thoroughly discuss all the ramifications"),
     ("difference-mediator-and-conciliator", "Difference Between Mediator and Conciliator", "Alternative dispute resolution, \"mediator\" and \"conciliator\" are used interchangeably, but there are differences between these two roles."),
     ("divorce-property-settlement-examples-in-australia", "Divorce Property Settlement Examples in Australia", "Our skilled Family law team works arduously to make sure you get the best result possible in the event of a divorce or separation. comes to divorce..."),
@@ -193,7 +193,8 @@ PROCESS = [
     ("attend-mediation-in-family-law-matters", "Do I need to attend Mediation in family law matters?", "Mediation in Family Law. Choose mediation for voluntary, cost-effective resolutions. Get legal advice for informed decisions."),
     ("commonly-asked-family-law-questions", "Commonly Asked Family Law Questions", "Here are the most commonly asked family law questions answered by Mediations Australia. If you need family law help, contact Mediations"),
     ("conciliation-in-family-law", "What is Conciliation in Family Law Matters in Australia", "Conciliation in Family Law in Australia: Resolve disputes cooperatively. Benefits include emotional support, cost savings, and efficient resolutions."),
-    ("court-ordered-drug-and-alcohol-testing", "Court-Ordered Drug and Alcohol Testing in Australian…", "Court-Ordered Drug and Alcohol Testing in Australian…"),
+    ("court-ordered-drug-and-alcohol-testing", "Drug and Alcohol Testing in Parenting Cases", "Where testing fits in parenting proceedings, who pays, and what a mediator can and cannot do."),
+    ("my-ex-wont-sign-divorce-papers", "My Ex Won't Sign Divorce Papers", "Sole applications, serving documents, and what to do if your spouse won't cooperate."),
     ("difference-between-mediation-conciliation", "What is the Difference Between Mediation and Conciliation", "What is the difference between Mediation and conciliation? What is best for your particular family law dispute is best achieved by consulting one o..."),
     ("duty-of-disclosure-in-australian-family-law", "Duty of Disclosure in Australian Family Law", "In Australian family law, parties involved in legal proceedings have a duty of disclosure, which requires them to provide all relevant information..."),
     ("family-court-mediation-process", "Confronting Family Court Mediation: Your Clear Roadmap to…", "Discover the power of family court mediation with a clear roadmap to long-lasting resolution. Learn how to greatly reduce the cost and stress without…"),
@@ -256,7 +257,6 @@ COSTS = [
     ("abc-expose-the-hidden-cost-of-family-court-battles", "ABC Expose the Hidden Cost of Family Court Battles", "ABC Expose the Hidden Cost of Family Court Battles"),
     ("divorce-fees-in-australia", "Divorce Fees in Australia", "What are the Divorce Fees in Australia. In this article, we will provide a comprehensive overview of divorce fees..."),
     ("how-much-does-a-family-lawyer-cost-in-australia", "How Much Does a Family Lawyer Cost in Australia? [2026]", "What does a family lawyer cost in Australia? Typical fees, hidden costs, fixed-price options, and how mediation can save you thousands."),
-    ("mediation-who-pays", "Who Pays for Mediation in Australia? Cost Splitting…", "Who covers the cost of family mediation in Australia"),
     ("the-cost-of-divorce-in-australia", "The Cost of Divorce in Australia", "The Cost of Divorce in Australia doesn't have to be as high as you may think. It's likely that you have heard of the horror stories of lawyers"),
 ]
 

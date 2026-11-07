@@ -221,18 +221,8 @@
       "permanent": true
     },
     {
-      "source": "/consent-orders-example/",
-      "destination": "/consent-orders-explained/",
-      "permanent": true
-    },
-    {
       "source": "/costs-of-mediation/",
       "destination": "/how-much-does-mediation-cost/",
-      "permanent": true
-    },
-    {
-      "source": "/court-ordered-drug-and-alcohol-testing/",
-      "destination": "/domestic-violence-and-family-law/",
       "permanent": true
     },
     {
@@ -602,17 +592,12 @@
     },
     {
       "source": "/mediation-who-pays/",
-      "destination": "/how-much-does-mediation-cost/",
+      "destination": "/who-pays-for-mediation/",
       "permanent": true
     },
     {
       "source": "/mediation/",
       "destination": "/how-mediation-works/",
-      "permanent": true
-    },
-    {
-      "source": "/my-ex-wont-sign-divorce-papers/",
-      "destination": "/how-to-get-a-divorce-in-australia-a-step-by-step-guide/",
       "permanent": true
     },
     {

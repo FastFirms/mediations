@@ -146,7 +146,10 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "join-our-mediator-network",
         # Final destination of the /fathers-rights/ redirect
         "fathers-rights-after-separation",
-        "who-is-responsible-for-debts-after-separation"]
+        "who-is-responsible-for-debts-after-separation",
+        # SEO recovery stage 3 — restored answer pages
+        "consent-orders-example",
+        "court-ordered-drug-and-alcohol-testing"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:
@@ -155,7 +158,7 @@ for row in LOCATION_DATA:
     urls.append((row[0], "0.8", "monthly"))
 
 # Slugs that 308-redirect in vercel.json — never list a redirecting URL.
-REDIRECTED = {"fathers-rights", "my-ex-wont-sign-divorce-papers",
+REDIRECTED = {"fathers-rights",
               "who-pays-bills-during-separation",
               "are-mediation-agreements-legally-binding",
               "high-conflict-family-law-mediation"}

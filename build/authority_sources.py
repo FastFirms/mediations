@@ -11,6 +11,10 @@ AUTHORITY = {
  "fcfcoa_fdr": ("FCFCOA family dispute resolution", "https://www.fcfcoa.gov.au/fl/fdr"),
  "fcfcoa_disclosure": ("FCFCOA duty of disclosure", "https://www.fcfcoa.gov.au/fl/duty-disclosure"),
  "fcfcoa_consent_orders": ("FCFCOA consent orders", "https://www.fcfcoa.gov.au/fl/consent-orders"),
+ "fcfcoa_apply_consent": ("FCFCOA: Apply for consent orders", "https://www.fcfcoa.gov.au/hdi/apply-consent-orders"),
+ "fcfcoa_safety_risk": ("FCFCOA: Safety and risk in children's matters", "https://www.fcfcoa.gov.au/fl/children/safety-risk"),
+ "fcfcoa_serve_divorce": ("FCFCOA: Serving divorce documents", "https://www.fcfcoa.gov.au/fl/divorce/serve-divorce"),
+ "frol_fdr": ("Family Relationships Online: Family mediation and FDR", "https://www.familyrelationships.gov.au/separation/family-mediation-dispute-res"),
  "comcourts_portal": ("Commonwealth Courts Portal", "https://www.comcourts.gov.au/"),
  "family_court_wa": ("Family Court of Western Australia", "https://www.familycourt.wa.gov.au/"),
  # Government services
