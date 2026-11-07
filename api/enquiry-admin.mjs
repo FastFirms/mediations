@@ -88,7 +88,7 @@ export default async function handler(req, res) {
       if (queue && ALLOWED_QUEUES.includes(queue)) {
         rows = await sql`
           SELECT e.submission_id, e.operational_queue, e.professional_review_required,
-                 e.matter_category, e.stage, e.delivery_preference, e.timing,
+                 e.matter_category, e.stage, e.delivery_preference, e.timing, e.state, e.city,
                  e.safe_email, e.safe_voicemail, e.safe_phone, e.preferred_contact_time,
                  e.submitted_at, e.review_reasons, e.tags,
                  c.name, c.email, c.phone
@@ -101,7 +101,7 @@ export default async function handler(req, res) {
       } else {
         rows = await sql`
           SELECT e.submission_id, e.operational_queue, e.professional_review_required,
-                 e.matter_category, e.stage, e.delivery_preference, e.timing,
+                 e.matter_category, e.stage, e.delivery_preference, e.timing, e.state, e.city,
                  e.safe_email, e.safe_voicemail, e.safe_phone, e.preferred_contact_time,
                  e.submitted_at, e.review_reasons, e.tags,
                  c.name, c.email, c.phone

@@ -49,11 +49,54 @@ def callout(text, type="info"):
             f'border-radius:0 6px 6px 0;margin:1.5rem 0">{text}</div>')
 
 
+# Question URLs that 308-redirect in vercel.json → link straight to the final page.
+QUESTION_REDIRECTS = {
+    "can-a-support-person-attend-workplace-mediation": "/workplace-mediation-guide/",
+    "can-an-employee-refuse-workplace-mediation": "/workplace-mediation-guide/",
+    "can-business-partners-use-mediation": "/commercial-mediation/",
+    "can-grandparents-use-family-mediation": "/grandparents-rights/",
+    "can-i-bring-a-lawyer-to-family-mediation": "/divorce-mediator-vs-divorce-lawyer/",
+    "can-i-get-a-s60i-certificate-without-attending-mediation": "/section-60i-certificate-guide/",
+    "can-lawyers-attend-commercial-mediation": "/commercial-dispute-guide/",
+    "can-mediation-cover-parenting-and-property": "/family-law-mediation/",
+    "can-mediation-happen-online": "/online-mediation-australia/",
+    "can-mediation-resolve-a-contract-dispute": "/commercial-dispute-guide/",
+    "can-mediation-resolve-an-inheritance-dispute": "/estate-inheritance-dispute-mediation/",
+    "can-property-settlement-be-resolved-through-mediation": "/property-settlement-mediation-guide/",
+    "can-we-make-a-parenting-plan-at-mediation": "/parenting-plans-guide/",
+    "can-workplace-mediation-deal-with-bullying-allegations": "/workplace-mediation-guide/",
+    "can-you-mediate-a-contested-will": "/estate-inheritance-dispute-mediation/",
+    "do-i-need-a-lawyer-for-mediation": "/divorce-mediator-vs-divorce-lawyer/",
+    "do-i-need-mediation-before-family-court": "/is-family-law-mediation-compulsory/",
+    "how-does-commercial-mediation-work": "/commercial-mediation/",
+    "how-does-workplace-mediation-work": "/workplace-mediation-guide/",
+    "how-long-does-family-mediation-take": "/how-long-does-mediation-take/",
+    "how-long-does-mediation-take": "/how-long-does-mediation-take/",
+    "how-much-does-commercial-mediation-cost": "/how-much-does-mediation-cost/",
+    "how-much-does-estate-mediation-cost": "/how-much-does-mediation-cost/",
+    "how-much-does-family-mediation-cost": "/how-much-does-mediation-cost/",
+    "how-much-does-mediation-cost": "/how-much-does-mediation-cost/",
+    "is-family-mediation-confidential": "/what-is-mediation-in-family-law/",
+    "is-mediation-legally-binding": "/consent-orders-explained/",
+    "is-workplace-mediation-confidential": "/workplace-mediation-guide/",
+    "what-happens-during-mediation": "/what-is-mediation-in-family-law/",
+    "what-if-my-ex-refuses-mediation": "/is-family-law-mediation-compulsory/",
+    "what-is-a-section-60i-certificate": "/section-60i-certificate-guide/",
+    "what-is-estate-mediation": "/estate-inheritance-dispute-mediation/",
+    "what-is-family-dispute-resolution": "/what-is-mediation-in-family-law/",
+    "what-is-shuttle-mediation": "/shuttle-mediation-guide/"
+}
+
+
+def _qhref(s):
+    return QUESTION_REDIRECTS.get(s, f"/questions/{s}/")
+
+
 def related_links(slugs):
     if not slugs:
         return ""
     items = "".join(
-        f'<li><a href="/questions/{s}/">{esc(SLUG_TO_QUESTION.get(s, s.replace("-", " ").capitalize()))}</a></li>'
+        f'<li><a href="{_qhref(s)}">{esc(SLUG_TO_QUESTION.get(s, s.replace("-", " ").capitalize()))}</a></li>'
         for s in slugs
     )
     return (f'<aside style="background:var(--surf,#f7f8fa);border-radius:8px;'
@@ -325,7 +368,7 @@ qa_page(
         f"<h2>What the FDRP will do</h2>"
         f"<p>When the other party refuses to attend, an accredited FDRP — from a service "
         f"like Mediations Australia or through the {cite('fcfcoa_fdr')} — can issue a "
-        f"<a href='/questions/what-is-a-section-60i-certificate/'>Section 60I "
+        f"<a href='/section-60i-certificate-guide/'>Section 60I "
         f"certificate</a> recording that the other party did not attend "
         f"(certificate type s60I(8)(a)) or did not make a genuine effort (s60I(8)(c)).</p>"
         f"<p>That certificate allows you to file a parenting application in the "
@@ -806,7 +849,7 @@ qa_page(
         f"This is still considerably faster and cheaper than running two separate "
         f"court proceedings.</p>"
         f"<h2>What about the FDR certificate?</h2>"
-        f"<p>The <a href='/questions/what-is-a-section-60i-certificate/'>Section 60I "
+        f"<p>The <a href='/section-60i-certificate-guide/'>Section 60I "
         f"certificate</a> requirement applies to parenting matters only. There is no "
         f"equivalent legal precondition for property matters — but courts expect "
         f"parties to have made genuine resolution attempts before listing a "
@@ -1196,7 +1239,7 @@ qa_page(
         f"</ul>"
         f"<h2>Joint vs shuttle format</h2>"
         f"<p>In a joint session, both parties are in the same room throughout. In "
-        f"<a href='/questions/what-is-shuttle-mediation/'>shuttle mediation</a>, "
+        f"<a href='/shuttle-mediation-guide/'>shuttle mediation</a>, "
         f"parties remain in separate rooms and the mediator moves between them. "
         f"The process is the same — only the format differs.</p>"
         f"<h2>What to bring</h2>"
@@ -1257,7 +1300,7 @@ qa_page(
         f"that seem fair on the day have unintended tax, superannuation, or "
         f"enforcement consequences that a lawyer will identify.</p>"
         f"<h2>Bringing a lawyer to the session</h2>"
-        f"<p>You can <a href='/questions/can-i-bring-a-lawyer-to-family-mediation/'>"
+        f"<p>You can <a href='/divorce-mediator-vs-divorce-lawyer/'>"
         f"bring a lawyer to mediation</a> as a support person and adviser. This is "
         f"more common in property and commercial mediations than in parenting "
         f"sessions. If one party has a lawyer present, the other may wish to "
@@ -1591,7 +1634,7 @@ qa_page(
         f"be used in court proceedings.</p>"
         f"<p>FDR can be conducted with both parties in the same room (joint session) or in "
         f"separate rooms with the FDRP moving between them "
-        f"(<a href='/questions/what-is-shuttle-mediation/'>shuttle mediation</a>). "
+        f"(<a href='/shuttle-mediation-guide/'>shuttle mediation</a>). "
         f"It is also available online.</p>"
         f"<h2>FDR vs ordinary mediation</h2>"
         f"<p>FDR is a specific type of mediation defined by the {cite('family_law_act')} and "
@@ -1618,7 +1661,7 @@ qa_page(
         f"</ul>"
         f"<h2>What if FDR doesn't resolve the dispute?</h2>"
         f"<p>If FDR is unsuccessful, the FDRP issues a "
-        f"<a href='/questions/what-is-a-section-60i-certificate/'>Section 60I certificate</a> "
+        f"<a href='/section-60i-certificate-guide/'>Section 60I certificate</a> "
         f"recording the outcome. That certificate is then filed with the court to show the "
         f"FDR requirement has been satisfied. Any partial agreement reached during FDR can "
         f"be documented and formalised as consent orders or a parenting plan.</p>"
@@ -1769,7 +1812,7 @@ qa_page(
         f"example, because of a power imbalance, family violence history, or another party's "
         f"incapacity — they will issue an s60I(8)(b) certificate. This certificate allows "
         f"you to file parenting proceedings without FDR having been attempted.</p>"
-        f"<p>See also: <a href='/questions/can-i-get-a-s60i-certificate-without-attending-mediation/'>"
+        f"<p>See also: <a href='/section-60i-certificate-guide/'>"
         f"Can I get a Section 60I certificate without attending mediation?</a></p>"
     ),
     sources=[
@@ -1842,7 +1885,7 @@ qa_page(
         f"<p>If you make a genuine effort to initiate FDR and the other party refuses to "
         f"attend, the FDRP can issue an s60I(8)(a) certificate. This certificate satisfies "
         f"the court requirement — you are not penalised for the other party's refusal. "
-        f"See also: <a href='/questions/what-if-my-ex-refuses-mediation/'>"
+        f"See also: <a href='/is-family-law-mediation-compulsory/'>"
         f"what if my ex refuses mediation?</a></p>"
         f"<h2>When no certificate is needed at all</h2>"
         f"<p>If an exemption applies — family violence, urgency, or the other party cannot "
@@ -1946,7 +1989,7 @@ qa_page(
         f"can apply to the {cite('fcfcoa')} for parenting orders — including orders about "
         f"the time they spend with their grandchildren. Before making such an application, "
         f"grandparents are generally required to attempt "
-        f"<a href='/questions/what-is-family-dispute-resolution/'>Family Dispute "
+        f"<a href='/what-is-mediation-in-family-law/'>Family Dispute "
         f"Resolution (FDR)</a>.</p>"
         f"<h2>Who attends mediation?</h2>"
         f"<p>Typically, the grandparent(s) and the child's parents. In some cases, other "
@@ -1968,7 +2011,7 @@ qa_page(
         f"<p>If a parent refuses to attend FDR, the FDRP can issue a Section 60I certificate "
         f"recording the refusal. This satisfies the court requirement and allows the grandparent "
         f"to file a parenting application. See: "
-        f"<a href='/questions/can-i-get-a-s60i-certificate-without-attending-mediation/'>"
+        f"<a href='/section-60i-certificate-guide/'>"
         f"getting a certificate without completing mediation</a>.</p>"
         f"<h2>Costs</h2>"
         f"<p>Private FDRP fees are usually shared between the parties, but in grandparent "
@@ -2344,7 +2387,7 @@ qa_page(
         f"</ul>"
         f"<h2>Is the outcome confidential?</h2>"
         f"<p>Yes — see our detailed guide: "
-        f"<a href='/questions/is-workplace-mediation-confidential/'>"
+        f"<a href='/workplace-mediation-guide/'>"
         f"is workplace mediation confidential?</a> Both the process and the outcome "
         f"(unless the parties agree otherwise) are confidential.</p>"
         f"<h2>What if the dispute involves a {cite('fair_work')} application?</h2>"
@@ -3041,7 +3084,7 @@ qa_page(
         f"whose information is material to the dispute, they may also attend. Legal "
         f"representatives often attend commercial partnership mediations but are not "
         f"required — see our guide: "
-        f"<a href='/questions/can-lawyers-attend-commercial-mediation/'>"
+        f"<a href='/commercial-dispute-guide/'>"
         f"can lawyers attend commercial mediation?</a></p>"
         f"<h2>What outcomes can mediation produce?</h2>"
         f"<ul>"
@@ -3193,7 +3236,7 @@ qa_page(
         f"admissible in court. The two protections — contractual and common law — "
         f"reinforce each other.</p>"
         f"<p>For questions about how confidentiality works in family mediation, see: "
-        f"<a href='/questions/is-family-mediation-confidential/'>"
+        f"<a href='/what-is-mediation-in-family-law/'>"
         f"is family mediation confidential?</a></p>"
     ),
     sources=[
@@ -3255,7 +3298,7 @@ qa_page(
         f"larger amounts, more complex legal issues, and business entities rather than "
         f"individuals. In family mediation, lawyers sometimes attend but often provide "
         f"advice only before and after the session. See: "
-        f"<a href='/questions/can-i-bring-a-lawyer-to-family-mediation/'>"
+        f"<a href='/divorce-mediator-vs-divorce-lawyer/'>"
         f"can I bring a lawyer to family mediation?</a></p>"
         f"<h2>Barristers at commercial mediation</h2>"
         f"<p>For high-value or legally complex matters, barristers are sometimes retained "

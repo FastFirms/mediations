@@ -38,6 +38,44 @@ CATEGORY_ICONS = {
 }
 
 
+# Mirrors QUESTION_REDIRECTS in gen_question_pages.py (redirected question URLs).
+_QR = {
+    "can-a-support-person-attend-workplace-mediation": "/workplace-mediation-guide/",
+    "can-an-employee-refuse-workplace-mediation": "/workplace-mediation-guide/",
+    "can-business-partners-use-mediation": "/commercial-mediation/",
+    "can-grandparents-use-family-mediation": "/grandparents-rights/",
+    "can-i-bring-a-lawyer-to-family-mediation": "/divorce-mediator-vs-divorce-lawyer/",
+    "can-i-get-a-s60i-certificate-without-attending-mediation": "/section-60i-certificate-guide/",
+    "can-lawyers-attend-commercial-mediation": "/commercial-dispute-guide/",
+    "can-mediation-cover-parenting-and-property": "/family-law-mediation/",
+    "can-mediation-happen-online": "/online-mediation-australia/",
+    "can-mediation-resolve-a-contract-dispute": "/commercial-dispute-guide/",
+    "can-mediation-resolve-an-inheritance-dispute": "/estate-inheritance-dispute-mediation/",
+    "can-property-settlement-be-resolved-through-mediation": "/property-settlement-mediation-guide/",
+    "can-we-make-a-parenting-plan-at-mediation": "/parenting-plans-guide/",
+    "can-workplace-mediation-deal-with-bullying-allegations": "/workplace-mediation-guide/",
+    "can-you-mediate-a-contested-will": "/estate-inheritance-dispute-mediation/",
+    "do-i-need-a-lawyer-for-mediation": "/divorce-mediator-vs-divorce-lawyer/",
+    "do-i-need-mediation-before-family-court": "/is-family-law-mediation-compulsory/",
+    "how-does-commercial-mediation-work": "/commercial-mediation/",
+    "how-does-workplace-mediation-work": "/workplace-mediation-guide/",
+    "how-long-does-family-mediation-take": "/how-long-does-mediation-take/",
+    "how-long-does-mediation-take": "/how-long-does-mediation-take/",
+    "how-much-does-commercial-mediation-cost": "/how-much-does-mediation-cost/",
+    "how-much-does-estate-mediation-cost": "/how-much-does-mediation-cost/",
+    "how-much-does-family-mediation-cost": "/how-much-does-mediation-cost/",
+    "how-much-does-mediation-cost": "/how-much-does-mediation-cost/",
+    "is-family-mediation-confidential": "/what-is-mediation-in-family-law/",
+    "is-mediation-legally-binding": "/consent-orders-explained/",
+    "is-workplace-mediation-confidential": "/workplace-mediation-guide/",
+    "what-happens-during-mediation": "/what-is-mediation-in-family-law/",
+    "what-if-my-ex-refuses-mediation": "/is-family-law-mediation-compulsory/",
+    "what-is-a-section-60i-certificate": "/section-60i-certificate-guide/",
+    "what-is-estate-mediation": "/estate-inheritance-dispute-mediation/",
+    "what-is-family-dispute-resolution": "/what-is-mediation-in-family-law/",
+    "what-is-shuttle-mediation": "/shuttle-mediation-guide/"
+}
+
 def build():
     slug  = "questions"
     title = "Mediation Questions & Answers | Mediations Australia"
@@ -78,11 +116,11 @@ def build():
             cards += (
                 f'<article class="card" style="display:flex;flex-direction:column">'
                 f'<h3 style="font-size:1rem;margin:.25rem 0 .5rem">'
-                f'<a href="/questions/{q["slug"]}/" style="color:inherit;text-decoration:none">'
+                f'<a href="{_QR.get(q["slug"], "/questions/" + q["slug"] + "/")}" style="color:inherit;text-decoration:none">'
                 f'{esc(q["question"])}</a></h3>'
                 f'<p style="font-size:.88rem;color:var(--muted,#6b7280);flex:1;margin:0 0 .75rem">'
                 f'{preview}</p>'
-                f'<a href="/questions/{q["slug"]}/" class="more" style="font-size:.875rem;margin-top:auto">'
+                f'<a href="{_QR.get(q["slug"], "/questions/" + q["slug"] + "/")}" class="more" style="font-size:.875rem;margin-top:auto">'
                 f'Read the answer <span class="arr">&#x2192;</span></a>'
                 f'</article>'
             )

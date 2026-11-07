@@ -333,19 +333,21 @@ var STEPS = [
                + _radioStep('delivery_preference', delivOpts, _state.answers.delivery_preference, true)
                + '<p style="font-size:.92rem;font-weight:600;margin:18px 0 10px">Timing</p>'
                + _radioStep('timing', timingOpts, _state.answers.timing, true);
-      if (_state.answers.delivery_preference === 'face_to_face' || _state.answers.delivery_preference === 'either') {
-        html += '<p style="font-size:.92rem;font-weight:600;margin:18px 0 10px">Your state (optional)</p>'
-              + '<select id="enq-state" style="width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:9px;font-family:var(--sans);font-size:.95rem;background:#fff">'
-              + '<option value="">Select state&hellip;</option>'
-              + ['NSW','VIC','QLD','WA','SA','TAS','ACT','NT'].map(function(s){return '<option value="'+s+'"'+(s===_state.answers.state?' selected':'')+'>'+s+'</option>';}).join('')
-              + '</select>';
-      }
+      html += '<label for="enq-state" style="display:block;font-size:.92rem;font-weight:600;margin:18px 0 10px">Your state or territory <span style="color:var(--sage-deep)">*</span></label>'
+            + '<select id="enq-state" required aria-required="true" style="width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:9px;font-family:var(--sans);font-size:.95rem;background:#fff">'
+            + '<option value="">Select&hellip;</option>'
+            + [['NSW','NSW'],['VIC','VIC'],['QLD','QLD'],['WA','WA'],['SA','SA'],['TAS','TAS'],['ACT','ACT'],['NT','NT'],['OUTSIDE_AU','Outside Australia'],['UNSURE','Not sure']].map(function(s){return '<option value="'+s[0]+'"'+(s[0]===_state.answers.state?' selected':'')+'>'+s[1]+'</option>';}).join('')
+            + '</select>'
+            + '<label for="enq-city" style="display:block;font-size:.92rem;font-weight:600;margin:14px 0 10px">Suburb or postcode (optional)</label>'
+            + '<input id="enq-city" type="text" maxlength="80" autocomplete="address-level2" value="'+(_state.answers.city||'').replace(/"/g,'&quot;')+'" style="width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:9px;font-family:var(--sans);font-size:.95rem;background:#fff">';
       return html;
     },
-    validate: function() { return !!_state.answers.delivery_preference && !!_state.answers.timing; },
+    validate: function() { var st=document.getElementById('enq-state'); if (st) _state.answers.state = st.value || null; return !!_state.answers.delivery_preference && !!_state.answers.timing && !!_state.answers.state; },
     onLeave: function() {
       var sel = document.getElementById('enq-state');
       if (sel) _state.answers.state = sel.value || null;
+      var city = document.getElementById('enq-city');
+      if (city) _state.answers.city = (city.value||'').trim().slice(0,80) || null;
     },
     next: function() { return 4; }
   },
@@ -592,6 +594,7 @@ function _submitGuided() {
     party_b_status:  a.party_b_status,
     delivery_preference: a.delivery_preference,
     state:           a.state || null,
+    city:            a.city || null,
     timing:          a.timing,
     fee_preference:  a.fee_preference,
     safety_flag:     a.safety_flag,
@@ -623,7 +626,7 @@ function _submitGuided() {
   .then(function(d) {
     if (d.ok) {
       _showSuccess(d.reference, d.operational_queue);
-      try { if(typeof gtag!=='undefined') gtag('event','enquiry_submitted',{form_variant:'guided',operational_queue:d.operational_queue}); } catch(e){}
+      if (!d.duplicate && !_state.lead_sent) { _state.lead_sent = true; try { if(typeof gtag!=='undefined') { gtag('event','enquiry_submitted',{form_variant:'guided',operational_queue:d.operational_queue}); gtag('event','generate_lead',{service_category:a.matter_category,form_id:'enquiry_guided',page_path:location.pathname}); } } catch(e){} }
     } else {
       btn.disabled = false; btn.textContent = 'Submit enquiry →';
       _showError(d.error || 'Something went wrong. Please try again or call us on (02) 7227 7373.');
@@ -694,7 +697,7 @@ document.getElementById('lf-submit').addEventListener('click', function() {
       document.getElementById('lf-confirm').style.display='block';
       document.getElementById('lf-ref').textContent='Reference: '+d.reference;
       document.getElementById('enq-lf-form').style.display='none';
-      try { if(typeof gtag!=='undefined') gtag('event','law_firm_referral_submitted'); } catch(e){}
+      if (!d.duplicate) { try { if(typeof gtag!=='undefined') { gtag('event','law_firm_referral_submitted'); gtag('event','generate_lead',{service_category:'law_firm_referral',form_id:'enquiry_law_firm',page_path:location.pathname}); } } catch(e){} }
     } else {
       btn.disabled = false; btn.textContent = 'Submit referral →';
       note.textContent = d.error || 'Something went wrong. Please try again.'; note.style.display='block';
