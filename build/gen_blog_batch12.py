@@ -3,6 +3,11 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from gen_blog import post, inline_cta, callout, key_takeaway
+
+
+def _retired_post(*a, **k):
+    """Superseded by gen_blog_batch29.py (SEO recovery stage 3)."""
+    return None
 from authority_sources import cite
 
 # ============================================================
@@ -609,7 +614,7 @@ can be part of a safety-conscious co-parenting arrangement.</p>
 # ============================================================
 # POST 2 — my-ex-wont-sign-divorce-papers
 # ============================================================
-post("my-ex-wont-sign-divorce-papers",
+_retired_post("my-ex-wont-sign-divorce-papers",
  "My Ex Won't Sign Divorce Papers — What Happens Now?",
  "What happens when your ex won't sign divorce papers in Australia? Divorce is granted to one party — your ex cannot block it. Here's the exact process. 2026.",
  "Divorce",
