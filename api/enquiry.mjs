@@ -80,7 +80,7 @@ const VALID_STATES = new Set(['NSW','VIC','QLD','WA','SA','TAS','ACT','NT','OUTS
 
 function validateGuidedPayload(b) {
   const errs = [];
-  if (b.state != null && !VALID_STATES.has(b.state)) errs.push('invalid state');
+  if (!VALID_STATES.has(b.state)) errs.push('state required');
   if (b.city != null && (typeof b.city !== 'string' || b.city.length > 80)) errs.push('invalid city');
   if (!VALID_CATEGORIES.has(b.matter_category))   errs.push('invalid matter_category');
   if (!VALID_STAGES.has(b.stage))                  errs.push('invalid stage');
