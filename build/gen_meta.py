@@ -144,6 +144,8 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "how-to-change-parenting-orders",
         # Recruitment
         "join-our-mediator-network",
+        # Final destination of the /fathers-rights/ redirect
+        "fathers-rights-after-separation",
         "who-is-responsible-for-debts-after-separation"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
@@ -151,6 +153,16 @@ for s, _, _ in SERVICES:
     urls.append((s, "0.9", "monthly"))
 for row in LOCATION_DATA:
     urls.append((row[0], "0.8", "monthly"))
+
+# Slugs that 308-redirect in vercel.json — never list a redirecting URL.
+REDIRECTED = {"fathers-rights", "my-ex-wont-sign-divorce-papers",
+              "who-pays-bills-during-separation",
+              "are-mediation-agreements-legally-binding",
+              "high-conflict-family-law-mediation"}
+# Keep the first occurrence of each slug (core lists overlap with SERVICES).
+seen = set()
+urls = [u for u in urls
+        if u[0] not in REDIRECTED and not (u[0] in seen or seen.add(u[0]))]
 
 entries = ""
 for slug, pri, freq in urls:

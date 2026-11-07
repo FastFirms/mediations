@@ -1039,6 +1039,8 @@
     { "source": "/contact/", "destination": "/contact-us/", "permanent": true },
     { "source": "/contact", "destination": "/contact-us/", "permanent": true },
     { "source": "/author/:path*", "destination": "/about-mediations-australia/", "permanent": true },
+    { "source": "/ff_lawyer/farley-tolpen/", "destination": "/our-team/farley-tolpen/", "permanent": true },
+    { "source": "/ff_lawyer/farley-tolpen", "destination": "/our-team/farley-tolpen/", "permanent": true },
     { "source": "/ff_lawyer/:path*", "destination": "/our-team/", "permanent": true },
     { "source": "/scholarships/", "destination": "/guides/", "permanent": true },
     { "source": "/scholarships", "destination": "/guides/", "permanent": true },
