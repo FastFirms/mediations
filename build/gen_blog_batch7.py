@@ -4,6 +4,8 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from gen_blog import post, inline_cta, callout, key_takeaway
 from authority_sources import cite
+from workplace_pricing import money as _wm, WORKPLACE as _W, faq_answers as _wfaq
+_WFAQ = _wfaq()
 
 # ---- MOTHERS' RIGHTS (absorbs 1) ----
 post("mothers-rights",
@@ -442,24 +444,24 @@ post("workplace-mediation-guide",
 <p>Unfair dismissal applications must be lodged within 21 days of the dismissal taking effect. The FWC's process begins with conciliation \u2014 a conference facilitated by a Commission conciliator \u2014 before the matter proceeds to arbitration if not resolved. General protections applications follow a similar pathway. Anti-bullying orders can be sought by a worker who claims they have been bullied at work, and the Commission has power to make orders to stop the bullying.</p>
 <p>The FWC's own conciliation process differs from private mediation in important ways. Commission conciliation is tied to a specific statutory application that has already been lodged. It is conducted by a Commission officer, not an independent private mediator. The conciliator may take a more evaluative approach, offering views on the likely outcome if the matter went to arbitration. Private mediation, by contrast, is available at any time, is not linked to a formal claim, and gives the parties greater control over the format and the resulting agreement.</p>
 <p>Many workplace conflicts are better addressed <em>before</em> they become formal Fair Work matters. A private mediation that resolves the underlying relationship issues early prevents the need for a statutory application entirely. Even where a FWC application has been lodged, prior mediation \u2014 or a willingness to mediate \u2014 is relevant to how the Commission views the conduct of the parties. <a href="/conciliation-vs-mediation/">See conciliation vs mediation \u2192</a></p>
-<p>The cost and time difference between early private mediation and a formal Fair Work process is substantial. An unfair dismissal matter that runs through to arbitration can take 6 to 18 months and cost an employer between $15,000 and $80,000 in legal fees alone, excluding management time and reputational impact. Early workplace mediation typically costs $2,500 to $6,500 for a two-party matter and resolves in two to four weeks. The financial case for early intervention is compelling regardless of the merits of any particular dispute.</p>
+<p>Early private mediation and a formal Fair Work process differ in timing, formality and cost. Legal and management costs in a contested claim vary widely and are hard to predict, so ask your advisers for a staged estimate. Mediations Australia\'s workplace mediation is a fixed fee of {_wm(_W["half_day_ex"])} + GST for a half day or {_wm(_W["full_day_ex"])} + GST for a full day, covering two parties with intake for each; <a href="/workplace-mediation-cost/">see full workplace pricing</a>.</p>
 <figure class='tbl'><table><caption>Early mediation vs FWC formal process: cost and time comparison</caption>
 <thead><tr><th>Factor</th><th>Workplace mediation</th><th>FWC formal claim</th></tr></thead>
 <tbody>
 <tr><td>Typical timeline</td><td>2&#8211;4 weeks</td><td>6&#8211;18 months</td></tr>
-<tr><td>Typical cost to employer</td><td>$2,500&#8211;$6,500</td><td>$15,000&#8211;$80,000+</td></tr>
-<tr><td>Confidential?</td><td>Yes</td><td>No \u2014 public record</td></tr>
+<tr><td>Cost</td><td>Fixed fee agreed upfront (<a href="/workplace-mediation-cost/">our pricing</a>)</td><td>Filing fees plus any legal and management costs; these vary</td></tr>
+<tr><td>Confidential?</td><td>As agreed in writing, within legal limits</td><td>Some decisions are published</td></tr>
 <tr><td>Relationship preserved?</td><td>Often yes</td><td>Rarely</td></tr>
 <tr><td>Outcome control</td><td>Parties decide together</td><td>Commission or tribunal decides</td></tr>
 <tr><td>Suitable for early disputes?</td><td>Yes \u2014 ideal</td><td>No \u2014 last resort</td></tr>
 </tbody></table></figure>
-<p>The {cite("fair_work")} handles matters that have escalated beyond internal resolution. Mediation is the earlier, faster, and more constructive step. <a href="/our-fee-structure/">See our fee structure \u2192</a></p>
+<p>The {cite("fair_work")} handles matters that have escalated beyond internal resolution. Private mediation is usually an earlier step, and it does not stop statutory deadlines. <a href="/workplace-mediation-cost/">See workplace mediation pricing \u2192</a></p>
 """
  + inline_cta("Don't wait for a formal claim. Early mediation costs less, takes days not months, and usually preserves the working relationship.")
  + """
 <h2 id="benefits">Benefits for employers and staff</h2>
-<p>The business case for workplace mediation is straightforward: unresolved conflict is expensive, and mediation resolves it at a fraction of the cost of the alternatives. Industry research estimates the annual cost of workplace conflict in Australia at approximately $36 billion, when productivity loss, absenteeism, staff turnover, and management time are taken into account. On average, employees involved in a conflict incident lose an estimated 5.6 working days to that conflict \u2014 through reduced productivity, avoidance behaviour, sick leave, and distraction.</p>
-<p>The cost of losing a staff member is even higher. Research consistently finds that replacing an employee costs between 50% and 200% of their annual salary, depending on the role and the organisation's capacity to absorb the loss. Much of that cost is invisible: the time spent recruiting, the productivity dip while the role is vacant, the knowledge that leaves with the person, and the effect on team morale. Early mediation that preserves an employment relationship \u2014 even imperfectly \u2014 is almost always cheaper than losing the person and starting again.</p>
+<p>The business case for workplace mediation is practical: unresolved conflict consumes management time, affects the people around it, and can lead to absence, resignations or formal claims. Mediation offers a structured way to address it early, at a known fixed fee.</p>
+<p>Losing a staff member also has real costs, many of them invisible: the time spent recruiting, the productivity dip while the role is vacant, the knowledge that leaves with the person, and the effect on team morale. Early mediation that preserves an employment relationship \u2014 even imperfectly \u2014 is almost always cheaper than losing the person and starting again.</p>
 <p>Beyond the financial case, mediation has relational benefits that formal processes simply cannot replicate. A grievance investigation makes findings and imposes outcomes; mediation builds an agreement that the parties themselves have shaped and committed to. That ownership matters. Agreements reached through mediation tend to be more durable than imposed outcomes because the people who made them understand why they work.</p>
 <p>For staff, mediation offers a way to resolve a difficult situation without the reputational and career risks of a formal complaint process. Many employees tolerate conflict far longer than they should because they fear that raising it formally will damage their standing or their working relationships. Mediation provides a confidential, lower-stakes pathway that most people find less threatening than HR or legal processes.</p>
 <figure class='tbl'><table><caption>Resolving workplace conflict: mediation vs formal grievance vs litigation</caption>
@@ -510,13 +512,13 @@ post("workplace-mediation-guide",
   ("What workplace disputes can be mediated?",
    "Conflict between colleagues or teams, disputes between staff and management, communication breakdowns, bullying or grievance complaints, conflict after organisational change, and matters where a formal complaint has been lodged or is about to be."),
   ("How is workplace mediation different from a Fair Work claim?",
-   "Workplace mediation is private, early, and constructive \u2014 it resolves underlying issues before they escalate. A Fair Work claim is a formal statutory process for matters like unfair dismissal or bullying orders, and typically takes 6 to 18 months and $15,000 to $80,000 or more in legal costs."),
+   "Workplace mediation is private, early, and constructive \u2014 it resolves underlying issues before they escalate. A Fair Work claim is a formal statutory process for matters like unfair dismissal or bullying orders, with its own procedures and deadlines. Formal claims can take months and involve legal costs that vary widely."),
   ("Is workplace mediation confidential?",
    "Yes. Mediation is conducted on a without-prejudice basis, meaning what is said cannot be used in later proceedings. A confidentiality agreement is signed by all participants including the mediator before the process begins."),
   ("When should an employer use workplace mediation?",
    "Early \u2014 at the first signs of persistent tension, repeated complaints or communication breakdowns, before positions harden or a formal claim is lodged. The earlier the intervention, the more options remain open and the lower the cost."),
   ("How much does workplace mediation cost in Australia?",
-   "Typically $2,500 to $6,500 for a two-party matter, depending on complexity and the number of sessions required. Multi-party mediations are higher. This is a fraction of the cost of a formal grievance investigation or Fair Work proceedings."),
+   _WFAQ["cost"]),
   ("Can workplace mediation be done online?",
    "Yes. Video-based workplace mediation is as effective as in-person for most matters and removes geographic barriers for teams spread across locations, states or time zones. The same confidentiality and without-prejudice protections apply."),
   ("What if the parties work in different locations?",

@@ -29,9 +29,9 @@ OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.
 
 # ---- Reusable component helpers ----
 
-def inline_cta(text):
-    """Punctuating CTA between sections."""
-    return f'''<aside class="inline-cta"><p>{text}</p><a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a></aside>'''
+def inline_cta(text, btn=None, href=None):
+    """Punctuating CTA between sections. Defaults unchanged; btn/href optional overrides."""
+    return f'''<aside class="inline-cta"><p>{text}</p><a href="{href or BOOK_URL}" class="btn btn-primary">{btn or "Book a Free Consultation"} <span class="arr">→</span></a></aside>'''
 
 def key_takeaway(text):
     """AEO answer box — direct answer to the page's question in 1-2 sentences."""
@@ -56,10 +56,13 @@ def related_grid(items):
 
 def service_page(slug, title, desc, breadcrumb_label, eyebrow, h1_html, lede, toc_items,
                  takeaway, body_html, faq_items, related_items, schema_extra=None,
-                 bg_image=None, bg_pos="center 55%"):
+                 bg_image=None, bg_pos="center 55%", offers=None):
     """Generate one cornerstone-depth service page."""
+    svc = service_schema(title, desc, slug)
+    if offers:  # e.g. workplace_pricing.offers_schema(slug); only on pages that state those prices
+        svc["offers"] = offers
     schema = [org_schema(), breadcrumb_schema([("Home",""),(breadcrumb_label,slug)]),
-              service_schema(title, desc, slug), faq_schema(faq_items)]
+              svc, faq_schema(faq_items)]
     if schema_extra: schema.extend(schema_extra)
 
     if bg_image:
