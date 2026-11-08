@@ -31,6 +31,7 @@ AUTHORITY = {
  "legal_aid": ("National Legal Aid", "https://www.legalaid.gov.au/"),
  "ag_frc": ("Attorney-General's Dept — Family Relationship Centres", "https://www.ag.gov.au/families-and-marriage/families/family-relationship-centres"),
  "fair_work": ("Fair Work Commission", "https://www.fwc.gov.au/"),
+ "fwo_unfair_dismissal": ("Fair Work Ombudsman: Unfair dismissal", "https://www.fairwork.gov.au/ending-employment/unfair-dismissal"),
  "veohrc": ("Victorian Equal Opportunity &amp; Human Rights Commission", "https://www.humanrights.vic.gov.au/"),
  "vcat": ("Victorian Civil and Administrative Tribunal", "https://www.vcat.vic.gov.au/"),
  "vic_equal_opp_act": ("Equal Opportunity Act 2010 (Vic)", "https://www.legislation.vic.gov.au/in-force/acts/equal-opportunity-act-2010"),

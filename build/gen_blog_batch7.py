@@ -504,7 +504,7 @@ post("workplace-mediation-guide",
   <li>What does your confidentiality agreement cover, and what are the exceptions?</li>
   <li>What happens if we don't reach agreement?</li>
 </ul>
-<p>We are transparent about our accreditation and experience. Dan Toombs holds AMDRAS accreditation and has mediated workplace disputes across professional services, healthcare, education, construction, and the not-for-profit sector. We work with two-person interpersonal disputes and complex team matters alike. <a href="/about/">Learn more about our mediators \u2192</a></p>
+<p>We are transparent about our accreditation and experience. Dan Toombs holds AMDRAS accreditation and has mediated workplace disputes across professional services, healthcare, education, construction, and the not-for-profit sector. We work with two-person interpersonal disputes and complex team matters alike. <a href="/about-mediations-australia/">Learn more about our mediators \u2192</a></p>
 """
  ,
  [("What is workplace mediation?",

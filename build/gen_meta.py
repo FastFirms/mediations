@@ -151,7 +151,9 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "consent-orders-example",
         "court-ordered-drug-and-alcohol-testing",
         # SEO recovery stage 5 — workplace
-        "workplace-mediation-cost"]
+        "workplace-mediation-cost",
+        "employment-dispute-mediation",
+        "team-conflict-facilitation"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:
