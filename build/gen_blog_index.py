@@ -62,6 +62,8 @@ SEPARATION = [
 ]
 
 PARENTING = [
+    ("travelling-overseas-with-children-after-separation", "Travelling Overseas With Children After Separation", "When consent is legally required, passports, the Family Law Watchlist, and agreeing a travel plan."),
+    ("who-pays-school-fees-after-separation", "Who Pays School Fees After Separation?", "Private school fees and child support, change of assessment, fee credits and agreements."),
     ("ex-not-following-parenting-orders", "Ex Not Following Parenting Orders? Your Options", "What counts as a contravention, what a court can do, and why mediation is often the smarter first step."),
     ("how-to-tell-children-about-separation", "How to Tell Your Children About Separation", "What to say at each age, timing, what to avoid, and planning it with your ex."),
     ("child-custody-mediation",        "Child Custody Mediation",                            "What the law says about custody, 50/50 care, and how parents agree without court."),

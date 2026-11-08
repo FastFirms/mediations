@@ -42,6 +42,13 @@ AUTHORITY = {
  "ato": ("Australian Taxation Office", "https://www.ato.gov.au/"),
  "moneysmart": ("MoneySmart (ASIC)", "https://moneysmart.gov.au/"),
  # Support / safety
+ # International travel / abduction
+ "afp_watchlist": ("AFP: Family Law Watchlist", "https://www.afp.gov.au/our-services/national-policing-services/family-law-watchlist"),
+ "passports_consent": ("Australian Passport Office: Child passports and consent", "https://www.passports.gov.au/consent"),
+ "ag_child_abduction": ("Attorney-General's Dept: International parental child abduction", "https://www.ag.gov.au/families-and-marriage/international-family-law-and-children/international-parental-child-abduction"),
+ # Child support — school costs
+ "sa_change_assessment": ("Services Australia: Changing your assessment in special circumstances", "https://www.servicesaustralia.gov.au/changing-your-child-support-assessment-special-circumstances"),
+ "sa_non_agency": ("Services Australia: Non-agency payments", "https://www.servicesaustralia.gov.au/individuals/services/child-support/binding-child-support-agreement/how-pay-and-collect-child-support/choose-how-pay-child-support/non-agency-payments"),
  "respect_1800": ("1800RESPECT", "https://www.1800respect.org.au/"),
  "dsm_pd": ("APA \u2014 personality disorders (DSM-5)", "https://www.psychiatry.org/patients-families/personality-disorders/what-are-personality-disorders"),
 }
