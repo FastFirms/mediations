@@ -566,47 +566,16 @@ build("our-fee-structure",
   <h2>Workplace Mediation Fees</h2>
   <p class="section-intro">Covers conflicts between employees, manager-staff disputes, team breakdowns, bullying or harassment complaints, and employment relationship difficulties. The employer or organisation arranges and funds the mediation — employees do not pay to participate.</p>
 
-  <div class="who-pays-badge wpb-workplace">
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--ink,#0d2218)" stroke-width="1.8"><rect x="3" y="7" width="16" height="11" rx="1.5"/><path d="M7 7V5.5A4.5 4.5 0 0115 7"/></svg>
-    <div><strong>Who pays</strong>The employer or organisation pays. A single invoice is issued to the business. Employees participating in the mediation are not expected to contribute anything toward the cost.</div>
-  </div>
-
-  <div class="fee-cards">
-    <div class="fee-card">
-      <div class="fee-card-duration">Session 3.5 hours</div>
-      <div class="fee-card-price">$3,000 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
-      <div class="fee-card-unit">invoiced to the employer</div>
-      <div class="fee-card-note">Suitable for <strong>straightforward two-party matters</strong> — most early-stage workplace disputes</div>
-      <div class="fee-card-includes">Includes individual intake meetings, preparation, and the mediation session.</div>
-    </div>
-    <div class="fee-card">
-      <div class="fee-card-duration">Session 6.5 hours</div>
-      <div class="fee-card-price">$4,500 <span style="font-size:1rem;font-weight:500">+ GST</span></div>
-      <div class="fee-card-unit">invoiced to the employer</div>
-      <div class="fee-card-note">Suitable for <strong>complex or entrenched disputes</strong> requiring a full day</div>
-      <div class="fee-card-includes">Includes individual intake meetings, preparation, and a full-day session.</div>
-    </div>
-  </div>
-
-  <h3>What the fee covers</h3>
-  <ul class="info-list">
-    <li>Individual intake meetings with each party (confidential)</li>
-    <li>Mediator preparation and case review</li>
-    <li>The mediation session (joint or shuttle format as appropriate)</li>
-    <li>A written record of any agreed commitments</li>
-    <li>Initial confidential consultation with the employer — free</li>
-  </ul>
-
   <div class="fee-callout fc-blue">
-    <strong>Employees do not need to agree to cost-sharing.</strong> Participation in workplace mediation should be genuinely voluntary. Asking employees to share the cost creates a power imbalance and undermines that principle. The employer bears the cost; both parties benefit from the process.
+    <strong>Workplace mediation has its own pricing.</strong> Workplace fees are separate from the family law fees on this page and are set out in full, including what is included and how additional parties and travel are charged, on our <a href="/workplace-mediation-cost/">workplace mediation cost</a> page.
   </div>
 
   <div class="fee-callout fc-blue" style="margin-top:12px">
-    <strong>Multi-party or team matters.</strong> Where more than two employees are involved, or where the matter requires additional sessions, we provide a separate quote after the initial consultation. There is no charge for that assessment.
+    <strong>Who pays.</strong> Payment arrangements are agreed for each matter; most workplace mediations are paid for by the employer or organisation. Whoever pays, the mediator remains independent of all participants.
   </div>
 
   <div class="dual-cta">
-    <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation <span class="arr">&#8594;</span></a>
+    <a href="/workplace-mediation-cost/" class="btn btn-primary">See workplace mediation pricing <span class="arr">&#8594;</span></a>
     <a href="/workplace-mediation/" class="btn btn-ghost">About workplace mediation &#8594;</a>
   </div>
 </div>
@@ -749,7 +718,7 @@ build("our-fee-structure",
   </ul>
   <p>Participants may have different contributions. The financial basis for each assessment remains private.</p>
 
-  <div class="fdr-note"><strong>Section 60I certificates are not automatically included</strong> with Access Mediation. If obtaining a certificate may be important to you, tell us before booking so we can identify the appropriate service. <a href="/contact/" style="color:var(--sage-deep,#1e6040)">Talk to our team about FDR &#8594;</a></div>
+  <div class="fdr-note"><strong>Section 60I certificates are not automatically included</strong> with Access Mediation. If obtaining a certificate may be important to you, tell us before booking so we can identify the appropriate service. <a href="/contact-us/" style="color:var(--sage-deep,#1e6040)">Talk to our team about FDR &#8594;</a></div>
 
   <div class="dual-cta" style="margin-top:24px">
     <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation <span class="arr">&#8594;</span></a>
@@ -765,7 +734,7 @@ build("our-fee-structure",
   ("Is the fee shared between participants?",
    "It depends on the dispute type. For family law and property matters, a 50/50 split between participants is the most common arrangement — though participants can agree to divide the fee differently. For workplace matters, the fee is typically paid entirely by the employer or organisation; employees are not expected to fund their own participation. For commercial disputes, the arrangement varies and is confirmed before proceeding. Paying a larger share does not give any participant greater influence over the mediator or outcome."),
   ("Do you charge the same fees for all dispute types?",
-   "The same standard fee schedule applies across family law, property, workplace and commercial disputes. What changes is who pays: family and property matters are usually shared equally between the two participants; workplace matters are typically invoiced to the employer or organisation; commercial arrangements vary. Matters with three or more parties or exceptional complexity may be quoted individually after the initial consultation."),
+   "No. The family law and property fees on this page do not apply to workplace mediation, which has its own pricing on our workplace mediation cost page. Commercial arrangements are confirmed before proceeding. Matters with three or more parties or exceptional complexity may be quoted individually after the initial consultation."),
   ("Are there any hidden fees?",
    "No. All fees are fixed and agreed upfront. If room hire, travel or additional mediation time may apply, we discuss the cost before it is incurred."),
   ("What is Access Mediation?",

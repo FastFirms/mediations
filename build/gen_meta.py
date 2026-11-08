@@ -149,7 +149,11 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "who-is-responsible-for-debts-after-separation",
         # SEO recovery stage 3 — restored answer pages
         "consent-orders-example",
-        "court-ordered-drug-and-alcohol-testing"]
+        "court-ordered-drug-and-alcohol-testing",
+        # SEO recovery stage 5 — workplace
+        "workplace-mediation-cost",
+        "employment-dispute-mediation",
+        "team-conflict-facilitation"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:

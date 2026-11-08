@@ -414,6 +414,7 @@ dan_schema = [
         "@type": "Person",
         "name": "Dan Toombs",
         "jobTitle": "Founder & Mediator",
+        "@id": f"{DOMAIN}/our-team/dan-toombs/#person",
         "url": f"{DOMAIN}/our-team/dan-toombs/",
         "image": f"{DOMAIN}/assets/images/Dan-Bio.png",
         "worksFor": {"@id": f"{DOMAIN}/#organization"},
@@ -431,7 +432,7 @@ dan_schema = [
              "credentialCategory": "Professional Accreditation",
              "recognizedBy": {"@type": "Organization", "name": "Belbin", "url": "https://www.belbin.com/"}},
         ],
-        "sameAs": ["https://amdras.au/", "https://www.churchilltrust.com.au/", "https://humanrights.gov.au/"],
+        # sameAs removed: generic organisation homepages are not Dan-specific identity pages (brief §5.6)
     }
 ]
 
