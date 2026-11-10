@@ -62,6 +62,8 @@ SEPARATION = [
 ]
 
 PARENTING = [
+    ("interim-parenting-orders-australia", "Interim Parenting Orders in Australia", "What interim orders are, when courts grant them, costs, timeframes, and why mediation is usually faster."),
+    ("supervised-visitation-australia", "Supervised Visitation in Australia", "How supervised contact works, Children's Contact Services, costs, and moving to unsupervised time."),
     ("travelling-overseas-with-children-after-separation", "Travelling Overseas With Children After Separation", "When consent is legally required, passports, the Family Law Watchlist, and agreeing a travel plan."),
     ("who-pays-school-fees-after-separation", "Who Pays School Fees After Separation?", "Private school fees and child support, change of assessment, fee credits and agreements."),
     ("ex-not-following-parenting-orders", "Ex Not Following Parenting Orders? Your Options", "What counts as a contravention, what a court can do, and why mediation is often the smarter first step."),
@@ -349,12 +351,12 @@ for _,_,_,posts in TOPICS:
 
 # ── FEATURED / RECENT ─────────────────────────────────────────────────────────
 # Update FEATURED_SLUG to the newest article each batch.
-FEATURED_SLUG = "how-to-tell-children-about-separation"
+FEATURED_SLUG = "interim-parenting-orders-australia"
 RECENT_SLUGS = [
-    "should-i-move-out-of-the-family-home",
-    "how-to-change-parenting-orders",
-    "hiding-assets-in-divorce",
-    "relocation-with-children-after-separation",
+    "supervised-visitation-australia",
+    "travelling-overseas-with-children-after-separation",
+    "who-pays-school-fees-after-separation",
+    "how-to-tell-children-about-separation",
 ]
 
 

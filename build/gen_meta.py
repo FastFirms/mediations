@@ -155,7 +155,10 @@ core = ["family-law-mediation","how-mediation-works","about-mediations-australia
         "employment-dispute-mediation",
         "team-conflict-facilitation",
         "travelling-overseas-with-children-after-separation",
-        "who-pays-school-fees-after-separation"]
+        "who-pays-school-fees-after-separation",
+        # Batch 31 — new cornerstones
+        "interim-parenting-orders-australia",
+        "supervised-visitation-australia"]
 for c in core:
     urls.append((c, "0.9", "monthly"))
 for s, _, _ in SERVICES:
