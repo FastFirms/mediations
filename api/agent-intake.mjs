@@ -151,8 +151,9 @@ function isRateLimited(label) {
 function authenticateAgent(req) {
   const header = req.headers['authorization'] ?? '';
   if (!header.startsWith('Bearer ')) return null;
-  const token = process.env.AGENT_INTAKE_TOKEN ?? '';
-  if (!token || header.slice(7) !== token) return null;
+  // trim: a token piped into `vercel env add` can be stored with a trailing newline
+  const token = (process.env.AGENT_INTAKE_TOKEN ?? '').trim();
+  if (!token || header.slice(7).trim() !== token) return null;
   return 'agent';
 }
 
