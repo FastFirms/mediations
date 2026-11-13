@@ -4,15 +4,16 @@
    Palette: forest green / cool white / deep ink
    ============================================================ */
 :root{
-  --sand:#f1f5f1;--sand-deep:#e3ece4;--ink:#0d2218;--ink-soft:#3d5248;
-  --sage:#1e6040;--sage-deep:#0d2218;--sage-light:#d8ead9;
-  --terra:#1e6040;--terra-deep:#0d2218;--cream:#f7faf7;
-  --line:rgba(13,34,24,.14);
-  --shadow:0 1px 2px rgba(13,34,24,.04),0 8px 30px rgba(13,34,24,.06);
-  --shadow-lg:0 20px 60px rgba(13,34,24,.12);
   --r:18px;--max:1180px;
-  --serif:"DM Sans",var(--sans);--body-serif:"PT Serif",Georgia,serif;
-  --sans:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,sans-serif;
+  --sand:#ffffff;--sand-deep:#f5f9ff;--cream:#f5f9ff;
+  --ink:#232323;--ink-soft:#4a4f5a;
+  --sage:#294b8e;--sage-deep:#1b315e;--sage-light:#e6eefb;
+  --terra:#c2530f;--terra-deep:#a8470c;--terra-bright:#f07d36;
+  --line:rgba(27,49,94,.14);
+  --shadow:0 1px 2px rgba(27,49,94,.05),0 8px 30px rgba(27,49,94,.07);
+  --shadow-lg:0 20px 60px rgba(27,49,94,.14);
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --serif:var(--sans);--body-serif:var(--sans);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -37,9 +38,9 @@ footer h4,footer ul,footer .foot-bottom,footer .foot-locs,
 
 /* ---- buttons ---- */
 .btn{display:inline-flex;align-items:center;gap:.6em;font-family:var(--sans);font-weight:600;font-size:1rem;padding:16px 30px;border-radius:100px;border:none;cursor:pointer;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s,background .25s;will-change:transform}
-.btn-primary{background:var(--terra);color:#fff;box-shadow:0 8px 24px rgba(30,96,64,.28)}
+.btn-primary{background:var(--terra);color:#fff;box-shadow:0 8px 24px rgba(41,75,142,.28)}
 .btn-primary,.btn-primary:hover,a.btn-primary,a.btn-primary:hover{color:#fff!important;text-decoration:none}
-.btn-primary:hover{background:var(--terra-deep);transform:translateY(-3px);box-shadow:0 14px 34px rgba(30,96,64,.38)}
+.btn-primary:hover{background:var(--terra-deep);transform:translateY(-3px);box-shadow:0 14px 34px rgba(41,75,142,.38)}
 .btn-primary .arr{transition:transform .35s cubic-bezier(.16,1,.3,1)}
 .btn-primary:hover .arr{transform:translateX(5px)}
 .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
@@ -105,7 +106,7 @@ header.nav.scrolled{border-color:var(--line)}
 .phero .wrap{position:relative;z-index:2}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sage-deep);background:var(--cream);padding:9px 18px;border-radius:100px;border:1px solid var(--line);margin-bottom:24px}
 .eyebrow .pulse{width:24px;height:24px;border-radius:50%;background:url('/assets/images/Dan-Bio.png') center/cover;border:1.5px solid var(--line);flex-shrink:0}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(90,113,89,.5)}70%{box-shadow:0 0 0 12px rgba(90,113,89,0)}100%{box-shadow:0 0 0 0 rgba(90,113,89,0)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(74,95,140,.5)}70%{box-shadow:0 0 0 12px rgba(74,95,140,0)}100%{box-shadow:0 0 0 0 rgba(74,95,140,0)}}
 .phero h1{font-size:clamp(2.3rem,5.2vw,4rem);max-width:18ch;margin-bottom:28px;line-height:1.15}
 .phero h1 em{font-style:italic;color:var(--sage-deep)}
 .phero .lede{font-size:clamp(1.08rem,1.6vw,1.28rem);color:var(--ink-soft);max-width:60ch;margin-bottom:40px;line-height:1.7}
@@ -265,7 +266,7 @@ figure.tbl td:first-child,figure.tbl th:first-child{font-weight:600;color:var(--
 figure.tbl th:first-child{color:var(--cream)}
 figure.tbl td+td,figure.tbl th+th{border-left:1px solid var(--line)}
 figure.tbl thead th+th{border-left:1px solid rgba(251,248,242,.18)}
-figure.tbl tbody tr:nth-child(even) td{background:rgba(90,113,89,.045)}
+figure.tbl tbody tr:nth-child(even) td{background:rgba(74,95,140,.045)}
 @media(max-width:600px){figure.tbl table{font-size:.9rem}figure.tbl th,figure.tbl td{padding:12px 14px}}
 
 /* ---- info card grid (services, related links) ---- */
@@ -378,3 +379,41 @@ footer ul a:hover{color:var(--cream)}
   .phero[style] .phero-blob{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+/* ── Colour + font refresh (Nov 2026): navy/blue + orange, Inter ── */
+body{line-height:1.7}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-.02em;color:var(--sage)}
+em{color:inherit}
+.svc-body h2,.body-import h2{color:var(--sage-deep);font-weight:600}
+.btn{border-radius:8px}
+.btn-primary{background:var(--terra);box-shadow:0 6px 18px rgba(194,83,15,.25)}
+.btn-primary:hover{background:var(--terra-deep);box-shadow:0 10px 26px rgba(194,83,15,.32)}
+.btn-ghost{border-color:var(--sage);color:var(--sage)}
+.eyebrow{color:var(--sage);background:#fff}
+.pulse{background:var(--terra-bright)!important}
+a{color:var(--sage)}
+.sec-tag{color:var(--terra)}
+.answer{border-left-color:var(--terra)!important;background:var(--cream)}
+figure.tbl th{background:var(--sage-deep)}
+.svc-body ol li::before{background:var(--sage)}
+.cta-band{background:var(--sage-deep)}
+.cta-band h2,.cta-band h2 em{color:#fff}
+.cta-band p,.cta-band .note{color:rgba(255,255,255,.8)}
+footer{background:#1b315e}
+.phero-blob{opacity:.25!important;filter:hue-rotate(110deg)}
+h1 em,h2 em,h3 em,.cta-band h2 em,.phero h1 em{font-style:normal!important;color:var(--terra)!important}
+footer a,footer ul a{color:rgba(255,255,255,.72)!important}
+footer a:hover,footer ul a:hover{color:#fff!important}
+footer h4,footer .logo,footer strong{color:#fff!important}
+.cta-band .phero-blob{display:none!important}
+figure.tbl tbody tr:nth-child(even) td{background:rgba(41,75,142,.05)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(240,125,54,.5)}70%{box-shadow:0 0 0 12px rgba(240,125,54,0)}100%{box-shadow:0 0 0 0 rgba(240,125,54,0)}}
+.cta-band .note svg path{stroke:var(--terra-bright)!important}
+/* Dark (navy) sections: keep headings and accent text readable */
+:is(.ot-network,.cta-band,.booking-strip,.access-strip) :is(h1,h2,h3,h4){color:#fff!important}
+:is(.ot-network,.cta-band,.booking-strip,.access-strip) :is(h1,h2,h3,h4) em{color:var(--terra-bright)!important}
+:is(.ot-network,.cta-band,.booking-strip,.access-strip) :is(.sec-tag,[style*="color:var(--sage)"]){color:rgba(255,255,255,.85)!important}
+:is(.cta-band,.booking-strip,.access-strip,.ot-network) a:not([class*=btn]){color:#fff}
+/* Quiz note sat in pale text on a pale card */
+#hero-check p[style*="rgba(214,227,248"]{color:var(--ink-soft)!important}
+.sec-tag,.team-card-link{color:var(--terra-deep)}

@@ -65,10 +65,10 @@ d+=f"""<main id="main">
     <p style="color:rgba(251,248,242,.85);margin-bottom:20px;font-size:.98rem">Call us directly and speak with our team about your situation.</p>
     <a href="{PHONE_HREF}" class="btn btn-primary" style="justify-content:center;width:100%">Call {PHONE}</a>
     <div style="margin-top:26px;padding-top:22px;border-top:1px solid rgba(251,248,242,.18);display:flex;flex-direction:column;gap:14px;font-size:.95rem">
-      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Fixed-fee, no surprises</div>
-      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>In person or online</div>
-      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Nationally accredited mediators</div>
-      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>90% resolved without court</div>
+      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#8fb3ef" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Fixed-fee, no surprises</div>
+      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#8fb3ef" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>In person or online</div>
+      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#8fb3ef" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Nationally accredited mediators</div>
+      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#8fb3ef" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>90% resolved without court</div>
     </div>
   </div>
 </aside>

@@ -16,7 +16,7 @@ def build(slug,title,desc,eyebrow,h1,lede,ans,blocks,qa,crumb,cta_h,cta_p,canoni
         d=d.replace('<meta name="robots" content="index, follow',
                     '<meta name="robots" content="noindex, follow')
     if bg_image:
-        hero_style=f' style="background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.95) 38%,rgba(247,250,247,.7) 55%,rgba(247,250,247,.2) 75%,rgba(247,250,247,0) 82%),url(\'{bg_image}\');background-size:cover;background-position:{bg_pos};position:relative"'
+        hero_style=f' style="background-image:linear-gradient(to right,rgba(245,249,255,1) 0%,rgba(245,249,255,.95) 38%,rgba(245,249,255,.7) 55%,rgba(245,249,255,.2) 75%,rgba(245,249,255,0) 82%),url(\'{bg_image}\');background-size:cover;background-position:{bg_pos};position:relative"'
         blob_style=' style="opacity:.2"'
     else:
         hero_style=''
@@ -382,90 +382,90 @@ build("our-fee-structure",
 /* ── Dispute-type nav ──────────────────────────────────────────── */
 .dtype-nav{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 36px;padding:0;list-style:none}
 .dtype-nav a{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:100px;font-size:.93rem;font-weight:700;text-decoration:none;border:2px solid transparent;transition:background .15s,border-color .15s,color .15s}
-.dtype-nav a.dn-family{background:var(--sage,#1e6040);color:#fff;border-color:var(--sage,#1e6040)}
-.dtype-nav a.dn-family:hover{background:var(--sage-deep,#0d2218);border-color:var(--sage-deep,#0d2218)}
-.dtype-nav a.dn-workplace{background:var(--sand-deep,#e3ece4);color:var(--ink,#0d2218);border-color:var(--ink,#0d2218)}
-.dtype-nav a.dn-workplace:hover{background:var(--ink,#0d2218);color:#fff}
-.dtype-nav a.dn-commercial{background:var(--sand,#f1f5f1);color:var(--ink-soft,#3d5248);border-color:var(--ink-soft,#3d5248)}
-.dtype-nav a.dn-commercial:hover{background:var(--ink-soft,#3d5248);color:#fff}
-.dtype-nav a.dn-access{background:var(--cream,#f7faf7);color:var(--ink-soft,#3d5248);border-color:var(--line,rgba(13,34,24,.2))}
-.dtype-nav a.dn-access:hover{border-color:var(--sage,#1e6040);color:var(--sage,#1e6040)}
+.dtype-nav a.dn-family{background:var(--sage,#294b8e);color:#fff;border-color:var(--sage,#294b8e)}
+.dtype-nav a.dn-family:hover{background:var(--sage-deep,#1b315e);border-color:var(--sage-deep,#1b315e)}
+.dtype-nav a.dn-workplace{background:var(--sand-deep,#eaf1fc);color:var(--ink,#1b315e);border-color:var(--ink,#1b315e)}
+.dtype-nav a.dn-workplace:hover{background:var(--ink,#1b315e);color:#fff}
+.dtype-nav a.dn-commercial{background:var(--sand,#ffffff);color:var(--ink-soft,#4a4f5a);border-color:var(--ink-soft,#4a4f5a)}
+.dtype-nav a.dn-commercial:hover{background:var(--ink-soft,#4a4f5a);color:#fff}
+.dtype-nav a.dn-access{background:var(--cream,#f5f9ff);color:var(--ink-soft,#4a4f5a);border-color:var(--line,rgba(27,49,94,.2))}
+.dtype-nav a.dn-access:hover{border-color:var(--sage,#294b8e);color:var(--sage,#294b8e)}
 .dtype-nav svg{width:16px;height:16px;flex-shrink:0}
 /* ── Section styling ───────────────────────────────────────────── */
-.fee-section{scroll-margin-top:80px;padding:40px 0 8px;border-top:2px solid var(--line,rgba(13,34,24,.12))}
+.fee-section{scroll-margin-top:80px;padding:40px 0 8px;border-top:2px solid var(--line,rgba(27,49,94,.12))}
 .fee-section:first-of-type{border-top:none;padding-top:0}
 .fee-section-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;border-radius:100px;padding:5px 14px;margin-bottom:14px}
-.fse-family{background:var(--sage,#1e6040);color:#fff}
-.fse-workplace{background:var(--sand-deep,#e3ece4);color:var(--ink,#0d2218)}
-.fse-commercial{background:var(--sand,#f1f5f1);color:var(--ink-soft,#3d5248)}
-.fse-access{background:var(--sage-light,#d8ead9);color:var(--sage,#1e6040)}
+.fse-family{background:var(--sage,#294b8e);color:#fff}
+.fse-workplace{background:var(--sand-deep,#eaf1fc);color:var(--ink,#1b315e)}
+.fse-commercial{background:var(--sand,#ffffff);color:var(--ink-soft,#4a4f5a)}
+.fse-access{background:var(--sage-light,#e6eefb);color:var(--sage,#294b8e)}
 .fee-section h2{margin:0 0 6px;font-size:1.55rem}
 .fee-section .section-intro{font-size:.97rem;color:var(--ink-soft);margin:0 0 24px;max-width:68ch;line-height:1.6}
 /* ── Who pays badge ────────────────────────────────────────────── */
 .who-pays-badge{display:inline-flex;align-items:center;gap:10px;border-radius:12px;padding:14px 20px;margin:0 0 24px;font-size:.93rem;line-height:1.45}
-.wpb-family{background:var(--sage-light,#d8ead9);border:1.5px solid var(--sage,#1e6040)}
-.wpb-workplace{background:var(--sand-deep,#e3ece4);border:2px solid var(--ink,#0d2218)}
-.wpb-commercial{background:var(--sand,#f1f5f1);border:1.5px solid var(--ink-soft,#3d5248)}
+.wpb-family{background:var(--sage-light,#e6eefb);border:1.5px solid var(--sage,#294b8e)}
+.wpb-workplace{background:var(--sand-deep,#eaf1fc);border:2px solid var(--ink,#1b315e)}
+.wpb-commercial{background:var(--sand,#ffffff);border:1.5px solid var(--ink-soft,#4a4f5a)}
 .who-pays-badge strong{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px;opacity:.7}
 /* ── Fee cards ─────────────────────────────────────────────────── */
 .fee-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin:0 0 24px}
-.fee-card{background:var(--cream,#f7faf7);border:1.5px solid var(--line,rgba(13,34,24,.14));border-radius:16px;padding:28px 26px}
+.fee-card{background:var(--cream,#f5f9ff);border:1.5px solid var(--line,rgba(27,49,94,.14));border-radius:16px;padding:28px 26px}
 .fee-card-duration{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);margin-bottom:10px}
-.fee-card-price{font-size:2.5rem;font-weight:800;color:var(--sage,#1e6040);line-height:1}
+.fee-card-price{font-size:2.5rem;font-weight:800;color:var(--sage,#294b8e);line-height:1}
 .fee-card-unit{font-size:.85rem;color:var(--ink-soft);margin:4px 0 12px}
-.fee-card-note{font-size:.88rem;color:var(--ink-soft);margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--line,rgba(13,34,24,.14))}
+.fee-card-note{font-size:.88rem;color:var(--ink-soft);margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--line,rgba(27,49,94,.14))}
 .fee-card-note strong{color:var(--ink)}
 .fee-card-includes{font-size:.83rem;color:var(--ink-soft);line-height:1.55}
 /* ── Info list ─────────────────────────────────────────────────── */
 .info-list{list-style:none;padding:0;margin:0 0 20px}
-.info-list li{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line,rgba(13,34,24,.09));font-size:.93rem;line-height:1.5}
+.info-list li{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line,rgba(27,49,94,.09));font-size:.93rem;line-height:1.5}
 .info-list li:last-child{border-bottom:none}
-.info-list li::before{content:"✓";color:var(--sage,#1e6040);font-weight:700;flex-shrink:0;margin-top:1px}
+.info-list li::before{content:"✓";color:var(--sage,#294b8e);font-weight:700;flex-shrink:0;margin-top:1px}
 /* ── Callout box ───────────────────────────────────────────────── */
 .fee-callout{border-radius:12px;padding:18px 22px;margin:20px 0;font-size:.9rem;line-height:1.6}
-.fc-green{background:var(--sage-light,#d8ead9);border-left:4px solid var(--sage,#1e6040)}
-.fc-blue{background:var(--sand-deep,#e3ece4);border-left:4px solid var(--ink,#0d2218)}
-.fc-amber{background:var(--sand,#f1f5f1);border-left:4px solid var(--ink-soft,#3d5248)}
-.fc-purple{background:var(--sage-light,#d8ead9);border-left:4px solid var(--sage,#1e6040)}
+.fc-green{background:var(--sage-light,#e6eefb);border-left:4px solid var(--sage,#294b8e)}
+.fc-blue{background:var(--sand-deep,#eaf1fc);border-left:4px solid var(--ink,#1b315e)}
+.fc-amber{background:var(--sand,#ffffff);border-left:4px solid var(--ink-soft,#4a4f5a)}
+.fc-purple{background:var(--sage-light,#e6eefb);border-left:4px solid var(--sage,#294b8e)}
 /* ── Access strip (inline) ─────────────────────────────────────── */
-.access-strip{background:var(--sage-deep,#1e6040);color:#fff;border-radius:14px;padding:26px 28px 22px;margin:28px 0 0}
+.access-strip{background:var(--sage-deep,#294b8e);color:#fff;border-radius:14px;padding:26px 28px 22px;margin:28px 0 0}
 .access-strip h2,.access-strip h3{color:#fff;margin:0 0 8px}
 .access-strip p{color:rgba(255,255,255,.88)!important;margin:0 0 6px;font-size:.93rem;line-height:1.55}
 .access-strip-price{font-size:1.7rem;font-weight:800;color:#fff;margin:10px 0 4px;line-height:1}
 .access-strip-sub{font-size:.83rem;color:rgba(255,255,255,.7);margin:0 0 16px}
-.access-strip .btn-access{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--sage-deep,#1e6040);border-radius:100px;padding:11px 22px;font-weight:700;font-size:.9rem;text-decoration:none;transition:opacity .2s}
+.access-strip .btn-access{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--sage-deep,#294b8e);border-radius:100px;padding:11px 22px;font-weight:700;font-size:.9rem;text-decoration:none;transition:opacity .2s}
 .access-strip .btn-access:hover{opacity:.9}
 .access-strip-meta{font-size:.78rem;color:rgba(255,255,255,.65)!important;margin-top:9px}
 /* ── Access full detail ────────────────────────────────────────── */
-.access-assist-box{border:1.5px solid var(--sage-deep,#1e6040);border-radius:12px;padding:20px 22px;margin:20px 0;background:#fff}
-.ast-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line,rgba(13,34,24,.1));font-size:.93rem}
-.ast-row:last-child{border-bottom:none;font-weight:700;color:var(--sage-deep,#1e6040);padding-top:11px}
+.access-assist-box{border:1.5px solid var(--sage-deep,#294b8e);border-radius:12px;padding:20px 22px;margin:20px 0;background:#fff}
+.ast-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line,rgba(27,49,94,.1));font-size:.93rem}
+.ast-row:last-child{border-bottom:none;font-weight:700;color:var(--sage-deep,#294b8e);padding-top:11px}
 .band-table{width:100%;border-collapse:collapse;margin:14px 0 6px;font-size:.9rem}
-.band-table th{text-align:left;font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);padding:0 12px 8px 0;border-bottom:2px solid var(--sage-deep,#1e6040)}
-.band-table td{padding:10px 12px 10px 0;border-bottom:1px solid var(--line,rgba(13,34,24,.1));vertical-align:top;color:var(--ink-soft)}
+.band-table th{text-align:left;font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);padding:0 12px 8px 0;border-bottom:2px solid var(--sage-deep,#294b8e)}
+.band-table td{padding:10px 12px 10px 0;border-bottom:1px solid var(--line,rgba(27,49,94,.1));vertical-align:top;color:var(--ink-soft)}
 .band-table td:last-child{font-weight:700;color:var(--ink)}
 .band-table tr:last-child td{border-bottom:none}
 .band-note{font-size:.8rem;color:var(--ink-soft);margin:4px 0 16px;font-style:italic}
 .acc-how-step{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
-.acc-how-num{width:30px;height:30px;border-radius:50%;background:var(--sage-deep,#1e6040);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.88rem;flex-shrink:0;margin-top:2px}
+.acc-how-num{width:30px;height:30px;border-radius:50%;background:var(--sage-deep,#294b8e);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.88rem;flex-shrink:0;margin-top:2px}
 .acc-how-body h3{margin:0 0 3px;font-size:.95rem}
 .acc-how-body p{margin:0;font-size:.86rem;color:var(--ink-soft);line-height:1.55}
 .privacy-list{list-style:none;padding:0;margin:10px 0}
 .privacy-list li{padding-left:22px;position:relative;margin-bottom:7px;font-size:.91rem;color:var(--ink-soft);line-height:1.45}
-.privacy-list li::before{content:"✗";position:absolute;left:0;color:var(--sage-deep,#1e6040);font-weight:700}
-.fdr-note{background:var(--sage-pale,#f1f5f1);border-left:4px solid var(--sage-deep,#1e6040);border-radius:0 10px 10px 0;padding:14px 18px;margin:14px 0;font-size:.9rem;line-height:1.6;color:var(--ink-soft)}
+.privacy-list li::before{content:"✗";position:absolute;left:0;color:var(--sage-deep,#294b8e);font-weight:700}
+.fdr-note{background:var(--sage-pale,#ffffff);border-left:4px solid var(--sage-deep,#294b8e);border-radius:0 10px 10px 0;padding:14px 18px;margin:14px 0;font-size:.9rem;line-height:1.6;color:var(--ink-soft)}
 /* ── Additional costs ──────────────────────────────────────────── */
 .add-table{width:100%;border-collapse:collapse;margin:14px 0 6px;font-size:.9rem}
-.add-table th{text-align:left;font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);padding:0 12px 8px 0;border-bottom:2px solid var(--sage-deep,#1e6040)}
-.add-table td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line,rgba(13,34,24,.1));vertical-align:top;color:var(--ink-soft);line-height:1.45}
+.add-table th{text-align:left;font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);padding:0 12px 8px 0;border-bottom:2px solid var(--sage-deep,#294b8e)}
+.add-table td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line,rgba(27,49,94,.1));vertical-align:top;color:var(--ink-soft);line-height:1.45}
 .add-table td:last-child{font-weight:700;color:var(--ink);white-space:nowrap}
 .add-table tr:last-child td{border-bottom:none}
-.invite-note{background:var(--sage-pale,#f1f5f1);border-radius:8px;padding:14px 18px;margin:12px 0;font-size:.88rem;line-height:1.55;color:var(--ink-soft)}
+.invite-note{background:var(--sage-pale,#ffffff);border-radius:8px;padding:14px 18px;margin:12px 0;font-size:.88rem;line-height:1.55;color:var(--ink-soft)}
 /* ── Shared utilities ──────────────────────────────────────────── */
 .dual-cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 8px}
-.dual-cta .btn-ghost{color:var(--sage-deep,#1e6040)!important;border-color:var(--sage-deep,#1e6040)!important}
-.section-sep{border:none;border-top:1px solid var(--line,rgba(13,34,24,.12));margin:52px 0}
-.eyebrow-tag{display:inline-block;font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--sage-deep,#1e6040);background:var(--sage-pale,#f1f5f1);border-radius:100px;padding:4px 12px;margin-bottom:14px}
+.dual-cta .btn-ghost{color:var(--sage-deep,#294b8e)!important;border-color:var(--sage-deep,#294b8e)!important}
+.section-sep{border:none;border-top:1px solid var(--line,rgba(27,49,94,.12));margin:52px 0}
+.eyebrow-tag{display:inline-block;font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--sage-deep,#294b8e);background:var(--sage-pale,#ffffff);border-radius:100px;padding:4px 12px;margin-bottom:14px}
 @media(max-width:640px){
   .fee-card-price{font-size:2rem}
   .fee-cards{grid-template-columns:1fr}
@@ -509,7 +509,7 @@ build("our-fee-structure",
   <p class="section-intro">Covers parenting arrangements, property settlement, superannuation splitting, de facto disputes, estate matters, and separation agreements. The standard fee is divided equally between the two participants — you each pay your own share.</p>
 
   <div class="who-pays-badge wpb-family">
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--sage,#1e6040)" stroke-width="1.8"><circle cx="11" cy="8" r="3.5"/><path d="M4.5 19c0-3.59 2.91-6.5 6.5-6.5s6.5 2.91 6.5 6.5"/></svg>
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--sage,#294b8e)" stroke-width="1.8"><circle cx="11" cy="8" r="3.5"/><path d="M4.5 19c0-3.59 2.91-6.5 6.5-6.5s6.5 2.91 6.5 6.5"/></svg>
     <div><strong>Who pays</strong>The fee is shared equally between the two participants. A 50/50 split is standard — each person pays their own share. You may agree to a different split, but no arrangement gives either party greater influence.</div>
   </div>
 
@@ -540,7 +540,7 @@ build("our-fee-structure",
   </ul>
 
   <div class="fee-callout fc-green">
-    <strong>Making the agreement binding.</strong> An agreement reached in mediation is not automatically enforceable. To give it legal force — and close off future claims — it should be formalised as consent orders or a binding financial agreement. We explain both options at your free consultation. <a href="/consent-orders/" style="color:var(--sage-deep,#1e6040)">See consent orders &#8594;</a>
+    <strong>Making the agreement binding.</strong> An agreement reached in mediation is not automatically enforceable. To give it legal force — and close off future claims — it should be formalised as consent orders or a binding financial agreement. We explain both options at your free consultation. <a href="/consent-orders/" style="color:var(--sage-deep,#294b8e)">See consent orders &#8594;</a>
   </div>
 
   <div class="access-strip" id="access-rescue">
@@ -589,7 +589,7 @@ build("our-fee-structure",
   <p class="section-intro">Covers business partner disputes, contract disagreements, shareholder matters, neighbour disputes, estate and inheritance conflicts, and other civil matters not covered above. The same fee schedule applies — who pays is agreed before you proceed.</p>
 
   <div class="who-pays-badge wpb-commercial">
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--ink-soft,#3d5248)" stroke-width="1.8"><path d="M4 18V8l7-5 7 5v10"/><path d="M9 18v-5h4v5"/></svg>
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--ink-soft,#4a4f5a)" stroke-width="1.8"><path d="M4 18V8l7-5 7 5v10"/><path d="M9 18v-5h4v5"/></svg>
     <div><strong>Who pays</strong>Arrangements vary by matter. The fee may be split equally, weighted by agreement, or paid by one party. We confirm the payment structure at the free consultation — before anything is booked.</div>
   </div>
 
@@ -718,7 +718,7 @@ build("our-fee-structure",
   </ul>
   <p>Participants may have different contributions. The financial basis for each assessment remains private.</p>
 
-  <div class="fdr-note"><strong>Section 60I certificates are not automatically included</strong> with Access Mediation. If obtaining a certificate may be important to you, tell us before booking so we can identify the appropriate service. <a href="/contact-us/" style="color:var(--sage-deep,#1e6040)">Talk to our team about FDR &#8594;</a></div>
+  <div class="fdr-note"><strong>Section 60I certificates are not automatically included</strong> with Access Mediation. If obtaining a certificate may be important to you, tell us before booking so we can identify the appropriate service. <a href="/contact-us/" style="color:var(--sage-deep,#294b8e)">Talk to our team about FDR &#8594;</a></div>
 
   <div class="dual-cta" style="margin-top:24px">
     <a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation <span class="arr">&#8594;</span></a>

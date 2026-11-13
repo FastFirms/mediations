@@ -877,7 +877,7 @@ build(
 
 # ---- WORKPLACE MEDIATION HUB (bespoke homepage-style layout) ----
 X_w = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="rgba(251,248,242,.4)" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="rgba(251,248,242,.6)" stroke-width="1.5" stroke-linecap="round"/></svg>'
-TICK_w = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#a8c89f" stroke-width="1.5"/><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+TICK_w = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#8fb3ef" stroke-width="1.5"/><path d="M6 10.5l2.5 2.5L14 7" stroke="#8fb3ef" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 qa_wm = [
  ("What is workplace mediation?",
   "Workplace mediation is a voluntary, confidential process in which a neutral mediator helps people in an employment relationship resolve a dispute without going to court or a tribunal. The mediator does not impose a decision — they help the parties reach their own workable agreement."),
@@ -929,7 +929,7 @@ _wm += f"""<main id="main">
 <section class="sec reveal" style="background:var(--ink);color:var(--cream);border-radius:38px;margin:0 16px" aria-labelledby="wm-wedge">
   <div class="wrap">
     <div style="text-align:center;max-width:86ch;margin:0 auto 50px">
-      <h2 id="wm-wedge" style="font-size:clamp(1.8rem,3.6vw,3rem);color:var(--cream);margin-bottom:16px;max-width:34ch;margin-left:auto;margin-right:auto">Two ways through a workplace dispute. One is usually <em style="color:#a8ccb4">faster, less expensive and easier to control.</em></h2>
+      <h2 id="wm-wedge" style="font-size:clamp(1.8rem,3.6vw,3rem);color:var(--cream);margin-bottom:16px;max-width:34ch;margin-left:auto;margin-right:auto">Two ways through a workplace dispute. One is usually <em style="color:#8fb3ef">faster, less expensive and easier to control.</em></h2>
       <p style="color:rgba(251,248,242,.72);font-size:1.05rem">Some workplace disputes require formal proceedings. Many don't. Early mediation gives the parties an opportunity to resolve the problem before the conflict — and its cost — escalates.</p>
     </div>
     <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;max-width:900px;margin:0 auto" class="compare">
@@ -949,7 +949,7 @@ _wm += f"""<main id="main">
         <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--terra);color:var(--cream);width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:1.1rem">vs</span>
       </div>
       <div style="padding:36px 32px">
-        <h3 style="font-size:1.35rem;margin-bottom:20px;color:#a8c89f">Mediation first</h3>
+        <h3 style="font-size:1.35rem;margin-bottom:20px;color:#8fb3ef">Mediation first</h3>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:14px">
           <li style="display:flex;gap:12px">{TICK_w}Address the problem early</li>
           <li style="display:flex;gap:12px">{TICK_w}Bring the right people into the room</li>

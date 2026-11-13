@@ -29,7 +29,7 @@ def write(slug, doc):
 
 # SVG helpers
 X = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="rgba(251,248,242,.4)" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="rgba(251,248,242,.6)" stroke-width="1.5" stroke-linecap="round"/></svg>'
-TICK = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#a8c89f" stroke-width="1.5"/><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+TICK = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#8fb3ef" stroke-width="1.5"/><path d="M6 10.5l2.5 2.5L14 7" stroke="#8fb3ef" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 # ============================================================
 # HOMEPAGE
@@ -59,7 +59,7 @@ doc = head(
                faq_schema(qa_home)])
 doc += nav()
 doc += f"""<main id="main">
-<section class="phero" style="padding-bottom:clamp(48px,6vw,80px);background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.95) 38%,rgba(247,250,247,.7) 55%,rgba(247,250,247,.2) 75%,rgba(247,250,247,0) 82%),url('/assets/images/hero-mediation-session.jpg');background-size:cover;background-position:center 55%;position:relative">
+<section class="phero" style="padding-bottom:clamp(48px,6vw,80px);background-image:linear-gradient(to right,rgba(245,249,255,1) 0%,rgba(245,249,255,.95) 38%,rgba(245,249,255,.7) 55%,rgba(245,249,255,.2) 75%,rgba(245,249,255,0) 82%),url('/assets/images/hero-mediation-session.jpg');background-size:cover;background-position:center 55%;position:relative">
   <div class="phero-blob" style="opacity:.2"></div>
   <div class="wrap">
     <span class="eyebrow d1"><span class="pulse"></span>Nationally accredited mediators · 90% success rate</span>
@@ -128,7 +128,7 @@ doc += f"""<main id="main">
         </div>
       </div>
       <aside style="background:var(--sage-deep);color:var(--cream);border-radius:28px;padding:46px 40px;box-shadow:var(--shadow-lg)">
-        <div style="font-family:var(--serif);font-size:4.5rem;line-height:1;margin-bottom:8px">90<span style="color:#a8ccb4">%</span></div>
+        <div style="font-family:var(--serif);font-size:4.5rem;line-height:1;margin-bottom:8px">90<span style="color:#8fb3ef">%</span></div>
         <p style="color:rgba(251,248,242,.82);margin-bottom:28px">of disputes we mediate are resolved — without ever reaching a courtroom.</p>
         <div style="display:flex;flex-direction:column;gap:16px;border-top:1px solid rgba(251,248,242,.18);padding-top:24px">
           <div style="display:flex;align-items:center;gap:12px">{TICK}Thousands of matters resolved</div>
@@ -141,8 +141,8 @@ doc += f"""<main id="main">
 </section>
 
 <style>
-.team-panel{{background:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.97) 30%,rgba(247,250,247,.8) 48%,rgba(247,250,247,.2) 66%,rgba(247,250,247,0) 76%),url('/assets/images/mediations-australia-accredited-mediators.webp') center 40%/cover no-repeat,#f7faf7;padding:clamp(60px,7vw,110px) 0}}
-@media(max-width:760px){{.team-panel{{background:linear-gradient(to bottom,#f7faf7 0%,rgba(247,250,247,0) 45%) center bottom/100% 300px no-repeat,linear-gradient(to right,#f7faf7 0%,rgba(247,250,247,0) 12%,rgba(247,250,247,0) 88%,#f7faf7 100%) center bottom/100% 300px no-repeat,url('/assets/images/mediations-australia-accredited-mediators.webp') center bottom/auto 300px no-repeat,#f7faf7;padding:56px 0 260px}}}}
+.team-panel{{background:linear-gradient(to right,rgba(245,249,255,1) 0%,rgba(245,249,255,.97) 30%,rgba(245,249,255,.8) 48%,rgba(245,249,255,.2) 66%,rgba(245,249,255,0) 76%),url('/assets/images/mediations-australia-accredited-mediators.webp') center 40%/cover no-repeat,#f5f9ff;padding:clamp(60px,7vw,110px) 0}}
+@media(max-width:760px){{.team-panel{{background:linear-gradient(to bottom,#f5f9ff 0%,rgba(245,249,255,0) 45%) center bottom/100% 300px no-repeat,linear-gradient(to right,#f5f9ff 0%,rgba(245,249,255,0) 12%,rgba(245,249,255,0) 88%,#f5f9ff 100%) center bottom/100% 300px no-repeat,url('/assets/images/mediations-australia-accredited-mediators.webp') center bottom/auto 300px no-repeat,#f5f9ff;padding:56px 0 260px}}}}
 </style>
 <section class="sec reveal team-panel">
   <div class="wrap">
