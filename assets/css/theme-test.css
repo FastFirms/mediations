@@ -39,3 +39,4 @@ footer h4,footer .logo,footer strong{color:#fff!important}
 .cta-band .phero-blob{display:none!important}
 figure.tbl tbody tr:nth-child(even) td{background:rgba(41,75,142,.05)}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(240,125,54,.5)}70%{box-shadow:0 0 0 12px rgba(240,125,54,0)}100%{box-shadow:0 0 0 0 rgba(240,125,54,0)}}
+.cta-band .note svg path{stroke:var(--terra)!important}
