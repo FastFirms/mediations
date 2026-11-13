@@ -8,7 +8,7 @@
   --sand:#ffffff;--sand-deep:#f5f9ff;--cream:#f5f9ff;
   --ink:#232323;--ink-soft:#4a4f5a;
   --sage:#294b8e;--sage-deep:#1b315e;--sage-light:#e6eefb;
-  --terra:#f07d36;--terra-deep:#d9661f;
+  --terra:#c2530f;--terra-deep:#a8470c;--terra-bright:#f07d36;
   --line:rgba(27,49,94,.14);
   --shadow:0 1px 2px rgba(27,49,94,.05),0 8px 30px rgba(27,49,94,.07);
   --shadow-lg:0 20px 60px rgba(27,49,94,.14);
@@ -386,11 +386,11 @@ h1,h2,h3,h4{font-weight:600;letter-spacing:-.02em;color:var(--sage)}
 em{color:inherit}
 .svc-body h2,.body-import h2{color:var(--sage-deep);font-weight:600}
 .btn{border-radius:8px}
-.btn-primary{background:var(--terra);box-shadow:0 6px 18px rgba(240,125,54,.28)}
-.btn-primary:hover{background:var(--terra-deep);box-shadow:0 10px 26px rgba(240,125,54,.36)}
+.btn-primary{background:var(--terra);box-shadow:0 6px 18px rgba(194,83,15,.25)}
+.btn-primary:hover{background:var(--terra-deep);box-shadow:0 10px 26px rgba(194,83,15,.32)}
 .btn-ghost{border-color:var(--sage);color:var(--sage)}
 .eyebrow{color:var(--sage);background:#fff}
-.pulse{background:var(--terra)!important}
+.pulse{background:var(--terra-bright)!important}
 a{color:var(--sage)}
 .sec-tag{color:var(--terra)}
 .answer{border-left-color:var(--terra)!important;background:var(--cream)}
@@ -408,4 +408,11 @@ footer h4,footer .logo,footer strong{color:#fff!important}
 .cta-band .phero-blob{display:none!important}
 figure.tbl tbody tr:nth-child(even) td{background:rgba(41,75,142,.05)}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(240,125,54,.5)}70%{box-shadow:0 0 0 12px rgba(240,125,54,0)}100%{box-shadow:0 0 0 0 rgba(240,125,54,0)}}
-.cta-band .note svg path{stroke:var(--terra)!important}
+.cta-band .note svg path{stroke:var(--terra-bright)!important}
+/* Dark (navy) sections: keep headings and accent text readable */
+:is(.ot-network,.cta-band,.booking-strip,.access-strip) :is(h1,h2,h3,h4){color:#fff!important}
+:is(.ot-network,.cta-band,.booking-strip,.access-strip) :is(h1,h2,h3,h4) em{color:var(--terra-bright)!important}
+:is(.ot-network,.cta-band,.booking-strip,.access-strip) :is(.sec-tag,[style*="color:var(--sage)"]){color:rgba(255,255,255,.85)!important}
+:is(.cta-band,.booking-strip,.access-strip,.ot-network) a:not(.btn){color:#fff}
+/* Quiz note sat in pale text on a pale card */
+#hero-check p[style*="rgba(214,227,248"]{color:var(--ink-soft)!important}
