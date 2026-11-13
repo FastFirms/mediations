@@ -413,6 +413,7 @@ figure.tbl tbody tr:nth-child(even) td{background:rgba(41,75,142,.05)}
 :is(.ot-network,.cta-band,.booking-strip,.access-strip) :is(h1,h2,h3,h4){color:#fff!important}
 :is(.ot-network,.cta-band,.booking-strip,.access-strip) :is(h1,h2,h3,h4) em{color:var(--terra-bright)!important}
 :is(.ot-network,.cta-band,.booking-strip,.access-strip) :is(.sec-tag,[style*="color:var(--sage)"]){color:rgba(255,255,255,.85)!important}
-:is(.cta-band,.booking-strip,.access-strip,.ot-network) a:not(.btn){color:#fff}
+:is(.cta-band,.booking-strip,.access-strip,.ot-network) a:not([class*=btn]){color:#fff}
 /* Quiz note sat in pale text on a pale card */
 #hero-check p[style*="rgba(214,227,248"]{color:var(--ink-soft)!important}
+.sec-tag,.team-card-link{color:var(--terra-deep)}
