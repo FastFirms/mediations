@@ -575,7 +575,6 @@ service_page(
         ("how","How the process works"),
         ("reporting","What the employer receives, and what stays private"),
         ("funding","Funding and independence"),
-        ("dan","Meet Dan Toombs"),
         ("pricing","Pricing"),
         ("vs-fwc","Mediation and the Fair Work Commission"),
         ("sectors","Sectors we work with"),
@@ -643,16 +642,6 @@ service_page(
 <h2 id="funding">Funding and independence</h2>
 <p>Most workplace mediations are paid for by the employer. Paying does not buy an outcome: the mediator is independent of all participants, including the organisation that pays, and does not take instructions about what the result should be. This is explained to every participant at intake.</p>
 """ + inline_cta("Want to talk through a dispute in confidence before deciding anything?", btn="Discuss your workplace dispute", href="/contact-us/") + f"""
-
-<h2 id="dan">Meet Dan Toombs</h2>
-<div style="display:flex;gap:1.25rem;align-items:flex-start;flex-wrap:wrap;padding:1.25rem;border:1px solid var(--line);border-radius:12px;background:var(--cream)">
-<img src="/assets/images/Dan-Bio.png" alt="Dan Toombs — Founder and Mediator, Mediations Australia" width="96" height="96" loading="lazy" style="border-radius:50%;object-fit:cover;width:96px;height:96px;flex-shrink:0">
-<div style="flex:1;min-width:220px">
-<p style="margin:0 0 .5rem">Dan Toombs is the Founder of Mediations Australia and an <strong>AMDRAS-accredited mediator</strong>. His experience includes serving as a <strong>Member of the Guardianship and Administration Tribunal (Queensland)</strong>, whose jurisdiction is now within QCAT, leading a community legal centre as <strong>CEO</strong>, and serving as a <strong>Board Director of Legal Aid Queensland</strong>. He is an <strong>Accredited Belbin Team Roles Facilitator</strong> and has trained in Adaptive Leadership through the Australian Adaptive Leadership Institute.</p>
-<p style="margin:0 0 .5rem">Dan has mediated workplace disputes across professional services, healthcare, education, construction, and the not-for-profit sector.</p>
-<p style="margin:0"><a href="/our-team/dan-toombs/">View Dan's profile →</a> · <a href="/belbin-team-roles-training/">Belbin Team Roles training</a></p>
-</div></div>
-<p>Dan's tribunal experience gives him an adjudicator's perspective for reality-testing options, and his leadership and governance background is relevant to manager, executive and board disputes. Who mediates a particular matter depends on suitability and availability, which we confirm when you get in touch.</p>
 
 <h2 id="pricing">Pricing</h2>
 {WP_PRICE_BLOCK}
