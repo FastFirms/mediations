@@ -1,0 +1,34 @@
+/* DESIGN TEST ONLY — colours + fonts in the style of the reference site.
+   Loaded only by /design-test/ pages. Layout and content untouched. */
+:root{
+  --sand:#ffffff;--sand-deep:#f5f9ff;--cream:#f5f9ff;
+  --ink:#232323;--ink-soft:#4a4f5a;
+  --sage:#294b8e;--sage-deep:#1b315e;--sage-light:#e6eefb;
+  --terra:#f07d36;--terra-deep:#d9661f;
+  --line:rgba(27,49,94,.14);
+  --shadow:0 1px 2px rgba(27,49,94,.05),0 8px 30px rgba(27,49,94,.07);
+  --shadow-lg:0 20px 60px rgba(27,49,94,.14);
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --serif:var(--sans);--body-serif:var(--sans);
+}
+body{line-height:1.7}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-.02em;color:var(--sage)}
+h1 em,h2 em,.cta-band h2 em,em{font-style:normal;color:var(--sage)}
+.svc-body h2,.body-import h2{color:var(--sage-deep);font-weight:600}
+.btn{border-radius:8px}
+.btn-primary{background:var(--terra);box-shadow:0 6px 18px rgba(240,125,54,.28)}
+.btn-primary:hover{background:var(--terra-deep);box-shadow:0 10px 26px rgba(240,125,54,.36)}
+.btn-ghost{border-color:var(--sage);color:var(--sage)}
+.eyebrow{color:var(--sage);background:#fff}
+.pulse{background:var(--terra)!important}
+a{color:var(--sage)}
+.sec-tag{color:var(--terra)}
+.answer{border-left-color:var(--terra)!important;background:var(--cream)}
+figure.tbl th{background:var(--sage-deep)}
+.svc-body ol li::before{background:var(--sage)}
+.cta-band{background:var(--sage-deep)}
+.cta-band h2,.cta-band h2 em{color:#fff}
+.cta-band p,.cta-band .note{color:rgba(255,255,255,.8)}
+footer{background:#1b315e}
+.phero-blob{opacity:.25!important;filter:hue-rotate(110deg)}
+.design-test-banner{position:sticky;top:0;z-index:200;background:#f07d36;color:#fff;font:600 13px/1.4 var(--sans);text-align:center;padding:6px 12px}
