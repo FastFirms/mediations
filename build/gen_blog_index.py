@@ -11,6 +11,7 @@ OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.
 # Each entry: (slug, title, blurb)
 
 SEPARATION = [
+    ("separating-after-the-holidays", "Separating After the Holidays", "Deciding to separate in the new year? The first steps on safety, money, children and the school year."),
     ("new-partner-after-separation", "New Partner After Separation: Law and Children", "How dating or moving in affects property, child support and the kids, and how to agree ground rules."),
     ("should-i-move-out-of-the-family-home", "Should I Move Out of the Family Home?", "What moving out changes for property, children and bills, and what to agree first."),
     ("separation-guide",               "Separation in Australia: Complete Guide",            "First steps, the date of separation, who stays in the house, and protecting yourself."),
@@ -351,8 +352,9 @@ for _,_,_,posts in TOPICS:
 
 # ── FEATURED / RECENT ─────────────────────────────────────────────────────────
 # Update FEATURED_SLUG to the newest article each batch.
-FEATURED_SLUG = "interim-parenting-orders-australia"
+FEATURED_SLUG = "separating-after-the-holidays"
 RECENT_SLUGS = [
+    "interim-parenting-orders-australia",
     "supervised-visitation-australia",
     "travelling-overseas-with-children-after-separation",
     "who-pays-school-fees-after-separation",
