@@ -425,3 +425,8 @@ figure.tbl tbody tr:nth-child(even) td{background:rgba(41,75,142,.05)}
 @media(max-width:1180px){.nav-links{margin-left:0}.nav-links>a.btn{margin-left:0}}
 /* Blog/guide titles: inline page CSS forces ink; use brand blue */
 .post-hero .hero-text h1,.hero-text h1{color:var(--sage)!important}
+/* Service/guide pages: full-width ToC in two columns, sticky sidebar */
+.svc-body .toc{display:block;min-width:0;padding:28px 32px;margin-bottom:48px}
+.svc-body .toc ul{display:grid!important;grid-template-columns:1fr 1fr;gap:12px 32px!important}
+@media(max-width:640px){.svc-body .toc ul{grid-template-columns:1fr}}
+@media(min-width:901px){.svc-layout aside{position:sticky;top:96px;align-self:start}}
