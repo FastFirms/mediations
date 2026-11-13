@@ -423,3 +423,5 @@ figure.tbl tbody tr:nth-child(even) td{background:rgba(41,75,142,.05)}
 
 
 @media(max-width:1180px){.nav-links{margin-left:0}.nav-links>a.btn{margin-left:0}}
+/* Blog/guide titles: inline page CSS forces ink; use brand blue */
+.post-hero .hero-text h1,.hero-text h1{color:var(--sage)!important}
