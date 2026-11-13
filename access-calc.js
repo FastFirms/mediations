@@ -26,12 +26,12 @@
   if (!root) return;
 
   // ── Palette / brand tokens ───────────────────────────────────────────────
-  var GREEN = '#1e6040';
-  var DEEP  = '#0d2218';
-  var SAND  = '#f1f5f1';
-  var LINE  = 'rgba(13,34,24,.14)';
-  var MUTED = '#3d5248';
-  var FONT  = '"Hanken Grotesk",-apple-system,BlinkMacSystemFont,sans-serif';
+  var GREEN = '#294b8e';
+  var DEEP  = '#1b315e';
+  var SAND  = '#ffffff';
+  var LINE  = 'rgba(27,49,94,.14)';
+  var MUTED = '#4a4f5a';
+  var FONT  = '"Inter",-apple-system,BlinkMacSystemFont,sans-serif';
 
   // ── In-memory state (never written to URL or localStorage) ──────────────
   var answers = {
@@ -144,7 +144,7 @@
   // ── Styles ────────────────────────────────────────────────────────────────
   var css = [
     // Container — 660px wide, centred (brief §4)
-    '#acc-calc{font-family:' + FONT + ';max-width:660px;margin:0 auto;background:#fff;border-radius:14px;padding:28px 32px;box-shadow:0 2px 12px rgba(13,34,24,.08)}',
+    '#acc-calc{font-family:' + FONT + ';max-width:660px;margin:0 auto;background:#fff;border-radius:14px;padding:28px 32px;box-shadow:0 2px 12px rgba(27,49,94,.08)}',
 
     // Progress — label + bar (brief §5)
     '#acc-step-label{font-size:.82rem;font-weight:700;color:' + GREEN + ';letter-spacing:.04em;text-transform:uppercase;margin:0 0 10px}',

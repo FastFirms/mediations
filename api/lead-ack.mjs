@@ -81,16 +81,16 @@ function formatAEDT(date) {
 const CSS = `
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{margin:0;background:#f5f4f1;font:16px/1.55 "DM Sans",Helvetica,Arial,sans-serif;color:#333}
-.card{max-width:480px;margin:32px auto;background:#fff;border:1px solid #e6e3dd;border-top:8px solid #175233;border-radius:16px;padding:28px}
+.card{max-width:480px;margin:32px auto;background:#fff;border:1px solid #e6e3dd;border-top:8px solid #1b315e;border-radius:16px;padding:28px}
 @media(max-width:520px){.card{margin:0;border-radius:0;min-height:100vh}}
 .logo{display:block;width:180px;height:auto;margin-bottom:28px}
-.label{font:700 12px/1 "DM Sans",sans-serif;letter-spacing:1.4px;text-transform:uppercase;color:#175233;margin:0 0 10px}
+.label{font:700 12px/1 "DM Sans",sans-serif;letter-spacing:1.4px;text-transform:uppercase;color:#1b315e;margin:0 0 10px}
 h1{font:700 26px/1.25 "PT Serif",Georgia,serif;color:#111;margin:0 0 12px}
 .time{font:700 22px/1.3 "DM Sans",sans-serif;color:#111;margin:8px 0 0}
 .muted{color:#5c5c5c;font-size:14px;margin-top:8px}
 .btn{display:block;width:100%;height:56px;margin:20px 0 10px;background:#f5c347;border:2px solid #f5c347;border-radius:10px;color:#1a1a1a;font:700 18px "DM Sans",sans-serif;cursor:pointer;text-align:center;line-height:52px}
-.btn:focus-visible{outline:3px solid #175233;outline-offset:2px}
-.icon{width:48px;height:48px;border:2px solid #175233;border-radius:50%;color:#175233;font:700 24px/44px sans-serif;text-align:center;margin-bottom:16px}
+.btn:focus-visible{outline:3px solid #1b315e;outline-offset:2px}
+.icon{width:48px;height:48px;border:2px solid #1b315e;border-radius:50%;color:#1b315e;font:700 24px/44px sans-serif;text-align:center;margin-bottom:16px}
 .icon.neutral{border-color:#5c5c5c;color:#5c5c5c}
 `.trim();
 

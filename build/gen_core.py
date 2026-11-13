@@ -18,7 +18,7 @@ def write(slug, doc):
 
 def phero(eyebrow, h1, lede, crumb, bg_image=None, bg_pos="center 55%"):
     if bg_image:
-        bg_style = f"background-image:linear-gradient(to right,rgba(247,250,247,1) 0%,rgba(247,250,247,.95) 38%,rgba(247,250,247,.7) 55%,rgba(247,250,247,.2) 75%,rgba(247,250,247,0) 82%),url('{bg_image}');background-size:cover;background-position:{bg_pos};position:relative"
+        bg_style = f"background-image:linear-gradient(to right,rgba(245,249,255,1) 0%,rgba(245,249,255,.95) 38%,rgba(245,249,255,.7) 55%,rgba(245,249,255,.2) 75%,rgba(245,249,255,0) 82%),url('{bg_image}');background-size:cover;background-position:{bg_pos};position:relative"
         blob_opacity = ' style="opacity:.2"'
     else:
         bg_style = ""

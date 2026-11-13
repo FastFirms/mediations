@@ -95,10 +95,10 @@ ASIDE_HTML = """<aside>
     <p style="color:rgba(251,248,242,.85);margin-bottom:20px;font-size:.98rem">Call us directly and speak with our team about your situation.</p>
     <a href="{phone_href}" class="btn btn-primary" style="justify-content:center;width:100%">Call {phone}</a>
     <div style="margin-top:26px;padding-top:22px;border-top:1px solid rgba(251,248,242,.18);display:flex;flex-direction:column;gap:14px;font-size:.95rem">
-      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Fixed-fee, no surprises</div>
-      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>In person or online</div>
-      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Nationally accredited mediators</div>
-      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#a8c89f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>90% resolved without court</div>
+      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#8fb3ef" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Fixed-fee, no surprises</div>
+      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#8fb3ef" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>In person or online</div>
+      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#8fb3ef" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Nationally accredited mediators</div>
+      <div style="display:flex;gap:10px"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10.5l2.5 2.5L14 7" stroke="#8fb3ef" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>90% resolved without court</div>
     </div>
   </div>
 </aside>""".format(phone_href=PHONE_HREF, phone=PHONE)
@@ -365,7 +365,7 @@ var STEPS = [
       ];
       var html = _radioStep('fee_preference', opts, _state.answers.fee_preference);
       if (isFamily && _state.answers.fee_preference === 'standard_fee_hardship') {
-        html += '<div style="margin-top:14px;padding:12px 14px;background:#f0f8f0;border:1px solid #c8e6c9;border-radius:8px;font-size:.85rem">'
+        html += '<div style="margin-top:14px;padding:12px 14px;background:#f0f8f0;border:1px solid #d6e4fb;border-radius:8px;font-size:.85rem">'
              + '<strong>Access Mediation</strong> provides reduced-fee family mediation for eligible participants. '
              + 'Eligibility and capacity are assessed separately. '
              + '<a href="/access-mediation/" target="_blank" style="color:var(--sage-deep)">Learn more &rarr;</a>'

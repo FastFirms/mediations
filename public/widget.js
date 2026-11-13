@@ -2,13 +2,13 @@
 // Add to any page with: <script src="/widget.js" defer></script>
 (function () {
   const API      = '/api/chat';
-  const GREEN    = '#1e6040';
-  const DEEP     = '#0d2218';
-  const SAND     = '#f1f5f1';
+  const GREEN    = '#294b8e';
+  const DEEP     = '#1b315e';
+  const SAND     = '#ffffff';
   const SAND2    = '#e8efe9';
-  const LINE     = 'rgba(13,34,24,.14)';
-  const MUTED    = '#3d5248';
-  const FONT     = '"Hanken Grotesk",-apple-system,BlinkMacSystemFont,sans-serif';
+  const LINE     = 'rgba(27,49,94,.14)';
+  const MUTED    = '#4a4f5a';
+  const FONT     = '"Inter",-apple-system,BlinkMacSystemFont,sans-serif';
   const BOOK_URL = '/book-a-consultation/';
   const AVATAR   = '/assets/images/Dan-Bio.png';
 
@@ -18,10 +18,10 @@
       position:fixed;bottom:24px;right:24px;z-index:99998;
       width:60px;height:60px;border:none;border-radius:50%;
       background:${GREEN};cursor:pointer;padding:0;overflow:hidden;
-      box-shadow:0 4px 18px rgba(30,96,64,.35);
+      box-shadow:0 4px 18px rgba(41,75,142,.35);
       transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s;
     }
-    #ma-btn:hover { transform:translateY(-3px);box-shadow:0 8px 28px rgba(30,96,64,.45); }
+    #ma-btn:hover { transform:translateY(-3px);box-shadow:0 8px 28px rgba(41,75,142,.45); }
     #ma-btn img { width:100%;height:100%;object-fit:cover;border-radius:50%;display:block; }
     #ma-btn .ma-x {
       display:none;position:absolute;inset:0;align-items:center;justify-content:center;
@@ -36,7 +36,7 @@
       width:370px;max-width:calc(100vw - 48px);
       height:540px;max-height:calc(100vh - 120px);
       background:#fff;border-radius:18px;
-      box-shadow:0 20px 60px rgba(13,34,24,.18);
+      box-shadow:0 20px 60px rgba(27,49,94,.18);
       display:none;flex-direction:column;overflow:hidden;
       font-family:${FONT};border:1px solid ${LINE};
       box-sizing:border-box;
@@ -86,7 +86,7 @@
       padding:10px 13px;border-radius:3px 16px 16px 16px;
       border:1px solid ${LINE};font-size:.875rem;line-height:1.55;
       white-space:pre-wrap;word-break:break-word;
-      box-shadow:0 1px 3px rgba(13,34,24,.06);
+      box-shadow:0 1px 3px rgba(27,49,94,.06);
     }
 
     /* ── CTA nudge ── */

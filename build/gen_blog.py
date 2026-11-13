@@ -104,7 +104,7 @@ POST_CSS = """<style>
 .article-body th{background:var(--sage-deep);color:var(--cream);text-align:left;padding:13px 16px;font-weight:600;font-family:var(--sans)}
 .article-body td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
 .article-body tr:last-child td{border-bottom:none}
-.article-body tr:nth-child(even) td{background:rgba(90,113,89,.04)}
+.article-body tr:nth-child(even) td{background:rgba(74,95,140,.04)}
 .article-body figure.tbl{margin:0 0 28px;overflow-x:auto}
 /* Answer / key-takeaway box */
 .answer{background:var(--sage-light);border-left:4px solid var(--sage-deep);border-radius:0 14px 14px 0;padding:20px 26px;margin:0 0 28px}

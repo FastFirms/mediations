@@ -193,7 +193,7 @@ def who_for_section():
     </ul>
     <p><strong>Your former partner&#8217;s income does not determine whether you qualify.</strong></p>
     <p>The calculator provides an indicative contribution. We confirm your contribution before an Access appointment is booked.</p>
-    <p style="font-size:.88rem;color:var(--ink-soft,#3d5248)">Access Mediation is <strong>not available</strong> for purely commercial, employment, or neighbourhood disputes. Matters involving family violence or safety concerns are carefully screened — call us on <a href="{PHONE_HREF}" style="color:var(--sage-deep,#1e6040)">{PHONE}</a> before applying.</p>
+    <p style="font-size:.88rem;color:var(--ink-soft,#4a4f5a)">Access Mediation is <strong>not available</strong> for purely commercial, employment, or neighbourhood disputes. Matters involving family violence or safety concerns are carefully screened — call us on <a href="{PHONE_HREF}" style="color:var(--sage-deep,#294b8e)">{PHONE}</a> before applying.</p>
   </div>
 </section>"""
 
@@ -245,8 +245,8 @@ AVAIL_BANNER = """<div class="avail-notice wrap-narrow">
 def extra_css():
     return """<style>
 /* ── Access Mediation page-specific styles ── */
-.calc-section{background:var(--sage-pale,#f1f5f1);padding:52px 0}
-.lede-sm{color:var(--ink-soft,#3d5248);margin-bottom:24px;font-size:.97rem;line-height:1.6;max-width:62ch}
+.calc-section{background:var(--sage-pale,#ffffff);padding:52px 0}
+.lede-sm{color:var(--ink-soft,#4a4f5a);margin-bottom:24px;font-size:.97rem;line-height:1.6;max-width:62ch}
 #access-calc-root{min-height:160px}
 .notice{padding:16px 20px;background:#fff3cd;border-left:4px solid #f0a500;border-radius:6px;font-size:.9rem}
 /* availability banner */
@@ -258,8 +258,8 @@ def extra_css():
 .avail-notice-inner a{color:#7a4f00;font-weight:600}
 
 /* band accordion */
-.band-accordion{margin-top:28px;border:1px solid var(--line,rgba(13,34,24,.14));border-radius:10px;overflow:hidden;background:#fff}
-.band-accordion-toggle{list-style:none;padding:14px 18px;font-size:.93rem;font-weight:600;color:var(--sage-deep,#1e6040);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.band-accordion{margin-top:28px;border:1px solid var(--line,rgba(27,49,94,.14));border-radius:10px;overflow:hidden;background:#fff}
+.band-accordion-toggle{list-style:none;padding:14px 18px;font-size:.93rem;font-weight:600;color:var(--sage-deep,#294b8e);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
 .band-accordion-toggle::-webkit-details-marker{display:none}
 details[open] .band-acc-arr{transform:rotate(180deg)}
 .band-acc-arr{display:inline-block;transition:transform .2s;font-size:.8rem}
@@ -269,36 +269,36 @@ details[open] .band-acc-arr{transform:rotate(180deg)}
 .steps-section{padding:52px 0}
 .steps-section h2{margin-bottom:28px}
 .step{display:flex;gap:20px;align-items:flex-start;margin-bottom:24px}
-.step-num{width:38px;height:38px;border-radius:50%;background:var(--sage-deep,#1e6040);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.97rem;flex-shrink:0;margin-top:2px}
+.step-num{width:38px;height:38px;border-radius:50%;background:var(--sage-deep,#294b8e);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.97rem;flex-shrink:0;margin-top:2px}
 .step-body h3{margin:0 0 5px;font-size:1rem}
-.step-body p{margin:0;color:var(--ink-soft,#3d5248);font-size:.91rem;line-height:1.6}
+.step-body p{margin:0;color:var(--ink-soft,#4a4f5a);font-size:.91rem;line-height:1.6}
 
 /* who section */
-.who-section{padding:48px 0;background:var(--sage-pale,#f1f5f1)}
+.who-section{padding:48px 0;background:var(--sage-pale,#ffffff)}
 .who-section h2{margin-bottom:12px}
 .check-list{list-style:none;padding:0;margin:12px 0 16px}
 .check-list li{padding-left:26px;position:relative;margin-bottom:9px;font-size:.93rem;line-height:1.5}
-.check-list li::before{content:"✓";position:absolute;left:0;color:var(--sage-deep,#1e6040);font-weight:700}
+.check-list li::before{content:"✓";position:absolute;left:0;color:var(--sage-deep,#294b8e);font-weight:700}
 
 /* assets callout */
 .assets-section{padding:36px 0}
-.asset-callout{background:#fff;border:1.5px solid var(--sage-deep,#1e6040);border-radius:12px;padding:22px 24px}
-.asset-callout h3{margin:0 0 8px;font-size:1rem;color:var(--sage-deep,#1e6040)}
-.asset-callout p{margin:0 0 8px;font-size:.91rem;color:var(--ink-soft,#3d5248);line-height:1.6}
+.asset-callout{background:#fff;border:1.5px solid var(--sage-deep,#294b8e);border-radius:12px;padding:22px 24px}
+.asset-callout h3{margin:0 0 8px;font-size:1rem;color:var(--sage-deep,#294b8e)}
+.asset-callout p{margin:0 0 8px;font-size:.91rem;color:var(--ink-soft,#4a4f5a);line-height:1.6}
 .asset-callout p:last-child{margin:0}
 
 /* privacy */
-.privacy-section{padding:48px 0;background:var(--sage-pale,#f1f5f1)}
+.privacy-section{padding:48px 0;background:var(--sage-pale,#ffffff)}
 .privacy-section h2{margin-bottom:10px}
 .privacy-list{list-style:none;padding:0;margin:12px 0 16px}
-.privacy-list li{padding-left:24px;position:relative;margin-bottom:8px;font-size:.91rem;color:var(--ink-soft,#3d5248);line-height:1.45}
-.privacy-list li::before{content:"\2717";position:absolute;left:0;color:var(--sage-deep,#1e6040);font-weight:700}
+.privacy-list li{padding-left:24px;position:relative;margin-bottom:8px;font-size:.91rem;color:var(--ink-soft,#4a4f5a);line-height:1.45}
+.privacy-list li::before{content:"\2717";position:absolute;left:0;color:var(--sage-deep,#294b8e);font-weight:700}
 
 /* shared data-table */
 .data-table{width:100%;border-collapse:collapse;font-size:.9rem}
-.data-table th{background:var(--sage-deep,#1e6040);color:#fff;padding:10px 14px;text-align:left}
-.data-table td{padding:10px 14px;border-bottom:1px solid rgba(13,34,24,.1);vertical-align:top}
-.data-table tfoot td{font-size:.8rem;color:var(--ink-soft,#3d5248);padding:10px 14px;border-bottom:none;font-style:italic}
+.data-table th{background:var(--sage-deep,#294b8e);color:#fff;padding:10px 14px;text-align:left}
+.data-table td{padding:10px 14px;border-bottom:1px solid rgba(27,49,94,.1);vertical-align:top}
+.data-table tfoot td{font-size:.8rem;color:var(--ink-soft,#4a4f5a);padding:10px 14px;border-bottom:none;font-style:italic}
 .data-table tbody tr:nth-child(even) td{background:#f8fbf8}
 .table-scroll{overflow-x:auto;margin:12px 0 0}
 
