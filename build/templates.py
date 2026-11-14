@@ -100,7 +100,7 @@ LOCATIONS = [
 ]
 
 OFFICES = [
-    ("Sydney", "Suite 508, 41/464–480 Kent St, NSW 2000"),
+    ("Sydney", "Suite 523/41/464–480 Kent St, NSW 2000"),
     ("Melbourne", "Level 23, 727 Collins St, VIC 3008"),
     ("Brisbane", "Suite 507, 198 Adelaide St, QLD 4000"),
     ("Perth", "Level 25, 108 St Georges Tce, WA 6000"),

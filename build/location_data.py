@@ -7,7 +7,7 @@ LOCATION_DATA = [
   "Sydney has a dedicated family law registry of the Federal Circuit and Family Court of Australia at the Lionel Bowen Building, with Parramatta serving Greater Western Sydney",
   "The Sydney and Parramatta registries also circuit to regional NSW including Wollongong, Dubbo, Orange, Tamworth and Wauchope.",
   "the Sydney CBD, North Shore, Eastern Suburbs, Inner West, Northern Beaches, the Hills District, Parramatta and Greater Western Sydney",
-  True,"Suite 508, 41/464-480 Kent St, Sydney NSW 2000",
+  True,"Suite 523/41/464-480 Kent St, Sydney NSW 2000",
   "As Australia's largest city, Sydney generates a high volume of family, property and commercial disputes, and its family law registries are among the busiest in the country. Court waiting times in Sydney can be considerable, which is precisely why resolving matters through mediation in a single day — not the one-to-three years a contested matter can take — is so valuable here.",
   "In New South Wales, the courts and the NSW Government strongly encourage alternative dispute resolution, and for most parenting matters attempting family dispute resolution is a legal precondition to filing.",
   "the Sydney registry (Lionel Bowen Building) or Parramatta registry"),

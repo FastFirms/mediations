@@ -29,7 +29,7 @@ CITIES = {
     "pop_note": "As Australia's largest city, Sydney generates a high volume of family, property and commercial disputes, and its family law registries are among the busiest in the country. Contested matters can take one to three years to reach a final hearing.",
     "state_note": "NSW courts strongly encourage alternative dispute resolution. Family dispute resolution is a legal precondition to most parenting applications, and the NSW Civil Procedure Act reinforces early resolution for civil matters.",
     "has_office": True,
-    "office": "Suite 508, 41/464-480 Kent St, Sydney NSW 2000",
+    "office": "Suite 523/41/464-480 Kent St, Sydney NSW 2000",
   },
   "melbourne": {
     "name": "Melbourne", "state": "VIC", "wa": False,

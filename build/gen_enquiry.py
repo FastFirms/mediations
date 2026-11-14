@@ -44,7 +44,7 @@ SCHEMA = """{
       "areaServed": "AU",
       "priceRange": "Fixed-fee consultations",
       "address": [
-        {"@type":"PostalAddress","addressLocality":"Sydney","streetAddress":"Suite 508, 41/464\\u2013480 Kent St, NSW 2000","addressCountry":"AU"},
+        {"@type":"PostalAddress","addressLocality":"Sydney","streetAddress":"Suite 523/41/464\\u2013480 Kent St, NSW 2000","addressCountry":"AU"},
         {"@type":"PostalAddress","addressLocality":"Melbourne","streetAddress":"Level 23, 727 Collins St, VIC 3008","addressCountry":"AU"},
         {"@type":"PostalAddress","addressLocality":"Brisbane","streetAddress":"Suite 507, 198 Adelaide St, QLD 4000","addressCountry":"AU"},
         {"@type":"PostalAddress","addressLocality":"Perth","streetAddress":"Level 25, 108 St Georges Tce, WA 6000","addressCountry":"AU"}
@@ -73,7 +73,7 @@ CONTACT_SCHEMA = """{
       "areaServed": "AU",
       "priceRange": "Fixed-fee consultations",
       "address": [
-        {"@type":"PostalAddress","addressLocality":"Sydney","streetAddress":"Suite 508, 41/464\\u2013480 Kent St, NSW 2000","addressCountry":"AU"},
+        {"@type":"PostalAddress","addressLocality":"Sydney","streetAddress":"Suite 523/41/464\\u2013480 Kent St, NSW 2000","addressCountry":"AU"},
         {"@type":"PostalAddress","addressLocality":"Melbourne","streetAddress":"Level 23, 727 Collins St, VIC 3008","addressCountry":"AU"},
         {"@type":"PostalAddress","addressLocality":"Brisbane","streetAddress":"Suite 507, 198 Adelaide St, QLD 4000","addressCountry":"AU"},
         {"@type":"PostalAddress","addressLocality":"Perth","streetAddress":"Level 25, 108 St Georges Tce, WA 6000","addressCountry":"AU"}

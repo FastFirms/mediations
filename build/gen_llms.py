@@ -57,7 +57,7 @@ matters handled resolve without court.
 
 ## Office locations
 
-- Sydney: Suite 508, 41/464-480 Kent St, Sydney NSW 2000
+- Sydney: Suite 523/41/464-480 Kent St, Sydney NSW 2000
 - Melbourne: Level 23, Collins Square Tower Five, 727 Collins St, Melbourne VIC 3008
 - Brisbane: Suite 507, 12B Anzac Square Arcade, 198 Adelaide St, Brisbane QLD 4000
 - Perth: Level 25, 108 St Georges Tce, Perth WA 6000
