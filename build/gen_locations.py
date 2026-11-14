@@ -13,7 +13,7 @@ NEAREST = {"NSW":"Sydney","VIC":"Melbourne","QLD":"Brisbane","WA":"Perth",
 
 OFFICE_GEO = {
     "Sydney":    {"lat": -33.8688, "lng": 151.2093,
-                  "street": "Suite 508, 41/464-480 Kent St", "suburb": "Sydney", "state": "NSW", "post": "2000"},
+                  "street": "Suite 523/41/464-480 Kent St", "suburb": "Sydney", "state": "NSW", "post": "2000"},
     "Melbourne": {"lat": -37.8183, "lng": 144.9521,
                   "street": "Level 23, Collins Square Tower Five, 727 Collins St", "suburb": "Melbourne", "state": "VIC", "post": "3008"},
     "Brisbane":  {"lat": -27.4705, "lng": 153.0260,

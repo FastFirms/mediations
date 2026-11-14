@@ -334,7 +334,7 @@ d += f"""<main id="main">
       <p>Mediations Australia conducts mediation in person anywhere in Australia and online for any matter, anywhere in the world. Our offices in Sydney, Melbourne, Brisbane, and Perth are a convenience, not a constraint — if you need a mediator, location is not a barrier.</p>
     </div>
     <div class="ot-aus-grid">
-      <div class="ot-office"><strong>Sydney</strong><span>Suite 508, 41/464–480 Kent St NSW 2000</span></div>
+      <div class="ot-office"><strong>Sydney</strong><span>Suite 523/41/464–480 Kent St NSW 2000</span></div>
       <div class="ot-office"><strong>Melbourne</strong><span>Level 23, 727 Collins St VIC 3008</span></div>
       <div class="ot-office"><strong>Brisbane</strong><span>Suite 507, 198 Adelaide St QLD 4000</span></div>
       <div class="ot-office"><strong>Perth</strong><span>Level 25, 108 St Georges Tce WA 6000</span></div>
