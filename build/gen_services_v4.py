@@ -815,7 +815,7 @@ service_page(
         ("mediate-or-litigate","Mediate or Litigate?"),
         ("property-settlement-mediation","Property Settlement Mediation"),
         ("preparing-for-mediation","Preparing for Mediation"),
-        ("best-divorce-lawyers-sydney","Best Divorce Lawyers in Sydney"),
+        ("sydney-mediation","Mediation in Sydney"),
     ],
     bg_image="/assets/images/hero-de-facto-mediation.jpg",
     bg_pos="center 50%",

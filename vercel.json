@@ -2,6 +2,10 @@
   "outputDirectory": ".",
   "buildCommand": "",
   "redirects": [
+    { "source": "/divorce-mediation-sydney/", "destination": "/sydney-mediation/", "permanent": true },
+    { "source": "/divorce-mediation-sydney", "destination": "/sydney-mediation/", "permanent": true },
+    { "source": "/best-divorce-lawyers-sydney/", "destination": "/sydney-mediation/", "permanent": true },
+    { "source": "/best-divorce-lawyers-sydney", "destination": "/sydney-mediation/", "permanent": true },
     { "source": "/questions/can-a-support-person-attend-workplace-mediation/", "destination": "/workplace-mediation-guide/", "permanent": true },
     { "source": "/questions/can-a-support-person-attend-workplace-mediation", "destination": "/workplace-mediation-guide/", "permanent": true },
     { "source": "/questions/can-an-employee-refuse-workplace-mediation/", "destination": "/workplace-mediation-guide/", "permanent": true },
@@ -147,7 +151,7 @@
     },
     {
       "source": "/best-divorce-lawyers-in-sydney/",
-      "destination": "/best-divorce-lawyers-sydney/",
+      "destination": "/sydney-mediation/",
       "permanent": true
     },
     {
@@ -717,7 +721,7 @@
     },
     {
       "source": "/separation-lawyer-sydney/",
-      "destination": "/best-divorce-lawyers-sydney/",
+      "destination": "/sydney-mediation/",
       "permanent": true
     },
     {

@@ -198,8 +198,8 @@ Redirect 301 /same-sex-divorce-in-australia/ /same-sex-family-law/
 Redirect 301 /stepparent-rights-and-family-law-in-australia/ /stepparent-rights/
 Redirect 301 /surrogacy-laws-in-australia-2024/ /surrogacy-laws/
 Redirect 301 /can-you-record-your-ex-without-permission/ /can-you-record-your-ex/
-Redirect 301 /best-divorce-lawyers-in-sydney/ /best-divorce-lawyers-sydney/
-Redirect 301 /separation-lawyer-sydney/ /best-divorce-lawyers-sydney/
+Redirect 301 /best-divorce-lawyers-in-sydney/ /sydney-mediation/
+Redirect 301 /separation-lawyer-sydney/ /sydney-mediation/
 Redirect 301 /pets-and-family-law-who-gets-the-pets-after-separation/ /pets-and-family-law/
 Redirect 301 /changes-to-the-family-law-act-2025-you-must-know/ /changes-to-family-law-act-2025/
 
@@ -313,3 +313,5 @@ Redirect 301 /online-divorce-form/ /online-divorce/
 Redirect 301 /apply-divorce-online/ /divorce-mediation/
 Redirect 301 /how-to-resolve-family-law-disputes-online/ /online-divorce/
 Redirect 301 /what-is-common-questions-about-mediation/ /what-is-mediation/
+Redirect 301 /divorce-mediation-sydney/ /sydney-mediation/
+Redirect 301 /best-divorce-lawyers-sydney/ /sydney-mediation/
