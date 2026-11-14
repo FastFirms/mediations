@@ -430,3 +430,5 @@ figure.tbl tbody tr:nth-child(even) td{background:rgba(41,75,142,.05)}
 .svc-body .toc ul{display:grid!important;grid-template-columns:1fr 1fr;gap:12px 32px!important}
 @media(max-width:640px){.svc-body .toc ul{grid-template-columns:1fr}}
 @media(min-width:901px){.svc-layout aside{position:sticky;top:96px;align-self:start}}
+/* Resource/guide pages: never hide the whole article behind the scroll reveal */
+article.body .wrap-narrow.reveal,.wrap-narrow>.answer.reveal{opacity:1!important;transform:none!important}

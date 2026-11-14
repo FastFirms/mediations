@@ -1472,7 +1472,7 @@ build("commercial-dispute-guide",
  "Commercial Dispute Guide: Resolving Business Conflict Without Court",
  "Business disputes resolved by mediation are faster, cheaper, and more private than litigation. This guide covers the main types of commercial dispute and why litigation is usually the wrong first move.",
  "Resolve business conflict without litigation",
- "Commercial Dispute Guide: <em>Resolving Business Conflict Without Court</em>",
+ "Commercial disputes resolved <em>without court</em>",
  "Every business dispute arrives at the worst possible time. A key customer stops paying just when cash is tight. A supplier lets you down in the middle of a big job. A co-founder you have worked beside for a decade suddenly wants out, and cannot agree on the terms. Left to escalate, any of these can swallow months of management time, tens of thousands in legal fees, and a good deal of the goodwill your business runs on. This guide explains the main types of commercial dispute, why litigation is so often the wrong first move, and how mediation resolves these matters faster, more cheaply, and more privately.",
  "Commercial disputes — contract fights, partnership breakdowns, lease disputes, franchise conflicts — are resolved far faster and more cheaply through mediation than litigation. Most commercial mediations resolve in a single session. Litigation routinely takes one to three years, costs substantial money on both sides, and exposes sensitive commercial information to the public record. Many commercial contracts already require mediation before you can litigate.",
  """
