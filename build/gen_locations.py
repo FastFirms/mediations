@@ -106,6 +106,60 @@ def _svc_layout(doc):
     closer = '\n</div>\n<aside style="position:sticky;top:24px">' + quiz_card() + '</aside>\n</div>'
     return doc[:start] + opener + takeaway + toc_html + art + closer + doc[close + len('</div></article>'):]
 
+# Sydney hub: cut repetitive city-name mentions (brief target ~25-30 visible).
+SYD_TRIM = [
+    ("Mediation in Sydney gives individuals", "Mediation gives individuals"),
+    ("majority of Sydney disputes", "majority of disputes"),
+    ("Sydney mediation vs going to court", "Mediation vs going to court"),
+    ("for most people in Sydney the contrast", "for most people the contrast"),
+    ("Most Sydney mediations resolve in a single day", "Most mediations resolve in a single day"),
+    ("How the Sydney court system fits in", "How the NSW court system fits in"),
+    ("there's a Sydney mediation service built around it", "there's a service built around it"),
+    ("Family mediation in Sydney</a>", "Family mediation</a>"),
+    ("Divorce mediation in Sydney</a>", "Divorce mediation</a>"),
+    ("Property settlement mediation in Sydney</a>", "Property settlement mediation</a>"),
+    ("Parenting and child custody mediation in Sydney</a>", "Parenting and child custody mediation</a>"),
+    ("gives Sydney and NSW clients", "gives clients across NSW"),
+    ("What we resolve for Sydney clients", "What we resolve"),
+    ("Our Sydney mediators work", "Our mediators work"),
+    ("What to expect from Sydney mediation", "What to expect from mediation"),
+    ("Why Sydney clients choose Mediations Australia", "Why clients choose Mediations Australia"),
+    ("online options, Sydney clients get", "online options, you get"),
+    ("we hear from Sydney clients considering", "we hear from people considering"),
+    ("Areas and suburbs we serve in Sydney", "Areas and suburbs we serve"),
+    ("Online mediation gives Sydney and regional", "Online mediation gives regional"),
+    ("what they mean for Sydney clients", "what they mean for you"),
+    ("early mediation in Sydney stronger", "early mediation stronger"),
+    ("In Sydney you start with", "You start with"),
+    ("Do Sydney family law matters", "Do NSW family law matters"),
+    ("Most Sydney mediations resolve within", "Most mediations resolve within"),
+    ("Can I do Sydney mediation online?", "Can I do mediation online?"),
+    ("to all Sydney and NSW clients", "to clients across NSW"),
+    ("claims across Sydney and NSW.", "claims across NSW."),
+    ("Resolve your Sydney dispute", "Resolve your dispute"),
+    ("accredited Sydney mediator and", "accredited mediator and"),
+    ("Parenting matters in Sydney", "Parenting matters"),
+    ("can be mediated in Sydney", "can be mediated"),
+    ("times in Sydney can be", "times here can be"),
+    ("Mediation costs in Sydney:", "Mediation costs:"),
+]
+
+NEARBY_SYD = {
+    "newcastle-mediation": '<p>Prefer to meet in person in the city? Many Hunter clients travel to our Kent St office in <a href="/sydney-mediation/">Sydney</a>.</p>',
+    "wollongong-mediation": '<p>Commuting north for work? You can also attend <a href="/sydney-mediation/">Sydney mediation</a> at our Kent St office in the CBD.</p>',
+    "canberra-mediation": '<p>Our nearest staffed office is in <a href="/sydney-mediation/">Sydney</a>, about three hours by road; most Canberra matters run online.</p>',
+}
+
+def _syd_trim(doc):
+    i = doc.index("<main")
+    head_, body = doc[:i], doc[i:]
+    for a, b in SYD_TRIM:
+        body = body.replace(a, b)
+    # FAQ answers also live in schema JSON in <head>; keep them in sync
+    for a, b in SYD_TRIM:
+        head_ = head_.replace(a, b)
+    return head_ + body
+
 def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
           office_addr, context, state_note, court_ref):
     nearest = NEAREST[state]
@@ -113,6 +167,12 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
     title = f"{city} Mediation | Accredited Family Mediators"
     desc = (f"Nationally accredited {city} mediators resolve family, property and workplace "
             f"disputes without court — faster and cheaper. Call {PHONE}.")
+    SYD = slug == "sydney-mediation"
+    if SYD:
+        h1 = "Mediation in <em>Sydney</em>"
+        title = "Mediation Sydney | Family, Workplace & Commercial Mediators"
+        desc = ("Accredited Sydney mediators for separation, parenting, property, workplace and "
+                "business disputes. Fixed fees, free first consult. Kent St, Sydney CBD.")
     if has_office:
         office_line = f"Our {city} office is located at {office_addr}, and we also offer secure online mediation across {state}."
     else:
@@ -133,13 +193,29 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
       f"Yes. We offer secure online mediation to all {city} and {state} clients, which is especially convenient for regional areas and removes any need to travel. Online agreements are just as binding once formalised."),
      ("Are your mediators nationally accredited?",
       "Yes. Our mediators are accredited under the Australian Mediator and Dispute Resolution Accreditation Standards (AMDRAS), the national benchmark, and many are also experienced family lawyers."),
+     *([("Can we mediate in Sydney if my ex lives in regional NSW or interstate?",
+        "Yes. Either party can join by secure video while the other attends our Kent St office, or both can join online. Shuttle mediation also works across locations, so distance does not have to delay a parenting or property agreement. If your matter later needed orders, the agreement can still be formalised as consent orders.")] if SYD else []),
      (f"What types of disputes can be mediated in {city}?",
       f"We mediate family and separation matters, property settlements, parenting arrangements, workplace and employment disputes, commercial and business disputes, estate and inheritance disputes, and personal injury claims across {city} and {state}."),
     ]
 
-    schema = [org_schema(),
+    ls = localservice_schema(city, state, slug, has_office=has_office)
+    org = org_schema()
+    if SYD:
+        # Sydney-only local signal: no other office addresses on this page.
+        org = {"@type": "Organization", "@id": f"{DOMAIN}/#organization",
+               "name": "Mediations Australia", "url": f"{DOMAIN}/"}
+        ls["@id"] = f"{DOMAIN}/{slug}/#sydney"
+        ls["name"] = "Mediations Australia – Sydney"
+        ls["parentOrganization"] = {"@type": "Organization", "@id": f"{DOMAIN}/#organization", "name": "Mediations Australia"}
+        ls["areaServed"] = [{"@type": "City", "name": "Sydney"}] + [
+            {"@type": "Place", "name": n} for n in ("Parramatta", "North Shore", "Eastern Suburbs",
+             "Inner West", "Northern Beaches", "Hills District", "Western Sydney")]
+        ls["knowsAbout"] = ["Family dispute resolution", "Parenting mediation", "Property settlement mediation",
+                            "Workplace mediation", "Commercial mediation", "Estate dispute mediation"]
+    schema = [org,
               breadcrumb_schema([("Home",""),(f"{city} Mediation",slug)]),
-              localservice_schema(city, state, slug, has_office=has_office),
+              ls,
               faq_schema(qa)]
     doc = head(title, desc, slug, extra_schema=schema)
     doc += nav()
@@ -204,8 +280,8 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <h2>Why {esc(city)} clients choose Mediations Australia</h2>
 <p>Our mediators are nationally accredited under AMDRAS, and many are also experienced family lawyers — so the legal realities of your matter are understood from the outset. We're early-resolution focused, we work alongside your existing lawyer where you have one, and many of the people we help are in fact referred to us by the very solicitors advising them. With a 90% resolution rate across thousands of matters, free initial consultations and both in-person and online options, {esc(city)} clients get genuine expertise and a real alternative to litigation. <a href="/about-mediations-australia/">Learn more about Mediations Australia →</a></p>
 
-<h2>{esc(city)} family lawyers <em>and</em> mediators</h2>
-<p>If you were searching for "{esc(city)} family lawyers", you're in the right place. Our team includes accredited family lawyers — but the way we work is different. Rather than starting with the assumption that your matter belongs in court, we start with the question of whether it needs to. For the vast majority of separations, the answer is no: mediation resolves matters faster, far more cheaply, and with less damage to the family. We give you the legal insight of a family lawyer and the resolution focus of a mediator, in one place. <a href="/mediate-or-litigate/">See why mediation usually beats litigation →</a></p>
+{('<h2>Working alongside your Sydney family lawyer</h2>' + chr(10) + '<p>Mediators and lawyers do different jobs, and the best outcomes usually involve both. Your mediator stays neutral and runs the process; your own independent lawyer advises you privately on what is fair and reviews any agreement before you sign. Many of the people we help are referred by their solicitor, and we are happy to work with yours. If you don&rsquo;t have one yet, see our guide to <a href="/family-lawyers/">finding a family lawyer</a>. <a href="/mediate-or-litigate/">See why mediation usually beats litigation →</a></p>' + chr(10) + '<!--') if SYD else ''}<h2>{esc(city)} family lawyers <em>and</em> mediators</h2>
+<p>If you were searching for "{esc(city)} family lawyers", you're in the right place. Our team includes accredited family lawyers — but the way we work is different. Rather than starting with the assumption that your matter belongs in court, we start with the question of whether it needs to. For the vast majority of separations, the answer is no: mediation resolves matters faster, far more cheaply, and with less damage to the family. We give you the legal insight of a family lawyer and the resolution focus of a mediator, in one place. <a href="/mediate-or-litigate/">See why mediation usually beats litigation →</a></p>{'-->' if SYD else ''}
 """  # close article f-string
 
     # ── EXPANDED LOCAL CONTENT (fatten pages substantially) ─────────────────
@@ -265,7 +341,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <p>Our {esc(city)} mediation service covers {suburb_detail}, as well as regional {esc(state)} through our secure online mediation service.</p>
 <p>Online mediation gives {esc(city)} and regional {esc(state)} clients access to exactly the same nationally accredited mediators as our in-person sessions — with no travel required. Agreements reached online are just as legally valid once formalised through consent orders or a binding financial agreement. If you are unsure whether we serve your area, call us on {PHONE} and we will give you an immediate answer.</p>
 {f'<p>Our {esc(city)} office is at {esc(office_addr)}, with accessible facilities and parking nearby.</p>' if has_office else f'<p>Our nearest office is in {esc(NEAREST[state])}, and we arrange {esc(city)} in-person sessions by prior arrangement — or conduct your matter entirely online, which most regional {esc(state)} clients prefer.</p>'}
-<p><a href="/online-divorce/">Find out more about our online mediation service →</a></p>
+{NEARBY_SYD.get(slug, '')}<p><a href="/online-divorce/">Find out more about our online mediation service →</a></p>
 
 <h2 id="law-changes">2025 family law changes: what they mean for {esc(city)} clients</h2>
 <p>The <em>Family Law Amendment Act 2024</em> made significant changes that took effect in May 2025. They affect how property settlements and parenting arrangements are assessed — including, critically, the <em>consent orders</em> that formalise mediated agreements.</p>
@@ -287,7 +363,22 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
         "workplace-mediation":           ("Workplace Mediation", "Resolve employment disputes, grievances and unfair dismissal claims before they escalate."),
     }
     CITIES_WITH_SVC = {"sydney","melbourne","brisbane","perth","adelaide","canberra","gold-coast"}
-    if city_key in CITIES_WITH_SVC:
+    if SYD:
+        SYD_CARDS = [
+            ("Parenting mediation", "Parenting plans, s60I certificates and child-focused arrangements across Greater Sydney.", "/parenting-mediation-sydney/"),
+            ("Property settlement", "Dividing the home, super and other assets by agreement, inside the time limits.", "/property-settlement-mediation-sydney/"),
+            ("Workplace mediation", "Confidential mediation for HR teams, managers and employees.", "/workplace-mediation-sydney/"),
+            ("Commercial mediation", "Contract, partnership and shareholder disputes settled privately.", "/commercial-mediation/"),
+            ("Estate disputes", "Contested wills and family provision claims resolved with dignity.", "/estate-dispute-mediation/"),
+            ("Is mediation compulsory?", "When the law requires family dispute resolution before court.", "/is-family-law-mediation-compulsory/"),
+        ]
+        cards = "".join(f'<article class="card"><h3>{esc(n)}</h3><p>{esc(d)}</p><a class="more" href="{u}">Learn more <span class="arr">→</span></a></article>' for n, d, u in SYD_CARDS)
+        doc += f"""<section class="sec" style="padding-top:0"><div class="wrap">
+<div class="reveal"><p class="sec-tag">What we mediate</p>
+<h2 class="sec-title">Mediation services <em>in Sydney</em></h2>
+<p class="sec-intro" style="max-width:58ch">Start with a <a href="/book-a-consultation/">free consultation</a>, check <a href="/how-much-does-mediation-cost/">what mediation costs</a>, or <a href="/our-team/">meet our mediators</a>.</p></div>
+<div class="cards reveal" style="margin-top:46px">{cards}</div></div></section>"""
+    elif city_key in CITIES_WITH_SVC:
         svc_cards = "".join(
             f'<article class="card"><h3>{esc(name)}</h3><p>{esc(desc)}</p>'
             f'<a class="more" href="/{svc}-{city_key}/">Learn more <span class="arr">→</span></a></article>'
@@ -298,11 +389,12 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
 <p class="sec-intro" style="max-width:54ch">Each service below is tailored specifically to {esc(city)} &mdash; with local court registry detail, realistic cost and timing, and {esc(city)}-specific legal context.</p></div>
 <div class="cards reveal" style="margin-top:46px">{svc_cards}</div></div></section>"""
     # generic services grid
-    cards = "".join(
+    if not SYD:
+      cards = "".join(
         f'<article class="card"><h3>{esc(n)}</h3><p>{esc(d)}</p>'
         f'<a class="more" href="/{s}/">Learn more <span class="arr">→</span></a></article>'
         for s, n, d in SERVICES[:6])
-    doc += f"""<section class="sec" style="padding-top:0"><div class="wrap">
+      doc += f"""<section class="sec" style="padding-top:0"><div class="wrap">
 <div class="reveal"><p class="sec-tag">All services</p>
 <h2 class="sec-title">Every kind of dispute, <em>resolved locally</em>.</h2></div>
 <div class="cards reveal" style="margin-top:46px">{cards}</div></div></section>"""
@@ -311,6 +403,8 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
         f"Book a free initial consultation with a nationally accredited {esc(city)} mediator and find out how mediation can help — in person or online.")
     doc += "</main>" + page_end()
     doc = _svc_layout(doc)
+    if SYD:
+        doc = _syd_trim(doc)
     path = os.path.join(OUT, slug); os.makedirs(path, exist_ok=True)
     with open(os.path.join(path, "index.html"), "w") as f:
         f.write(doc)
