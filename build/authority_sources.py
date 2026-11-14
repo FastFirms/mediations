@@ -50,6 +50,7 @@ AUTHORITY = {
  "sa_change_assessment": ("Services Australia: Changing your assessment in special circumstances", "https://www.servicesaustralia.gov.au/changing-your-child-support-assessment-special-circumstances"),
  "sa_non_agency": ("Services Australia: Non-agency payments", "https://www.servicesaustralia.gov.au/individuals/services/child-support/binding-child-support-agreement/how-pay-and-collect-child-support/choose-how-pay-child-support/non-agency-payments"),
  "respect_1800": ("1800RESPECT", "https://www.1800respect.org.au/"),
+ "asbfeo": ("Australian Small Business and Family Enterprise Ombudsman", "https://www.asbfeo.gov.au/"),
  "dsm_pd": ("APA \u2014 personality disorders (DSM-5)", "https://www.psychiatry.org/patients-families/personality-disorders/what-are-personality-disorders"),
 }
 

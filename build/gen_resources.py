@@ -1468,57 +1468,7 @@ build("contesting-a-will",
  "If you believe a will has not made fair provision for you, or should not stand at all, time may already be short — and in some states, very short. Get advice early, while all your options are still open.")
 
 # ---- COMMERCIAL DISPUTE GUIDE ----
-build("commercial-dispute-guide",
- "Commercial Dispute Guide: Resolving Business Conflict Without Court",
- "Business disputes resolved by mediation are faster, cheaper, and more private than litigation. This guide covers the main types of commercial dispute and why litigation is usually the wrong first move.",
- "Resolve business conflict without litigation",
- "Commercial disputes resolved <em>without court</em>",
- "Every business dispute arrives at the worst possible time. A key customer stops paying just when cash is tight. A supplier lets you down in the middle of a big job. A co-founder you have worked beside for a decade suddenly wants out, and cannot agree on the terms. Left to escalate, any of these can swallow months of management time, tens of thousands in legal fees, and a good deal of the goodwill your business runs on. This guide explains the main types of commercial dispute, why litigation is so often the wrong first move, and how mediation resolves these matters faster, more cheaply, and more privately.",
- "Commercial disputes — contract fights, partnership breakdowns, lease disputes, franchise conflicts — are resolved far faster and more cheaply through mediation than litigation. Most commercial mediations resolve in a single session. Litigation routinely takes one to three years, costs substantial money on both sides, and exposes sensitive commercial information to the public record. Many commercial contracts already require mediation before you can litigate.",
- """
- <h2>The common types of commercial dispute</h2>
- <ul>
-   <li><strong>Contract disputes.</strong> Non-payment, defective or late supply, disagreement over what the contract actually requires, or one party walking away from its obligations. Most begin as a difference of interpretation that hardens into a standoff.</li>
-   <li><strong>Partnership and shareholder disputes.</strong> Often the most damaging, because they are personal as well as commercial — deadlock over strategy, disagreement about drawings or reinvestment, one owner feeling they carry the load while another takes the rewards, or a fundamental falling-out. Where a partner or director is leaving, these overlap with our <a href="/partnership-executive-exit-mediation/">partnership and executive exit guidance</a>.</li>
-   <li><strong>Commercial and retail lease disputes.</strong> Rent reviews, outgoings, make-good obligations at end of lease, renewal, and assignment. These have their own special rules — see below.</li>
-   <li><strong>Franchise, supply, and distribution disputes.</strong> Disagreements between franchisors and franchisees, or along a supply chain, often governed by specific codes such as the Franchising Code of Conduct.</li>
-   <li><strong>Business sale and purchase disputes.</strong> Earn-outs, warranties, and disagreements about what was really promised during a sale.</li>
- </ul>
-
- <h2>Why litigation is usually the wrong first move</h2>
- <ul>
-   <li><strong>It destroys value.</strong> Public conflict unsettles customers, staff, suppliers and lenders. The reputational damage and distraction can cost far more than the amount in dispute. A partnership fight played out in court can erode the value of the business faster than any settlement figure.</li>
-   <li><strong>It is slow.</strong> Commercial litigation routinely takes one to three years to reach a final hearing. That is years of uncertainty, distraction, and money tied up.</li>
-   <li><strong>It is expensive.</strong> Commercial cases are document-heavy and often require expert evidence. Legal costs on both sides can run into serious money, and even the "winner" may be out of pocket.</li>
-   <li><strong>It is public.</strong> Court filings and judgments are on the public record. Sensitive commercial information — your margins, your contracts, your internal emails — can end up exposed.</li>
-   <li><strong>It burns relationships.</strong> In business you often still have to deal with the other side, or share an industry, suppliers or customers with them.</li>
- </ul>
-
- <h2>Counting the real cost of a business dispute</h2>
- <p>When business owners weigh whether to fight or settle, they often look only at the amount in dispute and the legal fees. But the true cost is much broader: the legal fees themselves; the management time diverted from running the business (real money even though it never appears on an invoice); the opportunity cost of decisions delayed and deals not pursued; the strain on cash flow; and the harder-to-measure damage to relationships with customers, staff and suppliers who sense the turmoil.</p>
- <p>Set against all that, the cost of a mediated resolution — often a single session, shared between the parties — is modest. The question is rarely "can we win?" It is "what will winning cost us, and is there a faster way to an outcome we can live with?"</p>
-
- <h2>A special case: retail and commercial leases</h2>
- <p>Retail lease disputes deserve their own mention because in most of Australia, <strong>mediation is a mandatory step before a tribunal will hear the matter.</strong> In NSW, retail lease disputes must generally go to the <a href="https://www.smallbusiness.nsw.gov.au/" target="_blank" rel="noopener">NSW Small Business Commissioner</a> for mediation before NCAT. Victoria uses the Victorian Small Business Commission before VCAT. Queensland, South Australia, Western Australia, the ACT and NT operate similar pathways.</p>
- <p>Many commercial contracts also contain <strong>dispute-resolution clauses</strong> obliging the parties to mediate before litigating. If your contract has one, mediation is not just sensible — it may be a contractual precondition to going to court at all. Check your agreement early.</p>
-
- <h2>How to prepare for a commercial mediation</h2>
- <p>Preparation makes the difference between a mediation that resolves and one that stalls. Before the session, get your key documents in order — the contract at the heart of the dispute, the correspondence that shows how it unfolded, and any figures that support your position. Just as importantly, work out your own numbers honestly: what outcome you genuinely want, what you would accept, and what your realistic alternative is if the matter does not settle and instead goes to court. That alternative — the cost, time, risk and disruption of litigating — is the true benchmark against which any settlement offer should be judged.</p>
- <p>It also helps to separate your interests from your positions. A position is a demand — <em>I want the full amount plus costs.</em> An interest is the underlying need — <em>I need to protect my cash flow, keep this customer, and not set a precedent.</em> Interests can often be satisfied in more than one way, which is where creative commercial settlements come from.</p>
- """,
- [("Is mediation binding in a commercial dispute?",
-   "The mediation process is voluntary, but once you sign a settlement agreement or deed, that becomes an enforceable contract. You are not bound until you agree."),
-  ("What if the other side refuses to mediate?",
-   "Many contracts require mediation, and for retail leases it is generally mandatory. Even where it is voluntary, a refusal to mediate can be viewed poorly by a court later."),
-  ("Can mediation handle a dispute that is both commercial and personal, like a partnership breakup?",
-   "Yes — that is one of its great strengths. A single settlement can resolve the money, the ownership, the restraints, and how the split is communicated, all at once."),
-  ("How long does commercial mediation take?",
-   "Most commercial mediations resolve in a single session. Compare that with one to three years for litigation."),
-  ("Is commercial mediation confidential?",
-   "Yes. Mediation is private and without prejudice — a major advantage over public court proceedings.")],
- "Commercial Dispute Guide",
- "Resolve it faster — <em>and keep it private</em>.",
- "Before you commit your business to a slow, costly and public legal fight, talk to us about resolving it faster, more privately, and with a commercial outcome that actually works.")
+# commercial-dispute-guide: moved to gen_blog_batch34.py (blog template, Nov 2026)
 
 # ---- REAL ESTATE & CONSTRUCTION DISPUTES ----
 build("real-estate-construction-disputes",
