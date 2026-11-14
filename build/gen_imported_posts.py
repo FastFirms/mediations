@@ -1719,8 +1719,12 @@ existing = {d for d in os.listdir(OUT) if os.path.isdir(os.path.join(OUT, d))}
 
 seen_slugs: set = set()
 unique_urls = []
+# Owned by gen_blog_batch33.py — never rebuild here.
+OWNED_ELSEWHERE = {"best-apps-for-separated-parents", "who-pays-bills-during-separation"}
 for url in URLS:
     slug = url.rstrip("/").split("/")[-1]
+    if slug in OWNED_ELSEWHERE:
+        continue
     if slug not in seen_slugs:
         seen_slugs.add(slug)
         unique_urls.append((url, slug))
