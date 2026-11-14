@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from templates import (head, nav, page_end, esc, crumb_html, faq_html, cta_band,
                        org_schema, faq_schema, breadcrumb_schema,
-                       BOOK_URL, PHONE, PHONE_HREF, DOMAIN, OFFICES, SERVICES)
+                       BOOK_URL, PHONE, PHONE_HREF, DOMAIN, OFFICES, SERVICES, quiz_card)
 from location_data import LOCATION_DATA
 
 OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -68,6 +68,43 @@ H1S = {
  "TAS":"{c} <em>Mediation</em>",
  "NT":"{c} <em>Mediation</em>",
 }
+
+
+def _svc_layout(doc):
+    """Re-wrap the long single-column article in the service-page layout
+    (key takeaway, contents menu, sticky assessment sidebar, hero image)."""
+    import re as _re
+    # hero image, as on service pages
+    hero_style = (' style="background-image:linear-gradient(to right,rgba(245,249,255,1) 0%,rgba(245,249,255,.95) 38%,'
+                  'rgba(245,249,255,.7) 55%,rgba(245,249,255,.2) 75%,rgba(245,249,255,0) 82%),'
+                  "url('/assets/images/hero-family-law-mediation.jpg');background-size:cover;background-position:center 55%;position:relative\"")
+    doc = doc.replace('<section class="phero">\n  <div class="phero-blob"></div>',
+                      '<section class="phero"' + hero_style + '>\n  <div class="phero-blob" style="opacity:.2"></div>', 1)
+    m = _re.search(r'<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> (.*?)</p></div></div>\n<article class="body"><div class="wrap-narrow">', doc, _re.S)
+    start, end = m.start(), m.end()
+    close = doc.index('</div></article>', end)
+    art = doc[end:close]
+    used = set(); items = []
+    def _id(mm):
+        attrs, inner = mm.group(1), mm.group(2)
+        label = _re.sub(r'<[^>]+>', '', inner).strip()
+        idm = _re.search(r'id="([^"]+)"', attrs)
+        if idm: i = idm.group(1)
+        else:
+            i = _re.sub(r'[^a-z0-9]+', '-', label.lower()).strip('-')[:40].strip('-')
+            while i in used: i += '-2'
+            attrs = attrs + f' id="{i}"'
+        used.add(i); items.append((i, label))
+        return f'<h2{attrs}>{inner}</h2>'
+    art = _re.sub(r'<h2([^>]*)>(.*?)</h2>', _id, art, flags=_re.S)
+    lis = "".join(f'<li><a href="#{a}">{l}</a></li>' for a, l in items)
+    takeaway = ('<div class="answer reveal"><h2 style="margin-bottom:8px;font-size:1.05rem;text-transform:uppercase;'
+                'letter-spacing:.08em;color:var(--sage-deep)">Key takeaway</h2><p>' + m.group(1) + '</p></div>')
+    toc_html = f'<nav class="toc" aria-label="On this page"><h2>On this page</h2><ul>{lis}</ul></nav>'
+    opener = ('<div class="wrap svc-layout" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);'
+              'align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">\n<div class="svc-body">\n')
+    closer = '\n</div>\n<aside style="position:sticky;top:24px">' + quiz_card() + '</aside>\n</div>'
+    return doc[:start] + opener + takeaway + toc_html + art + closer + doc[close + len('</div></article>'):]
 
 def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
           office_addr, context, state_note, court_ref):
@@ -273,6 +310,7 @@ def build(slug, city, state, own_reg, reg_desc, circuit, regions, has_office,
     doc += cta_band(f"Resolve your {esc(city)} dispute, <em>starting today</em>.",
         f"Book a free initial consultation with a nationally accredited {esc(city)} mediator and find out how mediation can help — in person or online.")
     doc += "</main>" + page_end()
+    doc = _svc_layout(doc)
     path = os.path.join(OUT, slug); os.makedirs(path, exist_ok=True)
     with open(os.path.join(path, "index.html"), "w") as f:
         f.write(doc)
