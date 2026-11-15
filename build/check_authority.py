@@ -25,7 +25,7 @@ BLOG=['cost-of-divorce-in-australia','mediation-with-a-narcissist','consent-orde
       'should-i-move-out-of-the-family-home','how-to-tell-children-about-separation',
       'ex-not-following-parenting-orders','new-partner-after-separation',
       'travelling-overseas-with-children-after-separation','who-pays-school-fees-after-separation',
-      'interim-parenting-orders-australia','supervised-visitation-australia','separating-after-the-holidays','commercial-dispute-guide']
+      'interim-parenting-orders-australia','supervised-visitation-australia','separating-after-the-holidays','commercial-dispute-guide', 'child-refuses-to-see-other-parent','parallel-parenting-australia']
 
 def content_only(s):
     s=re.sub(r'<header.*?</header>','',s,flags=re.S)

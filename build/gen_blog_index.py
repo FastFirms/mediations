@@ -63,6 +63,8 @@ SEPARATION = [
 ]
 
 PARENTING = [
+    ("child-refuses-to-see-other-parent", "Child Refuses to See Other Parent? What to Do", "Why children refuse contact, what parenting orders require, and how mediation helps rebuild time safely."),
+    ("parallel-parenting-australia", "Parallel Parenting in Australia", "A low-contact structure for high-conflict separations: the plan, communication rules and how to agree it."),
     ("interim-parenting-orders-australia", "Interim Parenting Orders in Australia", "What interim orders are, when courts grant them, costs, timeframes, and why mediation is usually faster."),
     ("supervised-visitation-australia", "Supervised Visitation in Australia", "How supervised contact works, Children's Contact Services, costs, and moving to unsupervised time."),
     ("travelling-overseas-with-children-after-separation", "Travelling Overseas With Children After Separation", "When consent is legally required, passports, the Family Law Watchlist, and agreeing a travel plan."),
