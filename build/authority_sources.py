@@ -31,6 +31,8 @@ AUTHORITY = {
  "legal_aid": ("National Legal Aid", "https://www.legalaid.gov.au/"),
  "ag_frc": ("Attorney-General's Dept — Family Relationship Centres", "https://www.ag.gov.au/families-and-marriage/families/family-relationship-centres"),
  "fair_work": ("Fair Work Commission", "https://www.fwc.gov.au/"),
+ "fwa_flexible": ("Fair Work Act 2009 (Cth), ss 65–65C", "https://www.legislation.gov.au/C2009A00028/latest/text"),
+ "fwo_flexible": ("Fair Work Ombudsman: Flexible working arrangements", "https://www.fairwork.gov.au/employment-conditions/flexibility-in-the-workplace/flexible-working-arrangements"),
  "fwo_unfair_dismissal": ("Fair Work Ombudsman: Unfair dismissal", "https://www.fairwork.gov.au/ending-employment/unfair-dismissal"),
  "veohrc": ("Victorian Equal Opportunity &amp; Human Rights Commission", "https://www.humanrights.vic.gov.au/"),
  "vcat": ("Victorian Civil and Administrative Tribunal", "https://www.vcat.vic.gov.au/"),

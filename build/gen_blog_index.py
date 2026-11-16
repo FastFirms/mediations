@@ -280,6 +280,7 @@ HIGH_CONFLICT = [
 ]
 
 WORKPLACE = [
+    ("flexible-work-request-refused", "Flexible Work Request Refused?", "What the Fair Work Act requires, how disputes reach the Commission, and how mediation resolves them."),
     ("ngo-not-for-profit-mediation",   "Workplace Mediation for Not-for-Profits (NGOs)",     "Independent mediation for NGOs, charities and not-for-profits — executive conflict, board disputes, post-investigation breakdown."),
     ("workplace-mediation-guide",      "Workplace Mediation in Australia",                  "How it resolves workplace conflict, the Fair Work process, and the benefits."),
     ("victorian-right-to-work-from-home","Victoria's Right to Work From Home",              "What the law means for employers and employees — and resolving disputes fast."),
@@ -354,8 +355,9 @@ for _,_,_,posts in TOPICS:
 
 # ── FEATURED / RECENT ─────────────────────────────────────────────────────────
 # Update FEATURED_SLUG to the newest article each batch.
-FEATURED_SLUG = "separating-after-the-holidays"
+FEATURED_SLUG = "flexible-work-request-refused"
 RECENT_SLUGS = [
+    "separating-after-the-holidays",
     "interim-parenting-orders-australia",
     "supervised-visitation-australia",
     "travelling-overseas-with-children-after-separation",
