@@ -11,6 +11,7 @@ OUT = os.environ.get("MED_SITE_OUT") or os.path.dirname(os.path.dirname(os.path.
 # Each entry: (slug, title, blurb)
 
 SEPARATION = [
+    ("centrelink-after-separation", "Centrelink After Separation: Your Payments", "How separation changes Centrelink payments, FTB, Child Care Subsidy and single parent pension."),
     ("separating-after-the-holidays", "Separating After the Holidays", "Deciding to separate in the new year? The first steps on safety, money, children and the school year."),
     ("new-partner-after-separation", "New Partner After Separation: Law and Children", "How dating or moving in affects property, child support and the kids, and how to agree ground rules."),
     ("should-i-move-out-of-the-family-home", "Should I Move Out of the Family Home?", "What moving out changes for property, children and bills, and what to agree first."),
@@ -128,6 +129,7 @@ PROPERTY = [
     ("buying-out-your-ex-family-home-australia", "Buying Out Your Ex's Share of the Home", "Valuation, refinancing, stamp duty and tax, and how to make a buy-out binding."),
     ("inheritance-in-property-settlement-australia", "Is Inheritance Included in a Settlement?", "How inheritances and gifts are treated, and when they're protected."),
     ("pets-and-family-law",            "Pets and Family Law",                                "Who gets the pet after separation and the 2025 law changes."),
+    ("tax-on-property-settlement-australia", "Tax on Property Settlement in Australia", "How CGT rollover, stamp duty exemptions and super splitting affect your property split."),
     ("delaying-property-settlement",   "Can My Ex Delay Settlement?",                        "Stalling tactics, time limits, and how mediation forces progress."),
     ("12-essential-things-to-know-about-binding-financial-agreements-in-australia", "12 Essential Things to Know About Binding Financial…", "12 Essential Things to Know About Binding Financial…"),
     ("60-40-split-divorce-australia", "What is a 60/40 Split Divorce Australia", "Discover how Mediations Australia can guide you through a 60/40 split divorce Australia. Get expert help in navigating asset division, protecting y..."),
@@ -355,14 +357,14 @@ for _,_,_,posts in TOPICS:
 
 # ── FEATURED / RECENT ─────────────────────────────────────────────────────────
 # Update FEATURED_SLUG to the newest article each batch.
-FEATURED_SLUG = "flexible-work-request-refused"
+FEATURED_SLUG = "tax-on-property-settlement-australia"
 RECENT_SLUGS = [
+    "centrelink-after-separation",
+    "flexible-work-request-refused",
     "separating-after-the-holidays",
     "interim-parenting-orders-australia",
     "supervised-visitation-australia",
     "travelling-overseas-with-children-after-separation",
-    "who-pays-school-fees-after-separation",
-    "how-to-tell-children-about-separation",
 ]
 
 
