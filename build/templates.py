@@ -976,3 +976,52 @@ def service_hero_with_quiz(eyebrow, h1, lede, crumb_items):
 </section>"""
 
 print("templates module ready")
+
+
+def tool_page_layout(d, hero_img, tool_anchor, choose_cards, footnote, guide_label="The guide"):
+    """UX pass for free-tool resource pages: hero image, key takeaway +
+    'choose how to start' cards, and the guide in the service layout
+    (contents menu + sticky sidebar). Operates on the built HTML string."""
+    import re as _re
+    hero = (' style="background-image:linear-gradient(to right,rgba(245,249,255,1) 0%,rgba(245,249,255,.95) 38%,'
+            'rgba(245,249,255,.7) 55%,rgba(245,249,255,.2) 75%,rgba(245,249,255,0) 82%),'
+            f"url('/assets/images/{hero_img}');background-size:cover;background-position:center 50%;position:relative\"")
+    d = d.replace('<section class="phero"><div class="phero-blob"></div>',
+                  '<section class="phero"' + hero + '><div class="phero-blob" style="opacity:.2"></div>', 1)
+    m = _re.search(r'<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> (.*?)</p></div></div>', d, _re.S)
+    box_end = m.end()
+    extra = d.find('<div class="wrap-narrow"><div class="answer reveal" style="margin-top:1.5rem">', m.end())
+    if extra == m.end():
+        box_end = d.index('</div></div>', extra) + len('</div></div>')
+    card = lambda n, t, body, links: (f'<article class="card" style="display:flex;flex-direction:column;gap:10px">'
+        f'<span class="sec-tag" style="margin:0">Option {n}</span><h3 style="margin:0">{t}</h3><p style="margin:0">{body}</p>'
+        f'<div style="margin-top:auto;display:flex;gap:10px;flex-wrap:wrap">{links}</div></article>')
+    choose = ('<div class="wrap" id="start" style="padding-top:clamp(32px,4vw,48px);padding-bottom:clamp(32px,4vw,56px)">'
+        '<div class="answer reveal" style="max-width:860px;margin:0 auto 36px"><h2 style="margin-bottom:8px;font-size:1.05rem;'
+        'text-transform:uppercase;letter-spacing:.08em;color:var(--sage-deep)">Key takeaway</h2><p>' + m.group(1) + '</p></div>'
+        '<h2 class="sec-title" style="text-align:center;margin-bottom:28px">Choose how to <em>start</em></h2>'
+        '<div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">'
+        + "".join(card(n + 1, *c) for n, c in enumerate(choose_cards))
+        + '</div><p style="text-align:center;margin-top:18px;font-size:.9rem;color:var(--ink-soft)">' + footnote + '</p></div>')
+    d = d[:m.start()] + choose + d[box_end:]
+    a0 = d.index('<article class="body"><div class="wrap-narrow reveal">')
+    a1 = d.index('</div></article>', a0)
+    art = d[a0 + len('<article class="body"><div class="wrap-narrow reveal">'):a1]
+    items = []
+    def _id(mm):
+        attrs, inner = mm.group(1), mm.group(2)
+        label = _re.sub(r'<[^>]+>', '', inner).strip()
+        idm = _re.search(r'id="([^"]+)"', attrs)
+        if idm: i = idm.group(1)
+        else:
+            i = _re.sub(r'[^a-z0-9]+', '-', label.lower()).strip('-')[:40].strip('-')
+            attrs += f' id="{i}"'
+        items.append((i, label))
+        return f'<h2{attrs}>{inner}</h2>'
+    art = _re.sub(r'<h2([^>]*)>(.*?)</h2>', _id, art, flags=_re.S)
+    toc = (f'<nav class="toc" aria-label="On this page"><h2>{guide_label}</h2><ul>'
+           + "".join(f'<li><a href="#{i}">{l}</a></li>' for i, l in items) + '</ul></nav>')
+    layout = ('<div class="wrap svc-layout" id="guide" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);'
+              'align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">\n<div class="svc-body">\n'
+              + toc + art + '\n</div>\n<aside style="position:sticky;top:24px">' + quiz_card() + '</aside>\n</div>')
+    return d[:a0] + layout + d[a1 + len('</div></article>'):]

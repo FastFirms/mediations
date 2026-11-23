@@ -971,63 +971,23 @@ build("family-law-cost-estimator",
 
 
 def _ppt_layout():
-    """UX pass for /parenting-plan-template/: hero image, one key takeaway, a
-    'choose how to start' row, and the guide in the service layout (contents
-    menu + sticky sidebar)."""
-    import re as _re
-    from templates import quiz_card
+    from templates import tool_page_layout
     p = os.path.join(OUT, "parenting-plan-template", "index.html")
     d = open(p).read()
-    hero = (' style="background-image:linear-gradient(to right,rgba(245,249,255,1) 0%,rgba(245,249,255,.95) 38%,'
-            'rgba(245,249,255,.7) 55%,rgba(245,249,255,.2) 75%,rgba(245,249,255,0) 82%),'
-            "url('/assets/images/hero-parenting-plan-mediation.jpg');background-size:cover;background-position:center 50%;position:relative\"")
-    d = d.replace('<section class="phero"><div class="phero-blob"></div>',
-                  '<section class="phero"' + hero + '><div class="phero-blob" style="opacity:.2"></div>', 1)
     d = d.replace('<a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation <span class="arr">→</span></a>',
                   '<a href="#start" class="btn btn-primary">Get the template <span class="arr">↓</span></a>', 1)
     d = d.replace('<a href="tel:0272277373" class="btn btn-ghost">Call (02) 7227 7373</a>',
                   '<a href="/book-a-consultation/" class="btn btn-ghost">Book a free consultation</a>', 1)
-    m = _re.search(r'<div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> (.*?)</p></div></div>', d, _re.S)
-    box_end = d.index('</div></div>', d.index('<div class="answer reveal" style="margin-top:1.5rem">')) + len('</div></div>')
-    card = lambda n, t, body, links: (f'<article class="card" style="display:flex;flex-direction:column;gap:10px">'
-        f'<span class="sec-tag" style="margin:0">Option {n}</span><h3 style="margin:0">{t}</h3><p style="margin:0">{body}</p>'
-        f'<div style="margin-top:auto;display:flex;gap:10px;flex-wrap:wrap">{links}</div></article>')
-    choose = ('<div class="wrap" id="start" style="padding-top:clamp(32px,4vw,48px);padding-bottom:clamp(32px,4vw,56px)">'
-        '<div class="answer reveal" style="max-width:860px;margin:0 auto 36px"><h2 style="margin-bottom:8px;font-size:1.05rem;'
-        'text-transform:uppercase;letter-spacing:.08em;color:var(--sage-deep)">Key takeaway</h2><p>' + m.group(1) + '</p></div>'
-        '<h2 class="sec-title" style="text-align:center;margin-bottom:28px">Choose how to <em>start</em></h2>'
-        '<div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">'
-        + card(1, "Print a blank template", "Fill it in by hand or type into the Word version. No sign-up.",
-               '<a class="btn btn-primary" href="/downloads/parenting-plan-template.pdf">PDF (5 pages)</a>'
-               '<a class="btn btn-ghost" href="/downloads/parenting-plan-template.docx">Word</a>')
-        + card(2, "Build it online", "Answer guided questions and download a ready-to-sign PDF. Nothing is stored on our servers.",
-               '<a class="btn btn-primary" href="#builder">Start the builder ↓</a>')
-        + card(3, "Read the guide first", "What to cover section by section, with examples and common mistakes.",
-               '<a class="btn btn-ghost" href="#guide">Read the guide ↓</a>')
-        + '</div><p style="text-align:center;margin-top:18px;font-size:.9rem;color:var(--ink-soft)">A parenting plan is a discussion document, not a court order. '
-          'Disagreeing on the details? <a href="/parenting-plan-mediation/">Parenting mediation</a> can help.</p></div>')
-    d = d[:m.start()] + choose + d[box_end:]
-    a0 = d.index('<article class="body"><div class="wrap-narrow reveal">')
-    a1 = d.index('</div></article>', a0)
-    art = d[a0 + len('<article class="body"><div class="wrap-narrow reveal">'):a1]
-    used, items = set(), []
-    def _id(mm):
-        attrs, inner = mm.group(1), mm.group(2)
-        label = _re.sub(r'<[^>]+>', '', inner).strip()
-        idm = _re.search(r'id="([^"]+)"', attrs)
-        if idm: i = idm.group(1)
-        else:
-            i = _re.sub(r'[^a-z0-9]+', '-', label.lower()).strip('-')[:40].strip('-')
-            attrs += f' id="{i}"'
-        used.add(i); items.append((i, label))
-        return f'<h2{attrs}>{inner}</h2>'
-    art = _re.sub(r'<h2([^>]*)>(.*?)</h2>', _id, art, flags=_re.S)
-    toc = ('<nav class="toc" aria-label="On this page"><h2>The guide</h2><ul>'
-           + "".join(f'<li><a href="#{i}">{l}</a></li>' for i, l in items) + '</ul></nav>')
-    layout = ('<div class="wrap svc-layout" id="guide" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);'
-              'align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">\n<div class="svc-body">\n'
-              + toc + art + '\n</div>\n<aside style="position:sticky;top:24px">' + quiz_card() + '</aside>\n</div>')
-    d = d[:a0] + layout + d[a1 + len('</div></article>'):]
+    d = tool_page_layout(d, "hero-parenting-plan-mediation.jpg", "builder", [
+        ("Print a blank template", "Fill it in by hand or type into the Word version. No sign-up.",
+         '<a class="btn btn-primary" href="/downloads/parenting-plan-template.pdf">PDF (5 pages)</a>'
+         '<a class="btn btn-ghost" href="/downloads/parenting-plan-template.docx">Word</a>'),
+        ("Build it online", "Answer guided questions and download a ready-to-sign PDF. Nothing is stored on our servers.",
+         '<a class="btn btn-primary" href="#builder">Start the builder ↓</a>'),
+        ("Read the guide first", "What to cover section by section, with examples and common mistakes.",
+         '<a class="btn btn-ghost" href="#guide">Read the guide ↓</a>')],
+        'A parenting plan is a discussion document, not a court order. '
+        'Disagreeing on the details? <a href="/parenting-plan-mediation/">Parenting mediation</a> can help.')
     open(p, "w").write(d)
 
 _ppt_layout()

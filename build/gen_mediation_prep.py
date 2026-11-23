@@ -17,7 +17,7 @@ TOOL_HTML = """
 <div class="wrap" style="max-width:860px">
 
 <div style="text-align:center;margin-bottom:56px">
-  <p class="sec-tag">Free Australian tool</p>
+  <p class="sec-tag" id="tool">Free Australian tool</p>
   <h2 class="sec-title" style="margin-bottom:16px">Prepare for <em>Mediation</em></h2>
   <p style="color:var(--ink-soft);max-width:56ch;margin:0 auto;font-size:1.05rem;line-height:1.7">A free guided tool for Australians involved in a family or property dispute. Work through your issues, clarify your priorities, and download a personal Mediation Preparation Summary.</p>
 </div>
@@ -870,7 +870,7 @@ def build():
 <p class="lede">{lede}</p>
 <div class="phero-cta">
   <a href="{BOOK_URL}" class="btn btn-primary">Book a Free Consultation <span class="arr">&rarr;</span></a>
-  <a href="tel:{PHONE_HREF}" class="btn btn-ghost">Call {PHONE}</a>
+  <a href="/book-a-consultation/" class="btn btn-ghost">Book a free consultation</a>
 </div>
 </div></section>
 <div class="wrap-narrow"><div class="answer reveal"><p><strong>In short:</strong> {ans}</p></div></div>"""
@@ -882,6 +882,18 @@ def build():
     d += cta_band(cta_h, cta_p)
     d += "</main>" + page_end()
 
+    from templates import tool_page_layout
+    d = d.replace('<a href="/book-a-consultation/" class="btn btn-primary">Book a Free Consultation <span class="arr">&rarr;</span></a>',
+                  '<a href="#start" class="btn btn-primary">Start preparing <span class="arr">&darr;</span></a>', 1)
+    d = tool_page_layout(d, "hero-mediation-session.jpg", "tool", [
+        ("Use the free tool", "Nine short steps on your issues, situation and priorities. Download a PDF summary; nothing is stored on our servers.",
+         '<a class="btn btn-primary" href="#tool">Start the tool &darr;</a>'),
+        ("Read the guide first", "Why preparation matters, how Family Dispute Resolution works, and preparing for property disputes.",
+         '<a class="btn btn-ghost" href="#guide">Read the guide &darr;</a>'),
+        ("Talk to a mediator", "Not sure where to start? A free, confidential consultation can help you plan the next step.",
+         '<a class="btn btn-ghost" href="/book-a-consultation/">Book a free consultation</a>')],
+        'The summary is for your own preparation, not legal advice. See also '
+        '<a href="/how-mediation-works/">how mediation works</a>.')
     p = os.path.join(OUT, slug)
     os.makedirs(p, exist_ok=True)
     with open(os.path.join(p, "index.html"), "w") as fh:
