@@ -27,7 +27,8 @@ BLOG=['flexible-work-request-refused','cost-of-divorce-in-australia','mediation-
       'travelling-overseas-with-children-after-separation','who-pays-school-fees-after-separation',
       'interim-parenting-orders-australia','supervised-visitation-australia','separating-after-the-holidays','commercial-dispute-guide', 'child-refuses-to-see-other-parent','parallel-parenting-australia',
       'tax-on-property-settlement-australia','centrelink-after-separation',
-      'sole-parental-responsibility-australia','parenting-arrangements-for-babies-australia']
+      'sole-parental-responsibility-australia','parenting-arrangements-for-babies-australia',
+      'child-support-arrears-australia','family-report-explained']
 
 def content_only(s):
     s=re.sub(r'<header.*?</header>','',s,flags=re.S)

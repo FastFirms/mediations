@@ -64,6 +64,8 @@ SEPARATION = [
 ]
 
 PARENTING = [
+    ("child-support-arrears-australia", "Child Support Arrears: Enforcement Guide", "Unpaid child support? Enforcement powers, departure prohibition orders, agency collect and mediation."),
+    ("family-report-explained", "Family Reports Explained", "What a family report is, the assessment process, how to prepare, and how mediation can help you avoid one."),
     ("sole-parental-responsibility-australia", "Sole Parental Responsibility in Australia", "What sole decision-making covers after the 2024 reforms, when courts order it and how to agree it."),
     ("parenting-arrangements-for-babies-australia", "Parenting Arrangements for Babies", "Schedules by age, overnights, breastfeeding and staged plans for babies and toddlers after separation."),
     ("child-refuses-to-see-other-parent", "Child Refuses to See Other Parent? What to Do", "Why children refuse contact, what parenting orders require, and how mediation helps rebuild time safely."),
@@ -359,15 +361,15 @@ for _,_,_,posts in TOPICS:
 
 # ── FEATURED / RECENT ─────────────────────────────────────────────────────────
 # Update FEATURED_SLUG to the newest article each batch.
-FEATURED_SLUG = "sole-parental-responsibility-australia"
+FEATURED_SLUG = "child-support-arrears-australia"
 RECENT_SLUGS = [
+    "family-report-explained",
+    "sole-parental-responsibility-australia",
     "parenting-arrangements-for-babies-australia",
     "centrelink-after-separation",
     "flexible-work-request-refused",
     "separating-after-the-holidays",
     "interim-parenting-orders-australia",
-    "supervised-visitation-australia",
-    "travelling-overseas-with-children-after-separation",
 ]
 
 
