@@ -218,6 +218,35 @@ document.getElementById('belbin-form').addEventListener('submit',async function(
 </script>
 """
 
+def _body_layout(blocks, ans):
+    """Guide in the service layout: key takeaway, contents menu, sticky enquiry card."""
+    import re as _re
+    items = []
+    def _id(mm):
+        attrs, inner = mm.group(1), mm.group(2)
+        label = _re.sub(r'<[^>]+>', '', inner).strip()
+        idm = _re.search(r'id="([^"]+)"', attrs)
+        i = idm.group(1) if idm else _re.sub(r'[^a-z0-9]+', '-', label.lower()).strip('-')[:40].strip('-')
+        if not idm:
+            attrs += f' id="{i}"'
+        items.append((i, label))
+        return f'<h2{attrs}>{inner}</h2>'
+    blocks = _re.sub(r'<h2([^>]*)>(.*?)</h2>', _id, blocks, flags=_re.S)
+    takeaway = ('<div class="answer reveal"><h2 style="margin-bottom:8px;font-size:1.05rem;text-transform:uppercase;'
+                'letter-spacing:.08em;color:var(--sage-deep)">Key takeaway</h2><p>' + ans + '</p></div>')
+    toc = ('<nav class="toc" aria-label="On this page"><h2>On this page</h2><ul>'
+           + "".join(f'<li><a href="#{i}">{l}</a></li>' for i, l in items) + '</ul></nav>')
+    aside = ('<aside style="position:sticky;top:24px"><div class="belbin-form-card">'
+             '<p class="sec-tag" style="margin:0 0 8px">Belbin Team Roles</p>'
+             '<p style="font-weight:700;font-size:1.15rem;margin:0 0 8px">Build a stronger team</p>'
+             '<p style="font-size:.92rem;color:var(--ink-soft);margin:0 0 18px">Tell us about your team and we&rsquo;ll send a tailored proposal. In person or online, Australia-wide.</p>'
+             '<a href="#enquire" class="btn btn-primary" style="width:100%;justify-content:center">Enquire now <span class="arr">&uarr;</span></a>'
+             f'<a href="{PHONE_HREF}" class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:10px">Call {PHONE}</a>'
+             '</div></aside>')
+    return ('<div class="wrap svc-layout" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);'
+            'align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">\n<div class="svc-body">\n'
+            + takeaway + toc + blocks + '\n</div>\n' + aside + '\n</div>')
+
 d = head(title, desc, slug, extra_schema=schema) + nav()
 d += f"""<main id="main">
 {crumb_html([("Home", ""), (crumb, None)])}
@@ -229,14 +258,13 @@ d += f"""<main id="main">
 @media(max-width:900px){{.belbin-hero{{grid-template-columns:1fr;gap:40px;padding:48px 0 56px}}.belbin-form-card{{padding:24px}}}}
 @media(max-width:600px){{.belbin-hero [style*="grid-template-columns:1fr 1fr"]{{grid-template-columns:1fr!important}}}}
 </style>
-<section style="background:var(--sand)">
+<section style="background-color:var(--sand);background-image:linear-gradient(to right,rgba(245,249,255,1) 0%,rgba(245,249,255,.96) 45%,rgba(245,249,255,.85) 100%),url('/assets/images/hero-workplace-mediation.jpg');background-size:cover;background-position:center 40%">
 <div class="wrap">
 <div class="belbin-hero">
   <div>
     <span class="eyebrow"><span class="pulse"></span>{eyebrow}</span>
     <h1 style="margin-top:16px;font-size:clamp(2.3rem,5.2vw,4rem);line-height:1.15;max-width:none">{h1}</h1>
     <p class="lede" style="margin-bottom:32px">{lede}</p>
-    <div class="answer" style="margin:0"><p><strong>In short:</strong> {ans}</p></div>
     <div style="margin-top:32px;display:flex;flex-direction:column;gap:10px;font-size:.92rem;color:var(--ink-soft)">
       <span>&#10003; Accredited Belbin Team Roles Facilitator</span>
       <span>&#10003; In person or online, Australia-wide</span>
@@ -244,7 +272,7 @@ d += f"""<main id="main">
     </div>
   </div>
   <div>
-    <div class="belbin-form-card">
+    <div class="belbin-form-card" id="enquire">
       <p style="font-weight:700;font-size:1.05rem;margin:0 0 4px">Enquire about Belbin training</p>
       <p style="font-size:.88rem;color:var(--ink-soft);margin:0 0 20px">Tell us about your team and we'll send a tailored proposal.</p>
       <form id="belbin-form" novalidate style="display:flex;flex-direction:column;gap:12px">
@@ -261,7 +289,7 @@ d += f"""<main id="main">
 </div>
 </div>
 </section>
-<article class="body"><div class="wrap-narrow reveal">{blocks}</div></article>"""
+{_body_layout(blocks, ans)}"""
 d += faq_html(qa, heading=f"{crumb} FAQs")
 d += cta_band(
     "Ready to build a stronger team?",
