@@ -154,6 +154,9 @@
   ]
 }
 </script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GTTR2T25L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7GTTR2T25L');document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"]');if(a)gtag('event','click_to_call',{page_path:location.pathname,link_location:a.closest('header')?'header':a.closest('footer')?'footer':'body'});});</script>
 </head>
 <body>
 <a href="#main" class="skip">Skip to main content</a><header class="nav" id="nav">
@@ -222,14 +225,13 @@
 @media(max-width:900px){.belbin-hero{grid-template-columns:1fr;gap:40px;padding:48px 0 56px}.belbin-form-card{padding:24px}}
 @media(max-width:600px){.belbin-hero [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}}
 </style>
-<section style="background:var(--sand)">
+<section style="background-color:var(--sand);background-image:linear-gradient(to right,rgba(245,249,255,1) 0%,rgba(245,249,255,.96) 45%,rgba(245,249,255,.85) 100%),url('/assets/images/hero-workplace-mediation.jpg');background-size:cover;background-position:center 40%">
 <div class="wrap">
 <div class="belbin-hero">
   <div>
     <span class="eyebrow"><span class="pulse"></span>Team development &amp; conflict prevention</span>
     <h1 style="margin-top:16px;font-size:clamp(2.3rem,5.2vw,4rem);line-height:1.15;max-width:none">Belbin Team Roles Training</h1>
     <p class="lede" style="margin-bottom:32px">Most workplace disputes are not personality clashes — they are role problems. Belbin Team Roles training gives your people a proven, research-backed framework for understanding how they contribute, where friction is likely, and how to design it out before a conflict ever lands on a manager's desk.</p>
-    <div class="answer" style="margin:0"><p><strong>In short:</strong> Belbin Team Roles training is a research-backed team development programme that identifies each person's natural behavioural contribution, balances your team's role mix, and gives everyone a shared non-personal language for difference — preventing the role confusion and conflict that WHS psychosocial hazard law requires you to manage.</p></div>
     <div style="margin-top:32px;display:flex;flex-direction:column;gap:10px;font-size:.92rem;color:var(--ink-soft)">
       <span>&#10003; Accredited Belbin Team Roles Facilitator</span>
       <span>&#10003; In person or online, Australia-wide</span>
@@ -237,11 +239,13 @@
     </div>
   </div>
   <div>
-    <div class="belbin-form-card">
+    <div class="belbin-form-card" id="enquire">
       <p style="font-weight:700;font-size:1.05rem;margin:0 0 4px">Enquire about Belbin training</p>
       <p style="font-size:.88rem;color:var(--ink-soft);margin:0 0 20px">Tell us about your team and we'll send a tailored proposal.</p>
       <form id="belbin-form" novalidate style="display:flex;flex-direction:column;gap:12px">
         
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true">
+    <input type="hidden" name="_subject" value="Belbin Team Roles Training Enquiry — Mediations Australia">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
       <div class="form-row">
         <label for="b-name">Your name</label>
@@ -303,8 +307,10 @@
 </div>
 </div>
 </section>
-<article class="body"><div class="wrap-narrow reveal">
-<h2>Most workplace disputes are role problems in disguise</h2>
+<div class="wrap svc-layout" style="display:grid;grid-template-columns:1fr 340px;gap:clamp(32px,4vw,56px);align-items:start;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)">
+<div class="svc-body">
+<div class="answer reveal"><h2 style="margin-bottom:8px;font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;color:var(--sage-deep)">Key takeaway</h2><p>Belbin Team Roles training is a research-backed team development programme that identifies each person's natural behavioural contribution, balances your team's role mix, and gives everyone a shared non-personal language for difference — preventing the role confusion and conflict that WHS psychosocial hazard law requires you to manage.</p></div><nav class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#most-workplace-disputes-are-role-problem">Most workplace disputes are role problems in disguise</a></li><li><a href="#what-the-research-shows-balance-beats-br">What the research shows: balance beats brilliance</a></li><li><a href="#what-a-belbin-engagement-involves">What a Belbin engagement involves</a></li><li><a href="#the-logical-pathway-resolve-diagnose-pre">The logical pathway: resolve, diagnose, prevent</a></li><li><a href="#who-benefits">Who benefits</a></li></ul></nav>
+<h2 id="most-workplace-disputes-are-role-problem">Most workplace disputes are role problems in disguise</h2>
 <p>When conflict surfaces between colleagues, it usually looks personal. But working with organisations
 on team dynamics, a pattern emerges: the argument on the surface is rarely the
 real problem. Underneath it sits confusion about who is responsible for what, who decides,
@@ -323,7 +329,7 @@ ambiguity with clarity before any dispute arises.</p>
   the start of that pipeline — not the end.</p>
 </div>
 
-<h2>What the research shows: balance beats brilliance</h2>
+<h2 id="what-the-research-shows-balance-beats-br">What the research shows: balance beats brilliance</h2>
 <p>Belbin Team Roles was developed by Dr Meredith Belbin and his team through nearly a decade
 of study at Henley Management College, observing real management teams competing in business
 simulations. The central finding was counter-intuitive: teams assembled from high-intellect
@@ -354,7 +360,7 @@ mix of behavioural contributions — consistently outperformed them.</p>
 role should be missing. Too many Shapers competing to lead produces friction; a team of pure
 Teamworkers avoids hard conversations until they explode.</p>
 
-<h2>What a Belbin engagement involves</h2>
+<h2 id="what-a-belbin-engagement-involves">What a Belbin engagement involves</h2>
 
 <h3>1. Assessments</h3>
 <p>Each participant completes the Belbin Self-Perception Inventory, combined with Observer
@@ -385,7 +391,7 @@ is heard, and recognising role-based friction before it escalates into a formal 
 resolution back to prevention. For teams emerging from a dispute, it is often the most
 important next step.</p>
 
-<h2>The logical pathway: resolve, diagnose, prevent</h2>
+<h2 id="the-logical-pathway-resolve-diagnose-pre">The logical pathway: resolve, diagnose, prevent</h2>
 <p>Mediations Australia sees conflict resolution and conflict prevention as two ends of the
 same pathway.</p>
 <ul>
@@ -395,7 +401,7 @@ same pathway.</p>
 </ul>
 <p>Belbin training lets an organisation start at Stage 3 — before a single grievance is ever lodged.</p>
 
-<h2>Who benefits</h2>
+<h2 id="who-benefits">Who benefits</h2>
 <ul>
   <li><strong>Leadership teams</strong> wanting to understand why decisions stall or why the same tensions recur</li>
   <li><strong>Newly formed or restructured teams</strong> where a previously balanced group has lost its mix</li>
@@ -403,7 +409,10 @@ same pathway.</p>
   <li><strong>HR and people-and-culture teams</strong> meeting psychosocial hazard obligations under WHS law</li>
   <li><strong>Teams emerging from a dispute</strong> who want to make sure it does not happen again</li>
 </ul>
-</div></article><section class="sec" id="faq" aria-labelledby="faqh" style="padding-top:0">
+
+</div>
+<aside style="position:sticky;top:24px"><div class="belbin-form-card"><p class="sec-tag" style="margin:0 0 8px">Belbin Team Roles</p><p style="font-weight:700;font-size:1.15rem;margin:0 0 8px">Build a stronger team</p><p style="font-size:.92rem;color:var(--ink-soft);margin:0 0 18px">Tell us about your team and we&rsquo;ll send a tailored proposal. In person or online, Australia-wide.</p><a href="#enquire" class="btn btn-primary" style="width:100%;justify-content:center">Enquire now <span class="arr">&uarr;</span></a><a href="tel:0272277373" class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:10px">Call (02) 7227 7373</a></div></aside>
+</div><section class="sec" id="faq" aria-labelledby="faqh" style="padding-top:0">
   <div class="wrap">
     <div class="reveal" style="text-align:center;max-width:60ch;margin:0 auto">
       <p class="sec-tag" style="text-align:center">Questions &amp; answers</p>
@@ -434,8 +443,7 @@ document.getElementById('belbin-form').addEventListener('submit',async function(
     name:this.querySelector('[name=name]').value.trim(),
     email:this.querySelector('[name=email]').value.trim()||undefined,
     phone:this.querySelector('[name=phone]').value.trim()||undefined,
-    matter_category:'other_unsure',
-    message:msg};
+    matter_category:'other_unsure',message:msg};
   try{
     var r=await fetch('/api/enquiry',{method:'POST',body:JSON.stringify(payload),headers:{'Content-Type':'application/json','Accept':'application/json'}});
     if(r.ok){window.location.href='/thank-you/';}
@@ -523,6 +531,22 @@ document.querySelectorAll('.has-drop').forEach(hd=>{
   const drop=hd.querySelector('.drop');
   if(drop){drop.addEventListener('mouseenter',open);drop.addEventListener('mouseleave',close);}
 });
+</script>
+<script>
+(function(){
+  if(window.innerWidth>=768)return;
+  var h=document.querySelector('.phero[style]');
+  if(!h)return;
+  var urls=(h.style.backgroundImage||'').match(/url\([^)]+\)/g);
+  if(!urls||!urls.length)return;
+  var img=urls[urls.length-1];
+  h.style.backgroundImage=img;
+  h.style.backgroundSize='100% auto';
+  h.style.backgroundPosition='center bottom';
+  h.style.backgroundRepeat='no-repeat';
+  h.style.backgroundColor='#f5f9ff';
+  h.style.paddingBottom=Math.round(window.innerWidth*0.5625)+'px';
+})();
 </script>
 </body>
 </html>
