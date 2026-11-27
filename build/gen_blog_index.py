@@ -309,6 +309,8 @@ WORKPLACE = [
 ]
 
 ESTATE = [
+    ("notional-estate-nsw", "Notional Estate in NSW", "How NSW family provision claims can reach jointly held property, super and pre-death gifts."),
+    ("superannuation-death-benefit-disputes", "Super Death Benefit Disputes", "Who gets super when someone dies, how trustees decide, and how to dispute it."),
     ("executor-dispute-mediation",          "Executor Disputes in Australia",               "Beneficiary vs executor dispute? Your legal rights, how mediation resolves it, and when court is necessary."),
     ("estate-inheritance-dispute-mediation","Estate & Inheritance Dispute Mediation",       "Contested wills, family provision claims, executor disputes — resolved faster than court."),
     ("consent-order", "Consent Order: Will They Keep Their Promise?", "Don't risk your children's future on handshake deals. Learn how to make your agreements legally binding through mediation and consent orders, saving…"),
@@ -361,8 +363,10 @@ for _,_,_,posts in TOPICS:
 
 # ── FEATURED / RECENT ─────────────────────────────────────────────────────────
 # Update FEATURED_SLUG to the newest article each batch.
-FEATURED_SLUG = "child-support-arrears-australia"
+FEATURED_SLUG = "superannuation-death-benefit-disputes"
 RECENT_SLUGS = [
+    "notional-estate-nsw",
+    "child-support-arrears-australia",
     "family-report-explained",
     "sole-parental-responsibility-australia",
     "parenting-arrangements-for-babies-australia",

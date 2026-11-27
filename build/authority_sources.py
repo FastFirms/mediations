@@ -42,6 +42,11 @@ AUTHORITY = {
  "abs_divorce": ("ABS Marriages and Divorces, Australia", "https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release"),
  "aifs": ("Australian Institute of Family Studies", "https://aifs.gov.au/"),
  "ato": ("Australian Taxation Office", "https://www.ato.gov.au/"),
+ "nsw_succession": ("Succession Act 2006 (NSW)", "https://legislation.nsw.gov.au/view/html/inforce/current/act-2006-080"),
+ "afca": ("Australian Financial Complaints Authority (AFCA)", "https://www.afca.org.au/"),
+ "sis_act": ("Superannuation Industry (Supervision) Act 1993 (Cth)", "https://www.legislation.gov.au/C2004A04633/latest/text"),
+ "ato_death_benefits": ("ATO: Super death benefits", "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/withdrawing-and-using-your-super/super-death-benefits"),
+ "nsw_supreme_court": ("Supreme Court of NSW", "https://supremecourt.nsw.gov.au/"),
  "moneysmart": ("MoneySmart (ASIC)", "https://moneysmart.gov.au/"),
  # Support / safety
  # International travel / abduction
