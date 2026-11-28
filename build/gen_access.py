@@ -231,17 +231,6 @@ def privacy_note():
 </section>"""
 
 
-AVAIL_BANNER = """<div class="avail-notice wrap-narrow">
-  <div class="avail-notice-inner">
-    <span class="avail-icon" aria-hidden="true">⚠️</span>
-    <div>
-      <strong>Access Mediation is currently booked out until November 2026.</strong>
-      <p>We are not taking new Access Mediation bookings at this time. If your matter is urgent, please <a href="/book-a-consultation/">book a free consultation</a> or call us on <a href="tel:0272277373">(02) 7227 7373</a> to discuss your options, including standard-rate availability and referrals.</p>
-    </div>
-  </div>
-</div>"""
-
-
 def extra_css():
     return """<style>
 /* ── Access Mediation page-specific styles ── */
@@ -249,13 +238,20 @@ def extra_css():
 .lede-sm{color:var(--ink-soft,#4a4f5a);margin-bottom:24px;font-size:.97rem;line-height:1.6;max-width:62ch}
 #access-calc-root{min-height:160px}
 .notice{padding:16px 20px;background:#fff3cd;border-left:4px solid #f0a500;border-radius:6px;font-size:.9rem}
-/* availability banner */
-.avail-notice{margin:28px auto;max-width:800px;padding:0 20px}
-.avail-notice-inner{display:flex;gap:16px;align-items:flex-start;background:#fff8e1;border:2px solid #f0a500;border-radius:12px;padding:20px 24px}
 .avail-icon{font-size:1.4rem;flex-shrink:0;margin-top:2px}
 .avail-notice-inner strong{display:block;font-size:1.05rem;margin-bottom:6px;color:#7a4f00}
 .avail-notice-inner p{margin:0;font-size:.93rem;color:#5c3900;line-height:1.55}
 .avail-notice-inner a{color:#7a4f00;font-weight:600}
+
+/* key takeaway */
+.access-kt{margin:32px 0 8px}
+.access-kt .kt-label{margin:0 0 6px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--sage-deep,#294b8e)}
+/* related cards */
+.access-related{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;list-style:none;padding:0;margin:0}
+.access-related a{display:flex;flex-direction:column;gap:6px;height:100%;padding:18px 20px;background:#fff;border:1px solid var(--line,#e0ddd8);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s,transform .15s}
+.access-related a:hover{border-color:var(--sage-deep,#294b8e);box-shadow:0 6px 18px rgba(27,49,94,.08);transform:translateY(-2px)}
+.access-related strong{color:var(--sage-deep,#294b8e)}
+.access-related span{color:var(--ink-soft,#666);font-size:.9rem;line-height:1.5}
 
 /* band accordion */
 .band-accordion{margin-top:28px;border:1px solid var(--line,rgba(27,49,94,.14));border-radius:10px;overflow:hidden;background:#fff}
@@ -321,8 +317,7 @@ def build():
     html_doc += nav()
     html_doc += f"""<main id="main">
 {crumb_html([("Home",""),("Access Mediation",None)])}
-<section class="phero">
-  <div class="phero-blob"></div>
+<section class="phero" style="background-color:var(--sand);background-image:linear-gradient(to right,rgba(245,249,255,1) 0%,rgba(245,249,255,.95) 45%,rgba(245,249,255,.8) 100%),url('/assets/images/hero-our-fees.jpg');background-size:cover;background-position:center 40%">
   <div class="wrap">
     <span class="eyebrow"><span class="pulse"></span>{EYEBROW}</span>
     <h1>{H1}</h1>
@@ -334,9 +329,8 @@ def build():
   </div>
 </section>"""
 
-    html_doc += AVAIL_BANNER
     html_doc += (f'<div class="wrap-narrow">'
-                 f'<div class="answer reveal"><p><strong>In short:</strong> {ANSWER}</p></div>'
+                 f'<div class="answer access-kt reveal"><p class="kt-label">Key takeaway</p><p>{ANSWER}</p></div>'
                  f'</div>')
 
     # Calculator FIRST (brief §3)
@@ -362,15 +356,15 @@ def build():
 <section class="blog-related" style="background:var(--cream,#faf8f5);padding:3rem 0">
 <div class="wrap">
 <h2 style="margin-bottom:1.5rem">Related guides</h2>
-<ul class="related-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;list-style:none;padding:0;margin:0">
-<li><a href="/cant-afford-mediation/" style="display:block;padding:1rem;background:var(--bg,#fff);border:1px solid var(--line,#e0ddd8);border-radius:6px;text-decoration:none;color:inherit"><strong>Can't afford mediation?</strong><br><span style="color:var(--ink-soft,#666);font-size:.9em">All your options in Australia — FRC, community FDR, Legal Aid, and reduced-fee private</span></a></li>
-<li><a href="/is-family-mediation-free-australia/" style="display:block;padding:1rem;background:var(--bg,#fff);border:1px solid var(--line,#e0ddd8);border-radius:6px;text-decoration:none;color:inherit"><strong>Is family mediation free?</strong><br><span style="color:var(--ink-soft,#666);font-size:.9em">When it can be free, when it's subsidised, and what to do if neither applies</span></a></li>
-<li><a href="/who-pays-mediation-one-person-earns-more/" style="display:block;padding:1rem;background:var(--bg,#fff);border:1px solid var(--line,#e0ddd8);border-radius:6px;text-decoration:none;color:inherit"><strong>Who pays when one person earns more?</strong><br><span style="color:var(--ink-soft,#666);font-size:.9em">How individual assessment works — your partner's income doesn't set your fee</span></a></li>
-<li><a href="/does-mediation-have-to-be-paid-50-50/" style="display:block;padding:1rem;background:var(--bg,#fff);border:1px solid var(--line,#e0ddd8);border-radius:6px;text-decoration:none;color:inherit"><strong>Does mediation have to be paid 50/50?</strong><br><span style="color:var(--ink-soft,#666);font-size:.9em">No — here's how fee arrangements actually work</span></a></li>
-<li><a href="/asset-rich-cash-poor-mediation/" style="display:block;padding:1rem;background:var(--bg,#fff);border:1px solid var(--line,#e0ddd8);border-radius:6px;text-decoration:none;color:inherit"><strong>Asset rich, cash poor</strong><br><span style="color:var(--ink-soft,#666);font-size:.9em">Owning a home doesn't mean you have accessible cash — how the assessment handles this</span></a></li>
-<li><a href="/family-relationship-centre-vs-private-mediation/" style="display:block;padding:1rem;background:var(--bg,#fff);border:1px solid var(--line,#e0ddd8);border-radius:6px;text-decoration:none;color:inherit"><strong>FRC vs private mediation</strong><br><span style="color:var(--ink-soft,#666);font-size:.9em">An honest side-by-side comparison</span></a></li>
-<li><a href="/legal-aid-vs-private-mediation/" style="display:block;padding:1rem;background:var(--bg,#fff);border:1px solid var(--line,#e0ddd8);border-radius:6px;text-decoration:none;color:inherit"><strong>Legal Aid vs private mediation</strong><br><span style="color:var(--ink-soft,#666);font-size:.9em">What Legal Aid covers — and what to do if you don't qualify</span></a></li>
-<li><a href="/low-cost-family-mediation-australia/" style="display:block;padding:1rem;background:var(--bg,#fff);border:1px solid var(--line,#e0ddd8);border-radius:6px;text-decoration:none;color:inherit"><strong>Low-cost family mediation</strong><br><span style="color:var(--ink-soft,#666);font-size:.9em">All lower-cost options compared on cost, wait time, and complexity</span></a></li>
+<ul class="access-related">
+<li><a href="/cant-afford-mediation/"><strong>Can't afford mediation?</strong><br><span>All your options in Australia — FRC, community FDR, Legal Aid, and reduced-fee private</span></a></li>
+<li><a href="/is-family-mediation-free-australia/"><strong>Is family mediation free?</strong><br><span>When it can be free, when it's subsidised, and what to do if neither applies</span></a></li>
+<li><a href="/who-pays-mediation-one-person-earns-more/"><strong>Who pays when one person earns more?</strong><br><span>How individual assessment works — your partner's income doesn't set your fee</span></a></li>
+<li><a href="/does-mediation-have-to-be-paid-50-50/"><strong>Does mediation have to be paid 50/50?</strong><br><span>No — here's how fee arrangements actually work</span></a></li>
+<li><a href="/asset-rich-cash-poor-mediation/"><strong>Asset rich, cash poor</strong><br><span>Owning a home doesn't mean you have accessible cash — how the assessment handles this</span></a></li>
+<li><a href="/family-relationship-centre-vs-private-mediation/"><strong>FRC vs private mediation</strong><br><span>An honest side-by-side comparison</span></a></li>
+<li><a href="/legal-aid-vs-private-mediation/"><strong>Legal Aid vs private mediation</strong><br><span>What Legal Aid covers — and what to do if you don't qualify</span></a></li>
+<li><a href="/low-cost-family-mediation-australia/"><strong>Low-cost family mediation</strong><br><span>All lower-cost options compared on cost, wait time, and complexity</span></a></li>
 </ul>
 </div>
 </section>
