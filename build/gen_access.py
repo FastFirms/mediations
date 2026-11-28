@@ -169,67 +169,75 @@ def how_it_works():
          "Access places are limited and allocated within monthly capacity."),
     ]
     items = "".join(
-        f'<div class="step reveal">'
+        f'<li class="step reveal">'
         f'<div class="step-num">{n}</div>'
-        f'<div class="step-body"><h3>{t}</h3><p>{d}</p></div>'
-        f'</div>'
+        f'<h3>{t}</h3><p>{d}</p>'
+        f'</li>'
         for n, t, d in steps
     )
-    return f'<section class="steps-section"><div class="wrap"><h2>How Access Mediation works</h2>{items}</div></section>'
+    return f'<section class="steps-section"><div class="wrap"><h2>How Access Mediation works</h2><ol class="steps-grid">{items}</ol></div></section>'
 
 
 def who_for_section():
-    """Simplified 'who is this for' section per UX brief §11."""
+    """Who it's for (left) + inaccessible-assets card (right)."""
     return f"""<section class="who-section reveal">
-  <div class="wrap-narrow">
-    <h2>Who is Access Mediation for?</h2>
-    <p>Access Mediation may be suitable if you can contribute toward private mediation but paying the standard fee would cause genuine financial difficulty.</p>
-    <p>We consider your circumstances individually, including:</p>
-    <ul class="check-list">
-      <li>your personal income;</li>
-      <li>financial dependants;</li>
-      <li>accessible savings and investments;</li>
-      <li>exceptional financial hardship.</li>
-    </ul>
-    <p><strong>Your former partner&#8217;s income does not determine whether you qualify.</strong></p>
-    <p>The calculator provides an indicative contribution. We confirm your contribution before an Access appointment is booked.</p>
-    <p style="font-size:.88rem;color:var(--ink-soft,#4a4f5a)">Access Mediation is <strong>not available</strong> for purely commercial, employment, or neighbourhood disputes. Matters involving family violence or safety concerns are carefully screened — call us on <a href="{PHONE_HREF}" style="color:var(--sage-deep,#294b8e)">{PHONE}</a> before applying.</p>
-  </div>
-</section>"""
-
-
-def inaccessible_assets_section():
-    """New section per UX brief §12."""
-    return """<section class="assets-section reveal">
-  <div class="wrap-narrow">
-    <div class="asset-callout">
-      <h3>What if I have assets but cannot access them?</h3>
-      <p>We look at financial capacity, not simply what you own on paper.</p>
-      <p>Ordinary family home and superannuation are not treated as readily accessible resources. If funds or assets are currently inaccessible — for example, because they are disputed, frozen, or tied up in a property — you can ask us to review your circumstances individually.</p>
+  <div class="wrap">
+    <div class="who-grid">
+      <div class="who-main">
+        <h2>Who is Access Mediation for?</h2>
+        <p>Access Mediation may be suitable if you can contribute toward private mediation but paying the standard fee would cause genuine financial difficulty.</p>
+        <p>We consider your circumstances individually, including:</p>
+        <ul class="check-grid">
+          <li>your personal income;</li>
+          <li>financial dependants;</li>
+          <li>accessible savings and investments;</li>
+          <li>exceptional financial hardship.</li>
+        </ul>
+        <p class="who-key"><strong>Your former partner&#8217;s income does not determine whether you qualify.</strong></p>
+        <p>The calculator provides an indicative contribution. We confirm your contribution before an Access appointment is booked.</p>
+      </div>
+      <aside class="who-side">
+        <div class="asset-callout">
+          <h3>What if I have assets but cannot access them?</h3>
+          <p>We look at financial capacity, not simply what you own on paper.</p>
+          <p>Ordinary family home and superannuation are not treated as readily accessible resources. If funds or assets are currently inaccessible — for example, because they are disputed, frozen, or tied up in a property — you can ask us to review your circumstances individually.</p>
+        </div>
+        <div class="who-note">
+          <p>Access Mediation is <strong>not available</strong> for purely commercial, employment, or neighbourhood disputes. Matters involving family violence or safety concerns are carefully screened — call us on <a href="{PHONE_HREF}">{PHONE}</a> before applying.</p>
+        </div>
+      </aside>
     </div>
   </div>
 </section>"""
 
 
+def inaccessible_assets_section():
+    """Merged into who_for_section (two-column layout)."""
+    return ""
+
+
 def privacy_note():
-    """Strengthened privacy section per UX brief §13."""
+    """Privacy panel: statement left, protected items right."""
     return """<section class="privacy-section reveal">
-  <div class="wrap-narrow">
-    <h2>Your financial assessment is private.</h2>
-    <p>Each participant is assessed separately. We do not tell the other participant your:</p>
-    <ul class="privacy-list">
-      <li>income;</li>
-      <li>accessible asset information;</li>
-      <li>concession status;</li>
-      <li>hardship information;</li>
-      <li>reasons for your contribution;</li>
-      <li>Access assistance amount.</li>
-    </ul>
-    <p>Participants may pay different amounts.</p>
-    <p><strong>The amount either participant pays does not affect the mediator&#8217;s independence, neutrality or professional obligations.</strong></p>
+  <div class="wrap">
+    <div class="privacy-panel">
+      <div class="privacy-intro">
+        <h2>Your financial assessment is private.</h2>
+        <p>Each participant is assessed separately. We do not tell the other participant your:</p>
+        <p class="privacy-foot">Participants may pay different amounts.</p>
+        <p class="privacy-foot"><strong>The amount either participant pays does not affect the mediator&#8217;s independence, neutrality or professional obligations.</strong></p>
+      </div>
+      <ul class="privacy-list">
+        <li>income;</li>
+        <li>accessible asset information;</li>
+        <li>concession status;</li>
+        <li>hardship information;</li>
+        <li>reasons for your contribution;</li>
+        <li>Access assistance amount.</li>
+      </ul>
+    </div>
   </div>
 </section>"""
-
 
 def extra_css():
     return """<style>
@@ -238,10 +246,6 @@ def extra_css():
 .lede-sm{color:var(--ink-soft,#4a4f5a);margin-bottom:24px;font-size:.97rem;line-height:1.6;max-width:62ch}
 #access-calc-root{min-height:160px}
 .notice{padding:16px 20px;background:#fff3cd;border-left:4px solid #f0a500;border-radius:6px;font-size:.9rem}
-.avail-icon{font-size:1.4rem;flex-shrink:0;margin-top:2px}
-.avail-notice-inner strong{display:block;font-size:1.05rem;margin-bottom:6px;color:#7a4f00}
-.avail-notice-inner p{margin:0;font-size:.93rem;color:#5c3900;line-height:1.55}
-.avail-notice-inner a{color:#7a4f00;font-weight:600}
 
 /* key takeaway */
 .access-kt{margin:32px 0 8px}
@@ -262,33 +266,43 @@ details[open] .band-acc-arr{transform:rotate(180deg)}
 .band-accordion-body{padding:0 18px 18px}
 
 /* steps */
-.steps-section{padding:52px 0}
+.steps-section{padding:64px 0}
 .steps-section h2{margin-bottom:28px}
-.step{display:flex;gap:20px;align-items:flex-start;margin-bottom:24px}
-.step-num{width:38px;height:38px;border-radius:50%;background:var(--sage-deep,#294b8e);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.97rem;flex-shrink:0;margin-top:2px}
-.step-body h3{margin:0 0 5px;font-size:1rem}
-.step-body p{margin:0;color:var(--ink-soft,#4a4f5a);font-size:.91rem;line-height:1.6}
+.steps-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;counter-reset:none}
+.step{position:relative;background:#fff;border:1px solid var(--line,rgba(27,49,94,.14));border-radius:14px;padding:24px 22px;display:flex;flex-direction:column;gap:10px}
+.step-num{width:40px;height:40px;border-radius:50%;background:var(--sage-deep,#294b8e);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem}
+.step h3{margin:4px 0 0;font-size:1.02rem;line-height:1.35}
+.step p{margin:0;color:var(--ink-soft,#4a4f5a);font-size:.9rem;line-height:1.6}
 
-/* who section */
-.who-section{padding:48px 0;background:var(--sage-pale,#ffffff)}
-.who-section h2{margin-bottom:12px}
-.check-list{list-style:none;padding:0;margin:12px 0 16px}
-.check-list li{padding-left:26px;position:relative;margin-bottom:9px;font-size:.93rem;line-height:1.5}
-.check-list li::before{content:"✓";position:absolute;left:0;color:var(--sage-deep,#294b8e);font-weight:700}
-
-/* assets callout */
-.assets-section{padding:36px 0}
-.asset-callout{background:#fff;border:1.5px solid var(--sage-deep,#294b8e);border-radius:12px;padding:22px 24px}
-.asset-callout h3{margin:0 0 8px;font-size:1rem;color:var(--sage-deep,#294b8e)}
-.asset-callout p{margin:0 0 8px;font-size:.91rem;color:var(--ink-soft,#4a4f5a);line-height:1.6}
+/* who + assets */
+.who-section{padding:64px 0;background:var(--sand,#f5f9ff)}
+.who-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:start}
+.who-main h2{margin-bottom:14px}
+.who-main p{line-height:1.65}
+.check-grid{list-style:none;padding:0;margin:14px 0 20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.check-grid li{background:#fff;border:1px solid var(--line,rgba(27,49,94,.14));border-radius:10px;padding:12px 14px 12px 42px;position:relative;font-size:.93rem;line-height:1.4}
+.check-grid li::before{content:"\\2713";position:absolute;left:14px;top:11px;width:18px;height:18px;border-radius:50%;background:var(--sage-deep,#294b8e);color:#fff;font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.who-key{padding:12px 16px;border-left:4px solid var(--sage-deep,#294b8e);background:#fff;border-radius:0 8px 8px 0}
+.who-side{display:flex;flex-direction:column;gap:16px}
+.asset-callout{background:#fff;border:1.5px solid var(--sage-deep,#294b8e);border-radius:14px;padding:24px}
+.asset-callout h3{margin:0 0 10px;font-size:1.05rem;color:var(--sage-deep,#294b8e)}
+.asset-callout p{margin:0 0 10px;font-size:.92rem;color:var(--ink-soft,#4a4f5a);line-height:1.6}
 .asset-callout p:last-child{margin:0}
+.who-note{background:#fff;border:1px solid var(--line,rgba(27,49,94,.14));border-radius:14px;padding:18px 22px}
+.who-note p{margin:0;font-size:.88rem;color:var(--ink-soft,#4a4f5a);line-height:1.6}
+.who-note a{color:var(--sage-deep,#294b8e);font-weight:600}
 
 /* privacy */
-.privacy-section{padding:48px 0;background:var(--sage-pale,#ffffff)}
-.privacy-section h2{margin-bottom:10px}
-.privacy-list{list-style:none;padding:0;margin:12px 0 16px}
-.privacy-list li{padding-left:24px;position:relative;margin-bottom:8px;font-size:.91rem;color:var(--ink-soft,#4a4f5a);line-height:1.45}
-.privacy-list li::before{content:"\2717";position:absolute;left:0;color:var(--sage-deep,#294b8e);font-weight:700}
+.privacy-section{padding:64px 0}
+.privacy-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;background:var(--sage-deep,#294b8e);color:#fff;border-radius:18px;padding:40px}
+.privacy-panel h2{color:#fff;margin-bottom:12px}
+.privacy-intro p{color:rgba(255,255,255,.88);line-height:1.6}
+.privacy-intro p{margin:0 0 12px}
+.privacy-foot{font-size:.93rem}
+.privacy-intro strong{color:#fff}
+.privacy-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.privacy-list li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:12px 14px 12px 40px;position:relative;font-size:.92rem;line-height:1.35;color:#fff}
+.privacy-list li::before{content:"";position:absolute;left:14px;top:50%;width:14px;height:14px;transform:translateY(-50%);background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='11' width='16' height='10' rx='2'/%3E%3Cpath d='M8 11V7a4 4 0 0 1 8 0v4'/%3E%3C/svg%3E")}
 
 /* shared data-table */
 .data-table{width:100%;border-collapse:collapse;font-size:.9rem}
@@ -298,8 +312,14 @@ details[open] .band-acc-arr{transform:rotate(180deg)}
 .data-table tbody tr:nth-child(even) td{background:#f8fbf8}
 .table-scroll{overflow-x:auto;margin:12px 0 0}
 
+@media(max-width:960px){
+  .steps-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .who-grid,.privacy-panel{grid-template-columns:1fr;gap:28px}
+}
 @media(max-width:600px){
-  .calc-section,.steps-section,.who-section,.privacy-section,.assets-section{padding:36px 0}
+  .calc-section,.steps-section,.who-section,.privacy-section{padding:40px 0}
+  .steps-grid,.check-grid,.privacy-list{grid-template-columns:1fr}
+  .privacy-panel{padding:28px 22px}
   .band-accordion-toggle{font-size:.88rem}
 }
 </style>"""
