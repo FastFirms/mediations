@@ -297,6 +297,7 @@ details[open] .band-acc-arr{transform:rotate(180deg)}
 .privacy-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;background:var(--sage-deep,#294b8e);color:#fff;border-radius:18px;padding:40px}
 .privacy-panel h2{color:#fff;margin-bottom:12px}
 .privacy-intro p{color:rgba(255,255,255,.88);line-height:1.6}
+.privacy-intro p{margin:0 0 12px}
 .privacy-foot{font-size:.93rem}
 .privacy-intro strong{color:#fff}
 .privacy-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
