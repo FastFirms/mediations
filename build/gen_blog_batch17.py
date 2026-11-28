@@ -12,14 +12,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from gen_blog import post, inline_cta, callout, key_takeaway
 from authority_sources import cite
 
-# ── Availability notice — shown at the top of every Access cluster page ───────
-_AVAIL = """<div style="display:flex;gap:14px;align-items:flex-start;background:#fff8e1;border:2px solid #f0a500;border-radius:12px;padding:20px 24px;margin-bottom:28px">
-  <span style="font-size:1.4rem;flex-shrink:0;margin-top:2px" aria-hidden="true">⚠️</span>
-  <div>
-    <strong style="display:block;font-size:1.05rem;margin-bottom:6px;color:#7a4f00">Access Mediation is currently booked out until November 2026.</strong>
-    <p style="margin:0;font-size:.93rem;color:#5c3900;line-height:1.55">We are not taking new Access Mediation bookings at this time. If your matter is urgent, please <a href="/book-a-consultation/" style="color:#7a4f00;font-weight:600">book a free consultation</a> or call us on <a href="tel:0272277373" style="color:#7a4f00;font-weight:600">(02) 7227 7373</a> to discuss your options.</p>
-  </div>
-</div>"""
+_AVAIL = ""  # Access Mediation open for bookings again (Nov 2026)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # PAGE 1 — /cant-afford-mediation/
